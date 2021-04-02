@@ -49,7 +49,7 @@ def abaev_key(x):
     return ''.join(abaev_alphabet.get(ch, ch) for ch in x)
 
 lines.sort(key = abaev_key)
-print(lines)
+print("\n".join(lines))
 
 #words = ["æfsymær", "am", "Barastyr"]
 
