@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 import sys
+import re
 
 lines = sys.stdin.read().strip().splitlines()
 
@@ -51,7 +52,7 @@ abaev_alphabet = {
 def abaev_key(x):
     x = x.replace('entries/abaev_','')
     #print (x)
-    if x[0] == 'ᵆ' or x[0] == '-' or x[0] =='*':
+    if x[0] == '7' or x[0] == '-' or x[0] =='8' or x[0] == '6':
         x = x[1:]
     x = x.replace('a','/')
     x = x.replace('A', '/')
@@ -187,8 +188,68 @@ def abaev_key(x):
     #return ''.join(abaev_alphabet.get(ch, ch) for ch in x)
     return x
 
-lines.sort(key = abaev_key)
-print("\n".join(lines))
+def makeletter(words, letter, regex):
+    r = re.compile("^entries/abaev_[78-]?" + regex)
+    alpha = list(filter(r.match, words))
+    print("<div type='letter' xml:id='letter_" + letter + "'>")
+    print("\t<head>" + letter + "</head>")
+    for w in sorted(alpha, key=abaev_key):
+        print("\t<xi:include href='" + w + "' parse='xml'/>")
+    print("</div>")
+    return [word for word in words if word not in alpha]
+
+#print("<div>")
+lines = makeletter(lines, "A", '[aAāĀ]')
+lines = makeletter(lines, "Æ", '[æÆ]')
+lines = makeletter(lines, "B", '[bB]')
+lines = makeletter(lines, "C", '[cC][^ʼ]')
+lines = makeletter(lines, "Cʼ", '[cC]ʼ')
+lines = makeletter(lines, "D", '[dD]')
+lines = makeletter(lines, "Ʒ", '[ʒƷ]')
+lines = makeletter(lines, "E", '[eE]')
+lines = makeletter(lines, "F", '[fF]')
+lines = makeletter(lines, "G", '[gGǵǴ]')
+lines = makeletter(lines, "Ǧ", '[ǧǦ]')
+lines = makeletter(lines, "I", '[iIīĪ]')
+lines = makeletter(lines, "J", '[jI]')
+lines = makeletter(lines, "K", '[kKḱḰ][^ʼ]')
+lines = makeletter(lines, "Kʼ", '[kKḱḰ]ʼ')
+lines = makeletter(lines, "L", '[lL]')
+lines = makeletter(lines, "M", '[mM]')
+lines = makeletter(lines, "N", '[nN]')
+lines = makeletter(lines, "O", '[oO]')
+lines = makeletter(lines, "P", '[pP][^ʼ]')
+lines = makeletter(lines, "Pʼ", '[pP]ʼ')
+lines = makeletter(lines, "Q", '[qQ]')
+lines = makeletter(lines, "R", '[rR]')
+lines = makeletter(lines, "S", '[sS]')
+lines = makeletter(lines, "T", '[tT][^ʼ]')
+lines = makeletter(lines, "Tʼ", '[tT]ʼ')
+lines = makeletter(lines, "U", '[uUūŪ]')
+lines = makeletter(lines, "V", '[vV]')
+lines = makeletter(lines, "W", '[wW]')
+lines = makeletter(lines, "X", '[xX]')
+lines = makeletter(lines, "Y", '[yY]')
+lines = makeletter(lines, "Z", '[zZ]')
+#print("</div>")
+#print(lines)
+
+#r = re.compile("^entries/abaev_[aAāĀ]")
+#words = list(filter(r.match, lines))
+#print("<div type='letter' xml:id='letter_a'>")
+#for w in sorted(words, key=abaev_key):
+    #print("\t<xi:include href='" + w + "' parse='xml'/>")
+#print("</div>")
+
+#r = re.compile("^entries/abaev_[æÆ]")
+#words = list(filter(r.match, lines))
+#print("<div type='letter' xml:id='letter_æ'>")
+#for w in sorted(words, key=abaev_key):
+    #print("\t<xi:include href='" + w + "' parse='xml'/>")
+#print("</div>")
+
+#lines.sort(key = abaev_key)
+#print("\n".join(lines))
 
 #words = ["æfsymær", "am", "Barastyr"]
 
