@@ -1,32 +1,70 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">lami</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl><bibl xml:lang="en"><author>Абаев, Василий Иванович</author>.
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_lami" xml:lang="os" abv:completeness="incomplete">
-        <form type="lemma"></form>
-        <sense><abv:tr xml:lang="ru"><q></q></abv:tr></sense>
-        <abv:exampleGrp>
-          <abv:example>
-            <quote></quote>
-          </abv:example>
-        </abv:exampleGrp>
-        <etym xml:lang="ru"></etym>
+      <entry xml:id="entry_lami" xml:lang="os-x-iron" abv:completeness="questions">
+        <form type="lemma"><orth>lami</orth></form>
+        <usg><lang/></usg>
+        <sense><sense><abv:tr xml:lang="ru">
+              <q>ил</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>slime</q>
+              <note type="comment">
+                <?oxy_comment_start author="oleg" timestamp="20210925T220242+0300" comment="Note sure if this is correct."?>(at
+                the bottom of a body of water)<?oxy_comment_end?></note>
+            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+              <q>грязь</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>mud</q>
+            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+              <q>тина</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>ooze</q>
+              <note type="comment" xml:lang="en">
+                <?oxy_comment_start author="oleg" timestamp="20210925T215904+0300" comment="Not sure about this translation."?>(at
+                water surface)<?oxy_comment_end?></note>
+            </abv:tr></sense></sense>
+        <etym xml:lang="ru">Из <mentioned xml:lang="ka"><lang/><w>lami</w>,
+                <w>šlami</w><gloss><q>ил</q>, <q>грязь</q>, <q>тина</q></gloss></mentioned>.
+          Последняя форма стоит в какой-то связи с неразъясненным <mentioned xml:lang="de"
+              ><lang/><w>Schlamm</w><gloss><q>тина</q>, <q>грязь</q></gloss></mentioned>. Ср. также
+            <mentioned xml:lang="la"><lang/><w>lama</w><gloss><q>топь</q>,
+            <q>болото</q></gloss></mentioned>, <mentioned xml:lang="lv"
+                ><lang/><w>lãma</w><gloss><q>лужа</q></gloss></mentioned>, <mentioned xml:lang="et"
+              ><lang/><w>lomm</w><gloss><q>лужа</q></gloss></mentioned>(<bibl><ref type="bibl"
+              target="#ref_Pokorny"/><biblScope>653–654</biblScope></bibl>).</etym>
+        <etym xml:lang="en">From <mentioned xml:lang="ka"><lang/><w>lami</w>,
+                <w>šlami</w><gloss><q>slime</q>, <q>mud</q>, <q>ooze</q></gloss></mentioned>. The
+          latter form is somehow connected to <mentioned xml:lang="de"
+                ><lang/><w>Schlamm</w><gloss><q>ooze</q>, <q>mud</q></gloss></mentioned>, of
+          uncertain origin. Cf. also <mentioned xml:lang="la"><lang/><w>lama</w><gloss><q>bog</q>,
+                <q>swamp</q></gloss></mentioned>, <mentioned xml:lang="lv"
+                ><lang/><w>lãma</w><gloss><q>puddle</q></gloss></mentioned>, <mentioned
+            xml:lang="et"><lang/><w>lomm</w><gloss><q>puddle</q></gloss></mentioned>(<bibl><ref
+              type="bibl" target="#ref_Pokorny"/><biblScope>653–654</biblScope></bibl>).</etym>
       </entry>
     </body>
   </text>

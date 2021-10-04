@@ -194,7 +194,8 @@ def makeletter(words, letter, regex):
     print("<div type='letter' xml:id='letter_" + letter + "'>")
     print("\t<head>" + letter + "</head>")
     for w in sorted(alpha, key=abaev_key):
-        print("\t<xi:include href='" + w + "' parse='xml'/>")
+        name = w.removeprefix('entries/abaev_').removesuffix('.xml')
+        print("\t<xi:include href='" + w + "' xpointer='entry_" + name + "' parse='xml'/>")
     print("</div>")
     return [word for word in words if word not in alpha]
 

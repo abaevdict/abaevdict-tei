@@ -18,13 +18,30 @@
         </xsl:copy>
     </xsl:template>    
     
-    <xsl:template match="abv:tr | tei:etym | tei:note | tei:def">
+    <xsl:template match="tei:etym//tei:note">
+        <xsl:copy>
+            <xsl:apply-templates select="@* | node()"/>
+        </xsl:copy>
+    </xsl:template>
+    
+    <xsl:template match="tei:note">
+        <xsl:copy>
+            <xsl:attribute name="xml:lang">ru</xsl:attribute>
+            <xsl:apply-templates select="@* | node()"/>
+        </xsl:copy>
+        <xsl:copy>
+            <xsl:attribute name="xml:lang">en</xsl:attribute>
+            <xsl:apply-templates select="@* | node()" mode="other"/>
+        </xsl:copy>        
+    </xsl:template>
+    
+    <xsl:template match="abv:tr | tei:etym | tei:def | tei:bibl[@xml:lang] | tei:biblScope[@xml:lang]">
         <xsl:copy>
             <xsl:apply-templates select="@* | node()"/>
         </xsl:copy>
         <xsl:copy>
             <xsl:apply-templates select="@* | node()" mode="other"/>
-        </xsl:copy>                
+        </xsl:copy>               
     </xsl:template>
     
     <xsl:template match="@xml:lang" mode="other">

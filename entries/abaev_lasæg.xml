@@ -1,32 +1,115 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">lasæg</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl><bibl xml:lang="en"><author>Абаев, Василий Иванович</author>.
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_lasæg" xml:lang="os" abv:completeness="incomplete">
-        <form type="lemma"></form>
-        <sense><abv:tr xml:lang="ru"><q></q></abv:tr></sense>
+      <entry xml:id="entry_lasæg" xml:lang="os-x-digor" abv:completeness="questions">
+        <form type="lemma"><orth>lasæg</orth></form>
+        <usg><lang/></usg>
+        <sense><abv:tr xml:lang="ru">
+            <q>копна (сена)</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>stack (of hay)</q>
+          </abv:tr></sense>
+        <note xml:lang="ru" type="comment">; син. <ref type="xr" target="#entry_mækʼ0yl"
+            xml:lang="os-x-iron"><lang/>
+            <w>mækʼₒyl</w></ref>; <mentioned xml:lang="os-x-digor"
+              ><lang/><w><?oxy_comment_start author="oleg" timestamp="20210925T221108+0300" comment="word not in dictionary"?>bækʼwæl<?oxy_comment_end?></w><gloss><q>копна
+                хлеба</q></gloss></mentioned></note>
+        <note xml:lang="en" type="comment">; syn. <ref type="xr" target="#entry_mækʼ0yl"
+            xml:lang="os-x-iron"><lang/>
+            <w>mækʼₒyl</w></ref>; <mentioned xml:lang="os-x-digor"
+              ><lang/><w><?oxy_comment_start author="oleg" timestamp="20210925T221108+0300" comment="word not in dictionary"?>bækʼwæl<?oxy_comment_end?></w><gloss><q>stack
+                of
+                <?oxy_comment_start author="oleg" timestamp="20210925T222750+0300" comment="Точно ли так?"?>cereals<?oxy_comment_end?></q></gloss></mentioned></note>
         <abv:exampleGrp>
           <abv:example>
-            <quote></quote>
+            <quote>walʒæg xwasi lasæg raddidæ æfstaw fæzzægmæ</quote>
+            <abv:tr xml:lang="ru">
+              <q>весной он давал взаймы копну сена до осени</q>
+            </abv:tr>
+            <abv:tr xml:lang="en">
+              <q>in spring he lent a stack of hay till autumn</q>
+            </abv:tr>
+            <bibl><ref type="bibl" target="#src_AK"/><biblScope>III 32</biblScope></bibl>
           </abv:example>
+          <example xmlns="http://ossetic-studies.org/ns/abaevdict">
+            <quote xmlns="http://www.tei-c.org/ns/1.0">cuppar lasægi ærlasta æmæ wædta ræfton wæǧdæ
+              iskodta</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">он свез четыре копны, а затем устроил
+                полдневный отдых </q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">he brought together four stacks, and then made
+                a half-day rest</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_AK"
+                /><biblScope>III 32</biblScope></bibl>
+          </example>
         </abv:exampleGrp>
-        <etym xml:lang="ru"></etym>
+        <etym xml:lang="ru">От <ref type="xr" target="#entry_lasyn"/>
+          <q>везти</q>, буквально <q rendition="#rend_doublequotes">везомое</q>. Причастные формы на
+            <m>-æg</m> имеют обычно активное значение, но в отдельных случаях — пас сивное, например
+            <ref type="xr" target="#entry_kærdæg"/>
+          <q>трава</q> (<q rendition="#rend_doublequotes">косимое</q>), <ref type="xr"
+            target="#entry_sændæg"/>
+          <q rendition="#rend_doublequotes">накрошенное</q> и др. (см.: <bibl><title>О залоговой
+              недифференцированности причастий</title>.<biblScope><ref type="bibl"
+                target="#ref_ОЯФ_I"/> 568 сл.</biblScope></bibl>). По образованию ср. <mentioned
+            xml:lang="krc-x-balkar"><lang/><note type="comment">(из
+                ос.)</note><w>gallas</w><gloss><q>копна</q></gloss></mentioned>, буквально <q
+            rendition="#rend_doublequotes">везомое (<m>las</m>) быком (<ref type="xr"
+              target="#entry_gal"/>)</q> (<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>I
+              278</biblScope></bibl>). Копны сена складывались на покосах вдали от жилья, а затем
+          свозились в селения на санях или арбах. Отсюда связь с <q>возить</q> (<q
+            rendition="#rend_doublequotes">то, что подлежит транспорти­ровке</q>). Ср. в этом
+          отношении <mentioned xml:lang="ka"
+            ><lang/><w>urmeuli</w><gloss><q>копна</q></gloss></mentioned> от <mentioned
+            xml:lang="ka"><w>uremi</w><gloss><q>арба</q></gloss></mentioned>.</etym>
+        <etym xml:lang="en">From <ref type="xr" target="#entry_lasyn"/>
+          <q>carry</q>, literally <q rendition="#rend_doublequotes">(smth.) carried</q>. Participial
+          forms in <m>-æg</m> normally have active meaning, but in certain cases may be passive,
+          e.g. <ref type="xr" target="#entry_kærdæg"/>
+          <q>grass</q> (<q rendition="#rend_doublequotes">(smth.) mowed</q>), <ref type="xr"
+            target="#entry_sændæg"/>
+          <q rendition="#rend_doublequotes">crumbled</q> etc. (see: <bibl><title>O zalogovoj
+              nedifferencirovannosti pričastij [On the lack of voice differentiation in
+              participles]</title>.<biblScope><ref type="bibl" target="#ref_ОЯФ_I"/>
+              568f.</biblScope></bibl>). For derivation cf. <mentioned xml:lang="krc-x-balkar"
+              ><lang/><note type="comment">(from
+              Ossetic)</note><w>gallas</w><gloss><q>stack</q></gloss></mentioned>, lit. <q
+            rendition="#rend_doublequotes">(smth.) carried (<m>las</m>) by an ox (<ref type="xr"
+              target="#entry_gal"/>)</q> (<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>I
+              278</biblScope></bibl>). Stacks of hay were put together in
+          <?oxy_comment_start author="oleg" timestamp="20210925T223355+0300" comment="check"?>hayfields<?oxy_comment_end?>
+          away from dwellings, and were then brought together into the villages on sledges or carts.
+          From there the connection with <q>carry</q> (<q rendition="#rend_doublequotes">smth. which
+            undergoes transportation</q>). Cf. in this respect <mentioned xml:lang="ka"
+              ><lang/><w>urmeuli</w><gloss><q>копна</q></gloss></mentioned> от <mentioned
+            xml:lang="ka"><w>uremi</w><gloss><q>арба</q></gloss></mentioned>.</etym>
       </entry>
     </body>
   </text>
