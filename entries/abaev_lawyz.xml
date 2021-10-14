@@ -1,41 +1,53 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">lawyz</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">II</biblScope>. L–R. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >15</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">II</biblScope>. L–R. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">15</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_lawyz" xml:lang="os" abv:completeness="incomplete">
+      <entry xml:id="entry_lawyz" xml:lang="os" abv:completeness="complete">
         <form type="lemma" xml:lang="os-x-iron"><orth>lawyz</orth></form>
-        <form xml:lang="os-x-digor" type="dialectal">
-          <orth>lauz</orth>
-        </form>
+        <form xml:lang="os-x-digor" type="dialectal"><orth>lauz</orth></form>
         <sense><sense><abv:tr xml:lang="ru">
               <q>плоская тонкая лепешка</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>thin flatbread</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>оладья</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>pancake</q>
             </abv:tr></sense></sense>
         <re xml:id="re_lawyzgænæn">
           <form type="lemma"><orth>lawyzgænæn</orth></form>
-          <sense>
-            <tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
-              <q xmlns="http://www.tei-c.org/ns/1.0">ежегод­ные поминки в период великого поста</q>
+          <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">ежегодные поминки в период великого поста</q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">yearly commemoration of the deceased during
+                Lent</q>
             </tr><note type="bibl"> (<bibl><ref type="bibl" target="#src_ОТ"/>
-                <biblScope>91</biblScope></bibl>)</note><note type="comment">, на которых
-              изготовляют и посвящают мертвым <oRef>lawyztæ</oRef></note></sense></re>
+                <biblScope>91</biblScope></bibl>)</note><note xml:lang="ru" type="comment">, на
+              которых изготовляют и посвящают мертвым <oRef>lawyztæ</oRef></note><note xml:lang="en"
+              type="comment">, during which <oRef>lawyztæ</oRef> are cooked and dedicated to the
+              dead</note></sense>
+        </re>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">alkæmæn dær jæ lawyz jæxī mærdtæn fældyst
@@ -43,6 +55,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">пусть каждый посвящает свой <oRef/> собственным
                 покойникам (т. е. каждому свое)</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">may each dedicate their <oRef/> to their own
+                dead (i.e. to each one’s own)</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ЮОПам."/>
               <biblScope>III 191</biblScope></bibl>
@@ -54,6 +70,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">приготовляют еду и напитки: пироги, оладьи…
                 водку…</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">they prepare food and drink: pies, pancakes…
+                vodka…</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Munk."/>
               <biblScope>204</biblScope></bibl>
           </example>
@@ -64,24 +84,43 @@
             <tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">первый <ref type="xr" target="#re_lawyzgænæn"
                 /></q>
-            </tr><note type="comment"> (в субботу первой недели после масленицы)</note><note
-              type="bibl"> (<bibl><ref type="bibl" target="#src_Munk."/>
-                <biblScope>217</biblScope></bibl>)</note></sense></re>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">first <ref type="xr" target="#re_lawyzgænæn"
+                /></q>
+            </tr><note xml:lang="ru" type="comment"> (в субботу первой недели после
+              масленицы)</note><note xml:lang="en" type="comment"> (on Saturday of the first week
+              before Shrovetide)</note><note type="bibl"> (<bibl><ref type="bibl"
+                  target="#src_Munk."/>
+                <biblScope>217</biblScope></bibl>)</note></sense>
+        </re>
         <re>
           <form type="lemma"><orth>dykkag lawyzgænæn</orth></form>
           <sense>
             <tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">второй <ref type="xr" target="#re_lawyzgænæn"
                 /></q>
-            </tr><note type="comment"> (в субботы второй недели после масленицы)</note></sense><note
-            type="bibl"> (<bibl><ref type="bibl" target="#src_Munk."/>
-              <biblScope>217</biblScope></bibl>)</note></re>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">second <ref type="xr" target="#re_lawyzgænæn"
+                /></q>
+            </tr><note xml:lang="ru" type="comment"> (в субботы второй недели после
+              масленицы)</note><note xml:lang="en" type="comment"> (on Saturday of the second week
+              before Shrovetide)</note></sense>
+          <note type="bibl"> (<bibl><ref type="bibl" target="#src_Munk."/>
+              <biblScope>217</biblScope></bibl>)</note>
+        </re>
         <etym xml:lang="ru">Из <mentioned xml:lang="trk"><lang/>
             <w>lawaš</w>
             <gloss><q>круглый тонкий хлеб вроде блинов, лепешка</q></gloss>
             <note type="bibl">(<bibl><ref type="bibl" target="#ref_Радлов"/>
                 <biblScope>741</biblScope></bibl>)</note></mentioned>. Это же слово было
           заимствовано вторично уже через грузинское посредство, — см. <ref type="xr"
+            target="#entry_lwasi"/>.</etym>
+        <etym xml:lang="en">From <mentioned xml:lang="trk"><lang/>
+            <w>lawaš</w>
+            <gloss><q>thin round bread like a pancake, flatbread</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Радлов"/>
+                <biblScope>741</biblScope></bibl>)</note></mentioned>. The same word has been
+          secondarily borrowed through the mediation of Georgian — see <ref type="xr"
             target="#entry_lwasi"/>.</etym>
       </entry>
     </body>
