@@ -1,30 +1,41 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">læbuǧ</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">16</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_læbuǧ" xml:lang="os" abv:completeness="incomplete">
+      <entry xml:id="entry_læbuǧ" xml:lang="os" abv:completeness="questions">
         <form type="lemma"><orth>læbuǧ</orth><form type="variant"><orth>buluǧ</orth></form><note
-            type="comment"> (обычно во мн. ч.: <w>læbuǧtæ</w>, <w>buluǧtæ</w>)</note></form>
+            xml:lang="ru" type="comment"> (обычно во мн. ч.: <w>læbuǧtæ</w>,
+            <w>buluǧtæ</w>)</note><note xml:lang="en" type="comment"> (usually in the plural:
+              <w>læbuǧtæ</w>, <w>buluǧtæ</w>)</note></form>
         <sense><sense><abv:tr xml:lang="ru">
               <q>муть</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>haze</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>осадок (пива, мучной похлебки и т. п.)</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>dregs (of beer, flour soup etc.)</q>
             </abv:tr></sense></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example xml:lang="os-x-digor">
@@ -34,6 +45,11 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">от супа накипь наверху, от мучной похлебки
                 осадок внизу</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0"
+                ><?oxy_comment_start author="oleg" timestamp="20211016T202238+0300" comment="check meaning of word"?>broth<?oxy_comment_end?>
+                has scum at its top, flour soup has dregs at its bottom</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сл."/></bibl>
           </example>
@@ -49,6 +65,17 @@
             xml:lang="os"
               ><w><?oxy_comment_start author="oleg" timestamp="20211014T183809+0300" comment="слова нет в словаре"?>bulǧur<?oxy_comment_end?></w>
             <gloss><q>мешанный</q></gloss></mentioned>.</etym>
+        <etym xml:lang="en">The form <oRef>læbuǧtæ</oRef> is a metathesis from <w>bæluǧtæ</w>,
+            <w>buluǧtæ</w>. The latter is related to <mentioned xml:lang="trk"><lang/>
+            <w>bulǧa</w>
+            <gloss><q>mix</q>, <q>shake</q>, <q>muddle</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Радлов"/>
+                <biblScope>IV 1848</biblScope></bibl>). — Cf. <ref type="xr" target="#entry_bulǧaq"
+                  ><w>bulǧaq</w>
+                <gloss><q>squabble</q>, <q>quarrel</q></gloss></ref></note></mentioned>, <mentioned
+            xml:lang="os"
+              ><w><?oxy_comment_start author="oleg" timestamp="20211014T183809+0300" comment="слова нет в словаре"?>bulǧur<?oxy_comment_end?></w>
+            <gloss><q>mixed</q></gloss></mentioned>.</etym>
       </entry>
     </body>
   </text>
