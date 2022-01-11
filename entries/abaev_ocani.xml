@@ -1,33 +1,99 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ocani</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
       <entry xml:id="entry_ocani" xml:lang="os" abv:completeness="incomplete">
         <form type="lemma"><orth>ocani</orth></form>
-        <sense><abv:tr xml:lang="ru"><q></q></abv:tr></sense>
+        <sense><abv:tr xml:lang="ru">
+            <q>норов (у лошади, у вола)</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>restiveness </q>
+          </abv:tr></sense>
+        <?oxy_comment_start author="julie" timestamp="20220111T223027+0300" comment="син. д. tiftirik&apos;wæ, æftirik&apos;wæ (ОЯФ I 44145);"?>
+        <re><?oxy_comment_end?>
+          <form type="lemma"><orth>ocani bæx </orth></form>
+          <sense><abv:tr xml:lang="ru">
+              <q>норовистая, упрямая лошадь</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>restive horse</q>
+            </abv:tr></sense>
+        </re>
         <abv:exampleGrp>
           <abv:example>
-            <quote></quote>
+            <quote xml:lang="os-x-iron">mæ bæx nywwocani </quote>
+            <abv:tr xml:lang="ru">
+              <q>моя лошадь заупрямилась, заартачилась</q>
+            </abv:tr>
+            <abv:tr xml:lang="en">
+              <q>my horse was stubborn, it balked</q>
+            </abv:tr>
           </abv:example>
+          <example xmlns="http://ossetic-studies.org/ns/abaevdict">
+            <quote xmlns="http://www.tei-c.org/ns/1.0" xml:lang="os-x-iron">ocani bæxaw razmæ nal
+              ækk˳yrsy</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">подобно заартачившейся лошади, он никак не
+                двигается вперед</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">like a restive horse, he does not move forward
+                in any way</q>
+            </tr>
+          </example>
+          <example xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="os-x-digor">
+            <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">ew xcerdi Tabiji galtæ buntondær sæqlæwd
+              nikkodtoncæ... kuddær та fæstæmæ ew ampʼezi bærcæ rawocani kænoncæ, otæ ba Tabij æd
+              galtæ, æd wærdun dællæj arf komi nixxærnæǧ woʒænæj</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">„на подъеме волы Таби остановились, как
+                вкопанные; стоит им по упрямству сделать один шаг назад, и Таби вместе с волами и
+                арбой разобьется внизу в глубоком ущелье</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">on the ascent, Toby's oxen stopped as if rooted
+                to the spot; if they stubbornly take one step back, and Toby, along with the
+                ramparts and the cart, will break down in a deep gorge below</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0">
+              <ref type="bibl" target="#src_Bes._Ka_ke"/>
+              <biblScope>19</biblScope>
+            </bibl>
+          </example>
         </abv:exampleGrp>
-        <etym xml:lang="ru"></etym>
+        <etym xml:lang="ru">Из <mentioned xml:lang="ka"><lang xml:lang="ka"/>
+            <w xml:lang="ka">ocani</w>
+            <gloss><q>норовистый</q></gloss>,<gloss><q>упрямый</q></gloss></mentioned> (о скотине)
+              (<bibl><ref type="bibl" target="#ref_Груз._сл."/><biblScope>VI
+          89</biblScope></bibl>).</etym>
+        <etym xml:lang="en">From <mentioned xml:lang="ka"><lang xml:lang="ka"/>
+            <w xml:lang="ka">ocani</w>
+            <gloss><q>restive</q></gloss>,<gloss><q>stubborn</q></gloss></mentioned> (of cattle)
+              (<bibl><ref type="bibl" target="#ref_Груз._сл."/><biblScope>VI
+          89</biblScope></bibl>).</etym>
       </entry>
     </body>
   </text>
 </TEI>
+
