@@ -1,32 +1,48 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">læǧzad</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. L–R. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1973</date>. С. <biblScope unit="page">26</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_læǧzad" xml:lang="os" abv:completeness="incomplete">
+      <entry xml:id="entry_læǧzad" xml:lang="os-x-iron" abv:completeness="complete">
         <form type="lemma"><orth>læǧzad</orth></form>
-        <sense><abv:tr xml:lang="ru"><q></q></abv:tr></sense>
-        <abv:exampleGrp>
-          <abv:example>
-            <quote></quote>
-          </abv:example>
-        </abv:exampleGrp>
-        <etym xml:lang="ru"></etym>
+        <usg><lang/></usg>
+        <sense><abv:tr xml:lang="ru">
+            <q>неприятный вкус испорченных, тухлых продуктов</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>unpleasant taste of spoiled, rotten foodstuffs</q>
+          </abv:tr></sense>
+        <etym xml:lang="ru">Возможно, из <ref type="xr" target="#entry_læǧuz"/>-<ref type="xr"
+            target="#entry_ad"/>
+          <gloss><q>плохой вкус</q></gloss> (<bibl><ref type="bibl" target="#ref_Сл."/>
+            <biblScope>II 760</biblScope></bibl>). В этом случае следует говорить о <q
+            rendition="#rend_doublequotes">дигоризме</q>, так как иронскому диалекту чуждо слово
+            <ref type="xr" target="#entry_læǧuz"/>.</etym>
+        <etym xml:lang="en">Possibly from <ref type="xr" target="#entry_læǧuz"/>-<ref type="xr"
+            target="#entry_ad"/>
+          <gloss><q>bad taste</q></gloss> (<bibl><ref type="bibl" target="#ref_Сл."/>
+            <biblScope>II 760</biblScope></bibl>). In this case one deals with a <q
+            rendition="#rend_doublequotes">Digorism</q>, for the Iron dialect lacks the word <ref
+            type="xr" target="#entry_læǧuz"/>.</etym>
       </entry>
     </body>
   </text>

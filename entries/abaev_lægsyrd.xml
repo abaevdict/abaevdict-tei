@@ -1,32 +1,52 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">lægsyrd</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">II</biblScope>. L–R. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1973</date>. С. <biblScope unit="page">23</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_lægsyrd" xml:lang="os" abv:completeness="incomplete">
-        <form type="lemma"><orth>lægsyrd</orth></form>
-        <sense><abv:tr xml:lang="ru"><q></q></abv:tr></sense>
-        <abv:exampleGrp>
-          <abv:example>
-            <quote></quote>
-          </abv:example>
-        </abv:exampleGrp>
-        <etym xml:lang="ru"></etym>
+      <entry xml:id="entry_lægsyrd" xml:lang="os" abv:completeness="complete">
+        <form type="lemma" xml:lang="os-x-iron"><orth>lægsyrd</orth></form>
+        <form xml:lang="os-x-digor" type="dialectal"><orth>lægsird</orth></form>
+        <sense><sense><abv:tr xml:lang="ru">
+              <q>человек-зверь</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>beastman</q>
+            </abv:tr><note xml:lang="ru" type="comment"> (в сказках)</note><note xml:lang="en"
+              type="comment"> (in fairy tales)</note></sense><sense><abv:tr xml:lang="ru">
+              <q>лесное чудовище, имеющее на груди топор</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>forest monster that has an axe on its breast</q>
+            </abv:tr><note type="bibl"> (<bibl><ref type="bibl" target="#src_ОЭ"/>
+                <biblScope>I 150, 162</biblScope></bibl>)</note></sense></sense>
+        <etym xml:lang="ru">Сложение типа dvandva, как <ref type="xr" target="#entry_xærgæfs"
+              ><w>xærgæfs</w>
+            <gloss><q>мул</q></gloss></ref>, буквально <q rendition="#rend_doublequotes"
+            >осел-лошадь</q>. См. <ref type="xr" target="#entry_læg"/> и <ref type="xr"
+            target="#entry_syrd"/>.</etym>
+        <etym xml:lang="en">Compound of the <foreign>dvandva</foreign> type, kike <ref type="xr"
+            target="#entry_xærgæfs"><w>xærgæfs</w>
+            <gloss><q>mule</q></gloss></ref>, literally <q rendition="#rend_doublequotes"
+            >donkey-horse</q>. See <ref type="xr" target="#entry_læg"/> and <ref type="xr"
+            target="#entry_syrd"/>.</etym>
       </entry>
     </body>
   </text>

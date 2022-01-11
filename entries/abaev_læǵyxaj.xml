@@ -1,32 +1,106 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">læǵyxaj</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_læǵyxaj" xml:lang="os" abv:completeness="incomplete">
-        <form type="lemma"><orth>læǵyxaj</orth></form>
-        <sense><abv:tr xml:lang="ru"><q></q></abv:tr></sense>
-        <abv:exampleGrp>
-          <abv:example>
-            <quote></quote>
-          </abv:example>
-        </abv:exampleGrp>
-        <etym xml:lang="ru"></etym>
+      <entry xml:id="entry_læǵyxaj" xml:lang="os" abv:completeness="questions">
+        <form type="lemma" xml:lang="os-x-iron"><orth>læǵyxaj</orth></form>
+        <form xml:lang="os-x-digor" type="dialectal"><orth>lægixaj</orth></form>
+        <sense><sense><abv:tr xml:lang="ru">
+              <q>любовник</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>(male) lover, paramour</q>
+            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+              <q>муженек</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>dear husband, hubby</q>
+            </abv:tr></sense><note xml:lang="ru" type="comment">; в значении <q>любовник</q>,
+              <q>любовница</q> употребляется также <ref type="xr" target="#entry_lymæn"
+            />.</note><note xml:lang="en" type="comment">; the meaning <q>lover</q>, <q>mistress</q>
+            <ref type="xr" target="#entry_lymæn"/> is also used.</note></sense>
+        <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">Gosæzijæn wælæsyxy læǵyxaj wydī</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">у Госази в верхнем квартале был любовник</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Gosazi had a lover in the upper quarter</q>
+            </tr>
+          </example>
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">zondæj myl fætyx dæ, wæ mæ læǵyxaj</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">умом ты меня осилил, о мой муженек</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">you have bested me by intelligence, oh my dear
+                husband</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Коста"/>
+              <biblScope>44</biblScope></bibl>
+          </example>
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">ūs jæ læǵyxajæn qajla saræzta</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">женщина приготовила своему любовнику
+                яичницу</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the woman cooked scrambled eggs for her
+                lover</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ИАА"/>
+              <biblScope>II 245</biblScope></bibl>
+          </example>
+        </exampleGrp>
+        <etym xml:lang="ru">Буквально <q rendition="#rend_doublequotes">доля (<ref type="xr"
+              target="#entry_xaj"/>) мужа (<ref type="xr" target="#entry_læg"
+          ><w>læǵy</w></ref>)</q>; ср. такие выражения, как <mentioned><mentioned
+              xml:lang="os-x-iron"><phr><ref type="xr" target="#entry_zæd">zædy</ref>
+                <ref type="xr" target="#entry_xaj"/></phr>
+              <gloss><q>ангел</q></gloss></mentioned>, <mentioned xml:lang="os-x-iron"><phr>xₒycawy
+                xaj</phr>
+              <gloss><q>бог</q></gloss></mentioned>
+            <note xml:lang="ru" type="comment">(буквально <q rendition="#rend_doublequotes">доля
+                ангела</q>, <q rendition="#rend_doublequotes">доля бога</q>)</note><note
+              xml:lang="en" type="comment">(буквально <q rendition="#rend_doublequotes">доля
+                ангела</q>, <q rendition="#rend_doublequotes">доля бога</q>)</note></mentioned>. —
+          См. <ref type="xr" target="#entry_xaj"/>.</etym>
+        <etym xml:lang="en">Literally <q rendition="#rend_doublequotes">part (<ref type="xr"
+              target="#entry_xaj"/>) of husband (<ref type="xr" target="#entry_læg"
+              ><w>læǵy</w></ref>)</q>; cf. such expressions as <mentioned><mentioned
+              xml:lang="os-x-iron"><phr><ref type="xr" target="#entry_zæd">zædy</ref>
+                <ref type="xr" target="#entry_xaj"/></phr>
+              <gloss><q>angel</q></gloss></mentioned>, <mentioned xml:lang="os-x-iron"
+                ><phr><?oxy_comment_start author="oleg" timestamp="20211128T131311+0300" comment="should God be capitalized in Ossetic? (it is, currently, if referring to the one God)"?>Xₒ<?oxy_comment_end?>ycawy
+                xaj</phr>
+              <gloss><q>God</q></gloss></mentioned>
+            <note xml:lang="ru" type="comment">(буквально <q rendition="#rend_doublequotes">доля
+                ангела</q>, <q rendition="#rend_doublequotes">доля бога</q>)</note><note
+              xml:lang="en" type="comment">(lit. <q rendition="#rend_doublequotes">part of
+              angel</q>, <q rendition="#rend_doublequotes">part of God</q>)</note></mentioned>. —
+          See <ref type="xr" target="#entry_xaj"/>.</etym>
       </entry>
     </body>
   </text>
