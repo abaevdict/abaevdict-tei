@@ -1,37 +1,61 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ᵆrtyn</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_7rtyn" xml:lang="os" abv:completeness="incomplete">
+      <entry xml:id="entry_7rtyn" xml:lang="os" abv:completeness="complete">
         <form type="lemma" xml:lang="os-x-iron"><orth>ᵆrtyn</orth></form>
         <form xml:lang="os-x-digor" type="dialectal"><orth>ærtin</orth></form>
         <sense><abv:tr xml:lang="ru">
             <q>тридцать</q>
-          </abv:tr><note type="comment"> в десятичном пастушеском счете, вместо
-            <?oxy_comment_start author="Irene" timestamp="20220115T135129+0300" comment="как лучше сделать хреф?"?>dæs
-            æmæ `ssæʒ<?oxy_comment_end?> | dæs æma insæj (буквально „десять и двадцать") обычного
-            двадцатичного счета</note></sense>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>thirty</q>
+          </abv:tr><note xml:lang="ru" type="comment"> в десятичном пастушеском счете, вместо <ref
+              type="xr" target="#entry_dæs"/>
+            <ref type="xr" target="#entry_æmæ"/>
+            <ref type="xr" target="#entry_yssæʒ"><w>`ssæʒ</w></ref> | <ref type="xr"
+              target="#entry_dæs"/>
+            <ref type="xr" target="#entry_æmæ"><w>æma</w></ref>
+            <ref type="xr" target="#entry_insæj"/> (буквально <q rendition="#rend_doublequotes"
+              >десять и двадцать</q>) обычного двадцатичного счета</note><note xml:lang="en"
+            type="comment"> in decimal number system of shepherds, instead of <ref type="xr"
+              target="#entry_dæs"/>
+            <ref type="xr" target="#entry_æmæ"/>
+            <ref type="xr" target="#entry_yssæʒ"><w>`ssæʒ</w></ref> | <ref type="xr"
+              target="#entry_dæs"/>
+            <ref type="xr" target="#entry_æmæ"><w>æma</w></ref>
+            <ref type="xr" target="#entry_insæj"/> (literally <q rendition="#rend_doublequotes">ten
+              and twenty</q>) in usual vigesimal number system</note></sense>
         <etym xml:lang="ru">Восходит к <mentioned xml:lang="ira"><m type="rec"
             >ϑrinsat-</m></mentioned>, ср. <mentioned xml:lang="inc-x-old"><lang/>
             <m>triṁṡat-</m>
             <gloss><q>тридцать</q></gloss></mentioned>.<lb/><bibl><ref type="bibl"
               target="#ref_ОЯФ_I"/>
+            <biblScope>22, 283, 399</biblScope></bibl>.</etym>
+        <etym xml:lang="en">Traces back to <mentioned xml:lang="ira"><m type="rec"
+            >ϑrinsat-</m></mentioned>, cf. <mentioned xml:lang="inc-x-old"><lang/>
+            <m>triṁṡat-</m>
+            <gloss><q>thirty</q></gloss></mentioned>.<lb/><bibl><ref type="bibl" target="#ref_ОЯФ_I"/>
             <biblScope>22, 283, 399</biblScope></bibl>.</etym>
       </entry>
     </body>
