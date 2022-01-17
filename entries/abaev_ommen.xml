@@ -1,32 +1,65 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ommen</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
       <entry xml:id="entry_ommen" xml:lang="os" abv:completeness="incomplete">
         <form type="lemma"><orth>ommen</orth></form>
-        <sense><abv:tr xml:lang="ru"><q></q></abv:tr></sense>
+        <sense><abv:tr xml:lang="ru">
+            <q>аминь</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>amen</q>
+          </abv:tr></sense>
+        <note xml:lang="ru" type="comment">; во время молитвы старшего присутствующие сопровождают
+          каждую тираду молитвы возгласом <mentioned xml:lang="os"><lang/><w>ommen, ommen,
+              x˳ycaw!</w><gloss><q>аминь, аминь, боже!</q></gloss></mentioned></note>
+        <note xml:lang="en" type="comment">; during the elder's prayer , those present accompany
+          each tirade of prayer with an exclamation <mentioned xml:lang="os"><lang/><w>ommen, ommen,
+              x˳ycaw!</w><gloss><q>amen, amen, God!</q></gloss></mentioned></note>
         <abv:exampleGrp>
           <abv:example>
-            <quote></quote>
+            <quote>x˳ycaw, de skond adæm stæm, æmæ nyn dæ xorzæx, dæ arfæjæ baxaj kæn! — Оттеп,
+              x˳ycaw!</quote>
+            <abv:tr xml:lang="ru">
+              <q>боже, мы — созданные тобой люди, и удели нам твою милость, твое благословение! —
+                Аминь, боже!</q>
+            </abv:tr>
+            <abv:tr xml:lang="en">
+              <q>God, we are people created by you, and grant us your mercy, your blessing! - Amen,
+                God!</q>
+            </abv:tr>
           </abv:example>
         </abv:exampleGrp>
-        <etym xml:lang="ru"></etym>
+        <etym xml:lang="ru">Из <mentioned xml:lang="grc"><lang/><note xml:lang="ru" type="comment"
+              >(← др.евр.)</note><note xml:lang="en" type="comment">(←
+                др.евр.)</note><w>ἀμήν</w><gloss><q>воистину</q></gloss></mentioned>, с закономерным
+          переходом <hi rend="italic">а</hi> → <hi rend="italic">о</hi> перед <hi rend="italic"
+            >m</hi>.</etym>
+        <etym xml:lang="en">From <mentioned xml:lang="grc"><lang/><note xml:lang="ru" type="comment"
+              >(← др.евр.)</note><note xml:lang="en" type="comment">(← Old
+              Hebrew.)</note><w>ἀμήν</w><gloss><q>verily</q></gloss></mentioned>, with a regular
+          transition <hi rend="italic">а</hi> → <hi rend="italic">о</hi> before <hi rend="italic"
+            >m</hi>.</etym>
       </entry>
     </body>
   </text>
