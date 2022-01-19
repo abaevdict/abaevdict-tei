@@ -1,33 +1,58 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">omæ</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
       <entry xml:id="entry_omæ" xml:lang="os" abv:completeness="incomplete">
-        <form type="lemma"><orth>omæ</orth></form>
-        <sense><abv:tr xml:lang="ru"><q></q></abv:tr></sense>
+        <form type="lemma"
+            ><orth>omæ</orth><?oxy_comment_start author="julie" timestamp="20220117T221046+0300" comment="вариант в скобочках
+"?><form type="dialectal">(<orth>homæ</orth>)</form><?oxy_comment_end?></form>
+        <sense>particle<abv:tr xml:lang="ru">
+            <q>ну</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>well</q>
+          </abv:tr><abv:tr xml:lang="ru">
+            <q>et bien</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>et bien</q>
+          </abv:tr></sense>
         <abv:exampleGrp>
           <abv:example>
-            <quote></quote>
+            <quote>„Ænæ artag bazzadtæn“. — Omæ dyn kæj axxos ū? </quote>
+            <abv:tr xml:lang="ru">
+              <q>«я осталась без топлива». — Ну и кто же тебе виноват?</q>
+            </abv:tr>
+            <abv:tr xml:lang="en">
+              <q>«I ran out of fuel». — Well, who will you blame?</q>
+            </abv:tr>
           </abv:example>
         </abv:exampleGrp>
-        <etym xml:lang="ru"></etym>
+        <etym xml:lang="ru">Из утвердительной частицы <ref type="xr" target="#entry_o1"/> и союза
+            <ref type="xr" target="#entry_æmæ"/>.</etym>
+        <etym xml:lang="en">From an affirmative particle <ref type="xr" target="#entry_o1"/> and
+          conjunction <ref type="xr" target="#entry_æmæ"/>.</etym>
       </entry>
     </body>
   </text>
 </TEI>
+
