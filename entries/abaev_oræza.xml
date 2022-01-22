@@ -1,33 +1,67 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">oræza</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
       <entry xml:id="entry_oræza" xml:lang="os" abv:completeness="incomplete">
         <form type="lemma"><orth>oræza</orth></form>
-        <sense><abv:tr xml:lang="ru"><q></q></abv:tr></sense>
+        <sense xml:lang="os-x-digor"><usg><lang/></usg><abv:tr xml:lang="ru">
+            <q>мусульманский пост</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>Muslim fasting</q>
+          </abv:tr><abv:tr xml:lang="ru">
+            <q>ураза</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>sawm</q>
+          </abv:tr></sense>
+        <note xml:lang="ru" type="comment">; ср. <ref type="xr" target="#entry_marxo">marxo |
+            marxwa</ref><q>христианский пост</q></note>
+        <note xml:lang="en" type="comment">; cf. <ref type="xr" target="#entry_marxo">marxo |
+            marxwa</ref><q>Christian fasting</q></note>
         <abv:exampleGrp>
-          <abv:example>
-            <quote></quote>
+          <abv:example xml:lang="os-x-digor">
+            <quote>ælvæst ma ʽпсæ onæn (zærændtæn) sæ rænttæ: sæ marxwa, oræza ci næʽj</quote>
+            <abv:tr xml:lang="ru">
+              <q>пока у них (стариков) стянуты пояса: тут и христианский, и мусульманский пост</q>
+            </abv:tr>
+            <abv:tr xml:lang="en">
+              <q>пока у них (стариков) стянуты пояса: тут и христианский, и мусульманский пост</q>
+            </abv:tr>
+            <bibl><ref type="bibl" target="#src_Bes."/><biblScope>73</biblScope></bibl>
           </abv:example>
         </abv:exampleGrp>
-        <etym xml:lang="ru"></etym>
+        <etym xml:lang="ru">Из <mentioned xml:lang="fa"><lang/><w>rūza</w><gloss><q>мусульманский
+                пост</q></gloss></mentioned>; ср. <mentioned xml:lang="trk"
+              ><lang/><w>uraza</w><gloss>id.</gloss><note type="bibl"><bibl>(<ref type="bibl"
+                  target="#ref_Радлов"/><biblScope>I
+          1655</biblScope>)</bibl></note></mentioned>.</etym>
+        <etym xml:lang="en">From <mentioned xml:lang="fa"><lang/><w>rūza</w><gloss><q>Muslim
+                fasting</q></gloss></mentioned>; cf. <mentioned xml:lang="trk"
+              ><lang/><w>uraza</w><gloss>id.</gloss><note type="bibl"><bibl>(<ref type="bibl"
+                  target="#ref_Радлов"/><biblScope>I
+          1655</biblScope>)</bibl></note></mentioned>.</etym>
       </entry>
     </body>
   </text>
 </TEI>
+
