@@ -1,33 +1,154 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ormeg</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
       <entry xml:id="entry_ormeg" xml:lang="os" abv:completeness="incomplete">
-        <form type="lemma"><orth>ormeg</orth></form>
-        <sense><abv:tr xml:lang="ru"><q></q></abv:tr></sense>
+        <form type="lemma"><orth xml:lang="os-x-digor">ormeg
+            (<?oxy_comment_start author="julie" timestamp="20220122T230355+0300" comment="скобочки!"?>wormeg<?oxy_comment_end?>)</orth></form>
+        <sense xml:lang="os-x-digor"><usg><lang/></usg><abv:tr xml:lang="ru">
+            <q>дорогой кафтан из верблюжьей шерсти, надеваемый в особых случаях</q>
+            <note xml:lang="ru" type="comment">(в эпосе, в исторических песнях)</note>
+            <note xml:lang="en" type="comment">(в эпосе, в исторических песнях)</note>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>an expensive camel wool caftan worn on special occasions</q>
+            <note type="comment">(in epic literature, in historical songs)</note>
+          </abv:tr></sense>
+        <?oxy_comment_start author="julie" timestamp="20220122T231202+0300" comment="это у Абаева выделено как пример..."?>
+        <note xml:lang="ru" type="comment">. Снаряжая Оразмага на сватовство, Нарты надевают на него
+          все самое ценное (<w>xæznatæ</w>): одежду — <oRef/>, оружие — <ref type="xr"
+            target="#entry_cīrq"><hi rend="italic">cerq</hi></ref>(<bibl><ref type="bibl"
+              target="#src_СОПам."/><biblScope>II 53, 66</biblScope></bibl>)</note>
+        <note xml:lang="en" type="comment">. Equipping Orazmag for matchmaking, the Narts put on him
+          all the most valuable things (<w>xæznatæ</w>): clothes — <oRef/>, weapon — <ref type="xr"
+            target="#entry_cīrq"><hi rend="italic">cerq</hi></ref>(<bibl><ref type="bibl"
+              target="#src_СОПам."/><biblScope>II 53, 66</biblScope></bibl>)</note><?oxy_comment_end?>
         <abv:exampleGrp>
           <abv:example>
-            <quote></quote>
+            <quote>Wærxæg æj (læqwæni) æ ormegi dumæggagi batuxta</quote>
+            <abv:tr xml:lang="ru">
+              <q rendition="#rend_smallcaps">Уархаг его (мальчика) завернул в полу своего ормега</q>
+            </abv:tr>
+            <abv:tr xml:lang="en">
+              <q rendition="#rend_smallcaps">Warhag wrapped him (the boy) in the hem of his
+                ormeg</q>
+            </abv:tr>
+            <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II 76</biblScope></bibl>
+          </abv:example>
+          <abv:example>
+            <quote>æ daræs in ravardtoncæ (Esenæn); e dær sæ æ wæle iskodta, æ ormeg ba æ fæsontæbæl
+              ærbagælsta æma sæmæ otemæj racudæj iwazægdonæmæ</quote>
+            <abv:tr xml:lang="ru">
+              <q rendition="#rend_smallcaps">„(Есену) подали его одежду; он надел ее, а на спину
+                накинул ормег и в таком виде вышел к ним (гостям) в кунацкую</q>
+            </abv:tr>
+            <abv:tr xml:lang="en">
+              <q rendition="#rend_smallcaps">„(Yesen) was given his clothes; he put it on, and threw
+                an ormeg on his back, and went out like this to them (the guests) in the guest
+                room</q>
+            </abv:tr>
+            <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II 127</biblScope></bibl>
           </abv:example>
         </abv:exampleGrp>
-        <etym xml:lang="ru"></etym>
+        <etym xml:lang="ru">Заимствовано из тюркского или монгольского; ср. <mentioned
+            xml:lang="trk"><lang/><w>örmäk</w><w>örmäk</w><gloss><q>ткань из верблюжьей
+              шерсти</q></gloss><note type="bibl">(<bibl><ref type="bibl" target="#ref_Радлов"
+                  /><biblScope>I 1242</biblScope></bibl>)</note></mentioned>, <mentioned
+            xml:lang="xal"><lang/><w>örmög</w><gloss><q>вид кафтана</q></gloss><note type="bibl"
+                  >(<bibl><ref type="bibl" target="#ref_Ramstedt"
+              /><biblScope>300</biblScope></bibl>)</note></mentioned>, <mentioned xml:lang="mn"
+              ><lang/><w>örmege</w><gloss><q>Mantel</q></gloss><note type="bibl">(<bibl><ref
+                  type="bibl" target="#ref_Doerfer"/><biblScope>I
+            52</biblScope></bibl>)</note></mentioned>, от корня
+            <?oxy_comment_start author="julie" timestamp="20220123T140210+0300" comment="сделать тюркским или монгольским?"?><w>ör-</w><?oxy_comment_end?>
+          <q>плести</q>, <q>ткать</q> (<mentioned xml:lang="ky"><lang/><w>örmök</w><gloss><q>ткацкий
+                станок</q></gloss><note type="bibl">(<bibl><ref type="bibl" target="#ref_Юдахин"
+                  /><biblScope>337</biblScope></bibl>)</note></mentioned>). Уже в XIV в. (1344 г.)
+          свидетельствуется на персидской почве (<bibl><ref type="bibl"
+              target="#ref_Salemann. Shams i Fachrii Ispahanensis Lexicon persicum. Казань,"
+              /><biblScope>1887, стр. 184</biblScope></bibl>): <mentioned xml:lang="fa"
+              ><lang/><w>urmak</w><gloss><q>шерстяной клобук</q></gloss>.<note xml:lang="ru"
+              type="footnote"><bibl><ref type="bibl" target="#ref_Vullers"/><biblScope>(I
+                  140</biblScope></bibl> s. v.
+              <?oxy_comment_start author="julie" timestamp="20220123T142535+0300" comment="))))))))))"?>ا
+              و رم ك<?oxy_comment_end?> „Alii turcicam vocem esse dicunt“) со ссылкой на Borhāni
+              Qāti.</note><note xml:lang="en" type="footnote"><bibl><ref type="bibl"
+                  target="#ref_Vullers"/><biblScope>(I 140</biblScope></bibl> s. v.
+              <?oxy_comment_start author="julie" timestamp="20220123T142535+0300" comment="))))))))))"?>ا
+              و رم ك<?oxy_comment_end?> „Alii turcicam vocem esse dicunt“) со ссылкой на Borhāni
+              Qāti.</note></mentioned>. Отсюда и
+            <?oxy_comment_start author="julie" timestamp="20220123T143844+0300" comment="армянский"?><mentioned
+            xml:lang="hue"
+          ><lang/><w>vermak</w><gloss><q>одеяло</q></gloss></mentioned><?oxy_comment_end?>,
+            <mentioned xml:lang="rus"><lang/><w>ормяк</w><w>армяк</w><note type="bibl">(<bibl><ref
+                  type="bibl" target="#ref_Salemann"/><biblScope>op.
+            cit.</biblScope></bibl>)</note>. В пользу иранского происхождения всей группы
+            высказывается
+            <?oxy_comment_start author="julie" timestamp="20220123T144548+0300" comment="small caps хотелось бы"?>Bailey<?oxy_comment_end?>
+            (</mentioned><bibl><ref type="bibl" target="#ref_Bailey._Asica._Suppl."
+              /><biblScope>206</biblScope></bibl>, <bibl><ref type="bibl"
+              target="#ref_Ambages Indoiranicae"/><biblScope>AION 1959 I <hi rend="italic">2</hi>
+              121, прим. 3</biblScope></bibl>).</etym>
+        <etym xml:lang="en">A borrowing from Turkic or Mongolian; cf. <mentioned xml:lang="trk"
+              ><lang/><w>örmäk</w><w>örmäk</w><gloss><q>camel wool fabric</q></gloss><note
+              type="bibl">(<bibl><ref type="bibl" target="#ref_Радлов"/><biblScope>I
+                  1242</biblScope></bibl>)</note></mentioned>, <mentioned xml:lang="xal"
+              ><lang/><w>örmög</w><gloss><q>a kind of caftan</q></gloss><note type="bibl"
+                  >(<bibl><ref type="bibl" target="#ref_Ramstedt"
+              /><biblScope>300</biblScope></bibl>)</note></mentioned>, <mentioned xml:lang="mn"
+              ><lang/><w>örmege</w><gloss><q>Mantel</q></gloss><note type="bibl">(<bibl><ref
+                  type="bibl" target="#ref_Doerfer"/><biblScope>I
+            52</biblScope></bibl>)</note></mentioned>, from the root
+            <?oxy_comment_start author="julie" timestamp="20220123T140210+0300" comment="сделать тюркским или монгольским?"?><w>ör-</w><?oxy_comment_end?>
+          <q>knit</q>, <q>weave</q> (<mentioned xml:lang="ky"><lang/><w>örmök</w><gloss><q>weaver
+                loom</q></gloss><note type="bibl">(<bibl><ref type="bibl" target="#ref_Юдахин"
+                  /><biblScope>337</biblScope></bibl>)</note></mentioned>). It has been already
+          attested in Persian in XIV century (1344) (<bibl><ref type="bibl"
+              target="#ref_Salemann. Shams i Fachrii Ispahanensis Lexicon persicum. Казань,"
+              /><biblScope>1887, p. 184</biblScope></bibl>): <mentioned xml:lang="fa"
+              ><lang/><w>urmak</w><gloss><q>woolen hood</q></gloss>.<note xml:lang="ru"
+              type="footnote"><bibl><ref type="bibl" target="#ref_Vullers"/><biblScope>(I
+                  140</biblScope></bibl> s. v.
+              <?oxy_comment_start author="julie" timestamp="20220123T142535+0300" comment="))))))))))"?>ا
+              و رم ك<?oxy_comment_end?> „Alii turcicam vocem esse dicunt“) со ссылкой на Borhāni
+              Qāti.</note><note xml:lang="en" type="footnote"><bibl><ref type="bibl"
+                  target="#ref_Vullers"/><biblScope>(I 140</biblScope></bibl> s. v.
+              <?oxy_comment_start author="julie" timestamp="20220123T142535+0300" comment="))))))))))"?>ا
+              و رم ك<?oxy_comment_end?> „Alii turcicam vocem esse dicunt“) with a reference to
+              Borhāni Qāti.</note></mentioned>. Hence consider the following words:
+            <?oxy_comment_start author="julie" timestamp="20220123T143844+0300" comment="армянский"?><mentioned
+            xml:lang="hue"
+          ><lang/><w>vermak</w><gloss><q>blanket</q></gloss></mentioned><?oxy_comment_end?>,
+            <mentioned xml:lang="rus"><lang/><w>ормяк</w><w>армяк</w><note type="bibl">(<bibl><ref
+                  type="bibl" target="#ref_Salemann"/><biblScope>op.
+            cit.</biblScope></bibl>)</note>.
+            <?oxy_comment_start author="julie" timestamp="20220123T144548+0300" comment="small caps хотелось бы"?>Bailey<?oxy_comment_end?>
+            speaks in favor of the Iranian origin of the entire group (</mentioned><bibl><ref
+              type="bibl" target="#ref_Bailey._Asica._Suppl."/><biblScope>206</biblScope></bibl>,
+              <bibl><ref type="bibl" target="#ref_Ambages Indoiranicae"/><biblScope>AION 1959 I <hi
+                rend="italic">2</hi> 121, footnote 3</biblScope></bibl>).</etym>
       </entry>
     </body>
   </text>
 </TEI>
+

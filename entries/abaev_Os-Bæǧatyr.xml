@@ -1,33 +1,62 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">Os-Bæǧatyr</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
       <entry xml:id="entry_Os-Bæǧatyr" xml:lang="os" abv:completeness="incomplete">
         <form type="lemma"><orth>Os-Bæǧatyr</orth></form>
-        <sense><abv:tr xml:lang="ru"><q></q></abv:tr></sense>
-        <abv:exampleGrp>
-          <abv:example>
-            <quote></quote>
-          </abv:example>
-        </abv:exampleGrp>
-        <etym xml:lang="ru"></etym>
+        <sense xml:lang="os-x-iron"><usg><lang/></usg> the name of the semi-legendary heroes and
+          rulers of Ossetia, repeatedly mentioned in the Georgian chronicle <note type="bibl"
+                ><bibl><ref type="bibl"
+                target="#ref_Kartlis Cxovreba, список царицы Анны. Под ред. С. Г. Каухчишвили. Тбилиси, 1942"
+                /><biblScope>pp. 101, 102, 165</biblScope></bibl></note></sense>
+        <etym xml:lang="ru">Буквально <q rendition="#rend_doublequotes">Осский (осетинский)
+            богатырь</q>; из <mentioned xml:lang="ka"
+            ><lang/><w>osi</w><gloss><q>осетин</q></gloss></mentioned> и <mentioned xml:lang="mn"
+              ><lang/><w>baǧatur</w><gloss><q>богатырь</q></gloss></mentioned>. Ср. по образованию
+            <w>Urus-Bagatyr</w>
+          <q rendition="#rend_doublequotes">Русский богатырь</q>, имя чагатайского посланника в
+          Москве в 1490 г. (<bibl><ref type="bibl" target="#ref_Acta Linguistica Hung."
+              /><biblScope>III <hi rend="italic">3—4</hi> 341</biblScope></bibl>). Другая форма
+          этого имени звучала <w>Batyr-As</w>
+          <q rendition="#rend_doublequotes">Богатырь Асский</q>, откуда имя одного из виднейших
+          героев нартовского эпоса <w>Batyraz</w>, <ref type="xr" target="#entry_Batraz"/>,
+            <w>Batraʒ</w>.</etym>
+        <etym xml:lang="en">Literally <q rendition="#rend_doublequotes">Oss (Ossetic) bogatyr</q>;
+          from <mentioned xml:lang="ka"><lang/><w>osi</w><gloss><q>Osset</q></gloss></mentioned> and
+            <mentioned xml:lang="mn"><lang/><w>baǧatur</w><gloss><q>bogatyr</q></gloss></mentioned>.
+          Cf. by the derivation pattern <w>Urus-Bagatyr</w>
+          <q rendition="#rend_doublequotes">Russian bogatyr</q>, the name of the Chagatai envoy in
+          Moscow in 1490. (<bibl><ref type="bibl" target="#ref_Acta Linguistica Hung."
+              /><biblScope>III <hi rend="italic">3—4</hi> 341</biblScope></bibl>). Another form of
+          this name was <w>Batyr-As</w>
+          <q rendition="#rend_doublequotes"
+            ><?oxy_comment_start author="julie" timestamp="20220123T170500+0300" comment="асский
+"?>As<?oxy_comment_end?> Bogatyr</q>, where откуда the name of one of the most prominent
+          heroes of the Nart epic <w>Batyraz</w>, <ref type="xr" target="#entry_Batraz"/>,
+            <w>Batraʒ</w> comes from.</etym>
       </entry>
     </body>
   </text>
 </TEI>
+
