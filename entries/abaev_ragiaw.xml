@@ -1,31 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ragiaw</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_ragiaw" xml:lang="os-x-digor" abv:completeness="questions">
+      <entry xml:id="entry_ragiaw" xml:lang="os-x-digor" abv:completeness="complete">
         <form type="lemma"><orth>ragiaw</orth></form>
-        <sense><usg xml:lang="os-x-digor"><lang/></usg>
-          <sense><abv:tr xml:lang="ru">
-              <q>рано</q>
-            </abv:tr></sense></sense>
+        <usg><lang/></usg>
         <sense><sense><abv:tr xml:lang="ru">
+              <q>рано</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>early</q>
+            </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>ранехонько</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>at an early hour</q>
             </abv:tr></sense></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
@@ -35,6 +43,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">тогда добрались Биаслановы рано утром до
                 пастуха Уаза</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">then the Biaslanovs got to the shepherd Uaz
+                early in the morning</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Iræf"/>
               <biblScope>82</biblScope></bibl>
           </example>
@@ -43,14 +55,21 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">откуда ты явился так рано?</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">where did you come from so early?</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Iræf"/>
               <biblScope>87</biblScope></bibl>
           </example>
         </exampleGrp>
-        <etym xml:lang="ru">Наречное образование на <m>-aw</m> от
-            <?oxy_comment_start author="Irene" timestamp="20220207T173315+0300" comment="не нашла на что сделать хреф"?><w>ragi</w><?oxy_comment_end?>.
-          Ср. по образованию <ref type="xr" target="#entry_æræǵyjaw"><w>æræǵyjaw</w>
+        <etym xml:lang="ru">Наречное образование на <m>-aw</m> от <ref type="xr"
+            target="#entry_raǵy"><w>ragi</w></ref>. Ср. по образованию <ref type="xr"
+            target="#entry_æræǵyjaw"><w>æræǵyjaw</w>
             <gloss><q>напоследок</q></gloss></ref>.</etym>
+        <etym xml:lang="en">Adverbial <m>-aw</m>-derivative of <ref type="xr" target="#entry_raǵy"
+              ><w>ragi</w></ref>. Cf. the same derivation pattern of <ref type="xr"
+            target="#entry_æræǵyjaw"><w>æræǵyjaw</w>
+            <gloss><q>in the end</q></gloss></ref>.</etym>
       </entry>
     </body>
   </text>
