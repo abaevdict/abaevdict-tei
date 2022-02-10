@@ -1,46 +1,67 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">otæ</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_otæ" xml:lang="os" abv:completeness="incomplete">
-        <form type="lemma"><orth>otæ
-            (<?oxy_comment_start author="julie" timestamp="20220123T170631+0300" comment="скобочки!"?>wotæ<?oxy_comment_end?>)</orth></form>
-        <sense xml:lang="os-x-digor"><usg><lang/></usg><abv:tr xml:lang="ru">
+      <entry xml:id="entry_otæ" xml:lang="os-x-digor" abv:completeness="incomplete">
+        <form type="lemma"><orth>otæ</orth><form type="variant"
+              ><orth><?oxy_comment_start author="julie" timestamp="20220123T170631+0300" comment="скобочки!"?>wotæ<?oxy_comment_end?></orth></form></form>
+        <usg><lang/></usg>
+        <sense xml:lang="os-x-digor"><abv:tr xml:lang="ru">
             <q>так</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>so</q>
           </abv:tr></sense>
-        <note type="comment">; и. <ref type="xr" target="#entry_aftæ"/> id.; допускает образование
-          мн. ч. <w xml:lang="os-x-digor">otitæ</w> (и. <w xml:lang="os-x-iron">aftætæ</w>)</note>
+        <note xml:lang="ru" type="comment">; и. <ref type="xr" target="#entry_aftæ"/> id.; допускает
+          образование мн. ч. <oRef>otitæ</oRef> (<ref type="xr" target="#entry_aftæ"
+            xml:lang="os-x-iron"><lang/><w xml:lang="os-x-iron">aftætæ</w></ref>)</note>
+        <note xml:lang="en" type="comment">; <ref type="xr" target="#entry_aftæ"
+            xml:lang="os-x-iron"><lang/>
+            <w>aftæ</w></ref> id.; допускает образование мн. ч. <oRef>otitæ</oRef> (<ref type="xr"
+            target="#entry_aftæ" xml:lang="os-x-iron"><lang/><w xml:lang="os-x-iron"
+            >aftætæ</w></ref>)</note>
         <abv:exampleGrp>
           <abv:example>
             <quote>wæxe kud fænduj, otæ bakxentæ</quote>
             <abv:tr xml:lang="ru">
               <q>как вам угодно, так поступите</q>
             </abv:tr>
-            <bibl><ref type="bibl" target="#ref_ОЭп."/><biblScope>60<hi rendition="#rend_subscript"
-                  >280</hi></biblScope></bibl>
+            <abv:tr xml:lang="en">
+              <q>do so, as you wish</q>
+            </abv:tr>
+            <bibl><ref type="bibl" target="#ref_ОЭп."/>
+              <biblScope>60<hi rendition="#rend_subscript">280</hi></biblScope></bibl>
           </abv:example>
           <abv:example>
             <quote>otæ dæ ǧæwuj</quote>
             <abv:tr xml:lang="ru">
               <q>так тебе и нужно</q>
             </abv:tr>
-            <bibl><ref type="bibl" target="#ref_ОЭ"/><biblScope>I 92</biblScope></bibl>
+            <abv:tr xml:lang="en">
+              <q>it serves you right,</q>
+            </abv:tr>
+            <bibl><ref type="bibl" target="#ref_ОЭ"/>
+              <biblScope>I 92</biblScope></bibl>
           </abv:example>
           <abv:example>
             <quote>Bifjix ænæ osæ ke ʽrzærond æj, oj zudton, fal ǧuddag cæmæn otæ ʽrcudæj, е ba min
@@ -49,26 +70,42 @@
               <q>что Бидзих состарился без жены, это я знал, но почему так случилось, это мне было
                 неизвестно</q>
             </abv:tr>
-            <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>118</biblScope></bibl>
+            <abv:tr xml:lang="en">
+              <q>I knew that Bidzih had grown old without a wife, but I didn't know why it
+                happened.</q>
+            </abv:tr>
+            <bibl><ref type="bibl" target="#src_Iræf"/>
+              <biblScope>118</biblScope></bibl>
           </abv:example>
           <abv:example>
             <quote>he otæ kæwuj ænosi dalæ komi i wælnad</quote>
             <abv:tr xml:lang="ru">
               <q>вот так он плачет, не переставая, вон внизу в ущелье над дорогой</q>
             </abv:tr>
-            <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>25</biblScope></bibl>
+            <abv:tr xml:lang="en">
+              <q>that's how he cries, without ceasing, down there in the gorge above the road</q>
+            </abv:tr>
+            <bibl><ref type="bibl" target="#src_Iræf"/>
+              <biblScope>25</biblScope></bibl>
           </abv:example>
           <abv:example>
             <quote>otæ in zæǧuj minkʼi Batraz</quote>
             <abv:tr xml:lang="ru">
               <q>так говорит ему маленький Батраз</q>
             </abv:tr>
-            <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II 26</biblScope></bibl>
+            <abv:tr xml:lang="en">
+              <q>that's what a little Batraz tells him</q>
+            </abv:tr>
+            <bibl><ref type="bibl" target="#src_СОПам."/>
+              <biblScope>II 26</biblScope></bibl>
           </abv:example>
           <abv:example>
             <quote>i bæxæn Woruzmæg kud bafægaxsta, rast xajwan otitæ bærgæ nikkænuj</quote>
             <abv:tr xml:lang="ru">
               <q>как Орузмаг наказал своему коню, точно так и делает животное</q>
+            </abv:tr>
+            <abv:tr xml:lang="en">
+              <q>as Uruzmag ordered his horse, so does the animal</q>
             </abv:tr>
             <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II 26</biblScope></bibl>
           </abv:example>
@@ -77,13 +114,18 @@
             <abv:tr xml:lang="ru">
               <q>это почему так? — это потому так...</q>
             </abv:tr>
-            <bibl><ref type="bibl" target="#src_ОЭ"/><biblScope>I 108, 110, 112
-              passim</biblScope></bibl>
+            <abv:tr xml:lang="en">
+              <q>why is this so? — that's why it is so...</q>
+            </abv:tr>
+            <bibl><ref type="bibl" target="#src_ОЭ"/>
+              <biblScope>I 108, 110, 112 passim</biblScope></bibl>
           </abv:example>
         </abv:exampleGrp>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
-          <note type="comment" xmlns="http://www.tei-c.org/ns/1.0">После придаточного временного
-            предложения:</note>
+          <note xmlns="http://www.tei-c.org/ns/1.0" xml:lang="ru" type="comment">После придаточного
+            временного предложения:</note>
+          <note xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" type="comment">After a temporal
+            subordinate clause:</note>
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">Asægoj osæ ewnægæj kud badtæj, otæ ʽj
               nijjafta</quote>
@@ -91,10 +133,12 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">она застала жену Асаго, когда та сидела
                 одинокая</q>
             </tr>
-            <bibl xmlns="http://www.tei-c.org/ns/1.0">
-              <ref type="bibl" target="#src_MSt."/>
-              <biblScope>10<hi rendition="#rend_subscript">14-15</hi></biblScope>
-            </bibl>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">she found Asago's wife when she was sitting
+                alone</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_MSt."/>
+              <biblScope>10<hi rendition="#rend_subscript">14-15</hi></biblScope></bibl>
           </example>
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">kizgæ bæxi ærdægxwær kud fæcæj, otæ ʽj
@@ -103,29 +147,49 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">он увидел девушку, когда она наполовину съела
                 лошадь</q>
             </tr>
-            <bibl xmlns="http://www.tei-c.org/ns/1.0">
-              <ref type="bibl" target="#src_MSt."/>
-              <biblScope>16<hi rendition="#rend_subscript">3-4</hi></biblScope>
-            </bibl>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">he saw the girl when she ate half of the
+                horse</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_MSt."/>
+              <biblScope>16<hi rendition="#rend_subscript">3-4</hi></biblScope></bibl>
           </example>
         </exampleGrp>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <?oxy_comment_start author="julie" timestamp="20220123T174107+0300" comment="очень сомнительный кусок"?>
-          <note type="comment" xmlns="http://www.tei-c.org/ns/1.0"><quote>mænæj otæ</quote> (и.
-              <quote>mænæj aftæ</quote>) <cit>
+          <note xmlns="http://www.tei-c.org/ns/1.0" xml:lang="ru" type="comment"><quote>mænæj
+              otæ</quote> (и. <quote>mænæj aftæ</quote>) <cit>
               <sense><abv:tr xml:lang="ru">
+                  <q rendition="#rend_doublequotes">мне казалось</q>
+                </abv:tr><abv:tr xml:lang="en">
                   <q rendition="#rend_doublequotes">мне казалось</q>
                 </abv:tr><abv:tr xml:lang="ru">
                   <q rendition="#rend_doublequotes">я думал</q>
+                </abv:tr><abv:tr xml:lang="en">
+                  <q rendition="#rend_doublequotes">я думал</q>
                 </abv:tr></sense>
-            </cit>:</note><?oxy_comment_end?>
+            </cit>:</note>
+          <note xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" type="comment"><quote>mænæj
+              otæ</quote> (<quote xml:lang="os-x-iron"><lang/> mænæj aftæ</quote>) <cit>
+              <sense><abv:tr xml:lang="ru">
+                  <q rendition="#rend_doublequotes">мне казалось</q>
+                </abv:tr><abv:tr xml:lang="en">
+                  <q rendition="#rend_doublequotes">it seemed to me</q>
+                </abv:tr><abv:tr xml:lang="ru">
+                  <q rendition="#rend_doublequotes">я думал</q>
+                </abv:tr><abv:tr xml:lang="en">
+                  <q rendition="#rend_doublequotes">I thought</q>
+                </abv:tr></sense>
+            </cit>: </note><?oxy_comment_end?>
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">mænæj otæ rædujun</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">мне казалось, что я ошибаюсь</q>
             </tr>
-            <bibl xmlns="http://www.tei-c.org/ns/1.0">
-              <ref type="bibl" target="#src_Qazb."/>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">it seemed to me that I was wrong</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Qazb."/>
               <biblScope>73</biblScope>
             </bibl>
           </example>
@@ -136,43 +200,86 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">когда он ложился спать, окна были открыты, и
                 Дзаххо думал, что они и теперь открыты</q>
             </tr>
-            <bibl xmlns="http://www.tei-c.org/ns/1.0">
-              <ref type="bibl" target="#src_Bes._Ka_ke"/>
-              <biblScope>41</biblScope>
-            </bibl>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">when he went to bed, the windows were open, and
+                Zahho thought that they were still open</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Bes._Ka_ke"/>
+              <biblScope>41</biblScope></bibl>
           </example>
         </exampleGrp>
         <re>
           <form type="lemma"><orth>otæ ræxgi</orth></form>
           <sense><abv:tr xml:lang="ru">
               <q>тем временем</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>meanwhile</q>
             </abv:tr></sense>
         </re>
-        <etym xml:lang="ru">Восходит к <mentioned xml:lang="ira"><lang/><w type="rec"
-            >avaϑa</w></mentioned>; ср. <mentioned xml:lang="av"><lang/><w>avaϑa</w></mentioned>,
-            <mentioned xml:lang="peo"><lang/><w>avaϑa</w><gloss><q>так</q>,
-            <q>тогда</q></gloss></mentioned> от местоимения <mentioned xml:lang="peo"
-                ><w>ava-</w><gloss><q>тот</q></gloss></mentioned> (см. <ref type="xr"
-            target="#entry_ū-"><hi rend="italic">ū</hi>- | <hi rend="italic">o</hi>-</ref>) с
-          наречным формантом -<w>ϑa</w>. Ср. также <mentioned xml:lang="sog"
-                ><lang/><w>wt-</w><gloss><q>так</q>, <q>столь</q></gloss></mentioned> в сложных
-          словах: <mentioned xml:lang="sog"><w>wtsp'yt-</w><gloss><q>столь
-            белый</q></gloss></mentioned> и др. (<bibl><ref type="bibl" target="#ref_Gershevitch"
-              /><biblScope>§ 1315</biblScope></bibl>); сюда же <mentioned xml:lang="ku"
-              ><lang/><w>wuha</w><gloss><q>ainsi</q></gloss><note type="bibl"> (<bibl><ref
-                  type="bibl" target="#ref_Bedir_Xan"/></bibl>)</note></mentioned>? Значение наречия
-          места получили <mentioned xml:lang="zkh"><lang/><w>waϑ</w></mentioned>, <mentioned
-            xml:lang="yai"><lang/><w>wat</w><gloss><q>там</q></gloss></mentioned>. Параллельно
-          употребляется форма <w>atæ</w> из <mentioned xml:lang="ira"><w type="rec"
-            >āϑa</w></mentioned>. В соответствие д. <oRef/> в иронском ожидали бы <w type="rec"
-            >ūtæ</w>. Такая форма несомненно существовала в прошлом. Она была усилена другим
-          указательным местоимением <w>ā-</w>: <w>ā-ūtæ</w>, откуда в дальнейшем получилось <ref
-            type="xr" target="#entry_aftæ"/>.<note type="footnote">Форма <w>autæ</w>
-            засвидетельствована <hi rend="smallcaps">Шегреном</hi> и <hi rend="smallcaps"
-              >Шифнером</hi>.</note> См. <ref type="xr" target="#entry_aftæ"/>, <ref type="xr"
-            target="#entry_atæ_2"/>, <ref type="xr" target="#entry_ūtæ"/>, <ref type="xr"
-            target="#entry_otemæj"/>, <ref type="xr" target="#entry_otid"/>.</etym>
+        <etym xml:lang="ru">Восходит к <mentioned xml:lang="ira"><lang/>
+            <w type="rec">avaϑa</w></mentioned>; ср. <mentioned xml:lang="av"><lang/>
+            <w>avaϑa</w></mentioned>, <mentioned xml:lang="peo"><lang/>
+            <w>avaϑa</w><gloss><q>так</q>, <q>тогда</q></gloss></mentioned> от местоимения
+            <mentioned xml:lang="peo"><w>ava-</w>
+            <gloss><q>тот</q></gloss></mentioned> (см. <ref type="xr" target="#entry_ū-"><w>ū-</w> |
+              <w>o-</w></ref>) с наречным формантом <m>-ϑa</m>. Ср. также <mentioned xml:lang="sog"><lang/>
+            <w>wt-</w>
+            <gloss><q>так</q>, <q>столь</q></gloss></mentioned> в сложных словах: <mentioned
+            xml:lang="sog"><w>wtsp'yt-</w>
+            <gloss><q>столь белый</q></gloss></mentioned> и др. (<bibl><ref type="bibl"
+              target="#ref_Gershevitch"/>
+            <biblScope>§ 1315</biblScope></bibl>); сюда же <mentioned xml:lang="ku"><lang/>
+            <w>wuha</w>
+            <gloss><q>ainsi</q></gloss><note type="bibl"> (<bibl><ref type="bibl"
+                  target="#ref_Bedir_Xan"/></bibl>)</note></mentioned>? Значение наречия места
+          получили <mentioned xml:lang="zkh"><lang/>
+            <w>waϑ</w></mentioned>, <mentioned xml:lang="yai"><lang/>
+            <w>wat</w>
+            <gloss><q>там</q></gloss></mentioned>. Параллельно употребляется форма <w>atæ</w> из
+            <mentioned xml:lang="ira"><w type="rec">āϑa</w></mentioned>. В соответствие
+          <?oxy_comment_start author="julie" timestamp="20220209T185248+0300" comment="в oref не получается засунуть lang"?>д.
+          <oRef/><?oxy_comment_end?> в иронском ожидали бы <w type="rec">ūtæ</w>. Такая форма
+          несомненно существовала в прошлом. Она была усилена другим указательным местоимением
+            <w>ā-</w>: <w>ā-ūtæ</w>, откуда в дальнейшем получилось <ref type="xr"
+            target="#entry_aftæ"/>.<note xml:lang="ru" type="footnote">Форма <w>autæ</w>
+            засвидетельствована <hi rend="smallcaps" rendition="#rend_smallcaps">Шегреном</hi> и <hi
+              rend="smallcaps" rendition="#rend_smallcaps">Шифнером</hi>.</note><note xml:lang="en"
+            type="footnote">Форма <w>autæ</w> засвидетельствована <hi rend="smallcaps">Шегреном</hi>
+            и <hi rend="smallcaps">Шифнером</hi>.</note> См. <ref type="xr" target="#entry_aftæ"/>,
+            <ref type="xr" target="#entry_atæ_2"/>, <ref type="xr" target="#entry_ūtæ"/>, <ref
+            type="xr" target="#entry_otemæj"/>, <ref type="xr" target="#entry_otid"/>.</etym>
+        <etym xml:lang="en">It traces back to <mentioned xml:lang="ira"><lang/>
+            <w type="rec">avaϑa</w></mentioned>; cf. <mentioned xml:lang="av"><lang/>
+            <w>avaϑa</w></mentioned>, <mentioned xml:lang="peo"><lang/>
+            <w>avaϑa</w><gloss><q>so</q>, <q>then</q></gloss></mentioned> from a pronoun <mentioned
+            xml:lang="peo"><w>ava-</w>
+            <gloss><q>that</q></gloss></mentioned> (see <ref type="xr" target="#entry_ū-"><w>ū-</w>
+            | <w>o-</w></ref>) with an adverbial formant <m>-ϑa</m>. Cf. also <mentioned
+            xml:lang="sog"><lang/>
+            <w>wt-</w>
+            <gloss><q>so</q></gloss></mentioned> in compounds: <mentioned xml:lang="sog"
+              ><w>wtsp'yt-</w>
+            <gloss><q>so white</q></gloss></mentioned> etc. (<bibl><ref type="bibl"
+              target="#ref_Gershevitch"/>
+            <biblScope>§ 1315</biblScope></bibl>); also here <mentioned xml:lang="ku"><lang/>
+            <w>wuha</w>
+            <gloss><q>ainsi</q></gloss><note type="bibl"> (<bibl><ref type="bibl"
+                  target="#ref_Bedir_Xan"/></bibl>)</note></mentioned>? <mentioned xml:lang="zkh"><lang/>
+            <w>waϑ</w></mentioned>, <mentioned xml:lang="yai"><lang/>
+            <w>wat</w>
+            <gloss><q>there</q></gloss></mentioned> have received the adverbial meaning. In
+          parallel, he form <w>atæ</w> from <mentioned xml:lang="ira"><w type="rec"
+            >āϑa</w></mentioned> is used. We would expect in Iron <w type="rec">ūtæ</w> according to
+          Digor <oRef/>. Such a form undoubtedly existed in the past. It was reinforced by another
+          demonstrative pronoun <w>ā-</w>: <w>ā-ūtæ</w>, where then <ref type="xr"
+            target="#entry_aftæ"/> came from.<note type="footnote">The form <w>autæ</w> is attested
+            by <hi rend="smallcaps" rendition="#rend_smallcaps">Shegren</hi> и <hi rend="smallcaps"
+              rendition="#rend_smallcaps">Shifner</hi>.</note> See <ref type="xr"
+            target="#entry_aftæ"/>, <ref type="xr" target="#entry_atæ_2"/>, <ref type="xr"
+            target="#entry_ūtæ"/>, <ref type="xr" target="#entry_otemæj"/>, <ref type="xr"
+            target="#entry_otid"/>.</etym>
       </entry>
     </body>
   </text>
 </TEI>
+

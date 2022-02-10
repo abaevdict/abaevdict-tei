@@ -1,28 +1,37 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ozgalun</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_ozgalun" xml:lang="os" abv:completeness="incomplete">
+      <entry xml:id="entry_ozgalun" xml:lang="os-x-digor" abv:completeness="incomplete">
         <form type="lemma"><orth>ozgalun</orth><form type="participle"
-            ><orth>ozgald</orth></form><orth>(wozgalun)</orth></form>
-        <sense xml:lang="os-x-digor"><usg><lang/></usg><abv:tr xml:lang="ru">
+            ><orth>ozgald</orth></form><?oxy_comment_start author="julie" timestamp="20220210T182810+0300" comment="скобочки"?><form
+            type="variant"><orth>wozgalun</orth></form><?oxy_comment_end?></form>
+        <usg><lang/></usg>
+        <sense xml:lang="os-x-digor"><abv:tr xml:lang="ru">
             <q>взглянуть, посмотреть (косо)</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>take a look, look sideways</q>
           </abv:tr></sense>
         <abv:exampleGrp>
           <abv:example>
@@ -30,14 +39,22 @@
             <abv:tr xml:lang="ru">
               <q>она осматривается вокруг стыдливо</q>
             </abv:tr>
-            <bibl><ref type="bibl" target="#src_Sam."/><biblScope>115</biblScope></bibl>
+            <abv:tr xml:lang="en">
+              <q>she looks around shyly</q>
+            </abv:tr>
+            <bibl><ref type="bibl" target="#src_Sam."/>
+              <biblScope>115</biblScope></bibl>
           </abv:example>
           <abv:example>
             <quote>ajdænæmæ raozgalgæj dæ bor ʒikkotæ du fastaj</quote>
             <abv:tr xml:lang="ru">
               <q>поглядывая в зеркало, ты расчесывала свои русые косы</q>
             </abv:tr>
-            <bibl><ref type="bibl" target="#src_Тайм._Мӕ_зӕрд."/><biblScope>42</biblScope></bibl>
+            <abv:tr xml:lang="en">
+              <q>looking in the mirror, you combed your blond braids</q>
+            </abv:tr>
+            <bibl><ref type="bibl" target="#src_Тайм._Мӕ_зӕрд."/>
+              <biblScope>42</biblScope></bibl>
           </abv:example>
           <abv:example>
             <quote>Sajnægi furt Alij sæmæ raozgælddæltæ kodta ma kizgæj dær, osæj dær banælwægutæ
@@ -46,30 +63,58 @@
               <q>сын Сайнага Али кинул на них косые взгляды, и они, девушки и женщины, попадали в
                 обморок</q>
             </abv:tr>
-            <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II 22</biblScope></bibl>
+            <abv:tr xml:lang="en"/>
+            <bibl>the son of Saynag Ali cast sidelong glances at them, and they, girls and women,
+                fainted<ref type="bibl" target="#src_СОПам."/>
+              <biblScope>II 22</biblScope></bibl>
           </abv:example>
           <abv:example>
             <quote>bæxi mardæj Murǧuzi rasorun fændæ iskodton; fal mæmæ ǧuntʼuz Murǧuz togʒastæj
               raozgaldta</quote>
             <abv:tr xml:lang="ru">
-              <q>я решил отогнать Мургуза (собаку) от лошадиного гтрупа, но хмурый Мургуз взглянул
-                на меня налитыми кровью глазами</q>
+              <q>я решил отогнать Мургуза (собаку) от лошадиного трупа, но хмурый Мургуз взглянул на
+                меня налитыми кровью глазами</q>
             </abv:tr>
-            <bibl><ref type="bibl" target="#src_MD"/><biblScope>1958 III 29</biblScope></bibl>
+            <abv:tr xml:lang="en">
+              <q>I decided to drive Murguz (the dog) away from the horse's corpse, but the gloomy
+                Murguz looked at me with bloodshot eyes</q>
+            </abv:tr>
+            <bibl><ref type="bibl" target="#src_MD"/>
+              <biblScope>1958 III 29</biblScope></bibl>
           </abv:example>
         </abv:exampleGrp>
         <etym xml:lang="ru">Может быть, из <mentioned xml:lang="ira"><w type="rec"
-            >ava-skal-</w></mentioned>, ср. <mentioned xml:lang="de"
-                ><lang/><w>scheel</w><gloss><q>косой</q></gloss></mentioned>, <mentioned
-            xml:lang="de"><w>schielen</w><gloss><q>смотреть косо</q></gloss></mentioned>; к
-            <mentioned xml:lang="ine"><lang/><w type="rec">skel-</w><gloss><q>кривой</q>,
-                <q>косой</q></gloss></mentioned> (<mentioned xml:lang="grc"
-            ><lang/><w>οϰολιος</w></mentioned> и пр.) Развитие значения <q>косой</q> — <q>косой
-            взгляд</q>, <q>косо смотреть</q> как в <mentioned xml:lang="de"
-            ><lang/><w>scheel</w></mentioned>, <mentioned xml:lang="de"><w>schielen</w></mentioned>
-          или <mentioned xml:lang="la"><lang/><w>obliquus</w><note type="comment">(<w>oculo obliquo
-                aspicere</w>)</note></mentioned>.</etym>
+            >ava-skal-</w></mentioned>, ср. <mentioned xml:lang="de"><lang/>
+            <w>scheel</w>
+            <gloss><q>косой</q></gloss></mentioned>, <mentioned xml:lang="de"><w>schielen</w>
+            <gloss><q>смотреть косо</q></gloss></mentioned>; к <mentioned xml:lang="ine"><lang/>
+            <w type="rec">skel-</w>
+            <gloss><q>кривой</q>, <q>косой</q></gloss></mentioned> (<mentioned xml:lang="grc"><lang/>
+            <w>οϰολιος</w></mentioned> и пр.) Развитие значения <q>косой</q> — <q>косой взгляд</q>,
+            <q>косо смотреть</q> как в <mentioned xml:lang="de"><lang/>
+            <w>scheel</w></mentioned>, <mentioned xml:lang="de"><w>schielen</w></mentioned> или
+            <mentioned xml:lang="la"><lang/>
+            <w>obliquus</w>
+            <note xml:lang="ru" type="comment">(<quote>oculo obliquo aspicere</quote>)</note><note
+              xml:lang="en" type="comment">(<quote>oculo obliquo
+            aspicere</quote>)</note></mentioned>.</etym>
+        <etym xml:lang="en">Probably from <mentioned xml:lang="ira"><w type="rec"
+            >ava-skal-</w></mentioned>, cf. <mentioned xml:lang="de"><lang/>
+            <w>scheel</w>
+            <gloss><q>sidelong</q></gloss></mentioned>, <mentioned xml:lang="de"><w>schielen</w>
+            <gloss><q>look sideways</q></gloss></mentioned>; к <mentioned xml:lang="ine"><lang/>
+            <w type="rec">skel-</w>
+            <gloss><q>curve</q>, <q>sidelong</q></gloss></mentioned> (<mentioned xml:lang="grc"><lang/>
+            <w>οϰολιος</w></mentioned> and so on.) The development of the meaning <q>sidelong</q> —
+            <q>sideways glance</q>, <q>look sideways</q> like in <mentioned xml:lang="de"><lang/>
+            <w>scheel</w></mentioned>, <mentioned xml:lang="de"><w>schielen</w></mentioned> or
+            <mentioned xml:lang="la"><lang/>
+            <w>obliquus</w>
+            <note xml:lang="ru" type="comment">(<quote>oculo obliquo aspicere</quote>)</note><note
+              xml:lang="en" type="comment">(<quote>oculo obliquo
+            aspicere</quote>)</note></mentioned>.</etym>
       </entry>
     </body>
   </text>
 </TEI>
+
