@@ -1,32 +1,108 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">razdaræn</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_razdaræn" xml:lang="os" abv:completeness="incomplete">
+      <entry xml:id="entry_razdaræn" xml:lang="os" abv:completeness="complete">
         <form type="lemma"><orth>razdaræn</orth></form>
-        <sense><abv:tr xml:lang="ru"><q></q></abv:tr></sense>
-        <abv:exampleGrp>
-          <abv:example>
-            <quote></quote>
-          </abv:example>
-        </abv:exampleGrp>
-        <etym xml:lang="ru"></etym>
+        <sense><sense><abv:tr xml:lang="ru">
+              <q>передник</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>pinafore</q>
+            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+              <q>фартук</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>apron</q>
+            </abv:tr></sense></sense>
+        <note xml:lang="ru" type="comment">; син. <ref type="xr" target="#entry_kwatæ"/></note>
+        <note xml:lang="en" type="comment">; synonym <ref type="xr" target="#entry_kwatæ"/></note>
+        <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">mad jæ kʼūxtæ jæ <oRef>razdarænæj</oRef>
+              asærfta</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">мать вытерла руки передником</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">mother wiped her hands on her apron</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_F."/>
+              <biblScope>1957 II 11</biblScope></bibl>
+          </example>
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">Majræmon... jæ <oRef>razdarænæj</oRef> jæ
+              kʼūxtæ særfgæ rawad</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Майрамон выбежала, вытирая руки передником</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Majramon ran out, wiping her hands on her
+                apron.</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ИАА"/>
+              <biblScope>III 79</biblScope></bibl>
+          </example>
+          <example xml:lang="os-x-digor">
+            <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">Simæ aǧaz kænuj æ madæn (qæppæltæ æxsnunæn);
+              oj æxsujnægtæ æncæ æ <oRef>razdaræn</oRef> æma æ finʒsærfæn</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Сима помогает своей матери (стирать белье); ее
+                стирка — передник и носовой платок</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Sima helps her mother (do the laundry); her
+                laundry is an apron and a handkerchief</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_AK"/>
+              <biblScope>I 43</biblScope></bibl>
+          </example>
+        </exampleGrp>
+        <etym xml:lang="ru">См. <ref type="xr" target="#entry_raz"><w>raz</w>
+            <gloss><q>перед</q></gloss></ref> и <ref type="xr" target="#entry_daryn"><w>daryn</w>
+            <gloss><q>носить</q></gloss> (об одежде)</ref>: <q rendition="#rend_doublequotes"
+            >носимое спереди</q>; <w>daræn</w> — отглагольное имя на <m>-æn</m>, как в <ref
+            type="xr" target="#entry_kʼūxdaræn"><w>kʼūxdaræn</w>
+            <gloss><q>перстень</q></gloss></ref> (<q rendition="#rend_doublequotes">носимое на
+            пальце</q>), <ref type="xr" target="#entry_congdaræn"><w>congdaræn</w>
+            (<w>cængdaræn</w>) <gloss><q>браслет</q></gloss></ref> (<q
+            rendition="#rend_doublequotes">носимое на руке</q>) и т. п. (<bibl><ref type="bibl"
+              target="#ref_ГО"/>
+            <biblScope>§§ 170<hi rendition="#rend_subscript">I 1</hi>, 201<hi
+                rendition="#rend_subscript">II 5</hi></biblScope></bibl>).</etym>
+        <etym xml:lang="en">See <ref type="xr" target="#entry_raz"><w>raz</w>
+            <gloss><q>(in) front</q></gloss></ref> and <ref type="xr" target="#entry_daryn"
+              ><w>daryn</w>
+            <gloss><q>wear</q></gloss> (about clothes)</ref>: <q rendition="#rend_doublequotes">worn
+            in front</q>; <w>daræn</w> — a verbal noun ending with <m>-æn</m>, as in <ref type="xr"
+            target="#entry_kʼūxdaræn"><w>kʼūxdaræn</w>
+            <gloss><q>ring</q></gloss></ref> (<q rendition="#rend_doublequotes">worn on the
+            finger</q>), <ref type="xr" target="#entry_congdaræn"><w>congdaræn</w>
+            (<w>cængdaræn</w>) <gloss><q>bracelet</q></gloss></ref> (<q
+            rendition="#rend_doublequotes">worn on the hand</q>) etc. (<bibl><ref type="bibl"
+              target="#ref_ГО"/>
+            <biblScope>§§ 170<hi rendition="#rend_subscript">I 1</hi>, 201<hi
+                rendition="#rend_subscript">II 5</hi></biblScope></bibl>).</etym>
       </entry>
     </body>
   </text>
