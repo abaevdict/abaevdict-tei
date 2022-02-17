@@ -1,57 +1,105 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">radæ</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_radæ" xml:lang="os-x-digor" abv:completeness="questions">
+      <entry xml:id="entry_radæ" xml:lang="os-x-digor" abv:completeness="complete">
         <form type="lemma"><orth>radæ</orth></form>
         <usg><lang/></usg>
-        <sense><abv:tr xml:lang="ru">
-            <q/>
-          </abv:tr></sense>
-        <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
-          <example>
-            <quote xmlns="http://www.tei-c.org/ns/1.0">mæ cærgæs, тæ boni <oRef>radæ</oRef>!</quote>
-            <tr xml:lang="ru">
-              <q xmlns="http://www.tei-c.org/ns/1.0">мой орел, мой дорогой!</q>
-            </tr>
-            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Тайм._Мӕ_зӕрд."/>
-              <biblScope>26</biblScope></bibl>
-          </example>
-          <example>
-            <quote xmlns="http://www.tei-c.org/ns/1.0">те ʽrvadæ! тæ boni <oRef>radæ</oRef>, тæ
+        <re>
+          <note xml:lang="ru" type="comment"> в ласкательном обращении </note>
+          <note xml:lang="en" type="comment"> in the form of affectionate address </note>
+          <form type="lemma"><orth>mæ radæ</orth><form type="variant"><orth>mæ boni
+              radæ</orth></form></form>
+          <sense><note xml:lang="ru" type="comment">в смысле</note><note xml:lang="en"
+              type="comment">in the meaning</note><sense><tr
+                xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
+                <q xmlns="http://www.tei-c.org/ns/1.0" rendition="#rend_doublequotes">мой
+                  дорогой</q>
+              </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+                <q xmlns="http://www.tei-c.org/ns/1.0" rendition="#rend_doublequotes">my dear</q>
+              </tr></sense><sense><abv:tr xml:lang="ru">
+                <q rendition="#rend_doublequotes">голубчик</q>
+              </abv:tr><abv:tr xml:lang="en">
+                <q rendition="#rend_doublequotes">darling</q>
+              </abv:tr></sense></sense>
+          <note xml:lang="ru" type="comment"> (употребляется преимущественно женщинами)</note>
+          <note xml:lang="en" type="comment"> (used mostly by women)</note>
+          <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
+            <example>
+              <quote xmlns="http://www.tei-c.org/ns/1.0">mæ cærgæs, тæ boni
                 <oRef>radæ</oRef>!</quote>
-            <tr xml:lang="ru">
-              <q xmlns="http://www.tei-c.org/ns/1.0">мой брат! мой дорогой!</q>
-            </tr>
-            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Iræf"/>
-              <biblScope>22</biblScope></bibl>
-          </example>
-        </exampleGrp>
+              <tr xml:lang="ru">
+                <q xmlns="http://www.tei-c.org/ns/1.0">мой орел, мой дорогой!</q>
+              </tr>
+              <tr xml:lang="en">
+                <q xmlns="http://www.tei-c.org/ns/1.0">my eagle, my dear!</q>
+              </tr>
+              <note xmlns="http://www.tei-c.org/ns/1.0" xml:lang="ru" type="comment">обращение
+                матери к сыну</note>
+              <note xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" type="comment">a mother's
+                words to her son</note>
+              <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl"
+                  target="#src_Тайм._Мӕ_зӕрд."/>
+                <biblScope>26</biblScope></bibl>
+            </example>
+            <example>
+              <quote xmlns="http://www.tei-c.org/ns/1.0">те ʽrvadæ! тæ boni <oRef>radæ</oRef>, тæ
+                  <oRef>radæ</oRef>!</quote>
+              <tr xml:lang="ru">
+                <q xmlns="http://www.tei-c.org/ns/1.0">мой брат! мой дорогой!</q>
+              </tr>
+              <tr xml:lang="en">
+                <q xmlns="http://www.tei-c.org/ns/1.0">my brother! my dear!</q>
+              </tr>
+              <note xmlns="http://www.tei-c.org/ns/1.0" xml:lang="ru" type="comment">обращение
+                сестры к брату</note>
+              <note xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" type="comment">a sister's
+                words to her brother</note>
+              <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Iræf"/>
+                <biblScope>22</biblScope></bibl>
+            </example>
+          </exampleGrp>
+        </re>
         <etym xml:lang="ru">Следует отделить от <ref type="xr" target="#entry_rad"><w>radæ</w>
             <gloss><q>очередь</q></gloss></ref>’ по полной семантической несовместимости и возводить
           к <mentioned xml:lang="ira"><m type="rec">rāta-</m></mentioned>, отглагольному имени от
             <mentioned xml:lang="ira"><m type="rec">rā-</m>
             <gloss><q>радоваться</q></gloss></mentioned>; см. <ref type="xr" target="#entry_rajyn"
-          />. Стало быть, <w>mæ radæ, mæ boni radæ</w> буквально <gloss><q
+          />. Стало быть, <phr>mæ radæ, mæ boni radæ</phr> буквально <gloss><q
               rendition="#rend_doublequotes">моя радость</q></gloss>, <gloss><q
               rendition="#rend_doublequotes">радость моего дня, моей жизни</q></gloss>. См.
           выше.</etym>
+        <etym xml:lang="en">It should be separated from the word <ref type="xr" target="#entry_rad"
+              ><w>radæ</w>
+            <gloss><q>order</q></gloss></ref>’ due to complete semantic incompatibility and traced
+          back to <mentioned xml:lang="ira"><m type="rec">rāta-</m></mentioned>, a verbal noun of
+            <mentioned xml:lang="ira"><m type="rec">rā-</m>
+            <gloss><q>rejoice</q></gloss></mentioned>; see <ref type="xr" target="#entry_rajyn"/>.
+          Thus, <phr>mæ radæ, mæ boni radæ</phr> literally means <gloss><q
+              rendition="#rend_doublequotes">my joy</q></gloss>, <gloss><q
+              rendition="#rend_doublequotes">joy of my day, of my life</q></gloss>. See
+          above.</etym>
       </entry>
     </body>
   </text>
