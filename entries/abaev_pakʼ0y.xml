@@ -1,33 +1,198 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">pakʼₒy</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
       <entry xml:id="entry_pakʼ0y" xml:lang="os" abv:completeness="incomplete">
-        <form type="lemma"><orth>pakʼₒy</orth></form>
-        <sense><abv:tr xml:lang="ru"><q></q></abv:tr></sense>
-        <abv:exampleGrp>
-          <abv:example>
-            <quote></quote>
-          </abv:example>
-        </abv:exampleGrp>
-        <etym xml:lang="ru"></etym>
+        <form type="lemma" xml:lang="os-x-iron"><orth>pakʼₒy</orth></form>
+        <form xml:lang="os-x-digor" type="dialectal"><orth>pakʼu</orth></form>
+        <sense><abv:tr xml:lang="ru">
+            <q>оперение</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>plumage</q>
+          </abv:tr><abv:tr xml:lang="ru">
+            <q>перья</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>feathers</q>
+          </abv:tr><abv:tr xml:lang="ru">
+            <q>пух</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>fluff</q>
+          </abv:tr></sense>
+        <note xml:lang="ru" type="comment">; <ref type="xr" target="#entry_būmbūli"/></note>
+        <note xml:lang="en" type="comment">; cf. <ref type="xr" target="#entry_būmbūli"/></note>
+        <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">æxsīn bælony xₒyzy ærtaxtī æxsyry cadmæ. ..
+              akaldta jæ pakʼₒy amæ zaliag æxsīn festad, cady jæxī acʼybar-cʼybūr kodta æma ta
+              fæstæmæ bælony xₒyzy ærxₒy mæsygmæ staxt</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">княгиня в виде голубя прилетела к молочному
+                озеру, скинула свое оперение и стала <hi rendition="#rend_smallcaps">залийской</hi>
+                княгиней, поплескалась в озере и опять в виде голубя взлетела на медную башню</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the princess in the form of a dove flew to the
+                milk lake, threw off her plumage and became a
+                  <?oxy_comment_start author="julie" timestamp="20220218T172054+0300" comment="что имеется в виду?"?><hi
+                  rendition="#rend_smallcaps">залийской</hi><?oxy_comment_end?> princess, splashed
+                in the lake and again flew up to the copper tower in the form of a dove</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_СОПам."/>
+              <biblScope>IV 23</biblScope></bibl>
+          </example>
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">kʼₒyz ma jyn (karkæn) jæ dymægmæ bærgæ
+              fælæbūrdta, fælæ jyn airvæzt, jæ pakʼₒy та azzad jæ ʒyxy</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">собака схватила (курицу) за хвост, но та
+                ускользнула, только перья остались у нее во рту</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the dog grabbed (the chicken) by the tail, but
+                it slipped away, only feathers remained in the dog's mouth</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_F."/>
+              <biblScope>1959 I 10</biblScope></bibl>
+          </example>
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">ærtæ æxsīnæǵy kæræʒijy pakʼₒytæ
+              tydtoj</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">три голубя рвали друг у друга перья</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">three pigeons were tearing each other's
+                feathers</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Брит."/>
+              <biblScope>110</biblScope></bibl>
+          </example>
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">тахæп dær ta пæ pakʼₒy acaǧtoj</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">и нам опять стряхнули оперение</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">and they shook off our feathers again</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Брит."/>
+              <biblScope>117</biblScope></bibl>
+          </example>
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">dymgæ qædy pakʼₒy kaly</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">ветер рассыпает листву (<q
+                  rendition="#rend_doublequotes">оперение</q>) леса</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the wind scatters the leaves (<q
+                  rendition="#rend_singlequotes">plumage</q>) of the forest</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Хазби"/>
+              <biblScope>20</biblScope></bibl>
+          </example>
+          <example xml:lang="os-x-digor">
+            <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">marg dædduj ustur pajda ajkæj, fidæj,
+              pakʼujæj</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">птица приносит большую пользу яйцами, мясом,
+                пухом</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">poultry brings great benefits with eggs, meat,
+                fluff</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_AK"/>
+              <biblScope>I 68</biblScope></bibl>
+          </example>
+          <example xml:lang="os-x-digor">
+            <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">ærxawdtæj arvæj... pakʼutæ togi, otemæj
+              cʼewsor</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">с перьями в крови, так упал с неба сокол</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">with feathers in the blood, so the falcon fell
+                from the sky</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_MD"/>
+              <biblScope>1936 II 34</biblScope></bibl>
+          </example>
+          <example xml:lang="os-x-digor">
+            <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">sujnagæj ba cidær rabastajdæ, pakʼuj wæzæ dær
+              æj næbal widæ</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">что бы ни перевязать (чудесной) веревкой, в нем
+                не было и веса пуха</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">whatever was tied up with a (wonderful) rope,
+                there was no weight of fluff in it</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_СОПам."/>
+              <biblScope>II 53</biblScope></bibl>
+          </example>
+        </exampleGrp>
+        <etym xml:lang="ru">Относится к разряду звукоизобразительных слов, как и созвучные <ref
+            type="xr" target="#entry_mækʼ0yl"><w>mækʼₒyl</w> | <w>bækʼₒwæl</w></ref>
+          <q>копна</q>. В пользу звукосимволической природы слова говорит то, что близкие по
+          звучанию слова со значением <q>головной убор</q> находим в самых различных языках от
+          Чукотки до Памира и Кавказа (<bibl><ref type="bibl" target="#ref_JA"><hi
+                rendition="#rend_smallcaps">Bouda</hi>, JA</ref><biblScope>1960, стр.
+              202</biblScope></bibl>). Ср., в частности, <mentioned xml:lang="sva"><lang/>
+            <w>paqʼw</w></mentioned>, <mentioned xml:lang="uby"><lang>убых.</lang>
+            <w>baq'a</w>
+            <gloss><q>шапка</q>, <q>колпак</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Vogt"
+                /><biblScope>97</biblScope></bibl>)</note></mentioned>), <mentioned xml:lang="ady"><lang/>
+            <w>paʽakʼäh</w>
+            <gloss><q>высокая шапка</q></gloss> (<note type="bibl"><bibl><ref type="bibl"
+                  target="#ref_СМК"/><biblScope>XXVI <hi rendition="#rend_italic">3</hi>
+                  43</biblScope></bibl>)</note></mentioned>. Ср. <ref type="xr" target="#entry_paka"
+          />.</etym>
+        <etym xml:lang="en">It belongs to the category of onomatopoeic words, as well as <ref
+            type="xr" target="#entry_mækʼ0yl"><w>mækʼₒyl</w> | <w>bækʼₒwæl</w></ref>
+          <q>mop</q>. The fact that similar-sounding words with meaning <q>headdress</q> are found
+          in a variety of languages from Chukotka to the Pamirs and the Caucasus speaks in favor of
+          the sound-symbolic nature of the word (<bibl><ref type="bibl" target="#ref_JA"><hi
+                rendition="#rend_smallcaps">Bouda</hi>, JA</ref><biblScope>1960, p.
+            202</biblScope></bibl>). Cf. in particular <mentioned xml:lang="sva"><lang/>
+            <w>paqʼw</w></mentioned>, <mentioned xml:lang="uby"><lang>убых.</lang>
+            <w>baq'a</w>
+            <gloss><q>hat</q>, <q>hood</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Vogt"
+                /><biblScope>97</biblScope></bibl>)</note></mentioned>), <mentioned xml:lang="ady"><lang/>
+            <w>paʽakʼäh</w>
+            <gloss><q>high hat</q></gloss> (<note type="bibl"><bibl><ref type="bibl"
+                  target="#ref_СМК"/><biblScope>XXVI <hi rendition="#rend_italic">3</hi>
+                  43</biblScope></bibl>)</note></mentioned>. Cf. <ref type="xr" target="#entry_paka"
+          />.</etym>
       </entry>
     </body>
   </text>
 </TEI>
+
