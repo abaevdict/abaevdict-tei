@@ -1,32 +1,85 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ræstʒīnad</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_ræstʒīnad" xml:lang="os" abv:completeness="incomplete">
-        <form type="lemma"><orth>ræstʒīnad</orth></form>
-        <sense><abv:tr xml:lang="ru"><q></q></abv:tr></sense>
-        <abv:exampleGrp>
-          <abv:example>
-            <quote></quote>
-          </abv:example>
-        </abv:exampleGrp>
-        <etym xml:lang="ru"></etym>
+      <entry xml:id="entry_ræstʒīnad" xml:lang="os" abv:completeness="questions">
+        <form type="lemma" xml:lang="os-x-iron"><orth>ræstʒīnad</orth></form>
+        <form xml:lang="os-x-digor" type="dialectal"><orth>ræstʒīnadæ</orth></form>
+        <sense><sense><abv:tr xml:lang="ru">
+              <q>правда</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>truth</q>
+            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+              <q>правота</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>rightness</q>
+            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+              <q>справедливость</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>justice</q>
+            </abv:tr></sense></sense>
+        <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">wæ x˳ycaw, bærzondyl badæg, Qudy Majræm, smax
+              zonut тæ <oRef>ræstʒīnad</oRef></quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">боже, сидящий в высоте, Кудская Мария
+                (богоматерь), вы знаете мою правоту</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0"
+                ><?oxy_comment_start author="Irene" timestamp="20220219T105626+0300" comment="что-то не знаю как лучше перевести"?>боже,
+                сидящий в высоте, Кудская Мария (богоматерь), вы знаете мою
+                правоту<?oxy_comment_end?></q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сека"/>
+              <biblScope>30</biblScope></bibl>
+          </example>
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">aftæ пуп æmbæly sæxxæst kænyn aly
+                <oRef>ræstʒīnad</oRef></quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">так надлежит нам исполнить всякую правду</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">for thus it becometh us to fulfil all
+                righteousness</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Матфей"/>
+              <biblScope><hi rend="italic" rendition="#rend_italic">3</hi> 15</biblScope></bibl>
+          </example>
+        </exampleGrp>
+        <etym xml:lang="ru">Производное от <ref type="xr" target="#entry_rast"><w>rast</w>
+            <gloss><q>правый</q></gloss></ref> с помощью форманта абстрактных понятий <m>-ʒīnad</m>
+              (<bibl><author>Hübschmann</author>, <ref type="bibl" target="#ref_ZDMG"/>
+            <biblScope>1887 XLI 340</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_ГО"/>
+            <biblScope>§ 180</biblScope></bibl>).</etym>
+        <etym xml:lang="en">A derivative of <ref type="xr" target="#entry_rast"><w>rast</w>
+            <gloss><q>right</q></gloss></ref> with a formant of abstract nouns <m>-ʒīnad</m>
+              (<bibl><author>Hübschmann</author>, <ref type="bibl" target="#ref_ZDMG"/>
+            <biblScope>1887 XLI 340</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_ГО"/>
+            <biblScope>§ 180</biblScope></bibl>).</etym>
       </entry>
     </body>
   </text>
