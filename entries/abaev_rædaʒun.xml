@@ -1,32 +1,67 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">rædaʒun</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_rædaʒun" xml:lang="os" abv:completeness="incomplete">
-        <form type="lemma"><orth>rædaʒun</orth></form>
-        <sense><abv:tr xml:lang="ru"><q></q></abv:tr></sense>
-        <abv:exampleGrp>
-          <abv:example>
-            <quote></quote>
-          </abv:example>
-        </abv:exampleGrp>
-        <etym xml:lang="ru"></etym>
+      <entry xml:id="entry_rædaʒun" xml:lang="os-x-digor" abv:completeness="complete">
+        <form type="lemma"><orth>rædaʒun</orth><form type="participle"
+          ><orth>rædaǧd</orth></form></form>
+        <usg><lang/></usg>
+        <sense><sense><abv:tr xml:lang="ru">
+              <q>лить</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>pour</q>
+            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+              <q>лить слезы</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>shed tears</q>
+            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+              <q>плакать</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>cry</q>
+            </abv:tr></sense></sense>
+        <etym xml:lang="ru">Восходит к <mentioned xml:lang="ira"><lang/>
+            <m type="rec">fra-tāčaya-</m></mentioned>, где <m>tāčaya-</m> каузатив от <mentioned
+            xml:lang="ira"><m>tač-</m>
+            <gloss><q>течь</q></gloss>, <gloss><q>литься</q></gloss></mentioned>. См. <ref type="xr"
+            target="#entry_taʒyn"><w>taʒyn</w>
+            <gloss><q>лить по каплям</q></gloss></ref>. Ср. <ref type="xr" target="#entry_ændaʒyn"
+              ><w>ændaʒyn</w>
+            <gloss><q>припаивать</q></gloss></ref>, <ref type="xr" target="#entry_rædæʒun"
+              ><w>rædæʒun</w>
+            <gloss><q>капать</q></gloss>, <gloss><q>литься</q></gloss>,
+              <gloss><q>проливаться</q></gloss></ref>.</etym>
+        <etym xml:lang="en">Traces back to <mentioned xml:lang="ira"><lang/>
+            <m type="rec">fra-tāčaya-</m></mentioned>, where <m>tāčaya-</m> is a causative form of
+            <mentioned xml:lang="ira"><m>tač-</m>
+            <gloss><q>flow</q></gloss>, <gloss><q>pour</q></gloss></mentioned>. See <ref type="xr"
+            target="#entry_taʒyn"><w>taʒyn</w>
+            <gloss><q>pour in drops</q></gloss></ref>. Cf. <ref type="xr" target="#entry_ændaʒyn"
+              ><w>ændaʒyn</w>
+            <gloss><q>solder</q></gloss></ref>, <ref type="xr" target="#entry_rædæʒun"
+              ><w>rædæʒun</w>
+            <gloss><q>drip</q></gloss>, <gloss><q>pour</q></gloss>,
+            <gloss><q>spill</q></gloss></ref>.</etym>
       </entry>
     </body>
   </text>
