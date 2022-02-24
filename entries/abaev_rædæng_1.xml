@@ -1,32 +1,75 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">rædæng_1</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_rædæng_1" xml:lang="os" abv:completeness="incomplete">
+      <entry xml:id="entry_rædæng_1" xml:lang="os" abv:completeness="questions" n="1">
         <form type="lemma"><orth>rædæng_1</orth></form>
-        <sense><abv:tr xml:lang="ru"><q></q></abv:tr></sense>
-        <abv:exampleGrp>
-          <abv:example>
-            <quote></quote>
-          </abv:example>
-        </abv:exampleGrp>
-        <etym xml:lang="ru"></etym>
+        <sense><sense><abv:tr xml:lang="ru">
+              <q>стройный</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>slender</q>
+            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+              <q>гладкоствольный</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>smoothbore</q>
+            </abv:tr></sense><note xml:lang="ru" type="comment"> (о дереве)</note><note
+            xml:lang="en" type="comment"> (about a tree)</note></sense>
+        <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">næ ūrs <oRef>rædæng</oRef> bærz byntondær
+              nyvzaly</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">наша белая стройная береза совершенно
+                обуглилась</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">our white slender birch is completely
+                charred</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><title>Literaturæjy xrestomati</title>.
+                <pubPlace>Stalinir</pubPlace>, <date>1934</date>, <biblScope>стр.
+              167</biblScope></bibl>
+          </example>
+        </exampleGrp>
+        <etym xml:lang="ru">Если исходное значение было <q>стройный</q>, <q>тонкий</q> (уверенности
+          нет, так как слово скудно документировано), то можно возводить к <mentioned xml:lang="ira"
+              ><m type="rec">fra-tanu-ka-</m></mentioned> от <mentioned xml:lang="ira"><m>tanu-</m>
+            <gloss><q>тонкий</q></gloss></mentioned>; см. <ref type="xr" target="#entry_tænæg"/>. В
+          современном осетинском языке <ref type="xr" target="#entry_tænæg"/> не может быть эпитетом
+          дерева, но в прошлом могло быть иначе; ср., например, в русском <q
+            rendition="#rend_doublequotes">тонкая рябина</q>, <q rendition="#rend_doublequotes"
+            >тонкая береза</q>.</etym>
+        <etym xml:lang="en">If the original meaning was <q>slender</q>, <q>thin</q> (there is no
+          certainty, since the word is poorly documented), then it can be traced to <mentioned
+            xml:lang="ira"><m type="rec">fra-tanu-ka-</m></mentioned> from <mentioned xml:lang="ira"
+              ><m>tanu-</m>
+            <gloss><q>slender</q></gloss></mentioned>; see <ref type="xr" target="#entry_tænæg"/>.
+          In Modern Ossetic <ref type="xr" target="#entry_tænæg"/> cannot be an epithet of a tree,
+          but in the past it could have been otherwise; cf., for example,
+          <?oxy_comment_start author="Irene" timestamp="20220224T151951+0300" comment="??? что с этим делать"?>Russian
+          тонкая рябина , <q rendition="#rend_doublequotes">тонкая
+          береза</q><?oxy_comment_end?>.</etym>
       </entry>
     </body>
   </text>
