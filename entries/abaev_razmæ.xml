@@ -1,20 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">razmæ</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
@@ -22,18 +27,32 @@
         <form type="lemma"><orth>razmæ</orth></form>
         <sense n="1"><sense><abv:tr xml:lang="ru">
               <q>вперед</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>forward</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>перед</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>in front of</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>навстречу</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>towards</q>
             </abv:tr></sense></sense>
         <sense n="2"><sense><abv:tr xml:lang="ru">
               <q>перед</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>before</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>до</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>afore</q>
             </abv:tr></sense></sense>
-        <note type="comment">; ант. <ref type="xr" target="#entry_fæstæmæ"><w>fæstæmæ</w> 1.
-                <gloss><q>назад</q></gloss>; 2. <gloss><q>после</q></gloss></ref></note>
+        <note xml:lang="ru" type="comment">; ант. <ref type="xr" target="#entry_fæstæmæ"
+              ><w>fæstæmæ</w> 1. <gloss><q>назад</q></gloss>; 2.
+          <gloss><q>после</q></gloss></ref></note>
+        <note xml:lang="en" type="comment">; antonym <ref type="xr" target="#entry_fæstæmæ"
+              ><w>fæstæmæ</w> 1. <gloss><q>back</q></gloss>; 2.
+          <gloss><q>after</q></gloss></ref></note>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict" n="1">
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0"><oRef>razmæ</oRef> cæwon — margæ mæ kænʒysty,
@@ -42,15 +61,21 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">пойти вперед — меня убьют, вернуться назад —
                 покроюсь позором</q>
             </tr>
-            <bibl xmlns="http://www.tei-c.org/ns/1.0"
-                ><biblScope><?oxy_comment_start author="Irene" timestamp="20220216T150237+0300" comment="правильно?"?>из
-                песни<?oxy_comment_end?></biblScope></bibl>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">if I go forward, they will kill me, if I go
+                back, I will be covered with shame</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0">from a song</bibl>
           </example>
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">hæjtt, <oRef>razmæ</oRef>! nykkalæm ældaræn
               jæ tūg</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">гей, вперед! прольем кровь алдара</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">hey, go ahead! let's shed the blood of the
+                aldar</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Niger"/>
               <biblScope>16</biblScope></bibl>
@@ -62,6 +87,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">Созрыко выстрелил Елтагану в грудь, но пули
                 упали перед ним, как две груши</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Sozryko shot Eltagan in the chest, but the
+                bullets fell in front of him like two pears</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ОЭ"/>
               <biblScope>I 30</biblScope></bibl>
           </example>
@@ -69,6 +98,9 @@
             <quote xmlns="http://www.tei-c.org/ns/1.0">ḱyzg... fæcūdydta <oRef>razmæ</oRef></quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">девушка пошатнулась вперед</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">a girl staggered forward</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Коста"/>
               <biblScope>141</biblScope></bibl>
@@ -80,6 +112,11 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">самобранный стол приносит (и ставит) пред
                 ними</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">a magic table
+                <?oxy_comment_start author="Irene" timestamp="20220224T141904+0300" comment="?"?>brings
+                (and sets)<?oxy_comment_end?> before them</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ОЭп."/>
               <biblScope>35</biblScope></bibl>
           </example>
@@ -89,6 +126,9 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">Хетаг вскочил, выбежал ему навстречу</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Khetag jumped up and ran out to meet him</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Коста"/>
               <biblScope>217</biblScope></bibl>
           </example>
@@ -97,6 +137,9 @@
               rawadysty</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">аульная молодежь выбежала навстречу Садулле</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">village youth ran out to meet Sadulla</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сека"/>
               <biblScope>78</biblScope></bibl>
@@ -109,6 +152,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">перед смертью он завещал своему сыну...</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">before his death, he bequeathed to his
+                son...</q>
+            </tr>
           </example>
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">xor-xory bon ma zydtoj ærægvæzzæǵy dær,
@@ -118,6 +165,10 @@
                   rendition="#rend_smallcaps">хор-хор</hi> отмечали (<q>знали</q>) также поздней
                 осенью, перед самым севом озимых</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the hor-hor holiday (<q>day</q>) was also
+                celebrated (<q>known</q>) in late autumn, just before the sowing of winter crops</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_F."/>
               <biblScope>1967 X 73</biblScope></bibl>
           </example>
@@ -126,8 +177,12 @@
           <form type="lemma"><orth>aj razmæ</orth></form>
           <sense><sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
                 <q xmlns="http://www.tei-c.org/ns/1.0">недавно</q>
+              </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+                <q xmlns="http://www.tei-c.org/ns/1.0">recently</q>
               </tr></sense><sense><abv:tr xml:lang="ru">
                 <q>на днях</q>
+              </abv:tr><abv:tr xml:lang="en">
+                <q>the other day</q>
               </abv:tr></sense></sense>
         </re>
         <etym xml:lang="ru">Направ. падеж от <ref type="xr" target="#entry_raz"><w>raz</w>
@@ -136,6 +191,12 @@
             <gloss><q>назад</q></gloss></ref>, <ref type="xr" target="#entry_mīdæmæ"><w>mīdæmæ</w>
             <gloss><q>внутрь</q></gloss></ref>, <ref type="xr" target="#entry_æddæmæ"><w>æddæmæ</w>
             <gloss><q>наружу</q></gloss></ref> и т. п.</etym>
+        <etym xml:lang="en">An allative case form of <ref type="xr" target="#entry_raz"><w>raz</w>
+            <gloss><q>front</q></gloss></ref>. Cf. similar derivation patterns in <ref type="xr"
+            target="#entry_fæstæmæ"><w>fæstæmæ</w>
+            <gloss><q>back</q></gloss></ref>, <ref type="xr" target="#entry_mīdæmæ"><w>mīdæmæ</w>
+            <gloss><q>inside</q></gloss></ref>, <ref type="xr" target="#entry_æddæmæ"><w>æddæmæ</w>
+            <gloss><q>outside</q></gloss></ref> etc.</etym>
       </entry>
     </body>
   </text>
