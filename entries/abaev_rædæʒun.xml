@@ -1,32 +1,90 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">rædæʒun</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_rædæʒun" xml:lang="os" abv:completeness="incomplete">
-        <form type="lemma"><orth>rædæʒun</orth></form>
-        <sense><abv:tr xml:lang="ru"><q></q></abv:tr></sense>
-        <abv:exampleGrp>
-          <abv:example>
-            <quote></quote>
-          </abv:example>
-        </abv:exampleGrp>
-        <etym xml:lang="ru"></etym>
+      <entry xml:id="entry_rædæʒun" xml:lang="os-x-digor" abv:completeness="questions">
+        <form type="lemma"><orth>rædæʒun</orth><form type="participle"
+          ><orth>rædaǧd</orth></form></form>
+        <usg><lang/></usg>
+        <sense><sense><abv:tr xml:lang="ru">
+              <q>литься по каплям</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>pour drop by drop</q>
+            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+              <q>течь</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>flow</q>
+            </abv:tr></sense></sense>
+        <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">wælmard talingi nur kæwuj, tʼinggaj cæstisug
+                <oRef>rædæʒuj</oRef></quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">теперь она плачет над трупом в темноте, по
+                каплям текут слезы</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">now she cries over a corpse in the dark, tears
+                flowing in drops</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Iræf"/>
+              <biblScope>77</biblScope></bibl>
+          </example>
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">kæd æj fænduj, baniwazæd mæ tog min
+                <oRef>rædæʒgæj</oRef></quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">если хочет, пусть выпьет мою текущую по каплям
+                кровь</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">if he wants, let him drink my dripping
+                blood</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl"
+                target="#src_Gurdž._Saxi_ræs."/>
+              <biblScope>39</biblScope></bibl>
+          </example>
+        </exampleGrp>
+        <etym xml:lang="ru">Восходит к <m type="rec">fra-tač-</m>. Медиальное соответствие к <ref
+            type="xr" target="#entry_rædaʒun"/> (→ <m type="rec">fra-tāčaya-</m>). Отношение
+            <oRef>rædæʒun</oRef> к <ref type="xr" target="#entry_rædaʒun"/> по огласовке и залоговой
+          семантике такое же, как <ref type="xr" target="#entry_tæʒyn"/> к <ref type="xr"
+            target="#entry_taʒyn"/>, <ref type="xr" target="#entry_ændæʒyn"/> к <ref type="xr"
+            target="#entry_ændaʒyn"/> (<bibl><ref type="bibl" target="#ref_ГО"/>
+            <biblScope>§ 99</biblScope></bibl>). Ср. <ref type="xr" target="#entry_rædaʒun"/>; см.
+            <ref type="xr" target="#entry_taʒyn"/>, <ref type="xr" target="#entry_tæʒyn"/>.</etym>
+        <etym xml:lang="en">Traces back to <m type="rec">fra-tač-</m>. A middle voice form of <ref
+            type="xr" target="#entry_rædaʒun"/> (→ <m type="rec">fra-tāčaya-</m>). The word
+            <oRef>rædæʒun</oRef> is related to <ref type="xr" target="#entry_rædaʒun"/> in the
+          <?oxy_comment_start author="Irene" timestamp="20220224T143909+0300" comment="?"?>vocalisation<?oxy_comment_end?>
+          and voice semantics the same way as <ref type="xr" target="#entry_tæʒyn"/> is related to
+            <ref type="xr" target="#entry_taʒyn"/> and <ref type="xr" target="#entry_ændæʒyn"/> is
+          related to <ref type="xr" target="#entry_ændaʒyn"/> (<bibl><ref type="bibl"
+              target="#ref_ГО"/>
+            <biblScope>§ 99</biblScope></bibl>). Cf. <ref type="xr" target="#entry_rædaʒun"/>; see
+            <ref type="xr" target="#entry_taʒyn"/>, <ref type="xr" target="#entry_tæʒyn"/>.</etym>
       </entry>
     </body>
   </text>
