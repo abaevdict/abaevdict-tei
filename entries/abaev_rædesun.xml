@@ -1,32 +1,97 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">rædesun</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_rædesun" xml:lang="os" abv:completeness="incomplete">
-        <form type="lemma"><orth>rædesun</orth></form>
-        <sense><abv:tr xml:lang="ru"><q></q></abv:tr></sense>
-        <abv:exampleGrp>
-          <abv:example>
-            <quote></quote>
-          </abv:example>
-        </abv:exampleGrp>
-        <etym xml:lang="ru"></etym>
+      <entry xml:id="entry_rædesun" xml:lang="os-x-digor" abv:completeness="complete">
+        <form type="lemma"><orth>rædesun</orth><form type="participle"
+          ><orth>rædist</orth></form></form>
+        <usg><lang/></usg>
+        <sense><abv:tr xml:lang="ru">
+            <q>обнаруживать признаки приближающихся родов</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>detect signs of forthcoming labour</q>
+          </abv:tr><note xml:lang="ru" type="comment"> (о животных)</note><note xml:lang="en"
+            type="comment"> (about animals)</note></sense>
+        <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">ǧog <oRef>rædesuj</oRef></quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">у коровы признаки скорого отела</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the cow shows signs of forthcoming calving</q>
+            </tr>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">корова скоро отелится</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the cow is about to calve</q>
+            </tr>
+          </example>
+        </exampleGrp>
+        <etym xml:lang="ru">Восходит к <mentioned xml:lang="ira"><lang/>
+            <m type="rec">fra-dais</m></mentioned> от <mentioned xml:lang="ira"><m>dais-</m>
+            <gloss><q>показывать</q></gloss>, <gloss><q>подавать знаки</q></gloss></mentioned>. Эта
+          же основа в <ref type="xr" target="#entry_ævdīsyn"><w xml:lang="os-x-iron">ævdīsyn</w><w
+              xml:lang="os-x-digor">ævdesun</w>
+            <note xml:lang="ru" type="comment">(←<m type="rec">abi-dais-</m>)</note><note
+              xml:lang="en" type="comment">(←<m type="rec">abi-dais-</m>)</note>
+            <gloss><q>показывать</q></gloss></ref>, <ref type="xr" target="#entry_ævdīsæn"><w
+              xml:lang="os-x-iron">ævdīsæn</w><w xml:lang="os-x-digor">ævdesæn</w>
+            <gloss><q>свидетель</q></gloss>, <gloss><q>свидетельство</q></gloss></ref>. К
+          приведенным под <ref type="xr" target="#entry_ævdīsyn"/> соответствиям добавим <mentioned
+            xml:lang="ae"><lang/>
+            <m>fra-daes-</m>
+            <gloss><q>показывать</q></gloss>, <gloss><q>открывать (что-либо
+            тайное)</q></gloss></mentioned>, <mentioned xml:lang="xpr"><lang/>
+            <m>āδēsaγ-</m>
+            <gloss><q>знак</q></gloss>
+            <note type="bibl">(<bibl><author>Ghilain</author>
+                <biblScope>90</biblScope></bibl>)</note></mentioned>.<lb/><bibl><ref type="bibl"
+              target="#ref_ИЭС_I"/>
+            <biblScope>199</biblScope></bibl>.</etym>
+        <etym xml:lang="en">Traces back to <mentioned xml:lang="ira"><lang/>
+            <m type="rec">fra-dais</m></mentioned> from <mentioned xml:lang="ira"><m>dais-</m>
+            <gloss><q>show</q></gloss>, <gloss><q>make signs</q></gloss></mentioned>. The same stem
+          is in <ref type="xr" target="#entry_ævdīsyn"><w xml:lang="os-x-iron">ævdīsyn</w><w
+              xml:lang="os-x-digor">ævdesun</w>
+            <note xml:lang="ru" type="comment">(←<m type="rec">abi-dais-</m>)</note><note
+              xml:lang="en" type="comment">(←<m type="rec">abi-dais-</m>)</note>
+            <gloss><q>show</q></gloss></ref>, <ref type="xr" target="#entry_ævdīsæn"><w
+              xml:lang="os-x-iron">ævdīsæn</w><w xml:lang="os-x-digor">ævdesæn</w>
+            <gloss><q>witness</q></gloss>, <gloss><q>evidence</q></gloss></ref>. Cf. <mentioned
+            xml:lang="ae"><lang/>
+            <m>fra-daes-</m>
+            <gloss><q>show</q></gloss>, <gloss><q>reveal (something secret)</q></gloss></mentioned>,
+            <mentioned xml:lang="xpr"><lang/>
+            <m>āδēsaγ-</m>
+            <gloss><q>sign</q></gloss>
+            <note type="bibl">(<bibl><author>Ghilain</author>
+                <biblScope>90</biblScope></bibl>)</note></mentioned> and other correspondences given
+          below <ref type="xr" target="#entry_ævdīsyn"/>.<lb/><bibl><ref type="bibl"
+              target="#ref_ИЭС_I"/>
+            <biblScope>199</biblScope></bibl>.</etym>
       </entry>
     </body>
   </text>
