@@ -1,32 +1,93 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">rædæxsun</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_rædæxsun" xml:lang="os" abv:completeness="incomplete">
-        <form type="lemma"><orth>rædæxsun</orth></form>
-        <sense><abv:tr xml:lang="ru"><q></q></abv:tr></sense>
-        <abv:exampleGrp>
-          <abv:example>
-            <quote></quote>
-          </abv:example>
-        </abv:exampleGrp>
-        <etym xml:lang="ru"></etym>
+      <entry xml:id="entry_rædæxsun" xml:lang="os-x-digor" abv:completeness="complete">
+        <form type="lemma"><orth>rædæxsun</orth><form type="participle"
+          ><orth>rædæxst</orth></form></form>
+        <usg><lang/></usg>
+        <sense><abv:tr xml:lang="ru">
+            <q>взбираться</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>climb</q>
+          </abv:tr></sense>
+        <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">oj særmæ din kud <oRef>isrædæxson</oRef>,
+              marǧ æ særǧi ratæxun ku næ færazuj?</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">как мне взобраться на ее (горы Уарп) вершину,
+                если даже птица не в силах над ней пролететь?</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">how can I climb its (Uarp Mountain's) peak, if
+                even a bird cannot fly over it?</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_СОПам."/>
+              <biblScope>II 95</biblScope></bibl>
+          </example>
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">mingi Acæmæz Saw xonxi særmæ ku
+                <oRef>færrædæxsuj</oRef></quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">маленький Ацамаз взбирается на вершину Черной
+                горы</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">little Atsamaz climbs to the top of the Black
+                Mountain</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ОЭп."/>
+              <biblScope>55<hi rendition="#rend_subscript">42–43</hi></biblScope></bibl>
+          </example>
+        </exampleGrp>
+        <etym xml:lang="ru">Созвучие с <mentioned xml:lang="ae"><lang/>
+            <m>fradaxšanā-</m>
+            <gloss><q>праща</q></gloss></mentioned> следует считать случайным, так как значения
+          трудно связать. Скорее восходит к <mentioned xml:lang="ira"><lang/>
+            <m type="rec">fra-taxš-</m></mentioned> от <mentioned xml:lang="ira"><m>taxš-</m>
+            <gloss><q>стремиться</q></gloss></mentioned> и пр.; ср. <mentioned xml:lang="peo"><lang/>
+            <m>ham-taxš-</m>
+            <gloss><q>усердствовать</q></gloss>, <gloss><q>стараться</q></gloss></mentioned>,
+            <mentioned xml:lang="ae"><lang/>
+            <m>ϑwaxš-</m>
+            <gloss><q>быть в движении, в деятельности</q></gloss></mentioned>, <mentioned
+            xml:lang="ae"><m>ϑwaxša-</m>
+            <gloss><q>деятельный</q></gloss>, <gloss><q>старательный</q></gloss></mentioned>.</etym>
+        <etym xml:lang="en">Consonance with <mentioned xml:lang="ae"><lang/>
+            <m>fradaxšanā-</m>
+            <gloss><q>sling</q></gloss></mentioned> should be considered random since the two
+          meanings are difficult to relate. It rather goes back to <mentioned xml:lang="ira"><lang/>
+            <m type="rec">fra-taxš-</m></mentioned> from <mentioned xml:lang="ira"><m>taxš-</m>
+            <gloss><q>pursuit</q></gloss></mentioned> etc.; cf. <mentioned xml:lang="peo"><lang/>
+            <m>ham-taxš-</m>
+            <gloss><q>be zealous</q></gloss>, <gloss><q>strive</q></gloss></mentioned>, <mentioned
+            xml:lang="ae"><lang/>
+            <m>ϑwaxš-</m>
+            <gloss><q>to be in motion, in action</q></gloss></mentioned>, <mentioned xml:lang="ae"
+              ><m>ϑwaxša-</m>
+            <gloss><q>active</q></gloss>, <gloss><q>diligent</q></gloss></mentioned>.</etym>
       </entry>
     </body>
   </text>
