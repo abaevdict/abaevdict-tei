@@ -1,20 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">pernæ</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
@@ -23,8 +28,14 @@
         <usg><lang/></usg>
         <sense><abv:tr xml:lang="ru">
             <q>мельничное колесо (турбина)</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>mill wheel (turbine)</q>
           </abv:tr></sense>
-        <note type="comment">; <ref type="xr" target="#entry_calx" xml:lang="os-x-iron"><lang/>
+        <note xml:lang="ru" type="comment">; <ref type="xr" target="#entry_calx"
+            xml:lang="os-x-iron"><lang/>
+            <w>k˳yrojy calx</w></ref></note>
+        <note xml:lang="en" type="comment">; <ref type="xr" target="#entry_calx"
+            xml:lang="os-x-iron"><lang/>
             <w>k˳yrojy calx</w></ref></note>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
@@ -33,6 +44,11 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">(мельник) то насекал жернов, то налаживал
                 жолоб, то дремал под песню мельничного колеса, то осматривал сусек</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the miller was turning the millstone, then
+                adjusting the gutter, then dozing to the song of the mill wheel, then inspecting the
+                hopper</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Тайм._Мӕ_зӕрд."/>
               <biblScope>38</biblScope></bibl>
@@ -49,13 +65,31 @@
             <q>чесать шерсть</q></ref> слишком далек по значению. Ожидали бы глагола со значением
             <q>вертеть</q>, <q>вращать</q>; ср. <mentioned xml:lang="cv"><lang/>. <w>păr-</w>
             <gloss><q>вертеть</q>, <q>вращать</q></gloss></mentioned>. <hi
-            rendition="#rend_smallcaps">Ваiley</hi> (<bibl><ref type="bibl" target="#ref_BSOAS"
-              /><biblScope>1958 XXI 539</biblScope></bibl>) считает возможным связать <ref type="xr"
+            rendition="#rend_smallcaps">Ваiley</hi> (<bibl><ref type="bibl" target="#ref_BSOAS"/>
+            <biblScope>1958 XXI 539</biblScope></bibl>) считает возможным связать <ref type="xr"
             target="#entry_pīryn"/> и <oRef/> и возводить их к иранскому глагольному корню со
           значением <q>царапать</q>. Помимо семантических трудностей, сохранение начального <c>p</c>
           в исконно иранском слове (без перехода <c>p</c> → <c>f</c>) представляется крайне
           сомнительным.</etym>
+        <etym xml:lang="en">The word <oRef/> resembles deverbal nouns of tools ending with
+            <m>-næ</m>, — such as <ref type="xr" target="#entry_araznæ"><w>araznæ</w>
+            <q>wheel</q></ref> from <ref type="xr" target="#entry_arazyn"><w>arazun</w>
+            <q>aim</q></ref>, <ref type="xr" target="#entry_xeznæ"><w>xeznæ</w>
+            <q>pasture-land</q></ref> from <ref type="xr" target="#entry_xezun"><w>xezun</w>
+            <q>pasture</q></ref> and so on. (<bibl><ref type="bibl" target="#ref_ОЯФ_I"
+              /><biblScope>573 сл.</biblScope></bibl>). However the only appropriate verb <ref
+            type="xr" target="#entry_pīryn"><w>pīryn</w>
+            <q>comb wool</q></ref> is too far by its meaning. One would expect a verb with meaning
+            <q>roll</q>, <q>rotate</q>; cf. <mentioned xml:lang="cv"><lang/>. <w>păr-</w>
+            <gloss><q>rotate</q>, <q>roll</q></gloss></mentioned>. <hi rendition="#rend_smallcaps"
+            >Ваiley</hi> (<bibl><ref type="bibl" target="#ref_BSOAS"/>
+            <biblScope>1958 XXI 539</biblScope></bibl>) considers it possible to connect <ref
+            type="xr" target="#entry_pīryn"/> and <oRef/> and trace them back to one Iranian verbal
+          root with the meaing <q>scratch</q>. In addition to semantic difficulties, preserving the
+          initial <c>p</c> in the original Iranian word (without transition <c>p</c> → <c>f</c>)
+          seems extremely doubtful.</etym>
       </entry>
     </body>
   </text>
 </TEI>
+

@@ -1,20 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">pitri</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
@@ -22,11 +27,17 @@
         <form type="lemma"><orth>pitri</orth></form>
         <sense><abv:tr xml:lang="ru">
             <q>омела</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>mistletoe</q>
           </abv:tr><abv:tr xml:lang="ru">
             <q>Viscum album</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>Viscum album</q>
           </abv:tr></sense>
-        <note type="comment">; в северноиронском: <w>karḱy kʼax</w><gloss>id. (<q
+        <note xml:lang="ru" type="comment">; в северноиронском: <w>karḱy kʼax</w><gloss>id. (<q
               rendition="#rend_doublequotes">куриная ножка</q>)</gloss></note>
+        <note xml:lang="en" type="comment">; in Northern Iron dialect: <w>karḱy kʼax</w><gloss>id.
+              (<q rendition="#rend_singlequotes">chicken leg</q>)</gloss></note>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">rašydī wæjyg, jæ īw šæst pitrijy næmygaw ūrs,
@@ -35,6 +46,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">вышел великан, один глаз у него белый, как
                 ягода омелы, другой глаз сверкает, как волчий глаз</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">a giant came out, one his eye is white as a
+                mistletoe berry, the other eye is sparkling like a wolf's eye</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ЮОПам."/>
               <biblScope>III 90</biblScope></bibl>
           </example>
@@ -42,6 +57,9 @@
         <etym xml:lang="ru">Из <mentioned xml:lang="ka"><lang/>
             <w>pitri</w>
             <gloss><q>омела</q></gloss></mentioned>.</etym>
+        <etym xml:lang="en">From <mentioned xml:lang="ka"><lang/>
+            <w>pitri</w>
+            <gloss><q>mistletoe</q></gloss></mentioned>.</etym>
       </entry>
     </body>
   </text>
