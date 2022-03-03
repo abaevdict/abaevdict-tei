@@ -1,43 +1,60 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">puxcæ_2</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_puxcæ_2" xml:lang="os-x-digor" abv:completeness="incomplete">
-        <form type="lemma"><orth><hi rendition="#rend_superscript">2</hi>puxcæ</orth></form>
+      <entry xml:id="entry_puxcæ_2" xml:lang="os-x-digor" abv:completeness="incomplete" n="2">
+        <form type="lemma"><orth>puxcæ</orth></form>
         <usg><lang/></usg>
         <sense><abv:tr xml:lang="ru">
             <q>лыко</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>bark</q>
           </abv:tr><abv:tr xml:lang="ru">
             <q>волокнистый</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>fibrous</q>
           </abv:tr><abv:tr xml:lang="ru">
             <q>мочалистый</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>bast</q>
           </abv:tr></sense>
         <re>
           <form type="lemma"><orth>puxcæ gænæ</orth></form>
           <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">мочалистый лен</q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0"
+                ><?oxy_comment_start author="julie" timestamp="20220303T095910+0300" comment="мочалистый лен???"?>wet
+                linen<?oxy_comment_end?></q>
             </tr></sense>
         </re>
         <re>
           <form type="lemma"><orth>puxcin</orth></form>
           <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">лыковый</q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">bast (adj.)</q>
             </tr></sense>
         </re>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
@@ -47,6 +64,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">обрывки ременной веревки мы заменяли лыковыми
                 привязками</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">we replaced the scraps of the belt rope with
+                bast bindings</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_SD"/>
               <biblScope>176<hi rendition="#rend_subscript">1</hi></biblScope></bibl>
@@ -60,10 +81,24 @@
             <gloss><q>хвост</q></gloss></mentioned>, <mentioned xml:lang="de"><lang/>
             <w>Fuchs</w>
             <gloss><q>лиса</q>
-              <note type="comment">(<q rendition="#rend_doublequotes"
-              >пышнохвостая</q>)</note></gloss></mentioned> с идеофоническим сохранением
-          <c>p</c>.</etym>
+              <note xml:lang="ru" type="comment">(<q rendition="#rend_doublequotes"
+                >пышнохвостая</q>)</note><note xml:lang="en" type="comment">(<q
+                  rendition="#rend_doublequotes">пышнохвостая</q>)</note></gloss></mentioned> с
+          идеофоническим сохранением <c>p</c>.</etym>
+        <etym xml:lang="en">Pribably, one should trace it back to
+            <?oxy_comment_start author="julie" timestamp="20220224T140936+0300" comment="иран?"?><w
+            type="rec">puxti-</w><?oxy_comment_end?> and bring it closer to <mentioned
+            xml:lang="inc-x-old"><lang>др.инд.</lang>
+            <w>puccha-</w>
+            <gloss><q>tail</q></gloss></mentioned>, <mentioned xml:lang="de"><lang/>
+            <w>Fuchs</w>
+            <gloss><q>fox</q>
+              <note xml:lang="ru" type="comment">(<q rendition="#rend_doublequotes"
+                >пышнохвостая</q>)</note><note xml:lang="en" type="comment">(<q
+                  rendition="#rend_doublequotes">buxom tailed</q>)</note></gloss></mentioned> with
+          ideophonic conservation of <c>p</c>.</etym>
       </entry>
     </body>
   </text>
 </TEI>
+
