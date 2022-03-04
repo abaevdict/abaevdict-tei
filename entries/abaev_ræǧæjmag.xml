@@ -1,32 +1,90 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ræǧæjmag</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_ræǧæjmag" xml:lang="os" abv:completeness="incomplete">
+      <entry xml:id="entry_ræǧæjmag" xml:lang="os-x-digor" abv:completeness="complete">
         <form type="lemma"><orth>ræǧæjmag</orth></form>
-        <sense><abv:tr xml:lang="ru"><q></q></abv:tr></sense>
-        <abv:exampleGrp>
-          <abv:example>
-            <quote></quote>
-          </abv:example>
-        </abv:exampleGrp>
-        <etym xml:lang="ru"></etym>
+        <usg><lang/></usg>
+        <sense><sense><abv:tr xml:lang="ru">
+              <q>лучший</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>best</q>
+            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+              <q>самый выдающийся</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>most prominent</q>
+            </abv:tr></sense></sense>
+        <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">saxi fsædtæn dær sæ <oRef>ræǧæjmægtæ</oRef>
+              bilæj fækkaldæncæ</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">лучшие из воинов шаха тоже попадали с кручи</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the best of the shah's warriors also fell from
+                the steep</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_СОПам."/>
+              <biblScope>II 83</biblScope></bibl>
+          </example>
+        </exampleGrp>
+        <etym xml:lang="ru">Может быть, восходит к <mentioned xml:lang="ira"><lang/>
+            <m type="rec">fra-gama-ka-</m>
+            <gloss><q>идущий впереди</q></gloss></mentioned> от <mentioned xml:lang="ira"
+              ><m>gam-</m>
+            <gloss><q>идти</q></gloss></mentioned>. Ср. <mentioned xml:lang="inc-x-old"><lang/>
+            <m>gama-</m>
+            <note xml:lang="ru" type="comment">(во второй части сложных слов)</note><note
+              xml:lang="en" type="comment">(во второй части сложных слов)</note>
+            <gloss><q>идущий</q></gloss></mentioned> и преверб <mentioned xml:lang="ira"><lang/>
+            <m>fra-</m></mentioned>, <mentioned xml:lang="ine"><lang/>
+            <m>pro-</m></mentioned>, указывающий на движение вперед. Менее вероятной кажется связь с
+            <ref type="xr" target="#entry_raǧ"><w>raǧ</w>
+            <gloss><q>хребет</q></gloss></ref>: <oRef>ræǧæjmag</oRef> от <ref type="xr"
+            target="#entry_raǧ"/>, как, скажем, <ref type="xr" target="#entry_ævdæjmag"
+              ><w>ævdæjmag</w>
+            <gloss><q>седьмой</q></gloss></ref> от <ref type="xr" target="#entry_avd"/>? В этом
+          случае <oRef>ræǧæjmag</oRef> означало бы <q rendition="#rend_doublequotes">находящийся на
+            хребте, на высоте</q>.</etym>
+        <etym xml:lang="en">Maybe, traces back to <mentioned xml:lang="ira"><lang/>
+            <m type="rec">fra-gama-ka-</m>
+            <gloss><q>going in front</q></gloss></mentioned> from <mentioned xml:lang="ira"
+              ><m>gam-</m>
+            <gloss><q>go</q></gloss></mentioned>. Cf. <mentioned xml:lang="inc-x-old"><lang/>
+            <m>gama-</m>
+            <note xml:lang="ru" type="comment">(во второй части сложных слов)</note><note
+              xml:lang="en" type="comment">(in the second part of compound words)</note>
+            <gloss><q>going</q></gloss></mentioned> and the preverb <mentioned xml:lang="ira"><lang/>
+            <m>fra-</m></mentioned>, <mentioned xml:lang="ine"><lang/>
+            <m>pro-</m></mentioned>, indicating forward movement. It seems less likely to be
+          associated with <ref type="xr" target="#entry_raǧ"><w>raǧ</w>
+            <gloss><q>ridge</q></gloss></ref>: <oRef>ræǧæjmag</oRef> is from <ref type="xr"
+            target="#entry_raǧ"/>, as, e.g., <ref type="xr" target="#entry_ævdæjmag"><w>ævdæjmag</w>
+            <gloss><q>seventh</q></gloss></ref> is from <ref type="xr" target="#entry_avd"/>? In
+          this case <oRef>ræǧæjmag</oRef> would have meant <q rendition="#rend_doublequotes">being
+            on the ridge, at the top</q>.</etym>
       </entry>
     </body>
   </text>
