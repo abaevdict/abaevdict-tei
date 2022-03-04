@@ -1,30 +1,36 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">pelwan</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
       <entry xml:id="entry_pelwan" xml:lang="os" abv:completeness="incomplete">
-        <form type="lemma"
-            ><orth>pelwan</orth><?oxy_comment_start author="julie" timestamp="20220222T141659+0300" comment="скобочки
-"?><form type="variant"><orth>peliwan</orth></form><?oxy_comment_end?></form>
+        <form type="lemma"><orth>pelwan</orth><form type="parens"><orth>peliwan</orth></form></form>
         <sense><abv:tr xml:lang="ru">
             <q>силач</q>
-          </abv:tr><note type="comment">(мало употр.)</note></sense>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>strongman</q>
+          </abv:tr><note xml:lang="ru" type="comment">(мало употр.)</note><note xml:lang="en"
+            type="comment">(less frequent)</note></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">ke bæxtæ ʼпсæ i qal buduri minti nimæǧæj
@@ -32,6 +38,11 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">чьи это кони в злачной степи числом шестнадцать
                 тысяч, которых пасут остроклыкие (?) силачи (в качестве) ночных сторожей?</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">whose are these horses in the golden steppe,
+                numbering sixteen thousand, which are grazed by sharp-fanged (?) strongmen (as)
+                night watchmen?</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl"
                 target="#src_Gurdž._Saxi_ræs."/>
@@ -41,10 +52,11 @@
         <etym xml:lang="ru">Из <mentioned xml:lang="fa"><lang/>
             <w>pahlavan</w>
             <gloss><q>герой</q>, <q>силач</q>, <q>атлет</q>, <q>борец</q>, буквально <q
-                rendition="#rend_doublequotes">парфянин</q></gloss></mentioned>. Сюда же
-              <mentioned><lang>тюрк</lang>, <w>pahlivan</w>, <w>palvan</w> (<note type="bibl"
-                  ><bibl><ref type="bibl" target="#ref_Радлов"/><biblScope>IV 1221,
-                1247</biblScope></bibl>)</note></mentioned>, <mentioned xml:lang="xcl"><lang/>
+                rendition="#rend_doublequotes">парфянин</q></gloss></mentioned>. Сюда же <mentioned
+            xml:lang="trk"><lang/>
+            <w>pahlivan</w>, <w>palvan</w> (<note type="bibl"><bibl><ref type="bibl"
+                  target="#ref_Радлов"/><biblScope>IV 1221,
+            1247</biblScope></bibl>)</note></mentioned>, <mentioned xml:lang="xcl"><lang/>
             <w>pahliwan</w></mentioned>, <mentioned xml:lang="ka"><lang/>
             <w>palavani</w></mentioned>, <mentioned xml:lang="kbd"><lang>каб</lang>. <w>paltvan</w>,
               <w>pajlwan</w>
@@ -54,11 +66,49 @@
             <w>pīllon</w></ref> в сочетании <quote>pillon wæjyg, pillon g˳ymiry</quote>
           <q rendition="#rend_doublequotes"><hi rendition="#rend_smallcaps">pillon</hi> великан</q>,
           которое встречается в сказках и сказаниях об Амиране [например<bibl><ref type="bibl"
-              target="#ref_ЮОПам."> ЮОПам.</ref><biblScope>II 29</biblScope></bibl>: <quote>kædæm
-            cæwut? aj tyxgænæǵy ræstæg, pillon g˳ymiry ræstæg k˳y ū, wæd k˳yd xæssūt wæ
-          nyfs</quote>? <q rendition="#rend_doublequotes">куда вы идете? ведь (теперь) время
-            насильников, время <hi rendition="#rend_smallcaps">pillon</hi> великанов, как же вы
-            отваживаетесь?</q>]. См. также <ref type="xr" target="#entry_pīllon"/>.</etym>
+              target="#ref_ЮОПам."> ЮОПам.</ref><biblScope>II 29</biblScope></bibl>: <example
+            xmlns="http://ossetic-studies.org/ns/abaevdict">
+            <quote xmlns="http://www.tei-c.org/ns/1.0">kædæm cæwut? aj tyxgænæǵy ræstæg, pillon
+              g˳ymiry ræstæg k˳y ū, wæd k˳yd xæssūt wæ nyfs?</quote>
+            <tr xml:lang="ru">
+              <q rendition="#rend_doublequotes" xmlns="http://www.tei-c.org/ns/1.0">куда вы идете?
+                ведь (теперь) время насильников, время <hi rendition="#rend_smallcaps">pillon</hi>
+                великанов, как же вы отваживаетесь?</q>
+            </tr>
+          </example>]. См. также <ref type="xr" target="#entry_pīllon"/>.</etym>
+        <etym xml:lang="en">From <mentioned xml:lang="fa"><lang/>
+            <w>pahlavan</w>
+            <gloss><q>hero</q>, <q>strongman</q>, <q>athlete</q>, <q>fighter</q>, literally <q
+                rendition="#rend_singlequotes">Parthian</q></gloss></mentioned>. Also here
+            <mentioned xml:lang="trk"><lang/>
+            <w>pahlivan</w>, <w>palvan</w> (<note type="bibl"><bibl><ref type="bibl"
+                  target="#ref_Радлов"/>
+                <biblScope>IV 1221, 1247</biblScope></bibl>)</note></mentioned>, <mentioned
+            xml:lang="xcl"><lang/>
+            <w>pahliwan</w></mentioned>, <mentioned xml:lang="ka"><lang/>
+            <w>palavani</w></mentioned>, <mentioned xml:lang="kbd"><lang>каб</lang>. <w>paltvan</w>,
+              <w>pajlwan</w>
+            <gloss><q>strongman</q>, <q>fighter</q> and so on.</gloss></mentioned> Probably, we have
+          further sound development of the same word in <ref type="xr" target="#entry_pīllon"
+            xml:lang="os"><lang/>
+            <w>pīllon</w></ref> in the expression <quote>pillon wæjyg, pillon g˳ymiry</quote>
+          <q rendition="#rend_doublequotes"><hi rendition="#rend_smallcaps">pillon</hi> the
+            giant</q>, which is found in fairy tales and legends about Amiran [for example,
+              <bibl><ref type="bibl" target="#ref_ЮОПам."> ЮОПам.</ref><biblScope>II
+            29</biblScope></bibl>: <example xmlns="http://ossetic-studies.org/ns/abaevdict">
+            <quote xmlns="http://www.tei-c.org/ns/1.0">kædæm cæwut? aj tyxgænæǵy ræstæg, pillon
+              g˳ymiry ræstæg k˳y ū, wæd k˳yd xæssūt wæ nyfs?</quote>
+            <tr xml:lang="ru">
+              <q rendition="#rend_doublequotes" xmlns="http://www.tei-c.org/ns/1.0">куда вы идете?
+                ведь (теперь) время насильников, время <hi rendition="#rend_smallcaps">pillon</hi>
+                великанов, как же вы отваживаетесь?</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0" rendition="#rend_doublequotes">where are you
+                going? after all (now) is the time of rapists, the time of <hi
+                  rendition="#rend_smallcaps">pillon</hi> the giants, how dare you?</q>
+            </tr>
+          </example>]. See also <ref type="xr" target="#entry_pīllon"/>.</etym>
       </entry>
     </body>
   </text>

@@ -1,34 +1,50 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">pæux</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
       <entry xml:id="entry_pæux" xml:lang="os" abv:completeness="incomplete">
         <form type="lemma"><orth>pæux</orth><form type="variant"><orth>pox</orth></form></form>
-        <sense><note type="comment">название масти у лошадей </note><abv:tr xml:lang="ru">
-            <q>с белой полосой на лбу</q>
-            <note type="comment"> (?)</note>
+        <sense><note xml:lang="ru" type="comment">название масти у лошадей </note><note
+            xml:lang="en" type="comment">the name of the horse coat color </note>, <abv:tr
+            xml:lang="en">
+            <q>with a white stripe on his forehead</q>
+            <note xml:lang="ru" type="comment"> (?)</note>
+            <note xml:lang="en" type="comment"> (?)</note>
           </abv:tr><abv:tr xml:lang="ru">
             <q>темно-гнедой</q>
-            <note type="comment"> (?)</note>
-          </abv:tr><note type="comment">; по объяснению одного информатора: <quote>nædær surx, nædær
-              bor, nædær sawgon</quote>
-            <q rendition="#rend_doublequotes">ни гнедая, ни буланая, ни вороная</q></note></sense>
+            <note xml:lang="ru" type="comment"> (?)</note>
+            <note xml:lang="en" type="comment"> (?)</note>
+          </abv:tr>, <abv:tr xml:lang="en">
+            <q>темно-гнедой</q>
+            <note xml:lang="ru" type="comment"> (?)</note>
+            <note xml:lang="en" type="comment"> (?)</note>
+          </abv:tr><note xml:lang="ru" type="comment">; по объяснению одного информатора:
+              <quote>nædær surx, nædær bor, nædær sawgon</quote>
+            <q rendition="#rend_doublequotes">ни гнедая, ни буланая, ни вороная</q></note><note
+            xml:lang="en" type="comment">; according to the explanation of one informant:
+              <quote>nædær surx, nædær bor, nædær sawgon</quote>
+            <q rendition="#rend_doublequotes">neither bay, nor bun, nor black</q></note></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">afonmæ рæих dūǧon me skʼæty xūssajrag xos
@@ -37,6 +53,11 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">должно быть, теперь мой скакун <hi
                   rendition="#rend_smallcaps">pæux</hi> в моей конюшне хрупает сено с южного склона
                 (т. е. лучшее сено)</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">my <hi rendition="#rend_smallcaps">pæux</hi>
+                race horse must be in my stable now, chomping hay from the south slope (i. e. the
+                best hay)</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Брит."/>
               <biblScope>38</biblScope></bibl>
@@ -49,6 +70,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">тем временем его брат подоспел на лошади
                 (масти) <hi rendition="#rend_smallcaps">pox</hi> с двумя гончими псами</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">meanwhile, his brother arrived on a <hi
+                  rendition="#rend_smallcaps">pox</hi> horse with two greyhouds</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_AK"/>
               <biblScope>III 33</biblScope></bibl>
           </example>
@@ -59,12 +84,27 @@
             <note type="bibl">(<bibl><ref type="bibl" target="#ref_СМК"/><biblScope>XII <hi
                     rendition="#rend_italic">2</hi> 21</biblScope></bibl>)</note>,
                 <gloss><q>белоносый</q></gloss>
-            <note type="comment">(о животных)</note>
+            <note xml:lang="ru" type="comment">(о животных)</note><note xml:lang="en" type="comment"
+              >(о животных)</note><note xml:lang="en" type="comment">(о животных)</note><note
+              xml:lang="en" type="comment">(о животных)</note>
             <note type="bibl">(<bibl><ref type="bibl" target="#ref_Каб.-русск. сл. М., 1957"
                   /><biblScope>стр. 291</biblScope></bibl>)</note></mentioned>, <mentioned
             xml:lang="abq"><lang/>
             <w>pok˳</w>
             <gloss><q>масть лошади</q></gloss></mentioned>.</etym>
+        <etym xml:lang="en">Cf. <mentioned xml:lang="kbd"><lang/>
+            <w>pexw</w>
+            <gloss><q>black</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_СМК"/>
+                <biblScope>XII <hi rendition="#rend_italic">2</hi> 21</biblScope></bibl>)</note>,
+                <gloss><q>white-nosed</q></gloss>
+            <note xml:lang="ru" type="comment">(о животных)</note><note xml:lang="en" type="comment"
+              >(about animals)</note>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Каб.-русск. сл. М., 1957"
+                  /><biblScope>p. 291</biblScope></bibl>)</note></mentioned>, <mentioned
+            xml:lang="abq"><lang/>
+            <w>pok˳</w>
+            <gloss><q>horse coat color</q></gloss></mentioned>.</etym>
       </entry>
     </body>
   </text>

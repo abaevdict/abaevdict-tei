@@ -1,20 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">poxci</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
@@ -22,18 +27,30 @@
         <form type="lemma"><orth>poxci</orth></form>
         <sense><abv:tr xml:lang="ru">
             <q>борона</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>harrow</q>
           </abv:tr>
-          <note type="comment">(c железными зубьями)</note></sense>
-        <note type="comment">; ср. <ref type="xr" target="#entry_adæg" xml:lang="os-x-iron"><lang/>
+          <note xml:lang="ru" type="comment">(c железными зубьями)</note><note xml:lang="en"
+            type="comment">(with iron teeth)</note></sense>
+        <note xml:lang="ru" type="comment">; ср. <ref type="xr" target="#entry_adæg"
+            xml:lang="os-x-iron"><lang/>
             <w>adæg</w></ref>, <ref type="xr" target="#entry_asojnæ" xml:lang="os-x-digor"><lang/>
             <w>asojnæ</w>
             <q>борона деревянная</q></ref></note>
+        <note xml:lang="en" type="comment">; cf. <ref type="xr" target="#entry_adæg"
+            xml:lang="os-x-iron"><lang/>
+            <w>adæg</w></ref>, <ref type="xr" target="#entry_asojnæ" xml:lang="os-x-digor"><lang/>
+            <w>asojnæ</w>
+            <q>wooden harrow</q></ref></note>
         <?oxy_comment_start author="julie" timestamp="20220224T111105+0300" comment="вообще это похоже на сабэнтри"?>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">poxci lasyn</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0" rendition="#rend_singlequotes">боронить</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0" rendition="#rend_singlequotes">harrow (v)</q>
             </tr>
           </example>
         </exampleGrp><?oxy_comment_end?>
@@ -43,6 +60,13 @@
             xml:lang="os-x-digor"><lang/>
             <w>paxsa</w>
             <q>грабли</q></ref>. <lb/><bibl><ref type="bibl" target="#ref_ОЯФ_I"/>
+            <biblScope>59, 87</biblScope></bibl>.</etym>
+        <etym xml:lang="en">From <mentioned xml:lang="ka"><lang/>
+            <w>poxci</w>
+            <gloss><q>rake</q></gloss></mentioned>. Cf. <ref type="xr" target="#entry_paxsa"
+            xml:lang="os-x-digor"><lang/>
+            <w>paxsa</w>
+            <q>rake</q></ref>. <lb/><bibl><ref type="bibl" target="#ref_ОЯФ_I"/>
             <biblScope>59, 87</biblScope></bibl>.</etym>
       </entry>
     </body>
