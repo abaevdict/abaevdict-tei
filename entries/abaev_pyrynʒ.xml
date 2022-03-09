@@ -1,20 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">pyrynʒ</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
@@ -23,22 +28,32 @@
         <form xml:lang="os-x-digor" type="dialectal"><orth>pirinʒ</orth></form>
         <sense><abv:tr xml:lang="ru">
             <q>рис</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>rice</q>
           </abv:tr></sense>
         <re>
           <form type="lemma"><orth>pyrynʒy kas</orth></form>
           <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">рисовая каша</q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">rice porridge</q>
             </tr></sense>
-          <note type="comment">. В текстах, записанных <bibl><ref type="bibl" target="#src_Munk."
-                  ><hi rendition="#rend_smallcaps"
-              >Munkácsi</hi></ref><biblScope>(204)</biblScope></bibl>, имеется форма
-            <w>byryngy</w></note>
+          <note xml:lang="ru" type="comment">. В текстах, записанных <bibl><ref type="bibl"
+                target="#src_Munk."><hi rendition="#rend_smallcaps"
+                >Munkácsi</hi></ref><biblScope>(204)</biblScope></bibl>, имеется форма
+              <w>byryngy</w></note>
+          <note xml:lang="en" type="comment">. There is a form <w>byryngy</w> in texts written by
+                <bibl><ref type="bibl" target="#src_Munk."><hi rendition="#rend_smallcaps"
+                  >Munkácsi</hi></ref><biblScope>(204)</biblScope></bibl></note>
         </re>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">pyrynʒy x˳yzæn ūrs-ūrsid fyd</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">мясо белое, как рис</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">meat is white as rice</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Брит."/>
               <biblScope>72</biblScope></bibl>
@@ -50,6 +65,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">из города в село везут ткани, обувь, одежду,
                 чай, сахар, рис...</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">fabrics, shoes, clothes, tea, sugar, rice are
+                transported from the city to the village...</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_AK"/>
               <biblScope>42</biblScope></bibl>
@@ -76,9 +95,33 @@
             <w>riso</w></mentioned>, <mentioned xml:lang="fr"><lang/>
             <w>riz</w></mentioned>, <mentioned xml:lang="de"><lang/>
             <w>Reis</w></mentioned>, <mentioned xml:lang="ru"><lang/>
-            <w>рис</w></mentioned>. <lb/><bibl><ref type="bibl" target="#ref_Hübschmann._Oss."
-              /><biblScope>121</biblScope></bibl>.</etym>
+            <w>рис</w></mentioned>. <lb/><bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/>
+            <biblScope>121</biblScope></bibl>.</etym>
+        <etym xml:lang="en">From <mentioned xml:lang="fa"><lang/>
+            <w>birinǰ</w>
+            <gloss><q>rice</q></gloss></mentioned>, perhaps through Turkic: <mentioned
+            xml:lang="trk"><lang/>
+            <w>pirinǯ</w>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Радлов"/><biblScope>IV
+                  1333</biblScope></bibl>)</note></mentioned>. Also here <mentioned xml:lang="xcl"><lang/>
+            <w>brinǯ</w></mentioned>, <mentioned xml:lang="ka"><lang/>
+            <w>brinǯi</w></mentioned>, <mentioned xml:lang="av"><lang/>
+            <w>pirinči</w></mentioned>, <mentioned xml:lang="kbd"><lang/>
+            <w>prunž</w></mentioned>. It has entered in other languages of Caucasus. The word comes
+          from India: <mentioned xml:lang="inc-x-old"><lang/>
+            <w>vrīhi-</w></mentioned>. There are also Iranian forms without a nasal and, therefore,
+          independent of Persian: <mentioned xml:lang="ps"><lang/>
+            <w>wrižē</w></mentioned>, <mentioned xml:lang="kho"><lang/>
+            <w>rrīysu</w></mentioned>, <mentioned xml:lang="zza"><lang/>
+            <w>res</w></mentioned>; also here through <mentioned xml:lang="grc"><lang/>
+            <w>ὅρυζα</w></mentioned>, <mentioned xml:lang="it"><lang/>
+            <w>riso</w></mentioned>, <mentioned xml:lang="fr"><lang/>
+            <w>riz</w></mentioned>, <mentioned xml:lang="de"><lang/>
+            <w>Reis</w></mentioned>, <mentioned xml:lang="ru"><lang/>
+            <w>рис</w></mentioned>. <lb/><bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/>
+            <biblScope>121</biblScope></bibl>.</etym>
       </entry>
     </body>
   </text>
 </TEI>
+
