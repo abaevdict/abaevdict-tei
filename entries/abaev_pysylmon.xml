@@ -1,45 +1,62 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">pysylmon</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
       <entry xml:id="entry_pysylmon" xml:lang="os" abv:completeness="incomplete">
         <form type="lemma" xml:lang="os-x-iron"><orth>pysylmon</orth></form>
         <form xml:lang="os-x-digor" type="dialectal"><orth>pusulmon</orth></form>
-        <sense><abv:tr xml:lang="ru">
-            <q>мусульманин</q>
-          </abv:tr><abv:tr xml:lang="ru">
-            <q>мусульманский</q>
-          </abv:tr></sense>
+        <sense><sense><abv:tr xml:lang="ru">
+              <q>мусульманин</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>Muslim</q>
+            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+              <q>мусульманский</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>Islamic</q>
+            </abv:tr></sense></sense>
         <re>
           <form type="lemma"><orth>pysylmon dīn</orth></form>
-          <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
-              <q xmlns="http://www.tei-c.org/ns/1.0">мусульманская религия</q>
-            </tr><abv:tr xml:lang="ru">
-              <q>ислам</q>
-            </abv:tr></sense>
+          <sense><sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
+                <q xmlns="http://www.tei-c.org/ns/1.0">мусульманская религия</q>
+              </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+                <q xmlns="http://www.tei-c.org/ns/1.0">Muslim religion</q>
+              </tr></sense><sense><abv:tr xml:lang="ru">
+                <q>ислам</q>
+              </abv:tr><abv:tr xml:lang="en">
+                <q>Islam</q>
+              </abv:tr></sense></sense>
         </re>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
-            <quote xmlns="http://www.tei-c.org/ns/1.0">pysylьщт dīn dнт bazzadī dæ fydæltæj</quote>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">pysylmon dīn dyn bazzadī dæ fydæltæj</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">мусульманская религия тебе осталась от
                 предков</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the Muslim religion is left to you from your
+                ancestors</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Arsen"/>
               <biblScope>121</biblScope></bibl>
@@ -47,15 +64,18 @@
         </exampleGrp>
         <etym xml:lang="ru">Из <mentioned xml:lang="fa"><lang/>
             <w>musulmān</w>
-            <note type="comment">(от <mentioned xml:lang="ar"><lang/>
+            <note xml:lang="ru" type="comment">(от <mentioned xml:lang="ar"><lang/>
+                <w>muslim</w></mentioned>)</note><note xml:lang="en" type="comment">(от <mentioned
+                xml:lang="ar"><lang/>
                 <w>muslim</w></mentioned>)</note></mentioned>. Перебой <c>m</c> → <c>b(p)</c>
           характерен для некоторых тюркских диалектов, в частности куманского (<bibl><ref
               type="bibl" target="#ref_ИОРЯС"><hi rendition="#rend_smallcaps">Мелиоранский</hi>,
               ИОРЯС</ref><biblScope>X <hi rend="italic">4</hi> 114</biblScope></bibl>. — <bibl><ref
               type="bibl" target="#ref_Дмитриев"><hi rendition="#rend_smallcaps">Дмитриев</hi>.
-              Строй тюркских языков. М., 1962,</ref><biblScope>стр. 527</biblScope></bibl>).
-          Вероятно, через посредство одного из этих языков слово и вошло в осетинский. Ср.
-            <mentioned xml:lang="krc-x-balkar" extralang="krc-x-karachay"><lang/>
+              Строй тюркских языков. М., 1962,</ref>
+            <biblScope>стр. 527</biblScope></bibl>). Вероятно, через посредство одного из этих
+          языков слово и вошло в осетинский. Ср. <mentioned xml:lang="krc-x-balkar"
+            extralang="krc-x-karachay"><lang/>
             <w>busliman</w></mentioned>, <mentioned xml:lang="ky"><lang/>
             <w>busulman</w></mentioned>. Сюда же <mentioned xml:lang="ce"><lang/>
             <w>busulba(n)</w></mentioned>, <mentioned xml:lang="kbd"><lang/>
@@ -66,10 +86,38 @@
             <w>busurman</w></mentioned> и <mentioned xml:lang="ru"><lang/>
             <w>басурман</w>, <w>бусурман</w></mentioned>. Переход <c>b</c> → <c>p</c> мог произойти
           на осетинской почве; ср. <ref type="xr" target="#entry_peltʼ"/>, <ref type="xr"
-            target="#entry_pyrynʒ"/>. <lb/><bibl><ref type="bibl" target="#ref_Hübschmann._Oss."
-              /><biblScope>129</biblScope></bibl>. — <bibl><ref type="bibl"
-              target="#ref_Miller._Gr.">Вс. <hi rendition="#rend_smallcaps">Миллер</hi>.
-              Gr.</ref><biblScope>9</biblScope></bibl></etym>
+            target="#entry_pyrynʒ"/>. <lb/><bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/>
+            <biblScope>129</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Miller._Gr."
+              >Вс. <hi rendition="#rend_smallcaps">Миллер</hi>. Gr.</ref>
+            <biblScope>9</biblScope></bibl></etym>
+        <etym xml:lang="en">From <mentioned xml:lang="fa"><lang/>
+            <w>musulmān</w>
+            <note xml:lang="ru" type="comment">(от <mentioned xml:lang="ar"><lang/>
+                <w>muslim</w></mentioned>)</note><note xml:lang="en" type="comment">(from <mentioned
+                xml:lang="ar"><lang/>
+                <w>muslim</w></mentioned>)</note></mentioned>. The transition <c>m</c> → <c>b(p)</c>
+          is characteristic of some Turkic dialects, in particular Cuman (<bibl><ref type="bibl"
+              target="#ref_ИОРЯС"><hi rendition="#rend_smallcaps">Melioranskij</hi>, ИОРЯС</ref>
+            <biblScope>X <hi rend="italic">4</hi> 114</biblScope></bibl>. — <bibl><ref type="bibl"
+              target="#ref_Дмитриев"><hi rendition="#rend_smallcaps">Dmitrijev</hi>. Строй тюркских
+              языков. М., 1962,</ref>
+            <biblScope>p. 527</biblScope></bibl>). Probably, through the medium of one of these
+          languages, the word entered in Ossetic. Cf. <mentioned xml:lang="krc-x-balkar"
+            extralang="krc-x-karachay"><lang/>
+            <w>busliman</w></mentioned>, <mentioned xml:lang="ky"><lang/>
+            <w>busulman</w></mentioned>. Also here <mentioned xml:lang="ce"><lang/>
+            <w>busulba(n)</w></mentioned>, <mentioned xml:lang="kbd"><lang/>
+            <w>bəsəlmän</w>, <w>busl'əmän</w></mentioned>, <mentioned xml:lang="uby"><lang/>
+            <w>bəslman</w>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Vogt"/>
+                <biblScope>238</biblScope></bibl>)</note>.</mentioned>, <mentioned xml:lang="av"><lang/>
+            <w>busurman</w></mentioned> and <mentioned xml:lang="ru"><lang/>
+            <w>basurman</w>, <w>busurman</w></mentioned>. The transition <c>b</c> → <c>p</c> could
+          happen because of Ossetic; cf. <ref type="xr" target="#entry_peltʼ"/>, <ref type="xr"
+            target="#entry_pyrynʒ"/>. <lb/><bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/>
+            <biblScope>129</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Miller._Gr."
+              >Vs. <hi rendition="#rend_smallcaps">Miller</hi>. Gr.</ref>
+            <biblScope>9</biblScope></bibl></etym>
       </entry>
     </body>
   </text>
