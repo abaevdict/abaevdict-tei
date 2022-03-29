@@ -1,40 +1,56 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">lænk</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">II</biblScope>. L–R. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1973</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">II</biblScope>. L–R. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1973</date>. С. <biblScope unit="page">29–30</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_lænk" xml:lang="os" abv:completeness="incomplete">
+      <entry xml:id="entry_lænk" xml:lang="os" abv:completeness="complete">
         <form type="lemma" xml:lang="os-x-iron"><orth>lænk</orth></form>
         <form xml:lang="os-x-digor" type="dialectal"><orth>læncæ</orth></form>
         <sense><sense><abv:tr xml:lang="ru">
               <q>ложбина</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>gully</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>низина</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>hollow</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>лог</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>ravine</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>впадина</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>depression</q>
             </abv:tr></sense></sense>
         <re>
           <form type="lemma" xml:lang="os-x-iron"><orth>lænkaw</orth></form>
           <form xml:lang="os-x-digor" type="dialectal"><orth>læncaw</orth></form>
-          <note type="comment"> (уподоб. падеж)</note>
-          <sense><def xml:lang="ru">id.</def></sense>
+          <note xml:lang="ru" type="comment"> (уподоб. падеж)</note>
+          <note xml:lang="en" type="comment">
+            (<?oxy_comment_start author="oleg" timestamp="20220329T222119+0300" comment="NB для Юли"?>equative
+            case<?oxy_comment_end?>)</note>
+          <sense><def xml:lang="ru">id.</def><def xml:lang="en">id.</def></sense>
         </re>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
@@ -44,43 +60,64 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">южные и северные склоны, глубокие ложбины
                 пестрят разными цветами</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">southern and northern slopes, deep gullies
+                display a variety of colours with their flowers</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сека"/>
               <biblScope>21</biblScope></bibl>
           </example>
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">īw walʒæg Bibo jæ fos xīzynmæ atardta xoxmæ,
-              īw ræsūǧd lænḱy fosdaræn yskodta æmæ ūrdygæj jæ fos xyzta</quote>
+              īw ræsūǧd <oRef>lænḱy</oRef> fosdaræn yskodta æmæ ūrdygæj jæ fos xyzta</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">одной весной Бибо погнал свой скот пастись в
                 горы, в одной живописной ложбине устроил стойбище и оттуда пас свой скот</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">one springtime Bibo drove his cattle to graze
+                in the mountains, he set up camp in a picturesque ravine and grazed his cattle from
+                there</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сека"/>
               <biblScope>44</biblScope></bibl>
           </example>
           <example>
-            <quote xmlns="http://www.tei-c.org/ns/1.0">xₒyrǵyn lænḱytæ, naræg æxxæltæ, talyng
-              kʼₒymtæ</quote>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">xₒyrǵyn <oRef>lænḱytæ</oRef>, naræg æxxæltæ,
+              talyng kʼₒymtæ</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">каменистые ложбины, узкие впадины, темные
                 закоулки…</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">stony ravines, narrow depressions, dark
+                nooks…</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сека"/>
               <biblScope>97</biblScope></bibl>
           </example>
           <example>
-            <quote xmlns="http://www.tei-c.org/ns/1.0">Bazyrgan… lænḱy bambæxstis</quote>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">Bazyrgan… <oRef>lænḱy</oRef>
+              bambæxstis</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">Базырган спрятался в ложбине</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Bazyrgan hid in the hollow</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ИАА"/>
               <biblScope>II 241</biblScope></bibl>
           </example>
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">askʼær fætænmæ; xorz kₒy fæxīzaj, wæd sæ
-              lænkawy tægær bælæsty bynmæ rīvæd kænynmæ nyzdax</quote>
+                <oRef>lænkawy</oRef> tægær bælæsty bynmæ rīvæd kænynmæ nyzdax</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">погони (скот) на широкое (пастбище); когда
                 хорошо выпасешь, то сверни его вниз в ложбину под кленами на дневку</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">drive (cattle) onto a wide (pasture); when you
+                graze it well, turn it down into the ravine under the maples for a day stay</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_F."/>
               <biblScope>1956 V 8</biblScope></bibl>
@@ -93,21 +130,34 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">меня ранило в правую руку и ногу; я свалился во
                 впадину</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">I was wounded into the right arm and leg; I
+                fell into the depression</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_AK"/>
               <biblScope>II 34</biblScope></bibl>
           </example>
           <example xml:lang="os-x-digor">
             <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
-            <quote xmlns="http://www.tei-c.org/ns/1.0">arf komi saw ǧædi fud læncæ, ærwaǧton
-              nimætbæl mæ sær</quote>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">arf komi saw ǧædi fud <oRef>læncæ</oRef>,
+              ærwaǧton nimætbæl mæ sær</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">в глубоком ущелье в черном лесу скверная
                 впадина, (там) я опустил на бурку свою голову</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">in a deep gorge in a black wood a nasty
+                depression, (there) I put my head down onto a felt coat</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Bes."/>
               <biblScope>75</biblScope></bibl>
-            <note type="footnote" xmlns="http://www.tei-c.org/ns/1.0">Автор (Т. <hi
+            <note xmlns="http://www.tei-c.org/ns/1.0" xml:lang="ru" type="footnote">Автор (Т. <hi
                 rendition="#rend_smallcaps">Бесаев</hi>) поясняет: <oRef xml:lang="os-x-digor"
+                >læncæ</oRef> = <ref type="xr" target="#entry_tærf" xml:lang="os-x-digor"
+                  ><w>tærfæ</w></ref>, <ref type="xr" target="#entry_mæskʼ_1" xml:lang="os-x-digor"
+                  ><w>mæskʼæ</w></ref>.</note>
+            <note xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" type="footnote">The author (T.
+                <hi rendition="#rend_smallcaps">Besaev</hi>) clarifies: <oRef xml:lang="os-x-digor"
                 >læncæ</oRef> = <ref type="xr" target="#entry_tærf" xml:lang="os-x-digor"
                   ><w>tærfæ</w></ref>, <ref type="xr" target="#entry_mæskʼ_1" xml:lang="os-x-digor"
                   ><w>mæskʼæ</w></ref>.</note>
@@ -148,6 +198,43 @@
             <gloss><q>лосось</q></gloss></ref> и др.<pb/><bibl><ref type="bibl" target="#ref_СЕИ"/>
             <biblScope>17, 38, 124</biblScope></bibl>. — <bibl><author>Wüst, J.</author>
             <title>Indian Linguistics, Saksena Volume</title>, <date>1965</date>, <biblScope>стр.
+              95–60</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Bailey._KhT"/>
+            <biblScope>VI 314</biblScope></bibl>.</etym>
+        <etym xml:lang="en">Inseparable from <mentioned xml:lang="x-tchr"><lang/>
+            <w>leṅke</w>
+            <gloss><q>depression</q></gloss></mentioned>, <mentioned xml:lang="lt"><lang/>
+            <w>lankà</w>
+            <gloss><q>valley</q></gloss>, <gloss><q>hollow</q></gloss></mentioned>, <mentioned
+            xml:lang="cu"><lang/>
+            <w>lǫka</w>
+            <gloss><q>depression</q></gloss>, <gloss><q>hollow</q></gloss></mentioned>, <mentioned
+            xml:lang="ru"><lang/>
+            <w>лука</w>
+            <gloss><q>grassy hollow</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Даль"
+            /></bibl>)</note></mentioned>, <mentioned xml:lang="ru"><w>луко-морье</w>
+            <gloss><q>sea bay</q></gloss>, <gloss><q>little gulf</q></gloss></mentioned>, <mentioned
+            xml:lang="bg"><lang/>
+            <w>лъка</w>
+            <gloss><q>gully</q></gloss>, <gloss><q>riverside meadow</q></gloss></mentioned>. In
+          toponymy cf. <mentioned xml:lang="inc-x-old"><lang/>
+            <w>Lankā-pura</w></mentioned>, <mentioned xml:lang="kho"><lang/>
+            <w>Laṃggä-kamtha</w>
+            <gloss><q>the city of Lanka</q></gloss></mentioned>. The Indo-European base <mentioned
+            xml:lang="ine"><w type="rec">lenk-</w>
+            <gloss><q>bend</q></gloss>, <gloss><q>curvature</q></gloss>,
+              <gloss><q>depression</q></gloss></mentioned> is also attested in other Indo-European
+          languages (<bibl><ref type="bibl" target="#ref_Pokorny"/>
+            <biblScope>676ff.</biblScope></bibl>). — The Iron and Digor forms represent two original
+          variants: Iron <oRef/> ← <w type="rec">lanka</w>, Digor <oRef xml:lang="os-x-digor"
+            >læncæ</oRef> ← <w type="rec">lančia</w> ← <w type="rec">lankia</w>. The initial<c>l</c>
+          (instead of the expected <c>r</c>) should be compared to such cases as <ref type="xr"
+            target="#entry_bælon"><w>bælon</w>
+            <gloss><q>dove</q></gloss></ref> alongside <mentioned xml:lang="lt"><lang/>
+            <w>balàndis</w></mentioned>, <ref type="xr" target="#entry_læsæg"><w>læsæg</w>
+            <gloss><q>salmon</q></gloss></ref> etc.<pb/><bibl><ref type="bibl" target="#ref_СЕИ"/>
+            <biblScope>17, 38, 124</biblScope></bibl>. — <bibl><author>Wüst, J.</author>
+            <title>Indian Linguistics, Saksena Volume</title>, <date>1965</date>, <biblScope>pp.
               95–60</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Bailey._KhT"/>
             <biblScope>VI 314</biblScope></bibl>.</etym>
       </entry>
