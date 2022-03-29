@@ -1,20 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">lækʼærdæ</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">II</biblScope>. L–R. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1965</date>. С. <biblScope unit="page"
-            >27</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">II</biblScope>. L–R. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1965</date>. С. <biblScope unit="page">27</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
@@ -23,28 +28,46 @@
         <usg><lang/></usg>
         <sense><sense><abv:tr xml:lang="ru">
               <q>сырость</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>dampness</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>слякоть</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>slush</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>грязь</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>dirt</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>грязный</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>dirty</q>
             </abv:tr></sense></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
-            <quote xmlns="http://www.tei-c.org/ns/1.0">alasa… ajnægbæl æ sæftægutæj, lækʼærdæ boni
-              goton sikʼit duwwerdæmæ kud fækkaluj, otæ kalgæ racudæj</quote>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">alasa… ajnægbæl æ sæftægutæj,
+                <oRef>lækʼærdæ</oRef> boni goton sikʼit duwwerdæmæ kud fækkaluj, otæ kalgæ
+              racudæj</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">конь пошел, разгребая скалу своими копытами,
                 как в сырой день плуг валит почву на две стороны</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the horse went shovelling the cliff away with
+                its hoofs, like a plough on a damp day throwing the earth on both sides</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_СОПам."/>
               <biblScope>II 96</biblScope></bibl>
           </example>
           <example>
-            <quote xmlns="http://www.tei-c.org/ns/1.0">masinæ… lækʼærdi nixxorx uj</quote>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">masinæ… <oRef>lækʼærdi</oRef> nixxorx
+              uj</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">машина задыхается (застревает) в грязи</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the car is suffocating (getting stuck) in the
+                dirt</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_SD"/>
               <biblScope>176<hi rendition="#rend_subscript">1</hi></biblScope></bibl>
@@ -59,6 +82,14 @@
             type="xr" target="#entry_lakʼon"/>, <ref type="xr" target="#entry_lækʼun"/> сомнительна,
           но контаминация с этими словами могла содействовать появлению смычно­ гортанного <c>kʼ</c>
           (вместо ожидаемого <c>g</c>).</etym>
+        <etym xml:lang="en">May go back to <mentioned xml:lang="ira"><m type="rec"
+            >fra-karda-</m></mentioned>, cf. <mentioned xml:lang="inc-x-old"><lang/>
+            <m>karda-</m>
+            <gloss><q>swamp</q></gloss></mentioned>, <mentioned xml:lang="inc-x-old"><m>kardama-</m>
+            <gloss><q>dirt</q></gloss>, <gloss><q>silt</q></gloss></mentioned>. The connection with
+            <ref type="xr" target="#entry_lakʼon"/>, <ref type="xr" target="#entry_lækʼun"/> is
+          dubious, but contamination with these words could contribute to the occurrence of the
+          ejective <c>kʼ</c> (instead of the expected <c>g</c>).</etym>
       </entry>
     </body>
   </text>
