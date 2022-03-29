@@ -1,36 +1,52 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">læsīd</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">II</biblScope>. L–R. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1973</date>. С. <biblScope unit="page"
-            >33</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">II</biblScope>. L–R. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1973</date>. С. <biblScope unit="page">33</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_læsīd" xml:lang="os" abv:completeness="incomplete">
+      <entry xml:id="entry_læsīd" xml:lang="os" abv:completeness="complete">
         <form type="lemma" xml:lang="os-x-iron"><orth>læsīd</orth><form type="parens"
               ><orth>læsīrd?</orth></form></form>
         <form xml:lang="os-x-digor" type="dialectal"><orth>læsed</orth></form>
         <sense><sense><abv:tr xml:lang="ru">
               <q>вылущившийся</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>ripe</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>очищенный от шелухи</q>
-              <note type="comment"> (о лесном орехе)</note>
+              <note xml:lang="ru" type="comment"> (о лесном орехе)</note>
+              <note xml:lang="en" type="comment"> (о лесном орехе)</note>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>cleared of husk</q>
+              <note type="comment"> (of hazelnut)</note>
             </abv:tr></sense></sense>
-        <note type="comment">; только в сочетании с <ref type="xr" target="#entry_7xsær"><w
-              xml:lang="os-x-iron">ᵆxsær</w><w xml:lang="os-x-digor">æxsæræ</w>
+        <note xml:lang="ru" type="comment">; только в сочетании с <ref type="xr"
+            target="#entry_7xsær"><w xml:lang="os-x-iron">ᵆxsær</w><w xml:lang="os-x-digor"
+              >æxsæræ</w>
             <gloss><q>лесной орех</q></gloss></ref></note>
+        <note xml:lang="en" type="comment">; only in combination with <ref type="xr"
+            target="#entry_7xsær"><w xml:lang="os-x-iron">ᵆxsær</w><w xml:lang="os-x-digor"
+              >æxsæræ</w>
+            <gloss><q>hazelnut</q></gloss></ref></note>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0"><oRef>læsīrd</oRef> æxsæræj kʼūʒījy byn
@@ -38,6 +54,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">под кустом (орешника) полно вылущившихся
                 орехов</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">under a bush (of hazel) there are many
+                hazelnuts lacking husks</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_MD"/>
               <biblScope>1961 IX 37</biblScope></bibl>
@@ -48,24 +68,36 @@
                 <oRef>læsed</oRef> æxsæræj gorentæ fælkʼevuncæ zildægæj…</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">девушки, собирающие орехи, устраивают после
-                сбора игру: сооружают из вылущившихся орехов ограды в виде круга. ..</q>
+                сбора игру: сооружают из вылущившихся орехов ограды в виде круга…</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">girls collecting hazelnuts play a game after
+                the collection: they construct round fences out of huskless hazelnuts…</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Iræf"/>
               <biblScope>48</biblScope></bibl>
           </example>
         </exampleGrp>
         <re xml:lang="os-x-iron">
-          <note type="comment">Вряд ли имеет сюда отношение </note>
+          <note xml:lang="ru" type="comment">Вряд ли имеет сюда отношение </note>
           <form type="lemma"><lang/><orth>læsǵyn</orth></form>
           <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">спелый</q>
-              <note type="comment" xmlns="http://www.tei-c.org/ns/1.0">(?)</note>
+              <note xmlns="http://www.tei-c.org/ns/1.0" xml:lang="ru" type="comment">(?)</note>
+              <note xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" type="comment">(?)</note>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">ripe</q>
+              <note xmlns="http://www.tei-c.org/ns/1.0" type="comment">(?)</note>
             </tr></sense>
+          <note type="comment"> is probably unrelated</note>
           <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
             <example>
               <quote xmlns="http://www.tei-c.org/ns/1.0">adǵyn, <oRef/> mænærǧy</quote>
               <tr xml:lang="ru">
                 <q xmlns="http://www.tei-c.org/ns/1.0">сладкая, спелая(?) малина</q>
+              </tr>
+              <tr xml:lang="en">
+                <q xmlns="http://www.tei-c.org/ns/1.0">sweet, ripe(?) raspberry</q>
               </tr>
               <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ЮОПам."/>
                 <biblScope>III 190</biblScope></bibl>
@@ -83,6 +115,19 @@
             <m>-reisis</m></mentioned>, <mentioned xml:lang="cu"><lang/>
             <w>o-rěxъ</w></mentioned>. Возможна и связь с <mentioned xml:lang="ru"><lang/>
             <w>лещина</w></mentioned> и пр.</etym>
+        <etym xml:lang="en">If <m xml:lang="os-x-iron">-īd</m><m xml:lang="os-x-digor">-ed</m> is
+          viewed as a formative (<bibl><ref type="bibl" target="#ref_ГО"/>
+            <biblScope>§ 192</biblScope></bibl>), then <m>læs-</m> can be derived from <mentioned
+            xml:lang="ine"><m type="rec">raiš-</m>, <m type="rec"
+            >riaš-</m><?oxy_comment_start author="oleg" timestamp="20220330T014944+0300" comment="assumed it&apos;s IE, but not sure"?></mentioned><?oxy_comment_end?>
+          and connected to <mentioned xml:lang="lt"><lang/>
+            <w>ríešas</w>
+            <gloss><q>nut</q></gloss></mentioned>, <mentioned xml:lang="prg"><lang/>
+            <m>-reisis</m></mentioned>, <mentioned xml:lang="cu"><lang/>
+            <w>o-rěxъ</w>
+            <gloss><q>nut</q></gloss></mentioned>. A connection with <mentioned xml:lang="ru"><lang/>
+            <w>лещина</w>
+            <gloss><q>hazel</q></gloss></mentioned> etc. is also possible.</etym>
       </entry>
     </body>
   </text>
