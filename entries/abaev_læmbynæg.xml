@@ -1,59 +1,84 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">læmbynæg</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">II</biblScope>. L–R. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1973</date>. С. <biblScope unit="page"
-            >29</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">II</biblScope>. L–R. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1973</date>. С. <biblScope unit="page">29</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_læmbynæg" xml:lang="os" abv:completeness="incomplete">
+      <entry xml:id="entry_læmbynæg" xml:lang="os" abv:completeness="complete">
         <form type="lemma" xml:lang="os-x-iron"><orth>læmbynæg</orth></form>
         <form xml:lang="os-x-digor" type="dialectal"><orth>læmbunæg</orth><form type="variant"
               ><orth>lænbunæg</orth></form></form>
         <sense><sense><abv:tr xml:lang="ru">
               <q>тщательный</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>thorough</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>основательный</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>well-founded</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>основательно</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>thoroughly</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>как следует</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>as it should be</q>
             </abv:tr></sense></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
-            <quote xmlns="http://www.tei-c.org/ns/1.0">kænīnag dyn cy wa, ūj qwamæ læmbynægæj
-              bakænaj</quote>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">kænīnag dyn cy wa, ūj qwamæ
+                <oRef>læmbynægæj</oRef> bakænaj</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">то,, что тебе предстоит сделать, надо сделать
                 основательно</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">what you are going to do, you should do
+                thoroughly</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сл."/></bibl>
           </example>
           <example>
-            <quote xmlns="http://www.tei-c.org/ns/1.0">qₒyddagmæ læmbynæg ærkæsyn qæwy</quote>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">qₒyddagmæ <oRef>læmbynæg</oRef> ærkæsyn
+              qæwy</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">следует тщательно рассмотреть дело</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the matter should be dealt with thoroughly</q>
             </tr>
           </example>
           <example xml:lang="os-x-digor">
             <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
             <quote xmlns="http://www.tei-c.org/ns/1.0">wæ, lægtæ, lægtæ! ka win bafærazʒænæj
-              isæxsædun læmbunægæj wæ zærdi bun!</quote>
+              isæxsædun <oRef>læmbunægæj</oRef> wæ zærdi bun!</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">о, мужчины, муж­ чины! кто сможет вскрыть как
                 следует глубины вашего сердца!</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">oh, men, men! who will be able to uncover
+                properly the depths of your heart!</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Gurdž._Æduli"/>
               <biblScope>77–78</biblScope></bibl>
@@ -65,6 +90,9 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">каждому колхознику следует работать
                 тщательно</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">every Kolkhoz member should work thoroughly</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_FS"/>
               <biblScope>I 8</biblScope></bibl>
@@ -87,6 +115,23 @@
               обычае, порядке</q></gloss>, <gloss><q rendition="#rend_doublequotes">соответствующий
               обычаю</q></gloss>, <gloss><q rendition="#rend_doublequotes"
           >подобающий</q></gloss>.</etym>
+        <etym xml:lang="en">May derive from <w>næm-bun-æg</w> (dissimilation of nasals as in <ref
+            type="xr" target="#entry_lamaz"/>, <ref type="xr" target="#entry_læmæǧ"/>, <ref
+            type="xr" target="#entry_lasyn"/>, <ref type="xr" target="#entry_malusæg"/> etc.), where
+            <m>næm</m> = <mentioned xml:lang="grc"><lang/>
+            <w>νόμος</w>
+            <gloss><q>order</q></gloss>, <gloss><q>custom</q></gloss>,
+            <gloss><q>law</q></gloss></mentioned>, cf. <mentioned xml:lang="grc"><w>νόμιμος</w>
+            <gloss><q>proper</q></gloss>, <gloss><q>appropriate</q></gloss>,
+              <gloss><q>normal</q></gloss></mentioned>. The second part <m>bun</m> = <mentioned
+            xml:lang="ira"><lang/>
+            <m type="rec">buna-</m>
+            <gloss><q>foundation</q></gloss></mentioned> (see <ref type="xr" target="#entry_byn_1"
+          />, <ref type="xr" target="#entry_bynton"/>, <ref type="xr" target="#entry_binonyg"/>).
+          The original meaning, therefore, — <gloss><q rendition="#rend_doublequotes">based on
+              custom, order</q></gloss>, <gloss><q rendition="#rend_doublequotes">according to
+              custom</q></gloss>, <gloss><q rendition="#rend_doublequotes"
+          >appropriate</q></gloss>.</etym>
       </entry>
     </body>
   </text>
