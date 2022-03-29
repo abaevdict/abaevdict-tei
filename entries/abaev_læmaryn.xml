@@ -1,74 +1,108 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">læmaryn</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">II</biblScope>. L–R. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1965</date>. С. <biblScope unit="page"
-            >27</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">II</biblScope>. L–R. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1965</date>. С. <biblScope unit="page">27</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_læmaryn" xml:lang="os" abv:completeness="incomplete">
+      <entry xml:id="entry_læmaryn" xml:lang="os" abv:completeness="questions">
         <form type="lemma" xml:lang="os-x-iron"><orth>læmaryn</orth><form type="participle"
               ><orth>læmærst</orth></form></form>
         <form xml:lang="os-x-digor" type="dialectal"><orth>læmarun</orth><form type="participle"
               ><orth>læmarst</orth></form></form>
         <sense><sense><abv:tr xml:lang="ru">
               <q>выжимать</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>squeeze out</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>отжимать</q>
-              <note type="comment"> (например, мокрое белье)</note>
+              <note xml:lang="ru" type="comment"> (например, мокрое белье)</note>
+              <note xml:lang="en" type="comment"> (например, мокрое белье)</note>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>wring out</q>
+              <note type="comment"> (e.g., wet laundry)</note>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>выдавливать</q>
-            </abv:tr><note type="comment"> (например, сок из плода)</note></sense></sense>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>press out</q>
+            </abv:tr><note xml:lang="ru" type="comment"> (например, сок из плода)</note><note
+              xml:lang="en" type="comment"> (e.g., juice out of a fruit)</note></sense></sense>
         <re>
           <form type="lemma"><orth>bez læmaræn</orth></form>
           <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">инструмент для выдавливания меда из сот</q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">tool for pressing out honey from honeycomb</q>
             </tr></sense>
         </re>
         <re>
           <form type="lemma"><orth>læmaræntæ</orth></form>
           <sense><sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
                 <q xmlns="http://www.tei-c.org/ns/1.0">выжимки</q>
+              </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+                <q xmlns="http://www.tei-c.org/ns/1.0">pressing residue</q>
               </tr></sense><sense><abv:tr xml:lang="ru">
                 <q>жмыхи</q>
+              </abv:tr><abv:tr xml:lang="en">
+                <q>oil cake</q>
               </abv:tr></sense></sense>
         </re>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
-            <quote xmlns="http://www.tei-c.org/ns/1.0">fænykgₒyz felvæsta jæ cyxt, balæmærsta jæ,
-              æmæ jæ syly ækald</quote>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">fænykgₒyz felvæsta jæ cyxt,
+                <oRef>balæmærsta</oRef> jæ, æmæ jæ syly ækald</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0"><hi rendition="#rend_smallcaps">fænykgₒyz</hi>
                 выхватил свой сыр, сжал его, и из него потекла сыворотка</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the <hi rendition="#rend_smallcaps"><ref
+                    type="xr" target="#entry_fænykg0yz">fænykgₒyz</ref></hi> snatched out his
+                cheese, pressed it, and whey flowed out of it</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Аргъ."/>
               <biblScope>89</biblScope></bibl>
           </example>
           <example>
-            <quote xmlns="http://www.tei-c.org/ns/1.0">mīǧ nyl læmærsta jæ xₒylyʒ xædon</quote>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">mīǧ nyl <oRef>læmærsta</oRef> jæ xₒylyʒ
+              xædon</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">туча выжимала на нас свою влажную рубашку</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the storm cloud wrung out on us its wet
+                shirt</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_F."/>
               <biblScope>1957 III 76</biblScope></bibl>
           </example>
           <example xml:lang="os-x-digor">
             <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
-            <quote xmlns="http://www.tei-c.org/ns/1.0">kæwuj qwæcæj, læmaruj</quote>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">kæwuj qwæcæj, <oRef>læmaruj</oRef></quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">плачет от дыма, выжимает (слезы)</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">sheds tears because of smoke, squeezes out (the
+                tears)</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Sozur"/>
               <biblScope>26</biblScope></bibl>
@@ -77,20 +111,30 @@
             <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
             <quote xmlns="http://www.tei-c.org/ns/1.0">anzi
               dærǧ<?oxy_comment_start author="oleg" timestamp="20220329T200451+0300" comment="strange form, check"?>ci<?oxy_comment_end?>
-              kombinatæn æntæsʒænæj raddun… læmaræntæ 17.9 min puti</quote>
+              kombinatæn æntæsʒænæj raddun… <oRef>læmaræntæ</oRef> 17.9 min puti</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">в течение года комбинат сможет дать 17.9 тысяч
                 пудов жмыхов</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">over the year the factory can produce 17.9
+                thousand <hi rendition="#rend_italic">poods</hi><note type="footnote">Old Russian
+                  unit of weight, approx. 16.38 kg.</note> of oil-cake</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_FS"/>
               <biblScope>V 124</biblScope></bibl>
           </example>
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">dælæmæ ærxaw, cy kʼævda dæ, — jæ kₒyræty
-              fæḱḱīty don læmargæjæ ʒyrdta Qaraʒaw</quote>
+              fæḱḱīty don <oRef>læmargæjæ</oRef> ʒyrdta Qaraʒaw</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">чтобы тебе провалиться, что ты за ливень, —
                 говорил Карадзау, выжимая воду из полы своего бешмета</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">may you perish, what kind of rain are you, –
+                spoke Karadzau while squeezing out water from the tail of his <hi
+                  rendition="#rend_italic">beshmet</hi> (jacket)</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_F."/>
               <biblScope>1957 VI 36</biblScope></bibl>
@@ -98,7 +142,13 @@
         </exampleGrp>
         <etym xml:lang="ru">Восходит к <mentioned xml:lang="ira"><lang/>
             <m type="rec">fra-mār-</m>
-            <note type="comment">(<mentioned xml:lang="ine"><lang/>
+            <note xml:lang="ru" type="comment">(<mentioned xml:lang="ine"><lang/>
+                <m type="rec">mel</m>
+                <gloss><q>раздроблять</q></gloss>, <gloss><q>раздавливать</q></gloss>,
+                    <gloss><q>мять</q> и пр.</gloss>: <note type="bibl"><bibl><ref type="bibl"
+                      target="#ref_Pokorny"/>
+                    <biblScope>716 сл.</biblScope></bibl></note></mentioned>)</note><note
+              xml:lang="en" type="comment">(<mentioned xml:lang="ine"><lang/>
                 <m type="rec">mel</m>
                 <gloss><q>раздроблять</q></gloss>, <gloss><q>раздавливать</q></gloss>,
                     <gloss><q>мять</q> и пр.</gloss>: <note type="bibl"><bibl><ref type="bibl"
@@ -118,12 +168,50 @@
             <w>molo</w></mentioned>, <mentioned xml:lang="got"><lang/>
             <w>malan</w></mentioned>, <mentioned xml:lang="sga"><lang/>
             <w>melim</w></mentioned>, <mentioned xml:lang="hit"><lang/>
-            <w>ma-al-la-i</w></mentioned> и др. Ср. также <mentioned xml:lang="xcl"><lang/> malem
-                <gloss><q>я толку</q></gloss></mentioned>, <mentioned xml:lang="xto"><lang/>
+            <w>ma-al-la-i</w></mentioned> и др. Ср. также <mentioned xml:lang="xcl"><lang/>
+            <w>malem</w>
+            <gloss><q>я толку</q></gloss></mentioned>, <mentioned xml:lang="xto"><lang/>
             <w>malywët</w>
-            <gloss><q>ты давишь, топчешь</q></gloss></mentioned>. — Прош. прича­ стие
+            <gloss><q>ты давишь, топчешь</q></gloss></mentioned>. — Прош. причастие
             <oRef>læmærst</oRef> образовано от инхоативной основы <m>mar-s-</m>, как <ref type="xr"
             target="#entry_lædaryn"><w>lædaryn</w> : <w>lædarst</w></ref> и др.</etym>
+        <etym xml:lang="en">Goes back to <mentioned xml:lang="ira"><lang/>
+            <m type="rec">fra-mār-</m>
+            <note xml:lang="ru" type="comment">(<mentioned xml:lang="ine"><lang/>
+                <m type="rec">mel</m>
+                <gloss><q>раздроблять</q></gloss>, <gloss><q>раздавливать</q></gloss>,
+                    <gloss><q>мять</q> и пр.</gloss>: <note type="bibl"><bibl><ref type="bibl"
+                      target="#ref_Pokorny"/>
+                    <biblScope>716 сл.</biblScope></bibl></note></mentioned>)</note><note
+              xml:lang="en" type="comment">(<mentioned xml:lang="ine"><lang/>
+                <m type="rec">mel</m>
+                <gloss><q>smash to pieces</q></gloss>, <gloss><q>crush</q></gloss>,
+                    <gloss><q>crumple</q> etc.</gloss>: <note type="bibl"><bibl><ref type="bibl"
+                      target="#ref_Pokorny"/>
+                    <biblScope>716ff.</biblScope></bibl></note></mentioned>)</note></mentioned>. Cf.
+            <mentioned xml:lang="ae"><lang/>
+            <m>mrāta-</m>
+            <gloss><q>softened</q></gloss>,
+                <gloss><q><?oxy_comment_start author="oleg" timestamp="20220329T203234+0300" comment="or kneaded?"?>wrinkled<?oxy_comment_end?></q>
+              (of leather)</gloss></mentioned>, <mentioned xml:lang="inc-x-old"><lang/>
+            <w>mṛnāti</w>
+            <gloss><q>crushes</q></gloss>, <gloss><q>grinds</q></gloss></mentioned>, <mentioned
+            xml:lang="inc-x-old"><w>mlāyati</w>
+            <gloss><q>is softened</q></gloss></mentioned>. In many Indo-European languages found in
+          the meaning <gloss><q>grind</q></gloss>: <mentioned><mentioned xml:lang="ru"><lang/>
+              <w>молоть</w></mentioned>, <mentioned xml:lang="grc"><lang/>
+              <w>μύλλω</w></mentioned>, <mentioned xml:lang="la"><lang/>
+              <w>molo</w></mentioned>, <mentioned xml:lang="got"><lang/>
+              <w>malan</w></mentioned>, <mentioned xml:lang="sga"><lang/>
+              <w>melim</w></mentioned>, <mentioned xml:lang="hit"><lang/>
+              <w>ma-al-la-i</w></mentioned> etc. <gloss><q>mill</q></gloss></mentioned> Cf. also
+            <mentioned xml:lang="xcl"><lang/>
+            <w>malem</w>
+            <gloss><q>I pound</q></gloss></mentioned>, <mentioned xml:lang="xto"><lang/>
+            <w>malywët</w>
+            <gloss><q>you press, you trample down</q></gloss></mentioned>. — Past participle
+            <oRef>læmærst</oRef> derived from the inchoative stem <m>mar-s-</m>, like <ref type="xr"
+            target="#entry_lædaryn"><w>lædaryn</w> : <w>lædarst</w></ref> etc.</etym>
       </entry>
     </body>
   </text>
