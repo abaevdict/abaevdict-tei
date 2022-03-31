@@ -1,34 +1,46 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">læxcoræn</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">II</biblScope>. L–R. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1973</date>. С. <biblScope unit="page"
-            >39</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">II</biblScope>. L–R. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1973</date>. С. <biblScope unit="page">39</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_læxcoræn" xml:lang="os-x-digor" abv:completeness="incomplete">
+      <entry xml:id="entry_læxcoræn" xml:lang="os-x-digor" abv:completeness="complete">
         <form type="lemma"><orth>læxcoræn</orth></form>
         <usg><lang/></usg>
         <sense><abv:tr xml:lang="ru">
             <q>водопад</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>waterfull</q>
           </abv:tr></sense>
         <etym xml:lang="ru">Может быть, следует делить <w>læ-xcoræn</w> и возводить к <mentioned
             xml:lang="ira"><w type="rec">fra-xša(u)rana-</w></mentioned>, связав <w>xcor-</w> с <ref
             type="xr" target="#entry_zǧoryn"><w>ǧzor-</w>, <w>zǧor-</w>
             <gloss><q>бежать</q></gloss></ref>, <ref type="xr" target="#entry_7ǧzalyn"><w>ǧzal-</w>
             <gloss><q>сыпать</q></gloss>, <gloss><q>лить</q></gloss></ref>.</etym>
+        <etym xml:lang="en">Could possible be divided into <w>læ-xcoræn</w> and traced back to
+            <mentioned xml:lang="ira"><w type="rec">fra-xša(u)rana-</w></mentioned>, connecting
+            <w>xcor-</w> with <ref type="xr" target="#entry_zǧoryn"><w>ǧzor-</w>, <w>zǧor-</w>
+            <gloss><q>run</q></gloss></ref>, <ref type="xr" target="#entry_7ǧzalyn"><w>ǧzal-</w>
+            <gloss><q>pour</q></gloss></ref>.</etym>
       </entry>
     </body>
   </text>
