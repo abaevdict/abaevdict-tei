@@ -1,32 +1,202 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">lenk</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml">
+        <p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+          Sinitsyna and Vadim Dyachkov.</p>
+      </publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
             <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            unit="volume">II</biblScope>. L–R. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1973</date>. С. <biblScope unit="page"
+            >41</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_lenk" xml:lang="os" abv:completeness="incomplete">
+      <entry xml:id="entry_lenk" xml:lang="os" abv:completeness="questions">
         <form type="lemma"><orth>lenk</orth></form>
-        <sense><abv:tr xml:lang="ru"><q></q></abv:tr></sense>
-        <abv:exampleGrp>
-          <abv:example>
-            <quote></quote>
-          </abv:example>
-        </abv:exampleGrp>
-        <etym xml:lang="ru"></etym>
+        <sense><abv:tr xml:lang="ru">
+            <q>плавание</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>swimming</q>
+          </abv:tr></sense>
+        <re>
+          <form type="lemma"><orth>lenk kænyn</orth></form>
+          <sense><sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
+                <q xmlns="http://www.tei-c.org/ns/1.0">плыть</q>
+              </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+                <q xmlns="http://www.tei-c.org/ns/1.0">swim</q>
+              </tr></sense><?oxy_comment_start author="oleg" timestamp="20220401T162222+0300" comment="найти способ спрятать sense без перевода"?><sense><abv:tr
+                xml:lang="ru">
+                <q>плавать</q>
+              </abv:tr></sense><?oxy_comment_end?></sense>
+        </re>
+        <note xml:lang="ru" type="comment">; в дигорском в этом значении обычно <ref type="xr"
+            target="#entry_nakæ"/>, но встречается и <oRef/>.</note>
+        <note xml:lang="en" type="comment">; in Digor <ref type="xr" target="#entry_nakæ"/> is
+          normally used in this meaning, but <oRef/> is also attested.</note>
+        <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">ḱyzg bawad denǵyzmæ æmæ <oRef>alenk
+                kodta</oRef></quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">девушка побежала к морю и поплыла</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the girl ran to the sea and swam</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ОЭп."/>
+              <biblScope>17</biblScope></bibl>
+          </example>
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">Xarʒin lenk kænyn zydta… kæsaǵy <oRef>lenk
+                akodta</oRef> fallag farsmæ</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Хардзин умел плавать... как рыба поплыл он на
+                ту сторону (реки)</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Khardzin could swim… as a fish he swam to the
+                other side (of the river)</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_F."/>
+              <biblScope>1957 III 30</biblScope></bibl>
+          </example>
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0"><oRef>ralenk kodta</oRef> kæsag, færsy
+              jæ…</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">приплыла к нему рыбка, спрашивает...</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the fish swam (to him), asks him...</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Puškin._Arhau"/>
+              <biblScope>6</biblScope></bibl>
+          </example>
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">læppū wasæn sīsta, nywwasyd, æmæ jæm īw styr
+              kæf <oRef>ærbalenk kodta</oRef></quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">юноша достал свирель, заиграл, и к нему
+                приплыла одна большая рыба</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the boy took out a reed-pipe, started playing,
+                and one large fish swam to him</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ИАА"/>
+              <biblScope>II 154</biblScope></bibl>
+          </example>
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">kₒyʒæn jæ syʒy don kₒy bacæwy, wæd bazony
+                <oRef>lenk kænyn</oRef></quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">когда собаке в зад проникает вода, тогда она
+                научается плавать</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">when water comes into a dog’s bottom, then it
+                learns to swim</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ЮОПам."/>
+              <biblScope>III 213</biblScope></bibl>
+          </example>
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">ūcy saxat Azawy særy fonʒyssæʒ qₒydyjy
+                <oRef>alenḱytæ kodtoj</oRef></quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">в тот час в голове Азау пронеслась („проплыла")
+                сотня мыслей</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">in that hour a hundred thoughts passed („swam")
+                through Azaw’s head</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сека"/>
+              <biblScope>52</biblScope></bibl>
+          </example>
+          <example xml:lang="os-x-digor">
+            <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">mæjæ <oRef>lenk kænuj</oRef>
+              wælxwænxtæ</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">месяц плывет над горами</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the moon floats (<q
+                  rendition="#rend_doublequotes">swims</q>) above the mountains</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Iræf"/>
+              <biblScope>53</biblScope></bibl>
+          </example>
+        </exampleGrp>
+        <etym xml:lang="ru">Связь с <mentioned xml:lang="inc-x-old"><lang/>
+            <w>rangh-</w>
+            <gloss><q>бежать</q></gloss></mentioned>, <mentioned xml:lang="inc-x-old"><w>langh-</w>
+            <gloss><q>прыгать</q></gloss></mentioned>, <mentioned xml:lang="ttt"><lang/>
+            <w>läng</w>
+            <gloss><q>шаг</q></gloss></mentioned>, вопреки Вс. <hi rendition="#rend_smallcaps"
+            >Миллеру</hi> (<bibl><ref type="bibl" target="#ref_Миллер_Вс._ОЭ">ОЭ</ref>
+            <biblScope>II 83</biblScope></bibl>), фонетически крайне сомнительна; арийское <c>a</c>
+          никогда не дает в осетинском <c>e</c>. Возможно, что <oRef/> — слово
+          мимео-изобразительного характера, как
+            <?oxy_comment_start author="oleg" timestamp="20220401T161020+0300" comment="нет в словаре!"?><w>senk</w><?oxy_comment_end?>,
+            <?oxy_comment_start author="oleg" timestamp="20220401T161042+0300" comment="нет в словаре!"?><w>sylynk</w><?oxy_comment_end?>,
+            <?oxy_comment_start author="oleg" timestamp="20220401T161111+0300" comment="тоже нет"?><w>cʼyllyng</w><?oxy_comment_end?>
+          и др. (<bibl><title>Тр. Инст. языкозн.</title>
+            <biblScope>1956 VI 409—427</biblScope></bibl>). Не исключено также, что в <oRef/>
+          скрывается субстратное, кавказское слово со значением <gloss><q>вода</q></gloss>; ср.
+              <mentioned><mentioned xml:lang="av"><lang/>
+              <w>lʼin</w></mentioned>, <mentioned xml:lang="ani"><lang/>
+              <w>lʼen</w></mentioned>, <mentioned xml:lang="bph" extralang="gdo"><lang/>
+              <w>lʼeni</w></mentioned>, <mentioned xml:lang="akv"><lang/>
+              <w>lʼen</w></mentioned>, <mentioned xml:lang="aqc"><lang/>
+              <w>lʼan</w></mentioned>
+            <gloss><q>вода</q></gloss></mentioned>, <mentioned xml:lang="aqc"><phr>lʼan as</phr>
+            <gloss><q>плавать</q> (<q rendition="#rend_doublequotes">делать
+            воду</q>)</gloss></mentioned>.</etym>
+        <etym xml:lang="en">The connection with <mentioned xml:lang="inc-x-old"><lang/>
+            <w>rangh-</w>
+            <gloss><q>run</q></gloss></mentioned>, <mentioned xml:lang="inc-x-old"><w>langh-</w>
+            <gloss><q>jump</q></gloss></mentioned>, <mentioned xml:lang="ttt"><lang/>
+            <w>läng</w>
+            <gloss><q>a step</q></gloss></mentioned>, pace Ws. <hi rendition="#rend_smallcaps"
+            >Miller</hi> (<bibl><ref type="bibl" target="#ref_Миллер_Вс._ОЭ">OÈ</ref>
+            <biblScope>II 83</biblScope></bibl>), is phonetically extremely dubious; Aryan <c>a</c>
+          never corresponds to Ossetic <c>e</c>. It is possible that <oRef/> is an onomatopoeic
+          word, like
+            <?oxy_comment_start author="oleg" timestamp="20220401T161020+0300" comment="нет в словаре!"?><w>senk</w><?oxy_comment_end?>,
+            <?oxy_comment_start author="oleg" timestamp="20220401T161042+0300" comment="нет в словаре!"?><w>sylynk</w><?oxy_comment_end?>,
+            <?oxy_comment_start author="oleg" timestamp="20220401T161111+0300" comment="тоже нет"?><w>cʼyllyng</w><?oxy_comment_end?>
+          etc. (<bibl><title>Trudy Instituta jazykoznanija</title>
+            <biblScope>1956 VI 409—427</biblScope></bibl>). Another possibility is that <oRef/>
+          continues a Caucasian substratum term meaning <gloss><q>water</q></gloss>; cf.
+              <mentioned><mentioned xml:lang="av"><lang/>
+              <w>lʼin</w></mentioned>, <mentioned xml:lang="ani"><lang/>
+              <w>lʼen</w></mentioned>, <mentioned xml:lang="bph" extralang="gdo"><lang/>
+              <w>lʼeni</w></mentioned>, <mentioned xml:lang="akv"><lang/>
+              <w>lʼen</w></mentioned>, <mentioned xml:lang="aqc"><lang/>
+              <w>lʼan</w></mentioned>
+            <gloss><q>water</q></gloss></mentioned>, <mentioned xml:lang="aqc"><phr>lʼan as</phr>
+            <gloss><q>swim</q> (<q rendition="#rend_doublequotes">do
+          water</q>)</gloss></mentioned>.</etym>
       </entry>
     </body>
   </text>
