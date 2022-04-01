@@ -1,71 +1,100 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">lekʼ</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">II</biblScope>. L–R. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1973</date>. С. <biblScope unit="page"
-            >41</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">II</biblScope>. L–R. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1973</date>. С. <biblScope unit="page">41</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_lekʼ" xml:lang="os" abv:completeness="incomplete">
+      <entry xml:id="entry_lekʼ" xml:lang="os" abv:completeness="questions">
         <form type="lemma"><orth>lekʼ</orth></form>
         <sense><sense><abv:tr xml:lang="ru">
               <q>лезгины</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>Lezgians</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>дагестанцы</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>Daghestanians</q>
             </abv:tr></sense></sense>
         <re>
           <form type="lemma"><orth>lekʼag</orth></form>
           <sense><sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
                 <q xmlns="http://www.tei-c.org/ns/1.0">лезгин</q>
+              </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+                <q xmlns="http://www.tei-c.org/ns/1.0">Lezgian person</q>
               </tr></sense><sense><abv:tr xml:lang="ru">
                 <q>лезгинский</q>
+              </abv:tr><abv:tr xml:lang="en">
+                <q>Lezgian (adj.)</q>
               </abv:tr></sense></sense>
         </re>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">Gₒyrʒystony padcaxadæn jæ tyx asastoj Turk,
-              Pers æmæ Lekʼ</quote>
+              Pers æmæ <oRef>Lekʼ</oRef></quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">силу грузинского царства сломили турки, персы и
                 лезгины</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the Turks, the Persians and the Lezgians broke
+                the power of the kingdom of Georgia</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сека"/>
               <biblScope>33</biblScope></bibl>
           </example>
           <example>
-            <quote xmlns="http://www.tei-c.org/ns/1.0">Qazarajy lekʼ akodtoj Daǧystanmæ</quote>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">Qazarajy <oRef>lekʼ</oRef> akodtoj
+              Daǧystanmæ</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">Казара лезгины увели в Дагестан</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the Lezgians took Qazara to Daghestan</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сека"/>
               <biblScope>34</biblScope></bibl>
           </example>
           <example>
-            <quote xmlns="http://www.tei-c.org/ns/1.0">wydtæn Leḱʼy bæstæjy, Somīxy bæstæjy, Kæsæǵy
-              bæstæjy</quote>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">wydtæn <oRef>Leḱʼy</oRef> bæstæjy, Somīxy
+              bæstæjy, Kæsæǵy bæstæjy</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">я побывал в стране лезгин, в стране армян, в
                 стране кабардинцев</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">I have been to the country of the Lezgians, to
+                the country of the Armenians, to the country of the Kabardians</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Arsen"/>
               <biblScope>22</biblScope></bibl>
           </example>
           <example>
-            <quote xmlns="http://www.tei-c.org/ns/1.0">leḱʼy ‘fsadaw ærbagₒylf kodtat</quote>
+            <quote xmlns="http://www.tei-c.org/ns/1.0"><oRef>leḱʼy</oRef> ‘fsadaw ærbagₒylf
+              kodtat</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">вы нахлынули, как лезгинское войско</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">you swept over like a Lezgian army</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Нафи"/>
               <biblScope>57</biblScope></bibl>
@@ -79,14 +108,36 @@
             rendition="#rend_smallcaps">Страбон</hi>, <hi rendition="#rend_smallcaps">Плутарх</hi> и
             <hi rendition="#rend_smallcaps">Птолемей</hi>. Ср. <bibl><author>Strabo</author>
             <biblScope>XI 5, 1</biblScope></bibl>: <q rendition="#rend_doublequotes"><mentioned
-              xml:lang="grc"><s>Θεοφάνης …μεταξὺ τῶν Ἀμαζόνων καὶ τῶν Ἀλβανῶν φησι Γήλας οἰκεῖν καὶ
-                Λήγας…</s></mentioned></q>. Сюда же относится название одного из дагестанских племен
-            <mentioned xml:lang="lbe"><w>lak</w></mentioned>. См.: <bibl><author>Абдуллаев</author>,
+              xml:lang="grc"><s>Θεοφάνης
+                <?oxy_comment_start author="oleg" timestamp="20220401T154447+0300" comment="у Абаева тут какой-то непонятный символ"?>…<?oxy_comment_end?>μεταξὺ
+                τῶν Ἀμαζόνων καὶ τῶν Ἀλβανῶν φησι Γήλας οἰκεῖν καὶ Λήγας…</s></mentioned></q>. Сюда
+          же относится название одного из дагестанских племен <mentioned xml:lang="lbe"
+            ><w>lak</w></mentioned>. См.: <bibl><author>Абдуллаев</author>,
               <author>Микаилов</author>. <title>К истории дагестанских этнонимов <w>lezg</w> и
                 <w>lak</w></title>. <bibl type="m"><title>Этнография имен</title>,
                 <pubPlace>М.</pubPlace>, <date>1971</date>, <biblScope>стр.
-            13—26</biblScope></bibl></bibl>. — См. также под <ref type="xr" target="#entry_læg"/>.
-        </etym>
+            13—26</biblScope></bibl></bibl>. — См. также под <ref type="xr" target="#entry_læg"/>. </etym>
+        <etym xml:lang="en">From <mentioned xml:lang="ka"><lang/>
+            <w>lekʼi</w>
+            <gloss><q>Lezgian person</q></gloss></mentioned>. The word is attested since deep
+          antiquity. The East Caucasian tribe <mentioned xml:lang="grc"><w>Ληγαι</w></mentioned>,
+            <mentioned xml:lang="grc"><w>Ληγες</w></mentioned> is mentioned by <hi
+            rendition="#rend_smallcaps">Strabo</hi>, <hi rendition="#rend_smallcaps">Plutarch</hi>
+          and <hi rendition="#rend_smallcaps">Ptolemy</hi>. Cf. <bibl><author>Strabo</author>
+            <biblScope>XI 5, 1</biblScope></bibl>: <q rendition="#rend_doublequotes">Θεοφάνης
+            <?oxy_comment_start author="oleg" timestamp="20220401T154447+0300" comment="у Абаева тут какой-то непонятный символ"?>…<?oxy_comment_end?>μεταξὺ
+            τῶν Ἀμαζόνων καὶ τῶν Ἀλβανῶν φησι Γήλας οἰκεῖν καὶ Λήγας…</q><note type="footnote"
+              ><q>Theophanes… says that Gelæ and Legæ … live between the Amazons and the
+              Albanians</q> (<bibl><title>The Geography of Strabo.</title> Literally translated,
+              with notes, in three volumes. <pubPlace>London</pubPlace>: <publisher>George Bell
+                &amp; Sons</publisher>. <date>1903</date></bibl>)</note>. The name of one of the
+          Daghestanian nations <mentioned xml:lang="lbe"><w>lak</w></mentioned> also belongs here.
+          See: <bibl><author>Abdullaev</author>, <author>Mikailov</author>. <title>K istorii
+              dagestanskix ètnonimov <w>lezg</w> i <w>lak</w></title> [Towards the history of the
+            Daghestanian ethnonyms <w>lezg</w> and <w>lak</w>]. <bibl type="m"><title>Ètnografija
+                imën</title>, <pubPlace>Moscow</pubPlace>, <date>1971</date>, <biblScope>pp.
+                13—26</biblScope></bibl></bibl>. — See also under entry <ref type="xr"
+            target="#entry_læg"/>. </etym>
       </entry>
     </body>
   </text>
