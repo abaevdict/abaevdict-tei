@@ -1,35 +1,105 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ronbæǧd</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_ronbæǧd" xml:lang="os" abv:completeness="incomplete">
+      <entry xml:id="entry_ronbæǧd" xml:lang="os" abv:completeness="complete">
         <form type="lemma"><orth>ronbæǧd</orth></form>
-        <sense><abv:tr xml:lang="ru">
-            <q/>
-          </abv:tr></sense>
-        <abv:exampleGrp>
-          <abv:example>
-            <quote/>
-          </abv:example>
-        </abv:exampleGrp>
-        <etym xml:lang="ru"/>
+        <sense><sense><abv:tr xml:lang="ru">
+              <q>распоясанный</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>unbelted</q>
+            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+              <q>discinctus</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>discinctus</q>
+            </abv:tr></sense></sense>
+        <re>
+          <note xml:lang="ru" type="comment">обычно в наречной форме: </note>
+          <note xml:lang="en" type="comment">usually in the adverbial form: </note>
+          <form type="lemma"><orth>ronbæǧdæj</orth></form>
+          <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">без пояса</q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">without a belt</q>
+            </tr></sense>
+        </re>
+        <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">wazǵyty razmæ <oRef>ronbæǧdæj</oRef> k˳yd
+              racydtæ? xūdīnag ū!</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">как ты вышел навстречу гостям без пояса?
+                стыдно!</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">how did you go out to meet the guests without a
+                belt? you should be ashamed!</q>
+            </tr>
+          </example>
+        </exampleGrp>
+        <etym xml:lang="ru">Из <ref type="xr" target="#entry_ron"/>-<ref type="xr"
+            target="#entry_bæǧnæg"><w>bæǧn</w></ref>
+          <q rendition="#rend_doublequotes">с голым (<ref type="xr" target="#entry_bæǧnæg"
+                ><w>bæǧn</w></ref>) поясом</q> (сложное слово с инверсией: <bibl><ref type="bibl"
+              target="#ref_ГО"/>
+            <biblScope>§ 204</biblScope></bibl>). Перебой <c>n</c> → <c>d</c> по контаминации с <ref
+            type="xr" target="#entry_ron"/>-<ref type="xr" target="#entry_wæǧd"/>
+          <q>с распущенным (<ref type="xr" target="#entry_wæǧd"/> от <ref type="xr"
+              target="#entry_waʒyn"><w>waʒyn</w>
+              <gloss><q>отпускать</q></gloss></ref>) поясом</q>. См. <ref type="xr"
+            target="#entry_ron"/> и <ref type="xr" target="#entry_bæǧnæg"><w>bæǧnæg</w>
+            <gloss><q>голый</q></gloss>, <gloss><q>обнаженный</q></gloss></ref>. Ср. <ref type="xr"
+            target="#entry_bæǧæmsar"><w>bæǧæmsar</w>
+            <gloss><q>с непокрытой головой</q></gloss></ref>, <ref type="xr"
+            target="#entry_bæǧæmsar"><w>bæǧæmsar</w>
+            <gloss><q>босой</q></gloss></ref>, <ref type="xr" target="#entry_bæǧæmzæng"
+              ><w>bæǧæmzæng</w>
+            <gloss><q>с голыми коленями</q></gloss></ref> (<bibl><ref type="bibl"
+              target="#ref_ИЭС_I"/>
+            <biblScope>246, 247</biblScope></bibl>). Ср. <ref type="xr" target="#entry_ronbast"
+          />.</etym>
+        <etym xml:lang="en">From <ref type="xr" target="#entry_ron"/>-<ref type="xr"
+            target="#entry_bæǧnæg"><w>bæǧn</w></ref>
+          <q rendition="#rend_doublequotes">with naked (<ref type="xr" target="#entry_bæǧnæg"
+                ><w>bæǧn</w></ref>) belt</q> (a compound word with the inversion: <bibl><ref
+              type="bibl" target="#ref_ГО"/>
+            <biblScope>§ 204</biblScope></bibl>). The change <c>n</c> → <c>d</c> occurred by
+          contamination with <ref type="xr" target="#entry_ron"/>-<ref type="xr"
+            target="#entry_wæǧd"/>
+          <q>with loose (<ref type="xr" target="#entry_wæǧd"/> from <ref type="xr"
+              target="#entry_waʒyn"><w>waʒyn</w>
+              <gloss><q>let go</q></gloss></ref>) belt</q>. See <ref type="xr" target="#entry_ron"/>
+          and <ref type="xr" target="#entry_bæǧnæg"><w>bæǧnæg</w>
+            <gloss><q>naked</q></gloss>, <gloss><q>bare</q></gloss></ref>. Cf. <ref type="xr"
+            target="#entry_bæǧæmsar"><w>bæǧæmsar</w>
+            <gloss><q>bareheaded</q></gloss></ref>, <ref type="xr" target="#entry_bæǧæmsar"
+              ><w>bæǧæmsar</w>
+            <gloss><q>barefoot</q></gloss></ref>, <ref type="xr" target="#entry_bæǧæmzæng"
+              ><w>bæǧæmzæng</w>
+            <gloss><q>with bare knees</q></gloss></ref> (<bibl><ref type="bibl" target="#ref_ИЭС_I"/>
+            <biblScope>246, 247</biblScope></bibl>). Cf. <ref type="xr" target="#entry_ronbast"
+          />.</etym>
       </entry>
     </body>
   </text>
