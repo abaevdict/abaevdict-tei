@@ -1,32 +1,155 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">læxūryn</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml">
+        <p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+          Sinitsyna and Vadim Dyachkov.</p>
+      </publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
             <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            unit="volume">II</biblScope>. L–R. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1973</date>. С. <biblScope unit="page"
+            >40</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_læxūryn" xml:lang="os" abv:completeness="incomplete">
-        <form type="lemma"><orth>læxūryn</orth></form>
-        <sense><abv:tr xml:lang="ru"><q></q></abv:tr></sense>
-        <abv:exampleGrp>
-          <abv:example>
-            <quote></quote>
-          </abv:example>
-        </abv:exampleGrp>
-        <etym xml:lang="ru"></etym>
+      <entry xml:id="entry_læxūryn" xml:lang="os" abv:completeness="complete">
+        <form type="lemma" xml:lang="os-x-iron"><orth>læxūryn</orth><form type="participle"
+              ><orth>læxūrd</orth></form></form>
+        <form xml:lang="os-x-digor" type="dialectal"><orth>læxorun</orth><form type="participle"
+              ><orth>læxurd</orth></form></form>
+        <sense><sense><abv:tr xml:lang="ru">
+              <q>крупно молоть</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>grind coarsely</q>
+            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+              <q>schroten</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>crush (grain)</q>
+            </abv:tr></sense></sense>
+        <sense><note xml:lang="ru" type="comment">переносно также </note><note xml:lang="en"
+            type="comment">figuratively also </note><abv:tr xml:lang="ru">
+            <q>болтать вздор</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>speak nonsense</q>
+          </abv:tr></sense>
+        <note xml:lang="ru" type="comment">; <mentioned xml:lang="os-x-digor"><lang/>
+            <w>læxurd</w></mentioned> = <ref type="xr" target="#entry_læxūræg" xml:lang="os-x-iron"><lang/>
+            <w>læxūræg</w>
+            <gloss><q>мука крупного помола</q></gloss></ref></note>
+        <note xml:lang="en" type="comment">; <mentioned xml:lang="os-x-digor"><lang/>
+            <w>læxurd</w></mentioned> = <ref type="xr" target="#entry_læxūræg" xml:lang="os-x-iron"><lang/>
+            <w>læxūræg</w>
+            <gloss><q>coarse ground flour</q></gloss></ref></note>
+        <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">kₒyroj arivad: ærmæftaw cas
+                <oRef>læxūrīnag</oRef> ū, cæ!</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">мельница быстро освободилась (от зерна): много
+                ли нужно, чтобы смолоть <ref type="xr" target="#entry_ærmæftaw"/>!</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the mill quickly became free (from grain): is
+                much needed to grind <ref type="xr" target="#entry_ærmæftaw"/>!</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Niger"/>
+              <biblScope>157</biblScope></bibl>
+          </example>
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">Beqany kₒyræjttæ cʼatatæ
+                <oRef>læxurync</oRef>. Gabanty qaltæ mæm qamatæj læbūrync</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">беканские мельницы мелют отруби. Спесивцы
+                Габановы нападают на меня с кинжалами</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the mills of Beqan mill bran. The arrogant
+                Gabantæ attack me with daggers</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><note xml:lang="ru" type="comment">из
+                песни</note><note xml:lang="en" type="comment">from a song</note>; <ref type="bibl"
+                target="#src_ИАА"/>
+              <biblScope>II 329–330</biblScope></bibl>
+          </example>
+          <example xml:lang="os-x-digor">
+            <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">bægænijag <oRef>balæxurdta</oRef></quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">она смолола зерно на пиво</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">she ground grain for beer</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_DZ"/>
+              <biblScope>48</biblScope></bibl>
+          </example>
+          <example xml:lang="os-x-digor">
+            <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
+            <quote xmlns="http://www.tei-c.org/ns/1.0"
+              >fæ-<?oxy_comment_start author="oleg" timestamp="20220331T133148+0300" comment="NB: clitic also reduplicated with fæ-!"?>mma<?oxy_comment_end?>-sin
+              dædduncæ (fonsæn) kʼumbul, nasæ, cʼata, <oRef>læxurd</oRef></quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">дают еще (скоту) свеклу, тыкву, отруби, крупно
+                молотую муку</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">they also give (to cattle) beet root, pumpkin,
+                bran, coarse ground flour</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_AK"/>
+              <biblScope>I 19</biblScope></bibl>
+          </example>
+        </exampleGrp>
+        <etym xml:lang="ru">Представляется возможным делить <w>læ-xor-</w> (из <w type="rec"
+            >ræ-xor-</w> ← <mentioned xml:lang="ira"><w type="rec">fra-kaur-</w></mentioned>) и
+          связать <w>xūr-</w> с <ref type="xr" target="#entry_x0yr"><w xml:lang="os-x-iron"
+              >xₒyr</w><w xml:lang="os-x-digor">xuræ</w>
+            <gloss><q>крупный песок</q></gloss>, <gloss><q>щебень</q></gloss></ref>. Исходное
+          значение в этом случае <gloss><q>мельчить</q></gloss>, <gloss><q>дробить</q></gloss>,
+              <gloss><q>обращать в крупу</q></gloss>. Ср. <mentioned xml:lang="inc-x-old"><lang/>
+            <w>čarv-</w>
+            <gloss><q>дробить</q></gloss>, <gloss><q>толочь</q></gloss></mentioned>, <mentioned
+            xml:lang="inc-x-old"><w>čūrṇa-</w>
+            <gloss><q>пыль</q></gloss>, <gloss><q>мука</q></gloss></mentioned> (звуковое развитие:
+            <w type="rec">karv-</w> → <w type="rec">kaurv</w> → <w>xor-</w>?). Из осетинского идет,
+          возможно, <mentioned xml:lang="ka"><lang/> laxora, loxora <gloss><q>высевки</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Чубинов"
+            /></bibl>)</note></mentioned>.</etym>
+        <etym xml:lang="en">It appears possible to divide this word into <w>læ-xor-</w> (from <w
+            type="rec">ræ-xor-</w> ← <mentioned xml:lang="ira"><w type="rec"
+            >fra-kaur-</w></mentioned>) and connect <w>xūr-</w> with <ref type="xr"
+            target="#entry_x0yr"><w xml:lang="os-x-iron">xₒyr</w><w xml:lang="os-x-digor">xuræ</w>
+            <gloss><q>coarse sand</q></gloss>, <gloss><q>crushed stone, road
+          metal</q></gloss></ref>. The original meaning in this case is <gloss><q>make
+            smaller</q></gloss>, <gloss><q>crush</q></gloss>, <gloss><q>turn into small
+              particles</q></gloss>. Ср. <mentioned xml:lang="inc-x-old"><lang/>
+            <w>čarv-</w>
+            <gloss><q>crush</q></gloss>, <gloss><q>pound</q></gloss></mentioned>, <mentioned
+            xml:lang="inc-x-old"><w>čūrṇa-</w>
+            <gloss><q>dust</q></gloss>, <gloss><q>flour</q></gloss></mentioned> (phonetic
+          development: <w type="rec">karv-</w> → <w type="rec">kaurv</w> → <w>xor-</w>?). From
+          Ossetic possibly comes <mentioned xml:lang="ka"><lang/>
+            <w>laxora</w>, <w>loxora</w>
+            <gloss><q>bran</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Чубинов"
+            /></bibl>)</note></mentioned>.</etym>
       </entry>
     </body>
   </text>

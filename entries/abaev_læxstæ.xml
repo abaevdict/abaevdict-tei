@@ -1,32 +1,292 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">læxstæ</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml">
+        <p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+          Sinitsyna and Vadim Dyachkov.</p>
+      </publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
             <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            unit="volume">II</biblScope>. L–R. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1973</date>. С. <biblScope unit="page"
+            >39</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_læxstæ" xml:lang="os" abv:completeness="incomplete">
-        <form type="lemma"><orth>læxstæ</orth></form>
-        <sense><abv:tr xml:lang="ru"><q></q></abv:tr></sense>
-        <abv:exampleGrp>
-          <abv:example>
-            <quote></quote>
-          </abv:example>
-        </abv:exampleGrp>
-        <etym xml:lang="ru"></etym>
+      <entry xml:id="entry_læxstæ" xml:lang="os" abv:completeness="complete">
+        <form type="lemma" xml:lang="os-x-iron"><orth>læxstæ</orth></form>
+        <form xml:lang="os-x-digor" type="dialectal"><orth>lixstæ</orth></form>
+        <sense><abv:tr xml:lang="ru">
+            <q>мольба</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>supplication</q>
+          </abv:tr></sense>
+        <re>
+          <form type="lemma"><orth>læxstæ kænyn</orth></form>
+          <sense><sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
+                <q xmlns="http://www.tei-c.org/ns/1.0">обращаться с мольбой</q>
+              </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+                <q xmlns="http://www.tei-c.org/ns/1.0">ask with supplication</q>
+              </tr></sense><sense><abv:tr xml:lang="ru">
+                <q>умолять</q>
+              </abv:tr><abv:tr xml:lang="en">
+                <q>implore</q>
+              </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                <q>упрашивать</q>
+              </abv:tr><abv:tr xml:lang="en">
+                <q>entreat</q>
+              </abv:tr></sense></sense>
+        </re>
+        <re>
+          <form type="lemma" xml:lang="os-x-iron"><orth>læxstæjag</orth><form type="variant"
+                ><orth>læxstiag</orth></form></form>
+          <form xml:lang="os-x-digor" type="dialectal"><orth>lixstag</orth></form>
+          <sense><sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
+                <q xmlns="http://www.tei-c.org/ns/1.0">вынужденный быть в роли просителя</q>
+              </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+                <q xmlns="http://www.tei-c.org/ns/1.0">forced to act as petitioner</q>
+              </tr></sense><sense><abv:tr xml:lang="ru">
+                <q>зависящий от кого-либо</q>
+              </abv:tr><abv:tr xml:lang="en">
+                <q>dependent on smb.</q>
+              </abv:tr></sense></sense>
+        </re>
+        <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">Axmæt Piranæn <oRef>læxstæ kænyn</oRef>
+              bajdydta, cæmæj jyn jæ mard lasyn bawaʒa</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Ахмат стал умолять Пирана, чтобы тот разрешил
+                ему увезти его покойника</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Akhmæt started imploring Piran, so that he
+                would allow him to take away his dead</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сека"/>
+              <biblScope>61</biblScope></bibl>
+          </example>
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">jæ ḱyzgæn <oRef>læxstæ kodta</oRef>, cæmæj
+              Gædījæn bakoma</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">он умолял дочь согласиться (выйти замуж) за
+                Гади</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">he implored his daughter to agree (to marry)
+                Gædi</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сека"/>
+              <biblScope>105</biblScope></bibl>
+          </example>
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0"><oRef>læxstæ kæny</oRef> Xₒycawæn</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">молит Бога</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">implores God</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Munk."/>
+              <biblScope>206</biblScope></bibl>
+          </example>
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">ḱyzgæn mæ <oRef>læxstæ</oRef> wæd qæwy, bīræ
+              æxca mæm kₒy næ wa</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">упрашивать девушку мне нужно (лишь) тогда, если
+                у меня нет много денег</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">I (only) need to entreat a girl when I do not
+                have a lot of money</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><biblScope xml:lang="ru">из песни <q
+                  rendition="#rend_doublequotes">Ḱyzgaj</q></biblScope><biblScope xml:lang="en">from
+                the song <q rendition="#rend_doublequotes">Ḱyzgaj</q></biblScope></bibl>
+          </example>
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">ærdardtoj sæ qūs ʒyllæty
+                <oRef>læxstæmæ</oRef> Barsægatæ</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">вняли мольбе народа Барсаговы</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the Barsægatæ listened to the people’s
+                supplication</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Čerm."/>
+              <biblScope>99</biblScope></bibl>
+          </example>
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">adæm sæ zongₒytyl ærxawdtoj, kuvync,
+                <oRef>læxstæ kænync</oRef>, sæ rīwtæ xojync</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">народ упал на колени, молятся, упрашивают, бьют
+                себя в грудь</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">people fell to their knees, they are praying,
+                imploring, beating their breasts</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Čerm."/>
+              <biblScope>179</biblScope></bibl>
+          </example>
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">ajs, ajs! kædmæ dyn <oRef>læxstæ
+              kæna</oRef></quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">бери, бери! до каких пор она будет тебя
+                упрашивать</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">take, take! till when will she implore you?</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Брит."/>
+              <biblScope>45</biblScope></bibl>
+          </example>
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">adæm… tabū æmæ <oRef>læxstæ
+              kodtoj</oRef></quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">народ молил и просил</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the people prayed and implored</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Čerm."/>
+              <biblScope>181</biblScope></bibl>
+          </example>
+          <example xml:lang="os-x-digor">
+            <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">ku raʒoruj in <oRef>lixstæ</oRef>
+              ǧælæsæj</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">она говорит ему умоляющим голосом</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">she speakes to him in an imploring voice</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Iræf"/>
+              <biblScope>37</biblScope></bibl>
+          </example>
+          <example xml:lang="os-x-digor">
+            <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">ǧæwama in Duge liǧzæj ǧuddag balædærun kæna,
+                <oRef>ba-in-lixstæ kæna</oRef></quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Дуге должен в мягкой форме разъяснить ему дело,
+                упросить его</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Duge should gently explain the matter to him,
+                entreat him</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Bes._Ka_ke"/>
+              <biblScope>33</biblScope></bibl>
+          </example>
+          <example xml:lang="os-x-digor">
+            <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">Xucawæn cid <oRef>balixstæ
+              kænʒinan</oRef></quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">мы будем молить Бога</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">we will pray God</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ОЭ"/>
+              <biblScope>I 100</biblScope></bibl>
+          </example>
+          <example xml:lang="os-x-digor">
+            <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">wæragbadtæj, <oRef>lixstæj</oRef> kænæn dæ
+              Xucawmæ mīnævar</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">на коленях, с мольбой мы шлем тебя посредником
+                к Богу</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">on our knees, with supplication we are sending
+                you as a mediator to God</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Gurdž._Wadž."/>
+              <biblScope>21</biblScope></bibl>
+          </example>
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0"><oRef>læxstiag</oRef> dyn næ dæn</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">мне нет надобности быть перед тобой
+                просителем</q>
+              <note xmlns="http://www.tei-c.org/ns/1.0" xml:lang="ru" type="comment"> (т.е. <q
+                  rendition="#rend_doublequotes">я от тебя не завишу</q>)</note>
+              <note xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" type="comment"> (т.е. <q
+                  rendition="#rend_doublequotes">я от тебя не завишу</q>)</note>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">I do not have a need to be a petitioner before
+                you</q>
+              <note xmlns="http://www.tei-c.org/ns/1.0" type="comment"> (i.e. <q
+                  rendition="#rend_doublequotes">I do not depend on you</q>)</note>
+            </tr>
+          </example>
+          <example xml:lang="os-x-digor">
+            <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">ew afoni donmæ cæwuj ma Donbettæræn
+                <oRef>lixstag</oRef> æj</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">в определенное время он идет за водой и
+                (поэтому) он зависит от (водного бога) Донбетра</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">at a certain time he goes for water and
+                (therefore) he depends on the (water deity) Donbettær</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_MSt."/>
+              <biblScope>19<hi rendition="#rend_subscript">11</hi></biblScope></bibl>
+          </example>
+        </exampleGrp>
+        <etym xml:lang="ru">Как и <ref type="xr" target="#entry_læǧz"><w xml:lang="os-x-iron"
+              >læǧz</w><w xml:lang="os-x-digor">liǧz</w>
+            <gloss><q>гладкий</q> и пр.</gloss></ref>, восходит к <mentioned xml:lang="ira"><w
+              type="rec">hlaxšna-</w>
+            <note xml:lang="ru" type="comment">(<mentioned xml:lang="inc-x-old"><lang/>
+                <w>ślakṣna-</w></mentioned>)</note><note xml:lang="en" type="comment">(<mentioned
+                xml:lang="inc-x-old"><lang/>
+                <w>ślakṣna-</w></mentioned>)</note> в значении <gloss><q>нежный</q></gloss>,
+                <gloss><q>вкрадчивый</q> (о речи, голосе и т. п.)</gloss></mentioned>;
+            <oRef>læxs-tæ</oRef> — форма мн. ч.: <q rendition="#rend_doublequotes">нежные,
+            вкрадчивые (слова)</q>, <q rendition="#rend_doublequotes">улещания</q>. См. <ref
+            type="xr" target="#entry_læǧz"/>.</etym>
+        <etym xml:lang="en">As in <ref type="xr" target="#entry_læǧz"><w xml:lang="os-x-iron"
+              >læǧz</w><w xml:lang="os-x-digor">liǧz</w>
+            <gloss><q>smooth</q> etc.</gloss></ref>, goes back to <mentioned xml:lang="ira"><w
+              type="rec">hlaxšna-</w>
+            <note xml:lang="ru" type="comment">(<mentioned xml:lang="inc-x-old"><lang/>
+                <w>ślakṣna-</w></mentioned>)</note><note xml:lang="en" type="comment">(<mentioned
+                xml:lang="inc-x-old"><lang/>
+                <w>ślakṣna-</w></mentioned>)</note> in the meaning <gloss><q>gentle</q></gloss>,
+                <gloss><q>insinuating</q> (of speech, voice etc.)</gloss></mentioned>;
+            <oRef>læxs-tæ</oRef> is a plural form: <q rendition="#rend_doublequotes">gentle,
+            insinuating (words)</q>, <q rendition="#rend_doublequotes">flatteries</q>. See <ref
+            type="xr" target="#entry_læǧz"/>.</etym>
       </entry>
     </body>
   </text>

@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">romyl</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml">
+        <p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+          Sinitsyna and Vadim Dyachkov.</p>
+      </publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
             <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
@@ -14,19 +18,80 @@
             >??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_romyl" xml:lang="os" abv:completeness="incomplete">
-        <form type="lemma"><orth>romyl</orth></form>
-        <sense><abv:tr xml:lang="ru"><q></q></abv:tr></sense>
-        <abv:exampleGrp>
-          <abv:example>
-            <quote></quote>
-          </abv:example>
-        </abv:exampleGrp>
-        <etym xml:lang="ru"></etym>
+      <entry xml:id="entry_romyl" xml:lang="os" abv:completeness="questions">
+        <form type="lemma" xml:lang="os-x-iron"><orth>romyl</orth></form>
+        <form xml:lang="os-x-digor" type="dialectal"><orth>rombæl</orth></form>
+        <sense><sense><abv:tr xml:lang="ru">
+              <q>умеренный</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>moderate</q>
+            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+              <q>воздержанный</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>temperate</q>
+            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+              <q>сдержанный</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>restrained</q>
+            </abv:tr></sense></sense>
+        <note xml:lang="ru" type="comment">
+          <ref type="xr" target="#entry_ræmon" xml:lang="os-x-digor"><lang/>
+            <w>ræmon</w></ref> id.; ант. <ref type="xr" target="#entry_næræmon"/></note>
+        <note xml:lang="en" type="comment">
+          <ref type="xr" target="#entry_ræmon" xml:lang="os-x-digor"><lang/>
+            <w>ræmon</w></ref> id.; antonym <ref type="xr" target="#entry_næræmon"/></note>
+        <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0"><oRef>romyl</oRef> cæwæg cæl ary, ægær cæwæg
+              cæf ary</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">умеренно шляющийся (по пирам, поминкам и пр.)
+                находит угощенье, слишком много шляющийся находит побои</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">a moderately wandering (around feasts,
+                commemorations etc.) person finds a treat, a too much wandering person finds a
+                beating</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0">saying</bibl>
+          </example>
+        </exampleGrp>
+        <etym xml:lang="ru">Лексикализовавшийся местный внешний падеж на <m xml:lang="os-x-iron"
+            >-yl</m><m xml:lang="os-x-digor">-bæl</m> от <w>rom-</w>, <mentioned><mentioned
+              xml:lang="inc-x-old"><lang/>
+              <w>rāma-</w></mentioned>, <mentioned xml:lang="ae"><lang/>
+              <w>rāman</w></mentioned>, <mentioned xml:lang="fa"><lang/>
+              <w>rām</w></mentioned>
+            <gloss><q>покой</q></gloss></mentioned>. См. <ref type="xr" target="#entry_ræmun"/>,
+            <ref type="xr" target="#entry_næræmon"/>, <ref type="xr" target="#entry_ūromyn"/>. По
+          образованию ср. <ref type="xr" target="#entry_nyvyl"><w>nyvyl</w>
+            <gloss><q>по-хорошему</q></gloss></ref>, местный падеж от <ref type="xr"
+            target="#entry_nyv"/> или <ref type="xr" target="#entry_qomyl"><w>qomyl</w>
+            <gloss><q>взрослый</q></gloss></ref> от <ref type="xr" target="#entry_qom_2"/>.</etym>
+        <etym xml:lang="en">Lexicalized form derived with superessive case
+            <?oxy_comment_start author="Irene" timestamp="20220331T152157+0300" comment="здесь никакие mentioned не нужны?"?><m
+            xml:lang="os-x-iron">-yl</m><m xml:lang="os-x-digor">-bæl</m> from
+          <w>rom-</w><?oxy_comment_end?>, <mentioned><mentioned xml:lang="inc-x-old"><lang/>
+              <w>rāma-</w></mentioned>, <mentioned xml:lang="ae"><lang/>
+              <w>rāman</w></mentioned>, <mentioned xml:lang="fa"><lang/>
+              <w>rām</w></mentioned>
+            <gloss><q>peace</q></gloss></mentioned>. See <ref type="xr" target="#entry_ræmun"/>,
+            <ref type="xr" target="#entry_næræmon"/>, <ref type="xr" target="#entry_ūromyn"/>. Cf.
+          the same derivation pattern of <ref type="xr" target="#entry_nyvyl"><w>nyvyl</w>
+            <gloss><q>in a good way</q></gloss></ref>, a superessive case form from <ref type="xr"
+            target="#entry_nyv"/> or <ref type="xr" target="#entry_qomyl"><w>qomyl</w>
+            <gloss><q>adult</q></gloss></ref> from <ref type="xr" target="#entry_qom_2"/>.</etym>
       </entry>
     </body>
   </text>

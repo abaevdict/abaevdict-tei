@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">Rom</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml">
+        <p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+          Sinitsyna and Vadim Dyachkov.</p>
+      </publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
             <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
@@ -14,19 +18,109 @@
             >??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_Rom" xml:lang="os" abv:completeness="incomplete">
+      <entry xml:id="entry_Rom" xml:lang="os" abv:completeness="english-questions">
         <form type="lemma"><orth>Rom</orth></form>
-        <sense><abv:tr xml:lang="ru"><q></q></abv:tr></sense>
-        <abv:exampleGrp>
-          <abv:example>
-            <quote></quote>
-          </abv:example>
-        </abv:exampleGrp>
-        <etym xml:lang="ru"></etym>
+        <sense><sense><abv:tr xml:lang="ru">
+              <q>Рим</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>Rome</q>
+            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+              <q>Константинополь (Византия)</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>Constantinople (Byzantium)</q>
+            </abv:tr></sense></sense>
+        <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">пæ fydælty rwaǵy пæ babyn īs
+              <oRef>Rom</oRef></quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">благодаря нашим предкам не погиб Рим</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">thanks to our ancestors, Rome did not fall</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Коста"/>
+              <biblScope>89</biblScope></bibl>
+          </example>
+        </exampleGrp>
+        <note xml:lang="ru" type="comment">. — О большом грешнике или преступнике говорили: <example
+            xmlns="http://ossetic-studies.org/ns/abaevdict">
+            <quote xmlns="http://www.tei-c.org/ns/1.0">jæ tærīǧædtæ jyn <oRef>Romy</oRef> sawǵyn dær
+              пæ syxalʒæn</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">его грехи не распутает (т. е. не разрешит, не
+                отпустит) даже священник Рома</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">его грехи не распутает (т. е. не разрешит, не
+                отпустит) даже священник Рома</q>
+            </tr>
+          </example>. Трудно сказать, имелся ли в виду при этом римский папа или константинопольский
+          патриарх</note>
+        <note xml:lang="en" type="comment">. — It is spoken of a great sinner or criminal: <example
+            xmlns="http://ossetic-studies.org/ns/abaevdict">
+            <quote xmlns="http://www.tei-c.org/ns/1.0">jæ tærīǧædtæ jyn <oRef>Romy</oRef> sawǵyn dær
+              пæ syxalʒæn</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">его грехи не распутает (т. е. не разрешит, не
+                отпустит) даже священник Рома</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">even the priest of Rome will not
+                <?oxy_comment_start author="Irene" timestamp="20220331T140518+0300" comment="?"?>unravel<?oxy_comment_end?>
+                (i.e. forgive) his sins</q>
+            </tr>
+          </example>. It is difficult to say whether this meant the Pope or the Patriarch of
+          Constantinople</note>
+        <etym xml:lang="ru">Восходит к <mentioned xml:lang="la"><lang/>
+            <w>Roma</w>
+            <gloss><q>Рим</q></gloss></mentioned>. Со средних веков это название стало употребляться
+          на Востоке в применении к Константинополю и Византии: <mentioned xml:lang="fa"><lang/>
+            <w>Rūm</w>
+            <gloss><q>regiones omnes, quae regno Bysantino-romano subditae erant</q></gloss>
+            <note xml:lang="ru" type="comment">(<bibl><ref type="bibl" target="#ref_Vullers"
+                /></bibl>)</note><note xml:lang="en" type="comment">(<bibl><ref type="bibl"
+                  target="#ref_Vullers"/></bibl>)</note></mentioned>, <mentioned xml:lang="trk"><lang/>
+            <w>rum</w>, <w>urum</w>
+            <gloss><q>римский</q></gloss>, <gloss><q>греческий</q></gloss>
+            <note xml:lang="ru" type="comment">(<bibl><ref type="bibl" target="#ref_Радлов"/>
+                <biblScope>III 724</biblScope></bibl>)</note><note xml:lang="en" type="comment"
+                  >(<bibl><ref type="bibl" target="#ref_Радлов"/>
+                <biblScope>III 724</biblScope></bibl>)</note></mentioned>. Ср. осетинские фамилии
+            <mentioned xml:lang="os"><w>Urumtæ</w>
+            <gloss><q>Урумовы</q></gloss></mentioned>, <mentioned xml:lang="os"><w>Urujmægtæ</w>
+            <gloss><q>Уруймаговы</q></gloss></mentioned>. См. также <ref type="xr"
+            target="#entry_Rujmon"/>.</etym>
+        <etym xml:lang="en">Traces back to <mentioned xml:lang="la"><lang/>
+            <w>Roma</w>
+            <gloss><q>Rome</q></gloss></mentioned>. Since the Middle Ages, this name has been used
+          in the East in relation to Constantinople and Byzantium.: <mentioned xml:lang="fa"><lang/>
+            <w>Rūm</w>
+            <gloss><q>regiones omnes, quae regno Bysantino-romano subditae erant</q></gloss>
+            <note xml:lang="ru" type="comment">(<bibl><ref type="bibl" target="#ref_Vullers"
+                /></bibl>)</note><note xml:lang="en" type="comment">(<bibl><ref type="bibl"
+                  target="#ref_Vullers"/></bibl>)</note></mentioned>, <mentioned xml:lang="trk"><lang/>
+            <w>rum</w>, <w>urum</w>
+            <gloss><q>Roman</q></gloss>, <gloss><q>Greek</q></gloss>
+            <note xml:lang="ru" type="comment">(<bibl><ref type="bibl" target="#ref_Радлов"/>
+                <biblScope>III 724</biblScope></bibl>)</note><note xml:lang="en" type="comment"
+                  >(<bibl><ref type="bibl" target="#ref_Радлов"/>
+                <biblScope>III 724</biblScope></bibl>)</note></mentioned>. Cf. Ossetic <?oxy_comment_start author="Irene" timestamp="20220331T140652+0300" comment="? family names"?>surnames<?oxy_comment_end?>
+          <mentioned xml:lang="os"><w>Urumtæ</w>
+            <gloss><q>the Urumovs</q></gloss></mentioned>, <mentioned xml:lang="os"><w>Urujmægtæ</w>
+            <gloss><q>the Urujmagovs</q></gloss></mentioned>. See also <ref type="xr"
+            target="#entry_Rujmon"/>.</etym>
       </entry>
     </body>
   </text>
