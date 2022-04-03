@@ -1,30 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ᵆlǧīvyn</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">II</biblScope>. L–R. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1973</date>. С. <biblScope unit="page"
-            >43–44</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">II</biblScope>. L–R. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1973</date>. С. <biblScope unit="page">43–44</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_7lǧīvyn" xml:lang="os-x-iron" abv:completeness="incomplete">
+      <entry xml:id="entry_7lǧīvyn" xml:lang="os-x-iron" abv:completeness="complete">
         <form type="lemma" xml:lang="os-x-iron"><orth>ᵆlǧīvyn</orth></form>
         <form xml:lang="os-x-digor" type="dialectal"><orth>ᵆlǧyvd</orth></form>
         <usg><lang/></usg>
         <sense><abv:tr xml:lang="ru">
             <q>уплотнять тесьму при плетении, надавливая пальцами при каждом разводе нитей</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q><?oxy_comment_start author="oleg" timestamp="20220403T122637+0300" comment="not sure if it&apos;s the right verb"?>condense<?oxy_comment_end?>
+              braid when plaiting, pushing fingers at each
+              <?oxy_comment_start author="oleg" timestamp="20220403T122728+0300" comment="not sure"?>junction<?oxy_comment_end?>
+              of thread</q>
           </abv:tr></sense>
         <re>
           <?oxy_comment_start author="oleg" timestamp="20220402T205056+0300" comment="в словаре есть вход ᵆlqīwyn, с w и теми же значениями, кроме &quot;тискать.&quot; непонятно, re это или ref, и если это одно и то же, то где опечатка. в addenda ничего нет"?>
@@ -34,51 +43,76 @@
                 ><orth>ælǧivd</orth></form></form>
           <sense><sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
                 <q xmlns="http://www.tei-c.org/ns/1.0">сжимать</q>
+              </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+                <q xmlns="http://www.tei-c.org/ns/1.0">press together</q>
               </tr></sense><sense><abv:tr xml:lang="ru">
                 <q>сдавливать</q>
+              </abv:tr><abv:tr xml:lang="en">
+                <q>squeeze</q>
               </abv:tr></sense><sense><abv:tr xml:lang="ru">
                 <q>тискать</q>
+              </abv:tr><abv:tr xml:lang="en">
+                <q>press</q>
               </abv:tr></sense></sense>
         </re>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">byd dywwæjæ fækænync: īw byjgæ, īnnæ
-              lǧīvgæ</quote>
+                <oRef>lǧīvgæ</oRef></quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">тесьму плетут вдвоем: одна плетет, другая
                 уплотняет</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">braid is plaited by two (people): one plaits,
+                the other condenses</q>
+            </tr>
           </example>
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">Alæf Narty fæsīvædæj kæmæn jæ kʼūx bamūr
-              kæny, … kæmæn jæ færstæ balqīvy</quote>
+              kæny, … kæmæn jæ færstæ <oRef>balqīvy</oRef></quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">Алаф из нартовской молодежи кому раздробит
                 руку, кому сдавит бока</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Alæf of the Nart young (men) splinters the hand
+                of one, squeezes the sides of another</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Нарт._сказ."/>
               <biblScope>214</biblScope></bibl>
           </example>
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">fæjjaw læʒæǵy saǵīlæj kalmæn jæ sær zæxmæ
-              nylqyvta</quote>
+                <oRef>nylqyvta</oRef></quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">пастух раздвоенным концом палки придавил к
                 земле голову змеи</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the shepherd pressed the head of the snake by
+                the split end of the stick</q>
+            </tr>
           </example>
           <example>
-            <quote xmlns="http://www.tei-c.org/ns/1.0">dy mæ kʼūx ælqīvys rīwmæ</quote>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">dy mæ kʼūx <oRef>ælqīvys</oRef> rīwmæ</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">ты прижимаешь мою руку к груди</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">you press my hand to the breast</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Niger"/>
               <biblScope>158</biblScope></bibl>
           </example>
           <example>
-            <quote xmlns="http://www.tei-c.org/ns/1.0">Natur astæwbos tyng sælqyvta</quote>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">Natur astæwbos tyng
+              <oRef>sælqyvta</oRef></quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">Натур сильно стянул учкур</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Natur strongly tightened the belt</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ИАА"/>
               <biblScope>II 277</biblScope></bibl>
@@ -92,14 +126,23 @@
                 коне, и он всадил ему (дракону) копье в бедра и пригвоздил его к земле, потом убил
                 его</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Wastyrdzhi (Saint George) sat on his white
+                horse, and he thrust the spear into its (the dragon’s) thighs and pressed it into
+                the ground, and then killed it</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ИАА"/>
               <biblScope>II 78</biblScope></bibl>
           </example>
           <example xml:lang="os-x-digor">
             <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
-            <quote xmlns="http://www.tei-c.org/ns/1.0">ælqivton dændægutæj mæ mast</quote>
+            <quote xmlns="http://www.tei-c.org/ns/1.0"><oRef>ælqivton </oRef>dændægutæj mæ
+              mast</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">я стиснул свой гнев в зубах</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">I squeezed my anger between the teeth</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Тайм._Мӕ_уарзт"/>
               <biblScope>8</biblScope></bibl>
@@ -107,9 +150,13 @@
           <example xml:lang="os-x-digor">
             <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
             <quote xmlns="http://www.tei-c.org/ns/1.0">Ʒanbolat in tævdæ cækuti æ kʼoxti
-              nilqivta</quote>
+                <oRef>nilqivta</oRef></quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">Дзанболат сжал ее руки с горячими зернами</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Dzanbolat squeezed her hands with hot
+                grains</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Диг._сказ."/>
               <biblScope>13</biblScope></bibl>
@@ -120,6 +167,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">их сердца загорелись взаимной любовью, как
                 будто раскаленный железный обруч стянул, сдавил их сердца</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">their hearts lit up with love for each other,
+                as if a red-hot iron hoop squeezed, pressed together their hearts</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сека"/>
               <biblScope>26</biblScope></bibl>
@@ -153,24 +204,76 @@
               ><lang>Ягн.</lang>
             <w>ɣirīv-</w>
             <gloss><q>понимать</q></gloss>
-            <note type="comment">(с долгим <c>i</c>)</note></mentioned>, а также <mentioned
+            <note xml:lang="ru" type="comment">(с долгим <c>i</c>)</note><note xml:lang="en"
+              type="comment">(с долгим <c>i</c>)</note></mentioned>, а также <mentioned
             xml:lang="srh"><lang/>
             <w>va-ɣreiɣ-</w>
             <gloss><q>давить</q></gloss></mentioned> могут, как ос. <oRef>lǧīv-</oRef>, восходить к
             <mentioned xml:lang="ira"><w type="rec">graib-</w></mentioned>. Наряду с <mentioned
             xml:lang="ira"><w type="rec">graib-</w></mentioned> → <oRef>lǧīv</oRef> имеем <mentioned
             xml:lang="ira"><w type="rec">grab-</w></mentioned> → <w>rǧæv-</w> в <ref type="xr"
-            target="#entry_7rǧævyn"><lang/>
+            target="#entry_7rǧævyn" xml:lang="os"><lang/>
             <w>ᵆrǧævyn</w>
             <gloss><q>взваливать</q></gloss>, <gloss><q>подсаживать</q></gloss></ref>,
             <w>arǧævnæ</w>
           <gloss><q>клещи</q>, <note type="bibl">q.v. <bibl><ref type="bibl" target="#ref_ЯМ"/>
-                <biblScope>1934 II 172—173</biblScope></bibl></note></gloss>.<note type="footnote"
+                <biblScope>1934 II 172—173</biblScope></bibl></note></gloss>.<note xml:lang="ru"
+            type="footnote">Может быть, стоит для библиографии привести неудачную этимологию Вс. <hi
+              rendition="#rend_smallcaps">Миллера</hi> (<bibl><ref type="bibl" target="#ref_IF"/>
+              <biblScope>21, стр. 323</biblScope></bibl>): <mentioned xml:lang="inc-x-old"><lang/>
+              <w>glepate</w>
+              <gloss><q>дрожит</q></gloss></mentioned>.</note><note xml:lang="en" type="footnote"
             >Может быть, стоит для библиографии привести неудачную этимологию Вс. <hi
               rendition="#rend_smallcaps">Миллера</hi> (<bibl><ref type="bibl" target="#ref_IF"/>
               <biblScope>21, стр. 323</biblScope></bibl>): <mentioned xml:lang="inc-x-old"><lang/>
               <w>glepate</w>
               <gloss><q>дрожит</q></gloss></mentioned>.</note></etym>
+        <etym xml:lang="en">Regularly derived from <mentioned><mentioned xml:lang="ira"><lang/>
+              <w type="rec">graib-</w></mentioned>, <mentioned xml:lang="ine"><lang/>
+              <w type="rec">ghreib-</w>, variant <w type="rec">ghrebh-</w>
+              <note type="bibl">(<bibl><ref type="bibl" target="#ref_Pokorny"/>
+                  <biblScope>455, 457 сл.</biblScope></bibl>)</note></mentioned>
+            <gloss><q>grab</q> etc.</gloss></mentioned> The diphthong vocalism of this widespread
+          Indo-European verb is well-represented in Baltic and Germanic: <mentioned><mentioned
+              xml:lang="lt"><lang/>
+              <w>greibiù</w>, <w>greībti</w></mentioned>, <mentioned xml:lang="got"><lang/>
+              <w>greipan</w></mentioned>, <mentioned xml:lang="goh"><lang/>
+              <w>grifan</w></mentioned>, <mentioned xml:lang="de"><lang/>
+              <w>greifen</w></mentioned>
+            <gloss><q>grab</q></gloss>, <gloss><q>snatch</q> etc.</gloss></mentioned> In Iranian the
+          reflex of old <mentioned xml:lang="ira"><w type="rec">gṛb-</w>, <w type="rec"
+            >grab-</w></mentioned> is predominant: <mentioned xml:lang="fa"><lang/>
+            <w>giriftan</w>
+            <gloss><q>grab</q></gloss>, <gloss><q>snatch</q></gloss></mentioned>,
+              <mentioned><mentioned xml:lang="pal"><lang/>
+              <w>griftan</w>, <w>graftan</w></mentioned>, <mentioned xml:lang="sog"><lang/>
+              <w type="rec">ɣraβ-</w> (<w>ɣrβ</w>)</mentioned>
+            <gloss><q>understand</q> (<q rendition="#rend_doublequotes"
+            >snatch</q>)</gloss></mentioned>, <mentioned xml:lang="peo"><lang/>
+            <w>grab-</w>, <w>garb-</w>
+            <gloss><q>capture</q></gloss></mentioned>, <mentioned xml:lang="ae"><lang/>
+            <w>gərəb-</w>, <w>gərəw-</w>
+            <gloss><q>seize</q></gloss></mentioned>. <mentioned xml:lang="yai"><lang/>
+            <w>ɣirīv-</w>
+            <gloss><q>understand</q></gloss>
+            <note xml:lang="ru" type="comment">(с долгим <c>i</c>)</note><note xml:lang="en"
+              type="comment">(with long <c>i</c>)</note></mentioned>, and also <mentioned
+            xml:lang="srh"><lang/>
+            <w>va-ɣreiɣ-</w>
+            <gloss><q>press</q></gloss></mentioned> may, like Ossetic <oRef>lǧīv-</oRef>, continue
+            <mentioned xml:lang="ira"><w type="rec">graib-</w></mentioned>. Alongside <mentioned
+            xml:lang="ira"><w type="rec">graib-</w></mentioned> → <oRef>lǧīv</oRef> we find
+            <mentioned xml:lang="ira"><w type="rec">grab-</w></mentioned> → <w>rǧæv-</w> in <ref
+            type="xr" target="#entry_7rǧævyn" xml:lang="os"><lang/>
+            <w>ᵆrǧævyn</w>
+            <gloss><q>lift</q></gloss>, <gloss><q>load onto smth.</q></gloss></ref>, <w>arǧævnæ</w>
+          <gloss><q>tongs</q>, <note type="bibl">q.v. <bibl><ref type="bibl" target="#ref_ЯМ"/>
+                <biblScope>1934 II 172—173</biblScope></bibl></note></gloss>.<note type="footnote"
+            >For bibliographic reasons we may also cite the erroneous etymology by Ws. <hi
+              rendition="#rend_smallcaps">Miller</hi> (<bibl><ref type="bibl" target="#ref_IF"/>
+              <biblScope>21, p. 323</biblScope></bibl>): <mentioned xml:lang="inc-x-old"><lang/>
+              <w>glepate</w>
+              <gloss><q>trembles</q></gloss></mentioned>.</note></etym>
       </entry>
     </body>
   </text>
