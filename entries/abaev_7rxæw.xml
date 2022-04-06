@@ -1,35 +1,377 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ᵆrxæw</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_7rxæw" xml:lang="os" abv:completeness="incomplete">
-        <form type="lemma"><orth>ᵆrxæw</orth></form>
-        <sense><abv:tr xml:lang="ru">
-            <q/>
-          </abv:tr></sense>
-        <abv:exampleGrp>
-          <abv:example>
-            <quote/>
-          </abv:example>
-        </abv:exampleGrp>
-        <etym xml:lang="ru"/>
+      <entry xml:id="entry_7rxæw" xml:lang="os" abv:completeness="english-questions">
+        <form type="lemma" xml:lang="os-x-iron"><orth>ᵆrxæw</orth><form type="variant"
+              ><orth>ᵆrxæm</orth></form></form>
+        <form xml:lang="os-x-digor" type="dialectal"><orth>ærxaw</orth><form type="variant"
+              ><orth>ærxæn</orth></form></form>
+        <sense><sense><abv:tr xml:lang="ru">
+              <q>рана (открытая)</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>(open) wound</q>
+            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+              <q>язва</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>ulcer</q>
+            </abv:tr></sense></sense>
+        <re>
+          <note xml:lang="ru" type="comment">часто в сложении </note>
+          <note xml:lang="en" type="comment">often used in the compound word </note>
+          <form type="lemma"><orth><ref type="xr" target="#entry_tūg"/>-ærxæw</orth></form>
+          <sense><sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
+                <q xmlns="http://www.tei-c.org/ns/1.0">кровавая рана</q>
+              </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+                <q xmlns="http://www.tei-c.org/ns/1.0">bloody wound</q>
+              </tr></sense><sense><abv:tr xml:lang="ru">
+                <q>спекшаяся кровь, сгусток крови на теле</q>
+              </abv:tr><abv:tr xml:lang="en">
+                <q>gore, blood clot on the body</q>
+              </abv:tr></sense></sense>
+        </re>
+        <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">cæf jæ cæfyl k˳y пæ babædtæj, wæd
+                <oRef>ferxæm</oRef> væjjy</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">если рану не перевязать вовремя, образуется
+                язва</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">If the wound is not bandaged in time, an ulcer
+                will form</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ЮОПам."/>
+              <biblScope>III 197</biblScope></bibl>
+          </example>
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">bonæj bonтæ ʒīʒī <oRef>ʽrxæm</oRef>
+              asajdta</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">со дня на день грудь стала нарывать</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the chest began to vesicate from time to time
+                  (<q>from day to day</q>)</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сека"/>
+              <biblScope>12</biblScope></bibl>
+          </example>
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">k˳yʒy xæst <oRef>ferxæm</oRef>, ysxæftæ
+              kodta</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">укус собаки повлек нарыв, нагноение</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">a dog bite caused an abscess, a suppuration</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сека"/>
+              <biblScope>12</biblScope></bibl>
+          </example>
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0"><oRef>tūgærxæwtæj</oRef> jæ
+              ʽrbaxastoj</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">его принесли покрытого кровавыми ранами</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">he was brought covered with bloody wounds</q>
+            </tr>
+          </example>
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">racydīs Sozyryqo <oRef>tūgærxæwtæj</oRef>,
+              ūdmīdægæj та tyxxæj yssydī</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">пошел Созрыко окровавленный, еле живым (<q>имея
+                  душу внутри</q>) добрался</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Sozryko went
+                <?oxy_comment_start author="Irene" timestamp="20220406T134520+0300" comment="?"?>away<?oxy_comment_end?>
+                covered in blood, he barely made it out alive (<q>having a soul inside</q>)</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ИАС"/>
+              <biblScope>I 201</biblScope></bibl>
+          </example>
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">Beniajy bælasy bynæj, aǧd æтæ færsk cʼælæj,
+                <oRef>tūgærxæmttæj</oRef> rajstoj</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Бениа вытащили из-под дерева с переломанными
+                бедром и ребром, окровавленного</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Benia was dragged from under a tree with a
+                broken hip and a rib, covered in blood</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_F."/>
+              <biblScope>1957 X 67</biblScope></bibl>
+          </example>
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">bwar <oRef>tūg ærxæmtæj</oRef> læwwyd</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">тело лежало в кровавых ранах</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the body lay in bloody wounds</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Нафи"/>
+              <biblScope>159</biblScope></bibl>
+          </example>
+          <example xml:lang="os-x-digor">
+            <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">Ʒandari та <oRef>togærxawtæj</oRef> sirebæl
+              ku ærivardtoncæ, wæd та evstag gælstolæft kodta</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">когда Дзандара положили на диван
+                окровавленного, он еще дышал редко и отрывисто</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">when Dzandar was laid on the couch, covered in
+                blood, he was still breathing infrequently and abruptly.</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_LQ"/>
+              <biblScope>III 41</biblScope></bibl>
+          </example>
+          <example xml:lang="os-x-digor">
+            <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">Burxan ænǧældta æ zærdi <oRef>ærxæntæ</oRef>
+              isʒæbæx woʒænæncæ eske togæj</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Бурхан думал, что раны его сердца заживут
+                благодаря чужой крови</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Burkhan thought that the wounds of his heart
+                would heal thanks to someone else's blood</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_MD"/>
+              <biblScope>1940 III 57</biblScope></bibl>
+          </example>
+          <example xml:lang="os-x-digor">
+            <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">ævdaʒi xwasæ ʽj afonæ zærdi rist æma zærdi
+                <oRef>ærxæntæn</oRef></quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">время — чудодейственное лекарство от сердечной
+                боли и ран</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">time is a miracle cure for heartache and heart
+                wounds</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_MD"/>
+              <biblScope>1940 III 58</biblScope></bibl>
+          </example>
+          <example xml:lang="os-x-digor">
+            <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">tæxoduj, biccew, ku lædarisæ dæ nijjerægæn æ
+              zærdi <oRef>ærxæn</oRef>!</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">о если бы, мальчик, ты понимал сердечную рану
+                твоей родительницы!</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">oh boy, if only you understood the heart wound
+                of your mother!</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Bes."/>
+              <biblScope>63</biblScope></bibl>
+          </example>
+          <example xml:lang="os-x-digor">
+            <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">nur dær ma sæ nadi <oRef>ærxæntæ</oRef> bæræg
+              æncæ</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">и сейчас еще заметны кровоподтеки от побоев</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">and the bruises from the beatings are still
+                noticeable</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_SD"/>
+              <biblScope>280<hi rendition="#rend_subscript">2</hi></biblScope></bibl>
+          </example>
+          <example xml:lang="os-x-digor">
+            <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">fælors wadæltti saw <oRef>arxæntæ</oRef>
+              rabadtæj</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">на бледных щеках появились черные
+                кровоподтеки</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">black bruises appeared on pale cheeks</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Bes._Ka_ke"/>
+              <biblScope>43</biblScope></bibl>
+          </example>
+          <example xml:lang="os-x-digor">
+            <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
+            <quote xmlns="http://www.tei-c.org/ns/1.0"><oRef>isærxæntæ</oRef> uj æ sær</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">его голова бывает в кровавых ранах</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">his head is covered sometimes with bloody
+                wounds</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Sozur"/>
+              <biblScope>15</biblScope></bibl>
+          </example>
+        </exampleGrp>
+        <etym xml:lang="ru">Группа <c>rx</c> восходит здесь, как и в некоторых других случаях, к
+            <c>xr</c>; ср. <ref type="xr" target="#entry_rxæcyn"/> из <mentioned xml:lang="ira"><w
+              type="rec">xrak-</w></mentioned>, <ref type="xr" target="#entry_calx"/> из <mentioned
+            xml:lang="ira"
+              ><?oxy_comment_start author="Irene" timestamp="20220406T131903+0300" comment="тоже везде ставлю иран т.к. хз"?><w>čaxra-</w><?oxy_comment_end?></mentioned>,
+            <ref type="xr" target="#entry_syrx"/> из <mentioned xml:lang="ira"
+              ><?oxy_comment_start author="Irene" timestamp="20220406T131903+0300" comment="тоже везде ставлю иран т.к. хз"?><w>suxra-</w><?oxy_comment_end?></mentioned>
+          и т. п. Стало быть, <oRef>ᵆrxæw</oRef> можно возводить закономерно к <mentioned><mentioned
+              xml:lang="ira"><lang/>
+              <w type="rec">xraviš-</w></mentioned>, <mentioned xml:lang="ine"><lang/>
+              <w type="rec">krewəs-</w></mentioned>
+            <gloss><q>сырое, окровавленное мясо</q></gloss>, <gloss><q>спекшаяся, загустевшая
+                кровь</q></gloss></mentioned>. Ср. <mentioned xml:lang="ae"><lang/>
+            <note xml:lang="ru" type="comment">(со слабой ступенью огласовки)</note><note
+              xml:lang="en" type="comment">(со слабой ступенью огласовки)</note>
+            <w>xrū-</w>
+            <gloss><q>окровавленное мясо</q></gloss></mentioned>, <mentioned xml:lang="ae"
+              ><w>xrvi-</w>
+            <note xml:lang="ru" type="comment">(<w>xruvi-</w>)</note><note xml:lang="en"
+              type="comment">(<w>xruvi-</w>)</note>
+            <gloss><q>окровавленный</q></gloss></mentioned>, <mentioned xml:lang="ae"
+              ><w>xrvišyant-</w>
+            <gloss><q>кровожадный</q></gloss></mentioned>, <mentioned xml:lang="inc-x-old"><lang/>
+            <w>kravis-</w>
+            <gloss><q>сырое мясо</q></gloss></mentioned>, <mentioned xml:lang="inc-x-old"
+              ><w>kravyam</w>
+            <gloss><q>кровь</q></gloss></mentioned>, <mentioned xml:lang="cu"><lang/>
+            <w>krъvь</w></mentioned>, <mentioned xml:lang="ru"><lang/>
+            <w>кровь</w></mentioned>, <mentioned xml:lang="prg"><lang/>
+            <w>krawian</w></mentioned>, <mentioned xml:lang="lt"><lang/>
+            <w>kraũjas</w></mentioned> id., <mentioned xml:lang="lv"><lang/>
+            <w>kreve</w>
+            <gloss><q>спекшаяся кровь</q></gloss>, <gloss><q>струп</q></gloss></mentioned>,
+            <mentioned xml:lang="ang"><lang/>
+            <w>hrēaw</w>, <w>hræ̂w</w>
+            <gloss><q>сырой</q></gloss></mentioned>, <mentioned><mentioned xml:lang="cy"><lang/>
+              <w>crau</w></mentioned>, <mentioned xml:lang="kw"><lang/>
+              <w>crow</w></mentioned>
+            <gloss><q>кровь</q></gloss></mentioned>, <mentioned xml:lang="la"><lang/>
+            <w>cruentus</w>
+            <gloss><q>кровавый</q></gloss></mentioned>, <mentioned xml:lang="la"><w>cruor</w>
+            <gloss><q>загустевшая кровь</q></gloss></mentioned>, <mentioned xml:lang="grc"><lang/>
+            <w>κρέας</w>
+            <gloss><q>мясо</q></gloss></mentioned>. Колебание <c>w</c> || <c>m</c> в ос.
+            <oRef>ærxæw</oRef> || <oRef>ærxæm</oRef> такого же порядка, как в <mentioned
+            xml:lang="inc-x-old"><lang/>
+            <w>śyāva-</w> || <w>śyāma-</w>
+            <gloss><q>черный</q></gloss></mentioned>, <mentioned xml:lang="lt"><lang/>
+            <w>šir̃vas</w> || <w>šir̃mas</w>
+            <gloss><q>серый</q></gloss></mentioned> и т. п. Мы имеем здесь не словообразовательные
+          варианты, вопреки <bibl><author>Sресht</author>'y (<title>Ursprung der idg.
+              Deklination</title>. <pubPlace>Göttingen</pubPlace>, <date>1947</date>,
+              <biblScope>стр. 179</biblScope>)</bibl>, а фонетическое колебание между двумя
+          сонантами. Если все же отделять <oRef>rxæm</oRef> от <oRef>rxæw</oRef>, то первое можно
+          возводить к <mentioned xml:lang="ira"><w type="rec">(s)krama-</w></mentioned>
+          (индоевропейская база <mentioned xml:lang="ine"><w type="rec">(s)kre-</w>
+            <gloss><q>резать</q></gloss></mentioned>) и сближать с германской группой:
+              <mentioned><mentioned xml:lang="non"><lang/>
+              <w>skrama</w></mentioned>, <mentioned xml:lang="no"><lang/>
+              <w>skraama</w></mentioned>, <mentioned xml:lang="de"><lang/>
+              <w>Schramme</w></mentioned>
+            <gloss><q>рана</q></gloss>, <gloss><q>рубец</q></gloss>,
+            <gloss><q>шрам</q></gloss></mentioned> (<mentioned xml:lang="ira"><w type="rec"
+              >krama-</w></mentioned> закономерно → <oRef>rxæm</oRef>).</etym>
+        <etym xml:lang="en">The group <c>rx</c> goes back here, as in some other cases, to
+          <c>xr</c>; cf. <ref type="xr" target="#entry_rxæcyn"/> from <mentioned xml:lang="ira"><w
+              type="rec">xrak-</w></mentioned>, <ref type="xr" target="#entry_calx"/> from
+            <mentioned xml:lang="ira"
+              ><?oxy_comment_start author="Irene" timestamp="20220406T131903+0300" comment="тоже везде ставлю иран т.к. хз"?><w>čaxra-</w><?oxy_comment_end?></mentioned>,
+            <ref type="xr" target="#entry_syrx"/> from <mentioned xml:lang="ira"
+              ><?oxy_comment_start author="Irene" timestamp="20220406T131903+0300" comment="тоже везде ставлю иран т.к. хз"?><w>suxra-</w><?oxy_comment_end?></mentioned>
+          etc. Therefore, <oRef>ᵆrxæw</oRef> can be regularly traced back to <mentioned><mentioned
+              xml:lang="ira"><lang/>
+              <w type="rec">xraviš-</w></mentioned>, <mentioned xml:lang="ine"><lang/>
+              <w type="rec">krewəs-</w></mentioned>
+            <gloss><q>raw, bloodied meat</q></gloss>, <gloss><q>clotted
+            blood</q></gloss></mentioned>. Cf. <mentioned xml:lang="ae"><lang/>
+            <note xml:lang="ru" type="comment">(со слабой ступенью огласовки)</note><note
+              xml:lang="en" type="comment">(with a
+              <?oxy_comment_start author="Irene" timestamp="20220406T135104+0300" comment="??"?>weak<?oxy_comment_end?>
+              ablaut grade)</note>
+            <w>xrū-</w>
+            <gloss><q>bloodied meat</q></gloss></mentioned>, <mentioned xml:lang="ae"><w>xrvi-</w>
+            <note xml:lang="ru" type="comment">(<w>xruvi-</w>)</note><note xml:lang="en"
+              type="comment">(<w>xruvi-</w>)</note>
+            <gloss><q>covered in blood</q></gloss></mentioned>, <mentioned xml:lang="ae"
+              ><w>xrvišyant-</w>
+            <gloss><q>bloodthirsty</q></gloss></mentioned>, <mentioned xml:lang="inc-x-old"><lang/>
+            <w>kravis-</w>
+            <gloss><q>raw meat</q></gloss></mentioned>, <mentioned xml:lang="inc-x-old"
+              ><w>kravyam</w>
+            <gloss><q>blood</q></gloss></mentioned>, <mentioned><mentioned xml:lang="cu"><lang/>
+              <w>krъvь</w></mentioned>, <mentioned xml:lang="ru"><lang/>
+              <w>кровь</w></mentioned>, <mentioned xml:lang="prg"><lang/>
+              <w>krawian</w></mentioned>, <mentioned xml:lang="lt"><lang/>
+              <w>kraũjas</w></mentioned>
+            <gloss><q>blood</q></gloss></mentioned>, <mentioned xml:lang="lv"><lang/>
+            <w>kreve</w>
+            <gloss><q>clotted blood</q></gloss>, <gloss><q>scab</q></gloss></mentioned>, <mentioned
+            xml:lang="ang"><lang/>
+            <w>hrēaw</w>, <w>hræ̂w</w>
+            <gloss><q>raw</q></gloss></mentioned>, <mentioned><mentioned xml:lang="cy"><lang/>
+              <w>crau</w></mentioned>, <mentioned xml:lang="kw"><lang/>
+              <w>crow</w></mentioned>
+            <gloss><q>blood</q></gloss></mentioned>, <mentioned xml:lang="la"><lang/>
+            <w>cruentus</w>
+            <gloss><q>bloody</q></gloss></mentioned>, <mentioned xml:lang="la"><w>cruor</w>
+            <gloss><q>clotted blood</q></gloss></mentioned>, <mentioned xml:lang="grc"><lang/>
+            <w>κρέας</w>
+            <gloss><q>meat</q></gloss></mentioned>. The fluctuation <c>w</c> || <c>m</c> in Ossetic
+            <oRef>ærxæw</oRef> || <oRef>ærxæm</oRef> is similar to <mentioned xml:lang="inc-x-old"><lang/>
+            <w>śyāva-</w> || <w>śyāma-</w>
+            <gloss><q>black</q></gloss></mentioned>, <mentioned xml:lang="lt"><lang/>
+            <w>šir̃vas</w> || <w>šir̃mas</w>
+            <gloss><q>gray</q></gloss></mentioned> etc. We have here not derivational variants,
+          contrary to <bibl><author>Sресht</author> (<title>Ursprung der idg. Deklination</title>.
+              <pubPlace>Göttingen</pubPlace>, <date>1947</date>, <biblScope>p.
+            179</biblScope>)</bibl>, but phonetic fluctuation between two sonants. However, if one
+          separates <oRef>rxæm</oRef> from <oRef>rxæw</oRef>, then the first form can be traced back
+          to <mentioned xml:lang="ira"><w type="rec">(s)krama-</w></mentioned> (Indo-European base
+            <mentioned xml:lang="ine"><w type="rec">(s)kre-</w>
+            <gloss><q>cut</q></gloss></mentioned>) and bring them closer to the German group:
+              <mentioned><mentioned xml:lang="non"><lang/>
+              <w>skrama</w></mentioned>, <mentioned xml:lang="no"><lang/>
+              <w>skraama</w></mentioned>, <mentioned xml:lang="de"><lang/>
+              <w>Schramme</w></mentioned>
+            <gloss><q>wound</q></gloss>, <gloss><q>cicatrix</q></gloss>,
+            <gloss><q>scar</q></gloss></mentioned> (<mentioned xml:lang="ira"><w type="rec"
+              >krama-</w></mentioned> regularly → <oRef>rxæm</oRef>).</etym>
       </entry>
     </body>
   </text>
