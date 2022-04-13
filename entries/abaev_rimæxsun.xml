@@ -1,35 +1,94 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">rimæxsun</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_rimæxsun" xml:lang="os" abv:completeness="incomplete">
-        <form type="lemma"><orth>rimæxsun</orth></form>
-        <sense><abv:tr xml:lang="ru">
-            <q/>
-          </abv:tr></sense>
-        <abv:exampleGrp>
-          <abv:example>
-            <quote/>
-          </abv:example>
-        </abv:exampleGrp>
-        <etym xml:lang="ru"/>
+      <entry xml:id="entry_rimæxsun" xml:lang="os-x-digor" abv:completeness="questions">
+        <form type="lemma"><orth>rimæxsun</orth><form type="participle"><orth>rimaxst</orth><form
+              type="variant"><orth>rimæxst</orth></form></form></form>
+        <usg><lang/></usg>
+        <sense><sense><abv:tr xml:lang="ru">
+              <q>прятать</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>hide</q>
+            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+              <q>скрывать</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>conceal</q>
+            </abv:tr></sense></sense>
+        <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">Xadizæt adtæj <oRef>rimæxsti</oRef> æ madi
+              rvadæltæmæ</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Хадизат скрывалась у родных своей матери</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Hadizat hid at her mother's relatives</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_MD"/>
+              <biblScope>1949 II 35</biblScope></bibl>
+          </example>
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">suvællænttæ <oRef>rimæxsængætti</oRef>
+              ǧaztoncæ</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">дети играли в прятки</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">children were playing hide and seek</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_MD"/>
+              <biblScope>1949 II 46</biblScope></bibl>
+          </example>
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">æz пæ <oRef>rimæxsun</oRef> mæ zærdi nez
+              nekæmæj</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">я ни от кого не скрываю недуг моего сердца</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">I do not hide the disease of my heart from
+                anyone</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Gurdž._Æduli"/>
+              <biblScope>93</biblScope></bibl>
+          </example>
+        </exampleGrp>
+        <etym xml:lang="ru">Вероятно, из <ref type="xr" target="#entry_nymæxsyn"
+            ><w>nimæxsun</w></ref> с перебоем <c>n</c> → <c>r</c> по диссимиляции носовых, как в
+            <ref type="xr" target="#entry_mænærǧ"/> из <mentioned xml:lang="ira"
+              ><?oxy_comment_start author="Irene" timestamp="20220413T133437+0300" comment="иран?"?><w
+              type="rec">mænænǧ</w><?oxy_comment_end?></mentioned> и т. п. См. <ref type="xr"
+            target="#entry_nymæxsyn"/>: там же дополнительная документация. См. также <ref type="xr"
+            target="#entry_æmbæxsyn"/>.</etym>
+        <etym xml:lang="en">Probably from <ref type="xr" target="#entry_nymæxsyn"
+            ><w>nimæxsun</w></ref> with the alternation <c>n</c> → <c>r</c> by nasal dissimilation,
+          as in <ref type="xr" target="#entry_mænærǧ"/> from <mentioned xml:lang="ira"
+              ><?oxy_comment_start author="Irene" timestamp="20220413T133437+0300" comment="иран?"?><w
+              type="rec">mænænǧ</w><?oxy_comment_end?></mentioned> etc. See <ref type="xr"
+            target="#entry_nymæxsyn"/>: there is also additional documentation. See also <ref
+            type="xr" target="#entry_æmbæxsyn"/>.</etym>
       </entry>
     </body>
   </text>
