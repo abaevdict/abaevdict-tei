@@ -1,36 +1,97 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">qor</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_qor" xml:lang="os" abv:completeness="incomplete">
+      <entry xml:id="entry_qor" xml:lang="os-x-digor" abv:completeness="incomplete">
         <form type="lemma"><orth>qor</orth></form>
+        <usg><lang/></usg>
         <sense><abv:tr xml:lang="ru">
-            <q/>
+            <q>беспокойство</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>bother</q>
           </abv:tr></sense>
-        <abv:exampleGrp>
-          <abv:example>
-            <quote/>
-          </abv:example>
-        </abv:exampleGrp>
-        <etym xml:lang="ru"/>
+        <re>
+          <form type="lemma"><orth>qor kænun</orth></form>
+          <sense><sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
+                <q xmlns="http://www.tei-c.org/ns/1.0">беспокоить</q>
+              </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+                <q xmlns="http://www.tei-c.org/ns/1.0">bother</q>
+              </tr></sense><sense><abv:tr xml:lang="ru">
+                <q>мешать</q>
+              </abv:tr><abv:tr xml:lang="en">
+                <q>disturb</q>
+              </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                <q>донимать</q>
+              </abv:tr><abv:tr xml:lang="en">
+                <q>annoy</q>
+              </abv:tr></sense></sense>
+          <note xml:lang="ru" type="comment"> = <phr xml:lang="os-x-iron"><lang/>
+              <ref type="xr" target="#entry_qyg" xml:lang="os-x-iron"><w>qyg</w></ref>
+              <ref type="xr" target="#entry_kænyn"/></phr>
+            <bibl><ref type="bibl" target="#ref_ОЯФ_I"/>
+              <biblScope>460</biblScope></bibl></note>
+          <note xml:lang="en" type="comment"> = <phr xml:lang="os-x-iron"><lang/>
+              <ref type="xr" target="#entry_qyg" xml:lang="os-x-iron"><w>qyg</w></ref>
+              <ref type="xr" target="#entry_kænyn"/></phr>
+            <bibl><ref type="bibl" target="#ref_ОЯФ_I"/>
+              <biblScope>460</biblScope></bibl></note>
+        </re>
+        <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">ændæmæ co, ma næ qor kænæ</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">выходи вон, не мешай нам</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">get out, don't bother us</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Iræf"/>
+              <biblScope>117</biblScope></bibl>
+          </example>
+        </exampleGrp>
+        <etym xml:lang="ru">Ср. <mentioned xml:lang="trk"><lang/>
+            <w>qor</w>
+            <gloss><q>вред</q>, <q>хула</q>, <q>мученье</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Радлов"/>
+                <biblScope>II 550</biblScope></bibl>)</note></mentioned>; вероятно, идентично с
+            <mentioned xml:lang="trk"><w>qor</w>
+            <gloss><q>жар</q>, <q>горячие уголья</q></gloss></mentioned>. Сюда же <mentioned
+            xml:lang="x-mordvin"><lang/>
+            <w>kor</w>
+            <gloss><q>грусть</q></gloss></mentioned>?</etym>
+        <etym xml:lang="en">Cf. <mentioned xml:lang="trk"><lang/>
+            <w>qor</w>
+            <gloss><q>harm</q>, <q>blasphemy</q>, <q>страдающий</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Радлов"/>
+                <biblScope>II 550</biblScope></bibl>)</note></mentioned>; it is probably identical
+          to <mentioned xml:lang="trk"><w>qor</w>
+            <gloss><q>heat</q>, <q>hot coals</q></gloss></mentioned>. Also here <mentioned
+            xml:lang="x-mordvin"><lang/>
+            <w>kor</w>
+            <gloss><q>sadness</q></gloss></mentioned>?</etym>
       </entry>
     </body>
   </text>
 </TEI>
+
