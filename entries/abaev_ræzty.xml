@@ -1,35 +1,136 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ræzty</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_ræzty" xml:lang="os" abv:completeness="incomplete">
-        <form type="lemma"><orth>ræzty</orth></form>
-        <sense><abv:tr xml:lang="ru">
-            <q/>
-          </abv:tr></sense>
-        <abv:exampleGrp>
-          <abv:example>
-            <quote/>
-          </abv:example>
-        </abv:exampleGrp>
-        <etym xml:lang="ru"/>
+      <entry xml:id="entry_ræzty" xml:lang="os" abv:completeness="english-questions">
+        <form type="lemma" xml:lang="os-x-iron"><orth>ræzty</orth></form>
+        <form xml:lang="os-x-digor" type="dialectal"><orth>ræzti</orth></form>
+        <sense><sense><abv:tr xml:lang="ru">
+              <q>мимо</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>past (by)</q>
+            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+              <q>перед</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>in front of</q>
+            </abv:tr><note xml:lang="ru" type="comment"> (послелог)</note><note xml:lang="en"
+              type="comment"> (postposition)</note></sense></sense>
+        <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">don kæly jæ <oRef>ræzty</oRef> ūrs
+              æxsærʒæntæj</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">ручей льется перед ней (сосной) белыми
+                водопадами</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the stream flows in front of it (a pine tree)
+                like white waterfalls</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Коста"/>
+              <biblScope>63</biblScope></bibl>
+          </example>
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">mīǧtæ... zīlync mæ særty, тæ
+                <oRef>ræzty</oRef> ærtyxsync</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">тучи кружат надо мною, вьются передо мной</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">clouds are circling above me (and) winding in
+                front of me</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Niger"/>
+              <biblScope>132</biblScope></bibl>
+          </example>
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">ysqazy ḱynʒy <oRef>ræzty</oRef> baræg</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">джигитует перед невесткой всадник</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">a rider
+                <?oxy_comment_start author="Irene" timestamp="20220416T175905+0300" comment="сойдет?.."?>is
+                doing tricks on his horse<?oxy_comment_end?> in front of his daughter-in-law</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Мысост"/>
+              <biblScope>118</biblScope></bibl>
+          </example>
+          <example xml:lang="os-x-digor">
+            <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">ew kæmi adtæj omi ba in æ <oRef>ræzti</oRef>
+              ew congoj læg dujnej ræwbesærǧaw ærbatærdta</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">однажды один безрукий человек прогнал мимо него
+                огромное стадо козуль</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">once one armless man drove a huge herd of roe
+                deer past him</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Диг._сказ."/>
+              <biblScope>22</biblScope></bibl>
+          </example>
+          <example xml:lang="os-x-digor">
+            <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">... Boriati <oRef>ræzti</oRef> kʼærccitæ
+              gængæ ærcudæncæ</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">... проехали мимо Бориаевых, щелкая
+                (плетками)</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">... drove past the Boriaevs, clicking (with
+                whips)</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_СОПам."/>
+              <biblScope>II 43</biblScope></bibl>
+          </example>
+        </exampleGrp>
+        <etym xml:lang="ru">Наречия и послелоги в осетинском стоят нередко в локативе мн. ч.: <ref
+            type="xr" target="#entry_særty"><w>særty</w>
+            <gloss><q>над</q></gloss></ref>, <ref type="xr" target="#entry_byn_1"><w>bynty</w>
+            <gloss><q>по низу</q></gloss></ref>, <ref type="xr" target="#entry_wælæty"><w>wælæty</w>
+            <gloss><q>поверху</q></gloss></ref> и т. п. (<bibl><ref type="bibl" target="#ref_ГО"/>
+            <biblScope>§ 83</biblScope></bibl>). Послелог <oRef>ræzty</oRef> представляет локатив
+          мн. ч. от <ref type="xr" target="#entry_raz"><w>raz</w>
+            <gloss><q>перёд</q></gloss></ref>. В качестве послелога функционирует и локатив ед. ч.
+            <ref type="xr" target="#entry_razy_1"><w xml:lang="os-x-iron">razy</w><w
+              xml:lang="os-x-digor">razi</w>
+            <gloss><q>перед</q></gloss></ref>. См. <ref type="xr" target="#entry_raz"/>.</etym>
+        <etym xml:lang="en">Adverbs and postpositions in Ossetic are often in the plural locative
+          form: <ref type="xr" target="#entry_særty"><w>særty</w>
+            <gloss><q>above</q></gloss></ref>, <ref type="xr" target="#entry_byn_1"><w>bynty</w>
+            <gloss><q>along the ground</q></gloss></ref>, <ref type="xr" target="#entry_wælæty"
+              ><w>wælæty</w>
+            <gloss><q>on top</q></gloss></ref> etc. (<bibl><ref type="bibl" target="#ref_ГО"/>
+            <biblScope>§ 83</biblScope></bibl>). The postposition <oRef>ræzty</oRef> is a locative
+          plural form of <ref type="xr" target="#entry_raz"><w>raz</w>
+            <gloss><q>front</q></gloss></ref>. The locative singular form <ref type="xr"
+            target="#entry_razy_1"><w xml:lang="os-x-iron">razy</w><w xml:lang="os-x-digor">razi</w>
+            <gloss><q>in front of</q></gloss></ref> also functions as a postposition. See <ref
+            type="xr" target="#entry_raz"/>.</etym>
       </entry>
     </body>
   </text>
