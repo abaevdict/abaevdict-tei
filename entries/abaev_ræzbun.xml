@@ -1,35 +1,82 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ræzbun</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_ræzbun" xml:lang="os" abv:completeness="incomplete">
+      <entry xml:id="entry_ræzbun" xml:lang="os-x-digor" abv:completeness="english-questions">
         <form type="lemma"><orth>ræzbun</orth></form>
+        <usg><lang/></usg>
         <sense><abv:tr xml:lang="ru">
-            <q/>
+            <q>плодовый сад</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>orchard</q>
           </abv:tr></sense>
-        <abv:exampleGrp>
-          <abv:example>
-            <quote/>
-          </abv:example>
-        </abv:exampleGrp>
-        <etym xml:lang="ru"/>
+        <note type="bibl"> (<bibl><ref type="bibl" target="#src_СД"/>
+            <biblScope>1959, № 46</biblScope></bibl>)</note>
+        <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">wæ <oRef>ræzbuni</oRef> kæwisæ, mæn
+              imisgæj</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">ты, бывало, плакала в вашем саду, вспоминая
+                меня</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">you used to cry in your garden remembering
+                me</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Тайм._Мӕ_зӕрд."/>
+              <biblScope>34</biblScope></bibl>
+          </example>
+        </exampleGrp>
+        <etym xml:lang="ru">Слово <ref type="xr" target="#entry_byn_1"><w xml:lang="os-x-iron"
+              >byn</w><w xml:lang="os-x-digor">bun</w>
+            <gloss><q>низ</q></gloss>, <gloss><q>основание</q></gloss>,
+            <gloss><q>почва</q></gloss></ref> в сложении с названиями растений и плодов получает
+          значение <q rendition="#rend_doublequotes">место, заросшее такими-то растениями</q>: <ref
+            type="xr" target="#entry_æxsær"/>-<ref type="xr" target="#entry_byn_1"><w>bun</w></ref>
+          <gloss><q>орешник</q></gloss>, <ref type="xr" target="#entry_tægær_1"
+            ><w>tægær</w></ref>-<ref type="xr" target="#entry_byn_1"><w>bun</w></ref>
+          <gloss><q>кленовый лес</q></gloss> и т. п. (<bibl><ref type="bibl" target="#ref_ГО"/>
+            <biblScope>§ 206</biblScope></bibl>). По этой модели образовано и <oRef>ræzbun</oRef> от
+            <ref type="xr" target="#entry_ræzæ"><w>ræzæ</w>
+            <gloss><q>плоды</q></gloss></ref>.</etym>
+        <etym xml:lang="en">With the names of plants and fruits, the word <ref type="xr"
+            target="#entry_byn_1"><w xml:lang="os-x-iron">byn</w><w xml:lang="os-x-digor">bun</w>
+            <gloss><q>bottom</q></gloss>, <gloss><q>base</q></gloss>,
+            <gloss><q>ground</q></gloss></ref> has the meaning <q rendition="#rend_doublequotes">a
+            place overgrown with
+            <?oxy_comment_start author="Irene" timestamp="20220416T181424+0300" comment="?"?>named<?oxy_comment_end?>
+            plants</q>: <ref type="xr" target="#entry_æxsær"/>-<ref type="xr" target="#entry_byn_1"
+              ><w>bun</w></ref>
+          <gloss><q>hazel</q></gloss>, <ref type="xr" target="#entry_tægær_1"
+            ><w>tægær</w></ref>-<ref type="xr" target="#entry_byn_1"><w>bun</w></ref>
+          <gloss><q>maple forest</q></gloss> etc. (<bibl><ref type="bibl" target="#ref_ГО"/>
+            <biblScope>§ 206</biblScope></bibl>). The word <oRef>ræzbun</oRef> is derived from <ref
+            type="xr" target="#entry_ræzæ"><w>ræzæ</w>
+            <gloss><q>fruit</q></gloss></ref>
+          <?oxy_comment_start author="Irene" timestamp="20220416T181538+0300" comment="?"?>in this
+          way<?oxy_comment_end?>.</etym>
       </entry>
     </body>
   </text>
