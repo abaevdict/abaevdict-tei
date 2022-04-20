@@ -1,35 +1,89 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">rævdwan</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_rævdwan" xml:lang="os" abv:completeness="incomplete">
-        <form type="lemma"><orth>rævdwan</orth></form>
+      <entry xml:id="entry_rævdwan" xml:lang="os" abv:completeness="complete">
+        <form type="lemma"><orth>rævdwan</orth><form type="variant"
+          ><orth>rævdawæn</orth></form></form>
         <sense><abv:tr xml:lang="ru">
-            <q/>
+            <q>предмет, служащий для того, чтобы сделать приятное, ублажить, утешить кого-либо</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>object used to please or comfort someone</q>
           </abv:tr></sense>
-        <abv:exampleGrp>
-          <abv:example>
-            <quote/>
-          </abv:example>
-        </abv:exampleGrp>
-        <etym xml:lang="ru"/>
+        <re>
+          <form type="lemma"><orth><ref type="xr" target="#entry_syvællon"/>-rævdawæn</orth></form>
+          <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">сладости, фрукты, игрушки и т. п. для
+                ребенка</q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">sweets, fruits, toys, etc. for a child</q>
+            </tr></sense>
+        </re>
+        <note xml:lang="ru" type="comment">; <oRef>rævdwan</oRef> употребляется также эвфемистически
+          вместо <ref type="xr" target="#entry_ajk"><w>ajk</w>
+            <gloss><q>яйцо</q></gloss></ref>, так как слово <ref type="xr" target="#entry_ajk"/>, в
+          особенности в устах женщины, считается грубоватым</note>
+        <note xml:lang="en" type="comment">; <oRef>rævdwan</oRef> is also used euphemistically
+          instead of <ref type="xr" target="#entry_ajk"><w>ajk</w>
+            <gloss><q>egg</q></gloss></ref>, since the word <ref type="xr" target="#entry_ajk"/>,
+          especially when spoken by a woman, is considered rude</note>
+        <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">пæ wazǵytæn ast <oRef>rævdwanæj</oRef> qajla
+              akodton</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">для наших гостей я сделала яичницу из восьми
+                яиц</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">I made an eight-egg fried egg for our
+                guests</q>
+            </tr>
+          </example>
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">karḱy <oRef>rævdwættæ</oRef> wælarty ræxysyl
+              sawyǧta</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">она подвесила куриные яйца на надочажной
+                цепи</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">she hung chicken eggs on a chain above the
+                hearth</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ИАА"/>
+              <biblScope>II 243</biblScope></bibl>
+          </example>
+        </exampleGrp>
+        <etym xml:lang="ru">Отглагольное имя на <mentioned xml:lang="os"><m>-æn</m></mentioned> от
+            <ref type="xr" target="#entry_rævdawyn"><w>rævdawyn</w>
+            <gloss><q>ласкать</q></gloss></ref> (<bibl><ref type="bibl" target="#ref_ГО"/>
+            <biblScope>§ 170</biblScope></bibl>).</etym>
+        <etym xml:lang="en">A deverbal <mentioned xml:lang="os"><m>-æn</m></mentioned>-noun from
+            <ref type="xr" target="#entry_rævdawyn"><w>rævdawyn</w>
+            <gloss><q>caress</q></gloss></ref> (<bibl><ref type="bibl" target="#ref_ГО"/>
+            <biblScope>§ 170</biblScope></bibl>).</etym>
       </entry>
     </body>
   </text>
