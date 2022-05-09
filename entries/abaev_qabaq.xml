@@ -1,21 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">qabaq</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
@@ -24,9 +28,19 @@
         <form xml:lang="os-x-digor" type="dialectal"><orth>qabaǧ</orth></form>
         <sense><abv:tr xml:lang="ru">
             <q>мишень</q>
-            <note type="comment"> (при стрельбе в цель, обычно в честь покойника)</note>
+            <note xml:lang="ru" type="comment"> (при стрельбе в цель, обычно в честь
+              покойника)</note>
+            <note xml:lang="en" type="comment"> (при стрельбе в цель, обычно в честь
+              покойника)</note>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>target</q>
+            <note type="comment"> (when shooting at a target, usually in honor of the
+              deceased)</note>
           </abv:tr><sense>, <abv:tr xml:lang="ru">
               <q>обычай стрельбы в цель в честь покойника с призами для лучших стрелков</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>the custom of shooting at a target in honor of the deceased with prizes for the
+                best shooters</q>
             </abv:tr></sense></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
@@ -34,8 +48,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">пусть тебя поставят мишенью в стрельбе</q>
             </tr>
-            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#ref_проклятье"
-                >проклятье</ref></bibl>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">let them make you a target in shooting</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0">проклятье</bibl>
           </example>
           <example xml:lang="os-x-digor">
             <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
@@ -45,10 +61,14 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">у Кантов, конечно, бывали поминки, стрельба в
                 цель и скачки (в честь покойника)</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">The Kants, of course, had a wake, target
+                shooting and horse racing (in honor of the deceased)</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_СОПам."/>
               <biblScope>II 44</biblScope></bibl>
           </example>
-          <?oxy_comment_start author="julie" timestamp="20220304T190605+0300" comment="см. перевод из 1 тома, слово alæm"?>
+          <?oxy_comment_start author="julie" timestamp="20220304T190605+0300" comment="см. перевод из 1 тома, слово ælæm"?>
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">wæd īw, mæ xūrtæ, wældaj kad ḱī kodta jæ
               mardæn, ūj īw aræzta dūǧtæ, qabaqqytæ, ælæmtæ æmæ bīræ cydærtæ</quote>
@@ -56,6 +76,11 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">тогда, мои солнышки, кто (хотел) особенно
                 почтить своего покойника, тот устраивал скачки, стрельбу в цель, <hi
                   rendition="#rend_smallcaps">аламы</hi> и много чего</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">then, my little suns, who especially wanted to
+                honor his deceased, he arranged races, shooting at the target, <hi
+                  rendition="#rend_smallcaps">alamy</hi> and more</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Čerm."/>
               <biblScope>148</biblScope></bibl>
@@ -67,6 +92,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">слишком далеко установили Слановы мишень, глаз
                 как следует не улавливал рублевую монету, (служившую) мишенью</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the Slanovs set the target too far away, the
+                eye did not properly catch the ruble coin, (which served) as a target</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Čerm."/>
               <biblScope>153</biblScope></bibl>
           </example>
@@ -75,6 +104,10 @@
             <quote xmlns="http://www.tei-c.org/ns/1.0">qabaǧ saʒun</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">устанавливать <hi rendition="#rend_smallcaps"
+                  >qabaǧ</hi></q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">arrange <hi rendition="#rend_smallcaps"
                   >qabaǧ</hi></q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Диг._сказ."/>
@@ -89,17 +122,28 @@
                   <hi rendition="#rend_smallcaps">qabaǧ</hi> (т. е. высокий шест с мишенью для
                 стрельбы)</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">two brothers arrange <hi
+                  rendition="#rend_smallcaps">qabaǧ</hi> (a high pole with a target for shooting)
+                for seven villages every year</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Диг._сказ."/>
               <biblScope>30, 140<hi rendition="#rend_subscript">59</hi></biblScope></bibl>
           </example>
         </exampleGrp>
-        <note type="comment">. Скачки (см. <ref type="xr" target="#entry_dūǧ"/>) и стрельба в цель
-          (<oRef/>) составляли у осетин необходимую часть погребальных игр в честь покойников
-          мужского пола (см.: <bibl><ref type="bibl" target="#ref_Юго_Осетия"/>
+        <note xml:lang="ru" type="comment">. Скачки (см. <ref type="xr" target="#entry_dūǧ"/>) и
+          стрельба в цель (<oRef/>) составляли у осетин необходимую часть погребальных игр в честь
+          покойников мужского пола (см.: <bibl><ref type="bibl" target="#ref_Юго_Осетия"/>
             <biblScope>221</biblScope></bibl>); <oRef/> мог устраиваться и независимо от поминок,
           как спортивная игра (<bibl><ref type="bibl"
               target="#ref_Гагиев. Осетинские национальные игры. Орджоникидзе,"/>
             <biblScope>1958, стр. 23</biblScope></bibl>).</note>
+        <note xml:lang="en" type="comment">. Horse races (see <ref type="xr" target="#entry_dūǧ"/>)
+          and shooting at a target (<oRef/>) were a necessary part of Ossetic funeral games in honor
+          of the deceased male (see: <bibl><ref type="bibl" target="#ref_Юго_Осетия"/>
+            <biblScope>221</biblScope></bibl>); <oRef/> it could be arranged independently of the
+          wake, as a sports game (<bibl><hi rendition="#rend_smallcaps">Gagiev</hi>. Ossetic
+            national games. <biblScope>Ordzhonikidze, 1958, p. 23</biblScope></bibl>).</note>
         <etym xml:lang="ru">Из <mentioned xml:lang="trk"><lang>тюрк. (джагат.)</lang>
             <w>qabaq</w>
             <gloss><q>мишень</q>, <q>цель</q></gloss>
@@ -108,8 +152,7 @@
                   >Меngеs. Das Čaγatajische.</ref><biblScope>1956, стр.
               103</biblScope></bibl>)</note></mentioned>. Идентично с
             <?oxy_comment_start author="julie" timestamp="20220305T101522+0300" comment="тюрк?"?><mentioned
-            xml:lang="trk"><lang/>
-            <w>qabaq</w>
+            xml:lang="trk"><w>qabaq</w>
             <gloss><q>тыква</q></gloss></mentioned><?oxy_comment_end?> (ср. <mentioned xml:lang="ru"
               ><lang>русск.</lang>
             <w>кабачок</w></mentioned>), так как часто мишенью при стрельбе служила тыква. Отмечено
@@ -119,29 +162,38 @@
                 argenteus affigitur, ut sit scopus sagittariorum</q></gloss>
             <note type="bibl">(<bibl><ref type="bibl" target="#ref_Vullers"/>
                 <biblScope>II 710</biblScope></bibl>)</note>
-            <note type="comment">(<q rendition="#rend_doublequotes">высокий шест, установленный на
-                площади для игр, на конце которого укреплено золотое или серебряное кольцо, служащее
-                мишенью для стрелков</q>)</note></mentioned>; см. подробнее: <bibl><ref type="bibl"
+            <note xml:lang="ru" type="comment">(<q rendition="#rend_doublequotes">высокий шест,
+                установленный на площади для игр, на конце которого укреплено золотое или серебряное
+                кольцо, служащее мишенью для стрелков</q>)</note><note xml:lang="en" type="comment"
+                >(<q rendition="#rend_doublequotes">высокий шест, установленный на площади для игр,
+                на конце которого укреплено золотое или серебряное кольцо, служащее мишенью для
+                стрелков</q>)</note></mentioned>; см. подробнее: <bibl><ref type="bibl"
               target="#ref_Doerfer"/>
-            <biblScope>III 412—414</biblScope></bibl>. — <mentioned xml:lang="tg"><lang>тадж.
-              (диал.)</lang>
+            <biblScope>III 412—414</biblScope></bibl>. — <mentioned xml:lang="tg-x-dial"><lang/>
             <w>qabaq</w>
             <gloss><q>стрельба в цель в честь рождения ребенка, обрезания и т. п.</q></gloss>
-            <note type="comment">(<bibl><ref type="bibl"
+            <note xml:lang="ru" type="comment">(<bibl><author><hi rendition="#rend_smallcaps"
+                    >Розенфельд</hi></author>. <author>Ванджские говоры таджикского языка</author>.
+                  <biblScope>Л., 1964, стр. 108</biblScope></bibl>)</note><note xml:lang="en"
+              type="comment">(<bibl><ref type="bibl"
                   target="#ref_Розенфельд. Ванджские говоры таджикского языка.">Розенфельд.
                   Ванджские говоры таджикского языка.</ref>
                 <biblScope>Л., 1964, стр. 108</biblScope></bibl>)</note></mentioned>. Вошло также в
             <hi rendition="#rend_bold">грузинский</hi>: <mentioned xml:lang="ka"><w>qabaxi</w>
             <gloss><q>мачта, на верху которой лежит шар, как цель для выстрела</q></gloss>
             <note type="bibl">(<bibl><ref type="bibl" target="#ref_Чубинов"
-            /></bibl>)</note></mentioned>, <mentioned xml:lang="ka"><lang>(пшав.)</lang>
+            /></bibl>)</note></mentioned>, <mentioned xml:lang="ka-x-pshav"><lang>(пшав.)</lang>
             <w>qabaxi</w>, <w>ǧabaxi</w>
             <gloss><q>мишень</q>, <q>расписанная доска с прикрепленной мишенью</q></gloss>
-            <note type="bibl">[<bibl><ref type="bibl"
-                  target="#ref_Важа Пшавела. Этнографические сочинения."><hi
-                    rendition="#rend_smallcaps">Важа Пшавела</hi>. Этнографические сочинения.</ref>
-                <biblScope>(На груз. яз.). 1937, стр. 27</biblScope></bibl>]</note></mentioned>.<hi
-            rendition="#rend_superscript">1</hi><note type="footnote"><q
+            <note type="bibl">[<bibl><author><hi rendition="#rend_smallcaps">Важа
+                  Пшавела</hi></author>. <title>Этнографические сочинения</title>. <biblScope>(На
+                  груз. яз.). 1937, стр. 27</biblScope></bibl>]</note></mentioned>.<hi
+            rendition="#rend_superscript">1</hi><note xml:lang="ru" type="footnote"><q
+              rendition="#rend_doublequotes">Недавно в одном из горных селений Грузии мне пришлось
+              наблюдать необычные состязания. Игра называлась «кабахи» — всадник, вооруженный луком
+              и стрелой, на полном скаку поражал цель, установленную на высоком шесте</q>
+                (<bibl><title>Известия</title>,  <biblScope>10 января 1969
+            г.</biblScope></bibl>).</note><note xml:lang="en" type="footnote"><q
               rendition="#rend_doublequotes">Недавно в одном из горных селений Грузии мне пришлось
               наблюдать необычные состязания. Игра называлась «кабахи» — всадник, вооруженный луком
               и стрелой, на полном скаку поражал цель, установленную на высоком шесте</q>
@@ -155,7 +207,71 @@
                 подвешенных на ней вещей. Сбитая вещь отдавалась меткому стрелку. Обычно <hi
                   rendition="#rend_smallcaps">qäbaq</hi> устраивался весной, после окончания
                 пахоты</q></gloss>
-            <note type="bibl">(<bibl><ref type="bibl" target="#ref_История Кабарды"/>
+            <note type="bibl">(<bibl><title>История Кабарды</title>
+                <biblScope>М., 1957, 97</biblScope></bibl>)</note></mentioned>.</etym>
+        <etym xml:lang="en">From <mentioned xml:lang="trk"
+              ><?oxy_comment_start author="julie" timestamp="20220509T195033+0300" comment="NB"?><lang>тюрк.
+              (джагат.)</lang><?oxy_comment_end?>
+            <w>qabaq</w>
+            <gloss><q>target</q>, <q>aim</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Радлов"/>
+                <biblScope>II 436</biblScope></bibl>.— <bibl><author><hi rendition="#rend_smallcaps"
+                    >Меngеs</hi></author>. <title>Das Čaγatajische</title>. <biblScope>1956, p.
+                  103</biblScope></bibl>)</note></mentioned>. It is identical to
+            <?oxy_comment_start author="julie" timestamp="20220305T101522+0300" comment="тюрк?"?><mentioned
+            xml:lang="trk"><w>qabaq</w>
+            <gloss><q>pumpkin</q></gloss></mentioned><?oxy_comment_end?> (cf. <mentioned
+            xml:lang="ru"><lang>русск.</lang>
+            <w>kabačok</w></mentioned>), since pumpkin was often the target when shooting. The word
+          is attested in <hi rendition="#rend_bold">Persian</hi>: <mentioned xml:lang="fa"
+              ><w>qabāq</w> or <w>qabaq</w>
+            <gloss><q>pertica alta in media palaestra erecta, cujus extremae parti anulus aureus vel
+                argenteus affigitur, ut sit scopus sagittariorum</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Vullers"/>
+                <biblScope>II 710</biblScope></bibl>)</note>
+            <note xml:lang="ru" type="comment">(<q rendition="#rend_doublequotes">высокий шест,
+                установленный на площади для игр, на конце которого укреплено золотое или серебряное
+                кольцо, служащее мишенью для стрелков</q>)</note><note xml:lang="en" type="comment"
+                >(<q rendition="#rend_singlequotes">a high pole mounted on the square for the games,
+                at the end of which a gold or silver ring is attached, serving as a target for
+                shooters</q>)</note></mentioned>; for the further information see: <bibl><ref
+              type="bibl" target="#ref_Doerfer"/>
+            <biblScope>III 412—414</biblScope></bibl>. — <mentioned xml:lang="tg-x-dial"><lang/>
+            <w>qabaq</w>
+            <gloss><q>shooting at a target in honor of the birth of a child, circumcision,
+              etc.</q></gloss>
+            <note xml:lang="ru" type="comment">(<bibl><ref type="bibl"
+                  target="#ref_Розенфельд. Ванджские говоры таджикского языка.">Розенфельд.
+                  Ванджские говоры таджикского языка.</ref>
+                <biblScope>Л., 1964, стр. 108</biblScope></bibl>)</note><note xml:lang="en"
+              type="comment">(<bibl><author><hi rendition="#rend_smallcaps"
+                >Розенфельд</hi></author>. <title>Vanj dialects of the Tajik language</title>.
+                  <biblScope>L., 1964, p. 108</biblScope></bibl>)</note></mentioned>. The word was
+          also borrowed in <hi rendition="#rend_bold">Georgian</hi>: <mentioned xml:lang="ka"
+              ><w>qabaxi</w>
+            <gloss><q>a mast with a ball on top of it as a target for a shot</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Чубинов"
+            /></bibl>)</note></mentioned>, <mentioned xml:lang="ka-x-pshav"><lang/>
+            <w>qabaxi</w>, <w>ǧabaxi</w>
+            <gloss><q>target</q>, <q>painted board with attached target</q></gloss>
+            <note type="bibl">[<bibl><author><hi rendition="#rend_smallcaps">Vazha
+                  Pshavela</hi></author>. <title>Ethnographic writings</title>. <biblScope>(in
+                  Georgian). 1937, p. 27</biblScope></bibl>]</note></mentioned>.<hi
+            rendition="#rend_superscript">1</hi><note type="footnote"><q
+              rendition="#rend_doublequotes">Recently, in one of the mountain villages of Georgia, I
+              had to observe unusual competitions. The game was called <q>kabahi</q> — a rider armed
+              with a bow and arrow, at full gallop hit a target mounted on a high pole</q>
+                (<bibl><ref type="bibl" target="#ref_Известия">Izvestija, </ref>
+              <biblScope>10 january 1969.</biblScope></bibl>).</note>
+          <mentioned xml:lang="kbd"><lang/>
+            <w>qäbaq</w> is also here: <gloss><q rendition="#rend_doublequotes">The traditional <hi
+                  rendition="#rend_smallcaps">qäbaq</hi> holiday was very popular... The main
+                entertainment here was shooting at the target, for which the <hi
+                  rendition="#rend_smallcaps">qäbaq</hi> itself was actually erected — a high mast
+                with a lot of things suspended on it. The downed thing was given to the marksman.
+                Usually <hi rendition="#rend_smallcaps">qäbaq</hi> was arranged in the spring, after
+                the end of plowing</q></gloss>
+            <note type="bibl">(<bibl><title>History of Kabarda</title>
                 <biblScope>М., 1957, 97</biblScope></bibl>)</note></mentioned>.</etym>
       </entry>
     </body>
