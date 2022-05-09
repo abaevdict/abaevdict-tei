@@ -1,21 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">qabaǧ</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
@@ -24,11 +28,18 @@
         <usg><lang/></usg>
         <sense><abv:tr xml:lang="ru">
             <q>поселение</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>settlement</q>
           </abv:tr><sense>, <abv:tr xml:lang="ru">
               <q>аул</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>aul</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>хутор</q>
-            </abv:tr></sense><note type="comment"> (редкое слово)</note></sense>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>farmstead</q>
+            </abv:tr></sense><note xml:lang="ru" type="comment"> (редкое слово)</note><note
+            xml:lang="en" type="comment"> (rare word)</note></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">Æxsæ-Budaj cardæj Wærppi særi ma adtæj beræ
@@ -36,6 +47,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">Ахса-Будай жил на вершине Уарппа и был
                 владетелем многих аулов</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Ahsa-Budai lived on the top of the Uarpp and
+                was the owner of many auls</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_СОПам."/>
               <biblScope>II 58</biblScope></bibl>
@@ -56,7 +71,9 @@
                 <biblScope>II 438</biblScope></bibl>)</note></mentioned>, <mentioned xml:lang="sty"><lang/>
             <w>qabaq</w>
             <gloss><q>забор на меже (чтобы чужой скот не ходил)</q></gloss>
-            <note type="comment">(<bibl><ref type="bibl" target="#ref_Будагов"/>
+            <note xml:lang="ru" type="comment">(<bibl><ref type="bibl" target="#ref_Будагов"/>
+                <biblScope>II 2</biblScope></bibl>)</note><note xml:lang="en" type="comment"
+                  >(<bibl><ref type="bibl" target="#ref_Будагов"/>
                 <biblScope>II 2</biblScope></bibl>)</note></mentioned>, <mentioned
             xml:lang="krc-x-balkar"><lang/>
             <w>qabaq</w>
@@ -66,28 +83,75 @@
                   >Материалы и исследования по балкарской диалектологии, лексике и фольклору.
                   Нальчик,</ref>
                 <biblScope>1962, стр. 176</biblScope></bibl>)</note></mentioned>, вероятно от корня
-            <w>qap-</w>
-            (<w><?oxy_comment_start author="julie" timestamp="20220304T182425+0300" comment="язык? иранский?"?>qab-<?oxy_comment_end?></w>)
-            <q>запирать</q>. Отсюда и <mentioned xml:lang="fa"><lang/>
+            <mentioned xml:lang="trk"><w>qap-</w>
+              (<w><?oxy_comment_start author="julie" timestamp="20220304T182425+0300" comment="сделала тюркский, но не уверена"?>qab-<?oxy_comment_end?></w>)
+                <gloss><q>запирать</q></gloss></mentioned>. Отсюда и <mentioned xml:lang="fa"><lang/>
             <w>xabāk</w>
             <gloss><q>загон для скота</q>, <q>septum ех virgultis arborum aut lapidibus constuctum,
                 quo noctu boves, oves et caprae recluduntur</q></gloss>
             <note type="bibl">(<bibl><ref type="bibl" target="#ref_Vullers"
             /></bibl>)</note></mentioned>. В значении <q>поселение</q>, <q>хутор</q> слово
-            <w>кабак</w> встречается в русских исторических документах, относящихся к Кавказу,
-          например в документе 1775 г.: <q rendition="#rend_doublequotes">Под властью оного
-            владельца Кайтуки имеются 40 сильных кабаков, почему он пред прочими силу и власть
+            <mentioned xml:lang="ru"><w>кабак</w></mentioned> встречается в русских исторических
+          документах, относящихся к Кавказу, например в документе 1775 г.: <q
+            rendition="#rend_doublequotes">Под властью оного владельца Кайтуки имеются 40 сильных
+              <hi rendition="#rend_smallcaps">кабаков</hi>, почему он пред прочими силу и власть
             имеет</q> (<bibl><ref type="bibl"
               target="#ref_Скитский. Холопий вопрос и антирусское движение кабардинских князей"
               >Скитский. Холопий вопрос и антирусское движение кабардинских князей</ref>
             <biblScope>1739—1779 гг. Владикавказ, 1930, стр. 20</biblScope></bibl>). Неотделимо
-          отсюда и <mentioned xml:lang="ru"><lang>русск.</lang>
+          отсюда и <mentioned xml:lang="ru"><lang/>
             <w>кабак</w>
             <gloss><q>трактир</q>, первоначально <q>постоялый двор</q></gloss></mentioned>. Из
-          русского идет <mentioned xml:lang="de"><lang>нем.</lang>
+          русского идет <mentioned xml:lang="de"><lang/>
             <w>Kabacke</w>
             <gloss><q>хижина</q></gloss></mentioned>.</etym>
+        <etym xml:lang="en">A Turkic borrowing; cf. <mentioned xml:lang="krc-x-balkar"
+            extralang="krc-x-karachay"><lang/>
+            <w>qabaq</w>
+            <gloss><q>settlement</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_KSz."/>
+                <biblScope>X 113; XV 232.</biblScope></bibl> — <bibl><ref type="bibl"
+                  target="#ref_Русско-карач.-балк. сл. М.,"/><biblScope>1965, p.
+                457</biblScope></bibl>)</note></mentioned>, <mentioned xml:lang="kdr"
+              ><lang>караим</lang>, <w>qabaq,</w>
+            <w>qabuq</w>
+            <gloss><q>gate</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Радлов"/>
+                <biblScope>II 438</biblScope></bibl>)</note></mentioned>, <mentioned xml:lang="sty"><lang/>
+            <w>qabaq</w>
+            <gloss><q>fence on the border (so that other people's cattle do not walk)</q></gloss>
+            <note xml:lang="ru" type="comment">(<bibl><ref type="bibl" target="#ref_Будагов"/>
+                <biblScope>II 2</biblScope></bibl>)</note><note xml:lang="en" type="comment"
+                  >(<bibl><ref type="bibl" target="#ref_Будагов"/>
+                <biblScope>II 2</biblScope></bibl>)</note></mentioned>, <mentioned
+            xml:lang="krc-x-balkar"><lang/>
+            <w>qabaq</w>
+            <gloss><q>gate</q></gloss>
+            <note type="bibl">(<bibl>Materials and research on Balkar dialectology, vocabulary and
+                folklore. <biblScope>Nalchik, 1962, p. 176</biblScope></bibl>)</note></mentioned>,
+          probably, from the root <mentioned xml:lang="trk"><w>qap-</w>
+              (<w><?oxy_comment_start author="julie" timestamp="20220304T182425+0300" comment="сделала тюркский, но не уверена"?>qab-<?oxy_comment_end?></w>)
+                <gloss><q>lock up</q></gloss></mentioned>.  <mentioned xml:lang="fa"><lang/>
+            <w>xabāk</w>
+            <gloss><q>farmyard</q>, <q>septum ех virgultis arborum aut lapidibus constuctum, quo
+                noctu boves, oves et caprae recluduntur</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Vullers"
+            /></bibl>)</note></mentioned> is also from this. In the meaning of <q>settlement</q>,
+            <q>farm</q>, the word <mentioned xml:lang="ru"><w>kabak</w></mentioned> is found in
+          Russian historical documents relating to the Caucasus, for example in a document of 1775:
+            <q rendition="#rend_doublequotes">Under the authority of this owner of the Kaituki there
+            are 40 strong <hi rendition="#rend_smallcaps">kabaks</hi>, why does he have the power
+            and authority over others</q> (<bibl><hi rendition="#rend_smallcaps">Skitskij</hi>. The
+            servile question and the anti-Russian movement of the Kabardian princes
+              <biblScope>1739—1779, Vladikavkaz, 1930, p. 20</biblScope></bibl>). The  <mentioned
+            xml:lang="ru"><lang/>
+            <w>kabak</w>
+            <gloss><q>tavern</q>, initially <q>the inn</q></gloss></mentioned> is connected with it.
+            <mentioned xml:lang="de"><lang/>
+            <w>Kabacke</w>
+            <gloss><q>hut</q></gloss></mentioned> comes from Russian.</etym>
       </entry>
     </body>
   </text>
 </TEI>
+
