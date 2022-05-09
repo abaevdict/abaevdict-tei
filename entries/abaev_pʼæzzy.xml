@@ -1,21 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">pʼæzzy</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
@@ -25,15 +29,23 @@
               ><orth>pʼæzzu</orth></form></form>
         <sense><abv:tr xml:lang="ru">
             <q>ночной кошмар</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>nightmare</q>
           </abv:tr></sense>
-        <note type="comment">; мыслится как некое чудовище, которое, являясь к спящему, давит и
-          душит его</note>
+        <note xml:lang="ru" type="comment">; мыслится как некое чудовище, которое, являясь к
+          спящему, давит и душит его</note>
+        <note xml:lang="en" type="comment">; it is thought of as a kind of monster that, appearing
+          to the sleeper, crushes and strangles him</note>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">dyson myl pʼæzzy nybbadtī</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">вчера ночью на меня насел <hi
                   rendition="#rend_smallcaps">pʼæzzy</hi></q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0"><hi rendition="#rend_smallcaps">pʼæzzy</hi>
+                attacked me last night</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сл."/></bibl>
           </example>
@@ -43,8 +55,13 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">один <hi rendition="#rend_smallcaps"
                   >pʼæzzy</hi> смеется над другим</q>
             </tr>
-            <bibl xmlns="http://www.tei-c.org/ns/1.0"><note type="comment">поговорка; </note><ref
-                type="bibl" target="#src_Ӕмб."/>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">one <hi rendition="#rend_smallcaps">pʼæzzy</hi>
+                is laughing at the other</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><note xml:lang="ru" type="comment"
+                >поговорка</note><note xml:lang="en" type="comment">proverb</note></bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Ӕмб."/>
               <biblScope>21</biblScope></bibl>
           </example>
           <example>
@@ -52,6 +69,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">репутация никудышного (человека) пристала к
                 нему, как <hi rendition="#rend_smallcaps">pʼæzzy</hi></q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the reputation of a worthless (person) stuck to
+                him like <hi rendition="#rend_smallcaps">pʼæzzy</hi></q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Čerm."/>
               <biblScope>105</biblScope></bibl>
@@ -85,7 +106,35 @@
             <gloss><q>чудовище</q>, <q>змей</q>, <q>дракон</q></gloss>
             <note type="bibl">(<bibl><ref type="bibl" target="#ref_Этимология"/>
                 <biblScope>1970, М., 1972, стр. 97</biblScope></bibl>)</note></mentioned>.</etym>
+        <etym xml:lang="en">Vs. <hi rendition="#rend_smallcaps">Miller</hi> (<bibl><ref type="bibl"
+              target="#ref_Miller._Gr.">Gr.</ref>
+            <biblScope>8</biblScope></bibl>) considers it the Ugro-Finnish borrowing and compares it
+          with Zyryan (Komi) <mentioned xml:lang="kv"><w>pazịź</w>
+            <gloss><q>warlock</q></gloss></mentioned>. <hi rendition="#rend_smallcaps">Sköld</hi>
+              (<bibl><ref type="bibl" target="#ref_Sköld._Oss.">Oss.</ref>
+            <biblScope>9</biblScope></bibl>) and <bibl><ref type="bibl" target="#ref_Joki"/>
+            <biblScope>(Commentationes Instituti Fenno-Ugrici 1962 XXIII 152)</biblScope></bibl>
+          indicate that such a word is not attested in Zyryan. We keep the East Finnish orientation,
+          bearing in mind, however, not the dubious Zyryan word, but <mentioned xml:lang="x-mordvin"><lang/>
+            <?oxy_comment_start author="julie" timestamp="20220301T213716+0300" comment="эрзя"?><w>paz</w><?oxy_comment_end?></mentioned>,
+            <mentioned xml:lang="x-mordvin"><lang/>
+            <?oxy_comment_start author="julie" timestamp="20220301T213749+0300" comment="мокша
+"?><w>pavaz</w><?oxy_comment_end?>
+            <gloss><q>god</q></gloss></mentioned>. The development of the meaning <q>god</q> →
+            <q>evil spirit</q>, <q>monster</q> is not rare. <mentioned xml:lang="x-mordvin"><lang/>
+            <w>paz</w></mentioned> is traced back to <mentioned xml:lang="iir"><lang/>
+            <w>bhagas</w>
+            <gloss><q>god</q></gloss></mentioned>. If so, then the Aryan name of God has returned to
+          the Ossetic people in a truly unrecognizable form. It is possible, however, that we are
+          dealing with a Scythian-Slavic isoglossa; cf. <mentioned xml:lang="sl"><lang/>
+            <w>pozòj</w></mentioned>, <mentioned xml:lang="sh"><lang/>
+            <w>pozoj</w></mentioned>, <mentioned xml:lang="wen"><?oxy_comment_start author="julie" timestamp="20220301T214152+0300" comment="нижне-луж"?><lang/><?oxy_comment_end?>
+            <w>pòzoj</w>
+            <gloss><q>monster</q>, <q>snake</q>, <q>dragon</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Этимология"/>
+                <biblScope>1970, M., 1972, p. 97</biblScope></bibl>)</note></mentioned>.</etym>
       </entry>
     </body>
   </text>
 </TEI>
+
