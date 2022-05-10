@@ -1,21 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">qadyr</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
@@ -24,7 +28,11 @@
         <form xml:lang="os-x-digor" type="dialectal"><orth>qadir</orth></form>
         <sense><abv:tr xml:lang="ru">
             <q>мул</q>
-          </abv:tr><note type="comment"> (мало употр.: обычно xærgæfs)</note></sense>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>mule</q>
+          </abv:tr><note xml:lang="ru" type="comment"> (мало употр.: обычно <ref type="xr"
+              target="#entry_xærgæfs"/>)</note><note xml:lang="en" type="comment"> (less frequent:
+            usually <ref type="xr" target="#entry_xærgæfs"/>)</note></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example xml:lang="os-x-digor">
             <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
@@ -33,6 +41,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">пусть армянин за то, что возвел ложное
                 обвинение, отдаст ему из своего имущества (в количестве) поклажи мула</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">let the Armenian, for making a false
+                accusation, give him a mule out of his property</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_СОПам."/>
               <biblScope>II 113</biblScope></bibl>
@@ -45,6 +57,9 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">Хамицаев Хамиц поехал (верхом) на черном
                 муле</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Khamitsaev Khamits rode on a black mule</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ИАС"/>
               <biblScope>I 504</biblScope></bibl>
           </example>
@@ -55,13 +70,26 @@
             <note type="bibl">(<bibl><ref type="bibl" target="#ref_Радлов"/>
                 <biblScope>II 286 сл.</biblScope></bibl>)</note></mentioned>; ср. <mentioned
             xml:lang="ka"><lang/>
-            <w>qatari</w></mentioned>, <mentioned xml:lang="lez"><lang>лезг.</lang>
+            <w>qatari</w></mentioned>, <mentioned xml:lang="lez"><lang/>
             <w>k<hi rendition="#rend_superscript"
                 ><?oxy_comment_start author="julie" timestamp="20220306T124532+0300" comment="сомнительно"?>w<?oxy_comment_end?></hi>atir</w></mentioned>,
             <mentioned xml:lang="agx"><lang/>
             <w>qatir</w></mentioned>, <mentioned xml:lang="kbd"><lang/>
             <w>qədər</w></mentioned>, а также <mentioned xml:lang="ru-x-dial"><lang/>
             <w>катер</w></mentioned>.</etym>
+        <etym xml:lang="en">From <mentioned xml:lang="trk"><lang/>
+            <w>qatər</w>
+            <gloss><q>mule</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Радлов"/>
+                <biblScope>II 286 ff.</biblScope></bibl>)</note></mentioned>; cf. <mentioned
+            xml:lang="ka"><lang/>
+            <w>qatari</w></mentioned>, <mentioned xml:lang="lez"><lang/>
+            <w>k<hi rendition="#rend_superscript"
+                ><?oxy_comment_start author="julie" timestamp="20220306T124532+0300" comment="сомнительно"?>w<?oxy_comment_end?></hi>atir</w></mentioned>,
+            <mentioned xml:lang="agx"><lang/>
+            <w>qatir</w></mentioned>, <mentioned xml:lang="kbd"><lang/>
+            <w>qədər</w></mentioned>, and also <mentioned xml:lang="ru-x-dial"><lang/>
+            <w>kater</w></mentioned>.</etym>
       </entry>
     </body>
   </text>
