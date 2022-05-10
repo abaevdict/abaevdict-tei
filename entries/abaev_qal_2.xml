@@ -1,20 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">qal_2</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
@@ -23,13 +28,19 @@
         <form xml:lang="os-x-digor" type="dialectal"><orth>iǧal</orth></form>
         <sense><abv:tr xml:lang="ru">
             <q>бодрствующий</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>awake</q>
           </abv:tr></sense>
         <re>
           <form type="lemma"><orth>qal kænyn</orth></form>
           <sense><sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
                 <q xmlns="http://www.tei-c.org/ns/1.0">будить</q>
+              </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+                <q xmlns="http://www.tei-c.org/ns/1.0">wake</q>
               </tr></sense><sense><abv:tr xml:lang="ru">
                 <q>просыпаться</q>
+              </abv:tr><abv:tr xml:lang="en">
+                <q>wake up</q>
               </abv:tr></sense></sense>
         </re>
         <re>
@@ -37,6 +48,8 @@
               wyn</orth></form></form>
           <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">проснуться</q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">awake (v)</q>
             </tr></sense>
         </re>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
@@ -45,11 +58,17 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">я застал его бодрствующим</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">I found him awake</q>
+            </tr>
           </example>
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">walynmæ ældar dær syqal</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">тем временем и алдар проснулся</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">meanwhile, Aldar also woke up</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сека"/>
               <biblScope>119</biblScope></bibl>
@@ -59,6 +78,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">лес проснулся, его глубокий сон прошел</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the forest has woken up, its deep sleep has
+                passed</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Xar._Zærdæ"/>
               <biblScope>53</biblScope></bibl>
           </example>
@@ -66,6 +89,9 @@
             <quote xmlns="http://www.tei-c.org/ns/1.0">læppū næ qal kæny</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">юноша не просыпается</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the young man does not wake up</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Munk."/>
               <biblScope>30</biblScope></bibl>
@@ -77,21 +103,32 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">слеза девушки упала на юношу, и юноша
                 проснулся</q>
             </tr>
-            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Munk.">там
-                же</ref></bibl>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the girl's tear fell on the young man, and the
+                young man woke up</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Munk."
+                >ibid.</ref></bibl>
           </example>
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">je ʽvsymærty syqal kodta</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">он разбудил своих братьев</q>
             </tr>
-            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Munk.">там
-                же</ref>, <biblScope>60</biblScope></bibl>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">he woke up his brothers</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Munk."
+                >ibid.</ref>
+              <biblScope>60</biblScope></bibl>
           </example>
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">syqal æj kænync æmæ jyn zæǧync...</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">его будят и говорят ему...</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">they awake him, and say unto him...</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Марк"/>
               <biblScope><hi rendition="#rend_italic">4</hi> 38</biblScope></bibl>
@@ -101,6 +138,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">пробудившись, увидели славу его</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">and when they were awake, they saw his
+                glory</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Лука"/>
               <biblScope><hi rendition="#rend_italic">9</hi> 32</biblScope></bibl>
           </example>
@@ -109,6 +150,9 @@
               yssī</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">когда он проснулся, посмотрел — рассвело</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">when he woke up, he looked — it was dawn</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ОЭ"/>
               <biblScope>I 40</biblScope></bibl>
@@ -121,6 +165,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">три дня и три ночи не было возможности его
                 разбудить, так сильна была его усталость</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">for three days and three nights there was no
+                way to wake him up, his fatigue was so strong</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_DZ"/>
               <biblScope>80</biblScope></bibl>
           </example>
@@ -129,6 +177,9 @@
             <quote xmlns="http://www.tei-c.org/ns/1.0">warzt rajǧal widæ wæd je ʽvzong zærdi</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">тогда пробудилась любовь в ее юном сердце</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">then love awoke in her young heart</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Iræf"/>
               <biblScope>36</biblScope></bibl>
@@ -139,6 +190,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">когда ее муж ночью засыпал, жена до его
                 пробуждения облетала четыре стороны неба</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">when her husband fell asleep at night, his wife
+                flew around the four sides of the sky before he woke up</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_MSt."/>
               <biblScope>33<hi rendition="#rend_subscript">4</hi></biblScope></bibl>
@@ -175,6 +230,41 @@
             <q>полагать</q></ref>, <ref type="xr" target="#entry_qælʒæg"><w>qælʒæg</w>
             <q>веселый</q></ref>.<lb/><bibl><ref type="bibl" target="#ref_Миллер_Вс._Oss.">Вс. <hi
                 rendition="#rend_smallcaps">Миллер</hi>. ОЭ</ref>
+            <biblScope>II 72, III 144</biblScope></bibl>; <bibl><ref type="bibl"
+              target="#ref_Miller._Gr.">Gr.</ref>
+            <biblScope>17, 36, 79</biblScope></bibl>. — <bibl><ref type="bibl"
+              target="#ref_Bailey._Asica"><hi rendition="#rend_smallcaps">Ваiley</hi>. Asica</ref>
+            <biblScope>21</biblScope></bibl>.</etym>
+        <etym xml:lang="en">From <w type="rec">vi-gārya-</w>. Cf. <mentioned xml:lang="yai"><lang/>
+            <w> γār- </w>
+            <gloss><q>have eyes opend</q>, <q>look</q></gloss>, <w>γuras-</w>
+            <gloss><q>awake</q></gloss>, <w>γuraīš-</w>
+            <gloss><q>wake up</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Залеман._Ягн."
+            /></bibl>)</note></mentioned>,<mentioned xml:lang="sog"><lang/>
+            <w type="rec"> γār- </w> (<w>γʽr-</w>) <gloss><q>stay awake</q></gloss>, <w type="rec"
+              >vi-γurāt-</w> (<w>wγrʽt-</w>) <gloss><q>awake</q></gloss>, <w type="rec"
+              >vi-γurās-</w> (<w>wyγrʽs-</w>) <gloss><q>awake (v)</q></gloss>, <w type="rec"
+              >vi-γurāis-</w> (<w>wyγrʽys-</w>) <gloss><q>awake (v)</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Henning._BBB"/>
+                <biblScope>84<hi rendition="#rend_subscript">703</hi></biblScope></bibl>. —
+                  <bibl><ref type="bibl" target="#ref_Benveniste._TSP"/>
+                <biblScope>275, 276</biblScope></bibl>)</note></mentioned>, <mentioned
+            xml:lang="zkh"><lang/>
+            <w>γrʽs-</w></mentioned>, <mentioned xml:lang="xpr"><lang/>
+            <w>vi-garās-</w>
+            <gloss><q>wake up</q></gloss></mentioned>, <mentioned xml:lang="ae"><lang/>
+            <w>gar-</w>
+            <gloss><q>stay awake</q></gloss>, in causative form (<w>gāraya-</w>)
+              <gloss><q>wake</q></gloss></mentioned>, <mentioned xml:lang="inc-x-old"><lang/>
+            <w>gar-</w>
+            <gloss><q>stay awake</q></gloss>, <w>jāgarti</w>
+            <gloss><q>he's awake</q></gloss></mentioned>, <mentioned xml:lang="grc"><lang/>
+            <w>έγέιρω</w>
+            <gloss><q>I wake</q></gloss></mentioned>. — Cf. <ref type="xr" target="#entry_ænqælyn"
+              ><w>ænqælyn</w>
+            <q>suppose</q></ref>, <ref type="xr" target="#entry_qælʒæg"><w>qælʒæg</w>
+            <q>cheerful</q></ref>.<lb/><bibl><ref type="bibl" target="#ref_Миллер_Вс._Oss."/>
             <biblScope>II 72, III 144</biblScope></bibl>; <bibl><ref type="bibl"
               target="#ref_Miller._Gr.">Gr.</ref>
             <biblScope>17, 36, 79</biblScope></bibl>. — <bibl><ref type="bibl"
