@@ -1,21 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">qajmaq</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
@@ -24,9 +28,14 @@
         <form xml:lang="os-x-digor" type="dialectal"><orth>qajmaǧ</orth></form>
         <sense><abv:tr xml:lang="ru">
             <q>сливки</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>cream</q>
           </abv:tr></sense>
-        <note type="comment">; в иронском мало распространено, обычно <phr><ref type="xr"
-              target="#entry_xsyr"><w>xsyry</w></ref>
+        <note xml:lang="ru" type="comment">; в иронском мало распространено, обычно <phr><ref
+              type="xr" target="#entry_xsyr"><w>xsyry</w></ref>
+            <ref type="xr" target="#entry_sær"><w>særtæ</w></ref></phr></note>
+        <note xml:lang="en" type="comment">; it is not very common in Iron, usually <phr><ref
+              type="xr" target="#entry_xsyr"><w>xsyry</w></ref>
             <ref type="xr" target="#entry_sær"><w>særtæ</w></ref></phr></note>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
@@ -34,6 +43,10 @@
               nywwaǧta</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">сливки сам съел, сыворотку мне оставил</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">he ate the cream himself, he left the whey for
+                me</q>
             </tr>
           </example>
           <example xml:lang="os-x-digor">
@@ -43,6 +56,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">корова дает молоко; из молока делают сливки,
                 масло, сыр, пахтанье</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the cow gives milk; cream, butter, cheese,
+                buttermilk are made from milk</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_AK"/>
               <biblScope>I 42</biblScope></bibl>
@@ -55,6 +72,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">соевое молоко, подобно коровьему молоку, дает
                 также сливки</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">soy milk, like cow's milk, also allows to make
+                cream</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_FS"/>
               <biblScope>V 46</biblScope></bibl>
           </example>
@@ -62,6 +83,9 @@
             <quote xmlns="http://www.tei-c.org/ns/1.0">ist qajmaǧaw bæzgin qwæcæ</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">дым густой, как снятые сливки</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the smoke is thick, like skimmed cream</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Qazb."/>
               <biblScope>51</biblScope></bibl>
@@ -71,11 +95,20 @@
             <w>qaimaq</w>
             <gloss><q>сливки</q></gloss>
             <note type="bibl">(<bibl><ref type="bibl" target="#ref_Радлов"/>
-                <biblScope>II 48</biblScope></bibl>)</note></mentioned>тюрк, qaimaq 'сливки’ (Радлов
-          II 48); ср. <mentioned xml:lang="ru-x-dial"><lang/>
+                <biblScope>II 48</biblScope></bibl>)</note></mentioned>; ср. <mentioned
+            xml:lang="ru-x-dial"><lang/>
             <w>каймак</w>
             <gloss><q>густые сливки</q></gloss></mentioned>.</etym>
+        <etym xml:lang="en">From <mentioned xml:lang="trk"><lang/>
+            <w>qaimaq</w>
+            <gloss><q>cream</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Радлов"/>
+                <biblScope>II 48</biblScope></bibl>)</note></mentioned>; cf. <mentioned
+            xml:lang="ru-x-dial"><lang/>
+            <w>kajmak</w>
+            <gloss><q>thick cream</q></gloss></mentioned>.</etym>
       </entry>
     </body>
   </text>
 </TEI>
+
