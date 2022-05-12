@@ -1,40 +1,54 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">lūxyn</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">II</biblScope>. L–R. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1973</date>. С. <biblScope unit="page"
-            >48</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">II</biblScope>. L–R. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1973</date>. С. <biblScope unit="page">48</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_lūxyn" xml:lang="os" abv:completeness="incomplete">
+      <entry xml:id="entry_lūxyn" xml:lang="os" abv:completeness="english-questions">
         <form type="lemma" xml:lang="os-x-iron"><orth>lūxyn</orth><form type="participle"
               ><orth>lūxt</orth></form></form>
         <form xml:lang="os-x-digor" type="dialectal"><orth>loxun</orth><form type="participle"
               ><orth>luxt</orth></form></form>
         <sense><sense><abv:tr xml:lang="ru">
               <q>носить</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>carry</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>тащить</q>
-            </abv:tr></sense><note type="comment"> (с пренебрежительным оттенком)</note></sense>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>drag</q>
+            </abv:tr></sense><note xml:lang="ru" type="comment"> (с пренебрежительным
+            оттенком)</note><note xml:lang="en" type="comment"> (with a pejorative
+          nuance)</note></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">xīstytæ kænæm æmæ sūg <oRef>lūxæm</oRef>
               xærægyl</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">устраиваем поминки и носим дрова на осле</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">we make a memorial feast and drag firewood on a
+                donkey</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Брит."/>
               <biblScope>137</biblScope></bibl>
@@ -46,6 +60,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">Берди взял и сделал острую палку и сквозь щели
                 в досках тащит картошку из ямы</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Berdi went and made a sharp stick and through
+                chinks in the planks he drags potatoes out of the hole</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_SD"/>
               <biblScope>173<hi rendition="#rend_subscript">3</hi></biblScope></bibl>
@@ -69,6 +87,27 @@
             <gloss><q>неуклюже ходить</q></gloss></mentioned>, <mentioned xml:lang="trk"><phr>lüq
               oturmaq</phr>
             <gloss><q>неуклюже сидеть</q></gloss></mentioned> и т. п. (<bibl><ref type="bibl"
+              target="#ref_Радлов"/>
+            <biblScope>III 761—762</biblScope></bibl>).</etym>
+        <etym xml:lang="en">The verb has a pronounced pejorative meaning component: <q>carry or drag
+            crudely, awkwardly, clumsily</q>. Allowing for an original more general sense <q>do
+            smth. crudely</q>, it is perhaps possible to derive <oRef/> from <mentioned
+            xml:lang="trk"><lang/>
+            <w>lüq</w>, <w>löq</w>
+            <?oxy_comment_start author="oleg" timestamp="20220512T162803+0300" comment="not sure about the translation -- couldn&apos;t find it in Dybo&apos;s dictionary"?><gloss><q>crude</q></gloss>,
+                <gloss><q>clumsy</q></gloss>, <gloss><q>sluggish</q></gloss>, <gloss><q>slow to
+                react</q></gloss></mentioned><?oxy_comment_end?> (whence also <mentioned
+            xml:lang="ka"><lang/>
+            <w>loxi</w></mentioned> in such expressions as <mentioned xml:lang="ka"><phr>loxi
+              kʼambeči</phr>
+            <gloss><q>sluggish buffalo</q></gloss></mentioned> etc.). The word could become <q
+            rendition="#rend_doublequotes">verbalized</q> based on such Turkic expressions as
+            <mentioned xml:lang="trk"><phr>lüq tašəmaq</phr>
+            <gloss><q>drag clumsily</q></gloss></mentioned>, <mentioned xml:lang="trk"><phr>lüq
+              jürümäq</phr>
+            <gloss><q>walk clumsily</q></gloss></mentioned>, <mentioned xml:lang="trk"><phr>lüq
+              oturmaq</phr>
+            <gloss><q>sit clumsily</q></gloss></mentioned> etc. (<bibl><ref type="bibl"
               target="#ref_Радлов"/>
             <biblScope>III 761—762</biblScope></bibl>).</etym>
       </entry>
