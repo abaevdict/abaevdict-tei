@@ -1,51 +1,72 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">lolo</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_lolo" xml:lang="os" abv:completeness="incomplete">
+      <entry xml:id="entry_lolo" xml:lang="os" abv:completeness="english-questions">
         <form type="lemma"><orth>lolo</orth></form>
         <sense><sense><abv:tr xml:lang="ru">
               <q>баиньки</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>hushaby</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>спанье</q>
-            </abv:tr></sense><note type="comment"> (детское слово)</note></sense>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>sleeping</q>
+            </abv:tr></sense><note xml:lang="ru" type="comment"> (детское слово)</note><note
+            xml:lang="en" type="comment"> (nursery word)</note></sense>
         <re>
-          <form type="lemma"><orth>lolo kænyn</orth></form>
+          <form type="lemma"><orth><oRef>lolo</oRef> kænyn</orth></form>
           <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">спать</q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">sleep</q>
             </tr></sense>
         </re>
         <re>
-          <form type="lemma"><orth>alolo kæn</orth></form>
+          <form type="lemma"><orth><oRef>alolo</oRef> kæn</orth></form>
           <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">спи</q>
-            </tr><note type="comment"> (к ребенку)</note></sense>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">sleep</q>
+            </tr><note xml:lang="ru" type="comment"> (к ребенку)</note><note xml:lang="en"
+              type="comment"> (imperative, toward child)</note></sense>
         </re>
         <re>
           <form type="lemma"><orth>lolotæ ‘mæ gₒyssitæ</orth></form>
           <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">баиньки</q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0"
+                ><?oxy_comment_start author="oleg" timestamp="20220512T111428+0300" comment="uncertain, I&apos;m not sure what баиньки is supposed to mean in Russian, but I assume it refers to the words used when lulling a child"?>lulla-lulla-bye<?oxy_comment_end?></q>
             </tr></sense>
         </re>
         <etym xml:lang="ru">Как и другие слова Ammensprache, не связано с определенной языковой
           группой. Ср. <mentioned xml:lang="kbd"><lang/>
+            <w>lalaw</w>
+            <gloss>id.</gloss></mentioned>.</etym>
+        <etym xml:lang="en">Like other nursery (baby-talk) words, not related to any specific
+          language family. Cf. <mentioned xml:lang="kbd"><lang/>
             <w>lalaw</w>
             <gloss>id.</gloss></mentioned>.</etym>
       </entry>
