@@ -1,45 +1,59 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">lwaryn</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">II</biblScope>. L–R. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1973</date>. С. <biblScope unit="page"
-            >49</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">II</biblScope>. L–R. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1973</date>. С. <biblScope unit="page">49</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_lwaryn" xml:lang="os" abv:completeness="incomplete">
+      <entry xml:id="entry_lwaryn" xml:lang="os" abv:completeness="complete">
         <form type="lemma" xml:lang="os-x-iron"><orth>lwaryn</orth><form type="participle"
               ><orth>lwærst</orth></form></form>
         <form xml:lang="os-x-digor" type="dialectal"><orth>læwarun</orth><form type="participle"
               ><orth>læwarst</orth></form></form>
         <sense><abv:tr xml:lang="ru">
             <q>просеивать через сито</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>sift through a sieve</q>
           </abv:tr></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
-            <quote xmlns="http://www.tei-c.org/ns/1.0">lystæg lwaryn</quote>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">lystæg <oRef>lwaryn</oRef></quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">мелко просеивать</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">finely sift</q>
             </tr>
           </example>
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">… jæ ūsmæ ʒūry: kærʒyn ma skæn taǧd; ūs yssad
-              balwærsta arynǵy, don yl nykkodta, æmæ — xyssæ nal cæwy arynǵy</quote>
+                <oRef>balwærsta</oRef> arynǵy, don yl nykkodta, æmæ — xyssæ nal cæwy arynǵy</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">…говорит своей жене: скорей спеки хлеб; жена
                 просеяла муку в корыте, налила на нее воды, и — тесто уже не вмещается в корыте</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">…he says to his wife: bake bread quickly; the
+                wift sifted flour into a trough, poured water on it, and – dough no longer fits in
+                the trough</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ЮОПам."/>
               <biblScope>II 110</biblScope></bibl>
@@ -47,12 +61,18 @@
           <example xml:lang="os-x-digor">
             <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
             <quote xmlns="http://www.tei-c.org/ns/1.0">bacew, bacew: mænkʼi arvæj met
-              læwaruj</quote>
+                <oRef>læwaruj</oRef></quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">загадка: из маленького неба просеивается
                 снег</q>
             </tr>
-            <note type="comment" xmlns="http://www.tei-c.org/ns/1.0"> (ответ: сито)</note>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">a riddle: from a small sky snow is sifted</q>
+            </tr>
+            <note xmlns="http://www.tei-c.org/ns/1.0" xml:lang="ru" type="comment"> (ответ:
+              сито)</note>
+            <note xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" type="comment"> (the answer: a
+              sieve)</note>
           </example>
         </exampleGrp>
         <etym xml:lang="ru">Восходит к <mentioned xml:lang="ira"><w type="rec"
@@ -71,6 +91,22 @@
             type="xr" target="#entry_waryn_1"><w xml:lang="os-x-iron">waryn</w><w
               xml:lang="os-x-digor">iwarun</w>
             <gloss><q>делить</q></gloss></ref>.</etym>
+        <etym xml:lang="en">Goes back to <mentioned xml:lang="ira"><w type="rec"
+            >fra-vār-</w></mentioned>, where <w>vār-</w> is apparently identical to <mentioned
+            xml:lang="ira"><lang/>
+            <w type="rec">vār-</w></mentioned>, <ref type="xr" target="#entry_waryn_2" xml:lang="os"><lang/>
+            <w>waryn</w>
+            <gloss><q>precipitate (of rain, snow, hail)</q></gloss></ref>. The semantic connection
+          between the notions <gloss><q>sift</q></gloss> and <gloss><q>precipitate</q></gloss> is
+          clearly seen in the Digor riddle cited above. The difference in the forms of the past
+          participle (<ref type="xr" target="#entry_waryn_2"><w>war-</w> : <w>ward</w></ref>,
+            <oRef>læwar-</oRef> : <oRef>læwarst</oRef>) could be secondary (by analogy with <ref
+            type="xr" target="#entry_iwaryn"><w>iwar-</w> : <w>iwarst</w></ref> и др.).
+              <bibl><author>Bailey</author> (<ref type="bibl" target="#ref_BSOAS"/>
+            <biblScope>1966 XXIX 515</biblScope>)</bibl> etymologically connects <oRef/> with <ref
+            type="xr" target="#entry_waryn_1"><w xml:lang="os-x-iron">waryn</w><w
+              xml:lang="os-x-digor">iwarun</w>
+            <gloss><q>divide</q></gloss></ref>.</etym>
       </entry>
     </body>
   </text>
