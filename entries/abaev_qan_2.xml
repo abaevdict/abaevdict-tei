@@ -1,20 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">qan_2</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body n="2">
@@ -23,27 +28,41 @@
         <usg><lang/></usg>
         <sense><sense><abv:tr xml:lang="ru">
               <q>поваленный</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>fallen</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>опрокинутый</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>overturned</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>лежащий</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>lying</q>
             </abv:tr></sense></sense>
         <re>
           <form type="lemma"><orth>raqan kænun</orth></form>
-          <note type="comment">
-              (=<?oxy_comment_start author="julie" timestamp="20220329T221021+0300" comment="в первом томе нет такого слова, сделала меншндом"?><mentioned
+          <note xml:lang="ru" type="comment"> (=<ref type="xr" target="#entry_byrsyn"
               xml:lang="os-x-iron"><lang/>
-              <w>abyrsyn</w></mentioned><?oxy_comment_end?>)</note>
+              <w>abyrsyn</w></ref>)</note>
+          <note xml:lang="en" type="comment"> (=<ref type="xr" target="#entry_byrsyn"
+              xml:lang="os-x-iron"><lang/>
+              <w>abyrsyn</w></ref>)</note>
           <sense><sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
                 <q xmlns="http://www.tei-c.org/ns/1.0">побороть</q>
+              </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+                <q xmlns="http://www.tei-c.org/ns/1.0">defeat</q>
               </tr></sense><sense><abv:tr xml:lang="ru">
                 <q>повалить</q>
+              </abv:tr><abv:tr xml:lang="en">
+                <q>throw down</q>
               </abv:tr></sense></sense>
         </re>
         <re>
           <form type="lemma"><orth>raqan un</orth></form>
           <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">повалиться</q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">fall down</q>
             </tr></sense>
         </re>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
@@ -53,6 +72,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">как у вас Дзабе? — здоров, он больше не
                 лежит</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">how is your Dzabe? — he's healthy, he's not
+                lying down anymore</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Gurdž._Æduli"/>
               <biblScope>94</biblScope></bibl>
@@ -64,6 +87,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">во всю длину растянулось перед нами на циновке
                 мертвое тело</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">a dead body stretched out at full length in
+                front of us on a mat</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Iræf"/>
               <biblScope>42</biblScope></bibl>
           </example>
@@ -74,12 +101,18 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">Борафарнуг вошел в дом удрученный и, ничего не
                 говоря, повалился на скамью</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Borafarnug entered the house dejected and,
+                without saying anything, collapsed on a bench</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Диг._сказ."/>
               <biblScope>7</biblScope></bibl>
           </example>
         </exampleGrp>
         <etym xml:lang="ru">Не ясно.</etym>
+        <etym xml:lang="en">The origin is not clear.</etym>
       </entry>
     </body>
   </text>
 </TEI>
+
