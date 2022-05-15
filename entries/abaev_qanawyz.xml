@@ -1,20 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">qanawyz</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
@@ -23,7 +28,10 @@
         <usg><lang/></usg>
         <sense><abv:tr xml:lang="ru">
             <q>канаус</q>
-          </abv:tr><note type="comment"> (шелковая недорогая ткань)</note></sense>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>sarcenet</q>
+          </abv:tr><note xml:lang="ru" type="comment"> (шелковая недорогая ткань)</note><note
+            xml:lang="en" type="comment"> (inexpensive silk fabric)</note></sense>
         <re>
           <form type="lemma" xml:lang="os-x-iron"><orth>qanwat</orth></form>
           <form xml:lang="os-x-digor" type="dialectal"><orth>qanawat</orth></form>
@@ -37,26 +45,46 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">лучшая из тканей — канаус, — я вступил с
                 врагами в жестокий бой</q>
             </tr>
-            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl">из песни о Колойти
-                Кудзи</ref></bibl>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the best of the fabrics is sarcenet, — I
+                entered into a fierce battle with the enemies</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0">from the song about
+              <?oxy_comment_start author="julie" timestamp="20220515T200143+0300" comment="????"?>Kolojti
+              Kudzi<?oxy_comment_end?></bibl>
           </example>
         </exampleGrp>
         <etym xml:lang="ru">Из <mentioned xml:lang="fa"><lang/>
-            <w>qanavīz</w>
+            <w>qanāvīz</w>
             <gloss><q>канаус</q>, <q>дамассэ</q> (шелковая ткань)</gloss>
             <note type="bibl">(<bibl><ref type="bibl" target="#ref_Гаффаров"/>
                 <biblScope>II 633</biblScope></bibl>)</note></mentioned>. Отсюда и <mentioned
             xml:lang="ka"><lang/>
             <w>qanaozi</w>
             <gloss>вид шелковой ткани</gloss>
-            <note type="bibl">[<bibl><ref type="bibl" target="">Гришашвили. Литературная богема
-                  старого Тифлиса (на груз. яз.).</ref>
-                <biblScope>Тбилиси, 1927, стр. 16</biblScope></bibl>. — <bibl><ref type="bibl"
-                  target="#ref_Груз._сл."/>
+            <note type="bibl">[<bibl><author>Гришашвили</author>. <title>Литературная богема старого
+                  Тифлиса</title> (на груз. яз.). <biblScope>Тбилиси, 1927, стр.
+                16</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Груз._сл."/>
                 <biblScope>VII 505</biblScope></bibl>]</note></mentioned> и <mentioned xml:lang="ru"><lang/>
             <w>канаус</w></mentioned>. — Колебание конечного согласного -<c>z</c> || -<c>t</c>
           необъяснимо на осетинской почве и отражает, видимо, варианты в дающих языках.</etym>
+        <etym xml:lang="en">From <mentioned xml:lang="fa"><lang/>
+            <w>qanāvīz</w>
+            <gloss><q>sarcenet</q>, silk fabric</gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Гаффаров"/>
+                <biblScope>II 633</biblScope></bibl>)</note></mentioned>. <mentioned xml:lang="ka"><lang/>
+            <w>qanaozi</w>
+            <gloss>type of silk fabric</gloss>
+            <note type="bibl">[<bibl><author>Grishashvili</author>. <title>Literary bohemia of old
+                  Tiflis</title> (in Georgian). <biblScope>Tbilisi, 1927, p. 16</biblScope></bibl>.
+              — <bibl><ref type="bibl" target="#ref_Груз._сл."/>
+                <biblScope>VII 505</biblScope></bibl>]</note></mentioned> and <mentioned
+            xml:lang="ru"><lang/>
+            <w>канаус</w></mentioned> have the same origin. — Variants of the final consonant
+            -<c>z</c> || -<c>t</c> are inexplicable using only Ossetic data and reflect, apparently,
+          variants in the other languages.</etym>
       </entry>
     </body>
   </text>
 </TEI>
+
