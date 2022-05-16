@@ -1,20 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">qawǧa</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
@@ -22,17 +27,27 @@
         <form type="lemma"><orth>qawǧa</orth><form type="variant"><orth>qalǧa</orth></form></form>
         <sense><sense><abv:tr xml:lang="ru">
               <q>шум</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>noise</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>свара</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>quarrel</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>ссора</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>dispute</q>
             </abv:tr></sense></sense>
         <re>
           <form type="lemma"><orth>qawǧa kænyn</orth></form>
           <sense><sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
                 <q xmlns="http://www.tei-c.org/ns/1.0">ссориться</q>
+              </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+                <q xmlns="http://www.tei-c.org/ns/1.0">argue</q>
               </tr></sense><sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
                 <q xmlns="http://www.tei-c.org/ns/1.0">шуметь</q>
+              </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+                <q xmlns="http://www.tei-c.org/ns/1.0">make noise</q>
               </tr></sense></sense>
         </re>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
@@ -44,6 +59,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">долго спорили; когда не пришли к соглашению, то
                 бросили жребий</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">they argued for a long time; when they did not
+                come to an agreement, they cast lots</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Диг._сказ."/>
               <biblScope>13</biblScope></bibl>
           </example>
@@ -53,6 +72,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">таким образом они стали из-за него ссориться,
                 препираться</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">thus they began to quarrel and bicker over
+                him</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_MSt."/>
               <biblScope>19<hi rendition="#rend_subscript">2</hi></biblScope></bibl>
@@ -64,8 +87,11 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">долго спорили, потом согласились</q>
             </tr>
-            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_MSt.">там
-                же</ref></bibl>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">we argued for a long time, then agreed</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_MSt."
+                >ibid.</ref></bibl>
           </example>
         </exampleGrp>
         <etym xml:lang="ru">Через тюркское посредство из <mentioned xml:lang="ar"><lang/>
@@ -84,14 +110,37 @@
           фонетическое: произошла встреча <mentioned xml:lang="ar"><lang/>
             <w>γauγā</w></mentioned> с <mentioned xml:lang="trk"><lang/>
             <w>qarγa</w>
-            <gloss><q>бронить</q>, <q>ругать</q>, <q>проклинать</q></gloss></mentioned> (<bibl><ref
+            <gloss><q>бранить</q>, <q>ругать</q>, <q>проклинать</q></gloss></mentioned> (<bibl><ref
               type="bibl" target="#ref_Радлов"/>
-            <biblScope>II 192</biblScope></bibl>. — <bibl><ref type="bibl">Материалы по балкарской
-              диалектологии.</ref>
-            <biblScope>Нальчик, 1962, стр. 177</biblScope></bibl>). <lb/><bibl><ref type="bibl"
-              target="#ref_Miller._Gr.">Вс. <hi rendition="#rend_smallcaps">Миллер</hi>. Gr.</ref>
+            <biblScope>II 192</biblScope></bibl>. — <bibl><title>Материалы по балкарской
+              диалектологии</title>. <biblScope>Нальчик, 1962, стр. 177</biblScope></bibl>).
+              <lb/><bibl><ref type="bibl" target="#ref_Miller._Gr.">Вс. <hi
+                rendition="#rend_smallcaps">Миллер</hi>. Gr.</ref>
+            <biblScope>9</biblScope></bibl>.</etym>
+        <etym xml:lang="en">The word came from <mentioned xml:lang="ar"><lang/>
+            <w>γauγā</w>
+            <gloss><q>noise</q>, <q>uproar</q>, <q>scandal</q>, <q>quarrel</q></gloss></mentioned>
+          through Turkic; cf. <mentioned xml:lang="fa"><lang/>
+            <w>γauγā</w></mentioned>, <mentioned xml:lang="trk"><lang/>
+            <w>γauγa</w>, <w>qauǧa</w>
+            <gloss><q>noise</q>, <q>uproar</q>, <q>quarrel</q></gloss></mentioned> (<bibl><ref
+              type="bibl" target="#ref_Радлов"/>
+            <biblScope>II 473, 1550</biblScope></bibl>). Cf. also <mentioned xml:lang="av"><lang/>
+            <w>ǧauǧa</w></mentioned>, <mentioned xml:lang="lbe"><lang/>
+            <w>ǧalǧa</w></mentioned>, <mentioned xml:lang="x-vaynakh"><lang/>
+            <w>ǧovǧæ</w></mentioned>, <mentioned xml:lang="lzz"><lang/>
+            <w>kʼavuǧa</w></mentioned> etc. Variants <oRef/> || <oRef>qalǧa</oRef> are probably not
+          phonetic: there was a meeting between <mentioned xml:lang="ar"><lang/>
+            <w>γauγā</w></mentioned> with <mentioned xml:lang="trk"><lang/>
+            <w>qarγa</w>
+            <gloss><q>scold</q>, <q>swear</q>, <q>curse</q></gloss></mentioned> (<bibl><ref
+              type="bibl" target="#ref_Радлов"/>
+            <biblScope>II 192</biblScope></bibl>. — <bibl><title>Materials on Balkar
+              dialectology</title>. <biblScope>Nalchik, 1962, p. 177</biblScope></bibl>).
+              <lb/><bibl><ref type="bibl" target="#ref_Miller._Gr."/>
             <biblScope>9</biblScope></bibl>.</etym>
       </entry>
     </body>
   </text>
 </TEI>
+
