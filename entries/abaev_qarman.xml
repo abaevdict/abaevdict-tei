@@ -1,20 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">qarman</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
@@ -22,11 +27,19 @@
         <form type="lemma"><orth>qarman</orth></form>
         <sense><sense><abv:tr xml:lang="ru">
               <q>вяз</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>elm</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
+              <q>UImus effusa</q>
+            </abv:tr><abv:tr xml:lang="en">
               <q>UImus effusa</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>карагач</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q><?oxy_comment_start author="julie" timestamp="20220516T132206+0300" comment="не могу найти перевод для карагача, а удалить этот сенс не могу, потому что он пропадает и в русском"?>ulmus<?oxy_comment_end?></q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
+              <q>UImus pamila</q>
+            </abv:tr><abv:tr xml:lang="en">
               <q>UImus pamila</q>
             </abv:tr></sense></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
@@ -35,6 +48,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">из вяза (карагача?) сделан твой <hi
                   rendition="#rend_smallcaps">ginon</hi> (часть плуга)</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">your <hi rendition="#rend_smallcaps">ginon</hi>
+                (part of the plow) is made of elm</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сека._Ир._фийау"/>
               <biblScope>38</biblScope></bibl>
@@ -49,6 +66,17 @@
             xml:lang="mn"><lang/>
             <w>qaramaǧ</w>
             <gloss><q>сибирский вяз</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Ramstedt"/>
+                <biblScope>170</biblScope></bibl>)</note></mentioned>.</etym>
+        <etym xml:lang="en">A Turkic-Mongolian word: <mentioned xml:lang="trk"><lang/>
+            <w>qarama</w>
+            <gloss><q>elm</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Радлов"/>
+                <biblScope>II 166</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Räsänen"/>
+                <biblScope>Versuch 236</biblScope></bibl>)</note></mentioned>, <mentioned
+            xml:lang="mn"><lang/>
+            <w>qaramaǧ</w>
+            <gloss><q>siberian elm</q></gloss>
             <note type="bibl">(<bibl><ref type="bibl" target="#ref_Ramstedt"/>
                 <biblScope>170</biblScope></bibl>)</note></mentioned>.</etym>
       </entry>

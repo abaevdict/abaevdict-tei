@@ -1,20 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">qast_2</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
@@ -23,23 +28,32 @@
         <form xml:lang="os-x-digor" type="dialectal"><orth>ǧast</orth></form>
         <sense><abv:tr xml:lang="ru">
             <q>жалоба</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>complaint</q>
           </abv:tr></sense>
         <re>
           <form type="lemma"><orth>qast kænyn</orth></form>
           <sense><sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
                 <q xmlns="http://www.tei-c.org/ns/1.0">жаловаться</q>
+              </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+                <q xmlns="http://www.tei-c.org/ns/1.0">complain</q>
               </tr></sense><sense><abv:tr xml:lang="ru">
                 <q>сетовать</q>
+              </abv:tr><abv:tr xml:lang="en">
+                <q>lament</q>
               </abv:tr></sense></sense>
         </re>
         <re>
           <form type="lemma"><orth>qast xæssyn</orth></form>
-          <sense><note type="comment">id.</note></sense>
+          <sense><note xml:lang="ru" type="comment">id.</note><note xml:lang="en" type="comment"
+              >id.</note></sense>
         </re>
         <re>
           <form type="lemma"><orth>qasf næ ma rakænūt</orth></form>
           <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">не взыщите</q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">do not complain</q>
             </tr></sense>
         </re>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
@@ -48,8 +62,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">он жаловался, он визжал</q>
             </tr>
-            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl">из детской прибаутки о
-                коте</ref></bibl>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">he complained, he screamed</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0">from a children's joke about a cat</bibl>
           </example>
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">Babale myn īw bon k˳yrojy qæstytæ kodta, mæ
@@ -57,6 +73,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">Бабале мне однажды жаловалась на мельнице, мой
                 отец, говорит, отдает меня за дурного пьяницу Кази"</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Babale once complained to me at the mill, my
+                father, he says, marries me to a bad drunkard Kazi</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сека"/>
               <biblScope>82</biblScope></bibl>
@@ -68,6 +88,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">сын алдара плача пришел к себе домой и
                 пожаловался отцу</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">aldar's son came crying to his house and
+                complained to his father</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сека"/>
               <biblScope>83</biblScope></bibl>
           </example>
@@ -78,6 +102,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">куда идешь, бедный человек? — иду с жалобой к
                 богу</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">where are you going, poor man? — I'm going to
+                God with a complaint</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Munk."/>
               <biblScope>100</biblScope></bibl>
           </example>
@@ -86,12 +114,20 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">на тебя поступила жалоба в суд</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">a complaint has been filed against you in
+                court</q>
+            </tr>
           </example>
           <example xml:lang="os-x-digor">
             <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
             <quote xmlns="http://www.tei-c.org/ns/1.0">Slanbeg raǧast kænʒænæj Dugejæn</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">Сланбег пожалуется Дуге</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Slanbeg will complain to
+                <?oxy_comment_start author="julie" timestamp="20220516T185153+0300" comment="не уверена"?>Duga<?oxy_comment_end?></q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Bes._Ka_ke"/>
               <biblScope>16</biblScope></bibl>
@@ -101,6 +137,8 @@
           <form type="lemma"><orth>qæstag</orth></form>
           <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">предмет жалобы</q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">subject of the complaint</q>
             </tr></sense>
           <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
             <example>
@@ -108,6 +146,10 @@
               <tr xml:lang="ru">
                 <q xmlns="http://www.tei-c.org/ns/1.0">наши гуси сделали свою обиду предметом
                   жалобы</q>
+              </tr>
+              <tr xml:lang="en">
+                <q xmlns="http://www.tei-c.org/ns/1.0">our geese have made their offense the subject
+                  of a complaint</q>
               </tr>
               <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Коста"/>
                 <biblScope>88</biblScope></bibl>
@@ -126,11 +168,13 @@
             <q>стонать</q></ref>, <mentioned xml:lang="x-oldirn"><lang/>
             <w type="rec">garz-</w>
             <gloss><q>жаловаться</q></gloss></mentioned>. Живая форма прош. причастия от <ref
-            type="xr" target="#entry_qærzyn"><w>qærzyn</w> | <w>ǧærzyn</w></ref> имеет слабый
-          гласный (<ref type="xr" target="#entry_qærzyn"><w>qærzt</w> | <w>ǧærzt</w></ref>). Однако
-          по аналогии с такими глаголами, как <ref type="xr" target="#entry_xæssyn"><w>xæssyn</w> :
-              <w>xast</w></ref>, <ref type="xr" target="#entry_tærsyn"><w>tærsyn</w> :
-            <w>tarst</w></ref> и др. (<bibl><ref type="bibl" target="#ref_РОсл."/>
+            type="xr" target="#entry_qærzyn"><w xml:lang="os-x-iron">qærzyn</w><w
+              xml:lang="os-x-digor">ǧærzyn</w></ref> имеет слабый гласный (<ref type="xr"
+            target="#entry_qærzyn"><w xml:lang="os-x-iron">qærzt</w><w xml:lang="os-x-digor"
+              >ǧærzt</w></ref>). Однако по аналогии с такими глаголами, как <ref type="xr"
+            target="#entry_xæssyn"><w>xæssyn</w> : <w>xast</w></ref>, <ref type="xr"
+            target="#entry_tærsyn"><w>tærsyn</w> : <w>tarst</w></ref> и др. (<bibl><ref type="bibl"
+              target="#ref_РОсл."/>
             <biblScope>570</biblScope></bibl>), есть все основания предполагать в прошлом форму
             <w>ǧarzt</w> → <w>ǧast</w>; ср. лексикализованные и семантически обособившиеся <ref
             type="xr" target="#entry_zond"/>, <ref type="xr" target="#entry_amond"/> (с сильным
@@ -149,7 +193,7 @@
             <w>gasta-</w>
             <gloss><q>скверна</q></gloss></mentioned> имеет соответствие в <ref type="xr"
             target="#entry_qæstæ_1" xml:lang="os"><lang/>
-            <lang>qæstæ</lang> id.</ref>; см. также
+            <w>qæstæ</w> id.</ref>; см. также
             <?oxy_comment_start author="julie" timestamp="20220331T213537+0300" comment="что за язык?"?><w>iγændun</w><?oxy_comment_end?>
               (<bibl><ref type="bibl" target="#ref_ИЭС_I"/>
             <biblScope>542</biblScope></bibl>). В <oRef/>
@@ -164,7 +208,60 @@
             <biblScope>II 72, 93</biblScope></bibl>; <bibl><ref type="bibl"
               target="#ref_Miller._Gr.">Gr.</ref>
             <biblScope> 38</biblScope></bibl>.</etym>
+        <etym xml:lang="en">Probably, from <mentioned xml:lang="ira"><w type="rec"
+            >ǧarzt</w></mentioned> (like <ref type="xr" target="#entry_fast"/> is from <mentioned
+            xml:lang="ira"><w type="rec">farst</w></mentioned>, <ref type="xr" target="#entry_tas_1"
+          /> is from
+            <?oxy_comment_start author="julie" timestamp="20220331T211703+0300" comment="у Абаева здесь нет *, но в статье под словом tas у tars есть звездочка"?><mentioned
+            xml:lang="ira"><w type="rec">tars</w></mentioned><?oxy_comment_end?>, <ref type="xr"
+            target="#entry_baz"/> is from <mentioned xml:lang="ira"><w type="rec"
+            >barziš</w></mentioned> etc.); a lexicalized past participle form of the verb <ref
+            type="xr" target="#entry_qærzyn"><w>ǧærz-</w>
+            <q>moan</q></ref>, <mentioned xml:lang="x-oldirn"><lang/>
+            <w type="rec">garz-</w>
+            <gloss><q>complain</q></gloss></mentioned>. A new form of the past participle of the
+          verb <ref type="xr" target="#entry_qærzyn"><w xml:lang="os-x-iron">qærzyn</w><w
+              xml:lang="os-x-digor">ǧærzyn</w></ref> has a weak vowel (<ref type="xr"
+            target="#entry_qærzyn"><w xml:lang="os-x-iron">qærzt</w><w xml:lang="os-x-digor"
+              >ǧærzt</w></ref>). However, by analogy with verbs such as <ref type="xr"
+            target="#entry_xæssyn"><w>xæssyn</w> : <w>xast</w></ref>, <ref type="xr"
+            target="#entry_tærsyn"><w>tærsyn</w> : <w>tarst</w></ref> and others (<bibl><ref
+              type="bibl" target="#ref_РОсл."/>
+            <biblScope>570</biblScope></bibl>), there is every reason to assume in the past the form
+            <w>ǧarzt</w> → <w>ǧast</w>; cf. lexicalized and semantically isolated <ref type="xr"
+            target="#entry_zond"/>, <ref type="xr" target="#entry_amond"/> (with strong vowel) and
+          new participles <w>zynd</w>, <w>amynd</w> (with weak vowels). — <hi
+            rendition="#rend_smallcaps">Benveniste</hi> (<bibl><ref type="bibl"
+              target="#ref_Benveniste._Etudes">Etudes</ref>
+            <biblScope>122—124</biblScope></bibl>) brings <oRef/> closer to <mentioned
+            xml:lang="peo"><lang/>
+            <w>gasta-</w></mentioned>, <mentioned xml:lang="pal"><lang/>
+            <w>gast</w>
+            <gloss><q>filth</q></gloss></mentioned>. The semantic tension of such a rapprochement is
+          obvious. Derivation from  <mentioned xml:lang="ira"><lang/>
+            <w>garz-</w>
+            <gloss><q>complaim</q></gloss></mentioned> as we can see, does not meet any semantic or
+          formal obstacles, despite <hi rendition="#rend_smallcaps">Benveniste</hi> assumption.
+            <mentioned xml:lang="peo"><lang/>
+            <w>gasta-</w>
+            <gloss><q>filth</q></gloss></mentioned> corresponds <ref type="xr"
+            target="#entry_qæstæ_1" xml:lang="os"><lang/>
+            <w>qæstæ</w> id.</ref>; see also
+            <?oxy_comment_start author="julie" timestamp="20220331T213537+0300" comment="что за язык?"?><w>iγændun</w><?oxy_comment_end?>
+              (<bibl><ref type="bibl" target="#ref_ИЭС_I"/>
+            <biblScope>542</biblScope></bibl>). In <oRef/>
+          <q>complain</q> a meaning of <mentioned xml:lang="x-oldirn"><lang/>
+            <w type="rec">garz-</w>
+            <gloss><q>complain</q></gloss></mentioned> is preserved, unlike the modern <ref
+            type="xr" target="#entry_qærzyn" xml:lang="os"><lang/>
+            <w>qærzyn</w>
+            <q>moan</q></ref>. — See <ref type="xr" target="#entry_qærzyn" xml:lang="os"
+              />.<lb/><bibl><ref type="bibl" target="#ref_Миллер_Вс._ОЭ"/>
+            <biblScope>II 72, 93</biblScope></bibl>; <bibl><ref type="bibl"
+              target="#ref_Miller._Gr.">Gr.</ref>
+            <biblScope>38</biblScope></bibl>.</etym>
       </entry>
     </body>
   </text>
 </TEI>
+
