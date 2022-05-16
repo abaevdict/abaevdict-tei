@@ -1,20 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">qaun</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
@@ -22,26 +27,47 @@
         <form type="lemma"><orth>qaun</orth></form>
         <sense><sense><abv:tr xml:lang="ru">
               <q>род</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>genus</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>племя</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>tribe</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>поколение</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>generation</q>
             </abv:tr></sense></sense>
         <note type="bibl"><bibl>(<ref type="bibl" target="#ref_ОЯФ_I"/>
             <biblScope>460<hi rendition="#rend_subscript">617</hi></biblScope></bibl>)</note>
-        <note type="comment"> (мало употр.)</note>
+        <note xml:lang="ru" type="comment"> (мало употр.)</note>
+        <note xml:lang="en" type="comment"> (less frequent)</note>
         <etym xml:lang="ru">Из <mentioned xml:lang="ar" extralang="fa"><lang/>
             <w>qaum</w>
-            <gloss><q>народ</q>, <q>племя</q></gloss></mentioned>. Ср. <lang>балк.</lang>
-          <w>qawum</w>
-          <gloss><q>несколько единиц одного рода</q></gloss>
-          <note type="bibl">(<bibl><ref type="bibl">Материалы и исследования по балкарской
-                диалектологии, лексике и фольклору.</ref><biblScope>Нальчик, 1962, стр.
-                178</biblScope></bibl>)</note>, <mentioned xml:lang="ps"><lang/>
+            <gloss><q>народ</q>, <q>племя</q></gloss></mentioned>. Ср. <mentioned
+            xml:lang="krc-x-balkar"><lang/>
+            <w>qawum</w>
+            <gloss><q>несколько единиц одного рода</q></gloss>
+            <note type="bibl">(<bibl><title>Материалы и исследования по балкарской диалектологии,
+                  лексике и фольклору</title>.<biblScope>Нальчик, 1962, стр.
+              178</biblScope></bibl>)</note></mentioned>, <mentioned xml:lang="ps"><lang/>
             <w>qaum</w>
             <gloss><q>народ</q>, <q>племя</q>, <q>жители (села и т. п.)</q>, <q>группа
               племен</q></gloss></mentioned>.</etym>
+        <etym xml:lang="en">From <mentioned xml:lang="ar" extralang="fa"><lang/>
+            <w>qaum</w>
+            <gloss><q>people</q>, <q>tribe</q></gloss></mentioned>. Cf. <mentioned
+            xml:lang="krc-x-balkar"><lang/>
+            <w>qawum</w>
+            <gloss><q>several units of the same genus</q></gloss>
+            <note type="bibl">(<bibl><title>Materials and research on Balkar dialectology,
+                  vocabulary and folklore</title>.<biblScope>Nalchik, 1962, p.
+                178</biblScope></bibl>)</note></mentioned>, <mentioned xml:lang="ps"><lang/>
+            <w>qaum</w>
+            <gloss><q>people</q>, <q>tribe</q>, <q>residents (of villages, etc.)</q>, <q>a group of
+                tribes</q></gloss></mentioned>.</etym>
       </entry>
     </body>
   </text>
 </TEI>
+
