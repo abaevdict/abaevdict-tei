@@ -1,20 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">qatara</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
@@ -22,12 +27,18 @@
         <form type="lemma"><orth>qatara</orth></form>
         <sense><abv:tr xml:lang="ru">
             <q>патронташ</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>bandolier</q>
           </abv:tr></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">Axmæt... qatarajæ gilʒytæ īsy</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">Ахмат достает из патронташа гильзы</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Akhmat takes out the cartridge cases from the
+                bandolier</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Брит."/>
               <biblScope>155</biblScope></bibl>
@@ -39,6 +50,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">один патронташ привязан на поясе, другой
                 патронташ — через плечо подмышку</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">one bandolier is tied on the belt, the other
+                bandolier is over the shoulder under the armpit</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Arsen"/>
               <biblScope>29</biblScope></bibl>
           </example>
@@ -48,6 +63,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">два патронташа (лежат) крест-накрест на его
                 груди, третий на поясе</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">two bandoliers (lying) crosswise on his chest,
+                the third is on his belt</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_MD"/>
               <biblScope>1961 I 33</biblScope></bibl>
@@ -60,6 +79,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">он снарядился по-охотничьи..., надел на плечи
                 патронташи"</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">he dressed up like a hunter..., put bandoliers
+                on his shoulders</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Диг._сказ."/>
               <biblScope>3</biblScope></bibl>
           </example>
@@ -70,6 +93,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">привязал через плечо под мышку черный
                 патронташ</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">he tied a black bandolier over his shoulder
+                under his arm</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_DZ"/>
               <biblScope>164</biblScope></bibl>
@@ -88,7 +115,21 @@
           дагестанских языков; ср. <mentioned xml:lang="lez"><lang/>
             <w>qhatar</w>
             <gloss><q>патронташ</q></gloss></mentioned>.</etym>
+        <etym xml:lang="en">From <mentioned xml:lang="ar"><lang/>
+            <w>qaṯār</w>
+            <gloss><q>row</q></gloss></mentioned>; cf. <mentioned xml:lang="fa"><lang/>
+            <w>qaṯār</w></mentioned>, <mentioned xml:lang="trk"><lang/>
+            <w>qatar</w>
+            <gloss>id.</gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Радлов"/>
+            <biblScope>II 280</biblScope></bibl>); <mentioned xml:lang="fa"><lang/>
+            <w>qaṯārvazna</w>
+            <gloss><q>bandolier</q></gloss>, <w>qaṯār-i fišang</w>
+            <gloss>id.</gloss></mentioned> It was borrowed in Ossetic, perhaps, through the medium
+          of Dagestan languages; cf. <mentioned xml:lang="lez"><lang/>
+            <w>qhatar</w>
+            <gloss><q>bandolier</q></gloss></mentioned>.</etym>
       </entry>
     </body>
   </text>
 </TEI>
+
