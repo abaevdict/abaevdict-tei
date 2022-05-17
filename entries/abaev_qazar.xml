@@ -1,21 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">qazar</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
@@ -23,9 +27,14 @@
         <form type="lemma"><orth>qazar</orth></form>
         <sense><abv:tr xml:lang="ru">
             <q>дорогой</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>expensive</q>
           </abv:tr></sense>
-        <note type="comment">; в иронском редко; см. <ref type="xr" target="#entry_zynarǧ"
-            xml:lang="os-x-iron"><lang/>
+        <note xml:lang="ru" type="comment">; в иронском редко; см. <ref type="xr"
+            target="#entry_zynarǧ" xml:lang="os-x-iron"><lang/>
+            <w>zynarǧ</w> id.</ref></note>
+        <note xml:lang="en" type="comment">; less frequent in Iron, see <ref type="xr"
+            target="#entry_zynarǧ" xml:lang="os-x-iron"><lang/>
             <w>zynarǧ</w> id.</ref></note>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example xml:lang="os-x-digor">
@@ -35,6 +44,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">пусть наш хозяин первым делом купит хорошее
                 платье по дорогой цене</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">let our host first of all buy a good dress at
+                an expensive price</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl"
                 target="#src_Gurdž._Æmburdgond"/>
@@ -46,12 +59,18 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">лучшее и самое дорогое ружье</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the best and most expensive gun</q>
+            </tr>
           </example>
           <example xml:lang="os-x-digor">
             <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
             <quote xmlns="http://www.tei-c.org/ns/1.0">næ qazar bæstæ</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">наша дорогая страна</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">our dear country</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Тайм._Мӕ_зӕрд."/>
               <biblScope>31</biblScope></bibl>
@@ -62,16 +81,20 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">черного дорогого сукна на три черкески</q>
             </tr>
-            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl"
-                target="#src_из рукописей Г. Кокиева"/></bibl>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">black expensive cloth for three circassians</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0">from G. Kokiev's manuscripts</bibl>
           </example>
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">næ fæstag kosæg dær qazardær æj</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">даже последний наш работник стоит дороже</q>
             </tr>
-            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl"
-                target="#src_из рукописей Г. Кокиева">там же</ref></bibl>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">even our last employee costs more</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0">ibid.</bibl>
           </example>
           <example xml:lang="os-x-digor">
             <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
@@ -79,8 +102,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">добрый день, наш дорогой гость</q>
             </tr>
-            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl"
-                target="#src_из рукописей Г. Кокиева">там же</ref></bibl>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">good afternoon, our dear guest</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0">ibid.</bibl>
           </example>
           <example xml:lang="os-x-digor">
             <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
@@ -89,6 +114,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">ее (девушки) голову дорого оценили: из коней
                 караногайского князя сто коней</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">her (the girl's) head was valued expensive: one
+                hundred horses of the horses of the Prince of Karanogais</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_DZ"/>
               <biblScope>191</biblScope></bibl>
@@ -100,6 +129,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">пусть я буду служить тебе в царстве мертвых
                 конем, мой дорогой брат, если я не отомщу за твою кровь</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">may I serve you in the realm of the dead as a
+                horse, my dear brother, if I do not avenge your blood</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_MD"/>
               <biblScope>1949 II 45</biblScope></bibl>
           </example>
@@ -107,42 +140,74 @@
         <etym xml:lang="ru">Как и <ref type="xr" target="#entry_qazajrag"><w>qazajrag</w>
             <q>холоп</q></ref>, восходит к этническому термину <oRef/>
           <q>хазар</q>. Чтобы уяснить, каким образом этнический термин получил значение
-            <q>дорогой</q>, следует обратиться к адыгским языкам. В <bibl><ref type="bibl" target=""
-              >Кабардинско-русском словаре под ред. Б. М. <hi rendition="#rend_smallcaps"
-                >Карданова</hi></ref>
+            <q>дорогой</q>, следует обратиться к адыгским языкам. В <bibl><title>Кабардинско-русском
+              словаре</title> под ред. <author>Б. М. Карданова</author>
             <biblScope>(М., 1957, стр. 178)</biblScope></bibl>
           <mentioned xml:lang="kbd"><lang/>
             <w>qäzär</w> переводится <gloss><q>скупой</q>, <q>скупец</q></gloss></mentioned>. В
-              <bibl><ref type="bibl" target="">Русско-кабардинско-черкесском словаре под ред. С. А.
-                <hi rendition="#rend_smallcaps">Шогенцукова</hi></ref>
+              <bibl><title>Русско-кабардинско-черкесском словаре</title> под ред. <author>С. А.
+              Шогенцукова</author>
             <biblScope>(Нальчик, 1955, стр. 847)</biblScope></bibl> словом <mentioned xml:lang="kbd"><lang/>
             <w>qäzär</w> переводится также русское <gloss><q>торгаш</q></gloss></mentioned>. По
           любезному пояснению А. К. Шагирова, имеется в виду жадный, дорого запрашивающий торгаш.
           Это значение не чуждо было в прошлом и <mentioned xml:lang="os"><lang/>
             <w>qazar</w></mentioned>. Оно зафиксировано у Вс. <hi rendition="#rend_smallcaps"
-            >Миллера</hi> (<bibl><ref type="bibl" target="#ref_Миллер_Вс._Сл.">Сл.</ref>
+            >Миллера</hi> (<bibl><ref type="bibl" target="#ref_Миллер_Вс._Сл."/>
             <biblScope> I 421</biblScope></bibl>): <q>продавец по высокой цене</q>. Отсюда на
           адыгской почве развилось значение <q>скупой</q>, на осетинской — <q>дорогой</q>.
           Объяснить, почему имя <q rendition="#rend_doublequotes">хазар</q> получило значение
-            <q>торгаш</q>, нетрудно. У хазар не было высокоразвитого хозяйства (<bibl><ref
-              type="bibl" target="#ref_Dunlop. The History of the Jewish Khazars."><hi
-                rendition="#rend_smallcaps">Dunlop</hi>. The History of the Jewish Khazars.</ref>
-            <biblScope>Princeton, 1954, стр. 224, 228, 231, 233</biblScope></bibl>). Но, занимая
+            <q>торгаш</q>, нетрудно. У хазар не было высокоразвитого хозяйства
+              (<bibl><author>Dunlop</author>. <title>The History of the Jewish Khazars</title>.
+              <biblScope>Princeton, 1954, стр. 224, 228, 231, 233</biblScope></bibl>). Но, занимая
           выгодные позиции на торговых путях между севером и югом, востоком и западом, они
           стремились извлечь максимальные барыши из транзитной торговли [<q
             rendition="#rend_doublequotes">Тhе prosperity of Khazaria evidently depended less on the
             resources of the country than on its favorable position across important
             trade-routes</q> (<bibl><ref type="bibl"
-              target="#ref_Dunlop. The History of the Jewish Khazars.">там же,</ref>
+              target="#ref_Dunlop. The History of the Jewish Khazars.">ibid.,</ref>
             <biblScope>232</biblScope></bibl>)]. Видимо, предкам современных адыгов приходилось
           часто иметь дело с хазарскими торговцами и убеждаться в их алчности и скупости. В
           результате имя <mentioned xml:lang="os"><w>qazar</w></mentioned> стало синонимом торгаша и
           скупца. От адыгов слово перешло к осетинам. — Об этимологии этнического термина <mentioned
             xml:lang="os"><w>qazar</w></mentioned> см. под <ref type="xr" target="#entry_qazajrag"
-              />.<lb/><bibl><ref type="bibl" target="">Beitrage zur Alten Geschichte. Festschrift
-              F.</ref>
-            <biblScope>Altheim, Berlin, 1970, стр. 208—212</biblScope></bibl>.</etym>
+              />.<lb/><bibl><title>Beitrage zur Alten Geschichte. Festschrift F</title>.
+              <biblScope>Altheim, Berlin, 1970, стр. 208—212</biblScope></bibl>.</etym>
+        <etym xml:lang="en">Like <ref type="xr" target="#entry_qazajrag"><w>qazajrag</w>
+            <q>slave</q></ref>, it traces back to the ethnic term <oRef/>
+          <q>Khazar</q>. To understand how the ethnic term got the meaning <q>expensive</q>, one
+          should look closer to the Adyghe languages. In <bibl><title>Kabardian-Russian
+              Dictionary</title>, ed. <author>B. M. Kardanov</author>
+            <biblScope>(M., 1957, p. 178)</biblScope></bibl>
+          <mentioned xml:lang="kbd"><lang/>
+            <w>qäzär</w> is translated like <gloss><q>greedy</q>, <q>miser</q></gloss></mentioned>.
+          In <bibl><title>Russian-Kabardian-Circassian Dictionary</title>, ed. <author>S. A.
+              Shogentsukov</author>
+            <biblScope>(Nalchik, 1955, p. 847)</biblScope></bibl> the word <mentioned xml:lang="kbd"><lang/>
+            <w>qäzär</w> is used to translate Russian <gloss><q>tradesman</q></gloss></mentioned>.
+          According to the kind explanation of A. K. Shagirov, it means a greedy tradesman asking
+          for a high price. This meaning was not alien in the past to <mentioned xml:lang="os"><lang/>
+            <w>qazar</w></mentioned>, as well. It is attested by Vs. <hi rendition="#rend_smallcaps"
+            >Miller</hi> (<bibl><ref type="bibl" target="#ref_Миллер_Вс._Сл."/>
+            <biblScope> I 421</biblScope></bibl>): <q>seller at a high price</q>. Hence, the meaning
+            <q>greedy</q> has developed in Adyghe, and the Ossetic language has developed the
+          meaning <q>expensive</q>. It is not difficult to explain why the name <q>Khazar</q> has
+          received the meaning of a <q>merchant</q>. The Khazars did not have a highly developed
+          economy (<bibl><author>Dunlop</author>. <title>The History of the Jewish Khazars</title>.
+              <biblScope>Princeton, 1954, pp. 224, 228, 231, 233</biblScope></bibl>). But, occupying
+          advantageous positions on trade routes between North and South, East and West, they sought
+          to extract maximum profits from transit trade [<q rendition="#rend_doublequotes">Тhе
+            prosperity of Khazaria evidently depended less on the resources of the country than on
+            its favorable position across important trade-routes</q> (<bibl><ref type="bibl"
+              target="#ref_Dunlop. The History of the Jewish Khazars.">ibid.,</ref>
+            <biblScope>232</biblScope></bibl>)]. Apparently, the ancestors of modern Adyghes often
+          had to deal with Khazar merchants and be convinced of their greed and avarice. As a
+          result, the name qazar has become synonymous with a <q>tradesman</q> and a <q>miser</q>.
+          Ossetic people have borrowed the word from Adyghe people. — About the etymology of the
+          ethnic term <mentioned xml:lang="os"><w>qazar</w></mentioned> see the word <ref type="xr"
+            target="#entry_qazajrag"/>.<lb/><bibl><title>Beitrage zur Alten Geschichte. Festschrift
+              F</title>. <biblScope>Altheim, Berlin, 1970, pp. 208—212</biblScope></bibl>.</etym>
       </entry>
     </body>
   </text>
 </TEI>
+
