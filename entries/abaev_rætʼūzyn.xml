@@ -1,35 +1,116 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">rætʼūzyn</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_rætʼūzyn" xml:lang="os" abv:completeness="incomplete">
-        <form type="lemma"><orth>rætʼūzyn</orth></form>
-        <sense><abv:tr xml:lang="ru">
-            <q/>
-          </abv:tr></sense>
-        <abv:exampleGrp>
-          <abv:example>
-            <quote/>
-          </abv:example>
-        </abv:exampleGrp>
-        <etym xml:lang="ru"/>
+      <entry xml:id="entry_rætʼūzyn" xml:lang="os" abv:completeness="english-questions">
+        <form type="lemma" xml:lang="os-x-iron"><orth>rætʼūzyn</orth><form type="participle"
+              ><orth>rætʼyzt</orth></form></form>
+        <form xml:lang="os-x-digor" type="dialectal"><orth>rætʼozun</orth><form type="participle"
+              ><orth>rætʼuzt</orth></form></form>
+        <sense><sense><abv:tr xml:lang="ru">
+              <q>пронзать</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>pierce</q>
+            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+              <q>протыкать</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>poke through</q>
+            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+              <q>колоть</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>prick</q>
+            </abv:tr></sense></sense>
+        <re>
+          <form type="lemma"><orth>barætʼūzyn</orth></form>
+          <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">пырнуть</q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">stab</q>
+            </tr></sense>
+        </re>
+        <note xml:lang="ru" type="comment">; в отличие от синонимичного <ref type="xr"
+            target="#entry_ræxojyn"><w xml:lang="os-x-iron">ræxojyn</w><w xml:lang="os-x-digor"
+              >ræxwajun</w>
+            <gloss><q>пронзать</q></gloss></ref> имеет экспрессивную окраску</note>
+        <note xml:lang="en" type="comment">; as opposed to the synonymous word <ref type="xr"
+            target="#entry_ræxojyn"><w xml:lang="os-x-iron">ræxojyn</w><w xml:lang="os-x-digor"
+              >ræxwajun</w>
+            <gloss><q>pierce</q></gloss></ref>, it has an expressive meaning</note>
+        <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">qama felvæsta æmæ ʒy Bibojy g˳ybyn
+                <oRef>barætʼyzta</oRef></quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">он извлек кинжал и пырнул им Бибо в живот</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">he drew a dagger and stabbed Bibo in the
+                stomach with it</q>
+            </tr>
+          </example>
+        </exampleGrp>
+        <etym xml:lang="ru">Восходит к <mentioned xml:lang="ira"
+              ><?oxy_comment_start author="Irene" timestamp="20220517T161340+0300" comment="иран?"?><w>fra-dauz-</w><?oxy_comment_end?></mentioned>
+          с экспрессивным перебоем <c>d</c> → <c>tʼ</c>. Глагольная основа <mentioned xml:lang="ira"
+              ><?oxy_comment_start author="Irene" timestamp="20220517T161340+0300" comment="иран?"?><w>dauz-</w><?oxy_comment_end?></mentioned>,
+            <mentioned xml:lang="ira"
+              ><?oxy_comment_start author="Irene" timestamp="20220517T161340+0300" comment="иран?"?><w>duz-</w><?oxy_comment_end?></mentioned>
+          распознается еще в <ref type="xr" target="#entry_ævdūzyn"><w>æv-dūz-yn</w>
+            <gloss><q>закреплять задвижкой</q></gloss></ref> и пр., а также (с перебоем <c>tʼ</c> →
+            <c>рʼ</c> под влиянием <c>m</c>) в <ref type="xr" target="#entry_æmpʼūzyn"
+              ><w>æmpʼūzyn</w>
+            <gloss><q>штопать</q></gloss></ref>, <ref type="xr" target="#entry_ræmpʼūzyn"
+              ><w>ræmpʼūzyn</w>
+            <gloss><q>пронзать</q></gloss></ref>. Иранские этимологические соответствия (<mentioned
+            xml:lang="fa"><lang/>
+            <w>dōxtan</w> : <w>dōz-</w></mentioned> и пр.) см. под <ref type="xr"
+            target="#entry_ævdūzyn"/> (<bibl><ref type="bibl" target="#ref_ИЭС_I"/>
+            <biblScope>200</biblScope></bibl>). См. также <ref type="xr" target="#entry_æmpʼūzyn"/>,
+            <ref type="xr" target="#entry_ræmpʼūzyn"/>.<lb/><bibl><ref type="bibl"
+              target="#ref_ОЯФ_I"/>
+            <biblScope>522</biblScope></bibl>.</etym>
+        <etym xml:lang="en">Traces back to <mentioned xml:lang="ira"
+              ><?oxy_comment_start author="Irene" timestamp="20220517T161340+0300" comment="иран?"?><w>fra-dauz-</w><?oxy_comment_end?></mentioned>
+          with the expressive alternation <c>d</c> → <c>tʼ</c>. The verb stem <mentioned
+            xml:lang="ira"
+              ><?oxy_comment_start author="Irene" timestamp="20220517T161340+0300" comment="иран?"?><w>dauz-</w><?oxy_comment_end?></mentioned>,
+            <mentioned xml:lang="ira"
+              ><?oxy_comment_start author="Irene" timestamp="20220517T161340+0300" comment="иран?"?><w>duz-</w><?oxy_comment_end?></mentioned>
+          can also be seen in <ref type="xr" target="#entry_ævdūzyn"><w>æv-dūz-yn</w>
+            <gloss><q>latch</q></gloss></ref> etc. and (with the alternation <c>tʼ</c> → <c>рʼ</c>
+          under the influence of <c>m</c>) in <ref type="xr" target="#entry_æmpʼūzyn"
+              ><w>æmpʼūzyn</w>
+            <gloss><q>darn</q></gloss></ref>, <ref type="xr" target="#entry_ræmpʼūzyn"
+              ><w>ræmpʼūzyn</w>
+            <gloss><q>pierce</q></gloss></ref>. See Iranian etymological correspondences (<mentioned
+            xml:lang="fa"><lang/>
+            <w>dōxtan</w> : <w>dōz-</w></mentioned> etc) under <ref type="xr"
+            target="#entry_ævdūzyn"/> (<bibl><ref type="bibl" target="#ref_ИЭС_I"/>
+            <biblScope>200</biblScope></bibl>). See also <ref type="xr" target="#entry_æmpʼūzyn"/>,
+            <ref type="xr" target="#entry_ræmpʼūzyn"/>.<lb/><bibl><ref type="bibl"
+              target="#ref_ОЯФ_I"/>
+            <biblScope>522</biblScope></bibl>.</etym>
       </entry>
     </body>
   </text>
