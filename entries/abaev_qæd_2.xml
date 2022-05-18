@@ -1,21 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">qæd_2</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
@@ -24,24 +28,33 @@
         <form xml:lang="os-x-digor" type="dialectal"><orth>ǧædæ</orth></form>
         <sense><abv:tr xml:lang="ru">
             <q>качество</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>quality</q>
           </abv:tr></sense>
         <re>
           <form type="lemma"><orth>xærzqæd</orth></form>
           <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">доброкачественный</q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">benign</q>
             </tr></sense>
         </re>
         <re>
           <form type="lemma"><orth>læǵyqæd</orth></form>
           <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">мужество</q>
-            </tr><note type="comment"> (<q rendition="#rend_doublequotes">качество
-              мужчины</q>)</note></sense>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">courage</q>
+            </tr><note xml:lang="ru" type="comment"> (<q rendition="#rend_doublequotes">качество
+                мужчины</q>)</note><note xml:lang="en" type="comment"> (<q
+                rendition="#rend_singlequotes">man quality</q>)</note></sense>
         </re>
         <re>
           <form type="lemma"><orth>jæxī qædæj</orth></form>
           <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">сам собою</q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">by onself</q>
             </tr></sense>
         </re>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
@@ -51,6 +64,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">древко косы из ивы — (покажи) свое мужество
                 кинжалом</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">willow scythe shaft — (show) your courage with
+                a dagger</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Munk."/>
               <biblScope>170</biblScope></bibl>
           </example>
@@ -59,14 +76,21 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">теперь-то вам нужно (проявить) мужество</q>
             </tr>
-            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl">из песни о кудских
-                абреках</ref></bibl>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">now you need to (show) courage</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0">from the song about the
+              <?oxy_comment_start author="julie" timestamp="20220518T234455+0300" comment="это то?"?>Kuda<?oxy_comment_end?>
+              abreks</bibl>
           </example>
           <example xml:lang="os-x-digor">
             <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
             <quote xmlns="http://www.tei-c.org/ns/1.0">ni-ʼj-waʒæ æхе ǧædi</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">предоставь ее самой себе</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">leave her to herself</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Gurdž._Æduli"/>
               <biblScope>82</biblScope></bibl>
@@ -76,6 +100,9 @@
               rostæbæl</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">слезы сами собой потекли по щекам</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">tears flowed down her cheeks by themselves</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_MD"/>
               <biblScope>1937 I 29</biblScope></bibl>
@@ -87,10 +114,22 @@
                 >походка</q>, <q rendition="#rend_doublequotes">повадка</q></gloss></mentioned>, ср.
             <mentioned xml:lang="inc-x-old"><lang/>
             <w>gata-</w> 1. <gloss><q>походка</q></gloss>, 2. <gloss><q>способ</q>, <q>манера</q>,
-                <q>поведение</q></gloss>, <note type="comment">(будд.)</note>
+                <q>поведение</q></gloss>, <note xml:lang="ru" type="comment">(будд.)</note><note
+              xml:lang="en" type="comment">(будд.)</note>
+            <w>gati</w>
+            <gloss><q>state of existence</q></gloss></mentioned>.</etym>
+        <etym xml:lang="en">Probably, it traces back to <mentioned xml:lang="x-oldirn"><lang/>
+            <w>gata-</w> (past participle of the verb <w>gam-</w>
+            <gloss><q>go</q></gloss>) in the meaning <gloss><q rendition="#rend_singlequotes"
+                >gait</q>, <q rendition="#rend_singlequotes">habit</q></gloss></mentioned>, cf.
+            <mentioned xml:lang="inc-x-old"><lang/>
+            <w>gata-</w> 1. <gloss><q>gait</q></gloss>, 2. <gloss><q>way</q>, <q>manner</q>,
+                <q>behaviour</q></gloss>, <note xml:lang="ru" type="comment">(будд.)</note><note
+              xml:lang="en" type="comment">(Budd.)</note>
             <w>gati</w>
             <gloss><q>state of existence</q></gloss></mentioned>.</etym>
       </entry>
     </body>
   </text>
 </TEI>
+
