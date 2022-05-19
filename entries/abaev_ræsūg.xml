@@ -1,29 +1,35 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ræsūg</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_ræsūg" xml:lang="os" abv:completeness="incomplete">
+      <entry xml:id="entry_ræsūg" xml:lang="os" abv:completeness="english-questions">
         <form type="lemma" xml:lang="os-x-iron"><orth>ræsūg</orth></form>
         <form xml:lang="os-x-digor" type="dialectal"><orth>ræsog</orth></form>
         <sense><abv:tr xml:lang="ru">
             <q>прозрачный</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>transparent</q>
           </abv:tr></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
@@ -32,6 +38,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">родник... как он холоден, подобно кусочку льда,
                 как он прозрачен, как чист!</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">a spring... how cold it is, like a piece of
+                ice, how transparent, how pure!</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Хар._Кадӕг"/>
               <biblScope>37</biblScope></bibl>
@@ -44,6 +54,12 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">журчит (родник) Дзирасга, (выбиваясь) из-под
                 земли, прозрачный</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">(the spring) of Dzirasga murmurs,
+                (<?oxy_comment_start author="Irene" timestamp="20220519T110029+0300" comment="?"?>spouting<?oxy_comment_end?>)
+                out of the ground,
+                <?oxy_comment_start author="Irene" timestamp="20220519T105507+0300" comment="ok?"?>transparent<?oxy_comment_end?></q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Iræf"/>
               <biblScope>26</biblScope></bibl>
           </example>
@@ -55,6 +71,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">под нами где-то глубоко в теснине ущелья
                 рождался прозрачный (источник)</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">below us, somewhere deep in the gorge, a
+                transparent (spring) was born</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_MD"/>
               <biblScope>1956 VII 52</biblScope></bibl>
           </example>
@@ -65,6 +85,11 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">источник выбивается из-под земли чистый и
                 прозрачный</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the spring is
+                <?oxy_comment_start author="Irene" timestamp="20220519T110034+0300" comment="?"?>spouting<?oxy_comment_end?>
+                out of the ground clean and transparent</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_MD"/>
               <biblScope>1956 VII 56</biblScope></bibl>
@@ -91,26 +116,77 @@
             <gloss><q>свет</q></gloss></mentioned>. Ос. <oRef>ræsog</oRef> с уверенностью
           распознается в <mentioned xml:lang="xsc"
               ><?oxy_comment_start author="Irene" timestamp="20220519T104516+0300" comment="скиф?"?><lang>сарматском</lang><?oxy_comment_end?>
-            <note type="comment">личном имени из Танаиса</note>
+            <note xml:lang="ru" type="comment">личном имени из Танаиса</note><note xml:lang="en"
+              type="comment">личном имени из Танаиса</note>
             <w>ʽΡασσογος</w>
             <gloss><q rendition="#rend_doublequotes">Светлый</q></gloss></mentioned>; сюда же
             <mentioned xml:lang="peo"><lang>древнеперсидские</lang>
-            <note type="comment">(в эламской передаче) личные имена</note>
+            <note xml:lang="ru" type="comment">(в эламской передаче) личные имена</note><note
+              xml:lang="en" type="comment">(в эламской передаче) личные имена</note>
             <w>Parsauka</w>, <w>Pirrasauka</w>
             <note type="bibl">(<bibl><ref type="bibl" target="#ref_Gershevitch._Amber"/>
                 <biblScope>219 sq.</biblScope></bibl>)</note></mentioned>. Ср. по семантике
             <mentioned xml:lang="la"><lang/>
             <w>Lucius</w>, <w>Lucullus</w>, <w>Lucillus</w></mentioned>, <mentioned xml:lang="grc"><lang/>
             <w>Λεῦκος</w>
-            <note type="comment">(спутник Одиссея)</note></mentioned>, <mentioned xml:lang="grc"><lang/>
+            <note xml:lang="ru" type="comment">(спутник Одиссея)</note><note xml:lang="en"
+              type="comment">(спутник Одиссея)</note></mentioned>, <mentioned xml:lang="grc"><lang/>
             <w>Λεύκων</w>
-            <note type="comment">(царь Боспора)</note></mentioned>, <mentioned xml:lang="sla"><lang/>
+            <note xml:lang="ru" type="comment">(царь Боспора)</note><note xml:lang="en"
+              type="comment">(царь Боспора)</note></mentioned>, <mentioned xml:lang="sla"><lang/>
             <w>Светозар</w></mentioned> и т. п. В <ref type="xr" target="#entry_sūg"><w
               xml:lang="os-x-iron">sūg</w><w xml:lang="os-x-digor">sog</w>
             <gloss><q>дрова</q></gloss></ref> и <ref type="xr" target="#entry_sūʒyn"><w
               xml:lang="os-x-iron">sūʒyn</w><w xml:lang="os-x-digor">soʒun</w>
             <gloss><q>жечь</q></gloss></ref> сохранилось прямое значение данного корня:
               <q>огонь</q>.<lb/><bibl><ref type="bibl" target="#ref_ОЯФ_I"/>
+            <biblScope>21, 39, 72, 165, 181, 199, 213</biblScope></bibl>.</etym>
+        <etym xml:lang="en">Traces back to <mentioned xml:lang="ira"><w type="rec"
+            >fra-sauka-</w></mentioned>, from <mentioned xml:lang="ira"><w>sauka-</w>
+            <gloss><q>light</q></gloss>, <gloss><q>fire</q></gloss></mentioned>. The concepts of
+            <q>transparency</q>, <q>purity</q>, <q>beauty</q> were derivatives of <q>fire-light</q>.
+          See about it under the words <ref type="xr" target="#entry_færsūʒyn"><w>færsuʒyn</w>
+            <gloss><q>filter</q></gloss></ref> (<bibl><ref type="bibl" target="#ref_ИЭС_I"/>
+            <biblScope>454</biblScope></bibl>), <ref type="xr" target="#entry_ræsuǧd"><w>ræsuǧd</w>
+            <gloss><q>beautiful</q></gloss></ref>, <ref type="xr" target="#entry_syǧdæg"
+              ><w>syǧdæg</w>
+            <gloss><q>clean</q></gloss></ref>, <ref type="xr" target="#entry_syrx"><w>syrx</w>
+            <gloss><q>red</q></gloss></ref>, <ref type="xr" target="#entry_syǧzærīn"><w>syǧzærīn</w>
+            <gloss><q>gold</q></gloss></ref>. Cf. <mentioned xml:lang="inc-x-old"><lang/>
+            <w>suča-</w>
+            <gloss><q>clean</q></gloss>, <gloss><q>transparent</q></gloss>,
+              <gloss><q>bright</q></gloss></mentioned>, <mentioned xml:lang="ae"><lang/>
+            <w>suka-</w>
+            <gloss><q>bright</q></gloss>, <gloss><q>clear</q></gloss>,
+            <gloss><q>light</q></gloss></mentioned>. Ossetic <oRef>ræsog</oRef> is seen with
+          certainty in <mentioned xml:lang="xsc"
+              ><?oxy_comment_start author="Irene" timestamp="20220519T104516+0300" comment="скиф?"?><lang>Sarmatian</lang><?oxy_comment_end?>
+            <note xml:lang="ru" type="comment">личном имени из Танаиса</note><note xml:lang="en"
+              type="comment">personal name from Tanais </note>
+            <w>ʽΡασσογος</w>
+            <gloss><q rendition="#rend_doublequotes">Bright</q></gloss></mentioned>; see also
+            <mentioned xml:lang="peo"><lang/>
+            <note xml:lang="ru" type="comment">(в эламской передаче) личные имена</note><note
+              xml:lang="en" type="comment">(in the
+              <?oxy_comment_start author="Irene" timestamp="20220519T110459+0300" comment="??"?>Elamite
+              transmission<?oxy_comment_end?>) personal names</note>
+            <w>Parsauka</w>, <w>Pirrasauka</w>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Gershevitch._Amber"/>
+                <biblScope>219 sq.</biblScope></bibl>)</note></mentioned>. Cf. the semantics of
+            <mentioned xml:lang="la"><lang/>
+            <w>Lucius</w>, <w>Lucullus</w>, <w>Lucillus</w></mentioned>, <mentioned xml:lang="grc"><lang/>
+            <w>Λεῦκος</w>
+            <note xml:lang="ru" type="comment">(спутник Одиссея)</note><note xml:lang="en"
+              type="comment">(companion of Odysseus)</note></mentioned>, <mentioned xml:lang="grc"><lang/>
+            <w>Λεύκων</w>
+            <note xml:lang="ru" type="comment">(царь Боспора)</note><note xml:lang="en"
+              type="comment">(king of the Bosporus)</note></mentioned>, <mentioned xml:lang="sla"><lang/>
+            <w>Светозар</w></mentioned> etc. In the words <ref type="xr" target="#entry_sūg"><w
+              xml:lang="os-x-iron">sūg</w><w xml:lang="os-x-digor">sog</w>
+            <gloss><q>firewood</q></gloss></ref> and <ref type="xr" target="#entry_sūʒyn"><w
+              xml:lang="os-x-iron">sūʒyn</w><w xml:lang="os-x-digor">soʒun</w>
+            <gloss><q>burn</q></gloss></ref> the direct meaning of this root is retained:
+            <q>fire</q>.<lb/><bibl><ref type="bibl" target="#ref_ОЯФ_I"/>
             <biblScope>21, 39, 72, 165, 181, 199, 213</biblScope></bibl>.</etym>
       </entry>
     </body>
