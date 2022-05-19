@@ -1,30 +1,37 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">qælækk</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
       <entry xml:id="entry_qælækk" xml:lang="os-x-iron" abv:completeness="incomplete">
         <form type="lemma"><orth>qælækk</orth></form>
         <usg><lang/></usg>
-        <sense><note type="comment">восклицание, значение которого можно передать приблизительно: <q
-              rendition="#rend_doublequotes">конечно! но...</q>; близко по значению <ref type="xr"
-              target="#entry_bærgæ"/></note></sense>
+        <sense><note xml:lang="ru" type="comment">восклицание, значение которого можно передать
+            приблизительно: <q rendition="#rend_doublequotes">конечно! но...</q>; близко по значению
+              <ref type="xr" target="#entry_bærgæ"/></note><note xml:lang="en" type="comment">an
+            exclamation, which meaning can be translated like: <q rendition="#rend_singlequotes">of
+              course! but...</q>; its meaning is close to <ref type="xr" target="#entry_bærgæ"
+            /></note></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">ældarmæ je ʽrdxord fæzynd qælækk, fælæ ūmæn
@@ -33,31 +40,57 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">к князю его друг явился, конечно, но и ему он
                 не внимает</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">his friend came to the prince, of course, but
+                he does not listen to him either</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_СОПам."/>
               <biblScope>IV 3</biblScope></bibl>
           </example>
-          <?oxy_comment_start author="julie" timestamp="20220408T180337+0300" comment="в каком-то слове Иры есть эта шутка, унифицировать перевод"?>
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">cal ævsymæry stūt? — kæd ma æz fervæzon wæd
               ærtæ qælækk stæm</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">сколько вас братьев? — если я еще спасусь, то
-                нас трое" (</q>
+                нас трое</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">how many of you
+                <?oxy_comment_start author="Irene" timestamp="20220406T112623+0300" comment="не уверена в переводе"?>are
+                brothers<?oxy_comment_end?>? — If I get saved, then there are three of us</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ИАА"/>
               <biblScope>II 312</biblScope></bibl>
-          </example><?oxy_comment_end?>
+          </example>
         </exampleGrp>
         <etym xml:lang="ru">Из <mentioned xml:lang="trk"><lang/>
             <w>qalaq</w>
             <gloss>восклицание <q rendition="#rend_doublequotes">увы!</q></gloss>
-            <note type="comment">[<s>qalaq, qalaq, säni! mänin jam polzo qaidat!</s>
+            <note xml:lang="ru" type="comment">[<s>qalaq, qalaq, säni! mänin jam polzo qaidat!</s>
+              <q rendition="#rend_doublequotes">увы, увы! если бы у меня был лук!</q> (<bibl><ref
+                  type="bibl" target="#ref_Радлов"/>
+                <biblScope>II 228</biblScope></bibl>)]</note><note xml:lang="en" type="comment"
+                >[<s>qalaq, qalaq, säni! mänin jam polzo qaidat!</s>
               <q rendition="#rend_doublequotes">увы, увы! если бы у меня был лук!</q> (<bibl><ref
                   type="bibl" target="#ref_Радлов"/>
                 <biblScope>II 228</biblScope></bibl>)]</note></mentioned>. Несмотря на некоторое
           смещение значения, связь очевидна (<q rendition="#rend_doublequotes">конечно! но,
           увы!</q>).</etym>
+        <etym xml:lang="en">From <mentioned xml:lang="trk"><lang/>
+            <w>qalaq</w>
+            <gloss>exclamation <q rendition="#rend_singlequotes">alas!</q></gloss>
+            <note xml:lang="ru" type="comment">[<s>qalaq, qalaq, säni! mänin jam polzo qaidat!</s>
+              <q rendition="#rend_doublequotes">увы, увы! если бы у меня был лук!</q> (<bibl><ref
+                  type="bibl" target="#ref_Радлов"/>
+                <biblScope>II 228</biblScope></bibl>)]</note><note xml:lang="en" type="comment"
+                >[<s>qalaq, qalaq, säni! mänin jam polzo qaidat!</s>
+              <q rendition="#rend_singlequotes">alas, alas! If only I had a bow!</q> (<bibl><ref
+                  type="bibl" target="#ref_Радлов"/>
+                <biblScope>II 228</biblScope></bibl>)]</note></mentioned>. Despite a slight shift in
+          the meaning, the connection is obvious (<q rendition="#rend_singlequotes">of course! but,
+            alas!</q>).</etym>
       </entry>
     </body>
   </text>
 </TEI>
+
