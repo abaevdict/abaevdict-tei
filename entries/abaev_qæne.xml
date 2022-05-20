@@ -1,21 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">qæne</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
@@ -24,12 +28,24 @@
         <usg><lang/></usg>
         <sense><sense><abv:tr xml:lang="ru">
               <q>подсолнух</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>sunflower</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>Helianthus annuus</q>
-            </abv:tr><note type="comment"> (?)</note></sense><sense><abv:tr xml:lang="ru">
+            </abv:tr><abv:tr xml:lang="en">
+              <q>Helianthus annuus</q>
+            </abv:tr><note xml:lang="ru" type="comment"> (?)</note><note xml:lang="en"
+              type="comment"> (?)</note></sense><sense><abv:tr xml:lang="ru">
               <q>растение, из которого добывают красную краску</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>the plant from which red paint is extracted</q>
             </abv:tr></sense></sense>
-        <note type="comment">; син. <ref type="xr" target="#entry_7xsynæn" xml:lang="os-x-iron"><lang/>
+        <note xml:lang="ru" type="comment">; син. <ref type="xr" target="#entry_7xsynæn"
+            xml:lang="os-x-iron"><lang/>
+            <w>æxsynæn</w></ref>, <ref type="xr" target="#entry_sonxura" xml:lang="os-x-digor"><lang/>
+            <w>sonxura</w></ref></note>
+        <note xml:lang="en" type="comment">; syn. <ref type="xr" target="#entry_7xsynæn"
+            xml:lang="os-x-iron"><lang/>
             <w>æxsynæn</w></ref>, <ref type="xr" target="#entry_sonxura" xml:lang="os-x-digor"><lang/>
             <w>sonxura</w></ref></note>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
@@ -40,16 +56,26 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">желтые подсолнухи в широких шляпах не отводили
                 больше своего лица (от солнца)</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">yellow sunflowers in wide hats no longer
+                averted their faces (from the sun)</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Тайм._Мӕ_уарзт"/>
               <biblScope>19</biblScope></bibl>
           </example>
         </exampleGrp>
-        <etym xml:lang="ru">Ср. <lang>каб.</lang>
-          <w>pqənä</w>
-          <gloss><q>растение, из которого добывают красную краску</q>, <q>хна</q></gloss>
-          <note type="bibl">(<bibl><ref type="bibl" target="">Каб.-русск. сл.</ref>
-              <biblScope>М., 1957, стр. 295</biblScope></bibl>)</note>.</etym>
+        <etym xml:lang="ru">Ср. <mentioned xml:lang="kbd"><lang/>
+            <w>pqənä</w>
+            <gloss><q>растение, из которого добывают красную краску</q>, <q>хна</q></gloss>
+            <note type="bibl">(<bibl><title>Каб.-русск. сл.</title>
+                <biblScope>М., 1957, стр. 295</biblScope></bibl>)</note></mentioned>.</etym>
+        <etym xml:lang="en">Cf. <mentioned xml:lang="kbd"><lang/>
+            <w>pqənä</w>
+            <gloss><q>the plant from which red paint is extracted</q>, <q>henna</q></gloss>
+            <note type="bibl">(<bibl><title>Kabardian-Russian Dictionary</title>
+                <biblScope>M., 1957, p. 295</biblScope></bibl>)</note></mentioned>.</etym>
       </entry>
     </body>
   </text>
 </TEI>
+
