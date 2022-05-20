@@ -1,28 +1,33 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">Qænʒærgæs</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
       <entry xml:id="entry_Qænʒærgæs" xml:lang="os" abv:completeness="incomplete">
         <form type="lemma"><orth>Qænʒærgæs</orth></form>
-        <sense><note type="comment">в нартовском эпосе имя чудовища, которое похищает людей и держит
-            их в неволе</note></sense>
+        <sense><note xml:lang="ru" type="comment">в нартовском эпосе имя чудовища, которое похищает
+            людей и держит их в неволе</note><note xml:lang="en" type="comment">in the Nart epic,
+            the name of the monster that kidnaps people and keeps them in captivity</note></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">dæwæn dæ fidi fidi Alægi Qænʒærgæs wæjug Saw
@@ -31,6 +36,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">твоего дедушку Алага великан Кандзаргас унес на
                 берег Черного моря, (чтобы сделать) для себя пастухом</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the giant Kanzargas took your grandfather Alag
+                to the shore of the Black Sea (to make) a shepherd for himself</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ОЯФ_I"/>
               <biblScope>435</biblScope></bibl>
           </example>
@@ -38,20 +47,42 @@
         <etym xml:lang="ru">Возможно, из <w>Qän-Čängäs</w>
           <q>Чингис-Хан</q> (<q rendition="#rend_doublequotes">Хан-Чингис</q>). Порядок частей как в
             <w>Qan-Purxan</w> и т. п. (<bibl><ref type="bibl" target="#ref_Радлов"/>
-            <biblScope>II 105</biblScope></bibl>). Перебой n → r — результат дистантной диссимиляции
-          носовых, как в <ref type="xr" target="#entry_mænærǧ"/> из <w type="rec">mæ-nænǧ</w>, а
-          также народноэтимологического сближения с <ref type="xr" target="#entry_cærgæs"
-              ><w>cærgæs</w>
-            <q>орел</q></ref>.<hi rendition="#rend_superscript">1</hi><note type="footnote">Имя
-              <w>Чингис</w> считается неясным; cp.: <bibl><ref type="bibl" target="">Qutuγ-tu
+            <biblScope>II 105</biblScope></bibl>). Перебой <c>n</c> → <c>r</c> — результат
+          дистантной диссимиляции носовых, как в <ref type="xr" target="#entry_mænærǧ"/> из <w
+            type="rec">mæ-nænǧ</w>, а также народноэтимологического сближения с <ref type="xr"
+            target="#entry_cærgæs"><w>cærgæs</w>
+            <q>орел</q></ref>.<hi rendition="#rend_superscript">1</hi><note xml:lang="ru"
+            type="footnote">Имя <w>Чингис</w> считается неясным; cp.: <bibl><title>Qutuγ-tu
                 Pañcaraḳsa kemeku Tʼabun Sakiyan neretü Yeke Kölgen Sudur, herausgegeben von Pentti
-                Aalto. Asiatische Forschungen, Bd. 10. </ref>
-              <biblScope>Wiesbaden, 1961, стр. 128</biblScope></bibl> (<q
+                Aalto</title>. Asiatische Forschungen, Bd. 10. <biblScope>Wiesbaden, 1961, стр.
+                128</biblScope></bibl> (<q rendition="#rend_doublequotes">...činggir qada metü...
+              aldar anu činggis qaγan kemen ǰambudwibtur čab bolǰuγui</q>).</note><note
+            xml:lang="en" type="footnote">Имя <w>Чингис</w> считается неясным; cp.:
+                <bibl><title>Qutuγ-tu Pañcaraḳsa kemeku Tʼabun Sakiyan neretü Yeke Kölgen Sudur,
+                herausgegeben von Pentti Aalto</title>. Asiatische Forschungen, Bd. 10.
+                <biblScope>Wiesbaden, 1961, стр. 128</biblScope></bibl> (<q
               rendition="#rend_doublequotes">...činggir qada metü... aldar anu činggis qaγan kemen
               ǰambudwibtur čab bolǰuγui</q>).</note> О монгольских элементах в нартовском эпосе см.
             <ref type="xr" target="#entry_Xæmyc"/>, <ref type="xr" target="#entry_Batraz"/>, <ref
             type="xr" target="#entry_Sajnæg"/>, <ref type="xr" target="#entry_Nartæ"/>.</etym>
+        <etym xml:lang="en">Probably, from <w>Qän-Čängäs</w>
+          <q>Genghis Khan</q> (<q rendition="#rend_singlequotes">Khan Genghis</q>). The order of the
+          parts is as in <w>Qan-Purxan</w> and others (<bibl><ref type="bibl" target="#ref_Радлов"/>
+            <biblScope>II 105</biblScope></bibl>). The change <c>n</c> → <c>r</c> is the result of
+          distant dissimilation of nasals, as in <ref type="xr" target="#entry_mænærǧ"/> from <w
+            type="rec">mæ-nænǧ</w>, as well as folk etymological rapprochement with <ref type="xr"
+            target="#entry_cærgæs"><w>cærgæs</w>
+            <q>eagle</q></ref>.<hi rendition="#rend_superscript">1</hi><note type="footnote">The
+            name <w>Чингис</w> is considered of an unclear origin; cf.: <bibl><title>Qutuγ-tu
+                Pañcaraḳsa kemeku Tʼabun Sakiyan neretü Yeke Kölgen Sudur, herausgegeben von Pentti
+                Aalto</title>. Asiatische Forschungen, Bd. 10. <biblScope>Wiesbaden, 1961, p.
+                128</biblScope></bibl> (<q rendition="#rend_doublequotes">...činggir qada metü...
+              aldar anu činggis qaγan kemen ǰambudwibtur čab bolǰuγui</q>).</note> For the Mongolian
+          elements in the Nart epic, see <ref type="xr" target="#entry_Xæmyc"/>, <ref type="xr"
+            target="#entry_Batraz"/>, <ref type="xr" target="#entry_Sajnæg"/>, <ref type="xr"
+            target="#entry_Nartæ"/>.</etym>
       </entry>
     </body>
   </text>
 </TEI>
+
