@@ -1,21 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">qærmūst</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
@@ -24,8 +28,12 @@
         <usg><lang/></usg>
         <sense><sense><abv:tr xml:lang="ru">
               <q>чуть теплый</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>slightly warm</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>тепловатый</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>lukewarm</q>
             </abv:tr></sense></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
@@ -34,6 +42,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">вытащил Кудайнат тарелку, там был чуть теплый
                 сырный пирог с обильной начинкой и яичница</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Kudainat pulled out a plate, there was a
+                slightly warm cheese pie with a plentiful filling and scrambled eggs</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Arsen"/>
               <biblScope>59</biblScope></bibl>
@@ -44,6 +56,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">Фаризет поставила таз с тепловатой водой перед
                 Цараем и принялась мыть ему ноги</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Farizet put a basin of lukewarm water in front
+                of Tsarai and began to wash his feet</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Čerm."/>
               <biblScope>138</biblScope></bibl>
@@ -58,12 +74,26 @@
             <gloss><q>холодный</q>, <q>холод</q></gloss></mentioned>, <mentioned xml:lang="lt"><lang/>
             <w>áušti</w>
             <gloss><q>стынуть</q>, <q>остывать</q></gloss>
-            <note type="bibl">(<bibl><ref type="bibl" target=""><hi rendition="#rend_smallcaps"
-                    >Реdеrsеn</hi>. Vergleichende Grammatik der keltischen Sprachen, I.</ref>
-                <biblScope>Göttingen, 1909, стр. 103</biblScope></bibl>)</note></mentioned>. В этом
-          случае буквальное значение <oRef/>
+            <note type="bibl">(<bibl><author>Реdеrsеn</author>. <title>Vergleichende Grammatik der
+                  keltischen Sprachen, I</title>. <biblScope>Göttingen, 1909, стр.
+                103</biblScope></bibl>)</note></mentioned>. В этом случае буквальное значение <oRef/>
           <q rendition="#rend_doublequotes">теплый-остывший</q>.</etym>
+        <etym xml:lang="en">Maybe, to <mentioned xml:lang="x-oldirn"><lang/>
+            <w type="rec">garma-ušta-</w>, where <w>garma-</w>
+            <gloss><q>warm</q></gloss>, and <w type="rec">ušta-</w> past participle of the verb
+              <w>auš-</w> or <w>aut-</w>
+            <gloss><q>freeze</q>, <q>become cold</q></gloss></mentioned>; cf. <mentioned
+            xml:lang="ae"><lang/>
+            <w>aota-</w>
+            <gloss><q>cold (adj)</q>, <q>cold (n)</q></gloss></mentioned>, <mentioned xml:lang="lt"><lang/>
+            <w>áušti</w>
+            <gloss><q>freeze</q>, <q>cool down</q></gloss>
+            <note type="bibl">(<bibl><author>Реdеrsеn</author>. <title>Vergleichende Grammatik der
+                  keltischen Sprachen, I</title>. <biblScope>Göttingen, 1909, p.
+                103</biblScope></bibl>)</note></mentioned>. In this case, the literal meaning of
+          <oRef/> is <q rendition="#rend_singlequotes">warm-cooled down</q>.</etym>
       </entry>
     </body>
   </text>
 </TEI>
+
