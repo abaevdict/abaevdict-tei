@@ -1,36 +1,49 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ræǧaw</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_ræǧaw" xml:lang="os" abv:completeness="incomplete">
+      <entry xml:id="entry_ræǧaw" xml:lang="os" abv:completeness="english-questions">
         <form type="lemma" xml:lang="os-x-iron"><orth>ræǧaw</orth></form>
         <form xml:lang="os-x-digor" type="dialectal"><orth>ærǧaw</orth></form>
         <sense><sense><abv:tr xml:lang="ru">
               <q>табун</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>herd</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>стадо</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>flock</q>
             </abv:tr></sense></sense>
-        <note type="comment">; применяется к конскому табуну (<ref type="xr" target="#entry_bæx"
-            />-<oRef>ræǧaw</oRef>), к стаду крупного рогатого скота (<phr><ref type="xr"
-              target="#entry_stūr"><w>stūrty</w></ref>
-            <oRef>ræǧaw</oRef></phr>); реже к овцам и другим животным<note type="footnote">например
+        <note xml:lang="ru" type="comment">; применяется к конскому табуну (<ref type="xr"
+            target="#entry_bæx"/>-<oRef>ræǧaw</oRef>), к стаду крупного рогатого скота (<phr><ref
+              type="xr" target="#entry_stūr"><w>stūrty</w></ref>
+            <oRef>ræǧaw</oRef></phr>); реже к овцам и другим животным<note xml:lang="ru"
+            type="footnote">например (<bibl><ref type="bibl" target="#src_Коста"/>
+              <biblScope>49</biblScope></bibl>): <phr><ref type="xr" target="#entry_fos"
+                ><w>fosy</w></ref>
+              <oRef>ræǧaw</oRef></phr>
+            <gloss><q>стадо овец</q></gloss></note><note xml:lang="en" type="footnote">например
                 (<bibl><ref type="bibl" target="#src_Коста"/>
               <biblScope>49</biblScope></bibl>): <phr><ref type="xr" target="#entry_fos"
                 ><w>fosy</w></ref>
@@ -38,12 +51,36 @@
             <gloss><q>стадо овец</q></gloss></note>; ср. <ref type="xr" target="#entry_qom_1"/>,
             <ref type="xr" target="#entry_fos"/>, <ref type="xr" target="#entry_ʒūg"/>, <ref
             type="xr" target="#entry_ærdong"/>, <ref type="xr" target="#entry_ærwæz"/>, <ref
-            type="xr" target="#entry_bal_1"/>; в одном случае встретилось lægræǧaw 'мужской состав’
-          („мужской табун"), а в одном — д. kærkærgaw „стадо кур"</note>
+            type="xr" target="#entry_bal_1"/>; в одном случае встретилось <ref type="xr"
+            target="#entry_læg"/><oRef>ræǧaw</oRef>
+          <q>мужской состав</q> (<q rendition="#rend_doublequotes">мужской табун</q>), а в одном —
+          д. <ref type="xr" target="#entry_kark"><w>kærk</w></ref><oRef>ærǧaw</oRef>
+          <q rendition="#rend_doublequotes">стадо кур</q></note>
+        <note xml:lang="en" type="comment">; it is used to refer to a horse herd (<ref type="xr"
+            target="#entry_bæx"/>-<oRef>ræǧaw</oRef>), a herd of cattle (<phr><ref type="xr"
+              target="#entry_stūr"><w>stūrty</w></ref>
+            <oRef>ræǧaw</oRef></phr>); less often to sheep and other animals<note type="footnote"
+            >for example, (<bibl><ref type="bibl" target="#src_Коста"/>
+              <biblScope>49</biblScope></bibl>): <phr><ref type="xr" target="#entry_fos"
+                ><w>fosy</w></ref>
+              <oRef>ræǧaw</oRef></phr>
+            <gloss><q>flock of sheep</q></gloss></note>; cf. <ref type="xr" target="#entry_qom_1"/>,
+            <ref type="xr" target="#entry_fos"/>, <ref type="xr" target="#entry_ʒūg"/>, <ref
+            type="xr" target="#entry_ærdong"/>, <ref type="xr" target="#entry_ærwæz"/>, <ref
+            type="xr" target="#entry_bal_1"/>; in one case <ref type="xr" target="#entry_læg"
+            /><oRef>ræǧaw</oRef>
+          <q>male group</q> (<gloss><q rendition="#rend_doublequotes">male herd</q></gloss>) was
+          attested, in one case Digor <ref type="xr" target="#entry_kark"
+            ><w>kærk</w></ref><oRef>ærǧaw</oRef>
+          <q rendition="#rend_doublequotes">flock of chickens</q>
+          <?oxy_comment_start author="Irene" timestamp="20220521T171110+0300" comment="ok?"?>was
+          attested<?oxy_comment_end?></note>
         <re>
           <form type="lemma"><orth>ræǧawgæs</orth></form>
           <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">табунщик</q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">herdsman</q>
             </tr></sense>
           <note type="bibl">(<bibl><ref type="bibl" target="#ref_ГО"/>
               <biblScope>§ 201<hi rendition="#rend_subscript">II 1</hi></biblScope></bibl>)</note>
@@ -56,6 +93,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">я пригоню тебе стада быков, стада мелкого
                 скота</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">I will bring you herds of oxen, herds of small
+                cattle</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сека"/>
               <biblScope>19</biblScope></bibl>
           </example>
@@ -66,6 +107,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">даже корова (бык) считает свое стадо лучше
                 чужого скота</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">even a cow (bull) considers her herd better
+                than someone else's cattle</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Коста"/>
               <biblScope>41</biblScope></bibl>
           </example>
@@ -74,6 +119,9 @@
               skænʒæn</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">в два года он создаст (= наживет) стада</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">in two years he will make herds</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сека"/>
               <biblScope>81</biblScope></bibl>
@@ -85,6 +133,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">двух самых лучших коней из прославленного
                 табуна Заза он пригнал в свой двор</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">he brought two of the best horses from the
+                famous Zaza herd to his yard</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Čerm."/>
               <biblScope>86</biblScope></bibl>
           </example>
@@ -94,6 +146,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">я табунщик... народ доверил мне свой табун</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">I'm a herdsman... the people entrusted me with
+                their herd</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Брит."/>
               <biblScope>148</biblScope></bibl>
           </example>
@@ -102,6 +158,10 @@
               fætardæ ū</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">эй, Терки и Турки! угоняют ваш табун</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Hey, Terks and Turks! your herd is being
+                stolen</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ОТ"/>
               <biblScope>82</biblScope></bibl>
@@ -113,6 +173,11 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">Терки-Турки! Нартовский Урызмаг угоняет ваш
                 табун, тревога!</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Terks-Turks! Uryzmag
+                <?oxy_comment_start author="Irene" timestamp="20220521T171332+0300" comment="?"?>of
+                the Narts<?oxy_comment_end?> is stealing your herd, alarm!</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ЮОПам."/>
               <biblScope>136</biblScope></bibl>
           </example>
@@ -123,13 +188,20 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">когда у турок угнали табун, тогда они поставили
                 табунщика</q>
             </tr>
-            <bibl xmlns="http://www.tei-c.org/ns/1.0"> поговорка о запоздалых мерах</bibl>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">when a herd was stolen from the Turks, then
+                they put a herdsman</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0">the saying about belated measures</bibl>
           </example>
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">īs dæwæn dær <oRef>ræǧawy</oRef> ræsuǧd
               bæx</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">в табуне и у тебя есть красивый конь</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">you also have a beautiful horse in the herd</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_F."/>
               <biblScope>1957 III 70</biblScope></bibl>
@@ -142,6 +214,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">не было предела богатству алдара: то ли его
                 конские табуны, то ли его стада коров и быков, то ли его баранта...</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">there was no limit to Aldar's wealth: either
+                his horse herds, or his herds of cows and bulls, or his sheep...</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ИАА"/>
               <biblScope>II 85</biblScope></bibl>
           </example>
@@ -152,6 +228,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">абрек угнал конский табун и, вступив в бой с
                 табунщиками, убил пять человек</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">abrek stole a herd of horses and, having
+                engaged in battle with the herdsmen, killed five people</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Arsen"/>
               <biblScope>75</biblScope></bibl>
           </example>
@@ -159,6 +239,10 @@
             <quote xmlns="http://www.tei-c.org/ns/1.0">syḱʼīty <oRef>ræǧaw</oRef> systad</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">стадо серн поднялось</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the herd of chamois
+                <?oxy_comment_start author="Irene" timestamp="20220521T171632+0300" comment="ok?"?>rose<?oxy_comment_end?></q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Брит."/>
               <biblScope>50</biblScope></bibl>
@@ -170,6 +254,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">род Короевых насчитывал сто стрелков в своем
                 мужском табуне</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the Koroev family numbered one hundred shooters
+                in its male herd</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Čerm."/>
               <biblScope>52</biblScope></bibl>
           </example>
@@ -180,6 +268,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">стадо сбилось кучей на реке и отдыхало</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the herd huddled together on the river and
+                rested</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Iræf"/>
               <biblScope>118</biblScope></bibl>
           </example>
@@ -189,6 +281,10 @@
               es</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">в стаде нет буйвола крупнее его</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">there is no bigger buffalo in the herd than
+                him</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Диг._сказ."/>
               <biblScope>17</biblScope></bibl>
@@ -201,6 +297,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">мои табунщики с большими табунами находятся в
                 степи</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">my herdsmen with large herds are in the
+                steppe</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_DZ"/>
               <biblScope>76</biblScope></bibl>
           </example>
@@ -211,6 +311,11 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">их кони — из породы <hi
                   rendition="#rend_smallcaps">æfsorq</hi>, из табуна бога мужчин (= Wasgergi)</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">their horses are from the <hi
+                  rendition="#rend_smallcaps">æfsorq</hi> breed, from the herd of the god of men (=
+                <?oxy_comment_start author="Irene" timestamp="20220521T171916+0300" comment="ok?"?>Wasgergi<?oxy_comment_end?>)</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ОЭп."/>
               <biblScope>57<hi rendition="#rend_subscript">127–128</hi></biblScope></bibl>
@@ -223,6 +328,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">табунщики сообщили: (кобылица) шавлоховской
                 породы из твоего табуна ожеребилась</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">herders reported: (a mare) of the Shavlokh
+                breed from your herd foaled</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_MD"/>
               <biblScope>1958 III 24</biblScope></bibl>
           </example>
@@ -234,11 +343,248 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">ты никогда не пожертвовала мне одного цыпленка
                 из твоего куриного стада</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">you have never donated one chicken from your
+                chicken herd to me</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ИАС"/>
               <biblScope>Ш 118</biblScope></bibl>
           </example>
         </exampleGrp>
-        <etym xml:lang="ru">TBA</etym>
+        <etym xml:lang="ru">У скотоводческих народов понятия <q>скот</q> и <q>богатство</q> тесно
+          связаны (<mentioned xml:lang="la"><lang/>
+            <w>pecus</w>
+            <gloss><q>скот</q></gloss></mentioned>, <mentioned xml:lang="la"><w>pecunia</w>
+            <gloss><q>имущество</q></gloss>, <gloss><q>богатство</q></gloss>,
+              <gloss><q>деньги</q></gloss></mentioned>); см. об этом под словом <ref type="xr"
+            target="#entry_fos"/>. Поэтому <oRef>ræǧaw</oRef> можно возводить к <mentioned
+            xml:lang="ira"><w type="rec">fra-gava-</w></mentioned>; ср. <mentioned xml:lang="xpr"><lang/>
+            <w>fraγāw</w>
+            <gloss><q>богатство</q></gloss>, <gloss><q>сокровище</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Ghilain"/>
+                <biblScope>76</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Boyce"/>
+                <biblScope>187</biblScope></bibl>)</note></mentioned>, <mentioned xml:lang="sog"><lang/>
+            <w type="rec">fraγāw</w>
+            <note xml:lang="ru" type="comment">(βrγʼw)</note><note xml:lang="en" type="comment"
+              >(βrγʼw)</note>
+            <gloss><q>богатство</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Gramm._sogd."/>
+                <biblScope>I 19, 45, 72, 133</biblScope></bibl>. — <bibl><ref type="bibl"
+                  target="#ref_Benveniste._TSP"/>
+                <biblScope>249</biblScope></bibl>. — <bibl><ref type="bibl"
+                  target="#ref_Gershevitch"/>
+                <biblScope>§ 325</biblScope></bibl>)</note></mentioned>. В слове распознается, стало
+          быть, преверб <mentioned xml:lang="ira"><m>fra-</m></mentioned> и основа <mentioned
+            xml:lang="ira"><w type="rec">gav-</w>
+            <gloss><q>обеспечивать</q></gloss>, <gloss><q>приобретать</q></gloss></mentioned> и пр.;
+          ср. <mentioned xml:lang="ae"><lang/>
+            <w>gav-</w>
+            <gloss><q>обеспечивать</q></gloss></mentioned>, <mentioned xml:lang="ae"><w>gaona-</w>
+            <gloss><q>приобретение</q></gloss>, <gloss><q>добыча</q></gloss></mentioned>, <mentioned
+            xml:lang="lt"><lang/>
+            <w>gáuti</w>
+            <gloss><q>получать</q></gloss></mentioned>, <mentioned xml:lang="lt"><w>gausùs</w>
+            <gloss><q>обильный</q></gloss></mentioned>, <mentioned xml:lang="lt"><w>gausà</w>
+            <gloss><q>обилие</q></gloss></mentioned>. О семантической разветвленности этой основы
+          позволяют судить производные от нее осетинские слова: <ref type="xr" target="#entry_qawyn"
+              ><w>qawyn</w>
+            <gloss><q>потреблять</q></gloss></ref>, <ref type="xr" target="#entry_qæwyn"
+              ><w>qæwyn</w>
+            <gloss><q>быть нужным</q></gloss></ref>, <ref type="xr" target="#entry_q0yddag"
+              ><w>q˳yddag</w>
+            <gloss><q>дело</q></gloss></ref>, <ref type="xr" target="#entry_q0ydy"><w>q˳ydy</w>
+            <gloss><q>мысль</q></gloss></ref>. Менее вероятно видеть в
+            <w><?oxy_comment_start author="Irene" timestamp="20220521T164136+0300" comment="просто w?"?>-ǧaw<?oxy_comment_end?></w>
+          <mentioned xml:lang="ira"><lang/>
+            <w>gau-</w>, <w>gav-</w>
+            <gloss><q>крупный рогатый скот</q></gloss></mentioned>: сращение преверба <mentioned
+            xml:lang="ira"><m>fra-</m></mentioned> с <hi rendition="#rend_smallcaps">именными</hi>
+          основами — явление редкое как в осетинском, так в парфянском и согдийском. Данная
+          этимология позволяет наиболее удовлетворительно объяснить необычное расхождение иронской и
+          дигорской форм: <oRef>ræ-ǧaw</oRef> | <oRef>ær-ǧaw</oRef>. Это расхождение могло
+          возникнуть тогда, когда начальный элемент еще осмыслялся как преверб и дигорский лишь
+          заменил один преверб
+            (<?oxy_comment_start author="Irene" timestamp="20220521T165609+0300" comment="mntnd ос., ок?"?><mentioned
+            xml:lang="os"><m>ræ-</m></mentioned><?oxy_comment_end?>) другим
+            (<?oxy_comment_start author="Irene" timestamp="20220521T165609+0300" comment="mntnd ос., ок?"?><mentioned
+            xml:lang="os"><m>ær-</m></mentioned><?oxy_comment_end?>), как он это делает и в
+          некоторых других случаях. Особое пристрастие дигорского к превербу
+            <?oxy_comment_start author="Irene" timestamp="20220521T165609+0300" comment="mntnd ос., ок?"?><mentioned
+            xml:lang="os"><m>ær-</m></mentioned><?oxy_comment_end?> уже отмечалось (<bibl><ref
+              type="bibl" target="#ref_ОЯФ_I"/>
+            <biblScope>423 сл., § 86<hi rendition="#rend_subscript">7</hi></biblScope></bibl>):
+            <?oxy_comment_start author="Irene" timestamp="20220521T164859+0300" comment="здесь сделала ссылку на kænyn и zonyn, ок?"?><ref
+            type="xr" target="#entry_kænyn"><w xml:lang="os-x-iron">rakænyn</w><w
+              xml:lang="os-x-digor">ærkænun</w>
+            <gloss><q>отрезать</q></gloss></ref><?oxy_comment_end?>, <ref type="xr"
+            target="#entry_zonyn"><w xml:lang="os-x-iron">bazonyn</w><w xml:lang="os-x-digor"
+              >ærzonun</w>
+            <gloss><q>узнать</q></gloss></ref> и др.<note xml:lang="ru" type="footnote"
+                ><bibl><author>Ваi1еу</author></bibl> сравнивает отношение <oRef>ræǧaw</oRef> к
+              <oRef>ærǧaw</oRef> с отношением <mentioned><mentioned xml:lang="inc-x-old"><lang/>
+                <w>rajata-</w></mentioned> к <mentioned xml:lang="la"><lang/>
+                <w>argentum</w></mentioned>
+              <gloss><q>серебро</q></gloss>
+              <note type="bibl">(<bibl><author>Ваi1еу</author>, <ref type="bibl" target="#ref_TPhS"/>
+                  <biblScope>1960, стр. 76</biblScope></bibl>)</note></mentioned>. Это сравнение
+            предполагает, однако, что
+              <?oxy_comment_start author="Irene" timestamp="20220521T165150+0300" comment="ок без mntnd?"?><m>ræ-</m><?oxy_comment_end?>
+            | <m>ær-</m> не являются превербами. Но тогда встает вопрос об этимологии.</note><note
+            xml:lang="en" type="footnote"><bibl><author>Ваi1еу</author></bibl> сравнивает отношение
+              <oRef>ræǧaw</oRef> к <oRef>ærǧaw</oRef> с отношением <mentioned><mentioned
+                xml:lang="inc-x-old"><lang/>
+                <w>rajata-</w></mentioned> к <mentioned xml:lang="la"><lang/>
+                <w>argentum</w></mentioned>
+              <gloss><q>серебро</q></gloss>
+              <note type="bibl">(<bibl><author>Ваi1еу</author>, <ref type="bibl" target="#ref_TPhS"/>
+                  <biblScope>1960, стр. 76</biblScope></bibl>)</note></mentioned>. Это сравнение
+            предполагает, однако, что
+              <?oxy_comment_start author="Irene" timestamp="20220521T165150+0300" comment="ок без mntnd?"?><m>ræ-</m><?oxy_comment_end?>
+            | <m>ær-</m> не являются превербами. Но тогда встает вопрос об этимологии.</note> —
+              <bibl><author>Штакельберг</author> (<ref type="bibl" target="#ref_MSt."/>
+            <biblScope>83</biblScope>)</bibl>, а вслед за ним <bibl><author>Вс. Миллер</author>
+              (<ref type="bibl" target="#ref_Miller._Gr."/>
+            <biblScope>10</biblScope>)</bibl> сопоставляли <oRef>ræǧaw</oRef> с <mentioned
+            xml:lang="ab"><lang/>
+            <w>raxw</w>
+            <gloss><q>стадо</q></gloss></mentioned>. Не говоря о том, что д. <oRef>ærǧaw</oRef>
+          остается при этом необъясненным, трудно думать в данном случае о заимствовании. Аланы сами
+          были вековечными конелюбами и коневодами и несомненно имели свое исконное слово для
+          табуна. <bibl><author>Аммиан Марцеллин</author></bibl> сообщает о них, что они не
+          занимаются хлебопашеством, но разводят скот, а всего больше дорожат конскими табунами
+              (<bibl><author>Аммиан Марцеллин</author>. <title>История</title>
+            <biblScope>31.2. 17–18</biblScope></bibl>). Что касается <mentioned xml:lang="ab"><lang/>
+            <w>raxw</w>
+            <gloss><q>стадо</q></gloss></mentioned>, то его следует рассматривать в связи с группой
+          слов в дагестанских языках: <mentioned xml:lang="av"><lang/>
+            <w>regen</w>
+            <gloss><q>стадо</q></gloss>, <gloss><q>табун</q></gloss></mentioned>,
+              <mentioned><mentioned xml:lang="aqc"><lang/>
+              <w>irqi</w></mentioned>, <mentioned xml:lang="tab"><lang/>
+              <w>irxi</w></mentioned>, <mentioned xml:lang="agx"><lang/>
+              <w>jerxi</w>, <w>jelxi</w>, <w>ilxi</w></mentioned>
+            <gloss><q>табун</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_СМК"/>
+                <biblScope>XXXVII 161</biblScope></bibl>)</note></mentioned>. Сюда же <mentioned
+            xml:lang="ku"><lang/>
+            <w>álχī</w>
+            <note xml:lang="ru" type="comment">id. (<bibl><ref type="bibl" target="#ref_ZDMG"/>
+                <biblScope>1884 XXXVIII 49</biblScope></bibl>)</note><note xml:lang="en"
+              type="comment">id. (<bibl><ref type="bibl" target="#ref_ZDMG"/>
+                <biblScope>1884 XXXVIII 49</biblScope></bibl>)</note></mentioned>. К ос.
+            <oRef>ræǧaw</oRef> эта группа вряд ли имеет какое-либо отношение.</etym>
+        <etym xml:lang="en">Cattle-breeding peoples have the concepts of <q>cattle</q> and
+            <q>wealth</q> closely related (<mentioned xml:lang="la"><lang/>
+            <w>pecus</w>
+            <gloss><q>cattle</q></gloss></mentioned>, <mentioned xml:lang="la"><w>pecunia</w>
+            <gloss><q>property</q></gloss>, <gloss><q>wealth</q></gloss>,
+              <gloss><q>money</q></gloss></mentioned>); see about this under the word <ref type="xr"
+            target="#entry_fos"/>. That is why <oRef>ræǧaw</oRef> can be traced back to <mentioned
+            xml:lang="ira"><w type="rec">fra-gava-</w></mentioned>; cf. <mentioned xml:lang="xpr"><lang/>
+            <w>fraγāw</w>
+            <gloss><q>wealth</q></gloss>, <gloss><q>treasure</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Ghilain"/>
+                <biblScope>76</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Boyce"/>
+                <biblScope>187</biblScope></bibl>)</note></mentioned>, <mentioned xml:lang="sog"><lang/>
+            <w type="rec">fraγāw</w>
+            <note xml:lang="ru" type="comment">(βrγʼw)</note><note xml:lang="en" type="comment"
+              >(βrγʼw)</note>
+            <gloss><q>wealth</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Gramm._sogd."/>
+                <biblScope>I 19, 45, 72, 133</biblScope></bibl>. — <bibl><ref type="bibl"
+                  target="#ref_Benveniste._TSP"/>
+                <biblScope>249</biblScope></bibl>. — <bibl><ref type="bibl"
+                  target="#ref_Gershevitch"/>
+                <biblScope>§ 325</biblScope></bibl>)</note></mentioned>. Therefore, the word
+          consists of the preverb <mentioned xml:lang="ira"><m>fra-</m></mentioned> and the stem
+            <mentioned xml:lang="ira"><w type="rec">gav-</w>
+            <gloss><q>provide</q></gloss>, <gloss><q>acquire</q></gloss></mentioned> etc.; cf.
+            <mentioned xml:lang="ae"><lang/>
+            <w>gav-</w>
+            <gloss><q>provide</q></gloss></mentioned>, <mentioned xml:lang="ae"><w>gaona-</w>
+            <gloss><q>acquisition</q></gloss>,
+                <gloss><q><?oxy_comment_start author="Irene" timestamp="20220521T172421+0300" comment="сложно подобрать слово под &quot;добычу&quot;"?>plunder<?oxy_comment_end?></q></gloss></mentioned>,
+            <mentioned xml:lang="lt"><lang/>
+            <w>gáuti</w>
+            <gloss><q>get</q></gloss></mentioned>, <mentioned xml:lang="lt"><w>gausùs</w>
+            <gloss><q>plentiful</q></gloss></mentioned>, <mentioned xml:lang="lt"><w>gausà</w>
+            <gloss><q>abundance</q></gloss></mentioned>. The semantic branching of this stem can be
+          <?oxy_comment_start author="Irene" timestamp="20220521T172540+0300" comment="?"?>judged<?oxy_comment_end?>
+          by the Ossetic words derived from it: <ref type="xr" target="#entry_qawyn"><w>qawyn</w>
+            <gloss><q>consume</q></gloss></ref>, <ref type="xr" target="#entry_qæwyn"><w>qæwyn</w>
+            <gloss><q>be needed</q></gloss></ref>, <ref type="xr" target="#entry_q0yddag"
+              ><w>q˳yddag</w>
+            <gloss><q>affair</q></gloss></ref>, <ref type="xr" target="#entry_q0ydy"><w>q˳ydy</w>
+            <gloss><q>thought</q></gloss></ref>. It less probable to see in
+            <w><?oxy_comment_start author="Irene" timestamp="20220521T164136+0300" comment="просто w?"?>-ǧaw<?oxy_comment_end?></w>
+          <mentioned xml:lang="ira"><lang/>
+            <w>gau-</w>, <w>gav-</w>
+            <gloss><q>cattle</q></gloss></mentioned>: the fusion of the preverb <mentioned
+            xml:lang="ira"><m>fra-</m></mentioned> with <hi rendition="#rend_smallcaps">nominal</hi>
+          stems is a rare phenomenon in Ossetic, as well as in Parthian and Sogdian. This etymology
+          allows the most satisfactory explanation of the unusual divergence of the Iron and Digor
+          forms: <oRef>ræ-ǧaw</oRef> | <oRef>ær-ǧaw</oRef>. This difference could have arisen when
+          the initial element was still conceptualized as a preverb and Digor only replaced one
+          preverb
+            (<?oxy_comment_start author="Irene" timestamp="20220521T165609+0300" comment="mntnd ос., ок?"?><mentioned
+            xml:lang="os"><m>ræ-</m></mentioned><?oxy_comment_end?>) with another
+            (<?oxy_comment_start author="Irene" timestamp="20220521T165609+0300" comment="mntnd ос., ок?"?><mentioned
+            xml:lang="os"><m>ær-</m></mentioned><?oxy_comment_end?>), as it does in some other
+          cases. Digor's special preference of the preverb
+            <?oxy_comment_start author="Irene" timestamp="20220521T165609+0300" comment="mntnd ос., ок?"?><mentioned
+            xml:lang="os"><m>ær-</m></mentioned><?oxy_comment_end?> has been already mentioned
+              (<bibl><ref type="bibl" target="#ref_ОЯФ_I"/>
+            <biblScope>423 сл., § 86<hi rendition="#rend_subscript">7</hi></biblScope></bibl>):
+            <?oxy_comment_start author="Irene" timestamp="20220521T164859+0300" comment="здесь сделала ссылку на kænyn и zonyn, ок?"?><ref
+            type="xr" target="#entry_kænyn"><w xml:lang="os-x-iron">rakænyn</w><w
+              xml:lang="os-x-digor">ærkænun</w>
+            <gloss><q>cut off</q></gloss></ref><?oxy_comment_end?>, <ref type="xr"
+            target="#entry_zonyn"><w xml:lang="os-x-iron">bazonyn</w><w xml:lang="os-x-digor"
+              >ærzonun</w>
+            <gloss><q>recognize</q></gloss></ref> etc.<note type="footnote"
+                ><bibl><author>Ваi1еу</author></bibl> compares the relation of <oRef>ræǧaw</oRef> to
+              <oRef>ærǧaw</oRef> with the relation of <mentioned><mentioned xml:lang="inc-x-old"><lang/>
+                <w>rajata-</w></mentioned> to <mentioned xml:lang="la"><lang/>
+                <w>argentum</w></mentioned>
+              <gloss><q>silver</q></gloss>
+              <note type="bibl">(<bibl><author>Ваi1еу</author>, <ref type="bibl" target="#ref_TPhS"/>
+                  <biblScope>1960, стр. 76</biblScope></bibl>)</note></mentioned>. However, this
+            comparison suggests that
+              <?oxy_comment_start author="Irene" timestamp="20220521T165150+0300" comment="ок без mntnd?"?><m>ræ-</m><?oxy_comment_end?>
+            | <m>ær-</m> are not preverbs. But then the question of etymology arises.</note> —
+              <bibl><author>Stackelberg</author> (<ref type="bibl" target="#ref_MSt."/>
+            <biblScope>83</biblScope>)</bibl>, and after him <bibl><author>Vs. Miller</author> (<ref
+              type="bibl" target="#ref_Miller._Gr."/>
+            <biblScope>10</biblScope>)</bibl> compared <oRef>ræǧaw</oRef> with <mentioned
+            xml:lang="ab"><lang/>
+            <w>raxw</w>
+            <gloss><q>herd</q></gloss></mentioned>. Apart from the fact that Digor
+            <oRef>ærǧaw</oRef> remains unexplained, it is difficult to think about borrowing in this
+          case. The Alans themselves were everlasting horse lovers and horse breeders and
+          undoubtedly had their own original word for the herd. <bibl><author>Ammianus
+              Marcellinus</author></bibl> reports about them that they are not engaged in farming,
+          but raise cattle, and most of all they value horse herds (<bibl><author>Ammianus
+              Marcellinus</author>. <title>History</title>
+            <biblScope>31.2. 17–18</biblScope></bibl>). As for <mentioned xml:lang="ab"><lang/>
+            <w>raxw</w>
+            <gloss><q>herd</q></gloss></mentioned>, it should be considered in connection with a
+          group of words in Dagestan languages: <mentioned xml:lang="av"><lang/>
+            <w>regen</w>
+            <gloss><q>herd</q></gloss>, <gloss><q>cattle</q></gloss></mentioned>,
+              <mentioned><mentioned xml:lang="aqc"><lang/>
+              <w>irqi</w></mentioned>, <mentioned xml:lang="tab"><lang/>
+              <w>irxi</w></mentioned>, <mentioned xml:lang="agx"><lang/>
+              <w>jerxi</w>, <w>jelxi</w>, <w>ilxi</w></mentioned>
+            <gloss><q>herd</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_СМК"/>
+                <biblScope>XXXVII 161</biblScope></bibl>)</note></mentioned>. See also <mentioned
+            xml:lang="ku"><lang/>
+            <w>álχī</w>
+            <note xml:lang="ru" type="comment">id. (<bibl><ref type="bibl" target="#ref_ZDMG"/>
+                <biblScope>1884 XXXVIII 49</biblScope></bibl>)</note><note xml:lang="en"
+              type="comment">id. (<bibl><ref type="bibl" target="#ref_ZDMG"/>
+                <biblScope>1884 XXXVIII 49</biblScope></bibl>)</note></mentioned>. This group is
+          hardly related to Ossetic <oRef>ræǧaw</oRef>.</etym>
       </entry>
     </body>
   </text>
