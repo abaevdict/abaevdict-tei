@@ -1,21 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">qærtun</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
@@ -25,15 +29,30 @@
         <usg><lang/></usg>
         <sense><sense><abv:tr xml:lang="ru">
               <q>достигать</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>reach</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>доставать</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>get</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>хватить</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>suffice</q>
             </abv:tr></sense></sense>
-        <note type="comment">; по значению = <mentioned xml:lang="os-x-iron"><lang/>
+        <note xml:lang="ru" type="comment">; по значению = <mentioned xml:lang="os-x-iron"><lang/>
             <phr><ref type="xr" target="#entry_xæccæ"/>
-              <ref type="xr" target="#entry_kænyn"/></phr>, <note type="comment"><ref type="xr"
-                target="#entry_æxxæssyn"/></note>, <phr><ref type="xr" target="#entry_fag"/>
+              <ref type="xr" target="#entry_kænyn"/></phr>, <note xml:lang="ru" type="comment"><ref
+                type="xr" target="#entry_æxxæssyn"/></note><note xml:lang="en" type="comment"><ref
+                type="xr" target="#entry_æxxæssyn"/></note>, <phr><ref type="xr" target="#entry_fag"/>
+              <ref type="xr" target="#entry_kænyn"/></phr>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_ОЯФ_I"/>
+                <biblScope>460</biblScope></bibl>)</note></mentioned>.</note>
+        <note xml:lang="en" type="comment">; by the meaning = <mentioned xml:lang="os-x-iron"><lang/>
+            <phr><ref type="xr" target="#entry_xæccæ"/>
+              <ref type="xr" target="#entry_kænyn"/></phr>, <note xml:lang="ru" type="comment"><ref
+                type="xr" target="#entry_æxxæssyn"/></note><note xml:lang="en" type="comment"><ref
+                type="xr" target="#entry_æxxæssyn"/></note>, <phr><ref type="xr" target="#entry_fag"/>
               <ref type="xr" target="#entry_kænyn"/></phr>
             <note type="bibl">(<bibl><ref type="bibl" target="#ref_ОЯФ_I"/>
                 <biblScope>460</biblScope></bibl>)</note></mentioned>.</note>
@@ -42,6 +61,9 @@
             <quote xmlns="http://www.tei-c.org/ns/1.0">ǧædæmæ sqærttæncæ</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">они дошли до леса</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">they reached the forest</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_MSt."/>
               <biblScope>1<hi rendition="#rend_subscript">6</hi></biblScope></bibl>
@@ -53,6 +75,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">тогда Биаслановы добрались рано утром до
                 пастуха Уаза</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">then the Biaslanovs got to the shepherd of the
+                Waz early in the morning</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Iræf"/>
               <biblScope>82</biblScope></bibl>
           </example>
@@ -63,6 +89,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">когда минуешь ее, ты дойдешь еще до одной
                 женщины</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">when you pass her, you will reach another
+                woman</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ОЭ"/>
               <biblScope>I 108, 110, 112 passim</biblScope></bibl>
           </example>
@@ -72,6 +102,9 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">они не совсем еще дошли до своего дома</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">they haven't quite reached their home yet</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Диг._сказ."/>
               <biblScope>9</biblScope></bibl>
           </example>
@@ -80,6 +113,9 @@
               osæmæ</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">тем временем он добрался до одной колдуньи</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">meanwhile, he got to a witch</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Munk."/>
               <biblScope>158</biblScope></bibl>
@@ -91,6 +127,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">тем временем они добираются до подножия
                 большого дуба</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">meanwhile, they reach the foot of a large oak
+                tree</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Munk."/>
               <biblScope>200</biblScope></bibl>
           </example>
@@ -101,6 +141,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">они достигли (того места), где дорога
                 раздваивалась</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">they reached (the place) where the road
+                forked</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_MSt."/>
               <biblScope>9<hi rendition="#rend_subscript">14</hi></biblScope></bibl>
           </example>
@@ -108,6 +152,9 @@
             <quote xmlns="http://www.tei-c.org/ns/1.0">maxmæ ʒæbæxæj næbal ærqærtʒænæ</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">ты уже не вернешься к нам невредимым</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">you won't come back to us unharmed</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_MSt."/>
               <biblScope>22<hi rendition="#rend_subscript">9</hi></biblScope></bibl>
@@ -117,6 +164,9 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">он прибыл к ним</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">he came to them</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_DZ"/>
               <biblScope>206</biblScope></bibl>
           </example>
@@ -125,6 +175,9 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">он добрался до него</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">he got to him</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_MSt."/>
               <biblScope>22<hi rendition="#rend_subscript">13</hi></biblScope></bibl>
           </example>
@@ -132,6 +185,9 @@
             <quote xmlns="http://www.tei-c.org/ns/1.0">mæsugmæ raqærttæj</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">он достиг башни</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">he reached the tower</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_MSt."/>
               <biblScope>23<hi rendition="#rend_subscript">3</hi></biblScope></bibl>
@@ -143,6 +199,9 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">внезапно достигает Дигорского ущелья недобрая
                 весть</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">suddenly , bad news reaches the Digor Gorge</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Iræf"/>
               <biblScope>55</biblScope></bibl>
           </example>
@@ -152,16 +211,23 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">этой веревки не хватает, чтобы перевязать
                 копну</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">this rope is not enough to tie a mop</q>
+            </tr>
           </example>
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">næ tillæg nin raqærtuj fuldær-fuldær
               duwwæ-ʽrtæ mæji</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">нашего урожая нам хватает самое большое на
-                два-три месяца"</q>
+                два-три месяца</q>
             </tr>
-            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl">из материалов Г.
-                Кокиева</ref></bibl>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">our harvest is enough for us for two or three
+                months at the most</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl">from the G. Kokiev's
+                materials</ref></bibl>
           </example>
         </exampleGrp>
         <etym xml:lang="ru">Возможна связь с <mentioned xml:lang="wbl"><lang/>
@@ -184,7 +250,28 @@
           может служить препятствием. Отдельные случаи появления <c>q</c> в заведомо иранских словах
           в дигорском встречаются, например <ref type="xr" target="#entry_7lqīvyn"><w>ælqevun</w>
             <q>сжимать</q></ref>.</etym>
+        <etym xml:lang="en">There is a possible connection with <mentioned xml:lang="wbl"><lang/>
+            <w>γat-</w>
+            <gloss><q>reach</q></gloss>, <w>gōt-</w>
+            <gloss><q>extract</q>, <q>obtain</q></gloss></mentioned>. However, the sound
+          relationship and origin are not clear. As an assumption, we trace it back to <mentioned
+            xml:lang="ira"><w type="rec">garth-</w>, <w type="rec">grath-</w>
+            <gloss><q>connect</q>, <q>combine</q></gloss></mentioned>; cf. <mentioned
+            xml:lang="inc-x-old"><lang/>
+            <w>grath-</w>
+            <gloss><q>connect</q></gloss></mentioned>. The transition of meaning lies within the
+          limits of the conceivable: <q rendition="#rend_singlequotes">reach something</q> = <q
+            rendition="#rend_singlequotes">connect with something</q>. There is the same semantic
+          development in Iron: <ref type="xr" target="#entry_xæccæ" xml:lang="os-x-iron"
+              ><w>xæccæ</w>
+            <q>connected</q>, <q>mixed</q></ref> → <phr><ref type="xr" target="#entry_xæccæ"/>
+            <ref type="xr" target="#entry_kænyn"/></phr>
+          <q rendition="#rend_italic">reach</q>. The initial <c>q</c> (instead of <c>ǧ</c>) also can
+          not serve as an obstacle. Some cases of the appearance of <c>q</c> in obviously Iranian
+          words in Digor do occur, for example <ref type="xr" target="#entry_7lqīvyn"><w>ælqevun</w>
+            <q>squeeze</q></ref>.</etym>
       </entry>
     </body>
   </text>
 </TEI>
+
