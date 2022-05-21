@@ -1,45 +1,57 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ræmbyn</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_ræmbyn" xml:lang="os" abv:completeness="russian-questions">
+      <entry xml:id="entry_ræmbyn" xml:lang="os" abv:completeness="english-questions">
         <form type="lemma" xml:lang="os-x-iron"><orth>ræmbyn</orth></form>
         <form xml:lang="os-x-digor" type="dialectal"><orth>ræmbunæ</orth><form type="variant"
               ><orth>ræmbujnæ</orth></form></form>
         <sense><abv:tr xml:lang="ru">
             <q>локоть</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>elbow</q>
           </abv:tr></sense>
         <re>
           <form type="lemma" xml:lang="os-x-iron"><orth>ræmbyny kʼæʒ</orth></form>
           <form xml:lang="os-x-digor" type="dialectal"><orth>ræmbunkʼæʒæ</orth></form>
           <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">изгиб локтя</q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">elbow bend</q>
             </tr></sense>
         </re>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
-            <quote xmlns="http://www.tei-c.org/ns/1.0">cudæj xumgænægaw æ dustæ ræmbunkʼæʒtæmæ arf
-              tuldæj</quote>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">cudæj xumgænægaw æ dustæ
+                <oRef>ræmbunkʼæʒtæmæ</oRef> arf tuldæj</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">он шел, высоко (<q>глубоко</q>) до локтей
                 засучив рукава, как пахарь</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">he walked with his sleeves rolled up high <note
+                  type="comment">(<q>deep</q>)</note> to his elbows, like a plowman</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Тайм._Мӕ_уарзт"/>
               <biblScope>20</biblScope></bibl>
@@ -61,6 +73,25 @@
               target="#entry_arm"/>)</q>; ср. по образованию <mentioned xml:lang="de"><lang/>
             <w>Ober-arm</w>, <w>Unter-arm</w></mentioned>. — См. <ref type="xr" target="#entry_arm"
           /> и <ref type="xr" target="#entry_byn_1"/>.</etym>
+        <etym xml:lang="en">A compound <w>ræm</w>-<ref type="xr" target="#entry_byn_1"/>, where
+            <w>ræm</w> is identical to <ref type="xr" target="#entry_arm"><w>arm</w>
+            <gloss><q>hand</q></gloss></ref>: the original intitial sound <c>ṝ</c> (<mentioned
+            xml:lang="ine"><lang/>
+            <m type="rec">ṝ-mo-</m></mentioned>) was
+          <?oxy_comment_start author="Irene" timestamp="20220521T125041+0300" comment="ok?"?>reflected<?oxy_comment_end?>
+          either as <c>ar-</c> (Ossetic <ref type="xr" target="#entry_arm"/>, <mentioned
+            xml:lang="got"><lang/>
+            <w>arms</w></mentioned>, <mentioned xml:lang="la"><lang/>
+            <w>armus</w></mentioned>), either as <c>ir-</c> (<mentioned xml:lang="inc-x-old"><lang/>
+            <m>irma-</m></mentioned>, <mentioned xml:lang="prg"><lang/>
+            <w>irmo</w></mentioned>), or as <c>ra-</c> (Ossetic <oRef>ræm-byn</oRef>, <mentioned
+            xml:lang="cu"><lang/>
+            <w>ramo</w></mentioned>). <oRef>Ræm-byn</oRef> means <q rendition="#rend_doublequotes"
+            >lower part (<ref type="xr" target="#entry_byn_1"/>) of a hand (<ref type="xr"
+              target="#entry_arm"/>)</q>; cf. a similar derivation pattern in <mentioned
+            xml:lang="de"><lang/>
+            <w>Ober-arm</w>, <w>Unter-arm</w></mentioned>. — See <ref type="xr" target="#entry_arm"
+          /> and <ref type="xr" target="#entry_byn_1"/>.</etym>
       </entry>
     </body>
   </text>
