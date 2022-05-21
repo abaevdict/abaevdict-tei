@@ -1,21 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">qærgænæg</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
@@ -24,13 +28,23 @@
         <form xml:lang="os-x-digor" type="dialectal"><orth>ǧærgænæg</orth></form>
         <sense><sense><abv:tr xml:lang="ru">
               <q>вестник о несчастье</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>the messenger of misfortune</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>траурный вестник</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>mourning messenger</q>
             </abv:tr></sense></sense>
-        <note type="comment">; <q rendition="#rend_doublequotes">В случае смерти соседние аулы (а
-            если покойник был особо почтенным человеком, то и более отдаленные) оповещаются
-            специальным траурным вестником, <oRef>qærgænæg</oRef>, и к родным покойного стекается
-            множество народа с приношениями</q>
+        <note xml:lang="ru" type="comment">; <q rendition="#rend_doublequotes">В случае смерти
+            соседние аулы (а если покойник был особо почтенным человеком, то и более отдаленные)
+            оповещаются специальным траурным вестником, <oRef>qærgænæg</oRef>, и к родным покойного
+            стекается множество народа с приношениями</q>
+          <bibl><ref type="bibl" target="#ref_Коста._Этн."/>
+            <biblScope>32</biblScope></bibl></note>
+        <note xml:lang="en" type="comment">; <q rendition="#rend_singlequotes">In case of death,
+            neighboring villages (and if the deceased was a particularly respectable person, then
+            more distant ones) are notified by a special mourning messenger, <oRef>qærgænæg</oRef>,
+            and a lot of people flock to the relatives of the deceased with offerings</q>
           <bibl><ref type="bibl" target="#ref_Коста._Этн."/>
             <biblScope>32</biblScope></bibl></note>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
@@ -39,6 +53,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0" rendition="#rend_singlequotes">вестник о
                 тревоге</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0" rendition="#rend_singlequotes">alarm
+                mesenger</q>
             </tr>
           </example>
         </exampleGrp>
@@ -50,6 +68,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">послали траурного вестника к родне матери
                 покойного</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">a mourning messenger was sent to the relatives
+                of the deceased's mother</q>
+            </tr>
           </example>
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">wæd ta jyn dymgæ Tajmurazmæ fædīs qærgænæg
@@ -57,6 +79,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">о, если бы ветер стал от нее вестником тревоги
                 к Таймуразу!</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Oh, if only the wind would become a messenger
+                of alarm from her to Timuraz!</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сека"/>
               <biblScope>52—53</biblScope></bibl>
@@ -69,6 +95,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">послали траурного вестника в другие горные
                 аулы, и оттуда также приходили люди, чтобы выразить скорбь и соболезнование</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">a mourning messenger was sent to other mountain
+                auls, and people also came from there to express sorrow and condolences</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Iræf"/>
               <biblScope>130</biblScope></bibl>
           </example>
@@ -79,6 +109,11 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">кто это? кто скачет на дороге, не давая отдыха
                 своему коню? Это траурный вестник в Кабарду: их князь убит в Дигории</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">who is it? who rides on the road, not giving
+                rest to his horse? This is a mourning messenger to Kabarda: their prince was killed
+                in Digoria</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Iræf"/>
               <biblScope>68—69</biblScope></bibl>
@@ -91,14 +126,26 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">они послали в горы Балкарии, в горы Дигории, в
                 горы Ира вестника тревоги</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">They sent a messenger of alarm to the mountains
+                of Balkaria, to the mountains of Digoria, to the mountains of
+                <?oxy_comment_start author="julie" timestamp="20220520T190949+0300" comment="????"?>Ira<?oxy_comment_end?></q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_DZ"/>
               <biblScope>63</biblScope></bibl>
           </example>
         </exampleGrp>
-        <etym xml:lang="">Nomen actoris на <m>-æg</m> от составного глагола <ref type="xr"
+        <etym xml:lang="ru">Nomen actoris на <m>-æg</m> от составного глагола <ref type="xr"
             target="#entry_qær"><w xml:lang="os-x-iron">qær kænyn</w><w xml:lang="os-x-digor">ǧær
               kænun</w>
             <q>кричать</q>, <q>звать</q></ref>. См. <ref type="xr" target="#entry_qær"
+              />.<lb/><bibl><ref type="bibl" target="#ref_ГО"/>
+            <biblScope>§§ 169<hi rendition="#rend_subscript">I 1</hi>, 201<hi
+                rendition="#rend_subscript">II 2</hi>.</biblScope></bibl></etym>
+        <etym xml:lang="en">Nomen actoris with the suffix <m>-æg</m> from the complex verb <ref
+            type="xr" target="#entry_qær"><w xml:lang="os-x-iron">qær kænyn</w><w
+              xml:lang="os-x-digor">ǧær kænun</w>
+            <q>scream</q>, <q>call</q></ref>. See <ref type="xr" target="#entry_qær"
               />.<lb/><bibl><ref type="bibl" target="#ref_ГО"/>
             <biblScope>§§ 169<hi rendition="#rend_subscript">I 1</hi>, 201<hi
                 rendition="#rend_subscript">II 2</hi>.</biblScope></bibl></etym>
@@ -106,3 +153,4 @@
     </body>
   </text>
 </TEI>
+
