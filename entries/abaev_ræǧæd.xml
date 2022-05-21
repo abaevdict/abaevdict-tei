@@ -1,52 +1,70 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ræǧæd</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_ræǧæd" xml:lang="os" abv:completeness="incomplete">
+      <entry xml:id="entry_ræǧæd" xml:lang="os" abv:completeness="english-questions">
         <form type="lemma"><orth>ræǧæd</orth></form>
         <sense><sense><abv:tr xml:lang="ru">
               <q>спелый</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>ripe</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>зрелый</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>mature</q>
             </abv:tr></sense></sense>
         <re>
           <form type="lemma"><orth>ræǧæd kænyn</orth></form>
           <sense><sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
                 <q xmlns="http://www.tei-c.org/ns/1.0">спеть</q>
+              </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+                <q xmlns="http://www.tei-c.org/ns/1.0">ripen</q>
               </tr></sense><sense><abv:tr xml:lang="ru">
                 <q>зреть</q>
+              </abv:tr><abv:tr xml:lang="en">
+                <q>get ripe</q>
               </abv:tr></sense></sense>
         </re>
         <re>
           <form type="lemma"><orth>ysræǧæd wyn</orth></form>
           <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">созреть</q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">become ripe</q>
             </tr></sense>
         </re>
         <re>
           <form type="lemma"><orth>cʼæxæj ræǧæd</orth></form>
           <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">преждевременно созревший</q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">prematurely ripe</q>
             </tr></sense>
-          <note type="comment"> (см. <ref type="xr" target="#entry_cʼæx"><w>cʼæx</w>
+          <note xml:lang="ru" type="comment"> (см. <ref type="xr" target="#entry_cʼæx"><w>cʼæx</w>
               <gloss><q>зеленый</q></gloss></ref>)</note>
+          <note xml:lang="en" type="comment"> (see <ref type="xr" target="#entry_cʼæx"><w>cʼæx</w>
+              <gloss><q>green</q></gloss></ref>)</note>
         </re>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
@@ -54,6 +72,11 @@
               xæssy</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">...кто несет из лесу спелую красную малину</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">...who is
+                <?oxy_comment_start author="Irene" timestamp="20220521T135633+0300" comment="ok?"?>bringing<?oxy_comment_end?>
+                ripe red raspberries from the forest</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Коста"/>
               <biblScope>124</biblScope></bibl>
@@ -65,6 +88,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">всадники сыплются на землю, как сыплются с
                 дерева зрелые плоды в ветреный день</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">riders fall to the ground like ripe fruit
+                falling from a tree on a windy day</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ИАА"/>
               <biblScope>II 89</biblScope></bibl>
           </example>
@@ -72,6 +99,9 @@
             <quote xmlns="http://www.tei-c.org/ns/1.0">...<oRef>ræǧæd</oRef> kærdotaw</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">...как спелые груши</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">...like ripe pears</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ИАА"/>
               <biblScope>III 245</biblScope></bibl>
@@ -83,7 +113,14 @@
               nyxæstæj <oRef>aræǧæd</oRef> kodta</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">Кирим — речистый, искусный на слово мужчина —
-                словами улестил (<q rendition="#rend_doublequotes">дал созреть</q>) Сосе</q>
+                словами улестил <note type="comment">(<q rendition="#rend_doublequotes">дал
+                    созреть</q>)</note> Сосе</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Kirim — a talkative, skilled man — cajoled
+                  <note type="comment">(<q>let ripen</q>)</note>
+                <?oxy_comment_start author="Irene" timestamp="20220521T135738+0300" comment="??"?>Sose<?oxy_comment_end?>
+                with words</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сека"/>
               <biblScope>83</biblScope></bibl>
@@ -95,17 +132,25 @@
               <q xmlns="http://www.tei-c.org/ns/1.0" rendition="#rend_singlequotes">зрелый
                 мужчина</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0" rendition="#rend_singlequotes">mature man</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Sam."/>
               <biblScope>136</biblScope></bibl>
           </example>
         </exampleGrp>
         <etym xml:lang="ru">Восходит к <mentioned xml:lang="ira"><lang/>
             <w type="rec">fra-gata-</w></mentioned>, где <mentioned xml:lang="ira"><w>gata-</w>
-            <note type="comment">прош. причастие от <mentioned xml:lang="ira"><w>gam-</w>
+            <note xml:lang="ru" type="comment">прош. причастие от <mentioned xml:lang="ira"
+                  ><w>gam-</w>
+                <gloss><q>идти</q></gloss></mentioned></note><note xml:lang="en" type="comment"
+              >прош. причастие от <mentioned xml:lang="ira"><w>gam-</w>
                 <gloss><q>идти</q></gloss></mentioned></note></mentioned>; ср. <mentioned
             xml:lang="zkh"><lang/>
             <w>nγd</w>
-            <note type="comment"
+            <note xml:lang="ru" type="comment"
+                >(<?oxy_comment_start author="Irene" timestamp="20220521T134808+0300" comment="так ок?"?><w
+                type="rec">ni-gata-</w><?oxy_comment_end?>)</note><note xml:lang="en" type="comment"
                 >(<?oxy_comment_start author="Irene" timestamp="20220521T134808+0300" comment="так ок?"?><w
                 type="rec">ni-gata-</w><?oxy_comment_end?>)</note>
             <gloss><q>зрелый</q></gloss></mentioned>, <mentioned xml:lang="ae"><lang/>
@@ -116,10 +161,12 @@
             <oRef>ræ-ǧæd</oRef> буквально <q rendition="#rend_doublequotes">дошедший</q>, <q
             rendition="#rend_doublequotes">достигший</q>. Для семантики ср. <mentioned xml:lang="ru"><lang/>
             <w>доходить</w>
-            <note type="comment">в смысле</note>
+            <note xml:lang="ru" type="comment">в смысле</note><note xml:lang="en" type="comment">в
+              смысле</note>
             <gloss><q>дозревать</q></gloss></mentioned>, <mentioned xml:lang="ru"><w>спеть</w> и
               <w>поспеть</w>
-            <note type="comment">в смысле</note>
+            <note xml:lang="ru" type="comment">в смысле</note><note xml:lang="en" type="comment">в
+              смысле</note>
             <gloss><q>вовремя дойти</q></gloss></mentioned>, <mentioned xml:lang="fa"><lang/>
             <w>rasīda</w>
             <gloss><q>спелый</q></gloss></mentioned> от <mentioned xml:lang="fa"><w>rasīdan</w>
@@ -132,15 +179,78 @@
             <w>gata-</w></mentioned> распознается еще в <ref type="xr" target="#entry_æǧǧæd"><w
               xml:lang="os-x-iron">æǧǧæd</w><w xml:lang="os-x-digor">ænǧæd</w>
             <gloss><q>достаточный</q></gloss>
-            <note type="comment">(<mentioned xml:lang="ira"><w type="rec"
-              >ham-gata-</w></mentioned>)</note></ref>, <ref type="xr" target="#entry_ævǧæd"
-              ><w>ævǧæd</w>
+            <note xml:lang="ru" type="comment">(<mentioned xml:lang="ira"><w type="rec"
+                  >ham-gata-</w></mentioned>)</note><note xml:lang="en" type="comment">(<mentioned
+                xml:lang="ira"><w type="rec">ham-gata-</w></mentioned>)</note></ref>, <ref type="xr"
+            target="#entry_ævǧæd"><w>ævǧæd</w>
             <gloss><q>роды</q></gloss>
-            <note type="comment">(<mentioned xml:lang="ira"><w type="rec">apa-gata-</w>
+            <note xml:lang="ru" type="comment">(<mentioned xml:lang="ira"><w type="rec"
+                  >apa-gata-</w>
+                <gloss><q rendition="#rend_doublequotes">выход</q></gloss></mentioned>)</note><note
+              xml:lang="en" type="comment">(<mentioned xml:lang="ira"><w type="rec">apa-gata-</w>
                 <gloss><q rendition="#rend_doublequotes">выход</q></gloss></mentioned>)</note></ref>
           и, может быть, в <ref type="xr" target="#entry_tærīǧæd"><w>tærīǧæd</w>
             <gloss><q>грех</q></gloss>,
               <gloss><q>сострадание</q></gloss></ref>.<lb/><bibl><author>Bailey</author>, <ref
+              type="bibl" target="#ref_BSOAS"/>
+            <biblScope>1948 XII 331</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_ИЭС_I"/>
+            <biblScope>123, 203</biblScope></bibl>.</etym>
+        <etym xml:lang="en">Traces back to <mentioned xml:lang="ira"><lang/>
+            <w type="rec">fra-gata-</w></mentioned>, where <mentioned xml:lang="ira"><w>gata-</w>
+            <note xml:lang="ru" type="comment">прош. причастие от <mentioned xml:lang="ira"
+                  ><w>gam-</w>
+                <gloss><q>идти</q></gloss></mentioned></note><note xml:lang="en" type="comment">is a
+              past participle of <mentioned xml:lang="ira"><w>gam-</w>
+                <gloss><q>go</q></gloss></mentioned></note></mentioned>; cf. <mentioned
+            xml:lang="zkh"><lang/>
+            <w>nγd</w>
+            <note xml:lang="ru" type="comment"
+                >(<?oxy_comment_start author="Irene" timestamp="20220521T134808+0300" comment="так ок?"?><w
+                type="rec">ni-gata-</w><?oxy_comment_end?>)</note><note xml:lang="en" type="comment"
+                >(<?oxy_comment_start author="Irene" timestamp="20220521T134808+0300" comment="так ок?"?><w
+                type="rec">ni-gata-</w><?oxy_comment_end?>)</note>
+            <gloss><q>ripe</q></gloss></mentioned>, <mentioned xml:lang="ae"><lang/>
+            <w>fra-gam-</w>
+            <gloss><q>reach</q></gloss></mentioned>, <mentioned xml:lang="inc-x-old"><lang/>
+            <w>pra-gam-</w>
+            <gloss><q>come to something</q></gloss></mentioned>. Thus, <oRef>ræ-ǧæd</oRef> literally
+          means <q rendition="#rend_doublequotes">having reached</q>, <q
+            rendition="#rend_doublequotes">having achieved</q>. As for the semantics, cf. <mentioned
+            xml:lang="ru"><lang/>
+            <w>доходить</w>
+            <note xml:lang="ru" type="comment">в смысле</note><note xml:lang="en" type="comment">in
+              the sense</note>
+            <gloss><q>get ripe</q></gloss></mentioned>, <mentioned xml:lang="ru"><w>спеть</w> and
+              <w>поспеть</w>
+            <note xml:lang="ru" type="comment">в смысле</note><note xml:lang="en" type="comment">in
+              the sense</note>
+            <gloss><q><?oxy_comment_start author="Irene" timestamp="20220521T140042+0300" comment="?"?>ripen<?oxy_comment_end?>
+                on time</q></gloss></mentioned>, <mentioned xml:lang="fa"><lang/>
+            <w>rasīda</w>
+            <gloss><q>ripe</q></gloss></mentioned> from <mentioned xml:lang="fa"><w>rasīdan</w>
+            <gloss><q>reach</q></gloss>, <gloss><q>achieve</q></gloss></mentioned>, <mentioned
+            xml:lang="xcl"><lang/>
+            <w>hasanem</w>
+            <gloss><q>I reach</q></gloss> → <gloss><q>I ripen</q></gloss></mentioned>, <mentioned
+            xml:lang="xcl"><w>haseal</w>
+            <gloss><q><?oxy_comment_start author="Irene" timestamp="20220521T140113+0300" comment="или mature?"?>ripe<?oxy_comment_end?></q></gloss></mentioned>.
+          — <mentioned xml:lang="ira"><lang>Иран.</lang>
+            <w>gata-</w></mentioned> is also regognized in <ref type="xr" target="#entry_æǧǧæd"><w
+              xml:lang="os-x-iron">æǧǧæd</w><w xml:lang="os-x-digor">ænǧæd</w>
+            <gloss><q>enough</q></gloss>
+            <note xml:lang="ru" type="comment">(<mentioned xml:lang="ira"><w type="rec"
+                  >ham-gata-</w></mentioned>)</note><note xml:lang="en" type="comment">(<mentioned
+                xml:lang="ira"><w type="rec">ham-gata-</w></mentioned>)</note></ref>, <ref type="xr"
+            target="#entry_ævǧæd"><w>ævǧæd</w>
+            <gloss><q>childbirth</q></gloss>
+            <note xml:lang="ru" type="comment">(<mentioned xml:lang="ira"><w type="rec"
+                  >apa-gata-</w>
+                <gloss><q rendition="#rend_doublequotes">выход</q></gloss></mentioned>)</note><note
+              xml:lang="en" type="comment">(<mentioned xml:lang="ira"><w type="rec">apa-gata-</w>
+                <gloss><q rendition="#rend_doublequotes">exit</q></gloss></mentioned>)</note></ref>
+          and, maybe, in <ref type="xr" target="#entry_tærīǧæd"><w>tærīǧæd</w>
+            <gloss><q>sin</q></gloss>,
+              <gloss><q>compassion</q></gloss></ref>.<lb/><bibl><author>Bailey</author>, <ref
               type="bibl" target="#ref_BSOAS"/>
             <biblScope>1948 XII 331</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_ИЭС_I"/>
             <biblScope>123, 203</biblScope></bibl>.</etym>
