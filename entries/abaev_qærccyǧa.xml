@@ -1,21 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">qærccyǧa</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
@@ -24,6 +28,8 @@
         <form xml:lang="os-x-digor" type="dialectal"><orth>qærcciǧa</orth></form>
         <sense><abv:tr xml:lang="ru">
             <q>ястреб</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>hawk</q>
           </abv:tr></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
@@ -33,6 +39,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">Созрыко достал свой альчик из кармана, и из
                 него выскочили три ястреба и погнались за тремя голубями, поймали их</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Sozyko took his shagai out of his pocket, and
+                three hawks jumped out of it and chased three pigeons, caught them</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ОЭ"/>
               <biblScope>I 36</biblScope></bibl>
           </example>
@@ -41,6 +51,9 @@
             <quote xmlns="http://www.tei-c.org/ns/1.0">æ særti ew qærcciǧa ærbataxtæj</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">над ее головой пролетел один ястреб</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">one hawk flew over her head</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Диг._сказ."/>
               <biblScope>36</biblScope></bibl>
@@ -81,10 +94,9 @@
             <gloss><q>ястреб</q></gloss></mentioned>, <mentioned xml:lang="x-mordvin"><lang/>
             <w>kaŕčəǧan</w>
             <gloss>id. и пр.</gloss>
-            <note type="bibl">(<bibl><ref type="bibl" target="">Рааsоnеn. Türkische Lehnwörter im
-                  Mordwinischen.</ref>
-                <biblScope>Helsinki, 1897, стр. 10</biblScope></bibl>. — <bibl><ref type="bibl"
-                  target="#ref_Joki"/>
+            <note type="bibl">(<bibl><author>Рааsоnеn</author>. <title>Türkische Lehnwörter im
+                  Mordwinischen</title>. <biblScope>Helsinki, 1897, стр. 10</biblScope></bibl>. —
+                  <bibl><ref type="bibl" target="#ref_Joki"/>
                 <biblScope>133</biblScope></bibl>)</note></mentioned> и пр. Не исключено, что слово
           по происхождению является иранским, из <mentioned xml:lang="ira"><w type="rec"
               >karka-gan-</w>, <w type="rec">karča-gan-</w>, буквально <gloss><q
@@ -95,7 +107,53 @@
             <biblScope> II 114, III 19</biblScope></bibl>; <bibl><ref type="bibl"
               target="#ref_Miller._Gr.">Gr.</ref>
             <biblScope>8</biblScope></bibl></etym>
+        <etym xml:lang="en">From <mentioned xml:lang="trk"><lang/>
+            <w>qarčəǧa(i)</w>, <w>qarčiǧa(i)</w></mentioned>, <mentioned xml:lang="krc-x-balkar"><lang/>
+            <w>qərtčəǧa</w>
+            <gloss><q>hawk</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Радлов"/>
+                <biblScope>204, 205</biblScope></bibl>.— <bibl><ref type="bibl"
+                  target="#ref_Räsänen"><hi rendition="#rend_smallcaps">Räsänen</hi>. Versuch</ref>
+                <biblScope> 237</biblScope></bibl>)</note></mentioned>; cf. <mentioned xml:lang="mn"><lang/>
+            <w>qarsaǧa</w>, <w>xarsaǧa</w>, <w>xarc(a)ǧa</w>
+            <gloss>id.</gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Ramstedt"/>
+                <biblScope>170</biblScope></bibl>.— <bibl><ref type="bibl" target="#ref_Doerfer"/>
+                <biblScope>I 404—405</biblScope></bibl>)</note></mentioned>. It was borrowd in some
+          other languages: <mentioned xml:lang="sgh"><lang/>
+            <w>karčiǧāi</w></mentioned>, <mentioned xml:lang="wbl"><lang/>
+            <w>karčeγai</w>
+            <gloss><q>vulture</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Morgenstierne._IIFL"/>
+                <biblScope>II 526</biblScope></bibl>)</note></mentioned>, <mentioned xml:lang="av"><lang/>
+            <w>qarčiǧa</w>
+            <gloss><q>hawk</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Услар"/>
+                <biblScope>III 121</biblScope></bibl>)</note></mentioned>, <mentioned xml:lang="ani"><lang/>
+            <w>qačirǧā</w>
+            <gloss><q>falcon</q></gloss></mentioned>, <mentioned xml:lang="lbe"><lang/>
+            <w>qarčirǧaj</w>, <w>qarǧirčaj</w>
+            <gloss><q>hawk</q></gloss></mentioned>, <mentioned xml:lang="dar"><lang/>
+            <w>qačirǧa</w>
+            <gloss><q>falcon</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Дарг._сл."/>
+                <biblScope>1221</biblScope></bibl>)</note></mentioned>, <mentioned xml:lang="kbd"><lang/>
+            <w>qašərǧā</w>
+            <gloss><q>hawk</q></gloss></mentioned>, <mentioned xml:lang="x-mordvin"><lang/>
+            <w>kaŕčəǧan</w> id. etc. <note type="bibl">(<bibl><author>Рааsоnеn</author>.
+                  <title>Türkische Lehnwörter im Mordwinischen</title>. <biblScope>Helsinki, 1897,
+                  p. 10</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Joki"/>
+                <biblScope>133</biblScope></bibl>)</note></mentioned> etc. It is possible that the
+          word is of Iranian origin, from <mentioned xml:lang="ira"><w type="rec">karka-gan-</w>, <w
+              type="rec">karča-gan-</w>, literally <gloss><q rendition="#rend_singlequotes">chicken
+                exterminator</q></gloss></mentioned>; cf. <ref type="xr" target="#entry_kark"/> and
+            <ref type="xr" target="#entry_cærgæs"/>.<lb/><bibl><ref type="bibl"
+              target="#ref_Миллер_Вс._ОЭ"/>
+            <biblScope> II 114, III 19</biblScope></bibl>; <bibl><ref type="bibl"
+              target="#ref_Miller._Gr.">Gr.</ref>
+            <biblScope>8</biblScope></bibl></etym>
       </entry>
     </body>
   </text>
 </TEI>
+
