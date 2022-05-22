@@ -1,21 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">qom_2</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
@@ -25,17 +29,25 @@
               ><orth>ǧom</orth></form></form>
         <sense><abv:tr xml:lang="ru">
             <q>способный что-либо сделать</q>
-          </abv:tr><note type="comment"> (обычно во второй части сложных слов)</note></sense>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>capable of doing anything</q>
+          </abv:tr><note xml:lang="ru" type="comment"> (обычно во второй части сложных
+            слов)</note><note xml:lang="en" type="comment"> (usually in the second part of
+            compounds)</note></sense>
         <re>
           <form type="lemma"><orth>cæwynqom</orth></form>
           <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">способный ходить</q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">capable of walking</q>
             </tr></sense>
         </re>
         <re>
           <form type="lemma"><orth>kūsynqom</orth></form>
           <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">способный работать</q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">capable of working</q>
             </tr></sense>
         </re>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
@@ -45,6 +57,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">мы не способны (не умеем) сказать как
                 следует</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">we are not able (not capable) to say
+                properly</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Коста"/>
               <biblScope>30</biblScope></bibl>
           </example>
@@ -52,6 +68,9 @@
             <quote xmlns="http://www.tei-c.org/ns/1.0">Sadullæ kūsynqom næ wyd</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">Садулла был нетрудоспособен</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Sadullah was incapacitated</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сека"/>
               <biblScope>77</biblScope></bibl>
@@ -61,12 +80,19 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">будь способен делать (людям) подарки!</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">be able to give gifts (to people)!</q>
+            </tr>
           </example>
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">...calynmæ fæjjawqom yswa...</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">...пока он (подрастет настолько, что) сможет
                 стать пастухом</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">...until he (grows up so much that) he can
+                become a shepherd</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ИАА"/>
               <biblScope>II 142</biblScope></bibl>
@@ -78,6 +104,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">Батаг обратился с призывом к своему роду
                 (фамилии), ко всем, кто был там способен сражаться и участвовать на совете</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Batag appealed to his family, to all who were
+                able to fight there and participate in the council</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Čerm."/>
               <biblScope>119</biblScope></bibl>
           </example>
@@ -88,14 +118,21 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">кто способен ходить, пусть придет, кто ходить
                 не способен, того несите</q>
             </tr>
-            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl">из нарт. эпоса</ref>
-              <biblScope/></bibl>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">whoever is able to walk, let him come, whoever
+                is not able to walk, carry him</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0">from Nart epic</bibl>
           </example>
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">fat æmæ ʽrdynæj qazynqom k˳y fæcī...</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">когда он (подрос настолько, что) стал способен
                 играть в стрелу и лук...</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">when he (grew up so much that) he became able
+                to play arrow and bow...</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Munk."/>
               <biblScope>18</biblScope></bibl>
@@ -108,6 +145,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">все, кто был способен ходить на ногах, те
                 пришли</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">all those who were able to walk on their feet,
+                those came</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Диг._сказ."/>
               <biblScope>8</biblScope></bibl>
           </example>
@@ -117,6 +158,9 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">Дадо уже не в силах был говорить</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Dado was no longer able to speak</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Iræf"/>
               <biblScope>116</biblScope></bibl>
           </example>
@@ -125,6 +169,9 @@
             <quote xmlns="http://www.tei-c.org/ns/1.0">omæn neke scæj ʒwapǧon</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">никто не сумел ему ответить</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">no one was able to answer him</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Iræf"/>
               <biblScope>72</biblScope></bibl>
@@ -140,6 +187,11 @@
                 труды, не смогу принести благодарность, (соответствующую моему) к тебе уважению и
                 почтению</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">I will not be able to repay you for your
+                kindness, your labors, I will not be able to bring gratitude (corresponding to my)
+                respect and reverence for you</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Qazb."/>
               <biblScope>20</biblScope></bibl>
           </example>
@@ -148,6 +200,9 @@
             <quote xmlns="http://www.tei-c.org/ns/1.0">æz dæw xæccæ faxxwæcunǧon næ dæn</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">я не в силах побороться с тобой</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">I can't fight you</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_MSt."/>
               <biblScope>23<hi rendition="#rend_subscript">1</hi></biblScope></bibl>
@@ -158,24 +213,29 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">он стал способен играть в лук и стрелы</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">he became able to play bow and arrow</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_MSt."/>
               <biblScope>21<hi rendition="#rend_subscript">10</hi></biblScope></bibl>
           </example>
         </exampleGrp>
         <etym xml:lang="ru">Восходит к <mentioned xml:lang="x-oldirn"><lang/>
             <w type="rec">gama-</w>
-            <note type="comment">(от <w>gam-</w>
+            <note xml:lang="ru" type="comment">(от <w>gam-</w>
+              <gloss><q>идти</q></gloss>)</note><note xml:lang="en" type="comment">(от <w>gam-</w>
               <gloss><q>идти</q></gloss>)</note>, буквально <gloss><q rendition="#rend_doublequotes"
                 >доходящий, достигающий чего-либо</q></gloss></mentioned>. Ср. <mentioned
             xml:lang="x-oldirn"><lang/>
             <w>gama-</w>
-            <note type="comment">(во второй части сложных слов)</note>, <gloss><q>идущий</q>,
-                <q>достигающий</q></gloss></mentioned>. Сюда относятся по происхождению еще
-          следующие осетинские слова: <ref type="xr" target="#entry_aǧommæ"><w>aǧommæ</w>
-              (<w>a-ǧom-mæ</w>) <q>накануне</q> (буквально <q rendition="#rend_doublequotes">до
-              прихода</q>, <q rendition="#rend_doublequotes">до наступления</q>)</ref>, <ref
-            type="xr" target="#entry_qomyl"><w xml:lang="os-x-iron">qomyl</w><w
-              xml:lang="os-x-digor">ǧombæl</w>
+            <note xml:lang="ru" type="comment">(во второй части сложных слов)</note><note
+              xml:lang="en" type="comment">(во второй части сложных слов)</note>,
+                <gloss><q>идущий</q>, <q>достигающий</q></gloss></mentioned>. Сюда относятся по
+          происхождению еще следующие осетинские слова: <ref type="xr" target="#entry_aǧommæ"
+              ><w>aǧommæ</w> (<w>a-ǧom-mæ</w>) <q>накануне</q> (буквально <q
+              rendition="#rend_doublequotes">до прихода</q>, <q rendition="#rend_doublequotes">до
+              наступления</q>)</ref>, <ref type="xr" target="#entry_qomyl"><w xml:lang="os-x-iron"
+              >qomyl</w><w xml:lang="os-x-digor">ǧombæl</w>
             <q>взрослый</q></ref>, <ref type="xr" target="#entry_barqom"><w>barqom</w>
             <q>достигший правоспособного возраста</q></ref>, <ref type="xr" target="#entry_qomys"
               ><w>qomys</w>
@@ -191,6 +251,37 @@
             <gloss><q>природа</q></gloss></mentioned>, <mentioned xml:lang="inc-x-old"><lang/>
             <w>gotra</w>
             <gloss><q>род</q></gloss></mentioned>.</etym>
+        <etym xml:lang="en">It traces back to <mentioned xml:lang="x-oldirn"><lang/>
+            <w type="rec">gama-</w>
+            <note xml:lang="ru" type="comment">(от <w>gam-</w>
+              <gloss><q>идти</q></gloss>)</note><note xml:lang="en" type="comment">(from <w>gam-</w>
+              <gloss><q>идти</q></gloss>)</note>, literally <gloss><q rendition="#rend_singlequotes"
+                >reaching, achieving something</q></gloss></mentioned>. Cf. <mentioned
+            xml:lang="x-oldirn"><lang/>
+            <w>gama-</w>
+            <note xml:lang="ru" type="comment">(во второй части сложных слов)</note><note
+              xml:lang="en" type="comment">(in the second part of compounds)</note>,
+                <gloss><q>going</q>, <q>reaching</q></gloss></mentioned>. The following Ossetic
+          words also belong here by origin: <ref type="xr" target="#entry_aǧommæ"><w>aǧommæ</w>
+              (<w>a-ǧom-mæ</w>) <q>the day before</q> (literally <q rendition="#rend_singlequotes"
+              >before coming</q>, <q rendition="#rend_singlequotes">before the beginning of
+              something</q>)</ref>, <ref type="xr" target="#entry_qomyl"><w xml:lang="os-x-iron"
+              >qomyl</w><w xml:lang="os-x-digor">ǧombæl</w>
+            <q>adult</q></ref>, <ref type="xr" target="#entry_barqom"><w>barqom</w>
+            <q>who has reached the legal age</q></ref>, <ref type="xr" target="#entry_qomys"
+              ><w>qomys</w>
+            <q>strength</q>, <q>power</q></ref>.— <hi rendition="#rend_smallcaps">Ваileу</hi>
+              (<bibl><ref type="bibl" target="#ref_BSOAS"/>
+            <biblScope>1958 XXI 527; 1960 XXIII 38</biblScope></bibl>; <bibl><ref type="bibl"
+              target="#ref_TPhS"/>
+            <biblScope>1960, p. 100</biblScope></bibl>) sees in <mentioned xml:lang="os"><lang/>
+            <w xml:lang="os-x-iron">-qom</w><w xml:lang="os-x-digor">-ǧon</w></mentioned> the root
+            <mentioned xml:lang="ira"><w type="rec">gav-</w>
+            <gloss><q>grow</q></gloss></mentioned> and compares it with <mentioned xml:lang="pal"><lang/>
+            <w>gōhr</w>
+            <gloss><q>nature</q></gloss></mentioned>, <mentioned xml:lang="inc-x-old"><lang/>
+            <w>gotra</w>
+            <gloss><q>genus</q></gloss></mentioned>.</etym>
       </entry>
     </body>
   </text>
