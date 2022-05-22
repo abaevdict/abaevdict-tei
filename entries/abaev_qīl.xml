@@ -1,21 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">qīl</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
@@ -24,13 +28,21 @@
         <form xml:lang="os-x-digor" type="dialectal"><orth>ǧelæ</orth></form>
         <sense n="1"><sense><abv:tr xml:lang="ru">
               <q>жердь</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>pole</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>шест</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>post</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>дубина</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>cudgel</q>
             </abv:tr></sense></sense>
         <sense n="2"><abv:tr xml:lang="ru">
             <q>стоящий стоймя</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>standing upright</q>
           </abv:tr></sense>
         <re>
           <form type="lemma" xml:lang="os-x-iron"><orth>qīldym</orth><form type="variant"
@@ -38,34 +50,49 @@
           <form xml:lang="os-x-digor" type="dialectal"><orth>qeldun</orth></form>
           <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">с поднятым хвостом</q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">with the tail raised</q>
             </tr></sense>
         </re>
         <re>
           <form type="lemma"><orth>raqīl kænyn</orth></form>
           <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">поднять стоймя</q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">raise upright</q>
             </tr></sense>
         </re>
         <re>
           <form type="lemma"><orth>raqīl wyn</orth></form>
           <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">подняться</q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">stand up</q>
             </tr></sense>
         </re>
         <re>
           <form type="lemma"><orth>qīla</orth></form>
           <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">рогатый</q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">horned</q>
             </tr></sense>
           <note type="bibl"> (<bibl><ref type="bibl" target="#src_ЮОПам."/>
               <biblScope>III 111</biblScope></bibl>)</note>
         </re>
-        <note type="comment">; в дигорском встречается также форма <w>qel(æ)</w></note>
+        <note xml:lang="ru" type="comment">; в дигорском встречается также форма
+          <w>qel(æ)</w></note>
+        <note xml:lang="en" type="comment">; the form <w xml:lang="os-x-digor">qel(æ)</w> is also
+          attested in Digor</note>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict" n="1">
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">qīly fynʒyl ævzīst som ærfīdar kodtoj</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">к кончику шеста прикрепили серебряный рубль</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">a silver ruble was attached to the tip of the
+                pole</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Čerm."/>
               <biblScope>152</biblScope></bibl>
@@ -77,6 +104,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">голову малика он принес туда, где была могила
                 его отца, и в отцово изголовье повесил на шесте</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">he brought Malik's head to where his father's
+                grave was, and hung it on a pole at his father's headboard</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ОЭ"/>
               <biblScope>I 22</biblScope></bibl>
           </example>
@@ -87,6 +118,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">ворота изнутри бывают поперек перекрыты толстой
                 жердью</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the gates from the inside are blocked across
+                with a thick pole</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Arsen"/>
               <biblScope>49</biblScope></bibl>
           </example>
@@ -96,6 +131,9 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">Дудар потрясает дубиной</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Dudar shakes his cudgel</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Iræf"/>
               <biblScope>108</biblScope></bibl>
           </example>
@@ -104,6 +142,9 @@
             <quote xmlns="http://www.tei-c.org/ns/1.0">dæ særbæl ærsæddun ǧæwuj а ǧelæ</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">надо обломать о твою голову эту дубину</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">we need to break this cudgel on your head</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Iræf">там
                 же</ref></bibl>
@@ -116,6 +157,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">ему показалось, что его стукнули по шее большой
                 дубинкой</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">it seemed to him that he had been hit on the
+                neck with a big cudgel</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Iræf"/>
               <biblScope>117</biblScope></bibl>
           </example>
@@ -127,6 +172,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">два больших плетня прислонили к стене</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">two large wattles were leaned against the
+                wall</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сека"/>
               <biblScope>20</biblScope></bibl>
           </example>
@@ -134,6 +183,9 @@
             <quote xmlns="http://www.tei-c.org/ns/1.0">jæ sær fæqīl kodta ævast</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">он вдруг поднял голову</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">he suddenly raised his head</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Niger"/>
               <biblScope>123</biblScope></bibl>
@@ -144,6 +196,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">девушка его прокляла: обратись в стоящий
                 камень! — и юноша обратился в стоящий камень</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the girl cursed him: turn into a standing
+                stone! — and the young man turned into a standing stone</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Munk."/>
               <biblScope>84</biblScope></bibl>
@@ -156,6 +212,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">и я видела (во сне) голову младшего из наших
                 любимых стоящей на шее в моем утреннем умывальнике</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">And I saw (in a dream) the head of the youngest
+                of our loved ones standing on its neck in my morning washbasin</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_MSt."/>
               <biblScope>29<hi rendition="#rend_subscript">13—14</hi></biblScope></bibl>
           </example>
@@ -167,13 +227,17 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">вчера и сегодня много копен сена поднялось на
                 покосах</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">yesterday and today a lot of haystacks rose on
+                the mowings</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Bes._Ka_ke"/>
               <biblScope>35</biblScope></bibl>
           </example>
         </exampleGrp>
         <etym xml:lang="ru">Возможно, иранское слово. В пользу этого говорит старое сращение
             <mentioned xml:lang="ira"><w>av-ǧīl</w>
-            <q>шест культового назначения</q>
+            <gloss><q>шест культового назначения</q></gloss>
             <note type="bibl">(<bibl><ref type="bibl" target="#ref_ИЭС_I"/>
                 <biblScope>203</biblScope></bibl>)</note></mentioned>. Ср. <mentioned xml:lang="ku"><lang/>
             <w>gil</w>, <w>gili</w>
@@ -202,7 +266,38 @@
             <w>Qeli</w>
             <note type="bibl">(<bibl><ref type="bibl" target="#ref_Вахушти"
             /></bibl>)</note></mentioned>.</etym>
+        <etym xml:lang="en">Probably an Iranian word. The old fusion <mentioned xml:lang="ira"
+              ><w>av-ǧīl</w>
+            <gloss><q>pole of cult purpose</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_ИЭС_I"/>
+                <biblScope>203</biblScope></bibl>)</note></mentioned> speaks in favor of this. Cf.
+            <mentioned xml:lang="ku"><lang/>
+            <w>gil</w>, <w>gili</w>
+            <gloss><q>branch</q>, <q>stem</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_KPF"/>
+                <biblScope>Abt. III, Bd. IV, p. 286</biblScope></bibl>)</note></mentioned>,
+            <mentioned xml:lang="ru-x-dial"><lang/>
+            <w>gilka</w>
+            <gloss><q>branch</q>, <q>stick</q></gloss>, <w>gilya</w>
+            <gloss><q>wack-bat</q></gloss>, <w>gilya</w>
+            <gloss><q>lanky</q>, <q>fat guy</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Даль"
+            /></bibl>)</note></mentioned>, <mentioned xml:lang="goh"><lang/>
+            <w>kīl</w>
+            <gloss><q>peg</q>, <q>wedge</q></gloss></mentioned>. For the correspondances of the
+          meanings <q>pole</q> — <q>stand up straight</q> cf. <mentioned xml:lang="de"><lang/>
+            <w>Stock</w>
+            <gloss><q>stick</q></gloss></mentioned> and <mentioned xml:lang="lt"><lang/>
+            <w>stugti</w>
+            <gloss><q>stand up straight</q>, <q>stick up</q></gloss></mentioned>, <mentioned
+            xml:lang="en"><lang/>
+            <w>stick</w> — <w>to stick up</w></mentioned>. — The name of the Cross Pass along the
+          Georgian Military Road <w>Qīl</w> comes from <mentioned xml:lang="ka"><lang/>
+            <w>Qeli</w>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Вахушти"
+            /></bibl>)</note></mentioned>.</etym>
       </entry>
     </body>
   </text>
 </TEI>
+
