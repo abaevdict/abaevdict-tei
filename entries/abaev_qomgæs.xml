@@ -1,21 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">qomgæs</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
@@ -24,6 +28,8 @@
         <form xml:lang="os-x-digor" type="dialectal"><orth>ǧongæs</orth></form>
         <sense><abv:tr xml:lang="ru">
             <q>пастух крупного рогатого скота</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>cattle herder</q>
           </abv:tr></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
@@ -32,6 +38,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">Уастырджи заставил солнце выглянуть, и каждый
                 (думая, что настало утро) погнал свой скот к пастуху</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Wastyrgy made the sun come out, and everyone
+                (thinking it was morning) drove their cattle to the shepherd</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ОЭ"/>
               <biblScope>I 46</biblScope></bibl>
@@ -44,6 +54,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">проходил тогда по длинной улице сын пастуха
                 бедный Махамат</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">The shepherd's son, poor Mahamat, was passing
+                along a long street at that time</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Iræf"/>
               <biblScope>33</biblScope></bibl>
           </example>
@@ -53,6 +67,10 @@
               Biʒix</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">под ивой сидели я и старый пастух Бидзих</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">I was sitting under a willow tree with the old
+                shepherd Bidzih</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Iræf"/>
               <biblScope>118</biblScope></bibl>
@@ -65,19 +83,32 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">пастух оставил со стадом своего товарища
                 мальчика, а сам вскочил на коня</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the shepherd left his companion boy with the
+                herd, and jumped on his horse</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#ref_MD"/>
               <biblScope>1949 II 39</biblScope></bibl>
           </example>
         </exampleGrp>
         <etym xml:lang="ru">Сложение из <ref type="xr" target="#entry_qom_1"><w xml:lang="os-x-iron"
               >qom</w><w xml:lang="os-x-digor">ǧon</w>
-            <q>крупный рогатый скот</q></ref> и <w>kæs</w> (с озвончением k → g), основы глагола
-            <ref type="xr" target="#entry_kæsyn"><w xml:lang="os-x-iron">kæsyn</w><w
+            <q>крупный рогатый скот</q></ref> и <w>kæs</w> (с озвончением <c>k</c> → <c>g</c>),
+          основы глагола <ref type="xr" target="#entry_kæsyn"><w xml:lang="os-x-iron">kæsyn</w><w
               xml:lang="os-x-digor">kæsun</w>
             <q>смотреть</q></ref>.<lb/><bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/>
+            <biblScope>44</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_ГО"/>
+            <biblScope>§ 201<hi rendition="#rend_subscript">II 1</hi></biblScope></bibl>.</etym>
+        <etym xml:lang="en">The composition of <ref type="xr" target="#entry_qom_1"><w
+              xml:lang="os-x-iron">qom</w><w xml:lang="os-x-digor">ǧon</w>
+            <q>cattle</q></ref> and <w>kæs</w> (with voicing <c>k</c> → <c>g</c>), the stem of the
+          verb <ref type="xr" target="#entry_kæsyn"><w xml:lang="os-x-iron">kæsyn</w><w
+              xml:lang="os-x-digor">kæsun</w>
+            <q>watch</q></ref>.<lb/><bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/>
             <biblScope>44</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_ГО"/>
             <biblScope>§ 201<hi rendition="#rend_subscript">II 1</hi></biblScope></bibl>.</etym>
       </entry>
     </body>
   </text>
 </TEI>
+
