@@ -1,21 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">qen</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
@@ -23,15 +27,23 @@
         <form type="lemma"><orth>qen</orth></form>
         <sense><sense><abv:tr xml:lang="ru">
               <q>стоймя</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>upright</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>торчком</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>on end</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>вверх ногами</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>upside down</q>
             </abv:tr></sense></sense>
         <re>
           <form type="lemma"><orth>qen læwwyn</orth></form>
           <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">стоять торчком, вверх ногами</q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">stand upright, upside down</q>
             </tr></sense>
         </re>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
@@ -41,6 +53,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">камень, в точности похожий на него (великана),
                 стоял торчком с разинутым ртом перед пастухом</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">a stone exactly like him (the giant) stood
+                upright with his mouth agape in front of the shepherd</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Коста"/>
               <biblScope>108</biblScope></bibl>
@@ -52,6 +68,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">должно быть, роковой камень преткновения стоял
                 перед ней торчком и преграждал ей дорогу</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the fatal stumbling block must have been
+                standing in front of her and blocking her way.</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сека"/>
               <biblScope>103</biblScope></bibl>
           </example>
@@ -61,13 +81,19 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">горы выставили торчком свои выступы (пики)</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the mountains have exposed their protrusions
+                (peaks)</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Qazb."/>
               <biblScope>55</biblScope></bibl>
           </example>
         </exampleGrp>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
-          <note type="comment" xmlns="http://www.tei-c.org/ns/1.0"><oRef>Qen</oRef> — персонаж
-            шуточного народного представления в праздник крещения: </note>
+          <note xmlns="http://www.tei-c.org/ns/1.0" xml:lang="ru" type="comment"><oRef>Qen</oRef> —
+            персонаж шуточного народного представления в праздник крещения: </note>
+          <note xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" type="comment"><oRef>Qen</oRef> is
+            a character of a comic folk performance on the feast of epiphany: </note>
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">Qen īw ravzærstoj styr lægtæj īskæj; skodtoj
               īw yl ænax˳yr daræs, jæ cæskom mīlæj ax˳yrst, jæ særyl bærzond xūd — æmæ Qen-padcax
@@ -78,11 +104,20 @@
                 одежду, лицо вымазано сажей, на голове высокая шапка — и <hi
                   rendition="#rend_smallcaps">Qen</hi>-царь готов</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">one of the tall men was chosen for the role of
+                  <hi rendition="#rend_smallcaps">Qen</hi>; they put fancy clothes on him, his face
+                was smeared with soot, a high hat on his head — and <hi rendition="#rend_smallcaps"
+                  >Qen</hi> the king is ready</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_MD"/>
               <biblScope>1962 X 70</biblScope></bibl>
           </example>
-          <note type="comment" xmlns="http://www.tei-c.org/ns/1.0"> К концу праздника <hi
-              rendition="#rend_smallcaps">Qen</hi>’а низвергали и бросали в воду.</note>
+          <note xmlns="http://www.tei-c.org/ns/1.0" xml:lang="ru" type="comment"> К концу праздника
+              <hi rendition="#rend_smallcaps">Qen</hi>’а низвергали и бросали в воду.</note>
+          <note xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" type="comment"> By the end of the
+            fest <hi rendition="#rend_smallcaps">Qen</hi> was overthrown and thrown into the
+            water.</note>
         </exampleGrp>
         <etym xml:lang="ru">Может быть, вариация слова <ref type="xr" target="#entry_qan_1"
               ><w>qan</w>
@@ -93,20 +128,55 @@
             <w>Qeenoba</w></mentioned>: <q rendition="#rend_doublequotes">в чистый понедельник
             сборище народа выбирает шаха, которому в тот день все покоряются; на другой день
             свергают и прогоняют</q> (<bibl><ref type="bibl" target="#ref_Чубинов"/>
-            <biblScope>1371</biblScope></bibl>). В выражениях игроков в альчики  <example
+            <biblScope>1371</biblScope></bibl>). В выражениях игроков в альчики <example
             xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="os">
             <quote xmlns="http://www.tei-c.org/ns/1.0">mæ qūl sax аbadt</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">мой альчик встал шахом</q>
             </tr>
-          </example>  и <example xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="os">
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">мой альчик встал шахом</q>
+            </tr>
+          </example> и <example xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="os">
             <quote xmlns="http://www.tei-c.org/ns/1.0">mæ qūl qen аbadt</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">мой альчик встал стоймя</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">мой альчик встал стоймя</q>
+            </tr>
           </example> (буквально <hi rendition="#rend_smallcaps">qen</hi>’ом) ясно чувствуется, что
             <w>шах</w> и <oRef>qen</oRef> (хан) — близкие понятия.</etym>
+        <etym xml:lang="en">Maybe a variation of the word <ref type="xr" target="#entry_qan_1"
+              ><w>qan</w>
+            <q>khan</q></ref> with the subsequent development of the meaning: <q>important</q> —
+            <q>conceited</q> → <q>standing upright</q>. Cf. <mentioned xml:lang="ka"><lang/>
+            <w>qaeni</w>, <w>qeeni</w>
+            <gloss><q>khan</q></gloss> and a comic performance <w>Qaenoba</w>,
+            <w>Qeenoba</w></mentioned>: <q rendition="#rend_singlequotes">on Clean Monday, a
+            gathering of the people chooses the shah, to whom everyone submits that day; the next
+            day he is overthrown and driven away</q> (<bibl><ref type="bibl" target="#ref_Чубинов"/>
+            <biblScope>1371</biblScope></bibl>). In the expressions of the shagai players <example
+            xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="os">
+            <quote xmlns="http://www.tei-c.org/ns/1.0">mæ qūl sax аbadt</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">мой альчик встал шахом</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">my shagai stood like a shah</q>
+            </tr>
+          </example> and <example xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="os">
+            <quote xmlns="http://www.tei-c.org/ns/1.0">mæ qūl qen аbadt</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">мой альчик встал стоймя</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">my shagai stood up straight</q>
+            </tr>
+          </example> (literally like a <hi rendition="#rend_smallcaps">qen</hi>) it is clearly felt
+          that <w>shah</w> and <oRef>qen</oRef> (khan) are close concepts.</etym>
       </entry>
     </body>
   </text>
 </TEI>
+
