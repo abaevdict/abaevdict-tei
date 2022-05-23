@@ -1,35 +1,46 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ræftad</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_ræftad" xml:lang="os-x-digor" abv:completeness="incomplete">
+      <entry xml:id="entry_ræftad" xml:lang="os-x-digor" abv:completeness="english-questions">
         <form type="lemma"><orth>ræftad</orth></form>
         <usg><lang/></usg>
         <sense><sense><abv:tr xml:lang="ru">
               <q>полдник</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>afternoon snack </q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>обед</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>lunch</q>
             </abv:tr></sense></sense>
-        <note type="comment">; ср. <ref type="xr" target="#entry_sīxor"><w xml:lang="os-x-iron"
-              >sīxor</w><w xml:lang="os-x-digor">sexwar</w>
+        <note xml:lang="ru" type="comment">; ср. <ref type="xr" target="#entry_sīxor"><w
+              xml:lang="os-x-iron">sīxor</w><w xml:lang="os-x-digor">sexwar</w>
             <gloss><q>обед</q></gloss></ref></note>
+        <note xml:lang="en" type="comment">; cf. <ref type="xr" target="#entry_sīxor"><w
+              xml:lang="os-x-iron">sīxor</w><w xml:lang="os-x-digor">sexwar</w>
+            <gloss><q>lunch</q></gloss></ref></note>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">balerʒawtæ dengizi bilæbæl sæ xiztæ та sæ
@@ -37,6 +48,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">рыбаки выбросили на морской берег свои сети и
                 лодки и сели за полдник</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the fishermen threw their nets and boats on the
+                seashore and sat down for an afternoon snack</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_СОПам."/>
               <biblScope>II 33</biblScope></bibl>
@@ -48,6 +63,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">обед им приносят незамужние девушки, полдник им
                 приносят молодые невестки</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">lunch is brought to them by unmarried girls,
+                afternoon snack is brought to them by young daughters-in-law</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ИАС"/>
               <biblScope>II 320</biblScope></bibl>
           </example>
@@ -58,6 +77,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">было, должно быть, время обеда, когда они
                 добрались до аула Абаевых</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">it must have been lunch time when they reached
+                the village of the Abaevs</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_MD"/>
               <biblScope>1949 II 34</biblScope></bibl>
           </example>
@@ -67,6 +90,11 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">когда вы приготовите обед...</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">as soon as you
+                <?oxy_comment_start author="Irene" timestamp="20220523T133827+0300" comment="ok?"?>cook<?oxy_comment_end?>
+                dinner...</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ОЭ"/>
               <biblScope>I 82</biblScope></bibl>
           </example>
@@ -75,6 +103,11 @@
               bajdædta</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">их мать стала хлопотать об обеде</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">their mother began to
+                <?oxy_comment_start author="Irene" timestamp="20220523T133900+0300" comment="?"?>worry<?oxy_comment_end?>
+                about dinner</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_MSt."/>
               <biblScope>15<hi rendition="#rend_subscript">8–9</hi></biblScope></bibl>
@@ -100,20 +133,28 @@
             <gloss><q>есть</q></gloss>, <gloss><q>еда</q></gloss></mentioned>: <mentioned
             xml:lang="ae"><lang/>
             <w>ad-</w>
-            <note type="comment">(<mentioned xml:lang="ae"><w>aδāiti</w>
+            <note xml:lang="ru" type="comment">(<mentioned xml:lang="ae"><w>aδāiti</w>
+                <gloss>3-е лицо ед. ч. конъюнктива</gloss></mentioned>)</note><note xml:lang="en"
+              type="comment">(<mentioned xml:lang="ae"><w>aδāiti</w>
                 <gloss>3-е лицо ед. ч. конъюнктива</gloss></mentioned>)</note></mentioned>,
             <mentioned xml:lang="inc-x-old"><lang/>
             <w>ad-</w>
-            <note type="comment">(<mentioned xml:lang="inc-x-old"><w>admi</w>
+            <note xml:lang="ru" type="comment">(<mentioned xml:lang="inc-x-old"><w>admi</w>
+                <gloss><q>я ем</q></gloss></mentioned>)</note><note xml:lang="en" type="comment"
+                >(<mentioned xml:lang="inc-x-old"><w>admi</w>
                 <gloss><q>я ем</q></gloss></mentioned>)</note></mentioned>, <mentioned xml:lang="cu"><lang/>
             <w>ěd-</w>
-            <note type="comment">(<mentioned xml:lang="ru"><lang/>
+            <note xml:lang="ru" type="comment">(<mentioned xml:lang="ru"><lang/>
+                <w>еда</w>, <w>об-ед</w></mentioned>)</note><note xml:lang="en" type="comment"
+                >(<mentioned xml:lang="ru"><lang/>
                 <w>еда</w>, <w>об-ед</w></mentioned>)</note></mentioned>, <mentioned><mentioned
               xml:lang="la"><lang/>
               <w>edo</w></mentioned>, <mentioned xml:lang="grc"><lang/>
               <w><?oxy_comment_start author="Irene" timestamp="20220523T133517+0300" comment="хз что за диакритика"?>ἒ<?oxy_comment_end?>δομαι</w></mentioned>
             <gloss><q>я ем</q></gloss>
-            <note type="comment">и пр. (<bibl><ref type="bibl" target="#ref_Pokorny"/>
+            <note xml:lang="ru" type="comment">и пр. (<bibl><ref type="bibl" target="#ref_Pokorny"/>
+                <biblScope>287–289</biblScope></bibl>)</note><note xml:lang="en" type="comment">и
+              пр. (<bibl><ref type="bibl" target="#ref_Pokorny"/>
                 <biblScope>287–289</biblScope></bibl>)</note></mentioned>. Стало быть,
             <oRef>ræft-ad</oRef> разъясняется как <q rendition="#rend_doublequotes">полуденная
             еда</q> и по образованию примыкает к <ref type="xr" target="#entry_sīxor"
@@ -131,7 +172,10 @@
             <oRef>ræft-ad</oRef>, т. е. означают <q>еда</q>. Ср. также <mentioned xml:lang="grc"><lang/>
             <w><?oxy_comment_start author="Irene" timestamp="20220523T133528+0300" comment="хз что за диакритика"?>ἄ<?oxy_comment_end?>ριστον</w>
             <gloss><q>завтрак</q></gloss>
-            <note type="comment">из
+            <note xml:lang="ru" type="comment">из
+                <?oxy_comment_start author="Irene" timestamp="20220523T133303+0300" comment="ok без mntnd?"?><w
+                type="rec">ajeri-ed-tom</w><?oxy_comment_end?></note><note xml:lang="en"
+              type="comment">из
                 <?oxy_comment_start author="Irene" timestamp="20220523T133303+0300" comment="ok без mntnd?"?><w
                 type="rec">ajeri-ed-tom</w><?oxy_comment_end?></note></mentioned>; для первой части
           ср. <mentioned xml:lang="grc"
@@ -139,6 +183,83 @@
             <gloss><q>рано утром</q></gloss></mentioned>. — См. <ref type="xr" target="#entry_ræftæ"
           />; для второй части, может быть, — <ref type="xr" target="#entry_ad"><w>ad</w>
             <gloss><q>вкус</q></gloss></ref> (<bibl><ref type="bibl" target="#ref_ИЭС_I"/>
+            <biblScope>28</biblScope></bibl>).</etym>
+        <etym xml:lang="en">Decomposes into <oRef>ræft-ad</oRef>. In the first part there is <ref
+            type="xr" target="#entry_ræftæ"><w>ræftæ</w>
+            <gloss><q>midday</q></gloss></ref>. The second part  (<c>-ad</c>) deceptively resembles
+          the suffix of abstract words <mentioned xml:lang="os"><m>-ad</m> | <m>-adæ</m></mentioned>
+          (for example,
+            <?oxy_comment_start author="Irene" timestamp="20220523T131518+0300" comment="сделала осетинский mntnd, ок?"?><mentioned
+            xml:lang="os"><w xml:lang="os-x-iron">ældarad</w><w xml:lang="os-x-digor">ældaradæ</w>
+            <gloss><q>domination</q></gloss></mentioned><?oxy_comment_end?> from <ref type="xr"
+            target="#entry_ældar"><w>ældar</w>
+            <gloss><q>lord</q></gloss></ref> etc.). However, you should not give in to temptation.
+          Firstly, the mentioned suffix in Digor sounds like <m>-adæ</m>, not <m>-ad</m>. Secondly,
+          an abstract suffix in this case, when it comes to a very specific concept (food at a
+          certain time of the day), would be little justified. It is therefore more likely that in
+          the element <c>-ad</c> there is hidden a well-known root <mentioned><mentioned
+              xml:lang="ira"><lang/>
+              <w type="rec">ad-</w></mentioned>, <mentioned xml:lang="inc-x-old"><lang/>
+              <w type="rec">ad-</w></mentioned>, <mentioned xml:lang="ine"><lang/>
+              <w type="rec">ed-</w></mentioned>
+            <gloss><q>eat</q></gloss>, <gloss><q>food</q></gloss></mentioned>: <mentioned
+            xml:lang="ae"><lang/>
+            <w>ad-</w>
+            <note xml:lang="ru" type="comment">(<mentioned xml:lang="ae"><w>aδāiti</w>
+                <gloss>3-е лицо ед. ч. конъюнктива</gloss></mentioned>)</note><note xml:lang="en"
+              type="comment">(<mentioned xml:lang="ae"><w>aδāiti</w>
+                <gloss>3sg of
+                  <?oxy_comment_start author="Irene" timestamp="20220523T134249+0300" comment="ok?"?>conjunctive<?oxy_comment_end?></gloss></mentioned>)</note></mentioned>,
+            <mentioned xml:lang="inc-x-old"><lang/>
+            <w>ad-</w>
+            <note xml:lang="ru" type="comment">(<mentioned xml:lang="inc-x-old"><w>admi</w>
+                <gloss><q>я ем</q></gloss></mentioned>)</note><note xml:lang="en" type="comment"
+                >(<mentioned xml:lang="inc-x-old"><w>admi</w>
+                <gloss><q>I eat</q></gloss></mentioned>)</note></mentioned>, <mentioned
+            xml:lang="cu"><lang/>
+            <w>ěd-</w>
+            <note xml:lang="ru" type="comment">(<mentioned xml:lang="ru"><lang/>
+                <w>еда</w>, <w>об-ед</w></mentioned>)</note><note xml:lang="en" type="comment"
+                >(<mentioned xml:lang="ru"><lang/>
+                <w>еда</w>
+                <gloss><q>food</q></gloss></mentioned>, <mentioned xml:lang="ru"><w>об-ед</w>
+                <gloss><q>lunch</q></gloss></mentioned>)</note></mentioned>, <mentioned><mentioned
+              xml:lang="la"><lang/>
+              <w>edo</w></mentioned>, <mentioned xml:lang="grc"><lang/>
+              <w><?oxy_comment_start author="Irene" timestamp="20220523T133517+0300" comment="хз что за диакритика"?>ἒ<?oxy_comment_end?>δομαι</w></mentioned>
+            <gloss><q>I eat</q></gloss>
+            <note xml:lang="ru" type="comment">и пр. (<bibl><ref type="bibl" target="#ref_Pokorny"/>
+                <biblScope>287–289</biblScope></bibl>)</note><note xml:lang="en" type="comment">etc.
+                  (<bibl><ref type="bibl" target="#ref_Pokorny"/>
+                <biblScope>287–289</biblScope></bibl>)</note></mentioned>. Thus,
+            <oRef>ræft-ad</oRef> is explained as <q rendition="#rend_doublequotes">midday meal</q>
+          and in related in its derivetion pattern to <ref type="xr" target="#entry_sīxor"
+              ><?oxy_comment_start author="Irene" timestamp="20220523T131747+0300" comment="у абаева две палки ||, забить?"?><w
+              xml:lang="os-x-iron">sī-xor</w><?oxy_comment_end?><w xml:lang="os-x-digor">se-xwar</w>
+            <gloss><q>lunch</q></gloss></ref>, <ref type="xr" target="#entry_izær"/><ref type="xr"
+            target="#entry_-xor"/>
+          <gloss><q>evening meal</q></gloss>, <ref type="xr" target="#entry_mīnas"><w>mīn-as</w>
+            <gloss><q>treat</q></gloss></ref>, <ref type="xr" target="#entry_margas"><w>marg-as</w>
+            <gloss><q>funeral meal</q></gloss></ref>, where <ref type="xr" target="#entry_-xor"><w
+              xml:lang="os-x-iron">-xor</w><w xml:lang="os-x-digor">-xwar</w></ref> and
+            <?oxy_comment_start author="Irene" timestamp="20220523T132208+0300" comment="ос. mntnd ок?"?><mentioned
+            xml:lang="os"><m>-as</m></mentioned><?oxy_comment_end?> are synonyms <?oxy_comment_start author="Irene" timestamp="20220523T134506+0300" comment="ok?"?>of<?oxy_comment_end?>
+          <m>-ad</m> in <oRef>ræft-ad</oRef>, i. e. they mean <q>food</q>. Cf. also <mentioned
+            xml:lang="grc"><lang/>
+            <w><?oxy_comment_start author="Irene" timestamp="20220523T133528+0300" comment="хз что за диакритика"?>ἄ<?oxy_comment_end?>ριστον</w>
+            <gloss><q>breakfast</q></gloss>
+            <note xml:lang="ru" type="comment">из
+                <?oxy_comment_start author="Irene" timestamp="20220523T133303+0300" comment="ok без mntnd?"?><w
+                type="rec">ajeri-ed-tom</w><?oxy_comment_end?></note><note xml:lang="en"
+              type="comment">from
+                <?oxy_comment_start author="Irene" timestamp="20220523T133303+0300" comment="ok без mntnd?"?><w
+                type="rec">ajeri-ed-tom</w><?oxy_comment_end?></note></mentioned>; for the first
+          part cf. <mentioned xml:lang="grc"
+              ><w><?oxy_comment_start author="Irene" timestamp="20220523T133421+0300" comment="хз что за диакритика"?>ἡ<?oxy_comment_end?>ρι</w>
+            <gloss><q>early in the morning</q></gloss></mentioned>. — See <ref type="xr"
+            target="#entry_ræftæ"/>; for the second part, maybe, see <ref type="xr"
+            target="#entry_ad"><w>ad</w>
+            <gloss><q>taste</q></gloss></ref> (<bibl><ref type="bibl" target="#ref_ИЭС_I"/>
             <biblScope>28</biblScope></bibl>).</etym>
       </entry>
     </body>
