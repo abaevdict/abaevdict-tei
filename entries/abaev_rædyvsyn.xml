@@ -1,39 +1,50 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">rædyvsyn</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_rædyvsyn" xml:lang="os" abv:completeness="questions">
+      <entry xml:id="entry_rædyvsyn" xml:lang="os" abv:completeness="english-questions">
         <form type="lemma" xml:lang="os-x-iron"><orth>rædyvsyn</orth><form type="participle"
               ><orth>rædyvst</orth></form></form>
         <form xml:lang="os-x-digor" type="dialectal"><orth>ræduvsun</orth><form type="participle"
               ><orth>ræduvst</orth></form></form>
         <sense><sense><abv:tr xml:lang="ru">
               <q>раздираться (о коже)</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q><?oxy_comment_start author="Irene" timestamp="20220523T142021+0300" comment="переводы этих русских ся сложны. не знаю, хорошо ли везде здесь получилось"?>be<?oxy_comment_end?>
+                torn (about skin)</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>образоваться ссадине</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>form an abrasion</q>
             </abv:tr></sense></sense>
         <re>
           <form type="lemma" xml:lang="os-x-iron"><orth>rædyvst</orth></form>
           <form xml:lang="os-x-digor" type="dialectal"><orth>ræduvst</orth></form>
           <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">ссадина</q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">abrasion</q>
             </tr></sense>
         </re>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
@@ -43,6 +54,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">от ношения грузов у меня образовалась ссадина
                 на плече</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">I had an abrasion on my shoulder from carrying
+                loads</q>
             </tr>
           </example>
         </exampleGrp>
@@ -56,6 +71,25 @@
             <gloss><q>кутать</q></gloss></ref> — <ref type="xr" target="#entry_tyxsyn"><w>tyxsyn</w>
             <gloss><q>обвиваться</q></gloss></ref> и др. (<bibl><ref type="bibl" target="#ref_ГО"/>
             <biblScope>§ 99<hi rendition="#rend_subscript">2</hi></biblScope></bibl>). — См. <ref
+            type="xr" target="#entry_rædūvyn"/>.</etym>
+        <etym xml:lang="en">A middle voice counterpart to transitive <ref type="xr"
+            target="#entry_rædūvyn"><w xml:lang="os-x-iron">rædūvyn</w><w xml:lang="os-x-digor"
+              >rædovun</w>
+            <gloss><q>tear</q></gloss></ref> etc. with the vowel weakening and the inchoative
+            <m>-s-</m>, as in a number of other cases: <ref type="xr" target="#entry_tavyn"
+              ><w>tavyn</w>
+            <gloss><q>warm</q></gloss>
+            <note type="comment">(transitive)</note></ref> —
+            <w><?oxy_comment_start author="Irene" timestamp="20220225T184010+0300" comment="нет такого в словаре.. и в описании к тавын нет"?>tævsyn<?oxy_comment_end?></w>
+          <gloss><q>get warm</q></gloss> (intansitive), <ref type="xr" target="#entry_tūxyn"
+              ><w>tūxyn</w>
+            <gloss><q>wrap up</q></gloss>
+            <note type="comment">(transitive)</note></ref> — <ref type="xr" target="#entry_tyxsyn"
+              ><w>tyxsyn</w>
+            <gloss><q>wrap around</q></gloss>
+            <note type="comment">(intransitive)</note></ref> etc. (<bibl><ref type="bibl"
+              target="#ref_ГО"/>
+            <biblScope>§ 99<hi rendition="#rend_subscript">2</hi></biblScope></bibl>). — See <ref
             type="xr" target="#entry_rædūvyn"/>.</etym>
       </entry>
     </body>
