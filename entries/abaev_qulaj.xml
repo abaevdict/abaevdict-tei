@@ -1,21 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">qulaj</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
@@ -24,18 +28,28 @@
         <usg><lang/></usg>
         <sense><sense><abv:tr xml:lang="ru">
               <q>согласный</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>consonant</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>ладный</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>fine</q>
             </abv:tr></sense></sense>
         <re>
-          <note type="comment"> ср. </note>
+          <note xml:lang="ru" type="comment"> ср. </note>
+          <note xml:lang="en" type="comment"> cf. </note>
           <?oxy_comment_start author="julie" timestamp="20220416T102816+0300" comment="у Абаева немного не так, но этого слова нет в словаре как отдельного вхождения, поэтому я сделала так"?>
-          <form type="lemma" xml:lang="os-x-iron"><orth>ænæqola</orth></form>
-          <form xml:lang="os-x-digor" type="dialectal"><orth>ænæqulaj</orth></form><?oxy_comment_end?>
+          <form type="lemma" xml:lang="os-x-iron"><orth>ænæqola</orth></form><?oxy_comment_end?>
+          <form xml:lang="os-x-iron" type="dialectal">, <lang/>
+            <orth>ænæqulaj</orth></form>
           <sense><sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
                 <q xmlns="http://www.tei-c.org/ns/1.0">безалаберный</q>
+              </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+                <q xmlns="http://www.tei-c.org/ns/1.0">careless</q>
               </tr></sense><sense><abv:tr xml:lang="ru">
                 <q>беспорядочный</q>
+              </abv:tr><abv:tr xml:lang="en">
+                <q>chaotic</q>
               </abv:tr></sense></sense>
         </re>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
@@ -45,6 +59,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">что ты знаешь о подготовленности или
                 неподготовленности (к войне) Донифарса?</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">what do you know about Donifars' preparedness
+                or unpreparedness (for war)?</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_СОПам."/>
               <biblScope>II 125</biblScope></bibl>
@@ -56,6 +74,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">(колдуны и ведьмы летели на шабаш), кто из них
                 на блюде, кто (усевшись) кое-как на печной трубе</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">(sorcerers and witches flew to the sabbath),
+                who of them on a platter, who somehow (sitting down) on the chimney</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Gurdž._Wadž."/>
               <biblScope>28</biblScope></bibl>
           </example>
@@ -63,7 +85,11 @@
         <etym xml:lang="ru">Из <mentioned xml:lang="trk"><lang/>
             <w>qolai</w>
             <gloss><q>удобный</q>, <q>приятный</q>, <q>легкий</q>, <q>подходящий</q></gloss>
-            <note type="comment">(<bibl><ref type="bibl" target="#ref_Радлов"/>
+            <note xml:lang="ru" type="comment">(<bibl><ref type="bibl" target="#ref_Радлов"/>
+                <biblScope>II 586 сл.</biblScope></bibl> — <bibl><ref type="bibl"
+                  target="#ref_Doerfer"/>
+                <biblScope>560</biblScope></bibl>)</note><note xml:lang="en" type="comment"
+                  >(<bibl><ref type="bibl" target="#ref_Радлов"/>
                 <biblScope>II 586 сл.</biblScope></bibl> — <bibl><ref type="bibl"
                   target="#ref_Doerfer"/>
                 <biblScope>560</biblScope></bibl>)</note></mentioned>. Сюда же <mentioned
@@ -76,6 +102,27 @@
             xml:lang="kbd"><lang/>
             <w>qulaj</w>
             <gloss><q>богатый</q></gloss></mentioned>.</etym>
+        <etym xml:lang="en">From <mentioned xml:lang="trk"><lang/>
+            <w>qolai</w>
+            <gloss><q>comfortable</q>, <q>pleasant</q>, <q>easy</q>, <q>suitable</q></gloss>
+            <note xml:lang="ru" type="comment">(<bibl><ref type="bibl" target="#ref_Радлов"/>
+                <biblScope>II 586 сл.</biblScope></bibl> — <bibl><ref type="bibl"
+                  target="#ref_Doerfer"/>
+                <biblScope>560</biblScope></bibl>)</note><note xml:lang="en" type="comment"
+                  >(<bibl><ref type="bibl" target="#ref_Радлов"/>
+                <biblScope>II 586 ff.</biblScope></bibl> — <bibl><ref type="bibl"
+                  target="#ref_Doerfer"/>
+                <biblScope>560</biblScope></bibl>)</note></mentioned>. Also here <mentioned
+            xml:lang="tg"><lang/>
+            <w>qulai</w>
+            <gloss><q>comfortable</q>, <q>suitable</q>, <q>favorable</q>, <q>conveniently</q>,
+                <q>easily</q>, <q>in one's advantage</q></gloss></mentioned>, <mentioned
+            xml:lang="ady"><lang/>
+            <w>qulaj</w>
+            <gloss><q>comfortable</q>, <q>suitable</q>, <q>skillful</q></gloss></mentioned>,
+            <mentioned xml:lang="kbd"><lang/>
+            <w>qulaj</w>
+            <gloss><q>rich</q></gloss></mentioned>.</etym>
       </entry>
     </body>
   </text>
