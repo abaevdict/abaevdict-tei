@@ -1,21 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">qonaqq</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
@@ -23,8 +27,12 @@
         <form type="lemma"><orth>qonaqq</orth></form>
         <sense><sense><abv:tr xml:lang="ru">
               <q>приятель</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>buddy</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>кунак</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>kunak</q>
             </abv:tr></sense></sense>
         <etym xml:lang="ru">Из <mentioned xml:lang="trk"><lang/>
             <w>qonaq</w>
@@ -38,13 +46,32 @@
             <note type="bibl">(<bibl><ref type="bibl" target="#ref_Даль"
             /></bibl>)</note></mentioned>. Обращает внимание одинаковое семантическое развитие в
           русском и осетинском: <q>гость</q> → <q>приятель</q>. Об этимологии и содержании термина
-          на тюркской почве см.: <bibl><ref type="bibl" target="">Дмитриев. Строй тюркских
-              языков.</ref>
+          на тюркской почве см.: <bibl><author>Дмитриев</author>. <title>Строй тюркских
+              языков.</title>
             <biblScope>М., 1962, стр. 539</biblScope></bibl>. — <bibl><ref type="bibl"
               target="#ref_Doerfer"/>
             <biblScope>loc. cit.</biblScope></bibl> — Источником для осетинского, как, вероятно, и
           для русского, послужили тюркские языки Кавказа: ногайский, кумыкский.</etym>
+        <etym xml:lang="en">From <mentioned xml:lang="trk"><lang/>
+            <w>qonaq</w>
+            <gloss><q>guest</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Радлов"/>
+                <biblScope>II 536</biblScope></bibl>)</note></mentioned>. It was borrowed in many
+          languages (<bibl><ref type="bibl" target="#ref_Doerfer"/>
+            <biblScope>III 527—530</biblScope></bibl>), including Russian: <mentioned xml:lang="ru"
+              ><w>kunak</w> (<w>konak</w>) <gloss><q>buddy</q>, <q>acquaintance</q>, <q>with whom I
+                eat bread and salt</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Даль"
+            /></bibl>)</note></mentioned>. The same semantic development in Russian and Ossetic
+          draws attention: <q>guest</q> → <q>buddy</q>. For the etymology and content of the term in
+          Turkic languages, see: <bibl><author>Dmitriev</author>. <title>The structure of the Turkic
+              languages.</title>
+            <biblScope>M., 1962, p. 539</biblScope></bibl>. — <bibl><ref type="bibl"
+              target="#ref_Doerfer"/>
+            <biblScope>loc. cit.</biblScope></bibl> — The source for Ossetic, as probably for
+          Russian, was the Turkic languages of the Caucasus: Nogai, Kumyk.</etym>
       </entry>
     </body>
   </text>
 </TEI>
+
