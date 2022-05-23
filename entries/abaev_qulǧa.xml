@@ -1,43 +1,64 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">qulǧa</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
       <entry xml:id="entry_qulǧa" xml:lang="os-x-iron" abv:completeness="incomplete">
         <form type="lemma"><orth>qulǧa</orth></form>
         <usg><lang/></usg>
-        <sense><note type="comment">племенное название </note><abv:tr xml:lang="ru">
+        <sense><note xml:lang="ru" type="comment">племенное название </note><note xml:lang="en"
+            type="comment">tribal name </note><abv:tr xml:lang="ru">
             <q>ингуши</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>Ingush</q>
           </abv:tr></sense>
-        <note type="comment">; ср. <ref type="xr" target="#entry_mæ6q9qæl"><w>mæqqæl</w></ref>
-          id.</note>
+        <note xml:lang="ru" type="comment">; ср. <ref type="xr" target="#entry_mæ6q9qæl"
+              ><w>mæqqæl</w></ref> id.</note>
+        <note xml:lang="en" type="comment">; cf. <ref type="xr" target="#entry_mæ6q9qæl"
+              ><w>mæqqæl</w></ref> id.</note>
         <etym xml:lang="ru">Примыкает к самоназванию ингушей <mentioned xml:lang="inh"
               ><w>ghælghæj</w></mentioned>; ср. <mentioned xml:lang="ka-x-khevsur"><lang/>
             <w>ǧilǧo</w></mentioned>. Другое осетинское название ингушей, <ref type="xr"
             target="#entry_mæ6q9qæl"><w>mæqqæl</w></ref>, представляет этимологически название
           птицы. Возможно, такого же происхождения <mentioned xml:lang="inh"
-            ><w>ghælghæj</w></mentioned>;  ср. <mentioned xml:lang="ka"><lang/>
+            ><w>ghælghæj</w></mentioned>; ср. <mentioned xml:lang="ka"><lang/>
             <w>ǧalǧa</w>
             <gloss><q>коростель</q>, <q>дергач</q></gloss>
             <note type="bibl">(<bibl><ref type="bibl" target="#ref_Марр._Сван."/>
                 <biblScope>31</biblScope></bibl>)</note></mentioned> .<lb/><bibl><ref type="bibl"
               target="#ref_ЗКВ"><hi rendition="#rend_smallcaps">Генко</hi>, ЗКВ</ref>
+            <biblScope>V 703</biblScope></bibl>.</etym>
+        <etym xml:lang="en">It is close to the self name of the Ingush <mentioned xml:lang="inh"
+              ><w>ghælghæj</w></mentioned>; cf. <mentioned xml:lang="ka-x-khevsur"><lang/>
+            <w>ǧilǧo</w></mentioned>. Another Ossetic name for the Ingush, <ref type="xr"
+            target="#entry_mæ6q9qæl"><w>mæqqæl</w></ref>, represents etymologically the name of the
+          bird. Perhaps <mentioned xml:lang="inh"><w>ghælghæj</w></mentioned> is of the same origin;
+          cf. <mentioned xml:lang="ka"><lang/>
+            <w>ǧalǧa</w>
+            <gloss><q>crake</q>, <q>corncrake</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Марр._Сван."/>
+                <biblScope>31</biblScope></bibl>)</note></mentioned> .<lb/><bibl><ref type="bibl"
+              target="#ref_ЗКВ"><hi rendition="#rend_smallcaps">Genko</hi>, ZKV</ref>
             <biblScope>V 703</biblScope></bibl>.</etym>
       </entry>
     </body>
