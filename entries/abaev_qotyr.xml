@@ -1,21 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">qotyr</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
@@ -24,14 +28,21 @@
         <form xml:lang="os-x-digor" type="dialectal"><orth>qotur</orth></form>
         <sense><sense><abv:tr xml:lang="ru">
               <q>парша</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>scab</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>проказа</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>leprosy</q>
             </abv:tr></sense></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">...æmæ wajtaǧd yssyǧdæg i qotyræj</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">...и он тотчас очистился от проказы</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">...and immediately his leprosy was cleansed</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Матфей"/>
               <biblScope><hi rendition="#rend_italic">8</hi> 3</biblScope></bibl>
@@ -56,7 +67,26 @@
               target="#ref_Миллер_Вс._Oss.">Вс. <hi rendition="#rend_smallcaps">Миллер</hi>.
               ОЭ</ref>
             <biblScope>II 112</biblScope></bibl>.</etym>
+        <etym xml:lang="en">From <mentioned xml:lang="trk"><lang/>
+            <w>qotur</w>
+            <gloss><q>scab</q>, <q>leprosy</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Радлов"/>
+                <biblScope>II 609</biblScope></bibl>.— <bibl><ref type="bibl" target="#ref_Doerfer"/>
+                <biblScope>III 538—539</biblScope></bibl>)</note></mentioned>; <mentioned
+            xml:lang="av"><lang/>
+            <w>qutur</w></mentioned>, <mentioned xml:lang="lez"><lang/>
+            <w>qutur</w>
+            <gloss><q>scab</q>, <q>rash</q></gloss></mentioned>, <mentioned xml:lang="ka-x-dial"><lang/>
+            <w>xotʼravi</w>
+            <gloss><q>a disease accompanied by hair loss</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Чкония"
+            /></bibl>)</note></mentioned> come from here; does <mentioned xml:lang="ka"><lang/>
+            <w>kʼetri</w>
+            <gloss><q>проказа</q></gloss></mentioned> also belongs here?<lb/><bibl><ref type="bibl"
+              target="#ref_Миллер_Вс._Oss."/>
+            <biblScope>II 112</biblScope></bibl>.</etym>
       </entry>
     </body>
   </text>
 </TEI>
+

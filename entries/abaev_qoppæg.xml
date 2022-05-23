@@ -1,21 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">qoppæg</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
@@ -25,15 +29,23 @@
               ><orth>qobæǧ</orth></form></form>
         <sense><abv:tr xml:lang="ru">
             <q>плод (коробочка) альпийской лилии</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>fruit (box) of the alpine lily</q>
           </abv:tr></sense>
-        <sense><note type="comment"> в дигорском также </note><abv:tr xml:lang="ru">
+        <sense><note xml:lang="ru" type="comment"> в дигорском также </note><note xml:lang="en"
+            type="comment"> in Digor also </note><abv:tr xml:lang="ru">
             <q>пузырь</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>bubble</q>
           </abv:tr></sense>
         <re xml:lang="os-x-digor">
-          <note type="comment">мн. ч.</note>
+          <note xml:lang="ru" type="comment">мн. ч.</note>
+          <note xml:lang="en" type="comment">pl. </note>
           <form type="lemma"><usg><lang/></usg><orth>qoppæǧtæ</orth></form>
           <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">пена</q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">foam</q>
             </tr></sense>
         </re>
         <re>
@@ -41,10 +53,17 @@
           <sense><sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
                 <q xmlns="http://www.tei-c.org/ns/1.0">с глазами как <hi rendition="#rend_smallcaps"
                     >qoppæg</hi></q>
+              </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+                <q xmlns="http://www.tei-c.org/ns/1.0">with eyes like <hi
+                    rendition="#rend_smallcaps">qoppæg</hi></q>
               </tr></sense><sense><abv:tr xml:lang="ru">
                 <q>с большими глазами навыкате</q>
+              </abv:tr><abv:tr xml:lang="en">
+                <q>with big bulging eyes</q>
               </abv:tr></sense><sense><abv:tr xml:lang="ru">
                 <q>волоокий</q>
+              </abv:tr><abv:tr xml:lang="en">
+                <q>ox-eyed</q>
               </abv:tr></sense></sense>
         </re>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
@@ -54,17 +73,27 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">с покоса я принес полную суму плодов лилии</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">I brought a bag full of lily fruits from the
+                mowing</q>
+            </tr>
           </example>
           <example>
-            <note type="comment" xmlns="http://www.tei-c.org/ns/1.0">(лягушка, обращаясь к солнцу,
-              оплакивающему сына): </note>
+            <note xmlns="http://www.tei-c.org/ns/1.0" xml:lang="ru" type="comment">(лягушка,
+              обращаясь к солнцу, оплакивающему сына): </note>
+            <note xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" type="comment">(the frog,
+              addressing the sun, mourning his son): </note>
             <quote xmlns="http://www.tei-c.org/ns/1.0">wagær dyn mæ læppūjy x˳yzæn k˳y wydaid, qop-
               pægcæst, wæd ævæccægæn æmæ jæ fæstæ dæxī ægas nal nywwaǧtais</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">а что если бы у тебя был такой (красавец) сын,
                 как у меня, волоокий, тогда бы ты после него не оставил себя в живых</q>
             </tr>
-            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl">из сказки</ref></bibl>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">and what if you had such a (handsome) son like
+                mine, an ox-eyed one, then you wouldn't have left yourself alive after him</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0">from a fairytale</bibl>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ИАА"/>
               <biblScope>II 367</biblScope></bibl>
           </example>
@@ -72,6 +101,9 @@
             <quote xmlns="http://www.tei-c.org/ns/1.0">qambul wærag, qoppæg cæst</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">с выпуклыми коленями, волоокий</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">with bulging knees, ox-eyed</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_СОПам."/>
               <biblScope>IV 124</biblScope></bibl>
@@ -85,6 +117,9 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">его большие карие глаза засверкали</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">his big brown eyes sparkled</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_MD"/>
               <biblScope>1958 III 25</biblScope></bibl>
           </example>
@@ -93,6 +128,9 @@
             <quote xmlns="http://www.tei-c.org/ns/1.0">qoppæǧ cæstæ, fætæn tærnix...</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">с большими глазами, широким лбом...</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">with big eyes, wide forehead...</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Sam."/>
               <biblScope>97</biblScope></bibl>
@@ -104,6 +142,11 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">...предстал на своем вороном шавлоховском коне,
                 (с которого) падала пена, их знатный хозяин</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">...their noble master appeared on his black
+                <?oxy_comment_start author="julie" timestamp="20220523T191122+0300" comment="?"?>Shavlokhov<?oxy_comment_end?>
+                horse, (from which) foam was falling,</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_MD"/>
               <biblScope>1934 III—IV 83</biblScope></bibl>
           </example>
@@ -114,6 +157,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">туча легла на зеленые горы белой пеной</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the cloud lay on the green mountains like white
+                foam</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Qazb."/>
               <biblScope>54</biblScope></bibl>
           </example>
@@ -122,6 +169,10 @@
             <quote xmlns="http://www.tei-c.org/ns/1.0">stur agæ ors qoppæǧtæj iradæj</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">большой котел кипел белыми пузырями пены</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">a large cauldron was boiling with white bubbles
+                of foam</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_MSt."/>
               <biblScope>34<hi rendition="#rend_subscript">12</hi></biblScope></bibl>
@@ -139,7 +190,20 @@
             <gloss><q>плод альпийской лилии</q></gloss>
             <note type="bibl">(<bibl><ref type="bibl" target="#ref_ОЯФ_I"/>
                 <biblScope>277</biblScope></bibl>)</note></mentioned>.</etym>
+        <etym xml:lang="en">Probably, an <q rendition="#rend_singlequotes">onomatopoeic</q> a word
+          from a group of words denoting round, convex, etc.; cf.
+            <?oxy_comment_start author="julie" timestamp="20220414T232435+0300" comment="у Абаева нет слова gobæ, но есть goban, который подходит"?><ref
+            type="xr" target="#entry_goban"/><?oxy_comment_end?>, <ref type="xr"
+            target="#entry_gūbb"/>, <ref type="xr" target="#entry_kʼopp"/>, <ref type="xr"
+            target="#entry_kʼoppa"/>, <ref type="xr" target="#entry_q0ymbyl"/>, see more under the
+          word <ref type="xr" target="#entry_tymbyl"><w>tymbyl</w>
+            <q>round</q></ref>. <mentioned xml:lang="krc-x-balkar"><lang/>
+            <w>xömpek</w>, <w>xoppug</w>
+            <gloss><q>the fruit of the alpine lily</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_ОЯФ_I"/>
+                <biblScope>277</biblScope></bibl>)</note></mentioned> is close to Ossetic.</etym>
       </entry>
     </body>
   </text>
 </TEI>
+
