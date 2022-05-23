@@ -1,21 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">qriqupp</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
@@ -24,15 +28,25 @@
         <usg><lang/></usg>
         <sense><abv:tr xml:lang="ru">
             <q>журавль</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>crane</q>
           </abv:tr></sense>
-        <note type="comment">; <ref type="xr" target="#entry_qurroj" xml:lang="os-x-digor"><lang/>
+        <note xml:lang="ru" type="comment">; <ref type="xr" target="#entry_qurroj"
+            xml:lang="os-x-digor"><lang/>
             <w>qurroj</w></ref>; син. <ref type="xr" target="#entry_zyrnæg"/>, <ref type="xr"
+            target="#entry_zærnyg"/></note>
+        <note xml:lang="en" type="comment">; <ref type="xr" target="#entry_qurroj"
+            xml:lang="os-x-digor"><lang/>
+            <w>qurroj</w></ref>; syn. <ref type="xr" target="#entry_zyrnæg"/>, <ref type="xr"
             target="#entry_zærnyg"/></note>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">qriqupp xæstæǵyty donbyltyl zīly</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">журавль поблизости бродит по берегу</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">a crane nearby wanders along the shore</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Коста"/>
               <biblScope>85</biblScope></bibl>
@@ -42,13 +56,16 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">в одном месте орлы гнались за журавлем</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">in one place, eagles were chasing a crane</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Munk."/>
               <biblScope>94</biblScope></bibl>
           </example>
         </exampleGrp>
         <etym xml:lang="ru">Звукоподражательные слова, как и <mentioned xml:lang="krc-x-balkar"><lang/>
             <w>qərrəw</w></mentioned>, <mentioned xml:lang="kbd"><lang/>
-            <w>qəru</w></mentioned>, <mentioned xml:lang="kbd-x-crc"><lang>черк. (зап.)</lang>
+            <w>qəru</w></mentioned>, <mentioned xml:lang="kbd-x-crc-west"><lang/>
             <w>qerew</w>
             <note type="bibl">(<bibl><ref type="bibl" target="#ref_AION"><hi
                     rendition="#rend_smallcaps">Dumézil</hi>, AION</ref>
@@ -67,7 +84,29 @@
             <w>x̌ärx̌up</w>
             <gloss><q>удод</q></gloss></mentioned>. Общеиндоевропейское название журавля также
           сохранилось в осетинском; см. <ref type="xr" target="#entry_zyrnæg"/>.</etym>
+        <etym xml:lang="en">Onomatopoeic words, as well as <mentioned xml:lang="krc-x-balkar"><lang/>
+            <w>qərrəw</w></mentioned>, <mentioned xml:lang="kbd"><lang/>
+            <w>qəru</w></mentioned>, <mentioned xml:lang="kbd-x-crc-west"><lang/>
+            <w>qerew</w>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_AION"><hi
+                    rendition="#rend_smallcaps">Dumézil</hi>, AION</ref>
+                <biblScope>1963 V 18</biblScope></bibl>)</note></mentioned>, <mentioned
+            xml:lang="av"><lang/>
+            <w>qhunqhra</w></mentioned>, <mentioned xml:lang="agx"><lang/>
+            <w>ghurqh</w></mentioned>, <mentioned xml:lang="lbe"><lang/>
+            <w>quruq</w></mentioned>, <mentioned xml:lang="dar"><lang/>
+            <w>qurǧ</w></mentioned>, <mentioned xml:lang="x-vaynakh"><lang/>
+            <w>gharaghur</w>, <w>gharghuli</w>
+            <gloss><q>crane</q></gloss></mentioned>, <mentioned xml:lang="uz" extralang="yai"><lang/>
+            <w>qarokuk</w>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Андреев._Ягн."/>
+                <biblScope>279</biblScope></bibl>)</note></mentioned> id. <mentioned xml:lang="kbd"><lang/>
+            <w>x̌ärx̌up</w>
+            <gloss><q>hoopoe</q></gloss></mentioned> is close to Iron <oRef/> phonetically. The
+          common Indo-European name of the crane is also preserved in Ossetic; see <ref type="xr"
+            target="#entry_zyrnæg"/>.</etym>
       </entry>
     </body>
   </text>
 </TEI>
+
