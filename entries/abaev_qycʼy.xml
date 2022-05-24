@@ -1,21 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">qycʼy</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
@@ -24,15 +28,19 @@
         <form xml:lang="os-x-digor" type="dialectal"><orth>qicʼu</orth></form>
         <sense><sense><abv:tr xml:lang="ru">
               <q>горчица полевая</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>field mustard</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>Sinapis arvensis</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>Sinapis arvensis</q>
             </abv:tr></sense></sense>
-        <note type="comment">; зовется также <w>cævægxos</w>.</note>
+        <note xml:lang="ru" type="comment">; зовется также <w>cævægxos</w>.</note>
+        <note xml:lang="en" type="comment">; it is also called <w>cævægxos</w>.</note>
         <etym xml:lang="ru">Ср. <mentioned xml:lang="trk"><lang/>
             <w>qəčə</w>, <w>qiči</w>
             <gloss><q>горчица</q></gloss>
-            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Махмуд_Кашгарский"><hi
-                    rendition="#rend_smallcaps">Махмуд Кашгарский</hi></ref>
+            <note type="bibl">(<bibl><author>Махмуд Кашгарский</author>
                 <biblScope>III 180, стк. 4</biblScope></bibl>. — <bibl><ref type="bibl"
                   target="#ref_Zenker"/>
                 <biblScope>II 693</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Радлов"/>
@@ -42,7 +50,22 @@
             <gloss><q>горчица</q></gloss>
             <note type="bibl">(<bibl><ref type="bibl" target="#ref_AION"/>
                 <biblScope>1965 VI 41</biblScope></bibl>)</note></mentioned>.</etym>
+        <etym xml:lang="en">Cf. <mentioned xml:lang="trk"><lang/>
+            <w>qəčə</w>, <w>qiči</w>
+            <gloss><q>mustard</q></gloss>
+            <note type="bibl">(<bibl><author>Mahmud Kashgarskij</author>
+                <biblScope>III 180,
+                  <?oxy_comment_start author="julie" timestamp="20220524T214038+0300" comment="?"?>стк<?oxy_comment_end?>.
+                  4</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Zenker"/>
+                <biblScope>II 693</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Радлов"/>
+                <biblScope>II 792, 870</biblScope></bibl>)</note></mentioned>. <hi
+            rendition="#rend_smallcaps">Неnning</hi> sees the original in <mentioned xml:lang="akk"><lang/>
+            <w>kasî</w>
+            <gloss><q>mustard</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_AION"/>
+                <biblScope>1965 VI 41</biblScope></bibl>)</note></mentioned>.</etym>
       </entry>
     </body>
   </text>
 </TEI>
+
