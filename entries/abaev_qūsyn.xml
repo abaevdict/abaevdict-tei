@@ -1,21 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">qūsyn</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
@@ -26,30 +30,49 @@
               ><orth>iǧust</orth></form></form>
         <sense><sense><abv:tr xml:lang="ru">
               <q>слышать</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>hear</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>слушать</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>listen</q>
             </abv:tr></sense></sense>
         <re>
           <form type="lemma"><orth>qūsyn kænyn</orth></form>
           <sense><sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
                 <q xmlns="http://www.tei-c.org/ns/1.0">объявлять</q>
+              </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+                <q xmlns="http://www.tei-c.org/ns/1.0">declare</q>
               </tr></sense><sense><abv:tr xml:lang="ru">
                 <q>извещать</q>
+              </abv:tr><abv:tr xml:lang="en">
+                <q>notify</q>
               </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                <q>proclamare</q>
+              </abv:tr><abv:tr xml:lang="en">
                 <q>proclamare</q>
               </abv:tr></sense><sense><abv:tr xml:lang="ru">
                 <q>enuntiare</q>
+              </abv:tr><abv:tr xml:lang="en">
+                <q>enuntiare</q>
               </abv:tr></sense></sense>
         </re>
-        <note type="comment">. Начальный <c>i</c>, утраченный в иронском, восстанавливается в
-          сочетании с превербами: <mentioned xml:lang="os"><w>ba-i-qūsyn</w>
+        <note xml:lang="ru" type="comment">. Начальный <c>i</c>, утраченный в иронском,
+          восстанавливается в сочетании с превербами: <mentioned xml:lang="os"><w>ba-i-qūsyn</w>
             <gloss><q>послушать</q></gloss></mentioned>, <w>feqūsyn</w> (из <w>fæ-i-qūsyn</w>)
               <gloss><q>услышать</q></gloss> и др.</note>
+        <note xml:lang="en" type="comment">. The initial <c>i</c>, that is lost in Iron, is restored
+          in combination with preverbs: <mentioned xml:lang="os"><w>ba-i-qūsyn</w>
+            <gloss><q>listen to</q></gloss></mentioned>, <w>feqūsyn</w> (from <w>fæ-i-qūsyn</w>)
+              <gloss><q>hear</q></gloss> etc.</note>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">qūstæ kæmæn īs qūsynæn ūj qūsæd!</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">кто имеет уши слышать, да слышит!</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Who hath ears to hear, let him hear!</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Матфей"/>
               <biblScope><hi rendition="#rend_italic">13</hi> 9</biblScope></bibl>
@@ -59,6 +82,9 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">голос его слышишь...</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">and thou hearest the sound thereof...</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Иоанн"/>
               <biblScope><hi rendition="#rend_italic">3</hi> 8</biblScope></bibl>
           </example>
@@ -67,6 +93,9 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">Азау слушала их из-за двери</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Azau listened to them from behind the door</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сека"/>
               <biblScope>45</biblScope></bibl>
           </example>
@@ -74,6 +103,9 @@
             <quote xmlns="http://www.tei-c.org/ns/1.0">x˳ycaw dær næm næ qūsy</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">и бог нас не слушает</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">and God doesn't listen to us</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ОЭ"/>
               <biblScope>I 24</biblScope></bibl>
@@ -85,6 +117,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">услышав эту весть, Нарты собрались у
                 Урызмага</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">hearing this news, the Narts gathered at the
+                Wyryzmag</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ОТ"/>
               <biblScope>72</biblScope></bibl>
           </example>
@@ -95,6 +131,11 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">юноша отправлялся (в путь), но его зять не
                 пускал его; юноша не послушался его и пошел своей дорогой</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the young man set out (on his journey), but his
+                son-in-law would not let him; the young man did not listen to him and went his own
+                way</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Munk."/>
               <biblScope>62</biblScope></bibl>
           </example>
@@ -103,6 +144,9 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">слушайся наставника</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">listen to your mentor</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Коста"/>
               <biblScope>118</biblScope></bibl>
           </example>
@@ -110,6 +154,10 @@
             <quote xmlns="http://www.tei-c.org/ns/1.0">k˳y jæ ʽssarat, wæd myn feqūsyn kænūt</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">когда найдете его, известите меня</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">when ye have found <hi rend="italic">him</hi>,
+                bring me word again</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Матфей"/>
               <biblScope><hi rendition="#rend_italic">2</hi> 8</biblScope></bibl>
@@ -120,6 +168,9 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">послушайте же мое сказание!</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">listen to my story!</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Iræf"/>
               <biblScope>33</biblScope></bibl>
           </example>
@@ -128,6 +179,9 @@
             <quote xmlns="http://www.tei-c.org/ns/1.0">xwæræ, mæ ʒubandimæ dær iǧosæ</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">сестра, послушай и мой рассказ</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">sister, listen to my story too</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_MSt."/>
               <biblScope>26<hi rendition="#rend_subscript">8</hi></biblScope></bibl>
@@ -138,6 +192,9 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">когда Асаго услышал это...</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">when Asago heard this...</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_MSt."/>
               <biblScope>4<hi rendition="#rend_subscript">12</hi></biblScope></bibl>
           </example>
@@ -145,6 +202,9 @@
             <quote xmlns="http://www.tei-c.org/ns/1.0">ali bon ci ʽlǧist iǧosis...</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">проклятие, которое ты слышишь каждый день</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the curse you hear every day</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ОЭ"/>
               <biblScope>I 100</biblScope></bibl>
@@ -174,10 +234,9 @@
             <gloss><q>слушатель</q></gloss>
             <note type="bibl">(<bibl><ref type="bibl" target="#ref_HO"><hi
                     rendition="#rend_smallcaps">Henning</hi>, HO</ref>
-                <biblScope>110</biblScope></bibl>. — <bibl><ref type="bibl" target="">Фрейман.
-                  Хорезмийский язык.</ref>
-                <biblScope>М., 1964, стр. 45, 67, 86</biblScope></bibl>)</note></mentioned>,
-            <mentioned xml:lang="ae"><lang/>
+                <biblScope>110</biblScope></bibl>. — <bibl><author>Фрейман</author>.
+                  <title>Хорезмийский язык</title>. <biblScope>М., 1964, стр. 45, 67,
+                86</biblScope></bibl>)</note></mentioned>, <mentioned xml:lang="ae"><lang/>
             <w>gaoš-</w>
             <gloss><q>слушать</q></gloss></mentioned>, <mentioned xml:lang="inc-x-old"><lang/>
             <w>ghōṣ-</w>
@@ -195,6 +254,54 @@
               xml:lang="os-x-digor">ǧos</w>
             <gloss><q>ухо</q></gloss></ref>.<lb/><bibl><ref type="bibl" target="#ref_Миллер_Вс._ОЭ"
               >Вс. <hi rendition="#rend_smallcaps">Миллер</hi>. ОЭ</ref>
+            <biblScope>III 144</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Miller._Gr."
+              >Gr.</ref>
+            <biblScope>31, 61</biblScope></bibl>. — <bibl><ref type="bibl"
+              target="#ref_Hübschmann._Oss."/>
+            <biblScope>34</biblScope></bibl>.</etym>
+        <etym xml:lang="en">It traces back to <mentioned xml:lang="x-oldirn"><lang/>
+            <w>vi-gauš-</w></mentioned>. In other Iranian languages , it also usually appears in
+          conjunction with preverbs <m>ni-</m>, <m>pati-</m> etc. Cf. <mentioned
+            xml:lang="x-balochi"><lang/>
+            <w>gōšag</w>
+            <gloss><q>hear</q></gloss>, <w>nigōšag</w></mentioned>, <mentioned xml:lang="fa"><lang/>
+            <w>niyōšīdan</w></mentioned>, <mentioned xml:lang="ps"><lang/>
+            <w>nγutəl</w> : <w>nγaẓ̌</w>
+            <gloss><q>listen</q></gloss></mentioned>, <mentioned xml:lang="sgh"><lang/>
+            <w>neγūẓ̌am</w>
+            <gloss><q>I hear</q></gloss></mentioned>, <mentioned xml:lang="yai"><lang/>
+            <w>γūš-</w>, <w>duγūš-</w>
+            <gloss><q>hear</q></gloss></mentioned>, <mentioned xml:lang="sog"><lang/>
+            <w type="rec">nīγōš-</w> (<w>nγʽwš-</w>)</mentioned>, <mentioned xml:lang="xpr"><lang/>
+            <w>niγōš</w> (<w>ngwš-</w>)</mentioned>, <mentioned xml:lang="sog"><lang/>
+            <w>niγōšak</w> (<w>nγʽwšk</w>) <gloss><q>listener</q></gloss>, <w type="rec">patγōš-</w>
+              (<w>ptγʽwš</w>) <gloss><q>listen</q></gloss></mentioned>, <mentioned xml:lang="kho"><lang/>
+            <w>pyūṣ-</w> (← <w type="rec">pi-γūš-</w> ← <w type="rec">pati-gauš-</w> )
+                <gloss><q>hear</q></gloss></mentioned>, <mentioned xml:lang="zkh"><lang/>
+            <w>ṅγōs-</w>, <w>anγōs-</w>
+            <gloss><q>listen</q></gloss>, <w>nγōsi</w>
+            <gloss><q>listener</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_HO"><hi
+                    rendition="#rend_smallcaps">Henning</hi>, HO</ref>
+                <biblScope>110</biblScope></bibl>. — <bibl><author>Freyman</author>. <title>Khorezm
+                  language</title>. <biblScope>M., 1964, p. 45, 67,
+            86</biblScope></bibl>)</note></mentioned>, <mentioned xml:lang="ae"><lang/>
+            <w>gaoš-</w>
+            <gloss><q>listen</q></gloss></mentioned>, <mentioned xml:lang="inc-x-old"><lang/>
+            <w>ghōṣ-</w>
+            <gloss><q>sound</q></gloss></mentioned>. <mentioned xml:lang="xsc"><lang/>
+            <w>Γωσακος</w></mentioned> has <mentioned xml:lang="oos"><lang/>
+            <w>gosak</w>
+            <gloss><q>listening</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_ОЯФ_I"/>
+                <biblScope>166</biblScope></bibl>)</note></mentioned>. The medial <q>be heard</q>
+          encloses the same stem, but with a weak vowel: <ref type="xr" target="#entry_q0ysyn"><w
+              xml:lang="os-x-iron">q˳ysyn</w><w xml:lang="os-x-digor">iǧusun</w></ref> (<bibl><ref
+              type="bibl" target="#ref_ГО"/>
+            <biblScope>§ 99<hi rendition="#rend_subscript">2</hi></biblScope></bibl>). Cf. also <ref
+            type="xr" target="#entry_qūs" xml:lang="os"><w xml:lang="os-x-iron">qūs</w><w
+              xml:lang="os-x-digor">ǧos</w>
+            <gloss><q>ear</q></gloss></ref>.<lb/><bibl><ref type="bibl" target="#ref_Миллер_Вс._ОЭ"/>
             <biblScope>III 144</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Miller._Gr."
               >Gr.</ref>
             <biblScope>31, 61</biblScope></bibl>. — <bibl><ref type="bibl"
