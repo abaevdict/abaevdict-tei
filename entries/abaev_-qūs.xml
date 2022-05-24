@@ -1,36 +1,50 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">-qūs</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
       <entry xml:id="entry_-qūs" xml:lang="os" abv:completeness="incomplete">
         <form type="lemma" xml:lang="os-x-iron"><orth>-qūs</orth></form>
         <form xml:lang="os-x-digor" type="dialectal"><orth>-ǧos</orth></form>
-        <sense><note type="comment">во второй части сложных слов означает</note><sense><abv:tr
-              xml:lang="ru">
+        <sense><note xml:lang="ru" type="comment">во второй части сложных слов означает</note><note
+            xml:lang="en" type="comment">in the second part of compound words
+              means</note><sense><abv:tr xml:lang="ru">
               <q>крадущий</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>stealing</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>воришка</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>little thief</q>
             </abv:tr></sense></sense>
-        <note type="comment">: <mentioned xml:lang="os"><w>kærkqūs</w>
+        <note xml:lang="ru" type="comment">: <mentioned xml:lang="os"><w>kærkqūs</w>
             <gloss><q>крадущий кур</q></gloss>; <w>g˳ydynqūs</w>
             <gloss><q>крадущий пироги</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#src_Коста"/>
+                <biblScope>93</biblScope></bibl>)</note></mentioned></note>
+        <note xml:lang="en" type="comment">: <mentioned xml:lang="os"><w>kærkqūs</w>
+            <gloss><q>stealing chickens</q></gloss>; <w>g˳ydynqūs</w>
+            <gloss><q>stealing pies</q></gloss>
             <note type="bibl">(<bibl><ref type="bibl" target="#src_Коста"/>
                 <biblScope>93</biblScope></bibl>)</note></mentioned></note>
         <etym xml:lang="ru">Думать о связи с <ref type="xr" target="#entry_qūs" xml:lang="os"><w
@@ -47,11 +61,37 @@
             <gloss><q>красться</q></gloss></ref>. Ср. во второй части сложных слов <mentioned
             xml:lang="ae"><lang/>
             <w>-guz</w>
-            <note type="comment">(<w>zəmar-gūz-</w>
-              <gloss><q>прячущийся в земле</q></gloss>)</note></mentioned>, <lang>др.иид.</lang>
-          <w>guhya</w>
-          <note type="bibl">(<bibl><ref type="bibl" target="#ref_Wackernagel-Debrunner"/>
-              <biblScope>II 2 782</biblScope></bibl>)</note>. См. <ref type="xr"
+            <note xml:lang="ru" type="comment">(<w>zəmar-gūz-</w>
+              <gloss><q>прячущийся в земле</q></gloss>)</note><note xml:lang="en" type="comment"
+                >(<w>zəmar-gūz-</w>
+              <gloss><q>прячущийся в земле</q></gloss>)</note></mentioned>, <mentioned
+            xml:lang="inc-x-old"><lang/>
+            <w>guhya</w>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Wackernagel-Debrunner"/>
+                <biblScope>II 2 782</biblScope></bibl>)</note></mentioned>. См. <ref type="xr"
+            target="#entry_q0yzyn" xml:lang="os"/>.</etym>
+        <etym xml:lang="en">There is no need to think about the connection with <ref type="xr"
+            target="#entry_qūs" xml:lang="os"><w xml:lang="os-x-iron">qūs</w>
+            <q>ухо</q></ref>: the meanings are clearly incompatible. The word <oRef/> is rather from
+            <mentioned xml:lang="ira"><w type="rec">qūz</w></mentioned> (with devoicing <c>z</c> →
+            <c>s</c> in the final position) and it traces back to <mentioned xml:lang="ira"><lang/>
+            <w>gūz-</w>
+            <note type="bibl">(<mentioned xml:lang="inc-x-old"><lang/>
+                <w>gūh-</w></mentioned>)</note>
+            <gloss><q>hide</q>, <q>conceal</q></gloss></mentioned>, which is found in <ref type="xr"
+            target="#entry_q0yzyn" xml:lang="os"><lang/>
+            <w xml:lang="os-x-iron">q˳yzyn</w><w xml:lang="os-x-digor">ǧuzun</w>
+            <gloss><q>sneak</q></gloss></ref>. Cf. in the second part of compound words <mentioned
+            xml:lang="ae"><lang/>
+            <w>-guz</w>
+            <note xml:lang="ru" type="comment">(<w>zəmar-gūz-</w>
+              <gloss><q>прячущийся в земле</q></gloss>)</note><note xml:lang="en" type="comment"
+                >(<w>zəmar-gūz-</w>
+              <gloss><q>hiding in the ground</q></gloss>)</note></mentioned>, <mentioned
+            xml:lang="inc-x-old"><lang/>
+            <w>guhya</w>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Wackernagel-Debrunner"/>
+                <biblScope>II 2 782</biblScope></bibl>)</note></mentioned>. See <ref type="xr"
             target="#entry_q0yzyn" xml:lang="os"/>.</etym>
       </entry>
     </body>
