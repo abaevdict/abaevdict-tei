@@ -1,21 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">qylma</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
@@ -24,11 +28,30 @@
         <form xml:lang="os-x-digor" type="dialectal"><orth>qilma</orth></form>
         <sense><abv:tr xml:lang="ru">
             <q>зловонное, горькое и ядовитое вещество</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>fetid, bitter and poisonous substance</q>
           </abv:tr></sense>
-        <note type="comment">;  <example xmlns="http://ossetic-studies.org/ns/abaevdict">
+        <note xml:lang="ru" type="comment">; <example
+            xmlns="http://ossetic-studies.org/ns/abaevdict">
             <quote xmlns="http://www.tei-c.org/ns/1.0">(qylma —) mastæj mastdær kærdæg</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">очень горькая трава</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">очень горькая трава</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сека._Ир._фийау"/>
+              <biblScope>67</biblScope></bibl>
+          </example>
+        </note>
+        <note xml:lang="en" type="comment">; <example
+            xmlns="http://ossetic-studies.org/ns/abaevdict">
+            <quote xmlns="http://www.tei-c.org/ns/1.0">(qylma —) mastæj mastdær kærdæg</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">очень горькая трава</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">very bitter grass</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сека._Ир._фийау"/>
               <biblScope>67</biblScope></bibl>
@@ -42,25 +65,51 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">слова воробья показались вороне горькими, как
                   <hi rendition="#rend_smallcaps">qylma</hi></q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the sparrow's words seemed to the crow bitter,
+                like <hi rendition="#rend_smallcaps">qylma</hi></q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сека._Ир._фийау"
-                >там же,</ref>
+                  ><note xml:lang="ru" type="comment">там же</note><note xml:lang="en"
+                  type="comment">ibid</note>.</ref>
               <biblScope>50</biblScope></bibl>
           </example>
           <example>
-            <note type="comment" xmlns="http://www.tei-c.org/ns/1.0">
+            <note xmlns="http://www.tei-c.org/ns/1.0" xml:lang="ru" type="comment">
               <example xmlns="http://ossetic-studies.org/ns/abaevdict">
                 <quote xmlns="http://www.tei-c.org/ns/1.0">Gubity qylma</quote>
                 <tr xml:lang="ru">
                   <q xmlns="http://www.tei-c.org/ns/1.0"><hi rendition="#rend_smallcaps">qylma</hi>
                     Губиевых</q>
                 </tr>
+                <tr xml:lang="en">
+                  <q xmlns="http://www.tei-c.org/ns/1.0"><hi rendition="#rend_smallcaps">qylma</hi>
+                    Губиевых</q>
+                </tr>
               </example> (об особенно отвратительном напитке или кушанье): </note>
+            <note xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" type="comment">
+              <example xmlns="http://ossetic-studies.org/ns/abaevdict">
+                <quote xmlns="http://www.tei-c.org/ns/1.0">Gubity qylma</quote>
+                <tr xml:lang="ru">
+                  <q xmlns="http://www.tei-c.org/ns/1.0"><hi rendition="#rend_smallcaps">qylma</hi>
+                    Губиевых</q>
+                </tr>
+                <tr xml:lang="en">
+                  <q xmlns="http://www.tei-c.org/ns/1.0">The Gubievs' <hi
+                      rendition="#rend_smallcaps">qylma</hi></q>
+                </tr>
+              </example> (about a particularly disgusting drink or food): </note>
             <quote xmlns="http://www.tei-c.org/ns/1.0">аx˳ypp kodta jæ ʒyxy ʒag caværdær qylmajy
               x˳yzæn mast donæj, — aj Gubity qylma k˳y ū!</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">он глотнул в полный рот какой-то жидкости,
                 горькой, как <hi rendition="#rend_smallcaps">qylma</hi>, — да ведь это <hi
                   rendition="#rend_smallcaps">qylma</hi> Губиевых!</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">he swallowed a mouthful of some liquid, bitter
+                like <hi rendition="#rend_smallcaps">qylma</hi>, — that is the Gubiev's <hi
+                  rendition="#rend_smallcaps">qylma</hi>!</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ИАА"/>
               <biblScope>III 81</biblScope></bibl>
@@ -72,6 +121,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">когда вошел новый больной, казалось, что он
                 принес с собой <hi rendition="#rend_smallcaps">qylma</hi>...</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">when the new patient entered, it seemed that he
+                had brought with him <hi rendition="#rend_smallcaps">qylma</hi>...</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_F."/>
               <biblScope>1956 III 18</biblScope></bibl>
           </example>
@@ -81,11 +134,19 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">они думают о всякой мерзости</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">they think about all kinds of nasty things</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Qazb."/>
               <biblScope>74</biblScope></bibl>
           </example>
         </exampleGrp>
         <etym xml:lang="ru">Ср. <mentioned xml:lang="trk"><lang/>
+            <w>qalma</w>
+            <gloss><q>Allium ursinum</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Räsänen"/>
+                <biblScope>Versuch 227</biblScope></bibl>)</note></mentioned>.</etym>
+        <etym xml:lang="en">Cf. <mentioned xml:lang="trk"><lang/>
             <w>qalma</w>
             <gloss><q>Allium ursinum</q></gloss>
             <note type="bibl">(<bibl><ref type="bibl" target="#ref_Räsänen"/>
