@@ -1,21 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">qₒyna</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
@@ -24,17 +28,25 @@
         <form xml:lang="os-x-digor" type="dialectal"><orth>ǧuna</orth></form>
         <sense n="1"><abv:tr xml:lang="ru">
             <q>мох</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>moss</q>
           </abv:tr></sense>
         <sense n="2"><abv:tr xml:lang="ru">
             <q>плесень</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>mould</q>
           </abv:tr></sense>
         <re>
           <form type="lemma"><orth>ysq˳yna wyn</orth></form>
           <sense n="1"><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">зарасти мохом</q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">overgrow with moss</q>
             </tr></sense>
           <sense n="2"><abv:tr xml:lang="ru">
               <q>заплесневеть</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>get mouldy</q>
             </abv:tr></sense>
         </re>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict" n="1">
@@ -43,6 +55,10 @@
               lægæt</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">мы устлали пещеру дерном, мохом и цветами</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">we have covered the cave with turf, moss and
+                flowers</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Брит."/>
               <biblScope>79</biblScope></bibl>
@@ -53,14 +69,22 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">там, ниже, мох тощий, кустарник сухой</q>
             </tr>
-            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Пушкин._Кавказ"
-                  ><hi rendition="#rend_smallcaps">Пушкин</hi>. Кавказ</ref></bibl>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">there, below, the moss is thin, the shrub is
+                dry</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><note type="comment"><hi
+                  rendition="#rend_smallcaps">Pushkin</hi>. Caucasus</note></bibl>
           </example>
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">Byzy mæsyg q˳yna særæj læwwy</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">башня Быз стоит с верхушкой, (заросшей)
                 мохом</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the tower of Byz stands with a top overgrown
+                with moss</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Хар._Кадӕг"/>
               <biblScope>6</biblScope></bibl>
@@ -72,6 +96,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">вон внизу ниже мельницы есть большой серый
                 камень, под серым камнем — мох</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">There's a big gray stone down below the mill,
+                and moss under the gray stone</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Munk."/>
               <biblScope>122</biblScope></bibl>
           </example>
@@ -82,6 +110,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">вон внизу в ущелье есть берлога, внутри она
                 сильно (заросла) мохом</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">there is a den down in the gorge, inside it is
+                heavily overgrown with moss</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Iræf"/>
               <biblScope>57</biblScope></bibl>
@@ -95,6 +127,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">Пиран ворочал туда-сюда какие-то заплесневелые
                 книги</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Piran was tossing some moldy books back and
+                forth</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сека"/>
               <biblScope>60</biblScope></bibl>
           </example>
@@ -102,6 +138,9 @@
             <quote xmlns="http://www.tei-c.org/ns/1.0">cyxtytæ xændyǵy systy q˳yna</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">сыры заплесневели в кадке</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the cheeses are moldy in the tub</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Мысост"/>
               <biblScope>32</biblScope></bibl>
@@ -113,17 +152,36 @@
           Сафарали <hi rendition="#rend_smallcaps">Туганова</hi>, в дигорском существует форма
             <mentioned xml:lang="os-x-digor"><w>ǧædi ǧun</w>
             <gloss><q>древесный мох</q></gloss>
-            <note type="comment">(буквально <q rendition="#rend_doublequotes">древесная
-              шерсть</q>)</note></mentioned>, соответствующая <mentioned xml:lang="os-x-iron"><lang/>
+            <note xml:lang="ru" type="comment">(буквально <q rendition="#rend_doublequotes"
+                >древесная шерсть</q>)</note><note xml:lang="en" type="comment">(буквально <q
+                rendition="#rend_doublequotes">древесная шерсть</q>)</note></mentioned>,
+          соответствующая <mentioned xml:lang="os-x-iron"><lang/>
             <w>qædi q˳yna</w>
-            <note type="bibl">(<bibl><ref type="bibl" target=""><hi rendition="#rend_smallcaps"
-                    >Гассиев</hi> и <hi rendition="#rend_smallcaps">Туганов</hi>. Названия растений
-                  и животных на осетинских наречиях.</ref>
-                <biblScope>Изв. Кавк. отдела Русск. геогр. общ. VIII <hi rendition="#rend_italic"
+            <note type="bibl">(<bibl><author>Гассиев</author> и <author>Туганов</author>.
+                  <title>Названия растений и животных на осетинских наречиях</title>.
+                  <biblScope>Изв. Кавк. отдела Русск. геогр. общ. VIII <hi rendition="#rend_italic"
                     >1</hi> 169</biblScope></bibl>)</note></mentioned>. Имеются и другие случаи,
           когда одно и то же слово выступает с наращением <c>-а</c> и без него, например <ref
             type="xr" target="#entry_saǧæs"><w>saǧæs</w> || <w>sagæsa</w>
             <q>раздумье</q></ref>.</etym>
+        <etym xml:lang="en">It is identical with <ref type="xr" target="#entry_q0yn" xml:lang="os"
+              ><w xml:lang="os-x-iron">q˳yn</w><w xml:lang="os-x-digor">ǧun</w>
+            <q>wool</q></ref>. This is especially supported by the fact that, according to Safarali
+            <hi rendition="#rend_smallcaps">Tuganov</hi>, in Digor there is a form <mentioned
+            xml:lang="os-x-digor"><w>ǧædi ǧun</w>
+            <gloss><q>tree moss</q></gloss>
+            <note xml:lang="ru" type="comment">(буквально <q rendition="#rend_doublequotes"
+                >древесная шерсть</q>)</note><note xml:lang="en" type="comment">(literally <q
+                rendition="#rend_singlequotes">tree wool</q>)</note></mentioned>, corresponding
+            <mentioned xml:lang="os-x-iron"><lang/>
+            <w>qædi q˳yna</w>
+            <note type="bibl">(<bibl><author>Gassiev</author> and <author>Tuganov</author>.
+                  <title>Names of plants and animals in Ossetian dialects</title>. <biblScope>News
+                  of the Caucasian Department of the Russian Geographical Society. VIII <hi
+                    rendition="#rend_italic">1</hi> 169</biblScope></bibl>)</note></mentioned>.
+          There are other cases when the same word appears with an extension <c>-a</c> and without
+          it, for example <ref type="xr" target="#entry_saǧæs"><w>saǧæs</w> || <w>sagæsa</w>
+            <q>reflection</q></ref>.</etym>
       </entry>
     </body>
   </text>
