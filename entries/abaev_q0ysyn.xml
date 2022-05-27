@@ -1,21 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">qₒysyn</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
@@ -26,14 +30,21 @@
               ><orth>iǧust</orth></form></form>
         <sense><sense><abv:tr xml:lang="ru">
               <q>слышаться</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>hear</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>доноситься</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>reach</q>
             </abv:tr></sense></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">næ q˳ysid mæ kæwynqælæs</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">не слышался бы мой скорбный голос</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">my mournful voice would not be heard</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Коста"/>
               <biblScope>11</biblScope></bibl>
@@ -45,6 +56,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">и се (слышался) глас из облака
                 глаголющий...</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">and behold a voice out of the cloud, which
+                said...</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Матфей"/>
               <biblScope><hi rendition="#rend_italic">17</hi> 5</biblScope></bibl>
           </example>
@@ -54,13 +69,17 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">далеко слышался плач народа</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the crying of the people could be heard far
+                away</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Iræf"/>
               <biblScope>130</biblScope></bibl>
           </example>
         </exampleGrp>
-        <etym xml:lang="ru">К <lang>др.иран.</lang>
-          <w type="rec">vi-guš-</w> (<w type="rec">vi-gušya-</w>), медиальное соответствие к
-          переходному глаголу <ref type="xr" target="#entry_qūsyn" xml:lang="os"><w
+        <etym xml:lang="ru">К <mentioned xml:lang="x-oldirn"><lang/>
+            <w type="rec">vi-guš-</w> (<w type="rec">vi-gušya-</w>)</mentioned>, медиальное
+          соответствие к переходному глаголу <ref type="xr" target="#entry_qūsyn" xml:lang="os"><w
               xml:lang="os-x-iron">qūsyn</w><w xml:lang="os-x-digor">iǧosun</w>
             <q>слышать</q>, <q>слушать</q></ref>, с закономерным ослаблением гласного <c>u</c> →
             <c>y</c> | <c>o</c> → <c>u</c> (<bibl><ref type="bibl" target="#ref_ГО"/>
@@ -68,15 +87,34 @@
           форм и значений <ref type="xr" target="#entry_qūsyn" xml:lang="os"><w xml:lang="os-x-iron"
               >qūsyn</w>
             <q>слышать</q></ref> || <oRef/>
-          <q>слышаться</q> см.: <bibl><ref type="bibl" target=""><hi rendition="#rend_smallcaps"
-                >Kurylowicz</hi>. Un archaisme de la conjugaison indoiranienne. Rocznik
-              Orjent.</ref>
-            <biblScope>VIII 94— 100</biblScope></bibl>. — <bibl><ref type="bibl"
+          <q>слышаться</q> см.: <bibl><author>Kurylowicz</author>. <title>Un archaisme de la
+              conjugaison indoiranienne.</title>
+            <biblScope>Rocznik Orjent. VIII 94— 100</biblScope></bibl>. — <bibl><ref type="bibl"
               target="#ref_Benveniste._Etudes"/>
-            <biblScope>50—51</biblScope></bibl>. — <bibl><ref type="bibl" target=""><hi
-                rendition="#rend_smallcaps">Kronasser</hi>, Stzb. d. Akad. Wien</ref>
-            <biblScope>1960 CCXXXV <hi rendition="#rend_italic">2</hi> 24—25</biblScope></bibl>. —
-          См. <ref type="xr" target="#entry_qūsyn" xml:lang="os"/>.</etym>
+            <biblScope>50—51</biblScope></bibl>. — <bibl><author>Kronasser</author>, <title>Stzb. d.
+              Akad.</title>
+            <biblScope>Wien 1960 CCXXXV <hi rendition="#rend_italic">2</hi>
+          24—25</biblScope></bibl>. — См. <ref type="xr" target="#entry_qūsyn" xml:lang="os"
+          />.</etym>
+        <etym xml:lang="en">To <mentioned xml:lang="x-oldirn"><lang/>
+            <w type="rec">vi-guš-</w> (<w type="rec">vi-gušya-</w>)</mentioned>, a medial
+          correspondence to a transitive verb <ref type="xr" target="#entry_qūsyn" xml:lang="os"><w
+              xml:lang="os-x-iron">qūsyn</w><w xml:lang="os-x-digor">iǧosun</w>
+            <q>hear</q>, <q>listen</q></ref>, with a regular weakening of the vowel <c>u</c> →
+            <c>y</c> | <c>o</c> → <c>u</c> (<bibl><ref type="bibl" target="#ref_ГО"/>
+            <biblScope>§ 99<hi rendition="#rend_subscript">2</hi></biblScope></bibl>). About the
+          relation of forms and meaning of <ref type="xr" target="#entry_qūsyn" xml:lang="os"><w
+              xml:lang="os-x-iron">qūsyn</w>
+            <q>hear</q></ref> || <oRef/>
+          <q>be heard</q> see: <bibl><author>Kurylowicz</author>. <title>Un archaisme de la
+              conjugaison indoiranienne.</title>
+            <biblScope>Rocznik Orjent. VIII 94— 100</biblScope></bibl>. — <bibl><ref type="bibl"
+              target="#ref_Benveniste._Etudes"/>
+            <biblScope>50—51</biblScope></bibl>. — <bibl><author>Kronasser</author>, <title>Stzb. d.
+              Akad.</title>
+            <biblScope>Wien 1960 CCXXXV <hi rendition="#rend_italic">2</hi>
+          24—25</biblScope></bibl>. — See <ref type="xr" target="#entry_qūsyn" xml:lang="os"
+          />.</etym>
       </entry>
     </body>
   </text>
