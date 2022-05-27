@@ -1,35 +1,82 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">lyst</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_lyst" xml:lang="os" abv:completeness="incomplete">
-        <form type="lemma"><orth>lyst</orth></form>
+      <entry xml:id="entry_lyst" xml:lang="os" abv:completeness="complete">
+        <form type="lemma" xml:lang="os-x-iron"><orth>lyst</orth></form>
+        <form xml:lang="os-x-digor" type="dialectal"><orth>listæ</orth></form>
         <sense><abv:tr xml:lang="ru">
-            <q/>
+            <q>щепка</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>chip</q>
           </abv:tr></sense>
-        <abv:exampleGrp>
-          <abv:example>
-            <quote/>
-          </abv:example>
-        </abv:exampleGrp>
-        <etym xml:lang="ru"/>
+        <note xml:lang="ru" type="comment">; обычно во мн.ч.: <w xml:lang="os-x-iron">lystytæ</w><w
+            xml:lang="os-x-digor">listitæ</w>.</note>
+        <note xml:lang="en" type="comment">; usually in plural: <w xml:lang="os-x-iron"
+            >lystytæ</w><w xml:lang="os-x-digor">listitæ</w>.</note>
+        <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0"><oRef>lystytæ</oRef> rambyrd kæn æmæ art
+              yskænæm</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">собери щепок, и мы разведем огонь</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">gather chips, and we will make a fire</q>
+            </tr>
+          </example>
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">sæ mad <oRef>lystytæ</oRef> wīʒy</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">их мать подбирает щепки</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">their mother is picking up chips</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Bar."/>
+              <biblScope>96</biblScope></bibl>
+          </example>
+          <example xml:lang="os-x-digor">
+            <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">Zulemæt… fexsta ewvarsmæ mæ ʒabur; ʒabur
+              badælgommæ ‘j sogfadæni <oRef>listiti</oRef> ‘xsæn</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Зулемат швырнула в сторону мой чувяк; чувяк
+                завалился в месте рубки дров среди щепок</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Zulemæt threw aside my shoe; the shoe ended up
+                in the wood-chopping place among chips</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Iræf"/>
+              <biblScope>123</biblScope></bibl>
+          </example>
+        </exampleGrp>
+        <etym xml:lang="ru">Идентично с <ref type="xr" target="#entry_lystæg"><w>lyst(æg)</w>
+            <gloss><q>мелкий</q></gloss></ref>, q. v.</etym>
+        <etym xml:lang="en">Identical to <ref type="xr" target="#entry_lystæg"><w>lyst(æg)</w>
+            <gloss><q>fine</q></gloss></ref>, q. v.</etym>
       </entry>
     </body>
   </text>
