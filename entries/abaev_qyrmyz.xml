@@ -1,21 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">qyrmyz</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
@@ -24,8 +28,12 @@
         <form xml:lang="os-x-digor" type="dialectal"><orth>qærmiz</orth></form>
         <sense><sense><abv:tr xml:lang="ru">
               <q>пурпурно-красная краска</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>scarlet-red paint</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>кошениль</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>cochineal</q>
             </abv:tr></sense></sense>
         <etym xml:lang="ru">Через <mentioned xml:lang="trk"><lang/>
             <w>qərməz</w>, <w>qərməzə</w>
@@ -37,11 +45,19 @@
             <w>kṛmi-jā</w>
             <gloss>буквально <q rendition="#rend_doublequotes">производимый
             червем</q></gloss></mentioned> (краска добывалась из особой породы червей).<hi
-            rendition="#rend_superscript">1</hi><note type="footnote">Опираясь на <mentioned
+            rendition="#rend_superscript">1</hi><note xml:lang="ru" type="footnote">Опираясь на
+              <mentioned xml:lang="xcl"><lang>ари.</lang>
+              <w>kʼarmir</w>
+              <gloss><q>красный</q></gloss></mentioned>, <hi rendition="#rend_smallcaps"
+              >Marquart</hi> (<bibl><title>Ung. Jahrb.</title>
+              <biblScope>IX 93</biblScope></bibl>) предполагает исходное <w type="rec">kṛmi-ra</w>;
+            форма же <oRef xml:lang="os-x-digor">qirmiz</oRef> возникла якобы на тюркской почве по
+            известному звуковому чередованию тюрко-монгольских языков <c>r</c> ||
+            <c>z</c>.</note><note xml:lang="en" type="footnote">Опираясь на <mentioned
               xml:lang="xcl"><lang>ари.</lang>
               <w>kʼarmir</w>
               <gloss><q>красный</q></gloss></mentioned>, <hi rendition="#rend_smallcaps"
-              >Marquart</hi> (<bibl><ref type="bibl" target="">Ung. Jahrb.</ref>
+              >Marquart</hi> (<bibl><title>Ung. Jahrb.</title>
               <biblScope>IX 93</biblScope></bibl>) предполагает исходное <w type="rec">kṛmi-ra</w>;
             форма же <oRef xml:lang="os-x-digor">qirmiz</oRef> возникла якобы на тюркской почве по
             известному звуковому чередованию тюрко-монгольских языков <c>r</c> || <c>z</c>.</note>
@@ -53,6 +69,34 @@
             <w>сarmesino</w></mentioned>, <mentioned xml:lang="ka"><lang/>
             <w>qirmizi</w>
             <gloss><q>алый</q></gloss></mentioned> и др. — Ср. <ref type="xr"
+            target="#entry_skællad"/>.</etym>
+        <etym xml:lang="en">Through <mentioned xml:lang="trk"><lang/>
+            <w>qərməz</w>, <w>qərməzə</w>
+            <gloss><q>red</q>, <q>scarlet</q></gloss></mentioned> to <mentioned xml:lang="fa"
+            extralang="ar"><lang/>
+            <w>qirmizī</w>
+            <gloss><q>scarlet-red</q></gloss></mentioned>; the latter traces back to <mentioned
+            xml:lang="inc-x-old"><lang/>
+            <w>kṛmi-jā</w>
+            <gloss>literally <q rendition="#rend_singlequotes">produced by the
+            worm</q></gloss></mentioned> (the paint was extracted from a special breed of worms).<hi
+            rendition="#rend_superscript">1</hi><note type="footnote">Relying on <mentioned
+              xml:lang="xcl"><lang/>
+              <w>kʼarmir</w>
+              <gloss><q>red</q></gloss></mentioned>, <hi rendition="#rend_smallcaps">Marquart</hi>
+                (<bibl><title>Ung. Jahrb.</title>
+              <biblScope>IX 93</biblScope></bibl>) assumes the original <w type="rec">kṛmi-ra</w>;
+            the form <oRef xml:lang="os-x-digor">qirmiz</oRef> appeared allegedly in Turkic
+            languages according to the well-known sound alternation of the Turkic-Mongolian
+            languages <c>r</c> || <c>z</c>.</note> It is widely spoken in the languages of Europe
+          and Asia. Cf. <mentioned xml:lang="ru"><lang/>
+            <w>karmazin</w>
+            <gloss><q>antique scarlet cloth</q></gloss></mentioned>, <mentioned xml:lang="pl"><lang/>
+            <w>karmazyn</w>
+            <gloss><q>red paint</q></gloss></mentioned>, <mentioned xml:lang="it"><lang/>
+            <w>сarmesino</w></mentioned>, <mentioned xml:lang="ka"><lang/>
+            <w>qirmizi</w>
+            <gloss><q>scarlet</q></gloss></mentioned> etc. — Cf. <ref type="xr"
             target="#entry_skællad"/>.</etym>
       </entry>
     </body>
