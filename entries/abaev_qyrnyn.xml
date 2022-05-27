@@ -1,21 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">qyrnyn</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
@@ -26,21 +30,33 @@
               ><orth>ǧirnd</orth></form></form>
         <sense n="1" xml:lang="os-x-iron"><abv:tr xml:lang="ru">
             <q>подпевать при двухголосом пении</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>sing along with two-voiced singing</q>
           </abv:tr>
-          <note type="comment">(только в иронском, ср. <mentioned xml:lang="os-x-digor"
-                ><lang>д.</lang>
+          <note xml:lang="ru" type="comment">(только в иронском, ср. <mentioned
+              xml:lang="os-x-digor"><lang>д.</lang>
               <phr><ref type="xr" target="#entry_færssag">færsag</ref>
                 <ref type="xr" target="#entry_kænyn">kænun</ref></phr>
-              <gloss><q>подпевать</q></gloss></mentioned>)</note></sense>
+              <gloss><q>подпевать</q></gloss></mentioned>)</note><note xml:lang="en" type="comment"
+            >(only in Iron, cf. <mentioned xml:lang="os-x-digor"><lang/>
+              <phr><ref type="xr" target="#entry_færssag">færsag</ref>
+                <ref type="xr" target="#entry_kænyn">kænun</ref></phr>
+              <gloss><q>sing along</q></gloss></mentioned>)</note></sense>
         <sense n="2"><abv:tr xml:lang="ru">
             <q>скулить</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>whine</q>
           </abv:tr>
-          <note type="comment">(о собаке)</note></sense>
+          <note xml:lang="ru" type="comment">(о собаке)</note><note xml:lang="en" type="comment"
+            >(about dog)</note></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">ʒæbæxdær baqyrnūt wæ bæzǵyn qælæstæj</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">получше подпойте вашими густыми голосами</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">sing along better with your thick voices</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Æfx._Xæs."/>
               <biblScope>221</biblScope></bibl>
@@ -52,7 +68,12 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">один князь пел про себя и перебил своих людей,
                 говоря: «почему мне не подпеваете»</q>
             </tr>
-            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl">поговорка</ref></bibl>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">one prince was singing to himself and
+                interrupted his people, saying: <q>why don't you sing along with me</q></q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><note xml:lang="ru" type="comment"
+                >поговорка</note><note xml:lang="en" type="comment">proverb</note></bibl>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ЮОПам."
                 /><biblScope>III 208</biblScope></bibl>
           </example>
@@ -82,14 +103,16 @@
             xml:lang="fa"><lang/>
             <w>γarrīdan</w>
             <gloss><q>греметь</q>, <q>орать</q>, <q>вопить</q>, <q>рычать</q>, <q>реветь</q></gloss>
-            <note type="comment">(начальный у указывает на восточноиранское
-            влияние)</note></mentioned>, <mentioned xml:lang="cu"><lang/>
+            <note xml:lang="ru" type="comment">(начальный у указывает на восточноиранское
+              влияние)</note><note xml:lang="en" type="comment">(начальный у указывает на
+              восточноиранское влияние)</note></mentioned>, <mentioned xml:lang="cu"><lang/>
             <w>grano</w>
             <gloss><q>стих</q></gloss></mentioned>. Для пейоративного развития значения ср.
             <mentioned xml:lang="isk"><lang/>
             <w>γər(n)-</w> : <w>yər(n)əd</w>
             <gloss><q>рычать</q>
-              <note type="comment">(о собаке)</note>, <q>ворчать</q></gloss>
+              <note xml:lang="ru" type="comment">(о собаке)</note><note xml:lang="en" type="comment"
+                >(о собаке)</note>, <q>ворчать</q></gloss>
             <note type="bibl">(<bibl><ref type="bibl" target="#ref_Пахалина"/>
                 <biblScope>202</biblScope></bibl>)</note></mentioned>, <mentioned xml:lang="wbl"><lang/>
             <w>γεr-</w> id. <note type="bibl">(<bibl><ref type="bibl" target="#ref_Lorimer"
@@ -112,6 +135,62 @@
             type="xr" target="#entry_qaræg" xml:lang="os"/>, <ref type="xr" target="#entry_zaryn"/>,
             <ref type="xr" target="#entry_arǧawyn"/>.<lb/><bibl><ref type="bibl"
               target="#ref_Миллер_Вс._ОЭ">Вс. <hi rendition="#rend_smallcaps">Миллер</hi>. ОЭ</ref>
+            <biblScope>II 147</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Miller._Gr."/>
+            <biblScope>25, 62</biblScope></bibl>.</etym>
+        <etym xml:lang="en">It has the same root <mentioned xml:lang="ira"><w type="rec">gṛ-</w>, <w
+              type="rec">gar</w></mentioned>, which is found in <ref type="xr" target="#entry_qær"
+            xml:lang="os"><w xml:lang="os-x-iron">qær</w><w xml:lang="os-x-digor">ǧær</w>
+            <q>scream</q></ref>, <ref type="xr" target="#entry_qaræg" xml:lang="os"><w
+              xml:lang="os-x-iron">qaræg</w><w xml:lang="os-x-digor">ǧarængæ</w>
+            <q>mourning lamentation</q></ref>, <ref type="xr" target="#entry_zaryn"><w>zaryn</w>
+            <q>sing</q></ref>, <ref type="xr" target="#entry_arǧawyn"><w>arǧawyn</w> (<w>ā-grā-</w>)
+              <q>perform a church service</q></ref>. Vowels <c xml:lang="os-x-iron">у</c><c
+            xml:lang="os-x-digor">i</c> is the result of the weakening of <c>a</c>. For the
+          augmented consonant <c>-n-</c> (<mentioned xml:lang="ira"><w type="rec"
+            >gar-n-</w></mentioned>) cf. <mentioned xml:lang="inc-x-old"><lang/>
+            <w>gṛn-</w>, <w>gṛṇāti</w>
+            <gloss><q>sing</q>, <q>glorify</q></gloss></mentioned>. Cf. also <mentioned
+            xml:lang="ae"><lang/>
+            <w>gərən-</w>, <w>gərəntē-</w>
+            <gloss><q>glorify</q></gloss></mentioned>, <mentioned xml:lang="xpr"><lang/>
+            <w>grnʼg</w>
+            <gloss><q>thunder</q></gloss></mentioned>, <mentioned xml:lang="pal-x-pazend"><lang/>
+            <w>grīnā</w>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_BSOS"/>
+                <biblScope>1941 IX 90</biblScope></bibl>)</note></mentioned>, <mentioned
+            xml:lang="fa"><lang/>
+            <w>γarrīdan</w>
+            <gloss><q>thunder</q>, <q>shout</q>, <q>yell</q>, <q>roar</q>, <q>howl</q></gloss>
+            <note xml:lang="ru" type="comment">(начальный у указывает на восточноиранское
+              влияние)</note><note xml:lang="en" type="comment">(the initial <c>γ</c> indicates an
+              Eastern Iranian influence)</note></mentioned>, <mentioned xml:lang="cu"><lang/>
+            <w>grano</w>
+            <gloss><q>poem</q></gloss></mentioned>. For the pejorative development of the meaning
+          cf. <mentioned xml:lang="isk"><lang/>
+            <w>γər(n)-</w> : <w>yər(n)əd</w>
+            <gloss><q>growl</q>
+              <note xml:lang="ru" type="comment">(о собаке)</note><note xml:lang="en" type="comment"
+                >(about a dog)</note>, <q>grumble</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Пахалина"/>
+                <biblScope>202</biblScope></bibl>)</note></mentioned>, <mentioned xml:lang="wbl"><lang/>
+            <w>γεr-</w> id. <note type="bibl">(<bibl><ref type="bibl" target="#ref_Lorimer"
+              /></bibl>)</note></mentioned>, <mentioned xml:lang="grc"><lang/>
+            <w>δειριᾶrν-</w> id. <note type="bibl">(<bibl><ref type="bibl" target="#ref_Lorimer"
+                /></bibl>)</note></mentioned>, <mentioned xml:lang="goh"><lang/>
+            <w>queran</w>
+            <gloss><q>groan</q></gloss></mentioned>. Unexplained Germanic word group — <mentioned
+            xml:lang="de"><lang/>
+            <w>greinen</w>
+            <gloss><q>whimper</q>, <q>whine</q>, <q>grumble</q></gloss></mentioned>, <mentioned
+            xml:lang="en"><lang/>
+            <w>grin</w>, <w>groan</w></mentioned> — represents, perhaps, an old borrowing from
+          Scythian within other Scythian-Germanic isoglosses (<bibl><ref type="bibl"
+              target="#ref_СЕИ"/>
+            <biblScope>131—133</biblScope></bibl>). For the rest, see <ref type="xr"
+            target="#entry_qær" xml:lang="os"/>, <ref type="xr" target="#entry_qælæs"/>, <ref
+            type="xr" target="#entry_qaræg" xml:lang="os"/>, <ref type="xr" target="#entry_zaryn"/>,
+            <ref type="xr" target="#entry_arǧawyn"/>.<lb/><bibl><ref type="bibl"
+              target="#ref_Миллер_Вс._ОЭ"/>
             <biblScope>II 147</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Miller._Gr."/>
             <biblScope>25, 62</biblScope></bibl>.</etym>
       </entry>
