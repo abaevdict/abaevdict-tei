@@ -1,21 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">qₒytyrǧan</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
@@ -24,6 +28,8 @@
         <form xml:lang="os-x-digor" type="dialectal"><orth>quturǧan</orth></form>
         <sense><abv:tr xml:lang="ru">
             <q>брезгливый</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>fastidious</q>
           </abv:tr></sense>
         <note type="bibl"> (<bibl><ref type="bibl" target="#src_Сл."/></bibl>)?</note>
         <etym xml:lang="ru">Значение у <bibl><ref type="bibl" target="\">Вс. <hi
@@ -34,8 +40,18 @@
             <note type="bibl">(<bibl><ref type="bibl" target="#ref_Радлов"/>
                 <biblScope>II 993</biblScope></bibl>)</note>, <w>quturǧan</w>, <w>kudurgan</w>
             <gloss><q>бешеный</q>, <q>разъяренный</q>, <q>буйный</q></gloss>
-            <note type="bibl">(<bibl><ref type="bibl" target="">Русско- карач.-балк. сл.</ref>
+            <note type="bibl">(<bibl><title>Русско- карач.-балк. сл.</title>
                 <biblScope>М., 1965, стр. 52</biblScope></bibl>)</note></mentioned>.</etym>
+        <etym xml:lang="en">The meaning noted by <bibl><ref type="bibl" target="\">Vs. <hi
+                rendition="#rend_smallcaps">Miller</hi></ref></bibl> is apparently inaccurate. The
+          etymology leads to meaning <q>mad</q>; cf. <mentioned xml:lang="trk"><lang/>
+            <w>qutur</w>
+            <gloss><q>get mad</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Радлов"/>
+                <biblScope>II 993</biblScope></bibl>)</note>, <w>quturǧan</w>, <w>kudurgan</w>
+            <gloss><q>mad</q>, <q>furious</q>, <q>violent</q></gloss>
+            <note type="bibl">(<bibl><title>Russian-Karachay-Balkar dictionary.</title>
+                <biblScope>M., 1965, p. 52</biblScope></bibl>)</note></mentioned>.</etym>
       </entry>
     </body>
   </text>
