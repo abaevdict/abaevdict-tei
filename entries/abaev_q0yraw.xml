@@ -1,21 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">qₒyraw</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
@@ -24,12 +28,18 @@
         <usg><lang/></usg>
         <sense><abv:tr xml:lang="ru">
             <q>кувшин особой формы</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>a jug of a special shape</q>
           </abv:tr></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">aftīd q˳yrawy dæ kʼūx ma nytʼtʼyss</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">не суй руку в пустой <hi
+                  rendition="#rend_smallcaps">q˳yraw</hi></q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">don't put your hand in an empty <hi
                   rendition="#rend_smallcaps">q˳yraw</hi></q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ЮОПам."/>
@@ -42,6 +52,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">пастух сунул руку в узкогорлый кувшин с маслом,
                 и она у него там застряла</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the shepherd put his hand into a narrow-necked
+                jug of oil, and it got stuck there</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ИАА"/>
               <biblScope>II 301</biblScope></bibl>
           </example>
@@ -52,6 +66,12 @@
           Первоначально служил, вероятно, определением к <ref type="xr" target="#entry_dūryn"/> (<phr><oRef/>
             <ref type="xr" target="#entry_dūryn"/></phr>
           <q>горловидный кувшин</q>). См. <ref type="xr" target="#entry_q0yr"/>.</etym>
+        <etym xml:lang="en">A lexicalized equative case form of the word <ref type="xr"
+            target="#entry_q0yr"><w>q˳yr</w>
+            <q>throat</q></ref>, literally <q rendition="#rend_singlequotes">neck-shaped</q>. It
+          originally served, probably, as a definition to <ref type="xr" target="#entry_dūryn"/> (<phr><oRef/>
+            <ref type="xr" target="#entry_dūryn"/></phr>
+          <q>neck-shaped jug</q>). See <ref type="xr" target="#entry_q0yr"/>.</etym>
       </entry>
     </body>
   </text>
