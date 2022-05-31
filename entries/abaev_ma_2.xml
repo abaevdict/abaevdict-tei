@@ -1,39 +1,62 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ma_2</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_ma_2" xml:lang="os" abv:completeness="incomplete" n="2">
+      <entry xml:id="entry_ma_2" xml:lang="os" abv:completeness="english-questions" n="2">
         <form type="lemma"><orth>ma</orth></form>
-        <note type="comment"> энклитическая частица со значением: </note>
+        <note xml:lang="ru" type="comment"> энклитическая частица со значением: </note>
+        <note xml:lang="en" type="comment"> enclitic particle with the meaning: </note>
         <sense n="1"><abv:tr xml:lang="ru">
             <q>еще</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>yet</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>more</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>still</q>
           </abv:tr></sense>
         <sense n="2"><abv:tr xml:lang="ru">
             <q>-ка</q>
-            <note type="comment"> — обычно с императивом</note>
-          </abv:tr><note type="comment"> (в дигорском в этом значении редко)</note></sense>
+            <note xml:lang="ru" type="comment"> — обычно с императивом</note>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>will you</q>
+          </abv:tr>
+          <abv:tr xml:lang="en">
+            <q>now</q>
+            <note type="comment">(a hortative particle, cf. <mentioned xml:lang="ru"><lang/>
+                <m>-ка</m></mentioned>) — usually with imperative</note>
+          </abv:tr><note xml:lang="ru" type="comment"> (в дигорском в этом значении
+            редко)</note><note xml:lang="en" type="comment"> (in Digor, rare in this
+          sense)</note></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict" n="1">
           <example>
-            <quote xmlns="http://www.tei-c.org/ns/1.0">Fsati ma xₒyssy</quote>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">Fsati <oRef>ma</oRef> xₒyssy</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">Фсати еще спит</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Fsati is still sleeping</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Коста"/>
               <biblScope>63</biblScope></bibl>
@@ -44,6 +67,9 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">немного я еще помню моего отца</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">I still remember my father a little bit</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Коста"/>
               <biblScope>54</biblScope></bibl>
           </example>
@@ -52,6 +78,9 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">и теперь я еще безумец</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">and also know I am still a madman</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Коста"/>
               <biblScope>55</biblScope></bibl>
           </example>
@@ -59,6 +88,9 @@
             <quote xmlns="http://www.tei-c.org/ns/1.0">īw qær <oRef>ma</oRef> nykkodta</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">он издал еще один крик</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">he let out one more cry</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Æfx._Xæs."/>
               <biblScope>104</biblScope></bibl>
@@ -70,12 +102,19 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">мы еще погнались за всадником, но уже не
                 догнали его</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">we chased the rider some more, but no longer
+                caught up with him</q>
+            </tr>
           </example>
           <example xml:lang="os-x-digor">
             <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
             <quote xmlns="http://www.tei-c.org/ns/1.0">du <oRef>ma</oRef> neræn mingij dæ</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">ты пока еще мал</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">you are still small</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Iræf"/>
               <biblScope>19</biblScope></bibl>
@@ -86,6 +125,9 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">что мне еще делать?</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">what more shall I do?</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_MSt."/>
               <biblScope>6<hi rendition="#rend_subscript">6</hi></biblScope></bibl>
           </example>
@@ -94,6 +136,9 @@
             <quote xmlns="http://www.tei-c.org/ns/1.0">xæʒaræj <oRef>ma</oRef> qwæcæ cudæj</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">из сакли еще шел дым</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">smoke was still coming from the house</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_MSt."/>
               <biblScope>16<hi rendition="#rend_subscript">15</hi></biblScope></bibl>
@@ -106,6 +151,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">когда небожители еще общались (ходили) с
                 людьми…</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">when divine beings had still conversed (walked)
+                with men…</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_MSt."/>
               <biblScope>19<hi rendition="#rend_subscript">7</hi></biblScope></bibl>
           </example>
@@ -116,6 +165,9 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">иди-ка</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">go now</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Коста"/>
               <biblScope>54</biblScope></bibl>
           </example>
@@ -123,6 +175,9 @@
             <quote xmlns="http://www.tei-c.org/ns/1.0">cæj <oRef>ma</oRef> mæ myzd myn</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">ну-ка, (дай) мне мою плату</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">well, (give) me my payment</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Коста"/>
               <biblScope>86</biblScope></bibl>
@@ -132,22 +187,32 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">выгляните-ка к ним наружу</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">look out to them outside, will you</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Коста"/>
               <biblScope>109</biblScope></bibl>
           </example>
           <example>
-            <quote xmlns="http://www.tei-c.org/ns/1.0">fen ma mænæ ūcy ḱyzg æmæ læppujy</quote>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">fen <oRef>ma</oRef> mænæ ūcy ḱyzg æmæ
+              læppujy</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">посмотри-ка вот на этих девочку и мальчика</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">look at these boy and girl now</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Munk."/>
               <biblScope>88</biblScope></bibl>
           </example>
           <example xml:lang="os-x-digor">
             <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
-            <quote xmlns="http://www.tei-c.org/ns/1.0">ferttevæ ma me ‘stʼalu</quote>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">ferttevæ <oRef>ma</oRef> me ‘stʼalu</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">сверкни-ка, моя звезда</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">may you twinkle, my star</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Iræf"/>
               <biblScope>111</biblScope></bibl>
@@ -165,12 +230,13 @@
             <gloss>частица при оптативных и вопросительных оборотах</gloss></mentioned>, <mentioned
             xml:lang="hit"><lang/>
             <m>ma</m>
-            <gloss><q>же</q> энклитическая частица</gloss></mentioned>. Ср., с другой стороны, <lang/>
-          <w>ma</w>
-          <gloss><q>на! вот!</q></gloss>
-          <note type="bibl">(<bibl><ref type="bibl" target="#ref_Радлов"/>
-              <biblScope>IV 1985</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Zenker"/>
-              <biblScope>895</biblScope></bibl>)</note>, <mentioned xml:lang="tg"
+            <gloss><q>же</q> энклитическая частица</gloss></mentioned>. Ср., с другой стороны,
+            <mentioned xml:lang="trk"><lang/>
+            <w>ma</w>
+            <gloss><q>на! вот!</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Радлов"/>
+                <biblScope>IV 1985</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Zenker"/>
+                <biblScope>895</biblScope></bibl>)</note></mentioned>, <mentioned xml:lang="tg"
             extralang="isk sgh x-rushani yai"><lang/>
             <w>ma</w>
             <gloss><q>на! вот! возьми!</q></gloss></mentioned>. — <oRef/>
@@ -192,23 +258,96 @@
             <biblScope>38</biblScope>)</bibl> возводит оба значения к <mentioned xml:lang="ira"><w
               type="rec">mat</w>
             <gloss><q>вместе</q></gloss>, <gloss><q>совместно</q></gloss>
-            <note type="comment">(<mentioned xml:lang="ae"><lang/>
+            <note xml:lang="ru" type="comment">(<mentioned xml:lang="ae"><lang/>
+                <w>mat</w></mentioned>, <mentioned xml:lang="inc-x-old"><lang/>
+                <w>smat</w></mentioned>)</note><note xml:lang="en" type="comment">(<mentioned
+                xml:lang="ae"><lang/>
                 <w>mat</w></mentioned>, <mentioned xml:lang="inc-x-old"><lang/>
                 <w>smat</w></mentioned>)</note></mentioned>. <mentioned xml:lang="ce"
               ><lang>Чеч.</lang>
             <w>ma</w>
             <gloss>усилительная частица <q>-то</q>, <q>ведь</q></gloss>
-            <note type="comment">(<mentioned xml:lang="ce"><phr>so-ma</phr>
+            <note xml:lang="ru" type="comment">(<mentioned xml:lang="ce"><phr>so-ma</phr>
+                <gloss><q>я-то</q></gloss></mentioned> и т. п.)</note><note xml:lang="en"
+              type="comment">(<mentioned xml:lang="ce"><phr>so-ma</phr>
                 <gloss><q>я-то</q></gloss></mentioned> и т. п.)</note></mentioned> идет, возможно,
           из осетинского. Сюда (с наращением <c>-r</c>) <mentioned xml:lang="hu"><lang/>
             <w>mar</w>
             <gloss><q>еще</q></gloss>, <gloss><q>уже</q></gloss>, <gloss><q>даже</q></gloss>,
                 <gloss><q>-ка</q></gloss>
-            <note type="comment">(<mentioned><mentioned xml:lang="hu"><phr>gyere
+            <note xml:lang="ru" type="comment">(<mentioned><mentioned xml:lang="hu"><phr>gyere
+                    mar</phr></mentioned> = <mentioned xml:lang="os"><lang/>
+                  <phr>cū ma</phr></mentioned>
+                <gloss><q rendition="#rend_doublequotes">иди-ка</q></gloss></mentioned>)</note><note
+              xml:lang="en" type="comment">(<mentioned><mentioned xml:lang="hu"><phr>gyere
                   mar</phr></mentioned> = <mentioned xml:lang="os"><lang/>
                   <phr>cū ma</phr></mentioned>
                 <gloss><q rendition="#rend_doublequotes"
             >иди-ка</q></gloss></mentioned>)</note></mentioned>.</etym>
+        <etym xml:lang="en">In the meaning of a hortative particle <gloss><q>may you</q>
+            etc.</gloss> goes back to <mentioned xml:lang="ira"><lang/>
+            <m type="rec">mā</m></mentioned>; cf. <mentioned xml:lang="zkh"><lang/>
+            <m>mā</m>
+            <gloss><q>well!</q></gloss></mentioned>, <mentioned xml:lang="ae-x-gth"><lang/>
+            <m>mā</m></mentioned> emphatic enclitic particle, <mentioned xml:lang="inc-x-old"><lang/>
+            <m>sma</m></mentioned>, <mentioned xml:lang="txb"><lang/>
+            <m>mai</m>
+            <gloss>particle in optative and interrogative expressions</gloss></mentioned>,
+            <mentioned xml:lang="hit"><lang/>
+            <m>ma</m>
+            <gloss><q>as for</q>, <q>but</q> an enclitic particle</gloss></mentioned>. Cf., from
+          another direction, <mentioned xml:lang="trk"><lang/>
+            <w>ma</w>
+            <gloss><q>here you are!</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Радлов"/>
+                <biblScope>IV 1985</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Zenker"/>
+                <biblScope>895</biblScope></bibl>)</note></mentioned>, <mentioned xml:lang="tg"
+            extralang="isk sgh x-rushani yai"><lang/>
+            <w>ma</w>
+            <gloss><q>here you are! take it!</q></gloss></mentioned>. — <oRef/>
+          <gloss><q>still</q> etc.</gloss> should be separated from the hortative <oRef/> and
+          connected with <ref type="xr" target="#entry_ma_3"/> = <ref type="xr" target="#entry_æmæ"
+              ><w xml:lang="os-x-digor">æma</w>, <w xml:lang="os-x-iron">æmæ</w>
+            <gloss><q>and</q></gloss></ref>, therefore, reconstructed to <mentioned xml:lang="ira"><lang/>
+            <w type="rec">hama</w></mentioned>; cf. <mentioned><mentioned xml:lang="kho"><lang/>
+              <w>m<?oxy_comment_start author="oleg" timestamp="20220601T000929+0300" comment="vowel length?"?>ā<?oxy_comment_end?></w></mentioned>,
+              <mentioned xml:lang="sog"><lang/>
+              <w>mʼẟ</w></mentioned>
+            <gloss><q>thus</q></gloss></mentioned> (← <mentioned xml:lang="ira"><w type="rec"
+              >hama-aθa</w>: <note type="bibl"><bibl><ref type="bibl" target="#ref_Gershevitch"/>
+                <biblScope>§ 397</biblScope></bibl></note></mentioned>), <mentioned xml:lang="ae"><lang/>
+            <w>hamaθa</w>
+            <gloss><q>also</q></gloss></mentioned>. <bibl><author>Ws. Miller</author> (<ref
+              type="bibl" target="#ref_Miller._Gr.">Gr. </ref>
+            <biblScope>38</biblScope>)</bibl> reconstructs both meanings to <mentioned
+            xml:lang="ira"><w type="rec">mat</w>
+            <gloss><q>together</q></gloss>, <gloss><q>jointly</q></gloss>
+            <note xml:lang="ru" type="comment">(<mentioned xml:lang="ae"><lang/>
+                <w>mat</w></mentioned>, <mentioned xml:lang="inc-x-old"><lang/>
+                <w>smat</w></mentioned>)</note><note xml:lang="en" type="comment">(<mentioned
+                xml:lang="ae"><lang/>
+                <w>mat</w></mentioned>, <mentioned xml:lang="inc-x-old"><lang/>
+                <w>smat</w></mentioned>)</note></mentioned>. <mentioned xml:lang="ce"><lang/>
+            <w>ma</w>
+            <gloss>emphatic particle <q>as for</q>, <q>after all</q></gloss>
+            <note xml:lang="ru" type="comment">(<mentioned xml:lang="ce"><phr>so-ma</phr>
+                <gloss><q>я-то</q></gloss></mentioned> и т. п.)</note><note xml:lang="en"
+              type="comment">(<mentioned xml:lang="ce"><phr>so-ma</phr>
+                <gloss><q>as for me</q></gloss></mentioned> and so on)</note></mentioned> possibly
+          comes from Ossetic. <mentioned xml:lang="hu"><lang/>
+            <w>mar</w>
+            <gloss><q>еще</q></gloss>, <gloss><q>уже</q></gloss>, <gloss><q>даже</q></gloss>,
+                <gloss><q>-ка</q></gloss>
+            <note xml:lang="ru" type="comment">(<mentioned><mentioned xml:lang="hu"><phr>gyere
+                    mar</phr></mentioned> = <mentioned xml:lang="os"><lang/>
+                  <phr>cū ma</phr></mentioned>
+                <gloss><q rendition="#rend_doublequotes">иди-ка</q></gloss></mentioned>)</note><note
+              xml:lang="en" type="comment">(<mentioned><mentioned xml:lang="hu"><phr>gyere
+                  mar</phr></mentioned> = <mentioned xml:lang="os"><lang/>
+                  <phr>cū ma</phr></mentioned>
+                <gloss><q rendition="#rend_doublequotes"
+            >иди-ка</q></gloss></mentioned>)</note></mentioned> also belongs here (with augmented
+            <c>-r</c>) .</etym>
       </entry>
     </body>
   </text>
