@@ -1,21 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">rūvyn</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
@@ -26,15 +30,21 @@
               ><orth>ruvd</orth></form></form>
         <sense><abv:tr xml:lang="ru">
             <q>полоть</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>weed (v.)</q>
           </abv:tr></sense>
         <re>
           <form type="lemma" xml:lang="os-x-iron"><orth>rūvæn</orth></form>
           <form xml:lang="os-x-digor" type="dialectal"><orth>rovæn</orth></form>
           <sense n="1"><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">время полки</q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">weeding time</q>
             </tr></sense>
           <sense n="2"><abv:tr xml:lang="ru">
               <q>орудие полки</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>weeding tool</q>
             </abv:tr></sense>
         </re>
         <re>
@@ -45,8 +55,12 @@
           <form type="lemma"><orth>amarūvyn</orth></form>
           <sense><sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
                 <q xmlns="http://www.tei-c.org/ns/1.0">полка</q>
+              </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+                <q xmlns="http://www.tei-c.org/ns/1.0">weeding</q>
               </tr></sense><sense><abv:tr xml:lang="ru">
                 <q>прополка</q>
+              </abv:tr><abv:tr xml:lang="en">
+                <q><?oxy_comment_start author="Irene" timestamp="20220531T140535+0300" comment="если я удалю перевод то ничего не сломается? нет еще синонима для этого"?>weeding<?oxy_comment_end?></q>
               </abv:tr></sense></sense>
         </re>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
@@ -54,6 +68,11 @@
             <quote xmlns="http://www.tei-c.org/ns/1.0">nal dæ baqæwʒænī <oRef>rūvyn</oRef></quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">тебе уж не придется полоть</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">you
+                <?oxy_comment_start author="Irene" timestamp="20220531T140610+0300" comment="?"?>don't<?oxy_comment_end?>
+                have to weed</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Коста"/>
               <biblScope>17</biblScope></bibl>
@@ -65,8 +84,13 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">сорняки мы с корнями выпалываем нашими острыми
                 мотыгами</q>
             </tr>
-            <bibl xmlns="http://www.tei-c.org/ns/1.0">из <q rendition="#rend_doublequotes">Песни
-                прополки</q>; <ref type="bibl" target="#src_ИАЗ"/>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">we weed out the weeds by the roots with our
+                sharp hoes</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><?oxy_comment_start author="Irene" timestamp="20220531T140729+0300" comment="NB_rus"?>from<?oxy_comment_end?>
+              <q rendition="#rend_doublequotes">The weeding song</q>; <ref type="bibl"
+                target="#src_ИАЗ"/>
               <biblScope>112</biblScope></bibl>
           </example>
           <example>
@@ -76,16 +100,27 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">...во время полки (идет) прополка туда и
                 сюда...</q>
             </tr>
-            <bibl xmlns="http://www.tei-c.org/ns/1.0">из песни <q rendition="#rend_doublequotes">Из
-                чего готовится черное пиво</q>; <ref type="bibl" target="#src_ИАС"/>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">...weeding goes
+                <?oxy_comment_start author="Irene" timestamp="20220531T140815+0300" comment="?????"?>back
+                and forth<?oxy_comment_end?>...</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"
+              ><?oxy_comment_start author="Irene" timestamp="20220531T140829+0300" comment="NB_rus"?>from<?oxy_comment_end?>
+              the song <q rendition="#rend_doublequotes">What is black beer made from</q>; <ref
+                type="bibl" target="#src_ИАС"/>
               <biblScope>II 330</biblScope></bibl>
           </example>
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">næ x˳ymtæ ægær yskærdægǵyn sty, æmæ aq˳ydy
               kænæm sæ <oRef>barūvynyl</oRef></quote>
             <tr xml:lang="ru">
-              <q xmlns="http://www.tei-c.org/ns/1.0">„наши поля чересчур заросли травой, и подумаем
+              <q xmlns="http://www.tei-c.org/ns/1.0">наши поля чересчур заросли травой, и подумаем
                 об их прополке</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">our fields are too overgrown with grass, and we
+                will think about weeding them</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_F."/>
               <biblScope>1957 VII 7</biblScope></bibl>
@@ -97,6 +132,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">„...чтобы, выбирая плевелы, вы не выдергали
                 вместе с ними пшеницу</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">„...lest while ye gather up the tares, ye root
+                up also the wheat with them</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Матфей"/>
               <biblScope><hi rendition="#rend_italic">13</hi> 29</biblScope></bibl>
           </example>
@@ -107,6 +146,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">вот двое догоняют его, у одного деревянные
                 вилы, у другого мотыга</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">here are two people catching up with him, one
+                with a wooden pitchfork, the other with a hoe</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Arsen"/>
               <biblScope>53</biblScope></bibl>
           </example>
@@ -115,8 +158,9 @@
             xml:lang="ira"><lang/>
             <w type="rec">raup-</w>, <w type="rec">rup-</w></mentioned>, <mentioned xml:lang="ine"><lang/>
             <w type="rec">reup-</w>
-            <note type="comment">(<w type="rec">reub-</w>)</note></mentioned>, <mentioned
-            xml:lang="ine"><w type="rec">leup-</w></mentioned>: <mentioned xml:lang="fa"><lang/>
+            <note xml:lang="ru" type="comment">(<w type="rec">reub-</w>)</note><note xml:lang="en"
+              type="comment">(<w type="rec">reub-</w>)</note></mentioned>, <mentioned xml:lang="ine"
+              ><w type="rec">leup-</w></mentioned>: <mentioned xml:lang="fa"><lang/>
             <w>ruftan</w>
             <gloss><q>мести</q></gloss></mentioned>, <mentioned xml:lang="fa"><w>rubūdan</w>
             <gloss><q>отнимать</q></gloss>, <gloss><q>похищать</q></gloss></mentioned>, <mentioned
@@ -143,7 +187,10 @@
             xml:lang="x-pamir"><lang/>
             <w>rut</w>, <w>rūt</w>
             <gloss><q>прополка</q></gloss>
-            <note type="comment">(<bibl><ref type="bibl" target="#ref_GIPh."/>
+            <note xml:lang="ru" type="comment">(<bibl><ref type="bibl" target="#ref_GIPh."/>
+                <biblScope>I <hi rendition="#rend_italic">2</hi> 80</biblScope></bibl>; в каких
+              именно языках?)</note><note xml:lang="en" type="comment">(<bibl><ref type="bibl"
+                  target="#ref_GIPh."/>
                 <biblScope>I <hi rendition="#rend_italic">2</hi> 80</biblScope></bibl>; в каких
               именно языках?)</note></mentioned>, <mentioned xml:lang="wbl"><lang/>
             <w>cə-rüp-</w>
@@ -154,7 +201,8 @@
             <gloss><q>жать хлеб</q></gloss></mentioned>, <mentioned xml:lang="yai"><w>rubč</w>
             <gloss>метла</gloss></mentioned>, <mentioned xml:lang="sog"><lang/>
             <w type="rec">rōp-</w>
-            <note type="comment">(<w>rwp-</w>)</note>
+            <note xml:lang="ru" type="comment">(<w>rwp-</w>)</note><note xml:lang="en"
+              type="comment">(<w>rwp-</w>)</note>
             <gloss><q>убирать</q></gloss>, <gloss><q>снимать</q></gloss></mentioned>, <mentioned
             xml:lang="kho"><lang/>
             <w>raup-</w>
@@ -164,7 +212,8 @@
               >71</hi></biblScope></bibl>)</note></mentioned>, <mentioned xml:lang="ae"><lang/>
             <w><hi rendition="#rend_superscript">u</hi>rūp</w>
             <gloss><q>опустошать</q></gloss>
-            <note type="comment">(?)</note></mentioned>, <mentioned xml:lang="inc-x-old"><lang/>
+            <note xml:lang="ru" type="comment">(?)</note><note xml:lang="en" type="comment"
+              >(?)</note></mentioned>, <mentioned xml:lang="inc-x-old"><lang/>
             <w>lup-</w>, <w>lumpati</w>
             <gloss><q>ломать</q></gloss></mentioned>, <mentioned xml:lang="sla"><lang/>
             <w type="rec">lupiti</w></mentioned>, <mentioned xml:lang="ru"><lang/>
@@ -193,7 +242,10 @@
             <gloss><q>похищать</q></gloss></mentioned>, <mentioned xml:lang="la"><lang/>
             <w>rumpere</w>
             <gloss><q>ломать</q></gloss>
-            <note type="comment">(ср. <ref type="xr" target="#entry_ræmpæg"><?oxy_comment_start author="Irene" timestamp="20220405T142204+0300" comment="вообще здесь надо написать д.?"?>ос.<?oxy_comment_end?>
+            <note xml:lang="ru" type="comment">(ср. <ref type="xr" target="#entry_ræmpæg"><?oxy_comment_start author="Irene" timestamp="20220405T142204+0300" comment="вообще здесь надо написать д.?"?>ос.<?oxy_comment_end?>
+                <w>rumpæg</w>
+                <gloss><q>моль</q></gloss></ref>)</note><note xml:lang="en" type="comment">(ср. <ref
+                type="xr" target="#entry_ræmpæg"><?oxy_comment_start author="Irene" timestamp="20220405T142204+0300" comment="вообще здесь надо написать д.?"?>ос.<?oxy_comment_end?>
                 <w>rumpæg</w>
                 <gloss><q>моль</q></gloss></ref>)</note></mentioned>. Формы с начальными <c>r-</c> и
             <c>l-</c> нет необходимости отделять друг от друга (cp.: <bibl><ref type="bibl"
@@ -217,6 +269,128 @@
             <gloss><q>лето</q></gloss></mentioned>, <mentioned xml:lang="inc-x-old"><lang/>
             <w>samā-</w>
             <gloss><q>год</q></gloss></mentioned>.<lb/><bibl><ref type="bibl"
+              target="#ref_Miller._Gr."/>
+            <biblScope>61</biblScope></bibl>.</etym>
+        <etym xml:lang="en"
+          ><?oxy_comment_start author="Irene" timestamp="20220531T141106+0300" comment="?"?>Common<?oxy_comment_end?>
+          Iranian and Indo-European verb. Traces back to <mentioned xml:lang="ira"><lang/>
+            <w type="rec">raup-</w>, <w type="rec">rup-</w></mentioned>, <mentioned xml:lang="ine"><lang/>
+            <w type="rec">reup-</w>
+            <note xml:lang="ru" type="comment">(<w type="rec">reub-</w>)</note><note xml:lang="en"
+              type="comment">(<w type="rec">reub-</w>)</note></mentioned>, <mentioned xml:lang="ine"
+              ><w type="rec">leup-</w></mentioned>: <mentioned xml:lang="fa"><lang/>
+            <w>ruftan</w>
+            <gloss><q>sweep</q></gloss></mentioned>, <mentioned xml:lang="fa"><w>rubūdan</w>
+            <gloss><q>take away</q></gloss>, <gloss><q>steal</q></gloss></mentioned>, <mentioned
+            xml:lang="fa"><w>rūdan</w>
+            <gloss><q>pull out</q></gloss></mentioned>, <mentioned xml:lang="tg"><lang/>
+            <w>rūftan</w> : <w>růb</w>
+            <gloss><q>sweep</q></gloss></mentioned>, <mentioned xml:lang="pal"><lang/>
+            <w>rōp</w>
+            <gloss><q>abduction</q></gloss></mentioned>, <mentioned xml:lang="x-balochi"><lang/>
+            <w>rōpag</w> : <w>rupt</w>
+            <gloss><q>sweep</q></gloss>, <gloss><q>broom</q></gloss></mentioned>, <mentioned
+            xml:lang="ps"><lang/>
+            <w>rawdəl</w>
+            <gloss><q>harvest bread</q></gloss></mentioned>, <mentioned xml:lang="ps"><w>rebəz</w>
+            <gloss><q>broomstick</q></gloss>
+            <note type="bibl">(<bibl><author>Morgenstierne</author>, <ref type="bibl"
+                  target="#ref_NTS"/>
+                <biblScope>1942 XII 264</biblScope></bibl>)</note></mentioned>, <mentioned
+            xml:lang="sgh"><lang/>
+            <w>růb-</w> : <w>rūvd</w>
+            <gloss><q>sweep</q></gloss>, <gloss><q>rake</q></gloss></mentioned>, <mentioned
+            xml:lang="sgh"><w>růbiʒ</w>
+            <gloss><q>raking</q></gloss>, <gloss><q>sweeping</q></gloss></mentioned>, <mentioned
+            xml:lang="x-pamir"><lang/>
+            <w>rut</w>, <w>rūt</w>
+            <gloss><q>weeding</q></gloss>
+            <note xml:lang="ru" type="comment">(<bibl><ref type="bibl" target="#ref_GIPh."/>
+                <biblScope>I <hi rendition="#rend_italic">2</hi> 80</biblScope></bibl>; в каких
+              именно языках?)</note><note xml:lang="en" type="comment">(<bibl><ref type="bibl"
+                  target="#ref_GIPh."/>
+                <biblScope>I <hi rendition="#rend_italic">2</hi> 80</biblScope></bibl>; in which
+              languages exactly?)</note></mentioned>, <mentioned xml:lang="wbl"><lang/>
+            <w>cə-rüp-</w>
+            <gloss><q>pinch</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Климчицкий._Ягн.-согд."/>
+                <biblScope>22</biblScope></bibl>)</note></mentioned>, <mentioned xml:lang="yai"><lang/>
+            <w>rup-</w>, <w>rub-</w> : <w>rupt</w>
+            <gloss><q>harvest bread</q></gloss></mentioned>, <mentioned xml:lang="yai"><w>rubč</w>
+            <gloss>broomstick</gloss></mentioned>, <mentioned xml:lang="sog"><lang/>
+            <w type="rec">rōp-</w>
+            <note xml:lang="ru" type="comment">(<w>rwp-</w>)</note><note xml:lang="en"
+              type="comment">(<w>rwp-</w>)</note>
+            <gloss><q>clean up</q></gloss>, <gloss><q>remove</q></gloss></mentioned>, <mentioned
+            xml:lang="kho"><lang/>
+            <w>raup-</w>
+            <gloss><q>sweep away</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_BSOS"/>
+                <biblScope>1940 VIII 586<hi rendition="#rend_subscript"
+              >71</hi></biblScope></bibl>)</note></mentioned>, <mentioned xml:lang="ae"><lang/>
+            <w><hi rendition="#rend_superscript">u</hi>rūp</w>
+            <gloss><q>empty</q></gloss>
+            <note xml:lang="ru" type="comment">(?)</note><note xml:lang="en" type="comment"
+              >(?)</note></mentioned>, <mentioned xml:lang="inc-x-old"><lang/>
+            <w>lup-</w>, <w>lumpati</w>
+            <gloss><q>break</q></gloss></mentioned>, <mentioned><mentioned xml:lang="sla"><lang/>
+              <w type="rec">lupiti</w></mentioned>, <mentioned xml:lang="ru"><lang/>
+              <w>лупить</w></mentioned>
+            <?oxy_comment_start author="Irene" timestamp="20220531T141410+0300" comment="ok?"?><gloss><q>beat</q></gloss><?oxy_comment_end?></mentioned>,
+            <mentioned xml:lang="cs"><lang/>
+            <w>loupiti</w>
+            <gloss><q>flay</q></gloss>, <gloss><q>clean</q></gloss>,
+            <gloss><q>shell</q></gloss></mentioned>, <mentioned xml:lang="lt"><lang/>
+            <w>raũpti</w>
+            <gloss><q>dig</q></gloss>, <gloss><q>rake</q></gloss></mentioned>, <mentioned
+            xml:lang="lt"><w>laupýti</w>
+            <gloss><q>break</q></gloss></mentioned>, <mentioned xml:lang="lt"><w>lùpti</w>
+            <gloss><q>flay</q></gloss>, <gloss><q>shell</q></gloss></mentioned>,
+              <mentioned><mentioned xml:lang="got"><lang/>
+              <w>raupjan</w></mentioned>, <mentioned xml:lang="de"><lang/>
+              <w>raufen</w>, <w>raupfen</w></mentioned>
+            <gloss><q>pull out</q></gloss>, <gloss><q>tear out</q></gloss>,
+              <gloss><q>pluck</q></gloss></mentioned>, <mentioned xml:lang="gmh"><lang/>
+            <w>roup</w>
+            <gloss><q>harvest</q></gloss></mentioned>, <mentioned xml:lang="en"><lang/>
+            <w>rip</w></mentioned>, <mentioned xml:lang="en"><w>rip out</w></mentioned>,
+              <mentioned><mentioned xml:lang="got"><lang/>
+              <w>(bi)raubjan</w></mentioned>, <mentioned xml:lang="de"><lang/>
+              <w>rauben</w></mentioned>
+            <gloss><q>kidnap</q></gloss></mentioned>, <mentioned xml:lang="la"><lang/>
+            <w>rumpere</w>
+            <gloss><q>break</q></gloss>
+            <note xml:lang="ru" type="comment">(ср. <ref type="xr" target="#entry_ræmpæg"><?oxy_comment_start author="Irene" timestamp="20220405T142204+0300" comment="вообще здесь надо написать д.?"?>ос.<?oxy_comment_end?>
+                <w>rumpæg</w>
+                <gloss><q>моль</q></gloss></ref>)</note><note xml:lang="en" type="comment">(cf. <ref
+                type="xr" target="#entry_ræmpæg"><?oxy_comment_start author="Irene" timestamp="20220405T142204+0300" comment="вообще здесь надо написать д.?"?>Ossetic<?oxy_comment_end?>
+                <w>rumpæg</w>
+                <gloss><q>moth</q></gloss></ref>)</note></mentioned>. There is no need to separate
+          the forms with initial <c>r-</c> and <c>l-</c> from each other (cf.: <bibl><ref
+              type="bibl" target="#ref_Mayrhofer"/>
+            <biblScope>III 108–109</biblScope></bibl>). The stems <mentioned xml:lang="ine"><w
+              type="rec">reup-</w></mentioned> and <mentioned xml:lang="ine"><w type="rec"
+            >leup-</w></mentioned> represent the
+          <?oxy_comment_start author="Irene" timestamp="20220531T141705+0300" comment="???"?>elongation<?oxy_comment_end?>
+          of the roots <mentioned xml:lang="ine"><w type="rec">reu-</w></mentioned> and <mentioned
+            xml:lang="ine"><w type="rec">leu-</w></mentioned>, which are present in
+              <mentioned><mentioned xml:lang="sla"><lang/>
+              <w>ryti</w></mentioned>, <mentioned xml:lang="ru"><lang/>
+              <w>рыть</w></mentioned>
+            <gloss><q>dig</q></gloss></mentioned>, <mentioned xml:lang="inc-x-old"><lang/>
+            <w>lu-</w>, <w>lunāti</w>
+            <gloss><q>cut off</q></gloss></mentioned> etc. (<bibl><ref type="bibl"
+              target="#ref_Pokorny"/>
+            <biblScope>681–682, 690, 868–870</biblScope></bibl>). Iron <oRef>ama-rūvyn</oRef>
+          <gloss><q>weeding</q></gloss> is either from <w>æm-a-rūvyn</w> with the secondary
+          <?oxy_comment_start author="Irene" timestamp="20220531T141810+0300" comment="?"?>strengthening<?oxy_comment_end?>
+          of the initial vowel, or traces back to <mentioned xml:lang="ira"
+              ><?oxy_comment_start author="Irene" timestamp="20220405T145225+0300" comment="иран?"?><w>hamā-raup-</w><?oxy_comment_end?>
+            <gloss><q>summer weeding</q></gloss></mentioned>; cf. <mentioned xml:lang="ae"><lang/>
+            <w>ham-</w>
+            <gloss><q>summer</q></gloss></mentioned>, <mentioned xml:lang="inc-x-old"><lang/>
+            <w>samā-</w>
+            <gloss><q>year</q></gloss></mentioned>.<lb/><bibl><ref type="bibl"
               target="#ref_Miller._Gr."/>
             <biblScope>61</biblScope></bibl>.</etym>
       </entry>
