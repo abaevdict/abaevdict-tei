@@ -1,68 +1,96 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">lystæn</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_lystæn" xml:lang="os" abv:completeness="incomplete">
+      <entry xml:id="entry_lystæn" xml:lang="os" abv:completeness="complete">
         <form type="lemma" xml:lang="os-x-iron"><orth>lystæn</orth></form>
         <form xml:lang="os-x-digor" type="dialectal"><orth>listæn</orth></form>
         <sense><abv:tr xml:lang="ru">
             <q>подстилка</q>
-            <note type="comment"> (из сена, соломы, шкур и np.)</note>
+            <note xml:lang="ru" type="comment"> (из сена, соломы, шкур и пр.)</note>
+            <note xml:lang="en" type="comment"> (из сена, соломы, шкур и np.)</note>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>bedding,
+              <?oxy_comment_start author="oleg" timestamp="20220531T131238+0300" comment="uncertain"?>litter<?oxy_comment_end?></q>
+            <note type="comment"> (made of hay, straw, hides etc.)</note>
           </abv:tr></sense>
         <re>
-          <form type="lemma"><orth>lystænwat</orth></form>
+          <form type="lemma"><orth><oRef>lystæn</oRef>wat</orth></form>
           <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">ложе из подстилки</q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">sleeping place made of litter</q>
             </tr></sense>
         </re>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
-            <quote xmlns="http://www.tei-c.org/ns/1.0">arsy qₒyn — jæ lystæn, tintyḱʼi — jæ
-              baz</quote>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">arsy qₒyn — jæ <oRef>lystæn</oRef>, tintyḱʼi
+              — jæ baz</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">медвежья шерсть — его подстилка, козий пух —
                 его подушка</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">a bear hide is his bedding, goat down, his
+                pillow </q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Коста"/>
               <biblScope>64</biblScope></bibl>
           </example>
           <example>
-            <quote xmlns="http://www.tei-c.org/ns/1.0">jæ wat — yskʼæt, zygₒym — jæ lystæn</quote>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">jæ wat — yskʼæt, zygₒym — jæ
+                <oRef>lystæn</oRef></quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">его комната — хлев, мякина — его подстилка</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">his room is a cattle shed, chaff is his
+                bedding</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Коста"/>
               <biblScope>26</biblScope></bibl>
           </example>
           <example>
-            <quote xmlns="http://www.tei-c.org/ns/1.0">mæ xₒyssæn — lystæn</quote>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">mæ xₒyssæn — <oRef>lystæn</oRef></quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">мое ложе — подстилка</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">my bed is a litter</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Коста"/>
               <biblScope>56</biblScope></bibl>
           </example>
           <example>
-            <quote xmlns="http://www.tei-c.org/ns/1.0">lystænmæ sæ xæsta mad jæ qæbūlty</quote>
+            <quote xmlns="http://www.tei-c.org/ns/1.0"><oRef>lystænmæ</oRef> sæ xæsta mad jæ
+              qæbūlty</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">мать переносила на подстилку своих деток</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">mother carried her children over to a
+                bedding</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Коста"/>
               <biblScope>46</biblScope></bibl>
@@ -74,88 +102,128 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">перебил (много) зверей, их мясо съел, из их
                 жира сделал масло, из шерсти — подстилку, а из костей — кровать</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">he slew (many) animals, ate their meat, made
+                butter from their fat, bedding from their hair, a bed from their bones</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ЮОПам."/>
               <biblScope>III 185</biblScope></bibl>
           </example>
           <example>
-            <quote xmlns="http://www.tei-c.org/ns/1.0">cʼænut ærtydta sæxīcæn lystæn</quote>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">cʼænut ærtydta sæxīcæn
+              <oRef>lystæn</oRef></quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">нарвал осоки себе на подстилку</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">he picked sedge for himself as bedding</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сека"/>
               <biblScope>97</biblScope></bibl>
           </example>
           <example>
-            <quote xmlns="http://www.tei-c.org/ns/1.0">goban næj, fælæ dæ razy lystænyl dæ fællad
-              yswaʒ</quote>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">goban næj, fælæ dæ razy <oRef>lystænyl</oRef>
+              dæ fællad yswaʒ</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">тюфяка нет, но вот на подстилке отдохни</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">I have no mattress, but have a rest at the
+                bedding over here</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Брит."/>
               <biblScope>153</biblScope></bibl>
           </example>
           <example>
-            <quote xmlns="http://www.tei-c.org/ns/1.0">qæmpæj wyd jæ lystæn</quote>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">qæmpæj wyd jæ <oRef>lystæn</oRef></quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">из соломы была ее подстилка</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">from straw was her bedding</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Niger"/>
               <biblScope>142</biblScope></bibl>
           </example>
           <example>
-            <quote xmlns="http://www.tei-c.org/ns/1.0">cæxx æmæ dyn kærʒynæj mægₒyr fysym, lystænæj
-              dyn mægₒyry xₒyssæn</quote>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">cæxx æmæ dyn kærʒynæj mægₒyr fysym,
+                <oRef>lystænæj</oRef> dyn mægₒyry xₒyssæn</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">солью и хлебом я скромно приму тебя как гостя,
                 подстилка будет тебе бедным ложем</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">with salt and bread will I humbly accept you as
+                guest, a bedding will be a poor man’s bed to you</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Čerm."/>
               <biblScope>75</biblScope></bibl>
           </example>
           <example>
-            <quote xmlns="http://www.tei-c.org/ns/1.0">raxasta myn lystæny murtæ</quote>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">raxasta myn <oRef>lystæny</oRef>
+              murtæ</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">вынесла мне кое-какую подстилку</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">she brought out to me some sort of bedding</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Munk."/>
               <biblScope>140</biblScope></bibl>
           </example>
           <example xml:lang="os-x-digor">
             <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
-            <quote xmlns="http://www.tei-c.org/ns/1.0">xwasʒaw dæræni fælmænæj æxecæn paraxat listæn
-              ærkænidæ</quote>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">xwasʒaw dæræni fælmænæj æxecæn paraxat
+                <oRef>listæn</oRef> ærkænidæ</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">косарь делает себе из мягкой кучи сена пышную
                 подстилку</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the mower makes himself a puffy bedding from a
+                soft heap of hay</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Bes._Ka_ke"/>
               <biblScope>6</biblScope></bibl>
           </example>
           <example>
-            <quote xmlns="http://www.tei-c.org/ns/1.0">ʒæboduri cærttæj fælmæn listæn kænun
-              rajdædtoncæ</quote>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">ʒæboduri cærttæj fælmæn <oRef>listæn</oRef>
+              kænun rajdædtoncæ</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">из турьих шкур стали стелить мягкую
                 подстилку</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">they started spreading out a soft bedding made
+                of mountain goats’ skins</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_DZ"/>
               <biblScope>60</biblScope></bibl>
           </example>
           <example xml:lang="os-x-digor">
             <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
-            <quote xmlns="http://www.tei-c.org/ns/1.0">sægti… cærttæj bæzgin listæn nikkodta</quote>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">sægti… cærttæj bæzgin <oRef>listæn</oRef>
+              nikkodta</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">из оленьих шкур сделал толстую подстилку</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">from deer hides he made a thick bedding</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_СОПам."/>
               <biblScope>II 70</biblScope></bibl>
           </example>
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">xo æmæ ævsymær qæbys-qæbysy fælmæn
-              lystænwatyl afynæj sty</quote>
+                <oRef>lystænwatyl</oRef> afynæj sty</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">сестра и брат обнявшись заснули на мягком ложе
                 из подстилки</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the brother and sister fell asleep, embraced,
+                on a soft
+                <?oxy_comment_start author="oleg" timestamp="20220531T132255+0300" comment="unsure"?>litter-bed<?oxy_comment_end?></q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сека"/>
               <biblScope>36</biblScope></bibl>
@@ -169,7 +237,13 @@
           плавных, как в <ref type="xr" target="#entry_lædaryn"/> и др., и с последующей утратой
             <c>r</c>; <c>æ</c> → <c xml:lang="os-x-iron">y</c><c xml:lang="os-x-digor">i</c>, как в
             <ref type="xr" target="#entry_fycyn"><w xml:lang="os-x-iron">fycyn</w><w
-              xml:lang="os-x-digor">ficun</w></ref>.<note type="footnote">Переходной ступенью от
+              xml:lang="os-x-digor">ficun</w></ref>.<note xml:lang="ru" type="footnote">Переходной
+            ступенью от <mentioned xml:lang="ira"><w type="rec">frastarana-</w></mentioned> к <w
+              type="rec">læstæn</w> → <oRef/> могло быть <w type="rec">læstræn</w> или <w type="rec"
+              >læstærn</w>. Однако в последнем случае ожидали бы скорее <w>læstær</w>, ср.
+              <mentioned xml:lang="ira"><w type="rec">xᵛarna</w></mentioned> → <ref type="xr"
+              target="#entry_xor"><w xml:lang="os-x-iron">xor</w><w xml:lang="os-x-digor"
+              >xwar</w></ref>.</note><note xml:lang="en" type="footnote">Переходной ступенью от
               <mentioned xml:lang="ira"><w type="rec">frastarana-</w></mentioned> к <w type="rec"
               >læstæn</w> → <oRef/> могло быть <w type="rec">læstræn</w> или <w type="rec"
               >læstærn</w>. Однако в последнем случае ожидали бы скорее <w>læstær</w>, ср.
@@ -180,20 +254,66 @@
             пр.</mentioned> налична в <ref type="xr" target="#entry_stæryn_2"/>, <ref type="xr"
             target="#entry_astæryn"/>. Ср. также <mentioned xml:lang="ydg"><lang/>
             <w>yïston</w>
-            <note type="comment">(<w type="rec">vistarana-</w>)</note>
+            <note xml:lang="ru" type="comment">(<w type="rec">vistarana-</w>)</note><note
+              xml:lang="en" type="comment">(<w type="rec">vistarana-</w>)</note>
             <gloss><q>войлок</q></gloss></mentioned>, <mentioned xml:lang="ps"><lang/>
             <w>bṛastən</w></mentioned>, <mentioned xml:lang="kho"><lang/>
             <w>baṣṭarra-</w>
-            <note type="comment">(<mentioned xml:lang="ira"><w type="rec"
-                >upa-starana-</w></mentioned>)</note>
+            <note xml:lang="ru" type="comment">(<mentioned xml:lang="ira"><w type="rec"
+                  >upa-starana-</w></mentioned>)</note><note xml:lang="en" type="comment"
+                >(<mentioned xml:lang="ira"><w type="rec">upa-starana-</w></mentioned>)</note>
             <gloss><q>подстилка</q></gloss></mentioned>, <mentioned xml:lang="sog"><lang/>
             <w type="rec">fra-štaran-</w> (<w>prštrn-</w>) <gloss><q>ковер</q></gloss></mentioned>,
             <mentioned xml:lang="ae"><lang/>
             <w>fra-star-</w>
             <gloss><q>расстилать</q></gloss></mentioned>, <mentioned xml:lang="ae"><w>stairiš-</w>
             <gloss><q>подстилка</q></gloss>, <gloss><q>ложе</q></gloss></mentioned>. — Из
-          осетинского идет <mentioned xml:lang="krc-x-balkar"><lang/> ləstən
-              <gloss><q>подстилка</q></gloss>
+          осетинского идет <mentioned xml:lang="krc-x-balkar"><lang/>
+            <w>ləstən</w>
+            <gloss><q>подстилка</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_ОЯФ_I"/>
+                <biblScope>279</biblScope></bibl>)</note></mentioned>.<lb/><bibl><author>Morgenstierne</author>,
+              <ref type="bibl" target="#ref_NTS"/>
+            <biblScope>1942 XII 268</biblScope></bibl>. — <bibl><ref type="bibl"
+              target="#ref_Bailey._Asica"/>
+            <biblScope>34</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Donum_Nyberg"/>
+            <biblScope>16</biblScope></bibl>.</etym>
+        <etym xml:lang="en">Semantically, this word is difficult to connect with <ref type="xr"
+            target="#entry_lyst6æg9"><w xml:lang="os-x-digor">list-</w>
+            <gloss><q>fine</q> etc.</gloss></ref> Maybe it should be reconstructed as
+            <w>læ-stæræn</w> ← <mentioned xml:lang="ira"><lang/>
+            <w type="rec">fra-starana-</w></mentioned> with <c>l</c> appearing due to liquid
+          dissimilation, as in <ref type="xr" target="#entry_lædaryn"/> etc., and with subsequent
+          loss of <c>r</c>; <c>æ</c> → <c xml:lang="os-x-iron">y</c><c xml:lang="os-x-digor">i</c>,
+          as in <ref type="xr" target="#entry_fycyn"><w xml:lang="os-x-iron">fycyn</w><w
+              xml:lang="os-x-digor">ficun</w></ref>.<note type="footnote">One of the transitional
+            stages from <mentioned xml:lang="ira"><w type="rec">frastarana-</w></mentioned> to <w
+              type="rec">læstæn</w> → <oRef/> could be <w type="rec">læstræn</w> or <w type="rec"
+              >læstærn</w>. But in the latter case we would rather expect <w>læstær</w>, cf.
+              <mentioned xml:lang="ira"><w type="rec">xᵛarna</w></mentioned> → <ref type="xr"
+              target="#entry_xor"><w xml:lang="os-x-iron">xor</w><w xml:lang="os-x-digor"
+              >xwar</w></ref>.</note> The stem <mentioned xml:lang="ira"><w type="rec">star-</w>
+            with the meaning <gloss><q>spread out</q></gloss>, <gloss><q>spread under</q></gloss>
+            etc.</mentioned> is found in <ref type="xr" target="#entry_stæryn_2"/>, <ref type="xr"
+            target="#entry_astæryn"/>. Cf. also <mentioned xml:lang="ydg"><lang/>
+            <w>yïston</w>
+            <note xml:lang="ru" type="comment">(<w type="rec">vistarana-</w>)</note><note
+              xml:lang="en" type="comment">(<w type="rec">vistarana-</w>)</note>
+            <gloss><q>felt</q></gloss></mentioned>, <mentioned xml:lang="ps"><lang/>
+            <w>bṛastən</w></mentioned>, <mentioned xml:lang="kho"><lang/>
+            <w>baṣṭarra-</w>
+            <note xml:lang="ru" type="comment">(<mentioned xml:lang="ira"><w type="rec"
+                  >upa-starana-</w></mentioned>)</note><note xml:lang="en" type="comment"
+                >(<mentioned xml:lang="ira"><w type="rec">upa-starana-</w></mentioned>)</note>
+            <gloss><q>bedding</q></gloss></mentioned>, <mentioned xml:lang="sog"><lang/>
+            <w type="rec">fra-štaran-</w> (<w>prštrn-</w>) <gloss><q>carpet</q></gloss></mentioned>,
+            <mentioned xml:lang="ae"><lang/>
+            <w>fra-star-</w>
+            <gloss><q>spread out</q></gloss></mentioned>, <mentioned xml:lang="ae"><w>stairiš-</w>
+            <gloss><q>bedding</q></gloss>, <gloss><q>bed</q></gloss></mentioned>. — From Ossetic
+          comes <mentioned xml:lang="krc-x-balkar"><lang/>
+            <w>ləstən</w>
+            <gloss><q>bedding</q></gloss>
             <note type="bibl">(<bibl><ref type="bibl" target="#ref_ОЯФ_I"/>
                 <biblScope>279</biblScope></bibl>)</note></mentioned>.<lb/><bibl><author>Morgenstierne</author>,
               <ref type="bibl" target="#ref_NTS"/>
