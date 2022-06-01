@@ -1,37 +1,47 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">rūvas</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_rūvas" xml:lang="os" abv:completeness="russian-questions">
+      <entry xml:id="entry_rūvas" xml:lang="os" abv:completeness="english-questions">
         <form type="lemma" xml:lang="os-x-iron"><orth>rūvas</orth></form>
         <form xml:lang="os-x-digor" type="dialectal"><orth>robas</orth></form>
         <sense><abv:tr xml:lang="ru">
             <q>лиса</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>fox</q>
           </abv:tr></sense>
         <re>
           <form type="lemma" xml:lang="os-x-iron"><orth>rūvasʒarm</orth></form>
           <form xml:lang="os-x-digor" type="dialectal"><orth>robasʒar</orth></form>
           <sense><sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
                 <q xmlns="http://www.tei-c.org/ns/1.0">лисья шкура</q>
+              </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+                <q xmlns="http://www.tei-c.org/ns/1.0">fox skin</q>
               </tr></sense><sense><abv:tr xml:lang="ru">
                 <q>лисий мех</q>
+              </abv:tr><abv:tr xml:lang="en">
+                <q>fox fur</q>
               </abv:tr></sense></sense>
         </re>
         <re>
@@ -39,6 +49,8 @@
           <form xml:lang="os-x-digor" type="dialectal"><orth>robasʒawæn</orth></form>
           <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">охота на лис</q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">fox hunting</q>
             </tr></sense>
         </re>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
@@ -46,6 +58,11 @@
             <quote xmlns="http://www.tei-c.org/ns/1.0">gædy <oRef>rūvas</oRef></quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">лиса плутовка</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the fox
+                <?oxy_comment_start author="Irene" timestamp="20220601T115526+0300" comment="вообще хз"?>—<?oxy_comment_end?>
+                little rogue</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ОТ"/>
               <biblScope>64</biblScope></bibl>
@@ -57,6 +74,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">волк побежал и погнался за лисой, но не догнал
                 ее</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the wolf ran and chased the fox, but did not
+                catch up with it</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ОТ"/>
               <biblScope>65</biblScope></bibl>
           </example>
@@ -65,6 +86,10 @@
               næj</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">с давних пор и поныне нет конца козням лисы</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">from a long time ago to this day there is no
+                end to the tricks of the fox</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сека"/>
               <biblScope>113</biblScope></bibl>
@@ -76,6 +101,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">я не оставлю их румяные щеки (на поедание)
                 воронам и лисицам</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">I will not leave their rosy cheeks to be eaten
+                by crows and foxes</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ОЭп."/>
               <biblScope>17</biblScope></bibl>
           </example>
@@ -83,6 +112,9 @@
             <quote xmlns="http://www.tei-c.org/ns/1.0">zæǧut ūсу <oRef>rūvasæn</oRef>...</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">скажите этой лисице...</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">tell that fox...</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Лука"/>
               <biblScope><hi rendition="#rend_italic">13</hi> 32</biblScope></bibl>
@@ -93,6 +125,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">лисицы имеют норы и птицы небесные — гнезда, а
                 Сын Человеческий не имеет где приклонить голову</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the foxes have holes, and the birds of the air
+                have nests; but the Son of man hath not where to lay his head</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Матфей"/>
               <biblScope><hi rendition="#rend_italic">8</hi> 20</biblScope></bibl>
@@ -105,6 +141,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">перед ними из глубокого снега выскочила черная
                 лиса</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">a black fox jumped out of the deep snow in
+                front of them</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_СОПам."/>
               <biblScope>II 37</biblScope></bibl>
           </example>
@@ -114,6 +154,9 @@
               rajzadæj</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">хвост лисы остался на золотистом снегу</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the fox's tail remained on the golden snow</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_СОПам."/>
               <biblScope>II 37</biblScope></bibl>
@@ -126,6 +169,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">подобно лисе ты не перестаешь вилять
                 хвостом</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">like a fox, you don't stop wagging your
+                tail</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Iræf"/>
               <biblScope>109</biblScope></bibl>
           </example>
@@ -134,6 +181,9 @@
             <quote xmlns="http://www.tei-c.org/ns/1.0"><oRef>robasi</oRef> arǧaw dær zonun</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">я знаю и сказку о лисе</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">I also know the tale of the fox</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Gurdž._Æduli"/>
               <biblScope>87</biblScope></bibl>
@@ -146,6 +196,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">когда я, бывало, охотился на лисиц в
                 орешнике...</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">when I used to hunt foxes in the hazel
+                grove...</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_DZ"/>
               <biblScope>104</biblScope></bibl>
           </example>
@@ -154,17 +208,17 @@
             <w type="rec">raupasa-</w></mentioned>. Представлено едва ли не во всех иранских языках,
           кроме афганского, а с различными вариациями основы и в некоторых других индоевропейских:
               <mentioned><mentioned xml:lang="fa"><lang/>
-              <w>rūbūh</w>, <w>rōbāh</w></mentioned>,
-              <?oxy_comment_start author="Irene" timestamp="20220405T131643+0300" comment="сейчас перс., надо &quot;перс. диал&quot;"?><mentioned
-              xml:lang="fa"><note type="comment">в диалектах также</note>
+              <w>rūbūh</w>, <w>rōbāh</w></mentioned>, <mentioned xml:lang="fa-x-dial"><note
+                xml:lang="ru" type="comment">в диалектах также</note><note xml:lang="en"
+                type="comment">в диалектах также</note>
               <w>rūbās</w>, <w>rūwās</w>, <w>ruwā́s</w>, <w>r<hi rendition="#rend_superscript"
                   >u</hi>vos</w>
               <note type="bibl">(<bibl><author>Bailey</author>, <ref type="bibl" target="#ref_BSOS"/>
                   <biblScope>1940 VIII 349</biblScope></bibl>. — (<bibl><author>Ivanow</author>,
                     <title>Rivista degli studi orientali</title>
-                  <biblScope>1939 XVIII
-            51</biblScope></bibl>)</note></mentioned><?oxy_comment_end?>, <mentioned xml:lang="tg"><lang/>
-              <w>rūbōh</w>, <w>rūbah</w></mentioned>, <mentioned xml:lang="tg"><?oxy_comment_start author="Irene" timestamp="20220405T132057+0300" comment="(вандж.)"?><lang/><?oxy_comment_end?>
+                  <biblScope>1939 XVIII 51</biblScope></bibl>)</note></mentioned>, <mentioned
+              xml:lang="tg"><lang/>
+              <w>rūbōh</w>, <w>rūbah</w></mentioned>, <mentioned xml:lang="tg-x-vanj"><lang/>
               <w>rubiz</w>
               <note type="bibl">(<bibl><author>Розенфельд</author>. <title>Ванджские говоры
                     таджикского языка</title>. <pubPlace>Л.</pubPlace>, <date>1964</date>,
@@ -187,21 +241,25 @@
               <w>urvēs</w>, <w>urvēsok</w></mentioned>, <mentioned xml:lang="sgy"><lang/>
               <w>vərvēs</w>, <w>wərvēs</w></mentioned>, <mentioned xml:lang="sgy-x-zebak"><lang/>
               <w>ərvēs</w></mentioned>, <mentioned xml:lang="yai"><lang/>
-              <note type="comment">(из тадж.)</note>
+              <note xml:lang="ru" type="comment">(из тадж.)</note><note xml:lang="en" type="comment"
+                >(из тадж.)</note>
               <w>ruba</w></mentioned>, <mentioned xml:lang="yai"><lang/>
-              <note type="comment">(в топонимии)</note>
+              <note xml:lang="ru" type="comment">(в топонимии)</note><note xml:lang="en"
+                type="comment">(в топонимии)</note>
               <w>rūpas</w>
               <note type="bibl">(сообщение <bibl><author>А. Л.
               Хромова</author></bibl>)</note></mentioned>, <mentioned xml:lang="sog"><lang/>
               <w type="rec">rōbas</w>
-              <note type="comment">(<w>rwps</w>)</note></mentioned>, <mentioned xml:lang="xpr"><lang/>
+              <note xml:lang="ru" type="comment">(<w>rwps</w>)</note><note xml:lang="en"
+                type="comment">(<w>rwps</w>)</note></mentioned>, <mentioned xml:lang="xpr"><lang/>
               <w>rōbās</w></mentioned>, <mentioned xml:lang="zkh"><lang/>
               <w>rūbas</w>
               <note type="bibl">(<bibl><ref type="bibl" target="#ref_Henning._Khwar."/>
                   <biblScope>16</biblScope></bibl>)</note></mentioned>
             <gloss><q>лиса</q></gloss></mentioned>, <mentioned><mentioned xml:lang="kho"><lang/>
               <w>rrūvāsa-</w></mentioned>, <mentioned xml:lang="peo"><lang/>
-              <note type="comment">(в эламской передаче)</note>
+              <note xml:lang="ru" type="comment">(в эламской передаче)</note><note xml:lang="en"
+                type="comment">(в эламской передаче)</note>
               <w>Raubasa</w></mentioned>
             <gloss>личное имя</gloss>
             <note type="bibl">(<bibl><author>Gershevitch</author>, <ref type="bibl"
@@ -210,10 +268,11 @@
           относится по корню <mentioned xml:lang="ae"><lang/>
             <w>urupi-</w></mentioned> в <mentioned xml:lang="ae"><w>spā-urupi-</w>
             <gloss>название породы собак</gloss>
-            <note type="comment">(<q rendition="#rend_doublequotes">собака, похожая на
-              лису</q>?)</note></mentioned>; о возможных значениях <mentioned xml:lang="ae"
-              ><w>urupi-</w></mentioned> см.: <bibl><author>К. Hoffmann</author>, <ref type="bibl"
-              target="#ref_MSS"/>
+            <note xml:lang="ru" type="comment">(<q rendition="#rend_doublequotes">собака, похожая на
+                лису</q>?)</note><note xml:lang="en" type="comment">(<q
+                rendition="#rend_doublequotes">собака, похожая на лису</q>?)</note></mentioned>; о
+          возможных значениях <mentioned xml:lang="ae"><w>urupi-</w></mentioned> см.:
+              <bibl><author>К. Hoffmann</author>, <ref type="bibl" target="#ref_MSS"/>
             <biblScope>1967 XXII 31–32</biblScope></bibl>; ср., далее, <mentioned
             xml:lang="inc-x-old"><lang/>
             <w>lopāśa</w>
@@ -222,8 +281,9 @@
             >loupeḱo-</w></mentioned>. Но такая форма не находит поддержки за пределами арийского
           мира; <mentioned><mentioned xml:lang="xcl"><lang/>
               <w>aluēs</w>
-              <note type="comment">(из <w type="rec">aluves</w> ← <w type="rec"
-              >alopes</w>)</note></mentioned> и <mentioned xml:lang="grc"><lang/>
+              <note xml:lang="ru" type="comment">(из <w type="rec">aluves</w> ← <w type="rec"
+                  >alopes</w>)</note><note xml:lang="en" type="comment">(из <w type="rec">aluves</w>
+                ← <w type="rec">alopes</w>)</note></mentioned> и <mentioned xml:lang="grc"><lang/>
               <w>ἀλώπηξ</w></mentioned>
             <gloss><q>лиса</q></gloss></mentioned> указывают на модель <mentioned xml:lang="ine"
               ><?oxy_comment_start author="Irene" timestamp="20220405T134146+0300" comment="правильно что и.е.?"?><w
@@ -233,11 +293,15 @@
             xml:lang="ae"><lang/>
             <w>raopi-</w>, <w>urupi-</w>
             <gloss><q>порода собак</q></gloss></mentioned> и <mentioned xml:lang="ae"><w>raoža-</w>
-            <note type="comment">(из <w type="rec">raub<hi rendition="#rend_superscript"
-                >a</hi>sa</w>?)</note>
+            <note xml:lang="ru" type="comment">(из <w type="rec">raub<hi
+                  rendition="#rend_superscript">a</hi>sa</w>?)</note><note xml:lang="en"
+              type="comment">(из <w type="rec">raub<hi rendition="#rend_superscript"
+              >a</hi>sa</w>?)</note>
             <gloss><q>лиса</q></gloss>
-            <note type="comment">(?)</note>, <gloss><q>шакал</q></gloss>
-            <note type="comment">(?)</note>
+            <note xml:lang="ru" type="comment">(?)</note><note xml:lang="en" type="comment"
+              >(?)</note>, <gloss><q>шакал</q></gloss>
+            <note xml:lang="ru" type="comment">(?)</note><note xml:lang="en" type="comment"
+              >(?)</note>
             <note type="bibl">(cp.: <bibl><ref type="bibl" target="#ref_Mayrhofer"/>
                 <biblScope>III 111–116</biblScope></bibl>)</note></mentioned>. — Колебание <c>v</c>
           | <c>b</c> внутри слова в осетинских диалектах обычно: <ref type="xr"
@@ -253,8 +317,9 @@
             <gloss><q>карагач</q></gloss></ref>. — С иранскими названиями лисы давно сближают
           некоторые угро-финские и европейские слова: <mentioned xml:lang="hu"><lang/>
             <w>ravasz</w>
-            <gloss><q>хитрец</q></gloss>, <gloss><q>шельма</q></gloss>, <note type="comment">в
-              старом языке</note>
+            <gloss><q>хитрец</q></gloss>, <gloss><q>шельма</q></gloss>, <note xml:lang="ru"
+              type="comment">в старом языке</note><note xml:lang="en" type="comment">в старом
+              языке</note>
             <gloss><q>лиса</q></gloss></mentioned>, <mentioned><mentioned xml:lang="x-mordvin"><lang/>
               <w>riveś</w></mentioned>, <mentioned xml:lang="chm"><lang/>
               <w>rəβəž</w></mentioned>, <mentioned xml:lang="fi"><lang/>
@@ -285,11 +350,22 @@
             <biblScope>75–76</biblScope></bibl>. — <bibl><author>Топоров, Трубачев</author>.
               <title>Лингвистический анализ гидронимов Верхнего Поднепровья</title>.
               <pubPlace>М.</pubPlace>, <date>1962</date>, <biblScope>стр.
-            225</biblScope></bibl>).<note type="footnote">Относительно <c>ш</c> (<c>š</c>) в
-              <mentioned xml:lang="ru"><w>Ропша</w></mentioned> следует заметить, что древнеиранские
-              <c>s</c> и <c>š</c> совпали в осетинском и, вероятно, уже в скифском в одном
-            сибилянте, который был чем-то средним между <c>s</c> и <c>š</c>. Поэтому <mentioned
-              xml:lang="xsc"><lang/>
+            225</biblScope></bibl>).<note xml:lang="ru" type="footnote">Относительно <c>ш</c>
+              (<c>š</c>) в <mentioned xml:lang="ru"><w>Ропша</w></mentioned> следует заметить, что
+            древнеиранские <c>s</c> и <c>š</c> совпали в осетинском и, вероятно, уже в скифском в
+            одном сибилянте, который был чем-то средним между <c>s</c> и <c>š</c>. Поэтому
+              <mentioned xml:lang="xsc"><lang/>
+              <w type="rec">raupaśa-</w></mentioned> дало <mentioned xml:lang="ru"
+              ><w>Ропша</w></mentioned>, а не <mentioned xml:lang="ru"><w type="rec"
+              >Ропcа</w></mentioned>. Ср. <mentioned xml:lang="ka"><lang/>
+              <w>šavi</w>
+              <gloss><q>черный</q></gloss></mentioned> из <ref type="xr" target="#entry_saw"
+              xml:lang="os"><lang/>
+              <w>saw</w> (<w>šaw</w>)</ref>.</note><note xml:lang="en" type="footnote">Относительно
+              <c>ш</c> (<c>š</c>) в <mentioned xml:lang="ru"><w>Ропша</w></mentioned> следует
+            заметить, что древнеиранские <c>s</c> и <c>š</c> совпали в осетинском и, вероятно, уже в
+            скифском в одном сибилянте, который был чем-то средним между <c>s</c> и <c>š</c>.
+            Поэтому <mentioned xml:lang="xsc"><lang/>
               <w type="rec">raupaśa-</w></mentioned> дало <mentioned xml:lang="ru"
               ><w>Ропша</w></mentioned>, а не <mentioned xml:lang="ru"><w type="rec"
               >Ропcа</w></mentioned>. Ср. <mentioned xml:lang="ka"><lang/>
@@ -308,6 +384,184 @@
             <biblScope>178</biblScope></bibl>. — <bibl><author>Bailey</author>, <ref type="bibl"
               target="#ref_TPhS"/>
             <biblScope>1954, стр. 145</biblScope></bibl>.</etym>
+        <etym xml:lang="en">Traces back to <mentioned xml:lang="ira"><lang/>
+            <w type="rec">raupasa-</w></mentioned>. It is represented in almost all Iranian
+          languages, except
+          <?oxy_comment_start author="Irene" timestamp="20220601T120116+0300" comment="так или как-то по-другому?"?>Afghan<?oxy_comment_end?>,
+          and with various variations of the basis in some other Indo-European languages as well:
+              <mentioned><mentioned xml:lang="fa"><lang/>
+              <w>rūbūh</w>, <w>rōbāh</w></mentioned>, <mentioned xml:lang="fa-x-dial"><note
+                xml:lang="ru" type="comment">в диалектах также</note><note xml:lang="en"
+                type="comment">also in dialects</note>
+              <w>rūbās</w>, <w>rūwās</w>, <w>ruwā́s</w>, <w>r<hi rendition="#rend_superscript"
+                  >u</hi>vos</w>
+              <note type="bibl">(<bibl><author>Bailey</author>, <ref type="bibl" target="#ref_BSOS"/>
+                  <biblScope>1940 VIII 349</biblScope></bibl>. — (<bibl><author>Ivanow</author>,
+                    <title>Rivista degli studi orientali</title>
+                  <biblScope>1939 XVIII 51</biblScope></bibl>)</note></mentioned>, <mentioned
+              xml:lang="tg"><lang/>
+              <w>rūbōh</w>, <w>rūbah</w></mentioned>, <mentioned xml:lang="tg-x-vanj"><lang/>
+              <w>rubiz</w>
+              <note type="bibl">(<bibl><author>Розенфельд</author>. <title>Ванджские говоры
+                    таджикского языка</title>. <pubPlace>Leningrad</pubPlace>, <date>1964</date>,
+                    <biblScope>p. 110</biblScope></bibl>)</note></mentioned>, <mentioned
+              xml:lang="pal"><lang/>
+              <w>rōpāh</w>, <w>rōpās</w>, <w>rōβas</w></mentioned>, <mentioned xml:lang="x-balochi"><lang/>
+              <w>rōpask</w></mentioned>, <mentioned xml:lang="hac"><lang/>
+              <w>rûȧs</w>, <w>ru<hi rendition="#rend_superscript">v</hi>ȧs</w>
+              <note type="bibl">(<bibl><ref type="bibl" target="#ref_KPF"/>, <biblScope>Abt. III,
+                    Bd. II, p. 277</biblScope></bibl>)</note></mentioned>, <mentioned xml:lang="ku"><lang/>
+              <w>rūwi</w>, <w>rūwȧs</w></mentioned>, <mentioned xml:lang="oru"><lang/>
+              <w>rawas</w></mentioned>, <mentioned xml:lang="prc"><lang/>
+              <w>rūγasōk</w></mentioned>, <mentioned xml:lang="mnj"><lang/>
+              <w>rəwsa</w>, <w>rusa</w></mentioned>, <mentioned xml:lang="sgh"><lang/>
+              <w>růpc</w>, <w>růpcak</w>, <w>rupsak</w></mentioned>, <mentioned xml:lang="x-rushani"><lang/>
+              <w>rupc</w></mentioned>, <mentioned xml:lang="srh"><lang/>
+              <w>rapc</w></mentioned>, <mentioned xml:lang="yah"><lang/>
+              <w>rəpc</w></mentioned>, <mentioned xml:lang="isk"><lang/>
+              <w>urvēs</w>, <w>urvēsok</w></mentioned>, <mentioned xml:lang="sgy"><lang/>
+              <w>vərvēs</w>, <w>wərvēs</w></mentioned>, <mentioned xml:lang="sgy-x-zebak"><lang/>
+              <w>ərvēs</w></mentioned>, <mentioned xml:lang="yai"><lang/>
+              <note xml:lang="ru" type="comment">(из тадж.)</note><note xml:lang="en" type="comment"
+                >(from Tajik)</note>
+              <w>ruba</w></mentioned>, <mentioned xml:lang="yai"><lang/>
+              <note xml:lang="ru" type="comment">(в топонимии)</note><note xml:lang="en"
+                type="comment">(in toponymy)</note>
+              <w>rūpas</w>
+              <note type="bibl">(<bibl><author>A. L. Khromova</author></bibl>, p.
+              c.)</note></mentioned>, <mentioned xml:lang="sog"><lang/>
+              <w type="rec">rōbas</w>
+              <note xml:lang="ru" type="comment">(<w>rwps</w>)</note><note xml:lang="en"
+                type="comment">(<w>rwps</w>)</note></mentioned>, <mentioned xml:lang="xpr"><lang/>
+              <w>rōbās</w></mentioned>, <mentioned xml:lang="zkh"><lang/>
+              <w>rūbas</w>
+              <note type="bibl">(<bibl><ref type="bibl" target="#ref_Henning._Khwar."/>
+                  <biblScope>16</biblScope></bibl>)</note></mentioned>
+            <gloss><q>fox</q></gloss></mentioned>, <mentioned><mentioned xml:lang="kho"><lang/>
+              <w>rrūvāsa-</w></mentioned>, <mentioned xml:lang="peo"><lang/>
+              <note xml:lang="ru" type="comment">(в эламской передаче)</note><note xml:lang="en"
+                type="comment">(in the Elamite
+                <?oxy_comment_start author="Irene" timestamp="20220601T120242+0300" comment="??"?>transmission<?oxy_comment_end?>)</note>
+              <w>Raubasa</w></mentioned>
+            <gloss>personal name</gloss>
+            <note type="bibl">(<bibl><author>Gershevitch</author>, <ref type="bibl"
+                  target="#ref_TPhS"/>
+                <biblScope>1969, p. 194</biblScope></bibl>)</note></mentioned>; perhaps, <mentioned
+            xml:lang="ae"><lang/>
+            <w>urupi-</w></mentioned> in <mentioned xml:lang="ae"><w>spā-urupi-</w>
+            <gloss>name of the dog breed</gloss>
+            <note xml:lang="ru" type="comment">(<q rendition="#rend_doublequotes">собака, похожая на
+                лису</q>?)</note><note xml:lang="en" type="comment">(<q
+                rendition="#rend_doublequotes">a dog that looks like a fox</q>?)</note></mentioned>
+          is also related
+          <?oxy_comment_start author="Irene" timestamp="20220601T120322+0300" comment="?"?>by the
+          root<?oxy_comment_end?>; about possible meanings of <mentioned xml:lang="ae"
+            ><w>urupi-</w></mentioned> see: <bibl><author>К. Hoffmann</author>, <ref type="bibl"
+              target="#ref_MSS"/>
+            <biblScope>1967 XXII 31–32</biblScope></bibl>; cf. further <mentioned
+            xml:lang="inc-x-old"><lang/>
+            <w>lopāśa</w>
+            <gloss><q>fox</q></gloss>, <gloss><q>jackal</q></gloss></mentioned>. Indo-Iranian forms
+          suggest an Indo-European prototype <mentioned xml:lang="ine"><w type="rec"
+            >loupeḱo-</w></mentioned>. But this form does not find support outside the
+          <?oxy_comment_start author="Irene" timestamp="20220601T120505+0300" comment="?"?>Aryan<?oxy_comment_end?>
+          languages; <mentioned><mentioned xml:lang="xcl"><lang/>
+              <w>aluēs</w>
+              <note xml:lang="ru" type="comment">(из <w type="rec">aluves</w> ← <w type="rec"
+                  >alopes</w>)</note><note xml:lang="en" type="comment">(from <w type="rec"
+                  >aluves</w> ← <w type="rec">alopes</w>)</note></mentioned> and <mentioned
+              xml:lang="grc"><lang/>
+              <w>ἀλώπηξ</w></mentioned>
+            <gloss><q>fox</q></gloss></mentioned> indicate the model <mentioned xml:lang="ine"
+              ><?oxy_comment_start author="Irene" timestamp="20220405T134146+0300" comment="правильно что и.е.?"?><w
+              type="rec">alōpeḱu-</w><?oxy_comment_end?>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Hübschmann._Arm._Gr."/>
+                <biblScope>415</biblScope></bibl>)</note></mentioned>. The following words are not
+          clear: <mentioned xml:lang="ae"><lang/>
+            <w>raopi-</w>, <w>urupi-</w>
+            <gloss><q>dog breed</q></gloss></mentioned> and <mentioned xml:lang="ae"><w>raoža-</w>
+            <note xml:lang="ru" type="comment">(из <w type="rec">raub<hi
+                  rendition="#rend_superscript">a</hi>sa</w>?)</note><note xml:lang="en"
+              type="comment">(from <w type="rec">raub<hi rendition="#rend_superscript"
+              >a</hi>sa</w>?)</note>
+            <gloss><q>fox</q></gloss>
+            <note xml:lang="ru" type="comment">(?)</note><note xml:lang="en" type="comment"
+              >(?)</note>, <gloss><q>jackal</q></gloss>
+            <note xml:lang="ru" type="comment">(?)</note><note xml:lang="en" type="comment"
+              >(?)</note>
+            <note type="bibl">(cf.: <bibl><ref type="bibl" target="#ref_Mayrhofer"/>
+                <biblScope>III 111–116</biblScope></bibl>)</note></mentioned>. — The alternation
+            <c>v</c> | <c>b</c> inside words in Ossetian dialects is usual: <ref type="xr"
+            target="#entry_sælavyr"><w>sælavyr</w> and <w>sælabyr</w>
+            <gloss><q>marten</q></gloss></ref>, <ref type="xr" target="#entry_ʒyvyr"><w
+              xml:lang="os-x-iron">ʒyvyr</w><w xml:lang="os-x-digor">ʒubur</w>
+            <gloss><q>plough</q></gloss></ref>, <ref type="xr" target="#entry_zævæt"><w
+              xml:lang="os-x-iron">zævæt</w><w xml:lang="os-x-digor">zæbæt</w>
+            <gloss><q>heel</q></gloss></ref>, <ref type="xr" target="#entry_zærvatykk"><w
+              xml:lang="os-x-iron">zærvatykk</w><w xml:lang="os-x-digor">zærbatukkæ</w>
+            <gloss><q>swallow</q></gloss></ref>, <ref type="xr" target="#entry_syvylʒ"><w
+              xml:lang="os-x-iron">syvylʒ</w><w xml:lang="os-x-digor">sibulʒæ</w>
+            <gloss><q>elm</q></gloss></ref>. — Some Finno-Ugric and European words have long been
+          brought closer to the Iranian names of foxes: <mentioned xml:lang="hu"><lang/>
+            <w>ravasz</w>
+            <gloss><q>the sly one</q></gloss>, <gloss><q>rascal</q></gloss>, <note xml:lang="ru"
+              type="comment">в старом языке</note><note xml:lang="en" type="comment">in old
+              language</note>
+            <gloss><q>fox</q></gloss></mentioned>, <mentioned><mentioned xml:lang="x-mordvin"><lang/>
+              <w>riveś</w></mentioned>, <mentioned xml:lang="chm"><lang/>
+              <w>rəβəž</w></mentioned>, <mentioned xml:lang="fi"><lang/>
+              <w>repo</w></mentioned>, <mentioned xml:lang="non"><lang/>
+              <w>refr</w></mentioned>, <mentioned xml:lang="sv"><lang/>
+              <w>räf</w></mentioned>, <mentioned xml:lang="da" extralang="no"><lang/>
+              <w>ræv</w></mentioned>
+            <gloss><q>fox</q></gloss></mentioned>. The Iranian origin of these words is disputed by
+          some scholars (<bibl><ref type="bibl" target="#ref_Jacobsohn"/>
+            <biblScope>212</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Sköld._Oss."/>
+            <biblScope>32–33</biblScope></bibl>. — <bibl><author>Brøndal</author>, <title>Acta
+              Philologica Scandinavica</title>
+            <date>1928–1929</date>
+            <biblScope>III 27</biblScope></bibl>. — <bibl><author>Лыткин</author>, <ref type="bibl"
+              target="#ref_ИАН"/>
+            <biblScope>1951, p. 389</biblScope></bibl>. — <bibl><ref type="bibl"
+              target="#ref_Collinder"/>
+            <biblScope>110</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_SKES"/>
+            <biblScope>III 769</biblScope></bibl>). — Archaeological data confirm the antiquity of
+          fox hunting — <oRef>robasʒawæn</oRef> — among the Scythian-Sarmatian tribes. Among the
+          bones of wild animals found in settlements and in mounds, along with the bones of deer and
+          wild boar, fox bones are found (<bibl><author>А. П. Смирнов</author>.
+            <title>Скифы</title>. <pubPlace>М.</pubPlace>, <date>1966</date>,
+              <biblScope>128</biblScope></bibl>). This is also evidenced by the data of toponymy:
+            <mentioned xml:lang="ru"><w>Ропша</w>
+            <gloss>the name of the river in the Orel region</gloss></mentioned>, its other name —
+          Лисичка (small fox) — is a translation from Iranian to Russian (<bibl><ref type="bibl"
+              target="#ref_Vasmer._Ir._i._S."/>
+            <biblScope>75–76</biblScope></bibl>. — <bibl><author>Топоров, Трубачев</author>.
+              <title>Лингвистический анализ гидронимов Верхнего Поднепровья</title>.
+              <pubPlace>М.</pubPlace>, <date>1962</date>, <biblScope>p.
+            225</biblScope></bibl>).<note type="footnote">As for <c>ш</c> (<c>š</c>) in <mentioned
+              xml:lang="ru"><w>Ропша</w></mentioned>, it should be noted that the ancient Iranian
+              <c>s</c> and <c>š</c>
+            <?oxy_comment_start author="Irene" timestamp="20220601T174745+0300" comment="?"?>coincided<?oxy_comment_end?>
+            in Ossetic and, probably, already in Scythian in one sibilant, which was something in
+            between <c>s</c> и <c>š</c>. That is why <mentioned xml:lang="xsc"><lang/>
+              <w type="rec">raupaśa-</w></mentioned> resulted in <mentioned xml:lang="ru"
+                ><w>Ропша</w></mentioned>, not in <mentioned xml:lang="ru"><w type="rec"
+              >Ропcа</w></mentioned>. Cf. <mentioned xml:lang="ka"><lang/>
+              <w>šavi</w>
+              <gloss><q>black</q></gloss></mentioned> from <ref type="xr" target="#entry_saw"
+              xml:lang="os"><lang/>
+              <w>saw</w> (<w>šaw</w>)</ref>.</note> In another zone of Iranian influence one finds
+            <?oxy_comment_start author="Irene" timestamp="20220405T130908+0300" comment="и какое здесь mentioned?"?><w>Rubas-caj</w><?oxy_comment_end?>
+          <gloss>the name of the river near Derbent</gloss>.<lb/><bibl><ref type="bibl"
+              target="#ref_Миллер_Вс._ОЭ"/>
+            <biblScope>II 59, 85</biblScope></bibl>; <bibl><ref type="bibl"
+              target="#ref_Miller._Gr."/>
+            <biblScope>20</biblScope></bibl>. — <bibl><ref type="bibl"
+              target="#ref_Hübschmann._Oss."/>
+            <biblScope>54</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_ОЯФ_I"/>
+            <biblScope>178</biblScope></bibl>. — <bibl><author>Bailey</author>, <ref type="bibl"
+              target="#ref_TPhS"/>
+            <biblScope>1954, p. 145</biblScope></bibl>.</etym>
       </entry>
     </body>
   </text>
