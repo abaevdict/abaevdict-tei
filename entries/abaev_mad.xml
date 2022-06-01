@@ -1,38 +1,48 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">mad</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_mad" xml:lang="os" abv:completeness="incomplete">
+      <entry xml:id="entry_mad" xml:lang="os" abv:completeness="complete">
         <form type="lemma" xml:lang="os-x-iron"><orth>mad</orth></form>
         <form xml:lang="os-x-digor" type="dialectal"><orth>madæ</orth></form>
         <sense><abv:tr xml:lang="ru">
             <q>мать</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>mother</q>
           </abv:tr></sense>
-        <note type="comment">, мн. ч. <w xml:lang="os-x-iron">madæltæ</w><w xml:lang="os-x-digor"
-            >maddæltæ</w></note>
+        <note xml:lang="ru" type="comment">, мн. ч. <w xml:lang="os-x-iron">madæltæ</w><w
+            xml:lang="os-x-digor">maddæltæ</w></note>
+        <note xml:lang="en" type="comment">, pl. <w xml:lang="os-x-iron">madæltæ</w><w
+            xml:lang="os-x-digor">maddæltæ</w></note>
         <re>
           <form type="lemma" xml:lang="os-x-iron"><orth><oRef>mady</oRef> zænæg</orth></form>
           <form xml:lang="os-x-digor" type="dialectal"><orth><oRef>madi</oRef> zænæg</orth><form
               type="variant"><orth><oRef>madi</oRef> gubun</orth></form></form>
           <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">родные братья и сестры</q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">own brothers and sisters</q>
             </tr></sense>
         </re>
         <re>
@@ -40,6 +50,9 @@
           <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">конь, которого жених дарит матери невесты не в
                 счет калыма</q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">horse which the bridegroom presents to the
+                bride’s mother apart from the bride price</q>
             </tr></sense>
         </re>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
@@ -52,6 +65,11 @@
                 отец: «Приведите (в жены) двадцать девушек от одной матери и отца, иначе они не
                 поладят»</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">to (their) twenty sons their mother and father
+                told: <q rendition="#rend_doublequotes">Bring (as wives) twenty girls from one
+                  mother and father, otherwise they will not be on good terms</q></q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ЮОПам."/>
               <biblScope>III 56</biblScope></bibl>
           </example>
@@ -62,6 +80,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">от смерти матери — сиротский вид, от смерти
                 отца — бедный вид</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">because of the mother’s death (one has) an
+                orphan look, because of the father’s death, a poor look</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Ӕмб."/>
               <biblScope>19</biblScope></bibl>
           </example>
@@ -70,6 +92,9 @@
               adǵyndær</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">ты мне милее родной матери</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">you are sweeter to me than my own mother</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сека"/>
               <biblScope>51</biblScope></bibl>
@@ -81,6 +106,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">солнце ласкало, как мать, всякое живое
                 существо</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the sun caressed, like a mother, every living
+                creature</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сека"/>
               <biblScope>121</biblScope></bibl>
           </example>
@@ -88,6 +117,9 @@
             <quote xmlns="http://www.tei-c.org/ns/1.0">næ zonyn mæ <oRef>mady</oRef> rævdyd</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">не знаю материнской ласки</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">I do not know my mother’s caress</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Коста"/>
               <biblScope>31</biblScope></bibl>
@@ -100,6 +132,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">стань матерью семи мальчиков и одной
                 девочки</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">become the mother of seven boys and one
+                girl</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_MD"/>
               <biblScope>1949 II 37</biblScope></bibl>
           </example>
@@ -109,6 +145,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">приведи ягнятам их маток, не то они будут
                 блеять</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">bring their mothers (to the lambs), otherwise
+                they will bleat</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сека"/>
               <biblScope>60</biblScope></bibl>
@@ -121,6 +161,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">тогда как зарыдает, запричитает старая мать</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">then the old mother all of a sudden weeps, all
+                of a sudden laments</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Iræf"/>
               <biblScope>89</biblScope></bibl>
           </example>
@@ -131,24 +175,34 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">Асаго отправился искать свою мать и отца</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Asægo went to look for his mother and
+                father</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_MSt."/>
               <biblScope>15<hi rendition="#rend_subscript">1</hi></biblScope></bibl>
           </example>
           <example>
-            <quote xmlns="http://www.tei-c.org/ns/1.0">mæxī <oRef>mady</oRef> zænæǵy xₒyzæn dæ
+            <quote xmlns="http://www.tei-c.org/ns/1.0">mæxī <oRef>mady zænæǵy</oRef> xₒyzæn dæ
               warzyn</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">я люблю тебя, как родных братьев и сестер</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">I love you as my own brothers and sisters</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_F."/>
               <biblScope>1928 IV 7</biblScope></bibl>
           </example>
           <example xml:lang="os-x-digor">
             <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
-            <quote xmlns="http://www.tei-c.org/ns/1.0">warzon <oRef>madi</oRef> gubun basabur kodta
+            <quote xmlns="http://www.tei-c.org/ns/1.0">warzon <oRef>madi gubun</oRef> basabur kodta
               æ kæwunǧælæs</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">любимая сестра приглушила свой плач</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the beloved sister damped down her crying</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_MD"/>
               <biblScope>1937 I 35</biblScope></bibl>
@@ -159,6 +213,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">кроме того, мы почтим тебя (подарком) «конем
                 матери»</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">furthermore, we will honour you with (a
+                present) <q rendition="#rend_doublequotes">mother’s horse</q></q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сека"/>
               <biblScope>126</biblScope></bibl>
@@ -184,8 +242,10 @@
               <w>māk</w> (из <w type="rec">mādk</w>)</mentioned>, <mentioned xml:lang="tly"><lang/>
               <w>mo</w></mentioned>, <mentioned xml:lang="ps"><lang/>
               <w>mōr</w>
-              <note type="comment">(← <mentioned xml:lang="ira"><w type="rec"
-                >māθr</w></mentioned>)</note></mentioned>, <mentioned xml:lang="sgh"><lang/>
+              <note xml:lang="ru" type="comment">(← <mentioned xml:lang="ira"><w type="rec"
+                  >māθr</w></mentioned>)</note><note xml:lang="en" type="comment">(← <mentioned
+                  xml:lang="ira"><w type="rec">māθr</w></mentioned>)</note></mentioned>, <mentioned
+              xml:lang="sgh"><lang/>
               <w>mād</w></mentioned>, <mentioned xml:lang="x-rushani"><lang/>
               <w>mōd</w>, мн. ч. <w>mōdērj</w></mentioned>, <mentioned xml:lang="sog"><lang/>
               <w type="rec">māt-</w> (<w>mʼth-</w>, <w>mʼt-</w>)</mentioned>, <mentioned
@@ -216,6 +276,63 @@
             <ref type="xr" target="#entry_madard"/>. Ср. <ref type="xr" target="#entry_fyd_1"
               ><w>fyd</w>
             <gloss><q>отец</q></gloss></ref>.</etym>
+        <etym xml:lang="en">Common Indo-European kinship term. Goes back to <mentioned
+            xml:lang="ira"><lang/>
+            <w type="rec">mātar-</w> (nominative <w type="rec">mātā</w>)</mentioned>, <mentioned
+            xml:lang="ine"><lang/>
+            <w>māter-</w></mentioned>. The form <oRef xml:lang="os-x-digor">madæ</oRef> reflects the
+          old nominative <mentioned xml:lang="ira"><w type="rec">mātā</w></mentioned>: the plural
+          stem <oRef>madæl-</oRef> goes back to <mentioned xml:lang="ira"><w type="rec"
+            >mātar-</w></mentioned>. Cf. <mentioned xml:lang="fa"><lang/>
+            <w>mādar</w>
+            <gloss><q>mother</q></gloss></mentioned>, <mentioned xml:lang="fa"><w>mādā</w>
+            <gloss><q>female</q></gloss></mentioned>, <mentioned xml:lang="pal"><lang/>
+            <w>mātar</w>, <w>māt</w>
+            <gloss><q>mother</q></gloss></mentioned>, <mentioned xml:lang="pal"><w>mātak</w>
+            <gloss><q>female</q></gloss></mentioned>, <mentioned><mentioned xml:lang="pal"
+                ><w>mʼd</w>
+              <note type="bibl">(<bibl><ref type="bibl" target="#ref_Henning._BBB"/>
+                  <biblScope>112</biblScope></bibl>)</note></mentioned>, <mentioned
+              xml:lang="x-balochi"><lang/>
+              <w>māt</w>, <w>mās</w>, <w>māθ</w></mentioned>, <mentioned xml:lang="ku"><lang/>
+              <w>māk</w> (из <w type="rec">mādk</w>)</mentioned>, <mentioned xml:lang="tly"><lang/>
+              <w>mo</w></mentioned>, <mentioned xml:lang="ps"><lang/>
+              <w>mōr</w>
+              <note xml:lang="ru" type="comment">(← <mentioned xml:lang="ira"><w type="rec"
+                  >māθr</w></mentioned>)</note><note xml:lang="en" type="comment">(← <mentioned
+                  xml:lang="ira"><w type="rec">māθr</w></mentioned>)</note></mentioned>, <mentioned
+              xml:lang="sgh"><lang/>
+              <w>mād</w></mentioned>, <mentioned xml:lang="x-rushani"><lang/>
+              <w>mōd</w>, pl. <w>mōdērj</w></mentioned>, <mentioned xml:lang="sog"><lang/>
+              <w type="rec">māt-</w> (<w>mʼth-</w>, <w>mʼt-</w>)</mentioned>, <mentioned
+              xml:lang="xpr"><lang/>
+              <w>mād</w></mentioned>, <mentioned xml:lang="zkh"><lang/>
+              <w>mād</w></mentioned>, <mentioned xml:lang="kho"><lang/>
+              <w>māta-</w></mentioned>, <mentioned xml:lang="ae"><lang/>
+              <w>mātar-</w></mentioned>
+            <gloss><q>mother</q></gloss></mentioned>, <mentioned xml:lang="peo"><lang/>
+            <w>ha-mātā</w>
+            <gloss><q>descending from one mother</q></gloss></mentioned>, <mentioned><mentioned
+              xml:lang="inc-x-old"><lang/>
+              <w>mātar-</w></mentioned>, <mentioned xml:lang="xcl"><lang/>
+              <w>mair</w></mentioned>, <mentioned xml:lang="cu"><lang/>
+              <w>mati</w>, pl. <w>matere</w></mentioned>, <mentioned xml:lang="ru"><lang/>
+              <w>matʼ</w></mentioned>
+            <gloss><q>mother</q></gloss></mentioned>, <lang/>
+          <w>motė</w>
+          <gloss><q>wife</q></gloss>, <mentioned xml:lang="lv"><lang/>
+            <w>mâte</w></mentioned>, <mentioned xml:lang="ang"><lang/>
+            <w>mōdor</w></mentioned>, <mentioned xml:lang="de"><lang/>
+            <w>Mutter</w></mentioned>, <mentioned xml:lang="grc"><lang/>
+            <w>μήτηρ</w>, <w>μάτηρ</w></mentioned>, <mentioned xml:lang="la"><lang/>
+            <w>mater</w></mentioned>, <mentioned xml:lang="sga"><lang/>
+            <w>māthir</w></mentioned>, <mentioned xml:lang="xto"><lang/>
+            <w>mācar</w></mentioned>, <mentioned xml:lang="txb"><lang/>
+            <w>mācer</w>
+            <gloss><q>mother</q></gloss></mentioned>. — See <ref type="xr" target="#entry_madæl"/>,
+            <ref type="xr" target="#entry_madard"/>. Cf. <ref type="xr" target="#entry_fyd_1"
+              ><w>fyd</w>
+            <gloss><q>father</q></gloss></ref>.</etym>
       </entry>
     </body>
   </text>
