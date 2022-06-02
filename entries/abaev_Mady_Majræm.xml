@@ -1,31 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">Mady</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_Mady_Majræm" xml:lang="os" abv:completeness="incomplete">
+      <entry xml:id="entry_Mady_Majræm" xml:lang="os" abv:completeness="complete">
         <form type="lemma" xml:lang="os-x-iron"><orth>Mady Majræm</orth></form>
         <form xml:lang="os-x-digor" type="dialectal"><orth>Madæ Majræn</orth></form>
         <sense><sense><abv:tr xml:lang="ru">
               <q>Богоматерь</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>Virgin Mary</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
-              <q>Мать Мария</q>
+              <q rendition="#rend_doublequotes">Мать Мария</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q rendition="#rend_doublequotes">Mother Mary</q>
             </abv:tr></sense></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
@@ -35,8 +43,13 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">о наша хозяйка, наша великая надежда, Мать
                 Мария!</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">o our mistress, our great hope, Mother
+                Mary!</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><biblScope xml:lang="ru">припев гимна,
-                посвященного <oRef>Mady Majræm</oRef></biblScope></bibl>
+                посвященного <oRef>Mady Majræm</oRef></biblScope><biblScope xml:lang="en">refrain of
+                a hymn to <oRef>Mady Majræm</oRef></biblScope></bibl>
           </example>
           <example xml:lang="os-x-digor">
             <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
@@ -45,8 +58,13 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">готовят пироги, три Богу, три Матери Марии…</q>
             </tr>
-            <bibl xmlns="http://www.tei-c.org/ns/1.0"><note type="comment">из обряда над
-                новорождённым</note>; <ref type="bibl" target="#src_Диг._сказ."/>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">they make pies, three to God, three to Mother
+                Mary…</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><note xml:lang="ru" type="comment">из обряда
+                над новорождённым</note><note xml:lang="en" type="comment">from a rite over a
+                newborn</note>; <ref type="bibl" target="#src_Диг._сказ."/>
               <biblScope>58</biblScope></bibl>
           </example>
           <example xml:lang="os-x-digor">
@@ -57,11 +75,16 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">Уасгерги держал плуг, Никкола вел быков, Мать
                 Мариам несла семена, а хлебный Уацелла был сеятелем</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Wasgergi held the plough, Nikkola led the oxen,
+                Mother Mary carried the seeds, and Wacella rich in bread was the sower of seeds</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_СОПам."/>
               <biblScope>II 142</biblScope></bibl>
           </example>
         </exampleGrp>
         <etym xml:lang="ru">См. <ref type="xr" target="#entry_Majræm"/>.</etym>
+        <etym xml:lang="en">See <ref type="xr" target="#entry_Majræm"/>.</etym>
       </entry>
     </body>
   </text>
