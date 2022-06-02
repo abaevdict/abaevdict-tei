@@ -1,25 +1,29 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">Madizæn</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_Madizæn" xml:lang="os" abv:completeness="incomplete">
+      <entry xml:id="entry_Madizæn" xml:lang="os" abv:completeness="english-questions">
         <form type="lemma"><orth>Madizæn</orth></form>
         <sense><def xml:lang="ru"><quote><q rendition="#rend_doublequotes">название площадки и
                 святилища в ауле Дагом по Алагирскому ущелью; на этой площадке заседало вече. Все
@@ -35,6 +39,20 @@
                 делались подарки. Заседали они в <oRef/> по целым неделям и дольше. Это вече
                 просуществовало до водворения русского правительства на Кавказе</q>
               <bibl>(<ref type="bibl" target="#ref_Сл."/>
+                <biblScope>II 784</biblScope>)</bibl></quote></def><def xml:lang="en"><quote><q
+                rendition="#rend_doublequotes">name of an area and sanctuary in the village Dagom in
+                the Alagir gorge; a council used to have meetings on these grounds. All internal and
+                external political affairs were decided here by judges called <mentioned
+                  xml:lang="os-x-iron"><phr><ref type="xr" target="#entry_tærxon">tærxony</ref>
+                    <ref type="xr" target="#entry_læg">læg</ref></phr>
+                  <gloss><q>man of the council</q></gloss></mentioned>. These <mentioned
+                  xml:lang="os-x-iron"><phr><ref type="xr" target="#entry_tærxon">tærxony</ref>
+                    <ref type="xr" target="#entry_læg">lægtæ</ref></phr></mentioned> were consulted
+                to decide various questions from all Ossetian gorges and even from Balkaria. On such
+                occasions, judges were given presents. They convened in <oRef/> from whole weeks and
+                more. This council existed up until the establishment of Russian rule in the
+                Caucasus</q>
+              <bibl>(<ref type="bibl" target="#ref_Сл."/>
                 <biblScope>II 784</biblScope>)</bibl></quote></def></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
@@ -49,18 +67,35 @@
                 общественные дела решались там. Решение, принятое в <oRef/>, нельзя было не
                 выполнить</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">very respected was the sanctuary <oRef/> in the
+                Alagir gorge. This was an assembly, a court. The judges sat down in the <oRef/>; all
+                public affairs were decided there. A decision enacted by the <oRef/> could not be
+                disobeyed</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><biblScope xml:lang="ru">из этнографических
-                материалов Е. Бараковой</biblScope></bibl>
+                материалов Е. Бараковой</biblScope><biblScope xml:lang="en">from ethnographic
+                materials of E. Barakova</biblScope></bibl>
           </example>
         </exampleGrp>
-        <note type="comment">. Площадка <oRef/> отмечена вертикально стоящим камнем, что характерно
-          для мест поклонения женским божествам; ср. <mentioned xml:lang="os-x-digor"><phr><ref
-                type="xr" target="#entry_Majræm">Majræni</ref>
+        <note xml:lang="ru" type="comment">. Площадка <oRef/> отмечена вертикально стоящим камнем,
+          что характерно для мест поклонения женским божествам; ср. <mentioned xml:lang="os-x-digor"
+                ><phr><ref type="xr" target="#entry_Majræm">Majræni</ref>
               <ref type="xr" target="#entry_dur">dor</ref></phr>
             <gloss><q rendition="#rend_doublequotes">камень Мариам</q></gloss></mentioned> в
-          нескольких местах в Осетии<note type="footnote"><bibl><title type="j">Изв. Сев.-Осет.
-                научно-исслед. инст.</title>
+          нескольких местах в Осетии<note xml:lang="ru" type="footnote"><bibl><title type="j">Изв.
+                Сев.-Осет. научно-исслед. инст.</title>
+              <biblScope>1962 XXIII 105</biblScope></bibl>.</note><note xml:lang="en"
+            type="footnote"><bibl><title type="j">Изв. Сев.-Осет. научно-исслед. инст.</title>
               <biblScope>1962 XXIII 105</biblScope></bibl>.</note></note>
+        <note xml:lang="en" type="comment">. The <oRef/> grounds were marked by a vertical standing
+          stone, which is typical for places of worship of female deities; cf. <mentioned
+            xml:lang="os-x-digor"><phr><ref type="xr" target="#entry_Majræm">Majræni</ref>
+              <ref type="xr" target="#entry_dur">dor</ref></phr>
+            <gloss><q rendition="#rend_doublequotes">the stone of Mary</q></gloss></mentioned> in
+          several locations in Ossetia<note type="footnote"><bibl><title type="j">Izv. Sev.-Oset.
+                naučno-issled. inst.</title> [Transactions of the North Ossetian Research Institute]
+                <biblScope>1962 XXIII 105</biblScope></bibl>.</note></note>
         <etym xml:lang="ru">Сложение <ref type="xr" target="#entry_mad"/> + <w>izæn</w>, где каждая
           часть значит <gloss><q>мать</q></gloss>; ср. для первой части <ref type="xr"
             target="#entry_mad"/>, для второй — <mentioned><mentioned xml:lang="trk"><lang/>
@@ -87,6 +122,33 @@
             target="#entry_dyǵyzæ"><w xml:lang="os-x-iron">dyǵyzæ</w><w xml:lang="os-x-digor"
               >digiza</w>
             <gloss><q>кормилица</q></gloss></ref>.</etym>
+        <etym xml:lang="en">A compound <ref type="xr" target="#entry_mad"/> + <w>izæn</w>, where
+          both components mean <gloss><q>mother</q></gloss>; cf. for the former part <ref type="xr"
+            target="#entry_mad"/>, for the latter, <mentioned><mentioned xml:lang="trk"><lang/>
+              <w>iʒä</w>, <w>ižä</w>
+              <gloss><q>mother</q></gloss></mentioned>, <mentioned xml:lang="trk"><w>iǯän</w>
+              <gloss><q><?oxy_comment_start author="oleg" timestamp="20220602T042623+0300" comment="?? матушка"?>dear
+                  mother<?oxy_comment_end?></q></gloss></mentioned>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Радлов"/>
+                <biblScope>I 1520</biblScope></bibl>)</note></mentioned>. From the meagre data that
+          have been preserved, under the name <q rendition="#rend_doublequotes">Mother</q> was
+          worshipped a deity of lawful order and justice, something typologically close to the Greek
+          Themis: <mentioned><mentioned xml:lang="grc"><w>Θέμις</w>
+              <gloss><q>goddess of justice</q></gloss></mentioned>, <mentioned xml:lang="ira"><lang/>
+              <w type="rec">Artī-</w></mentioned> (<mentioned xml:lang="ae"><lang/>
+              <w>Ašī-</w></mentioned>) <gloss><q>goddess distributing boons</q></gloss></mentioned>.
+          The origins of this cult go back to matriarchical times. — The hybrid Ossetic-Turkic form
+          of the name <oRef/> is not something exceptional; cf. in this respect <ref type="xr"
+            target="#entry_aldymbyd"/>, <ref type="xr" target="#entry_tin"><w>tinkærc</w></ref>,
+            <ref type="xr" target="#entry_ʒæbæx"/>, <ref type="xr" target="#entry_kenkeǧazæ"/> etc.
+          In this case the Ossetic-Turkkic mixture is particularly justified since the sanctuary was
+          a meeting place not only for the Ossetians, but also for the Balkars, who are a Turkic
+          people. — <mentioned xml:lang="trk"><lang/>
+            <w>ižä</w>
+            <gloss><q>mother</q></gloss></mentioned> is also recognizeable in Ossetic <ref type="xr"
+            target="#entry_dyǵyzæ"><w xml:lang="os-x-iron">dyǵyzæ</w><w xml:lang="os-x-digor"
+              >digiza</w>
+            <gloss><q>wet nurse</q></gloss></ref>.</etym>
       </entry>
     </body>
   </text>
