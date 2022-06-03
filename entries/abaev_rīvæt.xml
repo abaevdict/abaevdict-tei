@@ -1,48 +1,74 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">rīvæt</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_rīvæt" xml:lang="os-x-iron" abv:completeness="russian-questions">
-        <form type="lemma"><orth>rīvæt</orth><form type="variant" subtype="parens"><orth>rīvæd</orth></form></form>
+      <entry xml:id="entry_rīvæt" xml:lang="os-x-iron" abv:completeness="english-questions">
+        <form type="lemma"><orth>rīvæt</orth><form type="variant" subtype="parens"
+              ><orth>rīvæd</orth></form></form>
         <usg><lang/></usg>
         <sense><abv:tr xml:lang="ru">
             <q>полуденный отдых скота летом</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>midday rest of cattle in summer</q>
           </abv:tr></sense>
-        <note type="comment">; по значению ср. <mentioned xml:lang="ru-x-dial"><lang/>
+        <note xml:lang="ru" type="comment">; по значению ср. <mentioned xml:lang="ru-x-dial"><lang/>
             <w>по́лднище</w><gloss><q>полуденный привал скота, стойло</q></gloss>, <note
+              xml:lang="ru" type="comment">обычно в лесу, у воды (<bibl><ref type="bibl"
+                  target="#ref_Даль"/>
+                <biblScope>III 251</biblScope></bibl>)</note><note xml:lang="en" type="comment"
+              >обычно в лесу, у воды (<bibl><ref type="bibl" target="#ref_Даль"/>
+                <biblScope>III 251</biblScope></bibl>)</note></mentioned></note>
+        <note xml:lang="en" type="comment">; cf. the meaning of <mentioned xml:lang="ru-x-dial"><lang/>
+            <w>по́лднище</w><gloss><q>midday cattle rest, stall</q></gloss>, <note xml:lang="ru"
               type="comment">обычно в лесу, у воды (<bibl><ref type="bibl" target="#ref_Даль"/>
+                <biblScope>III 251</biblScope></bibl>)</note><note xml:lang="en" type="comment"
+              >usually in the forest, by the water (<bibl><ref type="bibl" target="#ref_Даль"/>
                 <biblScope>III 251</biblScope></bibl>)</note></mentioned></note>
         <re>
           <form type="lemma"><orth>rīvæt <ref type="xr" target="#entry_kænyn"/></orth></form>
           <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">отдыхать в полдень</q>
-            </tr><note type="comment"> (о скоте)</note></sense>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">rest at noon</q>
+            </tr><note xml:lang="ru" type="comment"> (о скоте)</note><note xml:lang="en"
+              type="comment"> (about cattle)</note></sense>
         </re>
         <re>
           <form type="lemma"><orth>rīvætdon</orth></form>
           <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">место полуденного отдыха скота</q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">place of midday rest of cattle</q>
             </tr></sense>
-          <note type="comment">, ср. <mentioned xml:lang="ru-x-dial"><lang/>
+          <note xml:lang="ru" type="comment">, ср. <mentioned xml:lang="ru-x-dial"><lang/>
               <w>полу́дневище</w><gloss><q>скотское стойло в поле, привольное место для отдыха в
                   зной</q></gloss>
+              <note type="bibl">(<bibl><ref type="bibl" target="#ref_Даль"
+              /></bibl>)</note></mentioned></note>
+          <note xml:lang="en" type="comment">, cf. <mentioned xml:lang="ru-x-dial"><lang/>
+              <w>полу́дневище</w><gloss><q>animal stall in the field, a free place to rest in the
+                  heat</q></gloss>
               <note type="bibl">(<bibl><ref type="bibl" target="#ref_Даль"
               /></bibl>)</note></mentioned></note>
         </re>
@@ -54,6 +80,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">горный пастух не поет, когда его скот
                 отдыхает</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">a mountain shepherd does not sing when his
+                cattle are resting</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Коста"/>
               <biblScope>40</biblScope></bibl>
           </example>
@@ -63,6 +93,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">когда хорошо попасешь (скот), то сверни его в
                 низину под тень кленов на отдых</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">when you graze cattle well, then turn it into a
+                hollow under the shade of maples to rest</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_F."/>
               <biblScope>1956 V 8</biblScope></bibl>
@@ -74,6 +108,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">коровы и быки, жуя жвачку, отдыхают у края
                 снежной лавины</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">cows and bulls, chewing gum, rest at the edge
+                of an avalanche</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Хар._Кадӕг"/>
               <biblScope>59</biblScope></bibl>
           </example>
@@ -84,6 +122,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">туда приходили олени и отдыхали (в зной); потом
                 вставали и паслись</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">deer came there and rested (in the heat); then
+                they got up and grazed</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ЮОПам."/>
               <biblScope>II 151</biblScope></bibl>
           </example>
@@ -92,8 +134,12 @@
               ærbaskʼærdton; ūт īw ran satæǵy fystæ sæxī ærkaldtoj æmæ <oRef>rīvæd</oRef>
               kodtoj</quote>
             <tr xml:lang="ru">
-              <q xmlns="http://www.tei-c.org/ns/1.0">однажды летом я пригнал свое -сытое стадо овец;
+              <q xmlns="http://www.tei-c.org/ns/1.0">однажды летом я пригнал свое сытое стадо овец;
                 там в одном месте, в прохладе, овцы улеглись и отдыхали</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">one summer I brought my well-fed flock of
+                sheep; there in one place, in the cool, the sheep lay down and rested</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_MD"/>
               <biblScope>1956 XII 44</biblScope></bibl>
@@ -102,6 +148,9 @@
             <quote xmlns="http://www.tei-c.org/ns/1.0">wæng˳ytæ <oRef>rīvæt</oRef> kodtoj</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">бычки отдыхали</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the bulls were resting</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ЮОПам."/>
               <biblScope>I 118</biblScope></bibl>
@@ -113,6 +162,12 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">влажное полудневище, прекрасные пастбища —
                 (вот) мечты пастуха</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">a
+                <?oxy_comment_start author="Irene" timestamp="20220603T151227+0300" comment="?"?>wet
+                stall in the field<?oxy_comment_end?>, beautiful pastures — these are the dreams of
+                a shepherd</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Коста"/>
               <biblScope>49</biblScope></bibl>
           </example>
@@ -121,7 +176,13 @@
                 <oRef>rīvæddon</oRef>, nard fosy ʒūgæj jæ zærdæ rūxs kodta</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">сердце (пастуха) радовалось злачному пастбищу,
-                влажному полудневищу, упитанномустаду</q>
+                влажному полудневищу, упитанному стаду</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the heart (of the shepherd) rejoiced at the
+                golden pasture,
+                <?oxy_comment_start author="Irene" timestamp="20220603T151326+0300" comment="?"?>the
+                wet stall in the field, the well-fed cattle herd<?oxy_comment_end?></q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сека"/>
               <biblScope>121</biblScope></bibl>
@@ -134,6 +195,14 @@
                 скот тотчас стал на <hi rendition="#rend_smallcaps">rīvæd</hi> и принялся жевать
                 жвачку</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">while he was
+                <?oxy_comment_start author="Irene" timestamp="20220603T151430+0300" comment="?"?>tending<?oxy_comment_end?>
+                his flock, he let it into a
+                <?oxy_comment_start author="Irene" timestamp="20220603T151427+0300" comment="?"?>stall<?oxy_comment_end?>
+                in the meadow; the cattle immediately began to rest and began to chew
+                <?oxy_comment_start author="Irene" timestamp="20220603T151453+0300" comment="?"?>cud<?oxy_comment_end?></q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_F."/>
               <biblScope>1956 V 9</biblScope></bibl>
           </example>
@@ -141,7 +210,9 @@
         <etym xml:lang="ru">Возможно, восходит к <mentioned xml:lang="ira"><lang/>
             <w type="rec">raipiϑwā-</w>
             <gloss><q>полдень</q></gloss>
-            <note type="comment">(<mentioned xml:lang="x-oldirn"><lang/>
+            <note xml:lang="ru" type="comment">(<mentioned xml:lang="x-oldirn"><lang/>
+                <w type="rec">rapiϑwā-</w></mentioned> с эпентезой <c>i</c>)</note><note
+              xml:lang="en" type="comment">(<mentioned xml:lang="x-oldirn"><lang/>
                 <w type="rec">rapiϑwā-</w></mentioned> с эпентезой <c>i</c>)</note></mentioned>. В
           этом случае <oRef>rīvæt</oRef> оказывается вариантом слова <ref type="xr"
             target="#entry_ræftæ"><w>ræftæ</w>
@@ -150,6 +221,25 @@
             <?oxy_comment_start author="Irene" timestamp="20220407T093303+0300" comment="здесь же не надо никаких mentioned? или надо?"?><c>i</c><?oxy_comment_end?>
           в осетинском не дает <c>æ</c>. Однако никакого лучшего объяснения на горизонте не
               видно.<lb/><bibl><author>Morgenstierne</author>. <ref type="bibl" target="#ref_NTS"/>
+            <biblScope>1942 XII 268</biblScope></bibl>. — <bibl><ref type="bibl"
+              target="#ref_Bailey._Asica"/>
+            <biblScope>23</biblScope></bibl>.</etym>
+        <etym xml:lang="en">Probably, traces back to <mentioned xml:lang="ira"><lang/>
+            <w type="rec">raipiϑwā-</w>
+            <gloss><q>midday</q></gloss>
+            <note xml:lang="ru" type="comment">(<mentioned xml:lang="x-oldirn"><lang/>
+                <w type="rec">rapiϑwā-</w></mentioned> с эпентезой <c>i</c>)</note><note
+              xml:lang="en" type="comment">(<mentioned xml:lang="x-oldirn"><lang/>
+                <w type="rec">rapiϑwā-</w></mentioned> with the epenthesis of
+            <c>i</c>)</note></mentioned>. In this case <oRef>rīvæt</oRef> is a variant of the word
+            <ref type="xr" target="#entry_ræftæ"><w>ræftæ</w>
+            <gloss><q>midday</q></gloss></ref>, q. v. From the semantic point of view, this
+          etymology is quite satisfactory, but it is associated with a serious phonetic
+          <?oxy_comment_start author="Irene" timestamp="20220603T151747+0300" comment="?"?>forced<?oxy_comment_end?>
+          argument: Proto-Iranian
+            <?oxy_comment_start author="Irene" timestamp="20220407T093303+0300" comment="здесь же не надо никаких mentioned? или надо?"?><c>i</c><?oxy_comment_end?>
+          does not give <c>æ</c> in Ossetic. However, no better explanation is on the
+              horizon.<lb/><bibl><author>Morgenstierne</author>. <ref type="bibl" target="#ref_NTS"/>
             <biblScope>1942 XII 268</biblScope></bibl>. — <bibl><ref type="bibl"
               target="#ref_Bailey._Asica"/>
             <biblScope>23</biblScope></bibl>.</etym>
