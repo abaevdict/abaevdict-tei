@@ -1,39 +1,51 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">majmaiddær</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_majmaiddær" xml:lang="os-x-digor" abv:completeness="incomplete">
+      <entry xml:id="entry_majmaiddær" xml:lang="os-x-digor" abv:completeness="questions">
         <form type="lemma"><orth>majmaiddær</orth></form>
         <usg><lang/></usg>
         <sense><sense><abv:tr xml:lang="ru">
               <q>никоим образом</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>in no way</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>никогда</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>never</q>
             </abv:tr></sense></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
-            <quote xmlns="http://www.tei-c.org/ns/1.0">majmaiddær eci saǧæstæ dæ zærdæmæ ma
-              bawaʒæ</quote>
+            <quote xmlns="http://www.tei-c.org/ns/1.0"><oRef>majmaiddær</oRef> eci saǧæstæ dæ
+              zærdæmæ ma bawaʒæ</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">никоим образом не допускай этих мыслей до
                 своего сердца</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">in no way let these thoughts into your
+                heart</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Диг._сказ."/>
               <biblScope>20</biblScope></bibl>
@@ -51,6 +63,19 @@
             </gloss>
             <note type="bibl">(<bibl>из рукописных материалов К. Д.
             Дондуа</bibl>)</note></mentioned>.</etym>
+        <etym xml:lang="en">Reduplication of the prohibitive particle <ref type="xr"
+            target="#entry_ma_1"/>, strengthened by the formative <mentioned xml:lang="os"
+              ><m>-id</m></mentioned> and the adverbial particle <mentioned xml:lang="os"
+            ><w>dær</w></mentioned>. Like <ref type="xr" target="#entry_ma_1"/>, has counterparts in
+          Caucasian languages: <mentioned xml:lang="sva"><lang/>
+            <w>m<?oxy_comment_start author="oleg" timestamp="20220608T205557+0300" comment="check diacritic"?>ā<?oxy_comment_end?>jma</w>
+            <gloss><q>whatever</q></gloss></mentioned>, например <mentioned xml:lang="sva"><phr>gveš
+              mag, mājma īri</phr>
+            <gloss>
+              <q>every thing, whatever it is</q>
+            </gloss>
+            <note type="bibl">(<bibl>from handwritten notes of K. D.
+            Dondua</bibl>)</note></mentioned>.</etym>
       </entry>
     </body>
   </text>
