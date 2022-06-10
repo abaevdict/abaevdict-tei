@@ -1,36 +1,51 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ᵆrdyston</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_7rdyston" xml:lang="os-x-iron" abv:completeness="russian-questions">
+      <entry xml:id="entry_7rdyston" xml:lang="os-x-iron" abv:completeness="english-questions">
         <form type="lemma"><orth>ᵆrdyston</orth></form>
         <usg><lang/></usg>
         <sense><sense><abv:tr xml:lang="ru">
               <q>футляр для лука</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>bow case</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>горит</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>gorytos</q>
             </abv:tr></sense></sense>
-        <note type="comment">; служил также колчаном (см. ниже);<note type="footnote">Колчан
-            назывался также <ref type="xr" target="#entry_fat"/><ref type="xr"
-              target="#entry_-don_2"><w>don</w></ref>.</note> изготовлялся из кожи, обшивался
-          золотой и серебряной канителью (<bibl><ref type="bibl" target="#src_СОПам."/>
+        <note xml:lang="ru" type="comment">; служил также колчаном (см. ниже);<note xml:lang="ru"
+            type="footnote">Колчан назывался также <ref type="xr" target="#entry_fat"/><ref
+              type="xr" target="#entry_-don_2"><w>don</w></ref>.</note><note xml:lang="en"
+            type="footnote">Колчан назывался также <ref type="xr" target="#entry_fat"/><ref
+              type="xr" target="#entry_-don_2"><w>don</w></ref>.</note> изготовлялся из кожи,
+          обшивался золотой и серебряной канителью (<bibl><ref type="bibl" target="#src_СОПам."/>
+            <biblScope>I 50, 80</biblScope></bibl>)</note>
+        <note xml:lang="en" type="comment">; also served as a quiver (see below);<note
+            type="footnote">The quiver was also called <ref type="xr" target="#entry_fat"/><ref
+              type="xr" target="#entry_-don_2"><w>don</w></ref>.</note> it was made of leather,
+          sheathed with gold and silver thread (<bibl><ref type="bibl" target="#src_СОПам."/>
             <biblScope>I 50, 80</biblScope></bibl>)</note>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
@@ -41,23 +56,39 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">как только он сказал: дай, выстрелю, — как
                 стрела выпала у него из рук, и горит его развалился, его стрелы рассыпались</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">as soon as he said, let me shoot, the arrow
+                fell out of his hands, and his gorytos fell apart, his arrows scattered</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ИАС"/>
               <biblScope>I 145</biblScope></bibl>
           </example>
-          <example>
-            <quote xmlns="http://www.tei-c.org/ns/1.0"/>
+          <example xml:lang="ru">
+            <quote xmlns="http://www.tei-c.org/ns/1.0"><q rendition="#rend_doublequotes">все мои
+                стрелы из <oRef>ærdyston</oRef>'a рассыпались</q></quote>
             <tr xml:lang="ru">
+              <?oxy_comment_start author="Irene" timestamp="20220610T125547+0300" comment="если это удалить, то в англ не удалится?"?>
               <q xmlns="http://www.tei-c.org/ns/1.0">все мои стрелы из <oRef>ærdyston</oRef>'a
-                рассыпались</q>
+                рассыпались</q><?oxy_comment_end?>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">all my arrows from <oRef>ærdyston</oRef>
+                scattered</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_СОПам."/>
               <biblScope>I 41</biblScope></bibl>
           </example>
-          <example>
-            <quote xmlns="http://www.tei-c.org/ns/1.0"/>
+          <example xml:lang="ru">
+            <quote xmlns="http://www.tei-c.org/ns/1.0"><q rendition="#rend_doublequotes">видишь ты
+                этот <oRef>ærdyston</oRef>, полный стрелами?</q></quote>
             <tr xml:lang="ru">
+              <?oxy_comment_start author="Irene" timestamp="20220610T125602+0300" comment="если это удалить, то англ не удалится?"?>
               <q xmlns="http://www.tei-c.org/ns/1.0">видишь ты этот <oRef>ærdyston</oRef>, полный
-                стрелами?</q>
+                стрелами?</q><?oxy_comment_end?>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">do you see this <oRef>ærdyston</oRef>, full of
+                arrows?</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_СОПам."/>
               <biblScope>I 77</biblScope></bibl>
@@ -69,7 +100,8 @@
             xml:lang="x-oldirn"><lang/>
             <w>ᵆdruna-stāna-</w></mentioned>; см. <ref type="xr" target="#entry_7rdyn"><w>ᵆrdyn</w>
             <gloss><q>лук</q></gloss></ref> и <ref type="xr" target="#entry_-ston"><w>ston</w>
-            <note type="comment">(в сложных словах)</note>
+            <note xml:lang="ru" type="comment">(в сложных словах)</note><note xml:lang="en"
+              type="comment">(в сложных словах)</note>
             <gloss><q>вместилище</q></gloss>, <gloss><q>место</q></gloss></ref>. Ср. по образованию
             <ref type="xr" target="#entry_cæxx"><w>cæxxyston</w>
             <gloss><q>солонка</q></gloss></ref>, <ref type="xr" target="#entry_gæn"><w>gænyston</w>
@@ -90,6 +122,38 @@
             <note type="bibl">(<bibl><ref type="bibl" target="#ref_BSOAS"/>
                 <biblScope>1961 XXIV 472</biblScope></bibl>)</note></mentioned>, напрашивается на
           сближение с ос. <oRef>ᵆrdyston</oRef>.<lb/><bibl><ref type="bibl" target="#ref_ОЯФ_I"/>
+            <biblScope>29</biblScope></bibl>.</etym>
+        <etym xml:lang="en">From <ref type="xr" target="#entry_7rdyn"><w>ᵆrdyn</w></ref><ref
+            type="xr" target="#entry_-ston"/>
+          <gloss><q rendition="#rend_doublequotes">place for a bow</q></gloss>, <mentioned
+            xml:lang="x-oldirn"><lang/>
+            <w>ᵆdruna-stāna-</w></mentioned>; see <ref type="xr" target="#entry_7rdyn"><w>ᵆrdyn</w>
+            <gloss><q>bow</q></gloss></ref> and <ref type="xr" target="#entry_-ston"><w>ston</w>
+            <note xml:lang="ru" type="comment">(в сложных словах)</note><note xml:lang="en"
+              type="comment">(in compound words)</note>
+            <gloss><q>container</q></gloss>, <gloss><q>place</q></gloss></ref>. Cf. a similar
+          derivation pattern of <ref type="xr" target="#entry_cæxx"><w>cæxxyston</w>
+            <gloss><q>salt-cellar</q></gloss></ref>, <ref type="xr" target="#entry_gæn"
+              ><w>gænyston</w>
+            <gloss><q>desolation</q></gloss></ref>, <ref type="xr" target="#entry_zæræston"
+              ><w>zæræston</w>
+            <gloss><q>an abandoned and overgrown field</q></gloss></ref>, <ref type="xr"
+            target="#entry_Iryston"><w>Iryston</w>
+            <gloss><q>Ossetia</q></gloss></ref> etc. (<bibl><ref type="bibl" target="#ref_ГО"/>
+            <biblScope>§ 191</biblScope></bibl>). — <mentioned xml:lang="sog"><lang/>
+            <w>δrwnštn</w>
+            <gloss><q>quiver</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Benveniste._TSP"/>
+                <biblScope>228</biblScope></bibl>)</note></mentioned>, which
+              <bibl><author>Ваi1еу</author></bibl> presumably reconstructs as <mentioned
+            xml:lang="ira"
+              ><?oxy_comment_start author="Irene" timestamp="20220416T114411+0300" comment="поставила иран пока, хз что ставить"?><w
+              type="rec">druna-starana-</w><?oxy_comment_end?>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_BSOAS"/>
+                <biblScope>1961 XXIV 472</biblScope></bibl>)</note></mentioned>, is
+          <?oxy_comment_start author="Irene" timestamp="20220610T130234+0300" comment="??"?>tempting<?oxy_comment_end?>
+          to bring closer to Ossetic <oRef>ᵆrdyston</oRef>.<lb/><bibl><ref type="bibl"
+              target="#ref_ОЯФ_I"/>
             <biblScope>29</biblScope></bibl>.</etym>
       </entry>
     </body>
