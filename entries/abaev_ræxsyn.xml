@@ -1,25 +1,29 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ræxsyn</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_ræxsyn" xml:lang="os" abv:completeness="russian-questions">
+      <entry xml:id="entry_ræxsyn" xml:lang="os" abv:completeness="english-questions">
         <form type="lemma" xml:lang="os-x-iron"><orth>ræxsyn</orth><form type="participle"
               ><orth>ræxsad</orth></form></form>
         <form xml:lang="os-x-digor" type="dialectal"><orth>ræxsun</orth><form type="participle"
@@ -28,8 +32,14 @@
         <sense n="1"><abv:tr xml:lang="ru">
             <q>плести ремешками подошву горной обуви <ref type="xr" target="#entry_ærḱʼī"><hi
                   rendition="#rend_smallcaps">ærḱʼī</hi></ref></q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>weave the soles of mountain shoes <ref type="xr" target="#entry_ærḱʼī"><hi
+                  rendition="#rend_smallcaps">ærḱʼī</hi></ref> with straps</q>
           </abv:tr><?oxy_comment_start author="Irene" timestamp="20220420T092651+0300" comment="так ок?"?><note
-            type="comment">(<ref type="xr" target="#entry_ærḱʼī"><w>ærḱʼī</w></ref>
+            xml:lang="ru" type="comment">(<ref type="xr" target="#entry_ærḱʼī"><w>ærḱʼī</w></ref>
+            <oRef>ræxsyn</oRef> | <ref type="xr" target="#entry_ærḱʼī"><w>ærkʼe</w></ref>
+            <oRef>ræxsun</oRef>)</note><note xml:lang="en" type="comment">(<ref type="xr"
+              target="#entry_ærḱʼī"><w>ærḱʼī</w></ref>
             <oRef>ræxsyn</oRef> | <ref type="xr" target="#entry_ærḱʼī"><w>ærkʼe</w></ref>
             <oRef>ræxsun</oRef>)</note><?oxy_comment_end?></sense>
         <sense><re>
@@ -37,26 +47,43 @@
             <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
                 <q xmlns="http://www.tei-c.org/ns/1.0">ремешок, которым плетут <ref type="xr"
                     target="#entry_ærḱʼī"><hi rendition="#rend_smallcaps">ærḱʼī</hi></ref></q>
+              </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+                <q xmlns="http://www.tei-c.org/ns/1.0">the strap with which <ref type="xr"
+                    target="#entry_ærḱʼī"><hi rendition="#rend_smallcaps">ærḱʼī</hi></ref> is
+                  woven</q>
               </tr></sense>
           </re></sense>
+        <?oxy_comment_start author="Irene" timestamp="20220610T165221+0300" comment="здесь точно все ок? почему это сенс?"?>
         <sense xml:lang="os-x-digor"><usg><lang/></usg><re>
             <form type="lemma"><orth>ræxsgæ</orth></form>
-            <?oxy_comment_start author="Irene" timestamp="20220420T092704+0300" comment="просто ноут без сенса ок?"?>
-            <note type="comment">в охотничьем языке = <ref type="xr" target="#entry_ærḱʼī"
-                  ><w>ærkʼe</w></ref></note><?oxy_comment_end?>
-          </re></sense>
+            <note xml:lang="ru" type="comment">в охотничьем языке = <ref type="xr"
+                target="#entry_ærḱʼī"><w>ærkʼe</w></ref></note>
+            <note xml:lang="en" type="comment">in hunters' language = <ref type="xr"
+                target="#entry_ærḱʼī"><w>ærkʼe</w></ref></note>
+          </re></sense><?oxy_comment_end?>
         <sense n="2"><sense><abv:tr xml:lang="ru">
               <q>прошивать крупными стежками</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>stitch with large stitches</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>метать</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>baste</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>прошивать предварительно</q>
-            </abv:tr><note type="comment"> (для примерки и пр.)</note></sense></sense>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>stich preliminarily</q>
+            </abv:tr><note xml:lang="ru" type="comment"> (для примерки и пр.)</note><note
+              xml:lang="en" type="comment"> (for fitting, etc.)</note></sense></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict" n="1">
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">ærḱʼī <oRef>ræxsyn</oRef> næ zonyn</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">я не умею плести (подошву) <hi
+                  rendition="#rend_smallcaps">ærḱʼī</hi></q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">I don't know how to weave (the sole of) <hi
                   rendition="#rend_smallcaps">ærḱʼī</hi></q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Брит."/>
@@ -66,6 +93,10 @@
             <quote xmlns="http://www.tei-c.org/ns/1.0">fæjjaw je ʽrḱʼītæ <oRef>ræxsy</oRef></quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">пастух плетет свои <hi
+                  rendition="#rend_smallcaps">ærḱʼī</hi></q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the shepherd is weaveing his <hi
                   rendition="#rend_smallcaps">ærḱʼī</hi></q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Niger"/>
@@ -79,6 +110,12 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">его два <hi rendition="#rend_smallcaps"
                   >ærkʼe</hi> плотно переплетены</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">his two <hi rendition="#rend_smallcaps"
+                  >ærkʼe</hi> are
+                <?oxy_comment_start author="Irene" timestamp="20220610T165623+0300" comment="?"?>tightly<?oxy_comment_end?>
+                woven</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_DZ"/>
               <biblScope>8</biblScope></bibl>
           </example>
@@ -89,6 +126,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">и обувью <hi rendition="#rend_smallcaps"
                   >ærkʼe</hi> я не обеспечен</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">and I am not provided with <hi
+                  rendition="#rend_smallcaps">ærkʼe</hi> shoes</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_DZ"/>
               <biblScope>162</biblScope></bibl>
@@ -101,6 +142,11 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">выкроила и сметала бешмет, но он еще не
                 сшит</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">I cut out and
+                <?oxy_comment_start author="Irene" timestamp="20220610T165714+0300" comment="?"?>basted<?oxy_comment_end?>
+                a beshmet, but it has not yet been sewn</q>
             </tr>
           </example>
         </exampleGrp>
@@ -120,7 +166,7 @@
               ><w>karš-</w>
             <gloss><q>тянуть</q></gloss></mentioned> и пр. Стало быть, точное значение глагола —
             <q>протягивать (нить через ткань, ремешок через <hi rendition="#rend_smallcaps"
-              >ærḱʼī</hi>)</q>’; для семантики ср. <mentioned xml:lang="la"><lang/>
+              >ærḱʼī</hi>)</q>; для семантики ср. <mentioned xml:lang="la"><lang/>
             <w>trahere</w>
             <gloss><q>тянуть</q></gloss> и <gloss><q>стягивать (шнур, завязку,
             перевязь)</q></gloss></mentioned>, например <mentioned xml:lang="la"><phr>vincia galeae
@@ -151,6 +197,58 @@
             xml:lang="inc-x-old"><lang/>
             <w>karṣ-</w>, <w>karṣati</w></mentioned> id. Дальнейшие соответствия см. под <ref
             type="xr" target="#entry_xæssyn"/>, <ref type="xr" target="#entry_xærsun"/>, а также
+            <ref type="xr" target="#entry_īvxærsyn"/>, <ref type="xr" target="#entry_nyxsyn"
+          />.</etym>
+        <etym xml:lang="en">In the etymological interpretation of this verb, one should proceed from
+          the Digor form <oRef>ræxæssun</oRef> as more
+          <?oxy_comment_start author="Irene" timestamp="20220610T165759+0300" comment="?"?>full<?oxy_comment_end?>
+          phonetically, and forms <oRef>ræxsyn</oRef> | <oRef>ræxsun</oRef> should be considered as
+          secondary, contracted. The reverse development, from
+            <?oxy_comment_start author="Irene" timestamp="20220420T093528+0300" comment="просто w ok?"?><w>ræxs-</w><?oxy_comment_end?>
+          to <w>ræxæss-</w>, seems incredible; cf. the relation of the Iron and Digor forms in <ref
+            type="xr" target="#entry_axsyn_1"><w xml:lang="os-x-iron">axsyn</w><w
+              xml:lang="os-x-digor">axæssun</w>
+            <gloss><q>catch</q></gloss></ref>, <ref type="xr" target="#entry_nyxsyn"><w
+              xml:lang="os-x-iron">nyxsyn</w><w xml:lang="os-x-digor">nixæssun</w>
+            <gloss><q>sink in</q></gloss></ref>. The stem <w>ræxæss-</w> is traced back to
+            <mentioned xml:lang="ira"
+              ><?oxy_comment_start author="Irene" timestamp="20220420T093931+0300" comment="иран?"?><w
+              type="rec">fra-karš-</w><?oxy_comment_end?></mentioned>, from <mentioned
+            xml:lang="ira"><w>karš-</w>
+            <gloss><q>pull</q></gloss></mentioned> etc. Therefore, the exact meaning of the verb is
+          to <q>stretch (a thread through the fabric, a strap through <hi
+              rendition="#rend_smallcaps">ærḱʼī</hi>)</q>; as for the semantics, cf. <mentioned
+            xml:lang="la"><lang/>
+            <w>trahere</w>
+            <gloss><q>pull</q></gloss> and <gloss><q>tighten (cord, tie,
+            sling)</q></gloss></mentioned>, for example, <mentioned xml:lang="la"><phr>vincia galeae
+              trahere</phr>
+            <gloss><q rendition="#rend_doublequotes">tighten the tie of the
+            helmet</q></gloss></mentioned>. At the same time, the Iron form of the past participle
+            <oRef>ræxsad</oRef> remains unclear; the normal form is <w>ræxast</w> from <mentioned
+            xml:lang="ira"
+              ><?oxy_comment_start author="Irene" timestamp="20220420T093931+0300" comment="иран?"?><w
+              type="rec">frakṛšta-</w><?oxy_comment_end?></mentioned>, maybe, <oRef>ræxsad</oRef> is
+          by analogy with <w>æxsad</w> from <ref type="xr" target="#entry_7xsyn"><w>æxsyn</w>
+              (<w>ᵆxsyn</w>) <gloss><q>wash</q></gloss></ref>. The verb stem <mentioned
+            xml:lang="ira"><w>karš-</w></mentioned>, which is also present in Digor <ref type="xr"
+            target="#entry_xærsun"/>, <ref type="xr" target="#entry_xæssyn"><w xml:lang="os-x-iron"
+              >xæssyn</w><w xml:lang="os-x-digor">xæssun</w>
+            <gloss><q>carry</q></gloss></ref>, <ref type="xr" target="#entry_īvxærsyn"
+              ><w>īvxærsyn</w>
+            <gloss><q>pass</q></gloss></ref>, <ref type="xr" target="#entry_nyxsyn"><w>nyxsyn</w>
+            <gloss><q>sink in</q></gloss></ref>, is recognized with certainty only in Indo-Iranian
+          languages; cf. <mentioned xml:lang="fa"><lang/>
+            <w>kašīdan</w>
+            <gloss><q>pull</q></gloss>, <gloss><q>stretch</q></gloss>, <gloss><q>stretch
+              out</q></gloss></mentioned>, <mentioned xml:lang="ae"><lang/>
+            <w>karš-</w>
+            <gloss><q>pull</q></gloss>, <gloss><q>drag</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_AiW"/>
+                <biblScope>456</biblScope></bibl>)</note></mentioned>, <mentioned
+            xml:lang="inc-x-old"><lang/>
+            <w>karṣ-</w>, <w>karṣati</w></mentioned> id. For further correspondences, see under <ref
+            type="xr" target="#entry_xæssyn"/>, <ref type="xr" target="#entry_xærsun"/>, and also
             <ref type="xr" target="#entry_īvxærsyn"/>, <ref type="xr" target="#entry_nyxsyn"
           />.</etym>
       </entry>
