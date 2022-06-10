@@ -1,28 +1,34 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ᵆrdynbos</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_7rdynbos" xml:lang="os" abv:completeness="russian-questions">
+      <entry xml:id="entry_7rdynbos" xml:lang="os" abv:completeness="english-questions">
         <form type="lemma"><orth>ᵆrdynbos</orth></form>
         <sense><abv:tr xml:lang="ru">
             <q>тетива</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>bowstring</q>
           </abv:tr></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
@@ -34,6 +40,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">моя душа — в моей тетиве, принеси ее и перевяжи
                 меня ею</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">my soul is in my bowstring, bring it and bind
+                me with it</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ИАА"/>
               <biblScope>II 227</biblScope></bibl>
           </example>
@@ -43,9 +53,15 @@
             type="xr" target="#entry_bos"/>. Ср. по образованию <ref type="xr" target="#entry_sær"
             />-<ref type="xr" target="#entry_bos"/>, <ref type="xr" target="#entry_ærm"/>-<ref
             type="xr" target="#entry_bos"/>, <ref type="xr" target="#entry_astæw"/>-<ref type="xr"
-            target="#entry_bos"/>,
-            <?oxy_comment_start author="Irene" timestamp="20220416T115256+0300" comment="не нашла такого слова в словаре..."?>næxæt<?oxy_comment_end?>-<ref
-            type="xr" target="#entry_bos"/> и т. п.</etym>
+            target="#entry_bos"/>, <ref type="xr" target="#entry_naxætbos"/> и т. п.</etym>
+        <etym xml:lang="en">Literally <gloss><q rendition="#rend_doublequotes">bow
+              <?oxy_comment_start author="Irene" timestamp="20220610T130834+0300" comment="??"?>tie<?oxy_comment_end?></q></gloss>;
+          see <ref type="xr" target="#entry_7rdyn"><w>ᵆrdyn</w></ref> and <ref type="xr"
+            target="#entry_bos"/>. Cf. the same derivation pattern in <ref type="xr"
+            target="#entry_sær"/>-<ref type="xr" target="#entry_bos"/>, <ref type="xr"
+            target="#entry_ærm"/>-<ref type="xr" target="#entry_bos"/>, <ref type="xr"
+            target="#entry_astæw"/>-<ref type="xr" target="#entry_bos"/>, <ref type="xr"
+            target="#entry_naxætbos"/> etc.</etym>
       </entry>
     </body>
   </text>
