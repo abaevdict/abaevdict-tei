@@ -1,35 +1,48 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">Majræm</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_Majræm" xml:lang="os" abv:completeness="incomplete">
+      <entry xml:id="entry_Majræm" xml:lang="os" abv:completeness="questions">
         <form type="lemma" xml:lang="os-x-iron"><orth>Majræm</orth></form>
         <form xml:lang="os-x-digor" type="dialectal"><orth>Majræn</orth></form>
         <sense><sense><abv:tr xml:lang="ru">
               <q>Мариам</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>Miriam</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>Богоматерь</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>Virgin Mary</q>
             </abv:tr></sense></sense>
-        <sense><note type="comment">также</note>
+        <sense><note xml:lang="ru" type="comment">также</note><note xml:lang="en" type="comment"
+            >also</note>
           <def xml:lang="ru">название святилища или священного камня, куда водили молодую невестку,
-            чтобы Богоматерь послала ей потомство; употребляется и как мужское имя</def></sense>
+            чтобы Богоматерь послала ей потомство; употребляется и как мужское имя</def><def
+            xml:lang="en">name of a sanctuary or holy stone where a young
+            <?oxy_comment_start author="oleg" timestamp="20220610T042642+0300" comment="or does he mean &quot;невестка&quot; simply as &quot;young married woman&quot;?"?>daughter-in-law<?oxy_comment_end?>
+            was led so that Virgin Mary provides her with issue; also used as a masculine
+          name</def></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">wæ, Xₒycaw, bærzondyl badæg, Mynajy
@@ -38,6 +51,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">о Бог, пребывающий на высоте, о Богоматерь
                 (аула) Мна, Богоматерь (аула) Куд, вы знаете мою правоту</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">o God, sitting above, o Virgin Mary (of the
+                village) Mna, Virgin Mary (of the village) Qud, you know my truthfulness</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сека"/>
               <biblScope>30</biblScope></bibl>
           </example>
@@ -45,8 +62,12 @@
             <quote xmlns="http://www.tei-c.org/ns/1.0">Qūdy <oRef>Majræmy</oRef> fydæx
               yssaræd</quote>
             <tr xml:lang="ru">
-              <q xmlns="http://www.tei-c.org/ns/1.0">пусть он навле­ чет на себя немилость
-                Богоматери (аула) Куд</q>
+              <q xmlns="http://www.tei-c.org/ns/1.0">пусть он навлечет на себя немилость Богоматери
+                (аула) Куд</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">may he bring upon himself the disfavour of the
+                Virgin Mary (of the village) Qud</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сека"/>
               <biblScope>73</biblScope></bibl>
@@ -58,6 +79,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">люди много за них молились богу, бого­ матери о
                 (ниспослании) им потомства, но детей у ни? не рождалось</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">people prayed to God for them a lot, to Virgin
+                Mary for (her to send them) issue, but no children were born to them</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сека"/>
               <biblScope>21</biblScope></bibl>
           </example>
@@ -68,14 +93,22 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">молились Богоматери о (ниспослании)
                 потомства</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">they prayed to Virgin Mary for (the grantinf
+                of) issue</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сека"/>
               <biblScope>75</biblScope></bibl>
           </example>
         </exampleGrp>
-        <note type="comment">. — Ср.: <bibl><ref type="bibl" target="#ref_Миллер_Вс._ОЭ"/>
+        <note xml:lang="ru" type="comment">. — Ср.: <bibl><ref type="bibl"
+              target="#ref_Миллер_Вс._ОЭ"/>
             <biblScope>II 252, 281, 289 сл</biblScope></bibl></note>
+        <note xml:lang="en" type="comment">. — Cf.: <bibl><ref type="bibl"
+              target="#ref_Миллер_Вс._ОЭ"/>
+            <biblScope>II 252, 281, 289 ff</biblScope></bibl></note>
         <etym xml:lang="ru">Из семитического <mentioned xml:lang="sem"><w>Mariam</w></mentioned> с
-          эпентетическим <c>j</c> перед <c>r</c>; ср.  <mentioned xml:lang="hbo" extralang="ar syr"><?oxy_comment_start author="oleg" timestamp="20220610T040619+0300" comment="В оригинале: &quot;евр., сир., араб.&quot; (порядок и еврейский без &quot;др.&quot;)"?><lang/><?oxy_comment_end?>
+          эпентетическим <c>j</c> перед <c>r</c>; ср. <mentioned xml:lang="hbo" extralang="ar syr"><?oxy_comment_start author="oleg" timestamp="20220610T040619+0300" comment="В оригинале: &quot;евр., сир., араб.&quot; (порядок и еврейский без &quot;др.&quot;)"?><lang/><?oxy_comment_end?>
             <w>Mariam</w></mentioned>. Отсюда и <mentioned><mentioned xml:lang="grc"><lang/>
               <w>Μαριάμ</w></mentioned>, <mentioned xml:lang="xcl"><lang/>
               <w>Mariam</w></mentioned>
@@ -89,17 +122,61 @@
             <gloss>название женского божества в доисламских верованиях</gloss></mentioned>,
             <mentioned xml:lang="krc-x-balkar"><lang/>
             <w>Bairam</w>
-            <note type="comment">в <mentioned xml:lang="krc-x-balkar"><phr>Bajram kün</phr>
+            <note xml:lang="ru" type="comment">в <mentioned xml:lang="krc-x-balkar"><phr>Bajram
+                  kün</phr>
                 <gloss><q>пятница</q></gloss>
-                <note type="comment">= ос. <oRef/></note></mentioned></note></mentioned>. — Ср. <ref
+                <note xml:lang="ru" type="comment">= ос. <oRef/></note><note xml:lang="en"
+                  type="comment">= ос. <oRef/></note></mentioned></note><note xml:lang="en"
+              type="comment">в <mentioned xml:lang="krc-x-balkar"><phr>Bajram kün</phr>
+                <gloss><q>пятница</q></gloss>
+                <note xml:lang="ru" type="comment">= ос. <oRef/></note><note xml:lang="en"
+                  type="comment">= ос. <oRef/></note></mentioned></note></mentioned>. — Ср. <ref
             type="xr" target="#entry_Mady_Majræm"/> (из <phr>Mad Majræm</phr>
           <gloss><q>Мать Мария</q></gloss> с фонетическим появлением гласного <c>y</c> между
-            <c>d</c> и <c>m</c>),<note type="footnote">Мать Мани звалась <mentioned xml:lang="syr"
-                ><w>Mrmrym</w>
+            <c>d</c> и <c>m</c>),<note xml:lang="ru" type="footnote">Мать Мани звалась <mentioned
+              xml:lang="syr"><w>Mrmrym</w>
+              <note type="bibl">(<bibl><author>Klima</author>, <ref type="bibl"
+                    target="#ref_Arch._Or."/>
+                  <biblScope>1960 XXVIII 461 сл.</biblScope></bibl>)</note>; вместо <w type="rec"
+                >Mʼtmrym</w> = <phr>Māt Maryam</phr>?</mentioned></note><note xml:lang="en"
+            type="footnote">Мать Мани звалась <mentioned xml:lang="syr"><w>Mrmrym</w>
               <note type="bibl"><bibl><author>Klima</author>, <ref type="bibl"
                     target="#ref_Arch._Or."/>
                   <biblScope>1960 XXVIII 461 сл.</biblScope></bibl>; вместо <w type="rec"
                   >Mʼtmrym</w> = <phr>Māt Maryam</phr>?</note></mentioned></note>
+          <ref type="xr" target="#entry_majræmbon"/>, <ref type="xr" target="#entry_majræmy_kark"/>,
+            <ref type="xr" target="#entry_majræmy_kwaʒæn"/>.</etym>
+        <etym xml:lang="en">From Semitic <mentioned xml:lang="sem"><w>Mariam</w></mentioned> with
+          epenthetic <c>j</c> before <c>r</c>; cf. <mentioned xml:lang="hbo" extralang="ar syr"><?oxy_comment_start author="oleg" timestamp="20220610T040619+0300" comment="В оригинале: &quot;евр., сир., араб.&quot; (порядок и еврейский без &quot;др.&quot;)"?><lang/><?oxy_comment_end?>
+            <w>Mariam</w></mentioned>. Hence also <mentioned><mentioned xml:lang="grc"><lang/>
+              <w>Μαριάμ</w></mentioned>, <mentioned xml:lang="xcl"><lang/>
+              <w>Mariam</w></mentioned>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Hübschmann._Arm._Gr."/>
+                <biblScope>336</biblScope></bibl>)</note></mentioned>, <mentioned xml:lang="ka"><lang/>
+            <w>Mariam</w></mentioned>, <mentioned xml:lang="ka"><w>Mariamoba</w>
+            <gloss><q>feast of the Dormition</q></gloss></mentioned>, <mentioned><mentioned
+              xml:lang="kbd" extralang="ady kbd-x-crc"><?oxy_comment_start author="oleg" timestamp="20220610T041015+0300" comment="&quot;каб., черк., адыг.&quot; в оригинале"?><lang/><?oxy_comment_end?>
+              <w>Merem</w></mentioned>, <mentioned xml:lang="kbd" extralang="ady kbd-x-crc"
+                ><w>Mäjräm</w></mentioned>
+            <gloss>name of a female deity in Pre-Islamic beliefs</gloss></mentioned>, <mentioned
+            xml:lang="krc-x-balkar"><lang/>
+            <w>Bairam</w><note xml:lang="ru" type="comment">в <mentioned xml:lang="krc-x-balkar"
+                  ><phr>Bajram kün</phr>
+                <gloss><q>пятница</q></gloss>
+                <note xml:lang="ru" type="comment">= ос. <oRef/></note><note xml:lang="en"
+                  type="comment">= ос. <oRef/></note></mentioned></note><note xml:lang="en"
+              type="comment"> in <mentioned xml:lang="krc-x-balkar"><phr>Bajram kün</phr>
+                <gloss><q>Friday</q></gloss>
+                <note xml:lang="ru" type="comment">= ос. <oRef/></note><note xml:lang="en"
+                  type="comment">= Ossetic <oRef/></note></mentioned></note></mentioned>. — Cf. <ref
+            type="xr" target="#entry_Mady_Majræm"/> (from <phr>Mad Majræm</phr>
+          <gloss><q>Virgin Mary</q></gloss> with phonetic occurrence of <c>y</c> between <c>d</c>
+          and  <c>m</c>),<note type="footnote">The mother of Mani was called <mentioned
+              xml:lang="syr"><w>Mrmrym</w>
+              <note type="bibl">(<bibl><author>Klima</author>, <ref type="bibl"
+                    target="#ref_Arch._Or."/>
+                  <biblScope>1960 XXVIII 461 сл.</biblScope></bibl>)</note>; instead of <w
+                type="rec">Mʼtmrym</w> = <phr>Māt Maryam</phr>?</mentioned></note>
           <ref type="xr" target="#entry_majræmbon"/>, <ref type="xr" target="#entry_majræmy_kark"/>,
             <ref type="xr" target="#entry_majræmy_kwaʒæn"/>.</etym>
       </entry>
