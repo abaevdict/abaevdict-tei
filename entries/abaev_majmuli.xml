@@ -1,34 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">majmuli</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_majmuli" xml:lang="os" abv:completeness="incomplete">
+      <entry xml:id="entry_majmuli" xml:lang="os" abv:completeness="complete">
         <form type="lemma"><orth>majmuli</orth></form>
         <sense><abv:tr xml:lang="ru">
             <q>обезьяна</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>monkey</q>
           </abv:tr></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0"><oRef>majmuli</oRef> sūry læppūty</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">обезьяна гонится за мальчиками</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the monkey is chasing the boys</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Брит."/>
               <biblScope>161</biblScope></bibl>
@@ -40,11 +49,12 @@
             <w>maimuni</w></mentioned> с перебоем <c>n</c> ‖ <c>l</c> по диссимиляции носовых, как в
             <ref type="xr" target="#entry_lamaz"/>, <ref type="xr" target="#entry_malūsæg"/> и др. В
           тюркском наряду с <mentioned xml:lang="trk"><w>maimun</w></mentioned> встречается форма
-            <w>maimul</w>, <w>maimal</w>
-          <note type="bibl">(<bibl><ref type="bibl" target="#ref_Радлов"/>
-              <biblScope>IV 1992</biblScope></bibl>. — <bibl><title>Историческое развитие-лексики
-                тюркских языков</title>. <pubPlace>M.</pubPlace>, <date>1961</date>, <biblScope>стр.
-                140</biblScope></bibl>)</note>. Из <lang>перс.</lang> или <lang>тюрк.</lang>
+            <mentioned xml:lang="trk"><w>maimul</w>, <w>maimal</w>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Радлов"/>
+                <biblScope>IV 1992</biblScope></bibl>. — <bibl><title>Историческое развитие-лексики
+                  тюркских языков</title>. <pubPlace>M.</pubPlace>, <date>1961</date>,
+                  <biblScope>стр. 140</biblScope></bibl>)</note></mentioned>. Из <lang>перс.</lang>
+          или <lang>тюрк.</lang>
           <mentioned xml:lang="fa" extralang="trk"><w>maimun</w></mentioned> идут также <mentioned
             xml:lang="lez"><lang/>
             <w>maimun</w></mentioned>, <mentioned xml:lang="dar"><lang/> maimun</mentioned>,
@@ -56,8 +66,44 @@
             <note type="bibl">(<bibl><ref type="bibl" target="#ref_Ногма"/>
                 <biblScope>I 2148</biblScope></bibl>)</note></mentioned>, <mentioned xml:lang="ady"
               ><w>nomin</w>
-            <note type="comment">(+-<w type="rec">momin </w>)</note></mentioned> и др. Вошло и в
-          некоторые европейские языки: <mentioned><mentioned xml:lang="orv"><lang/>
+            <note xml:lang="ru" type="comment">(+-<w type="rec">momin </w>)</note><note
+              xml:lang="en" type="comment">(+-<w type="rec">momin </w>)</note></mentioned> и др.
+          Вошло и в некоторые европейские языки: <mentioned><mentioned xml:lang="orv"><lang/>
+              <w>мамона</w></mentioned>, <mentioned xml:lang="bg"><lang/>
+              <w>маймуна</w></mentioned>, <mentioned xml:lang="sr"><lang/>
+              <w>majmun</w></mentioned>, <mentioned xml:lang="pl"><lang/>
+              <w>munia</w></mentioned>, <mentioned xml:lang="it"><lang/>
+              <w>babuino</w></mentioned>, <mentioned xml:lang="en"><lang/>
+              <w>baboon</w></mentioned>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Lokotsch"/>
+                <biblScope>108</biblScope></bibl>)</note></mentioned>.</etym>
+        <etym xml:lang="en">From <mentioned xml:lang="fa"><lang/>
+            <w>maimūn</w>
+            <gloss><q>monkey</q></gloss></mentioned> through <mentioned xml:lang="ka"><lang/>
+            <w>maimuni</w></mentioned> with the alternation <c>n</c> ‖ <c>l</c> due to dissimilation
+          of nasals, as in <ref type="xr" target="#entry_lamaz"/>, <ref type="xr"
+            target="#entry_malūsæg"/> etc. In Turkic, in addition to <mentioned xml:lang="trk"
+              ><w>maimun</w></mentioned>, the form <mentioned xml:lang="trk"><w>maimul</w>,
+              <w>maimal</w></mentioned> is also attested <note type="bibl">(<bibl><ref type="bibl"
+                target="#ref_Радлов"/>
+              <biblScope>IV 1992</biblScope></bibl>. — <bibl><title>Istoričeskoe razvitie tjurkskix
+                jazykov</title> [The historical development of Turkic languages].
+                <pubPlace>Moscow</pubPlace>, <date>1961</date>, <biblScope>p.
+            140</biblScope></bibl>)</note>. <lang>Persian</lang> or <lang>Turkic</lang>
+          <mentioned xml:lang="fa" extralang="trk"><w>maimun</w></mentioned> is also the source of
+            <mentioned xml:lang="lez"><lang/>
+            <w>maimun</w></mentioned>, <mentioned xml:lang="dar"><lang/> maimun</mentioned>,
+            <mentioned xml:lang="av"><lang/>
+            <w>maimalak</w></mentioned>, <mentioned xml:lang="inh"><lang/>
+            <w>meimæl</w></mentioned>, <mentioned xml:lang="krc-x-karachay"><lang/>
+            <w>majmul</w></mentioned>, <mentioned xml:lang="ady"><lang/>
+            <w>mejmun</w>, <w>mamun</w>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Ногма"/>
+                <biblScope>I 2148</biblScope></bibl>)</note></mentioned>, <mentioned xml:lang="ady"
+              ><w>nomin</w>
+            <note xml:lang="ru" type="comment">(+-<w type="rec">momin </w>)</note><note
+              xml:lang="en" type="comment">(+-<w type="rec">momin </w>)</note></mentioned> etc. The
+          word has also entered into some European languages: <mentioned><mentioned xml:lang="orv"><lang/>
               <w>мамона</w></mentioned>, <mentioned xml:lang="bg"><lang/>
               <w>маймуна</w></mentioned>, <mentioned xml:lang="sr"><lang/>
               <w>majmun</w></mentioned>, <mentioned xml:lang="pl"><lang/>
