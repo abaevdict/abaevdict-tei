@@ -1,35 +1,45 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">rætawyn</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_rætawyn" xml:lang="os" abv:completeness="russian-questions">
+      <entry xml:id="entry_rætawyn" xml:lang="os" abv:completeness="english-questions">
         <form type="lemma" xml:lang="os-x-iron"><orth>rætawyn</orth><form type="participle"
               ><orth>rætyd</orth></form></form>
         <form xml:lang="os-x-digor" type="dialectal"><orth>rætawun</orth><form type="participle"
               ><orth>rætud</orth></form></form>
         <sense><sense><abv:tr xml:lang="ru">
               <q>стегать</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>quilt</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>строчить</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>stitch</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>прошивать</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>sew</q>
             </abv:tr></sense></sense>
         <re>
           <form type="lemma"><orth><ref type="xr" target="#entry_qæccūl"/>, <ref type="xr"
@@ -37,6 +47,9 @@
             rætawyn</orth></form>
           <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">стегать (прошивать) одеяло, тюфяк, бешмет</q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">to quilt (stitch) a blanket, mattress,
+                beshmet</q>
             </tr></sense>
         </re>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
@@ -46,6 +59,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">надет на нем полотняный бешмет, суконная
                 черкеска с газырями, а на его ногах стеганые чувяки</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">he is wearing a linen beshmet, a cloth
+                cherkeska with gazyrs, and on his legs there are quilted chuviaks</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Хар._Кадӕг"/>
               <biblScope>43</biblScope></bibl>
@@ -68,8 +85,9 @@
           приведенных глаголах <c>t</c> может восходить только к иран. <c>ϑ</c>, но не к <c>t</c> (в
           последнем случае в осетинском было бы <c>d</c>). Быть может, <oRef>rætawyn</oRef> следует
           возводить к <mentioned xml:lang="ira"><w type="rec">fra-ϑrāw-</w>
-            <note type="comment">(<w>ræ-traw-</w> → <w>rætaw-</w>)</note></mentioned>, имея в виду
-            <mentioned xml:lang="ine"><lang/>
+            <note xml:lang="ru" type="comment">(<w>ræ-traw-</w> → <w>rætaw-</w>)</note><note
+              xml:lang="en" type="comment">(<w>ræ-traw-</w> → <w>rætaw-</w>)</note></mentioned>,
+          имея в виду <mentioned xml:lang="ine"><lang/>
             <w type="rec">treu-</w>
             <gloss><q>протыкать</q></gloss>
             <note type="bibl">(<bibl><ref type="bibl" target="#ref_Pokorny"/>
@@ -93,6 +111,50 @@
               <note type="bibl">(<bibl><ref type="bibl" target="#ref_Lorimer"
               /></bibl>)</note></mentioned>
             <gloss><q>шить</q></gloss>, <gloss><q>штопать</q></gloss></mentioned>.</etym>
+        <etym xml:lang="en">The fusion of the preverb <m>ræ-</m> (← <m>fra-</m>) with the stem
+            <?oxy_comment_start author="Irene" timestamp="20220518T211843+0300" comment="нужно ли здесь и у преверба mentioned?"?><w>taw</w><?oxy_comment_end?>,
+          which seems to be also recognized in <ref type="xr" target="#entry_æntawyn"><w>æntawyn</w>
+            <gloss><q>ferment the wort</q></gloss></ref>, <ref type="xr" target="#entry_æftawyn"
+              ><w>æftawyn</w>
+            <gloss><q>add</q></gloss></ref> etc., <ref type="xr" target="#entry_ystawyn"
+              ><w>ystawyn</w>
+            <gloss><q>to stir (in a pot, etc.)</q></gloss></ref>, <ref type="xr"
+            target="#entry_tawyn"><w xml:lang="os-x-iron">tawyn</w><w xml:lang="os-x-digor"
+              >itawyn</w>
+            <gloss><q>sow</q></gloss>, <gloss><q>spread out</q></gloss></ref>. The reduction of all
+          these verbs to one root meets semantic difficulties. It is possible that we are dealing
+          with several homonymous stems of different origin. One thing is certain: in all the above
+          verbs,
+            <?oxy_comment_start author="Irene" timestamp="20220612T121114+0300" comment="а здесь где-то нужны mntnd?"?><c>t</c><?oxy_comment_end?>
+          can only go back to Iranian <c>ϑ</c>, but not to <c>t</c> (in the latter case there would
+          be <c>d</c> in Ossetic). Maybe, <oRef>rætawyn</oRef> should be traces back to <mentioned
+            xml:lang="ira"><w type="rec">fra-ϑrāw-</w>
+            <note xml:lang="ru" type="comment">(<w>ræ-traw-</w> → <w>rætaw-</w>)</note><note
+              xml:lang="en" type="comment">(<w>ræ-traw-</w> → <w>rætaw-</w>)</note></mentioned>,
+          bearing in mind <mentioned xml:lang="ine"><lang/>
+            <w type="rec">treu-</w>
+            <gloss><q>poke</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Pokorny"/>
+                <biblScope>1071</biblScope></bibl>)</note></mentioned>, <mentioned xml:lang="grc"><lang/>
+            <w>τιτράω</w>
+            <gloss><q>poke</q></gloss>, <gloss><q>drill</q></gloss></mentioned>, <mentioned
+            xml:lang="grc"><w>τρητός</w>
+            <gloss><q>drilled through</q></gloss>, <gloss><q>pierced</q></gloss>,
+                <gloss><q>punctured</q></gloss>, <gloss><q>sewn</q></gloss></mentioned> (= Ossetic
+            <oRef>rætyd</oRef>), <mentioned xml:lang="grc"><w>τὰ τρητά</w>
+            <gloss><q>sewn (n.)</q></gloss></mentioned>. Maybe the following words are also related:
+              <mentioned><mentioned xml:lang="wbl"><lang/>
+              <w>dröv-</w> : <w>drāvd</w>
+              <note type="bibl">(<bibl><ref type="bibl" target="#ref_Shaw"
+              /></bibl>)</note></mentioned>, <mentioned xml:lang="wbl"><w>dərəv-</w> : <w>dərəvd</w>
+              <note type="bibl"
+                    >(<?oxy_comment_start author="Irene" timestamp="20220518T212514+0300" comment="там просто sköld..."?><bibl><ref
+                    type="bibl" target="#ref_Sköld._Pam."
+              /></bibl><?oxy_comment_end?>)</note></mentioned>, <mentioned xml:lang="wbl"
+                ><w>drεv-</w>
+              <note type="bibl">(<bibl><ref type="bibl" target="#ref_Lorimer"
+              /></bibl>)</note></mentioned>
+            <gloss><q>sew</q></gloss>, <gloss><q>darn</q></gloss></mentioned>.</etym>
       </entry>
     </body>
   </text>
