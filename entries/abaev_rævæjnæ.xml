@@ -1,36 +1,49 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">rævæjnæ</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_rævæjnæ" xml:lang="os-x-digor" abv:completeness="russian-questions">
+      <entry xml:id="entry_rævæjnæ" xml:lang="os-x-digor" abv:completeness="english-questions">
         <form type="lemma"><orth>rævæjnæ</orth></form>
         <usg><lang/></usg>
         <sense><abv:tr xml:lang="ru">
             <q>длинная толстая конопляная веревка</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>long thick hemp rope</q>
           </abv:tr></sense>
-        <note type="comment">,
+        <note xml:lang="ru" type="comment">,
             <?oxy_comment_start author="Irene" timestamp="20220517T155302+0300" comment="все еще хз что делать с цитатами"?><q
             rendition="#rend_doublequotes">в длину не менее шести обхватов, настолько длинная, чтобы
             ею можно было перевязать арбу</q><?oxy_comment_end?> (<bibl><ref type="bibl"
               target="#src_ОЭ"/>
             <biblScope>I 133<hi rendition="#rend_subscript">197</hi></biblScope></bibl>); ср. <ref
+            type="xr" target="#entry_bændæn"/>, <ref type="xr" target="#entry_bos"/>, <ref type="xr"
+            target="#entry_rætæn"/>, <ref type="xr" target="#entry_sīnag"/></note>
+        <note xml:lang="en" type="comment">,
+            <?oxy_comment_start author="Irene" timestamp="20220517T155302+0300" comment="все еще хз что делать с цитатами"?><q
+            rendition="#rend_doublequotes">not less than six girths in length, so long that it can
+            be used to tie an araba</q><?oxy_comment_end?> (<bibl><ref type="bibl" target="#src_ОЭ"/>
+            <biblScope>I 133<hi rendition="#rend_subscript">197</hi></biblScope></bibl>); cf. <ref
             type="xr" target="#entry_bændæn"/>, <ref type="xr" target="#entry_bos"/>, <ref type="xr"
             target="#entry_rætæn"/>, <ref type="xr" target="#entry_sīnag"/></note>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
@@ -40,6 +53,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">человек привязал слона к большому дубу отличной
                 веревкой, отличной новой крепкой конопляной веревкой</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">a man tied an elephant to a large oak tree with
+                an excellent rope, excellent new strong hemp rope</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ИАС"/>
               <biblScope>II 20</biblScope></bibl>
@@ -53,6 +70,11 @@
                 бревно (служит) ей веретеном, жернов — пряслом, нить ее (пряжи) —
                   <oRef>rævæjnæ</oRef></q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the wife of Akhsa-Budai sits at the cliff of
+                the mountain and spins: a log (serves) as a spindle for her, a millstone (serves) as
+                a spinner, her thread (of her yarn) is <oRef>rævæjnæ</oRef></q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_СОПам."/>
               <biblScope>II 58</biblScope></bibl>
           </example>
@@ -62,6 +84,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">(одна женщина) обвязывает веревкой
                   <oRef>rævæjnæ</oRef> яйцо, и ее не хватает</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">(one woman) is tying a <oRef>rævæjnæ</oRef>
+                rope around an egg and it is not enough</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ОЭ"/>
               <biblScope>I 108</biblScope></bibl>
@@ -73,6 +99,12 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">связать нам его веревкой <oRef>rævæjnæ</oRef>,
                 — но она его не стянет</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">I wish we could tie him up with a
+                  <oRef>rævæjnæ</oRef> rope, — but it will not
+                <?oxy_comment_start author="Irene" timestamp="20220612T113953+0300" comment="??"?>tie
+                him (it is not enough)<?oxy_comment_end?></q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Диг._сказ."/>
               <biblScope>1</biblScope></bibl>
           </example>
@@ -82,6 +114,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">на шею лошади вместо уздечки надели длинную
                 конопляную веревку</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">a long hemp rope was put on the horse's neck
+                instead of a bridle</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_MD"/>
               <biblScope>1958 III 27</biblScope></bibl>
@@ -97,7 +133,8 @@
             <w>raip</w>
             <gloss><q>ремень</q></gloss>, <gloss><q>перевязь</q></gloss></mentioned>,
               <mentioned><mentioned xml:lang="fi"><lang/>
-              <note type="comment">(из герм.)</note>
+              <note xml:lang="ru" type="comment">(из герм.)</note><note xml:lang="en" type="comment"
+                >(из герм.)</note>
               <w>raippa</w>
               <note type="bibl">(<bibl><ref type="bibl" target="#ref_SKES"/>
                   <biblScope>III 718</biblScope></bibl>)</note></mentioned>, <mentioned
@@ -118,6 +155,41 @@
             <biblScope>24–27, 131–133</biblScope></bibl>. — К германскому тяготеет и близкое с точки
           зрения реалий слово <ref type="xr" target="#entry_ræxys"><w>ræxys</w>
             <gloss><q>цепь</q></gloss></ref>.</etym>
+        <etym xml:lang="en">Traces back to <mentioned xml:lang="ira"><w type="rec"
+            >rapana-</w></mentioned>. Adjacent to Germanic rope names (stems
+            <?oxy_comment_start author="Irene" timestamp="20220517T160418+0300" comment="mentioned герм?"?><mentioned
+            xml:lang="gem"><w type="rec">raip-</w></mentioned> and <mentioned xml:lang="gem"><w
+              type="rec">rap-</w></mentioned><?oxy_comment_end?>). <mentioned xml:lang="non"><lang/>
+            <w>reip</w>
+            <gloss><q>rope</q></gloss></mentioned>, <mentioned xml:lang="got"><lang/>
+            <w>raip</w>
+            <gloss><q>belt</q></gloss>, <gloss><q>strap</q></gloss></mentioned>,
+              <mentioned><mentioned xml:lang="fi"><lang/>
+              <note xml:lang="ru" type="comment">(из герм.)</note><note xml:lang="en" type="comment"
+                >(from
+                <?oxy_comment_start author="Irene" timestamp="20220612T114043+0300" comment="?герм."?>Germanic<?oxy_comment_end?>)</note>
+              <w>raippa</w>
+              <note type="bibl">(<bibl><ref type="bibl" target="#ref_SKES"/>
+                  <biblScope>III 718</biblScope></bibl>)</note></mentioned>, <mentioned
+              xml:lang="ang" extralang="ofs"><lang/>
+              <w>r<?oxy_comment_start author="Irene" timestamp="20220517T160547+0300" comment="какой символ?"?>ā<?oxy_comment_end?>p</w></mentioned>,
+              <mentioned xml:lang="en"><lang/>
+              <w>rope</w></mentioned>, <mentioned xml:lang="sv"><lang/>
+              <w>rep</w></mentioned>, <mentioned xml:lang="no"><lang/>
+              <w>reb</w></mentioned>, <mentioned xml:lang="sv"><lang/>
+              <w>reva</w></mentioned>
+            <gloss><q>tie</q></gloss></mentioned>, <mentioned><mentioned xml:lang="en"><lang/>
+              <w>ravel</w></mentioned>, <mentioned xml:lang="nl"><lang/>
+              <w>ravelen</w></mentioned>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Falk-Torp"/>
+                <biblScope>II 884, 893</biblScope></bibl>)</note></mentioned>. About
+          <?oxy_comment_start author="Irene" timestamp="20220612T114145+0300" comment="?"?>Scytho<?oxy_comment_end?>-Germanic
+          isoglosses see: <bibl><ref type="bibl" target="#ref_СЕИ"/>
+            <biblScope>24–27, 131–133</biblScope></bibl>. — The word <ref type="xr"
+            target="#entry_ræxys"><w>ræxys</w>
+            <gloss><q>chain</q></gloss></ref> is also close to Germanic from the point of
+          <?oxy_comment_start author="Irene" timestamp="20220612T114344+0300" comment="??"?>view<?oxy_comment_end?>
+          of reality.</etym>
       </entry>
     </body>
   </text>
