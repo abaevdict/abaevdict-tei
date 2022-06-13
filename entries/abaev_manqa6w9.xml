@@ -1,38 +1,49 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">manqa(w)</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_manqa6w9" xml:lang="os" abv:completeness="incomplete">
+      <entry xml:id="entry_manqa6w9" xml:lang="os" abv:completeness="complete">
         <form type="lemma" xml:lang="os-x-iron"><orth>manqa(w)</orth></form>
         <form xml:lang="os-x-digor" type="dialectal"><orth>manǧa(w)</orth></form>
         <sense><abv:tr xml:lang="ru">
             <q>сап</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>glanders</q>
           </abv:tr></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example xml:lang="os-x-digor">
             <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
-            <quote xmlns="http://www.tei-c.org/ns/1.0">fonsbæl fæwwuj alli xuzi neztæ:
-                <oRef>manǧaw</oRef>, talaw, eminæ…</quote>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">fonsbæl
+              <?oxy_comment_start author="oleg" timestamp="20220613T122009+0300" comment="NB: verb form &quot;uj&quot;"?>fæwwuj<?oxy_comment_end?>
+              alli xuzi neztæ: <oRef>manǧaw</oRef>, talaw, eminæ…</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">на скот находят разные болезни: сап, сибирская
                 язва, чума…</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">various diseases come upon cattle: glanders,
+                anthrax, plague…</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_FS"/>
               <biblScope>II 17</biblScope></bibl>
@@ -45,6 +56,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">(зараженных) сапом лошадей следовало
                 отделить</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">horses (infected with) glanders were to be
+                separated</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_SD"/>
               <biblScope>293<hi rendition="#rend_subscript">3</hi></biblScope></bibl>
           </example>
@@ -54,6 +69,10 @@
               dær xwasægænæg næ jes</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">у лошадей был сап, но лекаря для них нет</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">horses had anthrax, but there is no doctor for
+                them</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_SD"/>
               <biblScope>295<hi rendition="#rend_subscript">4</hi></biblScope></bibl>
@@ -65,12 +84,27 @@
             <note type="bibl">(<bibl><ref type="bibl" target="#ref_Радлов"/>
                 <biblScope>IV 2007</biblScope></bibl>)</note></mentioned>; ср. <mentioned><mentioned
               xml:lang="ce"><lang/>
-              <w>manqa</w></mentioned>, <mentioned xml:lang="lbe"><lang/> manǧaw
+              <w>manqa</w></mentioned>, <mentioned xml:lang="lbe"><lang/>
+              <w>manǧaw</w>
               <gloss>id.</gloss></mentioned>,<mentioned xml:lang="ka-x-rachian">
               <lang/>
               <w>marǧao</w></mentioned>
             <gloss><q>болезнь лошадей</q></gloss></mentioned> (<bibl><ref type="bibl"
-              target="#ref_Беридзе">Беридзе</ref></bibl>) (из д. <oRef>manǧaw</oRef> с перебоем
+              target="#ref_Беридзе"/></bibl>) (из д. <oRef>manǧaw</oRef> с перебоем <c>n</c> →
+            <c>r</c>?).</etym>
+        <etym xml:lang="en"> From <mentioned xml:lang="trk"><lang/>
+            <w>maŋqa</w>
+            <gloss><q>glanders</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Радлов"/>
+                <biblScope>IV 2007</biblScope></bibl>)</note></mentioned>; cf. <mentioned><mentioned
+              xml:lang="ce"><lang/>
+              <w>manqa</w></mentioned>, <mentioned xml:lang="lbe"><lang/>
+              <w>manǧaw</w>
+              <gloss>id.</gloss></mentioned>,<mentioned xml:lang="ka-x-rachian">
+              <lang/>
+              <w>marǧao</w></mentioned>
+            <gloss><q>horse disease</q></gloss></mentioned> (<bibl><ref type="bibl"
+              target="#ref_Беридзе"/></bibl>) (from Digor <oRef>manǧaw</oRef> with alternation
             <c>n</c> → <c>r</c>?).</etym>
       </entry>
     </body>
