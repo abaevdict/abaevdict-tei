@@ -1,40 +1,59 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">maraʒ</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_maraʒ" xml:lang="os" abv:completeness="incomplete">
+      <entry xml:id="entry_maraʒ" xml:lang="os" abv:completeness="english-questions">
         <form type="lemma" xml:lang="os-x-iron"><orth>maraʒ</orth></form>
         <form xml:lang="os-x-digor" type="dialectal"><orth>marawaʒ</orth></form>
-        <sense><note type="comment">понудительный возглас: </note><sense><abv:tr xml:lang="ru">
+        <?oxy_comment_start author="oleg" timestamp="20220614T095222+0300" comment="unsure about translation"?>
+        <sense><note xml:lang="ru" type="comment">понудительный возглас: </note><note xml:lang="en"
+            type="comment">hortative exclamation: </note><sense><abv:tr xml:lang="ru">
               <q>живо!</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>quick!</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>скорей!</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>faster!</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>не мешкай!</q>
-            </abv:tr></sense></sense>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>don’t delay!</q>
+            </abv:tr></sense></sense><?oxy_comment_end?>
         <re>
-          <form type="lemma"><orth>mara(ʒ) zæǧaj</orth></form>
+          <form type="lemma"><orth><oRef>mara(ʒ)</oRef> zæǧaj</orth></form>
           <sense><sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
                 <q xmlns="http://www.tei-c.org/ns/1.0">хоть бы что!</q>
+              </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+                <q xmlns="http://www.tei-c.org/ns/1.0"
+                  ><?oxy_comment_start author="oleg" timestamp="20220614T095202+0300" comment="?"?>at
+                  least something!<?oxy_comment_end?></q>
               </tr></sense><sense><abv:tr xml:lang="ru">
                 <q>ну хоть бы…</q>
+              </abv:tr><abv:tr xml:lang="en">
+                <q><?oxy_comment_start author="oleg" timestamp="20220614T095211+0300" comment="?"?>if
+                  only at least…<?oxy_comment_end?></q>
               </abv:tr></sense></sense>
         </re>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
@@ -44,6 +63,9 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">живо, мальчик, погони коров к стаду!</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">quick, boy, lead the cows to the herd!</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Arsen"/>
               <biblScope>15</biblScope></bibl>
           </example>
@@ -51,6 +73,9 @@
             <quote xmlns="http://www.tei-c.org/ns/1.0"><oRef>maraʒ-ūt</oRef>, læppūtæ!</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">живо, ребята!</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">faster, lads!</q>
             </tr>
           </example>
           <example>
@@ -60,6 +85,12 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">сколько он ни расспрашивал, где жилище Гатагова
                 сына, ну хоть бы кто-нибудь что-нибудь об этом знал</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0"
+                ><?oxy_comment_start author="oleg" timestamp="20220614T095551+0300" comment="different from Abaev&apos;s translation, but I think corresponds better to Ossetic syntax (as I understand it)"?>he
+                asked that question, but<?oxy_comment_end?> if only anyone knew anything about the
+                whereabouts of the house of the son of Gætæg</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_СОПам."/>
               <biblScope>III 27</biblScope></bibl>
           </example>
@@ -68,18 +99,27 @@
               <oRef>maraʒ</oRef><?oxy_comment_start author="oleg" timestamp="20220614T094701+0300" comment="NB: что это?"?>-aj<?oxy_comment_end?>
               ænkʼₒysgæ dær fækæna!</quote>
             <tr xml:lang="ru">
-              <q xmlns="http://www.tei-c.org/ns/1.0">как бы не так! конь всад­ ника даже не
+              <q xmlns="http://www.tei-c.org/ns/1.0">как бы не так! конь всадника даже не
                 пошевельнулся</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">but alas! the rider’s horse did not even
+                move</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_СОПам."/>
               <biblScope>III 13</biblScope></bibl>
           </example>
           <example>
-            <quote xmlns="http://www.tei-c.org/ns/1.0">æz ūcy dymd kænʒynæn, gal, <oRef>maraʒ</oRef>
-              zæǧaj, wæd ta jæ kʼæʒīl dær atīla</quote>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">æz ūcy dymd kænʒynæn, gal, <oRef>maraʒ
+                zæǧaj</oRef>, wæd ta jæ kʼæʒīl dær atīla</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">я буду дуть вовсю, а бык, как бы не так! — даже
                 не пошевельнет хвостом</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">I will blow with full strength, but the bull,
+                <?oxy_comment_start author="oleg" timestamp="20220614T095725+0300" comment="? как бы не так"?>no
+                matter<?oxy_comment_end?>! — will not even move its tail</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_СОПам."/>
               <biblScope>IV 127</biblScope></bibl>
@@ -91,6 +131,9 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">живей, держите его!</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">quick, get him!</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_AK"/>
               <biblScope>II 42</biblScope></bibl>
           </example>
@@ -101,12 +144,20 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">скорей, послушай, что говорит герольд</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">quick, listen what the
+                <?oxy_comment_start author="oleg" timestamp="20220614T095802+0300" comment="lit. messenger"?>herald<?oxy_comment_end?>
+                says</q>
+            </tr>
           </example>
         </exampleGrp>
         <etym xml:lang="ru"> Как ясно из дигорской формы, образовалось из <mentioned xml:lang="os"
               ><phr>ma-rawaʒ(æ)</phr>
             <gloss><q rendition="#rend_doublequotes">не пускай!</q></gloss></mentioned> и
           первоначально означало призыв не пускать кого-либо, что-либо.</etym>
+        <etym xml:lang="en"> As clear from the Digor form, derived from <phr>ma-rawaʒ(æ)</phr>
+          <gloss><q rendition="#rend_doublequotes">do not let!</q></gloss> and originally meant an
+          exhortation not to let anyone or anything somewhere.</etym>
       </entry>
     </body>
   </text>
