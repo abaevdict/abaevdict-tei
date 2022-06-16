@@ -1,32 +1,42 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">masinæ</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_masinæ" xml:lang="os" abv:completeness="incomplete">
+      <entry xml:id="entry_masinæ" xml:lang="os" abv:completeness="complete">
         <form type="lemma"><orth>masinæ</orth></form>
         <sense><sense><abv:tr xml:lang="ru">
               <q>машина</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>machine</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>поезд</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>train</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>автомобиль</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>automobile</q>
             </abv:tr></sense></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
@@ -35,6 +45,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">пусть этот поезд разлетится по гвоздям, — он
                 увозит лучших парней (на войну) на Дунай</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">may this train burst into nails, — it takes
+                away the best boys (to the war) on the Danube</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Munk."/>
               <biblScope>184</biblScope></bibl>
@@ -46,6 +60,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">этот поезд прошел выше Моздока; эти девушки
                 мягче ваты</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">this train passed above Mozdok; these girls are
+                softer than cotton wool</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Munk."/>
               <biblScope>184</biblScope></bibl>
           </example>
@@ -54,10 +72,14 @@
           <example xml:lang="os-x-digor">
             <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
             <quote xmlns="http://www.tei-c.org/ns/1.0">kænuncæ si kolxozon kustitæn alli xuzæn
-              masinttæ: inajgænæntæ, xwasgærdæntæ æma ænd.</quote>
+                <oRef>masinttæ</oRef>: inajgænæntæ, xwasgærdæntæ æma ænd.</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">там изготовляют всевозможные машины для
                 колхозных работ: молотилки, сенокосилки и др.</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">there they make all kinds of machines for
+                kolkhoz work: threshing machines, mowing machines etc.</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_AK"/>
               <biblScope>III 52</biblScope></bibl>
@@ -65,6 +87,9 @@
         </exampleGrp>
         <etym xml:lang="ru">Из <mentioned xml:lang="ru"><lang/>
             <w>машина</w></mentioned>.</etym>
+        <etym xml:lang="en">From <mentioned xml:lang="ru"><lang/>
+            <w>машина</w>
+            <gloss><q>machine</q></gloss></mentioned>.</etym>
       </entry>
     </body>
   </text>
