@@ -1,31 +1,40 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">margas</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_margas" xml:lang="os" abv:completeness="incomplete">
+      <entry xml:id="entry_margas" xml:lang="os" abv:completeness="complete">
         <form type="lemma"><orth>margas</orth></form>
         <sense><sense><abv:tr xml:lang="ru">
               <q>съестные продукты, приносимые родственниками и знакомыми умершего на поминки</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>food brought to the funeral by relatives and acquaintances of the deceased</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>поминки, справляемые родственниками в доме покойника непосредственно после
                 смерти</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>funerary feast organized by relatives in the house of the deceased just after the
+                deceased’s death</q>
             </abv:tr></sense></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
@@ -35,6 +44,11 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">а ты куда идешь? — вот несу <oRef/>; было бы
                 хорошо, если бы вы сказали <foreign><ref type="xr" target="#entry_rūxs"
                   >ruxs</ref></foreign> (поминовение) покойнику</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">and where are you going? — well, I am bringing
+                the <oRef/>; it would be good if you said <foreign><ref type="xr"
+                    target="#entry_rūxs">ruxs</ref></foreign> (commemoration) to the deceased</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_СОПам."/>
               <biblScope>III 87</biblScope></bibl>
@@ -59,12 +73,42 @@
             <w>mīnas</w>
             <gloss><q>угощение</q></gloss></ref>, <ref type="xr" target="#entry_bas"><w>bas</w>
             <gloss><q>суп</q></gloss>
-            <note type="comment">(← <mentioned xml:lang="ira"><phr type="rec"
-                >upa+asa</phr></mentioned>)</note></ref>. Сложение <oRef>marg-as</oRef> образовалось
-          тогда, когда <ref type="xr" target="#entry_marg"><w>marg</w> (← <mentioned xml:lang="ira"
-                ><w type="rec">marka-</w></mentioned>)</ref> означало еще
-            <gloss><q>смерть</q></gloss>, не получив более специального значения
-            <gloss><q>яд</q></gloss>.</etym>
+            <note xml:lang="ru" type="comment">(← <mentioned xml:lang="ira"><phr type="rec"
+                  >upa+asa</phr></mentioned>)</note><note xml:lang="en" type="comment">(← <mentioned
+                xml:lang="ira"><phr type="rec">upa+asa</phr></mentioned>)</note></ref>. Сложение
+            <oRef>marg-as</oRef> образовалось тогда, когда <ref type="xr" target="#entry_marg"
+              ><w>marg</w> (← <mentioned xml:lang="ira"><w type="rec">marka-</w></mentioned>)</ref>
+          означало еще <gloss><q>смерть</q></gloss>, не получив более специального значения
+              <gloss><q>яд</q></gloss>.</etym>
+        <etym xml:lang="en">Probably derived from <mentioned xml:lang="ira"><lang/>
+            <phr type="rec">marka+asa</phr>
+            <gloss><q>meal (<mentioned xml:lang="ira"><w type="rec">asa-</w></mentioned>) of death
+                  (<mentioned xml:lang="ira"><w type="rec">marka-</w></mentioned>)</q></gloss>,
+                <gloss><q>funerary feast</q></gloss></mentioned>. In the former part <mentioned
+            xml:lang="ira"><lang/>
+            <w type="rec">marka-</w>
+            <gloss><q>death</q></gloss></mentioned> (see <ref type="xr" target="#entry_marg"
+            >above</ref>); in the latter, <mentioned xml:lang="ira"><w type="rec">asa-</w>
+            <gloss><q>food</q></gloss></mentioned> from <mentioned xml:lang="ira"><w type="rec"
+              >as-</w>
+            <gloss><q>eat</q></gloss></mentioned>; cf. also such derivates as <mentioned
+            xml:lang="inc-x-old"><lang/>
+            <w>prātarāśa-</w>
+            <gloss><q>morning meal</q></gloss></mentioned>, <mentioned xml:lang="inc-x-old"
+              ><w>sāyamāsa-</w>
+            <gloss><q>evening meal</q></gloss></mentioned>; cf. also <ref type="xr"
+            target="#entry_mīnas" xml:lang="os"><lang/>
+            <w>mīnas</w>
+            <gloss><q>food given to guest</q></gloss></ref>, <ref type="xr" target="#entry_bas"
+              ><w>bas</w>
+            <gloss><q>soup</q></gloss>
+            <note xml:lang="ru" type="comment">(← <mentioned xml:lang="ira"><phr type="rec"
+                  >upa+asa</phr></mentioned>)</note><note xml:lang="en" type="comment">(← <mentioned
+                xml:lang="ira"><phr type="rec">upa+asa</phr></mentioned>)</note></ref>. The compound
+            <oRef>marg-as</oRef> was formed at a time when <ref type="xr" target="#entry_marg"
+              ><w>marg</w> (← <mentioned xml:lang="ira"><w type="rec">marka-</w></mentioned>)</ref>
+          still meant <gloss><q>death</q></gloss>, not having yet received its special meaning
+              <gloss><q>poison</q></gloss>.</etym>
       </entry>
     </body>
   </text>
