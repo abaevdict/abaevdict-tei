@@ -1,42 +1,54 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">marg</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_marg" xml:lang="os" abv:completeness="incomplete">
+      <entry xml:id="entry_marg" xml:lang="os" abv:completeness="complete">
         <form type="lemma"><orth>marg</orth></form>
         <sense><abv:tr xml:lang="ru">
             <q>яд</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>poison</q>
           </abv:tr></sense>
         <re>
           <form type="lemma"><orth>margǵyn</orth><form type="variant"><orth>margæj
             ʒag</orth></form></form>
           <sense><sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
                 <q xmlns="http://www.tei-c.org/ns/1.0">ядовитый</q>
+              </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+                <q xmlns="http://www.tei-c.org/ns/1.0">poisonous</q>
               </tr></sense><sense><abv:tr xml:lang="ru">
                 <q>отравленный</q>
+              </abv:tr><abv:tr xml:lang="en">
+                <q>poisoned</q>
               </abv:tr></sense></sense>
         </re>
         <re>
           <form type="lemma"><orth>margǵyn kalm</orth></form>
           <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">ядовитая змея</q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">poisonous snake</q>
             </tr></sense>
           <note type="bibl"> (<bibl><ref type="bibl" target="#src_ИАА"/><biblScope>II
                 382</biblScope></bibl>)</note>
@@ -45,15 +57,25 @@
           <form type="lemma"><orth>læxmarg</orth></form>
           <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">мразь</q>
-            </tr><note type="comment"> (бранное слово)</note></sense>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">scum</q>
+            </tr><note xml:lang="ru" type="comment"> (бранное слово)</note><note xml:lang="en"
+              type="comment"> (term of abuse)</note></sense>
         </re>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0"><oRef>marg</oRef> banaz!</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">выпей яду!</q>
-              <note type="comment" xmlns="http://www.tei-c.org/ns/1.0"> (бранное выражение по адресу
-                пьяного)</note>
+              <note xmlns="http://www.tei-c.org/ns/1.0" xml:lang="ru" type="comment"> (бранное
+                выражение по адресу пьяного)</note>
+              <note xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" type="comment"> (бранное
+                выражение по адресу пьяного)</note>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">drink poison!</q>
+              <note xmlns="http://www.tei-c.org/ns/1.0" type="comment"> (abusive expression directed
+                at a drunk person)</note>
             </tr>
           </example>
           <example>
@@ -64,6 +86,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">пусть станут тебе ядом, пусть станут тебе
                 отравой мое добро, молоко моей груди!</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">may become poison to you, may become bane to
+                you my kindness, the milk of my breast!</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Æfx._Xæs."/>
               <biblScope>233</biblScope></bibl>
@@ -76,6 +102,11 @@
                 зарежь для них (насильников); его (барана) суп для тебя целителен, его мясо для них
                 яд</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">in the mids of your herd (there is) a black
+                ram, slaughter that one for them (the oppressors); its (the ram’s) stock is a
+                medicine for you, its meat is poison for them</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Munk."/>
               <biblScope>182</biblScope></bibl>
           </example>
@@ -84,6 +115,10 @@
                 <oRef>marg</oRef></quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">в нашу полную чашу меда влили тайком яд</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">in our full cup of honey poison was secretly
+                poured</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_F."/>
               <biblScope>1953 III 32</biblScope></bibl>
@@ -94,6 +129,9 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">ее язык и яд и противоядие</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">its tongue is both a poison and an antidote</q>
+            </tr>
           </example>
           <example xml:lang="os-x-digor">
             <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
@@ -103,6 +141,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">я съел ето как яд, но оно оказалось для меня
                 целебным</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">I ate it as poison, but it turned out to be a
+                remedy for me</q>
+            </tr>
           </example>
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">mæ kʼoxæj sin ci wæras ravardton, ejæ sin
@@ -110,6 +152,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">брага, которую я дал им своей рукой, оказалась
                 для них ядом</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the beer that I gave them by my hand turned out
+                to be poison to them</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ОЭ"/>
               <biblScope>I 98</biblScope></bibl>
@@ -119,6 +165,10 @@
               dæn</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">от действия яда я облез</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">from the action of the poison I lost my
+                hair</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ОЭ"/>
               <biblScope>I 62</biblScope></bibl>
@@ -138,7 +188,8 @@
                 <biblScope>112</biblScope></bibl>)</note></mentioned>, <mentioned xml:lang="ku"><lang/>
             <w>merk</w></mentioned>, <mentioned xml:lang="x-balochi"><lang/>
             <w>mark</w></mentioned>, <mentioned xml:lang="brh"><lang/>
-            <note type="comment">(из бел.)</note>
+            <note xml:lang="ru" type="comment">(из бел.)</note><note xml:lang="en" type="comment"
+              >(из бел.)</note>
             <w>mark</w>
             <note type="bibl">(<bibl><ref type="bibl" target="#ref_NTS"/>
                 <biblScope>1932 V 48</biblScope></bibl>)</note></mentioned>, <mentioned
@@ -157,12 +208,15 @@
             <w>marga</w>) и означал несомненно <gloss><q rendition="#rend_doublequotes"
             >смерть!</q></gloss>. Слово находят в угро-финских языках: <mentioned xml:lang="hu"><lang/>
             <w><?oxy_comment_start author="oleg" timestamp="20220616T161734+0300" comment="У Абаева -- merëg, но в венг.словаре méreg"?>méreg<?oxy_comment_end?></w>
-            <note type="comment">(из аланского)</note></mentioned>, <mentioned xml:lang="fi"><lang/>
+            <note xml:lang="ru" type="comment">(из аланского)</note><note xml:lang="en"
+              type="comment">(из аланского)</note></mentioned>, <mentioned xml:lang="fi"><lang/>
             <w>myrkky</w></mentioned>, <mentioned xml:lang="et"><lang/>
             <w>mürk</w></mentioned>, <mentioned xml:lang="smi"><lang/>
             <w>mirkko</w></mentioned>
           <gloss><q>яд</q></gloss>
-          <note type="comment">(из <mentioned xml:lang="xsc"><lang/>
+          <note xml:lang="ru" type="comment">(из <mentioned xml:lang="xsc"><lang/>
+              <w type="rec">marka-</w></mentioned>?)</note><note xml:lang="en" type="comment">(из
+              <mentioned xml:lang="xsc"><lang/>
               <w type="rec">marka-</w></mentioned>?)</note>
           <note type="bibl">(<bibl><author>Munkacsi</author>, <ref type="bibl" target="#ref_KSz."/>
               <biblScope>I 243; V 319</biblScope></bibl>. — <bibl><ref type="bibl"
@@ -174,6 +228,66 @@
           />, <ref type="xr" target="#entry_mælyn"/>, <ref type="xr" target="#entry_margas"
             />.<lb/><bibl>Вс. <author>Миллер</author>. <ref type="bibl" target="#ref_Миллер_Вс._ОЭ"
               >ОЭ</ref>
+            <biblScope>II 50</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Miller._Gr."
+              >Gr</ref>
+            <biblScope>27</biblScope></bibl>. — <bibl><ref type="bibl"
+              target="#ref_Hübschmann._Oss."/>
+            <biblScope>48</biblScope></bibl>.— <bibl><ref type="bibl" target="#ref_ОЯФ_I"/>
+            <biblScope>23, 252, 352</biblScope></bibl>.</etym>
+        <etym xml:lang="en"> Goes back to <mentioned xml:lang="ira"><lang/>
+            <w type="rec">marka-</w>
+            <gloss><q>death</q></gloss></mentioned>, from <mentioned xml:lang="ira"><w type="rec"
+              >mar-</w>
+            <gloss><q>kill</q></gloss>, <gloss><q>die</q></gloss></mentioned>, <mentioned
+            xml:lang="ira"><w type="rec">mar-k-</w>
+            <gloss><q>destroy</q></gloss></mentioned>. Cf. <mentioned xml:lang="fa"><lang/>
+            <w>marg</w></mentioned>, <mentioned xml:lang="pal"><lang/>
+            <w>marg</w></mentioned>, <mentioned xml:lang="xmn"><lang>(Manichaean)</lang>
+            <w>mrg</w>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Henning._BBB"/>
+                <biblScope>112</biblScope></bibl>)</note></mentioned>, <mentioned xml:lang="ku"><lang/>
+            <w>merk</w></mentioned>, <mentioned xml:lang="x-balochi"><lang/>
+            <w>mark</w></mentioned>, <mentioned xml:lang="brh"><lang/>
+            <note xml:lang="ru" type="comment">(из бел.)</note><note xml:lang="en" type="comment"
+              >(from Balochi)</note>
+            <w>mark</w>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_NTS"/>
+                <biblScope>1932 V 48</biblScope></bibl>)</note></mentioned>, <mentioned
+            xml:lang="ae"><lang/>
+            <w>mahrka-</w>, <w>maraka-</w>
+            <gloss><q>death</q></gloss></mentioned>, <mentioned xml:lang="inc-x-old"><lang/>
+            <w>marka-</w>
+            <gloss><q>solar eclipse</q></gloss>, <gloss><q>dying</q></gloss></mentioned>. — The
+          meaning <gloss><q>death</q></gloss> probably existed in Ossetic as well. In
+                <bibl><title><q rendition="#rend_doublequotes">Pallas’ Comparative
+              Dictionary</q></title> (<date>1787</date>)</bibl> the Russian word <w>смерть</w>
+          <q>death</q> is translated by two Ossetic words: <w>малатъ</w> (= <ref type="xr"
+            target="#entry_mælæt"/>) and <w>маргъ</w>. The meaning <q>death</q> (and not
+            <q>poison</q>) is also recognizable in <ref type="xr" target="#entry_margas"/> (see
+          below). The battle cry of the Sarmatians, according to Ammianus Marcellinus, was <q
+            rendition="#rend_doublequotes"><w>marha!</w></q> (imprecise transmission of <w>marka</w>
+          or <w>marga</w>) and undoubtedly meant <gloss><q rendition="#rend_doublequotes"
+            >death!</q></gloss>. This word is also found in Finno-Ugric languages: <mentioned
+            xml:lang="hu"><lang/>
+            <w><?oxy_comment_start author="oleg" timestamp="20220616T161734+0300" comment="У Абаева -- merëg, но в венг.словаре méreg"?>méreg<?oxy_comment_end?></w>
+            <note xml:lang="ru" type="comment">(из аланского)</note><note xml:lang="en"
+              type="comment">(from Alanic)</note></mentioned>, <mentioned xml:lang="fi"><lang/>
+            <w>myrkky</w></mentioned>, <mentioned xml:lang="et"><lang/>
+            <w>mürk</w></mentioned>, <mentioned xml:lang="smi"><lang/>
+            <w>mirkko</w></mentioned>
+          <gloss><q>poison</q></gloss>
+          <note type="comment">(from <mentioned xml:lang="xsc"><lang/>
+              <w type="rec">marka-</w></mentioned>?)</note>
+          <note type="bibl">(<bibl><author>Munkacsi</author>, <ref type="bibl" target="#ref_KSz."/>
+              <biblScope>I 243; V 319</biblScope></bibl>. — <bibl><ref type="bibl"
+                target="#ref_Jacobsohn"/>
+              <biblScope>27, 230 ff.</biblScope></bibl> — <bibl><ref type="bibl"
+                target="#ref_Sköld._Oss."/>
+              <biblScope>31</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Collinder"/>
+              <biblScope>133</biblScope></bibl>)</note>. — See <ref type="xr" target="#entry_maryn"
+          />, <ref type="xr" target="#entry_mælyn"/>, <ref type="xr" target="#entry_margas"
+            />.<lb/><bibl>Ws. <author>Miller</author>. <ref type="bibl" target="#ref_Миллер_Вс._ОЭ"
+              >OÈ</ref>
             <biblScope>II 50</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Miller._Gr."
               >Gr</ref>
             <biblScope>27</biblScope></bibl>. — <bibl><ref type="bibl"
