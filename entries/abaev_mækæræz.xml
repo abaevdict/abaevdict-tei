@@ -1,37 +1,49 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">mækæræz</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_mækæræz" xml:lang="os" abv:completeness="incomplete">
+      <entry xml:id="entry_mækæræz" xml:lang="os" abv:completeness="complete">
         <form type="lemma"><orth>mækæræz</orth></form>
         <sense><abv:tr xml:lang="ru">
             <q>съедобный корнеплод кервеля (<ref type="xr" target="#entry_gængæly"/>) осенью</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>edible root of chervil (<ref type="xr" target="#entry_gængæly"/>) in autumn</q>
           </abv:tr></sense>
-        <note type="comment">; этот же корнеплод весной зовется <ref type="xr"
+        <note xml:lang="ru" type="comment">; этот же корнеплод весной зовется <ref type="xr"
+            target="#entry_x0yskʼæl"/></note>
+        <note xml:lang="en" type="comment">; the same root in spring is called <ref type="xr"
             target="#entry_x0yskʼæl"/></note>
         <re>
-          <note type="comment">о чисто выбритой голове говорят: </note>
+          <note xml:lang="ru" type="comment">о чисто выбритой голове говорят: </note>
+          <note xml:lang="en" type="comment">of a cleanly shaven head it is said: </note>
           <form type="lemma"><orth><oRef>mækæræzy</oRef> xₒyzæn</orth></form>
           <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">(гладкая), как <ref type="xr"
                   target="#entry_mækæræz"/></q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0" rendition="#rend_doublequotes">(smooth) like a
+                    <foreign><ref type="xr" target="#entry_mækæræz">mækæræz</ref></foreign></q>
             </tr></sense>
         </re>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
@@ -42,6 +54,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">я угощал пастухов нашего аула
                   <oRef>макаразами</oRef></q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">I treated the shepherds of our village with
+                  <oRef>mækæræz</oRef></q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Bar."/>
               <biblScope>102</biblScope></bibl>
           </example>
@@ -51,6 +67,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">твоя голова побрита; я тебе ее очистил, как
                   <oRef>макараз</oRef></q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">your head is shaven; I peeled it for you, like
+                a <oRef>mækæræz</oRef></q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Брит."/>
               <biblScope>93</biblScope></bibl>
@@ -64,6 +84,14 @@
               <w>karafs</w></mentioned>, <mentioned xml:lang="trk"><lang/>
               <w>kereviz</w></mentioned>
             <gloss><q>сельдерей</q></gloss></mentioned>.</etym>
+        <etym xml:lang="en">Probably belongs to the group of plant names where the initial
+            <c>mæ-</c> should be separated; cf. <ref type="xr" target="#entry_mænærǧ"/>, <ref
+            type="xr" target="#entry_mænæw"/>, <ref type="xr" target="#entry_mætatyk"/> etc.;
+            <mentioned xml:lang="os"><w type="rec">kæræz</w></mentioned> can be compared to
+              <mentioned><mentioned xml:lang="ar" extralang="fa"><lang/>
+              <w>karafs</w></mentioned>, <mentioned xml:lang="trk"><lang/>
+              <w>kereviz</w></mentioned>
+            <gloss><q>celery</q></gloss></mentioned>.</etym>
       </entry>
     </body>
   </text>
