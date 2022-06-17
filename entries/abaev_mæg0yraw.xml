@@ -1,34 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">mægₒyraw</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_mæg0yraw" xml:lang="os" abv:completeness="incomplete">
+      <entry xml:id="entry_mæg0yraw" xml:lang="os" abv:completeness="complete">
         <form type="lemma"><orth>mægₒyraw</orth></form>
         <sense><abv:tr xml:lang="ru">
-            <q>низкого качество</q>
+            <q>низкого качества</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>of low quality</q>
           </abv:tr></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">qₒymac <oRef>mægₒyraw</oRef> razyndī</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">ткань оказалась низкого качества</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the fabric turned out to be of low quality</q>
             </tr>
           </example>
         </exampleGrp>
@@ -38,6 +47,13 @@
             target="#entry_wæzzaw"><w>wæzzaw</w>
             <gloss><q>тяжелый</q></gloss></ref>, <ref type="xr" target="#entry_mīdæg"><w>mīdægaw</w>
             <gloss><q>внутри</q></gloss></ref> и др.<lb/><bibl><ref type="bibl" target="#ref_ГО"/>
+            <biblScope>§ 194</biblScope></bibl>.</etym>
+        <etym xml:lang="en">Literally <gloss><q rendition="#rend_doublequotes">poor-ish</q></gloss>:
+            <ref type="xr" target="#entry_mæg0yr"/> + suffix <mentioned xml:lang="os"
+            ><m>-aw</m></mentioned>; cf. by derivation <ref type="xr" target="#entry_wæzzaw"
+              ><w>wæzzaw</w>
+            <gloss><q>heavy</q></gloss></ref>, <ref type="xr" target="#entry_mīdæg"><w>mīdægaw</w>
+            <gloss><q>inside</q></gloss></ref> etc.<lb/><bibl><ref type="bibl" target="#ref_ГО"/>
             <biblScope>§ 194</biblScope></bibl>.</etym>
       </entry>
     </body>
