@@ -1,37 +1,55 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">mækʼₒyl</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_mækʼ0yl" xml:lang="os-x-iron" abv:completeness="incomplete">
+      <entry xml:id="entry_mækʼ0yl" xml:lang="os-x-iron" abv:completeness="english-questions">
         <form type="lemma" xml:lang="os-x-iron"><orth>mækʼₒyl</orth></form>
         <form xml:lang="os-x-digor" type="dialectal"><orth>bækʼwæl</orth></form>
         <usg><lang/></usg>
         <sense><sense><abv:tr xml:lang="ru">
               <q>копна</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q><?oxy_comment_start author="oleg" timestamp="20220618T025648+0300" comment="or stack?"?>stook<?oxy_comment_end?></q>
             </abv:tr></sense><sense xml:lang="os-x-digor"><usg><lang/></usg><abv:tr xml:lang="ru">
               <q>копна ячменя, пшеницы</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>stook of barley, wheat</q>
             </abv:tr></sense></sense>
-        <note type="comment">; ср. <ref type="xr" target="#entry_lasæg" xml:lang="os-x-digor"><lang/>
+        <note xml:lang="ru" type="comment">; ср. <ref type="xr" target="#entry_lasæg"
+            xml:lang="os-x-digor"><lang/>
             <w>lasæg</w>
             <gloss><q>копна сена</q></gloss></ref></note>
-        <note type="comment">; см. также <ref type="xr" target="#entry_dast" xml:lang="os-x-digor"><lang/>
+        <note xml:lang="en" type="comment">; cf. <ref type="xr" target="#entry_lasæg"
+            xml:lang="os-x-digor"><lang/>
+            <w>lasæg</w>
+            <gloss><q>stook of wheat</q></gloss></ref></note>
+        <note xml:lang="ru" type="comment">; см. также <ref type="xr" target="#entry_dast"
+            xml:lang="os-x-digor"><lang/>
+            <w>dast</w></ref>, <ref type="xr" target="#entry_cʼyna"><w xml:lang="os-x-iron"
+              >cʼyna</w><w xml:lang="os-x-digor">cʼina</w></ref></note>
+        <note xml:lang="en" type="comment">; see also <ref type="xr" target="#entry_dast"
+            xml:lang="os-x-digor"><lang/>
             <w>dast</w></ref>, <ref type="xr" target="#entry_cʼyna"><w xml:lang="os-x-iron"
               >cʼyna</w><w xml:lang="os-x-digor">cʼina</w></ref></note>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
@@ -42,6 +60,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">спереди косил, сзади сгребал (сено) и мигом
                 сложил сто копен</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">in the front he mowed, in the back he gathered
+                (hay) and instantly made a hundred stooks</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сека"/>
               <biblScope>118</biblScope></bibl>
           </example>
@@ -50,6 +72,10 @@
                 <oRef>mækʼₒyltæ</oRef></quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">увозили, не спросясь тебя, отборные копны</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">they took away, without asking you, select
+                stooks</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Čerm."/>
               <biblScope>60</biblScope></bibl>
@@ -61,6 +87,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">Ахмат и Айсса на току в тени копен вели
                 любовные речи</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Akhmæt and Ayssæ at the threshing floor, in the
+                shade of stooks held loving talks</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сека"/>
               <biblScope>58</biblScope></bibl>
           </example>
@@ -69,6 +99,9 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">наполовину сложенная копна</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">half-made stack</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Arsen"/>
               <biblScope>10</biblScope></bibl>
           </example>
@@ -76,6 +109,9 @@
             <quote xmlns="http://www.tei-c.org/ns/1.0">dywwæ <oRef>mækʼₒylwat</oRef> ugærdæn</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">покос, с которого можно собрать две копны</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">mowing from which two stooks can be made</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Čerm."/>
               <biblScope>162</biblScope></bibl>
@@ -89,6 +125,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">одни соревнуясь жнут (хлеб) — уж виден край
                 нивы, другие собирают скошенное, живо складывают копны</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">some, competing, reap (cereals) — the edge of
+                the field is already visible, others gather what is mowed, keenly make stooks</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Тайм._Ӕмдз."/>
               <biblScope>5</biblScope></bibl>
           </example>
@@ -99,6 +139,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">работа по складыванию хлеба в копны и стоги
                 должна быть проведена таким образом, чтобы ни одно зерно не ушло в потери</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the work on collecting cereals into stooks and
+                stacks should be done in such a way that not a single grain goes into losses</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_SD"/>
               <biblScope>286<hi rendition="#rend_subscript">4</hi></biblScope></bibl>
@@ -112,8 +156,10 @@
             <w>mäqu</w>
             <gloss><q>сено</q></gloss></mentioned>, с другой — <mentioned xml:lang="tt-x-kazan"><lang/>
             <w>boɣol</w>
-            <note type="comment">(в тобольском — <mentioned xml:lang="sty"
-              ><w>moɣol</w></mentioned>)</note></mentioned>, <mentioned xml:lang="sah"><lang/>
+            <note xml:lang="ru" type="comment">(в тобольском — <mentioned xml:lang="sty"
+                  ><w>moɣol</w></mentioned>)</note><note xml:lang="en" type="comment">(в тобольском
+              — <mentioned xml:lang="sty"><w>moɣol</w></mentioned>)</note></mentioned>, <mentioned
+            xml:lang="sah"><lang/>
             <w>bugul</w></mentioned>, <mentioned xml:lang="mn"><lang/>
             <w>buxul</w></mentioned>, <mentioned xml:lang="hu"><lang/>
             <w>boglya</w>
@@ -130,6 +176,34 @@
             <mentioned xml:lang="lbe"><lang/>
             <w>baku</w>
             <gloss><q>куча</q></gloss>, <gloss><q>холм</q></gloss></mentioned>. Ср. также <ref
+            type="xr" target="#entry_mækʼur"/>.</etym>
+        <etym xml:lang="en">Cf., on the one hand, <mentioned><mentioned xml:lang="ka"><lang/>
+              <w>magoli</w></mentioned>, <mentioned xml:lang="sva"><lang/>
+              <w>mekw</w></mentioned>
+            <gloss><q>stook</q></gloss></mentioned>, <mentioned xml:lang="sva"><w>mačwal</w>
+            <gloss><q>large stack</q></gloss></mentioned>, <mentioned xml:lang="kbd"><lang/>
+            <w>mäqu</w>
+            <gloss><q>hay</q></gloss></mentioned>, on the other — <mentioned xml:lang="tt-x-kazan"><lang/>
+            <w>boɣol</w>
+            <note xml:lang="ru" type="comment">(в тобольском — <mentioned xml:lang="sty"
+                  ><w>moɣol</w></mentioned>)</note><note xml:lang="en" type="comment">(in Tobol
+              Tatar — <mentioned xml:lang="sty"><w>moɣol</w></mentioned>)</note></mentioned>,
+            <mentioned xml:lang="sah"><lang/>
+            <w>bugul</w></mentioned>, <mentioned xml:lang="mn"><lang/>
+            <w>buxul</w></mentioned>, <mentioned xml:lang="hu"><lang/>
+            <w>boglya</w>
+            <gloss><q>Heuschober</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Gombocz"/>
+                <biblScope>49</biblScope></bibl>)</note></mentioned>. Possibly belongs to
+          onomatopoeic words for <gloss><q>heap</q></gloss>, <gloss><q>protuberance</q></gloss> etc.
+          In this case cf. also some other Caucasian facts: <mentioned xml:lang="krc-x-karachay"><lang/>
+            <w>bakwal</w>
+            <gloss><q>belly</q></gloss></mentioned>, <mentioned xml:lang="ab"><lang/>
+            <w>a-baqₒəl</w>
+            <gloss><q>keg (for keeping cheese, sour milk)</q></gloss></mentioned>, <mentioned
+            xml:lang="lbe"><lang/>
+            <w>baku</w>
+            <gloss><q>heap</q></gloss>, <gloss><q>hill</q></gloss></mentioned>. Cf. also <ref
             type="xr" target="#entry_mækʼur"/>.</etym>
       </entry>
     </body>
