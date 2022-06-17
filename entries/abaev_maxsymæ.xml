@@ -1,33 +1,42 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">maxsymæ</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_maxsymæ" xml:lang="os" abv:completeness="incomplete">
+      <entry xml:id="entry_maxsymæ" xml:lang="os" abv:completeness="english-questions">
         <form type="lemma" xml:lang="os-x-iron"><orth>maxsymæ</orth></form>
         <form xml:lang="os-x-digor" type="dialectal"><orth>maxsumæ</orth></form>
         <sense><abv:tr xml:lang="ru">
             <q>брага</q>
-          </abv:tr><note type="comment">, прежде изготовлялась из проса, теперь из
-          кукурузы;</note></sense>
-        <note type="comment"> ср. <ref type="xr" target="#entry_kʼ0ymæl"/>, <ref type="xr"
-            target="#entry_wæras"/>, <ref type="xr" target="#entry_byræǧ_1"/></note>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>a kind of traditional fermented drink</q>
+          </abv:tr><note xml:lang="ru" type="comment">, прежде изготовлялась из проса, теперь из
+            кукурузы;</note><note xml:lang="en" type="comment">, formerly made out of millet,
+            nowadays from maize;</note></sense>
+        <note xml:lang="ru" type="comment"> ср. <ref type="xr" target="#entry_kʼ0ymæl"/>, <ref
+            type="xr" target="#entry_wæras"/>, <ref type="xr" target="#entry_byræǧ_1"/></note>
+        <note xml:lang="en" type="comment"> cf. <ref type="xr" target="#entry_kʼ0ymæl"/>, <ref
+            type="xr" target="#entry_wæras"/>, <ref type="xr" target="#entry_byræǧ_1"/></note>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">aly xorzʒīnad sæ fyngyl īs: būr fīzonæg,
@@ -37,6 +46,11 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">всякое добро у них на столе: бурый шашлык,
                 прозрачная водка, сладкая брага, черное пиво</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">every good thing is on their table: brown
+                kebab, clear <foreign><ref type="xr" target="#entry_araq">araq</ref></foreign>,
+                sweet <oRef/>, black beer</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ОТ"/>
               <biblScope>38</biblScope></bibl>
           </example>
@@ -45,6 +59,9 @@
               ‘nqyzt</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">брага с медом процеженная и выбродившая</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0"><oRef/> with honey strained and fermented</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ИАЗ"/>
               <biblScope>148</biblScope></bibl>
@@ -56,6 +73,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">тогда произнес молитву Инал с чашей браги в
                 руках</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">then Inal said a prayer with a cup of
+                  <foreign><oRef/></foreign> in his hands</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Коста"/>
               <biblScope>221</biblScope></bibl>
           </example>
@@ -65,6 +86,11 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">у семьи вдоволь теплого ячменного хлеба,
                 достаточно бузы, браги, благодаря умелым рукам</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the family has plenty of warm barley bread,
+                enough <foreign><ref type="xr" target="#entry_kʼ0ymæl"/></foreign> (a kind of
+                cornmeal beer), <foreign><oRef/></foreign> thanks to skillful hands</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Niger"/>
               <biblScope>71</biblScope></bibl>
@@ -76,6 +102,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">привезли в больших бурдюках черное пиво и
                 брагу</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">they brought in large wineskins black beer and
+                  <foreign><oRef/></foreign></q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_MD"/>
               <biblScope>1949 II 28</biblScope></bibl>
@@ -114,7 +144,7 @@
             target="#entry_bægæny"><lang/>
             <w>bægæny</w>
             <gloss><q>пиво</q></gloss></ref>. Однако <ref type="xr" target="#entry_bægæny"/>
-          предполагает <mentioned xml:lang="ira"><w type="rec">bak(an)-</w></mentioned>, * а не <w
+          предполагает <mentioned xml:lang="ira"><w type="rec">bak(an)-</w></mentioned>, а не <w
             type="rec">bag(an)</w>.<lb/><bibl><ref type="bibl" target="#ref_MSt."/>
             <biblScope>83</biblScope></bibl>. — <bibl><author>Bouda</author>, <ref type="bibl"
               target="#ref_KZ"/>
@@ -124,6 +154,49 @@
               <date>1954</date>, <biblScope>стр. 6</biblScope></bibl>; <bibl><title>Ambages
               Indoiranicae</title>. <ref type="bibl" target="#ref_AION"/>
             <biblScope>1959 I 136 сл</biblScope></bibl>.</etym>
+        <etym xml:lang="en">From <mentioned xml:lang="trk"><lang/>
+            <w>maqsima</w>
+            <gloss><q>fermented drink</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Радлов"/>
+                <biblScope>IV 1999</biblScope></bibl>)</note></mentioned>, <mentioned xml:lang="trk"
+              ><w>buxsum</w></mentioned> according to <bibl><author>Mahmud
+            al-Kashgari</author></bibl>, <mentioned xml:lang="kum"><lang/>
+            <w>maxsəma</w></mentioned>. Hence also <mentioned xml:lang="kbd"><lang/>
+            <w>maxsəmä</w>
+            <gloss><q>cerevisia е milio cocta</q></gloss>
+            <note type="bibl">(<bibl><author>Balint</author>. <title>Lexicon
+                  cabardico-hungarico-latinum</title>. <pubPlace>Kolozsvar</pubPlace>,
+                  <date>1904</date>, <biblScope>p. 362</biblScope></bibl>)</note></mentioned>,
+            <mentioned xml:lang="ady"><lang/>
+            <w>maxsəmä</w>
+            <gloss><q>fermented drink from millet sweetened by honey</q></gloss></mentioned>,
+            <mentioned xml:lang="kbd-x-crc"><lang/>
+            <w>maxsəmä</w>, <w>baxsəmä</w>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_СМК"/>
+                <biblScope>XXIX 38</biblScope></bibl>)</note></mentioned>, <mentioned xml:lang="uby"><lang/>
+            <w>baxsmä</w>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Mészaros"/>
+                <biblScope>229</biblScope></bibl>)</note></mentioned>, <mentioned xml:lang="inh"><lang/>
+            <w>masxam</w></mentioned>, <mentioned xml:lang="ka"><lang/>
+            <w>maxsimati</w>
+            <gloss><q>a kind of fermented drink</q></gloss></mentioned>. <hi
+            rendition="#rend_smallcaps">Bailey</hi> supposes that the source could be <mentioned
+            xml:lang="xsc"><lang/>
+            <w type="rec">baxšma-</w></mentioned> from the stem <mentioned xml:lang="ira"><w
+              type="rec">bag-</w></mentioned>, which is assumedly present also in <ref xml:lang="os"
+            type="xr" target="#entry_bægæny"><lang/>
+            <w>bægæny</w>
+            <gloss><q>beer</q></gloss></ref>. But <ref type="xr" target="#entry_bægæny"/>
+          presupposes <mentioned xml:lang="ira"><w type="rec">bak(an)-</w></mentioned>, rather than
+            <w type="rec">bag(an)</w>.<lb/><bibl><ref type="bibl" target="#ref_MSt."/>
+            <biblScope>83</biblScope></bibl>. — <bibl><author>Bouda</author>, <ref type="bibl"
+              target="#ref_KZ"/>
+            <biblScope>LXIII 180</biblScope></bibl>. — <bibl><author>Bailey</author>.
+              <title>Madu</title>. <title type="j">Silver Ju­bilee Volume of the
+              Zinbun-Kagaku-Kenkyusyo</title>, <pubPlace>Kyoto University</pubPlace>,
+              <date>1954</date>, <biblScope>p. 6</biblScope></bibl>; <bibl><title>Ambages
+              Indoiranicae</title>. <ref type="bibl" target="#ref_AION"/>
+            <biblScope>1959 I 136 ff</biblScope></bibl>.</etym>
       </entry>
     </body>
   </text>
