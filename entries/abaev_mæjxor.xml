@@ -1,36 +1,49 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">mæjxor</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_mæjxor" xml:lang="os" abv:completeness="incomplete">
+      <entry xml:id="entry_mæjxor" xml:lang="os" abv:completeness="complete">
         <form type="lemma" xml:lang="os-x-iron"><orth>mæjxor</orth></form>
         <form xml:lang="os-x-digor" type="dialectal"><orth>mæjxwar</orth></form>
         <sense><abv:tr xml:lang="ru">
             <q>пожиратель луны</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>moon-eater</q>
           </abv:tr></sense>
-        <note type="comment">; по народным поверьям, затмение луны объяснялось тем, что луну
-          пожирали чудовища <oRef>mæjxortæ</oRef>. По одному дигорскому сказанию, месяц — это юноша,
-          которого две недели пожирает сестра-ведьма, а две недели восстанавливает любящая жена
-              (<bibl><ref type="bibl" target="#ref_MSt."/>
+        <note xml:lang="ru" type="comment">; по народным поверьям, затмение луны объяснялось тем,
+          что луну пожирали чудовища <oRef>mæjxortæ</oRef>. По одному дигорскому сказанию, месяц —
+          это юноша, которого две недели пожирает сестра-ведьма, а две недели восстанавливает
+          любящая жена (<bibl><ref type="bibl" target="#ref_MSt."/>
             <biblScope>15—19</biblScope></bibl>). Это сказание призвано объяснить не затмение, а
           фазы луны.</note>
+        <note xml:lang="en" type="comment">; according to folk belief, the lunar eclipse was
+          explained by the moon being eaten by monsters called <oRef>mæjxortæ</oRef>. According to
+          one Digor legend, the moon is a young man who is eaten by his witch sister for two weeks,
+          and then restored by his loving wife for two weeks (<bibl><ref type="bibl"
+              target="#ref_MSt."/>
+            <biblScope>15—19</biblScope></bibl>). This legend is meant to explain not the eclipse,
+          but lunar phases.</note>
         <etym xml:lang="ru">См. <ref type="xr" target="#entry_mæj"><w>mæj</w>
             <gloss><q>луна</q></gloss></ref> и <ref type="xr" target="#entry_xæryn"><w>xæryn</w>
             <gloss><q>есть</q></gloss></ref>. По образованию ср. <mentioned xml:lang="os"><phr><ref
@@ -40,6 +53,16 @@
               type="xr" target="#entry_lævar"><w>lævar</w></ref>-<ref type="xr"
               target="#entry_xæryn_1"><w>xor</w></ref>
             <gloss><q>дармоед</q></gloss></ref> и др. (<bibl><ref type="bibl" target="#ref_ГО"/>
+            <biblScope>§ 201<hi rendition="#rend_subscript">II 1</hi></biblScope></bibl>).</etym>
+        <etym xml:lang="en">See <ref type="xr" target="#entry_mæj"><w>mæj</w>
+            <gloss><q>moon</q></gloss></ref> and <ref type="xr" target="#entry_xæryn"><w>xæryn</w>
+            <gloss><q>eat</q></gloss></ref>. By derivation cf. <mentioned xml:lang="os"><phr><ref
+                type="xr" target="#entry_xal_1"><w>xal</w></ref>-<ref type="xr"
+                target="#entry_xæryn"><w>xor</w></ref></phr>
+            <gloss><q>herbivorous</q></gloss></mentioned>, <ref type="xr" target="#entry_lævar"><ref
+              type="xr" target="#entry_lævar"><w>lævar</w></ref>-<ref type="xr"
+              target="#entry_xæryn_1"><w>xor</w></ref>
+            <gloss><q>freeloader</q></gloss></ref> etc. (<bibl><ref type="bibl" target="#ref_ГО"/>
             <biblScope>§ 201<hi rendition="#rend_subscript">II 1</hi></biblScope></bibl>).</etym>
       </entry>
     </body>
