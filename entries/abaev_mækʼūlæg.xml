@@ -1,33 +1,47 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">mækʼūlæg</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_mækʼūlæg" xml:lang="os-x-iron" abv:completeness="incomplete">
+      <entry xml:id="entry_mækʼūlæg" xml:lang="os-x-iron" abv:completeness="complete">
         <form type="lemma"><orth>mækʼūlæg</orth></form>
         <usg><lang/></usg>
         <sense><abv:tr xml:lang="ru">
             <q>ящерица серая</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>grey lizard</q>
           </abv:tr></sense>
-        <note type="comment">; ср. <ref type="xr" target="#entry_gækk0yri"><w>gækkₒyri</w>
+        <note xml:lang="ru" type="comment">; ср. <ref type="xr" target="#entry_gækk0yri"
+              ><w>gækkₒyri</w>
             <gloss><q>ящерица зеленая</q></gloss></ref></note>
-        <note type="comment">; <ref type="xr" target="#entry_ænkʼwælxæ" xml:lang="os-x-digor"><lang/>
+        <note xml:lang="en" type="comment">; cf. <ref type="xr" target="#entry_gækk0yri"
+              ><w>gækkₒyri</w>
+            <gloss><q>green lizard</q></gloss></ref></note>
+        <note xml:lang="ru" type="comment">; <ref type="xr" target="#entry_ænkʼwælxæ"
+            xml:lang="os-x-digor"><lang/>
+            <w>ænkʼwælxæ</w></ref></note>
+        <note xml:lang="en" type="comment">; <ref type="xr" target="#entry_ænkʼwælxæ"
+            xml:lang="os-x-digor"><lang/>
             <w>ænkʼwælxæ</w></ref></note>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
@@ -36,6 +50,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">по стенам дома в летние теплые дни ящерицы
                 ползали вверх и вниз</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">on the walls of the house on hot summer days
+                lizards crawled up and down</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ИАА"/>
               <biblScope>III 78</biblScope></bibl>
@@ -48,10 +66,21 @@
                 <biblScope>939</biblScope></bibl>)</note></mentioned>, <mentioned xml:lang="ka"
               ><w>xvlikʼi</w>
             <gloss><q>ящерица</q></gloss></mentioned>, <mentioned xml:lang="ka"><w>muxluxi</w>
-            <gloss><q>гусеница</q></gloss></mentioned>, <mentioned xml:lang="ce"><lang/>
-            <w>mölqhu</w></mentioned>, <mentioned xml:lang="inh"><lang/>
-            <w>melqhæ</w>
+            <gloss><q>гусеница</q></gloss></mentioned>, <mentioned><mentioned xml:lang="ce"><lang/>
+              <w>mölqhu</w></mentioned>, <mentioned xml:lang="inh"><lang/>
+              <w>melqhæ</w></mentioned>
             <gloss><q>ящерица</q></gloss></mentioned>.</etym>
+        <etym xml:lang="en">Cf. <mentioned xml:lang="ka"><lang/>
+            <w>mxulikʼi</w>
+            <gloss><q>lizard</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Чубинов"/>
+                <biblScope>939</biblScope></bibl>)</note></mentioned>, <mentioned xml:lang="ka"
+              ><w>xvlikʼi</w>
+            <gloss><q>lizard</q></gloss></mentioned>, <mentioned xml:lang="ka"><w>muxluxi</w>
+            <gloss><q>caterpillar</q></gloss></mentioned>, <mentioned><mentioned xml:lang="ce"><lang/>
+              <w>mölqhu</w></mentioned>, <mentioned xml:lang="inh"><lang/>
+              <w>melqhæ</w></mentioned>
+            <gloss><q>lizard</q></gloss></mentioned>.</etym>
       </entry>
     </body>
   </text>
