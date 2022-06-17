@@ -1,34 +1,42 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">mægₒyrgūr</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_mæg0yrgūr" xml:lang="os" abv:completeness="incomplete">
+      <entry xml:id="entry_mæg0yrgūr" xml:lang="os" abv:completeness="complete">
         <form type="lemma" xml:lang="os-x-iron"><orth>mægₒyrgūr</orth></form>
         <form xml:lang="os-x-digor" type="dialectal"><orth>mægurgor</orth></form>
         <sense><abv:tr xml:lang="ru">
             <q>нищий</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>beggar</q>
           </abv:tr></sense>
         <re>
           <form type="lemma"><orth><oRef>mægₒyrgūr</oRef> cæwyn</orth></form>
           <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">просить милостыню</q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">beg</q>
             </tr></sense>
         </re>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
@@ -38,6 +46,9 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">в лохмотьях, голый бродит нищий</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">in rags, naked goes around the beggar</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Gurdž._Wadž."/>
               <biblScope>7</biblScope></bibl>
           </example>
@@ -45,6 +56,11 @@
         <etym xml:lang="ru">Буквально <gloss><q rendition="#rend_doublequotes">просящий</q></gloss>
             (<w>gur</w> из <w>kūr</w>, см. <ref type="xr" target="#entry_kūryn"><w
               xml:lang="os-x-iron">kūryn</w><w xml:lang="os-x-digor">korun</w></ref>) по бедности
+            (<ref type="xr" target="#entry_mæg0yr"/>)".<lb/><bibl><ref type="bibl" target="#ref_ГО"/>
+            <biblScope>§ 201<hi rendition="#rend_subscript">II 1</hi></biblScope></bibl>.</etym>
+        <etym xml:lang="en">Literally <gloss><q rendition="#rend_doublequotes">asker</q></gloss>
+            (<w>gur</w> from <w>kūr</w>, see <ref type="xr" target="#entry_kūryn"><w
+              xml:lang="os-x-iron">kūryn</w><w xml:lang="os-x-digor">korun</w></ref>) due to poverty
             (<ref type="xr" target="#entry_mæg0yr"/>)".<lb/><bibl><ref type="bibl" target="#ref_ГО"/>
             <biblScope>§ 201<hi rendition="#rend_subscript">II 1</hi></biblScope></bibl>.</etym>
       </entry>
