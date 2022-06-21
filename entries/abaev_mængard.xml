@@ -1,38 +1,51 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">mængard</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_mængard" xml:lang="os" abv:completeness="incomplete">
+      <entry xml:id="entry_mængard" xml:lang="os" abv:completeness="complete">
         <form type="lemma"><orth>mængard</orth></form>
         <sense><sense><abv:tr xml:lang="ru">
               <q>клятвопреступник</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>oathbreaker</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>вероломный</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>treacherous</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>бесчестный</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>dishonourable</q>
             </abv:tr></sense></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">fælyvd, <oRef/> læg wyd Bibo</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">лживый, бесчестный человек был Бибо</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Bibo was a lying, treacherous man</q>
             </tr>
           </example>
           <example>
@@ -42,15 +55,24 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">клятвопреступник — пропащий человек и в этом
                 мире и за гробом; не преступи своей клятвы</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">an oathbreaker is doomed both in this world and
+                in the afterlife; do not break your oath</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сека"/>
               <biblScope>40</biblScope></bibl>
           </example>
           <example>
-            <quote xmlns="http://www.tei-c.org/ns/1.0">nysxojy rynʒæj mægₒyr Gujmany
-                <oRef>mængard</oRef> Qasbolat</quote>
+            <quote xmlns="http://www.tei-c.org/ns/1.0"
+              ><?oxy_comment_start author="oleg" timestamp="20220622T000259+0300" comment="NB: VOS order"?>nysxojy<?oxy_comment_end?>
+              rynʒæj mægₒyr Gujmany <oRef>mængard</oRef> Qasbolat</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">сталкивает с кручи бедного Гуймана вероломный
                 Касболат</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the treacherous Qasbolat pushes poor Guyman
+                from the precipice</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Niger"/>
               <biblScope>177</biblScope></bibl>
@@ -63,12 +85,19 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">многомощный — гроза клятвопреступников — белый
                 Элиа</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the most potent white Elia, the bane of
+                oathbreakers</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ОЭп."/>
               <biblScope>59<hi rendition="#rend_subscript">200</hi></biblScope></bibl>
           </example>
         </exampleGrp>
         <etym xml:lang="ru">См. <ref type="xr" target="#entry_mæng"/> и <ref type="xr"
             target="#entry_ard"/>. Ср. по образованию <mentioned xml:lang="de"><lang/>
+            <w>Mein-eid</w></mentioned>.</etym>
+        <etym xml:lang="en">See <ref type="xr" target="#entry_mæng"/> and <ref type="xr"
+            target="#entry_ard"/>. Cf. in derivation <mentioned xml:lang="de"><lang/>
             <w>Mein-eid</w></mentioned>.</etym>
       </entry>
     </body>
