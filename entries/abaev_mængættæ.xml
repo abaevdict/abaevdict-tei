@@ -1,31 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">mængættæ</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_mængættæ" xml:lang="os-x-digor" abv:completeness="incomplete">
+      <entry xml:id="entry_mængættæ" xml:lang="os-x-digor" abv:completeness="complete">
         <form type="lemma"><orth>mængættæ</orth></form>
         <usg><lang/></usg>
         <sense><sense><abv:tr xml:lang="ru">
               <q>ложь</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>a lie</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>неправда</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>falsehood</q>
             </abv:tr></sense></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
@@ -33,6 +41,10 @@
                 <oRef>mængættæ</oRef> ʒoris!</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">алдар крикнул на него: ты лжешь!</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the <foreign><ref type="xr"
+                    target="#entry_ældar">ældar</ref></foreign> shouted at him: you are lying!</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Диг._сказ."/>
               <biblScope>33</biblScope></bibl>
@@ -44,8 +56,13 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">насколько воистину ложь то, что я говорю,
                 настолько воистину ты исцелись от своих болезней</q>
             </tr>
-            <bibl xmlns="http://www.tei-c.org/ns/1.0"><note type="comment" xml:lang="ru">из заговора
-                против дурного глаза;</note>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">as much as truly is a falsehood that which I am
+                saying, that much be cured from your diseases</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><note xml:lang="ru" type="comment">из заговора
+                против дурного глаза;</note><note xml:lang="en" type="comment">from a charm against
+                the evil eye;</note>
               <ref type="bibl" target="#ref_СОПам."/>
               <biblScope>II 173</biblScope></bibl>
           </example>
@@ -56,6 +73,14 @@
             ><m>-on</m></mentioned>: <mentioned xml:lang="os"><w type="rec">mængon</w></mentioned> :
             <w type="rec">mængænttæ</w> → <oRef/>, ср. по образованию <ref type="xr"
             target="#entry_kæron"><w>kæron</w> : <w>kæræ(n)ttæ</w></ref> и т. п. (<bibl><ref
+              type="bibl" target="#ref_ОЯФ_I"/>
+            <biblScope>381</biblScope></bibl>).</etym>
+        <etym xml:lang="en">Lexicalized pl. from the currently nonexistent <mentioned xml:lang="os"
+              ><w type="rec">mængon</w></mentioned>, derived from <ref type="xr"
+            target="#entry_mæng"/> с with the regular suffix <mentioned xml:lang="os"
+            ><m>-on</m></mentioned>: <mentioned xml:lang="os"><w type="rec">mængon</w></mentioned> :
+            <w type="rec">mængænttæ</w> → <oRef/>, cf. by derivation <ref type="xr"
+            target="#entry_kæron"><w>kæron</w> : <w>kæræ(n)ttæ</w></ref> etc. (<bibl><ref
               type="bibl" target="#ref_ОЯФ_I"/>
             <biblScope>381</biblScope></bibl>).</etym>
       </entry>
