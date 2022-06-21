@@ -1,31 +1,41 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">mæntæg</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_mæntæg" xml:lang="os" abv:completeness="incomplete">
+      <entry xml:id="entry_mæntæg" xml:lang="os" abv:completeness="complete">
         <form type="lemma" xml:lang="os-x-iron"><orth>mæntæg</orth></form>
         <form xml:lang="os-x-digor" type="dialectal"><orth>mont</orth><form type="variant"
               ><orth>montizænkæ</orth></form></form>
         <sense><sense><abv:tr xml:lang="ru">
               <q>лопух съедобный</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>edible burdock</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
+              <q>Lappula echinata</q>
+              <note xml:lang="ru" type="comment"> (?)</note>
+              <note xml:lang="en" type="comment"> (?)</note>
+            </abv:tr><abv:tr xml:lang="en">
               <q>Lappula echinata</q>
               <note type="comment"> (?)</note>
             </abv:tr></sense></sense>
@@ -37,6 +47,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">ранней весной я выкапывал
                 <oRef>mont</oRef>’ы</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">in early spring I digged out
+                <oRef>mont</oRef>s</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Qazb."/>
               <biblScope>31</biblScope></bibl>
@@ -50,6 +64,15 @@
             <w>μίνθη</w></mentioned>, <mentioned xml:lang="la"><lang/>
             <w>menta</w>
             <gloss><q>мята</q></gloss></mentioned> (см. <ref type="xr" target="#entry_bitʼna"
+          />).</etym>
+        <etym xml:lang="en">Cf <mentioned><mentioned xml:lang="krc-x-balkar"><lang/>
+              <w>mant</w></mentioned>, <mentioned xml:lang="sva"><lang/>
+              <w>mant</w></mentioned>
+            <gloss>name of an edible plant</gloss></mentioned>. Perhaps an ancient word from West
+          Asia that is reflected in <mentioned xml:lang="grc"><lang/>
+            <w>μίνθη</w></mentioned>, <mentioned xml:lang="la"><lang/>
+            <w>menta</w>
+            <gloss><q>mint</q></gloss></mentioned> (see <ref type="xr" target="#entry_bitʼna"
           />).</etym>
       </entry>
     </body>
