@@ -1,42 +1,55 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">mæ(q)qæl</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_mæ6q9qæl" xml:lang="os" abv:completeness="incomplete">
+      <entry xml:id="entry_mæ6q9qæl" xml:lang="os" abv:completeness="complete">
         <form type="lemma"><orth>mæ(q)qæl</orth></form>
         <sense><abv:tr xml:lang="ru">
             <q>ингуши</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>the Ingush people</q>
           </abv:tr></sense>
         <re>
           <form type="lemma"><orth>mæqqælon</orth></form>
           <sense><sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
                 <q xmlns="http://www.tei-c.org/ns/1.0">ингуш</q>
+              </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+                <q xmlns="http://www.tei-c.org/ns/1.0">an Ingush</q>
               </tr></sense><sense><abv:tr xml:lang="ru">
                 <q>ингушский</q>
+              </abv:tr><abv:tr xml:lang="en">
+                <q>Ingush (adj.)</q>
               </abv:tr></sense></sense>
         </re>
-        <note type="comment">; син. <ref type="xr" target="#entry_qulǧa"/></note>
+        <note xml:lang="ru" type="comment">; син. <ref type="xr" target="#entry_qulǧa"/></note>
+        <note xml:lang="en" type="comment">; syn. <ref type="xr" target="#entry_qulǧa"/></note>
         <re>
           <form type="lemma"><orth>Mæqqæl-don</orth></form>
           <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">река Армхи в Ингушетии</q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the river Armkhi in Ingushetia</q>
             </tr></sense>
         </re>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
@@ -45,6 +58,9 @@
               cydysty</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">войско ингушей шло им навстречу</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the Ingush army was coming towards them</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Коста"/>
               <biblScope>229</biblScope></bibl>
@@ -56,6 +72,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">много было у него приятелей из кабардинцев,
                 чеченцев, ингушей</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">he had many friends from among the Kabardians,
+                the Chechens, the Ingush</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сека"/>
               <biblScope>103</biblScope></bibl>
           </example>
@@ -66,8 +86,13 @@
               muggægtæ</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">на улице можно было увидеть чеченца, ингуша,
-                осетина, кабардинца, русского, армя­ нина, татарина и (людей) всяких других
+                осетина, кабардинца, русского, армя­нина, татарина и (людей) всяких других
                 народностей</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">on the street one could see a Chechen, an
+                Ingush, an Ossetian, a Kabardian, a Russian, an Armenian, a Tatar and (people of)
+                various other nations</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_MD"/>
               <biblScope>1949 II 43</biblScope></bibl>
@@ -78,6 +103,10 @@
                 <oRef>Mæqælmæ</oRef></quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">крали лошадей и угоняли их в Ингушетию</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">they stole horses and drove them to
+                Ingushetia</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_SD"/>
               <biblScope>193<hi rendition="#rend_subscript">2</hi></biblScope></bibl>
@@ -92,11 +121,15 @@
             <w>mæqyl</w>
             <gloss><q>кобчик</q></gloss>, <gloss><q>стрепет</q></gloss>,
               <gloss><q>коршун</q></gloss></ref>. Этнонимы такого типа уже отмечались на Кавказе,
-          дидойцы в Дагестане называют себя <mentioned xml:lang="ddo"><w>c̣ezi</w>
-            <note type="comment">от <mentioned xml:lang="ddo"><w>c̣ej</w>
+          дидойцы в Дагестане называют себя <mentioned xml:lang="ddo"><w>c̣ezi</w><note
+              xml:lang="ru" type="comment"> от <mentioned xml:lang="ddo"><w>c̣ej</w>
+                <gloss><q>орел</q></gloss></mentioned></note><note xml:lang="en" type="comment">от
+                <mentioned xml:lang="ddo"><w>c̣ej</w>
                 <gloss><q>орел</q></gloss></mentioned></note></mentioned>, аварцы называют их
             <mentioned xml:lang="ae"><w>c̣unta</w>
-            <note type="comment">от <mentioned xml:lang="ae"><w>c̣un</w>
+            <note xml:lang="ru" type="comment">от <mentioned xml:lang="ae"><w>c̣un</w>
+                <gloss>id.</gloss></mentioned></note><note xml:lang="en" type="comment">от
+                <mentioned xml:lang="ae"><w>c̣un</w>
                 <gloss>id.</gloss></mentioned></note>
             <note type="bibl">(<bibl><ref type="bibl" target="#ref_СМК"/>
                 <biblScope>XL 3 22, 104</biblScope></bibl>)</note></mentioned>; старейший аул
@@ -109,7 +142,9 @@
             <gloss>id.</gloss></mentioned>); название <mentioned xml:lang="ru"
             ><w>черкес</w></mentioned> тоже следует связать с <mentioned xml:lang="ira"><lang/>
             <w type="rec">karkas</w>, <w type="rec">čarkas</w>
-            <note type="comment">(<ref type="xr" target="#entry_cærgæs" xml:lang="os"><lang/>
+            <note xml:lang="ru" type="comment">(<ref type="xr" target="#entry_cærgæs" xml:lang="os"><lang/>
+                <w>cærgæs</w></ref>)</note><note xml:lang="en" type="comment">(<ref type="xr"
+                target="#entry_cærgæs" xml:lang="os"><lang/>
                 <w>cærgæs</w></ref>)</note> id</mentioned>. См. также <bibl><author>von
               Kienle</author> (<title>Tier-Völkernamen bei indogermanischen Stämmen. Wörter u.
               Sachen</title>, <date>1932</date>
@@ -117,6 +152,51 @@
               type="j">Zeitschrift fiir Ortsnamenforschung</title>
             <biblScope>1930 VI 76—81</biblScope>)</bibl>. — См. <ref type="xr"
             target="#entry_mæq6q9yl"/>.<lb/><bibl><author>Генко</author>, <ref type="bibl"
+              target="#ref_ЗКВ"/>
+            <biblScope>V 707—710</biblScope></bibl>.</etym>
+        <etym xml:lang="en">Should be assigned to zoomorphic ethnonyms; cf. <mentioned
+            xml:lang="inh"><lang/>
+            <w>maqqæl</w>
+            <gloss>name of a predatory bird</gloss></mentioned>, <mentioned xml:lang="inh"><lang/>
+            <w>maqqæl</w>
+            <gloss><q>kite (bird)</q></gloss></mentioned>, <ref type="xr" target="#entry_mæq6q9yl"
+            xml:lang="os"><lang/>
+            <w>mæqyl</w>
+            <gloss><q>red-footed falcon</q></gloss>, <gloss><q>little bustard</q></gloss>,
+                <gloss><q>kite</q></gloss></ref>. Ethnonyms of this type have already been attested
+          in the Caucasus, the Dido people in the Caucasus call themselves <mentioned xml:lang="ddo"
+              ><w>c̣ezi</w>
+            <note xml:lang="ru" type="comment">от <mentioned xml:lang="ddo"><w>c̣ej</w>
+                <gloss><q>орел</q></gloss></mentioned></note><note xml:lang="en" type="comment">from
+                <mentioned xml:lang="ddo"><w>c̣ej</w>
+                <gloss><q>eagle</q></gloss></mentioned></note></mentioned>, Avars call them
+            <mentioned xml:lang="ae"><w>c̣unta</w>
+            <note xml:lang="ru" type="comment">от <mentioned xml:lang="ae"><w>c̣un</w>
+                <gloss>id.</gloss></mentioned></note><note xml:lang="en" type="comment"> from
+                <mentioned xml:lang="ae"><w>c̣un</w>
+                <gloss>id.</gloss></mentioned></note>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_СМК"/>
+                <biblScope>XL 3 22, 104</biblScope></bibl>)</note></mentioned>; the oldest town of
+          the Ingush tribe Feappii  is called <mentioned xml:lang="inh"
+              ><w><?oxy_comment_start author="oleg" timestamp="20220622T010653+0300" comment="check if I used the macron correctly"?>Ǟ<?oxy_comment_end?>rzij</w></mentioned>,
+          which also means <gloss><q>eagle</q></gloss> (cf. <mentioned><mentioned xml:lang="ae"><lang/>
+              <w>ərezifya-</w></mentioned>, <mentioned xml:lang="xcl"><lang/>
+              <w>arcʼiv</w></mentioned>, <mentioned xml:lang="ka"><lang/>
+              <w>arcʼivi</w></mentioned>
+            <gloss>id.</gloss></mentioned>); the name <q rendition="#rend_doublequotes"
+            >Circassian</q> (Russian <mentioned xml:lang="ru"><w>черкес</w></mentioned>) should also
+          be connected to <mentioned xml:lang="ira"><lang/>
+            <w type="rec">karkas</w>, <w type="rec">čarkas</w>
+            <note xml:lang="ru" type="comment">(<ref type="xr" target="#entry_cærgæs" xml:lang="os"><lang/>
+                <w>cærgæs</w></ref>)</note><note xml:lang="en" type="comment">(<ref type="xr"
+                target="#entry_cærgæs" xml:lang="os"><lang/>
+                <w>cærgæs</w></ref>)</note> id</mentioned>. See also <bibl><author>von
+              Kienle</author> (<title>Tier-Völkernamen bei indogermanischen Stämmen. Wörter u.
+              Sachen</title>, <date>1932</date>
+            <biblScope>XIV 39 ff.</biblScope>)</bibl> and <bibl><author>Loewenthal</author> (<title
+              type="j">Zeitschrift fiir Ortsnamenforschung</title>
+            <biblScope>1930 VI 76—81</biblScope>)</bibl>. — See <ref type="xr"
+            target="#entry_mæq6q9yl"/>.<lb/><bibl><author>Genko</author>, <ref type="bibl"
               target="#ref_ЗКВ"/>
             <biblScope>V 707—710</biblScope></bibl>.</etym>
       </entry>
