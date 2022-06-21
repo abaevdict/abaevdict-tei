@@ -1,30 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">mænæw</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_mænæw" xml:lang="os" abv:completeness="incomplete">
+      <entry xml:id="entry_mænæw" xml:lang="os" abv:completeness="complete">
         <form type="lemma" xml:lang="os-x-iron"><orth>mænæw</orth></form>
         <form xml:lang="os-x-digor" type="dialectal"><orth>mænæwæ</orth></form>
         <sense><sense><abv:tr xml:lang="ru">
               <q>пшеница</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>wheat</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
+              <q>Triticum</q>
+            </abv:tr><abv:tr xml:lang="en">
               <q>Triticum</q>
             </abv:tr></sense></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
@@ -35,14 +43,22 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">из пшеницы (растущей) на южном склоне будут
                 тебе приготовлены (жертвенные пироги) <ref type="xr" target="#entry_ḱʼīrī"/></q>
             </tr>
-            <bibl xmlns="http://www.tei-c.org/ns/1.0"><note type="comment">из гимна богу Аларды;
-                </note><ref type="bibl" target="#src_ОЭ"/>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">from wheat (that grows) on the southern slope
+                (sacrificial pies) <ref type="xr" target="#entry_ḱʼīrī"/> will be made for you</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><note xml:lang="ru" type="comment">из гимна
+                богу Аларды; </note><note xml:lang="en" type="comment">from a hymn to the deity
+                Alardy; </note><ref type="bibl" target="#src_ОЭ"/>
               <biblScope>102</biblScope></bibl>
           </example>
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">wīʒyn bydyrty <oRef>mænæw</oRef></quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">я клюю на полях пшеницу</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">I peck wheat on the fields</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Коста"/>
               <biblScope>121</biblScope></bibl>
@@ -52,6 +68,9 @@
                 <oRef>mænæwæj</oRef></quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">наши житницы будут стоять полные пшеницы</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">our granaries will stand full of wheat</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Коста"/>
               <biblScope>127</biblScope></bibl>
@@ -63,6 +82,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">разложили на столах хлебы, приготовленные из
                 чистой пшеницы</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">they put out on the tables breads made from
+                pure wheat</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Čerm."/>
               <biblScope>150</biblScope></bibl>
           </example>
@@ -70,6 +93,9 @@
             <quote xmlns="http://www.tei-c.org/ns/1.0">…mænæwaw tawyn</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">…сеять, как пшеницу</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">…sow like wheat</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Лука"/>
               <biblScope><hi rendition="#rend_italic">22</hi> 31</biblScope></bibl>
@@ -82,6 +108,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">давали ему кто деньги, кто пшеницу, кто
                 кукурузу</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">they gave him (various things:) some people
+                money, some people wheat, some people maize</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Iræf"/>
               <biblScope>116</biblScope></bibl>
           </example>
@@ -92,32 +122,83 @@
             type="xr" target="#entry_mæn"><w>mæn</w>, <w>mæ</w>
             <gloss><q>мой</q></gloss></ref>, для второй <ref type="xr" target="#entry_jæw"
               ><w>jæw</w>
-            <gloss>в современном языке <q>просо</q></gloss>, <gloss>в древности— вообще
+            <gloss>в современном языке <q>просо</q></gloss>, <gloss>в древности — вообще
               <q>злак</q></gloss>
-            <note type="comment">(<mentioned xml:lang="x-oldirn"><lang/>
+            <note xml:lang="ru" type="comment">(<mentioned xml:lang="x-oldirn"><lang/>
+                <w type="rec">yava-</w></mentioned>)</note><note xml:lang="en" type="comment"
+                >(<mentioned xml:lang="x-oldirn"><lang/>
                 <w type="rec">yava-</w></mentioned>)</note></ref>. Сращение притяжательного
           местоимения с названием злака напоминает — из религиозной сферы — такие образования, как
             <mentioned xml:lang="it"><w>Ma-donna</w></mentioned>, <mentioned xml:lang="fr"
               ><w>Notre-Dame</w></mentioned>, и является, по-видимому, отголоском древнего культа
-          съедобных растений.<note type="footnote"><quote><q rendition="#rend_doublequotes">Die
-                Arier betrachteten die Nahrungsmittel, welche ihnen den Körper erhielten und ihnen
-                Kraft, Mut und Begeisterung spendeten, als bewusst handelnde höhere, ihnen
-                wohltätige Mächte. . . Auch die (Nahrungs-) Pflanzen sind ja im Veda wie im Awesta
-                Götter</q> (<bibl><author>Hertel</author>. <title>Indo-Iraniscbe Quellen und
+          съедобных растений.<note xml:lang="ru" type="footnote"><quote><q
+                rendition="#rend_doublequotes">Die Arier betrachteten die Nahrungsmittel, welche
+                ihnen den Körper erhielten und ihnen Kraft, Mut und Begeisterung spendeten, als
+                bewusst handelnde höhere, ihnen wohltätige Mächte. . . Auch die (Nahrungs-) Pflanzen
+                sind ja im Veda wie im Awesta Götter</q> (<bibl><author>Hertel</author>.
+                  <title>Indo-Iraniscbe Quellen und Forschungen</title>
+                <biblScope>1925 VI 68</biblScope></bibl>)</quote>.</note><note xml:lang="en"
+            type="footnote"><quote><q rendition="#rend_doublequotes">Die Arier betrachteten die
+                Nahrungsmittel, welche ihnen den Körper erhielten und ihnen Kraft, Mut und
+                Begeisterung spendeten, als bewusst handelnde höhere, ihnen wohltätige Mächte. . .
+                Auch die (Nahrungs-) Pflanzen sind ja im Veda wie im Awesta Götter</q>
+                  (<bibl><author>Hertel</author>. <title>Indo-Iraniscbe Quellen und
                   Forschungen</title>
                 <biblScope>1925 VI 68</biblScope></bibl>)</quote>.</note> Наращение выявляется в
           ряде названий съедобных растений; см. <ref type="xr" target="#entry_mænærǧ"><w>mænærǧ</w>
             <gloss><q>малина</q></gloss></ref>, а также <ref type="xr" target="#entry_mæzæræw"/>,
             <ref type="xr" target="#entry_mætatyk"/>. На языке алан (ясов), живших в Венгрии, слово
           засвидетельствовано для XV в. в форме <mentioned xml:lang="ysc"><w>manauona</w>
-            <note type="comment">(<bibl><ref type="bibl" target="#ref_Немет"/>
+            <note xml:lang="ru" type="comment">(<bibl><ref type="bibl" target="#ref_Немет"/>
+                <biblScope>8, 10, 18</biblScope></bibl>)</note><note xml:lang="en" type="comment"
+                  >(<bibl><ref type="bibl" target="#ref_Немет"/>
                 <biblScope>8, 10, 18</biblScope></bibl>)</note></mentioned>. — К ос. <oRef/>
           примыкает <mentioned xml:lang="sva"><lang/>
             <w>manāš</w>
             <gloss><q>рожь</q></gloss>
-            <note type="comment">(<m>-š</m> — сванский формант)</note></mentioned>.<lb/><bibl><ref
-              type="bibl" target="#ref_ОЯФ_I"/>
+            <note xml:lang="ru" type="comment">(<m>-š</m> — сванский формант)</note><note
+              xml:lang="en" type="comment">(<m>-š</m> — сванский
+              формант)</note></mentioned>.<lb/><bibl><ref type="bibl" target="#ref_ОЯФ_I"/>
             <biblScope>59, 296, 587 сл.</biblScope></bibl></etym>
+        <etym xml:lang="en">Probably from <phr><ref type="xr" target="#entry_mæn">mæn</ref>-<ref
+              type="xr" target="#entry_jæw">jæw</ref></phr> lit. <gloss><q
+              rendition="#rend_doublequotes">my grain</q></gloss>; cf. for the former part <ref
+            type="xr" target="#entry_mæn"><w>mæn</w>, <w>mæ</w>
+            <gloss><q>my</q></gloss></ref>, for the latter <ref type="xr" target="#entry_jæw"
+              ><w>jæw</w>
+            <gloss>in the modern language <q>millet</q></gloss>, <gloss>originally <q>grain</q> in
+              general</gloss>
+            <note xml:lang="ru" type="comment">(<mentioned xml:lang="x-oldirn"><lang/>
+                <w type="rec">yava-</w></mentioned>)</note><note xml:lang="en" type="comment"
+                >(<mentioned xml:lang="x-oldirn"><lang/>
+                <w type="rec">yava-</w></mentioned>)</note></ref>. The merger of the possessive
+          pronoun with the name of a grain reminds one of such religious derivations as <mentioned
+            xml:lang="it"><w>Ma-donna</w></mentioned>, <mentioned xml:lang="fr"
+            ><w>Notre-Dame</w></mentioned> and is probably an echo of an earlier cult of edible
+            plants.<note type="footnote"><quote><q rendition="#rend_doublequotes">Die Arier
+                betrachteten die Nahrungsmittel, welche ihnen den Körper erhielten und ihnen Kraft,
+                Mut und Begeisterung spendeten, als bewusst handelnde höhere, ihnen wohltätige
+                Mächte. . . Auch die (Nahrungs-) Pflanzen sind ja im Veda wie im Awesta Götter</q>
+                  (<bibl><author>Hertel</author>. <title>Indo-Iraniscbe Quellen und
+                  Forschungen</title>
+                <biblScope>1925 VI 68</biblScope></bibl>)</quote>.</note> The same augment is seen
+          in a number of names of edible plants, see <ref type="xr" target="#entry_mænærǧ"
+              ><w>mænærǧ</w>
+            <gloss><q>raspberry</q></gloss></ref>, also <ref type="xr" target="#entry_mæzæræw"/>,
+            <ref type="xr" target="#entry_mætatyk"/>. In the language of the Alans who resided in
+          Hungary (Jasz people), the word is attested in the 15th century in the form <mentioned
+            xml:lang="ysc"><w>manauona</w>
+            <note xml:lang="ru" type="comment">(<bibl><ref type="bibl" target="#ref_Немет"/>
+                <biblScope>8, 10, 18</biblScope></bibl>)</note><note xml:lang="en" type="comment"
+                  >(<bibl><ref type="bibl" target="#ref_Немет"/>
+                <biblScope>8, 10, 18</biblScope></bibl>)</note></mentioned>. — Ossetic <oRef/>
+          resembles <mentioned xml:lang="sva"><lang/>
+            <w>manāš</w>
+            <gloss><q>rye</q></gloss>
+            <note xml:lang="ru" type="comment">(<m>-š</m> — сванский формант)</note><note
+              xml:lang="en" type="comment">(<m>-š</m> is a Svan
+              suffix)</note></mentioned>.<lb/><bibl><ref type="bibl" target="#ref_ОЯФ_I"/>
+            <biblScope>59, 296, 587 ff.</biblScope></bibl></etym>
       </entry>
     </body>
   </text>
