@@ -1,29 +1,35 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">mærd</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_mærd" xml:lang="os" abv:completeness="incomplete">
+      <entry xml:id="entry_mærd" xml:lang="os" abv:completeness="english-questions">
         <form type="lemma" xml:lang="os-x-iron"><orth>mærd</orth></form>
         <form xml:lang="os-x-digor" type="dialectal"><orth>mærdæ</orth></form>
         <sense><abv:tr xml:lang="ru">
             <q>смерть</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>death</q>
           </abv:tr></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
@@ -32,8 +38,12 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">чтобы мне поплакать по поводу твоей смерти!
               </q>
             </tr>
-            <note type="comment" xmlns="http://www.tei-c.org/ns/1.0" xml:lang="ru">
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">may I cry over your death! </q>
+            </tr>
+            <note xmlns="http://www.tei-c.org/ns/1.0" xml:lang="ru" type="comment">
               (проклятие)</note>
+            <note xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" type="comment"> (a curse)</note>
           </example>
           <example xml:lang="os-x-digor">
             <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
@@ -42,21 +52,34 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">пусть придут к тебе по поводу твоей смерти!</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">may (people) come to you on the occasion of
+                your death!</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сл."/></bibl>
           </example>
         </exampleGrp>
         <re>
-          <form type="lemma"><orth>mærdy rox</orth></form>
+          <form type="lemma"><orth><oRef>mærdy</oRef> rox</orth></form>
           <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">провал памяти</q>
-              <note type="comment" xmlns="http://www.tei-c.org/ns/1.0"> (<q
+              <note xmlns="http://www.tei-c.org/ns/1.0" xml:lang="ru" type="comment"> (<q
                   rendition="#rend_doublequotes">намертво забытое</q>)</note>
+              <note xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" type="comment"> (<q
+                  rendition="#rend_doublequotes">намертво забытое</q>)</note>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">memory lapse</q>
+              <note xmlns="http://www.tei-c.org/ns/1.0" type="comment"> (<q
+                  rendition="#rend_doublequotes">deathly forgotten</q>)</note>
             </tr></sense>
           <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
             <example>
               <quote xmlns="http://www.tei-c.org/ns/1.0"><oRef>mærdy rox</oRef> mæ fæcī</quote>
               <tr xml:lang="ru">
                 <q xmlns="http://www.tei-c.org/ns/1.0">я совершенно забыл об этом</q>
+              </tr>
+              <tr xml:lang="en">
+                <q xmlns="http://www.tei-c.org/ns/1.0">I have completely forgotten about it</q>
               </tr>
             </example>
           </exampleGrp>
@@ -69,6 +92,14 @@
             <gloss><q>длина</q></gloss></ref>, <ref type="xr" target="#entry_kalm"><w>kalm</w>
             <gloss><q>червь</q></gloss></ref> — <ref type="xr" target="#entry_kælm"><w>kælm</w>
             <gloss><q>червивость</q></gloss></ref>.</etym>
+        <etym xml:lang="en">From <ref type="xr" target="#entry_mard"><w>mard</w>
+            <gloss><q>dead</q></gloss></ref> etc. with vowel weakening. The weakening <c>a</c> →
+            <c>æ</c> when deriving abstract meanings is also observed in certain other cases: <ref
+            type="xr" target="#entry_darǧ"><w>darǧ</w>
+            <gloss><q>long</q></gloss></ref> — <ref type="xr" target="#entry_dærǧ"><w>dærǧ</w>
+            <gloss><q>length</q></gloss></ref>, <ref type="xr" target="#entry_kalm"><w>kalm</w>
+            <gloss><q>worm</q></gloss></ref> — <ref type="xr" target="#entry_kælm"><w>kælm</w>
+            <gloss><q>worm-eatenness</q></gloss></ref>.</etym>
       </entry>
     </body>
   </text>
