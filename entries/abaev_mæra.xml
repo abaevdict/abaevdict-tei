@@ -1,35 +1,116 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">mæra</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_mæra" xml:lang="os" abv:completeness="incomplete">
-        <form type="lemma"><orth>mæra</orth></form>
+      <entry xml:id="entry_mæra" xml:lang="os" abv:completeness="complete">
+        <form type="lemma" xml:lang="os-x-iron"><orth>mæra</orth></form>
+        <form xml:lang="os-x-digor" type="dialectal"><orth>mura</orth><form type="variant"
+              ><orth>pura</orth></form></form>
         <sense><abv:tr xml:lang="ru">
-            <q/>
+            <q>дупло</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>tree hollow</q>
           </abv:tr></sense>
-        <abv:exampleGrp>
-          <abv:example>
-            <quote/>
-          </abv:example>
-        </abv:exampleGrp>
-        <etym xml:lang="ru"/>
+        <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">Muldar æncad ærbadt sæ kæron ystyr
+                <?oxy_comment_start author="oleg" timestamp="20220622T195213+0300" comment="NB: является прилагательным"?><oRef>mæra</oRef>
+              bælasy<?oxy_comment_end?> cūr</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Мулдар тихо сел с краю возле большого
+                дуплистого дерева</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Mulda quietly sat down at the edge beside a
+                large hollow tree</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Niger"/>
+              <biblScope>123</biblScope></bibl>
+          </example>
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">ḱyzg —
+              <?oxy_comment_start author="oleg" timestamp="20220622T174241+0300" comment="NB: интересная вставака: парентетик или нарушение свойств сочинения?"?>swadony
+              cūr <oRef>mæra</oRef> bælas wyd<?oxy_comment_end?> — æmæ <oRef>mærajy</oRef>
+              babyrydī</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">у родника было дуплистое дерево, и девочка
+                влезла в дупло</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">by the spring there was a hollow tree, and the
+                girl crawled into the hollow</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ИАА"/>
+              <biblScope>II 112</biblScope></bibl>
+          </example>
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0"><oRef>mærajy</oRef> wallon je stong
+              æfsady</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">в дупле червь утоляет голод</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">in the hollow a worm a worm is quenching its
+                hunger</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Илас"/>
+              <biblScope>42</biblScope></bibl>
+          </example>
+          <example xml:lang="os-x-digor">
+            <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">æxsærsæddæg kæʒos kænuj æxecæn bælasi
+                <oRef>mura</oRef></quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">белка убирает для себя дупло дерева</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the squirrel is clearing for itself the tree
+                hollow</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_FS"/>
+              <biblScope>I 17</biblScope></bibl>
+          </example>
+        </exampleGrp>
+        <etym xml:lang="ru">Ср. <mentioned xml:lang="ce" extralang="inh"><lang/>
+            <w>mur</w>
+            <gloss><q>гнилое дерево</q></gloss></mentioned>, <mentioned xml:lang="krc-x-balkar"><lang/>
+            <w>pura</w>, <w>fura</w>
+            <gloss><q>дупло</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_ОЯФ_I"/>
+                <biblScope>277</biblScope></bibl>)</note></mentioned>. Вряд ли сюда <mentioned
+            xml:lang="ka"><lang/>
+            <w>mori</w>
+            <gloss><q>бревно</q></gloss></mentioned>.</etym>
+        <etym xml:lang="en">Cf. <mentioned xml:lang="ce" extralang="inh"><lang/>
+            <w>mur</w>
+            <gloss><q>rotten tree</q></gloss></mentioned>, <mentioned xml:lang="krc-x-balkar"><lang/>
+            <w>pura</w>, <w>fura</w>
+            <gloss><q>hollow</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_ОЯФ_I"/>
+                <biblScope>277</biblScope></bibl>)</note></mentioned>. <mentioned xml:lang="ka"><lang/>
+            <w>mori</w>
+            <gloss><q>log</q></gloss></mentioned> is probably unrelated.</etym>
       </entry>
     </body>
   </text>
