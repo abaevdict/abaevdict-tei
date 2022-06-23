@@ -1,35 +1,47 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">mærdʒag</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_mærdʒag" xml:lang="os" abv:completeness="incomplete">
+      <entry xml:id="entry_mærdʒag" xml:lang="os" abv:completeness="complete">
         <form type="lemma"><orth>mærdʒag</orth><form type="variant" subtype="parens"
               ><orth>mærccag</orth></form><form type="variant"><orth>mærdʒægtæ</orth></form></form>
         <sense><abv:tr xml:lang="ru">
             <q>платье, предназначенное для покойника</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>clothes made for a deceased person</q>
           </abv:tr></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example xml:lang="ru">
-            <quote xmlns="http://www.tei-c.org/ns/1.0">В Осетии есть обычай заблаговременно шить
-              себе платье, в котором будешь похоронен, так называемое <oRef>mærdzag</oRef>; нередко
-              надевают на себя это платье, собираясь на какое-нибудь опасное предприятие</quote>
+            <quote xmlns="http://www.tei-c.org/ns/1.0"><q rendition="#rend_doublequotes">В Осетии
+                есть обычай заблаговременно шить себе платье, в котором будешь похоронен, так
+                называемое <oRef>mærdzag</oRef>; нередко надевают на себя это платье, собираясь на
+                какое-нибудь опасное предприятие</q></quote>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">In Ossetia there is a custom to sew oneself in
+                advance clothes in which one is to be buried, so-called <oRef>mærdzag</oRef>; often
+                this dress is put on by people going to some dangerous enterprise</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ОЭ"/>
               <biblScope>I 123<hi rendition="#rend_subscript">49</hi></biblScope></bibl>
           </example>
@@ -39,14 +51,23 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">да станет тебе твоя черкеска погребальной
                 одеждой!</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">may your Circassian coat be your funerary
+                clothes!</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><biblScope xml:lang="ru"
-              >проклятие</biblScope></bibl>
+                >проклятие</biblScope><biblScope xml:lang="en">a curse</biblScope></bibl>
           </example>
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">dūr — dæ ingæn, ærtæx — dæ
                 <oRef>mærccag</oRef></quote>
             <tr xml:lang="ru">
-              <q xmlns="http://www.tei-c.org/ns/1.0">dūr — dæ ingæn, ærtæx — dæ mæ</q>
+              <q xmlns="http://www.tei-c.org/ns/1.0">камень — твоя могила, роса — твое погребальное
+                одеяние</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">stone is your grave, dew is your funerary
+                clothes</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Niger"/>
               <biblScope>179</biblScope></bibl>
@@ -59,6 +80,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">твоя погребальная одежда бела, твоя могила
                 светла, твой путь расчищен, твой рот ополощен</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">your funerary clothes are white, your grave is
+                bright, your path is cleared, your mouth is rinsed</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_СОПам."/>
               <biblScope>II 169</biblScope></bibl>
           </example>
@@ -70,12 +95,18 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">о, купите в лавках погребальные одежды на пять
                 покойников!</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">oh, buy in stores funerary clothes for five
+                dead men!</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Bes."/>
               <biblScope>97</biblScope></bibl>
           </example>
           <example>
-            <note type="comment" xmlns="http://www.tei-c.org/ns/1.0">(в одном нартовском сказании
-              Сырдон дразнит смертельно раненого Сослана:) </note>
+            <note xmlns="http://www.tei-c.org/ns/1.0" xml:lang="ru" type="comment">(в одном
+              нартовском сказании Сырдон дразнит смертельно раненого Сослана:) </note>
+            <note xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" type="comment">(in one Nart tale
+              Syrdon is teasing the mortally wounded Soslan:) </note>
             <quote xmlns="http://www.tei-c.org/ns/1.0">wæ mægₒyr dæ bon, Soslan, dæ warzon ærvadæltæ
               cy mī bakodtoj: kalmy xærvæj dyn ḱyryn saræztoj, xæfsy cʼaræj
               <oRef>mærdʒag</oRef></quote>
@@ -83,6 +114,11 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">о бедняга Сослан, как поступили с тобой твои
                 любимые родичи: из змеиной чешуи сделали тебе гроб, из лягушечьей кожи —
                 погребальную одежду</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">o poor Soslan, what have your beloved relatives
+                done to you: from snake skin they made you a coffin; from frog skin, funerary
+                clothes</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ЮОПам."/>
               <biblScope>I 113</biblScope></bibl>
@@ -97,6 +133,16 @@
             <w>merčij</w>
             <gloss><q>саван</q></gloss>
             <note type="bibl">(<bibl><author>Генко</author>, <ref type="bibl" target="#ref_ЗКВ"/>
+                <biblScope>V 720</biblScope></bibl>)</note></mentioned>.</etym>
+        <etym xml:lang="en">See <ref type="xr" target="#entry_mælyn"/>, <ref type="xr"
+            target="#entry_mard"/>, <ref type="xr" target="#entry_mærd"/>, and for the formative cf.
+            <ref type="xr" target="#entry_kældʒag"><w>kældʒag</w> (<w>kælccag</w>)
+                <gloss><q>ruins</q></gloss></ref> from <ref type="xr" target="#entry_kælyn"/> etc.
+              (<bibl><ref type="bibl" target="#ref_ГО"/>
+            <biblScope>§ 177</biblScope></bibl>). From Ossetic comes <mentioned xml:lang="inh"><lang/>
+            <w>merčij</w>
+            <gloss><q>shroud</q></gloss>
+            <note type="bibl">(<bibl><author>Genko</author>, <ref type="bibl" target="#ref_ЗКВ"/>
                 <biblScope>V 720</biblScope></bibl>)</note></mentioned>.</etym>
       </entry>
     </body>
