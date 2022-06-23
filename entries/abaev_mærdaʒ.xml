@@ -1,21 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">mærdaʒ</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
@@ -24,24 +28,28 @@
         <form xml:lang="os-x-digor" type="dialectal"><orth>mærdwaʒæ</orth></form>
         <sense><abv:tr xml:lang="ru">
             <q>обрядовое оплакивание покойника</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>ritual bemoaning over the deceased</q>
           </abv:tr></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example xml:lang="ru">
-            <quote xmlns="http://www.tei-c.org/ns/1.0"><q rendition="#rend_doublequotes">Приехавшие
-                для оплакивания женщины спешиваются поодаль от дома покойника и становятся в ряды по
-                старшинству. Когда доходят до ворот, вопленница (<mentioned xml:lang="os-x-digor"
-                      ><phr><ref type="xr" target="#entry_kæwyn">kæwagæ</ref>
-                    <ref type="xr" target="#entry_ūs">osæ</ref></phr></mentioned>) начинает
-                причитать (<mentioned xml:lang="os-x-digor"
+            <quote xmlns="http://www.tei-c.org/ns/1.0"><q rendition="#rend_doublequotes"
+                xml:lang="en">Women who came for the bemoaning dismount at some distance from the
+                house of the deceased and stand in lines based on seniority. When they reach the
+                gates, the weeper (<mentioned xml:lang="os-x-digor"><phr><ref type="xr"
+                      target="#entry_kæwyn">kæwagæ</ref>
+                    <ref type="xr" target="#entry_ūs">osæ</ref></phr></mentioned>) starts to keen
+                  (<mentioned xml:lang="os-x-digor"
                     ><phr><?oxy_comment_start author="oleg" timestamp="20220623T103501+0300" comment="как будто бы нет в словаре"?>niggarængæ<?oxy_comment_end?>
-                    kænuj</phr></mentioned>); остальные сильно плачут (<phr><ref type="xr"
+                    kænuj</phr></mentioned>); the others weep strongly (<phr><ref type="xr"
                     target="#entry_xækʼ0yrc">xækʼurccægæj</ref>
-                  <ref type="xr" target="#entry_kæwyn">kæwuncæ</ref></phr>). Посреди двора
-                останавливаются, плачут; потом одна начинает (вопль) <q
-                  rendition="#rend_doublequotes"><mentioned xml:lang="os"
-                      ><?oxy_comment_start author="oleg" timestamp="20220623T103657+0300" comment="нет в словаре?"?><w>Dadæj</w><?oxy_comment_end?></mentioned></q>,
-                и, ударяя себя по лбу и по коленям, они по старшинству подходят к (остальным)
-                женщинам, совершающим <oRef>mærdwaʒæ</oRef></q></quote>
+                  <ref type="xr" target="#entry_kæwyn">kæwuncæ</ref></phr>). They stop in the middle
+                of the yard and cry; then one starts (the wail) <q rendition="#rend_doublequotes"
+                    ><mentioned xml:lang="os"
+                      ><?oxy_comment_start author="oleg" timestamp="20220623T103657+0300" comment="нет в словаре?"?><w>Dadæj</w><?oxy_comment_end?></mentioned></q>
+                and, striking themselves on the forehead and on the knees, they approach, in the
+                order of seniority, the (other) womenwho are performing
+              <oRef>mærdwaʒæ</oRef></q></quote>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_СОПам."/>
               <biblScope>II 166</biblScope></bibl>
           </example>
@@ -54,6 +62,11 @@
                 чудовищу в качестве дани; и семь сестер у себя дома устроили <oRef/> и плакали, как
                 по покойнику</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">one of the seven sisters had to go to the
+                monster as tribute; and the seven sisters had a <oRef/> at their home and cried as
+                if over a deceased</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ИАА"/>
               <biblScope>III 69</biblScope></bibl>
           </example>
@@ -63,6 +76,9 @@
               æj</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">сама она в оплакивании искуснейшая</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">she is most skilful in bemoaning</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_СОПам."/>
               <biblScope>II 146</biblScope></bibl>
@@ -75,6 +91,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">мать Борцаевых на <oRef>mærdwaʒæ</oRef> рыдает,
                 терзает щеки</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the mother of the Bortsætæ cries during the
+                  <oRef>mærdwaʒæ</oRef>, scratches her cheeks</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Bes."/>
               <biblScope>97</biblScope></bibl>
           </example>
@@ -83,7 +103,9 @@
             <gloss><q>покойник</q></gloss></ref> и, может быть, <ref type="xr" target="#entry_wac"
               ><w>wacæ</w>, <w>waʒæ</w>
             <gloss><q>слово</q></gloss>
-            <note type="comment">(<mentioned xml:lang="ira"><lang/>
+            <note xml:lang="ru" type="comment">(<mentioned xml:lang="ira"><lang/>
+                <w type="rec">vāč-</w></mentioned>)</note><note xml:lang="en" type="comment"
+                >(<mentioned xml:lang="ira"><lang/>
                 <w type="rec">vāč-</w></mentioned>)</note>, <gloss>буквально <q
                 rendition="#rend_doublequotes">слово о покойнике</q> (или <q
                 rendition="#rend_doublequotes">в честь покойника</q>)</gloss></ref>. Возможно,
@@ -91,6 +113,23 @@
               xml:lang="os-x-iron">-ag</m><m xml:lang="os-x-digor">-agæ</m>, <w
               xml:lang="os-x-digor">-bagæ</w>
             <gloss>в значении <q>место</q></gloss></mentioned>, что в <ref type="xr"
+            target="#entry_k0yrdaʒ"><w xml:lang="os-x-iron">kₒyrdaʒ</w><pc>,</pc>
+            <w xml:lang="os-x-digor">kurdbaʒæ</w></ref>, <ref type="xr" target="#entry_mydaʒ"/>,
+            <ref type="xr" target="#entry_kærdbaʒæ"/>.</etym>
+        <etym xml:lang="en">Compound of <ref type="xr" target="#entry_mard"><w>mard</w>
+            <gloss><q>dead</q></gloss></ref> and, possibly, <ref type="xr" target="#entry_wac"
+              ><w>wacæ</w>, <w>waʒæ</w>
+            <gloss><q>word</q></gloss>
+            <note xml:lang="ru" type="comment">(<mentioned xml:lang="ira"><lang/>
+                <w type="rec">vāč-</w></mentioned>)</note><note xml:lang="en" type="comment"
+                >(<mentioned xml:lang="ira"><lang/>
+                <w type="rec">vāč-</w></mentioned>)</note></ref>, <gloss>lit. <q
+              rendition="#rend_doublequotes">word about the deceased</q> (or <q
+              rendition="#rend_doublequotes">in honour of the deceased</q>)</gloss>. It is possible,
+          however, that the second part contains the same element <mentioned xml:lang="os"><m
+              xml:lang="os-x-iron">-ag</m><m xml:lang="os-x-digor">-agæ</m>, <w
+              xml:lang="os-x-digor">-bagæ</w>
+            <gloss>with the meaning <q>location</q></gloss></mentioned>, as in <ref type="xr"
             target="#entry_k0yrdaʒ"><w xml:lang="os-x-iron">kₒyrdaʒ</w><pc>,</pc>
             <w xml:lang="os-x-digor">kurdbaʒæ</w></ref>, <ref type="xr" target="#entry_mydaʒ"/>,
             <ref type="xr" target="#entry_kærdbaʒæ"/>.</etym>
