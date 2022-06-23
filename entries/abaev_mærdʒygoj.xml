@@ -1,47 +1,59 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">mærdʒygoj</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_mærdʒygoj" xml:lang="os" abv:completeness="incomplete">
+      <entry xml:id="entry_mærdʒygoj" xml:lang="os" abv:completeness="complete">
         <form type="lemma" xml:lang="os-x-iron"><orth>mærdʒygoj</orth></form>
         <form xml:lang="os-x-digor" type="dialectal"><orth>mærdʒogojnæ</orth></form>
         <sense><abv:tr xml:lang="ru">
             <q>хождение (поездка) на похороны, поминки</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>trip to a funeral, commemoration meal</q>
           </abv:tr></sense>
         <re>
           <form type="lemma"><orth><oRef>mærdʒygoj</oRef> cæwyn</orth></form>
           <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">идти (ехать) на похороны</q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">go to funeral</q>
             </tr></sense>
         </re>
         <re>
           <form type="lemma"><orth><oRef>mærdʒygoj</oRef> adæm</orth></form>
           <sense><sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
                 <q xmlns="http://www.tei-c.org/ns/1.0">люди, пришедшие на похороны</q>
+              </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+                <q xmlns="http://www.tei-c.org/ns/1.0">people who came to the funeral</q>
               </tr></sense><sense><abv:tr xml:lang="ru">
                 <q>поминальщики</q>
+              </abv:tr><abv:tr xml:lang="en">
+                <q>grievers</q>
               </abv:tr></sense></sense>
         </re>
-        <note type="comment"> Похороны и поминки, в особенности если умерший пользовался
-          известностью, привлекали большое число людей — не только из ближних, но и отдаленных аулов
-          и ущелий, куда весть о смерти приносили траурные вестники (<ref type="xr"
+        <note xml:lang="ru" type="comment">. Похороны и поминки, в особенности если умерший
+          пользовался известностью, привлекали большое число людей — не только из ближних, но и
+          отдаленных аулов и ущелий, куда весть о смерти приносили траурные вестники (<ref type="xr"
             target="#entry_qærgænæg"/>). Иногда <oRef/> совершался и после похорон. Особенно активно
           участвовали в <oRef/> женщины. Существует народный шуточный рассказ (обработан
           художественно <hi rendition="#rend_smallcaps">Коста</hi>). Косари наткнулись на
@@ -49,12 +61,28 @@
           чьей-либо смерти. Косари так и сделали, и тотчас череп подскочил и покатился по дороге.
           Сомнений не было: череп принадлежал женщине… (<bibl><ref type="bibl" target="#src_Коста"/>
             <biblScope>101—102</biblScope></bibl>)</note>
+        <note xml:lang="en" type="comment">. Funerals and commemoration meals, especially if the
+          deceased had been famous, attracted a large number of people — not only from close, but
+          also from distant towns and gorges, where the news of death was brought by funerary
+          messengers (<ref type="xr" target="#entry_qærgænæg"/>). Sometimes <oRef/> was also
+          performed after the funeral. Especially active participants in <oRef/> were women. There
+          is a facetious folk tale on this topic (literarily rendered by <hi
+            rendition="#rend_smallcaps">Kosta</hi>). Haymakers stumbled upon a human skull. They
+          started arguing on whether it was of a man or a woman. An old man advised to cry out the
+          news of someone’s death. The haymakers did so, and immediately the skull jumped and rolled
+          along the road. There was no doubt: the skull had belonged to a woman… (<bibl><ref
+              type="bibl" target="#src_Коста"/>
+            <biblScope>101—102</biblScope></bibl>)</note>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">ūsæn <oRef>mærdʒygoj</oRef> jæ tyxǵyndær
               mæt</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">для женщины <oRef/> — сильнейшая забота</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">for a woman <oRef/> is her strongest
+                concern</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Коста"/>
               <biblScope>102</biblScope></bibl>
@@ -65,6 +93,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">поднялся тогда аул на <oRef/> к Албеговым</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">then the town rose up for <oRef/> to the
+                Ælbegatæ</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Čerm."/>
               <biblScope>110</biblScope></bibl>
           </example>
@@ -73,6 +105,9 @@
               kænync ḱyrtæ-ḱyrtæj</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">женщины <oRef/> собираются группами</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the women of <oRef/> gather in groups</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Хар._Кадӕг"/>
               <biblScope>85</biblScope></bibl>
@@ -83,6 +118,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">когда ко мне с обрядовым плачем придут
                   <oRef>mærdʒogoj</oRef>…</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">when <oRef>mærdʒogoj</oRef> (people) come to me
+                with a ritual weep…</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Диг._сказ."/>
               <biblScope>52</biblScope></bibl>
@@ -95,6 +134,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">кто это такие? поминальщики ли? но они идут не
                 как поминальщики</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">who are these? are they grievers? but they do
+                not come like grievers</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ИАС"/>
               <biblScope>I 504</biblScope></bibl>
           </example>
@@ -105,6 +148,14 @@
               >-ojnæ</m></mentioned>, наличный и в родственном слове <ref type="xr"
             target="#entry_maroj"/>. См. <ref type="xr" target="#entry_mard"/> и <ref type="xr"
             target="#entry_cæwyn"/>.<lb/><bibl><ref type="bibl" target="#ref_Benveniste._Etudes"/>
+            <biblScope>23</biblScope></bibl>.</etym>
+        <etym xml:lang="en">Contraction from <phr><ref type="xr" target="#entry_mærd"
+              ><w>mærd</w></ref>-<ref type="xr" target="#entry_cæwyn"><w>cæwæg</w></ref></phr> and
+          the suffix <mentioned xml:lang="os"><m xml:lang="os-x-iron">-oj</m><m
+              xml:lang="os-x-digor">-ojnæ</m></mentioned>, found also in the related word <ref
+            type="xr" target="#entry_maroj"/>. See <ref type="xr" target="#entry_mard"/> and <ref
+            type="xr" target="#entry_cæwyn"/>.<lb/><bibl><ref type="bibl"
+              target="#ref_Benveniste._Etudes"/>
             <biblScope>23</biblScope></bibl>.</etym>
       </entry>
     </body>
