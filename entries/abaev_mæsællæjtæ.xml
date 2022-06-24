@@ -1,35 +1,84 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">mæsællæjtæ</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_mæsællæjtæ" xml:lang="os" abv:completeness="incomplete">
-        <form type="lemma"><orth>mæsællæjtæ</orth></form>
+      <entry xml:id="entry_mæsællæjtæ" xml:lang="os" abv:completeness="complete">
+        <form type="lemma"><orth>mæsællæjtæ</orth><form type="variant"
+          ><orth>mæsællytæ</orth></form></form>
         <sense><abv:tr xml:lang="ru">
-            <q/>
+            <q>соболезнование</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>condolences</q>
           </abv:tr></sense>
-        <abv:exampleGrp>
-          <abv:example>
-            <quote/>
-          </abv:example>
-        </abv:exampleGrp>
-        <etym xml:lang="ru"/>
+        <re>
+          <form type="lemma"><orth><oRef>mæsællæjtæ(-ytæ)</oRef> kænyn</orth></form>
+          <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">выражать соболезнование по поводу смерти или
+                другого несчастья</q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">express condolences on the occasion of death or
+                another misfortune</q>
+            </tr></sense>
+        </re>
+        <note xml:lang="ru" type="comment">; ср. <ref type="xr" target="#entry_tæfærfæs"/>, <ref
+            type="xr" target="#entry_qyg"><phr>qygtæ kænyn</phr></ref></note>
+        <note xml:lang="en" type="comment">; cf. <ref type="xr" target="#entry_tæfærfæs"/>, <ref
+            type="xr" target="#entry_qyg"><phr>qygtæ kænyn</phr></ref></note>
+        <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">æz ærcydtæn ardæm <oRef>mæsællæjtæ</oRef>
+              kænynmæ</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">я приехал сюда выразить соболезнование</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">I came here to express condolences</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ИАА"/>
+              <biblScope>II 279</biblScope></bibl>
+          </example>
+        </exampleGrp>
+        <etym xml:lang="ru">Из <mentioned xml:lang="ar"><lang/>
+            <phr>ماشاءﷲ</phr>
+            <gloss><q rendition="#rend_doublequotes">как угодно Аллаху</q></gloss></mentioned> .
+          Заимствовано от какого-либо из соседних кавказских народов мусульманского круга; ср.,
+          например, <mentioned xml:lang="ady"><lang/>
+            <w>mašallaẖ</w>
+            <gloss>возглас <q rendition="#rend_doublequotes">как угодно Богу</q></gloss>
+            <note type="bibl">(<bibl><title>Адыгейские сказания и сказки</title>.
+                  <pubPlace>Майкоп</pubPlace>, <date>1952</date>,<biblScope> стр. 135,
+                  346</biblScope></bibl>)</note></mentioned>.</etym>
+        <etym xml:lang="en">From <mentioned xml:lang="ar"><lang/>
+            <phr>ماشاءﷲ</phr>
+            <gloss><q rendition="#rend_doublequotes">what God wills</q></gloss></mentioned> .
+          Borrowed from one of the neighbouring Muslim Caucasian peoples; cf., e.g., <mentioned
+            xml:lang="ady"><lang/>
+            <w>mašallaẖ</w>
+            <gloss>exclamation <q rendition="#rend_doublequotes">what God wills</q></gloss>
+            <note type="bibl">(<bibl><title>Adygejskie skazanija i skazki</title> [Adyghe legends
+                and tales]. <pubPlace>Maykop</pubPlace>, <date>1952</date>,<biblScope> pp. 135,
+                  346</biblScope></bibl>)</note></mentioned>.</etym>
       </entry>
     </body>
   </text>
