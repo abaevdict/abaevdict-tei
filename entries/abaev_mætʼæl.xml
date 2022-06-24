@@ -1,40 +1,57 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">mætʼæl</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_mætʼæl" xml:lang="os" abv:completeness="incomplete">
+      <entry xml:id="entry_mætʼæl" xml:lang="os" abv:completeness="complete">
         <form type="lemma"><orth>mætʼæl</orth></form>
         <sense><sense><abv:tr xml:lang="ru">
               <q>подавленный</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>depressed</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>удрученный</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>despondent</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>унылый</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>cheerless</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>расстроенный</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>disappointed</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>вялый</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>slack</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>грустный</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>sad</q>
             </abv:tr></sense></sense>
-        <note type="comment">; в иронском мало употр.</note>
+        <note xml:lang="ru" type="comment">; в иронском мало употр.</note>
+        <note xml:lang="en" type="comment">; seldom used in Iron</note>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example xml:lang="os-x-digor">
             <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
@@ -43,6 +60,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">Борафарнуг вошел в дом удрученный и, не говоря
                 ни слова, повалился на скамью</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Boræfærnug came into the house despondent and,
+                not saying a word, fell onto the bench</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Диг._сказ."/>
               <biblScope>7</biblScope></bibl>
@@ -53,6 +74,9 @@
               xæʒaræmæ</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">Колесо Ойнона удрученное вернулось домой</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Oynon’s wheel, despondent, returned home</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_СОПам."/>
               <biblScope>II 19</biblScope></bibl>
@@ -65,6 +89,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">в грустный день для меня как луч солнца — да
                 будет слава вашему фарну — моя единственная дочь</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">on a sad day my only daughter is for me – glory
+                be to your <ref type="xr" target="#entry_farn"/> – like a ray of the sun</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ОЭп."/>
               <biblScope>61</biblScope></bibl>
           </example>
@@ -76,6 +104,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">утром жители Кета медленно шли в аул
                 удрученные</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">in the morning the people of Ket were slowly
+                coming to the town cheerless</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Iræf"/>
               <biblScope>77</biblScope></bibl>
           </example>
@@ -86,6 +118,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">никогда Доссана не пела с более удрученным
                 сердцем, чем в ту ночь</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">never did Dossanæ sing with a more despondent
+                heart than that night</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_MD"/>
               <biblScope>1940 III 55</biblScope></bibl>
@@ -118,7 +154,7 @@
             <mentioned xml:lang="xcl"><lang/>
             <w>matʼał</w>
             <gloss><q>нежный</q></gloss>, <gloss><q>юный</q></gloss></mentioned>. Вс.
-            <name>Миллер</name> предполагал в <oRef/> метатезу из <w type="rec">tæʼmæl</w> и
+            <name>Миллер</name> предполагал в <oRef/> метатезу из <w type="rec">tʼæmæl</w> и
           связывал с <mentioned xml:lang="inc-x-old"><lang/>
             <w>tam-</w></mentioned>, <mentioned xml:lang="cu"><lang/>
             <w>tomiti</w></mentioned>, <mentioned xml:lang="la"><lang/>
@@ -127,6 +163,42 @@
             <biblScope>II 77</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Miller._Gr."
               >Gr.</ref>
             <biblScope>30</biblScope></bibl>). Слишком натянуто.</etym>
+        <etym xml:lang="en">Cf. <mentioned xml:lang="ar" extralang="fa"><lang/>
+            <w>muʿaṭṭal</w>
+            <gloss><q>slowed down</q></gloss>, <gloss><q>idle</q></gloss>,
+              <gloss><q>slack</q></gloss>, <gloss><q>exhausted</q></gloss>,
+              <gloss><q>powerless</q></gloss></mentioned>, <mentioned xml:lang="fa"><lang/>
+            <phr>muʼaṭṭal māndan</phr>
+            <gloss><q>be confused</q></gloss>, <gloss><q>not know what to
+          do</q></gloss></mentioned>, <mentioned xml:lang="ku"><lang/>
+            <w>matʼal</w>
+            <gloss><q>perplexed</q></gloss>, <gloss><q>discomfited</q></gloss>,
+                <gloss><q>cheerless</q></gloss>, <gloss><q>downcast</q></gloss>,
+                <gloss><q>depressed</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Бакаев"/>
+                <biblScope>242</biblScope></bibl>)</note></mentioned>, <mentioned
+            xml:lang="x-balochi"><lang/>
+            <w>mātal kan</w>
+            <gloss><q>detain</q></gloss>, <gloss><q>slow down</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Зарубин._Бел."/>
+                <biblScope>I 29, II 54</biblScope></bibl>)</note></mentioned>, <mentioned
+            xml:lang="isk"><lang/>
+            <w>matal</w>
+            <gloss><q>a delay</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Пахалина"/>
+                <biblScope>215</biblScope></bibl>)</note></mentioned>. A connection with <mentioned
+            xml:lang="xcl"><lang/>
+            <w>matʼał</w>
+            <gloss><q>tender</q></gloss>, <gloss><q>youthful</q></gloss></mentioned> is less
+          probable. Ws. <name>Миллер</name> proposed that <oRef/> is a metathesis from <w type="rec"
+            >tʼæmæl</w> and connected it to <mentioned xml:lang="inc-x-old"><lang/>
+            <w>tam-</w></mentioned>, <mentioned xml:lang="cu"><lang/>
+            <w>tomiti</w></mentioned>, <mentioned xml:lang="la"><lang/>
+            <w>timere</w></mentioned> etc. (<bibl><ref type="bibl" target="#ref_Миллер_Вс._ОЭ"
+              >OÈ</ref>
+            <biblScope>II 77</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Miller._Gr."
+              >Gr.</ref>
+            <biblScope>30</biblScope></bibl>). This is too far-fetched.</etym>
       </entry>
     </body>
   </text>
