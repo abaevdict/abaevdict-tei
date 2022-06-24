@@ -1,29 +1,35 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">mæskʼ_2</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_mæskʼ_2" xml:lang="os" abv:completeness="incomplete" n="2">
+      <entry xml:id="entry_mæskʼ_2" xml:lang="os" abv:completeness="complete" n="2">
         <form type="lemma" xml:lang="os-x-iron"><orth>mæskʼ</orth></form>
         <form xml:lang="os-x-digor" type="dialectal"><orth>mæskʼæ</orth></form>
         <sense><abv:tr xml:lang="ru">
             <q>ступица колеса</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>wheel hub</q>
           </abv:tr></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
@@ -32,11 +38,19 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">колеса по ступицы провалились в грязь</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the wheels fell into the dirt up to the
+                hubs</q>
+            </tr>
           </example>
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">sæ <oRef>mæsḱʼytæ</oRef> zyrnæj zyld</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">их (колес) ступицы — точеные</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">their (of the wheels) hubs are turned [on a
+                lathe]</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_F."/>
               <biblScope>1971 XI 48</biblScope></bibl>
@@ -50,18 +64,38 @@
             <note type="bibl">(<bibl><ref type="bibl" target="#ref_Junker._Frahang"/>
                 <biblScope>29</biblScope></bibl>)</note></mentioned>. Сюда же, может быть, <ref
             type="xr" target="#entry_mæskʼ_1"><hi rendition="#rend_superscript">1</hi><w>mæskʼ</w>
-            <gloss><q>овраг</q></gloss></ref>  ← <q rendition="#rend_doublequotes">впадина</q>; ср.
+            <gloss><q>овраг</q></gloss></ref> ← <q rendition="#rend_doublequotes">впадина</q>; ср.
           для развития значения <mentioned xml:lang="ru"><lang/>
             <w>влагалище</w>
             <gloss><q>vagina</q></gloss></mentioned> и <mentioned><mentioned xml:lang="ru"
                 ><w>влега</w></mentioned>, <mentioned xml:lang="ru"><w>влог</w></mentioned>
             <gloss><q>впадина</q></gloss>, <gloss><q>ухабина</q></gloss>
             <note type="bibl">(<bibl><ref type="bibl" target="#ref_Даль"
-            /></bibl>)</note></mentioned>. К осетинскому примыкает <lang/>
-          <w>moskæ</w>
-          <gloss><q>ступица</q></gloss>
-          <note type="bibl">(<bibl><author>Генко</author>, <ref type="bibl" target="#ref_ЗКВ"/>
-              <biblScope>V 719</biblScope></bibl>)</note>.</etym>
+            /></bibl>)</note></mentioned>. К осетинскому примыкает <mentioned xml:lang="inh"><lang/>
+            <w>moskæ</w>
+            <gloss><q>ступица</q></gloss>
+            <note type="bibl">(<bibl><author>Генко</author>, <ref type="bibl" target="#ref_ЗКВ"/>
+                <biblScope>V 719</biblScope></bibl>)</note></mentioned>.</etym>
+        <etym xml:lang="en">If the original meaning is <gloss><q>sheath, scabbard</q></gloss>,
+              <gloss><q>place of insertion</q></gloss> (where the axle is inserted), this word might
+          be compared to <mentioned xml:lang="pal"><lang/>
+            <w>maškar</w>
+            <gloss><q><foreign>vagina</foreign></q></gloss>, <gloss><q>scabbard</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Junker._Frahang"/>
+                <biblScope>29</biblScope></bibl>)</note></mentioned>. Also related, perhaps, to <ref
+            type="xr" target="#entry_mæskʼ_1"><hi rendition="#rend_superscript">1</hi><w>mæskʼ</w>
+            <gloss><q>gully</q></gloss></ref> ← <q rendition="#rend_doublequotes">cavity,
+            depression</q>; cf. for the semantic development <mentioned xml:lang="ru"><lang/>
+            <w>влагалище</w>
+            <gloss><q>vagina</q></gloss></mentioned> and <mentioned><mentioned xml:lang="ru"
+                ><w>влега</w></mentioned>, <mentioned xml:lang="ru"><w>влог</w></mentioned>
+            <gloss><q>depression</q></gloss>, <gloss><q>pot-hole</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Даль"
+            /></bibl>)</note></mentioned>. The Ossetic word is similar to <mentioned xml:lang="inh"><lang/>
+            <w>moskæ</w>
+            <gloss><q>wheel hub</q></gloss>
+            <note type="bibl">(<bibl><author>Genko</author>, <ref type="bibl" target="#ref_ЗКВ"/>
+                <biblScope>V 719</biblScope></bibl>)</note></mentioned>.</etym>
       </entry>
     </body>
   </text>
