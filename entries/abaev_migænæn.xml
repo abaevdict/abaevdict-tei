@@ -1,21 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">migænæn</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
@@ -24,19 +28,31 @@
         <usg><lang/></usg>
         <sense><sense><abv:tr xml:lang="ru">
               <q>оружие</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>weapon</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>инструмент</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>instrument</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>сосуд</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>vessel</q>
             </abv:tr></sense></sense>
         <re>
           <form type="lemma"><orth>migænæntæ</orth></form>
           <sense><sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
                 <q xmlns="http://www.tei-c.org/ns/1.0">орудия</q>
+              </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+                <q xmlns="http://www.tei-c.org/ns/1.0">weapons</q>
               </tr></sense><sense><abv:tr xml:lang="ru">
                 <q>утварь</q>
+              </abv:tr><abv:tr xml:lang="en">
+                <q>utensils</q>
               </abv:tr></sense><sense><abv:tr xml:lang="ru">
                 <q>посуда</q>
+              </abv:tr><abv:tr xml:lang="en">
+                <q>dishes</q>
               </abv:tr></sense></sense>
         </re>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
@@ -47,21 +63,35 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">орудия кузнеца: кузнечный мех, молот, клещи,
                 наковальня</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">a blacksmith’s instruments: bellows, hammer,
+                tongs, anvil</q>
+            </tr>
           </example>
           <example>
-            <quote xmlns="http://www.tei-c.org/ns/1.0">(асу nwazæn ḱī anaza) ūтæп jæ nozt x˳ycawy
+            <quote xmlns="http://www.tei-c.org/ns/1.0">(асу nwazæn ḱī anaza) ūтæп jæ nozt Xₒycawy
               xælar wæt æmæ jæ <oRef>migænæn</oRef> ta jyn mænæj lævargond</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">(кто выпьет этот кубок), тому напиток пусть
                 будет на здоровье, а сосуд — от меня подарок</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">(who drinks this cup), may the drink be to his
+                health, and the vessel, a gift from me!</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ОЭп."/>
               <biblScope>29</biblScope></bibl>
           </example>
         </exampleGrp>
         <etym xml:lang="ru">Образовано от составного глагола <ref type="xr" target="#entry_mi"/>
-          <ref type="xr" target="#entry_kænyn"/><q>работать</q>, <q>заниматься делом</q> с помощью
-          суффикса <c>-æn</c> (<bibl><ref type="bibl" target="#ref_ГО"/>
+          <ref type="xr" target="#entry_kænyn"/>
+          <q>работать</q>, <q>заниматься делом</q> с помощью суффикса <c>-æn</c> (<bibl><ref
+              type="bibl" target="#ref_ГО"/>
+            <biblScope>70<hi rendition="#rend_subscript">I 1</hi></biblScope></bibl>).</etym>
+        <etym xml:lang="en">Derived from the compound verb <ref type="xr" target="#entry_mi"/>
+          <ref type="xr" target="#entry_kænyn"/>
+          <q>work</q>, <q>do some business</q> using the suffix <c>-æn</c> (<bibl><ref type="bibl"
+              target="#ref_ГО"/>
             <biblScope>70<hi rendition="#rend_subscript">I 1</hi></biblScope></bibl>).</etym>
       </entry>
     </body>
