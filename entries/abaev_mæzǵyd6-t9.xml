@@ -1,29 +1,35 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">mæzǵyd(-t)</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_mæzǵyd6-t9" xml:lang="os" abv:completeness="incomplete">
+      <entry xml:id="entry_mæzǵyd6-t9" xml:lang="os" abv:completeness="russian-questions">
         <form type="lemma" xml:lang="os-x-iron"><orth>mæzǵyd(-t)</orth></form>
         <form xml:lang="os-x-digor" type="dialectal"><orth>mæzgid(-t)</orth></form>
         <sense><abv:tr xml:lang="ru">
             <q>мечеть</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>mosque</q>
           </abv:tr></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
@@ -32,6 +38,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">как ты забыл нашу мечеть; с тех пор как ты
                 переселился сюда, ты там не бывал</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">how (much) you have forgotten our mosque; since
+                you moved here, you have never been there</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Arsen"/>
               <biblScope>121</biblScope></bibl>
@@ -43,6 +53,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">ни в чьих глазах больше мечеть не пользуется
                 почетом</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the mosque no longer enjoys respect in anyone’s
+                eyes</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_MD"/>
               <biblScope>III–IV 86</biblScope></bibl>
@@ -59,6 +73,20 @@
             <w>mäždig</w></mentioned>, <mentioned xml:lang="kbd"><lang/>
             <w>mäž<?oxy_comment_start author="oleg" timestamp="20220625T115955+0300" comment="or acute?"?>ġ<?oxy_comment_end?>ət</w></mentioned>;
           ср. также <mentioned xml:lang="orv"><lang/>
+            <w>мезгитъ</w>, <w>мизгитъ</w>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Срезневский"/>
+                <biblScope>II 134</biblScope></bibl>)</note></mentioned>.</etym>
+        <etym xml:lang="en">From <mentioned xml:lang="ar" extralang="fa"><lang/>
+            <w>masǰid</w>
+            <gloss><q>mosque</q></gloss></mentioned>, whence also <mentioned xml:lang="xcl"><lang/>
+            <w>mzkʼit</w></mentioned>, <mentioned xml:lang="ka"><lang/>
+            <w>mizgiti</w></mentioned>, <mentioned xml:lang="av"><lang/>
+            <w>maz<?oxy_comment_start author="oleg" timestamp="20220625T115941+0300" comment="or acute? check"?>ġ<?oxy_comment_end?>it</w></mentioned>,
+            <mentioned xml:lang="dar"><lang/>
+            <w>mižit</w></mentioned>, <mentioned xml:lang="ce" extralang="inh"><lang/>
+            <w>mäždig</w></mentioned>, <mentioned xml:lang="kbd"><lang/>
+            <w>mäž<?oxy_comment_start author="oleg" timestamp="20220625T115955+0300" comment="or acute?"?>ġ<?oxy_comment_end?>ət</w></mentioned>;
+          cf. also <mentioned xml:lang="orv"><lang/>
             <w>мезгитъ</w>, <w>мизгитъ</w>
             <note type="bibl">(<bibl><ref type="bibl" target="#ref_Срезневский"/>
                 <biblScope>II 134</biblScope></bibl>)</note></mentioned>.</etym>
