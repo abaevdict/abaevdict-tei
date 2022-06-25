@@ -1,35 +1,49 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">meræʒoj</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_meræʒoj" xml:lang="os-x-iron" abv:completeness="incomplete">
+      <entry xml:id="entry_meræʒoj" xml:lang="os-x-iron" abv:completeness="complete">
         <form type="lemma"><orth>meræʒoj</orth></form>
         <usg><lang/></usg>
         <sense><def xml:lang="ru"> этническое название; встречается в выражении <mentioned
               xml:lang="os-x-iron"><phr>tætær æmæ meræʒoj</phr>
               <gloss><q rendition="#rend_doublequotes">татары и <oRef/></q></gloss>
-              <note type="comment">(о разноплеменной массе)</note></mentioned>.</def></sense>
+              <note xml:lang="ru" type="comment">(о разноплеменной массе)</note><note xml:lang="en"
+                type="comment">(о разноплеменной массе)</note></mentioned>.</def><def xml:lang="en">
+            ethnic name; occurs in the expression <mentioned xml:lang="os-x-iron"><phr>tætær æmæ
+                meræʒoj</phr>
+              <gloss><q rendition="#rend_doublequotes">Tatars and <oRef/></q></gloss>
+              <note xml:lang="ru" type="comment">(о разноплеменной массе)</note><note xml:lang="en"
+                type="comment">(of a multiethnic multitude)</note></mentioned>.</def></sense>
         <etym xml:lang="ru">Ср. название одного из нахских (чечено-ингушских) племен
             <w>мереджинцы</w> на реке Фортанге (<bibl><author>Грабовский</author>, <title>Сб.
               сведений о кавк. горцах</title>
             <biblScope>III / 1</biblScope></bibl>).</etym>
+        <etym xml:lang="en">Cf. the name of one of the Nakh (Chechen-Ingush) tribes
+            <w>мереджинцы</w> on the river Fortanga (<bibl><author>Grabovskij</author>,
+              <title>Sbornik svedenij o kavkazskix gorcax</title> [Collection of material on
+            Caucasian highlanders] <biblScope>III / 1</biblScope></bibl>).</etym>
       </entry>
     </body>
   </text>
