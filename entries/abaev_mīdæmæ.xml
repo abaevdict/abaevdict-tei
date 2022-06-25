@@ -1,35 +1,44 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">mīdæmæ</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_mīdæmæ" xml:lang="os" abv:completeness="russian-questions">
+      <entry xml:id="entry_mīdæmæ" xml:lang="os" abv:completeness="complete">
         <form type="lemma" xml:lang="os-x-iron"><orth>mīdæmæ</orth></form>
         <form xml:lang="os-x-digor" type="dialectal"><orth>medæ(g)mæ</orth></form>
         <sense><abv:tr xml:lang="ru">
             <q>внутрь</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>inside</q>
           </abv:tr></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">racu næm <oRef>mīdæmæ</oRef></quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">войди к нам в дом</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">come to us to the house</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Коста"/>
               <biblScope>221</biblScope></bibl>
@@ -39,13 +48,20 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">войдите, гости!</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">come, guests!</q>
+            </tr>
           </example>
           <example>
-            <quote xmlns="http://www.tei-c.org/ns/1.0">Wælxæǧy dwarmæ bacyd æmæ <oRef>mīdæmæ</oRef>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">Wælxæǵy dwarmæ bacyd æmæ <oRef>mīdæmæ</oRef>
               baqær kodta</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">подошел к воротам Уалхага и крикнул внутрь (в
                 дом)</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">he came to the gates of Wælkhæg and shouted
+                inside (into the house)</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ОЭп."/>
               <biblScope>36</biblScope></bibl>
@@ -57,16 +73,23 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">почему ты не входишь внутрь (в дом)?</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">why don’t you come inside (into the house)?</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Mst."/>
               <biblScope>5<hi rendition="#rend_subscript">14</hi></biblScope></bibl>
           </example>
           <example xml:lang="os-x-digor">
             <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
             <quote xmlns="http://www.tei-c.org/ns/1.0"><oRef>medæmæ</oRef>, mæ zærdi fedar,
-                <oRef>medæmæ</oRef> — zæäǧgæ zaǧta zærond osæ</quote>
+                <oRef>medæmæ</oRef> — zæǧgæ zaǧta zærond osæ</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">войди, опора моего сердца, войди, — сказала
                 старуха</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">come, the foundation of my heart, come, — said
+                the old woman</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_MD"/>
               <biblScope>1949 II 29</biblScope></bibl>
@@ -75,6 +98,9 @@
         <etym xml:lang="ru">Направ. падеж от <ref type="xr" target="#entry_mīdæg"><w
               xml:lang="os-x-iron">mīdæg</w><w xml:lang="os-x-digor">medæg</w></ref> с выпадением
             <c>g</c> перед <c>m</c> в иронском, а иногда и в дигорском.</etym>
+        <etym xml:lang="en">Allative of <ref type="xr" target="#entry_mīdæg"><w xml:lang="os-x-iron"
+              >mīdæg</w><w xml:lang="os-x-digor">medæg</w></ref> with loss of <c>g</c> before
+            <c>m</c> in Iron, and sometimes also in Digor.</etym>
       </entry>
     </body>
   </text>
