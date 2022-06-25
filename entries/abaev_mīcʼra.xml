@@ -1,35 +1,74 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">mīcʼra</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_mīcʼra" xml:lang="os" abv:completeness="incomplete">
+      <entry xml:id="entry_mīcʼra" xml:lang="os-x-iron" abv:completeness="english-questions">
         <form type="lemma"><orth>mīcʼra</orth></form>
+        <usg><lang/></usg>
         <sense><abv:tr xml:lang="ru">
-            <q/>
+            <q>моча</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>urine</q>
           </abv:tr></sense>
-        <abv:exampleGrp>
-          <abv:example>
-            <quote/>
-          </abv:example>
-        </abv:exampleGrp>
-        <etym xml:lang="ru"/>
+        <note xml:lang="ru" type="comment">; син. <ref type="xr" target="#entry_mīzyncʼag"/></note>
+        <note xml:lang="en" type="comment">; syn. <ref type="xr" target="#entry_mīzyncʼag"/></note>
+        <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
+          <example>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">kæfqₒyndar ʒūry: <q>Margæ mæ ma akæ …
+                amīzʒynæn dæ</q>. — Kₒyʒ, æmæ mæ īsḱī dæ <oRef>mīcʼra</oRef> xona</quote>
+            <tr xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">дракон говорит (герою, который сидит у него в
+                брюхе и режет ему ножом внутренности): <q rendition="#rend_doublequotes">Не убивай
+                  меня, я тебя вы…</q>. — Собака, чтобы кто-нибудь называл меня твоей мочой</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the dragon says (to the hero who is in his
+                belly and cuts his entrails with a knife): <q rendition="#rend_doublequotes">Do not
+                  kill me, I will urinate you out</q>. — You dog,
+                <?oxy_comment_start author="oleg" timestamp="20220625T152344+0300" comment="?"?>for
+                anyone to call me your urine<?oxy_comment_end?>!</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ЮОПам."/>
+              <biblScope>III 80</biblScope></bibl>
+          </example>
+        </exampleGrp>
+        <etym xml:lang="ru">Связано с <ref type="xr" target="#entry_mīzyn"/>. Словообразование
+          неясное. Контаминация <mentioned xml:lang="ira"><w type="rec">maiz-</w></mentioned> с
+            <mentioned xml:lang="ira"><w type="rec">muθra-</w></mentioned>? Ср. <mentioned
+            xml:lang="inc-x-old"><lang/>
+            <w>mūtra-</w>
+            <gloss><q>моча</q></gloss></mentioned>, <mentioned xml:lang="ae"><lang/>
+            <w>muθra-</w>
+            <gloss><q>экскременты</q></gloss></mentioned>.</etym>
+        <etym xml:lang="en">Related to <ref type="xr" target="#entry_mīzyn"/>. Derivation unclear.
+          Contamination of <mentioned xml:lang="ira"><w type="rec">maiz-</w></mentioned> with
+            <mentioned xml:lang="ira"><w type="rec">muθra-</w></mentioned>? Cf. <mentioned
+            xml:lang="inc-x-old"><lang/>
+            <w>mūtra-</w>
+            <gloss><q>urine</q></gloss></mentioned>, <mentioned xml:lang="ae"><lang/>
+            <w>muθra-</w>
+            <gloss><q>excrement</q></gloss></mentioned>.</etym>
       </entry>
     </body>
   </text>
