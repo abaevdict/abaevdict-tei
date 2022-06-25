@@ -1,35 +1,47 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">mīdbynat(y)</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_mīdbynat6y9" xml:lang="os" abv:completeness="russian-questions">
+      <entry xml:id="entry_mīdbynat6y9" xml:lang="os" abv:completeness="complete">
         <form type="lemma" xml:lang="os-x-iron"><orth>mīdbynat(y)</orth></form>
         <form xml:lang="os-x-digor" type="dialectal"><orth>medbunat(i)</orth></form>
-        <sense><abv:tr xml:lang="ru">
-            <q>на месте</q>
-          </abv:tr></sense>
+        <sense><sense><abv:tr xml:lang="ru">
+              <q>на месте</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>on the spot</q>
+            </abv:tr></sense><sense><abv:tr xml:lang="en">
+              <q>in place</q>
+              <note type="comment"> (i.e. without moving)</note>
+            </abv:tr></sense></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
-            <quote xmlns="http://www.tei-c.org/ns/1.0">læppū ærxawdta jce mīdbynaty</quote>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">læppū ærxawdta jæ mīdbynaty</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">мальчик упал на месте</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the boy fell on the spot</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_F."/>
               <biblScope>X 69</biblScope></bibl>
@@ -40,6 +52,9 @@
               <oRef>medbunati</oRef></quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">хан затрясся на месте</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the khan started shaking at the spot</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Iræf"/>
               <biblScope>38</biblScope></bibl>
@@ -54,6 +69,12 @@
                 перебежать с сундуком к народу, но земляной поток не дал ему возможности, и он в
                 оцепенении остался стоять на месте</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">in his thoughts (<q
+                  rendition="#rend_doublequotes">in his heart</q>) he had wanted to run with the
+                chest towards the people, but the stream of earth did not give him any means to do
+                so, and he remained standing in place in stupor</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Iræf"/>
               <biblScope>128 сл.</biblScope></bibl>
           </example>
@@ -65,11 +86,17 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">колеса будут вертеться на месте, и трактор не
                 будет двигаться вперед</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the wheels will rotate in place, and the
+                tractor will not go forward</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_FS"/>
               <biblScope>V 101</biblScope></bibl>
           </example>
         </exampleGrp>
         <etym xml:lang="ru">См. <ref type="xr" target="#entry_mīd-"/> и <ref type="xr"
+            target="#entry_bynat"/>.</etym>
+        <etym xml:lang="en">See <ref type="xr" target="#entry_mīd-"/> and <ref type="xr"
             target="#entry_bynat"/>.</etym>
       </entry>
     </body>
