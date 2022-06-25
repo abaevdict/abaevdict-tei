@@ -1,36 +1,46 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">meret</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_meret" xml:lang="os-x-digor" abv:completeness="incomplete">
+      <entry xml:id="entry_meret" xml:lang="os-x-digor" abv:completeness="complete">
         <form type="lemma"><orth>meret</orth></form>
         <usg><lang/></usg>
         <sense><abv:tr xml:lang="ru">
             <q>имеретины</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>Imeretians</q>
           </abv:tr></sense>
         <re>
           <form type="lemma"><orth>merettag</orth></form>
           <sense><sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
                 <q xmlns="http://www.tei-c.org/ns/1.0">имеретин</q>
+              </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+                <q xmlns="http://www.tei-c.org/ns/1.0">an Imeretian</q>
               </tr></sense><sense><abv:tr xml:lang="ru">
                 <q>имеретинский</q>
+              </abv:tr><abv:tr xml:lang="en">
+                <q>Imeretian (adj.)</q>
               </abv:tr></sense></sense>
         </re>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
@@ -41,22 +51,34 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">с дигорской горы полетел белоголовый орел,
                 перелетел через грузинскую гору, сел на гладкой имеретинской равнине</q>
             </tr>
-            <bibl xmlns="http://www.tei-c.org/ns/1.0"><biblScope xml:lang="ru">из песни <title><q
-                    rendition="#rend_doublequotes">Qantemurti Qaraʒawi
-              zar</q></title></biblScope></bibl>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">from the Digor mountain flew a white-headed
+                eagle, it flew over the Georgian mountain, landed on the flat Imeretian plain</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><biblScope xml:lang="ru">из песни <title
+                  xml:lang="os-x-digor"><q rendition="#rend_doublequotes">Qantemurti Qaraʒawi
+                    zar</q></title></biblScope><biblScope xml:lang="en">from the song <title
+                  xml:lang="os-x-digor"><q rendition="#rend_doublequotes">Qantemurti Qaraʒawi
+                    zar</q></title></biblScope></bibl>
           </example>
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0"><oRef>merettag</oRef> bæmbæg</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">имеретинская вата</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Imeretian cotton wool</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><biblScope xml:lang="ru">из обрядового
-                текста</biblScope></bibl>
+                текста</biblScope><biblScope xml:lang="en">from a ritual text</biblScope></bibl>
           </example>
         </exampleGrp>
-        <etym xml:lang="ru"> Из <mentioned xml:lang="ka"><lang/>
+        <etym xml:lang="ru">Из <mentioned xml:lang="ka"><lang/>
             <w>Imereti</w>
             <gloss><q>Имеретия</q></gloss></mentioned>.</etym>
+        <etym xml:lang="en">From <mentioned xml:lang="ka"><lang/>
+            <w>Imereti</w>
+            <gloss><q>Imeretia</q></gloss></mentioned>.</etym>
       </entry>
     </body>
   </text>
