@@ -1,34 +1,44 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">mīdægæj</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_mīdægæj" xml:lang="os" abv:completeness="russian-questions">
+      <entry xml:id="entry_mīdægæj" xml:lang="os" abv:completeness="complete">
         <form type="lemma" xml:lang="os-x-iron"><orth>mīdægæj</orth></form>
         <form xml:lang="os-x-digor" type="dialectal"><orth>medægæj</orth><form type="variant"
               ><orth>medæggæj</orth></form></form>
         <sense><sense><abv:tr xml:lang="ru">
               <q>изнутри</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>from the inside</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>внутри</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>inside</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>за</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>behind</q>
             </abv:tr></sense></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
@@ -37,12 +47,20 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">пусть идет дождь: он снаружи, а я внутри</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">may it rain: it [the rain] outside, I
+                inside</q>
+            </tr>
           </example>
           <example>
-            <quote xmlns="http://www.tei-c.org/ns/1.0">kʼæsaery <oRef>mīdægæj</oRef> īw gaʒa
+            <quote xmlns="http://www.tei-c.org/ns/1.0">kʼæsæry <oRef>mīdægæj</oRef> īw gaʒa
               bastæj</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">за порогом привязана сука</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">beyond the threshould a female dog is
+                lashed</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Коста"/>
               <biblScope>71</biblScope></bibl>
@@ -54,6 +72,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">приходят к нам в овечьей шкуре, а внутри суть
                 волки хищные</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">come to us <note type="comment">(sic)</note> in
+                sheep's clothing, but inwardly they are ravening wolves</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Матфей"/>
               <biblScope><hi rendition="#rend_italic">7</hi> 15</biblScope></bibl>
           </example>
@@ -61,6 +83,10 @@
             <quote xmlns="http://www.tei-c.org/ns/1.0">ʒærǧ æт <oRef>mīdægæj</oRef> raʒyrdta</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">свинья ему (волку) крикнула изнутри</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the big shouted to it (the wolf) from the
+                inside</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ОТ"/>
               <biblScope>69</biblScope></bibl>
@@ -73,12 +99,18 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">из ароб мы сделали себе ограду, а наши быки
                 (находились) внутри (ограды)</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">from carts we made us a fence, and our oxen
+                (were) inside (the fence)</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ОЭ"/>
               <biblScope>I 92</biblScope></bibl>
           </example>
         </exampleGrp>
         <etym xml:lang="ru">Отлож. падеж от <ref type="xr" target="#entry_mīdæg"><w
               xml:lang="os-x-iron">mīdæg</w><w xml:lang="os-x-digor">medæg</w></ref>.</etym>
+        <etym xml:lang="en">Ablative of <ref type="xr" target="#entry_mīdæg"><w xml:lang="os-x-iron"
+              >mīdæg</w><w xml:lang="os-x-digor">medæg</w></ref>.</etym>
       </entry>
     </body>
   </text>
