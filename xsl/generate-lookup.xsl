@@ -7,9 +7,11 @@
     exclude-result-prefixes="xs tei"
     version="2.0">
     
-    <xsl:variable name="entries" select="collection('entries')"/>
+    <xsl:param name="dir"/>
     
-    <xsl:template name="start">
+    <xsl:variable name="entries" select="collection(concat($dir,'/entries'))"/>
+    
+    <xsl:template name="generate-lookup">
         <xsl:element name="table">
             <xsl:for-each select="$entries">
                 <xsl:for-each select="tei:TEI/tei:text/tei:body/tei:entry">
@@ -18,17 +20,7 @@
                         <xsl:attribute name="xml:id" select="@xml:id"/>
                         <xsl:attribute name="filename" select="expath-file:name(document-uri(/))"/>
                         <xsl:if test="@n">
-                            <xsl:choose>
-                                <xsl:when test="@n = 1">¹</xsl:when>
-                                <xsl:when test="@n = 2">²</xsl:when>
-                                <xsl:when test="@n = 3">³</xsl:when>
-                                <xsl:when test="@n = 4">⁴</xsl:when>
-                                <xsl:when test="@n = 5">⁵</xsl:when>
-                                <xsl:when test="@n = 6">⁶</xsl:when>
-                                <xsl:when test="@n = 7">⁷</xsl:when>
-                                <xsl:when test="@n = 8">⁸</xsl:when>
-                                <xsl:when test="@n = 9">⁹</xsl:when>
-                            </xsl:choose>
+                            <xsl:attribute name="n" select="@n"/>
                         </xsl:if>
                         <xsl:value-of select="tei:form[1]/tei:orth[1]"/>
                     </xsl:element>
