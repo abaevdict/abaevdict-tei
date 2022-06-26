@@ -7,8 +7,11 @@
     version="2.0">
     
     <xsl:param name="lookup-file"/>
+    <xsl:param name="biblio-file"/>
+    <xsl:param name="bib-lang"/>
     
     <xsl:variable name="lookup" select="document($lookup-file)"/>
+    <xsl:variable name="biblio" select="document($biblio-file)"/>
     
 <!--    <xsl:variable name="random-doc" select="document('entries/abaev_lami.xml')"/>-->
     
@@ -31,6 +34,24 @@
         </xsl:copy>
 <!--        <xsl:message><xsl:value-of select="$random-doc/key('xr','entry_lami')"/></xsl:message>-->
     </xsl:template>
+    
+    <xsl:template match="tei:ref[@type = 'bibl'][not(node())]">
+        <xsl:variable name="target" select="@target"/>
+        <xsl:variable name="bibl" select="$biblio/tei:TEI/tei:text/tei:body/tei:div/tei:listBibl/tei:bibl[@xml:id = substring($target, 2)]"/>
+<!--        <xsl:message><xsl:value-of select="$lookup"/></xsl:message>-->
+        <xsl:copy>
+            <xsl:apply-templates select="@* | node()"/>
+            <xsl:choose>
+                <xsl:when test="$bibl/tei:abbr[not(@xml:lang)]">
+                    <xsl:value-of select="$bibl/tei:abbr"/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:value-of select="$bibl/tei:abbr[@xml:lang = $bib-lang]"/>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:copy>
+<!--        <xsl:message><xsl:value-of select="$random-doc/key('xr','entry_lami')"/></xsl:message>-->
+    </xsl:template>    
     
     <xsl:function xmlns:my="http://example.com/my" name="my:getN">
         <xsl:param name="n"/>
