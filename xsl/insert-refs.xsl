@@ -27,7 +27,7 @@
     <xsl:template match="tei:ref[@type = 'xr'][not(node())]">
         <xsl:variable name="target" select="@target"/>
         <xsl:variable name="entry" select="$lookup//table/entry[@xml:id = substring($target, 2)]"/>
-        <xsl:if test="not($entry)"><xsl:message>Cross-referenced entry <xsl:value-of select="$entry/@xml:id"/> not found! Lemma <xsl:value-of select="ancestor::entry/@xml:id"/></xsl:message></xsl:if>
+        <xsl:if test="not($entry)"><xsl:message>Cross-referenced entry <xsl:value-of select="$target"/> not found! Lemma <xsl:value-of select="ancestor::tei:entry/@xml:id"/></xsl:message></xsl:if>
 <!--        <xsl:message><xsl:value-of select="$lookup"/></xsl:message>-->
         <xsl:copy>
             <xsl:apply-templates select="@* | node()"/>
@@ -39,7 +39,7 @@
     <xsl:template match="tei:ref[@type = 'bibl'][not(node())]">
         <xsl:variable name="target" select="@target"/>
         <xsl:variable name="bibl" select="$biblio/tei:TEI/tei:text/tei:body/tei:div/tei:listBibl/tei:bibl[@xml:id = substring($target, 2)]"/>
-        <xsl:if test="not($bibl)"><xsl:message>Cross-referenced bibitem <xsl:value-of select="$bibl/@xml:id"/> not found! Lemma <xsl:value-of select="ancestor::entry/@xml:id"/></xsl:message></xsl:if>
+        <xsl:if test="not($bibl)"><xsl:message>Cross-referenced bibitem <xsl:value-of select="$target"/> not found! Lemma <xsl:value-of select="ancestor::tei:entry/@xml:id"/></xsl:message></xsl:if>
 <!--        <xsl:message><xsl:value-of select="$lookup"/></xsl:message>-->
         <xsl:copy>
             <xsl:apply-templates select="@* | node()"/>
