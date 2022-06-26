@@ -43,15 +43,22 @@
             <xsl:apply-templates select="@* | node()"/>
             <xsl:choose>
                 <xsl:when test="$bibl/tei:abbr[not(@xml:lang)]">
-                    <xsl:value-of select="$bibl/tei:abbr"/>
+                    <xsl:copy-of select="$bibl/tei:abbr"/>
                 </xsl:when>
                 <xsl:otherwise>
-                    <xsl:value-of select="$bibl/tei:abbr[@xml:lang = $bib-lang]"/>
+                    <xsl:copy-of select="$bibl/tei:abbr[@xml:lang = $bib-lang]"/>
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:copy>
 <!--        <xsl:message><xsl:value-of select="$random-doc/key('xr','entry_lami')"/></xsl:message>-->
-    </xsl:template>    
+    </xsl:template>
+    
+    <xsl:template match="tei:oRef[not(node())]">
+        <xsl:copy>
+            <xsl:apply-templates select="@* | node()"/>
+            <xsl:copy-of select="ancestor::*[local-name() = 'entry' or local-name() = 're'][position() = 1]/tei:form[1]/tei:orth[1]/child::node()"/>            
+        </xsl:copy>
+    </xsl:template>
     
     <xsl:function xmlns:my="http://example.com/my" name="my:getN">
         <xsl:param name="n"/>
