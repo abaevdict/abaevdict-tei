@@ -1,44 +1,64 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">mīsynʒæg</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_mīsynʒæg" xml:lang="os" abv:completeness="russian-questions">
+      <entry xml:id="entry_mīsynʒæg" xml:lang="os" abv:completeness="complete">
         <form type="lemma" xml:lang="os-x-iron"><orth>mīsynʒæg</orth></form>
         <form xml:lang="os-x-digor" type="dialectal"><orth>mesinʒæg</orth></form>
         <sense><abv:tr xml:lang="ru">
             <q>мочевой пузырь</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>urinary bladder</q>
           </abv:tr></sense>
         <etym xml:lang="ru">Связано с <ref type="xr" target="#entry_mīzyn"><w xml:lang="os-x-iron"
               >mīz-</w><w xml:lang="os-x-digor">mez-</w>
             <gloss><q>мочиться</q></gloss></ref> (см. <ref type="xr" target="#entry_mīzyn"/>);
             <c>s</c> вместо <c>z</c> представляет либо эвфемистическую замену, либо восходит к
-            <c>-ǵh</c> + <c>s-</c> (<mentioned xml:lang="ira"><w type="rec"
-              ><?oxy_comment_start author="Vados" timestamp="20220411T185153+0300" comment="Неясно, что за язык реконструкции"?>meiǵh<?oxy_comment_end?>-s-</w></mentioned>);
+            <c>-ǵh</c> + <c>s-</c> (<mentioned xml:lang="ine"><w type="rec"
+              ><?oxy_comment_start author="Vados" timestamp="20220411T185153+0300" comment="Неясно, что за язык реконструкции" id="o5c_mcp_15b" flag="done"?><?oxy_comment_start author="oleg" timestamp="20220629T233015+0300" parentID="o5c_mcp_15b" comment="и.е., потому что в иранском уже не было ǵ и т.д." mid="1"?>meiǵh<?oxy_comment_end mid="1"?><?oxy_comment_end?>-s-</w></mentioned>);
             <c>-yn-</c> | <c>-in-</c> как в <ref type="xr" target="#entry_dūryn"/>, <ref type="xr"
-            target="#entry_mīsyn"/> и др.; конечное <c>-ʒæg</c> — формант, восходящий здесь к <ref
-            type="xr" target="#entry_ʒag"><w>ʒag</w>
+            target="#entry_mīsyn"/> и др.; конечное <mentioned xml:lang="os"><c>-ʒæg</c></mentioned>
+          — формант, восходящий здесь к <ref type="xr" target="#entry_ʒag"><w>ʒag</w>
             <gloss><q>полный</q></gloss></ref>; ср. <ref type="xr" target="#entry_æjkʒæg"
               ><w>æjk-ʒæg</w>
             <gloss><q>яичник у птиц</q></gloss></ref>, <ref type="xr" target="#entry_wæmʒæg"
               ><w>wæm-ʒæg</w>
             <gloss><q>блевотина</q></gloss></ref> и др.</etym>
+        <etym xml:lang="en">Related to <ref type="xr" target="#entry_mīzyn"><w xml:lang="os-x-iron"
+              >mīz-</w><w xml:lang="os-x-digor">mez-</w>
+            <gloss><q>urinate</q></gloss></ref> (see <ref type="xr" target="#entry_mīzyn"/>);
+            <c>s</c> instead of <c>z</c> is either an euphemistic replacement or goes back to
+            <c>-ǵh</c> + <c>s-</c> (<mentioned xml:lang="ine"><w type="rec"
+              ><?oxy_comment_start author="Vados" timestamp="20220411T185153+0300" comment="Неясно, что за язык реконструкции" id="o5c_mcp_15b" flag="done"?><?oxy_comment_start author="oleg" timestamp="20220629T233015+0300" parentID="o5c_mcp_15b" comment="и.е., потому что в иранском уже не было ǵ и т.д." mid="3"?>meiǵh<?oxy_comment_end mid="3"?><?oxy_comment_end?>-s-</w></mentioned>);
+            <c>-yn-</c> | <c>-in-</c> as in <ref type="xr" target="#entry_dūryn"/>, <ref type="xr"
+            target="#entry_mīsyn"/> etc.; the final <mentioned xml:lang="os"><c>-ʒæg</c></mentioned>
+          is a suffix that here derives from <ref type="xr" target="#entry_ʒag"><w>ʒag</w>
+            <gloss><q>full</q></gloss></ref>; cf. <ref type="xr" target="#entry_æjkʒæg"
+              ><w>æjk-ʒæg</w>
+            <gloss><q>bird ovary</q></gloss></ref>, <ref type="xr" target="#entry_wæmʒæg"
+              ><w>wæm-ʒæg</w>
+            <gloss><q>spew</q></gloss></ref> etc.</etym>
       </entry>
     </body>
   </text>
