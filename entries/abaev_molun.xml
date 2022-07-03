@@ -1,21 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">molun</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
@@ -24,26 +28,41 @@
         <usg><lang/></usg>
         <sense><sense><abv:tr xml:lang="ru">
               <q>выигрывать</q>
-            </abv:tr><note type="comment"> (в пари, состязании, тяжбе, споре, в
-              игре)</note></sense><sense><abv:tr xml:lang="ru">
+              <note xml:lang="ru" type="comment"> (в пари, состязании, тяжбе, споре, в игре)</note>
+              <note xml:lang="en" type="comment"> (в пари, состязании, тяжбе, споре, в игре)</note>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>win</q>
+              <note type="comment"> (in a wager, competition, lawsuit, dispute, in a game)</note>
+            </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>обыгрывать</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>defeat (in a game)</q>
             </abv:tr></sense></sense>
         <re>
-          <note type="comment">в иронском только в сращении с <c>æm-</c>: </note>
+          <note xml:lang="ru" type="comment">в иронском только в сращении с <c>æm-</c>: </note>
+          <note xml:lang="en" type="comment">in Iron only merged with <c>æm-</c>: </note>
           <form type="lemma"><orth>æmbūlyn</orth></form>
-          <note type="comment">(← <w>æmmūlyn: </w><bibl><ref type="bibl" target="#ref_ИЭС_I"/>
+          <note xml:lang="ru" type="comment">(← <w>æmmūlyn: </w><bibl><ref type="bibl"
+                target="#ref_ИЭС_I"/>
+              <biblScope>140</biblScope></bibl></note>
+          <note xml:lang="en" type="comment">(← <w>æmmūlyn: </w><bibl><ref type="bibl"
+                target="#ref_ИЭС_I"/>
               <biblScope>140</biblScope></bibl></note>
         </re>
         <re>
           <form type="lemma"><orth>ramolun</orth></form>
           <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">выиграть</q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">win (pfv.)</q>
             </tr></sense>
         </re>
         <re>
-          <form type="lemma"><orth>muldi fæun</orth></form>
+          <form type="lemma"><orth><oRef>muldi</oRef> fæun</orth></form>
           <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">проиграть</q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">lose</q>
             </tr></sense>
         </re>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
@@ -52,15 +71,24 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">выиграй у врага его игральную кость (бабку)</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">win from your enemy his die (knucklebone)</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Sam."/>
               <biblScope>141)</biblScope></bibl>
           </example>
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">eci duwwæ zærond lægi sæxe ci ǧuddagmæ
-              baxattajjoncæ, отæп ænæ <oRef>ramolun</oRef> xwasæ nʼadtæj</quote>
+              baxattajjoncæ, отæп ænæ <oRef>ramolun</oRef> xwasæ n’adtæj</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">за какое бы дело ни взялись те два старика, не
                 было случая (<q>средства</q>), чтобы они его не выигрывали</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">whichever
+                <?oxy_comment_start author="oleg" timestamp="20220703T140206+0300" comment="can you win a matter?"?>matter<?oxy_comment_end?>
+                these two old men took upon themselves, there was no occasion (<q>means</q>) that
+                they did not win it</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_MD"/>
               <biblScope>1949 II 34</biblScope></bibl>
@@ -73,16 +101,31 @@
                 прокормлю мясом дичи, то твой раб (переходит) ко мне, а не то я буду (считаться)
                 проигравшим</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">if I feed your hundred mowers for a hundred
+                days with game, then your slave (passes on) to me, otherwise I will be (considered)
+                the loser</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ИАС"/>
               <biblScope>II 474</biblScope></bibl>
           </example>
         </exampleGrp>
         <etym xml:lang="ru">Вероятна связь — в рамках скифо-европейских изоглосс — со славянской
-          группой: <mentioned xml:lang="ru"><lang>русск</lang>. <w>мылить</w>
+          группой: <mentioned xml:lang="ru"><lang></lang>. <w>мылить</w>
             <gloss><q>обманывать</q></gloss>, <gloss><q>дурачить</q></gloss>,
-              <gloss><q>морочить</q></gloss></mentioned>, <mentioned xml:lang="cs"><lang>чеш.</lang>
-            <w>mýliti</w></mentioned>, <mentioned xml:lang="pl"><lang>пол.</lang>
-            <w>mylić</w></mentioned> id. и пр.</etym>
+              <gloss><q>морочить</q></gloss></mentioned>, <mentioned><mentioned xml:lang="cs"
+                ><lang></lang>
+              <w>mýliti</w></mentioned>, <mentioned xml:lang="pl"><lang></lang>
+              <w>mylić</w></mentioned>
+            <gloss>id.</gloss></mentioned> и пр.</etym>
+        <etym xml:lang="en">A connection to a group of Slavic terms is probable (as a
+          Scytho-European isogloss): <mentioned xml:lang="ru"><lang/>
+            <w>мылить</w>
+            <gloss><q>cheat</q></gloss>, <gloss><q>fool</q></gloss>,
+            <gloss><q>beguile</q></gloss></mentioned>, <mentioned><mentioned xml:lang="cs"><lang/>
+              <w>mýliti</w></mentioned>, <mentioned xml:lang="pl"><lang/>
+              <w>mylić</w></mentioned>
+            <gloss>id.</gloss></mentioned> etc.</etym>
       </entry>
     </body>
   </text>
