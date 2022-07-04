@@ -1,55 +1,77 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">mos</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_mos" xml:lang="os-x-digor" abv:completeness="russian-questions">
+      <entry xml:id="entry_mos" xml:lang="os-x-digor" abv:completeness="complete">
         <form type="lemma"><orth>mos</orth></form>
         <usg><lang/></usg>
         <re>
           <form type="lemma">: <orth>mos esun</orth></form>
           <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">мстить</q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">take revenge</q>
             </tr></sense>
         </re>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">mæn ka xæssuj, е dæ fidi maræg dær æj та
-                <oRef>mos</oRef> omæj rajsæ (hapax)</quote>
+                <oRef>mos</oRef> omæj rajsæ</quote>
+            <note xmlns="http://www.tei-c.org/ns/1.0" xml:lang="ru" type="comment"> (hapax) </note>
+            <note xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" type="comment"> (hapax) </note>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">тот, кто уводит (насильно) меня, является и
                 убийцей твоего отца, и отомсти ему</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">one who leads me away (by force) is also the
+                murderer of your father, and take revenge on him</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_СОПам."/>
               <biblScope>II 87</biblScope></bibl>
           </example>
         </exampleGrp>
         <etym xml:lang="ru">Может быть, <oRef>mos esun</oRef>
-          <q>мстить</q> означает <q rendition="#rend_doublequotes">буквально отнимать
-              (<?oxy_comment_start author="Vados" timestamp="20220418T123837+0300" comment="слова нет в словаре"?><w><?oxy_comment_end?>esun</w>)
-            похищенное (<oRef>mos</oRef>)</q>. В этом случае ср. <mentioned xml:lang="inc-x-old"
-              ><lang>др.инд.</lang>
+          <q>мстить</q> означает буквально <q rendition="#rend_doublequotes">отнимать (<ref
+              type="xr" target="#entry_īsyn"
+                ><?oxy_comment_start author="Vados" timestamp="20220418T123837+0300" comment="слова нет в словаре" id="f4l_jpv_b5b" flag="done"?><?oxy_comment_start author="oleg" timestamp="20220704T104513+0300" parentID="f4l_jpv_b5b" comment="есть, īsyn" flag="done" mid="1"?><w><?oxy_comment_end?><?oxy_comment_end mid="1"?>esun</w></ref>)
+            похищенное (<oRef>mos</oRef>)</q>. В этом случае ср. <mentioned xml:lang="inc-x-old"><lang/>
             <w>moṣa-</w>
             <gloss><q>похищенное</q></gloss>, <gloss><q>похититель</q></gloss></mentioned>,
-            <mentioned xml:lang="kho"><lang>сак.</lang>
+            <mentioned xml:lang="kho"><lang/>
             <w>muśśa-</w>
             <gloss><q>похититель</q></gloss></mentioned>.</etym>
+        <etym xml:lang="en">Maybe <oRef>mos esun</oRef>
+          <gloss><q>take revenge</q></gloss> means literally <q rendition="#rend_doublequotes">take
+              (<ref type="xr" target="#entry_īsyn"
+                ><?oxy_comment_start author="Vados" timestamp="20220418T123837+0300" comment="слова нет в словаре" id="ogb_gpv_b5b" flag="done"?><?oxy_comment_start author="oleg" timestamp="20220704T104413+0300" parentID="ogb_gpv_b5b" comment="есть, īsyn" flag="done" mid="3"?><w><?oxy_comment_end?><?oxy_comment_end mid="3"?>esun</w></ref>)
+            what is stolen (<oRef>mos</oRef>)</q>. In this case cf. <mentioned xml:lang="inc-x-old"><lang/>
+            <w>moṣa-</w>
+            <gloss><q>stolen</q></gloss>, <gloss><q>stealer</q></gloss></mentioned>, <mentioned
+            xml:lang="kho"><lang/>
+            <w>muśśa-</w>
+            <gloss><q>stealer</q></gloss></mentioned>.</etym>
       </entry>
     </body>
   </text>
