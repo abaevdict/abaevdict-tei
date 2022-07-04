@@ -1,21 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">mūgæ</hi></title>
       </titleStmt>
-      <xi:include href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
@@ -24,34 +28,74 @@
         <form xml:lang="os-x-digor" type="dialectal"><orth>mogæ</orth></form>
         <sense><sense><abv:tr xml:lang="ru">
               <q>мушмула</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>medlar</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>Mespilus germanica</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>Mespilus germanica</q>
             </abv:tr></sense></sense>
-        <note type="comment">; <ref type="xr" target="#entry_mantʼyly" xml:lang="os-x-south"><lang/>
+        <note xml:lang="ru" type="comment">; <ref type="xr" target="#entry_mantʼyly"
+            xml:lang="os-x-south"><lang/>
             <w>mantʼyly</w></ref> id</note>
-        <etym xml:lang="ru">Ср. <mentioned xml:lang="sva"><lang></lang>
+        <note xml:lang="en" type="comment">; <ref type="xr" target="#entry_mantʼyly"
+            xml:lang="os-x-south"><lang/>
+            <w>mantʼyly</w></ref>
+          <gloss>id</gloss></note>
+        <etym xml:lang="ru">Ср. <mentioned xml:lang="sva"><lang/>
             <w>mōg</w>
-            <gloss><q>мушмула</q>, </gloss></mentioned> и далее:
+            <gloss><q>мушмула</q></gloss></mentioned>, и далее:
             <?oxy_comment_start author="Vados" timestamp="20220418T133546+0300" comment="Надо добавить в список языков" flag="done"?><mentioned
             xml:lang="fa-x-dial"><lang xml:lang="fa"/>
             <w>mog</w>
             <gloss><q>финик</q></gloss>, <gloss><q>Phoenix dactilifera</q></gloss><?oxy_comment_end?>
             <note type="bibl">(<bibl><author>Frye</author>, <title>Indo-Iranica</title>,
                   <pubPlace>Calcutta</pubPlace>, <date>1953</date>, <biblScope>стр.
-                4</biblScope></bibl>.<note type="footnote"><q rendition="#rend_doublequotes">Тhе
-                  chief occupation of Khur is working on products of the date palm, wich is called
-                    <hi rendition="#rend_italic">mog</hi> in the local dialect</q>.</note> —
-                  <bibl><author>Redard</author>. <title>Le palmier à Khur. Locustʼs leg. Studies in
-                  honour of Taqizadeh</title>, <pubPlace>London</pubPlace>, <date>1962</date>,
-                  <biblScope>стр. 215</biblScope></bibl>)</note></mentioned>, <mentioned
-            xml:lang="pal"><lang></lang>
-            <w>muγ</w></mentioned>, <mentioned xml:lang="x-balochi"><lang></lang>
+                4</biblScope></bibl>.<note xml:lang="ru" type="footnote"><q
+                  rendition="#rend_doublequotes">Тhе chief occupation of Khur is working on products
+                  of the date palm, wich is called <hi rendition="#rend_italic">mog</hi> in the
+                  local dialect</q>.</note><note xml:lang="en" type="footnote"><q
+                  rendition="#rend_doublequotes">Тhе chief occupation of Khur is working on products
+                  of the date palm, wich is called <hi rendition="#rend_italic">mog</hi> in the
+                  local dialect</q>.</note> — <bibl><author>Redard</author>. <title>Le palmier à
+                  Khur. Locustʼs leg. Studies in honour of Taqizadeh</title>,
+                  <pubPlace>London</pubPlace>, <date>1962</date>, <biblScope>стр.
+                215</biblScope></bibl>)</note></mentioned>, <mentioned xml:lang="pal"><lang/>
+            <w>muγ</w></mentioned>, <mentioned xml:lang="x-balochi"><lang/>
             <w>mok</w></mentioned> id. Имеет ли сюда отношение <mentioned xml:lang="ydg"><lang/>
             <w>muγo</w>
             <gloss><q>боб</q></gloss><note type="bibl"> (<bibl><ref type="bibl"
                   target="#ref_Morgenstierne._IIFL"/>
                 <biblScope>II 226</biblScope></bibl>)</note></mentioned>?<lb/><bibl><ref type="bibl"
               target="#ref_ОЯФ_I"/>
+            <biblScope>295</biblScope></bibl>.</etym>
+        <etym xml:lang="en">Cf. <mentioned xml:lang="sva"><lang/>
+            <w>mōg</w>
+            <gloss><q>medlar</q></gloss></mentioned>, and further:
+            <?oxy_comment_start author="Vados" timestamp="20220418T133546+0300" comment="Надо добавить в список языков" flag="done"?><mentioned
+            xml:lang="fa-x-dial"><lang xml:lang="fa"/>
+            <w>mog</w>
+            <gloss><q>date fruit</q></gloss>, <gloss><q>Phoenix dactilifera</q></gloss><?oxy_comment_end?>
+            <note type="bibl">(<bibl><author>Frye</author>, <title>Indo-Iranica</title>,
+                  <pubPlace>Calcutta</pubPlace>, <date>1953</date>, <biblScope>p.
+                4</biblScope></bibl>.<note xml:lang="ru" type="footnote"><q
+                  rendition="#rend_doublequotes">Тhе chief occupation of Khur is working on products
+                  of the date palm, wich is called <hi rendition="#rend_italic">mog</hi> in the
+                  local dialect</q>.</note><note xml:lang="en" type="footnote"><q
+                  rendition="#rend_doublequotes">Тhе chief occupation of Khur is working on products
+                  of the date palm, wich is called <hi rendition="#rend_italic">mog</hi> in the
+                  local dialect</q>.</note> — <bibl><author>Redard</author>. <title>Le palmier à
+                  Khur. Locustʼs leg. Studies in honour of Taqizadeh</title>,
+                  <pubPlace>London</pubPlace>, <date>1962</date>, <biblScope>p.
+                215</biblScope></bibl>)</note></mentioned>, <mentioned><mentioned xml:lang="pal"><lang/>
+              <w>muγ</w></mentioned>, <mentioned xml:lang="x-balochi"><lang/>
+              <w>mok</w></mentioned>
+            <gloss>id</gloss></mentioned>. Is <mentioned xml:lang="ydg"><lang/>
+            <w>muγo</w>
+            <gloss><q>bean</q></gloss><note type="bibl"> (<bibl><ref type="bibl"
+                  target="#ref_Morgenstierne._IIFL"/>
+                <biblScope>II 226</biblScope></bibl>)</note></mentioned> related
+              here?<lb/><bibl><ref type="bibl" target="#ref_ОЯФ_I"/>
             <biblScope>295</biblScope></bibl>.</etym>
       </entry>
     </body>
