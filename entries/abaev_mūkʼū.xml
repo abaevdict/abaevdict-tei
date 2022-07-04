@@ -1,60 +1,91 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">mūkʼū</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_mūkʼū" xml:lang="os" abv:completeness="russian-questions">
+      <entry xml:id="entry_mūkʼū" xml:lang="os" abv:completeness="complete">
         <form type="lemma" xml:lang="os-x-iron"><orth>mūkʼū</orth></form>
         <form xml:lang="os-x-digor" type="dialectal"><orth>mok’o</orth></form>
-        <sense><note type="comment">, чаще мн. ч. <w>mūkʼūtæ</w>
-          </note><abv:tr xml:lang="ru">
+        <note xml:lang="ru" type="comment">, чаще мн. ч. <w xml:lang="os-x-iron">mūkʼūtæ</w></note>
+        <note xml:lang="en" type="comment">, more frequently pl. <w xml:lang="os-x-iron"
+          >mūkʼūtæ</w></note>
+        <sense><abv:tr xml:lang="ru">
             <q>морда</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>muzzle</q>
           </abv:tr></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
-            <quote xmlns="http://www.tei-c.org/ns/1.0">dæ mūkʼūtæ dyn nyxxojʒynæn!</quote>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">dæ <oRef>mūkʼūtæ</oRef> dyn
+              nyxxojʒynæn!</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">набью тебе морду!</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">I will beat your muzzle!</q>
+            </tr>
           </example>
         </exampleGrp>
-        <etym xml:lang="ru">Вероятно, контаминация <mentioned xml:lang="ira"><lang>иран.</lang>
+        <etym xml:lang="ru">Вероятно, контаминация <mentioned xml:lang="ira"><lang/>
             <w type="rec">muxa-</w></mentioned> с каким-то синонимичным субстратным словом. Ср., с
-          одной стороны, <mentioned xml:lang="oru"><lang>орм.</lang>
-            <w>mux</w></mentioned>, <mentioned xml:lang="prc"><lang>пар.</lang>
-            <w>mux</w></mentioned>, <mentioned xml:lang="ps"><lang>афг.</lang>
-            <w>max</w></mentioned>, <mentioned xml:lang="x-nuristan"><lang>кафир.</lang>
-            <w>muk</w></mentioned>, <mentioned xml:lang="inc-x-old"><lang>др.инд.</lang>
+          одной стороны, <mentioned xml:lang="oru"><lang/>
+            <w>mux</w></mentioned>, <mentioned xml:lang="prc"><lang/>
+            <w>mux</w></mentioned>, <mentioned xml:lang="ps"><lang/>
+            <w>max</w></mentioned>, <mentioned xml:lang="x-nuristan"><lang/>
+            <w>muk</w></mentioned>, <mentioned xml:lang="inc-x-old"><lang/>
             <w>mukha-</w>
             <gloss><q>лицо</q></gloss></mentioned>; с другой стороны, на Кавказе: <mentioned
-            xml:lang="huz"><lang>гунзиб.</lang>
+            xml:lang="huz"><lang/>
             <w>mokʼo</w>
-            <gloss><q>клюв</q></gloss></mentioned>, <mentioned xml:lang="tkr"><lang>цахур.</lang>
+            <gloss><q>клюв</q></gloss></mentioned>, <mentioned xml:lang="tkr"><lang/>
             <w>bok’</w>
             <gloss><q>морда</q></gloss>, <gloss><q>клюв</q></gloss></mentioned>, <mentioned
-            xml:lang="xmf"><lang>мегр.</lang>
+            xml:lang="xmf"><lang/>
             <w>nukʼu</w>
-            <gloss><q>подбородок</q></gloss></mentioned>, <mentioned xml:lang="lzz"
-              ><lang>чан.</lang>
+            <gloss><q>подбородок</q></gloss></mentioned>, <mentioned xml:lang="lzz"><lang/>
             <w>nukʼu</w>
             <gloss><q>подбородок</q></gloss>, <gloss><q>рот</q></gloss>,
             <gloss><q>лицо</q></gloss></mentioned>.</etym>
+        <etym xml:lang="en">Probably contamination of <mentioned xml:lang="ira"><lang/>
+            <w type="rec">muxa-</w></mentioned> with a synonymous substratum word. Cf., on the one
+          hand, <mentioned xml:lang="oru"><lang/>
+            <w>mux</w></mentioned>, <mentioned xml:lang="prc"><lang/>
+            <w>mux</w></mentioned>, <mentioned xml:lang="ps"><lang/>
+            <w>max</w></mentioned>, <mentioned xml:lang="x-nuristan"><lang/>
+            <w>muk</w></mentioned>, <mentioned xml:lang="inc-x-old"><lang/>
+            <w>mukha-</w>
+            <gloss><q>face</q></gloss></mentioned>; on the other hand, in the Caucasus: <mentioned
+            xml:lang="huz"><lang/>
+            <w>mokʼo</w>
+            <gloss><q>beak</q></gloss></mentioned>, <mentioned xml:lang="tkr"><lang/>
+            <w>bok’</w>
+            <gloss><q>muzzle</q></gloss>, <gloss><q>beak</q></gloss></mentioned>, <mentioned
+            xml:lang="xmf"><lang/>
+            <w>nukʼu</w>
+            <gloss><q>chin</q></gloss></mentioned>, <mentioned xml:lang="lzz"><lang/>
+            <w>nukʼu</w>
+            <gloss><q>chin</q></gloss>, <gloss><q>mouth</q></gloss>,
+            <gloss><q>face</q></gloss></mentioned>.</etym>
       </entry>
     </body>
   </text>
