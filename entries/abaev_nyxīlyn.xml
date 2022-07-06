@@ -1,31 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">nyxīlyn</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_nyxīlyn" xml:lang="os" abv:completeness="russian-questions">
+      <entry xml:id="entry_nyxīlyn" xml:lang="os" abv:completeness="english-questions">
         <form type="lemma"><orth>nyxīlyn</orth><form type="participle"
           ><orth>nyxyld</orth></form></form>
         <sense><sense><abv:tr xml:lang="ru">
               <q>дотрагиваться (робким и коротким движением)</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>touch (with a timid and short movement)</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>царапнуть (слегка)</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>scratch (a little)</q>
             </abv:tr></sense></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
@@ -34,8 +42,16 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">он царапнет, как мышка, а его дерут
                 по-медвежьи</q>
-              <note type="comment" xmlns="http://www.tei-c.org/ns/1.0"> (о слабом, ввязывающемся в
-                драку с сильными)</note>
+              <note xmlns="http://www.tei-c.org/ns/1.0" xml:lang="ru" type="comment"> (о слабом,
+                ввязывающемся в драку с сильными)</note>
+              <note xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" type="comment"> (о слабом,
+                ввязывающемся в драку с сильными)</note>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">he scratches like a mouse, and they tear him
+                like bears</q>
+              <note xmlns="http://www.tei-c.org/ns/1.0" type="comment"> (about the weak getting into
+                a fight with the strong)</note>
             </tr>
           </example>
           <example>
@@ -44,12 +60,20 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">что ты меня все задеваешь?</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">what are you offending me?</q>
+            </tr>
           </example>
         </exampleGrp>
         <etym xml:lang="ru">Надежной этимологии нет. Несомненно лишь, что <c>ny-</c> — преверб. Что
           касается <c>xīl-</c>, то сближение с <ref type="xr" target="#entry_xīlyn"><w>xīlyn</w>
             <gloss><q>ползти</q></gloss></ref> не очень соблазняет в силу видимой несовместимости
           значений. Может быть, объединяющим является понятие слабого, немощного движения.</etym>
+        <etym xml:lang="en">There is no reliable etymology. It is only certain that <c>ny-</c> is a
+          preverb. As for <c>xīl-</c>, the rapprochement with <ref type="xr" target="#entry_xīlyn"
+              ><w>xīlyn</w>
+            <gloss><q>crawl</q></gloss></ref> is not very tempting due to the apparent
+          incompatibility of meanings. Maybe the unifying concept is a weak, feeble movement.</etym>
       </entry>
     </body>
   </text>
