@@ -1,38 +1,50 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">mūs</hi></title>
       </titleStmt>
-      <xi:include href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_mūs" xml:lang="os" abv:completeness="russian-questions">
+      <entry xml:id="entry_mūs" xml:lang="os" abv:completeness="english-questions">
         <form type="lemma" xml:lang="os-x-iron"><orth>mūs</orth></form>
         <form xml:lang="os-x-digor" type="dialectal"><orth>mos</orth></form>
         <sense><sense><abv:tr xml:lang="ru">
               <q>площадка для молотьбы</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>area for threshing</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>ток</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>threshing-floor</q>
             </abv:tr></sense></sense>
         <re>
           <form type="lemma"><orth>mūswat</orth></form>
           <sense><sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
                 <q xmlns="http://www.tei-c.org/ns/1.0">площадь, равная току</q>
+              </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+                <q xmlns="http://www.tei-c.org/ns/1.0">area equal to that of a threshing-floor</q>
               </tr></sense><sense><abv:tr xml:lang="ru">
                 <q>место, где был ток</q>
+              </abv:tr><abv:tr xml:lang="en">
+                <q>place where a threshing-floor used to be</q>
               </abv:tr></sense></sense>
         </re>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
@@ -43,6 +55,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">кто работает на своем току, кто стрижет своих
                 овец</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">some (lit. <q>who</q>) work on their
+                threshing-floor, some (lit. <q>who</q>) shear their sheep</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Коста"/>
               <biblScope>125</biblScope></bibl>
           </example>
@@ -52,6 +68,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">копну овса разложили на току и смолотили ее</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">they spread out the shook of oat on the
+                threshing-floor and threshed it</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ИАА"/>
               <biblScope>III 223</biblScope></bibl>
           </example>
@@ -60,25 +80,40 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">овцы кинулись на ток</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the sheep flowed to the threshing-floor</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ИАА"/>
               <biblScope>II 266)</biblScope></bibl>
           </example>
           <example>
-            <quote xmlns="http://www.tei-c.org/ns/1.0">fæzzæg ærcydī: x˳ymtæ ærkarstoj; mækʼ˳ylæj
-                <oRef>mūsty</oRef> alyvars bajʒag</quote>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">fæzzæg ærcydī: x˳ymtæ ærkarstoj;
+              <?oxy_comment_start author="oleg" timestamp="20220706T182432+0300" comment="NB: интересная конструкция (&quot;в токах стало полно копнами&quot;)"?>mækʼ˳ylæj
+                <oRef>mūsty</oRef> alyvars bajʒag<?oxy_comment_end?></quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">наступила осень, нивы сжали; вокруг токов стало
                 полно копен</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">autumn came, the fields were harvested; many
+                shocks appeared around threshing-floors</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сека"/>
               <biblScope>58</biblScope></bibl>
           </example>
           <example>
-            <quote xmlns="http://www.tei-c.org/ns/1.0">fosæn су q˳yd — qæmpæj, xosæj — ūj īwyldær
-                <oRef>mūsy</oRef> mīdæg æværd wyd</quote>
+            <quote xmlns="http://www.tei-c.org/ns/1.0"
+              ><?oxy_comment_start author="oleg" timestamp="20220706T182521+0300" comment="NB: тонкое различие: &quot;нужно скоту&quot; (ген.), &quot;нужно для скота&quot; (дат.)"?>fosæn<?oxy_comment_end?>
+              су q˳yd —
+              <?oxy_comment_start author="oleg" timestamp="20220706T182535+0300" comment="NB: abl-coord"?>qæmpæj,
+              xosæj<?oxy_comment_end?> — ūj īwyldær <oRef>mūsy</oRef> mīdæg æværd wyd</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">(все), что нужно было для скота, — солома, сено
                 — все было сложено на току</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">(all) that was needed for the cattle — straw,
+                hay — all was spread out on the threshing-floor</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сека"/>
               <biblScope>101</biblScope></bibl>
@@ -89,6 +124,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">конь стал фыркать и отпрянул на семь гумен</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the horse started snorting and jumped away to
+                the distance of seven threshing floors</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ЮОПам."/>
               <biblScope>II 14</biblScope></bibl>
           </example>
@@ -98,6 +137,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">для нас (средство) жизни — наше гумно</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">for us (the means of) life is our
+                threshing-floor</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_СОПам."/>
               <biblScope>II 129</biblScope></bibl>
           </example>
@@ -105,13 +148,15 @@
         <etym xml:lang="ru">Слово вышло из западнокавказской (абхазо-адыгской) среды; ср. <mentioned
             xml:lang="abq"><lang/>
             <w>mašw</w>
-            <gloss><q>ток</q></gloss><note type="comment"> (<bibl><title>Русско-абаз. сл.
-                  </title><pubPlace>М.</pubPlace>, <date>1956</date>, <biblScope>стр.
-                  503</biblScope></bibl>)</note></mentioned>,
-            <?oxy_comment_start author="Vados" timestamp="20220420T183737+0300" comment="Нет &quot;абаз. (диал.)&quot;" id="hmw_lkm_c5b" flag="done"?><?oxy_comment_start author="oleg" timestamp="20220706T181414+0300" parentID="hmw_lkm_c5b" comment="добавил" flag="done" mid="1"?><mentioned
+            <gloss><q>ток</q></gloss><note xml:lang="ru" type="comment"> (<bibl><title>Русско-абаз.
+                  сл. </title><pubPlace>М.</pubPlace>, <date>1956</date>, <biblScope>стр.
+                  503</biblScope></bibl>)</note><note xml:lang="en" type="comment">
+                  (<bibl><title>Русско-абаз. сл. </title><pubPlace>М.</pubPlace>, <date>1956</date>,
+                  <biblScope>стр. 503</biblScope></bibl>)</note></mentioned>,
+            <?oxy_comment_start author="Vados" timestamp="20220420T183737+0300" comment="Нет &quot;абаз. (диал.)&quot;" id="hmw_lkm_c5b" flag="done"?><?oxy_comment_start author="oleg" timestamp="20220706T181414+0300" parentID="hmw_lkm_c5b" comment="добавил" flag="done" mid="4"?><mentioned
             xml:lang="abq-x-dial"><lang/>
             <w>a-mәšwta</w>
-            <gloss>id</gloss></mentioned><?oxy_comment_end?><?oxy_comment_end mid="1"?>. Звуковое
+            <gloss>id</gloss></mentioned><?oxy_comment_end?><?oxy_comment_end mid="4"?>. Звуковое
           развитие: <mentioned xml:lang="abq"><w xml:lang="abq">mašw</w></mentioned> → <w>*mawš-</w>
           → <oRef>mos</oRef>; ср. <c>u-</c>эпентезу в <ref type="xr" target="#entry_ūrs"><w
               xml:lang="os-x-iron">ūrs</w>
@@ -120,6 +165,28 @@
             <w>mostъ</w>
             <gloss>первоначально <q>утрамбованная площадка</q></gloss>,
             <gloss><q>пол</q></gloss></mentioned>.</etym>
+        <etym xml:lang="en">The word came from the West Caucasian (Abkhaz-Adyghe) milieu; cf.
+            <mentioned xml:lang="abq"><lang/>
+            <w>mašw</w>
+            <gloss><q>threshing-floor</q></gloss><note xml:lang="ru" type="comment">
+                  (<bibl><title>Русско-абаз. сл. </title><pubPlace>М.</pubPlace>, <date>1956</date>,
+                  <biblScope>стр. 503</biblScope></bibl>)</note><note xml:lang="en" type="comment">
+                  (<bibl><title>Russko-abazinskij slovarʼ</title> [Russian-Abaza dictionary].
+                  <pubPlace>Moscow</pubPlace>, <date>1956</date>, <biblScope>p.
+                503</biblScope></bibl>)</note></mentioned>,
+            <?oxy_comment_start author="Vados" timestamp="20220420T183737+0300" comment="Нет &quot;абаз. (диал.)&quot;" id="hmw_lkm_c5b" flag="done"?><?oxy_comment_start author="oleg" timestamp="20220706T181414+0300" parentID="hmw_lkm_c5b" comment="добавил" flag="done" mid="6"?><mentioned
+            xml:lang="abq-x-dial"><lang/>
+            <w>a-mәšwta</w>
+            <gloss>id</gloss></mentioned><?oxy_comment_end?><?oxy_comment_end mid="6"?>. The
+          phonetic development is: <mentioned xml:lang="abq"><w xml:lang="abq">mašw</w></mentioned>
+          → <w>*mawš-</w> → <oRef>mos</oRef>; cf. <c>u-</c>epenthesis in <ref type="xr"
+            target="#entry_ūrs"><w xml:lang="os-x-iron">ūrs</w>
+            <w xml:lang="os-x-digor">ors</w></ref> etc. From Caucasian possibly comes <mentioned
+            xml:lang="cu"><lang/>
+            <w>mostъ</w>
+            <gloss><q>bridge</q></gloss>, <gloss>originally
+                <q><?oxy_comment_start author="oleg" timestamp="20220706T183157+0300" comment="or rammed?"?>levelled<?oxy_comment_end?>
+                area</q></gloss>, <gloss><q>floor</q></gloss></mentioned>.</etym>
       </entry>
     </body>
   </text>
