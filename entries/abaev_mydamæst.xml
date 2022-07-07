@@ -1,43 +1,57 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">mydamæst</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_mydamæst" xml:lang="os-x-iron" abv:completeness="russian-questions">
+      <entry xml:id="entry_mydamæst" xml:lang="os-x-iron" abv:completeness="english-questions">
         <form type="lemma"><orth>mydamæst</orth></form>
         <usg><lang/></usg>
         <sense><abv:tr xml:lang="ru">
             <q>медовая лепешка</q>
-          </abv:tr><note type="comment"> (из теста, замешанного с медом)</note></sense>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>honey cake</q>
+          </abv:tr><note xml:lang="ru" type="comment"> (из теста, замешанного с медом)</note><note
+            xml:lang="en" type="comment"> (from dough kneaded with honey)</note></sense>
         <re>
           <form type="lemma"><orth>ærtæ mydamæsty</orth></form>
-          <note type="comment"> в эпосе —</note>
-          <sense>три культовые лепешки, которые Шатана готовит как приношение богам в особо важных
-            случаях</sense>
+          <note xml:lang="ru" type="comment"> в эпосе —</note>
+          <note xml:lang="en" type="comment"> in the epic texts,</note>
+          <sense><def xml:lang="ru">три культовые лепешки, которые Шатана готовит как приношение
+              богам в особо важных случаях</def><def xml:lang="en">three ritual cakes which Satana
+              makes as an offering to the gods on especially significant occasions</def></sense>
         </re>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">Satana ʽrtæ <oRef>mydamæsty</oRef> rakodta
-              æmæ sæ īw ronǵy darynīmæ sxasta avd æddægwælæjy særmæ æmæ ūrdygæj sk˳yvta</quote>
+              æmæ sæ īw ronǵy dūrynīmæ sxasta avd æddægwælæjy særmæ æmæ ūrdygæj sk˳yvta</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">Шатана приготовила три медовые лепешки и вместе
                 с кувшином ронга подняла их на верхушку семи ярусов и помолилась</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Satana made three honey cakes and with a jug of
+                  <ref type="xr" target="#entry_rong"/> lifted them on the top of the seven levels
+                and prayed</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ЮОПам."/>
               <biblScope>I 133</biblScope></bibl>
@@ -51,6 +65,12 @@
                 медовой лепешкой, похлебкой на молоке, ядрами грецкого ореха, сваренными с медом, и
                 еще много чем</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the sun fed the mouse a meal: wheat porridge
+                with a honey cake, milk-based
+                <?oxy_comment_start author="oleg" timestamp="20220707T235551+0300" comment="похлёбка"?>gruel<?oxy_comment_end?>,
+                walnut kernels boiled with honey, and many more things</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ЮОПам."/>
               <biblScope>III 170</biblScope></bibl>
           </example>
@@ -58,6 +78,9 @@
         <etym xml:lang="ru">См. <ref type="xr" target="#entry_myd"/> и <ref type="xr"
             target="#entry_amæntyn"><w>amæntyn</w>
             <gloss><q>месить тесто</q></gloss></ref>.</etym>
+        <etym xml:lang="en">See <ref type="xr" target="#entry_myd"/> and <ref type="xr"
+            target="#entry_amæntyn"><w>amæntyn</w>
+            <gloss><q>knead</q></gloss></ref>.</etym>
       </entry>
     </body>
   </text>
