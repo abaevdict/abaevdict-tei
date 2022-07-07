@@ -1,40 +1,50 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">myd</hi></title>
       </titleStmt>
-      <xi:include href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_myd" xml:lang="os" abv:completeness="russian-questions">
+      <entry xml:id="entry_myd" xml:lang="os" abv:completeness="complete">
         <form type="lemma" xml:lang="os-x-iron"><orth>myd</orth></form>
         <form xml:lang="os-x-digor" type="dialectal"><orth>mud</orth></form>
         <sense><abv:tr xml:lang="ru">
             <q>мед</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>honey</q>
           </abv:tr></sense>
         <re>
           <form type="lemma"><orth>mydy ḱyrǧæd</orth></form>
           <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">улей</q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">beehive</q>
             </tr></sense>
         </re>
         <re>
           <form type="lemma"><orth>mydy fæzǧær</orth></form>
           <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">соты</q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">honeycombs</q>
             </tr></sense>
         </re>
         <re>
@@ -42,8 +52,12 @@
           <form xml:lang="os-x-digor" type="dialectal"><orth>mudi ǧos</orth></form>
           <sense><sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
                 <q xmlns="http://www.tei-c.org/ns/1.0">сотовая ячейка</q>
+              </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+                <q xmlns="http://www.tei-c.org/ns/1.0">honeycomb cell</q>
               </tr></sense><sense><abv:tr xml:lang="ru">
                 <q>соты</q>
+              </abv:tr><abv:tr xml:lang="en">
+                <q>honeycombs</q>
               </abv:tr></sense></sense>
         </re>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
@@ -52,15 +66,23 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">мы будем тебе макать пшеничный хлеб в мед</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">we will dip wheat bread into honey for you</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Коста"/>
               <biblScope>121</biblScope></bibl>
           </example>
           <example>
-            <quote xmlns="http://www.tei-c.org/ns/1.0"><oRef>mydy</oRef> kæj kʼūxtæ stūloj, ūj sæ
+            <quote xmlns="http://www.tei-c.org/ns/1.0"><oRef>mydy</oRef> kæj kʼūxtæ stūloj, ūj
+              <?oxy_comment_start author="oleg" timestamp="20220707T175917+0300" comment="NB: clitic climbing? (у глагола фӕуӕвын вроде не бывает валентности на объект)"?>sæ<?oxy_comment_end?>
               æпæ astærgæ næ fæwyʒæn</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">чьи пальцы обмакнулись в мед, тот не устоит,
                 чтобы не облизать их</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">he whose fingers became dipped into honey will
+                not resist licking them</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ЮОПам."/>
               <biblScope>III 217</biblScope></bibl>
@@ -72,6 +94,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">если есть мед, то мухи прилетят хоть из
                 Багдада</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">if there is honey, flies will come even from
+                Baghdad</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ЮОПам."/>
               <biblScope>III 216</biblScope></bibl>
           </example>
@@ -80,6 +106,10 @@
               nyḱḱyndī</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">на тропе смерти, говорят, разлили мед</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">on the path of death, they say, honey is
+                spilled</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сека"/>
               <biblScope>31</biblScope></bibl>
@@ -91,6 +121,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">увы, сегодня в нашу полную чашу меда влили
                 тайно яд</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">alas, today into our full cup of honey poison
+                was poured</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_F."/>
               <biblScope>1957 III 32</biblScope></bibl>
           </example>
@@ -100,6 +134,9 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">Иоанн же ел акриды и дикий мед</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">and John… did eat locusts and wild honey</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Марк"/>
               <biblScope><hi rendition="#rend_italic">1</hi> 6</biblScope></bibl>
           </example>
@@ -108,6 +145,9 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">цветок богат медом</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the flower is rich with honey</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Илас"/>
               <biblScope>13</biblScope></bibl>
           </example>
@@ -115,7 +155,10 @@
             <quote xmlns="http://www.tei-c.org/ns/1.0">kæmændær jæ <oRef>mydy</oRef> ḱyrǧæd
               adavdī</quote>
             <tr xml:lang="ru">
-              <q xmlns="http://www.tei-c.org/ns/1.0">кого-то украли улей"</q>
+              <q xmlns="http://www.tei-c.org/ns/1.0">у кого-то украли улей"</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">someone’s beehive was stolen"</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ИАА"/>
               <biblScope>II 367</biblScope></bibl>
@@ -128,6 +171,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">рабочие пчелы вылетают, чтобы собрать себе на
                 зиму мед</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">working bees fly out in order to gather
+                themselves honey for the winter</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ОЭ"/>
               <biblScope>I 96</biblScope></bibl>
           </example>
@@ -137,6 +184,10 @@
               sækær</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">в погребе у них мед, масло, мука, сахар</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">in their cellar they have honey, butter, flour,
+                sugar</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Тайм._Мӕ_уарзт"/>
               <biblScope>27</biblScope></bibl>
@@ -151,7 +202,11 @@
             <w>mai</w>
             <gloss><q>вино</q></gloss></mentioned>, <mentioned xml:lang="xpr"><lang/>
             <w>mad</w>
-            <note type="comment">в <mentioned xml:lang="xpr"><w>madubar</w>
+            <note xml:lang="ru" type="comment">в <mentioned xml:lang="xpr"><w>madubar</w>
+                <gloss><q>поставщик вина</q></gloss></mentioned>, <mentioned xml:lang="xpr"
+                  ><w>madustān</w>
+                <gloss><q>винный склад</q></gloss></mentioned></note><note xml:lang="en"
+              type="comment">в <mentioned xml:lang="xpr"><w>madubar</w>
                 <gloss><q>поставщик вина</q></gloss></mentioned>, <mentioned xml:lang="xpr"
                   ><w>madustān</w>
                 <gloss><q>винный склад</q></gloss></mentioned></note>
@@ -166,7 +221,8 @@
                 <biblScope>1942 X 98</biblScope></bibl>)</note></mentioned>, <mentioned
             xml:lang="kho"><lang/>
             <w>mau</w>
-            <note type="comment">(из <w>maδu</w>)</note></mentioned>, <mentioned xml:lang="ae"><lang/>
+            <note xml:lang="ru" type="comment">(из <w>maδu</w>)</note><note xml:lang="en"
+              type="comment">(из <w>maδu</w>)</note></mentioned>, <mentioned xml:lang="ae"><lang/>
             <w>maδu</w>
             <gloss><q>вино</q></gloss>, <gloss><q>мед</q></gloss></mentioned>, <mentioned
             xml:lang="inc-x-old"><lang/>
@@ -186,13 +242,13 @@
             <gloss><q>мед</q></gloss></mentioned>, <mentioned xml:lang="grc"><lang/>
             <w>μέϑυ</w>
             <gloss><q>хмельной напиток</q></gloss></mentioned>. Неоднократно отмечались
-          внеиндоевропейские связи слова: <mentioned xml:lang="fi"><lang/>
-            <w>mete-</w></mentioned>, <mentioned xml:lang="x-mordvin"><lang/>
-            <w>med</w></mentioned>, <mentioned xml:lang="smi"><lang>саами</lang>
-            <w>mietta</w></mentioned>, <mentioned xml:lang="hu"><lang/>
-            <w>méz</w></mentioned>, <mentioned xml:lang="zh"><lang/>
-            <w>mi</w></mentioned>, <mentioned xml:lang="ja"><lang/>
-            <w>mitsu</w>
+          внеиндоевропейские связи слова: <mentioned><mentioned xml:lang="fi"><lang/>
+              <w>mete-</w></mentioned>, <mentioned xml:lang="x-mordvin"><lang/>
+              <w>med</w></mentioned>, <mentioned xml:lang="smi"><lang>саами</lang>
+              <w>mietta</w></mentioned>, <mentioned xml:lang="hu"><lang/>
+              <w>méz</w></mentioned>, <mentioned xml:lang="zh"><lang/>
+              <w>mi</w></mentioned>, <mentioned xml:lang="ja"><lang/>
+              <w>mitsu</w></mentioned>
             <gloss><q>мед</q></gloss></mentioned> и др. (<bibl><ref type="bibl"
               target="#ref_Mayrhofer"/>
             <biblScope>II 571</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Jacobsohn"/>
@@ -202,9 +258,10 @@
             <gloss><q>сироп</q></gloss></mentioned>, <mentioned xml:lang="ce"><lang/>
             <w>muoz</w>
             <gloss><q>мед</q></gloss></mentioned>, <mentioned xml:lang="ce"><w>merzi</w>
-            <w>сладкий</w>
-            <note type="comment">(с инфигированным <c>r</c>?)</note></mentioned>, <mentioned
-            xml:lang="kap"><lang/>
+            <gloss><q>сладкий</q></gloss>
+            <note xml:lang="ru" type="comment">(с инфигированным <c>r</c>?)</note><note
+              xml:lang="en" type="comment">(с инфигированным <c>r</c>?)</note></mentioned>,
+            <mentioned xml:lang="kap"><lang/>
             <w>mucʼo</w>
             <gloss><q>мед</q></gloss></mentioned>, <mentioned xml:lang="ani"><lang/>
             <w>micʼа</w></mentioned>, <mentioned xml:lang="tab"><lang/>
@@ -214,13 +271,19 @@
           произошел под влиянием соседнего губного согласного и конечного <c>u</c>; ср. в этом
           отношении <ref type="xr" target="#entry_fys"><w xml:lang="os-x-iron">fys</w>
             <w xml:lang="os-x-digor">fus</w>
-            <note type="comment">из <mentioned xml:lang="ira"><w type="rec"
-                  ><?oxy_comment_start author="Vados" timestamp="20220420T193150+0300" comment="Это иранская праформа?" id="dpq_kgs_c5b" flag="done"?><?oxy_comment_start author="oleg" timestamp="20220707T133133+0300" parentID="dpq_kgs_c5b" comment="да" flag="done" mid="1"?>pasu<?oxy_comment_end mid="1"?><?oxy_comment_end?>-</w>
+            <note xml:lang="ru" type="comment">из <mentioned xml:lang="ira"><w type="rec"
+                  ><?oxy_comment_start author="Vados" timestamp="20220420T193150+0300" comment="Это иранская праформа?" id="dpq_kgs_c5b" flag="done"?><?oxy_comment_start author="oleg" timestamp="20220707T133133+0300" parentID="dpq_kgs_c5b" comment="да" flag="done" mid="2"?>pasu<?oxy_comment_end mid="2"?><?oxy_comment_end?>-</w>
+                <gloss><q>овца</q></gloss></mentioned></note><note xml:lang="en" type="comment">из
+                <mentioned xml:lang="ira"><w type="rec"
+                  ><?oxy_comment_start author="Vados" timestamp="20220420T193150+0300" comment="Это иранская праформа?" id="dpq_kgs_c5b" flag="done"?><?oxy_comment_start author="oleg" timestamp="20220707T133133+0300" parentID="dpq_kgs_c5b" comment="да" flag="done" mid="4"?>pasu<?oxy_comment_end mid="4"?><?oxy_comment_end?>-</w>
                 <gloss><q>овца</q></gloss></mentioned></note></ref> и <ref type="xr"
             target="#entry_fys"><w xml:lang="os-x-iron">fyr</w>
             <w xml:lang="os-x-digor">fur</w>
-            <note type="comment">из <mentioned xml:lang="ira"
-                  ><w><?oxy_comment_start author="Vados" timestamp="20220420T193150+0300" comment="Это иранская праформа?" id="m1l_ngs_c5b" flag="done"?><?oxy_comment_start author="oleg" timestamp="20220707T133222+0300" parentID="m1l_ngs_c5b" comment="да" flag="done" mid="3"?>paru<?oxy_comment_end mid="3"?><?oxy_comment_end?>-</w>
+            <note xml:lang="ru" type="comment">из <mentioned xml:lang="ira"
+                  ><w><?oxy_comment_start author="Vados" timestamp="20220420T193150+0300" comment="Это иранская праформа?" id="m1l_ngs_c5b" flag="done"?><?oxy_comment_start author="oleg" timestamp="20220707T133222+0300" parentID="m1l_ngs_c5b" comment="да" flag="done" mid="6"?>paru<?oxy_comment_end mid="6"?><?oxy_comment_end?>-</w>
+                <gloss><q>много</q></gloss></mentioned></note><note xml:lang="en" type="comment">из
+                <mentioned xml:lang="ira"
+                  ><w><?oxy_comment_start author="Vados" timestamp="20220420T193150+0300" comment="Это иранская праформа?" id="m1l_ngs_c5b" flag="done"?><?oxy_comment_start author="oleg" timestamp="20220707T133222+0300" parentID="m1l_ngs_c5b" comment="да" flag="done" mid="8"?>paru<?oxy_comment_end mid="8"?><?oxy_comment_end?>-</w>
                 <gloss><q>много</q></gloss></mentioned></note></ref>. — Ср. <ref type="xr"
             target="#entry_mydaʒ"/>, <ref type="xr" target="#entry_mydamæst"/>, <ref type="xr"
             target="#entry_myddar"/>, <ref type="xr" target="#entry_mydgæs"/>, <ref type="xr"
@@ -229,11 +292,130 @@
             <w xml:lang="os-x-digor">mudkʼelæ</w></ref>, <ref type="xr" target="#entry_mydx0yz"/>,
             <ref type="xr" target="#entry_mydybynʒ"/>. — О древности пчеловодства у осетин см. <ref
             type="xr" target="#entry_ævz-"/> (<bibl><ref type="bibl" target="#ref_ИЭС_I"/>
-            <biblScope>I 208</biblScope></bibl>). <note type="footnote">Клавдий Элиан (II в. н. в.)
-            сообщает: <q rendition="#rend_doublequotes">…скифы привозят к мисийцам па продажу
-              добываемый у них самих мед и туземный воск</q> (<bibl><ref type="bibl"
+            <biblScope>I 208</biblScope></bibl>). <note xml:lang="ru" type="footnote">Клавдий Элиан
+            (II в. н. в.) сообщает: <q rendition="#rend_doublequotes">…скифы привозят к мисийцам па
+              продажу добываемый у них самих мед и туземный воск</q> (<bibl><ref type="bibl"
                 target="#ref_ВДИ"/>
+              <biblScope>1948 II 223</biblScope></bibl>).</note><note xml:lang="en" type="footnote"
+            >Клавдий Элиан (II в. н. в.) сообщает: <q rendition="#rend_doublequotes">…скифы привозят
+              к мисийцам па продажу добываемый у них самих мед и туземный воск</q> (<bibl><ref
+                type="bibl" target="#ref_ВДИ"/>
               <biblScope>1948 II 223</biblScope></bibl>).</note>
+          <lb/><bibl><ref type="bibl" target="#ref_Миллер_Вс._ОЭ"/>
+            <biblScope>II 53</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Miller._Gr."/>
+            <biblScope>17</biblScope></bibl>. — <bibl><ref type="bibl"
+              target="#ref_Hübschmann._Oss."/>
+            <biblScope>50</biblScope></bibl>. — <bibl><author>Szémerenyi</author>, <title>Die
+              Sprache</title>
+            <date>1966</date>
+            <biblScope>XII 221 сл.</biblScope></bibl></etym>
+        <etym xml:lang="en">Goes back to <mentioned xml:lang="ira"><lang/>
+            <w type="rec">madu-</w></mentioned>, <mentioned xml:lang="ine"><lang/>
+            <w type="rec">medhu-</w></mentioned>. This word referred both to honey and to the
+          alcoholic drink (mead) prepared from it; in the latter sense see Ossetic <ref type="xr"
+            target="#entry_rong"/>. In Iranian this word also often means <q>wine</q>: <mentioned
+            xml:lang="fa"><lang/>
+            <w>mai</w>
+            <gloss><q>wine</q></gloss></mentioned>, <mentioned xml:lang="xpr"><lang/>
+            <w>mad</w>
+            <note xml:lang="ru" type="comment">в <mentioned xml:lang="xpr"><w>madubar</w>
+                <gloss><q>поставщик вина</q></gloss></mentioned>, <mentioned xml:lang="xpr"
+                  ><w>madustān</w>
+                <gloss><q>винный склад</q></gloss></mentioned></note><note xml:lang="en"
+              type="comment">in <mentioned xml:lang="xpr"><w>madubar</w>
+                <gloss><q>wine supplier</q></gloss></mentioned>, <mentioned xml:lang="xpr"
+                  ><w>madustān</w>
+                <gloss><q>wine warehouse</q></gloss></mentioned></note>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Ниса"/>
+                <biblScope>42 сл.</biblScope></bibl>)</note></mentioned>, <mentioned xml:lang="xpr"
+              ><w>madudār</w>
+            <gloss><q>winebearer</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_HO"/>
+                <biblScope>65</biblScope></bibl>)</note></mentioned>, <mentioned xml:lang="sog"><lang/>
+            <w>mδw</w>, <w>mwδy</w>
+            <gloss><q>wine</q></gloss><note type="bibl"> (<bibl><ref type="bibl" target="#ref_BSOS"/>
+                <biblScope>1942 X 98</biblScope></bibl>)</note></mentioned>, <mentioned
+            xml:lang="kho"><lang/>
+            <w>mau</w>
+            <note xml:lang="ru" type="comment">(из <w>maδu</w>)</note><note xml:lang="en"
+              type="comment">(from <w>maδu</w>)</note></mentioned>, <mentioned xml:lang="ae"><lang/>
+            <w>maδu</w>
+            <gloss><q>wine</q></gloss>, <gloss><q>honey</q></gloss></mentioned>, <mentioned
+            xml:lang="inc-x-old"><lang/>
+            <w>madhu-</w>
+            <gloss><q>sweetness</q></gloss>, <gloss><q>honey</q></gloss></mentioned>,
+              <mentioned><mentioned xml:lang="cu"><lang/>
+              <w>medъ</w></mentioned>, <mentioned xml:lang="ru"><lang/>
+              <w>мед</w></mentioned>, <mentioned xml:lang="lt"><lang/>
+              <w>medùs</w></mentioned>
+            <gloss><q>honey</q></gloss></mentioned>, <mentioned><mentioned xml:lang="goh"><lang/>
+              <w>metu</w></mentioned>, <mentioned xml:lang="de"><lang/>
+              <w>Met</w></mentioned>
+            <gloss><q>mead</q></gloss></mentioned>, <mentioned xml:lang="sga"><lang/>
+            <w>mid</w>
+            <gloss>id.</gloss></mentioned>, <mentioned xml:lang="txb"><lang/>
+            <w>mit</w>
+            <gloss><q>honey</q></gloss></mentioned>, <mentioned xml:lang="grc"><lang/>
+            <w>μέϑυ</w>
+            <gloss><q>alcoholic drink</q></gloss></mentioned>. Non-Indo-European connections of this
+          word have been repeatedly attested: <mentioned><mentioned xml:lang="fi"><lang/>
+              <w>mete-</w></mentioned>, <mentioned xml:lang="x-mordvin"><lang/>
+              <w>med</w></mentioned>, <mentioned xml:lang="smi"><lang/>
+              <w>mietta</w></mentioned>, <mentioned xml:lang="hu"><lang/>
+              <w>méz</w></mentioned>, <mentioned xml:lang="zh"><lang/>
+              <w>mi</w></mentioned>, <mentioned xml:lang="ja"><lang/>
+              <w>mitsu</w></mentioned>
+            <gloss><q>honey</q></gloss> etc. <note type="bibl">(<bibl><ref type="bibl"
+                  target="#ref_Mayrhofer"/>
+                <biblScope>II 571</biblScope></bibl>. — <bibl><ref type="bibl"
+                  target="#ref_Jacobsohn"/>
+                <biblScope>161</biblScope></bibl> etc.)</note></mentioned>. Phonetically similar
+          words are also found in Caucasian languages: <mentioned xml:lang="lez"><lang/>
+            <w>med</w>
+            <gloss><q>syrup</q></gloss></mentioned>, <mentioned xml:lang="ce"><lang/>
+            <w>muoz</w>
+            <gloss><q>honey</q></gloss></mentioned>, <mentioned xml:lang="ce"><w>merzi</w>
+            <gloss><q>sweet</q></gloss>
+            <note xml:lang="ru" type="comment">(с инфигированным <c>r</c>?)</note><note
+              xml:lang="en" type="comment">(with infixed <c>r</c>?)</note></mentioned>, <mentioned
+            xml:lang="kap"><lang/>
+            <w>mucʼo</w>
+            <gloss><q>honey</q></gloss></mentioned>, <mentioned xml:lang="ani"><lang/>
+            <w>micʼа</w></mentioned>, <mentioned xml:lang="tab"><lang/>
+            <w>meʼel</w>
+            <gloss><q>sweet</q></gloss></mentioned>. A Wanderwort cultural term. — The change of
+            <c>a</c> into <c>u</c>, <c>у</c> (<w>madu</w> → <w>mud</w> → <oRef>myd</oRef>) occurred
+          as the result of the influence of the neigbouring labial consonant and final <c>u</c>; cf.
+          in this respect <ref type="xr" target="#entry_fys"><w xml:lang="os-x-iron">fys</w>
+            <w xml:lang="os-x-digor">fus</w>
+            <note xml:lang="ru" type="comment">из <mentioned xml:lang="ira"><w type="rec"
+                  ><?oxy_comment_start author="Vados" timestamp="20220420T193150+0300" comment="Это иранская праформа?" id="dpq_kgs_c5b" flag="done"?><?oxy_comment_start author="oleg" timestamp="20220707T133133+0300" parentID="dpq_kgs_c5b" comment="да" flag="done" mid="10"?>pasu<?oxy_comment_end mid="10"?><?oxy_comment_end?>-</w>
+                <gloss><q>овца</q></gloss></mentioned></note><note xml:lang="en" type="comment">from
+                <mentioned xml:lang="ira"><w type="rec"
+                  ><?oxy_comment_start author="Vados" timestamp="20220420T193150+0300" comment="Это иранская праформа?" id="dpq_kgs_c5b" flag="done"?><?oxy_comment_start author="oleg" timestamp="20220707T133133+0300" parentID="dpq_kgs_c5b" comment="да" flag="done" mid="12"?>pasu<?oxy_comment_end mid="12"?><?oxy_comment_end?>-</w>
+                <gloss><q>sheep</q></gloss></mentioned></note></ref> and <ref type="xr"
+            target="#entry_fys"><w xml:lang="os-x-iron">fyr</w>
+            <w xml:lang="os-x-digor">fur</w>
+            <note xml:lang="ru" type="comment">из <mentioned xml:lang="ira"
+                  ><w><?oxy_comment_start author="Vados" timestamp="20220420T193150+0300" comment="Это иранская праформа?" id="m1l_ngs_c5b" flag="done"?><?oxy_comment_start author="oleg" timestamp="20220707T133222+0300" parentID="m1l_ngs_c5b" comment="да" flag="done" mid="14"?>paru<?oxy_comment_end mid="14"?><?oxy_comment_end?>-</w>
+                <gloss><q>много</q></gloss></mentioned></note><note xml:lang="en" type="comment"
+              >from <mentioned xml:lang="ira"
+                  ><w><?oxy_comment_start author="Vados" timestamp="20220420T193150+0300" comment="Это иранская праформа?" id="m1l_ngs_c5b" flag="done"?><?oxy_comment_start author="oleg" timestamp="20220707T133222+0300" parentID="m1l_ngs_c5b" comment="да" flag="done" mid="16"?>paru<?oxy_comment_end mid="16"?><?oxy_comment_end?>-</w>
+                <gloss><q>many</q></gloss></mentioned></note></ref>. — Cf. <ref type="xr"
+            target="#entry_mydaʒ"/>, <ref type="xr" target="#entry_mydamæst"/>, <ref type="xr"
+            target="#entry_myddar"/>, <ref type="xr" target="#entry_mydgæs"/>, <ref type="xr"
+            target="#entry_mydgærdæg"/>, <ref type="xr" target="#entry_mydkʼax"><w
+              xml:lang="os-x-iron">mydkʼax</w>
+            <w xml:lang="os-x-digor">mudkʼelæ</w></ref>, <ref type="xr" target="#entry_mydx0yz"/>,
+            <ref type="xr" target="#entry_mydybynʒ"/>. — On the antiquity of beekeeping among the
+          Ossetians see <ref type="xr" target="#entry_ævz-"/> (<bibl><ref type="bibl"
+              target="#ref_ИЭС_I"/>
+            <biblScope>I 208</biblScope></bibl>). <note type="footnote">Claudius Aelianus (2nd c.
+            AD) reports: <q rendition="#rend_doublequotes">…the Scythians bring and sell to the
+              Moesians honey, which is no alien produce but native, and honeycombs of their own
+              country</q> (<bibl><ref type="bibl" target="#ref_ВДИ"/>
+              <biblScope>1948 II 223</biblScope></bibl>; English cited according to the translation
+            of A. F. Scholfield, 1958).</note>
           <lb/><bibl><ref type="bibl" target="#ref_Миллер_Вс._ОЭ"/>
             <biblScope>II 53</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Miller._Gr."/>
             <biblScope>17</biblScope></bibl>. — <bibl><ref type="bibl"
