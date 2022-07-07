@@ -1,44 +1,61 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">nywazæn</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_nywazæn" xml:lang="os" abv:completeness="russian-questions">
+      <entry xml:id="entry_nywazæn" xml:lang="os" abv:completeness="english-questions">
         <form type="lemma" xml:lang="os-x-iron"><orth>nywazæn</orth></form>
         <form xml:lang="os-x-digor" type="dialectal"><orth>niwazæn</orth></form>
         <sense><sense><abv:tr xml:lang="ru">
               <q>кубок</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>cup</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>бокал</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>goblet</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>чаша</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>bowl</q>
             </abv:tr></sense></sense>
-        <note type="comment">д. <ref type="xr" target="#entry_sinon"/> id.; <ref type="xr"
-            target="#entry_qalac"/> id.; специально —</note>
+        <note xml:lang="ru" type="comment">д. <ref type="xr" target="#entry_sinon"/> id.; <ref
+            type="xr" target="#entry_qalac"/> id.; специально —</note>
+        <note xml:lang="en" type="comment">; Digor <ref type="xr" target="#entry_sinon"/> id.; <ref
+            type="xr" target="#entry_qalac"/> id.; especially — </note>
         <sense><abv:tr xml:lang="ru">
             <q>почетный кубок, подносимый гостю</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>cup of honor presented to a guest</q>
           </abv:tr></sense>
         <re>
           <form type="lemma"><orth>kūwæggag nywazæn</orth></form>
           <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">кубок, который старший после произнесения
                 молитвы передает младшему</q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">cup, which the elder, after saying a prayer,
+                passes to the younger</q>
             </tr></sense>
         </re>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
@@ -49,6 +66,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">Созрыко достал один золотой кубок и велел
                 наполнить его ронгом</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Sozryko took out one golden goblet and ordered
+                to fill it with rong</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ОЭп."/>
               <biblScope>29</biblScope></bibl>
           </example>
@@ -57,6 +78,9 @@
               anyzta</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">он поднял кубок и выпил его</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">he raised his goblet and drank it</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ОЭп."/>
               <biblScope>30</biblScope></bibl>
@@ -68,6 +92,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">из молодых людей никто еще не отведал моего
                 кубка</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">none of the young people have yet tasted my
+                cup</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Коста"/>
               <biblScope>138</biblScope></bibl>
           </example>
@@ -76,6 +104,9 @@
               Xetægæn</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">молитвенный кубок Инал передал Хетагу</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Inal passed the prayer cup to Khetag</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Коста"/>
               <biblScope>222</biblScope></bibl>
@@ -86,6 +117,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">гостя усадили, поднесли ему почетный кубок</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the guest was seated, they brought him a cup of
+                honor</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_F."/>
               <biblScope>1959 I 64</biblScope></bibl>
           </example>
@@ -95,6 +130,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0" rendition="#rend_singlequotes">кубки с
                 аракой</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0" rendition="#rend_singlequotes">goblets with
+                araka</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Čerm."/>
               <biblScope>108</biblScope></bibl>
           </example>
@@ -103,6 +142,9 @@
               nywazʒynæn ūj banazyn?</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">можете ли пить чашу, которую я буду пить?</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">can you drink a cup that I will drink?</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Матфей"/>
               <biblScope><hi rendition="#rend_italic">20</hi> 22</biblScope></bibl>
@@ -115,6 +157,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">старику поднесли кубок, и он произнес
                 молитву</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the cup was brought to the old man, and he said
+                a prayer</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Диг._сказ."/>
               <biblScope>42</biblScope></bibl>
           </example>
@@ -123,6 +169,9 @@
             <quote xmlns="http://www.tei-c.org/ns/1.0">cæj, <oRef>niwazæntæ</oRef> ænkʼupp!</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">давайте разом опрокинем кубки!</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">letʼs turn the cups together!</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Iræf"/>
               <biblScope>101</biblScope></bibl>
@@ -134,6 +183,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">старые люди называли <hi
                   rendition="#rend_smallcaps">culuq</hi> кожаный кубок</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the old people called <hi
+                  rendition="#rend_smallcaps">culuq</hi> the leather cup</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_СОПам."/>
               <biblScope>II 187</biblScope></bibl>
           </example>
@@ -144,6 +197,13 @@
             <gloss><q>пить</q></gloss></ref> с помощью форманта <c>-æn</c>, указывающего в данном
           случае на орудие.<lb/><bibl><author>Hübschmann</author>, <ref type="bibl"
               target="#ref_ZDMG"/>
+            <biblScope>1887 XLI 321</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_ГО"/>
+            <biblScope>§ 170</biblScope></bibl>.</etym>
+        <etym xml:lang="en">From <ref type="xr" target="#entry_nwazyn"><w xml:lang="os-x-iron"
+              >nwazyn</w>
+            <w xml:lang="os-x-digor">niwazun</w>
+            <gloss><q>drink</q></gloss></ref> using the formant <c>-æn</c>, indicating the tool in
+          this case.<lb/><bibl><author>Hübschmann</author>, <ref type="bibl" target="#ref_ZDMG"/>
             <biblScope>1887 XLI 321</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_ГО"/>
             <biblScope>§ 170</biblScope></bibl>.</etym>
       </entry>
