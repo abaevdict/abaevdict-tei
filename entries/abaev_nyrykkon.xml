@@ -1,32 +1,40 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">nyrykkon</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_nyrykkon" xml:lang="os" abv:completeness="russian-questions">
+      <entry xml:id="entry_nyrykkon" xml:lang="os" abv:completeness="english-questions">
         <form type="lemma" xml:lang="os-x-iron"><orth>nyrykkon</orth></form>
         <form xml:lang="os-x-digor" type="dialectal"><orth>nurikkon</orth><form type="variant"
               ><orth>nurmikkon</orth></form></form>
         <sense><sense><abv:tr xml:lang="ru">
               <q>нынешний</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>current</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>современный</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>modern</q>
             </abv:tr></sense></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example xml:lang="os-x-digor">
@@ -36,6 +44,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">в современном хозяйстве нет более важного
                 оружия, чем топливо</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">in the modern household there is no more
+                important tool than fuel</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_FS"/>
               <biblScope>V 147</biblScope></bibl>
@@ -47,6 +59,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">из нынешних земных (людей) никто больше не
                 возлагает надежд на меня</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">of the current earthly (people) no one else has
+                hopes for me</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Iræf"/>
               <biblScope>24</biblScope></bibl>
@@ -64,6 +80,20 @@
             ><w>sæwmæ</w></mentioned> — направ. падежа от <ref type="xr" target="#entry_sæw-"
               ><w>sæw</w>
             <gloss><?oxy_comment_start author="Vados" timestamp="20220621T131009+0300" comment="В словаре единица с дефисом на конце - это то же самое слово?"?><q><?oxy_comment_end?>утро</q></gloss></ref>.</etym>
+        <etym xml:lang="en">Derived from <ref type="xr" target="#entry_nyr"><w xml:lang="os-x-iron"
+              >nyr</w>
+            <w xml:lang="os-x-digor">nur</w></ref> using the complex formant <c xml:lang="os-x-iron"
+            >-ykon</c>
+          <c xml:lang="os-x-digor">-ikkon</c> (<bibl><ref type="bibl" target="#ref_ГО"/>
+            <biblScope>§ 170<hi rendition="#rend_subscript">II 2</hi></biblScope></bibl>); Digor
+            <oRef>nurmikkon</oRef> is derived from the case form <ref type="xr"
+            target="#entry_nyrmæ"><w>nurmæ</w></ref>, likewise <mentioned xml:lang="os"
+              ><w>sæwmikkon</w>
+            <gloss><q>matutinal</q></gloss></mentioned> from <mentioned xml:lang="os"
+            ><w>sæwmæ</w></mentioned>, the
+          <?oxy_comment_start author="Vados" timestamp="20220708T155704+0300" comment="Такое название?"?>directional<?oxy_comment_end?>
+          case from from <ref type="xr" target="#entry_sæw-"><w>sæw</w>
+            <gloss><?oxy_comment_start author="Vados" timestamp="20220621T131009+0300" comment="В словаре единица с дефисом на конце - это то же самое слово?"?><q><?oxy_comment_end?>morning</q></gloss></ref>.</etym>
       </entry>
     </body>
   </text>
