@@ -1,40 +1,51 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">myrmyr</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_myrmyr" xml:lang="os" abv:completeness="russian-questions">
+      <entry xml:id="entry_myrmyr" xml:lang="os" abv:completeness="english-questions">
         <form type="lemma" xml:lang="os-x-iron"><orth>myrmyr</orth></form>
         <form xml:lang="os-x-digor" type="dialectal"><orth>mærmær</orth></form>
         <sense><abv:tr xml:lang="ru">
             <q>ржание</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>neighing</q>
           </abv:tr></sense>
         <re>
           <form type="lemma"><orth>myrmyr kænyn</orth></form>
           <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">ржать</q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">neigh</q>
             </tr></sense>
-          <sense>; </sense>
           <sense><sense><abv:tr xml:lang="ru">
                 <q>гоготать</q>
+              </abv:tr><abv:tr xml:lang="en">
+                <q><?oxy_comment_start author="oleg" timestamp="20220709T220826+0300" comment="is гоготать supposed to be about people or geese?"?>cackle<?oxy_comment_end?></q>
               </abv:tr></sense><sense><abv:tr xml:lang="ru">
                 <q>хохотать</q>
+              </abv:tr><abv:tr xml:lang="en">
+                <q>laugh loudly</q>
               </abv:tr></sense></sense>
           <note type="bibl"> (<bibl><ref type="bibl" target="#src_ОЭ"/>
               <biblScope>I 122)</biblScope></bibl>)</note>
@@ -47,6 +58,9 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">когда кобыла увидела своего жеребенка, она
                 заржала</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">when the mare saw its foal, it neighed</q>
+            </tr>
           </example>
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">Boræty xæræg... <oRef>myrmyrgængæ</oRef>
@@ -54,29 +68,29 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">бораевский осел со ржанием прибегает</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the donkey of the Borætæ comes neighing</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ОЭ"/>
               <biblScope>I 38</biblScope></bibl>
           </example>
         </exampleGrp>
         <etym xml:lang="ru">Широко распространенное в индоевропейских языках звукоподражание:
-            <mentioned xml:lang="inc-x-old"><lang>др.инд.</lang>
+            <mentioned xml:lang="inc-x-old"><lang/>
             <w>marmara-</w>
             <gloss><q>шумный</q></gloss>, <gloss><q>шум</q></gloss></mentioned>, <mentioned
             xml:lang="inc-x-old"><w>murmura-</w>
-            <gloss><q>потрескивающий огонь</q></gloss></mentioned>, <mentioned xml:lang="xcl"
-              ><lang>арм.</lang>
+            <gloss><q>потрескивающий огонь</q></gloss></mentioned>, <mentioned xml:lang="xcl"><lang/>
             <w>mərməral</w>
             <gloss><q>ворчать</q></gloss>, <gloss><q>мурлыкать</q></gloss>,
-              <gloss><q>роптать</q></gloss></mentioned>, <mentioned xml:lang="cu"
-              ><lang>ст.слав.</lang>
-            <w>mrъmrati</w></mentioned>, <mentioned xml:lang="lt"><lang>лит.</lang>
+              <gloss><q>роптать</q></gloss></mentioned>, <mentioned xml:lang="cu"><lang/>
+            <w>mrъmrati</w></mentioned>, <mentioned xml:lang="lt"><lang/>
             <w>murmlénti</w>
-            <gloss><q>ворчать</q></gloss></mentioned>, <mentioned xml:lang="goh"
-              ><lang>др.в.нем.</lang>
-            <w>murmurōn</w></mentioned>, <mentioned xml:lang="de"><lang>нем.</lang>
+            <gloss><q>ворчать</q></gloss></mentioned>, <mentioned xml:lang="goh"><lang/>
+            <w>murmurōn</w></mentioned>, <mentioned xml:lang="de"><lang/>
             <w>murmeln</w>
             <gloss><q>ворчать</q></gloss>, <gloss><q>бормотать</q></gloss>,
-              <gloss><q>журчать</q></gloss></mentioned>, <mentioned xml:lang="la"><lang>лат.</lang>
+              <gloss><q>журчать</q></gloss></mentioned>, <mentioned xml:lang="la"><lang/>
             <w>murmur</w>
             <gloss><q>бормотанье</q></gloss>, <gloss><q>гуденье</q></gloss>,
               <gloss><q>ропот</q></gloss>, <gloss><q>рокот</q></gloss>,
@@ -85,11 +99,41 @@
             xml:lang="la"><w>murmuro</w>
             <gloss><q>бормотать</q></gloss>, <gloss><q>роптать</q></gloss>,
               <gloss><q>ворчать</q></gloss>, <gloss><q>шуметь</q></gloss>,
-              <gloss><q>трещать</q></gloss></mentioned>, <mentioned xml:lang="sqj"><lang>алб.</lang>
-            <w>murmuroj</w></mentioned>, <mentioned xml:lang="grc"><lang>гр.</lang>
+              <gloss><q>трещать</q></gloss></mentioned>, <mentioned xml:lang="sqj"><lang/>
+            <w>murmuroj</w></mentioned>, <mentioned xml:lang="grc"><lang/>
             <w>μορμύρω</w>
             <gloss><q>шуметь</q></gloss>, <gloss><q>клокотать</q></gloss></mentioned>. — Ср. <ref
             type="xr" target="#entry_myrmyrag"/>.</etym>
+        <etym xml:lang="en">Onomatopoeia widespread in Indo-European: <mentioned
+            xml:lang="inc-x-old"><lang/>
+            <w>marmara-</w>
+            <gloss><q>noisy</q></gloss>, <gloss><q>noise</q></gloss></mentioned>, <mentioned
+            xml:lang="inc-x-old"><w>murmura-</w>
+            <gloss><q>crackling fire</q></gloss></mentioned>, <mentioned xml:lang="xcl"><lang/>
+            <w>mərməral</w>
+            <gloss><q>grumble</q></gloss>, <gloss><q>purr</q></gloss></mentioned>, <mentioned
+            xml:lang="cu"><lang/>
+            <w>mrъmrati</w></mentioned>, <mentioned xml:lang="lt"><lang/>
+            <w>murmlénti</w>
+            <gloss><q>grumble</q></gloss></mentioned>, <mentioned><mentioned xml:lang="goh"><lang/>
+              <w>murmurōn</w></mentioned>, <mentioned xml:lang="de"><lang/>
+              <w>murmeln</w></mentioned>
+            <gloss><q>grumble</q></gloss>, <gloss><q>mutter</q></gloss>,
+              <gloss><q>murmur</q></gloss></mentioned>, <mentioned xml:lang="la"><lang/>
+            <w>murmur</w>
+            <gloss><q>muttering</q></gloss>, <gloss><q>buzzing</q></gloss>,
+              <gloss><q>grumbling</q></gloss>, <gloss><q>rumbling</q></gloss>,
+                <gloss><q>roraring</q></gloss>, <gloss><q>howling</q></gloss>,
+              <gloss><q>noise</q></gloss>, <gloss><q>wailing</q></gloss>,
+              <gloss><q>humming</q></gloss></mentioned> etc., <mentioned xml:lang="la"
+              ><w>murmuro</w>
+            <gloss><q>mutter</q></gloss>, <gloss><q>grumble</q></gloss>, <gloss><q>make a
+              noise</q></gloss>, <gloss><q>crackle</q></gloss></mentioned>, <mentioned
+            xml:lang="sqj"><lang/>
+            <w>murmuroj</w></mentioned>, <mentioned xml:lang="grc"><lang/>
+            <w>μορμύρω</w>
+            <gloss><q>roar</q></gloss>, <gloss><q>boil</q></gloss></mentioned>. — Cf. <ref type="xr"
+            target="#entry_myrmyrag"/>.</etym>
       </entry>
     </body>
   </text>
