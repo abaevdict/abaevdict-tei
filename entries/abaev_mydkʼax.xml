@@ -1,59 +1,85 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">mydkʼax</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_mydkʼax" xml:lang="os" abv:completeness="russian-questions">
+      <entry xml:id="entry_mydkʼax" xml:lang="os" abv:completeness="complete">
         <form type="lemma" xml:lang="os-x-iron"><orth>mydkʼax</orth></form>
         <form xml:lang="os-x-digor" type="dialectal"><orth>mudkʼax</orth><form type="variant"
               ><orth>mudkʼelæ</orth></form></form>
-        <sense><note type="comment">буквально </note><abv:tr xml:lang="ru">
+        <sense><note xml:lang="ru" type="comment">буквально </note><note xml:lang="en"
+            type="comment">literally </note><abv:tr xml:lang="ru">
             <q rendition="#rend_doublequotes">с медовой ногой</q>
-          </abv:tr><note type="comment">; так говорят про девочку, после которой родился
-            мальчик</note></sense>
+          </abv:tr><abv:tr xml:lang="en">
+            <q rendition="#rend_doublequotes">with a honey leg</q>
+          </abv:tr><note xml:lang="ru" type="comment">; так говорят про девочку, после которой
+            родился мальчик</note><note xml:lang="en" type="comment">; said of a girl after whom a
+            boy was born</note></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">wæ ḱyzg <oRef>mydkʼax</oRef> fæwæd!</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">пусть ваша девочка окажется с медовой ногой</q>
             </tr>
-            <note type="comment" xmlns="http://www.tei-c.org/ns/1.0">, т. е. <q
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">may your girl turn out to be with a honey
+                leg</q>
+            </tr>
+            <note xmlns="http://www.tei-c.org/ns/1.0" xml:lang="ru" type="comment">, т. е. <q
                 rendition="#rend_doublequotes">пусть после нее рождаются мальчики</q></note>
-            <bibl xmlns="http://www.tei-c.org/ns/1.0">пожелание родителям</bibl>
+            <note xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en" type="comment">, i.e. <q
+                rendition="#rend_doublequotes">may boys be born after her</q></note>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><biblScope xml:lang="ru">пожелание
+                родителям</biblScope><biblScope xml:lang="en">a wish to parents</biblScope></bibl>
           </example>
           <example xml:lang="os-x-digor">
             <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
             <quote xmlns="http://www.tei-c.org/ns/1.0"><oRef>mudkʼelæ</oRef> fæwwo, dæ fæste
-              læqwæntce kud fegura</quote>
+              læqwæntæ kud fegura</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">да будешь ты с медовой пяткой, чтобы после тебя
                 рождались мальчики</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">may you be with a honey heel, so that boys will
+                be born after you</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Диг._сказ."/>
               <biblScope>58</biblScope></bibl>
           </example>
         </exampleGrp>
-        <etym xml:lang="ru">См. <ref type="xr" target="#entry_mud"/> и <ref type="xr"
+        <etym xml:lang="ru">См. <ref type="xr" target="#entry_myd"/> и <ref type="xr"
             target="#entry_kʼax"><w>kʼах</w>
-            <w>нога</w></ref>, <ref type="xr" target="#entry_ḱʼīl"><w xml:lang="os-x-iron">ḱʼīl</w>
+            <gloss><q>нога</q></gloss></ref>, <ref type="xr" target="#entry_ḱʼīl"><w
+              xml:lang="os-x-iron">ḱʼīl</w>
             <w xml:lang="os-x-digor">kʼelæ</w>
             <gloss><q>задняя часть ноги</q></gloss></ref>.</etym>
+        <etym xml:lang="en">See <ref type="xr" target="#entry_myd"/> and <ref type="xr"
+            target="#entry_kʼax"><w>kʼах</w>
+            <gloss><q>leg</q></gloss></ref>, <ref type="xr" target="#entry_ḱʼīl"><w
+              xml:lang="os-x-iron">ḱʼīl</w>
+            <w xml:lang="os-x-digor">kʼelæ</w>
+            <gloss><q>rear side of the leg</q></gloss></ref>.</etym>
       </entry>
     </body>
   </text>
