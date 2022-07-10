@@ -1,35 +1,44 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">mystūlæg</hi></title>
       </titleStmt>
-      <xi:include href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_mystūlæg" xml:lang="os-x-iron" abv:completeness="russian-questions">
+      <entry xml:id="entry_mystūlæg" xml:lang="os-x-iron" abv:completeness="complete">
         <form type="lemma"><orth>mystūlæg</orth></form>
         <usg><lang/></usg>
         <sense><sense><abv:tr xml:lang="ru">
               <q>ласка</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>weasel</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
+              <q>Mustela</q>
+            </abv:tr><abv:tr xml:lang="en">
               <q>Mustela</q>
             </abv:tr></sense></sense>
         <re>
-          <note type="comment"
+          <note xml:lang="ru" type="comment"
             ><?oxy_comment_start author="Vados" timestamp="20220514T124817+0300" comment="Как здесь быть, когда варианты после толкования?" id="vg1_b44_d5b" flag="done"?><?oxy_comment_start author="oleg" timestamp="20220710T150610+0300" parentID="vg1_b44_d5b" comment="в этом случае можно сделать их как re без перевода" flag="done" mid="1"?>варианты<?oxy_comment_end mid="1"?><?oxy_comment_end?>: </note>
+          <note xml:lang="en" type="comment">variants: </note>
           <re>
             <form type="lemma"><orth>mustælæg</orth></form>
           </re>
@@ -37,8 +46,14 @@
             <form type="lemma"><orth>mystælæg</orth></form>
           </re>
         </re>
-        <note type="comment">; д. <ref type="xr" target="#entry_ærvgæ"><w xml:lang="os-x-digor"
-              >ærvgæ</w></ref> id</note>
+        <note xml:lang="ru" type="comment">; <ref type="xr" target="#entry_ærvgæ"
+            xml:lang="os-x-digor"><lang/>
+            <w xml:lang="os-x-digor">ærvgæ</w>
+            <gloss>id</gloss></ref></note>
+        <note xml:lang="en" type="comment">; <ref type="xr" target="#entry_ærvgæ"
+            xml:lang="os-x-digor"><lang/>
+            <w xml:lang="os-x-digor">ærvgæ</w>
+            <gloss>id</gloss></ref></note>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">zymægon ūrs væjjy, særdygon būr. —
@@ -46,6 +61,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">зимой бывает белой, летом бурой (загадка). —
                 Ласка</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">in winter it is white, in summer, brown (a
+                riddle). — Weasel</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ЮОПам."/>
               <biblScope>III 247</biblScope></bibl>
@@ -55,6 +74,9 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">ласке — сливки</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">to the weasel (goes) the cream</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ЮОПам."/>
               <biblScope>III 216</biblScope></bibl>
           </example>
@@ -63,6 +85,9 @@
               <oRef>mustælæg</oRef></quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">царь над мышами — ласка</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the king of the mice is the weasel</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ЮОПам."/>
               <biblScope>III 217)</biblScope></bibl>
@@ -75,6 +100,11 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">Созруко с обнаженным мечом погнался за
                 Сырдоном. Пока Сырдон мог бежать впереди него, он бежал, потом обратился в ласку и
                 юркнул в нору</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Sozruqo with sword unsheathed chased after
+                Syrdon. While Syrdon could run in front of him, he ran, then he turned into a weasel
+                and plunged into a burrow</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ИАС"/>
               <biblScope>I 98</biblScope></bibl>
@@ -90,13 +120,35 @@
             <gloss><q>белка</q></gloss></ref>, <ref type="xr" target="#entry_Wærxæg"><w>Wærx-æg</w>
             <gloss><q>волк</q></gloss> (собств. имя)</ref>, <ref type="xr" target="#entry_mækʼūlæg"
               ><w>mækʼūl-æg </w><gloss><q>ящерица</q></gloss></ref> и мн. др. — Из скифского идет,
-          по всей видимости, <mentioned xml:lang="la"><lang></lang>
+          по всей видимости, <mentioned xml:lang="la"><lang/>
             <w>mustēla</w>
             <gloss><q>ласка</q></gloss>, <gloss><q>куница</q></gloss><note type="bibl"> (<bibl><ref
                   type="bibl" target="#ref_Ernout-Meillet"/>
                 <biblScope>647</biblScope></bibl>)</note></mentioned>: <q
-            rendition="#rend_doublequotes">Pas dʼétimologie claire</q>).<lb/><bibl><ref type="bibl"
-              target="#ref_Миллер_Вс._ОЭ"/>
+            rendition="#rend_doublequotes">Pas dʼétimologie claire</q>).<lb/><bibl>Вс.
+              <author>Миллер</author>. <ref type="bibl" target="#ref_Миллер_Вс._ОЭ">ОЭ</ref>
+            <biblScope>II 116</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_ОЯФ_I"/>
+            <biblScope>50</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_СЕИ"/>
+            <biblScope>28, 80, 123, 129 сл.</biblScope></bibl></etym>
+        <etym xml:lang="en">Derivate of <ref type="xr" target="#entry_myst"><w>myst</w>
+            <gloss><q>mouse</q></gloss></ref> with two diminutive suffixes: <c>-ūl-</c> and
+            <c>-æg</c>; for the former cf. <ref type="xr" target="#entry_bædūl"><w>bæd-ūl</w>
+            <gloss><q>fledgling</q></gloss></ref>, <ref type="xr" target="#entry_qæbūl"
+              ><w>qæb-ūl</w>
+            <gloss><q>little child</q></gloss></ref>; for the latter, <ref type="xr"
+            target="#entry_7xsæræg"
+              ><w><?oxy_comment_start author="Vados" timestamp="20220514T125820+0300" comment="Слова нет в списке слов" id="hqk_444_d5b" flag="done"?><?oxy_comment_start author="oleg" timestamp="20220710T151005+0300" parentID="hqk_444_d5b" comment="есть, с начальным 7" flag="done" mid="5"?>xsæræg<?oxy_comment_end mid="5"?><?oxy_comment_end?></w>
+            <gloss><q>squirrel</q></gloss></ref>, <ref type="xr" target="#entry_Wærxæg"
+              ><w>Wærx-æg</w>
+            <gloss><q>wolf</q></gloss> (proper name)</ref>, <ref type="xr" target="#entry_mækʼūlæg"
+              ><w>mækʼūl-æg </w><gloss><q>lizard</q></gloss></ref> and many others. — From Scythian
+          apparently comes <mentioned xml:lang="la"><lang/>
+            <w>mustēla</w>
+            <gloss><q>weasel</q></gloss>, <gloss><q>marten</q></gloss><note type="bibl"> (<bibl><ref
+                  type="bibl" target="#ref_Ernout-Meillet"/>
+                <biblScope>647</biblScope></bibl>)</note></mentioned>: <q
+            rendition="#rend_doublequotes">Pas dʼétimologie claire</q>).<lb/><bibl>Ws.
+              <author>Miller</author>. <ref type="bibl" target="#ref_Миллер_Вс._ОЭ">OÈ</ref>
             <biblScope>II 116</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_ОЯФ_I"/>
             <biblScope>50</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_СЕИ"/>
             <biblScope>28, 80, 123, 129 сл.</biblScope></bibl></etym>
