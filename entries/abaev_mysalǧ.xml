@@ -1,45 +1,69 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">mysalǧ</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_mysalǧ" xml:lang="os" abv:completeness="russian-questions">
+      <entry xml:id="entry_mysalǧ" xml:lang="os" abv:completeness="complete">
         <form type="lemma"><orth>mysalǧ</orth><form type="variant"><orth>mæsalǧ</orth></form></form>
         <sense><sense><abv:tr xml:lang="ru">
               <q>деревянный молот</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>wooden hammer</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>колотушка</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>beetle</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>киянка</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>mallet</q>
             </abv:tr></sense></sense>
-        <note type="comment">; употребляется, в частности, при работе долотом (<ref type="xr"
-            target="#entry_sart"/>); д. <w xml:lang="os-x-digor">gælmæz</w> id</note>
+        <note xml:lang="ru" type="comment">; употребляется, в частности, при работе долотом (<ref
+            type="xr" target="#entry_sart"/>); <mentioned xml:lang="os-x-digor"><lang/>
+            <w xml:lang="os-x-digor">gælmæz</w>
+            <gloss>id</gloss></mentioned></note>
+        <note xml:lang="en" type="comment">; in particular, used when working with a chisel (<ref
+            type="xr" target="#entry_sart"/>); <mentioned xml:lang="os-x-digor"><lang/>
+            <w xml:lang="os-x-digor">gælmæz</w>
+            <gloss>id</gloss></mentioned></note>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">тæ congæj sart acaræzton, mæ særy faxsæj
                 <oRef>mysalǧ</oRef> æmæ īx nyggærston</quote>
             <tr xml:lang="ru">
-              <q xmlns="http://www.tei-c.org/ns/1.0"/>
+              <q xmlns="http://www.tei-c.org/ns/1.0">из руки я сделал долото, из черепа колотушку и
+                продолбил лед</q>
             </tr>
-            <bibl xmlns="http://www.tei-c.org/ns/1.0">из сказки: <ref type="bibl" target="#src_ИАА"/>
-              <biblScope>II 353 сл.</biblScope><bibl>; <ref type="bibl" target="#src_Сека"/>
-                <biblScope>118</biblScope></bibl></bibl>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">I made a chisel from my hand, a beetle from my
+                skull and chiseled through the ice</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><note xml:lang="ru" type="comment">из сказки:
+                </note><note xml:lang="en" type="comment">from a fairy tale: </note><ref type="bibl"
+                target="#src_ИАА"/>
+              <biblScope>II 353 ff.</biblScope></bibl>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сека"/>
+              <biblScope>118</biblScope></bibl>
           </example>
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">sartæn jæxīcæn bynat пæ wydī æmæ jæ fædyl
@@ -48,22 +72,33 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">для долота самого не хватало места, а он тащил
                 за собой киянку</q>
             </tr>
-            <bibl xmlns="http://www.tei-c.org/ns/1.0">поговорка</bibl>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">for the chisel itself there was not enough
+                space, and he (also) dragged a mallet behind him</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><biblScope xml:lang="ru"
+                >поговорка</biblScope><biblScope xml:lang="en">a saying</biblScope></bibl>
           </example>
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">Q˳yrmany fyrttæj sæ īwæn jæ kʼax assastī, æmæ
-              jyn æj baræj, cæmæj zylyn baxsīda, aftæ babastoj; ūj коу bazydta, wæd syvællættæn
+              jyn æj baræj, cæmæj zylyn baxsīda, aftæ babastoj; ūj kₒy bazydta, wæd syvællættæn
                 <oRef>mysalǧ</oRef> arbaxæssyn kodta æmæ ta fæstæmæ ūmæj jæ kʼax asasta</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">у одного из сыновей Курмана сломалась нога, и
                 нарочно перевязали ее так, чтобы она криво срослась; когда он узнал об этом, он
                 велел ребятам принести киянку и ею снова сломал свою ногу</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the leg of one of Qurman’s sons broke, and they
+                deliberately bandaged it such that it would knit back together crookedly; when he
+                found this out, he made the boys bring a mallet and broke his leg again with it</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ИАС"/>
               <biblScope>I 580</biblScope></bibl>
           </example>
         </exampleGrp>
         <etym xml:lang="ru">Не ясно.</etym>
+        <etym xml:lang="en">Uncertain.</etym>
       </entry>
     </body>
   </text>
