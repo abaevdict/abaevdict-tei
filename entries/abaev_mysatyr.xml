@@ -1,60 +1,87 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">mysatyr</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_mysatyr" xml:lang="os" abv:completeness="russian-questions">
+      <entry xml:id="entry_mysatyr" xml:lang="os" abv:completeness="complete">
         <form type="lemma" xml:lang="os-x-iron"><orth>mysatyr</orth></form>
         <form xml:lang="os-x-digor" type="dialectal"><orth>misatir</orth></form>
         <sense><sense><abv:tr xml:lang="ru">
               <q>нашатырь</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>salammoniac</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
+              <q>chlorammonium</q>
+            </abv:tr><abv:tr xml:lang="en">
               <q>chlorammonium</q>
             </abv:tr></sense></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example xml:lang="os-x-digor">
             <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
             <quote xmlns="http://www.tei-c.org/ns/1.0">ʒæxwæj kosunæn ba ǧæwuj ærxi ʒæbokæ,
-                <oRef>misatir</oRef>...</quote>
+                <oRef>misatir</oRef>…</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">для работы оловом нужен медный молоток,
                 нашатырь...</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">for working with tin a copper hammer,
+                salammoniac are required…</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_FS"/>
               <biblScope>V 109</biblScope></bibl>
           </example>
         </exampleGrp>
-        <etym xml:lang="ru">Из <mentioned xml:lang="ar"><lang>араб.</lang>
+        <etym xml:lang="ru">Из <mentioned xml:lang="ar"><lang/>
             <w>nušādir</w></mentioned>, вероятно через тюркское посредство; <mentioned
-            xml:lang="trk"><lang>тюрк.</lang>
-            <w>nišadir</w>, <w>nišatir</w></mentioned>. Ср. также <mentioned xml:lang="sog"
-              ><lang>согд.</lang>
+            xml:lang="trk"><lang/>
+            <w>nišadir</w>, <w>nišatir</w></mentioned>. Ср. также <mentioned xml:lang="sog"><lang/>
             <w>nwšʼʼtr</w><note type="bibl"> (<bibl><ref type="bibl" target="#ref_Benveniste._TSP"/>
                 <biblScope>3 173</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_OLZ"/>
-                <biblScope>1960, стр. 10</biblScope></bibl>)</note></mentioned> (3 173; OLZ 1960,
-          стр. 10), <mentioned xml:lang="fa"><lang>перс.</lang>
-            <w>nušādir</w></mentioned>, <mentioned xml:lang="ka"><lang>груз.</lang>
-            <w>nišaduri</w></mentioned>, <mentioned xml:lang="ru"><lang>русск.</lang>
+                <biblScope>1960, стр. 10</biblScope></bibl>)</note></mentioned>, <mentioned
+            xml:lang="fa"><lang/>
+            <w>nušādir</w></mentioned>, <mentioned xml:lang="ka"><lang/>
+            <w>nišaduri</w></mentioned>, <mentioned xml:lang="ru"><lang/>
             <w>нашатырь</w></mentioned>. Перебой начального носового <c>n</c> → <c>m</c> как в <ref
-            type="xr" target="#entry_mysan"><w>mysan</w> рядом с <w>nysan</w>
+            type="xr" target="#entry_mysan"/> рядом с <ref type="xr" target="#entry_nysan"
+              ><w>nysan</w>
             <gloss><q>знак</q></gloss></ref>, <mentioned xml:lang="os"><w>Mikʼitt</w>
             <gloss><q>Никита</q></gloss></mentioned> (<bibl><ref type="bibl" target="#src_Брит."/>
+            <biblScope>131</biblScope></bibl>).</etym>
+        <etym xml:lang="en">From <mentioned xml:lang="ar"><lang/>
+            <w>nušādir</w></mentioned>, probably through Turkic; <mentioned xml:lang="trk"><lang/>
+            <w>nišadir</w>, <w>nišatir</w></mentioned>. Cf. also <mentioned xml:lang="sog"><lang/>
+            <w>nwšʼʼtr</w><note type="bibl"> (<bibl><ref type="bibl" target="#ref_Benveniste._TSP"/>
+                <biblScope>3 173</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_OLZ"/>
+                <biblScope>1960, p. 10</biblScope></bibl>)</note></mentioned>, <mentioned
+            xml:lang="fa"><lang/>
+            <w>nušādir</w></mentioned>, <mentioned xml:lang="ka"><lang/>
+            <w>nišaduri</w></mentioned>, <mentioned xml:lang="ru"><lang/>
+            <w>нашатырь</w></mentioned>. The alternation of the initial nasal <c>n</c> → <c>m</c> is
+          as in <ref type="xr" target="#entry_mysan"/> alongside <ref type="xr"
+            target="#entry_nysan"><w>nysan</w>
+            <gloss><q>sign</q></gloss></ref>, <mentioned xml:lang="os"><w>Mikʼitt</w>
+            <gloss><q>Nikita</q></gloss></mentioned> (<bibl><ref type="bibl" target="#src_Брит."/>
             <biblScope>131</biblScope></bibl>).</etym>
       </entry>
     </body>
