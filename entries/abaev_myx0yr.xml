@@ -1,52 +1,68 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">myxₒyr</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_myx0yr" xml:lang="os" abv:completeness="russian-questions">
+      <entry xml:id="entry_myx0yr" xml:lang="os" abv:completeness="complete">
         <form type="lemma" xml:lang="os-x-iron"><orth>myxₒyr</orth></form>
         <form xml:lang="os-x-digor" type="dialectal"><orth>muxur</orth></form>
         <sense><sense><abv:tr xml:lang="ru">
               <q>печать</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>seal</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>перстень с печатью</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>seal ring</q>
             </abv:tr></sense></sense>
         <re>
           <form type="lemma"><orth>тух˳yr kænyn</orth></form>
           <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">печатать</q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">print</q>
             </tr></sense>
         </re>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">dūryl <oRef>myx˳yr</oRef> nyværdtoj</quote>
             <tr xml:lang="ru">
-              <q xmlns="http://www.tei-c.org/ns/1.0">они... приложили к камню печать</q>
+              <q xmlns="http://www.tei-c.org/ns/1.0">они… приложили к камню печать</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">they… seal[ed] the stone</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Матфей"/>
               <biblScope><hi rendition="#rend_italic">27</hi> 66</biblScope></bibl>
           </example>
           <example>
-            <quote xmlns="http://www.tei-c.org/ns/1.0">ūwyl nyværdta jæ <oRef>myx˳yr</oRef> fyd,
-              x˳ycaw</quote>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">ūwyl nyværdta Jæ <oRef>myx˳yr</oRef> Fyd,
+              X˳ycaw</quote>
             <tr xml:lang="ru">
-              <q xmlns="http://www.tei-c.org/ns/1.0">на нем положил печать свою отец, бог</q>
+              <q xmlns="http://www.tei-c.org/ns/1.0">на Нём положил печать Свою Отец, Бог</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">him hath God the Father sealed</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Иоанн"/>
               <biblScope><hi rendition="#rend_italic">6</hi> 27</biblScope></bibl>
@@ -59,7 +75,13 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">кто не умеет приложить руку (подписаться), тот
                 пусть приложит свою печать</q>
             </tr>
-            <bibl xmlns="http://www.tei-c.org/ns/1.0">из рукописи Г. Кокиева</bibl>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">who does not know how to put his hand (put his
+                signature), may he affix his seal</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><biblScope xml:lang="ru">из рукописи Г.
+                Кокиева</biblScope><biblScope xml:lang="en">from a manuscript by G.
+                Kokiev</biblScope></bibl>
           </example>
           <example xml:lang="os-x-digor">
             <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
@@ -68,44 +90,77 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">немой снял у девушки с пальца перстень</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the mute man removed the seal ring from the
+                girl’s finger</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_СОПам."/>
               <biblScope>II 113</biblScope></bibl>
           </example>
           <example xml:lang="os-x-digor">
             <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
-            <quote xmlns="http://www.tei-c.org/ns/1.0">æ raxes cong in æd <oRef>muxur</oRef> ærbalux
-              kænuj</quote>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">æ raxes cong in
+              <?oxy_comment_start author="oleg" timestamp="20220710T162606+0300" comment="NB: &quot;вместе с перстнем&quot;"?>æd
+                <oRef>muxur</oRef><?oxy_comment_end?> ærbalux kænuj</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">отсекает у него правую руку вместе с
                 перстнем</q>
             </tr>
-            <bibl xmlns="http://www.tei-c.org/ns/1.0"> из песни <q rendition="#rend_doublequotes"
-                  ><hi rendition="#rend_italic">Qaji furti zar</hi></q></bibl>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">cuts off his right hand together with the
+                seal-ring</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><biblScope xml:lang="ru">из песни <q
+                  rendition="#rend_doublequotes"><title><foreign>Qaji furti
+                  zar</foreign></title></q></biblScope><biblScope xml:lang="en">from the song <q
+                  rendition="#rend_doublequotes"><title><foreign>Qaji furti
+                  zar</foreign></title></q></biblScope></bibl>
           </example>
         </exampleGrp>
-        <etym xml:lang="ru">Из <mentioned xml:lang="fa"><lang>перс.</lang>
+        <etym xml:lang="ru">Из <mentioned xml:lang="fa"><lang/>
             <w>muhr</w>
-            <gloss><q>печать</q></gloss></mentioned> [<mentioned xml:lang="x-oldirn"
-              ><lang>др.иран.</lang>
+            <gloss><q>печать</q></gloss></mentioned> [<mentioned xml:lang="x-oldirn"><lang/>
             <w type="rec">muϑra-</w><note type="bibl"> (<bibl><author>Klima</author>, <ref
                   type="bibl" target="#ref_Arch._Or."/>
                 <biblScope>1957 XXVII 56 сл.</biblScope></bibl>)</note></mentioned>, <mentioned
-            xml:lang="inc-x-old"><lang>др.инд.</lang>
+            xml:lang="inc-x-old"><lang/>
             <w>mudrā-</w>
             <gloss><q>печать</q></gloss>, <gloss><q>перстень с печатью</q></gloss></mentioned>,
-            <mentioned xml:lang="kho"><lang>сак.</lang>
+            <mentioned xml:lang="kho"><lang/>
             <w>mūra</w>
-            <gloss><q>монета</q></gloss></mentioned>]; ср. <mentioned xml:lang="ce"
-              ><lang>чеч.</lang>
-            <w>muẋur</w></mentioned>, <mentioned xml:lang="inh"><lang>инг.</lang>
-            <w>mæẋær</w></mentioned>, <mentioned xml:lang="av"><lang>авар.</lang>
-            <w>muhru</w></mentioned>, <mentioned xml:lang="kbd"><lang>каб.</lang>
-            <w>məẋur</w></mentioned>, <mentioned xml:lang="ady"><lang>адыг.</lang>
-            <w>muẋur</w></mentioned>, <mentioned xml:lang="ab"><lang>абх.</lang>
-            <w>a-mҳwər</w></mentioned>, <mentioned xml:lang="krc-x-balkar"><lang>балк.</lang>
+            <gloss><q>монета</q></gloss></mentioned>]; ср. <mentioned xml:lang="ce"><lang/>
+            <w>muẋur</w></mentioned>, <mentioned xml:lang="inh"><lang/>
+            <w>mæẋær</w></mentioned>, <mentioned xml:lang="av"><lang/>
+            <w>muhru</w></mentioned>, <mentioned xml:lang="kbd"><lang/>
+            <w>məẋur</w></mentioned>, <mentioned xml:lang="ady"><lang/>
+            <w>muẋur</w></mentioned>, <mentioned xml:lang="ab"><lang/>
+            <w>a-mᶍwər</w></mentioned>, <mentioned xml:lang="krc-x-balkar"><lang/>
             <w>muxur</w>
-            <gloss><q>печать</q></gloss></mentioned>.<lb/><bibl><ref type="bibl"
-              target="#ref_Miller._Gr."/>
+            <gloss><q>печать</q></gloss></mentioned>.<lb/><bibl>Вс. <author>Миллер</author>. <ref
+              type="bibl" target="#ref_Miller._Gr.">Gr.</ref>
+            <biblScope>9</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/>
+            <biblScope>128</biblScope></bibl>.</etym>
+        <etym xml:lang="en">From <mentioned xml:lang="fa"><lang/>
+            <w>muhr</w>
+            <gloss><q>seal</q></gloss></mentioned> [<mentioned xml:lang="x-oldirn"><lang/>
+            <w type="rec">muϑra-</w><note type="bibl"> (<bibl><author>Klima</author>, <ref
+                  type="bibl" target="#ref_Arch._Or."/>
+                <biblScope>1957 XXVII 56 ff.</biblScope></bibl>)</note></mentioned>, <mentioned
+            xml:lang="inc-x-old"><lang/>
+            <w>mudrā-</w>
+            <gloss><q>seal</q></gloss>, <gloss><q>seal ring</q></gloss></mentioned>, <mentioned
+            xml:lang="kho"><lang/>
+            <w>mūra</w>
+            <gloss><q>coin</q></gloss></mentioned>]; cf. <mentioned><mentioned xml:lang="ce"><lang/>
+              <w>muẋur</w></mentioned>, <mentioned xml:lang="inh"><lang/>
+              <w>mæẋær</w></mentioned>, <mentioned xml:lang="av"><lang/>
+              <w>muhru</w></mentioned>, <mentioned xml:lang="kbd"><lang/>
+              <w>məẋur</w></mentioned>, <mentioned xml:lang="ady"><lang/>
+              <w>muẋur</w></mentioned>, <mentioned xml:lang="ab"><lang/>
+              <w>a-mᶍwər</w></mentioned>, <mentioned xml:lang="krc-x-balkar"><lang/>
+              <w>muxur</w></mentioned>
+            <gloss><q>seal</q></gloss></mentioned>.<lb/><bibl>Ws. <author>Miller</author>. <ref
+              type="bibl" target="#ref_Miller._Gr.">Gr.</ref>
             <biblScope>9</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/>
             <biblScope>128</biblScope></bibl>.</etym>
       </entry>
