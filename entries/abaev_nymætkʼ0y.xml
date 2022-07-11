@@ -1,21 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">nymætkʼₒy</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
@@ -24,8 +28,13 @@
         <form xml:lang="os-x-digor" type="dialectal"><orth>nimætkʼu</orth></form>
         <sense><sense><abv:tr xml:lang="ru">
               <q>гордовина</q>
-            </abv:tr><note type="comment"> (разновидность калины)</note></sense><sense><abv:tr
+            </abv:tr><abv:tr xml:lang="en">
+              <q>gordovina</q>
+            </abv:tr><note xml:lang="ru" type="comment"> (разновидность калины)</note><note
+              xml:lang="en" type="comment"> (variety of viburnum)</note></sense><sense><abv:tr
               xml:lang="ru">
+              <q>Viburnum Lantana</q>
+            </abv:tr><abv:tr xml:lang="en">
               <q>Viburnum Lantana</q>
             </abv:tr></sense></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
@@ -36,6 +45,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">хорошему быку (нужен) на каждый выход прут из
                 гордовины (для ударов) по спине</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">for each exit, a good bull (needs) a viburnum
+                rod (for blows) on the back</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ЮОПам."/>
               <biblScope>III 231</biblScope></bibl>
           </example>
@@ -44,6 +57,9 @@
               qædtæ</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">из гордовины делают ручки для плеток</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">lash handles are made from viburnum</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сл."/>
             </bibl>
@@ -65,7 +81,61 @@
             target="#entry_fætkʼ0y"><w>fæ-tkʼu</w>
             <gloss><q>яблоня</q></gloss>, <gloss><q>яблоко</q></gloss></ref> из <mentioned
             xml:lang="ira"><w type="rec">fæl-tkʼu</w></mentioned>, где <c>fæl</c> из <mentioned
-            xml:lang="ira"><w type="rec">(a)pal</w></mentioned> [<lang>валл.</lang>
+            xml:lang="ira"><w type="rec">(a)pal</w></mentioned> [<mentioned xml:lang="cy"><lang/>
+            <w>afal</w></mentioned>, <mentioned xml:lang="got-x-crm"><lang/>
+            <w>apel</w>
+            <gloss><q>яблоко</q></gloss></mentioned>], в <ref type="xr" target="#entry_mæckʼ0y"
+              ><w>mæ-ckʼu</w>
+            <gloss><q>брусника</q></gloss></ref>, <ref type="xr" target="#entry_myrtkæ"
+              ><w>myr-tkæ</w>
+            <gloss><q>калина</q></gloss></ref>. <mentioned xml:lang="ira"><lang>Иран.</lang>
+            <w type="rec">namata-</w>
+            <gloss><q>калина</q></gloss></mentioned> этимологически связывают с <mentioned
+            xml:lang="ira"
+              ><w><?oxy_comment_start author="Vados" timestamp="20220620T140358+0300" comment="Иранское?"?>nam<?oxy_comment_end?>-</w>
+            <gloss><q>гнуться</q></gloss><note type="bibl"> (<bibl><author>Bartholomae</author>,
+                  <ref type="bibl" target="#ref_AiW"/>
+                <biblScope>1068</biblScope></bibl>)</note></mentioned>, с <mentioned xml:lang="ira"
+              ><w>nam-</w>
+            <note xml:lang="ru" type="comment">(ос. <ref type="xr" target="#entry_næmyn"
+              />)</note><note xml:lang="en" type="comment">(ос. <ref type="xr" target="#entry_næmyn"
+              />)</note>
+            <gloss><q>бить</q></gloss><note type="bibl"> (<bibl><author>Bailey</author>, <ref
+                  type="bibl" target="#ref_BSOAS"/>
+                <biblScope>1957 XIX 52—55</biblScope></bibl>)</note></mentioned>. То и другое с
+          семантической стороны уязвимо. Может быть, следует вспомнить о третьей омонимичной основе
+          — <mentioned xml:lang="fa"><w>nam-</w>
+            <gloss><q>влажный</q><?oxy_comment_start author="Vados" timestamp="20220620T140707+0300" comment="Иранское?"?></gloss><?oxy_comment_end?></mentioned>
+            (<mentioned xml:lang="fa"><lang/>
+            <w>nam</w></mentioned> и пр.): калина любит хорошо увлажненную почву
+              (<bibl><title>Ботанический атлас</title>. <pubPlace>М. — Л.</pubPlace>,
+              <date>1963</date>, <biblScope>стр. 244</biblScope></bibl>). Поскольку <c>-tkʼu</c>
+          выделяется как самостоятельный компонент, прямое отождествление ос. <w>nimætkʼu</w> с
+            <mentioned xml:lang="ae"><lang/>
+            <w>nәmәδkā-</w></mentioned> невозможно. Быть может, <mentioned xml:lang="ae"
+              ><w>nәmәδkā-</w></mentioned> вообще следует отделять от <mentioned xml:lang="ae"
+              ><w><?oxy_comment_start author="Vados" timestamp="20220620T141026+0300" comment="Выше слово написано без макрона"?>nәmatā<?oxy_comment_end?>-</w></mentioned>
+          и переводить не <q>растение для топлива</q>, а <q>соль</q>, кидаемая в огонь в
+          определенном ритуале (<bibl><ref type="bibl" target="#ref_Henning._Sogd."/>
+            <biblScope>8</biblScope></bibl>; но cp.: <bibl>
+            <author>Bailey</author>, <ref type="bibl" target="#ref_IIJ"/><biblScope>1969 XI
+              292</biblScope></bibl>).</etym>
+        <etym xml:lang="en">From <w>nimæt-tkʼu</w>; for the first part, cf. <mentioned xml:lang="ae"><lang/>
+            <w>nәmata-</w>, <w>nәmәδkā-</w>
+            <gloss>plant name</gloss>, probably <gloss><q>viburnum</q></gloss></mentioned>. The
+          second part <c>tkʼu</c> (<c>ckʼu</c>, <c>tkæ</c>) is a <q rendition="#rend_doublequotes"
+            >determinative</q> with the meaning <q>bush</q>, <q>tree</q> (cf. functionally
+            <mentioned xml:lang="de"><c>-der</c></mentioned> in <mentioned xml:lang="de"><lang/>
+            <w>Wachol-der</w></mentioned>, <mentioned xml:lang="de"><w>Holun-der</w></mentioned>,
+            <mentioned xml:lang="de"><w>Masshol-der</w></mentioned>). This element (presumably of
+          Caucasian origin, cf. <mentioned xml:lang="ka"><lang/>
+            <w>mar-cʼqu-</w>
+            <gloss><q>strawberry</q></gloss></mentioned>, <mentioned xml:lang="ka"><w>tqe</w>
+            <gloss><q>forest</q></gloss></mentioned>) is also recognized in <ref type="xr"
+            target="#entry_fætkʼ0y"><w>fæ-tkʼu</w>
+            <gloss><q>apple tree</q></gloss>, <gloss><q>apple</q></gloss></ref> from <mentioned
+            xml:lang="ira"><w type="rec">fæl-tkʼu</w></mentioned>, where <c>fæl</c> is from
+            <mentioned xml:lang="ira"><w type="rec">(a)pal</w></mentioned> [<lang>валл.</lang>
           <w>afal</w>, <mentioned xml:lang="got-x-crm"><lang/>
             <w>apel</w>
             <gloss><q>яблоко</q></gloss></mentioned>], в <ref type="xr" target="#entry_mæckʼ0y"
@@ -81,7 +151,9 @@
                   <ref type="bibl" target="#ref_AiW"/>
                 <biblScope>1068</biblScope></bibl>)</note></mentioned>, с <mentioned xml:lang="ira"
               ><w>nam-</w>
-            <note type="comment">(ос. <ref type="xr" target="#entry_næmyn"/>)</note>
+            <note xml:lang="ru" type="comment">(ос. <ref type="xr" target="#entry_næmyn"
+              />)</note><note xml:lang="en" type="comment">(ос. <ref type="xr" target="#entry_næmyn"
+              />)</note>
             <gloss><q>бить</q></gloss><note type="bibl"> (<bibl><author>Bailey</author>, <ref
                   type="bibl" target="#ref_BSOAS"/>
                 <biblScope>1957 XIX 52—55</biblScope></bibl>)</note></mentioned>. То и другое с
@@ -94,7 +166,7 @@
               <date>1963</date>, <biblScope>стр. 244</biblScope></bibl>). Поскольку <c>-tkʼu</c>
           выделяется как самостоятельный компонент, прямое отождествление ос. <w>nimætkʼu</w> с
             <mentioned xml:lang="ae"><lang/>
-            <w>nәmәδkā-</w></mentioned>  невозможно. Быть может, <mentioned xml:lang="ae"
+            <w>nәmәδkā-</w></mentioned> невозможно. Быть может, <mentioned xml:lang="ae"
               ><w>nәmәδkā-</w></mentioned> вообще следует отделять от <mentioned xml:lang="ae"
               ><w><?oxy_comment_start author="Vados" timestamp="20220620T141026+0300" comment="Выше слово написано без макрона"?>nәmatā<?oxy_comment_end?>-</w></mentioned>
           и переводить не <q>растение для топлива</q>, а <q>соль</q>, кидаемая в огонь в
