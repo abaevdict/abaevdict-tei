@@ -1,32 +1,40 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">myly</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_myly" xml:lang="os" abv:completeness="russian-questions">
+      <entry xml:id="entry_myly" xml:lang="os" abv:completeness="complete">
         <form type="lemma" xml:lang="os-x-iron"><orth>myly</orth><form type="variant"
-              ><?oxy_comment_start author="Vados" timestamp="20220425T182907+0300" comment="Можно оставить так? Или полностью написать форму мн. ч.?"?><orth>-tæ</orth><?oxy_comment_end?></form></form>
+              ><?oxy_comment_start author="Vados" timestamp="20220425T182907+0300" comment="Можно оставить так? Или полностью написать форму мн. ч.?" id="h1q_rj3_d5b" flag="done"?><?oxy_comment_start author="oleg" timestamp="20220709T184448+0300" parentID="h1q_rj3_d5b" comment="Лучше полностью, а то вылезет потом форма -tæ сразу у многих слов" flag="done" mid="1"?><orth>mylytæ</orth><?oxy_comment_end?><?oxy_comment_end mid="1"?></form></form>
         <form xml:lang="os-x-digor" type="dialectal"><orth>mutultæ</orth></form>
         <sense><sense><abv:tr xml:lang="ru">
               <q>десна</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>gum</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>десны</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>gums</q>
             </abv:tr></sense></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
@@ -36,6 +44,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">у дедушки нет больше зубов, и он жует
                 деснами</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the grandfather no longer has any teeth, and he
+                chews using his guts</q>
+            </tr>
           </example>
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">Sabaz уп wæd jæ <oRef>mylytæ</oRef>
@@ -44,36 +56,67 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">Сабаз тогда чуть не разодрал ему (коню) удилами
                 десны</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Sabaz then almost tore its (the horse’s) gums
+                with the bit</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Хар._Кадӕг"/>
               <biblScope>76</biblScope></bibl>
           </example>
         </exampleGrp>
         <etym xml:lang="ru">Неясность отношений между иронской и дигорской формой затрудняет
-          этимологию. Форма <oRef>myly</oRef> (из <mentioned xml:lang="ira"><w type="rec"
-              ><?oxy_comment_start author="Vados" timestamp="20220425T183748+0300" comment="Иранское?"?>mulu<?oxy_comment_end?></w></mentioned>)
-          естественно сближается с германской группой: <mentioned xml:lang="non"
-              ><lang>др.сев.</lang>
-            <w>mūli</w></mentioned>, <mentioned xml:lang="ofs"><lang>др.фриз.</lang>
+          этимологию. Форма <oRef>myly</oRef> (из <w type="rec"
+            ><?oxy_comment_start author="Vados" timestamp="20220425T183748+0300" comment="Иранское?" id="xcr_vj3_d5b" flag="done"?><?oxy_comment_start author="oleg" timestamp="20220709T184559+0300" parentID="xcr_vj3_d5b" comment="нет, это некая праосетинская форма (гипотетически так бы выглядело дигорское слово, если бы было совпадение)" flag="done" mid="3"?>mulu<?oxy_comment_end mid="3"?><?oxy_comment_end?></w>)
+          естественно сближается с германской
+          <?oxy_comment_start author="oleg" timestamp="20220709T184645+0300" comment="NB: ещё дарг. (куб.) muli и т.д."?>группой<?oxy_comment_end?>:
+            <mentioned xml:lang="non"><lang/>
+            <w>mūli</w></mentioned>, <mentioned xml:lang="ofs"><lang/>
             <w>mūla</w></mentioned>, <mentioned xml:lang="sv" extralang="no"><lang/>
             <w>mule</w></mentioned>, <mentioned xml:lang="goh"><lang/>
-            <w>mūla</w></mentioned>, <mentioned xml:lang="de"><lang>нем.</lang>
+            <w>mūla</w></mentioned>, <mentioned xml:lang="de"><lang/>
             <w>Maul</w>
             <gloss><q>рот</q></gloss>, <gloss><q>пасть</q></gloss></mentioned>; далее <mentioned
-            xml:lang="no"><lang>норв.</lang>
+            xml:lang="no"><lang/>
             <w>maule</w>
-            <gloss><q>глодать</q></gloss></mentioned>, <mentioned xml:lang="grc"><lang>гр.</lang>
-            <w>μύλλο</w>
+            <gloss><q>глодать</q></gloss></mentioned>, <mentioned xml:lang="grc"><lang/>
+            <w><?oxy_comment_start author="oleg" timestamp="20220709T185728+0300" comment="вроде бы такое слово есть, но значить &quot;молоть&quot; и &quot;совокупляться&quot;, в некоторых словарях также жевать"?>μύλλω<?oxy_comment_end?></w>
             <gloss><q>жевать по-стариковски</q></gloss></mentioned>. Сюда же с начальным <c>s-</c>
           слова со значением <q>улыбаться</q> (= <q rendition="#rend_doublequotes">обнажать
             десны</q>): <mentioned xml:lang="gmh"><lang/>
             <w>smollen</w></mentioned>, <mentioned xml:lang="de-x-dial"><lang/>
-            <w>schmollen</w></mentioned>, <mentioned xml:lang="no"><lang>норв.</lang>
+            <w>schmollen</w></mentioned>, <mentioned xml:lang="no"><lang/>
             <w>smolla</w>, <w>smulla</w></mentioned>, <mentioned xml:lang="ru"><lang/>
             <w>ухмыляться</w></mentioned> (<bibl><ref type="bibl" target="#ref_Falk-Torp"/>
             <biblScope>I 737, 705, II 1082</biblScope></bibl>. — <bibl><author>J. de Vries</author>.
               <title>Altnordisches etymologisches Wörterbuch</title>. <pubPlace>Leiden</pubPlace>,
               <date>1961</date>, <biblScope>стр. 521</biblScope></bibl>). Форма <oRef>mutultæ</oRef>
           возникла, всего вероятнее, в результате эпентезы показателя множественности
+          <c>t</c>.</etym>
+        <etym xml:lang="en">The obscurity of the relationship between the Iron and Digor forms
+          complicates the etymology. The form <oRef>myly</oRef> (from <w type="rec"
+            ><?oxy_comment_start author="Vados" timestamp="20220425T183748+0300" comment="Иранское?" id="xcr_vj3_d5b" flag="done"?><?oxy_comment_start author="oleg" timestamp="20220709T184559+0300" parentID="xcr_vj3_d5b" comment="нет, это некая праосетинская форма (гипотетически так бы выглядело дигорское слово, если бы было совпадение)" flag="done" mid="7"?>mulu<?oxy_comment_end mid="7"?><?oxy_comment_end?></w>)
+          is can be naturally compared to the Germanic group of words: <mentioned><mentioned
+              xml:lang="non"><lang/>
+              <w>mūli</w></mentioned>, <mentioned xml:lang="ofs"><lang/>
+              <w>mūla</w></mentioned>, <mentioned xml:lang="sv" extralang="no"><lang/>
+              <w>mule</w></mentioned>, <mentioned xml:lang="goh"><lang/>
+              <w>mūla</w></mentioned>, <mentioned xml:lang="de"><lang/>
+              <w>Maul</w></mentioned>
+            <gloss><q>mouth of an animal</q></gloss></mentioned>; further <mentioned xml:lang="no"><lang/>
+            <w>maule</w>
+            <gloss><q>gnaw</q></gloss></mentioned>, <mentioned xml:lang="grc"><lang/>
+            <w><?oxy_comment_start author="oleg" timestamp="20220709T185728+0300" comment="вроде бы такое слово есть, но значить &quot;молоть&quot; и &quot;совокупляться&quot;, в некоторых словарях также жевать"?>μύλλω<?oxy_comment_end?></w>
+            <gloss><q>chew in an old man’s manner</q></gloss></mentioned>. Also related are words
+          with initial <c>s-</c> with the meaning <q>smile</q> (= <q rendition="#rend_doublequotes"
+            >expose gums</q>): <mentioned xml:lang="gmh"><lang/>
+            <w>smollen</w></mentioned>, <mentioned xml:lang="de-x-dial"><lang/>
+            <w>schmollen</w></mentioned>, <mentioned xml:lang="no"><lang/>
+            <w>smolla</w>, <w>smulla</w></mentioned>, <mentioned xml:lang="ru"><lang/>
+            <w>ухмыляться</w></mentioned> (<bibl><ref type="bibl" target="#ref_Falk-Torp"/>
+            <biblScope>I 737, 705, II 1082</biblScope></bibl>. — <bibl>J. <author>de Vries</author>.
+              <title>Altnordisches etymologisches Wörterbuch</title>. <pubPlace>Leiden</pubPlace>,
+              <date>1961</date>, <biblScope>p. 521</biblScope></bibl>). The form
+            <oRef>mutultæ</oRef> most probably developed by epenthesis of the plural marker
           <c>t</c>.</etym>
       </entry>
     </body>

@@ -1,46 +1,83 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">Mykalgabyrtæ</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_Mykalgabyrtæ" xml:lang="os" abv:completeness="russian-questions">
+      <entry xml:id="entry_Mykalgabyrtæ" xml:lang="os" abv:completeness="questions">
         <form type="lemma" xml:lang="os-x-iron"><orth>Mykalgabyrtæ</orth></form>
         <form xml:lang="os-x-digor" type="dialectal"><orth>Mikalgaburtæ</orth></form>
-        <sense>название божества и святилища</sense>
-        <note type="comment">. Святилища <w>Rekom</w>, <oRef>Mykalgabyrtæ</oRef> и <ref type="xr"
-            target="#entry_Tarangeloz"/> возникли, по преданию, на тех местах, куда упали три слезы,
-          пролитые богом по поводу гибели Нарта Батраза (<bibl><ref type="bibl"
+        <sense>name of a deity and a sanctuary</sense>
+        <note xml:lang="ru" type="comment">. Святилища
+            <?oxy_comment_start author="oleg" timestamp="20220709T155301+0300" comment="нет в словаре"?><mentioned
+            xml:lang="os"><w>Rekom</w></mentioned><?oxy_comment_end?>, <oRef>Mykalgabyrtæ</oRef> и
+            <ref type="xr" target="#entry_Taranǵeloz"/> возникли, по преданию, на тех местах, куда
+          упали три слезы, пролитые Богом по поводу гибели Нарта Батраза (<bibl><ref type="bibl"
               target="#src_Нарт._сказ."/>
             <biblScope>263</biblScope></bibl>; <bibl><ref type="bibl" target="#src_ОЭ"/>
             <biblScope>I 26</biblScope></bibl>). Особенно почиталось в Алагирском ущелье.
-            <?oxy_comment_start author="Vados" timestamp="20220423T192804+0300" comment="Можно так оформить цитату?"?><q
-            rendition="#rend_doublequotes"><?oxy_comment_end?>Празднество (в честь <w>Rekom</w> и
-              <oRef>Mykalgabyrtæ</oRef>) продолжается от 9 мая до 23, причем пируют в нарочно
-            устроенных близ молельни саклях, из которых в каждой помещается по четыре семейства.
-            Каждые четыре семьи режут одного быка</q> (<bibl><ref type="bibl" target="#src_ОЭ"/>
-            <biblScope>II 276</biblScope></bibl>; см. также: <bibl><author>Чурсин</author>,
-              <title>Юго-Осетия</title>
-            <biblScope>204</biblScope></bibl>). Согласно осетинскому календарю, изданному
-          <?oxy_comment_start author="Vados" timestamp="20220423T192829+0300" comment="Нужно ли как-то сделать источником?"?>Е.
-          Гутновым (Берлин, 1925),<?oxy_comment_end?> день М. отмечался четыре раза в году по
-          четвергам: в мясную неделю, в пасхальную, перед троицей и осенью после праздника св.
-          Георгия (<w>Giorguba</w>)</note>
+              <quote><?oxy_comment_start author="Vados" timestamp="20220423T192804+0300" comment="Можно так оформить цитату?" id="ex5_snh_d5b" flag="done"?><?oxy_comment_start author="oleg" timestamp="20220709T155736+0300" parentID="ex5_snh_d5b" comment="я упаковываю ещё в quote" flag="done" mid="2"?><q
+              rendition="#rend_doublequotes"
+              ><?oxy_comment_end?><?oxy_comment_end mid="2"?>Празднество (в честь <mentioned
+                xml:lang="os"><w>Rekom</w></mentioned> и <oRef/>) продолжается от 9 мая до 23,
+              причем пируют в нарочно устроенных близ молельни саклях, из которых в каждой
+              помещается по четыре семейства. Каждые четыре семьи режут одного быка</q> (<bibl><ref
+                type="bibl" target="#src_ОЭ"/>
+              <biblScope>II 276</biblScope></bibl>; см. также: <bibl><author>Чурсин</author>, <ref
+                type="bibl" target="#ref_Юго_Осетия"/>
+              <biblScope>204</biblScope></bibl>)</quote>. Согласно <bibl><title>осетинскому
+              календарю</title>, изданному <editor>Е. Гутновым</editor>
+            (<pubPlace>Берлин</pubPlace>,
+          <date>1925</date>)</bibl><?oxy_comment_start author="Vados" timestamp="20220423T192829+0300" comment="Нужно ли как-то сделать источником?" id="azh_wnh_d5b" flag="done"?><?oxy_comment_start author="oleg" timestamp="20220709T155837+0300" parentID="azh_wnh_d5b" comment="сделал" flag="done" mid="4"?>,<?oxy_comment_end mid="4"?><?oxy_comment_end?>
+          день M. отмечался четыре раза в году по четвергам: в мясную неделю, в пасхальную, перед
+          Троицей и осенью после праздника св. Георгия (<ref type="xr" target="#entry_ǵiorguba"
+              ><w>Giorguba</w></ref>)</note>
+        <note xml:lang="en" type="comment">. The three sanctuaries
+            <?oxy_comment_start author="oleg" timestamp="20220709T155301+0300" comment="нет в словаре"?><mentioned
+            xml:lang="os"><w>Rekom</w></mentioned><?oxy_comment_end?>, <oRef>Mykalgabyrtæ</oRef> and
+            <ref type="xr" target="#entry_Taranǵeloz"/> appeared, according to legends, on the
+          places where fell the three tears shed by God because of the death of the Nart Batraz
+              (<bibl><ref type="bibl" target="#src_Нарт._сказ."/>
+            <biblScope>263</biblScope></bibl>; <bibl><ref type="bibl" target="#src_ОЭ"/>
+            <biblScope>I 26</biblScope></bibl>). This deity was particularly venerated in the Alagir
+          gorge.
+              <quote><?oxy_comment_start author="Vados" timestamp="20220423T192804+0300" comment="Можно так оформить цитату?" id="ex5_snh_d5b" flag="done"?><?oxy_comment_start author="oleg" timestamp="20220709T155736+0300" parentID="ex5_snh_d5b" comment="я упаковываю ещё в quote" flag="done" mid="7"?><q
+              rendition="#rend_doublequotes"><?oxy_comment_end?><?oxy_comment_end mid="7"?>The
+              celebration (in honour of <mentioned xml:lang="os"><w>Rekom</w></mentioned> and
+              <oRef/>) goes on from the 9th of May till the 23rd, and feasts are held in houses
+              specially constructed near the prayer house, in each of which three families can fit.
+              Each group of four families slaughters one ram</q> (<bibl><ref type="bibl"
+                target="#src_ОЭ"/>
+              <biblScope>II 276</biblScope></bibl>; see also: <bibl><author>Čursin</author>, <ref
+                type="bibl" target="#ref_Юго_Осетия"/>
+              <biblScope>204</biblScope></bibl>)</quote>. According to the <bibl><title>Ossetic
+              calendar</title> published by <editor>E. Gutnov</editor> (<pubPlace>Berlin</pubPlace>,
+              <date>1925</date>)</bibl><?oxy_comment_start author="Vados" timestamp="20220423T192829+0300" comment="Нужно ли как-то сделать источником?" id="azh_wnh_d5b" flag="done"?><?oxy_comment_start author="oleg" timestamp="20220709T155837+0300" parentID="azh_wnh_d5b" comment="сделал" flag="done" mid="9"?>,<?oxy_comment_end mid="9"?><?oxy_comment_end?>
+          the day of M. was celebrated four times a year on Thursdays: during Meat Week (one week
+          before
+          Shrovetide<?oxy_comment_start author="oleg" timestamp="20220709T161015+0300" comment="я так понял, речь о сплошной седмице перед Масленицей"?>,
+          the last week before Lent when meat is allowed<?oxy_comment_end?>), during Easter Week,
+          before Pentecost and in Autumn after the feast of St. George (<ref type="xr"
+            target="#entry_ǵiorguba"><w>Giorguba</w></ref>)</note>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0"><oRef>Mykalgabyrty</oRef> bærægbon kadǵyn
@@ -49,26 +86,43 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">праздник М. был в почете; резали на него быка в
                 каждом доме; кувд справляли по кварталам весной</q>
             </tr>
-            <bibl xmlns="http://www.tei-c.org/ns/1.0">из материалов Е. Бараковой</bibl>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the feast of M. was held in esteem; a ram was
+                slaughtered for it in each house; the <foreign><ref type="xr" target="#entry_k0yvd"
+                    >kuvd</ref></foreign> was celebrated in each neighbourhood in spring</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><biblScope xml:lang="ru">из материалов Е.
+                Бараковой</biblScope><biblScope xml:lang="en">from the materials of E.
+                Barakova</biblScope></bibl>
           </example>
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">Cærazon zaǧta jæ fyrtæn: Fæjjawmæ ssū, æmæ
               dalys axæss æmæ jæ <oRef>Mykalgabyry</oRef> byn argævd</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">Царазон (родоначальник алагирских фамилий)
-                сказал сыну: «Подымись к пастуху, возьми годовалую овцу и зарежь ее под (святилищем)
-                М.»</q>
+                сказал сыну: <q rendition="#rend_doublequotes">Подымись к пастуху, возьми годовалую
+                  овцу и зарежь ее под (святилищем) М.</q></q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Tsærazon (progenitor of the Alagir clans) told
+                his son: <q rendition="#rend_doublequotes">Climb up to the shepherd, take a year-old
+                  lamb and slaughter it under (the sanctuary of) M.</q></q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ИАА"/>
               <biblScope>III 24</biblScope></bibl>
           </example>
           <example>
-            <quote xmlns="http://www.tei-c.org/ns/1.0">x˳усаwтæ qæstmæ ssydysty avd Wacillajy, avd
+            <quote xmlns="http://www.tei-c.org/ns/1.0">X˳усаwтæ qæstmæ ssydysty avd Wacillajy, avd
               Wastyrǵijy, īnnæ axæm avd <oRef>Mykalgabyry</oRef>: fæcaǧta næ dælæ Xæmycy fyrt
               Batyraʒ</quote>
             <tr xml:lang="ru">
-              <q xmlns="http://www.tei-c.org/ns/1.0">поднялись к богу жаловаться семь Уацилла, семь
+              <q xmlns="http://www.tei-c.org/ns/1.0">поднялись к Богу жаловаться семь Уацилла, семь
                 Уастырджи, кроме того семь М.: истребил нас вот сын Хамица Батраз</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">seven Wacillas, seven Wastyrdžis, and also
+                seven M. went up to God to complain: lo, Batraz the son of Khamits has exterminated
+                us</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ИАС"/>
               <biblScope>I 221</biblScope></bibl>
@@ -80,28 +134,30 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">М., да будет тебе угодной наша молитва!</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">M., may our prayer please you!</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Диг._сказ."/>
               <biblScope>62</biblScope></bibl>
           </example>
         </exampleGrp>
-        <etym xml:lang="ru"><hi rendition="#rend_smallcaps">Вс. Миллер</hi> (<bibl><ref type="bibl"
-              target="#src_ОЭ"/>
-            <biblScope>I 121</biblScope></bibl>) ошибочно видел в <c>Mykal</c> искаженное <hi
-            rendition="#rend_italic">Николай</hi>, а <c>gabyrtæ</c> понимал как <q>бугры</q> (?). В
-          действительности в <oRef>Mykalgabyrtæ</oRef> имеем сращение имен архангелов Михаила и
-          Гавриила, снабженное показателем множественности <c>-tæ</c>. Ср. <mentioned xml:lang="ka"
-              ><lang>груз.</lang>
+        <etym xml:lang="ru">Вс. <name>Миллер</name> (<bibl><ref type="bibl" target="#src_ОЭ"
+              >ОЭ</ref>
+            <biblScope>I 121</biblScope></bibl>) ошибочно видел в <w>Mykal</w> искаженное <hi
+            rendition="#rend_italic">Николай</hi>, а <w>gabyrtæ</w> понимал как <q>бугры</q> (?). В
+          действительности в <oRef/> имеем сращение имен архангелов Михаила и Гавриила, снабженное
+          показателем множественности <mentioned xml:lang="os"><m>-tæ</m></mentioned>. Ср.
+            <mentioned xml:lang="ka"><lang/>
             <w>Mikel-Gabrieli</w><note type="bibl"> (<bibl><ref type="bibl" target="#ref_Груз._сл."/>
-                <biblScope>V 472</biblScope></bibl>)</note></mentioned>, <mentioned xml:lang="xmf"
-              ><lang>мегр.</lang>
+                <biblScope>V 472</biblScope></bibl>)</note></mentioned>, <mentioned xml:lang="xmf"><lang/>
             <w>Mikam-Gario</w>
-            <note type="comment">(из <w>Gabri-o</w>)</note><note type="bibl"> (<bibl><ref
-                  type="bibl" target="#ref_Кипшидзе"/></bibl>)</note></mentioned>, <mentioned
-            xml:lang="ab"><lang>абх.</lang>
+            <note xml:lang="ru" type="comment">(из <w>Gabri-o</w>)</note><note xml:lang="en"
+              type="comment">(из <w>Gabri-o</w>)</note><note type="bibl"> (<bibl><ref type="bibl"
+                  target="#ref_Кипшидзе"/></bibl>)</note></mentioned>, <mentioned xml:lang="ab"><lang/>
             <w>Mkangaria</w><note type="bibl"> (<bibl><author>Гулия</author>. <title>Сборник
                   абхазских пословиц</title>. <pubPlace>Сухуми</pubPlace>, <date>1939</date>,
                   <biblScope>стр. 158</biblScope></bibl>)</note></mentioned>. Ср. <ref type="xr"
-            target="#entry_Tarangeloz"/> из <mentioned xml:lang="ka"><lang>груз.</lang>
+            target="#entry_Taranǵeloz"/> из <mentioned xml:lang="ka"><lang/>
             <w>mtavarangelozi</w>
             <gloss><q>архангел</q></gloss></mentioned>. О языческих корнях культа архангелов Михаила
           и Гавриила см.: <bibl><author>Шестаков</author>. <title>Исследования в области греческих
@@ -109,6 +165,34 @@
               <biblScope>стр. 29—36</biblScope></bibl>.<lb/><bibl><author>Марр</author>, <ref
               type="bibl" target="#ref_ИАН"/>
             <biblScope>1918, стр. 2072 сл.</biblScope></bibl> — <bibl><ref type="bibl"
+              target="#ref_ОЯФ_I"/>
+            <biblScope>93, 316</biblScope></bibl>.</etym>
+        <etym xml:lang="en">Ws. <name>Miller</name> (<bibl><ref type="bibl" target="#src_ОЭ"
+              >OÈ</ref>
+            <biblScope>I 121</biblScope></bibl>) mistakenly saw in <w>Mykal</w> a distortion of <hi
+            rendition="#rend_italic">Nicholas</hi>, and translated <w>gabyrtæ</w> as <q>mounds</q>
+          (?). In actual fact, <oRef/> is the merger of the names of the archangels Michael and
+          Gabriel, combined with the plural marker <mentioned xml:lang="os"><m>-tæ</m></mentioned>.
+          Cf. <mentioned xml:lang="ka"><lang/>
+            <w>Mikel-Gabrieli</w><note type="bibl"> (<bibl><ref type="bibl" target="#ref_Груз._сл."/>
+                <biblScope>V 472</biblScope></bibl>)</note></mentioned>, <mentioned xml:lang="xmf"><lang/>
+            <w>Mikam-Gario</w>
+            <note xml:lang="ru" type="comment">(из <w>Gabri-o</w>)</note><note xml:lang="en"
+              type="comment">(из <w>Gabri-o</w>)</note><note type="bibl"> (<bibl><ref type="bibl"
+                  target="#ref_Кипшидзе"/></bibl>)</note></mentioned>, <mentioned xml:lang="ab"><lang/>
+            <w>Mkangaria</w><note type="bibl"> (<bibl><author>Gulija</author>. <title>Sbornik
+                  abxazskix poslovic</title> [Collection of Abkhaz proverbs].
+                  <pubPlace>Sukhumi</pubPlace>, <date>1939</date>, <biblScope>p.
+                158</biblScope></bibl>)</note></mentioned>. Cf. <ref type="xr"
+            target="#entry_Taranǵeloz"/> from <mentioned xml:lang="ka"><lang/>
+            <w>mtavarangelozi</w>
+            <gloss><q>archangel</q></gloss></mentioned>. On the pagan roots of the cult of
+          archangels Michael and Gabriel see: <bibl><author>Šestakov</author>. <title>Issledovanija
+              v oblasti grečeskix narodnyx skazanij of svjatyx</title> [Studies on the Greek folk
+            tales of saints]. <pubPlace>Warsaw</pubPlace>, <date>1910</date>, <biblScope>pp.
+              29—36</biblScope></bibl>.<lb/><bibl><author>Marr</author>, <ref type="bibl"
+              target="#ref_ИАН"/>
+            <biblScope>1918, pp. 2072 ff.</biblScope></bibl> — <bibl><ref type="bibl"
               target="#ref_ОЯФ_I"/>
             <biblScope>93, 316</biblScope></bibl>.</etym>
       </entry>
