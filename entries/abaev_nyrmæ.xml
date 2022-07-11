@@ -1,44 +1,58 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">nyrmæ</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_nyrmæ" xml:lang="os" abv:completeness="russian-questions">
+      <entry xml:id="entry_nyrmæ" xml:lang="os" abv:completeness="english-questions">
         <form type="lemma" xml:lang="os-x-iron"><orth>nyrmæ</orth></form>
         <form xml:lang="os-x-digor" type="dialectal"><orth>nurmæ</orth></form>
         <sense><abv:tr xml:lang="ru">
             <q>до сих пор</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>still</q>
           </abv:tr></sense>
         <re>
           <form type="lemma"><orth>kædæj nyrmæ</orth></form>
           <sense><sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
                 <q xmlns="http://www.tei-c.org/ns/1.0">с каких пор</q>
+              </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+                <q xmlns="http://www.tei-c.org/ns/1.0">since when</q>
               </tr></sense><sense><abv:tr xml:lang="ru">
                 <q>с какого времени</q>
+              </abv:tr><abv:tr xml:lang="en">
+                <q>since what time</q>
               </abv:tr></sense></sense>
         </re>
         <re>
           <form type="lemma"><orth>wædæj nyrmæ</orth></form>
           <sense><sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
                 <q xmlns="http://www.tei-c.org/ns/1.0">с тех пор</q>
+              </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+                <q xmlns="http://www.tei-c.org/ns/1.0">since then</q>
               </tr></sense><sense><abv:tr xml:lang="ru">
                 <q>с того времени</q>
+              </abv:tr><abv:tr xml:lang="en">
+                <q>since that time</q>
               </abv:tr></sense></sense>
         </re>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
@@ -48,6 +62,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">разве священник не знает, с каких пор я здесь
                 живу?</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">doesnʼt the priest know since when Iʼve been
+                living here?</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сека"/>
               <biblScope>89</biblScope></bibl>
@@ -60,24 +78,38 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">замкнулось мое сердце и уж больше не раскрылось
                 с того времени</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">my heart closed and never opened again since
+                that time</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Iræf"/>
               <biblScope>124</biblScope></bibl>
           </example>
           <example xml:lang="os-x-digor">
             <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
             <quote xmlns="http://www.tei-c.org/ns/1.0">fal fæsmon kænun <oRef>nurmæti</oRef><note
-                type="footnote">О форме <w>nurmæti</w> (местный внутр. падеж мн. ч. от
+                xml:lang="ru" type="footnote">О форме <w>nurmæti</w> (местный внутр. падеж мн. ч. от
                   <oRef>nurmæ</oRef>) см.: <bibl><ref type="bibl" target="#ref_ГО"/>
+                  <biblScope>§ 83</biblScope></bibl>.</note><note xml:lang="en" type="footnote">On
+                the form <w>nurmæti</w> (plyral form of locative
+                <?oxy_comment_start author="Vados" timestamp="20220711T124500+0300" comment="Такое название падежа?"?>inessive<?oxy_comment_end?>
+                case from <oRef>nurmæ</oRef>), see: <bibl><ref type="bibl" target="#ref_ГО"/>
                   <biblScope>§ 83</biblScope></bibl>.</note> æz тае karz ʒurdbæl</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">но я до сих пор сожалею о своих резких
                 словах</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">but I still regret my harsh words</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Тайм._Мӕ_уарзт"/>
               <biblScope>50</biblScope></bibl>
           </example>
         </exampleGrp>
         <etym xml:lang="ru">Направ. падеж от <ref type="xr" target="#entry_nyr"><w
+              xml:lang="os-x-iron">nyr</w>
+            <w xml:lang="os-x-digor">nur</w></ref>.</etym>
+        <etym xml:lang="en">Directional case form from <ref type="xr" target="#entry_nyr"><w
               xml:lang="os-x-iron">nyr</w>
             <w xml:lang="os-x-digor">nur</w></ref>.</etym>
       </entry>
