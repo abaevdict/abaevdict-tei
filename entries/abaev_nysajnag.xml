@@ -1,38 +1,51 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">nysajnag</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_nysajnag" xml:lang="os" abv:completeness="russian-questions">
+      <entry xml:id="entry_nysajnag" xml:lang="os" abv:completeness="english-questions">
         <form type="lemma"><orth>nysajnag</orth><form type="variant" subtype="parens"
               ><orth>mysajnag</orth></form><form xml:lang="os-x-digor" type="dialectal"
               ><orth>nisajnag</orth></form></form>
         <sense n="1"><abv:tr xml:lang="ru">
             <q>предмет или деньги, оставляемые в святилище в качестве приношения божеству-дзуару</q>
-          </abv:tr><note type="comment">; в старину это были наконечники стрел, позднее пули, а
-            также <q rendition="#rend_doublequotes">кусок белой материи в ¼ — ½ аршина, в который
-              завернута серебряная 20-тикопеечная монета, несколько серебряных ниток и клочок
-              ваты</q> (<bibl><ref type="bibl" target="#ref_СМК"/>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>an item or money left at sacred place as offering to the zuar deity</q>
+          </abv:tr><note xml:lang="ru" type="comment">; в старину это были наконечники стрел,
+            позднее пули, а также <q rendition="#rend_doublequotes">кусок белой материи в ¼ — ½
+              аршина, в который завернута серебряная 20-тикопеечная монета, несколько серебряных
+              ниток и клочок ваты</q> (<bibl><ref type="bibl" target="#ref_СМК"/>
+              <biblScope>XXVII <hi rendition="#rend_italic">3</hi>
+            60</biblScope></bibl>)</note><note xml:lang="en" type="comment">; in the old days these
+            were arrowheads, later bullets as well as <q rendition="#rend_doublequotes">a piece of
+              white fabric (¼ — ½ arshins) with a silver 20-kopeyka coin which was wrapped in, a few
+              silver threads and a piece of cotton</q> (<bibl><ref type="bibl" target="#ref_СМК"/>
               <biblScope>XXVII <hi rendition="#rend_italic">3</hi>
           60</biblScope></bibl>)</note></sense>
         <sense n="2"><abv:tr xml:lang="ru">
             <q>подарок (залог) невесте от жениха при сватовстве</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>gift (deposit) to the bride from the groom during matchmaking</q>
           </abv:tr></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict" n="1">
           <example>
@@ -43,7 +56,13 @@
                   rendition="#rend_smallcaps">mysajnag</hi>, я буду его помнить; если любимая меня
                 обманет, я убью себя</q>
             </tr>
-            <bibl xmlns="http://www.tei-c.org/ns/1.0"><biblScope>из песни</biblScope></bibl>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">there is a <hi rendition="#rend_smallcaps"
+                  >mysajnag</hi> in Rekom (sacred place), I will remember it; if my lover deceives
+                me, I will kill myself</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><biblScope xml:lang="en">from a
+                song</biblScope></bibl>
           </example>
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">ʒwary x˳ylfy fæjnæ toppy næmyǵy
@@ -51,6 +70,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">положили в святилище по ружейной пуле в
                 качестве <hi rendition="#rend_smallcaps">mysajnag</hi></q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">they put in the sanctuary rifle bullets as <hi
+                  rendition="#rend_smallcaps">mysajnag</hi></q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сека"/>
               <biblScope>16</biblScope></bibl>
@@ -61,6 +84,11 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">был день (аульного) божества, народ собрался,
                 помолились, оставили в святилище приношения и сели за еду и питье</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">it was the day of the deity (of the aul), the
+                people gathered, prayed, left offerings in the sanctuary and sat down to eat and
+                drink</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сека"/>
               <biblScope>128</biblScope></bibl>
@@ -74,6 +102,11 @@
                 отдал себя под покровительство (божества), каждый отдал свои приношения
                 священнослужителю, потом сели за пиршество</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the people gathered on the glade of the
+                sanctuary of Rag; each one placed himself under the protection (of the deity), each
+                gave his offerings to the priest, and then sat down for a feast</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Čerm."/>
               <biblScope>128</biblScope></bibl>
           </example>
@@ -84,6 +117,11 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">египетское серебро (да будет) тебе приношением,
                 имеретская вата — местом хранения, о, табу тебе (славословим тебя), светлый
                 Аларды</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">(let) the Egyptian silver be an offering to
+                you, Imeretian wool be a place of storage, oh, taboo to you (we praise you),
+                luminous Alardy</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ОЭ"/>
               <biblScope>I 104</biblScope></bibl>
@@ -98,6 +136,11 @@
                 которые люди приносили в течение многих лет: козьими головами, приношениями,
                 вертелами</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Alardy used to go to those stones to pray;
+                under one of the stones there was a rather deep cave; it was filled to the brim with
+                (objects) that people had brought for many years: goat heads, offerings, skewers</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_MD"/>
               <biblScope>1956 XII 44</biblScope></bibl>
           </example>
@@ -109,6 +152,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">чтобы мужчина сосватал жену, ему надо было
                 оставить <hi rendition="#rend_smallcaps">nysajnag</hi></q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">for a man to marry a wife, he had to leave a
+                  <hi rendition="#rend_smallcaps">nysajnag</hi></q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_F."/>
               <biblScope>1962 VII 66</biblScope></bibl>
@@ -129,7 +176,8 @@
             <gloss><q>залог невесте от жениха</q></gloss><note type="bibl"> (<bibl><ref type="bibl"
                   target="#ref_Радлов"/>
                 <biblScope>III 70</biblScope></bibl>)</note></mentioned>, <mentioned xml:lang="ka"><lang/>
-            <note type="comment">(хевсур., гудамакар., мохев.)</note>
+            <note xml:lang="ru" type="comment">(хевсур., гудамакар., мохев.)</note><note
+              xml:lang="en" type="comment">(хевсур., гудамакар., мохев.)</note>
             <w>lišani</w>, <w>nišani</w>
             <gloss><q>подарки от родителей жениха невесте</q></gloss><note type="bibl"> (<bibl><ref
                   type="bibl" target="#ref_Груз._диал._I"/>
@@ -142,6 +190,37 @@
                   Матер по яфет. языкозн.</title>
                 <date>1911</date>
                 <biblScope>III 28</biblScope></bibl>)</note></mentioned>. — См. <ref type="xr"
+            target="#entry_nysan"/>.</etym>
+        <etym xml:lang="en">From <ref type="xr" target="#entry_nysan"><w xml:lang="os-x-iron"
+              >nysan</w>
+            <w xml:lang="os-x-digor">nisan</w>
+            <gloss><q>sign</q></gloss></ref> with the suffix <c>-ag</c> (<bibl><ref type="bibl"
+              target="#ref_ГО"/>
+            <biblScope>§ 168</biblScope></bibl>). Semantically, compare to <mentioned xml:lang="isk"><lang/>
+            <w>nišōnī</w>
+            <gloss><q>tradition of sending the bride a piece of cloth with a ram
+              carcass</q></gloss><note type="bibl"> (<bibl><title>Сб. Музея антроп. и
+                  этногр.</title>
+                <date>1911</date>
+                <biblScope>IX 12</biblScope></bibl>)</note></mentioned>, <mentioned xml:lang="trk"><lang/>
+            <w>nisan</w>
+            <gloss><q>groomʼs bail for the bride</q></gloss><note type="bibl"> (<bibl><ref
+                  type="bibl" target="#ref_Радлов"/>
+                <biblScope>III 70</biblScope></bibl>)</note></mentioned>, <mentioned xml:lang="ka"><lang/>
+            <note xml:lang="ru" type="comment">(хевсур., гудамакар., мохев.)</note><note
+              xml:lang="en" type="comment">(Khevsur., Gudamakar., Mokhev.)</note>
+            <w>lišani</w>, <w>nišani</w>
+            <gloss><q>gifts from the groomʼs parents to the bride</q></gloss><note type="bibl">
+                  (<bibl><ref type="bibl" target="#ref_Груз._диал._I"/>
+                <biblScope>554, 570, 572</biblScope></bibl>. — <bibl><ref type="bibl"
+                  target="#ref_Макалатия"/>
+                <biblScope>157</biblScope></bibl>)</note></mentioned>, <mentioned xml:lang="lzz"><lang/>
+            <w>lišani</w>
+            <gloss><q>gift given by the groom to the bride</q></gloss><note type="bibl">
+                  (<bibl><author>Кипшидзе</author>. <title>Дополнительные сведения о чанском языке.
+                  Матер по яфет. языкозн.</title>
+                <date>1911</date>
+                <biblScope>III 28</biblScope></bibl>)</note></mentioned>. — Cf. <ref type="xr"
             target="#entry_nysan"/>.</etym>
       </entry>
     </body>
