@@ -1,21 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">nygænyn</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
@@ -26,12 +30,20 @@
               ><orth>nigæd</orth></form></form>
         <sense><sense><abv:tr xml:lang="ru">
               <q>закапывать</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>bury</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>зарывать</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>dig into the ground</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>погребать</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>inhume</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>хоронить</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>inearth</q>
             </abv:tr></sense></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
@@ -39,7 +51,11 @@
                 <oRef>banygædtoj</oRef></quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">(человек) пятнадцать было раненых,
-                троих.похоронили</q>
+                троихпохоронили</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">about fifteen (people) were wounded, three were
+                buried</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Коста"/>
               <biblScope>229</biblScope></bibl>
@@ -51,6 +67,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">бог сказал (зэдам и дауагам): идите и
                 похороните его (тело Нарта Батрадза) в склепе Софии</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">God said (to zeds and dawags): go and bury him
+                (the body of Nart Batradz) in the crypt of Sophia</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ОТ"/>
               <biblScope>50</biblScope></bibl>
           </example>
@@ -61,15 +81,23 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">по поводу смерти Кизмиды поплакали, погоревали
                 и похоронили ее</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">they cried for the death of Kizmida, mourned
+                and buried her</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сека"/>
               <biblScope>12</biblScope></bibl>
           </example>
           <example>
-            <quote xmlns="http://www.tei-c.org/ns/1.0">Ǵirgolcen G˳yrʒyxany farsmæ ingæn yskʼaxtoj
+            <quote xmlns="http://www.tei-c.org/ns/1.0">Ǵirgolæn G˳yrʒyxany farsmæ ingæn yskʼaxtoj
               æтæ jæ <oRef>banygædtoj</oRef></quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">Джирголу вырыли могилу рядом с Гурдзыхан и
                 похоронили его</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">they dug out a grave for Jirgol next to
+                Gurdzykhan and buried him</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сека"/>
               <biblScope>32</biblScope></bibl>
@@ -81,6 +109,9 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">меня нельзя погребать на нартовском
                 кладбище</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">I canʼt be buried in the Nart cemetery</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ОЭп."/>
               <biblScope>23</biblScope></bibl>
           </example>
@@ -89,6 +120,9 @@
               wyd</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">некому было даже хоронить мертвых</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">there was no one to even bury the dead</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ИАА"/>
               <biblScope>III 168</biblScope></bibl>
@@ -100,6 +134,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">получивший же один талант пошел и закопал его в
                 землю</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">but he that had received one went and digged in
+                the earth</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Матфей"/>
               <biblScope><hi rendition="#rend_italic">25</hi> 18</biblScope></bibl>
           </example>
@@ -110,16 +148,23 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">маленького Гуймана с почестями погребают</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">little Guyman is buried with honors</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Iræf"/>
               <biblScope>90</biblScope></bibl>
           </example>
           <example xml:lang="os-x-digor">
             <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
-            <quote xmlns="http://www.tei-c.org/ns/1.0">Misirbiji mardi fælusl īskodtoncæ... æта ʽj
+            <quote xmlns="http://www.tei-c.org/ns/1.0">Misirbiji mardi fælust īskodtoncæ... æта ʽj
                 <oRef>banigædtoncæ</oRef></quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">Мисирби одели как (подобает) покойника и
                 похоронили его</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Misirbi was dressed as (befits) a dead man and
+                buried</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Iræf"/>
               <biblScope>130</biblScope></bibl>
@@ -193,8 +238,86 @@
             target="#entry_ærtyskæn"><w>ærtyskæn</w>
             <gloss><q>щипцы для огня</q></gloss> из <w type="rec">aϑr-us-kana-</w></ref>, <ref
             type="xr" target="#entry_rægænun"><w>rægænun</w>
-            <gloss><q>сыпать</q><note type="comment"> (например соль, перец в пищу)</note></gloss>
-            из <w type="rec">fra-kan-</w></ref>.<lb/><bibl><ref type="bibl"
+            <gloss><q>сыпать</q><note xml:lang="ru" type="comment"> (например соль, перец в
+                пищу)</note><note xml:lang="en" type="comment"> (например соль, перец в
+              пищу)</note></gloss> из <w type="rec">fra-kan-</w></ref>.<lb/><bibl><ref type="bibl"
+              target="#ref_Миллер_Вс._ОЭ"/>
+            <biblScope>II 67</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Miller._Gr."/>
+            <biblScope>68</biblScope></bibl>. — <bibl><ref type="bibl"
+              target="#ref_Hübschmann._Oss."/>
+            <biblScope>51</biblScope></bibl>. — <bibl><title>Тр. Инcт. языкозн.</title>
+            <date>1956</date>
+            <biblScope>VI 442—449</biblScope></bibl>.</etym>
+        <etym xml:lang="en">Goes back to <mentioned xml:lang="ira"><lang/>
+            <w>ni-kan-</w></mentioned>. The verb <mentioned xml:lang="ira"><w>kan-</w>
+            <gloss><q>dig</q></gloss>, <gloss><q>pour</q></gloss>,
+            <gloss><q>load</q></gloss></mentioned> etc., both independently and with various
+          preverbs, is widely represented in Iranian languages. Without the preverb: <mentioned
+            xml:lang="fa"><lang/>
+            <w>kandan</w></mentioned>, <mentioned xml:lang="pal"><lang/>
+            <w>kantan</w></mentioned>, <mentioned xml:lang="ku"><lang/>
+            <w>kenan</w>, <w>kendin</w></mentioned>, <mentioned xml:lang="ps"><lang/>
+            <w>kandәl</w>
+            <gloss><q>dig</q></gloss></mentioned>, <mentioned xml:lang="mnj"><lang/>
+            <w>kan-</w>: <w>ked</w></mentioned>, <mentioned xml:lang="ydg"><lang/>
+            <w>ken-</w>: <w>ked</w></mentioned>, <mentioned xml:lang="isk"><lang/>
+            <w>kan-</w> : <w>kū̊nd</w></mentioned>, <mentioned xml:lang="sgy"><lang/>
+            <w>kan-</w>: <w>kōnd</w></mentioned>, <mentioned xml:lang="sgh"><lang/>
+            <w>čān-</w> : <w>čīnt</w></mentioned>, <mentioned xml:lang="yai"><lang/>
+            <w>kan-</w>: <w>kanta</w></mentioned>, <mentioned xml:lang="sog"><lang/>
+            <w type="rec">kan-</w> (<w>kn-</w>: <w>knt-</w>)</mentioned>, <mentioned xml:lang="ae"><lang/>
+            <w>kan-</w></mentioned>, <mentioned xml:lang="peo"><lang/>
+            <w>kan-</w>
+            <gloss><q>dig</q></gloss></mentioned>. With the preverb <mentioned xml:lang="ira"
+              ><c>ni-:</c></mentioned>
+          <mentioned xml:lang="ydg"><lang/>
+            <w>ni-kana-</w>
+            <gloss><q>dig</q></gloss></mentioned>, <mentioned xml:lang="zkh"><lang/>
+            <w>nkn-</w> (<w type="rec">ni-kan-</w>) <gloss><q>bury</q></gloss></mentioned>
+              (<bibl><ref type="bibl" target="#ref_BSOAS"/>
+            <biblScope>1970 ХХХIII 540</biblScope></bibl>), <mentioned xml:lang="pal"><lang/>
+            <w>ni-kantan</w>
+            <gloss><q>bury</q></gloss>, <gloss><q>inhume</q></gloss>,
+            <gloss><q>inearth</q></gloss></mentioned> (<mentioned xml:lang="pal"><lang/>
+            <w>na-sāk</w>
+            <w>nikānīh</w></mentioned> = <mentioned xml:lang="ae"><lang/>
+            <w>nasuspaya-</w>
+            <gloss><q rendition="#rend_doublequotes">burial of corpses</q></gloss></mentioned>),
+          probably <mentioned xml:lang="kho"><lang/>
+            <w>ñān-</w>: <w>ñāda-</w> (= <w type="rec">nikan-</w>: <w>nikata-</w>)
+                <gloss><q>destroy</q></gloss></mentioned> (? <bibl><author>Bailey</author>, <ref
+              type="bibl" target="#ref_BSOS"/>
+            <biblScope>1940 VIII 595</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_BSOAS"/>
+            <biblScope>1966 XXIX 523</biblScope></bibl>), <mentioned xml:lang="ae"><lang/>
+            <w>ni-kan-</w>
+            <gloss><q>bury</q></gloss></mentioned>, <mentioned xml:lang="peo"><lang/>
+            <w>ni-kan-</w>
+            <gloss><q>destroy</q></gloss>, <gloss><q>ruin</q></gloss></mentioned>. The aspirated
+          variation of the initial consonant is provided by <mentioned xml:lang="inc-x-old"><lang/>
+            <w>khan-</w>: <w>khata-</w>, <w>ni-khan-</w>: <w>ni-khata-</w>
+            <gloss><q>dig</q></gloss></mentioned>. The same root <mentioned xml:lang="ira"
+              ><w>kan-</w></mentioned> is recognized in Ossetic <ref type="xr"
+            target="#entry_ævgænyn"><w>æv-gæn-yn</w>
+            <gloss><q>load</q></gloss>, <gloss><q>pour</q></gloss>, <gloss><q>scoop</q></gloss> (<w
+              type="rec">abi-kan-</w>)</ref> and in <mentioned xml:lang="peo"><lang/>
+            <w>ava-kan</w>
+            <gloss><q>load</q></gloss></mentioned>. There is no need to see two different roots
+          here: the semantic sift <q>dig</q> → <q>scoop</q>, <q>load</q> is quite natural; for
+          semantics, cf. <mentioned xml:lang="kbd"><lang/>
+            <w>tʼä-n</w>
+            <gloss><q>dig</q></gloss></mentioned> along with <mentioned xml:lang="ab"><lang/>
+            <w>a-tʼa-ra</w>
+            <gloss><q>scoop</q></gloss></mentioned>. For more information, see <ref type="xr"
+            target="#entry_ævgænyn"/>. See also <ref type="xr" target="#entry_nykkænd"
+              ><w>nykkænd</w>
+            <gloss><q>basement</q></gloss></ref>, <ref type="xr" target="#entry_ingæn"><w>ingæn</w>
+            <gloss><q>grave</q></gloss> from <w type="rec">han-kana-</w></ref>, <ref type="xr"
+            target="#entry_ærtyskæn"><w>ærtyskæn</w>
+            <gloss><q>fire tongs</q></gloss> from <w type="rec">aϑr-us-kana-</w></ref>, <ref
+            type="xr" target="#entry_rægænun"><w>rægænun</w>
+            <gloss><q>pour</q><note xml:lang="ru" type="comment"> (например соль, перец в
+                пищу)</note><note xml:lang="en" type="comment"> (e.g. salt, pepper in
+              food)</note></gloss> from <w type="rec">fra-kan-</w></ref>.<lb/><bibl><ref type="bibl"
               target="#ref_Миллер_Вс._ОЭ"/>
             <biblScope>II 67</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Miller._Gr."/>
             <biblScope>68</biblScope></bibl>. — <bibl><ref type="bibl"
