@@ -1,49 +1,65 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">nymæt</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_nymæt" xml:lang="os" abv:completeness="russian-questions">
+      <entry xml:id="entry_nymæt" xml:lang="os" abv:completeness="english-questions">
         <form type="lemma" xml:lang="os-x-iron"><orth>nymæt</orth></form>
         <form xml:lang="os-x-digor" type="dialectal"><orth>nimæt</orth></form>
         <sense n="1" xml:lang="os-x-iron"><usg><lang xml:lang="os-x-iron"/></usg><abv:tr
             xml:lang="ru">
             <q>войлок</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>felt</q>
           </abv:tr></sense>
         <sense n="2"><abv:tr xml:lang="ru">
             <q>бурка</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>burka, felt cloak</q>
           </abv:tr></sense>
-        <note type="comment">; дигорский различает <oRef>nimæt</oRef>
+        <note xml:lang="ru" type="comment">; дигорский различает <oRef>nimæt</oRef>
           <q>бурка</q> и <ref type="xr" target="#entry_bujnag"><w>bujnag</w>
             <gloss><q>войлок</q></gloss>, буквально <q rendition="#rend_doublequotes"
             >нижний</q></ref>, т. е. употребляемый для подстилки (подразумевается
           <oRef>nimæt</oRef>); в иронском различают <phr>binag nymæt</phr>
           <q>войлок для подстилки</q> и <w>wæjlag nymæt</w><q rendition="#rend_doublequotes">
             верхний, надеваемый сверху войлок</q>, т. е. <q>бурку</q></note>
+        <note xml:lang="en" type="comment">; in Digor, <oRef>nimæt</oRef>
+          <q>burka</q> and <ref type="xr" target="#entry_bujnag"><w>bujnag</w>
+            <gloss><q>felt</q></gloss>, literally <q rendition="#rend_doublequotes">low</q></ref>
+          are distinguished, i.e. used for bedding (meaning <oRef>nimæt</oRef>); in Iron, <phr>binag
+            nymæt</phr>
+          <q>felt for bedding</q> and <w>wæjlag nymæt</w><q rendition="#rend_doublequotes"> upper,
+            put on above felt</q>, i.e. <q>burka</q> are distinguished</note>
         <re>
           <?oxy_comment_start author="Vados" timestamp="20220620T125628+0300" comment="Не вставляется тире"?>
           <form type="lemma" xml:lang="os-x-iron"><?oxy_comment_end?><orth>nymætyn</orth></form>
-          <form xml:lang="os-x-digor" type="variant" subtype="parens"
-            ><?oxy_comment_start author="Vados" timestamp="20220620T125740+0300" comment="Остается вертикальный разделитель"?>д<?oxy_comment_end?>.
-              <orth>bujnagin</orth></form>
+          <form xml:lang="os-x-digor" type="variant" subtype="parens">Digor
+            <orth>bujnagin</orth></form>
           <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">войлочный</q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">made of felt</q>
             </tr></sense>
           <note type="bibl"> (<bibl><ref type="bibl" target="#ref_ГО"/>
               <biblScope>§ 181</biblScope></bibl>)</note>
@@ -52,6 +68,8 @@
           <form type="lemma"><orth>nymætxūd</orth></form>
           <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">войлочная шляпа</q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">felt hat</q>
             </tr></sense>
         </re>
         <?oxy_comment_start author="Vados" timestamp="20220620T130007+0300" comment="Не вставляется тире"?>
@@ -59,10 +77,18 @@
           <form type="lemma"><orth>nymæt wærdyn</orth></form>
           <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">валять бурку, войлок</q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">to felt, make a felt cloak</q>
             </tr></sense>
-          <note type="comment">; работа эта выполнялась группой женщин и сопровождалась песней <q
-              rendition="#rend_doublequotes"><hi rendition="#rend_smallcaps">Onaj</hi></q>
-                (<bibl><ref type="bibl" target="#src_СОПам."/>
+          <note xml:lang="ru" type="comment">; работа эта выполнялась группой женщин и
+            сопровождалась песней <q rendition="#rend_doublequotes"><hi rendition="#rend_smallcaps"
+                >Onaj</hi></q> (<bibl><ref type="bibl" target="#src_СОПам."/>
+              <biblScope> II 146</biblScope></bibl>; <bibl><ref type="bibl" target="#src_ИАС"/>
+              <biblScope>II 334—338</biblScope></bibl>)</note>
+          <note xml:lang="en" type="comment">; this work was carried out by a group of women and was
+            accompanied by the song <q rendition="#rend_doublequotes"><hi
+                rendition="#rend_smallcaps">Onaj</hi></q> (<bibl><ref type="bibl"
+                target="#src_СОПам."/>
               <biblScope> II 146</biblScope></bibl>; <bibl><ref type="bibl" target="#src_ИАС"/>
               <biblScope>II 334—338</biblScope></bibl>)</note>
         </re>
@@ -73,6 +99,9 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">он вырыл яму, накрыл ее войлоком</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">he dug a hole, covered it with felt</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Munk."/>
               <biblScope>72</biblScope></bibl>
           </example>
@@ -81,6 +110,9 @@
                 <oRef>nymæty</oRef></quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">Шатана взяла камень, завернула его в войлок</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Shatana took the stone, wrapped it in felt</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ОЭ"/>
               <biblScope>I 50</biblScope></bibl>
@@ -92,6 +124,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">ночью в <hi rendition="#rend_smallcaps"
                   >xæʒar</hi>’е, у огня, они легли, (постлав) под себя старый войлок</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">in the night, they lay down in <hi
+                  rendition="#rend_smallcaps">xæʒar</hi> by the fire, under an old felt</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сека"/>
               <biblScope>22</biblScope></bibl>
           </example>
@@ -101,6 +137,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">от избытка радости его слезы текли на серый
                 войлок</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">from an excess of joy, his tears flowed onto
+                the gray felt</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сека"/>
               <biblScope>39</biblScope></bibl>
@@ -112,6 +152,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">она хлестнула меня (несколько раз) войлочной
                 плетью, и я обратился в осла</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">she whipped me (several times) with a felt
+                whip, and I turned into a donkey</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Нарт._сказ."/>
               <biblScope>293</biblScope></bibl>
           </example>
@@ -122,6 +166,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">Уастырджи войлочной плетью хлестнул двух
                 братьев</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Wastyrji lashed two brothers with a felt
+                whip</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ОЭп."/>
               <biblScope>17</biblScope></bibl>
           </example>
@@ -130,6 +178,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">войлочная шляпа, (обувь) <hi
                   rendition="#rend_smallcaps">арчи</hi>...</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">felt hat, (shoes) of <hi
+                  rendition="#rend_smallcaps">Archi</hi>...</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Коста"/>
               <biblScope>52</biblScope></bibl>
@@ -141,6 +193,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">Тотразд побежал к роднику, зачерпнул оттуда в
                 свою войлочную шляпу</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Totrazd ran to the spring, scooped from there
+                into his felt hat</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ЮОПам."/>
               <biblScope>II 143</biblScope></bibl>
           </example>
@@ -151,6 +207,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">войлочная шляпа заломлена на левую сторону
                 головы, на поясе кинжал...</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the felt hat is bent on the left side of the
+                head, a dagger on the belt...</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Arsen"/>
               <biblScope>10</biblScope></bibl>
           </example>
@@ -159,6 +219,9 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">я размачиваю (шерсть) для (изготовления)
                 войлочной шляпы</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">I soak (wool) for (making) a felt hat</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ИАА"/>
               <biblScope>II 337</biblScope></bibl>
@@ -172,6 +235,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">на стене — вешалка слоновой кости, на ней
                 повешены черкески, бешметы, бурка</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">on the wall an ivory hanger, Circassian
+                clothes, beshmets, felt cloaks were hanging</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Брит."/>
               <biblScope>106</biblScope></bibl>
           </example>
@@ -182,6 +249,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">в темном лесу на черной бурке лежала
                 девушка</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">in the dark forest a girl lay on a black
+                cloak</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Arsen"/>
               <biblScope>78</biblScope></bibl>
           </example>
@@ -191,6 +262,9 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">бурка, которую колотишь, становится
                 мохнатей</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">The cloak that you beat becomes more shaggy</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Ӕмб."/>
               <biblScope>29</biblScope></bibl>
@@ -203,6 +277,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">нартовская Шатана из ста рун делала Урузмагу
                 бурку</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the Nart Shatana made a cloak for Uruzmag out
+                of a hundred fleeces</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_СОПам."/>
               <biblScope>II 146</biblScope></bibl>
           </example>
@@ -213,6 +291,9 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">великан накинул на шею бурку</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the giant threw a cloak around his neck</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_MSt."/>
               <biblScope>25<hi rendition="#rend_subscript">3—4</hi></biblScope></bibl>
           </example>
@@ -222,6 +303,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">Тотай несет (ягнят) в поле своей бурки в
                 пастушеский шалаш</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Totai carries (lambs) on the edge of his cloak
+                to the shepherdʼs hut</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_MD"/>
               <biblScope>1956 VII 50</biblScope></bibl>
@@ -234,6 +319,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">изэды (небожители) под тенью дерева среди
                 зеленой травы расстилают свои белые бурки</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">izeds (celestials) are spreading their white
+                cloaks under the shade of a tree in the middle of the green grass </q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ОЭп."/>
               <biblScope>59<hi rendition="#rend_subscript">220—225</hi></biblScope></bibl>
           </example>
@@ -245,6 +334,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">перед моими глазами мелькают черная бурка и
                 вороной конь</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">a black cloak and a black horse flash before my
+                eyes</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Iræf"/>
               <biblScope>10</biblScope></bibl>
           </example>
@@ -255,6 +348,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">его бурка повисла на его плече, как сломанное
                 крыло</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">his cloak hung on his shoulder like a broken
+                wing</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_MD"/>
               <biblScope>1936 I 67</biblScope></bibl>
@@ -284,7 +381,9 @@
                 <biblScope>908</biblScope></bibl>)</note></mentioned>, <mentioned xml:lang="ps"
               ><w>lamcai</w>
             <gloss><q>войлок</q></gloss>
-            <note type="comment">(<c>lam-</c> из <c>nam-</c> по диссимиляции:</note>
+            <note xml:lang="ru" type="comment">(<c>lam-</c> из <c>nam-</c> по
+              диссимиляции:</note><note xml:lang="en" type="comment">(<c>lam-</c> из <c>nam-</c> по
+              диссимиляции:</note>
             <note type="bibl"><bibl><ref type="bibl" target="#ref_Morgenstierne._EVP"/>
                 <biblScope>37</biblScope></bibl>)</note></mentioned>, <mentioned xml:lang="mnj"><lang/>
             <w>nāmyo</w></mentioned>, <mentioned xml:lang="sgy"><lang/>
@@ -292,7 +391,8 @@
             <w>nәmad</w>, <w>namad</w></mentioned>, <mentioned xml:lang="yai"><lang/>
             <w>namta</w></mentioned>, <mentioned xml:lang="sog"><lang/>
             <w type="rec">namat</w> (<w>nmt</w>)</mentioned>, <mentioned xml:lang="kho"><lang/>
-            <w>namata</w>, <note type="comment">(Тумшук)</note>
+            <w>namata</w>, <note xml:lang="ru" type="comment">(Тумшук)</note><note xml:lang="en"
+              type="comment">(Тумшук)</note>
             <w>nimata</w>, <w>namade</w></mentioned> id., <mentioned xml:lang="ae"><lang/>
             <w>nәmata</w>, <w>nimata</w> id. <note type="bibl"> (<bibl><author>Lüders</author>, <ref
                   type="bibl" target="#ref_APAW"/>
@@ -323,6 +423,80 @@
             <gloss><q>войлок</q></gloss></mentioned>; кавказские — <mentioned xml:lang="ka"><lang/>
             <w>nabadi</w>
             <gloss><q>войлок</q></gloss>, <gloss><q>бурка</q></gloss></mentioned>. — Ср. <ref
+            type="xr" target="#entry_bujnag"/>.<lb/><bibl><ref type="bibl" target="#ref_Tomaschek"/>
+            <biblScope>796</biblScope></bibl>. — <bibl><author>Bailey</author>, <ref type="bibl"
+              target="#ref_BSOAS"/>
+            <biblScope>1957 XIX 53—54</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_AO"/>
+            <biblScope>1960 XXX (Kai Barr-Volume) 42—43</biblScope></bibl>. — <bibl><ref type="bibl"
+              target="#ref_Mayrhofer"/>
+            <biblScope>II 135</biblScope></bibl>.</etym>
+        <etym xml:lang="en">Goes back to <mentioned xml:lang="ira"><w type="rec"
+            >namata</w></mentioned>. One would expect <w type="rec">næmæd</w>; but the alternation
+          of the voiceless and voiced consonants in the final is also observed in other cases, for
+          example <ref type="xr" target="#entry_nymæc"><w>nymæc</w> || <w>nymæʒ</w>
+            <gloss><q>number</q></gloss></ref>; for the alternation <c>а</c> → <c>у</c> | <c>i</c>
+          cf. <ref type="xr" target="#entry_ingæn"/> from <mentioned xml:lang="ira"><w type="rec"
+              >hankana-</w></mentioned>, <ref type="xr" target="#entry_nymd"/> from <mentioned
+            xml:lang="ira"><w type="rec">namta-</w></mentioned> etc. The narrowing <c>а</c> →
+            <c>ә</c> || <c>i</c> in this word is also observed in Avestan (see below). Cf.
+            <mentioned xml:lang="fa"><lang/>
+            <w>namad</w>
+            <gloss><q>felt</q></gloss></mentioned>, <mentioned xml:lang="fa"><w>namadīn</w>
+            <gloss><q>made of felt</q></gloss></mentioned>, <mentioned xml:lang="fa"
+              ><w>namad-zīn</w>
+            <gloss><q>saddle blanker</q></gloss></mentioned> (<mentioned xml:lang="fa"><w>zīn</w>
+            <gloss><q>saddle</q></gloss></mentioned>), <mentioned xml:lang="pal"><lang/>
+            <w>namat</w></mentioned>, <mentioned xml:lang="x-balochi"><lang/>
+            <w>navad</w><note type="bibl"> (<bibl><author>Hübschmann</author>, <ref type="bibl"
+                  target="#ref_ZDMG"/>
+                <biblScope>1890 XLIV 557</biblScope></bibl>)</note></mentioned>, <mentioned
+            xml:lang="ps"><lang/>
+            <w>namla</w> id. <note type="bibl"> (<bibl><ref type="bibl" target="#ref_Асланов"/>
+                <biblScope>908</biblScope></bibl>)</note></mentioned>, <mentioned xml:lang="ps"
+              ><w>lamcai</w>
+            <gloss><q>felt</q></gloss>
+            <note xml:lang="ru" type="comment">(<c>lam-</c> из <c>nam-</c> по
+              диссимиляции:</note><note xml:lang="en" type="comment">(<c>lam-</c> from <c>nam-</c>
+              by dissimilation:</note>
+            <note type="bibl"><bibl><ref type="bibl" target="#ref_Morgenstierne._EVP"/>
+                <biblScope>37</biblScope></bibl>)</note></mentioned>, <mentioned xml:lang="mnj"><lang/>
+            <w>nāmyo</w></mentioned>, <mentioned xml:lang="sgy"><lang/>
+            <w>numōδ</w></mentioned>, <mentioned xml:lang="isk"><lang/>
+            <w>nәmad</w>, <w>namad</w></mentioned>, <mentioned xml:lang="yai"><lang/>
+            <w>namta</w></mentioned>, <mentioned xml:lang="sog"><lang/>
+            <w type="rec">namat</w> (<w>nmt</w>)</mentioned>, <mentioned xml:lang="kho"><lang/>
+            <w>namata</w>, <note xml:lang="ru" type="comment">(Тумшук)</note><note xml:lang="en"
+              type="comment">(Tumshuk)</note>
+            <w>nimata</w>, <w>namade</w></mentioned> id., <mentioned xml:lang="ae"><lang/>
+            <w>nәmata</w>, <w>nimata</w> id. <note type="bibl"> (<bibl><author>Lüders</author>, <ref
+                  type="bibl" target="#ref_APAW"/>
+                <biblScope>1936, стр. 16 сл.</biblScope></bibl>)</note></mentioned>. Etymologically,
+            <mentioned xml:lang="ira"><w>namata-</w></mentioned> is related (since <bibl><ref
+              type="bibl" target="#ref_Tomaschek"/></bibl>) either with <mentioned xml:lang="ira"
+              ><w>nam-</w>
+            <gloss><q>beat</q></gloss>, <gloss><q>pound</q></gloss></mentioned> (Ossetic <ref
+            type="xr" target="#entry_næmyn"/>) or with <mentioned xml:lang="ira"><w>nam-</w>
+            <gloss><q>wet</q></gloss></mentioned> (<mentioned xml:lang="fa"><lang/>
+            <w>nam</w>, <w>namīd</w></mentioned>). From the perspective of the actual felt-making
+          process, both explanations are satisfactory, but the second is more. — <mentioned
+            xml:lang="ira"><lang>Iranian</lang>
+            <w>namata-</w></mentioned> gained popularity among neighbors and was borrowed into many
+          languages: Indo-Aryan — <mentioned xml:lang="inc-x-old"><lang/>
+            <w>namata-</w></mentioned>, <mentioned xml:lang="pi"><lang/>
+            <w>namataka-</w></mentioned>, <mentioned xml:lang="hi"><lang/>
+            <w>namdā</w>
+            <gloss><q>войлок</q></gloss></mentioned>; Semitic — <mentioned xml:lang="ar"><lang/>
+            <w>namaṯ</w>
+            <gloss><q>felt</q></gloss></mentioned>; Finno-Ugric — <mentioned xml:lang="kv"><lang/>
+            <w>ńamōd</w>, <w>ńamәt</w>
+            <gloss><q>footcloth</q></gloss></mentioned>, <mentioned xml:lang="mns"><lang/> (Vogul.)
+              <w>ńāmat</w></mentioned>, <mentioned xml:lang="kca"><lang/> (Ost.) <w>ńamat</w>
+            <gloss><q>felt sock</q></gloss>, <gloss><q>footcloth</q></gloss></mentioned>, <mentioned
+            xml:lang="hu"><lang/>
+            <w>nemez</w>
+            <gloss><q>felt</q></gloss></mentioned>; Caucasian — <mentioned xml:lang="ka"><lang/>
+            <w>nabadi</w>
+            <gloss><q>felt</q></gloss>, <gloss><q>burka</q></gloss></mentioned>. — Cf. <ref
             type="xr" target="#entry_bujnag"/>.<lb/><bibl><ref type="bibl" target="#ref_Tomaschek"/>
             <biblScope>796</biblScope></bibl>. — <bibl><author>Bailey</author>, <ref type="bibl"
               target="#ref_BSOAS"/>
