@@ -1,31 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">nivesinæ</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_nivesinæ" xml:lang="os-x-digor" abv:completeness="russian-questions">
+      <entry xml:id="entry_nivesinæ" xml:lang="os-x-digor" abv:completeness="english-questions">
         <form type="lemma"><orth>nivesinæ</orth></form>
         <usg><lang/></usg>
         <sense><sense><abv:tr xml:lang="ru">
               <q>образ</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>image</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>изображение</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>picture</q>
             </abv:tr></sense></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
@@ -37,9 +45,14 @@
                 одинаковые, то испросите у бога, чтобы наше изображение было на небе и чтобы потомки
                 нас не забыли</q>
             </tr>
-            <bibl xmlns="http://www.tei-c.org/ns/1.0"><biblScope>предание о том, как семь сестер
-                обратились в семь звезд созвездия Плеяд</biblScope>; <ref type="bibl"
-                target="#ref_MSt."/>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">there are seven of us (sisters), and since we
+                are all seven the same, then ask God that our image be in heaven and that our
+                descendants do not forget us</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><biblScope>the legend of how the seven sisters
+                turned into the seven stars of the Pleiades constellation</biblScope>; <ref
+                type="bibl" target="#ref_MSt."/>
               <biblScope>21<hi rendition="#rend_subscript">4</hi></biblScope></bibl>
           </example>
         </exampleGrp>
@@ -50,8 +63,19 @@
             rendition="#rend_doublequotes">снятие образа</q>; ср. и. <mentioned xml:lang="os"
               ><phr>nyv (x˳yz) īsyn</phr>
             <gloss><q>писать портрет</q></gloss>, <gloss><q>фотографировать</q></gloss>
-            <note type="comment">(<q rendition="#rend_doublequotes">снимать
-            образ</q>)</note></mentioned>.</etym>
+            <note xml:lang="ru" type="comment">(<q rendition="#rend_doublequotes">снимать
+              образ</q>)</note><note xml:lang="en" type="comment">(<q rendition="#rend_doublequotes"
+                >снимать образ</q>)</note></mentioned>.</etym>
+        <etym xml:lang="en">Compounding of <ref type="xr" target="#entry_nyv"><w>niwæ</w>
+            <gloss><q>image</q></gloss></ref> and <mentioned xml:lang="os"><w>esinæ</w></mentioned>
+          from <ref type="xr" target="#entry_īsyn"><w xml:lang="os-x-digor">esun</w>
+            <gloss><q>take</q></gloss>, <gloss><q>take off</q></gloss></ref>, literally <q
+            rendition="#rend_doublequotes">taking off the image</q>; cf. Iron <mentioned
+            xml:lang="os"><phr>nyv (x˳yz) īsyn</phr>
+            <gloss><q>paint a portrait</q></gloss>, <gloss><q>take a picture</q></gloss>
+            <note xml:lang="ru" type="comment">(<q rendition="#rend_doublequotes">снимать
+              образ</q>)</note><note xml:lang="en" type="comment">(<q rendition="#rend_doublequotes"
+                >take off the image</q>)</note></mentioned>.</etym>
       </entry>
     </body>
   </text>
