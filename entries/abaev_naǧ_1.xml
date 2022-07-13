@@ -1,38 +1,52 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">naǧ_1</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_naǧ_1" n="1" xml:lang="os-x-iron" abv:completeness="russian-questions">
+      <entry xml:id="entry_naǧ_1" n="1" xml:lang="os-x-iron" abv:completeness="complete">
         <form type="lemma"><orth>naǧ</orth></form>
         <usg><lang/></usg>
         <re>
-          <form type="lemma"><note type="comment">в выражении </note><orth>nagæj
+          <form type="lemma"><note xml:lang="ru" type="comment">в выражении </note><note
+              xml:lang="en" type="comment">in the expression </note><orth>naǧæj
             æftawgæ</orth></form>
           <sense><sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
                 <q xmlns="http://www.tei-c.org/ns/1.0">попона из <oRef>naǧ</oRef></q>
+              </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+                <q xmlns="http://www.tei-c.org/ns/1.0">horsecloth made of <oRef>naǧ</oRef></q>
               </tr></sense><sense><abv:tr xml:lang="ru">
                 <q>дорогая попона</q>
-              </abv:tr></sense></sense>
-          <note type="comment">(?); упоминается в ритуальном тексте посвящения коня покойнику
-              (<mentioned xml:lang="os"><w>bæxfældīsyn</w></mentioned>) как часть великолепной сбруи
-            коня, на котором покойнику предстоит въехать в царство мертвых</note>
+              </abv:tr><abv:tr xml:lang="en">
+                <q>expensive horsecloth</q>
+              </abv:tr><note type="comment"> (?)</note></sense></sense>
+          <note xml:lang="ru" type="comment">; упоминается в ритуальном тексте <mentioned
+              xml:lang="os"><gloss>посвящения коня покойнику</gloss>
+            (<w>bæxfældīsyn</w></mentioned>) как часть великолепной сбруи коня, на котором покойнику
+            предстоит въехать в царство мертвых</note>
+          <note xml:lang="en" type="comment">; mentioned in a ritual text describing <mentioned
+              xml:lang="os"><gloss>the dedication of a horse to the deceased</gloss>
+                (<w>bæxfældīsyn</w>)</mentioned> as part of the magnificient harness of the horse on
+            which the deceased is to enter into the kingdom of the dead</note>
         </re>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
@@ -42,16 +56,30 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">попона из <oRef>naǧ</oRef>... золотое
                 седло...</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">horsecloth from <oRef>naǧ</oRef>… golden
+                saddle…</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Коста"/>
               <biblScope>70</biblScope></bibl>
           </example>
         </exampleGrp>
-        <etym xml:lang="ru">Не ясно. Ср. у Марко <hi rendition="#rend_smallcaps">Поло</hi> название
-          дорогой ткани <w>nak</w>: <q rendition="#rend_doublequotes">В Бодаке (Багдаде) выделывают
-            разные шелковые и золотые материи: нассит, нак, кремози; по ним на разный манер, вытканы
-            всякие звери и птицы</q> (<bibl><title>Книга Марко </title><author>Поло</author><title>,
-              перевод Минаева</title>. <pubPlace>M.</pubPlace>, <date>1955</date>, <biblScope>стр.
+        <etym xml:lang="ru">Не ясно. Ср. у Марко <name>Поло</name> название дорогой ткани
+          <w>nak</w>: <q rendition="#rend_doublequotes">В Бодаке (Багдаде) выделывают разные
+            шелковые и золотые материи: нассит, нак, кремози; по ним на разный манер, вытканы всякие
+            звери и птицы</q> (<bibl><title>Книга Марко <name>Поло</name></title>, <note
+              xml:lang="ru" type="comment">перевод Минаева</note><note xml:lang="en" type="comment"
+              >перевод Минаева</note>. <pubPlace>M.</pubPlace>, <date>1955</date>, <biblScope>стр.
               59</biblScope></bibl>).</etym>
+        <etym xml:lang="en">Unclear. Cf. Marco <name>Polo</name>’s mention of an expensive fabric
+          called <w>nak</w>: <q rendition="#rend_doublequotes">In Baudas they weave many different
+            kinds of silk stuffs and gold brocades, such as <w>nasich</w>, and <w>nac</w>, and
+              <w>cramoisy</w>, and many another beautiful tissue richly wrought with figures of
+            beasts and birds</q> (<bibl><title>The Travels of Maco <name>Polo</name></title>, <note
+              xml:lang="ru" type="comment">перевод Минаева</note><note xml:lang="en" type="comment"
+              >translated by Henry Yule</note>. <note type="comment">Edited and Annotated by Henri
+              Cordier</note>. <publisher>John Murray</publisher>: <pubPlace>London</pubPlace>,
+              <date>1920</date>, <biblScope>стр. 59</biblScope></bibl>).</etym>
       </entry>
     </body>
   </text>
