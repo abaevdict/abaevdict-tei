@@ -1,35 +1,44 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">nomæstud</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_nomæstud" xml:lang="os-x-digor" abv:completeness="russian-questions">
+      <entry xml:id="entry_nomæstud" xml:lang="os-x-digor" abv:completeness="english-questions">
         <form type="lemma"><orth>nomæstud</orth></form>
         <usg><lang/></usg>
         <sense><abv:tr xml:lang="ru">
             <q>прославленный</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>famous</q>
           </abv:tr></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">cæmæj ajtæ <oRef>nomæstud</oRef>?</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">чем вы прославились?</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">what are you famous for?</q>
             </tr>
           </example>
         </exampleGrp>
@@ -38,6 +47,11 @@
             ><w>(æ)stud</w></ref>, прош. причастие от <ref type="xr" target="#entry_stawyn"
               ><w><?oxy_comment_start author="Vados" timestamp="20220612T115630+0300" comment="Проверить, правильная ли ссылка"?>stawun<?oxy_comment_end?></w>
             <gloss><q>хвалить</q></gloss>, <gloss><q>славить</q></gloss></ref>.</etym>
+        <etym xml:lang="en">Compound of <ref type="xr" target="#entry_nom"><w>nom</w>
+            <gloss><q>name</q></gloss></ref> and <ref type="xr" target="#entry_stawyn"
+              ><w>(æ)stud</w></ref>, the past participle from <ref type="xr" target="#entry_stawyn"
+              ><w><?oxy_comment_start author="Vados" timestamp="20220612T115630+0300" comment="Проверить, правильная ли ссылка"?>stawun<?oxy_comment_end?></w>
+            <gloss><q>praise</q></gloss>, <gloss><q>laud</q></gloss></ref>.</etym>
       </entry>
     </body>
   </text>
