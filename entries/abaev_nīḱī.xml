@@ -1,35 +1,48 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">nīḱī</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_nīḱī" xml:lang="os" abv:completeness="russian-questions">
+      <entry xml:id="entry_nīḱī" xml:lang="os" abv:completeness="english-questions">
         <form type="lemma" xml:lang="os-x-iron"><orth>nīḱī</orth></form>
         <form xml:lang="os-x-digor" type="dialectal"><orth>neke</orth></form>
         <sense><abv:tr xml:lang="ru">
             <q>никто</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>nobody</q>
           </abv:tr></sense>
-        <sense><note type="comment">дигорском также </note><abv:tr xml:lang="ru">
+        <sense>In Digor also </sense>
+        <sense><note xml:lang="ru" type="comment">в </note><abv:tr xml:lang="ru">
             <q>никого</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q><?oxy_comment_start author="Vados" timestamp="20220713T173201+0300" comment="Это имеется в виду в оригинале?"?>nobody
+              (genitive)<?oxy_comment_end?></q>
           </abv:tr></sense>
         <re>
-          <note type="comment">при глаголах в императиве, отчасти в конъюнктиве и оптативе </note>
+          <note xml:lang="ru" type="comment">при глаголах в императиве, отчасти в конъюнктиве и
+            оптативе </note>
+          <note xml:lang="en" type="comment">with imperative forms, and partly with subjunctive and
+            optative forms is replaced by </note>
           <form type="lemma" xml:lang="os-x-iron"><orth>maḱī</orth></form>
           <form xml:lang="os-x-digor" type="dialectal"><orth>таке</orth></form>
         </re>
@@ -38,6 +51,8 @@
           <form xml:lang="os-x-digor" type="dialectal"><orth>nekebal</orth></form>
           <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">никто больше</q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">nobody else</q>
             </tr></sense>
         </re>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
@@ -47,6 +62,9 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">никто не показывает ему дом князя</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">no one shows him the princeʼs house</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ОЭ"/>
               <biblScope>I 22</biblScope></bibl>
           </example>
@@ -55,6 +73,9 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">никто больше не будет знать мой надгробный
                 камень</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">no one else will know my tombstone</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Коста"/>
               <biblScope>21</biblScope></bibl>
@@ -67,6 +88,11 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">Асаго запер железные ворота (крепости) Гори, да
                 так запер, что, кроме него самого, никто бы их не открыл</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Asago locked the iron gates of Gori
+                (fortresses), and locked them so that, except for himself, no one would open
+                them</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_MSt."/>
               <biblScope>6<hi rendition="#rend_subscript">7—8</hi></biblScope></bibl>
           </example>
@@ -77,6 +103,9 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">никому не нужны мои черные брови</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">no one wants my black eyebrows</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Iræf"/>
               <biblScope>12</biblScope></bibl>
           </example>
@@ -85,6 +114,9 @@
               darʒysty</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">зря никого не обидят</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">will not offend anyone in vain</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Брит."/>
               <biblScope>99</biblScope></bibl>
@@ -101,12 +133,39 @@
             <w>никъ</w>, <w>никъто</w></mentioned>, <mentioned xml:lang="lt"><lang/>
             <w>niẽkas</w>
             <gloss><q>никто</q></gloss>, <gloss><q>ничто</q></gloss>
-            <note type="comment">(из <mentioned xml:lang="ine"><lang/>
+            <note xml:lang="ru" type="comment">(из <mentioned xml:lang="ine"><lang/>
+                <w type="rec">nei-k˳os</w></mentioned>)</note><note xml:lang="en" type="comment">(из
+                <mentioned xml:lang="ine"><lang/>
                 <w type="rec">nei-k˳os</w></mentioned>)</note></mentioned>, дальше стоит <mentioned
             xml:lang="ae"><lang/>
-            <w>naečiš</w><note type="comment"> (из <mentioned xml:lang="ine"><w type="rec"
-                  >nei-k˳is</w></mentioned>)</note></mentioned>. — См. <ref type="xr"
-            target="#entry_ni"/> и <ref type="xr" target="#entry_ḱī"/>.<lb/><bibl><ref type="bibl"
+            <w>naečiš</w><note xml:lang="ru" type="comment"> (из <mentioned xml:lang="ine"><w
+                  type="rec">nei-k˳is</w></mentioned>)</note><note xml:lang="en" type="comment"> (из
+                <mentioned xml:lang="ine"><w type="rec"
+          >nei-k˳is</w></mentioned>)</note></mentioned>. — См. <ref type="xr" target="#entry_ni"/> и
+            <ref type="xr" target="#entry_ḱī"/>.<lb/><bibl><ref type="bibl"
+              target="#ref_Hübschmann._Oss."/>
+            <biblScope>51</biblScope></bibl>.</etym>
+        <etym xml:lang="en">Goes back to <mentioned xml:lang="ira"><w type="rec"
+              >nai-ka(<?oxy_comment_start author="Vados" timestamp="20220608T141956+0300" comment="Иранская реконструкция?"?>h<?oxy_comment_end?>)ya</w></mentioned>,
+          where <mentioned xml:lang="ira"
+              ><w>ka<?oxy_comment_start author="Vados" timestamp="20220608T141956+0300" comment="Иранская реконструкция?"?>h<?oxy_comment_end?>ya</w></mentioned>
+          is the genitive form of <mentioned xml:lang="ira"
+              ><w>ka-<?oxy_comment_start author="Vados" timestamp="20220608T142121+0300" comment="Иранская реконструкция?"?></w><?oxy_comment_end?>
+            <gloss><q>who</q></gloss></mentioned>; cf. <mentioned xml:lang="cu"><lang/>
+            <w>nikъto</w></mentioned>, <mentioned xml:lang="orv"><lang/>
+            <w>никъ</w>, <w>никъто</w></mentioned>, <mentioned xml:lang="lt"><lang/>
+            <w>niẽkas</w>
+            <gloss><q>nobody</q></gloss>, <gloss><q>nothing</q></gloss>
+            <note xml:lang="ru" type="comment">(из <mentioned xml:lang="ine"><lang/>
+                <w type="rec">nei-k˳os</w></mentioned>)</note><note xml:lang="en" type="comment"
+              >(from <mentioned xml:lang="ine"><lang/>
+                <w type="rec">nei-k˳os</w></mentioned>)</note></mentioned>, further <mentioned
+            xml:lang="ae"><lang/>
+            <w>naečiš</w><note xml:lang="ru" type="comment"> (из <mentioned xml:lang="ine"><w
+                  type="rec">nei-k˳is</w></mentioned>)</note><note xml:lang="en" type="comment">
+              (from <mentioned xml:lang="ine"><w type="rec"
+            >nei-k˳is</w></mentioned>)</note></mentioned>. — See <ref type="xr" target="#entry_ni"/>
+          and <ref type="xr" target="#entry_ḱī"/>.<lb/><bibl><ref type="bibl"
               target="#ref_Hübschmann._Oss."/>
             <biblScope>51</biblScope></bibl>.</etym>
       </entry>
