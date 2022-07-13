@@ -1,37 +1,51 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">nozalæ</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_nozalæ" xml:lang="os-x-digor" abv:completeness="russian-questions">
+      <entry xml:id="entry_nozalæ" xml:lang="os-x-digor" abv:completeness="english-questions">
         <form type="lemma"><orth>nozalæ</orth></form>
         <usg><lang/></usg>
         <sense><abv:tr xml:lang="ru">
             <q>зеленый</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>green</q>
           </abv:tr></sense>
         <sense><abv:tr xml:lang="ru">
             <q>свежий</q>
-          </abv:tr><note type="comment"> (<bibl><ref type="bibl" target="#src_Сл."
-          /></bibl>)</note></sense>
-        <note type="comment">; в текстах не отмечено. Ср. и. <mentioned xml:lang="os"><w>Nūzal</w>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>fresh</q>
+          </abv:tr><note xml:lang="ru" type="comment"> (<bibl><ref type="bibl" target="#src_Сл."
+              /></bibl>)</note><note xml:lang="en" type="comment"> (<bibl><ref type="bibl"
+                target="#src_Сл."/></bibl>)</note></sense>
+        <note xml:lang="ru" type="comment">; в текстах не отмечено. Ср. и. <mentioned xml:lang="os"
+              ><w>Nūzal</w>
             <gloss>название местности и селения в Алагирском ущелье Сев.
           Осетии</gloss></mentioned>.</note>
+        <note xml:lang="en" type="comment">; not attested in texts. Cf. Iron <mentioned
+            xml:lang="os"><w>Nūzal</w>
+            <gloss>the name of the locality and the village in the Alagir Canyon, North
+              Ossetia</gloss></mentioned>.</note>
         <etym xml:lang="ru">Может быть, сложение из <mentioned xml:lang="os"><w>næw-zalæ</w> (← <w
               type="rec">nava-zāri</w>) <gloss><q>свежая зелень</q></gloss></mentioned>. Для первой
           части см. <ref type="xr" target="#entry_næw_1"/> и <ref type="xr" target="#entry_næwæg"/>;
@@ -41,6 +55,15 @@
             <w>žãlias</w>
             <gloss><q>зеленый</q></gloss></mentioned>, <mentioned xml:lang="lt"><w>žolė̃</w>
             <gloss><q>трава</q></gloss>, <gloss><q>зелень</q></gloss></mentioned> и пр.</etym>
+        <etym xml:lang="en">Maybe the compound of <mentioned xml:lang="os"><w>næw-zalæ</w> (← <w
+              type="rec">nava-zāri</w>) <gloss><q>fresh herbs</q></gloss></mentioned>. For the first
+          part, see <ref type="xr" target="#entry_næw_1"/> and <ref type="xr" target="#entry_næwæg"
+          />; for the second part, see Digor <ref type="xr" target="#entry_zældæ"><w>zældæ</w>
+            <gloss><q>green grass</q></gloss></ref> as well as <mentioned xml:lang="cu"><lang/>
+            <w>zelьje</w></mentioned>, <mentioned xml:lang="lt"><lang/>
+            <w>žãlias</w>
+            <gloss><q>green</q></gloss></mentioned>, <mentioned xml:lang="lt"><w>žolė̃</w>
+            <gloss><q>grass</q></gloss>, <gloss><q>greens</q></gloss></mentioned> etc.</etym>
       </entry>
     </body>
   </text>
