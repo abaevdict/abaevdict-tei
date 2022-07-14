@@ -1,41 +1,58 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">nærv</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_nærv" xml:lang="os" abv:completeness="russian-questions">
+      <entry xml:id="entry_nærv" xml:lang="os" abv:completeness="english-questions">
         <form type="lemma" xml:lang="os-x-iron"><orth>nærv</orth></form>
         <form xml:lang="os-x-digor" type="dialectal"><orth>nærwæ</orth></form>
         <sense><abv:tr xml:lang="ru">
             <q>деревянное орудие, с помощью которого мнут и размягчают кожу</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>a wooden tool used to
+              <?oxy_comment_start author="Vados" timestamp="20220714T190620+0300" comment="Уместно ли такое слово здесь?"?>crumple<?oxy_comment_end?>
+              and soften the skin</q>
           </abv:tr></sense>
         <sense><abv:tr xml:lang="ru">
             <q>кожемялка</q>
-          </abv:tr><note type="comment">; рычаг с зазубринами ритмически вдавливает кожу в ложбинку,
-            края которой также снабжены зазубринами; работают двое, один стоя мнет кожу рычагом,
-            другой сидя поворачивает и подставляет свернутую кожу</note></sense>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>leather grinder</q>
+          </abv:tr><note xml:lang="ru" type="comment">; рычаг с зазубринами ритмически вдавливает
+            кожу в ложбинку, края которой также снабжены зазубринами; работают двое, один стоя мнет
+            кожу рычагом, другой сидя поворачивает и подставляет свернутую кожу</note><note
+            xml:lang="en" type="comment">; a lever with notches rhythmically presses the skin into a
+            hollow, the edges of which are also notched; two people work, one standing and rumpling
+            the skin with a lever, the other sitting, turning and changes the folded
+          skin</note></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0"><oRef>nærvæj</oRef> ærnæm!</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">помни́ (кожу) <hi rendition="#rend_smallcaps"
                   >nærv</hi>ʼом!</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">crumple (the skin) wi the nærv!</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Брит."/>
               <biblScope>93</biblScope></bibl>
@@ -46,6 +63,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">кожемяка ударил по <hi
                   rendition="#rend_smallcaps">nærv</hi>ʼу</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the leatherman hit the  <hi
+                  rendition="#rend_smallcaps">nærv</hi></q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Брит."/>
               <biblScope>92</biblScope></bibl>
@@ -69,6 +90,22 @@
             <w>Narbe</w></mentioned>, <mentioned xml:lang="gml"><lang/>
             <w>narwa</w>
             <gloss><q>рубец</q></gloss></mentioned>.</etym>
+        <etym xml:lang="en">Possibly relates to the Scythian-European isoglosses and is close to the
+          Germanic group: <mentioned xml:lang="gml"><lang/>
+            <w>narve</w></mentioned>, <mentioned xml:lang="de-x-dial"><lang>German
+              (<?oxy_comment_start author="Vados" timestamp="20220714T191010+0300" comment="Диалекта нет в списке"?>Bavarian<?oxy_comment_end?>)</lang>
+            <w>närw</w>
+            <gloss><q>door bracket</q></gloss>, in dialects also <gloss><q>bolt</q></gloss>,
+                <gloss><q>cross bar</q></gloss></mentioned>, <mentioned xml:lang="ru-x-dial"><lang/>
+            <w>нарва</w>
+            <gloss><q>cross bar or board, plank for fastening boards</q></gloss><note type="bibl">
+                  (<bibl><ref type="bibl" target="#ref_Даль"/></bibl>. — <bibl><ref type="bibl"
+                  target="#ref_Vasmer._REW"/>
+                <biblScope>II 198</biblScope></bibl>)</note></mentioned>. The original value meaning
+          was probably <q>notched bar</q>; cf. <mentioned xml:lang="de"><lang/>
+            <w>Narbe</w></mentioned>, <mentioned xml:lang="gml"><lang/>
+            <w>narwa</w>
+            <gloss><q>notch</q></gloss></mentioned>.</etym>
       </entry>
     </body>
   </text>
