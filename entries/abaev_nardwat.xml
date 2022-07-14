@@ -1,43 +1,59 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">nardwat</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_nardwat" xml:lang="os" abv:completeness="russian-questions">
+      <entry xml:id="entry_nardwat" xml:lang="os" abv:completeness="complete">
         <form type="lemma"><orth>nardwat</orth></form>
         <sense><abv:tr xml:lang="ru">
             <q>сдельная, аккордная (работа)</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>piece-rate, lump-sum (work)</q>
           </abv:tr></sense>
         <re>
           <form type="lemma"><orth>nardwatæj</orth></form>
           <sense><sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
                 <q xmlns="http://www.tei-c.org/ns/1.0">сдельно</q>
+              </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+                <q xmlns="http://www.tei-c.org/ns/1.0">by the job</q>
               </tr></sense><sense><abv:tr xml:lang="ru">
                 <q>аккордно</q>
+              </abv:tr><abv:tr xml:lang="en">
+                <q>in a lump sum</q>
               </abv:tr></sense><sense><abv:tr xml:lang="ru">
                 <q>в подряд</q>
-              </abv:tr><note type="comment"> (о работе)</note></sense></sense>
+              </abv:tr><abv:tr xml:lang="en">
+                <q>by contract</q>
+              </abv:tr><note xml:lang="ru" type="comment"> (о работе)</note><note xml:lang="en"
+                type="comment"> (of work)</note></sense></sense>
         </re>
         <re>
           <form type="lemma"><orth>nardwatæj kūsyn</orth></form>
           <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">работать сдельно, аккордно, в подряд</q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">to work piece-rate, in a lump sum, by
+                contract</q>
             </tr></sense>
         </re>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
@@ -47,15 +63,22 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">засели за свою сдельную работу</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">they sat down to their piece-rate work</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ИАА"/>
               <biblScope>II 174</biblScope></bibl>
           </example>
           <example xml:lang="os-x-digor">
             <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
-            <quote xmlns="http://www.tei-c.org/ns/1.0">пæ ǧæwi... kolxozontæ kosūncæ
+            <quote xmlns="http://www.tei-c.org/ns/1.0">пæ ǧæwi… kolxozontæ kosūncæ
                 <oRef>nardwatæj</oRef></quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">колхозники нашего села работают сдельно</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the kolkhoz farmers of our village work
+                piece-rate</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_FS"/>
               <biblScope>II 21)</biblScope></bibl>
@@ -63,24 +86,33 @@
           <example xml:lang="os-x-digor">
             <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
             <quote xmlns="http://www.tei-c.org/ns/1.0">ewæj-ew kolxozti xwarz æта læǧuz kust пе
-              ʽrtastoncæ, ет arǧ sin kodtoncæ; wal saxatti bakustaj, wæd din niffinstajoncæ kusti
-              bænttæ ci fændi kustæn dær... Aci ǧuddagmce listæg ku ærkascæncæ æта in æ ǧæntæ ku
+              ʽrtastoncæ, еw arǧ sin kodtoncæ; wal saxatti bakustaj, wæd din niffinstajoncæ kusti
+              bænttæ ci fændi kustæn dær… Aci ǧuddagmæ listæg ku ærkastæncæ æта in æ ǧæntæ ku
               sbælvurd kodtoncæ, wæd unaffæ raxastoncæ, cæmæj kolxozti kust ewguræj dær ærcæwa
               æjjivd <oRef>nardwatmæ</oRef>. <oRef>Nardwatæj</oRef> kosgæj kusti saxættæ æppundær næ
               nimajuncæ, fal kæsuncæ kusti bærcæ æma kusti ǧædæmæ</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">в некоторых колхозах не различали хорошую и
                 плохую работу, давали им одну цену; поработал столько-то часов, и тебе записывали
-                трудодни за любую работу... Когда внимательно присмотрелись к этому делу и выявили
-                его изъяны, то вынесли решение, чтобы колхозный труд целиком перевести на сдельщину.
-                При работе сдельно часы работы совершенно не учитываются, а смотрят только на объем
+                трудодни за любую работу… Когда внимательно присмотрелись к этому делу и выявили его
+                изъяны, то вынесли решение, чтобы колхозный труд целиком перевести на сдельщину. При
+                работе сдельно часы работы совершенно не учитываются, а смотрят только на объем
                 работы и качество работы</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">in some kolkhozes they did not differentiate
+                between good and bad work, assigned them the same price; you have worked some hours,
+                and they awarded you workday points for no matter which work… When this question was
+                looked at in detail and its disadvantages were revealed, a decision was made to
+                transfer all kolkhoz labour to piece rates. When working at a piece-rate, working
+                hours are not considered at all, only the amount of work and the quality of work are
+                assessed</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_FS"/>
               <biblScope>V 78</biblScope></bibl>
           </example>
         </exampleGrp>
-        <etym xml:lang="ru">Из <mentioned xml:lang="ka"><lang>груз.</lang>
+        <etym xml:lang="ru">Из <mentioned xml:lang="ka"><lang/>
             <w>nardad</w>
             <gloss><q>сдельно</q></gloss></mentioned>, представляющего отложительный падеж с
           наречным значением от <mentioned xml:lang="ka"><w>nardi</w><gloss><q> сдельная
@@ -88,8 +120,8 @@
                 <biblScope>V 1356</biblScope></bibl>)</note></mentioned>. Ср. по образованию <ref
             type="xr" target="#entry_gaʒraxatæj"/>. Появление в ос. <c>w</c> (ожидали бы
             <w>nardatæj</w>) не вполне ясно. Возможно — по аналогии со сложными словами, имеющими во
-          второй части элемент <mentioned xml:lang="os"><c>-wat</c>
-            <gloss><q><?oxy_comment_start author="Vados" timestamp="20220526T191325+0300" comment="Есть ли в словаре?"?>место<?oxy_comment_end?></q></gloss></mentioned>:
+          второй части элемент <ref type="xr" target="#entry_wat"><c>-wat</c>
+            <gloss><q><?oxy_comment_start author="Vados" timestamp="20220526T191325+0300" comment="Есть ли в словаре?" id="es4_mkr_25b" flag="done"?><?oxy_comment_start author="oleg" timestamp="20220714T142145+0300" parentID="es4_mkr_25b" comment="да, без дефиса" flag="done" mid="1"?>место<?oxy_comment_end mid="1"?><?oxy_comment_end?></q></gloss></ref>:
             <mentioned xml:lang="os"><w>k˳ystwat</w>
             <gloss><q>место работы</q></gloss></mentioned>, <ref type="xr" target="#entry_wazægwat"
               ><w>wazægwat</w>
@@ -97,7 +129,25 @@
               ><w>cærænwat</w>
             <gloss><q>жилище</q></gloss></mentioned> и т. п. (<bibl><ref type="bibl"
               target="#ref_ГО"/>
-            <biblScope>§ 201<hi rendition="#rend_subscript">I 1</hi></biblScope></bibl>.</etym>
+            <biblScope>§ 201<hi rendition="#rend_subscript">I 1</hi></biblScope></bibl>).</etym>
+        <etym xml:lang="en">From <mentioned xml:lang="ka"><lang/>
+            <w>nardad</w>
+            <gloss><q>at piece rate</q></gloss></mentioned>, which is an ablative case form with
+          adverbial meaning from<mentioned xml:lang="ka"><w>nardi</w><gloss><q>
+              piecework</q></gloss><note type="bibl"> (<bibl><ref type="bibl"
+                  target="#ref_Груз._сл."/>
+                <biblScope>V 1356</biblScope></bibl>)</note></mentioned>. Cf. by derivation <ref
+            type="xr" target="#entry_gaʒraxatæj"/>. The occurrence of <c>w</c> in Ossetic
+            (<w>nardatæj</w> is expected) is not quite clear. It possibly occurred by analogy with
+          compounds having the element <ref type="xr" target="#entry_wat"><c>-wat</c>
+            <gloss><q><?oxy_comment_start author="Vados" timestamp="20220526T191325+0300" comment="Есть ли в словаре?" id="rjf_qjr_25b" flag="done"?><?oxy_comment_start author="oleg" timestamp="20220714T141512+0300" parentID="rjf_qjr_25b" comment="да, конечно, просто без дефиса" flag="done" mid="3"?>место<?oxy_comment_end mid="3"?><?oxy_comment_end?></q></gloss></ref>
+          as their second part: <mentioned xml:lang="os"><w>k˳ystwat</w>
+            <gloss><q>place of work</q></gloss></mentioned>, <ref type="xr" target="#entry_wazægwat"
+              ><w>wazægwat</w>
+            <gloss><q>being somewhere as a guest</q></gloss></ref>, <mentioned xml:lang="os"
+              ><w>cærænwat</w>
+            <gloss><q>dwelling</q></gloss></mentioned> etc. (<bibl><ref type="bibl" target="#ref_ГО"/>
+            <biblScope>§ 201<hi rendition="#rend_subscript">I 1</hi></biblScope></bibl>).</etym>
       </entry>
     </body>
   </text>
