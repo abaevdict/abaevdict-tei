@@ -1,32 +1,40 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">nana</hi></title>
       </titleStmt>
-      <xi:include href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_nana" xml:lang="os" abv:completeness="russian-questions">
+      <entry xml:id="entry_nana" xml:lang="os" abv:completeness="complete">
         <form type="lemma"><orth>nana</orth></form>
         <sense><sense>ласково-почтительное наименование бабушки, матери</sense><sense><abv:tr
               xml:lang="ru">
               <q>бабушка</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>grandmother</q>
             </abv:tr></sense></sense>
         <sense><abv:tr xml:lang="ru">
             <q>мама</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>mommy</q>
           </abv:tr></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
@@ -34,6 +42,9 @@
               ūt!</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">прощай, матушка! не грустите!</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">farewell, dear mommy! do not be sad!</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Брит."/>
               <biblScope>118</biblScope></bibl>
@@ -46,6 +57,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">девочка сказала: <q
                   rendition="#rend_doublequotes">Мама, и я иду с тобой</q></q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the girl said: <q
+                  rendition="#rend_doublequotes">Mommy, I am going with you too</q></q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_MSt."/>
               <biblScope>15<hi rendition="#rend_subscript">11</hi></biblScope></bibl>
           </example>
@@ -56,6 +71,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">кто побежит к матушке, кто постучит в могилу
                 батюшки?</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">who will run to mommy, who will knock at
+                daddy’s grave?</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Iræf"/>
               <biblScope>22</biblScope></bibl>
@@ -68,25 +87,30 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">о мама, твоя дочь, по утрам разводящая огонь (в
                 очаге), выходит замуж</q>
             </tr>
-            <bibl xmlns="http://www.tei-c.org/ns/1.0">из Nanaj zar; <ref type="bibl"
-                target="#src_СОПам."/>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">o mommy, your daughter who makes fire in the
+                morning (in the hearth) is now getting married</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><note type="comment" xml:lang="ru">из
+                  <title>Nanaj zar</title>; </note><note type="comment" xml:lang="en">from
+                  <title>Nanaj zar</title>; </note><ref type="bibl" target="#src_СОПам."/>
               <biblScope>II 149</biblScope></bibl>
           </example>
         </exampleGrp>
         <etym xml:lang="ru">Вариации этого детского слова находим в самых различных, генетически и
-          ареально не связанных языках. На Кавказе: <mentioned xml:lang="ka"><lang/>
-            <w>nana</w>, <w>nena</w>, <w>nene</w></mentioned>, <mentioned xml:lang="xmf"
-            extralang="lzz"><lang/>
-            <w>nana</w></mentioned>, <mentioned xml:lang="udi"><lang/>
-            <w>nana</w></mentioned>, <mentioned xml:lang="lbe"><lang/>
-            <w>ninu</w></mentioned>, <mentioned xml:lang="rut"><lang/>
-            <w>nin</w></mentioned>, <mentioned xml:lang="tkr"><lang/>
-            <w>nenä</w></mentioned>, <mentioned xml:lang="bdk"><lang/>
-            <w>nanä</w></mentioned>, <mentioned xml:lang="ce"><lang/>
-            <w>nana</w></mentioned>, <mentioned xml:lang="ab"><lang/>
-            <w>nan</w></mentioned>, <mentioned xml:lang="kbd"><lang/>
-            <w>nanä</w></mentioned>, <mentioned xml:lang="uby" extralang="ady-x-abadz"><lang/>
-            <w>nana</w>
+          ареально не связанных языках. На Кавказе: <mentioned><mentioned xml:lang="ka"><lang/>
+              <w>nana</w>, <w>nena</w>, <w>nene</w></mentioned>, <mentioned xml:lang="xmf"
+              extralang="lzz"><lang/>
+              <w>nana</w></mentioned>, <mentioned xml:lang="udi"><lang/>
+              <w>nana</w></mentioned>, <mentioned xml:lang="lbe"><lang/>
+              <w>ninu</w></mentioned>, <mentioned xml:lang="rut"><lang/>
+              <w>nin</w></mentioned>, <mentioned xml:lang="tkr"><lang/>
+              <w>nenä</w></mentioned>, <mentioned xml:lang="bdk"><lang/>
+              <w>nanä</w></mentioned>, <mentioned xml:lang="ce"><lang/>
+              <w>nana</w></mentioned>, <mentioned xml:lang="ab"><lang/>
+              <w>nan</w></mentioned>, <mentioned xml:lang="kbd"><lang/>
+              <w>nanä</w></mentioned>, <mentioned xml:lang="uby" extralang="ady-x-abadz"><lang/>
+              <w>nana</w></mentioned>
             <gloss><q>мама</q></gloss></mentioned>. В индоевропейских языках: <mentioned
             xml:lang="inc-x-old"><lang/>
             <w>nanā́-</w></mentioned>, <mentioned xml:lang="fa-x-dial"><lang/>
@@ -121,6 +145,58 @@
             <gloss><q>мать</q></gloss></ref>, <ref type="xr" target="#entry_dada"/>, <ref type="xr"
             target="#entry_æda"><w>æda</w>
             <gloss><q>дедушка</q></gloss>, <gloss><q>отец</q></gloss></ref>.<lb/><bibl><ref
+              type="bibl" target="#ref_Hübschmann._Oss."/>
+            <biblScope>144</biblScope></bibl>.</etym>
+        <etym xml:lang="en">Variations of this nursery word are found in a wide variety of
+          genetically and areally unconnected languages. In the Caucasus: <mentioned><mentioned
+              xml:lang="ka"><lang/>
+              <w>nana</w>, <w>nena</w>, <w>nene</w></mentioned>, <mentioned xml:lang="xmf"
+              extralang="lzz"><lang/>
+              <w>nana</w></mentioned>, <mentioned xml:lang="udi"><lang/>
+              <w>nana</w></mentioned>, <mentioned xml:lang="lbe"><lang/>
+              <w>ninu</w></mentioned>, <mentioned xml:lang="rut"><lang/>
+              <w>nin</w></mentioned>, <mentioned xml:lang="tkr"><lang/>
+              <w>nenä</w></mentioned>, <mentioned xml:lang="bdk"><lang/>
+              <w>nanä</w></mentioned>, <mentioned xml:lang="ce"><lang/>
+              <w>nana</w></mentioned>, <mentioned xml:lang="ab"><lang/>
+              <w>nan</w></mentioned>, <mentioned xml:lang="kbd"><lang/>
+              <w>nanä</w></mentioned>, <mentioned xml:lang="uby" extralang="ady-x-abadz"><lang/>
+              <w>nana</w></mentioned>
+            <gloss><q>mommy</q></gloss></mentioned>. In Indo-European: <mentioned
+            xml:lang="inc-x-old"><lang/>
+            <w>nanā́-</w></mentioned>, <mentioned xml:lang="fa-x-dial"><lang/>
+            <w>nana</w><note type="bibl"> (<bibl><ref type="bibl" target="#ref_Жуковский"/>
+                <biblScope>I 191</biblScope></bibl>)</note></mentioned>, <mentioned
+            xml:lang="x-balochi"><lang/>
+            <w>nānā</w>
+            <gloss><q>grandfather</q></gloss></mentioned>, <mentioned xml:lang="x-balochi"
+              ><w>nānī</w>
+            <gloss><q>grandmother</q></gloss></mentioned>, <mentioned xml:lang="sgh" extralang="sgy"><lang/>
+            <w>nan</w></mentioned>, <mentioned xml:lang="wbl"><lang/>
+            <w>nān</w></mentioned>, <mentioned xml:lang="ru"><lang/>
+            <w>няня</w>
+            <gloss><q>wet nurse</q></gloss></mentioned>, <mentioned xml:lang="bg"><lang/>
+            <w>неня</w>
+            <gloss><q>mother’s sister</q></gloss></mentioned>, <mentioned xml:lang="sh"><lang/>
+            <w>nana</w>
+            <gloss><q>mother</q></gloss></mentioned>, <mentioned xml:lang="grc"><lang/>
+            <w>νέννα</w>
+            <gloss><q>aunt</q></gloss></mentioned>, <mentioned><mentioned xml:lang="sqj"><lang/>
+              <w>nanε</w></mentioned>, <mentioned xml:lang="it"><lang/>
+              <w>nonna</w></mentioned>
+            <gloss><q>grandmother</q></gloss></mentioned> и др. In other languages: <mentioned
+            xml:lang="hu"><lang/>
+            <w>néne</w><gloss><q> older sister</q></gloss></mentioned>, <mentioned xml:lang="smi"><lang/>
+            <w>ńańa</w>
+            <gloss><q>woman</q></gloss></mentioned>, <mentioned xml:lang="bsk"><lang/>
+            <w>náni</w>
+            <gloss><q>mother</q></gloss></mentioned>, <mentioned xml:lang="az"><lang/>
+            <w>nänä</w>
+            <gloss><q>grandmother</q></gloss></mentioned> etc. Cf. <ref type="xr"
+            target="#entry_æna"><w>æna</w>
+            <gloss><q>mother</q></gloss></ref>, <ref type="xr" target="#entry_dada"/>, <ref
+            type="xr" target="#entry_æda"><w>æda</w>
+            <gloss><q>grandfather</q></gloss>, <gloss><q>father</q></gloss></ref>.<lb/><bibl><ref
               type="bibl" target="#ref_Hübschmann._Oss."/>
             <biblScope>144</biblScope></bibl>.</etym>
       </entry>
