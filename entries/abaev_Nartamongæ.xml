@@ -1,33 +1,46 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">Nartamongæ</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_Nartamongæ" xml:lang="os" abv:completeness="russian-questions">
+      <entry xml:id="entry_Nartamongæ" xml:lang="os" abv:completeness="complete">
         <form type="lemma"><orth>Nartamongæ</orth></form>
-        <sense>чудесная чаша Нартов</sense>
-        <note type="comment">; более обычно— <ref type="xr" target="#entry_Wacamongæ"/></note>
+        <sense><def xml:lang="ru">чудесная чаша Нартов</def><def xml:lang="en">wonderful cup of the
+            Narts</def></sense>
+        <note xml:lang="ru" type="comment">; более обычно— <ref type="xr" target="#entry_Wacamongæ"
+          /></note>
+        <note xml:lang="en" type="comment">; more typically called <ref type="xr"
+            target="#entry_Wacamongæ"/></note>
         <etym xml:lang="ru">Буквально <q rendition="#rend_doublequotes">нартовская (<ref type="xr"
-              target="#entry_Nartæ"><w>Nart</w></ref>) указательница (<mentioned xml:lang="os"
-                ><w>amongæ</w></mentioned>)</q>. См. <ref type="xr" target="#entry_Nartæ"/> и <ref
-            type="xr" target="#entry_amonyn"/>; ср. <ref type="xr" target="#entry_Wacamongæ"
-          />.</etym>
+              target="#entry_Nartæ"><w>Nart</w></ref>) указательница (<ref type="xr"
+              target="#entry_amonyn"><w>amongæ</w></ref>)</q>. См. <ref type="xr"
+            target="#entry_Nartæ"/> и <ref type="xr" target="#entry_amonyn"/>; ср. <ref type="xr"
+            target="#entry_Wacamongæ"/>.</etym>
+        <etym xml:lang="en">Literally <q rendition="#rend_doublequotes">Nart (<ref type="xr"
+              target="#entry_Nartæ"><w>Nart</w></ref>) pointer (<ref type="xr"
+              target="#entry_amonyn"><w>amongæ</w></ref>)</q>. See <ref type="xr"
+            target="#entry_Nartæ"/> and <ref type="xr" target="#entry_amonyn"/>; cf. <ref type="xr"
+            target="#entry_Wacamongæ"/>.</etym>
       </entry>
     </body>
   </text>
