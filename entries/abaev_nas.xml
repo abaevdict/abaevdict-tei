@@ -1,30 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">nas</hi></title>
       </titleStmt>
-      <xi:include href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_nas" xml:lang="os" abv:completeness="russian-questions">
+      <entry xml:id="entry_nas" xml:lang="os" abv:completeness="complete">
         <form type="lemma" xml:lang="os-x-iron"><orth>nas</orth></form>
         <form xml:lang="os-x-digor" type="dialectal"><orth>nasæ</orth></form>
         <sense><sense><abv:tr xml:lang="ru">
               <q>тыква</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>pumpkin</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
+              <q>Cucurbita реро</q>
+            </abv:tr><abv:tr xml:lang="en">
               <q>Cucurbita реро</q>
             </abv:tr></sense></sense>
         <re>
@@ -32,14 +40,21 @@
           <form xml:lang="os-x-digor" type="dialectal"><orth>nasgun</orth></form>
           <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">пирог с тыквой</q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">pumpkin pie</q>
             </tr></sense>
         </re>
         <re xml:lang="os-x-digor">
           <form type="lemma"><usg><lang/></usg><orth>xwærgæ-nasæ</orth></form>
           <sense><sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
                 <q xmlns="http://www.tei-c.org/ns/1.0">огурец</q>
-              </tr></sense><sense><note type="comment">буквально </note><abv:tr xml:lang="ru">
+              </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+                <q xmlns="http://www.tei-c.org/ns/1.0">cucumber</q>
+              </tr></sense><sense><note xml:lang="ru" type="comment">буквально </note><note
+                xml:lang="en" type="comment">literally </note><abv:tr xml:lang="ru">
                 <q rendition="#rend_doublequotes">съедобная тыква</q>
+              </abv:tr><abv:tr xml:lang="en">
+                <q rendition="#rend_doublequotes">edible pumpkin</q>
               </abv:tr></sense></sense>
         </re>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
@@ -49,6 +64,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">может быть, кто-нибудь бывал в селении Беслан и
                 видел осенью спелые тыквы</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">maybe anyone has been to the town of Beslan and
+                seen ripe pumpkins in autumn</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Arsen"/>
               <biblScope>38</biblScope></bibl>
@@ -61,6 +80,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">у меня есть хороший огород; всего лучше у меня
                 там растет тыква</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">I have a good vegetable garden; pumpkin grows
+                there better than everything else for me</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ИАА"/>
               <biblScope>II 355</biblScope></bibl>
           </example>
@@ -71,9 +94,15 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">Алихан сбрасывает князя с коня, своим черным
                 кинжалом крошит его, как тыкву</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Alikhan throws the prince from the horse,
+                Алихан сбрасывает chops him to pieces with his black dagger like a pumpkin</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><biblScope xml:lang="ru">из песни <q
                   rendition="#rend_doublequotes"><title>Caræty Alixany
-              zaræg</title></q></biblScope></bibl>
+                zaræg</title></q></biblScope><biblScope xml:lang="en">from the song <q
+                  rendition="#rend_doublequotes"><title><foreign>Caræty Alixany
+                    zaræg</foreign></title></q></biblScope></bibl>
           </example>
           <example xml:lang="os-x-digor">
             <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
@@ -81,6 +110,10 @@
               puti</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">Макоев купил тыквы 5000 пудов</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the sun of Maqo bought 5000 poods [a weight
+                measure] of pumpkin</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_SD"/>
               <biblScope>286<hi rendition="#rend_subscript">4</hi></biblScope></bibl>
@@ -92,6 +125,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">колхозному скоту дают сено, свеклу, тыкву,
                 отруби</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">to the kolkhoz livestock they give hay, beet,
+                pumpkin, bran</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_AK"/>
               <biblScope>I 19</biblScope></bibl>
@@ -132,6 +169,43 @@
             <gloss><q>дыня</q></gloss></ref>. — Источником кавказских форм могло быть
           (несохранившееся) <mentioned xml:lang="xmf"><lang/>
             <w>našvi</w></mentioned>, закономерно отвечающее <mentioned xml:lang="ka"><lang/>
+            <w>nesvi</w></mentioned>.</etym>
+        <etym xml:lang="en">Cf. <mentioned><mentioned xml:lang="kbd"><lang/>
+              <w>naśä</w></mentioned>, <mentioned xml:lang="uby"><lang/>
+              <w>nàšä</w></mentioned>, <mentioned xml:lang="ab"><lang/>
+              <w>anaša</w></mentioned>, <mentioned xml:lang="abq"><lang/>
+              <w>naša</w></mentioned>, <mentioned xml:lang="krc-x-balkar" extralang="krc-x-karachay"><lang/>
+              <w>naša</w>, <w>narša</w></mentioned>, <mentioned xml:lang="ce"><lang/>
+              <w>närs</w></mentioned>, <mentioned xml:lang="inh"><lang/>
+              <w>nars</w></mentioned>
+            <gloss><q>cucumber</q></gloss></mentioned>, <mentioned xml:lang="ka"><lang/>
+            <w>nesvi</w>
+            <gloss><q>melon</q></gloss></mentioned>, <mentioned xml:lang="sva"><lang/>
+            <w>kʼvax-nesg</w>
+            <gloss><q>pumpkin</q></gloss></mentioned>. The semantic variation <q>pumpkin</q> —
+            <q>cucumber</q> has close analogies in the Caucasus: <mentioned xml:lang="ka"><lang/>
+            <w>kʼitʼri</w>
+            <gloss><q>cucumber</q></gloss></mentioned> in <lang>Laz</lang> means <mentioned
+            xml:lang="lzz"><gloss><q>a kind of pumpkin</q></gloss><note type="bibl"> (<bibl><ref
+                  type="bibl" target="#ref_Марр._Чан."/></bibl>)</note></mentioned>. Further is
+          unclear. <mentioned xml:lang="fa"><lang/>
+            <w>našwā</w>
+            <gloss><q>wild plum</q></gloss></mentioned>, <mentioned xml:lang="sgh"><lang/>
+            <w>naš</w></mentioned>, <mentioned xml:lang="srh"><lang/>
+            <w>noš</w>
+            <gloss><q>apricot</q></gloss><note type="bibl"> (<bibl><ref type="bibl"
+                  target="#ref_Shaw"/>
+                <biblScope>120</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Tomaschek"/>
+                <biblScope>59</biblScope></bibl>)</note></mentioned> are too far in meaning. But
+          such semantics shifts are possible; thus, <mentioned xml:lang="ka"><lang/>
+            <w>kʼitʼri</w>
+            <gloss><q>cucumber</q></gloss></mentioned> should be connected to <mentioned
+            xml:lang="la"><lang/>
+            <w>citrus</w></mentioned>, <mentioned xml:lang="grc"><lang/>
+            <w>ϰέδρος</w></mentioned>. — Cf. <ref type="xr" target="#entry_nesi"><w>nesi</w>
+            <gloss><q>melon</q></gloss></ref>. — Ths source of the Caucasian forms could be the
+          (nonextant) <mentioned xml:lang="xmf"><lang/>
+            <w>našvi</w></mentioned>, regularly corresponding to <mentioned xml:lang="ka"><lang/>
             <w>nesvi</w></mentioned>.</etym>
       </entry>
     </body>
