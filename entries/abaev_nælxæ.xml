@@ -1,31 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">nælxæ</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_nælxæ" xml:lang="os" abv:completeness="russian-questions">
+      <entry xml:id="entry_nælxæ" xml:lang="os" abv:completeness="english-questions">
         <form type="lemma"><orth>nælxæ</orth></form>
         <sense><abv:tr xml:lang="ru">
             <q>сливочное (нетопленое) масло</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>(unmelted) butter</q>
           </abv:tr></sense>
-        <note type="comment">; употребительно только в северноиронских говорах; на юге в этом
-          значении — <ref type="xr" target="#entry_garaḱʼi"/>.</note>
+        <note xml:lang="ru" type="comment">; употребительно только в северноиронских говорах; на юге
+          в этом значении — <ref type="xr" target="#entry_garaḱʼi"/>.</note>
+        <note xml:lang="en" type="comment">; common only in Northern Iron dialects; in the south in
+          this sense <ref type="xr" target="#entry_garaḱʼi"/> is used.</note>
         <etym xml:lang="ru">Как и синонимическое <ref type="xr" target="#entry_garaḱʼi"/>, усвоено
           от соседей на Кавказе; ср. <mentioned xml:lang="ce" extralang="inh"><lang/>
             <w>nalxa</w>
@@ -36,6 +44,17 @@
           происхождения; <oRef>nælxæ</oRef> и <ref type="xr" target="#entry_garaḱʼi"/> выпадают из
           общей системы. Объясняется это тем, что сливочное масло было не в ходу у осетин в прошлом,
           они употребляли топленое; см. <ref type="xr" target="#entry_carv"/>.</etym>
+        <etym xml:lang="en">Like the synonymous <ref type="xr" target="#entry_garaḱʼi"/>, it is
+          learned from neighbors in the Caucasus; cf. <mentioned xml:lang="ce" extralang="inh"><lang/>
+            <w>nalxa</w>
+            <gloss><q>butter</q></gloss></mentioned>, <mentioned xml:lang="av"><lang/>
+            <w>nax</w></mentioned>, <mentioned xml:lang="aqc"><lang/>
+            <w>inx</w>
+            <gloss><q>butter</q></gloss></mentioned>. Dairy terms are almost all of Iranian origin;
+            <oRef>nælxæ</oRef> and <ref type="xr" target="#entry_garaḱʼi"/> fall out of the system.
+          This is explained by the fact that butter was not in use among Ossetians in the past,
+          <?oxy_comment_start author="Vados" timestamp="20220715T122731+0300" comment="Я правильно понял, что осетины это масло топили? "?>they
+          used the melted one<?oxy_comment_end?>; cf. <ref type="xr" target="#entry_carv"/>.</etym>
       </entry>
     </body>
   </text>
