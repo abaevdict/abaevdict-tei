@@ -1,29 +1,35 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">nælgwīst</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_nælgwīst" xml:lang="os" abv:completeness="russian-questions">
+      <entry xml:id="entry_nælgwīst" xml:lang="os" abv:completeness="english-questions">
         <form type="lemma" xml:lang="os-x-iron"><orth>nælgwīst</orth></form>
         <form xml:lang="os-x-digor" type="dialectal"><orth>nælgost</orth></form>
         <sense><abv:tr xml:lang="ru">
             <q>годовалый барашек</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>one-year-old lamb</q>
           </abv:tr></sense>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
@@ -33,7 +39,11 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">вон у пастуха годовалый барашек... чтобы тебе
                 не встать больше на ноги</q>
             </tr>
-            <bibl xmlns="http://www.tei-c.org/ns/1.0"><biblScope>из застольной песни <q
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the shepherd has a one-year-old lamb... so that
+                you can no longer get on your feet</q>
+            </tr>
+            <bibl xmlns="http://www.tei-c.org/ns/1.0"><biblScope>from a drinking song <q
                   rendition="#rend_doublequotes"><hi rendition="#rend_italic">Ajs æj, anaz
                   æj</hi></q></biblScope></bibl>
           </example>
@@ -41,6 +51,9 @@
         <etym xml:lang="ru">См. <ref type="xr" target="#entry_næl"/> и <ref type="xr"
             target="#entry_kwīst"><w>kwīst</w>
             <gloss><q>баран</q></gloss></ref>.</etym>
+        <etym xml:lang="en">Cf. <ref type="xr" target="#entry_næl"/> and <ref type="xr"
+            target="#entry_kwīst"><w>kwīst</w>
+            <gloss><q>ram</q></gloss></ref>.</etym>
       </entry>
     </body>
   </text>
