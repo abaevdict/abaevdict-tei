@@ -1,37 +1,48 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">næl(w)æg</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+      <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_næl6w9æg" xml:lang="os-x-digor" abv:completeness="russian-questions">
+      <entry xml:id="entry_næl6w9æg" xml:lang="os-x-digor" abv:completeness="english-questions">
         <form type="lemma"><orth>næl(w)æg</orth></form>
         <usg><lang/></usg>
         <sense><abv:tr xml:lang="ru">
             <q>обморок</q>
+          </abv:tr><abv:tr xml:lang="en">
+            <q>fainting</q>
           </abv:tr></sense>
-        <note type="comment">; и. <ref type="xr" target="#entry_waʒyg"/> id.</note>
+        <note xml:lang="ru" type="comment">; и. <ref type="xr" target="#entry_waʒyg"/> id.</note>
+        <note xml:lang="en" type="comment">; Iron <ref type="xr" target="#entry_waʒyg"/> id.</note>
         <re>
           <form type="lemma"><orth>banælwæg ип</orth></form>
           <sense><sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
                 <q xmlns="http://www.tei-c.org/ns/1.0">упасть в обморок</q>
+              </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+                <q xmlns="http://www.tei-c.org/ns/1.0">faint</q>
               </tr></sense><sense><abv:tr xml:lang="ru">
                 <q>потерять сознание</q>
+              </abv:tr><abv:tr xml:lang="en">
+                <q>lose consciousness</q>
               </abv:tr></sense></sense>
         </re>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
@@ -39,6 +50,9 @@
             <quote xmlns="http://www.tei-c.org/ns/1.0">i osæ <oRef>banælwæg</oRef> æj</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">женщина потеряла сознание</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the woman fainted</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Диг._сказ."/>
               <biblScope>31</biblScope></bibl>
@@ -50,6 +64,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">как только войска Дзанболата увидели его, все
                 они попадали в обморок</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">as soon as Zanbolatʼs troops saw him, they all
+                fainted</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Диг._сказ."/>
               <biblScope>34</biblScope></bibl>
           </example>
@@ -60,6 +78,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">сын Сайнага грозно взглянул на них, и девушки и
                 женщины все попадали в обморок</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Sainagʼs son looked menacingly at them, and the
+                girls and women all fainted</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_СОПам."/>
               <biblScope>II 22</biblScope></bibl>
           </example>
@@ -68,6 +90,9 @@
                 <oRef>ninnælæg</oRef> wioncæ</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">девушки от радости теряли сознание</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the girls fainted with joy</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_СОПам."/>
               <biblScope>II 114</biblScope></bibl>
@@ -83,6 +108,17 @@
             <c>m-</c> ср. <ref type="xr" target="#entry_Saniba"/> из
             <w><?oxy_comment_start author="Vados" timestamp="20220601T175831+0300" comment="Можно, чтобы было просто w?"?>Sameba<?oxy_comment_end?></w>,
           а также <ref type="xr" target="#entry_nysan"/> || <ref type="xr" target="#entry_mysan"
+          />.</etym>
+        <etym xml:lang="en">Maybe from <oRef>mæl-wæg</oRef>
+          <q rendition="#rend_doublequotes">semblance of death</q> with euphemistic substitution
+            <c>m</c> → <c>n</c>; see <ref type="xr" target="#entry_mælyn"><w>mælyn</w>
+            <gloss><q>die</q></gloss></ref> and <ref type="xr" target="#entry_wag"><w>wag</w>
+            <gloss><q>course of action</q></gloss>, <gloss><q>behavior</q></gloss></ref>, in the
+          second part of compound words — <c>wæg</c> (<ref type="xr" target="#entry_xærzīwæg"/>,
+            <mentioned xml:lang="os"><w>ældarīwæg</w></mentioned> etc.). For the alternation
+            <c>n-</c> || <c>m-</c>, cf. <ref type="xr" target="#entry_Saniba"/> from
+            <w><?oxy_comment_start author="Vados" timestamp="20220601T175831+0300" comment="Можно, чтобы было просто w?"?>Sameba<?oxy_comment_end?></w>,
+          and also <ref type="xr" target="#entry_nysan"/> || <ref type="xr" target="#entry_mysan"
           />.</etym>
       </entry>
     </body>
