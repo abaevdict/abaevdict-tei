@@ -1,48 +1,66 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">næ_1</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_næ_1" n="1" xml:lang="os" abv:completeness="russian-questions">
+      <entry xml:id="entry_næ_1" n="1" xml:lang="os" abv:completeness="english-questions">
         <form type="lemma"><orth>næ</orth></form>
-        <sense><sense><note type="comment">частица отрицания </note><abv:tr xml:lang="ru">
+        <sense><sense><note xml:lang="ru" type="comment">частица отрицания </note><note
+              xml:lang="en" type="comment">negation particle </note><abv:tr xml:lang="ru">
               <q>не</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>not</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>ни</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>(not) any</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>нет</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>no</q>
             </abv:tr></sense></sense>
         <re>
           <form type="lemma"><orth>næj</orth></form>
           <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">нет</q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">no</q>
             </tr></sense>
         </re>
-        <note type="comment">. Иногда (при напоминании о ранее известном) получает утвердительное
-          значение
+        <note xml:lang="ru" type="comment">. Иногда (при напоминании о ранее известном) получает
+          утвердительное значение
             <q><?oxy_comment_start author="Vados" timestamp="20220530T121201+0300" comment="Не получилось включить в sense"?>ведь<?oxy_comment_end?></q>,
             <q>а ведь</q></note>
+        <note xml:lang="en" type="comment">. Sometimes, when used in the function of reminding the
+          previously known, gets an affirmative meaning <q>after all</q>, <q>but</q></note>
         <re>
-          <note type="comment">в сочетании с местоимениями, наречиями, частицами: </note>
+          <note xml:lang="ru" type="comment">в сочетании с местоимениями, наречиями, частицами: </note>
+          <note xml:lang="en" type="comment">вcombined with pronouns, adverbs, particles: </note>
           <form type="lemma" xml:lang="os-x-iron"><orth>nīḱī</orth></form>
           <form xml:lang="os-x-digor" type="dialectal"><orth>neke</orth></form>
           <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
+              <q xmlns="http://www.tei-c.org/ns/1.0">никто</q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
               <q xmlns="http://www.tei-c.org/ns/1.0">никто</q>
             </tr></sense>
           <?oxy_comment_start author="Vados" timestamp="20220530T121224+0300" comment="Невозможно поставить запятую между разными re"?>
@@ -51,8 +69,12 @@
               <form xml:lang="os-x-digor" type="dialectal"><orth>neci</orth></form>
               <sense><sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
                     <q xmlns="http://www.tei-c.org/ns/1.0">ничто</q>
+                  </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+                    <q xmlns="http://www.tei-c.org/ns/1.0">nothing</q>
                   </tr></sense><sense><abv:tr xml:lang="ru">
                     <q>ничего</q>
+                  </abv:tr><abv:tr xml:lang="en">
+                    <q>anything</q>
                   </abv:tr></sense></sense>
             </re></sense>
           <sense><re>
@@ -60,6 +82,8 @@
               <form xml:lang="os-x-digor" type="dialectal"><orth>nekæmi</orth></form>
               <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
                   <q xmlns="http://www.tei-c.org/ns/1.0">нигде</q>
+                </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+                  <q xmlns="http://www.tei-c.org/ns/1.0">nowhere</q>
                 </tr></sense>
             </re></sense>
           <sense><re>
@@ -67,6 +91,8 @@
               <form xml:lang="os-x-digor" type="dialectal"><orth>nekæd</orth></form>
               <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
                   <q xmlns="http://www.tei-c.org/ns/1.0">никогда</q>
+                </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+                  <q xmlns="http://www.tei-c.org/ns/1.0">never</q>
                 </tr></sense>
             </re></sense>
           <sense><re>
@@ -74,12 +100,16 @@
               <form xml:lang="os-x-digor" type="dialectal"><orth>næbal</orth></form>
               <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
                   <q xmlns="http://www.tei-c.org/ns/1.0">больше не</q>
+                </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+                  <q xmlns="http://www.tei-c.org/ns/1.0">no more</q>
                 </tr></sense>
             </re></sense>
           <sense><re>
               <form type="lemma"><orth>пæта</orth></form>
               <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
                   <q xmlns="http://www.tei-c.org/ns/1.0">еще не</q>
+                </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+                  <q xmlns="http://www.tei-c.org/ns/1.0">not yet</q>
                 </tr></sense>
             </re></sense>
         </re>
@@ -89,6 +119,9 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">не знаю материнской ласки</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">I donʼt know motherʼs kindness</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Коста"/>
               <biblScope>31</biblScope></bibl>
           </example>
@@ -96,6 +129,9 @@
             <quote xmlns="http://www.tei-c.org/ns/1.0">mælætæj <oRef>næ</oRef> tærsyn</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">смерти не боюсь</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">Iʼm not afraid of death</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Коста"/>
               <biblScope>33</biblScope></bibl>
@@ -107,6 +143,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">не оказалось у моей матери ни ятрови, ни
                 деверя</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">my mother did not have either sister- or
+                brother-in-law</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Коста"/>
               <biblScope>53</biblScope></bibl>
           </example>
@@ -117,6 +157,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">один Хетаг там не участвовал в симде и
                 пляске</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">one Khetag did not participate in simd and
+                dance there</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Коста"/>
               <biblScope>137</biblScope></bibl>
           </example>
@@ -126,6 +170,10 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">счастье... нет, у бога другого чего-то прошу
                 я</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">happiness ... no, I ask God for something
+                else</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Коста"/>
               <biblScope>35</biblScope></bibl>
@@ -138,6 +186,10 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">алдар ничем не мог насытиться, ни хлебом, ни
                 скотом, ни землей, ни пастбищами, ни водой, ни лесом</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the Aldar could not get enough of anything,
+                neither bread, nor cattle, nor land, nor pastures, nor water, nor forests</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_ИАА"/>
               <biblScope>II 305</biblScope></bibl>
           </example>
@@ -148,12 +200,19 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">ведь он был ранен в ногу на войне и поэтому он
                 хромает</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">because he was wounded in the leg in the war
+                and therefore he is lame</q>
+            </tr>
           </example>
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">æрруп <oRef>næjy</oRef> bæsty ḱyzg dær xorz
               ū</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">лучше девочка, чем совсем ничего</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">better a girl than nothing at all</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Сека"/>
               <biblScope>102</biblScope></bibl>
@@ -164,6 +223,9 @@
               caǧar</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">мы, говорят, не рабы</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">they say, we are not slaves</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Iræf"/>
               <biblScope>65</biblScope></bibl>
@@ -176,17 +238,27 @@
               <q xmlns="http://www.tei-c.org/ns/1.0">кто не восславит тебя, кто не окажет тебе
                 почет?</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">who will not glorify you, who will not honor
+                you?</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Gurdž._Wadž."/>
               <biblScope>11</biblScope></bibl>
           </example>
           <example xml:lang="os-x-digor">
             <usg xmlns="http://www.tei-c.org/ns/1.0"><lang/></usg>
-            <quote xmlns="http://www.tei-c.org/ns/1.0">xæʒar ændær xuzæn<note type="footnote">В
-                тексте ошибочно: <hi rendition="#rend_italic">xæʒaræn dær xuzæn...</hi></note> пе
-              ʽscæj, та ʽj <oRef>næbal</oRef> bafæsmardta (xugæs)</quote>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">xæʒar ændær xuzæn<note xml:lang="ru"
+                type="footnote">В тексте ошибочно: <hi rendition="#rend_italic">xæʒaræn dær
+                  xuzæn...</hi></note><note xml:lang="en" type="footnote">In the text, there is a
+                  mistake:<hi rendition="#rend_italic">xæʒaræn dær xuzæn...</hi></note> пе ʽscæj, та
+              ʽj <oRef>næbal</oRef> bafæsmardta (xugæs)</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">дом-то ведь стал другого вида, и (свинопас) его
                 больше не узнал</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the house, after all, changed, and (the
+                swineherd) did not recognize it anymore</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_MSt."/>
               <biblScope>5<hi rendition="#rend_subscript">12—13</hi></biblScope></bibl>
@@ -209,15 +281,16 @@
           <w type="rec">nē</w> (ny), <mentioned xml:lang="kho"><lang>сак.</lang>
             <w>ne</w>, <w>nä</w>, <w>ni</w></mentioned>, <mentioned xml:lang="ae"><lang>ав.</lang>
             <w>nōit</w>
-            <note type="comment">(<c>na</c> + <c>it</c>)</note></mentioned>, <mentioned
-            xml:lang="peo"><lang/>
+            <note xml:lang="ru" type="comment">(<c>na</c> + <c>it</c>)</note><note xml:lang="en"
+              type="comment">(<c>na</c> + <c>it</c>)</note></mentioned>, <mentioned xml:lang="peo"><lang/>
             <w>ṋaiy</w></mentioned>, <mentioned xml:lang="inc-x-old"><lang>др.инд.</lang>
             <w>na</w></mentioned>, <mentioned xml:lang="cu"><lang/>
             <w>ne</w></mentioned>, <mentioned xml:lang="lt"><lang>лит.</lang>
             <w>ne</w></mentioned>, <mentioned xml:lang="got"><lang>гот.</lang>
             <w>ni</w></mentioned>, <mentioned xml:lang="ang"><lang/>
             <w>ne</w></mentioned>, <mentioned xml:lang="la"><lang>лат.</lang>
-            <w>ne-</w><note type="comment"> (в <w>ne-scio</w> и др.)</note></mentioned> , <mentioned
+            <w>ne-</w><note xml:lang="ru" type="comment"> (в <w>ne-scio</w> и др.)</note><note
+              xml:lang="en" type="comment"> (в <w>ne-scio</w> и др.)</note></mentioned> , <mentioned
             xml:lang="hit"><lang/>
             <w>natta</w></mentioned> и пр. (<bibl><ref type="bibl" target="#ref_Pokorny"/>
             <biblScope>756 сл.</biblScope></bibl>). — Ср. привативную частицу <c>æ-</c> из
@@ -225,6 +298,43 @@
             <biblScope>99</biblScope></bibl>) и <ref type="xr" target="#entry_ænæ"/> (<bibl><ref
               type="bibl" target="#ref_ИЭС_I"/>
             <biblScope>150</biblScope></bibl>); ср. <ref type="xr" target="#entry_ma_2"
+              />.<lb/><bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/>
+            <biblScope>51</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Miller._Gr."/>
+            <biblScope>86</biblScope></bibl>.</etym>
+        <etym xml:lang="en">Common Indo-European negative particle (<mentioned xml:lang="ira"><lang/>
+            <w type="rec">na</w></mentioned>, <mentioned xml:lang="ine"><lang/>
+            <w type="rec">ne</w></mentioned>): <mentioned xml:lang="fa"><lang/>
+            <w>na</w></mentioned>, <mentioned xml:lang="pal"><lang/>
+            <w>na</w>, <w>nē</w></mentioned>, <mentioned xml:lang="ku"><lang/>
+            <w>ne</w></mentioned>, <mentioned xml:lang="x-balochi"><lang/>
+            <w>na</w></mentioned>, <mentioned xml:lang="ps"><lang/>
+            <w>na</w></mentioned>, <mentioned xml:lang="sgh" extralang="isk sgy"><lang/>
+            <w>na</w></mentioned>, <mentioned xml:lang="ydg"><lang/>
+            <w>no</w>, <w>nә</w></mentioned>, <mentioned xml:lang="wbl"><lang/>
+            <w>ne</w></mentioned>, <mentioned xml:lang="yai"><lang/>
+            <w>na</w>, <w>nay</w></mentioned>, <mentioned xml:lang="sog"><lang/>
+            <w type="rec">na</w> (<w>n’</w>), <w>nē</w> (<w>ny</w>)</mentioned>, <mentioned
+            xml:lang="xpr"><lang/>
+            <w type="rec">nē</w> (<w>ny</w>)</mentioned>, <mentioned xml:lang="kho"><lang/>
+            <w>ne</w>, <w>nä</w>, <w>ni</w></mentioned>, <mentioned xml:lang="ae"><lang/>
+            <w>nōit</w>
+            <note xml:lang="ru" type="comment">(<c>na</c> + <c>it</c>)</note><note xml:lang="en"
+              type="comment">(<c>na</c> + <c>it</c>)</note></mentioned>, <mentioned xml:lang="peo"><lang/>
+            <w>ṋaiy</w></mentioned>, <mentioned xml:lang="inc-x-old"><lang/>
+            <w>na</w></mentioned>, <mentioned xml:lang="cu"><lang/>
+            <w>ne</w></mentioned>, <mentioned xml:lang="lt"><lang/>
+            <w>ne</w></mentioned>, <mentioned xml:lang="got"><lang/>
+            <w>ni</w></mentioned>, <mentioned xml:lang="ang"><lang/>
+            <w>ne</w></mentioned>, <mentioned xml:lang="la"><lang/>
+            <w>ne-</w><note xml:lang="ru" type="comment"> (в <w>ne-scio</w> и др.)</note><note
+              xml:lang="en" type="comment"> (in <w>ne-scio</w> etc.)</note></mentioned> , <mentioned
+            xml:lang="hit"><lang/>
+            <w>natta</w></mentioned> etc. (<bibl><ref type="bibl" target="#ref_Pokorny"/>
+            <biblScope xml:lang="en">756 ff.</biblScope></bibl>). — Cf. privative particle <c>æ-</c>
+          from <c>n̥-</c> (<bibl><ref type="bibl" target="#ref_ИЭС_I"/>
+            <biblScope>99</biblScope></bibl>) and <ref type="xr" target="#entry_ænæ"/> (<bibl><ref
+              type="bibl" target="#ref_ИЭС_I"/>
+            <biblScope>150</biblScope></bibl>); cf. <ref type="xr" target="#entry_ma_2"
               />.<lb/><bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/>
             <biblScope>51</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Miller._Gr."/>
             <biblScope>86</biblScope></bibl>.</etym>
