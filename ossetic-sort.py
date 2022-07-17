@@ -60,6 +60,7 @@ def abaev_key(x):
     # Remove word-internal punctuation (a bit redundant but let it be)
     x = x.replace('6','')
     x = x.replace('9','')
+    x = x.replace('-','')
     
     
     x = x.replace('a','/')
