@@ -61,6 +61,7 @@ def abaev_key(x):
     x = x.replace('6','')
     x = x.replace('9','')
     x = x.replace('-','')
+    x = x.replace('_','')
     
     
     x = x.replace('a','/')
