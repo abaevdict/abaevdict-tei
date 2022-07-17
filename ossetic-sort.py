@@ -57,11 +57,12 @@ def abaev_key(x):
     if x[0] == '7' or x[0] == '-' or x[0] =='8' or x[0] == '6':
         x = x[1:]
     
-    # Remove word-internal punctuation (a bit redundant but let it be)
+    # Remove word-internal punctuation and accent marks (a bit redundant but let it be)
     x = x.replace('6','')
     x = x.replace('9','')
     x = x.replace('-','')
     x = x.replace('_','')
+    x = x.replace('́','') #combining acute
     
     
     x = x.replace('a','/')
