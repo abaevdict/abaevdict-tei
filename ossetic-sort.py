@@ -72,6 +72,8 @@ def abaev_key(x):
     
     x = x.replace('æ', '1')
     x = x.replace('Æ', '1')
+    x = x.replace('ǽ', '1')
+    x = x.replace('Ǽ', '1')    
     
     x = x.replace('b', '2')
     x = x.replace('B', '2')
