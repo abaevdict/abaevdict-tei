@@ -1,35 +1,48 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">mærdʒæst</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_mærdʒæst" xml:lang="os" abv:completeness="incomplete">
+      <entry xml:id="entry_mærdʒæst" xml:lang="os" abv:completeness="complete">
         <form type="lemma"><orth>mærdʒæst</orth></form>
         <sense><sense><abv:tr xml:lang="ru">
               <q>скупой</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>stingy</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>скряга</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>niggard</q>
             </abv:tr></sense></sense>
-        <note type="comment">; син. <ref type="xr" target="#entry_ḱʼyndy"/>, <ref type="xr"
-            target="#entry_ælǧīn"/></note>
+        <note xml:lang="ru" type="comment">; син. <ref type="xr" target="#entry_ḱʼyndy"/>, <ref
+            type="xr" target="#entry_ælǧīn"/></note>
+        <note xml:lang="en" type="comment">; synonyms <ref type="xr" target="#entry_ḱʼyndy"/>, <ref
+            type="xr" target="#entry_ælǧīn"/></note>
         <etym xml:lang="ru">Буквально <gloss><q rendition="#rend_doublequotes">имеющий мертвый
               глаз</q></gloss>, см. <ref type="xr" target="#entry_mard"/> и <ref type="xr"
+            target="#entry_cæst"/>.</etym>
+        <etym xml:lang="en">Literally <gloss><q rendition="#rend_doublequotes">having a dead
+            eye</q></gloss>, see <ref type="xr" target="#entry_mard"/> and <ref type="xr"
             target="#entry_cæst"/>.</etym>
       </entry>
     </body>
