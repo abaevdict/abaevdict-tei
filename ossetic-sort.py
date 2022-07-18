@@ -63,6 +63,11 @@ def abaev_key(x):
     x = x.replace('-','')
     x = x.replace('_','')
     x = x.replace('́','') #combining acute
+    x = x.replace('1','')
+    x = x.replace('2','')
+    x = x.replace('3','')
+    x = x.replace('4','')
+    x = x.replace('5','')
     
     
     x = x.replace('a','/')
