@@ -10239,11 +10239,11 @@
                         <scenarioAssociation-array>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>entries/abaev_qyp-syp.xml</String>
+                                    <String>abaev_vol2.xml</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
-                                        <String>Generate translations</String>
+                                        <String>Create English version</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -10259,11 +10259,51 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>abaev_vol2.xml</String>
+                                    <String>xsl/insert-langs.xsl</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
-                                        <String>Create English version</String>
+                                        <String>Generate lookup table for cross-references</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XML</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>xsl/generate-lookup.xsl</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>Generate lookup table for cross-references</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XML</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>entries/abaev_qyp-syp.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>Generate translations</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -10589,26 +10629,6 @@
                                 <field name="scenarioTypes">
                                     <list>
                                         <String>XSL</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioStorageLocations">
-                                    <list>
-                                        <Byte>2</Byte>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>xsl/generate-lookup.xsl</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>Generate lookup table for cross-references</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XML</String>
                                     </list>
                                 </field>
                                 <field name="scenarioStorageLocations">
@@ -14217,26 +14237,6 @@
                                     </list>
                                 </field>
                             </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>entries/abaev_l%C3%A6%C7%A7zad.xml</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>Generate translations</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XSL</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioStorageLocations">
-                                    <list>
-                                        <Byte>2</Byte>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
                         </scenarioAssociation-array>
                     </entry>
                     <entry>
@@ -14410,12 +14410,37 @@
                                                 <Boolean>false</Boolean>
                                             </field>
                                         </transformationParameter>
+                                        <transformationParameter>
+                                            <field name="paramDescription">
+                                                <paramDescriptor>
+                                                    <field name="localName">
+                                                        <String>name-lang</String>
+                                                    </field>
+                                                    <field name="prefix">
+                                                        <null/>
+                                                    </field>
+                                                    <field name="namespace">
+                                                        <null/>
+                                                    </field>
+                                                </paramDescriptor>
+                                            </field>
+                                            <field name="value">
+                                                <String>en</String>
+                                            </field>
+                                            <field name="hasXPathValue">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                            <field name="isStatic">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                        </transformationParameter>
                                     </list>
                                 </field>
                                 <field name="cascadingStylesheets">
                                     <String-array>
                                         <String>${pdu}/xsl/delete-lang.xsl</String>
                                         <String>${pdu}/xsl/insert-refs.xsl</String>
+                                        <String>${pdu}/xsl/insert-langs.xsl</String>
                                     </String-array>
                                 </field>
                                 <field name="xslTransformer">
@@ -14593,12 +14618,37 @@
                                                 <Boolean>false</Boolean>
                                             </field>
                                         </transformationParameter>
+                                        <transformationParameter>
+                                            <field name="paramDescription">
+                                                <paramDescriptor>
+                                                    <field name="localName">
+                                                        <String>name-lang</String>
+                                                    </field>
+                                                    <field name="prefix">
+                                                        <null/>
+                                                    </field>
+                                                    <field name="namespace">
+                                                        <null/>
+                                                    </field>
+                                                </paramDescriptor>
+                                            </field>
+                                            <field name="value">
+                                                <String>ru</String>
+                                            </field>
+                                            <field name="hasXPathValue">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                            <field name="isStatic">
+                                                <Boolean>false</Boolean>
+                                            </field>
+                                        </transformationParameter>
                                     </list>
                                 </field>
                                 <field name="cascadingStylesheets">
                                     <String-array>
                                         <String>${pdu}/xsl/delete-lang.xsl</String>
                                         <String>${pdu}/xsl/insert-refs.xsl</String>
+                                        <String>${pdu}/xsl/insert-langs.xsl</String>
                                     </String-array>
                                 </field>
                                 <field name="xslTransformer">
@@ -15172,7 +15222,7 @@
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>${currentFileURL}</String>
+                                    <String>${pdu}/xsl/generate-lookup.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
                                     <null/>
