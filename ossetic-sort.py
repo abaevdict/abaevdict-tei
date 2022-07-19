@@ -74,6 +74,10 @@ def abaev_key(x):
     x = x.replace('A', '/')
     x = x.replace('ā', '/')
     x = x.replace('Ā', '/')
+    x = x.replace('á', '/')
+    x = x.replace('Á', '/')
+    x = x.replace('ā́', '/')
+    x = x.replace('Ā́', '/')
     
     x = x.replace('æ', '1')
     x = x.replace('Æ', '1')
@@ -97,6 +101,8 @@ def abaev_key(x):
     
     x = x.replace('e', '7')
     x = x.replace('E', '7')
+    x = x.replace('é', '7')
+    x = x.replace('É', '7')    
     
     x = x.replace('f', '8')
     x = x.replace('F', '8')
@@ -118,9 +124,13 @@ def abaev_key(x):
     
     x = x.replace('i', 'B')
     x = x.replace('I', 'B')
+    x = x.replace('í', 'B')
+    x = x.replace('Í', 'B')
     
     x = x.replace('ī', 'B')
     x = x.replace('Ī', 'B')
+    x = x.replace('ī́', 'B')
+    x = x.replace('Ī́', 'B')    
     
     x = x.replace('j', 'D')
     x = x.replace('J', 'D')
@@ -154,6 +164,8 @@ def abaev_key(x):
     
     x = x.replace('o', 'K')
     x = x.replace('O', 'K')
+    x = x.replace('ó', 'K')
+    x = x.replace('Ó', 'K')    
     
     x = x.replace('pʼ', 'M')
     x = x.replace('Pʼ', 'M')    
@@ -181,9 +193,13 @@ def abaev_key(x):
     
     x = x.replace('u', 'S')
     x = x.replace('U', 'S')
+    x = x.replace('ú', 'S')
+    x = x.replace('Ú', 'S')    
     
     x = x.replace('ū', 'S')
     x = x.replace('Ū', 'S')
+    x = x.replace('ū́', 'S')
+    x = x.replace('Ū́', 'S')    
     
     x = x.replace('v', 'T')
     x = x.replace('V', 'T')
@@ -199,6 +215,8 @@ def abaev_key(x):
     
     x = x.replace('y', 'W')
     x = x.replace('Y', 'W')
+    x = x.replace('ý', 'W')
+    x = x.replace('Ý', 'W')    
     
     x = x.replace('z', 'X')
     x = x.replace('Z', 'X')
