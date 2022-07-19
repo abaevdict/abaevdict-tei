@@ -1,30 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">lamaz</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_lamaz" xml:lang="os" abv:completeness="incomplete">
+      <entry xml:id="entry_lamaz" xml:lang="os" abv:completeness="complete">
         <form type="lemma"><orth>lamaz</orth></form>
         <sense><sense><abv:tr xml:lang="ru">
               <q>мусульманская молитва</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>Islamic prayer</q>
             </abv:tr></sense><sense><abv:tr xml:lang="ru">
               <q>намаз</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>namaz</q>
             </abv:tr></sense></sense>
         <re>
           <form type="lemma" xml:lang="os-x-iron"><orth>lamazlyq</orth></form>
@@ -32,6 +40,8 @@
                 ><orth>lamazlæq</orth></form></form>
           <sense><abv:tr xml:lang="ru">
               <q>коврик или шкура, на которой совершается молитва</q>
+            </abv:tr><abv:tr xml:lang="en">
+              <q>rug or hide on which prayer is performed</q>
             </abv:tr></sense>
         </re>
         <abv:exampleGrp>
@@ -40,20 +50,32 @@
             <abv:tr xml:lang="ru">
               <q>я дал клятву совершит намаз, о Энальды</q>
             </abv:tr>
-            <bibl xml:lang="ru"> из песни о Кудайнате из Ларса </bibl>
+            <abv:tr xml:lang="en">
+              <q>I made an oath to do the namaz, o Enaldy</q>
+            </abv:tr>
+            <bibl xml:lang="ru"><biblScope xml:lang="en">from a song about Qudaynat of
+                Lars</biblScope><biblScope xml:lang="en">from a song about Qudaynat of
+                Lars</biblScope><biblScope xml:lang="ru">из песни о Кудайнате из
+                Ларса</biblScope><biblScope xml:lang="en">из песни о Кудайнате из
+              Ларса</biblScope></bibl>
+            <bibl xml:lang="en"><biblScope xml:lang="en">from a song about Qudaynat of
+                Lars</biblScope><biblScope xml:lang="ru">из песни о Кудайнате из
+              Ларса</biblScope></bibl>
           </abv:example>
           <abv:example xml:lang="os-x-digor">
             <usg>
               <lang/>
             </usg>
-            <quote>oj fæstæ lamazlæq ærista æma xucawmæ bakovgæj æ od isista</quote>
+            <quote>oj fæstæ lamazlæq ærista æma Xucawmæ bakovgæj æ od isista</quote>
             <abv:tr xml:lang="ru">
               <q>после этого он достал коврик для молитвы и, помолясь богу, испустил душу</q>
             </abv:tr>
-            <bibl>
-              <ref type="bibl" target="#src_Диг._сказ."/>
-              <biblScope>57<hi rendition="#rend_subscript">37</hi></biblScope>
-            </bibl>
+            <abv:tr xml:lang="en">
+              <q>after that he took out the prayer rug and, having prayed to God, gave up the
+                spirit</q>
+            </abv:tr>
+            <bibl><ref type="bibl" target="#src_Диг._сказ."/>
+              <biblScope>57<hi rendition="#rend_subscript">37</hi></biblScope></bibl>
           </abv:example>
           <abv:example>
             <quote>mæ sagʒarm lamazlyq xₒyʒarmæj raīvton</quote>
@@ -61,12 +83,52 @@
               <q><hi rendition="#rend_smallcaps">ламазлук</hi> из оленьей шкуры я сменила на свиную
                 шкуру</q>
             </abv:tr>
-            <bibl xml:lang="ru"> из песни <q rendition="#rend_doublequotes"><foreign
-                  xml:lang="os-x-iron">Sofiajy zaræg</foreign></q>
-            </bibl>
+            <abv:tr xml:lang="en">
+              <q>I exchanged the <hi rendition="#rend_smallcaps">lamazlyq</hi> of deer hide for the
+                hide of a pig</q>
+            </abv:tr>
+            <bibl xml:lang="ru"><biblScope xml:lang="ru">из песни <q rendition="#rend_doublequotes"
+                    ><foreign xml:lang="os-x-iron">Sofiajy zaræg</foreign></q></biblScope><biblScope
+                xml:lang="en">from the song <q rendition="#rend_doublequotes"><foreign
+                    xml:lang="os-x-iron">Sofiajy zaræg</foreign></q></biblScope></bibl>
           </abv:example>
         </abv:exampleGrp>
-        <etym xml:lang="ru"/>
+        <etym xml:lang="ru">Перебой из <w>namaz</w> (диссимиляция носовых, как <ref type="xr"
+            target="#entry_nysan"><w xml:lang="os-x-digor">lisan</w></ref> рядом с <ref type="xr"
+            target="#entry_nysan"><w xml:lang="os-x-digor">nisan</w>
+            <gloss><q>знак</q></gloss></ref>, <ref type="xr" target="#entry_malūsæg"><w>malusæg</w>
+            <note type="comment">из <w>manusæg</w>
+              <gloss><q>подснежник</q></gloss></note></ref>, <ref type="xr" target="#entry_rimæxsun"
+              ><w xml:lang="os-x-digor">rimæxsun</w></ref> рядом с <ref type="xr"
+            target="#entry_nymæxsyn"><w>nymæxsyn</w>
+            <gloss><q>прятать</q></gloss></ref> и др.). Ср. <mentioned xml:lang="fa"><lang/>
+            <w>namāz</w></mentioned>, <mentioned xml:lang="trk"><lang/>
+            <w>namaz</w></mentioned>, <mentioned xml:lang="trk"><w>namazluq</w></mentioned>.
+          Употребительно у всех мусульманских народов. Ср. <mentioned xml:lang="kbd"><lang/>
+            <w>namaz</w></mentioned>, <mentioned><mentioned xml:lang="uby"><lang/>
+              <w>lamaza</w></mentioned>, <mentioned xml:lang="ce"><lang/>
+              <w>lamaz</w></mentioned>
+            <note type="comment">(с перебоем <c>n</c> → <c>l</c>, как в
+            осетинском)</note></mentioned> и др. Форма <mentioned xml:lang="os-x-digor"
+            ><w>namaz</w></mentioned> также засвидетельствована в дигорском.</etym>
+        <etym xml:lang="en">Alternation of <w>namaz</w> (nasal dissimilation, like <ref type="xr"
+            target="#entry_nysan"><w xml:lang="os-x-digor">lisan</w></ref> alongside <ref type="xr"
+            target="#entry_nysan"><w xml:lang="os-x-digor">nisan</w>
+            <gloss><q>sign</q></gloss></ref>, <ref type="xr" target="#entry_malūsæg"><w>malusæg</w>
+            <note type="comment">from <w>manusæg</w>
+              <gloss><q>snowdrop</q></gloss></note></ref>, <ref type="xr" target="#entry_rimæxsun"
+              ><w xml:lang="os-x-digor">rimæxsun</w></ref> alongside <ref type="xr"
+            target="#entry_nymæxsyn"><w>nymæxsyn</w>
+            <gloss><q>hide</q></gloss></ref> etc.). Cf. <mentioned xml:lang="fa"><lang/>
+            <w>namāz</w></mentioned>, <mentioned xml:lang="trk"><lang/>
+            <w>namaz</w></mentioned>, <mentioned xml:lang="trk"><w>namazluq</w></mentioned>. Widely
+          used by all Islamic people. Cf. <mentioned xml:lang="kbd"><lang/>
+            <w>namaz</w></mentioned>, <mentioned><mentioned xml:lang="uby"><lang/>
+              <w>lamaza</w></mentioned>, <mentioned xml:lang="ce"><lang/>
+              <w>lamaz</w></mentioned>
+            <note type="comment">(with sound change <c>n</c> → <c>l</c>, as in
+            Ossetic)</note></mentioned> etc. In Digor, the form <mentioned xml:lang="os-x-digor"
+              ><w>namaz</w></mentioned> is also attested.</etym>
       </entry>
     </body>
   </text>

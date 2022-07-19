@@ -52,8 +52,24 @@ abaev_alphabet = {
 def abaev_key(x):
     x = x.replace('entries/abaev_','')
     #print (x)
+    
+    # Remove initial punctuation which does not influence order
     if x[0] == '7' or x[0] == '-' or x[0] =='8' or x[0] == '6':
         x = x[1:]
+    
+    # Remove word-internal punctuation and accent marks (a bit redundant but let it be)
+    x = x.replace('6','')
+    x = x.replace('9','')
+    x = x.replace('-','')
+    x = x.replace('_','')
+    x = x.replace('́','') #combining acute
+    x = x.replace('1','')
+    x = x.replace('2','')
+    x = x.replace('3','')
+    x = x.replace('4','')
+    x = x.replace('5','')
+    
+    
     x = x.replace('a','/')
     x = x.replace('A', '/')
     x = x.replace('ā', '/')
@@ -61,6 +77,8 @@ def abaev_key(x):
     
     x = x.replace('æ', '1')
     x = x.replace('Æ', '1')
+    x = x.replace('ǽ', '1')
+    x = x.replace('Ǽ', '1')    
     
     x = x.replace('b', '2')
     x = x.replace('B', '2')

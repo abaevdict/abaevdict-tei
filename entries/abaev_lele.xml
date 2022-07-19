@@ -1,44 +1,57 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">lele</hi></title>
       </titleStmt>
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">II</biblScope>. L–R. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1973</date>. С. <biblScope unit="page"
-            >41</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">II</biblScope>. L–R. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1973</date>. С. <biblScope unit="page">41</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <entry xml:id="entry_lele" xml:lang="os-x-iron" abv:completeness="incomplete">
+      <entry xml:id="entry_lele" xml:lang="os-x-iron" abv:completeness="english-questions">
         <form type="lemma"><orth>lele</orth></form>
         <usg><lang/></usg>
         <re>
-          <note type="comment">в выражении </note>
+          <note xml:lang="ru" type="comment">в выражении </note>
+          <note xml:lang="en" type="comment">in the expression </note>
           <form type="lemma"><orth>lele-<ref type="xr" target="#entry_g0ydyn"
             >gₒydyn</ref></orth></form>
           <sense><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">пышный, сдобный (?) <hi
                   rendition="#rend_smallcaps"><ref type="xr" target="#entry_g0ydyn"/></hi>
                 (хлеб)</q>
+            </tr><tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">puffy, short (?) <hi
+                  rendition="#rend_smallcaps"><ref type="xr" target="#entry_g0ydyn"/></hi>
+                (bread)</q>
             </tr></sense>
         </re>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
-            <quote xmlns="http://www.tei-c.org/ns/1.0">xosʒawtæ zaǧtoj: æfsīnæj nyn lele-gₒydyn
-              ysxæss</quote>
+            <quote xmlns="http://www.tei-c.org/ns/1.0">xosʒawtæ zaǧtoj: æfsīnæj nyn
+                <oRef>lele</oRef>-gₒydyn ysxæss</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">косари сказали: принеси нам от хозяек
                   <oRef>lele-gₒydyn</oRef></q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">the haymowers said: brings us
+                  <oRef>lele-gₒydyn</oRef> from the proprietress</q>
             </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_СОПам."/>
               <biblScope>IV 145</biblScope></bibl>
@@ -47,6 +60,13 @@
         <etym xml:lang="ru">Ср. <mentioned xml:lang="ka"><lang/>
             <w>lelengo</w>
             <gloss><q>пресная лепешка на масле</q></gloss>
+            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Чубинов"
+            /></bibl>)</note></mentioned>.</etym>
+        <etym xml:lang="en">Cf. <mentioned xml:lang="ka"><lang/>
+            <w>lelengo</w>
+            <gloss><q>unleavened
+                <?oxy_comment_start author="oleg" timestamp="20220717T181124+0300" comment="or oil?"?>butter<?oxy_comment_end?>-based
+                bread</q></gloss>
             <note type="bibl">(<bibl><ref type="bibl" target="#ref_Чубинов"
             /></bibl>)</note></mentioned>.</etym>
       </entry>
