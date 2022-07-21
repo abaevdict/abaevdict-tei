@@ -38,7 +38,7 @@
     
     <xsl:template match="tei:ref[@type = 'bibl'][not(node())]">
         <xsl:variable name="target" select="@target"/>
-        <xsl:variable name="bibl" select="$biblio/tei:TEI/tei:text/tei:body/tei:div/tei:listBibl/tei:bibl[@xml:id = substring($target, 2)]"/>
+        <xsl:variable name="bibl" select="$biblio/tei:TEI/tei:text/tei:body/tei:div//tei:listBibl/tei:bibl[@xml:id = substring($target, 2)]"/>
         <xsl:if test="not($bibl)"><xsl:message>Cross-referenced bibitem <xsl:value-of select="$target"/> not found! Lemma <xsl:value-of select="ancestor::tei:entry/@xml:id"/></xsl:message></xsl:if>
 <!--        <xsl:message><xsl:value-of select="$lookup"/></xsl:message>-->
         <xsl:copy>
