@@ -1,35 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ʒyvyr</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ʒyvyr" xml:lang="os">
-                <form xml:lang="os-x-iron" type="lemma"><orth>ʒyvyr</orth><form type="variant"
-                            ><orth>ʒybyr</orth></form></form>
+                <form xml:lang="os-x-iron" type="lemma"><orth>ʒyvyr</orth><form type="variant"><orth>ʒybyr</orth></form></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>ʒubur</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d4869e74"><abv:tr xml:lang="ru">
                         <q>соха</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>wooden plough</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4869e86">
                         <quote>ʒyvyr sæ mijjag næ razyldaid — ḱysyl gæppæltæ wydysty</quote>
                         <abv:tr xml:lang="ru">
                             <q>соха бы там не повернулась — (настолько это) были маленькие клочки
@@ -41,7 +45,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Čerm."/><biblScope>95</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4869e105">
                         <quote>ragon adæm ʒyvyræj x˳ym kodtoj</quote>
                         <abv:tr xml:lang="ru">
                             <q>прежние (древние) люди пахали сохой</q>
@@ -50,7 +54,7 @@
                             <q>former (ancient) people used the wooden plow</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4869e120" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>xwænxag læg æ ʒuburi fæste cæwuj</quote>
                         <abv:tr xml:lang="ru">
@@ -61,7 +65,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_AK"/><biblScope>II 42</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4869e142" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>cættæ kænuj xumæmæ alkedær æ ʒubur</quote>
                         <abv:tr xml:lang="ru">
@@ -72,7 +76,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>20</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4869e164" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>ʒubur ma asojnæj næbal æj næ kust</quote>
                         <abv:tr xml:lang="ru">
@@ -85,10 +89,10 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">В азовском диалекте %bновогреческого%b языка имеется слово
-                        <mentioned xml:lang="grc"><lang/>
+                        <mentioned xml:id="mentioned_d4869e189" xml:lang="grc"><lang/>
                         <w>cavura</w>
                         <gloss><q>плуг</q></gloss></mentioned>, которое трудно отделить от
-                        <mentioned xml:lang="os"><lang/>
+                        <mentioned xml:id="mentioned_d4869e197" xml:lang="os"><lang/>
                         <w>ʒyvyr</w></mentioned>.<note type="footnote" n="1"> PUT NOTE HERE </note>
                     Наличие слова на территории Южной России, с одной стороны, и в осетинском, с
                     другой, позволяет думать о старом скифском наследии. — По звуковому типу
@@ -100,25 +104,24 @@
                     может, созвучие с <ref type="xr" target="#entry_cybyr"/> | %icubur%i ‘короткий’.
                     Исходное значение: „орудие с острым, торчащим концом“. Ср. семантику славянского
                     %iсоха%i, означающего также ‘вилы’, ‘развилина’, ‘палка’ (%iпо-cox%i).
-                    Неудивительно, что в %bрутульском%b мы находим наше слово (<mentioned
-                        xml:lang="rut"><lang/>
+                    Неудивительно, что в %bрутульском%b мы находим наше слово (<mentioned xml:id="mentioned_d4869e210" xml:lang="rut"><lang/>
                         <w>ǯubur</w></mentioned>) со значением ‘рукоятка’, ‘ручка’, а также ‘хвост’.
-                        <mentioned xml:lang="av"><lang/>
+                        <mentioned xml:id="mentioned_d4869e215" xml:lang="av"><lang/>
                         <w>puruc</w>
                         <gloss><q>соха</q></gloss></mentioned> представляет, возможно, перестановку
-                    тех же элементов (*%icu-pur%i → %ipur-uc%i). Ср. также <mentioned xml:lang="tab"><lang/>
+                    тех же элементов (*%icu-pur%i → %ipur-uc%i). Ср. также <mentioned xml:id="mentioned_d4869e223" xml:lang="tab"><lang/>
                         <w>mučʼur</w>
                         <gloss><q>соха</q></gloss></mentioned> (← *%ič’umur%i?). Приведенные
                     кавказские слова могли возникнуть самостоятельно на основе „звуковой символики“.
-                        <mentioned xml:lang="srh"><lang/>
+                        <mentioned xml:id="mentioned_d4869e231" xml:lang="srh"><lang/>
                         <w>sūpur</w>
-                        <gloss><q>соха</q></gloss></mentioned> идёт от <mentioned xml:lang="ira"><lang/>
+                        <gloss><q>соха</q></gloss></mentioned> идёт от <mentioned xml:id="mentioned_d4869e239" xml:lang="ira"><lang/>
                         <w>*spar-</w></mentioned> и сюда не относится.</etym>
                 <etym xml:lang="en">In the Azov dialect of %bModern Greek%b we find the word
-                        <mentioned xml:lang="grc"><lang/>
+                        <mentioned xml:id="mentioned_d4869e248" xml:lang="grc"><lang/>
                         <w>cavura</w>
                         <gloss><q>plough</q></gloss></mentioned>, which is hardly separable from
-                        <mentioned xml:lang="os"><lang/>
+                        <mentioned xml:id="mentioned_d4869e256" xml:lang="os"><lang/>
                         <w>ʒyvyr</w></mentioned>.<note type="footnote" n="1"> PUT NOTE HERE </note>
                     The existence of the word in Southern Russia, on one hand, and in Ossetic, on
                     the other hand, makes us think about the ancient Scythian heritage. — In terms
@@ -127,24 +130,21 @@
                     meaning polarization, either ‘round’, ‘blunt’, ‘cut off’, or ‘extrusive’,
                     ‘sticking out’, ‘sharp’. We take a closer look at this whole group of apparently
                     rather ancient words in the <ref type="xr" target="#entry_tymbyl"/> ‘round’
-                    entry. It is possible that the similarity with <ref type="xr"
-                        target="#entry_cybyr"/> | %icubur%i ‘short’. is not accidental. The original
+                    entry. It is possible that the similarity with <ref type="xr" target="#entry_cybyr"/> | %icubur%i ‘short’. is not accidental. The original
                     meaning is “a tool with a sharp, extended edge”. See the semantics of the Slavic
                     word %iсоха%i, which also means ‘pitchfork’, ‘crotch’, ‘stick’ (%iпо-cox%i). It
-                    is not surpising that in %bRutul%b we find our word (<mentioned xml:lang="rut"><lang/>
+                    is not surpising that in %bRutul%b we find our word (<mentioned xml:id="mentioned_d4869e269" xml:lang="rut"><lang/>
                         <w>ǯubur</w></mentioned>) having the meaning ‘hilt’, ‘handle’, as well as
-                    ‘tail’. <mentioned xml:lang="av"><lang/>
+                    ‘tail’. <mentioned xml:id="mentioned_d4869e274" xml:lang="av"><lang/>
                         <w>puruc</w>
                         <gloss><q>plough</q></gloss></mentioned> may be an instance of metathesis of
-                    the same elements (*%icu-pur%i → %ipur-uc%i). Compare also <mentioned
-                        xml:lang="tab"><lang/>
+                    the same elements (*%icu-pur%i → %ipur-uc%i). Compare also <mentioned xml:id="mentioned_d4869e282" xml:lang="tab"><lang/>
                         <w>mučʼur</w>
                         <gloss><q>plough</q></gloss></mentioned> (← *%ič’umur%i?). The Caucasian
                     words listed above could have emerged independently on the bases of “sound
-                    symbolism”. <mentioned xml:lang="srh"><lang/>
+                    symbolism”. <mentioned xml:id="mentioned_d4869e290" xml:lang="srh"><lang/>
                         <w>sūpur</w>
-                        <gloss><q>plough</q></gloss></mentioned> comes from <mentioned
-                        xml:lang="ira"><lang/>
+                        <gloss><q>plough</q></gloss></mentioned> comes from <mentioned xml:id="mentioned_d4869e298" xml:lang="ira"><lang/>
                         <w>*spar-</w></mentioned> and is not connected.</etym>
                 <note type="footnote" xml:lang="ru" n="1">Знакомством с этими материалами я обязан
                     любезности А. А. %sБелецкого%s и Т. Н. %sЧернышевой%s.</note>

@@ -1,33 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">bærkad</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_bærkad" xml:lang="os">
                 <form type="lemma"><orth>bærkad</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d3486e69"><abv:tr xml:lang="ru">
                         <q>изобилие (о домашнем хозяйстве)</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>abundance (of housekeeping)</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d3486e81">
                         <quote>wæ bærkad biræ<note type="comment" xml:lang="ru"> (обычная формула
                                 благодарности за угощение)</note><note type="comment" xml:lang="en">
                                 (a usual form of thanking for food)</note></quote>
@@ -38,7 +43,7 @@
                             <q>may your %sbærkаd%s multiply</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3486e101">
                         <quote>fynǵy bærkad</quote>
                         <abv:tr xml:lang="ru">
                             <q>неиссякаемое изобилие стола</q>
@@ -47,7 +52,7 @@
                             <q>inexhaustible abundance of meal</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3486e116">
                         <quote>ʒag xoræj mæ xordon, bærkadǵyn mæ zæxx</quote>
                         <abv:tr xml:lang="ru">
                             <q>полна хлеба моя житница, изобильна моя земля</q>
@@ -58,59 +63,38 @@
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>15</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из <mentioned xml:lang="ar" extralang="fa"><lang/>
+                <etym xml:lang="ru">Из <mentioned xml:id="mentioned_d3486e138" xml:lang="ar" extralang="fa"><lang/>
                         <w>barakat</w>
-                        <gloss><q>изобилие</q></gloss></mentioned>, <mentioned xml:lang="ar"
-                        extralang="fa"><w/>
-                        <gloss><q>благоденствие</q></gloss></mentioned>, <mentioned xml:lang="ar"
-                        extralang="fa"><w/>
-                        <gloss><q>довольство</q></gloss></mentioned>, <mentioned xml:lang="tr"><lang/>
-                        <w>barakat</w></mentioned>. Распространено по всему Кавказу: <mentioned
-                        xml:lang="ce" extralang="inh"><lang/>
-                        <w>berakat</w></mentioned>, <mentioned xml:lang="ce" extralang="inh"
-                            ><w>bierkat</w></mentioned>, <mentioned xml:lang="av"><lang/>
-                        <w>barkàt</w></mentioned>, <mentioned xml:lang="lbe"><lang/>
-                        <w>baračat</w></mentioned>, <mentioned xml:lang="kbd" extralang="kbd-x-crc"><lang/>
-                        <w>bereket</w></mentioned>, <mentioned xml:lang="kbd" extralang="kbd-x-crc"
-                            ><w>baraket</w></mentioned>, <mentioned xml:lang="ka"><lang/>
+                        <gloss><q>изобилие</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3486e146" xml:lang="ar" extralang="fa"><w/>
+                        <gloss><q>благоденствие</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3486e152" xml:lang="ar" extralang="fa"><w/>
+                        <gloss><q>довольство</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3486e158" xml:lang="tr"><lang/>
+                        <w>barakat</w></mentioned>. Распространено по всему Кавказу: <mentioned xml:id="mentioned_d3486e163" xml:lang="ce" extralang="inh"><lang/>
+                        <w>berakat</w></mentioned>, <mentioned xml:id="mentioned_d3486e169" xml:lang="ce" extralang="inh"><w>bierkat</w></mentioned>, <mentioned xml:id="mentioned_d3486e172" xml:lang="av"><lang/>
+                        <w>barkàt</w></mentioned>, <mentioned xml:id="mentioned_d3486e177" xml:lang="lbe"><lang/>
+                        <w>baračat</w></mentioned>, <mentioned xml:id="mentioned_d3486e182" xml:lang="kbd" extralang="kbd-x-crc"><lang/>
+                        <w>bereket</w></mentioned>, <mentioned xml:id="mentioned_d3486e187" xml:lang="kbd" extralang="kbd-x-crc"><w>baraket</w></mentioned>, <mentioned xml:id="mentioned_d3486e190" xml:lang="ka"><lang/>
                         <w>baraka</w></mentioned>. В осетинский это слово было заимствовано дважды:
-                    сперва в форме %ibærkad%i (через дагестанское посредство, ср. <mentioned
-                        xml:lang="av"><lang/>
-                        <w>barkàt</w></mentioned>), позднее в форме <ref type="xr"
-                        target="#entry_bæræḱet"/> | %ibereket%i (через кабардинское посредство, ср.
-                        <mentioned xml:lang="kbd"><lang/>
-                        <w>baraket</w></mentioned>, <mentioned xml:lang="kbd"
-                        ><w>bereket</w></mentioned>). Ср. другие случаи двукратного заимствования
-                    одного и того же слова: <ref type="xr" target="#entry_ærx"/> и <ref type="xr"
-                        target="#entry_lawyz"/> и <ref type="xr" target="#entry_lwasi"/> и <ref
-                        type="xr" target="#entry_kʼalati"/>.%n<bibl><ref type="bibl"
-                            target="#ref_ОЯФ_I"/><biblScope>93</biblScope></bibl>.</etym>
-                <etym xml:lang="en">From <mentioned xml:lang="ar" extralang="fa"><lang/>
+                    сперва в форме %ibærkad%i (через дагестанское посредство, ср. <mentioned xml:id="mentioned_d3486e196" xml:lang="av"><lang/>
+                        <w>barkàt</w></mentioned>), позднее в форме <ref type="xr" target="#entry_bæræḱet"/> | %ibereket%i (через кабардинское посредство, ср.
+                        <mentioned xml:id="mentioned_d3486e203" xml:lang="kbd"><lang/>
+                        <w>baraket</w></mentioned>, <mentioned xml:id="mentioned_d3486e208" xml:lang="kbd"><w>bereket</w></mentioned>). Ср. другие случаи двукратного заимствования
+                    одного и того же слова: <ref type="xr" target="#entry_ærx"/> и <ref type="xr" target="#entry_lawyz"/> и <ref type="xr" target="#entry_lwasi"/> и <ref type="xr" target="#entry_kʼalati"/>.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>93</biblScope></bibl>.</etym>
+                <etym xml:lang="en">From <mentioned xml:id="mentioned_d3486e227" xml:lang="ar" extralang="fa"><lang/>
                         <w>barakat</w>
-                        <gloss><q>abundance</q></gloss></mentioned>, <mentioned xml:lang="ar"
-                        extralang="fa"><w/>
-                        <gloss><q>welfare</q></gloss></mentioned>, <mentioned xml:lang="ar"
-                        extralang="fa"><w/>
-                        <gloss><q>contentment</q></gloss></mentioned>, <mentioned xml:lang="tr"><lang/>
+                        <gloss><q>abundance</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3486e235" xml:lang="ar" extralang="fa"><w/>
+                        <gloss><q>welfare</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3486e241" xml:lang="ar" extralang="fa"><w/>
+                        <gloss><q>contentment</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3486e247" xml:lang="tr"><lang/>
                         <w>barakad</w></mentioned>. The word is widespread all over the Caucasus:
-                        <mentioned xml:lang="ce" extralang="inh"><lang/>
-                        <w>berakat</w></mentioned>, <mentioned xml:lang="ce" extralang="inh"
-                            ><w>bierkat</w></mentioned>, <mentioned xml:lang="av"><lang/>
-                        <w>barkàt</w></mentioned>, <mentioned xml:lang="lbe"><lang/>
-                        <w>baračat</w></mentioned>, <mentioned xml:lang="kbd" extralang="kbd-x-crc"><lang/>
-                        <w>bereket</w></mentioned>, <mentioned xml:lang="kbd" extralang="kbd-x-crc"
-                            ><w>baraket</w></mentioned>, <mentioned xml:lang="ka"><lang/>
+                        <mentioned xml:id="mentioned_d3486e252" xml:lang="ce" extralang="inh"><lang/>
+                        <w>berakat</w></mentioned>, <mentioned xml:id="mentioned_d3486e258" xml:lang="ce" extralang="inh"><w>bierkat</w></mentioned>, <mentioned xml:id="mentioned_d3486e261" xml:lang="av"><lang/>
+                        <w>barkàt</w></mentioned>, <mentioned xml:id="mentioned_d3486e266" xml:lang="lbe"><lang/>
+                        <w>baračat</w></mentioned>, <mentioned xml:id="mentioned_d3486e271" xml:lang="kbd" extralang="kbd-x-crc"><lang/>
+                        <w>bereket</w></mentioned>, <mentioned xml:id="mentioned_d3486e276" xml:lang="kbd" extralang="kbd-x-crc"><w>baraket</w></mentioned>, <mentioned xml:id="mentioned_d3486e279" xml:lang="ka"><lang/>
                         <w>baraka</w></mentioned>. The word was borrowed in Ossetic twice: firstly,
-                    in the form %ibærkad%i (through Dagestan, cf. <mentioned xml:lang="av"><lang/>
-                        <w>barkàt</w></mentioned>), later in the form <ref type="xr"
-                        target="#entry_bæræḱet"/> | %ibereket%i (through Kabardian, cf. <mentioned
-                        xml:lang="kbd"><lang/>
-                        <w>baraket</w></mentioned>, <mentioned xml:lang="kbd"
-                        ><w>bereket</w></mentioned>). Cf. other cases of double borrowing of the
-                    same word: <ref type="xr" target="#entry_ærx"/> and <ref type="xr"
-                        target="#entry_lawyz"/> and <ref type="xr" target="#entry_lwasi"/> and <ref
-                        type="xr" target="#entry_kʼalati"/>.%n<bibl><ref type="bibl"
-                            target="#ref_ОЯФ_I"/><biblScope>93</biblScope></bibl>.</etym>
+                    in the form %ibærkad%i (through Dagestan, cf. <mentioned xml:id="mentioned_d3486e285" xml:lang="av"><lang/>
+                        <w>barkàt</w></mentioned>), later in the form <ref type="xr" target="#entry_bæræḱet"/> | %ibereket%i (through Kabardian, cf. <mentioned xml:id="mentioned_d3486e292" xml:lang="kbd"><lang/>
+                        <w>baraket</w></mentioned>, <mentioned xml:id="mentioned_d3486e297" xml:lang="kbd"><w>bereket</w></mentioned>). Cf. other cases of double borrowing of the
+                    same word: <ref type="xr" target="#entry_ærx"/> and <ref type="xr" target="#entry_lawyz"/> and <ref type="xr" target="#entry_lwasi"/> and <ref type="xr" target="#entry_kʼalati"/>.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>93</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

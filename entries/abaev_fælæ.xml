@@ -1,38 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">fælæ</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_fælæ" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>fælæ</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>fal</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d3471e72"><sense xml:id="sense_d3471e73"><abv:tr xml:lang="ru">
                             <q>но</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>but</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d3471e82"><abv:tr xml:lang="ru">
                             <q>однако</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>however</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d3471e94">
                         <quote>færæt cyrǧ ū, fælæ arx dær qæbær ū</quote>
                         <abv:tr xml:lang="ru">
                             <q>топор остер, но и сук крепок</q>
@@ -40,10 +45,9 @@
                         <abv:tr xml:lang="en">
                             <q>the axe is sharp, but the branch is strong</q>
                         </abv:tr>
-                        <bibl><biblScope xml:lang="ru">поговорка</biblScope><biblScope xml:lang="en"
-                                >saying</biblScope></bibl>
+                        <bibl><biblScope xml:lang="ru">поговорка</biblScope><biblScope xml:lang="en">saying</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3471e115">
                         <quote>fælæ …cy gænæn īs</quote>
                         <abv:tr xml:lang="ru">
                             <q>но… что делать?</q>
@@ -51,10 +55,9 @@
                         <abv:tr xml:lang="en">
                             <q>but… what to do?</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"
-                            /><biblScope>140</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>140</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d3471e134" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>duwwæ xestær kizgi Asægoj æmbalti raburli kodtoncæ, fal kæstær ba
                             maʒal næ irdta Asægojæn</quote>
@@ -66,10 +69,9 @@
                             <q>the two older girls overpowered Asago's comrades, but the youngest
                                 could not do anything about Asago</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>9%l9–10%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>9%l9–10%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d3471e156" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>fal ci ʽnkʼard æj Fælværaj furt?</quote>
                         <abv:tr xml:lang="ru">
@@ -81,44 +83,38 @@
                         <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>48</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Соответствует <mentioned xml:lang="sa"><lang/>
+                <etym xml:lang="ru">Соответствует <mentioned xml:id="mentioned_d3471e181" xml:lang="sa"><lang/>
                         <w>param</w>
-                        <gloss><q>но</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
-                        <gloss><q>однако</q></gloss></mentioned>: <mentioned xml:lang="sa"><lang/>
+                        <gloss><q>но</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3471e189" xml:lang="sa"><w/>
+                        <gloss><q>однако</q></gloss></mentioned>: <mentioned xml:id="mentioned_d3471e195" xml:lang="sa"><lang/>
                         <w>na — param</w>
                         <gloss><q>не — но</q></gloss></mentioned> = ос. %inæ%i — %ifælæ%i;
-                        <mentioned xml:lang="sog"><lang/>
+                        <mentioned xml:id="mentioned_d3471e203" xml:lang="sog"><lang/>
                         <w>p’r-</w>
-                        <gloss><q>но</q></gloss></mentioned>; ср. также <mentioned xml:lang="grc"><lang/>
+                        <gloss><q>но</q></gloss></mentioned>; ср. также <mentioned xml:id="mentioned_d3471e211" xml:lang="grc"><lang/>
                         <w>περ</w><note type="comment" xml:lang="ru"> (энкл.)</note>
-                        <gloss><q>же</q></gloss></mentioned>, <mentioned xml:lang="grc"><w/>
-                        <gloss><q>однако</q></gloss></mentioned>, <mentioned xml:lang="grc"
-                            ><w>πέρα</w>
-                        <gloss><q>сверх</q></gloss></mentioned>, <mentioned xml:lang="grc"><w/>
+                        <gloss><q>же</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3471e222" xml:lang="grc"><w/>
+                        <gloss><q>однако</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3471e228" xml:lang="grc"><w>πέρα</w>
+                        <gloss><q>сверх</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3471e234" xml:lang="grc"><w/>
                         <gloss><q>сверх того</q></gloss></mentioned>. Исходное значение ‘по ту
                     сторону’, ‘дальше’ рассмотрено под <ref type="xr" target="#entry_fal-"/>,
-                    %ifalæ%i ‘за’, ‘по ту сторону’.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>III
+                    %ifalæ%i ‘за’, ‘по ту сторону’.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>III
                     169</biblScope></bibl>.</etym>
-                <etym xml:lang="en">It corresponds with <mentioned xml:lang="sa"><lang/>
+                <etym xml:lang="en">It corresponds with <mentioned xml:id="mentioned_d3471e250" xml:lang="sa"><lang/>
                         <w>param</w>
-                        <gloss><q>but</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
-                        <gloss><q>however</q></gloss></mentioned>: <mentioned xml:lang="sa"><lang/>
+                        <gloss><q>but</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3471e258" xml:lang="sa"><w/>
+                        <gloss><q>however</q></gloss></mentioned>: <mentioned xml:id="mentioned_d3471e264" xml:lang="sa"><lang/>
                         <w>na — param</w>
                         <gloss><q>not — but</q></gloss></mentioned> = Ossetic %inæ%i — %ifælæ%i;
-                        <mentioned xml:lang="sog"><lang/>
+                        <mentioned xml:id="mentioned_d3471e272" xml:lang="sog"><lang/>
                         <w>p’r-</w>
-                        <gloss><q>but</q></gloss></mentioned>; cf. also <mentioned xml:lang="grc"><lang/>
-                        <w>περ</w><note
-                            type="comment" xml:lang="en"> (enclitic)</note>
-                        <gloss><q>but</q></gloss></mentioned>, <mentioned xml:lang="grc"><w/>
-                        <gloss><q>however</q></gloss></mentioned>, <mentioned xml:lang="grc"
-                            ><w>πέρα</w>
-                        <gloss><q>besides</q></gloss></mentioned>, <mentioned xml:lang="grc"><w/>
+                        <gloss><q>but</q></gloss></mentioned>; cf. also <mentioned xml:id="mentioned_d3471e280" xml:lang="grc"><lang/>
+                        <w>περ</w><note type="comment" xml:lang="en"> (enclitic)</note>
+                        <gloss><q>but</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3471e291" xml:lang="grc"><w/>
+                        <gloss><q>however</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3471e297" xml:lang="grc"><w>πέρα</w>
+                        <gloss><q>besides</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3471e303" xml:lang="grc"><w/>
                         <gloss><q>besides that</q></gloss></mentioned>. The initial meaning ‘on the
-                    other side’, ‘farther’ is considered under <ref type="xr" target="#entry_fal-"
-                    />, %ifalæ%i ‘behind’, ‘on the other side’.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>III
+                    other side’, ‘farther’ is considered under <ref type="xr" target="#entry_fal-"/>, %ifalæ%i ‘behind’, ‘on the other side’.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>III
                     169</biblScope></bibl>.</etym>
             </entry>
         </body>

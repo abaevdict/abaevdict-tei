@@ -1,34 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">boǧ</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_boǧ" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>boǧ</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>boǧa</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d953e72"><abv:tr xml:lang="ru">
                         <q>бугай</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>bull</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d953e84">
                         <quote>boǧy kast kæny</quote>
                         <abv:tr xml:lang="ru">
                             <q>смотрит, как бугай</q>
@@ -37,7 +42,7 @@
                             <q>[s/he] is looking in a bull's way</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d953e99" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>kolxoz balxædta duwwæ ævzong boǧaj ærtæ minemæj</quote>
                         <abv:tr xml:lang="ru">
@@ -46,10 +51,9 @@
                         <abv:tr xml:lang="en">
                             <q>the collective farm bought two young bulls for three thousand</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_SD"
-                            /><biblScope>280%l3%ls</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_SD"/><biblScope>280%l3%ls</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d953e121" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>læǧuz boǧati ʒæbæx kænun ǧæwuj</quote>
                         <abv:tr xml:lang="ru">
@@ -62,51 +66,39 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Тюрко-монгольское слово, проникшее и в другие языки: русский,
-                    украинский, персидский, кавказские. Ср. <mentioned xml:lang="tr"><lang/>
-                        <note type="comment" xml:lang="ru">(анат.) </note><w>buǧa</w></mentioned>, <mentioned
-                        xml:lang="aze" extralang="tt-x-kazan"><lang/>
-                        <w>buǧa</w></mentioned>, <mentioned xml:lang="kum" extralang="nog"><lang/>
-                        <w>boǧa</w></mentioned>, <mentioned xml:lang="alt" extralang="ug-x-kashgar"><lang/>
-                        <w>buka</w></mentioned>, <mentioned xml:lang="mn"><lang/>
-                        <w>buka</w></mentioned>. Сюда же <mentioned xml:lang="ru"><lang/>
-                        <note type="comment" xml:lang="ru">(южн.) </note><w>бугай</w></mentioned>, <mentioned
-                        xml:lang="uk"><lang/>
-                        <w>бугай</w></mentioned>, а также <mentioned xml:lang="ru"><lang/>
-                        <w>бык</w></mentioned>. На кавказской почве: <mentioned xml:lang="ka"><lang/>
-                        <w>buǧa</w></mentioned>, <mentioned xml:lang="av" extralang="lbe dar"><lang/>
-                        <w>buǧa</w></mentioned>, <mentioned xml:lang="inh"><lang/>
-                        <w>buǧæ</w></mentioned>, <mentioned xml:lang="uby"><lang/>
-                        <w>buǧu</w></mentioned>, <mentioned xml:lang="ady-x-shpsg"><lang/>
-                        <w>bugho</w></mentioned> и др. Ср. <ref type="xr" target="#entry_boqqwyr"
-                            />.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>III
-                            13</biblScope></bibl>; <bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._Gr."/><biblScope>8</biblScope></bibl>. —
-                            <bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                        /><biblScope>84</biblScope></bibl>.</etym>
+                    украинский, персидский, кавказские. Ср. <mentioned xml:id="mentioned_d953e146" xml:lang="tr"><lang/>
+                        <note type="comment" xml:lang="ru">(анат.) </note><w>buǧa</w></mentioned>, <mentioned xml:id="mentioned_d953e153" xml:lang="aze" extralang="tt-x-kazan"><lang/>
+                        <w>buǧa</w></mentioned>, <mentioned xml:id="mentioned_d953e158" xml:lang="kum" extralang="nog"><lang/>
+                        <w>boǧa</w></mentioned>, <mentioned xml:id="mentioned_d953e163" xml:lang="alt" extralang="ug-x-kashgar"><lang/>
+                        <w>buka</w></mentioned>, <mentioned xml:id="mentioned_d953e168" xml:lang="mn"><lang/>
+                        <w>buka</w></mentioned>. Сюда же <mentioned xml:id="mentioned_d953e174" xml:lang="ru"><lang/>
+                        <note type="comment" xml:lang="ru">(южн.) </note><w>бугай</w></mentioned>, <mentioned xml:id="mentioned_d953e181" xml:lang="uk"><lang/>
+                        <w>бугай</w></mentioned>, а также <mentioned xml:id="mentioned_d953e186" xml:lang="ru"><lang/>
+                        <w>бык</w></mentioned>. На кавказской почве: <mentioned xml:id="mentioned_d953e191" xml:lang="ka"><lang/>
+                        <w>buǧa</w></mentioned>, <mentioned xml:id="mentioned_d953e196" xml:lang="av" extralang="lbe dar"><lang/>
+                        <w>buǧa</w></mentioned>, <mentioned xml:id="mentioned_d953e201" xml:lang="inh"><lang/>
+                        <w>buǧæ</w></mentioned>, <mentioned xml:id="mentioned_d953e207" xml:lang="uby"><lang/>
+                        <w>buǧu</w></mentioned>, <mentioned xml:id="mentioned_d953e212" xml:lang="ady-x-shpsg"><lang/>
+                        <w>bugho</w></mentioned> и др. Ср. <ref type="xr" target="#entry_boqqwyr"/>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>III
+                            13</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>8</biblScope></bibl>. —
+                            <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>84</biblScope></bibl>.</etym>
                 <etym xml:lang="en">A Turkic-Mongolian word which came in other languages as well:
-                    Russian, Ukranian, Persian, Caucasian languages. Cf. <mentioned xml:lang="tr"><lang/>
-                        <note type="comment"
-                            xml:lang="en">(Anatolian) </note><w>buǧa</w></mentioned>, <mentioned
-                        xml:lang="aze" extralang="tt-x-kazan"><lang/>
-                        <w>buǧa</w></mentioned>, <mentioned xml:lang="kum" extralang="nog"><lang/>
-                        <w>boǧa</w></mentioned>, <mentioned xml:lang="alt" extralang="ug-x-kashgar"><lang/>
-                        <w>buka</w></mentioned>, <mentioned xml:lang="mn"><lang/>
-                        <w>buka</w></mentioned>. Also here <mentioned xml:lang="ru"><lang/>
-                        <note type="comment"
-                            xml:lang="en">(Southern) </note><w>bugaj</w></mentioned>, <mentioned
-                        xml:lang="uk"><lang/>
-                        <w>buhaj</w></mentioned>, and also <mentioned xml:lang="ru"><lang/>
-                        <w>byk</w></mentioned>. In Caucasian languages: <mentioned xml:lang="ka"><lang/>
-                        <w>buǧa</w></mentioned>, <mentioned xml:lang="av" extralang="lbe dar"><lang/>
-                        <w>buǧa</w></mentioned>, <mentioned xml:lang="inh"><lang/>
-                        <w>buǧæ</w></mentioned>, <mentioned xml:lang="uby"><lang/>
-                        <w>buǧu</w></mentioned>, <mentioned xml:lang="ady-x-shpsg"><lang/>
-                        <w>bugho</w></mentioned> etc. Cf. <ref type="xr" target="#entry_boqqwyr"
-                            />.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>III
-                            13</biblScope></bibl>; <bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._Gr."/><biblScope>8</biblScope></bibl>. —
-                            <bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                        /><biblScope>84</biblScope></bibl>.</etym>
+                    Russian, Ukranian, Persian, Caucasian languages. Cf. <mentioned xml:id="mentioned_d953e235" xml:lang="tr"><lang/>
+                        <note type="comment" xml:lang="en">(Anatolian) </note><w>buǧa</w></mentioned>, <mentioned xml:id="mentioned_d953e242" xml:lang="aze" extralang="tt-x-kazan"><lang/>
+                        <w>buǧa</w></mentioned>, <mentioned xml:id="mentioned_d953e247" xml:lang="kum" extralang="nog"><lang/>
+                        <w>boǧa</w></mentioned>, <mentioned xml:id="mentioned_d953e252" xml:lang="alt" extralang="ug-x-kashgar"><lang/>
+                        <w>buka</w></mentioned>, <mentioned xml:id="mentioned_d953e257" xml:lang="mn"><lang/>
+                        <w>buka</w></mentioned>. Also here <mentioned xml:id="mentioned_d953e263" xml:lang="ru"><lang/>
+                        <note type="comment" xml:lang="en">(Southern) </note><w>bugaj</w></mentioned>, <mentioned xml:id="mentioned_d953e270" xml:lang="uk"><lang/>
+                        <w>buhaj</w></mentioned>, and also <mentioned xml:id="mentioned_d953e275" xml:lang="ru"><lang/>
+                        <w>byk</w></mentioned>. In Caucasian languages: <mentioned xml:id="mentioned_d953e280" xml:lang="ka"><lang/>
+                        <w>buǧa</w></mentioned>, <mentioned xml:id="mentioned_d953e285" xml:lang="av" extralang="lbe dar"><lang/>
+                        <w>buǧa</w></mentioned>, <mentioned xml:id="mentioned_d953e290" xml:lang="inh"><lang/>
+                        <w>buǧæ</w></mentioned>, <mentioned xml:id="mentioned_d953e296" xml:lang="uby"><lang/>
+                        <w>buǧu</w></mentioned>, <mentioned xml:id="mentioned_d953e301" xml:lang="ady-x-shpsg"><lang/>
+                        <w>bugho</w></mentioned> etc. Cf. <ref type="xr" target="#entry_boqqwyr"/>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>III
+                            13</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>8</biblScope></bibl>. —
+                            <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>84</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

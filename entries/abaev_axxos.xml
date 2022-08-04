@@ -1,46 +1,51 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">axxos</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_axxos" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>axxos</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>anxos</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d2107e72"><sense xml:id="sense_d2107e73"><abv:tr xml:lang="ru">
                             <q>вина</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>guilt</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d2107e82"><abv:tr xml:lang="ru">
                             <q>причина</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>cause</q>
                         </abv:tr></sense></sense>
-                <re>
+                <re xml:id="re_d2107e92">
                     <form type="lemma"><orth>axxos kænyn</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d2107e97"><abv:tr xml:lang="ru">
                             <q>обвинять</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>blame (v.)</q>
                         </abv:tr></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d2107e110">
                         <quote>ænæ axxosæj</quote>
                         <abv:tr xml:lang="ru">
                             <q>без вины</q>
@@ -50,7 +55,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>49</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2107e129">
                         <quote>m’axxos næ wyd</quote>
                         <abv:tr xml:lang="ru">
                             <q>не моя была вина</q>
@@ -58,10 +63,9 @@
                         <abv:tr xml:lang="en">
                             <q>it was not my fault</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Munk."
-                            /><biblScope>122</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Munk."/><biblScope>122</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d2107e148" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>anxos in æj</quote>
                         <abv:tr xml:lang="ru">
@@ -70,10 +74,9 @@
                         <abv:tr xml:lang="en">
                             <q>his diseased is caused by the evil force</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Bes._Ka_ke"
-                            /><biblScope>27</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Bes._Ka_ke"/><biblScope>27</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d2107e170" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>næ ǧæwagi — anxosgænæg</quote>
                         <abv:tr xml:lang="ru">
@@ -86,27 +89,23 @@
                             вместо %iænxusgænæg%i, то %ianxos%i могло значить также ‘помощь’)</note>
                         <note type="comment" xml:lang="en"> (if %ianxosgænæg%i here is not a typo
                             instead of %iænxusgænæg%i, then %ianxos%i could also mean ‘help’)</note>
-                        <bibl><ref type="bibl" target="#src_Gurdž._Wadž."
-                            /><biblScope>22</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Gurdž._Wadž."/><biblScope>22</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Может быть, из %iа%i + %iæm%i + %ikos%i, где %ikos%i — ‘работа’
                     (см. <ref type="xr" target="#entry_kūsyn"/> | %ikosun%i). Семантика не
                     препятствует такому разъяснению; ‘вина’ рассматривается как активное действие,
-                    как ‘работа’ („его вина“ = „его работа“), ср. <mentioned xml:lang="kbd"><lang/>
+                    как ‘работа’ („его вина“ = „его работа“), ср. <mentioned xml:id="mentioned_d2107e205" xml:lang="kbd"><lang/>
                         <w>laźä</w>
-                        <gloss><q>работа</q></gloss></mentioned> → ‘вина’ (→ д. <ref type="xr"
-                        target="#entry_laz"><w>lazæ</w></ref> ‘вина’). По огласовке иронская форма с
-                    %iо%i (вместо ожидаемого %iū%i) должна рассматриваться как „дигоризм“; ср. <ref
-                        type="xr" target="#entry_æxx0ys"/> | %iænxus%i ‘помощь’ из
+                        <gloss><q>работа</q></gloss></mentioned> → ‘вина’ (→ д. <ref type="xr" target="#entry_laz"><w>lazæ</w></ref> ‘вина’). По огласовке иронская форма с
+                    %iо%i (вместо ожидаемого %iū%i) должна рассматриваться как „дигоризм“; ср. <ref type="xr" target="#entry_æxx0ys"/> | %iænxus%i ‘помощь’ из
                     %i*æm-kus%i.</etym>
                 <etym xml:lang="en">Perhaps, from %iа%i + %iæm%i + %ikos%i, where %ikos%i is ‘work’
                     (cf. <ref type="xr" target="#entry_kūsyn"/> | %ikosun%i). The semantics does not
                     preclude such clarification; ‘guilt’ is seen as an active action, as ‘work’
-                    (“his guilt” = “his work”), cf. <mentioned xml:lang="kbd"><lang/>
+                    (“his guilt” = “his work”), cf. <mentioned xml:id="mentioned_d2107e223" xml:lang="kbd"><lang/>
                         <w>laźä</w>
-                        <gloss><q>работа</q></gloss></mentioned> → ‘guilt’ (→ Digor <ref type="xr"
-                        target="#entry_laz"><w>lazæ</w></ref> ‘guilt’). Considering the vocalism,
+                        <gloss><q>работа</q></gloss></mentioned> → ‘guilt’ (→ Digor <ref type="xr" target="#entry_laz"><w>lazæ</w></ref> ‘guilt’). Considering the vocalism,
                     the Iron form %iо%i (instead of expected %iū%i) must be regarded as a
                     “Digorism”; cf. <ref type="xr" target="#entry_æxx0ys"/> | %iænxus%i ‘help’ from
                     %i*æm-kus%i.</etym>

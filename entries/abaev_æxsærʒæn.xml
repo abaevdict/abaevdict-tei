@@ -1,33 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">æxsærʒæn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_æxsærʒæn" xml:lang="os">
                 <form type="lemma"><orth>æxsærʒæn</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d1026e69"><abv:tr xml:lang="ru">
                         <q>водопад</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>waterfall</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d1026e81">
                         <quote>don kæly jæ ræzty ūrs æxsærʒæntæj</quote>
                         <abv:tr xml:lang="ru">
                             <q>река льется перед ним белыми водопадами</q>
@@ -37,7 +42,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>63</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1026e100">
                         <quote>æxsærʒæny qazt</quote>
                         <abv:tr xml:lang="ru">
                             <q>игра водопада</q>
@@ -47,7 +52,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>49</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1026e119">
                         <quote>bylæj ajnægmæ — gæpp! aftæ zǧory æxsærʒæn</quote>
                         <abv:tr xml:lang="ru">
                             <q>с обрыва на утес — прыг! так бежит водопад</q>
@@ -58,7 +63,7 @@
                         </abv:tr>
                         <bibl><biblScope>%sЦомак%s 64</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1026e137">
                         <quote>ūrs fynk kalgæ sæx-sæxgængæ kommæ xawync æxsærʒæntæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>разбрасывая белую пену, с шумом низвергаются в ущелье водопады</q>
@@ -66,73 +71,63 @@
                         <abv:tr xml:lang="en">
                             <q>waterfalls are rushing down with noise and scattering white foam</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Хар._Кадӕг"
-                            /><biblScope>58</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Хар._Кадӕг"/><biblScope>58</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Перебой из *%iæf%i-%isærʒæn%i, как <ref type="xr"
-                        target="#entry_æxsærfars"/> ‘щека’ из *%iæfsærfars%i. В первой части %iæf%i-
+                <etym xml:lang="ru">Перебой из *%iæf%i-%isærʒæn%i, как <ref type="xr" target="#entry_æxsærfars"/> ‘щека’ из *%iæfsærfars%i. В первой части %iæf%i-
                     из %iāр%i- ‘вода’ с ослаблением гласного в сложении. Во второй части — не
                     сохранившийся самостоятельно глагол *%isærʒ%i- ‘литься’, ‘падать’; ср.
-                        <mentioned xml:lang="sa"><lang/>
-                        <w>sarǰ</w></mentioned>, <mentioned xml:lang="sa"><w>sṛǰ</w>
-                        <gloss><q>лить</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
-                        <gloss><q>давать течь</q></gloss></mentioned>, <mentioned xml:lang="ae"><lang/>
+                        <mentioned xml:id="mentioned_d1026e161" xml:lang="sa"><lang/>
+                        <w>sarǰ</w></mentioned>, <mentioned xml:id="mentioned_d1026e166" xml:lang="sa"><w>sṛǰ</w>
+                        <gloss><q>лить</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1026e172" xml:lang="sa"><w/>
+                        <gloss><q>давать течь</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1026e178" xml:lang="ae"><lang/>
                         <w>harəč-</w>
-                        <gloss><q>давать падать</q></gloss></mentioned>, <mentioned xml:lang="ae"
-                            ><w>harəz-</w>
-                        <gloss><q>лить</q></gloss></mentioned>, <mentioned xml:lang="gmh"><lang/>
+                        <gloss><q>давать падать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1026e187" xml:lang="ae"><w>harəz-</w>
+                        <gloss><q>лить</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1026e193" xml:lang="gmh"><lang/>
                         <w>selken</w>
                         <gloss><q>падать (о жидкости)</q></gloss></mentioned>. Стало быть,
                     %iæxsærʒæn%i из *%iāp-sarjana%i-→*%iāfšārjana%i-. Сохранение %is%i после
                     %ix%i(%if%i) без обычного иранского перебоя → %ih%i говорит о том, что мы имеем
-                    дело с очень старым сложным словом; ср. сохранение %is%i в <ref type="xr"
-                        target="#entry_æfsnajyn"/> рядом с <ref type="xr" target="#entry_najyn"/>.
-                    По образованию ср. <mentioned xml:lang="fa"><lang/>
+                    дело с очень старым сложным словом; ср. сохранение %is%i в <ref type="xr" target="#entry_æfsnajyn"/> рядом с <ref type="xr" target="#entry_najyn"/>.
+                    По образованию ср. <mentioned xml:id="mentioned_d1026e205" xml:lang="fa"><lang/>
                         <w>ābšār</w>
-                        <gloss><q>водопад</q></gloss></mentioned> из <mentioned xml:lang="fa"><lang/>
+                        <gloss><q>водопад</q></gloss></mentioned> из <mentioned xml:id="mentioned_d1026e213" xml:lang="fa"><lang/>
                         <w>āb</w>
-                        <gloss><q>вода</q></gloss></mentioned> и <mentioned xml:lang="fa"><lang/>
-                        <w>šār</w></mentioned> (от <mentioned xml:lang="fa"><lang/>
+                        <gloss><q>вода</q></gloss></mentioned> и <mentioned xml:id="mentioned_d1026e222" xml:lang="fa"><lang/>
+                        <w>šār</w></mentioned> (от <mentioned xml:id="mentioned_d1026e227" xml:lang="fa"><lang/>
                         <w>šarīdan</w>
                         <gloss><q>шумно течь</q></gloss></mentioned>). Перебой %ifš%i →
-                    %ixš%i(%ikṣ%i) наблюдается также в сакском, например <mentioned xml:lang="kho"><lang/>
-                        <w>kṣārma</w></mentioned> из <mentioned xml:lang="kho"><lang/>
+                    %ixš%i(%ikṣ%i) наблюдается также в сакском, например <mentioned xml:id="mentioned_d1026e235" xml:lang="kho"><lang/>
+                        <w>kṣārma</w></mentioned> из <mentioned xml:id="mentioned_d1026e240" xml:lang="kho"><lang/>
                         <w>*fšarma</w>
-                        <gloss><q>стыд</q></gloss></mentioned>, ос. <ref type="xr"
-                        target="#entry_7fsarm"/>.</etym>
-                <etym xml:lang="en">It is a version of *%iæf%i-%isærʒæn%i, like <ref type="xr"
-                        target="#entry_æxsærfars"/> ‘cheek’ from *%iæfsærfars%i. In the first part
+                        <gloss><q>стыд</q></gloss></mentioned>, ос. <ref type="xr" target="#entry_7fsarm"/>.</etym>
+                <etym xml:lang="en">It is a version of *%iæf%i-%isærʒæn%i, like <ref type="xr" target="#entry_æxsærfars"/> ‘cheek’ from *%iæfsærfars%i. In the first part
                     there is %iæf%i- from %iāр%i- ‘water’ with the weakening of the vowel in a
                     complex word. In the second part there is the verb*%isærʒ%i- ‘poor’, ‘fall’
-                    which did not remain as a seperate verb; cf. <mentioned xml:lang="sa"><lang/>
-                        <w>sarǰ</w></mentioned>, <mentioned xml:lang="sa"><w>sṛǰ</w>
-                        <gloss><q>poor</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
-                        <gloss><q>let flow</q></gloss></mentioned>, <mentioned xml:lang="ae"><lang/>
+                    which did not remain as a seperate verb; cf. <mentioned xml:id="mentioned_d1026e255" xml:lang="sa"><lang/>
+                        <w>sarǰ</w></mentioned>, <mentioned xml:id="mentioned_d1026e260" xml:lang="sa"><w>sṛǰ</w>
+                        <gloss><q>poor</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1026e266" xml:lang="sa"><w/>
+                        <gloss><q>let flow</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1026e272" xml:lang="ae"><lang/>
                         <w>harəč-</w>
-                        <gloss><q>let fall</q></gloss></mentioned>, <mentioned xml:lang="ae"
-                            ><w>harəz-</w>
-                        <gloss><q>poor</q></gloss></mentioned>, <mentioned xml:lang="gmh"><lang/>
+                        <gloss><q>let fall</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1026e281" xml:lang="ae"><w>harəz-</w>
+                        <gloss><q>poor</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1026e287" xml:lang="gmh"><lang/>
                         <w>selken</w>
                         <gloss><q>fall (of liquid)</q></gloss></mentioned>. Thus, %iæxsærʒæn%i is
                     from *%iāp-sarjana%i- →*%iāfšārjana%i-. The presence of %is%i after %ix%i(%if%i)
                     without a usual Iranian change → %ih%i tells that we are dealing with a very old
-                    complex word; cf. the presence of %is%i in <ref type="xr"
-                        target="#entry_æfsnajyn"/> near <ref type="xr" target="#entry_najyn"/>. By
-                    the derivation, cf. <mentioned xml:lang="fa"><lang/>
+                    complex word; cf. the presence of %is%i in <ref type="xr" target="#entry_æfsnajyn"/> near <ref type="xr" target="#entry_najyn"/>. By
+                    the derivation, cf. <mentioned xml:id="mentioned_d1026e299" xml:lang="fa"><lang/>
                         <w>ābšār</w>
-                        <gloss><q>waterfall</q></gloss></mentioned> from <mentioned xml:lang="fa"><lang/>
+                        <gloss><q>waterfall</q></gloss></mentioned> from <mentioned xml:id="mentioned_d1026e307" xml:lang="fa"><lang/>
                         <w>āb</w>
-                        <gloss><q>water</q></gloss></mentioned> and <mentioned xml:lang="fa"><lang/>
-                        <w>šār</w></mentioned> (from <mentioned xml:lang="fa"><lang/>
+                        <gloss><q>water</q></gloss></mentioned> and <mentioned xml:id="mentioned_d1026e316" xml:lang="fa"><lang/>
+                        <w>šār</w></mentioned> (from <mentioned xml:id="mentioned_d1026e321" xml:lang="fa"><lang/>
                         <w>šarīdan</w>
                         <gloss><q>flow noisily</q></gloss></mentioned>). The change %ifš%i →
-                    %ixš%i(%ikṣ%i) is observed also in Khotanese, for example <mentioned
-                        xml:lang="kho"><lang/>
-                        <w>kṣārma</w></mentioned> from <mentioned xml:lang="kho"><lang/>
+                    %ixš%i(%ikṣ%i) is observed also in Khotanese, for example <mentioned xml:id="mentioned_d1026e329" xml:lang="kho"><lang/>
+                        <w>kṣārma</w></mentioned> from <mentioned xml:id="mentioned_d1026e334" xml:lang="kho"><lang/>
                         <w>*fšarma</w>
-                        <gloss><q>shame</q></gloss></mentioned>, Ossetic <ref type="xr"
-                        target="#entry_7fsarm"/>.</etym>
+                        <gloss><q>shame</q></gloss></mentioned>, Ossetic <ref type="xr" target="#entry_7fsarm"/>.</etym>
             </entry>
         </body>
     </text>

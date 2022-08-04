@@ -1,38 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">kʼærta</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_kʼærta" xml:lang="os-x-iron">
                 <form type="lemma"><orth>kʼærta</orth></form>
                 <usg><lang/></usg>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d4889e72"><sense xml:id="sense_d4889e73"><abv:tr xml:lang="ru">
                             <q>деревянное ведро</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>wooden bucket</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d4889e82"><abv:tr xml:lang="ru">
                             <q>подойник</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>milk-pail</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4889e94">
                         <quote>gas kʼærtajy ʒag yl karz axsæn askʼæry</quote>
                         <abv:tr xml:lang="ru">
                             <q>выливает на него (молоко) целое ведро крепкой сычужной массы</q>
@@ -42,7 +47,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>74</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4889e113">
                         <quote>zævætæj mæ axæm qug nyccævæd æmæ dyǧdæn kʼærtajy ʒag ḱī kæny</quote>
                         <abv:tr xml:lang="ru">
                             <q>пусть меня лягнет такая корова, которая в (один) удой дает ведро
@@ -52,10 +57,9 @@
                             <q>let such a cow kick me that in (one) milk yield gives a bucket (of
                                 milk)</q>
                         </abv:tr>
-                        <bibl><biblScope xml:lang="ru">поговорка</biblScope><biblScope xml:lang="en"
-                                >saying</biblScope></bibl>
+                        <bibl><biblScope xml:lang="ru">поговорка</biblScope><biblScope xml:lang="en">saying</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4889e134">
                         <quote>mænæn ænæbyn kʼærtajy fænyk akænūt æmæ ūwyl abadǯynæn</quote>
                         <abv:tr xml:lang="ru">
                             <q>для меня наполните золой ведро без дна, и на нем я посижу</q>
@@ -66,7 +70,7 @@
                         <bibl><ref type="bibl" target="#src_ЮОПам."/><biblScope>I
                             174</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4889e153">
                         <quote>kʼærtajæ kalægaw wary</quote>
                         <abv:tr xml:lang="ru">
                             <q>дождь льет как из ведра</q>
@@ -75,7 +79,7 @@
                             <q>it is raining cats and dogs</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4889e168">
                         <quote>binontæ īwyldær fos dūcynyl nyllæwydysty; alkæmæn jæ kʼærta jæ razy
                             æxsyræj ūrs tanqa xasta</quote>
                         <abv:tr xml:lang="ru">
@@ -90,17 +94,17 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Происхождение не известно. Ничего не дает сопоставление с
-                        <mentioned xml:lang="ps"><lang/>
+                        <mentioned xml:id="mentioned_d4889e190" xml:lang="ps"><lang/>
                         <w>kāra</w>
                         <gloss><q>большой деревянный сосуд</q></gloss></mentioned>. Мало вероятна
-                    также связь c <mentioned xml:lang="grc"><lang/>
+                    также связь c <mentioned xml:id="mentioned_d4889e198" xml:lang="grc"><lang/>
                         <w>κάρταλος</w>
                         <gloss><q>корзина</q></gloss></mentioned>.</etym>
                 <etym xml:lang="en">The origin is not clear. Nothing comes of the comparison with
-                        <mentioned xml:lang="ps"><lang/>
+                        <mentioned xml:id="mentioned_d4889e210" xml:lang="ps"><lang/>
                         <w>kāra</w>
                         <gloss><q>big wooden vessel</q></gloss></mentioned>. The relation to
-                        <mentioned xml:lang="grc"><lang/>
+                        <mentioned xml:id="mentioned_d4889e218" xml:lang="grc"><lang/>
                         <w>κάρταλος</w>
                         <gloss><q>basket</q></gloss></mentioned> is also improbable.</etym>
             </entry>

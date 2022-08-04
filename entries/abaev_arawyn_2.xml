@@ -1,30 +1,33 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">arawyn_2</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_arawyn_2" n="2" xml:lang="os">
-                <form xml:lang="os-x-iron" type="lemma"><orth>arawyn</orth><form type="participle"
-                            ><orth>aryd</orth></form></form>
-                <form xml:lang="os-x-digor" type="dialectal"><orth>arawun</orth><form
-                        type="participle"><orth>arud</orth></form></form>
-                <sense><abv:tr xml:lang="ru">
+                <form xml:lang="os-x-iron" type="lemma"><orth>arawyn</orth><form type="participle"><orth>aryd</orth></form></form>
+                <form xml:lang="os-x-digor" type="dialectal"><orth>arawun</orth><form type="participle"><orth>arud</orth></form></form>
+                <sense xml:id="sense_d1664e76"><abv:tr xml:lang="ru">
                         <q>оглашать сильным шумом</q>
                     </abv:tr><note type="comment" xml:lang="ru"> (обычно, но не исключительно, про
                         %sэхо%s)</note><note type="comment" xml:lang="en"> (usually, but not
@@ -34,7 +37,7 @@
                         %sэхо%s)</note><note type="comment" xml:lang="en"> (usually, but not
                         exclusively, about %secho%s)</note></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d1664e96">
                         <quote>toppy qæræj… bæstæ arydta</quote>
                         <abv:tr xml:lang="ru">
                             <q>ружейная пальба оглашала всю окрестность</q>
@@ -44,7 +47,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Сека"/><biblScope>9</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1664e115">
                         <quote>syvællætty cʼæxaxstæj kʼæʒæxtæ arydtoj</quote>
                         <abv:tr xml:lang="ru">
                             <q>плач детей оглашал скалы</q>
@@ -54,7 +57,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Сека"/><biblScope>23</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1664e134">
                         <quote>donæn jæ særsæræj arawy kom</quote>
                         <abv:tr xml:lang="ru">
                             <q>шум реки оглашает ущелье</q>
@@ -62,10 +65,9 @@
                         <abv:tr xml:lang="en">
                             <q>the noise of the river resounds through the gorge</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Xar._Zærdæ"
-                            /><biblScope>58</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Xar._Zærdæ"/><biblScope>58</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1664e153">
                         <quote>sæ zaræǵy qær kæmttæ arydta</quote>
                         <abv:tr xml:lang="ru">
                             <q>звуки их песен оглашали ущелья</q>
@@ -76,7 +78,7 @@
                         <bibl><ref type="bibl" target="#src_F."/><biblScope>1957 I
                             9</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d1664e172" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>fæjjaw… ǧær nizzaruj; oj niffænzgæ i zæǧændor xwænxtæ, ǧædtæ
                             niccarawuj</quote>
@@ -89,7 +91,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>41</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d1664e195" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>arudæj bæstæ sæ toppaʒaǧdæj</quote>
                         <abv:tr xml:lang="ru">
@@ -102,49 +104,45 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Старое сращение преверба %iа-%i с основой %irav-%i (%iru-%i)
-                    ‘шуметь’, ‘реветь’; ср. <mentioned xml:lang="sa"><lang/>
+                    ‘шуметь’, ‘реветь’; ср. <mentioned xml:id="mentioned_d1664e220" xml:lang="sa"><lang/>
                         <w>rav-</w>
-                        <gloss><q>реветь</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
-                        <gloss><q>шуметь</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
-                        <gloss><q>греметь</q></gloss></mentioned>, <mentioned xml:lang="sa"
-                            ><w>rāuti, ravati, ruvati</w>
-                        <gloss><q>он ревет</q></gloss></mentioned>, <mentioned xml:lang="ru"><lang/>
-                        <w>реветь</w></mentioned>, <mentioned xml:lang="grc"><lang/>
+                        <gloss><q>реветь</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1664e228" xml:lang="sa"><w/>
+                        <gloss><q>шуметь</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1664e234" xml:lang="sa"><w/>
+                        <gloss><q>греметь</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1664e240" xml:lang="sa"><w>rāuti, ravati, ruvati</w>
+                        <gloss><q>он ревет</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1664e246" xml:lang="ru"><lang/>
+                        <w>реветь</w></mentioned>, <mentioned xml:id="mentioned_d1664e252" xml:lang="grc"><lang/>
                         <w>ωρύομαι</w>
-                        <gloss><q>издавать крик</q></gloss></mentioned>, <mentioned xml:lang="grc"><w/>
-                        <gloss><q>реветь</q></gloss></mentioned>, <mentioned xml:lang="la"><lang/>
+                        <gloss><q>издавать крик</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1664e260" xml:lang="grc"><w/>
+                        <gloss><q>реветь</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1664e266" xml:lang="la"><lang/>
                         <w>rumor</w>
-                        <gloss><q>шум</q></gloss></mentioned>, <mentioned xml:lang="la"><w>ravus</w>
+                        <gloss><q>шум</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1664e274" xml:lang="la"><w>ravus</w>
                         <gloss><q>хриплый</q></gloss></mentioned> и пр.; на иранской почве, может
-                    быть, относятся сюда же <mentioned xml:lang="wbl"><lang/>
-                        <w>varüy- : varoid-</w></mentioned>, <mentioned xml:lang="srh"><lang/>
+                    быть, относятся сюда же <mentioned xml:id="mentioned_d1664e280" xml:lang="wbl"><lang/>
+                        <w>varüy- : varoid-</w></mentioned>, <mentioned xml:id="mentioned_d1664e285" xml:lang="srh"><lang/>
                         <w>varau-: varüd-</w>
-                        <gloss><q>выть</q></gloss></mentioned>, <mentioned xml:lang="srh"><w/>
-                        <gloss><q>лаять</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Shaw"/><biblScope>XLV 225</biblScope></bibl>).</etym>
+                        <gloss><q>выть</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1664e294" xml:lang="srh"><w/>
+                        <gloss><q>лаять</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Shaw"/><biblScope>XLV 225</biblScope></bibl>).</etym>
                 <etym xml:lang="en">The old contraction of the preverb %iа-%i and the stem %irav-%i
-                    (%iru-%i) ‘make noises’, ‘roar’; cf. <mentioned xml:lang="sa"><lang/>
+                    (%iru-%i) ‘make noises’, ‘roar’; cf. <mentioned xml:id="mentioned_d1664e308" xml:lang="sa"><lang/>
                         <w>rav-</w>
-                        <gloss><q>roar</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
-                        <gloss><q>make noises</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
-                        <gloss><q>rattle</q></gloss></mentioned>, <mentioned xml:lang="sa"><w>rāuti,
+                        <gloss><q>roar</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1664e316" xml:lang="sa"><w/>
+                        <gloss><q>make noises</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1664e322" xml:lang="sa"><w/>
+                        <gloss><q>rattle</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1664e328" xml:lang="sa"><w>rāuti,
                             ravati, ruvati</w>
-                        <gloss><q>he is roaring</q></gloss></mentioned>, <mentioned xml:lang="ru"><lang/>
+                        <gloss><q>he is roaring</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1664e334" xml:lang="ru"><lang/>
                         <w>revetʼ</w>
-                        <gloss><q>roar</q></gloss></mentioned>, <mentioned xml:lang="grc"><lang/>
+                        <gloss><q>roar</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1664e343" xml:lang="grc"><lang/>
                         <w>ωρύομαι</w>
-                        <gloss><q>let out a cry</q></gloss></mentioned>, <mentioned xml:lang="grc"><w/>
-                        <gloss><q>roar</q></gloss></mentioned>, <mentioned xml:lang="la"><lang/>
+                        <gloss><q>let out a cry</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1664e351" xml:lang="grc"><w/>
+                        <gloss><q>roar</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1664e357" xml:lang="la"><lang/>
                         <w>rumor</w>
-                        <gloss><q>noise</q></gloss></mentioned>, <mentioned xml:lang="la"
-                            ><w>ravus</w>
+                        <gloss><q>noise</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1664e365" xml:lang="la"><w>ravus</w>
                         <gloss><q>hoarse</q></gloss></mentioned> etc.; as for Iranian languages,
-                    maybe the following words are related to it as well: <mentioned xml:lang="wbl"><lang/>
-                        <w>varüy- : varoid-</w></mentioned>, <mentioned xml:lang="srh"><lang/>
+                    maybe the following words are related to it as well: <mentioned xml:id="mentioned_d1664e371" xml:lang="wbl"><lang/>
+                        <w>varüy- : varoid-</w></mentioned>, <mentioned xml:id="mentioned_d1664e376" xml:lang="srh"><lang/>
                         <w>varau-: varüd-</w>
-                        <gloss><q>howl</q></gloss></mentioned>, <mentioned xml:lang="srh"><w/>
-                        <gloss><q>bark</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Shaw"/><biblScope>XLV 225</biblScope></bibl>).</etym>
+                        <gloss><q>howl</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1664e385" xml:lang="srh"><w/>
+                        <gloss><q>bark</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Shaw"/><biblScope>XLV 225</biblScope></bibl>).</etym>
             </entry>
         </body>
     </text>

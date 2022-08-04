@@ -1,31 +1,35 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">fændyr</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_fændyr" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>fændyr</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>fændur</orth></form>
-                <sense><def xml:lang="ru">название различных музыкальных инструментов</def><def
-                        xml:lang="en">name of various musical instruments</def></sense>
+                <sense xml:id="sense_d4724e72"><def xml:lang="ru">название различных музыкальных инструментов</def><def xml:lang="en">name of various musical instruments</def></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4724e80">
                         <quote>fændyr yskʼaxta bærz byzyḱʼījæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>он выдолбил фандыр из наплыва березы</q>
@@ -35,7 +39,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>48</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4724e99">
                         <quote>arvmæ k˳y q˳ysid mæ fændyry qazt…</quote>
                         <abv:tr xml:lang="ru">
                             <q>если бы игра моего фандыра достигала неба…</q>
@@ -45,7 +49,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>12</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4724e118" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>Acæmæzaw din æz ku festinæ dessag fændurgin</quote>
                         <abv:tr xml:lang="ru">
@@ -58,7 +62,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>28</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4724e140" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>ku ʽrbadtæj læqwæn kʼelabæl, wæd imæ æ xwæræ fændur ravardta: „amæj
                             racæǧdæ” zæǧgæ</quote>
@@ -70,10 +74,9 @@
                             <q>when the young man sat down on the bench, his sister handed him a
                                 fandyr, saying: "play on it"</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>17%l4–5%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>17%l4–5%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4724e162">
                         <quote>fændyr-wadynʒ… agūræg xætyn</quote>
                         <abv:tr xml:lang="ru">
                             <q>я скитаюсь в поисках фандыр-свирели</q>
@@ -86,38 +89,33 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Культурное слово, представляющее значительный исторический
-                    интерес. Свидетельствуется у греческих авторов со II в. н. э.: <mentioned
-                        xml:lang="grc"><lang/>
+                    интерес. Свидетельствуется у греческих авторов со II в. н. э.: <mentioned xml:id="mentioned_d4724e184" xml:lang="grc"><lang/>
                         <w>πανδούρα</w><note type="comment" xml:lang="ru"> (Athenaeus)</note>
                         <gloss><q>трехструнный музыкальный инструмент, тип
-                        лютни</q></gloss></mentioned>, <mentioned xml:lang="grc"
-                            ><w>πάνδουρος</w><note type="comment" xml:lang="ru">
-                            (Athenaeus)</note></mentioned>, <mentioned xml:lang="grc"
-                            ><w>φάνδουρος</w><note type="comment" xml:lang="ru"> (Nicomachus
-                            Gerasenus. Harmonicum Enchiridium 4)</note></mentioned>, <mentioned xml:lang="grc"><w>πανδούριον
+                        лютни</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4724e194" xml:lang="grc"><w>πάνδουρος</w><note type="comment" xml:lang="ru">
+                            (Athenaeus)</note></mentioned>, <mentioned xml:id="mentioned_d4724e199" xml:lang="grc"><w>φάνδουρος</w><note type="comment" xml:lang="ru"> (Nicomachus
+                            Gerasenus. Harmonicum Enchiridium 4)</note></mentioned>, <mentioned xml:id="mentioned_d4724e204" xml:lang="grc"><w>πανδούριον
                             πανδούρίς</w><note type="comment" xml:lang="ru"> (Hesychius)</note></mentioned> . Считают,
-                    что слово идет из Малой Азии, из лидийского языка (<bibl><biblScope
-                            xml:lang="ru">de Lagarde. Gesammelte Abhandlungen. 1866, стр.
+                    что слово идет из Малой Азии, из лидийского языка (<bibl><biblScope xml:lang="ru">de Lagarde. Gesammelte Abhandlungen. 1866, стр.
                             274</biblScope></bibl>). Через греческий прошло в
-                    некоторые европейские языки: <mentioned xml:lang="la"><lang/>
-                        <w>pandura</w></mentioned>, <mentioned xml:lang="it"><lang/>
-                        <w>pandora, mandora</w></mentioned>, <mentioned xml:lang="fr"><lang/>
-                        <w>mandore</w></mentioned> (откуда в дальнейшем <mentioned xml:lang="it"><lang/>
-                        <w>mandolina</w></mentioned>, <mentioned xml:lang="fr"><lang/>
+                    некоторые европейские языки: <mentioned xml:id="mentioned_d4724e214" xml:lang="la"><lang/>
+                        <w>pandura</w></mentioned>, <mentioned xml:id="mentioned_d4724e219" xml:lang="it"><lang/>
+                        <w>pandora, mandora</w></mentioned>, <mentioned xml:id="mentioned_d4724e224" xml:lang="fr"><lang/>
+                        <w>mandore</w></mentioned> (откуда в дальнейшем <mentioned xml:id="mentioned_d4724e229" xml:lang="it"><lang/>
+                        <w>mandolina</w></mentioned>, <mentioned xml:id="mentioned_d4724e234" xml:lang="fr"><lang/>
                         <w>mandoline</w></mentioned>). На север от Малой Азии область
                     распространения слова охватывает Кавказ и южную Россию. Помимо ос. %ifændyr%i,
-                    ср. <mentioned xml:lang="xcl"><lang/>
-                        <w>pandir</w></mentioned>, <mentioned xml:lang="ka"><lang/>
-                        <w>panduri</w></mentioned>, <mentioned xml:lang="sva"><lang/>
-                        <w>pandvir</w></mentioned>, <mentioned xml:lang="bbl"><lang/>
-                        <w>pandur</w></mentioned>, <mentioned xml:lang="ce"><lang/>
-                        <w>pondur</w></mentioned>, <mentioned xml:lang="inh"><lang/>
-                        <w>pondær</w></mentioned>. Сюда же <mentioned xml:lang="uk"><lang/>
-                        <w>бандура</w></mentioned>, <mentioned xml:lang="pl"><lang/>
+                    ср. <mentioned xml:id="mentioned_d4724e239" xml:lang="xcl"><lang/>
+                        <w>pandir</w></mentioned>, <mentioned xml:id="mentioned_d4724e245" xml:lang="ka"><lang/>
+                        <w>panduri</w></mentioned>, <mentioned xml:id="mentioned_d4724e250" xml:lang="sva"><lang/>
+                        <w>pandvir</w></mentioned>, <mentioned xml:id="mentioned_d4724e255" xml:lang="bbl"><lang/>
+                        <w>pandur</w></mentioned>, <mentioned xml:id="mentioned_d4724e260" xml:lang="ce"><lang/>
+                        <w>pondur</w></mentioned>, <mentioned xml:id="mentioned_d4724e265" xml:lang="inh"><lang/>
+                        <w>pondær</w></mentioned>. Сюда же <mentioned xml:id="mentioned_d4724e270" xml:lang="uk"><lang/>
+                        <w>бандура</w></mentioned>, <mentioned xml:id="mentioned_d4724e276" xml:lang="pl"><lang/>
                         <w>bandura</w></mentioned>. Для датировки бытования слова в осетинском
                     существенное значение имеет начальный %if%i. Закон перехода %ip%i→%if%i перестал
-                    действовать в осетинском весьма давно; такие старые слова, как <ref type="xr"
-                        target="#entry_padcax"/> ‘царь’, <ref type="xr" target="#entry_pyl"/>
+                    действовать в осетинском весьма давно; такие старые слова, как <ref type="xr" target="#entry_padcax"/> ‘царь’, <ref type="xr" target="#entry_pyl"/>
                     ‘слон’, <ref type="xr" target="#entry_pajda"/> ‘польза’ и др., вошедшие в
                     осетинский через посредство кавказских языков, сохраняют %ip%i. Поэтому мало
                     вероятно, что %ifændyr%i усвоено из кавказских языков. Вероятнее относить его
@@ -126,72 +124,50 @@
                     пролило бы свет и на укр. и пол. %iбандуру%i. Считать последнее слово усвоенным
                     из итальянского (<bibl><ref type="bibl" target="#ref_Miklosich"/></bibl>,
                             <bibl><ref type="bibl" target="#ref_Berneker"/></bibl>) вряд ли
-                    основательно: где посредствующие звенья?%n<bibl><ref type="bibl"
-                            target="#ref_Hübschmann._Oss."/><biblScope>133</biblScope></bibl>;
-                            <bibl><ref type="bibl" target="#ref_Hübschmann._Arm._Gr."
-                            /><biblScope>395</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._Gr."/><biblScope>10</biblScope></bibl>. —
+                    основательно: где посредствующие звенья?%n<bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>133</biblScope></bibl>;
+                            <bibl><ref type="bibl" target="#ref_Hübschmann._Arm._Gr."/><biblScope>395</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>10</biblScope></bibl>. —
                             <bibl><ref type="bibl" target="#ref_Schrader"/><biblScope>II
                             82</biblScope></bibl>. — <bibl><author>Sköld.
-                            %sLehworstudien.%s</author><ref type="bibl" target="#ref_LUÅ"
-                            /><biblScope>1923 XIX 7</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_ОЯФ_I"/><biblScope>68</biblScope></bibl>.</etym>
+                            %sLehworstudien.%s</author><ref type="bibl" target="#ref_LUÅ"/><biblScope>1923 XIX 7</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>68</biblScope></bibl>.</etym>
                 <etym xml:lang="en">A cultural word of significant historical interest. Attested by
-                    Greek authors from the 2nd century A.D.: <mentioned xml:lang="grc"><lang/>
-                        <w>πανδούρα</w><note
-                            type="comment" xml:lang="en"> (Athenaeus)</note>
+                    Greek authors from the 2nd century A.D.: <mentioned xml:id="mentioned_d4724e323" xml:lang="grc"><lang/>
+                        <w>πανδούρα</w><note type="comment" xml:lang="en"> (Athenaeus)</note>
                         <gloss><q>three-stringed musical instrument, lute
-                        type</q></gloss></mentioned>, <mentioned xml:lang="grc"
-                            ><w>πάνδουρος</w><note type="comment" xml:lang="en">
-                        (Athenaeus)</note></mentioned>, <mentioned xml:lang="grc"
-                            ><w>φάνδουρος</w><note type="comment"
-                            xml:lang="en"> (Nicomachus Gerasenus. Harmonicum Enchiridium
-                        4)</note></mentioned>, <mentioned xml:lang="grc"><w>πανδούριον
-                            πανδούρίς</w><note
-                            type="comment" xml:lang="en"> (Hesychius)</note></mentioned>. It is
+                        type</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4724e333" xml:lang="grc"><w>πάνδουρος</w><note type="comment" xml:lang="en">
+                        (Athenaeus)</note></mentioned>, <mentioned xml:id="mentioned_d4724e338" xml:lang="grc"><w>φάνδουρος</w><note type="comment" xml:lang="en"> (Nicomachus Gerasenus. Harmonicum Enchiridium
+                        4)</note></mentioned>, <mentioned xml:id="mentioned_d4724e343" xml:lang="grc"><w>πανδούριον
+                            πανδούρίς</w><note type="comment" xml:lang="en"> (Hesychius)</note></mentioned>. It is
                     believed that the word comes from Asia Minor, from the Lydian language
-                            (<bibl><author>de Lagarde.</author><biblScope xml:lang="en"
-                            >Gesammelte Abhandlungen. 1866, p. 274</biblScope></bibl>). Through
-                    Greek, it passed into several European languages: <mentioned xml:lang="la"><lang/>
-                        <w>pandura</w></mentioned>, <mentioned xml:lang="it"><lang/>
-                        <w>pandora, mandora</w></mentioned>, <mentioned xml:lang="fr"><lang/>
-                        <w>mandore</w></mentioned> (from which later there appeared <mentioned
-                        xml:lang="it"><lang/>
-                        <w>mandolina</w></mentioned>, <mentioned xml:lang="fr"><lang/>
+                            (<bibl><author>de Lagarde.</author><biblScope xml:lang="en">Gesammelte Abhandlungen. 1866, p. 274</biblScope></bibl>). Through
+                    Greek, it passed into several European languages: <mentioned xml:id="mentioned_d4724e354" xml:lang="la"><lang/>
+                        <w>pandura</w></mentioned>, <mentioned xml:id="mentioned_d4724e359" xml:lang="it"><lang/>
+                        <w>pandora, mandora</w></mentioned>, <mentioned xml:id="mentioned_d4724e364" xml:lang="fr"><lang/>
+                        <w>mandore</w></mentioned> (from which later there appeared <mentioned xml:id="mentioned_d4724e369" xml:lang="it"><lang/>
+                        <w>mandolina</w></mentioned>, <mentioned xml:id="mentioned_d4724e374" xml:lang="fr"><lang/>
                         <w>mandoline</w></mentioned>). To the north of Asia Minor, the area of
                     distribution of the word covers the Caucasus and southern Russia. Besides
-                    Ossetic %ifændyr%i, cf. <mentioned xml:lang="xcl"><lang/>
-                        <w>pandir</w></mentioned>, <mentioned xml:lang="ka"><lang/>
-                        <w>panduri</w></mentioned>, <mentioned xml:lang="sva"><lang/>
-                        <w>pandvir</w></mentioned>, <mentioned xml:lang="bbl"><lang/>
-                        <w>pandur</w></mentioned>, <mentioned xml:lang="ce"><lang/>
-                        <w>pondur</w></mentioned>, <mentioned xml:lang="inh"><lang/>
-                        <w>pondær</w></mentioned>. The words <mentioned xml:lang="uk"><lang/>
-                        <w>bandura</w></mentioned>, <mentioned xml:lang="pl"><lang/>
+                    Ossetic %ifændyr%i, cf. <mentioned xml:id="mentioned_d4724e379" xml:lang="xcl"><lang/>
+                        <w>pandir</w></mentioned>, <mentioned xml:id="mentioned_d4724e385" xml:lang="ka"><lang/>
+                        <w>panduri</w></mentioned>, <mentioned xml:id="mentioned_d4724e390" xml:lang="sva"><lang/>
+                        <w>pandvir</w></mentioned>, <mentioned xml:id="mentioned_d4724e395" xml:lang="bbl"><lang/>
+                        <w>pandur</w></mentioned>, <mentioned xml:id="mentioned_d4724e400" xml:lang="ce"><lang/>
+                        <w>pondur</w></mentioned>, <mentioned xml:id="mentioned_d4724e405" xml:lang="inh"><lang/>
+                        <w>pondær</w></mentioned>. The words <mentioned xml:id="mentioned_d4724e410" xml:lang="uk"><lang/>
+                        <w>bandura</w></mentioned>, <mentioned xml:id="mentioned_d4724e416" xml:lang="pl"><lang/>
                         <w>bandura</w></mentioned> are related to it as well. The initial %if%i is
                     essential for dating of the existence of this word in Ossetic. The law of change
-                    %ip%i→%if%i stopped working in Ossetic a long time ago; old words like <ref
-                        type="xr" target="#entry_padcax"/> ‘tsar’, <ref type="xr"
-                        target="#entry_pyl"/> ‘elephant’, <ref type="xr" target="#entry_pajda"/>
+                    %ip%i→%if%i stopped working in Ossetic a long time ago; old words like <ref type="xr" target="#entry_padcax"/> ‘tsar’, <ref type="xr" target="#entry_pyl"/> ‘elephant’, <ref type="xr" target="#entry_pajda"/>
                     ‘benefit’ etc., which entered Ossetic via Caucasian languages, start with %ip%i.
                     That is why it is improbable that %ifændyr%i was acquired from Caucasian
                     languages. It is more likely to attribute it to the pre-Caucasian, i.e.,
                     Scythian-Sarmatian period of the history of the Ossetians, when the law
                     %ip%i→%if%i was in full force. The supposed existence of the word in Scythian
                     would shed light on Ukranian and Polish %iбандура%i. It is hardly reasonable to
-                    regard the last word as learned from Italian (<bibl><ref type="bibl"
-                            target="#ref_Miklosich"/></bibl>, <bibl><ref type="bibl"
-                            target="#ref_Berneker"/></bibl>): where are the intermediary
-                            links?%n<bibl><ref type="bibl" target="#ref_Hübschmann._Oss."
-                            /><biblScope>133</biblScope></bibl>; <bibl><ref type="bibl"
-                            target="#ref_Hübschmann._Arm._Gr."/><biblScope>395</biblScope></bibl>. —
-                            <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>10</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_Schrader"/><biblScope>II 82</biblScope></bibl>. —
-                            <bibl><author>Sköld. %sLehworstudien.%s</author><ref type="bibl"
-                            target="#ref_LUÅ"/><biblScope>1923 XIX 7</biblScope></bibl>. —
-                            <bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                        /><biblScope>68</biblScope></bibl>.</etym>
+                    regard the last word as learned from Italian (<bibl><ref type="bibl" target="#ref_Miklosich"/></bibl>, <bibl><ref type="bibl" target="#ref_Berneker"/></bibl>): where are the intermediary
+                            links?%n<bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>133</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Hübschmann._Arm._Gr."/><biblScope>395</biblScope></bibl>. —
+                            <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>10</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Schrader"/><biblScope>II 82</biblScope></bibl>. —
+                            <bibl><author>Sköld. %sLehworstudien.%s</author><ref type="bibl" target="#ref_LUÅ"/><biblScope>1923 XIX 7</biblScope></bibl>. —
+                            <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>68</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

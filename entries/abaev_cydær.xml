@@ -1,45 +1,50 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">cydær</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_cydær" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>cydær</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>cidær</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d1658e72"><abv:tr xml:lang="ru">
                         <q>что-то</q>
                     </abv:tr></sense>
-                <re>
+                <re xml:id="re_d1658e78">
                     <form xml:lang="os-x-iron" type="lemma"><orth>cydæriddær</orth></form>
                     <form xml:lang="os-x-digor" type="dialectal"><orth>cidæriddær</orth></form>
-                    <sense><sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d1658e86"><sense xml:id="sense_d1658e87"><abv:tr xml:lang="ru">
                                 <q>что бы ни</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>whatever</q>
-                            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                            </abv:tr></sense><sense xml:id="sense_d1658e96"><abv:tr xml:lang="ru">
                                 <q>все</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>ever</q>
                             </abv:tr></sense></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d1658e109">
                         <quote>æz X˳ycæwæj ændær cydær kūryn</quote>
                         <abv:tr xml:lang="ru">
                             <q>я прошу у Бога чего-то другого</q>
@@ -49,7 +54,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>35</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1658e128">
                         <quote>īwyl, cydæriddær lasta jæ ḱyræty, … maxmæ ærxawdtoj</quote>
                         <abv:tr xml:lang="ru">
                             <q>все, что он вез в своем обозе, досталось нам</q>
@@ -57,10 +62,9 @@
                         <abv:tr xml:lang="en">
                             <q>everything that he carried in his wagon train went to us</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"
-                            /><biblScope>155</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>155</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d1658e147" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>cidær adtæj, æ fusun Oræzmægmæ ærkodta</quote>
                         <abv:tr xml:lang="ru">
@@ -74,15 +78,11 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Из <ref type="xr" target="#entry_cy"/> | %ici%i ‘что’ и частица
-                        <ref type="xr" target="#entry_dær"/>; ср. <ref type="xr"
-                        target="#entry_ḱīdær"/> | %ikadær%i ‘кто-то’, %iḱīdæriddær%i |
-                    %ikadæriddær%i ‘кто бы ни’, ‘каждый’.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._Gr."/><biblScope>55</biblScope></bibl>.</etym>
+                        <ref type="xr" target="#entry_dær"/>; ср. <ref type="xr" target="#entry_ḱīdær"/> | %ikadær%i ‘кто-то’, %iḱīdæriddær%i |
+                    %ikadæriddær%i ‘кто бы ни’, ‘каждый’.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>55</biblScope></bibl>.</etym>
                 <etym xml:lang="en">From <ref type="xr" target="#entry_cy"/> | %ici%i ‘what’ and
-                    particle <ref type="xr" target="#entry_dær"/>; cf. <ref type="xr"
-                        target="#entry_ḱīdær"/> | %ikadær%i ‘somebody’, %iḱīdæriddær%i |
-                    %ikadæriddær%i ‘whoever’, ‘everybody’.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._Gr."/><biblScope>55</biblScope></bibl>.</etym>
+                    particle <ref type="xr" target="#entry_dær"/>; cf. <ref type="xr" target="#entry_ḱīdær"/> | %ikadær%i ‘somebody’, %iḱīdæriddær%i |
+                    %ikadæriddær%i ‘whoever’, ‘everybody’.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>55</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

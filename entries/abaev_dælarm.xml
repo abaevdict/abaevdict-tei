@@ -1,38 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">dælarm</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_dælarm" xml:lang="os-x-iron">
                 <form type="lemma"><orth>dælarm</orth></form>
                 <usg><lang/></usg>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d785e72"><sense xml:id="sense_d785e73"><abv:tr xml:lang="ru">
                             <q>подмышка</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>armpit</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d785e82"><abv:tr xml:lang="ru">
                             <q>под мышкой</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>under one's arm</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d785e94">
                         <quote>wasægy jæ dælarm akodta</quote>
                         <abv:tr xml:lang="ru">
                             <q>сунул петуха под мышку</q>
@@ -41,7 +46,7 @@
                             <q>[he] put the cock under his arm</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d785e109">
                         <quote>dywwæjæ jæ dælærtty bacydysty</quote>
                         <abv:tr xml:lang="ru">
                             <q>вдвоем взяли его под мышки</q>
@@ -52,30 +57,25 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Буквально „под рукой“; см. <ref type="xr" target="#entry_dæl-"/>
-                    ‘под’ и <ref type="xr" target="#entry_arm"/> ‘рука’. Слово <ref type="xr"
-                        target="#entry_arm"/> употребляется сейчас в значении ‘кисть руки’ или
+                    ‘под’ и <ref type="xr" target="#entry_arm"/> ‘рука’. Слово <ref type="xr" target="#entry_arm"/> употребляется сейчас в значении ‘кисть руки’ или
                     ‘ладонь’ (ср, <ref type="xr" target="#entry_cong"/>), но в %idæl-arm%i и в
                     некоторых других сложных словах сохраняется старое значение ‘рука’, ‘вся рука’.
-                    Ср. по образованию <mentioned xml:lang="lt"><lang/>
+                    Ср. по образованию <mentioned xml:id="mentioned_d785e135" xml:lang="lt"><lang/>
                         <w>pazastis</w>
                         <gloss><q>подмышка</q></gloss></mentioned>, разъясняемое в смысле „под
-                    рукой“ (ср. <mentioned xml:lang="x-oldirn"><lang/>
+                    рукой“ (ср. <mentioned xml:id="mentioned_d785e144" xml:lang="x-oldirn"><lang/>
                         <w>zasta</w>
                         <gloss><q>рука</q></gloss></mentioned>), хотя %izast%i- в значении ‘рука’ в
                     литовском не сохранилось. См. <ref type="xr" target="#entry_arm"/>.</etym>
                 <etym xml:lang="en">Literally “under arm”; see <ref type="xr" target="#entry_dæl-"/>
-                    ‘under’ and <ref type="xr" target="#entry_arm"/> ‘arm’. The word <ref type="xr"
-                        target="#entry_arm"/> is used now in the meaning ‘hand’ or ‘palm’ (cf. <ref
-                        type="xr" target="#entry_cong"/>), but in %idæl-arm%i and in some other
-                    compounds an old meaning ‘arm’ remains. Cf. the derivation pattern <mentioned
-                        xml:lang="lt"><lang/>
+                    ‘under’ and <ref type="xr" target="#entry_arm"/> ‘arm’. The word <ref type="xr" target="#entry_arm"/> is used now in the meaning ‘hand’ or ‘palm’ (cf. <ref type="xr" target="#entry_cong"/>), but in %idæl-arm%i and in some other
+                    compounds an old meaning ‘arm’ remains. Cf. the derivation pattern <mentioned xml:id="mentioned_d785e166" xml:lang="lt"><lang/>
                         <w>pazastis</w>
                         <gloss><q>armpit</q></gloss></mentioned>, explained as “under arm” (cf.
-                        <mentioned xml:lang="x-oldirn"><lang/>
+                        <mentioned xml:id="mentioned_d785e175" xml:lang="x-oldirn"><lang/>
                         <w>zasta</w>
                         <gloss><q>hand</q></gloss></mentioned>), although %izast%i- in the meaning
-                    ‘arm’ is not in use any more in Lithuanian. See <ref type="xr"
-                        target="#entry_arm"/>.</etym>
+                    ‘arm’ is not in use any more in Lithuanian. See <ref type="xr" target="#entry_arm"/>.</etym>
             </entry>
         </body>
     </text>

@@ -1,34 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">bæxsnyg</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_bæxsnyg" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>bæxsnyg</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>bæxsnug</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d4999e72"><abv:tr xml:lang="ru">
                         <q>суровая нитка из конопли</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>coarse thread made of hemp</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4999e84" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>xufijnæj don xaston, æsmesæj bæxsnug bijun</quote>
                         <abv:tr xml:lang="ru">
@@ -40,7 +45,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
                             173</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4999e106" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>Zulemæt ærista særibæddænæj ærcij æd bæxsnug</quote>
                         <abv:tr xml:lang="ru">
@@ -51,7 +56,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>123</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4999e128" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>sapoznikki bæxsnugutæ</quote>
                         <abv:tr xml:lang="ru">
@@ -60,10 +65,9 @@
                         <abv:tr xml:lang="en">
                             <q>boot needles</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_SD"
-                            /><biblScope>245%l3%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_SD"/><biblScope>245%l3%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4999e150" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>bændæn æma bæxsnug bijæn fabriktæ</quote>
                         <abv:tr xml:lang="ru">
@@ -75,21 +79,13 @@
                         <bibl><ref type="bibl" target="#src_FS"/><biblScope>V 122</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Может быть, из *%imæxsnyg%i, к <mentioned xml:lang="fa"><lang/>
-                        <w>mašnak</w><note type="comment" xml:lang="ru"> (<bibl><ref type="bibl"
-                                    target="#ref_Ягелло"/></bibl>)</note>
-                        <gloss><q>сорт веревки</q></gloss></mentioned>, <mentioned xml:lang="fa"
-                            ><w/><note type="comment" xml:lang="ru"
-                                    ><bibl><biblScope>Riсhаrdsоn</biblScope></bibl></note>
+                <etym xml:lang="ru">Может быть, из *%imæxsnyg%i, к <mentioned xml:id="mentioned_d4999e175" xml:lang="fa"><lang/>
+                        <w>mašnak</w><note type="comment" xml:lang="ru"> (<bibl><ref type="bibl" target="#ref_Ягелло"/></bibl>)</note>
+                        <gloss><q>сорт веревки</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4999e188" xml:lang="fa"><w/><note type="comment" xml:lang="ru"><bibl><biblScope>Riсhаrdsоn</biblScope></bibl></note>
                         <gloss><q>rope</q></gloss></mentioned>.</etym>
-                <etym xml:lang="en">Maybe from *%imæxsnyg%i, to <mentioned xml:lang="fa"><lang/>
-                        <w>mašnak</w><note type="comment"
-                            xml:lang="en"> (<bibl><ref type="bibl" target="#ref_Ягелло"
-                            /></bibl>)</note>
-                        <gloss><q>a kind of rope</q></gloss></mentioned>, <mentioned xml:lang="fa"
-                            ><w/><note
-                            type="comment" xml:lang="en"
-                                ><bibl><biblScope>Riсhаrdsоn</biblScope></bibl></note>
+                <etym xml:lang="en">Maybe from *%imæxsnyg%i, to <mentioned xml:id="mentioned_d4999e201" xml:lang="fa"><lang/>
+                        <w>mašnak</w><note type="comment" xml:lang="en"> (<bibl><ref type="bibl" target="#ref_Ягелло"/></bibl>)</note>
+                        <gloss><q>a kind of rope</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4999e214" xml:lang="fa"><w/><note type="comment" xml:lang="en"><bibl><biblScope>Riсhаrdsоn</biblScope></bibl></note>
                         <gloss><q>rope</q></gloss></mentioned>.</etym>
             </entry>
         </body>

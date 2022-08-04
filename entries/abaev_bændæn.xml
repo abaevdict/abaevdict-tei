@@ -1,33 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">bændæn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_bændæn" xml:lang="os">
                 <form type="lemma"><orth>bændæn</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d230e69"><abv:tr xml:lang="ru">
                         <q>веревка</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>rope</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d230e81">
                         <quote>zældag bændæn dæm awaʒon ævi qīs bændæn?</quote>
                         <abv:tr xml:lang="ru">
                             <q>шелковую веревку к тебе спустить или веревку из грубой шерсти?</q>
@@ -36,10 +41,9 @@
                             <q>do you need a silk rope to be pulled down or one made of common
                                 wool?</q>
                         </abv:tr>
-                        <bibl><biblScope xml:lang="ru">из сказки</biblScope><biblScope xml:lang="en"
-                                >from a fairytale</biblScope></bibl>
+                        <bibl><biblScope xml:lang="ru">из сказки</biblScope><biblScope xml:lang="en">from a fairytale</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d230e102">
                         <quote>bændæntæ bijyn bajdydta kærdægæj</quote>
                         <abv:tr xml:lang="ru">
                             <q>стал вить веревки из травы</q>
@@ -50,99 +54,75 @@
                         <bibl><ref type="bibl" target="#src_ОЭ"/><biblScope>I 86</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Восходит к <mentioned xml:lang="ira"><lang/>
-                        <w>*bandana</w></mentioned>, от основы %iband%i- ‘вязать’, ср. <mentioned
-                        xml:lang="sa"><lang/>
+                <etym xml:lang="ru">Восходит к <mentioned xml:id="mentioned_d230e124" xml:lang="ira"><lang/>
+                        <w>*bandana</w></mentioned>, от основы %iband%i- ‘вязать’, ср. <mentioned xml:id="mentioned_d230e129" xml:lang="sa"><lang/>
                         <w>bandhana</w>
                         <gloss><q>веревка</q></gloss></mentioned>. Эту основу, с ассимиляцией %ind%i
                     → %idd%i, мы находим в ос. <ref type="xr" target="#entry_bæddyn"/> (из
                     *%ibænd%i-%iyn%i) ‘вязать’, а без ассимиляции, но с переходом %ib%i → %iv%i, — в
                     ny-vænd-yn [см. <ref type="xr" target="#entry_nyvændyn"/>] ‘наматывать основу
-                    для тканья’. Суффикс -%iæn%i (<mentioned xml:lang="x-oldirn"><lang/>
+                    для тканья’. Суффикс -%iæn%i (<mentioned xml:id="mentioned_d230e141" xml:lang="x-oldirn"><lang/>
                         <w>-ana</w></mentioned>) образует отглагольные имена со значением орудия или
                     предмета, которым что-либо делается: <ref type="xr" target="#entry_kʼaxæn"/>
-                    ‘кирка’ (от <ref type="xr" target="#entry_kʼaxyn"/> ‘копать’), <ref type="xr"
-                        target="#entry_wasæn"/> ‘свисток’ (от <ref type="xr" target="#entry_wasyn"/>
-                    ‘свистеть’) и т. п. (<bibl><ref type="bibl" target="#ref_РОСл."
-                            /><biblScope>593</biblScope></bibl>). %iBændæn%i, стало быть, — „то, чем
+                    ‘кирка’ (от <ref type="xr" target="#entry_kʼaxyn"/> ‘копать’), <ref type="xr" target="#entry_wasæn"/> ‘свисток’ (от <ref type="xr" target="#entry_wasyn"/>
+                    ‘свистеть’) и т. п. (<bibl><ref type="bibl" target="#ref_РОСл."/><biblScope>593</biblScope></bibl>). %iBændæn%i, стало быть, — „то, чем
                     вяжут“. Живое аналогичное образование от <ref type="xr" target="#entry_bæddyn"/>
                     звучит <ref type="xr" target="#entry_bæddæn"/> ‘повязка’ и воспринимается как
                     совершенно отличное от %ibændæn%i слово, хотя они образованы от одного и того же
-                    глагола, но на разных ступенях его развития. См. <ref type="xr"
-                        target="#entry_bæddyn"/>. Ср. <ref type="xr" target="#entry_nyvændyn"/>, а
-                    также <ref type="xr" target="#entry_æmbond"/> ‘ограда' и <ref type="xr"
-                        target="#entry_nyvond"/> ‘жертва’. В значении ‘веревка’ и т. п., помимо
-                        <mentioned xml:lang="sa"><lang/>
-                        <w>bandhana-</w></mentioned>, можно указать <mentioned xml:lang="sgy"><lang/>
-                        <w>vōnd</w></mentioned>, <mentioned xml:lang="yai"><lang/>
+                    глагола, но на разных ступенях его развития. См. <ref type="xr" target="#entry_bæddyn"/>. Ср. <ref type="xr" target="#entry_nyvændyn"/>, а
+                    также <ref type="xr" target="#entry_æmbond"/> ‘ограда' и <ref type="xr" target="#entry_nyvond"/> ‘жертва’. В значении ‘веревка’ и т. п., помимо
+                        <mentioned xml:id="mentioned_d230e172" xml:lang="sa"><lang/>
+                        <w>bandhana-</w></mentioned>, можно указать <mentioned xml:id="mentioned_d230e178" xml:lang="sgy"><lang/>
+                        <w>vōnd</w></mentioned>, <mentioned xml:id="mentioned_d230e183" xml:lang="yai"><lang/>
                         <w>vantak</w>
                         <gloss><q>веревочка для завязывания крышки сосуда</q></gloss></mentioned>
                             (<bibl><ref type="bibl" target="#ref_Андреев._Ягн."/></bibl> ),
-                        <mentioned xml:lang="ps"><lang/>
+                        <mentioned xml:id="mentioned_d230e194" xml:lang="ps"><lang/>
                         <w>wandanai</w>
-                        <gloss><q>веревка из травы</q></gloss></mentioned>, <mentioned xml:lang="fa"><lang/>
+                        <gloss><q>веревка из травы</q></gloss></mentioned>, <mentioned xml:id="mentioned_d230e202" xml:lang="fa"><lang/>
                         <w>band</w>
-                        <gloss><q>повязка</q></gloss></mentioned>, <mentioned xml:lang="fa"
-                            ><w>gard-bandan</w>
-                        <gloss><q>ожерелье</q></gloss></mentioned>, <mentioned xml:lang="x-balochi"><lang/>
+                        <gloss><q>повязка</q></gloss></mentioned>, <mentioned xml:id="mentioned_d230e210" xml:lang="fa"><w>gard-bandan</w>
+                        <gloss><q>ожерелье</q></gloss></mentioned>, <mentioned xml:id="mentioned_d230e217" xml:lang="x-balochi"><lang/>
                         <w>gvarband</w>
-                        <gloss><q>нагрудный ремень у лошади</q></gloss></mentioned>, <mentioned
-                        xml:lang="sog"><lang/>
-                        <w>βand-(βnt-)</w></mentioned>, <mentioned xml:lang="ae"><lang/>
+                        <gloss><q>нагрудный ремень у лошади</q></gloss></mentioned>, <mentioned xml:id="mentioned_d230e225" xml:lang="sog"><lang/>
+                        <w>βand-(βnt-)</w></mentioned>, <mentioned xml:id="mentioned_d230e230" xml:lang="ae"><lang/>
                         <w>banda-</w>
-                        <gloss><q>связка</q></gloss></mentioned>.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 108</biblScope></bibl>;
-                            <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>30</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_ОЯФ_I"/><biblScope>23, 28</biblScope></bibl>.</etym>
-                <etym xml:lang="en">It traces back to <mentioned xml:lang="ira"><lang/>
-                        <w>*bandana</w></mentioned>, from the stem %iband%i- ‘bind’, cf. <mentioned
-                        xml:lang="sa"><lang/>
+                        <gloss><q>связка</q></gloss></mentioned>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 108</biblScope></bibl>;
+                            <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>30</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>23, 28</biblScope></bibl>.</etym>
+                <etym xml:lang="en">It traces back to <mentioned xml:id="mentioned_d230e253" xml:lang="ira"><lang/>
+                        <w>*bandana</w></mentioned>, from the stem %iband%i- ‘bind’, cf. <mentioned xml:id="mentioned_d230e258" xml:lang="sa"><lang/>
                         <w>bandhana</w>
                         <gloss><q>rope</q></gloss></mentioned>. This stem with the assimilation
-                    %ind%i → %idd%i is found in the Ossetic word <ref type="xr"
-                        target="#entry_bæddyn"/> (from *%ibænd%i-%iyn%i) ‘bind’, and the stem
+                    %ind%i → %idd%i is found in the Ossetic word <ref type="xr" target="#entry_bæddyn"/> (from *%ibænd%i-%iyn%i) ‘bind’, and the stem
                     without assimilation but with the transition %ib%i → %iv%i, — is found in the
                     word %iny%i-%ivænd%i-%iyn%i [see <ref type="xr" target="#entry_nyvændyn"/>]
-                    ‘wind fabric for weaving’. The suffix -%iæn%i (<mentioned xml:lang="x-oldirn"><lang/>
+                    ‘wind fabric for weaving’. The suffix -%iæn%i (<mentioned xml:id="mentioned_d230e270" xml:lang="x-oldirn"><lang/>
                         <w>-ana</w></mentioned>) derives deverbal nouns meaning an instrument or an
                     object which makes something: <ref type="xr" target="#entry_kʼaxæn"/> ‘pick’
-                    (from <ref type="xr" target="#entry_kʼaxyn"/> ‘dig’), <ref type="xr"
-                        target="#entry_wasæn"/> ‘whistle’ (from <ref type="xr" target="#entry_wasyn"
-                    /> ‘whistle’) etc. (<bibl><ref type="bibl" target="#ref_РОСл."
-                            /><biblScope>593</biblScope></bibl>). Thus, %ibændæn%i is “something
-                    with which one binds”. An analogous common derivate from <ref type="xr"
-                        target="#entry_bæddyn"/> sounds like <ref type="xr" target="#entry_bæddæn"/>
+                    (from <ref type="xr" target="#entry_kʼaxyn"/> ‘dig’), <ref type="xr" target="#entry_wasæn"/> ‘whistle’ (from <ref type="xr" target="#entry_wasyn"/> ‘whistle’) etc. (<bibl><ref type="bibl" target="#ref_РОСл."/><biblScope>593</biblScope></bibl>). Thus, %ibændæn%i is “something
+                    with which one binds”. An analogous common derivate from <ref type="xr" target="#entry_bæddyn"/> sounds like <ref type="xr" target="#entry_bæddæn"/>
                     ‘bandage’ and is perceived as completely different from %ibændæn%i, however
                     these two words were derived from the same verb but during different time of its
-                    development. See <ref type="xr" target="#entry_bæddyn"/>. Cf. <ref type="xr"
-                        target="#entry_nyvændyn"/>, and also <ref type="xr" target="#entry_æmbond"/>
+                    development. See <ref type="xr" target="#entry_bæddyn"/>. Cf. <ref type="xr" target="#entry_nyvændyn"/>, and also <ref type="xr" target="#entry_æmbond"/>
                     ‘fence' and <ref type="xr" target="#entry_nyvond"/> ‘sacrifice’. Apart from
-                        <mentioned xml:lang="sa"><lang/>
+                        <mentioned xml:id="mentioned_d230e301" xml:lang="sa"><lang/>
                         <w>bandhana-</w></mentioned> the following words could be indicated in the
-                    meaning ‘rope’: <mentioned xml:lang="sgy"><lang/>
-                        <w>vōnd</w></mentioned>, <mentioned xml:lang="yai"><lang/>
+                    meaning ‘rope’: <mentioned xml:id="mentioned_d230e307" xml:lang="sgy"><lang/>
+                        <w>vōnd</w></mentioned>, <mentioned xml:id="mentioned_d230e312" xml:lang="yai"><lang/>
                         <w>vantak</w>
                         <gloss><q>little rope for tying up the vessel's
-                        cover</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Андреев._Ягн."/></bibl>), <mentioned xml:lang="ps"><lang/>
+                        cover</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Андреев._Ягн."/></bibl>), <mentioned xml:id="mentioned_d230e323" xml:lang="ps"><lang/>
                         <w>wandanai</w>
-                        <gloss><q>rope made of grass</q></gloss></mentioned>, <mentioned
-                        xml:lang="fa"><lang/>
+                        <gloss><q>rope made of grass</q></gloss></mentioned>, <mentioned xml:id="mentioned_d230e331" xml:lang="fa"><lang/>
                         <w>band</w>
-                        <gloss><q>bandage</q></gloss></mentioned>, <mentioned xml:lang="fa"
-                            ><w>gard-bandan</w>
-                        <gloss><q>necklace</q></gloss></mentioned>, <mentioned xml:lang="x-balochi"><lang/>
+                        <gloss><q>bandage</q></gloss></mentioned>, <mentioned xml:id="mentioned_d230e339" xml:lang="fa"><w>gard-bandan</w>
+                        <gloss><q>necklace</q></gloss></mentioned>, <mentioned xml:id="mentioned_d230e346" xml:lang="x-balochi"><lang/>
                         <w>gvarband</w>
-                        <gloss><q>horse chest strap</q></gloss></mentioned>, <mentioned
-                        xml:lang="sog"><lang/>
-                        <w>βand-(βnt-)</w></mentioned>, <mentioned xml:lang="ae"><lang/>
+                        <gloss><q>horse chest strap</q></gloss></mentioned>, <mentioned xml:id="mentioned_d230e354" xml:lang="sog"><lang/>
+                        <w>βand-(βnt-)</w></mentioned>, <mentioned xml:id="mentioned_d230e359" xml:lang="ae"><lang/>
                         <w>banda-</w>
-                        <gloss><q>bunch</q></gloss></mentioned>.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 108</biblScope></bibl>;
-                            <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>30</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_ОЯФ_I"/><biblScope>23, 28</biblScope></bibl>.</etym>
+                        <gloss><q>bunch</q></gloss></mentioned>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 108</biblScope></bibl>;
+                            <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>30</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>23, 28</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

@@ -1,36 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">cīrq</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_cīrq" xml:lang="os">
-                <form xml:lang="os-x-iron" type="lemma"><orth>cīrq</orth><form type="variant"
-                            ><orth>cīryq</orth></form><form type="variant"
-                    ><orth>cīlq</orth></form></form>
+                <form xml:lang="os-x-iron" type="lemma"><orth>cīrq</orth><form type="variant"><orth>cīryq</orth></form><form type="variant"><orth>cīlq</orth></form></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>cerq</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d3502e76"><abv:tr xml:lang="ru">
                         <q>меч</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>sword</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d3502e88">
                         <quote/>
                         <abv:tr xml:lang="ru">
                             <q>%scīryq%s — меч, который носится со стрелами</q>
@@ -38,11 +41,9 @@
                         <abv:tr xml:lang="en">
                             <q>%scīryq%s is a sword which is carried with arrows</q>
                         </abv:tr>
-                        <bibl><note type="comment" xml:lang="ru">?</note><note type="comment"
-                                xml:lang="en">?</note><ref type="bibl" target="#src_СОПам."
-                                /><biblScope>I 37</biblScope></bibl>
+                        <bibl><note type="comment" xml:lang="ru">?</note><note type="comment" xml:lang="en">?</note><ref type="bibl" target="#src_СОПам."/><biblScope>I 37</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3502e111">
                         <quote>Batyraž jæ šīlq jæ særyl sæværdta jæ kom xærdmæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>Батраз положил свой %sсīIq%s на голову острием вверх</q>
@@ -53,7 +54,7 @@
                         <bibl><ref type="bibl" target="#src_ЮОПам."/><biblScope>I
                             35</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3502e130">
                         <quote>Wyryzmæǵy cīryq jæ rīwy īnnærdæm afardæg</quote>
                         <abv:tr xml:lang="ru">
                             <q>%scīrq%s Урузмага пронзил насквозь его грудь</q>
@@ -64,7 +65,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>III
                             5</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d3502e149" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>Soslan æ cerq islasta æma ʽj Omari bærzæjbæl ærbadardta</quote>
                         <abv:tr xml:lang="ru">
@@ -76,7 +77,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
                             61</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3502e171">
                         <quote>Narti xæznatæ cerqæj ændæræj æ wælæ adtæncæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>сокровища Нартов — %scerq%s и прочее — были на нем</q>
@@ -89,15 +90,15 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Вариация к <ref type="xr" target="#entry_cyrǧ"/> | %icirǧ%i
-                    ‘острый’? <mentioned xml:lang="ku"><lang/>
+                    ‘острый’? <mentioned xml:id="mentioned_d3502e195" xml:lang="ku"><lang/>
                         <w>zerk</w>
-                        <gloss><q>дротик</q></gloss></mentioned>? <mentioned xml:lang="mns"><lang/>
+                        <gloss><q>дротик</q></gloss></mentioned>? <mentioned xml:id="mentioned_d3502e203" xml:lang="mns"><lang/>
                         <w>sirej</w>
                         <gloss><q>меч</q></gloss></mentioned>?</etym>
                 <etym xml:lang="en">Variation to <ref type="xr" target="#entry_cyrǧ"/> | %icirǧ%i
-                    ‘sharp’? <mentioned xml:lang="ku"><lang/>
+                    ‘sharp’? <mentioned xml:id="mentioned_d3502e217" xml:lang="ku"><lang/>
                         <w>zerk</w>
-                        <gloss><q>dart</q></gloss></mentioned>? <mentioned xml:lang="mns"><lang/>
+                        <gloss><q>dart</q></gloss></mentioned>? <mentioned xml:id="mentioned_d3502e225" xml:lang="mns"><lang/>
                         <w>sirej</w>
                         <gloss><q>sword</q></gloss></mentioned>?</etym>
             </entry>

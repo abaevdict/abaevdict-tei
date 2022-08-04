@@ -1,40 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">kakon</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_kakon" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>kakon</orth></form>
-                <form xml:lang="os-x-digor" type="dialectal"><orth>kokojnæ</orth><form
-                        type="variant"><orth>koko</orth></form></form>
-                <sense><abv:tr xml:lang="ru">
+                <form xml:lang="os-x-digor" type="dialectal"><orth>kokojnæ</orth><form type="variant"><orth>koko</orth></form></form>
+                <sense xml:id="sense_d2050e74"><abv:tr xml:lang="ru">
                         <q>терновник</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>blackthorn</q>
                     </abv:tr></sense>
-                <re>
+                <re xml:id="re_d2050e84">
                     <form xml:lang="os-x-iron" type="lemma"><orth>kakon synʒ</orth></form>
-                    <form xml:lang="os-x-digor" type="dialectal"><orth>kokojni sinʒæ</orth><form
-                            type="variant"><orth>koko sinʒæ</orth></form></form>
+                    <form xml:lang="os-x-digor" type="dialectal"><orth>kokojni sinʒæ</orth><form type="variant"><orth>koko sinʒæ</orth></form></form>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d2050e97" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>Sirdon bæxi 'ftawguti buni kokojni sinʒitæ bakodta</quote>
                         <abv:tr xml:lang="ru">
@@ -46,7 +49,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
                             21</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d2050e119" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>aci suvællonmæ fud cæstæ, fud zærdæ ka badara, e fæxxætæd koko
                             sinʒæbæl bæǧænbadæj</quote>
@@ -61,9 +64,8 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
                             177</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
-                        <quote>dæ wazægdony kakon synʒ k˳y szadi<note type="comment" xml:lang="ru"
-                                >из песни о Куцыкке</note><note type="comment" xml:lang="en">from a
+                    <abv:example xml:id="example_d2050e141">
+                        <quote>dæ wazægdony kakon synʒ k˳y szadi<note type="comment" xml:lang="ru">из песни о Куцыкке</note><note type="comment" xml:lang="en">from a
                                 song about Kutsyk</note></quote>
                         <abv:tr xml:lang="ru">
                             <q>в твоей кунацкой вырос терновник</q>
@@ -74,39 +76,33 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Слово представлено в угро-финских, тюркских и кавказских языках:
-                        <mentioned xml:lang="hu"><lang/>
-                        <w>kökény</w></mentioned>, <mentioned xml:lang="hu"><w>kökönye</w>
-                        <gloss><q>терновник</q></gloss></mentioned>, <mentioned xml:lang="kv"><lang/>
-                        <w>kokan</w></mentioned>, <mentioned xml:lang="udm"><lang/>
+                        <mentioned xml:id="mentioned_d2050e165" xml:lang="hu"><lang/>
+                        <w>kökény</w></mentioned>, <mentioned xml:id="mentioned_d2050e170" xml:lang="hu"><w>kökönye</w>
+                        <gloss><q>терновник</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2050e176" xml:lang="kv"><lang/>
+                        <w>kokan</w></mentioned>, <mentioned xml:id="mentioned_d2050e181" xml:lang="udm"><lang/>
                         <w>kekon</w>
-                        <gloss><q>чемерица</q></gloss></mentioned>, <mentioned xml:lang="udm"><w/>
-                        <gloss><q>helleborus</q></gloss></mentioned>, <mentioned xml:lang="trk"
-                        extralang="chg"><lang/>
+                        <gloss><q>чемерица</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2050e189" xml:lang="udm"><w/>
+                        <gloss><q>helleborus</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2050e196" xml:lang="trk" extralang="chg"><lang/>
                         <w>küküm</w>
-                        <gloss><q>род сливы</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Vámbéry"/></bibl>), <mentioned xml:lang="ky"><lang/>
+                        <gloss><q>род сливы</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Vámbéry"/></bibl>), <mentioned xml:id="mentioned_d2050e207" xml:lang="ky"><lang/>
                         <w>küken</w>
-                        <gloss><q>вишня</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Будагов"/></bibl>), <mentioned xml:lang="tr-x-anat"><lang/>
+                        <gloss><q>вишня</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Будагов"/></bibl>), <mentioned xml:id="mentioned_d2050e218" xml:lang="tr-x-anat"><lang/>
                         <w>köken</w>
-                        <gloss><q>земляника</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Zenker"/></bibl>); <mentioned xml:lang="ce"><lang/>
-                        <w>koka</w></mentioned>, <mentioned xml:lang="krc-x-balkar"><lang/>
+                        <gloss><q>земляника</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Zenker"/></bibl>); <mentioned xml:id="mentioned_d2050e230" xml:lang="ce"><lang/>
+                        <w>koka</w></mentioned>, <mentioned xml:id="mentioned_d2050e235" xml:lang="krc-x-balkar"><lang/>
                         <w>kakon</w></mentioned> в %iEš-kakon%i название местности, буквально
                     „ослиный (%ieš%i) терновник (%ikakon%i)", ср. аналогичное осетинское выражение:
-                    %ixæræg synʒ%i ‘ослиный терновник’. Может быть, сюда же <mentioned xml:lang="ka"
-                        dialect="ka-x-rach"><lang/>
+                    %ixæræg synʒ%i ‘ослиный терновник’. Может быть, сюда же <mentioned xml:id="mentioned_d2050e240" xml:lang="ka" dialect="ka-x-rach"><lang/>
                         <w>c’ia k’ok’onia</w>
                         <gloss><q>обрядовый костер</q></gloss></mentioned> (из терновника?)
                             (<bibl><ref type="bibl" target="#ref_СМК"/><biblScope>XXI 2
                             122</biblScope></bibl>). — Если допустить, что в корне слова лежит
-                        <mentioned xml:lang="trk"><lang/>
+                        <mentioned xml:id="mentioned_d2050e252" xml:lang="trk"><lang/>
                         <w>kök</w>
                         <gloss><q>синий</q></gloss></mentioned> (что, однако, подходит не для всех
                     приведенных значений), то первоисточник следует искать в тюркских языках.
-                            <bibl><ref type="bibl" target="#ref_Gombocz"
-                            /><biblScope>(101)</biblScope></bibl> считает венг. %ikökény%i
-                    заимствованным из <mentioned xml:lang="xbo"><lang/>
+                            <bibl><ref type="bibl" target="#ref_Gombocz"/><biblScope>(101)</biblScope></bibl> считает венг. %ikökény%i
+                    заимствованным из <mentioned xml:id="mentioned_d2050e265" xml:lang="xbo"><lang/>
                         <w>*kükän</w></mentioned>, а восточнофинские факты, вряд ли основательно,
                     совершенно отделяет. Осетинский мог заимствовать слово как из угро-финских (ср.
                     %ipysyra%i ‘крапива’), так и из тюркских (для соответствия тюрк. %iküküm%i — ос.
@@ -114,37 +110,31 @@
                     ‘кувшин’). О связи с др.инд. %ikakṣa-%i ‘низкий кустарник’ думать не
                     приходится.</etym>
                 <etym xml:lang="en">The word is present in Ugro-Finnic, Turkic and Caucasian
-                    languages: <mentioned xml:lang="hu"><lang/>
-                        <w>kökény</w></mentioned>, <mentioned xml:lang="hu"><w>kökönye</w>
-                        <gloss><q>blackthorn</q></gloss></mentioned>, <mentioned xml:lang="kv"><lang/>
-                        <w>kokan</w></mentioned>, <mentioned xml:lang="udm"><lang/>
+                    languages: <mentioned xml:id="mentioned_d2050e275" xml:lang="hu"><lang/>
+                        <w>kökény</w></mentioned>, <mentioned xml:id="mentioned_d2050e280" xml:lang="hu"><w>kökönye</w>
+                        <gloss><q>blackthorn</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2050e286" xml:lang="kv"><lang/>
+                        <w>kokan</w></mentioned>, <mentioned xml:id="mentioned_d2050e291" xml:lang="udm"><lang/>
                         <w>kekon</w>
-                        <gloss><q>hellebore</q></gloss></mentioned>, <mentioned xml:lang="udm"><w/>
-                        <gloss><q>helleborus</q></gloss></mentioned>, <mentioned xml:lang="trk"
-                        extralang="chg"><lang/>
+                        <gloss><q>hellebore</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2050e299" xml:lang="udm"><w/>
+                        <gloss><q>helleborus</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2050e306" xml:lang="trk" extralang="chg"><lang/>
                         <w>küküm</w>
-                        <gloss><q>prunus</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Vámbéry"/></bibl>), <mentioned xml:lang="ky"><lang/>
+                        <gloss><q>prunus</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Vámbéry"/></bibl>), <mentioned xml:id="mentioned_d2050e317" xml:lang="ky"><lang/>
                         <w>küken</w>
-                        <gloss><q>cherry</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Будагов"/></bibl>), <mentioned xml:lang="tr-x-anat"><lang/>
+                        <gloss><q>cherry</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Будагов"/></bibl>), <mentioned xml:id="mentioned_d2050e328" xml:lang="tr-x-anat"><lang/>
                         <w>köken</w>
-                        <gloss><q>strawberry</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Zenker"/></bibl>); <mentioned xml:lang="ce"><lang/>
-                        <w>koka</w></mentioned>, <mentioned xml:lang="krc-x-balkar"><lang/>
+                        <gloss><q>strawberry</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Zenker"/></bibl>); <mentioned xml:id="mentioned_d2050e340" xml:lang="ce"><lang/>
+                        <w>koka</w></mentioned>, <mentioned xml:id="mentioned_d2050e345" xml:lang="krc-x-balkar"><lang/>
                         <w>kakon</w></mentioned> in %iEš-kakon%i locality name, literally „donkey's
                     (%ieš%i) blackthorn (%ikakon%i)", cf. analogous Ossetic expression: %ixæræg
-                    synʒ%i ‘donkey's blackthorn’. Maybe <mentioned xml:lang="ka" dialect="ka-x-rach"><lang/>
+                    synʒ%i ‘donkey's blackthorn’. Maybe <mentioned xml:id="mentioned_d2050e350" xml:lang="ka" dialect="ka-x-rach"><lang/>
                         <w>c’ia k’ok’onia</w>
                         <gloss><q>ceremonial fire</q></gloss></mentioned> (from blackthorn?) is
-                    related to %ikakon%i as well (<bibl><ref type="bibl" target="#ref_СМК"
-                            /><biblScope>XXI 2 122</biblScope></bibl>). — Supposing that the root
-                    contains <mentioned xml:lang="trk"><lang/>
+                    related to %ikakon%i as well (<bibl><ref type="bibl" target="#ref_СМК"/><biblScope>XXI 2 122</biblScope></bibl>). — Supposing that the root
+                    contains <mentioned xml:id="mentioned_d2050e362" xml:lang="trk"><lang/>
                         <w>kök</w>
                         <gloss><q>blue</q></gloss></mentioned> (however, this is not suitable for
-                    all meanings above), its source should be in Turkic languages. <bibl><ref
-                            type="bibl" target="#ref_Gombocz"/><biblScope>(101)</biblScope></bibl>
-                    consideres Hungarian %ikökény%i to be borrowed from <mentioned xml:lang="xbo"><lang/>
+                    all meanings above), its source should be in Turkic languages. <bibl><ref type="bibl" target="#ref_Gombocz"/><biblScope>(101)</biblScope></bibl>
+                    consideres Hungarian %ikökény%i to be borrowed from <mentioned xml:id="mentioned_d2050e375" xml:lang="xbo"><lang/>
                         <w>*kükän</w></mentioned>, and he separates it from eastern-Finnish facts
                     (it is hardly so). Ossetic might have borrowed this word from Ugro-Finnic
                     languages (cf. %ipysyra%i ‘nettle’), as well as from Turkic languages (for the

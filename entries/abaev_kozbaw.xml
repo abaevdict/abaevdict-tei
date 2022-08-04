@@ -1,48 +1,52 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">kozbaw</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_kozbaw" xml:lang="os">
                 <form type="lemma"><orth>kozbaw</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d2163e69"><sense xml:id="sense_d2163e70"><abv:tr xml:lang="ru">
                             <q>лесть</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>flattery</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d2163e79"><abv:tr xml:lang="ru">
                             <q>льстивый</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>flattering</q>
                         </abv:tr></sense></sense>
-                <re xml:lang="os-x-digor">
+                <re xml:id="re_d2163e89" xml:lang="os-x-digor">
                     <lang/>
                     <form type="lemma"><orth>kozbaw ʒoræ</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d2163e96"><abv:tr xml:lang="ru">
                             <q>льстивая речь</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>flattering speech</q>
                         </abv:tr></sense>
-                    <note type="bibl">(<bibl><ref type="bibl" target="#src_Sam."
-                                /><biblScope>63</biblScope></bibl>)</note>
+                    <note type="bibl">(<bibl><ref type="bibl" target="#src_Sam."/><biblScope>63</biblScope></bibl>)</note>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d2163e116" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>næ kænʒænæn æz mæ finstæj mæ zin bæntti dær kozbaw</quote>
                         <abv:tr xml:lang="ru">
@@ -53,7 +57,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Bes."/><biblScope>59</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2163e138">
                         <quote>kozbaw bakænynmæ ūmæn æmbal næ wyd</quote>
                         <abv:tr xml:lang="ru">
                             <q>в лести ему не было равного</q>
@@ -61,25 +65,20 @@
                         <abv:tr xml:lang="en">
                             <q>he had no equal in flattery</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Хаджи-Мурат"
-                            /><biblScope>81</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Хаджи-Мурат"/><biblScope>81</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Ср. <mentioned xml:lang="trk"><lang/>
+                <etym xml:lang="ru">Ср. <mentioned xml:id="mentioned_d2163e160" xml:lang="trk"><lang/>
                         <w>közbaǧi</w>
                         <gloss><q>чародейство</q></gloss></mentioned> (%iköz%i ‘глаз’ и %ibaǧi%i
-                    ‘чародейство’). В осетинский вошла закономерная %bбалкарская%b форма <mentioned
-                        xml:lang="krc-x-balkar"><lang/>
-                        <w>közbaw</w></mentioned>.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>II
+                    ‘чародейство’). В осетинский вошла закономерная %bбалкарская%b форма <mentioned xml:id="mentioned_d2163e168" xml:lang="krc-x-balkar"><lang/>
+                        <w>közbaw</w></mentioned>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II
                     113</biblScope></bibl>.</etym>
-                <etym xml:lang="en">Cf. <mentioned xml:lang="trk"><lang/>
+                <etym xml:lang="en">Cf. <mentioned xml:id="mentioned_d2163e181" xml:lang="trk"><lang/>
                         <w>közbaǧi</w>
                         <gloss><q>sorcery</q></gloss></mentioned> (%iköz%i ‘eye’ and %ibaǧi%i
-                    ‘sorcery’). Ossetic acquired the regular %bBalkar%b form <mentioned
-                        xml:lang="krc-x-balkar"><lang/>
-                        <w>közbaw</w></mentioned>.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>II
+                    ‘sorcery’). Ossetic acquired the regular %bBalkar%b form <mentioned xml:id="mentioned_d2163e189" xml:lang="krc-x-balkar"><lang/>
+                        <w>közbaw</w></mentioned>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II
                     113</biblScope></bibl>.</etym>
             </entry>
         </body>

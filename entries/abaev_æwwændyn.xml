@@ -1,38 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">æwwændyn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_æwwændyn" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>æwwændyn</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>æwwændun</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d4658e72"><sense xml:id="sense_d4658e73"><abv:tr xml:lang="ru">
                             <q>доверять</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>trust</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d4658e82"><abv:tr xml:lang="ru">
                             <q>верить</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>believe</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4658e94">
                         <quote>bawwænd myl, o, Inal</quote>
                         <abv:tr xml:lang="ru">
                             <q>поверь мне, о Инал</q>
@@ -40,10 +45,9 @@
                         <abv:tr xml:lang="en">
                             <q>trust me, oh Inal</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"
-                            /><biblScope>143</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>143</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4658e113" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>wæ astæw rævzaretæ kæbæl æwwændetæ wæxæn lægtæ</quote>
                         <abv:tr xml:lang="ru">
@@ -56,7 +60,7 @@
                                 %sКокиева%s</biblScope><biblScope xml:lang="en">from G. %sKokiev%s's
                                 manuscript</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4658e137" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>zin-æwwændæ æj æma din dæ ʒurdditæbæl ku ne ‘wwænda…</quote>
                         <abv:tr xml:lang="ru">
@@ -65,18 +69,15 @@
                         <abv:tr xml:lang="en">
                             <q>he is mistrustful and if he doesn't believe your words…</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Диг._сказ."
-                            /><biblScope>37</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Диг._сказ."/><biblScope>37</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Сращение глагола <ref type="xr" target="#entry_wændyn"/> ‘сметь’
                     с превербом <ref type="xr" target="#entry_æm-"/>, ассимилировавшим свой
-                    согласный элемент (%iæm%i-%iwændyn%i → %iæwwændyn%i). Ср. <ref type="xr"
-                        target="#entry_æwwīlyn"/>.</etym>
+                    согласный элемент (%iæm%i-%iwændyn%i → %iæwwændyn%i). Ср. <ref type="xr" target="#entry_æwwīlyn"/>.</etym>
                 <etym xml:lang="en">The fusion of the verb <ref type="xr" target="#entry_wændyn"/>
                     ‘dare’ with the preverb <ref type="xr" target="#entry_æm-"/>, which has
-                    assimilated its consonant element (%iæm%i-%iwændyn%i → %iæwwændyn%i). Cf. <ref
-                        type="xr" target="#entry_æwwīlyn"/>.</etym>
+                    assimilated its consonant element (%iæm%i-%iwændyn%i → %iæwwændyn%i). Cf. <ref type="xr" target="#entry_æwwīlyn"/>.</etym>
             </entry>
         </body>
     </text>

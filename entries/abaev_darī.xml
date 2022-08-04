@@ -1,37 +1,42 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">darī</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_darī" xml:lang="os">
                 <form type="lemma"><orth>darī</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d899e69"><sense xml:id="sense_d899e70"><abv:tr xml:lang="ru">
                             <q>вид шелковой ткани</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>type of silk fabric</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d899e79"><abv:tr xml:lang="ru">
                             <q>канаус</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>coarse silken fabric</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d899e91">
                         <quote>dæw syrx darījæ xorz ysfælysta</quote>
                         <abv:tr xml:lang="ru">
                             <q>тебя он отлично нарядил в красный %sдари%s</q>
@@ -41,7 +46,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>19</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d899e110">
                         <quote>darī æmæ zældaǵy fælystæj badti kælæt bandonyl Bīganon</quote>
                         <abv:tr xml:lang="ru">
                             <q>наряженная в %sдари%s и шелк, сидела в кресле Биганон</q>
@@ -51,7 +56,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Arsen"/><biblScope>38</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d899e129" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>Agundæ ræsuǧd fæjjawi xætæl ku babædduj wæd surx darīj medæg</quote>
                         <abv:tr xml:lang="ru">
@@ -64,7 +69,7 @@
                         <bibl><ref type="bibl" target="#src_ОЭп."/><biblScope>57%l121—122%l,
                                 62%l334%l, 93</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d899e151" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>saw darītæj mæ saw fælust dæ razdæxtmæ isrævʒæ kænʒænæn</quote>
                         <abv:tr xml:lang="ru">
@@ -75,10 +80,9 @@
                             <q>for your return I will prepare my black outfit made of black
                                 %sdari%s</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Диг._сказ."
-                                /><biblScope>52%l9%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Диг._сказ."/><biblScope>52%l9%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d899e173" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>darījæ din kurættag</quote>
                         <abv:tr xml:lang="ru">
@@ -87,10 +91,9 @@
                         <abv:tr xml:lang="en">
                             <q>%sdari%s beshmet is for you</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Gurdž._Æduli"
-                            /><biblScope>81</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Gurdž._Æduli"/><biblScope>81</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d899e196" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>du dær bajjevʒænæ darījæj dæ diviltæ</quote>
                         <abv:tr xml:lang="ru">
@@ -99,29 +102,26 @@
                         <abv:tr xml:lang="en">
                             <q>and you will change your rags to %sdari%s</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Gurdž._Æduli"
-                            /><biblScope>98</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Gurdž._Æduli"/><biblScope>98</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из <mentioned xml:lang="fa"><lang/>
+                <etym xml:lang="ru">Из <mentioned xml:id="mentioned_d899e221" xml:lang="fa"><lang/>
                         <w>dārāī</w>
                         <gloss><q>род шелковой материи, вырабатываемой в Иезде и
-                            Исфагани</q></gloss></mentioned>; ср. <ref type="xr"
-                        target="#entry_xaræ"/>. Усвоено и в другие кавказские языки: <mentioned
-                        xml:lang="ka"><lang/>
-                        <w>daraja</w></mentioned>, <mentioned xml:lang="kbd"><lang/>
-                        <w>darīj</w></mentioned>, <mentioned xml:lang="x-vaynakh"><lang/>
-                        <w>dari</w></mentioned>, <mentioned xml:lang="x-vaynakh"><w>däri</w>
+                            Исфагани</q></gloss></mentioned>; ср. <ref type="xr" target="#entry_xaræ"/>. Усвоено и в другие кавказские языки: <mentioned xml:id="mentioned_d899e231" xml:lang="ka"><lang/>
+                        <w>daraja</w></mentioned>, <mentioned xml:id="mentioned_d899e236" xml:lang="kbd"><lang/>
+                        <w>darīj</w></mentioned>, <mentioned xml:id="mentioned_d899e241" xml:lang="x-vaynakh"><lang/>
+                        <w>dari</w></mentioned>, <mentioned xml:id="mentioned_d899e247" xml:lang="x-vaynakh"><w>däri</w>
                         <gloss><q>шелковая ткань</q></gloss></mentioned>. Персидские шелка
                     славились, как известно, не только на Кавказе, но и в России.</etym>
-                <etym xml:lang="en">From <mentioned xml:lang="fa"><lang/>
+                <etym xml:lang="en">From <mentioned xml:id="mentioned_d899e256" xml:lang="fa"><lang/>
                         <w>dārāī</w>
                         <gloss><q>a kind of silk fabric produced in Yazd and
                         Isfahan</q></gloss></mentioned>; cf. <ref type="xr" target="#entry_xaræ"/>.
-                    The word was borrowed in other Caucasian languages: <mentioned xml:lang="ka"><lang/>
-                        <w>daraja</w></mentioned>, <mentioned xml:lang="kbd"><lang/>
-                        <w>darīj</w></mentioned>, <mentioned xml:lang="x-vaynakh"><lang/>
-                        <w>dari</w></mentioned>, <mentioned xml:lang="x-vaynakh"><w>däri</w>
+                    The word was borrowed in other Caucasian languages: <mentioned xml:id="mentioned_d899e266" xml:lang="ka"><lang/>
+                        <w>daraja</w></mentioned>, <mentioned xml:id="mentioned_d899e271" xml:lang="kbd"><lang/>
+                        <w>darīj</w></mentioned>, <mentioned xml:id="mentioned_d899e276" xml:lang="x-vaynakh"><lang/>
+                        <w>dari</w></mentioned>, <mentioned xml:id="mentioned_d899e282" xml:lang="x-vaynakh"><w>däri</w>
                         <gloss><q>silk fabric</q></gloss></mentioned>. As far as it is known,
                     Persian silks were famous not only in Caucasus, but also in Russia.</etym>
             </entry>

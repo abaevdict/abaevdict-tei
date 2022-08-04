@@ -1,44 +1,47 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">æssonyn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_æssonyn" xml:lang="os">
-                <form xml:lang="os-x-iron" type="lemma"><orth>æssonyn</orth><form type="participle"
-                            ><orth>æssyd</orth></form></form>
-                <form xml:lang="os-x-digor" type="dialectal"><orth>ænsonun</orth><form
-                        type="participle"><orth>ænsud</orth></form></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <form xml:lang="os-x-iron" type="lemma"><orth>æssonyn</orth><form type="participle"><orth>æssyd</orth></form></form>
+                <form xml:lang="os-x-digor" type="dialectal"><orth>ænsonun</orth><form type="participle"><orth>ænsud</orth></form></form>
+                <sense xml:id="sense_d2317e76"><sense xml:id="sense_d2317e77"><abv:tr xml:lang="ru">
                             <q>толкать</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>to push</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d2317e86"><abv:tr xml:lang="ru">
                             <q>проталкивать</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>to push through</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d2317e95"><abv:tr xml:lang="ru">
                             <q>совать</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>to put into</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d2317e107">
                         <quote>dwar asson!</quote>
                         <abv:tr xml:lang="ru">
                             <q>закрой (толкни) дверь!</q>
@@ -47,7 +50,7 @@
                             <q>close (push) the door!</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2317e122">
                         <quote>æstdæs æmæ ʽssæʒ tūmany Piran jæ ʒyppy assydta</quote>
                         <abv:tr xml:lang="ru">
                             <q>38 туманов Пиран сунул в карман</q>
@@ -57,7 +60,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Сека"/><biblScope>61</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d2317e141" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>æjnægi nixæj oj ku fensonuj</quote>
                         <abv:tr xml:lang="ru">
@@ -71,56 +74,45 @@
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Восходит к *%iham-sān%i-, сращение преверба %iæn%i-(←%iham%i-) с
                     основой %isan%i-, которая в других иранских языках засвидетельствована в
-                    значении ‘подыматься’ (каузативно — ‘подымать’); ср. <mentioned xml:lang="wbl"><lang/>
-                        <w>san-: sat-</w></mentioned>, <mentioned xml:lang="yai"><lang/>
+                    значении ‘подыматься’ (каузативно — ‘подымать’); ср. <mentioned xml:id="mentioned_d2317e166" xml:lang="wbl"><lang/>
+                        <w>san-: sat-</w></mentioned>, <mentioned xml:id="mentioned_d2317e171" xml:lang="yai"><lang/>
                         <w>san-</w>
-                        <gloss><q>подыматься</q></gloss></mentioned>, <mentioned xml:lang="sog"><lang/>
+                        <gloss><q>подыматься</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2317e179" xml:lang="sog"><lang/>
                         <w>san-(s'n)</w></mentioned> id. (каузатив — ‘подымать’) (ср.:
-                            <bibl><author>Bailey</author><ref type="bibl" target="#ref_BSOS"
-                            /><biblScope>IX 77</biblScope></bibl>), <mentioned xml:lang="xpr"><lang/>
+                            <bibl><author>Bailey</author><ref type="bibl" target="#ref_BSOS"/><biblScope>IX 77</biblScope></bibl>), <mentioned xml:id="mentioned_d2317e189" xml:lang="xpr"><lang/>
                         <w>sn-</w>
-                        <gloss><q>подыматься</q></gloss></mentioned>, <mentioned xml:lang="xpr"
-                            ><w>s'n</w>
-                        <gloss><q>подымать</q></gloss></mentioned>, <mentioned xml:lang="xpr"
-                            ><w>'ws'n</w>
-                        <gloss><q>спускать вниз</q></gloss></mentioned>, ‘сбрасывать’ (<bibl><ref
-                            type="bibl" target="#ref_BSOAS"/><biblScope>1940, стр.
-                        509</biblScope></bibl>), <mentioned xml:lang="sgh-x-bartang"><lang/>
-                        <w>sōn-</w></mentioned>, <mentioned xml:lang="yai"><lang/>
+                        <gloss><q>подыматься</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2317e198" xml:lang="xpr"><w>s'n</w>
+                        <gloss><q>подымать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2317e204" xml:lang="xpr"><w>'ws'n</w>
+                        <gloss><q>спускать вниз</q></gloss></mentioned>, ‘сбрасывать’ (<bibl><ref type="bibl" target="#ref_BSOAS"/><biblScope>1940, стр.
+                        509</biblScope></bibl>), <mentioned xml:id="mentioned_d2317e214" xml:lang="sgh-x-bartang"><lang/>
+                        <w>sōn-</w></mentioned>, <mentioned xml:id="mentioned_d2317e219" xml:lang="yai"><lang/>
                         <w>sayn-</w>
-                        <gloss><q>подымать</q></gloss></mentioned>; <mentioned xml:lang="pal"><lang/>
+                        <gloss><q>подымать</q></gloss></mentioned>; <mentioned xml:id="mentioned_d2317e227" xml:lang="pal"><lang/>
                         <w>s'n-</w>
-                        <gloss><q>производить</q></gloss></mentioned>; сюда же<mentioned
-                        xml:lang="kho"><lang/>
+                        <gloss><q>производить</q></gloss></mentioned>; сюда же<mentioned xml:id="mentioned_d2317e236" xml:lang="kho"><lang/>
                         <note type="comment" xml:lang="ru">диал.</note><w>ra-san-anda</w>
                         <gloss><q>направляющий</q></gloss></mentioned>? В осетинском закрепилось
                     каузативное значение.</etym>
                 <etym xml:lang="en">It traces back to *%iham-sān%i-, the fusion of the preverb
                     %iæn%i-(←%iham%i-) and the stem %isan%i-, which is found in other iranian
                     languages in the meaning ‘to go up’ (causative pair — ‘to lift’); compare
-                        <mentioned xml:lang="wbl"><lang/>
-                        <w>san-: sat-</w></mentioned>, <mentioned xml:lang="yai"><lang/>
+                        <mentioned xml:id="mentioned_d2317e250" xml:lang="wbl"><lang/>
+                        <w>san-: sat-</w></mentioned>, <mentioned xml:id="mentioned_d2317e255" xml:lang="yai"><lang/>
                         <w>san-</w>
-                        <gloss><q>to go up</q></gloss></mentioned>, <mentioned xml:lang="sog"><lang/>
+                        <gloss><q>to go up</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2317e263" xml:lang="sog"><lang/>
                         <w>san-(s'n)</w></mentioned> id. (causative pair is ˈto lift') (compare:
-                            <bibl><author>Bailey</author><ref type="bibl" target="#ref_BSOS"
-                            /><biblScope>IX 77</biblScope></bibl>), <mentioned xml:lang="xpr"><lang/>
+                            <bibl><author>Bailey</author><ref type="bibl" target="#ref_BSOS"/><biblScope>IX 77</biblScope></bibl>), <mentioned xml:id="mentioned_d2317e273" xml:lang="xpr"><lang/>
                         <w>sn-</w>
-                        <gloss><q>to go up</q></gloss></mentioned>, <mentioned xml:lang="xpr"
-                            ><w>s'n</w>
-                        <gloss><q>to lift</q></gloss></mentioned>, <mentioned xml:lang="xpr"
-                            ><w>'ws'n</w>
-                        <gloss><q>to get down</q></gloss></mentioned>, ‘to throw down’ (<bibl><ref
-                            type="bibl" target="#ref_BSOAS"/><biblScope>1940, стр.
-                        509</biblScope></bibl>), <mentioned xml:lang="sgh-x-bartang"><lang/>
-                        <w>sōn-</w></mentioned>, <mentioned xml:lang="yai"><lang/>
+                        <gloss><q>to go up</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2317e282" xml:lang="xpr"><w>s'n</w>
+                        <gloss><q>to lift</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2317e288" xml:lang="xpr"><w>'ws'n</w>
+                        <gloss><q>to get down</q></gloss></mentioned>, ‘to throw down’ (<bibl><ref type="bibl" target="#ref_BSOAS"/><biblScope>1940, стр.
+                        509</biblScope></bibl>), <mentioned xml:id="mentioned_d2317e298" xml:lang="sgh-x-bartang"><lang/>
+                        <w>sōn-</w></mentioned>, <mentioned xml:id="mentioned_d2317e303" xml:lang="yai"><lang/>
                         <w>sayn-</w>
-                        <gloss><q>to lift</q></gloss></mentioned>; <mentioned xml:lang="pal"><lang/>
+                        <gloss><q>to lift</q></gloss></mentioned>; <mentioned xml:id="mentioned_d2317e311" xml:lang="pal"><lang/>
                         <w>s'n-</w>
-                        <gloss><q>to produce</q></gloss></mentioned>; also here <mentioned
-                        xml:lang="kho"><lang/>
-                        <note type="comment"
-                            xml:lang="en">dialect</note><w>ra-san-anda</w>
+                        <gloss><q>to produce</q></gloss></mentioned>; also here <mentioned xml:id="mentioned_d2317e320" xml:lang="kho"><lang/>
+                        <note type="comment" xml:lang="en">dialect</note><w>ra-san-anda</w>
                         <gloss><q>leading</q></gloss></mentioned>? There is left a causative meaning
                     in Ossetic.</etym>
             </entry>

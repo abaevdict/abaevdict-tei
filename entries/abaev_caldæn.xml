@@ -1,36 +1,40 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">caldæn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_caldæn" xml:lang="os">
-                <form type="lemma"><orth>caldæn</orth><form type="variant"
-                        ><orth>caldængæ</orth></form></form>
-                <sense xml:lang="os-x-digor"><usg><lang/></usg><sense><abv:tr xml:lang="ru">
+                <form type="lemma"><orth>caldæn</orth><form type="variant"><orth>caldængæ</orth></form></form>
+                <sense xml:id="sense_d4871e71" xml:lang="os-x-digor"><usg><lang/></usg><sense xml:id="sense_d4871e74"><abv:tr xml:lang="ru">
                             <q>пока</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>untill</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d4871e83"><abv:tr xml:lang="ru">
                             <q>до тех пор, пока</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4871e91">
                         <quote>caldæn aci biccew togi kʽuboræ jesta, wældæn in mælæt kud næ wa
                             otæ!</quote>
                         <abv:tr xml:lang="ru">
@@ -45,23 +49,18 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">От <ref type="xr" target="#entry_cal"/> ‘сколько’. Элемент
-                    -%idæn%i <bibl><author>А. Шегрен</author></bibl> сближает с <mentioned
-                        xml:lang="ka"><lang/>
-                        <w>-den</w></mentioned> в <mentioned xml:lang="ka"><lang/>
+                    -%idæn%i <bibl><author>А. Шегрен</author></bibl> сближает с <mentioned xml:id="mentioned_d4871e118" xml:lang="ka"><lang/>
+                        <w>-den</w></mentioned> в <mentioned xml:id="mentioned_d4871e123" xml:lang="ka"><lang/>
                         <w>raoden</w>
-                        <gloss><q>сколь</q></gloss></mentioned>, <mentioned xml:lang="ka"
-                            ><w>egoden</w></mentioned>, <mentioned xml:lang="ka"><w>esoden</w>
-                        <gloss><q>столь</q></gloss></mentioned>. Ср. <ref type="xr"
-                        target="#entry_waldæn"/> ‘до тех пор’,</etym>
+                        <gloss><q>сколь</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4871e131" xml:lang="ka"><w>egoden</w></mentioned>, <mentioned xml:id="mentioned_d4871e135" xml:lang="ka"><w>esoden</w>
+                        <gloss><q>столь</q></gloss></mentioned>. Ср. <ref type="xr" target="#entry_waldæn"/> ‘до тех пор’,</etym>
                 <etym xml:lang="en">From <ref type="xr" target="#entry_cal"/> ‘how much’. The
                     element -%idæn%i <bibl><author>А. Шегрен</author></bibl> connects with
-                        <mentioned xml:lang="ka"><lang/>
-                        <w>-den</w></mentioned> in <mentioned xml:lang="ka"><lang/>
+                        <mentioned xml:id="mentioned_d4871e151" xml:lang="ka"><lang/>
+                        <w>-den</w></mentioned> in <mentioned xml:id="mentioned_d4871e156" xml:lang="ka"><lang/>
                         <w>raoden</w>
-                        <gloss><q>(how) many</q></gloss></mentioned>, <mentioned xml:lang="ka"
-                            ><w>egoden</w></mentioned>, <mentioned xml:lang="ka"><w>esoden</w>
-                        <gloss><q>so</q></gloss></mentioned>. Cf. <ref type="xr"
-                        target="#entry_waldæn"/> ‘until’,</etym>
+                        <gloss><q>(how) many</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4871e164" xml:lang="ka"><w>egoden</w></mentioned>, <mentioned xml:id="mentioned_d4871e168" xml:lang="ka"><w>esoden</w>
+                        <gloss><q>so</q></gloss></mentioned>. Cf. <ref type="xr" target="#entry_waldæn"/> ‘until’,</etym>
             </entry>
         </body>
     </text>

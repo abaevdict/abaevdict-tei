@@ -1,35 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">fyddæragæn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_fyddæragæn" xml:lang="os">
-                <form xml:lang="os-x-iron" type="lemma"><orth>fyddæragæn</orth><form type="variant"
-                            ><orth>fyddæradæn</orth></form></form>
+                <form xml:lang="os-x-iron" type="lemma"><orth>fyddæragæn</orth><form type="variant"><orth>fyddæradæn</orth></form></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>fuddæragæn</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d5382e74"><abv:tr xml:lang="ru">
                         <q>назло</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>to spite</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d5382e86">
                         <quote>ænæcæstwarzon adæm xattæj-xatt fyddæragæn mītæ dær kænync</quote>
                         <abv:tr xml:lang="ru">
                             <q>недоброжелательные люди иногда действуют назло</q>
@@ -40,7 +44,7 @@
                         <bibl><ref type="bibl" target="#src_MD"/><biblScope>1934 II
                             8</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5382e105" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>fons fuddæragæn fæccaǧtoncæ</quote>
                         <abv:tr xml:lang="ru">
@@ -49,10 +53,9 @@
                         <abv:tr xml:lang="en">
                             <q>cattle were exterminated out of spite</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_SD"
-                            /><biblScope>176%l4%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_SD"/><biblScope>176%l4%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5382e127" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>kustmæ fuddæradæn næ cæwuncæ</quote>
                         <abv:tr xml:lang="ru">
@@ -61,22 +64,19 @@
                         <abv:tr xml:lang="en">
                             <q>(they) don't go to work out of spite</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_SD"
-                            /><biblScope>285%l4%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_SD"/><biblScope>285%l4%l</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Форма дательного падежа (на %i-æn%i) от %i*fyddærag%i или
                     %i*fyddærad%i, разлагающихся на <ref type="xr" target="#entry_fyddær"/> ‘хуже’ и
                     суффикс %i-ag%i или %i-ad%i. Оба варианта обоснованы: в первом случае мы можем
                     видеть суффикс %i-ag%i, означающий ‘предназначенность для чего-либо’, во втором
-                    — абстрактный суффикс %i-ad%i. Ср. <ref type="xr" target="#entry_fydænæn"
-                    />.</etym>
+                    — абстрактный суффикс %i-ad%i. Ср. <ref type="xr" target="#entry_fydænæn"/>.</etym>
                 <etym xml:lang="en">Dative (%i-æn%i) form of %i*fyddærag%i or %i*fyddærad%i, which
                     can be decomposed into <ref type="xr" target="#entry_fyddær"/> ‘worse’ and
                     suffix %i-ag%i or %i-ad%i. Both options are justified: in the first case, we can
                     see the suffix %i-ag%i, meaning ‘predestination for something’, in the second
-                    case there is the abstract suffix %i-ad%i. Compare with <ref type="xr"
-                        target="#entry_fydænæn"/>.</etym>
+                    case there is the abstract suffix %i-ad%i. Compare with <ref type="xr" target="#entry_fydænæn"/>.</etym>
             </entry>
         </body>
     </text>

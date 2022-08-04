@@ -1,43 +1,48 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">cad</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_cad" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>cad</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>cadæ</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d5276e72"><abv:tr xml:lang="ru">
                         <q>озеро</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>lake</q>
                     </abv:tr></sense>
-                <re>
+                <re xml:id="re_d5276e82">
                     <form xml:lang="os-x-iron" type="lemma"><orth>ænæbyn cad</orth></form>
                     <form xml:lang="os-x-digor" type="dialectal"><orth>ænæbun cadæ</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d5276e90"><abv:tr xml:lang="ru">
                             <q>бездонное озеро</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>depthless lake</q>
                         </abv:tr></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d5276e103">
                         <quote>abyrǵytæ baftydysty Qely cadmæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>абреки попали к Кельскому озеру</q>
@@ -46,7 +51,7 @@
                             <q>abreks arrived to Keli Lake</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5276e118">
                         <quote>æxsyry cady īw x˳y ī, æmæ myn ūj igærtæ ærxæssut</quote>
                         <abv:tr xml:lang="ru">
                             <q>в молочном озере есть один кабан, так принесите мне его печень</q>
@@ -58,71 +63,52 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Общеиранское слово, в других иранских языках
-                    засвидетельствованное в значении ‘колодец’: <mentioned xml:lang="fa"><lang/>
-                        <w>čah</w></mentioned>, <mentioned xml:lang="ps"><lang/>
-                        <w>tsāh</w></mentioned>, <mentioned xml:lang="x-balochi"><lang/>
-                        <w>čāθ</w><note type="comment" xml:lang="ru"> (<bibl><ref type="bibl"
-                                    target="#ref_BSOS"/><biblScope>VIII
-                            139</biblScope></bibl>)</note></mentioned>, <mentioned
-                        xml:lang="sog"><lang/>
-                        <w>*čāt(č't)</w></mentioned>, <mentioned xml:lang="kho"><lang/>
-                        <w>tcāta</w></mentioned>, <mentioned xml:lang="ae"><lang/>
-                        <w>čāt-</w></mentioned>. Может быть, сюда же <mentioned xml:lang="ydg"><lang/>
+                    засвидетельствованное в значении ‘колодец’: <mentioned xml:id="mentioned_d5276e141" xml:lang="fa"><lang/>
+                        <w>čah</w></mentioned>, <mentioned xml:id="mentioned_d5276e146" xml:lang="ps"><lang/>
+                        <w>tsāh</w></mentioned>, <mentioned xml:id="mentioned_d5276e151" xml:lang="x-balochi"><lang/>
+                        <w>čāθ</w><note type="comment" xml:lang="ru"> (<bibl><ref type="bibl" target="#ref_BSOS"/><biblScope>VIII
+                            139</biblScope></bibl>)</note></mentioned>, <mentioned xml:id="mentioned_d5276e162" xml:lang="sog"><lang/>
+                        <w>*čāt(č't)</w></mentioned>, <mentioned xml:id="mentioned_d5276e167" xml:lang="kho"><lang/>
+                        <w>tcāta</w></mentioned>, <mentioned xml:id="mentioned_d5276e173" xml:lang="ae"><lang/>
+                        <w>čāt-</w></mentioned>. Может быть, сюда же <mentioned xml:id="mentioned_d5276e178" xml:lang="ydg"><lang/>
                         <w>čād-</w>
-                        <gloss><q>орошать</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Morgenstierne._IIFL"/><biblScope>II
-                    201</biblScope></bibl>). Значение ‘озеро’ находим в <mentioned xml:lang="khw"><lang/>
+                        <gloss><q>орошать</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Morgenstierne._IIFL"/><biblScope>II
+                    201</biblScope></bibl>). Значение ‘озеро’ находим в <mentioned xml:id="mentioned_d5276e190" xml:lang="khw"><lang/>
                         <w>čat</w></mentioned>, представляющем старое заимствование из
-                    восточноиранского (<bibl><ref type="bibl"
-                            target="#ref_Morgenstierne._Rep._Afgh."
-                        /><biblScope>76</biblScope></bibl>). Ос. <ref type="xr" target="#entry_cʼaj"
-                    /> ‘колодец’ представляет то же самое слово, но прошедшее иной путь: из
-                    персидского оно проникло в грузинский, а оттуда — в осетинский. <mentioned
-                        xml:lang="fa"><lang/>
-                        <w>čāh</w></mentioned> восходит к *čāθa-, <mentioned xml:lang="os"><lang/>
+                    восточноиранского (<bibl><ref type="bibl" target="#ref_Morgenstierne._Rep._Afgh."/><biblScope>76</biblScope></bibl>). Ос. <ref type="xr" target="#entry_cʼaj"/> ‘колодец’ представляет то же самое слово, но прошедшее иной путь: из
+                    персидского оно проникло в грузинский, а оттуда — в осетинский. <mentioned xml:id="mentioned_d5276e202" xml:lang="fa"><lang/>
+                        <w>čāh</w></mentioned> восходит к *čāθa-, <mentioned xml:id="mentioned_d5276e207" xml:lang="os"><lang/>
                         <w>cad</w></mentioned> — к %ičāta%i-. — Вероятно, от корня %ikan%i-
-                    ‘копать’. — <mentioned xml:lang="kbd"><lang/>
+                    ‘копать’. — <mentioned xml:id="mentioned_d5276e212" xml:lang="kbd"><lang/>
                         <w>šät’ät’</w>
-                        <gloss><q>озеро</q></gloss></mentioned>, <mentioned xml:lang="kbd"><w/>
-                        <gloss><q>болото</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Ногма"/><biblScope>221</biblScope></bibl>) — из
-                            аланского?%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"
-                            /><biblScope>II 78</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_ОЯФ_I"/><biblScope>51</biblScope></bibl>. — <bibl><ref
-                            type="bibl" target="#ref_ВЯ"/><biblScope>1952 V
+                        <gloss><q>озеро</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5276e220" xml:lang="kbd"><w/>
+                        <gloss><q>болото</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Ногма"/><biblScope>221</biblScope></bibl>) — из
+                            аланского?%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 78</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>51</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_ВЯ"/><biblScope>1952 V
                     63</biblScope></bibl>.</etym>
                 <etym xml:lang="en">A common Iranian word, which is atessted in other languages in
-                    the meaning ‘well’: <mentioned xml:lang="fa"><lang/>
-                        <w>čah</w></mentioned>, <mentioned xml:lang="ps"><lang/>
-                        <w>tsāh</w></mentioned>, <mentioned xml:lang="x-balochi"><lang/>
+                    the meaning ‘well’: <mentioned xml:id="mentioned_d5276e246" xml:lang="fa"><lang/>
+                        <w>čah</w></mentioned>, <mentioned xml:id="mentioned_d5276e251" xml:lang="ps"><lang/>
+                        <w>tsāh</w></mentioned>, <mentioned xml:id="mentioned_d5276e256" xml:lang="x-balochi"><lang/>
                         <w>čāθ</w><note type="comment" xml:lang="en">
                                     (<bibl><ref type="bibl" target="#ref_BSOS"/><biblScope>VIII
-                                    139</biblScope></bibl>)</note></mentioned>, <mentioned
-                        xml:lang="sog"><lang/>
-                        <w>*čāt(č't)</w></mentioned>, <mentioned xml:lang="kho"><lang/>
-                        <w>tcāta</w></mentioned>, <mentioned xml:lang="ae"><lang/>
-                        <w>čāt-</w></mentioned>. May be <mentioned xml:lang="ydg"><lang/>
+                                    139</biblScope></bibl>)</note></mentioned>, <mentioned xml:id="mentioned_d5276e267" xml:lang="sog"><lang/>
+                        <w>*čāt(č't)</w></mentioned>, <mentioned xml:id="mentioned_d5276e272" xml:lang="kho"><lang/>
+                        <w>tcāta</w></mentioned>, <mentioned xml:id="mentioned_d5276e278" xml:lang="ae"><lang/>
+                        <w>čāt-</w></mentioned>. May be <mentioned xml:id="mentioned_d5276e283" xml:lang="ydg"><lang/>
                         <w>čād-</w>
-                        <gloss><q>орошать</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Morgenstierne._IIFL"/><biblScope>II 201</biblScope></bibl>)
-                    also refers here. The meaning ‘lake’ is found in <mentioned xml:lang="khw"><lang/>
+                        <gloss><q>орошать</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Morgenstierne._IIFL"/><biblScope>II 201</biblScope></bibl>)
+                    also refers here. The meaning ‘lake’ is found in <mentioned xml:id="mentioned_d5276e295" xml:lang="khw"><lang/>
                         <w>čat</w></mentioned> representing an old borrowing from East Iranian
-                            (<bibl><ref type="bibl" target="#ref_Morgenstierne._Rep._Afgh."
-                            /><biblScope>76</biblScope></bibl>). Ossetic <ref type="xr"
-                        target="#entry_cʼaj"/> ‘well’ represents the same word, but that has passed
+                            (<bibl><ref type="bibl" target="#ref_Morgenstierne._Rep._Afgh."/><biblScope>76</biblScope></bibl>). Ossetic <ref type="xr" target="#entry_cʼaj"/> ‘well’ represents the same word, but that has passed
                     through a different route: from Persian it penetrated into Georgian, and from
-                    there into Ossetic. <mentioned xml:lang="fa"><lang/>
-                        <w>čāh</w></mentioned> traces back to *čāθa-, <mentioned xml:lang="os"><lang/>
+                    there into Ossetic. <mentioned xml:id="mentioned_d5276e307" xml:lang="fa"><lang/>
+                        <w>čāh</w></mentioned> traces back to *čāθa-, <mentioned xml:id="mentioned_d5276e312" xml:lang="os"><lang/>
                         <w>cad</w></mentioned> — to %ičāta%i-. — Probably, it is derived from the
-                    root %ikan%i- ‘dig’. — <mentioned xml:lang="kbd"><lang/>
+                    root %ikan%i- ‘dig’. — <mentioned xml:id="mentioned_d5276e317" xml:lang="kbd"><lang/>
                         <w>šät’ät’</w>
-                        <gloss><q>lake</q></gloss></mentioned>, <mentioned xml:lang="kbd"><w/>
-                        <gloss><q>swamp</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Ногма"/><biblScope>221</biblScope></bibl>) — from
-                            Alan?%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"
-                            /><biblScope>II 78</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_ОЯФ_I"/><biblScope>51</biblScope></bibl>. — <bibl><ref
-                            type="bibl" target="#ref_ВЯ"/><biblScope>1952 V
+                        <gloss><q>lake</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5276e325" xml:lang="kbd"><w/>
+                        <gloss><q>swamp</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Ногма"/><biblScope>221</biblScope></bibl>) — from
+                            Alan?%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 78</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>51</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_ВЯ"/><biblScope>1952 V
                     63</biblScope></bibl>.</etym>
             </entry>
         </body>

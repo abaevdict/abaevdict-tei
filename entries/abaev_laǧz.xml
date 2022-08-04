@@ -1,36 +1,40 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">???</hi></title>
       </titleStmt>
-      <xi:include href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >11–12</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">11–12</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include href="../encodingdesc.xml" parse="xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
       <entry xml:id="entry_laǧz" xml:lang="os">
         <form type="lemma" xml:lang="os-x-iron"><orth>laǧz</orth></form>
         <form type="dialectal" xml:lang="os-x-digor"><orth>lilaǧz</orth></form>
-        <sense><sense><abv:tr xml:lang="ru">
+        <sense xml:id="sense_d4496e72"><sense xml:id="sense_d4496e73"><abv:tr xml:lang="ru">
               <q>ящик</q>
             </abv:tr><abv:tr xml:lang="en">
               <q>box</q>
-            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+            </abv:tr></sense><sense xml:id="sense_d4496e82"><abv:tr xml:lang="ru">
               <q>ларец</q>
             </abv:tr><abv:tr xml:lang="en">
               <q>case</q>
-            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+            </abv:tr></sense><sense xml:id="sense_d4496e91"><abv:tr xml:lang="ru">
               <note type="comment">в современном употреблении чаще </note>
               <note type="comment">в современном употреблении чаще </note>
               <q>выдвижной ящик (стола, комода, шкафа)</q>
@@ -39,7 +43,7 @@
               <q>sliding drawer (of a table, dresser, wardrobe)</q>
             </abv:tr></sense></sense>
         <abv:exampleGrp>
-          <abv:example>
+          <abv:example xml:id="example_d4496e112">
             <quote>Boræty axxærægæn jæ kæron nyllyg kænut, ūmæj laǧz yskænūt, syvællony ūm nyværūt …
               æmæ jæ fūrdy bapparūt</quote>
             <abv:tr xml:lang="ru">
@@ -53,7 +57,7 @@
             <bibl><ref target="#src_Нарт._сказ." type="bibl"/>
               <biblScope>336</biblScope></bibl>
           </abv:example>
-          <abv:example>
+          <abv:example xml:id="example_d4496e132">
             <quote>sarazūt myn me ‘mbærc laǧz</quote>
             <abv:tr xml:lang="ru">
               <q>сделайте мне ларец размером с меня</q>
@@ -64,7 +68,7 @@
             <bibl><ref target="#src_Munk." type="bibl"/>
               <biblScope>112</biblScope></bibl>
           </abv:example>
-          <abv:example xml:lang="os-x-digor">
+          <abv:example xml:id="example_d4496e152" xml:lang="os-x-digor">
             <usg><lang/></usg>
             <quote>Waciroxs … lilaǧz iskænun kodta … ma ‘j dengizi bagælsta</quote>
             <abv:tr xml:lang="ru">
@@ -76,7 +80,7 @@
             <bibl><ref target="#src_СОПам." type="bibl"/>
               <biblScope>II 33</biblScope></bibl>
           </abv:example>
-          <abv:example>
+          <abv:example xml:id="example_d4496e175">
             <quote>…felvæsta laǧzæj iw som</quote>
             <abv:tr xml:lang="ru">
               <q>достал из ящика один рубль</q>
@@ -87,7 +91,7 @@
             <bibl><ref target="#src_Arsen" type="bibl"/>
               <biblScope>51</biblScope></bibl>
           </abv:example>
-          <abv:example xml:lang="os-x-digor">
+          <abv:example xml:id="example_d4496e195" xml:lang="os-x-digor">
             <usg><lang/></usg>
             <quote>xestær xwæræ lilaǧzi ʒag wæxæn muxurtæ ærxasta</quote>
             <abv:tr xml:lang="ru">
@@ -99,7 +103,7 @@
             <bibl><ref type="bibl" target="#src_СОПам."/>
               <biblScope>II 115</biblScope></bibl>
           </abv:example>
-          <abv:example>
+          <abv:example xml:id="example_d4496e219">
             <quote>gæxxættytæ laǧzy atʼyston æmæ līʒæg fædæn mæ kʼabīnetæj</quote>
             <abv:tr xml:lang="ru">
               <q>я сунул бумаги в ящик (стола) и бросился бежать из кабинета</q>
@@ -111,14 +115,12 @@
               <biblScope>115</biblScope></bibl>
           </abv:example>
         </abv:exampleGrp>
-        <etym xml:lang="ru">Происхождение не ясно. Можно думать о <mentioned xml:lang="kbd"><lang/>
+        <etym xml:lang="ru">Происхождение не ясно. Можно думать о <mentioned xml:id="mentioned_d4496e242" xml:lang="kbd"><lang/>
             <w>laǧä</w>
-            <gloss><q>деревянная чаша</q></gloss></mentioned> с уменьшительным суффиксом <mentioned
-            xml:lang="kbd"><m>-žə</m></mentioned>.</etym>
-        <etym xml:lang="en">Origin unclear. One may consider <mentioned xml:lang="kbd"><lang/>
+            <gloss><q>деревянная чаша</q></gloss></mentioned> с уменьшительным суффиксом <mentioned xml:id="mentioned_d4496e250" xml:lang="kbd"><m>-žə</m></mentioned>.</etym>
+        <etym xml:lang="en">Origin unclear. One may consider <mentioned xml:id="mentioned_d4496e257" xml:lang="kbd"><lang/>
             <w>laǧä</w>
-            <gloss><q>wooden cup</q></gloss></mentioned> with the diminutive suffix <mentioned
-            xml:lang="kbd"><m>-žə</m></mentioned>.</etym>
+            <gloss><q>wooden cup</q></gloss></mentioned> with the diminutive suffix <mentioned xml:id="mentioned_d4496e265" xml:lang="kbd"><m>-žə</m></mentioned>.</etym>
       </entry>
     </body>
   </text>

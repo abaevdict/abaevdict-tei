@@ -1,34 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">kærdʒæm</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_kærdʒæm" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>kærdʒæm</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>kærdbaʒæ</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d2033e72"><abv:tr xml:lang="ru">
                         <q>ножны</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>sheathe</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d2033e84">
                         <quote>færink kard mīdkærdʒæmmæ zydta<note type="comment" xml:lang="ru"> (из
                                 песни о Куцыкке)</note><note type="comment" xml:lang="en"> (from a
                                 song about Kutsykk)</note></quote>
@@ -39,7 +44,7 @@
                             <q>he recognized the frank saber still in its sheath</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2033e104">
                         <quote>cævær dæ kard jæ kærdʒæmy</quote>
                         <abv:tr xml:lang="ru">
                             <q>вложи свою шашку в ножны</q>
@@ -49,7 +54,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Čerm."/><biblScope>49</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2033e123">
                         <quote>Xetæg jæ bolat kard felvæsta jæ kærdʒæmæj</quote>
                         <abv:tr xml:lang="ru">
                             <q>Хетаг достал булатную шашку из ножен</q>
@@ -57,10 +62,9 @@
                         <abv:tr xml:lang="en">
                             <q>Khetag took a damask sword from its scabbard</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"
-                            /><biblScope>229</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>229</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d2033e142" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>slasta kærdbaʒæj kard æma æ læʒæg amajunbæl iscurævær æj</quote>
                         <abv:tr xml:lang="ru">
@@ -75,17 +79,13 @@
                 <etym xml:lang="ru">В первой части — <ref type="xr" target="#entry_kard"/> ‘нож’,
                     ‘сабля’. Вторая часть %i-ʒæm%i не ясна. В дигорской форме %i-baʒæ%i
                     сопоставляется с %ikurd-baʒæ%i ‘кузница’. Может быть, %ib%i — перебой из %iw%i;
-                    в этом случае сюда можно было бы присоединить и <ref type="xr"
-                        target="#entry_mydaʒ"/> ‘воск’ из %imyd-waʒ%i и видеть в %i*waʒ%i слово со
-                    значением ‘место’, ‘вместилище’, вариант слова <ref type="xr"
-                        target="#entry_wat"/> с тем же значением.</etym>
+                    в этом случае сюда можно было бы присоединить и <ref type="xr" target="#entry_mydaʒ"/> ‘воск’ из %imyd-waʒ%i и видеть в %i*waʒ%i слово со
+                    значением ‘место’, ‘вместилище’, вариант слова <ref type="xr" target="#entry_wat"/> с тем же значением.</etym>
                 <etym xml:lang="en">In the first part there is <ref type="xr" target="#entry_kard"/>
                     ‘knife’, ‘saber’. The second part %i-ʒæm%i is not clear. The part %i-baʒæ%i in
                     Digor form is compared with %ikurd-baʒæ%i ‘forge’. Maybe, %ib%i is an irregular
-                    version of %iw%i; in thic case one could have added here the word <ref type="xr"
-                        target="#entry_mydaʒ"/> ‘wax’ from %imyd-waʒ%i and consider %i*waʒ%i to be a
-                    word with the meaning of ‘place’, ‘container’, a variant of the word <ref
-                        type="xr" target="#entry_wat"/> with the same meaning.</etym>
+                    version of %iw%i; in thic case one could have added here the word <ref type="xr" target="#entry_mydaʒ"/> ‘wax’ from %imyd-waʒ%i and consider %i*waʒ%i to be a
+                    word with the meaning of ‘place’, ‘container’, a variant of the word <ref type="xr" target="#entry_wat"/> with the same meaning.</etym>
             </entry>
         </body>
     </text>

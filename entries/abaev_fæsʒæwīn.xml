@@ -1,40 +1,45 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">fæsʒæwīn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_fæsʒæwīn" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>fæsʒæwīn</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>fæsʒæwinæ</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d63e72"><sense xml:id="sense_d63e73"><abv:tr xml:lang="ru">
                             <q>прислужник, -ица</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>servant</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d63e82"><abv:tr xml:lang="ru">
                             <q>слуга</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>maid</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d63e91"><abv:tr xml:lang="ru">
                             <q>служанка</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d63e99">
                         <quote>galwanæj racyd ældar jæ fæsʒæwīntīmæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>из дворца вышел алдар со своими слугами</q>
@@ -43,7 +48,7 @@
                             <q>the %ialdar%i left the palace with his servants</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d63e114" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>i fæsʒæwinæ kizgæ Akulaj ʒurdmæ kud næ iǧustajdæ</quote>
                         <abv:tr xml:lang="ru">
@@ -55,7 +60,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
                             26</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d63e136" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>æ fæsʒæwinæ imæ rarvetuj</quote>
                         <abv:tr xml:lang="ru">
@@ -68,30 +73,22 @@
                             26</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из %ifæs-cæw-īn%i буквально „идущий сзади“; см. <ref type="xr"
-                        target="#entry_fæs-"/> ‘позади’ и <ref type="xr" target="#entry_cæwyn"/>
-                    ‘идти’. Для идеосемантики ср. <mentioned xml:lang="la"><lang/>
+                <etym xml:lang="ru">Из %ifæs-cæw-īn%i буквально „идущий сзади“; см. <ref type="xr" target="#entry_fæs-"/> ‘позади’ и <ref type="xr" target="#entry_cæwyn"/>
+                    ‘идти’. Для идеосемантики ср. <mentioned xml:id="mentioned_d63e165" xml:lang="la"><lang/>
                         <w>pedisequus</w>
-                        <gloss><q>следующий позади’ = ‘слуга</q></gloss></mentioned> (<bibl><ref
-                            type="bibl" target="#ref_Walde"/><biblScope>569</biblScope></bibl>).
+                        <gloss><q>следующий позади’ = ‘слуга</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Walde"/><biblScope>569</biblScope></bibl>).
                     Суффикс %i-īn%i | %i-īnæ%i находим еще в нескольких отглагольных именах со
-                    значением ‘постоянно занимающийся чем-либо’: <ref type="xr"
-                        target="#entry_æmzærīn"/> (←%iæm-cær-īn%i) ‘сожитель’, д. <ref type="xr"
-                        target="#entry_ænxætīnæ"/> (←%iæm-xæt-īnæ%i) ‘вместе скитающийся’, д. <ref
-                        type="xr" target="#entry_ænbadīnæ"/> ‘вместе сидящий’ и др. По-видимому,
+                    значением ‘постоянно занимающийся чем-либо’: <ref type="xr" target="#entry_æmzærīn"/> (←%iæm-cær-īn%i) ‘сожитель’, д. <ref type="xr" target="#entry_ænxætīnæ"/> (←%iæm-xæt-īnæ%i) ‘вместе скитающийся’, д. <ref type="xr" target="#entry_ænbadīnæ"/> ‘вместе сидящий’ и др. По-видимому,
                     наличие приставки при глаголе (<ref type="xr" target="#entry_æm-"/>) является
                     одним из условий употребления этого суффикса.</etym>
-                <etym xml:lang="en">From %ifæs-cæw-īn%i literally ‘going behind’; see <ref type="xr"
-                        target="#entry_fæs-"/> ‘behind’ and <ref type="xr" target="#entry_cæwyn"/>
-                    ‘go’. As for the ideosemantics, cf. <mentioned xml:lang="la"><lang/>
+                <etym xml:lang="en">From %ifæs-cæw-īn%i literally ‘going behind’; see <ref type="xr" target="#entry_fæs-"/> ‘behind’ and <ref type="xr" target="#entry_cæwyn"/>
+                    ‘go’. As for the ideosemantics, cf. <mentioned xml:id="mentioned_d63e194" xml:lang="la"><lang/>
                         <w>pedisequus</w>
-                        <gloss><q>going behind’ = ‘servant</q></gloss></mentioned> (<bibl><ref
-                            type="bibl" target="#ref_Walde"/><biblScope>569</biblScope></bibl>). The
+                        <gloss><q>going behind’ = ‘servant</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Walde"/><biblScope>569</biblScope></bibl>). The
                     suffix %i-īn%i | %i-īnæ%i is also found in some deverbal nouns with the meaning
                     ‘constantly doing something’: <ref type="xr" target="#entry_æmzærīn"/>
                     (←%iæm-cær-īn%i) ‘room-mate’, Digor <ref type="xr" target="#entry_ænxætīnæ"/>
-                    (←%iæm-xæt-īnæ%i) ‘wandering together’, Digor <ref type="xr"
-                        target="#entry_ænbadīnæ"/> ‘sitting together’ etc. Apparently, the prefix
+                    (←%iæm-xæt-īnæ%i) ‘wandering together’, Digor <ref type="xr" target="#entry_ænbadīnæ"/> ‘sitting together’ etc. Apparently, the prefix
                     attached to the verb (<ref type="xr" target="#entry_æm-"/>) is one of the
                     conditions for the use of this suffix.</etym>
             </entry>

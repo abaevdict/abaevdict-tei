@@ -1,33 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">begara</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_begara" xml:lang="os">
                 <form type="lemma"><orth>begara</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d5921e69"><abv:tr xml:lang="ru">
                         <q>гужевая повинность</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>animal-drawn duty</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d5921e81">
                         <quote>xīcæwttæ adæmæn sæxīcæj baurædtoj qalonīsǵytæ, begaragænǵytæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>власти назначили из самого населения сборщиков подати, выполнителей
@@ -39,7 +44,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Сека"/><biblScope>64</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5921e100">
                         <quote>īw bon Zarbeg Soxty qæwmæ begara kænynmæ bacydī</quote>
                         <abv:tr xml:lang="ru">
                             <q>однажды Зарбег отправился в селение Сохта, (чтобы снарядить арбы) на
@@ -51,7 +56,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Сека"/><biblScope>64</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5921e119">
                         <quote>nyrtækkæ begarajy cæwyn qæwy — ældaræn xos lasynmæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>сейчас надо идти в %sбегара%s — везти сено алдару</q>
@@ -62,7 +67,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Сека"/><biblScope>59</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5921e138">
                         <quote>begarajy wærdættæ æræmbyrd kodtoj, ældarmæ sæ arvystoj</quote>
                         <abv:tr xml:lang="ru">
                             <q>собрали арбы для гужевой повинности, послали их к алдару</q>
@@ -73,7 +78,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Сека"/><biblScope>66</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5921e157" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>anz duwwæ-ærtæ xatti begaraj wærdun æma kʼabici xæccæ ʒillæbæl
                             ærzelidæ æ mizd esunmæ</quote>
@@ -88,22 +93,21 @@
                         <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>116</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из <mentioned xml:lang="fa"><lang/>
+                <etym xml:lang="ru">Из <mentioned xml:id="mentioned_d5921e182" xml:lang="fa"><lang/>
                         <w>bīgār</w>
                         <gloss><q>принудительная работа без вознаграждения</q></gloss></mentioned>,
-                        <mentioned xml:lang="fa"><w/>
-                        <gloss><q>повинность</q></gloss></mentioned>, через <mentioned xml:lang="ka"><lang/>
+                        <mentioned xml:id="mentioned_d5921e190" xml:lang="fa"><w/>
+                        <gloss><q>повинность</q></gloss></mentioned>, через <mentioned xml:id="mentioned_d5921e196" xml:lang="ka"><lang/>
                         <w>begara</w>
-                        <gloss><q>повинность</q></gloss></mentioned>, <mentioned xml:lang="ka"><w/>
+                        <gloss><q>повинность</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5921e204" xml:lang="ka"><w/>
                         <gloss><q>барщина</q></gloss></mentioned>; известно и в других кавказских
                     языках.</etym>
-                <etym xml:lang="en">From <mentioned xml:lang="fa"><lang/>
+                <etym xml:lang="en">From <mentioned xml:id="mentioned_d5921e213" xml:lang="fa"><lang/>
                         <w>bīgār</w>
-                        <gloss><q>forced labour without fee</q></gloss></mentioned>, <mentioned
-                        xml:lang="fa"><w/>
-                        <gloss><q>duty</q></gloss></mentioned>, through <mentioned xml:lang="ka"><lang/>
+                        <gloss><q>forced labour without fee</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5921e221" xml:lang="fa"><w/>
+                        <gloss><q>duty</q></gloss></mentioned>, through <mentioned xml:id="mentioned_d5921e227" xml:lang="ka"><lang/>
                         <w>begara</w>
-                        <gloss><q>duty</q></gloss></mentioned>, <mentioned xml:lang="ka"><w/>
+                        <gloss><q>duty</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5921e235" xml:lang="ka"><w/>
                         <gloss><q>corvee</q></gloss></mentioned>; the word is known in other
                     Caucasian languages.</etym>
             </entry>

@@ -1,34 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">fyrt</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_fyrt" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>fyrt</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>furt</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d126e72"><abv:tr xml:lang="ru">
                         <q>сын</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>son</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d126e84">
                         <quote>segasy razæj Inaly ærtæ fyrty</quote>
                         <abv:tr xml:lang="ru">
                             <q>впереди всех три сына Инала</q>
@@ -36,10 +41,9 @@
                         <abv:tr xml:lang="en">
                             <q>Inal's three sons are ahead of everyone</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"
-                            /><biblScope>132</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>132</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d126e103">
                         <quote>jæ fydy fændiag kæm væjjy fyrt dær</quote>
                         <abv:tr xml:lang="ru">
                             <q>сын не бывает таким, как хотелось бы отцу</q>
@@ -49,7 +53,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>14</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d126e122">
                         <quote>Dedenæǵy fyrt Aræxcaw æmæ Xæmycy fyrt Batraʒ baxæccæ sty
                             Acætæm</quote>
                         <abv:tr xml:lang="ru">
@@ -59,10 +63,9 @@
                             <q>Arakhtsau, the son of Dedenag, and Batradz, the son of Hamits,
                                 reached (the house of) the Akaevs</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Нарт._сказ."
-                            /><biblScope>198</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Нарт._сказ."/><biblScope>198</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d126e141" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>Narti Wazi furt mingi Acæmæz Agundæ-xanmæ ærxicæ kodta</quote>
                         <abv:tr xml:lang="ru">
@@ -71,10 +74,9 @@
                         <abv:tr xml:lang="en">
                             <q>little Atsamaz, the son of Nart Uaz, was seduced by Agunda Khan</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_ОЭп."
-                                /><biblScope>55%l21–22%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_ОЭп."/><biblScope>55%l21–22%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d126e163" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>xori furt Mæxæmæt …mæji furt Mæsæmæt</quote>
                         <abv:tr xml:lang="ru">
@@ -85,7 +87,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_ОЭ"/><biblScope>I 108</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d126e186">
                         <quote>sæxī fydyfyrty jeddæmæ xati nīḱī zydta</quote>
                         <abv:tr xml:lang="ru">
                             <q>кроме членов их рода („сыновей отца“) никто не знал (языка) хати</q>
@@ -99,48 +101,40 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Как и другие основные термины родства — иранское слово. Восходит
-                    к <mentioned xml:lang="ira"><lang/>
+                    к <mentioned xml:id="mentioned_d126e208" xml:lang="ira"><lang/>
                         <w>puθra-</w></mentioned> с обычной перестановкой %iθr%i → %irt%i. %bАлан.%b
-                        <mentioned xml:lang="xln"><lang/>
-                        <w>φουρτ</w></mentioned>, <mentioned xml:lang="xsc"><lang/>
+                        <mentioned xml:id="mentioned_d126e213" xml:lang="xln"><lang/>
+                        <w>φουρτ</w></mentioned>, <mentioned xml:id="mentioned_d126e218" xml:lang="xsc"><lang/>
                         <w>πουρτ, φουρτ</w><note type="comment" xml:lang="ru"> (%iΠουρθαῖος%i,
-                            %iΠουρθακης%i, %iΦoιρτας%i, %iΡaδaμoφoιρτος%i)</note></mentioned>. Ср. также <mentioned
-                        xml:lang="fa"><lang/>
-                        <w>pūr</w></mentioned>, <mentioned xml:lang="pal"><lang/>
-                        <w>puhr</w></mentioned>, <mentioned xml:lang="mnj"><lang/>
-                        <w>pūr</w></mentioned>, <mentioned xml:lang="wbl"><lang/>
-                        <w>pötr, pətr</w></mentioned>, <mentioned xml:lang="kho"><lang/>
-                        <w>pūra-</w></mentioned>, <mentioned xml:lang="ae"><lang/>
-                        <w>puθra-</w></mentioned>, <mentioned xml:lang="peo"><lang/>
-                        <w>pussa-</w></mentioned>, <mentioned xml:lang="sa"><lang/>
-                        <w>putra-</w></mentioned>.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 57, III
-                        80</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>34</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_Hübschmann._Oss."/><biblScope>68</biblScope></bibl>. —
+                            %iΠουρθακης%i, %iΦoιρτας%i, %iΡaδaμoφoιρτος%i)</note></mentioned>. Ср. также <mentioned xml:id="mentioned_d126e225" xml:lang="fa"><lang/>
+                        <w>pūr</w></mentioned>, <mentioned xml:id="mentioned_d126e230" xml:lang="pal"><lang/>
+                        <w>puhr</w></mentioned>, <mentioned xml:id="mentioned_d126e236" xml:lang="mnj"><lang/>
+                        <w>pūr</w></mentioned>, <mentioned xml:id="mentioned_d126e241" xml:lang="wbl"><lang/>
+                        <w>pötr, pətr</w></mentioned>, <mentioned xml:id="mentioned_d126e246" xml:lang="kho"><lang/>
+                        <w>pūra-</w></mentioned>, <mentioned xml:id="mentioned_d126e251" xml:lang="ae"><lang/>
+                        <w>puθra-</w></mentioned>, <mentioned xml:id="mentioned_d126e256" xml:lang="peo"><lang/>
+                        <w>pussa-</w></mentioned>, <mentioned xml:id="mentioned_d126e261" xml:lang="sa"><lang/>
+                        <w>putra-</w></mentioned>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 57, III
+                        80</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>34</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>68</biblScope></bibl>. —
                             <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>20, 39, 177, 208,
                             213, 262</biblScope></bibl>.</etym>
                 <etym xml:lang="en">Like other basic kinship terms it is an Iranian word. It traces
-                    back to <mentioned xml:lang="ira"><lang/>
+                    back to <mentioned xml:id="mentioned_d126e287" xml:lang="ira"><lang/>
                         <w>puθra-</w></mentioned> with the regular alternation %iθr%i → %irt%i.
-                        <mentioned xml:lang="xln"><lang/>
-                        <w>φουρτ</w></mentioned>, <mentioned xml:lang="xsc"><lang/>
-                        <w>πουρτ, φουρτ</w><note
-                            type="comment" xml:lang="en"> (%iΠουρθαῖος%i, %iΠουρθακης%i,
+                        <mentioned xml:id="mentioned_d126e292" xml:lang="xln"><lang/>
+                        <w>φουρτ</w></mentioned>, <mentioned xml:id="mentioned_d126e297" xml:lang="xsc"><lang/>
+                        <w>πουρτ, φουρτ</w><note type="comment" xml:lang="en"> (%iΠουρθαῖος%i, %iΠουρθακης%i,
                             %iΦoιρτας%i, %iΡaδaμoφoιρτος%i)</note></mentioned>. Compare also with
-                        <mentioned xml:lang="fa"><lang/>
-                        <w>pūr</w></mentioned>, <mentioned xml:lang="pal"><lang/>
-                        <w>puhr</w></mentioned>, <mentioned xml:lang="mnj"><lang/>
-                        <w>pūr</w></mentioned>, <mentioned xml:lang="wbl"><lang/>
-                        <w>pötr, pətr</w></mentioned>, <mentioned xml:lang="kho"><lang/>
-                        <w>pūra-</w></mentioned>, <mentioned xml:lang="ae"><lang/>
-                        <w>puθra-</w></mentioned>, <mentioned xml:lang="peo"><lang/>
-                        <w>pussa-</w></mentioned>, <mentioned xml:lang="sa"><lang/>
-                        <w>putra-</w></mentioned>.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 57, III
-                        80</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>34</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_Hübschmann._Oss."/><biblScope>68</biblScope></bibl>. —
+                        <mentioned xml:id="mentioned_d126e304" xml:lang="fa"><lang/>
+                        <w>pūr</w></mentioned>, <mentioned xml:id="mentioned_d126e309" xml:lang="pal"><lang/>
+                        <w>puhr</w></mentioned>, <mentioned xml:id="mentioned_d126e315" xml:lang="mnj"><lang/>
+                        <w>pūr</w></mentioned>, <mentioned xml:id="mentioned_d126e320" xml:lang="wbl"><lang/>
+                        <w>pötr, pətr</w></mentioned>, <mentioned xml:id="mentioned_d126e325" xml:lang="kho"><lang/>
+                        <w>pūra-</w></mentioned>, <mentioned xml:id="mentioned_d126e330" xml:lang="ae"><lang/>
+                        <w>puθra-</w></mentioned>, <mentioned xml:id="mentioned_d126e335" xml:lang="peo"><lang/>
+                        <w>pussa-</w></mentioned>, <mentioned xml:id="mentioned_d126e340" xml:lang="sa"><lang/>
+                        <w>putra-</w></mentioned>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 57, III
+                        80</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>34</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>68</biblScope></bibl>. —
                             <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>20, 39, 177, 208,
                             213, 262</biblScope></bibl>.</etym>
             </entry>

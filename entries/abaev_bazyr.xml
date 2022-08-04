@@ -1,34 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">bazyr</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_bazyr" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>bazyr</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>bazur</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d5441e72"><abv:tr xml:lang="ru">
                         <q>крыло</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>wing</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d5441e84">
                         <quote>Xsærtæg fexsta æmæ (marǧæn) appærsta jæ bazyr</quote>
                         <abv:tr xml:lang="ru">
                             <q>Хсартаг выстрелил и оторвал (у птицы) крыло</q>
@@ -38,7 +43,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_ОЭп."/><biblScope>14</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5441e103" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>næmun æj rajdædtoncæ sæ bazurtæj</quote>
                         <abv:tr xml:lang="ru">
@@ -47,10 +52,9 @@
                         <abv:tr xml:lang="en">
                             <q>they began to hit him with their wings</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                                /><biblScope>31%l14%l—32%l1%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>31%l14%l—32%l1%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5441e125" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>arvæj zænxi astæw bazurginæj ka xætuj…</quote>
                         <abv:tr xml:lang="ru">
@@ -59,10 +63,9 @@
                         <abv:tr xml:lang="en">
                             <q>who rushes, feathered, between sky and ground</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>32%l12%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>32%l12%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5441e147" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>(ostitæ) wærcci fæste nibbazurtæ ʽncæ</quote>
                         <abv:tr xml:lang="ru">
@@ -76,60 +79,48 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Слова %ibazyr%i ‘крыло’ и <ref type="xr" target="#entry_bazyg"/>
-                    ‘рука’ заключают одну и ту же основу, но с разными формантами: <ref type="xr"
-                        target="#entry_bazyg"/> восходит к %ibāzu%i-%ika%i, а %ibazyr%i к
-                    %ibāzu%i-%ira%i. Варианты с -%ika%i мы рассматриваем под <ref type="xr"
-                        target="#entry_bazyg"/>. Оформление -%irа%i мы также находим в ряде иранских
-                    языков: <mentioned xml:lang="ae"><lang/>
+                    ‘рука’ заключают одну и ту же основу, но с разными формантами: <ref type="xr" target="#entry_bazyg"/> восходит к %ibāzu%i-%ika%i, а %ibazyr%i к
+                    %ibāzu%i-%ira%i. Варианты с -%ika%i мы рассматриваем под <ref type="xr" target="#entry_bazyg"/>. Оформление -%irа%i мы также находим в ряде иранских
+                    языков: <mentioned xml:id="mentioned_d5441e178" xml:lang="ae"><lang/>
                         <w>bāzura</w>
-                        <gloss><q>рука</q></gloss></mentioned> в <mentioned xml:lang="ae"><lang/>
+                        <gloss><q>рука</q></gloss></mentioned> в <mentioned xml:id="mentioned_d5441e186" xml:lang="ae"><lang/>
                         <w>snāvarə-bāzura-</w>
-                        <gloss><q>имеющий жилистые руки</q></gloss></mentioned> (= <mentioned
-                        xml:lang="os" extralang="os-x-digor"><lang/>
-                        <w>nawær-bazur</w></mentioned>), <mentioned xml:lang="xpr"><lang/>
+                        <gloss><q>имеющий жилистые руки</q></gloss></mentioned> (= <mentioned xml:id="mentioned_d5441e195" xml:lang="os" extralang="os-x-digor"><lang/>
+                        <w>nawær-bazur</w></mentioned>), <mentioned xml:id="mentioned_d5441e200" xml:lang="xpr"><lang/>
                         <w>b’zwr</w>
-                        <gloss><q>крыло</q></gloss></mentioned>, <mentioned xml:lang="x-balochi"><lang/>
+                        <gloss><q>крыло</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5441e208" xml:lang="x-balochi"><lang/>
                         <w>bāzul</w>
-                        <gloss><q>рука</q></gloss></mentioned> (?), <mentioned xml:lang="ps"><lang/>
-                        <w>wazr</w></mentioned>, <mentioned xml:lang="ps"><w>wazar</w></mentioned>,
-                        <mentioned xml:lang="mnj"><lang/>
+                        <gloss><q>рука</q></gloss></mentioned> (?), <mentioned xml:id="mentioned_d5441e216" xml:lang="ps"><lang/>
+                        <w>wazr</w></mentioned>, <mentioned xml:id="mentioned_d5441e221" xml:lang="ps"><w>wazar</w></mentioned>,
+                        <mentioned xml:id="mentioned_d5441e224" xml:lang="mnj"><lang/>
                         <w>wåzərgá</w>
-                        <gloss><q>крыло</q></gloss></mentioned>, <mentioned xml:lang="oru"><lang/>
+                        <gloss><q>крыло</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5441e233" xml:lang="oru"><lang/>
                         <w>bázar</w>
-                        <gloss><q>рука</q></gloss></mentioned> и др. (<bibl><ref type="bibl"
-                            target="#ref_Morgenstierne._EVP"
-                            /><biblScope>95</biblScope></bibl>).%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 111</biblScope></bibl>. —
-                            <bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                        /><biblScope>18</biblScope></bibl>.</etym>
-                <etym xml:lang="en">The words %ibazyr%i ‘wing’ and <ref type="xr"
-                        target="#entry_bazyg"/> ‘arm’ contain the same stem but with different
+                        <gloss><q>рука</q></gloss></mentioned> и др. (<bibl><ref type="bibl" target="#ref_Morgenstierne._EVP"/><biblScope>95</biblScope></bibl>).%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 111</biblScope></bibl>. —
+                            <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>18</biblScope></bibl>.</etym>
+                <etym xml:lang="en">The words %ibazyr%i ‘wing’ and <ref type="xr" target="#entry_bazyg"/> ‘arm’ contain the same stem but with different
                     formants: <ref type="xr" target="#entry_bazyg"/> traces back to %ibāzu%i-%ika%i,
                     and %ibazyr%i traces back to %ibāzu%i-%ira%i. Variants derived with -%ika%i are
                     considered under the word <ref type="xr" target="#entry_bazyg"/>. The derivates
                     with the formant -%irа%i are also found in a number of Iranian languages:
-                        <mentioned xml:lang="ae"><lang/>
+                        <mentioned xml:id="mentioned_d5441e263" xml:lang="ae"><lang/>
                         <w>bāzura</w>
-                        <gloss><q>arm</q></gloss></mentioned> в <mentioned xml:lang="ae"><lang/>
+                        <gloss><q>arm</q></gloss></mentioned> в <mentioned xml:id="mentioned_d5441e271" xml:lang="ae"><lang/>
                         <w>snāvarə-bāzura-</w>
                         <gloss><q>having arms with prominent veins</q></gloss></mentioned> (=
-                        <mentioned xml:lang="os" extralang="os-x-digor"><lang/>
-                        <w>nawær-bazur</w></mentioned>), <mentioned xml:lang="xpr"><lang/>
+                        <mentioned xml:id="mentioned_d5441e280" xml:lang="os" extralang="os-x-digor"><lang/>
+                        <w>nawær-bazur</w></mentioned>), <mentioned xml:id="mentioned_d5441e285" xml:lang="xpr"><lang/>
                         <w>b’zwr</w>
-                        <gloss><q>wing</q></gloss></mentioned>, <mentioned xml:lang="x-balochi"><lang/>
+                        <gloss><q>wing</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5441e293" xml:lang="x-balochi"><lang/>
                         <w>bāzul</w>
-                        <gloss><q>arm</q></gloss></mentioned> (?), <mentioned xml:lang="ps"><lang/>
-                        <w>wazr</w></mentioned>, <mentioned xml:lang="ps"><w>wazar</w></mentioned>,
-                        <mentioned xml:lang="mnj"><lang/>
+                        <gloss><q>arm</q></gloss></mentioned> (?), <mentioned xml:id="mentioned_d5441e301" xml:lang="ps"><lang/>
+                        <w>wazr</w></mentioned>, <mentioned xml:id="mentioned_d5441e306" xml:lang="ps"><w>wazar</w></mentioned>,
+                        <mentioned xml:id="mentioned_d5441e309" xml:lang="mnj"><lang/>
                         <w>wåzərgá</w>
-                        <gloss><q>wing</q></gloss></mentioned>, <mentioned xml:lang="oru"><lang/>
+                        <gloss><q>wing</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5441e318" xml:lang="oru"><lang/>
                         <w>bázar</w>
-                        <gloss><q>hand</q></gloss></mentioned> etc. (<bibl><ref type="bibl"
-                            target="#ref_Morgenstierne._EVP"
-                            /><biblScope>95</biblScope></bibl>).%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 111</biblScope></bibl>. —
-                            <bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                        /><biblScope>18</biblScope></bibl>.</etym>
+                        <gloss><q>hand</q></gloss></mentioned> etc. (<bibl><ref type="bibl" target="#ref_Morgenstierne._EVP"/><biblScope>95</biblScope></bibl>).%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 111</biblScope></bibl>. —
+                            <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>18</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

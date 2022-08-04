@@ -1,36 +1,41 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ag</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ag" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>ag</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>ag(æ)</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d4281e72"><sense xml:id="sense_d4281e73"><abv:tr xml:lang="ru">
                             <q>котел</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>cauldron</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="en">
+                        </abv:tr></sense><sense xml:id="sense_d4281e82"><abv:tr xml:lang="en">
                             <q>kettle</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4281e90">
                         <quote>ag kæly jæ biltæj</quote>
                         <abv:tr xml:lang="ru">
                             <q>(кипящий) котел льется через край</q>
@@ -40,7 +45,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>45</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4281e109" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>i basi agæ æ galew kʼaxæj ku racæjkʼwærdta</quote>
                         <abv:tr xml:lang="ru">
@@ -51,7 +56,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>83</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4281e131" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>stur agæ ars qoppæǧtæj iradæj</quote>
                         <abv:tr xml:lang="ru">
@@ -60,10 +65,9 @@
                         <abv:tr xml:lang="en">
                             <q>a large kettle boiled with white bubbles</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>34[12]</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>34[12]</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4281e153" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>agæ rajsta artæj</quote>
                         <abv:tr xml:lang="ru">
@@ -72,78 +76,57 @@
                         <abv:tr xml:lang="en">
                             <q>he took the kettle off the fire</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>25[2]</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>25[2]</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Это интересное в культурно-историческом отношении слово имеет
-                    верные соответствия в восточногорской группе кавказских языков: <mentioned
-                        xml:lang="inh"><lang/>
-                        <w>jej</w></mentioned>, <mentioned xml:lang="ce"><lang/>
-                        <w>jej</w></mentioned>, <mentioned xml:lang="ce"
-                    ><w>jaj</w></mentioned>,%r1%r <mentioned xml:lang="av"><lang/>
-                        <w>hag</w></mentioned>, в %bандийских%b говорах <mentioned xml:lang="ani"><lang/>
-                        <w>ẋagi</w></mentioned>, <mentioned xml:lang="ani"><w>čagi</w><note
-                            type="comment" xml:lang="ru"> (<bibl><ref type="bibl" target="#ref_Дирр"
-                                /></bibl>)</note></mentioned>;
-                    сюда же, вероятно, <mentioned xml:lang="agx"><lang/>
-                        <w>hajak</w></mentioned>, <mentioned xml:lang="rut"><lang/>
-                        <w>hejek</w></mentioned>, <mentioned xml:lang="tab"><lang/>
+                    верные соответствия в восточногорской группе кавказских языков: <mentioned xml:id="mentioned_d4281e178" xml:lang="inh"><lang/>
+                        <w>jej</w></mentioned>, <mentioned xml:id="mentioned_d4281e183" xml:lang="ce"><lang/>
+                        <w>jej</w></mentioned>, <mentioned xml:id="mentioned_d4281e188" xml:lang="ce"><w>jaj</w></mentioned>,%r1%r <mentioned xml:id="mentioned_d4281e191" xml:lang="av"><lang/>
+                        <w>hag</w></mentioned>, в %bандийских%b говорах <mentioned xml:id="mentioned_d4281e196" xml:lang="ani"><lang/>
+                        <w>ẋagi</w></mentioned>, <mentioned xml:id="mentioned_d4281e202" xml:lang="ani"><w>čagi</w><note type="comment" xml:lang="ru"> (<bibl><ref type="bibl" target="#ref_Дирр"/></bibl>)</note></mentioned>;
+                    сюда же, вероятно, <mentioned xml:id="mentioned_d4281e210" xml:lang="agx"><lang/>
+                        <w>hajak</w></mentioned>, <mentioned xml:id="mentioned_d4281e215" xml:lang="rut"><lang/>
+                        <w>hejek</w></mentioned>, <mentioned xml:id="mentioned_d4281e220" xml:lang="tab"><lang/>
                         <w>jaʽak</w></mentioned>. Котельное производство имеет в Дагестане, как
                     выяснено, большую давность и пользуется известностью и за его пределами. Это
                     обстоятельство дает основание предполагать, что отсюда этот термин проник также
-                    в чеченский и осетинский. Первоисточником является, быть может, <mentioned
-                        xml:lang="trk"><lang/>
+                    в чеченский и осетинский. Первоисточником является, быть может, <mentioned xml:id="mentioned_d4281e225" xml:lang="trk"><lang/>
                         <w>ajaq</w>
-                        <gloss><q>чашка</q></gloss></mentioned>, <mentioned xml:lang="trk"><w/>
-                        <gloss><q>горшок</q></gloss><note type="comment" xml:lang="ru"> (<bibl><ref
-                                    type="bibl" target="#ref_Радлов"/><biblScope>I
-                                201</biblScope></bibl>)</note></mentioned>.%n<bibl><ref
-                            type="bibl" target="#ref_Вс._Миллер._Gr."
-                        /><biblScope>10</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_Hübschmann._Oss."/><biblScope>119</biblScope></bibl>. —
+                        <gloss><q>чашка</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4281e233" xml:lang="trk"><w/>
+                        <gloss><q>горшок</q></gloss><note type="comment" xml:lang="ru"> (<bibl><ref type="bibl" target="#ref_Радлов"/><biblScope>I
+                                201</biblScope></bibl>)</note></mentioned>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>10</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>119</biblScope></bibl>. —
                             <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>90,
                             105</biblScope></bibl>.</etym>
                 <etym xml:lang="en">This culturally and historically interesting word has exact
-                    matches in East Caucasian languages: <mentioned xml:lang="inh"><lang/>
-                        <w>jej</w></mentioned>, <mentioned xml:lang="ce"><lang/>
-                        <w>jej</w></mentioned>, <mentioned xml:lang="ce"
-                    ><w>jaj</w></mentioned>,%r1%r <mentioned xml:lang="av"><lang/>
-                        <w>hag</w></mentioned>, in %bAndi%b dialects <mentioned xml:lang="ani"><lang/>
-                        <w>ẋagi</w></mentioned>, <mentioned xml:lang="ani"><w>čagi</w><note type="comment" xml:lang="en"> (<bibl><ref
-                                    type="bibl" target="#ref_Дирр"/></bibl>)</note></mentioned>;
-                    here also belong, probably, <mentioned xml:lang="agx"><lang/>
-                        <w>hajak</w></mentioned>, <mentioned xml:lang="rut"><lang/>
-                        <w>hejek</w></mentioned>, <mentioned xml:lang="tab"><lang/>
+                    matches in East Caucasian languages: <mentioned xml:id="mentioned_d4281e262" xml:lang="inh"><lang/>
+                        <w>jej</w></mentioned>, <mentioned xml:id="mentioned_d4281e267" xml:lang="ce"><lang/>
+                        <w>jej</w></mentioned>, <mentioned xml:id="mentioned_d4281e272" xml:lang="ce"><w>jaj</w></mentioned>,%r1%r <mentioned xml:id="mentioned_d4281e275" xml:lang="av"><lang/>
+                        <w>hag</w></mentioned>, in %bAndi%b dialects <mentioned xml:id="mentioned_d4281e280" xml:lang="ani"><lang/>
+                        <w>ẋagi</w></mentioned>, <mentioned xml:id="mentioned_d4281e286" xml:lang="ani"><w>čagi</w><note type="comment" xml:lang="en"> (<bibl><ref type="bibl" target="#ref_Дирр"/></bibl>)</note></mentioned>;
+                    here also belong, probably, <mentioned xml:id="mentioned_d4281e294" xml:lang="agx"><lang/>
+                        <w>hajak</w></mentioned>, <mentioned xml:id="mentioned_d4281e299" xml:lang="rut"><lang/>
+                        <w>hejek</w></mentioned>, <mentioned xml:id="mentioned_d4281e304" xml:lang="tab"><lang/>
                         <w>jaʽak</w></mentioned>. It is established that cauldron production in
                     Daghestan has a long history and is famous outside of its territory. This
                     circumstance gives reason to assume that this term also came into Chechen and
-                    Ossetic from there. The original source is perhaps <mentioned xml:lang="trk"><lang/>
+                    Ossetic from there. The original source is perhaps <mentioned xml:id="mentioned_d4281e309" xml:lang="trk"><lang/>
                         <w>ajaq</w>
-                        <gloss><q>cup</q></gloss></mentioned>, <mentioned xml:lang="trk"><w/>
+                        <gloss><q>cup</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4281e317" xml:lang="trk"><w/>
                         <gloss><q>pot</q></gloss><note type="comment" xml:lang="en">
                                     (<bibl><ref type="bibl" target="#ref_Радлов"/><biblScope>I
-                                    201</biblScope></bibl>)</note></mentioned>.%n<bibl><ref
-                            type="bibl" target="#ref_Вс._Миллер._Gr."
-                        /><biblScope>10</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_Hübschmann._Oss."/><biblScope>119</biblScope></bibl>. —
+                                    201</biblScope></bibl>)</note></mentioned>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>10</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>119</biblScope></bibl>. —
                             <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>90,
                             105</biblScope></bibl>.</etym>
                 <note type="footnote" xml:lang="ru" n="1">Для чередования о. %ig%i — инг., чеч.
-                    %ij%i ср.: <ref type="xr" target="#entry_sag"/> — <mentioned xml:lang="inh"
-                        extralang="ce"><lang/>
-                        <w>säj</w></mentioned>, <ref type="xr" target="#entry_tag"/> — <mentioned
-                        xml:lang="inh" extralang="ce"><lang/>
-                        <w>täj</w></mentioned>, <ref type="xr" target="#entry_læg"/> — <mentioned
-                        xml:lang="inh" extralang="ce"><lang/>
+                    %ij%i ср.: <ref type="xr" target="#entry_sag"/> — <mentioned xml:id="mentioned_d4281e347" xml:lang="inh" extralang="ce"><lang/>
+                        <w>säj</w></mentioned>, <ref type="xr" target="#entry_tag"/> — <mentioned xml:id="mentioned_d4281e354" xml:lang="inh" extralang="ce"><lang/>
+                        <w>täj</w></mentioned>, <ref type="xr" target="#entry_læg"/> — <mentioned xml:id="mentioned_d4281e362" xml:lang="inh" extralang="ce"><lang/>
                         <w>tej</w></mentioned>.</note>
                 <note type="footnote" xml:lang="en" n="1">For the alternation Ossetic %ig%i —
-                    Ingush, Chechen %ij%i cf.: <ref type="xr" target="#entry_sag"/> — <mentioned
-                        xml:lang="inh" extralang="ce"><lang/>
-                        <w>säj</w></mentioned>, <ref type="xr" target="#entry_tag"/> — <mentioned
-                        xml:lang="inh" extralang="ce"><lang/>
-                        <w>täj</w></mentioned>, <ref type="xr" target="#entry_læg"/> — <mentioned
-                        xml:lang="inh" extralang="ce"><lang/>
+                    Ingush, Chechen %ij%i cf.: <ref type="xr" target="#entry_sag"/> — <mentioned xml:id="mentioned_d4281e372" xml:lang="inh" extralang="ce"><lang/>
+                        <w>säj</w></mentioned>, <ref type="xr" target="#entry_tag"/> — <mentioned xml:id="mentioned_d4281e379" xml:lang="inh" extralang="ce"><lang/>
+                        <w>täj</w></mentioned>, <ref type="xr" target="#entry_læg"/> — <mentioned xml:id="mentioned_d4281e387" xml:lang="inh" extralang="ce"><lang/>
                         <w>tej</w></mentioned>.</note>
             </entry>
         </body>

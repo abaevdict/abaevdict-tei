@@ -1,42 +1,46 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">Bonværnon</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_Bonværnon" xml:lang="os">
                 <form type="lemma"><orth>Bonværnon</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d2603e69"><abv:tr xml:lang="ru">
                         <q>утренняя звезда (планета Венера)</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>morning star (planet Venus)</q>
                     </abv:tr></sense>
-                <re>
+                <re xml:id="re_d2603e79">
                     <note type="comment" xml:lang="ru">употребительны и формы</note>
                     <note type="comment" xml:lang="en">the following forms are also in use</note>
-                    <re xml:lang="os-x-digor">
+                    <re xml:id="re_d2603e87" xml:lang="os-x-digor">
                         <lang/>
                         <form type="lemma"><orth>Bonværnæ</orth></form>
                     </re>
-                    <re xml:lang="os-x-iron">
+                    <re xml:id="re_d2603e95" xml:lang="os-x-iron">
                         <lang/>
-                        <form type="lemma"><orth>Bobyrnon</orth><form type="variant"
-                                    ><orth>Bobron</orth></form></form>
+                        <form type="lemma"><orth>Bobyrnon</orth><form type="variant"><orth>Bobron</orth></form></form>
                         <note type="comment" xml:lang="ru">; вечерняя Венера зовется %ikærdæǵy
                             stʼaly%i ‘звезда травы’</note>
                         <note type="comment" xml:lang="en">; evening Venus is called %ikærdæǵy
@@ -44,7 +48,7 @@
                     </re>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d2603e114">
                         <quote>Bonværnon yskast, aftæ syzǧærin gocoraǧyn jæ bæxyl sarǧ
                             aværdta</quote>
                         <abv:tr xml:lang="ru">
@@ -58,7 +62,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>IV
                             52</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2603e133">
                         <quote>ūcy ræstæǵy mīt næ waryd: Bonværnon axst wydi</quote>
                         <abv:tr xml:lang="ru">
                             <q>в то время снег не шел, (так как) Венера находилась в заключении</q>
@@ -69,7 +73,7 @@
                         <bibl><ref type="bibl" target="#src_ЮОПам."/><biblScope>III
                             135</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d2603e152" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>Bonværnæ æ cæstæ nikʼoluj</quote>
                         <abv:tr xml:lang="ru">
@@ -80,7 +84,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Qazb."/><biblScope>54</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d2603e174" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>ors pelontæ ærbadardta næ Bonværnæ æ zingæj</quote>
                         <abv:tr xml:lang="ru">
@@ -94,40 +98,32 @@
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Конечное -%ion%i — суффикс. %iBonværn%i = %ibony%i %ifarn%i
                     ‘%sfarn%s дня’; %iBonværnon%i— „звезда — вестница дневного %sфарна%s“; ср.
-                        <mentioned xml:lang="ru"><lang/>
+                        <mentioned xml:id="mentioned_d2603e199" xml:lang="ru"><lang/>
                         <w>денница</w>
-                        <gloss><q>утренняя звезда</q></gloss></mentioned> (от <mentioned
-                        xml:lang="ru"><lang/>
+                        <gloss><q>утренняя звезда</q></gloss></mentioned> (от <mentioned xml:id="mentioned_d2603e207" xml:lang="ru"><lang/>
                         <w>день</w></mentioned>). См. <ref type="xr" target="#entry_bon"/> ‘день’ и
                         <ref type="xr" target="#entry_farn"/>. Восстанавливаемое *%iBonfarn%i
-                    представляет хорошую параллель к <mentioned xml:lang="xpr"><lang/>
-                        <w>Mihrfarn</w></mentioned>, <mentioned xml:lang="sog"><lang/>
-                        <w>myrprn</w></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Henning._Sogd."/><biblScope>6</biblScope></bibl>), где
-                        <mentioned xml:lang="sog"><lang/>
+                    представляет хорошую параллель к <mentioned xml:id="mentioned_d2603e216" xml:lang="xpr"><lang/>
+                        <w>Mihrfarn</w></mentioned>, <mentioned xml:id="mentioned_d2603e222" xml:lang="sog"><lang/>
+                        <w>myrprn</w></mentioned> (<bibl><ref type="bibl" target="#ref_Henning._Sogd."/><biblScope>6</biblScope></bibl>), где
+                        <mentioned xml:id="mentioned_d2603e231" xml:lang="sog"><lang/>
                         <w>mihr</w>
-                        <gloss><q>солнце</q></gloss></mentioned>, <mentioned xml:lang="sog"><w/>
-                        <gloss><q>день</q></gloss></mentioned> соответствует ос. <ref type="xr"
-                        target="#entry_bon"/>.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                            /><biblScope>164, 211</biblScope></bibl>.</etym>
+                        <gloss><q>солнце</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2603e239" xml:lang="sog"><w/>
+                        <gloss><q>день</q></gloss></mentioned> соответствует ос. <ref type="xr" target="#entry_bon"/>.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>164, 211</biblScope></bibl>.</etym>
                 <etym xml:lang="en">The final -%ion%i is a suffix. %iBonværn%i = %ibony%i %ifarn%i
                     ‘day's %sfarn%s’; %iBonværnon%i— „star is day's %sfarn%s messenger“; cf.
-                        <mentioned xml:lang="ru"><lang/>
+                        <mentioned xml:id="mentioned_d2603e255" xml:lang="ru"><lang/>
                         <w>dennitsa</w>
-                        <gloss><q>morning star</q></gloss></mentioned> (from <mentioned
-                        xml:lang="ru"><lang/>
+                        <gloss><q>morning star</q></gloss></mentioned> (from <mentioned xml:id="mentioned_d2603e263" xml:lang="ru"><lang/>
                         <w>denʼ</w></mentioned>). See <ref type="xr" target="#entry_bon"/> ‘day’ and
                         <ref type="xr" target="#entry_farn"/>. The reconstructed *%iBonfarn%i
-                    represents a good parallel with the <mentioned xml:lang="xpr"><lang/>
-                        <w>Mihrfarn</w></mentioned>, <mentioned xml:lang="sog"><lang/>
-                        <w>myrprn</w></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Henning._Sogd."/><biblScope>6</biblScope></bibl>), where
-                        <mentioned xml:lang="sog"><lang/>
+                    represents a good parallel with the <mentioned xml:id="mentioned_d2603e272" xml:lang="xpr"><lang/>
+                        <w>Mihrfarn</w></mentioned>, <mentioned xml:id="mentioned_d2603e278" xml:lang="sog"><lang/>
+                        <w>myrprn</w></mentioned> (<bibl><ref type="bibl" target="#ref_Henning._Sogd."/><biblScope>6</biblScope></bibl>), where
+                        <mentioned xml:id="mentioned_d2603e287" xml:lang="sog"><lang/>
                         <w>mihr</w>
-                        <gloss><q>sun</q></gloss></mentioned>, <mentioned xml:lang="sog"><w/>
-                        <gloss><q>day</q></gloss></mentioned> corresponds the Ossetic <ref type="xr"
-                        target="#entry_bon"/>.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                            /><biblScope>164, 211</biblScope></bibl>.</etym>
+                        <gloss><q>sun</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2603e295" xml:lang="sog"><w/>
+                        <gloss><q>day</q></gloss></mentioned> corresponds the Ossetic <ref type="xr" target="#entry_bon"/>.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>164, 211</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

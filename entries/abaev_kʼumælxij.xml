@@ -1,34 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">kʼumælxij</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_kʼumælxij" xml:lang="os-x-digor">
                 <form type="lemma"><orth>kʼumælxij</orth></form>
                 <usg><lang/></usg>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d3985e72"><abv:tr xml:lang="ru">
                         <q>мертвый узел</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>builder's knot</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d3985e84">
                         <quote>bæxi dumæg ka bidta? Sirdon bidta…, kʼumælxijtæ ʽj rakodta</quote>
                         <abv:tr xml:lang="ru">
                             <q>кто сплетал хвост лошади? Сирдон сплетал…, наделал мертвых
@@ -41,7 +46,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
                             155</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3985e103">
                         <quote>cæsti aryægænæg fonsbæl balixsuj, ma in æ kʼæxti buni sundakʼæj
                             kʼumælxijtæ rajxaluj</quote>
                         <abv:tr xml:lang="ru">
@@ -58,12 +63,10 @@
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Сложение из <ref type="xr" target="#entry_kʼuma"/> и %iælxij%i,
                     буквально „замковый (крепкий) узел“. В иронском это же понятие выражается
-                    сочетанием <ref type="xr" target="#entry_k0yrm"/>-<ref type="xr"
-                        target="#entry_ælxyncʼ"/> „слепой узел“.</etym>
+                    сочетанием <ref type="xr" target="#entry_k0yrm"/>-<ref type="xr" target="#entry_ælxyncʼ"/> „слепой узел“.</etym>
                 <etym xml:lang="en">A compound from <ref type="xr" target="#entry_kʼuma"/> and
                     %iælxij%i, literally “lock (strong) knot”. In Iron the same meaning is expressed
-                    with the combination <ref type="xr" target="#entry_k0yrm"/>-<ref type="xr"
-                        target="#entry_ælxyncʼ"/> “blind knot”.</etym>
+                    with the combination <ref type="xr" target="#entry_k0yrm"/>-<ref type="xr" target="#entry_ælxyncʼ"/> “blind knot”.</etym>
             </entry>
         </body>
     </text>

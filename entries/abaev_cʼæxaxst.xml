@@ -1,38 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">cʼæxaxst</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_cʼæxaxst" xml:lang="os-x-iron">
                 <form type="lemma"><orth>cʼæxaxst</orth></form>
                 <usg><lang/></usg>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d1198e72"><sense xml:id="sense_d1198e73"><abv:tr xml:lang="ru">
                             <q>неистовый, отчаянный крик</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>outcry</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d1198e82"><abv:tr xml:lang="ru">
                             <q>вопль</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>shriek</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d1198e94">
                         <quote>warijy axst, cærgæsy cʼæxaxst fækodtoj</quote>
                         <abv:tr xml:lang="ru">
                             <q>они издали крик сокола, клекот орла</q>
@@ -43,7 +48,7 @@
                         <bibl><ref type="bibl" target="#src_ЮОПам."/><biblScope>III
                             5</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1198e113">
                         <quote>ḱyzg nycʼcʼæxaxst kodta</quote>
                         <abv:tr xml:lang="ru">
                             <q>девушка испустила пронзительный крик</q>
@@ -52,7 +57,7 @@
                             <q>the girl let out a yell</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d1198e128" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>cʼæxaxstæj bajʒag æj</quote>
                         <abv:tr xml:lang="ru">
@@ -63,7 +68,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_AK"/><biblScope>II 56</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d1198e150" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>cʼæxaxst quræj niwdtæj</quote>
                         <abv:tr xml:lang="ru">
@@ -75,7 +80,7 @@
                         <bibl><ref type="bibl" target="#src_MD"/><biblScope>1936 I
                             53</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d1198e172" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>bæxti kʼaxǧæræj, Kizgaj cʼæxaxstæj azældæj bæstæ</quote>
                         <abv:tr xml:lang="ru">
@@ -88,19 +93,15 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Разлагается на %icʼæx-axst%i. Вторая часть, axst, встречается
-                    еще в сложении %iqær-axst%i, %iqær æmæ axst%i ‘сильный крик, шум’, где <ref
-                        type="xr" target="#entry_qær"/> означает ‘крик’, ‘шум’. Это дает право
+                    еще в сложении %iqær-axst%i, %iqær æmæ axst%i ‘сильный крик, шум’, где <ref type="xr" target="#entry_qær"/> означает ‘крик’, ‘шум’. Это дает право
                     выделить %iaxst%i как самостоятельное когда-то слово со значением ‘крик’,
-                    ‘вопль’ и т. п. Оно сближается с <mentioned xml:lang="yai"><lang/>
+                    ‘вопль’ и т. п. Оно сближается с <mentioned xml:id="mentioned_d1198e199" xml:lang="yai"><lang/>
                         <w>-ast</w><note type="comment" xml:lang="ru">в таких сложениях, как
-                                <mentioned xml:lang="yai"><lang/>
+                                <mentioned xml:id="mentioned_d1198e205" xml:lang="yai"><lang/>
                                 <w>balavast</w>
-                                <gloss><q>мычание</q></gloss></mentioned>, <mentioned xml:lang="yai"
-                                    ><w>bāngast</w>
-                                <gloss><q>блеяние теленка</q></gloss></mentioned>, <mentioned
-                                xml:lang="yai"><w>vaast</w>
-                                <gloss><q>мычание</q></gloss></mentioned>, <mentioned xml:lang="yai"
-                                    ><w>wakast</w>
+                                <gloss><q>мычание</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1198e213" xml:lang="yai"><w>bāngast</w>
+                                <gloss><q>блеяние теленка</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1198e219" xml:lang="yai"><w>vaast</w>
+                                <gloss><q>мычание</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1198e225" xml:lang="yai"><w>wakast</w>
                                 <gloss><q>крик горной куропатки</q></gloss></mentioned></note></mentioned> и др.. Возводится к
                     *%ivast%i, *%ivaxšt%i oт %ivās%i- (ос. <ref type="xr" target="#entry_wasyn"/>)
                     ‘кричать’ и пр. Ос. форма *%i(w)axst%i, может быть, результат контаминации с
@@ -108,28 +109,20 @@
                     идентична с <ref type="xr" target="#entry_cʼæx"/> ‘синий’. Но как оправдать
                     семантически такое сложение („синий крик“)? Может быть, „крик, при котором
                     кричащий синеет от напряжения“? Ср. выражение %iqæræj bacʼæx īs%i „от крика он
-                    посинел“. Возможно также, что %icʼæx%i — из <ref type="xr" target="#entry_cʼax"
-                    /> с обычным в сложных словах ослаблением гласного (%iа%i → %iæ%i). В этом
-                    случае ср. %icʼax-cʼax%i ‘резкие, пронзительные крики’, <ref type="xr"
-                        target="#entry_cʼax"/>.</etym>
+                    посинел“. Возможно также, что %icʼæx%i — из <ref type="xr" target="#entry_cʼax"/> с обычным в сложных словах ослаблением гласного (%iа%i → %iæ%i). В этом
+                    случае ср. %icʼax-cʼax%i ‘резкие, пронзительные крики’, <ref type="xr" target="#entry_cʼax"/>.</etym>
                 <etym xml:lang="en">It consists of %icʼæx-axst%i. The second part, %iaxst%i, is
                     found also in the compound %iqær-axst%i, %iqær æmæ axst%i ‘loud scream, noise,
                     where <ref type="xr" target="#entry_qær"/> means ‘scream’, ‘noise’. This allows
                     us to mark %iaxst%i as an old separate word with the meaning ‘scream’, ‘cry’
-                    etc. It relates to <mentioned xml:lang="yai"><lang/>
-                        <w>-ast</w><note
-                            type="comment" xml:lang="en">in such compounds as <mentioned
-                                xml:lang="yai"><lang/>
+                    etc. It relates to <mentioned xml:id="mentioned_d1198e246" xml:lang="yai"><lang/>
+                        <w>-ast</w><note type="comment" xml:lang="en">in such compounds as <mentioned xml:id="mentioned_d1198e252" xml:lang="yai"><lang/>
                                 <w>balavast</w>
-                                <gloss><q>bellow</q></gloss></mentioned>, <mentioned xml:lang="yai"
-                                    ><w>bāngast</w>
-                                <gloss><q>bleat</q></gloss></mentioned>, <mentioned xml:lang="yai"
-                                    ><w>vaast</w>
-                                <gloss><q>bellow</q></gloss></mentioned>, <mentioned xml:lang="yai"
-                                    ><w>wakast</w>
+                                <gloss><q>bellow</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1198e260" xml:lang="yai"><w>bāngast</w>
+                                <gloss><q>bleat</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1198e266" xml:lang="yai"><w>vaast</w>
+                                <gloss><q>bellow</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1198e272" xml:lang="yai"><w>wakast</w>
                                 <gloss><q>snowcock scream</q></gloss></mentioned></note></mentioned>
-                    etc. It traces back to *%ivast%i, *%ivaxšt%i from %ivās%i- (Ossetic <ref
-                        type="xr" target="#entry_wasyn"/>) ‘scream’ etc. Ossetic form *%i(w)axst%i
+                    etc. It traces back to *%ivast%i, *%ivaxšt%i from %ivās%i- (Ossetic <ref type="xr" target="#entry_wasyn"/>) ‘scream’ etc. Ossetic form *%i(w)axst%i
                     may be a result of contamination with %ivāk%i-, %ivaxš%i- ‘speak’, ‘call’ etc.
                     The first part is apparently identical to <ref type="xr" target="#entry_cʼæx"/>
                     ‘blue’. But how can one justify such a compound semantically (“blue sream”)?

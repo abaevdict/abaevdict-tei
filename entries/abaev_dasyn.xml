@@ -1,36 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">dasyn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_dasyn" xml:lang="os">
-                <form xml:lang="os-x-iron" type="lemma"><orth>dasyn</orth><form type="participle"
-                            ><orth>dast</orth></form></form>
-                <form xml:lang="os-x-digor" type="dialectal"><orth>dasun</orth><form
-                        type="participle"><orth>dast</orth></form></form>
-                <sense><abv:tr xml:lang="ru">
+                <form xml:lang="os-x-iron" type="lemma"><orth>dasyn</orth><form type="participle"><orth>dast</orth></form></form>
+                <form xml:lang="os-x-digor" type="dialectal"><orth>dasun</orth><form type="participle"><orth>dast</orth></form></form>
+                <sense xml:id="sense_d5316e76"><abv:tr xml:lang="ru">
                         <q>брить</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>shave</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d5316e88">
                         <quote>rakodtoj Wyryzmæǵy denǵyzy bylmæ, ūm æj ærbadyn kodtoj, jæ sær yn
                             ysx˳ylyʒ kodtoj æmæ jæ rajdydtoj dasyn</quote>
                         <abv:tr xml:lang="ru">
@@ -41,10 +44,9 @@
                             <q>Uruzmag was taken to the seashore, was made to sit there, his head
                                 was moistened and they began to shave it</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Нарт._сказ."
-                            /><biblScope>192</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Нарт._сказ."/><biblScope>192</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5316e107">
                         <quote>jæ rīxītæ, dam, yn dasʒysty</quote>
                         <abv:tr xml:lang="ru">
                             <q>ему, говорят, сбреют усы</q>
@@ -52,10 +54,9 @@
                         <abv:tr xml:lang="en">
                             <q>they say, his will have his moustache shaven off</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Munk."
-                            /><biblScope>198</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Munk."/><biblScope>198</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5316e126">
                         <quote>ugærdæntæ dasy,— jæ rīwyǧd — bæræg</quote>
                         <abv:tr xml:lang="ru">
                             <q>он скашивает („бреет“) луга, — (каждый) взмах его (косы) заметен</q>
@@ -67,81 +68,70 @@
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>56</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Вс. %sМиллер%s (<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 77</biblScope></bibl>)
-                    сопоставлял с <mentioned xml:lang="sa"><lang/>
-                        <w>daš-</w></mentioned>, <mentioned xml:lang="sa"><w>damš-</w></mentioned>,
-                        <mentioned xml:lang="ae"><lang/>
+                <etym xml:lang="ru">Вс. %sМиллер%s (<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 77</biblScope></bibl>)
+                    сопоставлял с <mentioned xml:id="mentioned_d5316e152" xml:lang="sa"><lang/>
+                        <w>daš-</w></mentioned>, <mentioned xml:id="mentioned_d5316e157" xml:lang="sa"><w>damš-</w></mentioned>,
+                        <mentioned xml:id="mentioned_d5316e160" xml:lang="ae"><lang/>
                         <w>das-</w>
-                        <gloss><q>кусать</q></gloss></mentioned>. В позднейшей работе (<bibl><ref
-                            type="bibl" target="#ref_Вс._Миллер._Gr."
-                        /><biblScope>59</biblScope></bibl>) он уже не повторил этой этимологии.
+                        <gloss><q>кусать</q></gloss></mentioned>. В позднейшей работе (<bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>59</biblScope></bibl>) он уже не повторил этой этимологии.
                     Действительно, смысловые отношения (‘кусать’→ ‘брить’) представляются
-                    неправдоподобными. Мы склонны думать вместе с G. %sMorgenstierne%s (<bibl><ref
-                            type="bibl" target="#ref_Morgenstierne._EVP"
-                        /><biblScope>83</biblScope></bibl>), что начальный %id%i восходит здесь к
+                    неправдоподобными. Мы склонны думать вместе с G. %sMorgenstierne%s (<bibl><ref type="bibl" target="#ref_Morgenstierne._EVP"/><biblScope>83</biblScope></bibl>), что начальный %id%i восходит здесь к
                     %it%i. В этом случае наше слово оказывается в одном ряду со множеством слов в
                     иранских и индоевропейских языках со значением ‘резать’, ‘кроить’, ‘тесать’,
-                    ‘брить’ и пр.: <mentioned xml:lang="ku"><lang/>
-                        <w>tāšīn</w></mentioned>, <mentioned xml:lang="sgh"><lang/>
-                        <w>tēṣ̌-</w></mentioned>, <mentioned xml:lang="wbl"><lang/>
-                        <w>tiṣ̌-</w></mentioned>, <mentioned xml:lang="mnj"><lang/>
-                        <w>tež</w></mentioned>, <mentioned xml:lang="ps"><lang/>
+                    ‘брить’ и пр.: <mentioned xml:id="mentioned_d5316e177" xml:lang="ku"><lang/>
+                        <w>tāšīn</w></mentioned>, <mentioned xml:id="mentioned_d5316e182" xml:lang="sgh"><lang/>
+                        <w>tēṣ̌-</w></mentioned>, <mentioned xml:id="mentioned_d5316e187" xml:lang="wbl"><lang/>
+                        <w>tiṣ̌-</w></mentioned>, <mentioned xml:id="mentioned_d5316e192" xml:lang="mnj"><lang/>
+                        <w>tež</w></mentioned>, <mentioned xml:id="mentioned_d5316e197" xml:lang="ps"><lang/>
                         <w>tōẓ̌əl</w>
-                        <gloss><q>брить</q></gloss></mentioned>, <mentioned xml:lang="yai"><lang/>
-                        <w>taš-</w></mentioned>, <mentioned xml:lang="yai"><w>toš-</w>
-                        <gloss><q>строгать</q></gloss></mentioned>, <mentioned xml:lang="yai"><w/>
-                        <gloss><q>отрезать</q></gloss></mentioned>, <mentioned xml:lang="yai"><w/>
-                        <gloss><q>брить</q></gloss></mentioned>, <mentioned xml:lang="sog"><lang/>
+                        <gloss><q>брить</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5316e206" xml:lang="yai"><lang/>
+                        <w>taš-</w></mentioned>, <mentioned xml:id="mentioned_d5316e211" xml:lang="yai"><w>toš-</w>
+                        <gloss><q>строгать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5316e217" xml:lang="yai"><w/>
+                        <gloss><q>отрезать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5316e223" xml:lang="yai"><w/>
+                        <gloss><q>брить</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5316e229" xml:lang="sog"><lang/>
                         <w>tāš-(tʼš)</w>
-                        <gloss><q>кроить</q></gloss></mentioned>, <mentioned xml:lang="ae"><lang/>
+                        <gloss><q>кроить</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5316e237" xml:lang="ae"><lang/>
                         <w>taš-</w>
-                        <gloss><q>кроить</q></gloss></mentioned>, <mentioned xml:lang="ae"><w/>
-                        <gloss><q>резать</q></gloss></mentioned>, <mentioned xml:lang="sa"><lang/>
+                        <gloss><q>кроить</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5316e246" xml:lang="ae"><w/>
+                        <gloss><q>резать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5316e252" xml:lang="sa"><lang/>
                         <w>takṣ-</w>
-                        <gloss><q>резать</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
-                        <gloss><q>кроить</q></gloss></mentioned>, <mentioned xml:lang="cu"><lang/>
-                        <w n="0">тесати</w></mentioned>, <mentioned xml:lang="ru"><lang/>
+                        <gloss><q>резать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5316e260" xml:lang="sa"><w/>
+                        <gloss><q>кроить</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5316e266" xml:lang="cu"><lang/>
+                        <w n="0">тесати</w></mentioned>, <mentioned xml:id="mentioned_d5316e272" xml:lang="ru"><lang/>
                         <w>тесать</w></mentioned> и пр. Начальный %id%i (вместо %it%i) мог появиться
-                    под влиянием сложного слова %især-dasæn%i ‘бритва’ [см. <ref type="xr"
-                        target="#entry_særdasæn"/>], где озвончение закономерно.</etym>
-                <etym xml:lang="en">Ws. %sMiller%s (<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 77</biblScope></bibl>)
-                    compared the word with <mentioned xml:lang="sa"><lang/>
-                        <w>daš-</w></mentioned>, <mentioned xml:lang="sa"><w>damš-</w></mentioned>,
-                        <mentioned xml:lang="ae"><lang/>
+                    под влиянием сложного слова %især-dasæn%i ‘бритва’ [см. <ref type="xr" target="#entry_særdasæn"/>], где озвончение закономерно.</etym>
+                <etym xml:lang="en">Ws. %sMiller%s (<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 77</biblScope></bibl>)
+                    compared the word with <mentioned xml:id="mentioned_d5316e287" xml:lang="sa"><lang/>
+                        <w>daš-</w></mentioned>, <mentioned xml:id="mentioned_d5316e292" xml:lang="sa"><w>damš-</w></mentioned>,
+                        <mentioned xml:id="mentioned_d5316e295" xml:lang="ae"><lang/>
                         <w>das-</w>
-                        <gloss><q>bite</q></gloss></mentioned>. In the latest work (<bibl><ref
-                            type="bibl" target="#ref_Вс._Миллер._Gr."
-                        /><biblScope>59</biblScope></bibl>) he no longer repeated this etymology.
+                        <gloss><q>bite</q></gloss></mentioned>. In the latest work (<bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>59</biblScope></bibl>) he no longer repeated this etymology.
                     Indeed, semantic relations (‘bite’→ ‘shave’) seem implausible. We tend to think
-                    together with G. %sMorgenstierne%s (<bibl><ref type="bibl"
-                            target="#ref_Morgenstierne._EVP"/><biblScope>83</biblScope></bibl>),
+                    together with G. %sMorgenstierne%s (<bibl><ref type="bibl" target="#ref_Morgenstierne._EVP"/><biblScope>83</biblScope></bibl>),
                     that the initial %id%i here traces back to %it%i. In this case, our word ranks
                     with many words in Iranian and Indo-European languages with the meaning ‘cut’,
-                    ‘cut out’, ‘hew’, ‘shave’ etc.: <mentioned xml:lang="ku"><lang/>
-                        <w>tāšīn</w></mentioned>, <mentioned xml:lang="sgh"><lang/>
-                        <w>tēṣ̌-</w></mentioned>, <mentioned xml:lang="wbl"><lang/>
-                        <w>tiṣ̌-</w></mentioned>, <mentioned xml:lang="mnj"><lang/>
-                        <w>tež</w></mentioned>, <mentioned xml:lang="ps"><lang/>
+                    ‘cut out’, ‘hew’, ‘shave’ etc.: <mentioned xml:id="mentioned_d5316e312" xml:lang="ku"><lang/>
+                        <w>tāšīn</w></mentioned>, <mentioned xml:id="mentioned_d5316e317" xml:lang="sgh"><lang/>
+                        <w>tēṣ̌-</w></mentioned>, <mentioned xml:id="mentioned_d5316e322" xml:lang="wbl"><lang/>
+                        <w>tiṣ̌-</w></mentioned>, <mentioned xml:id="mentioned_d5316e327" xml:lang="mnj"><lang/>
+                        <w>tež</w></mentioned>, <mentioned xml:id="mentioned_d5316e332" xml:lang="ps"><lang/>
                         <w>tōẓ̌əl</w>
-                        <gloss><q>shave</q></gloss></mentioned>, <mentioned xml:lang="yai"><lang/>
-                        <w>taš-</w></mentioned>, <mentioned xml:lang="yai"><w>toš-</w>
-                        <gloss><q>plane</q></gloss></mentioned>, <mentioned xml:lang="yai"><w/>
-                        <gloss><q>cut</q></gloss></mentioned>, <mentioned xml:lang="yai"><w/>
-                        <gloss><q>shave</q></gloss></mentioned>, <mentioned xml:lang="sog"><lang/>
+                        <gloss><q>shave</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5316e341" xml:lang="yai"><lang/>
+                        <w>taš-</w></mentioned>, <mentioned xml:id="mentioned_d5316e346" xml:lang="yai"><w>toš-</w>
+                        <gloss><q>plane</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5316e352" xml:lang="yai"><w/>
+                        <gloss><q>cut</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5316e358" xml:lang="yai"><w/>
+                        <gloss><q>shave</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5316e364" xml:lang="sog"><lang/>
                         <w>tāš-(tʼš)</w>
-                        <gloss><q>cut out</q></gloss></mentioned>, <mentioned xml:lang="ae"><lang/>
+                        <gloss><q>cut out</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5316e372" xml:lang="ae"><lang/>
                         <w>taš-</w>
-                        <gloss><q>cut out</q></gloss></mentioned>, <mentioned xml:lang="ae"><w/>
-                        <gloss><q>cut</q></gloss></mentioned>, <mentioned xml:lang="sa"><lang/>
+                        <gloss><q>cut out</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5316e381" xml:lang="ae"><w/>
+                        <gloss><q>cut</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5316e387" xml:lang="sa"><lang/>
                         <w>takṣ-</w>
-                        <gloss><q>cut</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
-                        <gloss><q>cut out</q></gloss></mentioned>, <mentioned xml:lang="cu"><lang/>
-                        <w>tesati</w></mentioned>, <mentioned xml:lang="ru"><lang/>
+                        <gloss><q>cut</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5316e395" xml:lang="sa"><w/>
+                        <gloss><q>cut out</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5316e401" xml:lang="cu"><lang/>
+                        <w>tesati</w></mentioned>, <mentioned xml:id="mentioned_d5316e406" xml:lang="ru"><lang/>
                         <w>tesatʼ</w></mentioned> etc. The initial %id%i (instead of %it%i) could
-                    appear under the influence of the compound %især-dasæn%i ‘razor’ [see <ref
-                        type="xr" target="#entry_særdasæn"/>], where the voicing is regular.</etym>
+                    appear under the influence of the compound %især-dasæn%i ‘razor’ [see <ref type="xr" target="#entry_særdasæn"/>], where the voicing is regular.</etym>
             </entry>
         </body>
     </text>

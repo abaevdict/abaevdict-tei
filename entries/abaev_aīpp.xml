@@ -1,42 +1,47 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">aīpp</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_aīpp" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>aīpp</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>ajepp</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d3129e72"><sense xml:id="sense_d3129e73"><abv:tr xml:lang="ru">
                             <q>изъян</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>shortcoming</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d3129e82"><abv:tr xml:lang="ru">
                             <q>порок</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>defect</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d3129e91"><abv:tr xml:lang="ru">
                             <q>недостаток</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>disadvantage</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d3129e103">
                         <quote>nīcy aīpp æm yssardtoj</quote>
                         <abv:tr xml:lang="ru">
                             <q>не нашли у него никакого недостатка</q>
@@ -45,7 +50,7 @@
                             <q>no defect has not been found in him</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d3129e118" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>xe ramarun ajepp ǧuddag æj lægæn</quote>
                         <abv:tr xml:lang="ru">
@@ -56,7 +61,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Bes."/><biblScope>99</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3129e140">
                         <quote>bafærsyn aīpp ma wæd, fælæ kædæm cæwys?</quote>
                         <abv:tr xml:lang="ru">
                             <q>да не будет (мой) вопрос неподобающим, но куда ты идешь</q>
@@ -66,7 +71,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Сека"/><biblScope>24</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3129e159">
                         <quote>kæfq˳yndær ænqælmæ kastīs ænæaīpp ḱyzǵy anyqq˳yrynmæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>дракон ждал, чтобы проглотить непорочную девушку</q>
@@ -77,40 +82,36 @@
                         <bibl><ref type="bibl" target="#src_Сека"/><biblScope>20</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из <mentioned xml:lang="ar" extralang="fa"><lang/>
-                        <w>aīb</w></mentioned>, <mentioned xml:lang="tr"><lang/>
+                <etym xml:lang="ru">Из <mentioned xml:id="mentioned_d3129e181" xml:lang="ar" extralang="fa"><lang/>
+                        <w>aīb</w></mentioned>, <mentioned xml:id="mentioned_d3129e186" xml:lang="tr"><lang/>
                         <w>ayəp</w>
-                        <gloss><q>позорное</q></gloss></mentioned>, <mentioned xml:lang="tr"><w/>
-                        <gloss><q>постыдное</q></gloss></mentioned>, <mentioned xml:lang="tr"><w/>
+                        <gloss><q>позорное</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3129e194" xml:lang="tr"><w/>
+                        <gloss><q>постыдное</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3129e200" xml:lang="tr"><w/>
                         <gloss><q>порок</q></gloss></mentioned>; слово представлено во многих языках
-                    Кавказа: <mentioned xml:lang="dar"><lang/>
-                        <w>ʽajiv</w></mentioned>, <mentioned xml:lang="av"><lang/>
-                        <w>ʽajib</w></mentioned>, <mentioned xml:lang="ce"><lang/>
-                        <w>ajip</w></mentioned>, <mentioned xml:lang="inh"><lang/>
-                        <w>ejp</w></mentioned>, <mentioned xml:lang="krc-x-balkar"><lang/>
-                        <w>ajəp</w></mentioned>, <mentioned xml:lang="ku"><lang/>
-                        <w>ayb</w></mentioned>. Ср. также <mentioned xml:lang="ka"><lang/>
-                        <w>aibi</w></mentioned>.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._Gr."/><biblScope>9</biblScope></bibl>. —
-                            <bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                        /><biblScope>93</biblScope></bibl>.</etym>
-                <etym xml:lang="en">From <mentioned xml:lang="ar" extralang="fa"><lang/>
-                        <w>aīb</w></mentioned>, <mentioned xml:lang="tr"><lang/>
+                    Кавказа: <mentioned xml:id="mentioned_d3129e206" xml:lang="dar"><lang/>
+                        <w>ʽajiv</w></mentioned>, <mentioned xml:id="mentioned_d3129e212" xml:lang="av"><lang/>
+                        <w>ʽajib</w></mentioned>, <mentioned xml:id="mentioned_d3129e217" xml:lang="ce"><lang/>
+                        <w>ajip</w></mentioned>, <mentioned xml:id="mentioned_d3129e222" xml:lang="inh"><lang/>
+                        <w>ejp</w></mentioned>, <mentioned xml:id="mentioned_d3129e227" xml:lang="krc-x-balkar"><lang/>
+                        <w>ajəp</w></mentioned>, <mentioned xml:id="mentioned_d3129e232" xml:lang="ku"><lang/>
+                        <w>ayb</w></mentioned>. Ср. также <mentioned xml:id="mentioned_d3129e237" xml:lang="ka"><lang/>
+                        <w>aibi</w></mentioned>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>9</biblScope></bibl>. —
+                            <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>93</biblScope></bibl>.</etym>
+                <etym xml:lang="en">From <mentioned xml:id="mentioned_d3129e255" xml:lang="ar" extralang="fa"><lang/>
+                        <w>aīb</w></mentioned>, <mentioned xml:id="mentioned_d3129e260" xml:lang="tr"><lang/>
                         <w>ayəp</w>
-                        <gloss><q>discreditable</q></gloss></mentioned>, <mentioned xml:lang="tr"><w/>
-                        <gloss><q>shameful</q></gloss></mentioned>, <mentioned xml:lang="tr"><w/>
+                        <gloss><q>discreditable</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3129e268" xml:lang="tr"><w/>
+                        <gloss><q>shameful</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3129e274" xml:lang="tr"><w/>
                         <gloss><q>defect</q></gloss></mentioned>; the word is found in many
-                    Caucasian languages: <mentioned xml:lang="dar"><lang/>
-                        <w>ʽajiv</w></mentioned>, <mentioned xml:lang="av"><lang/>
-                        <w>ʽajib</w></mentioned>, <mentioned xml:lang="ce"><lang/>
-                        <w>ajip</w></mentioned>, <mentioned xml:lang="inh"><lang/>
-                        <w>ejp</w></mentioned>, <mentioned xml:lang="krc-x-balkar"><lang/>
-                        <w>ajəp</w></mentioned>, <mentioned xml:lang="ku"><lang/>
-                        <w>ayb</w></mentioned>. Cf. also <mentioned xml:lang="ka"><lang/>
-                        <w>aibi</w></mentioned>.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._Gr."/><biblScope>9</biblScope></bibl>. —
-                            <bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                        /><biblScope>93</biblScope></bibl>.</etym>
+                    Caucasian languages: <mentioned xml:id="mentioned_d3129e280" xml:lang="dar"><lang/>
+                        <w>ʽajiv</w></mentioned>, <mentioned xml:id="mentioned_d3129e286" xml:lang="av"><lang/>
+                        <w>ʽajib</w></mentioned>, <mentioned xml:id="mentioned_d3129e291" xml:lang="ce"><lang/>
+                        <w>ajip</w></mentioned>, <mentioned xml:id="mentioned_d3129e296" xml:lang="inh"><lang/>
+                        <w>ejp</w></mentioned>, <mentioned xml:id="mentioned_d3129e301" xml:lang="krc-x-balkar"><lang/>
+                        <w>ajəp</w></mentioned>, <mentioned xml:id="mentioned_d3129e306" xml:lang="ku"><lang/>
+                        <w>ayb</w></mentioned>. Cf. also <mentioned xml:id="mentioned_d3129e311" xml:lang="ka"><lang/>
+                        <w>aibi</w></mentioned>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>9</biblScope></bibl>. —
+                            <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>93</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

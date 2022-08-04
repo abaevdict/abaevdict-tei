@@ -1,43 +1,48 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">kwīst</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_kwīst" xml:lang="os-x-iron">
                 <form type="lemma"><orth>kwīst</orth></form>
                 <usg><lang/></usg>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d1199e72"><abv:tr xml:lang="ru">
                         <q>годовалая овца, коза</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>one year old sheep, goat</q>
                     </abv:tr></sense>
-                <re>
+                <re xml:id="re_d1199e82">
                     <form xml:lang="os-x-iron" type="lemma"><orth>nælgwīst</orth></form>
                     <form xml:lang="os-x-digor" type="dialectal"><orth>nælgost</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d1199e90"><abv:tr xml:lang="ru">
                             <q>годовалый барашек, козел</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>one year old lamb, goat</q>
                         </abv:tr></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d1199e103">
                         <quote>fosy ʒūgtæn sæ kwīstytæ, zæxxytæn sæ xussærttæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>из стад мелкого скота — одногодков, из земель — южные склоны</q>
@@ -49,7 +54,7 @@
                         <bibl><ref type="bibl" target="#src_ЮОПам."/><biblScope>I
                             118</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1199e122">
                         <quote>xīstær ævsymær æræværdta fyngtyl saǵy fydtæ, kwīst sæg˳yty
                             fydtæ</quote>
                         <abv:tr xml:lang="ru">
@@ -62,12 +67,11 @@
                             57</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Кавказское слово? Ср. <mentioned xml:lang="sva"><lang/>
+                <etym xml:lang="ru">Кавказское слово? Ср. <mentioned xml:id="mentioned_d1199e145" xml:lang="sva"><lang/>
                         <w>negast</w><note type="comment" xml:lang="ru"> (%ine-gast%i?)</note>
                         <gloss><q>козленок до 6 месяцев</q></gloss></mentioned>.</etym>
-                <etym xml:lang="en">A Caucasian word? Cf. <mentioned xml:lang="sva"><lang/>
-                        <w>negast</w><note
-                            type="comment" xml:lang="en"> (%ine-gast%i?)</note>
+                <etym xml:lang="en">A Caucasian word? Cf. <mentioned xml:id="mentioned_d1199e158" xml:lang="sva"><lang/>
+                        <w>negast</w><note type="comment" xml:lang="en"> (%ine-gast%i?)</note>
                         <gloss><q>goatling up to 6 months</q></gloss></mentioned>.</etym>
             </entry>
         </body>

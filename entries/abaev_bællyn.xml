@@ -1,52 +1,55 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">bællyn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_bællyn" xml:lang="os">
-                <form xml:lang="os-x-iron" type="lemma"><orth>bællyn</orth><form type="participle"
-                            ><orth>bællyd</orth></form></form>
-                <form xml:lang="os-x-digor" type="dialectal"><orth>bællun</orth><form
-                        type="participle"><orth>bæld</orth></form></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <form xml:lang="os-x-iron" type="lemma"><orth>bællyn</orth><form type="participle"><orth>bællyd</orth></form></form>
+                <form xml:lang="os-x-digor" type="dialectal"><orth>bællun</orth><form type="participle"><orth>bæld</orth></form></form>
+                <sense xml:id="sense_d1304e76"><sense xml:id="sense_d1304e77"><abv:tr xml:lang="ru">
                             <q>стремиться к чему</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>aspire</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d1304e86"><abv:tr xml:lang="ru">
                             <q>желать чего</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>wish something</q>
                         </abv:tr></sense></sense>
-                <re>
+                <re xml:id="re_d1304e96">
                     <form type="lemma"><orth>bællic</orth></form>
-                    <sense><sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d1304e101"><sense xml:id="sense_d1304e102"><abv:tr xml:lang="ru">
                                 <q>стремление</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>aspiration</q>
-                            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                            </abv:tr></sense><sense xml:id="sense_d1304e111"><abv:tr xml:lang="ru">
                                 <q>желание</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>wish</q>
                             </abv:tr></sense></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d1304e124">
                         <quote>cardæn jæ k˳ystmæ bællydtæn zærdiagæj</quote>
                         <abv:tr xml:lang="ru">
                             <q>к труду жизни я стремился всем сердцем</q>
@@ -56,7 +59,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>37</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1304e143">
                         <quote>ma babæll wællagmæ!</quote>
                         <abv:tr xml:lang="ru">
                             <q>не прельстись верхней (дорогой)!</q>
@@ -66,7 +69,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>70</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d1304e162" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>i qalti cardmæ necæmæj bælldtæj</quote>
                         <abv:tr xml:lang="ru">
@@ -79,78 +82,68 @@
                         <bibl><ref type="bibl" target="#src_Bes."/><biblScope>104</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Возводится к <mentioned xml:lang="ira"><lang/>
+                <etym xml:lang="ru">Возводится к <mentioned xml:id="mentioned_d1304e188" xml:lang="ira"><lang/>
                         <w>*var-</w>
-                        <gloss><q>желать</q></gloss></mentioned>, <mentioned xml:lang="ira"><w/>
+                        <gloss><q>желать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1304e196" xml:lang="ira"><w/>
                         <gloss><q>выбирать</q></gloss></mentioned> с необычным развитием начального
                     %iv%i → %ib%i (cp., однако, <ref type="xr" target="#entry_bar"/> ‘право’,
-                    ‘воля’, <ref type="xr" target="#entry_byjyn"/> ‘вить’). Ср. <mentioned
-                        xml:lang="ae"><lang/>
+                    ‘воля’, <ref type="xr" target="#entry_byjyn"/> ‘вить’). Ср. <mentioned xml:id="mentioned_d1304e206" xml:lang="ae"><lang/>
                         <w>var-</w>
-                        <gloss><q>выбирать</q></gloss></mentioned>, <mentioned xml:lang="ae"><w/>
-                        <gloss><q>предпочитать</q></gloss></mentioned>, <mentioned xml:lang="sa"><lang/>
-                        <w>var-</w></mentioned>, <mentioned xml:lang="sa"><w>vṛnoti</w>
-                        <gloss><q>предпочитает</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
-                        <gloss><q>желает</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
-                        <gloss><q>любит</q></gloss></mentioned>, <mentioned xml:lang="cu"><lang/>
-                        <w n="0">вѣлети</w></mentioned>, <mentioned xml:lang="cu"><w n="0">воля</w></mentioned>,
-                        <mentioned xml:lang="ru"><lang/>
-                        <w>велеть</w></mentioned>, <mentioned xml:lang="ru"><w>воля</w></mentioned>,
-                        <mentioned xml:lang="lt"><lang/>
+                        <gloss><q>выбирать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1304e215" xml:lang="ae"><w/>
+                        <gloss><q>предпочитать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1304e221" xml:lang="sa"><lang/>
+                        <w>var-</w></mentioned>, <mentioned xml:id="mentioned_d1304e226" xml:lang="sa"><w>vṛnoti</w>
+                        <gloss><q>предпочитает</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1304e232" xml:lang="sa"><w/>
+                        <gloss><q>желает</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1304e238" xml:lang="sa"><w/>
+                        <gloss><q>любит</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1304e244" xml:lang="cu"><lang/>
+                        <w n="0">вѣлети</w></mentioned>, <mentioned xml:id="mentioned_d1304e251" xml:lang="cu"><w n="0">воля</w></mentioned>,
+                        <mentioned xml:id="mentioned_d1304e255" xml:lang="ru"><lang/>
+                        <w>велеть</w></mentioned>, <mentioned xml:id="mentioned_d1304e260" xml:lang="ru"><w>воля</w></mentioned>,
+                        <mentioned xml:id="mentioned_d1304e263" xml:lang="lt"><lang/>
                         <w>vêlyti</w>
-                        <gloss><q>желать</q></gloss></mentioned>, <mentioned xml:lang="goh"><lang/>
-                        <w>wellan</w></mentioned>, <mentioned xml:lang="de"><lang/>
+                        <gloss><q>желать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1304e271" xml:lang="goh"><lang/>
+                        <w>wellan</w></mentioned>, <mentioned xml:id="mentioned_d1304e276" xml:lang="de"><lang/>
                         <w>wollen</w>
-                        <gloss><q>желать</q></gloss></mentioned>, <mentioned xml:lang="la"><lang/>
+                        <gloss><q>желать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1304e285" xml:lang="la"><lang/>
                         <w>volo</w>
                         <gloss><q>я хочу</q></gloss></mentioned>. Для объяснения осетинской формы
                     приходится исходить из усиленной основы %ivarya%i--, в этом случае %ir%i перед
-                    %iу%i закономерно дал %il%i, а геминация %ily%i →%ill%i (как <ref type="xr"
-                        target="#entry_allon"/> из %iāryana%i и др.); ср. основу %ivarya%i- в таких
-                    образованиях, как <mentioned xml:lang="sa"><lang/>
-                        <w>varya-</w></mentioned>, <mentioned xml:lang="ae"><lang/>
+                    %iу%i закономерно дал %il%i, а геминация %ily%i →%ill%i (как <ref type="xr" target="#entry_allon"/> из %iāryana%i и др.); ср. основу %ivarya%i- в таких
+                    образованиях, как <mentioned xml:id="mentioned_d1304e295" xml:lang="sa"><lang/>
+                        <w>varya-</w></mentioned>, <mentioned xml:id="mentioned_d1304e300" xml:lang="ae"><lang/>
                         <w>vairya-</w>
                         <gloss><q>желанный</q></gloss></mentioned>. В ближайшем родстве с %ibællyn%i
-                    стоят <ref type="xr" target="#entry_bar"/> ‘воля’, ‘право’ и <ref type="xr"
-                        target="#entry_bærgæ"/> ‘хотя’; в более отдаленном — <ref type="xr"
-                        target="#entry_wyrnyn"/> ‘верить’.%n<bibl><ref type="bibl"
-                            target="#ref_ОЯФ_I"/><biblScope>245</biblScope></bibl>.</etym>
-                <etym xml:lang="en">It traces back to <mentioned xml:lang="ira"><lang/>
+                    стоят <ref type="xr" target="#entry_bar"/> ‘воля’, ‘право’ и <ref type="xr" target="#entry_bærgæ"/> ‘хотя’; в более отдаленном — <ref type="xr" target="#entry_wyrnyn"/> ‘верить’.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>245</biblScope></bibl>.</etym>
+                <etym xml:lang="en">It traces back to <mentioned xml:id="mentioned_d1304e322" xml:lang="ira"><lang/>
                         <w>*var-</w>
-                        <gloss><q>wish</q></gloss></mentioned>, <mentioned xml:lang="ira"><w/>
+                        <gloss><q>wish</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1304e330" xml:lang="ira"><w/>
                         <gloss><q>choose</q></gloss></mentioned> with the unusual development of the
                     initial %iv%i → %ib%i (cf., however, <ref type="xr" target="#entry_bar"/>
-                    ‘right’, ‘will’, <ref type="xr" target="#entry_byjyn"/> ‘wind’). Cf. <mentioned
-                        xml:lang="ae"><lang/>
+                    ‘right’, ‘will’, <ref type="xr" target="#entry_byjyn"/> ‘wind’). Cf. <mentioned xml:id="mentioned_d1304e340" xml:lang="ae"><lang/>
                         <w>var-</w>
-                        <gloss><q>choose</q></gloss></mentioned>, <mentioned xml:lang="ae"><w/>
-                        <gloss><q>prefer</q></gloss></mentioned>, <mentioned xml:lang="sa"><lang/>
-                        <w>var-</w></mentioned>, <mentioned xml:lang="sa"><w>vṛnoti</w>
-                        <gloss><q>s/he prefers</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
-                        <gloss><q>s/he wishes</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
-                        <gloss><q>s/he loves</q></gloss></mentioned>, <mentioned xml:lang="cu"><lang/>
-                        <w>věleti</w></mentioned>, <mentioned xml:lang="cu"
-                    ><w>volʲa</w></mentioned>, <mentioned xml:lang="ru"><lang/>
-                        <w>veletʼ</w></mentioned>, <mentioned xml:lang="ru"
-                    ><w>volja</w></mentioned>, <mentioned xml:lang="lt"><lang/>
+                        <gloss><q>choose</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1304e349" xml:lang="ae"><w/>
+                        <gloss><q>prefer</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1304e355" xml:lang="sa"><lang/>
+                        <w>var-</w></mentioned>, <mentioned xml:id="mentioned_d1304e360" xml:lang="sa"><w>vṛnoti</w>
+                        <gloss><q>s/he prefers</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1304e366" xml:lang="sa"><w/>
+                        <gloss><q>s/he wishes</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1304e372" xml:lang="sa"><w/>
+                        <gloss><q>s/he loves</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1304e378" xml:lang="cu"><lang/>
+                        <w>věleti</w></mentioned>, <mentioned xml:id="mentioned_d1304e384" xml:lang="cu"><w>volʲa</w></mentioned>, <mentioned xml:id="mentioned_d1304e387" xml:lang="ru"><lang/>
+                        <w>veletʼ</w></mentioned>, <mentioned xml:id="mentioned_d1304e392" xml:lang="ru"><w>volja</w></mentioned>, <mentioned xml:id="mentioned_d1304e395" xml:lang="lt"><lang/>
                         <w>vêlyti</w>
-                        <gloss><q>wish</q></gloss></mentioned>, <mentioned xml:lang="goh"><lang/>
-                        <w>wellan</w></mentioned>, <mentioned xml:lang="de"><lang/>
+                        <gloss><q>wish</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1304e403" xml:lang="goh"><lang/>
+                        <w>wellan</w></mentioned>, <mentioned xml:id="mentioned_d1304e408" xml:lang="de"><lang/>
                         <w>wollen</w>
-                        <gloss><q>wish</q></gloss></mentioned>, <mentioned xml:lang="la"><lang/>
+                        <gloss><q>wish</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1304e417" xml:lang="la"><lang/>
                         <w>volo</w>
                         <gloss><q>I want</q></gloss></mentioned>. For explaining of the Ossetic form
                     we have to start from a %bstrong%b stem %ivarya%i-; in this case %ir%i before
-                    %iу%i turned into a regular %il%i, and the gemination %ily%i →%ill%i (like <ref
-                        type="xr" target="#entry_allon"/> derived from %iāryana%i etc.); cf. the
-                    stem %ivarya%i- in such derivations as: <mentioned xml:lang="sa"><lang/>
-                        <w>varya-</w></mentioned>, <mentioned xml:lang="ae"><lang/>
+                    %iу%i turned into a regular %il%i, and the gemination %ily%i →%ill%i (like <ref type="xr" target="#entry_allon"/> derived from %iāryana%i etc.); cf. the
+                    stem %ivarya%i- in such derivations as: <mentioned xml:id="mentioned_d1304e427" xml:lang="sa"><lang/>
+                        <w>varya-</w></mentioned>, <mentioned xml:id="mentioned_d1304e432" xml:lang="ae"><lang/>
                         <w>vairya-</w>
                         <gloss><q>desired</q></gloss></mentioned>. The following words are close
                     related to the word %ibællyn%i: <ref type="xr" target="#entry_bar"/> ‘will’,
                     ‘right’ and <ref type="xr" target="#entry_bærgæ"/> ‘although’; in a less related
-                    word <ref type="xr" target="#entry_wyrnyn"/> ‘believe’.%n<bibl><ref type="bibl"
-                            target="#ref_ОЯФ_I"/><biblScope>245</biblScope></bibl>.</etym>
+                    word <ref type="xr" target="#entry_wyrnyn"/> ‘believe’.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>245</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

@@ -1,38 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">fydmi</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_fydmi" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>fydmi</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>fudmiwæ</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d432e72"><sense xml:id="sense_d432e73"><abv:tr xml:lang="ru">
                             <q>злодеяние</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>misdeed</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d432e82"><abv:tr xml:lang="ru">
                             <q>насилие</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>violence</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d432e94">
                         <quote>(wæjyg) Narty simdy balæwwyd æmæ ta fydmitæ kænyn rajdydta Narty
                             fæsīvædæn</quote>
                         <abv:tr xml:lang="ru">
@@ -43,10 +48,9 @@
                             <q>(the giant) entered the Nart simd (round dance) and again began to
                                 cause the violence for the Nart youth</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Нарт._сказ."
-                            /><biblScope>215</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Нарт._сказ."/><biblScope>215</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d432e113">
                         <quote>Aragwyjy Erystaw-ældar jæ… fydmityl fæsmon næ kodta, fælæ ma
                             noǵydær fyddær fydmitæ kænyn rajdydta</quote>
                         <abv:tr xml:lang="ru">
@@ -61,13 +65,10 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">См. %r3%r<ref type="xr" target="#entry_fyd"/> | %ifud%i ‘дурной’
-                    и <ref type="xr" target="#entry_mi"/> | %imiwæ%i ‘дело’. Ср. <ref type="xr"
-                        target="#entry_fydgænd"/>. Ср. также <ref type="xr" target="#entry_tyxmi"/>
+                    и <ref type="xr" target="#entry_mi"/> | %imiwæ%i ‘дело’. Ср. <ref type="xr" target="#entry_fydgænd"/>. Ср. также <ref type="xr" target="#entry_tyxmi"/>
                     ‘насилие’.</etym>
                 <etym xml:lang="en">See %r3%r<ref type="xr" target="#entry_fyd"/> | %ifud%i ‘bad’
-                    and <ref type="xr" target="#entry_mi"/> | %imiwæ%i ‘affair’. Compare with <ref
-                        type="xr" target="#entry_fydgænd"/>. Compare also with <ref type="xr"
-                        target="#entry_tyxmi"/> ‘violence’.</etym>
+                    and <ref type="xr" target="#entry_mi"/> | %imiwæ%i ‘affair’. Compare with <ref type="xr" target="#entry_fydgænd"/>. Compare also with <ref type="xr" target="#entry_tyxmi"/> ‘violence’.</etym>
             </entry>
         </body>
     </text>

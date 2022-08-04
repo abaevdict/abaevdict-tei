@@ -1,34 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">īsty</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_īsty" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>īsty</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>esti</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d5984e72"><abv:tr xml:lang="ru">
                         <q>что-нибудь</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>something</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d5984e84">
                         <quote>wæddær īsty zonʒynæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>ты все же (должно быть) что-нибудь знаешь</q>
@@ -38,7 +43,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Munk."/><biblScope>76</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5984e103" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>esti di bajronx æj?</quote>
                         <abv:tr xml:lang="ru">
@@ -47,34 +52,27 @@
                         <abv:tr xml:lang="en">
                             <q>have you forgotten something?</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>25%l15</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>25%l15</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Из %iīs-cy%i | %ies-ci%i с перебоем %ic%i → %it%i после %is%i,
-                    как в <ref type="xr" target="#entry_fæstæ"/> из %i*pasča%i, <ref type="xr"
-                        target="#entry_fæstīnon"/> из %ifæs-cīnon%i. Ср. по образованию <ref
-                        type="xr" target="#entry_īsḱī"/> | %ieske%i ‘что-нибудь’ и пр. Ср.
-                        <mentioned xml:lang="kho"><lang/>
+                    как в <ref type="xr" target="#entry_fæstæ"/> из %i*pasča%i, <ref type="xr" target="#entry_fæstīnon"/> из %ifæs-cīnon%i. Ср. по образованию <ref type="xr" target="#entry_īsḱī"/> | %ieske%i ‘что-нибудь’ и пр. Ср.
+                        <mentioned xml:id="mentioned_d5984e134" xml:lang="kho"><lang/>
                         <w>aštu</w>
-                        <gloss><q>что-нибудь</q></gloss></mentioned> из %i*as-cu%i? (<mentioned
-                        xml:lang="kho"><lang/>
+                        <gloss><q>что-нибудь</q></gloss></mentioned> из %i*as-cu%i? (<mentioned xml:id="mentioned_d5984e142" xml:lang="kho"><lang/>
                         <w>aštä</w>
-                        <gloss><q>есть</q></gloss></mentioned>, <mentioned xml:lang="kho"><w>cu</w>
-                        <gloss><q>что</q></gloss></mentioned>). См. <ref type="xr"
-                        target="#entry_īs-"/> и <ref type="xr" target="#entry_cy"/>.</etym>
+                        <gloss><q>есть</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5984e151" xml:lang="kho"><w>cu</w>
+                        <gloss><q>что</q></gloss></mentioned>). См. <ref type="xr" target="#entry_īs-"/> и <ref type="xr" target="#entry_cy"/>.</etym>
                 <etym xml:lang="en">It is from %iīs-cy%i | %ies-ci%i with the irregular change %ic%i
                     → %it%i after %is%i, as in <ref type="xr" target="#entry_fæstæ"/> from
                     %i*pasča%i, <ref type="xr" target="#entry_fæstīnon"/> from %ifæs-cīnon%i. Cf.
                     formation of <ref type="xr" target="#entry_īsḱī"/> | %ieske%i ‘something’ etc.
-                    Cf. <mentioned xml:lang="kho"><lang/>
+                    Cf. <mentioned xml:id="mentioned_d5984e171" xml:lang="kho"><lang/>
                         <w>aštu</w>
-                        <gloss><q>something</q></gloss></mentioned> from %i*as-cu%i? (<mentioned
-                        xml:lang="kho"><lang/>
+                        <gloss><q>something</q></gloss></mentioned> from %i*as-cu%i? (<mentioned xml:id="mentioned_d5984e179" xml:lang="kho"><lang/>
                         <w>aštä</w>
-                        <gloss><q>to be</q></gloss></mentioned>, <mentioned xml:lang="kho"><w>cu</w>
-                        <gloss><q>what</q></gloss></mentioned>). See <ref type="xr"
-                        target="#entry_īs-"/> and <ref type="xr" target="#entry_cy"/>.</etym>
+                        <gloss><q>to be</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5984e188" xml:lang="kho"><w>cu</w>
+                        <gloss><q>what</q></gloss></mentioned>). See <ref type="xr" target="#entry_īs-"/> and <ref type="xr" target="#entry_cy"/>.</etym>
             </entry>
         </body>
     </text>

@@ -1,37 +1,42 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">bolat</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_bolat" xml:lang="os">
                 <form type="lemma"><orth>bolat</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d2588e69"><sense xml:id="sense_d2588e70"><abv:tr xml:lang="ru">
                             <q>сталь</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>steel</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d2588e79"><abv:tr xml:lang="ru">
                             <q>булат</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>bulat (a steel alloy similar to Damascus steel)</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d2588e91">
                         <quote>bolat ændonæj dyn skænʒæn jæ cæfxædtæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>из булатной стали сделает ему (коню) подковы</q>
@@ -41,7 +46,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>70</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2588e110">
                         <quote>arsy dæn-dægtæn myn bolatæj kond cættæ færæt</quote>
                         <abv:tr xml:lang="ru">
                             <q>для зубов медведя у меня готов стальной топор</q>
@@ -51,7 +56,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Čerm."/><biblScope>63</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d2588e129" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>Bolat-Xæmic</quote>
                         <abv:tr xml:lang="ru">
@@ -63,7 +68,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
                             8</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2588e151">
                         <quote>Soslan festadi syǧdæg bolat</quote>
                         <abv:tr xml:lang="ru">
                             <q>Сослан стал из чистой булатной (стали)</q>
@@ -71,10 +76,9 @@
                         <abv:tr xml:lang="en">
                             <q>Soslan became made of pure bulat (steel)</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Нарт._сказ."
-                            /><biblScope>66</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Нарт._сказ."/><biblScope>66</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d2588e170" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>mæ bolat kærdæn ceteni, mæ bolat ærcij geteni</quote>
                         <abv:tr xml:lang="ru">
@@ -88,49 +92,40 @@
                         <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>22</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Широко распространенное на переднем Востоке слово: <mentioned
-                        xml:lang="fa"><lang/>
-                        <w>pūlād</w></mentioned>, <mentioned xml:lang="pal"><lang/>
-                        <w>pūlavat</w></mentioned>, <mentioned xml:lang="ar"><lang/>
-                        <w>fūlād</w></mentioned>, <mentioned xml:lang="syr"><lang/>
-                        <w>pld</w></mentioned>, <mentioned xml:lang="trk-x-north"><lang/>
-                        <w>bulat</w></mentioned>, <mentioned xml:lang="mn"><lang/>
-                        <w>bolot</w></mentioned>, <mentioned xml:lang="mn"><w>bold</w></mentioned>
-                    etc. Also here <mentioned xml:lang="ka"><lang/>
-                        <w>poladi</w></mentioned>, <mentioned xml:lang="xcl"><lang/>
-                        <w>pʼotovatʼ</w></mentioned>, <mentioned xml:lang="xcl"
-                        ><w>potpʼatʼ</w></mentioned>, <mentioned xml:lang="ce"><lang/>
-                        <w>bolat</w></mentioned>, <mentioned xml:lang="ru"><lang/>
-                        <w>bulat</w></mentioned>, <mentioned xml:lang="uk"><lang/>
+                <etym xml:lang="ru">Широко распространенное на переднем Востоке слово: <mentioned xml:id="mentioned_d2588e195" xml:lang="fa"><lang/>
+                        <w>pūlād</w></mentioned>, <mentioned xml:id="mentioned_d2588e200" xml:lang="pal"><lang/>
+                        <w>pūlavat</w></mentioned>, <mentioned xml:id="mentioned_d2588e205" xml:lang="ar"><lang/>
+                        <w>fūlād</w></mentioned>, <mentioned xml:id="mentioned_d2588e210" xml:lang="syr"><lang/>
+                        <w>pld</w></mentioned>, <mentioned xml:id="mentioned_d2588e215" xml:lang="trk-x-north"><lang/>
+                        <w>bulat</w></mentioned>, <mentioned xml:id="mentioned_d2588e221" xml:lang="mn"><lang/>
+                        <w>bolot</w></mentioned>, <mentioned xml:id="mentioned_d2588e226" xml:lang="mn"><w>bold</w></mentioned>
+                    etc. Also here <mentioned xml:id="mentioned_d2588e229" xml:lang="ka"><lang/>
+                        <w>poladi</w></mentioned>, <mentioned xml:id="mentioned_d2588e234" xml:lang="xcl"><lang/>
+                        <w>pʼotovatʼ</w></mentioned>, <mentioned xml:id="mentioned_d2588e239" xml:lang="xcl"><w>potpʼatʼ</w></mentioned>, <mentioned xml:id="mentioned_d2588e242" xml:lang="ce"><lang/>
+                        <w>bolat</w></mentioned>, <mentioned xml:id="mentioned_d2588e248" xml:lang="ru"><lang/>
+                        <w>bulat</w></mentioned>, <mentioned xml:id="mentioned_d2588e253" xml:lang="uk"><lang/>
                         <w>bulat</w></mentioned>. Первоисточник не установлен; по Ф. Е. Коршу
                             (<bibl><biblScope>%bДревности восточные IV, 1912%b</biblScope></bibl>),
                     слово идет из индийского. — Осетинское слово, как и русское, усвоено скорее
-                    всего из тюркского. Старое скифское слово для ‘стали’ — *%iandān%i. См. <ref
-                        type="xr" target="#entry_ændon"/>.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._Gr."/><biblScope>9</biblScope></bibl>. —
-                            <bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                        /><biblScope>84</biblScope></bibl>.</etym>
-                <etym xml:lang="en">The word is widespread in Western Asia: <mentioned xml:lang="fa"><lang/>
-                        <w>pūlād</w></mentioned>, <mentioned xml:lang="pal"><lang/>
-                        <w>pūlavat</w></mentioned>, <mentioned xml:lang="ar"><lang/>
-                        <w>fūlād</w></mentioned>, <mentioned xml:lang="syr"><lang/>
-                        <w>pld</w></mentioned>, <mentioned xml:lang="trk-x-north"><lang/>
-                        <w>bulat</w></mentioned>, <mentioned xml:lang="mn"><lang/>
-                        <w>bolot</w></mentioned>, <mentioned xml:lang="mn"><w>bold</w></mentioned>
-                    etc. Here belong also <mentioned xml:lang="ka"><lang/>
-                        <w>poladi</w></mentioned>, <mentioned xml:lang="xcl"><lang/>
-                        <w>pʼotovatʼ</w></mentioned>, <mentioned xml:lang="xcl"
-                        ><w>potpʼatʼ</w></mentioned>, <mentioned xml:lang="ce"><lang/>
-                        <w>bolat</w></mentioned>, <mentioned xml:lang="ru"><lang/>
-                        <w>булат</w></mentioned>, <mentioned xml:lang="uk"><lang/>
+                    всего из тюркского. Старое скифское слово для ‘стали’ — *%iandān%i. См. <ref type="xr" target="#entry_ændon"/>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>9</biblScope></bibl>. —
+                            <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>84</biblScope></bibl>.</etym>
+                <etym xml:lang="en">The word is widespread in Western Asia: <mentioned xml:id="mentioned_d2588e274" xml:lang="fa"><lang/>
+                        <w>pūlād</w></mentioned>, <mentioned xml:id="mentioned_d2588e279" xml:lang="pal"><lang/>
+                        <w>pūlavat</w></mentioned>, <mentioned xml:id="mentioned_d2588e284" xml:lang="ar"><lang/>
+                        <w>fūlād</w></mentioned>, <mentioned xml:id="mentioned_d2588e289" xml:lang="syr"><lang/>
+                        <w>pld</w></mentioned>, <mentioned xml:id="mentioned_d2588e294" xml:lang="trk-x-north"><lang/>
+                        <w>bulat</w></mentioned>, <mentioned xml:id="mentioned_d2588e300" xml:lang="mn"><lang/>
+                        <w>bolot</w></mentioned>, <mentioned xml:id="mentioned_d2588e305" xml:lang="mn"><w>bold</w></mentioned>
+                    etc. Here belong also <mentioned xml:id="mentioned_d2588e308" xml:lang="ka"><lang/>
+                        <w>poladi</w></mentioned>, <mentioned xml:id="mentioned_d2588e313" xml:lang="xcl"><lang/>
+                        <w>pʼotovatʼ</w></mentioned>, <mentioned xml:id="mentioned_d2588e318" xml:lang="xcl"><w>potpʼatʼ</w></mentioned>, <mentioned xml:id="mentioned_d2588e321" xml:lang="ce"><lang/>
+                        <w>bolat</w></mentioned>, <mentioned xml:id="mentioned_d2588e327" xml:lang="ru"><lang/>
+                        <w>булат</w></mentioned>, <mentioned xml:id="mentioned_d2588e332" xml:lang="uk"><lang/>
                         <w>булат</w></mentioned>. The original source in not known; according to F.
                     E. Korsch (<bibl><biblScope>Drevnosti vostočnye IV, 1912</biblScope></bibl>),
                     the word comes from Indic. — The Ossetic word, as well as the Russian, is
-                    adopted from Turkic. The old Scythian word for ‘steel’ is *%iandān%i. See <ref
-                        type="xr" target="#entry_ændon"/>.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._Gr."/><biblScope>9</biblScope></bibl>. —
-                            <bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                        /><biblScope>84</biblScope></bibl>.</etym>
+                    adopted from Turkic. The old Scythian word for ‘steel’ is *%iandān%i. See <ref type="xr" target="#entry_ændon"/>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>9</biblScope></bibl>. —
+                            <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>84</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

@@ -1,60 +1,65 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ænūs</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ænūs" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>ænūs</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>ænos</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d5628e72"><abv:tr xml:lang="ru">
                         <q>вечность</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>eternity</q>
                     </abv:tr></sense>
-                <re>
+                <re xml:id="re_d5628e82">
                     <form xml:lang="os-x-iron" type="lemma"><orth>æūnsy</orth></form>
                     <form xml:lang="os-x-digor" type="dialectal"><orth>ænosi</orth></form>
-                    <sense><sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d5628e90"><sense xml:id="sense_d5628e91"><abv:tr xml:lang="ru">
                                 <q>вечный</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>eternal</q>
-                            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                            </abv:tr></sense><sense xml:id="sense_d5628e100"><abv:tr xml:lang="ru">
                                 <q>постоянно</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>permanently</q>
-                            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                            </abv:tr></sense><sense xml:id="sense_d5628e109"><abv:tr xml:lang="ru">
                                 <q>вечно</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>eternally</q>
                             </abv:tr></sense></sense>
                 </re>
-                <re>
+                <re xml:id="re_d5628e120">
                     <form xml:lang="os-x-iron" type="lemma"><orth>ænūson</orth></form>
                     <form xml:lang="os-x-digor" type="dialectal"><orth>ænoson</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d5628e128"><abv:tr xml:lang="ru">
                             <q>вечный</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>eternal</q>
                         </abv:tr></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d5628e142">
                         <quote>ænūsy cʼītī</quote>
                         <abv:tr xml:lang="ru">
                             <q>вечный глетчер</q>
@@ -67,7 +72,7 @@
                         <bibl><ref type="bibl" target="#src_ОТ"/><biblScope>79</biblScope></bibl>
                         <bibl><ref type="bibl" target="#src_ОЭп."/><biblScope>41</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5628e170">
                         <quote>Arag˳yjy don pyrxkalgæ ænūsy kʼæʒæxtyl jæxī æppærsta</quote>
                         <abv:tr xml:lang="ru">
                             <q>река Арагва, разбрасывая брызги, кидалась на вечные скалы</q>
@@ -77,7 +82,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Сека"/><biblScope>8</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5628e189">
                         <quote>xæʒærtty æddijæ bærzond xæxtæ, sæ cʼūppytyl ænūson cʼītītæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>позади домов (видны) высокие горы, на их вершинах—вечные глетчеры</q>
@@ -89,7 +94,7 @@
                         <bibl><ref type="bibl" target="#src_F."/><biblScope>1956 III
                             22</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5628e208">
                         <quote>ḱī ne ʼssara… fīdæny ænūson card</quote>
                         <abv:tr xml:lang="ru">
                             <q>кто не получил бы… в веке грядущем жизнь вечную</q>
@@ -101,7 +106,7 @@
                         </abv:tr>
                         <bibl><biblScope>Марк %i10%i 30</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5628e226" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>xussuj ænosmæ æniǧæl</quote>
                         <abv:tr xml:lang="ru">
@@ -112,7 +117,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>76</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5628e249" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>ragæj ænosmæ usturdær tæreǧædæj neci adtæj — silgojmag ramarun æma
                             fændaggon lægi ma bajwazæg kænun</quote>
@@ -127,7 +132,7 @@
                         <bibl><ref type="bibl" target="#src_MD"/><biblScope>1940 III
                             60</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5628e271" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>ænosi dær badgæ kodtajtæ?</quote>
                         <abv:tr xml:lang="ru">
@@ -136,10 +141,9 @@
                         <abv:tr xml:lang="en">
                             <q>have you been sitting here all the time?</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_SD"
-                            /><biblScope>176%l4%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_SD"/><biblScope>176%l4%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5628e293">
                         <quote>dæ kad cærʒæn ænūsmæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>твоя слава будет жить вечно</q>
@@ -148,7 +152,7 @@
                             <q>your fame will live forever</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5628e308">
                         <quote>ænosi dortæ, ænosi xwænxtæ ku nikkudtæncæ, ku nimbuxtæncæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>вечные камни, вечные горы заплакали, зарыдали</q>
@@ -159,7 +163,7 @@
                         <bibl><ref type="bibl" target="#src_MD"/><biblScope>1934 III—IV
                                 85</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5628e327" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>otæ kæwuj ænosi</quote>
                         <abv:tr xml:lang="ru">
@@ -170,7 +174,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>25</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5628e349" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>..xezinæ ænosi mæ fustæ ma mæ sæǧtæ</quote>
                         <abv:tr xml:lang="ru">
@@ -182,51 +186,43 @@
                         <bibl><ref type="bibl" target="#src_Bes."/><biblScope>91</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Восходит к <mentioned xml:lang="ira"><lang/>
+                <etym xml:lang="ru">Восходит к <mentioned xml:id="mentioned_d5628e374" xml:lang="ira"><lang/>
                         <w>*an-auša-</w>
                         <gloss><q>бессмертный</q></gloss></mentioned> (%iauša%i- ˈгибельˈ, ˈсмертьˈ
                     и привативная частица %iаn%i-). В осетинском привативность уже не осознается.
-                    Ср. <mentioned xml:lang="fa"><lang/>
-                        <w>nōš</w></mentioned>,<mentioned xml:lang="pal"><lang/>
+                    Ср. <mentioned xml:id="mentioned_d5628e382" xml:lang="fa"><lang/>
+                        <w>nōš</w></mentioned>,<mentioned xml:id="mentioned_d5628e387" xml:lang="pal"><lang/>
                         <w>anōš</w>
-                        <gloss><q>жизненный элексир</q></gloss></mentioned>, <mentioned
-                        xml:lang="pal"><w>anōšak</w>
-                        <gloss><q>бессмертный</q></gloss></mentioned>, <mentioned xml:lang="xcl"><lang/>
-                        <note type="comment" xml:lang="ru">(из <mentioned xml:lang="pal"><lang/>
+                        <gloss><q>жизненный элексир</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5628e395" xml:lang="pal"><w>anōšak</w>
+                        <gloss><q>бессмертный</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5628e401" xml:lang="xcl"><lang/>
+                        <note type="comment" xml:lang="ru">(из <mentioned xml:id="mentioned_d5628e406" xml:lang="pal"><lang/>
                                 <w/></mentioned>) </note><w>anušak</w>
                         <gloss><q>вечный</q></gloss></mentioned>арм. (из пехл.) anušak ‘вечный’,
-                        <mentioned xml:lang="sog"><lang/>
+                        <mentioned xml:id="mentioned_d5628e417" xml:lang="sog"><lang/>
                         <w>*nōšāk(nwš’k)</w>
-                        <gloss><q>вечный</q></gloss></mentioned>, ‘вечно’, <mentioned xml:lang="ae"><lang/>
+                        <gloss><q>вечный</q></gloss></mentioned>, ‘вечно’, <mentioned xml:id="mentioned_d5628e425" xml:lang="ae"><lang/>
                         <w>anaoša-</w>
-                        <gloss><q>бессмертный</q></gloss></mentioned>, ‘неуничтожимый’.%n<bibl><ref
-                            type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>III
+                        <gloss><q>бессмертный</q></gloss></mentioned>, ‘неуничтожимый’.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>III
                         168</biblScope></bibl>; <bibl><biblScope>Gr. 20, 31</biblScope></bibl>. —
-                            <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."
-                            /><biblScope>22</biblScope></bibl>.</etym>
-                <etym xml:lang="en">It traces back to к <mentioned xml:lang="ira"><lang/>
+                            <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>22</biblScope></bibl>.</etym>
+                <etym xml:lang="en">It traces back to к <mentioned xml:id="mentioned_d5628e447" xml:lang="ira"><lang/>
                         <w>*an-auša-</w>
                         <gloss><q>immortal</q></gloss></mentioned> (%iauša%i- ˈdeathˈ, ˈdeathˈ and
                     the negative particle %iаn%i-). In Ossetic the negation is not realized any
-                    more. Compare <mentioned xml:lang="fa"><lang/>
-                        <w>nōš</w></mentioned>,<mentioned xml:lang="pal"><lang/>
+                    more. Compare <mentioned xml:id="mentioned_d5628e455" xml:lang="fa"><lang/>
+                        <w>nōš</w></mentioned>,<mentioned xml:id="mentioned_d5628e460" xml:lang="pal"><lang/>
                         <w>anōš</w>
-                        <gloss><q>elixir of life</q></gloss></mentioned>, <mentioned xml:lang="pal"
-                            ><w>anōšak</w>
-                        <gloss><q>mmortal</q></gloss></mentioned>, <mentioned xml:lang="xcl"><lang/>
-                        <note type="comment" xml:lang="en"
-                                >(from<mentioned xml:lang="pal"><lang/>
+                        <gloss><q>elixir of life</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5628e468" xml:lang="pal"><w>anōšak</w>
+                        <gloss><q>mmortal</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5628e474" xml:lang="xcl"><lang/>
+                        <note type="comment" xml:lang="en">(from<mentioned xml:id="mentioned_d5628e479" xml:lang="pal"><lang/>
                                 <w/></mentioned>) </note><w>anušak</w>
-                        <gloss><q>eternal</q></gloss></mentioned>, <mentioned xml:lang="sog"><lang/>
+                        <gloss><q>eternal</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5628e490" xml:lang="sog"><lang/>
                         <w>*nōšāk(nwš’k)</w>
-                        <gloss><q>eternal</q></gloss></mentioned>, ‘eternally’, <mentioned
-                        xml:lang="ae"><lang/>
+                        <gloss><q>eternal</q></gloss></mentioned>, ‘eternally’, <mentioned xml:id="mentioned_d5628e498" xml:lang="ae"><lang/>
                         <w>anaoša-</w>
-                        <gloss><q>immortal</q></gloss></mentioned>, ˈundestroyable’.%n<bibl><ref
-                            type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>III
+                        <gloss><q>immortal</q></gloss></mentioned>, ˈundestroyable’.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>III
                         168</biblScope></bibl>; <bibl><biblScope>Gr. 20, 31</biblScope></bibl>. —
-                            <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."
-                            /><biblScope>22</biblScope></bibl>.%n</etym>
+                            <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>22</biblScope></bibl>.%n</etym>
             </entry>
         </body>
     </text>

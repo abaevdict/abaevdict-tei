@@ -1,36 +1,41 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ævzīst</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ævzīst" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>ævzīst</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>ævzestæ</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d5592e72"><sense xml:id="sense_d5592e73"><abv:tr xml:lang="ru">
                             <q>серебро</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>silver</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d5592e82"><abv:tr xml:lang="ru">
                             <q>серебряный</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d5592e90">
                         <quote>ævzīst ron, ævzīst qama</quote>
                         <abv:tr xml:lang="ru">
                             <q>серебряный пояс, серебряный кинжал</q>
@@ -39,7 +44,7 @@
                             <q>silver belt, silver dagger</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5592e105">
                         <quote>ūrs ævzīst galwany ūrs ævzīst tærxægyl badʒysty baztyl…</quote>
                         <abv:tr xml:lang="ru">
                             <q>в белой серебряной ограде на белой серебряной скамье будут сидеть на
@@ -51,7 +56,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>76</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5592e124">
                         <quote>iw ḱyryn syzǧærīn æxcajæ ʒag ū, īnnæ ḱyryn ævzīst æxcajæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>один сундук полон золотых денег, другой сундук — серебряных денег</q>
@@ -62,7 +67,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_ОЭ"/><biblScope>I 66</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5592e143">
                         <quote>jæ ældary ævzīst bambæxsta</quote>
                         <abv:tr xml:lang="ru">
                             <q>скрыл серебро господина своего</q>
@@ -73,7 +78,7 @@
                         <bibl><ref type="bibl" target="#src_Лука"/><biblScope>%i25%i
                             18</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5592e162" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>ævzestæ læʒgutæ sæ kʼoxi, ævzestæ kʼelatæbæl baduncæ, ævzestæ fingitæ
                             sæ razi…</quote>
@@ -88,26 +93,21 @@
                         <bibl><ref type="bibl" target="#src_ОЭ"/><biblScope>I 112</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Так же, как названия меди (<ref type="xr" target="#entry_ærxwy"
-                    /> | %iærxi%i) и стали (<ref type="xr" target="#entry_ændon"/>), <mentioned
-                        xml:lang="os"><lang/>
+                <etym xml:lang="ru">Так же, как названия меди (<ref type="xr" target="#entry_ærxwy"/> | %iærxi%i) и стали (<ref type="xr" target="#entry_ændon"/>), <mentioned xml:id="mentioned_d5592e191" xml:lang="os"><lang/>
                         <w>ævzīst</w></mentioned> имеет соответствия в некоторых финно-угорских
-                    языках; <mentioned xml:lang="udm"><lang/>
-                        <w>azveś</w></mentioned>, <mentioned xml:lang="kv"><lang/>
-                        <w>ezyś</w></mentioned>, <mentioned xml:lang="hu"><lang/>
+                    языках; <mentioned xml:id="mentioned_d5592e196" xml:lang="udm"><lang/>
+                        <w>azveś</w></mentioned>, <mentioned xml:id="mentioned_d5592e201" xml:lang="kv"><lang/>
+                        <w>ezyś</w></mentioned>, <mentioned xml:id="mentioned_d5592e207" xml:lang="hu"><lang/>
                         <w>ezüst</w>
                         <gloss><q>серебро</q></gloss></mentioned>. По V. %sТоmsеn%s’у (см.
                             <bibl><ref type="bibl" target="#ref_LUÅ"/><biblScope>1924 XX, № 4, стр.
-                            6</biblScope></bibl>), Вс. Миллеру (<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>III 12</biblScope></bibl>;
-                            <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>8</biblScope></bibl>) и некоторым финноугристам
+                            6</biblScope></bibl>), Вс. Миллеру (<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>III 12</biblScope></bibl>;
+                            <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>8</biblScope></bibl>) и некоторым финноугристам
                             (<bibl><author>Anderson</author></bibl>,
                         <bibl><author>Wichmann</author></bibl>,
                         <bibl><author>Szinnyei</author></bibl>), осетины заимствовали это слово из
                     финно-угорских языков. Напротив, %sSimоnуi%s (<bibl><biblScope>Die ungarische
-                            Sprache, стр. 62</biblScope></bibl>), В. %sMunkácsi%s (<bibl><ref
-                            type="bibl" target="#ref_KSz."/><biblScope>V 316</biblScope></bibl>), Н.
+                            Sprache, стр. 62</biblScope></bibl>), В. %sMunkácsi%s (<bibl><ref type="bibl" target="#ref_KSz."/><biblScope>V 316</biblScope></bibl>), Н.
                     %sPetersson%s (<bibl><ref type="bibl" target="#ref_LUÅ"/><biblScope>1920 XVI, №
                             3, стр. 71 сл.</biblScope></bibl>), Н. %sSкоld%s (<bibl><biblScope>ibid.
                             1924 XX, № 4, стр. 7, 20</biblScope></bibl>) склоняются к тому, чтобы
@@ -120,79 +120,63 @@
                     заимствовал данное слово, приводит с необходимостью к другому вопросу: на почве
                     каких языков, индоевропейских или финно-угорских, оно может получить более
                     удовлетворительное этимологическое разъяснение. Насколько нам известно, вполне
-                    убеждающей этимологии нет ни там, ни здесь. Сопоставление <mentioned
-                        xml:lang="udm"><lang/>
+                    убеждающей этимологии нет ни там, ни здесь. Сопоставление <mentioned xml:id="mentioned_d5592e251" xml:lang="udm"><lang/>
                         <w>azveś</w>
-                        <gloss><q>серебро</q></gloss></mentioned> с <mentioned xml:lang="udm"><lang/>
+                        <gloss><q>серебро</q></gloss></mentioned> с <mentioned xml:id="mentioned_d5592e260" xml:lang="udm"><lang/>
                         <w>uzveś</w>
                         <gloss><q>олово</q></gloss></mentioned> позволяет как будто выделить элемент
                     *%iveś%i, который, по Лыткину, мог означать бронзу. Однако при этом толковании
-                    остается без объяснения конечный %it%i в венгерском <mentioned xml:lang="hu"
-                            ><w>ezüst</w></mentioned>. Из индоевропейских этимологий стоит упомянуть
+                    остается без объяснения конечный %it%i в венгерском <mentioned xml:id="mentioned_d5592e268" xml:lang="hu"><w>ezüst</w></mentioned>. Из индоевропейских этимологий стоит упомянуть
                     сопоставление <bibl><author>Н. Petersson</author></bibl>’a, смелое, но отнюдь не
-                    фантастическое. Удмуртская форма (<mentioned xml:lang="udm"
-                        ><w>azveś</w></mentioned>=), а также старовенгерская (<mentioned
-                        xml:lang="ohu"><w>ezwest</w></mentioned>) позволяют восстановить
-                    староосетинскую в виде <mentioned xml:lang="oos"><w>æzvest(æ)</w></mentioned>),
-                    а приняв начальное %iæ%i- за протетическое—в виде <mentioned xml:lang="oos"
-                            ><w>zvest(æ)</w></mentioned>); перестановка %izv%i→%ivz%i закономерна,
+                    фантастическое. Удмуртская форма (<mentioned xml:id="mentioned_d5592e274" xml:lang="udm"><w>azveś</w></mentioned>=), а также старовенгерская (<mentioned xml:id="mentioned_d5592e277" xml:lang="ohu"><w>ezwest</w></mentioned>) позволяют восстановить
+                    староосетинскую в виде <mentioned xml:id="mentioned_d5592e280" xml:lang="oos"><w>æzvest(æ)</w></mentioned>),
+                    а приняв начальное %iæ%i- за протетическое—в виде <mentioned xml:id="mentioned_d5592e284" xml:lang="oos"><w>zvest(æ)</w></mentioned>); перестановка %izv%i→%ivz%i закономерна,
                     ср. <ref type="xr" target="#entry_vzaly"/>. Восстанавливаемое таким образом
-                        <mentioned xml:lang="os"><lang/>
+                        <mentioned xml:id="mentioned_d5592e289" xml:lang="os"><lang/>
                         <w>*zvestæ</w></mentioned>
-                    <bibl><author>Petersson</author></bibl> сопоставляет с <mentioned xml:lang="ru"><lang/>
-                        <w>звезда</w></mentioned>, <mentioned xml:lang="lt"><lang/>
+                    <bibl><author>Petersson</author></bibl> сопоставляет с <mentioned xml:id="mentioned_d5592e297" xml:lang="ru"><lang/>
+                        <w>звезда</w></mentioned>, <mentioned xml:id="mentioned_d5592e302" xml:lang="lt"><lang/>
                         <w>zvaigzde</w>
-                        <gloss><q>звезда</q></gloss></mentioned> , <mentioned xml:lang="prg"><lang/>
+                        <gloss><q>звезда</q></gloss></mentioned> , <mentioned xml:id="mentioned_d5592e311" xml:lang="prg"><lang/>
                         <w>swāigstan</w>
                         <gloss><q>сияние</q></gloss></mentioned>. Связь названий металлов с
-                    космическими терминами подтверждается многими фактами. Ср. <mentioned
-                        xml:lang="ka"><lang/>
+                    космическими терминами подтверждается многими фактами. Ср. <mentioned xml:id="mentioned_d5592e319" xml:lang="ka"><lang/>
                         <w>rkina</w>
-                        <gloss><q>железо</q></gloss></mentioned> при <mentioned xml:lang="xcl"><lang/>
+                        <gloss><q>железо</q></gloss></mentioned> при <mentioned xml:id="mentioned_d5592e327" xml:lang="xcl"><lang/>
                         <w>erkin</w>
                         <gloss><q>небо</q></gloss></mentioned> и, наконец (в полную аналогию с
-                        <mentioned xml:lang="os"><lang/>
-                        <w>ævzestæ</w></mentioned> — <mentioned xml:lang="ru"><lang/>
-                        <w>звезда</w></mentioned>), <mentioned xml:lang="ka"><lang/>
+                        <mentioned xml:id="mentioned_d5592e335" xml:lang="os"><lang/>
+                        <w>ævzestæ</w></mentioned> — <mentioned xml:id="mentioned_d5592e340" xml:lang="ru"><lang/>
+                        <w>звезда</w></mentioned>), <mentioned xml:id="mentioned_d5592e345" xml:lang="ka"><lang/>
                         <w>vercxli</w>
-                        <gloss><q>серебро</q></gloss></mentioned> при <mentioned xml:lang="ka"><lang/>
+                        <gloss><q>серебро</q></gloss></mentioned> при <mentioned xml:id="mentioned_d5592e354" xml:lang="ka"><lang/>
                         <w>varsklavi</w>
                         <gloss><q>звезда</q></gloss></mentioned>. Есть, стало быть, некоторая
-                    вероятность, что %iævzīst%i исконно осетинское слово, подобно <ref type="xr"
-                        target="#entry_zærīn"/> ‘золото’ и <ref type="xr" target="#entry_7fsæn"/>
+                    вероятность, что %iævzīst%i исконно осетинское слово, подобно <ref type="xr" target="#entry_zærīn"/> ‘золото’ и <ref type="xr" target="#entry_7fsæn"/>
                     ‘железо’. То, что общеарийское название серебра получило в осетинском значение
                     ‘руда’ (см. <ref type="xr" target="#entry_ærzæt"/>), объясняется своеобразным
                     положением осетинского в кругу иранских языков, а схождение именно со славянским
                     поддерживается рядом аналогичных случаев.<note type="footnote" n="1"> PUT NOTE
-                        HERE </note> Ср. <ref type="xr" target="#entry_ændon"/>.%n<bibl><ref
-                            type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>III
-                        12</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>8</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_ОЯФ_I"/><biblScope>33, 52, 83, 251</biblScope></bibl>.—
-                            <bibl><author>В. И. Лыткин</author><ref type="bibl" target="#ref_ИАН"
-                            /><biblScope>1951 IV 392</biblScope></bibl>.</etym>
-                <etym xml:lang="en">Just as the notions of copper (<ref type="xr"
-                        target="#entry_ærxwy"/> | %iærxi%i) and steel (<ref type="xr"
-                        target="#entry_ændon"/>), <mentioned xml:lang="os"><lang/>
+                        HERE </note> Ср. <ref type="xr" target="#entry_ændon"/>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>III
+                        12</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>8</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>33, 52, 83, 251</biblScope></bibl>.—
+                            <bibl><author>В. И. Лыткин</author><ref type="bibl" target="#ref_ИАН"/><biblScope>1951 IV 392</biblScope></bibl>.</etym>
+                <etym xml:lang="en">Just as the notions of copper (<ref type="xr" target="#entry_ærxwy"/> | %iærxi%i) and steel (<ref type="xr" target="#entry_ændon"/>), <mentioned xml:id="mentioned_d5592e399" xml:lang="os"><lang/>
                         <w>ævzīst</w></mentioned> has correspondences in some Finno-Ugric languages:
-                        <mentioned xml:lang="udm"><lang/>
-                        <w>azveś</w></mentioned>, <mentioned xml:lang="kv"><lang/>
-                        <w>ezyś</w></mentioned>, <mentioned xml:lang="hu"><lang/>
+                        <mentioned xml:id="mentioned_d5592e404" xml:lang="udm"><lang/>
+                        <w>azveś</w></mentioned>, <mentioned xml:id="mentioned_d5592e409" xml:lang="kv"><lang/>
+                        <w>ezyś</w></mentioned>, <mentioned xml:id="mentioned_d5592e415" xml:lang="hu"><lang/>
                         <w>ezüst</w>
                         <gloss><q>silver</q></gloss></mentioned>. According to V. %sТоmsеn%s (see
                             <bibl><ref type="bibl" target="#ref_LUÅ"/><biblScope>1924 XX, № 4, стр.
-                            6</biblScope></bibl>), Vs. %sMiller%s (<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>III 12</biblScope></bibl>;
-                            <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>8</biblScope></bibl>) and some specialists in Finno-Ugric
+                            6</biblScope></bibl>), Vs. %sMiller%s (<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>III 12</biblScope></bibl>;
+                            <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>8</biblScope></bibl>) and some specialists in Finno-Ugric
                     languages (<bibl><author>Anderson</author></bibl>,
                             <bibl><author>Wichmann</author></bibl>,
                         <bibl><author>Szinnyei</author></bibl>), the Ossetians borrowed this word
                     from Finno-Ugric languages. On the contrary, %sSimоnуi%s (<bibl><biblScope>Die
                             ungarische Sprache, p. 62</biblScope></bibl>), В. %sMunkácsi%s
                             (<bibl><ref type="bibl" target="#ref_KSz."/><biblScope>V
-                        316</biblScope></bibl>), Н. %sPetersson%s (<bibl><ref type="bibl"
-                            target="#ref_LUÅ"/><biblScope>1920 XVI, № 3, pp.
+                        316</biblScope></bibl>), Н. %sPetersson%s (<bibl><ref type="bibl" target="#ref_LUÅ"/><biblScope>1920 XVI, № 3, pp.
                         71ff.</biblScope></bibl>), Н. %sSкоld%s (<bibl><biblScope>ibid. 1924 XX, No.
                             4, pp. 7, 20</biblScope></bibl>) tend to regard %iævzīst%i as an Iranian
                     word, which came to Hungarian and some other East Finnic languages from Ossetic
@@ -203,64 +187,57 @@
                     connections is not yet possible. The question who borrowed this word from whom
                     requires another question: due to which languages, Indo-European or Finno-Ugric,
                     can it recieve a more satisfying etymological explanation. As far as we know,
-                    there is no quite convincing etymology anywhere. The comparison of <mentioned
-                        xml:lang="udm"><lang/>
+                    there is no quite convincing etymology anywhere. The comparison of <mentioned xml:id="mentioned_d5592e459" xml:lang="udm"><lang/>
                         <w>azveś</w>
-                        <gloss><q>silver</q></gloss></mentioned> with <mentioned xml:lang="udm"><lang/>
+                        <gloss><q>silver</q></gloss></mentioned> with <mentioned xml:id="mentioned_d5592e468" xml:lang="udm"><lang/>
                         <w>uzveś</w>
                         <gloss><q>tin</q></gloss></mentioned> allows to select an element *%iveś%i
                     which could signify bronze, according to Lytkin. However, this interpretation
-                    remains without explanation the final %it%i in <mentioned xml:lang="hu"><lang/>
+                    remains without explanation the final %it%i in <mentioned xml:id="mentioned_d5592e476" xml:lang="hu"><lang/>
                         <w>ezüst</w></mentioned>. Among the Indo-European etymologies, it is worth
                     mentioning a challenging but by no means fantastic comparison by
-                            <bibl><author>Н. Petersson</author></bibl>. The Udmurt form (<mentioned
-                        xml:lang="udm"><w>azveś</w></mentioned>), and also the Old Hungarian form
-                        (<mentioned xml:lang="ohu"><w>ezwest</w></mentioned>) allow to restore an
-                    Old Ossetic form as <mentioned xml:lang="oos"><w>æzvest(æ)</w></mentioned>), and
+                            <bibl><author>Н. Petersson</author></bibl>. The Udmurt form (<mentioned xml:id="mentioned_d5592e484" xml:lang="udm"><w>azveś</w></mentioned>), and also the Old Hungarian form
+                        (<mentioned xml:id="mentioned_d5592e487" xml:lang="ohu"><w>ezwest</w></mentioned>) allow to restore an
+                    Old Ossetic form as <mentioned xml:id="mentioned_d5592e490" xml:lang="oos"><w>æzvest(æ)</w></mentioned>), and
                     if the initail %iæ%i- is prosthetic then the an Old Ossetic form is restored as
-                        <mentioned xml:lang="oos"><w>zvest(æ)</w></mentioned>); the transposition
+                        <mentioned xml:id="mentioned_d5592e494" xml:lang="oos"><w>zvest(æ)</w></mentioned>); the transposition
                     %izv%i→%ivz%i is regular, cf. <ref type="xr" target="#entry_vzaly"/>. Thus,
-                            <bibl><author>Petersson</author></bibl> compares the restored <mentioned
-                        xml:lang="os"><lang/>
-                        <w>*zvestæ</w></mentioned> with <mentioned xml:lang="ru"><lang/>
-                        <w>zvezda</w></mentioned>, <mentioned xml:lang="lt"><lang/>
+                            <bibl><author>Petersson</author></bibl> compares the restored <mentioned xml:id="mentioned_d5592e502" xml:lang="os"><lang/>
+                        <w>*zvestæ</w></mentioned> with <mentioned xml:id="mentioned_d5592e507" xml:lang="ru"><lang/>
+                        <w>zvezda</w></mentioned>, <mentioned xml:id="mentioned_d5592e512" xml:lang="lt"><lang/>
                         <w>zvaigzde</w>
-                        <gloss><q>star</q></gloss></mentioned> , <mentioned xml:lang="prg"><lang/>
+                        <gloss><q>star</q></gloss></mentioned> , <mentioned xml:id="mentioned_d5592e521" xml:lang="prg"><lang/>
                         <w>swāigstan</w>
                         <gloss><q>shining</q></gloss></mentioned>. The connection of metal names
-                    with cosmic terms is confirmed by many facts. Cf. <mentioned xml:lang="ka"><lang/>
+                    with cosmic terms is confirmed by many facts. Cf. <mentioned xml:id="mentioned_d5592e529" xml:lang="ka"><lang/>
                         <w>rkina</w>
-                        <gloss><q>iron</q></gloss></mentioned> and <mentioned xml:lang="xcl"><lang/>
+                        <gloss><q>iron</q></gloss></mentioned> and <mentioned xml:id="mentioned_d5592e537" xml:lang="xcl"><lang/>
                         <w>erkin</w>
                         <gloss><q>sky</q></gloss></mentioned> and, finally, (as a full analogy with
-                        <mentioned xml:lang="os"><lang/>
-                        <w>ævzestæ</w></mentioned> — <mentioned xml:lang="ru"><lang/>
-                        <w>zvezda</w></mentioned>), <mentioned xml:lang="ka"><lang/>
+                        <mentioned xml:id="mentioned_d5592e545" xml:lang="os"><lang/>
+                        <w>ævzestæ</w></mentioned> — <mentioned xml:id="mentioned_d5592e550" xml:lang="ru"><lang/>
+                        <w>zvezda</w></mentioned>), <mentioned xml:id="mentioned_d5592e555" xml:lang="ka"><lang/>
                         <w>vercxli</w>
-                        <gloss><q>silver</q></gloss></mentioned> and <mentioned xml:lang="ka"><lang/>
+                        <gloss><q>silver</q></gloss></mentioned> and <mentioned xml:id="mentioned_d5592e564" xml:lang="ka"><lang/>
                         <w>varsklavi</w>
                         <gloss><q>star</q></gloss></mentioned>. Hence, there is some possibility
-                    that %iævzīst%i is an oroginal Ossetic word, like <ref type="xr"
-                        target="#entry_zærīn"/> ‘gold’ and <ref type="xr" target="#entry_7fsæn"/>
+                    that %iævzīst%i is an oroginal Ossetic word, like <ref type="xr" target="#entry_zærīn"/> ‘gold’ and <ref type="xr" target="#entry_7fsæn"/>
                     ‘iron’. The fact that the common Aryan name for silver received in Ossetic
                     meaning ‘ore’ (cf. <ref type="xr" target="#entry_ærzæt"/>), is explained by a
                     particular place of Ossetic among other Iranian languages, the coincidence with
                     Slavic is supported by a number of similar cases.<note type="footnote" n="1">
-                        PUT NOTE HERE </note> Cf. <ref type="xr" target="#entry_ændon"
-                            />.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>III
-                            12</biblScope></bibl>; <bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._Gr."/><biblScope>8</biblScope></bibl>. —
+                        PUT NOTE HERE </note> Cf. <ref type="xr" target="#entry_ændon"/>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>III
+                            12</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>8</biblScope></bibl>. —
                             <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>33, 52, 83,
-                            251</biblScope></bibl>.— <bibl><author>В. И. Лыткин</author><ref
-                            type="bibl" target="#ref_ИАН"/><biblScope>1951 IV
+                            251</biblScope></bibl>.— <bibl><author>В. И. Лыткин</author><ref type="bibl" target="#ref_ИАН"/><biblScope>1951 IV
                     392</biblScope></bibl>.</etym>
                 <note type="footnote" xml:lang="ru" n="1">Чисто иранская этимология для ævzīst,
-                    предложенная <bibl><author>Sköld</author></bibl>’ом (← <mentioned xml:lang="ae"><lang/>
+                    предложенная <bibl><author>Sköld</author></bibl>’ом (← <mentioned xml:id="mentioned_d5592e607" xml:lang="ae"><lang/>
                         <w>ayahxšusta-</w>
                         <gloss><q>расплавленный металл</q></gloss></mentioned>), фонетически
                     неприемлема.</note>
                 <note type="footnote" xml:lang="en" n="1">A purely Iranian etymology for %iævzīst%i,
-                    proposed by <bibl><author>Sköld</author></bibl> (← <mentioned xml:lang="ae"><lang/>
+                    proposed by <bibl><author>Sköld</author></bibl> (← <mentioned xml:id="mentioned_d5592e621" xml:lang="ae"><lang/>
                         <w>ayahxšusta-</w>
                         <gloss><q>melted metal</q></gloss></mentioned>), is phonetically
                     impossible.</note>

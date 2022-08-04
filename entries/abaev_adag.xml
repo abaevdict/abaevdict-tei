@@ -1,38 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">adag</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_adag" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>adag</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>adagæ</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d1601e72"><sense xml:id="sense_d1601e73"><abv:tr xml:lang="ru">
                             <q>овраг</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>gully</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d1601e82"><abv:tr xml:lang="ru">
                             <q>балка</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>beam</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d1601e94">
                         <quote>Swadag <note type="comment" xml:lang="ru">(из <w>saw-adag</w>)</note><note type="comment" xml:lang="en">(from <w>saw-adag</w>)</note></quote>
                         <abv:tr xml:lang="ru">
                             <q>Черная балка</q>
@@ -43,7 +48,7 @@
                         <note type="comment" xml:lang="ru"> (название селения)</note>
                         <note type="comment" xml:lang="en"> (settlement name)</note>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1601e124">
                         <quote>x˳yskʼ adag</quote>
                         <abv:tr xml:lang="ru">
                             <q>сухая балка</q>
@@ -54,7 +59,7 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d1601e142">
                         <quote>wyngæg adagyl læsæn racyd</quote>
                         <abv:tr xml:lang="ru">
                             <q>по узкому оврагу спустился обвал</q>
@@ -62,10 +67,9 @@
                         <abv:tr xml:lang="en">
                             <q>a landslide descended along a narrow gully</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Čerm."
-                            /><biblScope>173</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Čerm."/><biblScope>173</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1601e161">
                         <quote>lappū adag-adag nywwad æmæ xærīsǵyny nynnyǧ˳yld</quote>
                         <abv:tr xml:lang="ru">
                             <q>мальчик спустился вдоль по оврагу и затаился в ивняке</q>
@@ -73,10 +77,9 @@
                         <abv:tr xml:lang="en">
                             <q>the boy went down along the gully and hid in the willow</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Čerm."
-                            /><biblScope>185</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Čerm."/><biblScope>185</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d1601e180" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>dæ furt Soslan ali adagæ fidiʒagæj ku dardta</quote>
                         <abv:tr xml:lang="ru">
@@ -86,10 +89,9 @@
                             <q>your son Soslan kept all the gullies full of meat (of killed
                                 animals)</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Диг._сказ."
-                            /><biblScope>36</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Диг._сказ."/><biblScope>36</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d1601e202" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>jeʽrfguti ʽxsæn tærnixi car adægtæ-adægtæ rabadtæj</quote>
                         <abv:tr xml:lang="ru">
@@ -99,8 +101,7 @@
                             <q>there are furrows between his eyebrows on the skin of his
                                 forehead</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Bes._Ka_ke"
-                            /><biblScope>63</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Bes._Ka_ke"/><biblScope>63</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Происхождение не известно.</etym>

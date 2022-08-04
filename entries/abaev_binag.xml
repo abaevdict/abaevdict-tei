@@ -1,34 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">binag</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_binag" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>binag</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>bujnag</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d452e72"><abv:tr xml:lang="ru">
                         <q>нижний</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>lower</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d452e84">
                         <quote>Fatymæ… qæmpy wælæ binag nymætyl qærzydta</quote>
                         <abv:tr xml:lang="ru">
                             <q>Фатима стонала (лежа) на соломе, на войлоке</q>
@@ -40,13 +45,12 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">См. <ref type="xr" target="#entry_byn"/> ‘низ’, ‘основание’.
-                    Гласный %ii%i в <mentioned xml:lang="os-x-iron"><lang/>
+                    Гласный %ii%i в <mentioned xml:id="mentioned_d452e108" xml:lang="os-x-iron"><lang/>
                         <w>binag</w></mentioned> получился из %iyj%i (%ibyjnag%i → %ibinag%i);
                         ср.<ref type="xr" target="#entry_sin"/> ‘бедро’ из *%isyjn%i и др.</etym>
                 <etym xml:lang="en">See <ref type="xr" target="#entry_byn"/> ‘bottom’, ‘foundation’.
-                    The vowel %ii%i in <mentioned xml:lang="os-x-iron"><lang/>
-                        <w>binag</w></mentioned> is from %iyj%i (%ibyjnag%i → %ibinag%i); cf. <ref
-                        type="xr" target="#entry_sin"/> ‘hip’ from *%isyjn%i etc.</etym>
+                    The vowel %ii%i in <mentioned xml:id="mentioned_d452e121" xml:lang="os-x-iron"><lang/>
+                        <w>binag</w></mentioned> is from %iyj%i (%ibyjnag%i → %ibinag%i); cf. <ref type="xr" target="#entry_sin"/> ‘hip’ from *%isyjn%i etc.</etym>
             </entry>
         </body>
     </text>

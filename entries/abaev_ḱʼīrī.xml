@@ -1,65 +1,69 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ḱʼīrī</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ḱʼīrī" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>ḱʼīrī</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>kʼere</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d249e72"><sense xml:id="sense_d249e73"><abv:tr xml:lang="ru">
                             <q>лепешка</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>flatbread</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d249e82"><abv:tr xml:lang="ru">
                             <q>пирог с сыром</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>pie with cheese</q>
                         </abv:tr></sense></sense>
-                <re>
+                <re xml:id="re_d249e92">
                     <form xml:lang="os-x-iron" type="lemma"><orth>ḱʼīrīag</orth></form>
                     <form xml:lang="os-x-digor" type="dialectal"><orth>kʼereag</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d249e100"><abv:tr xml:lang="ru">
                             <q>предназначенное для ḱʼīrī (мука, тесто, сыр)</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>intended for %iḱʼīrī%i (flour, dough, cheese)</q>
                         </abv:tr></sense>
                 </re>
-                <re>
+                <re xml:id="re_d249e111">
                     <form type="lemma"><orth>ḱʼīrīfyssæn</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d249e116"><abv:tr xml:lang="ru">
                             <q>деревянная форма, которой наносится узор на %iḱʼīrī%i</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>wooden form with which a pattern is applied on %iḱʼīrī%i</q>
                         </abv:tr></sense>
-                    <note type="bibl">(<bibl><ref type="bibl" target="#src_ОЯФ_I"
-                                /><biblScope>69</biblScope></bibl>)</note>
+                    <note type="bibl">(<bibl><ref type="bibl" target="#src_ОЯФ_I"/><biblScope>69</biblScope></bibl>)</note>
                 </re>
-                <re>
+                <re xml:id="re_d249e135">
                     <form type="lemma"><orth>ḱʼīrīfyst</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d249e140"><abv:tr xml:lang="ru">
                             <q>мальва</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>mallow</q>
                         </abv:tr></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d249e153">
                         <quote>æfsin bærægbonmæ ʽrtæ ḱʼīrījy rakodta</quote>
                         <abv:tr xml:lang="ru">
                             <q>хозяйка приготовила к празднику три пирога</q>
@@ -68,7 +72,7 @@
                             <q>the hostess has prepared three pies for the holiday</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d249e168">
                         <quote>fyng æryværdtoj: ʒagǵyn ḱʼīrītæ, syrdy fyd, karz cʼæx araqq</quote>
                         <abv:tr xml:lang="ru">
                             <q>накрыли стол: пироги с обильной начинкой, мясо дичи, крепкую
@@ -80,7 +84,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Сека"/><biblScope>79</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d249e187" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>ænækinʒicud kizguttæ din kʼeregængutæ</quote>
                         <abv:tr xml:lang="ru">
@@ -95,15 +99,15 @@
                             140</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <re>
+                <re xml:id="re_d249e217">
                     <form type="lemma"><orth>wæraǵy ḱʼīrī</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d249e222"><abv:tr xml:lang="ru">
                             <q>коленная чашечка</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>kneecap</q>
                         </abv:tr></sense>
                     <abv:exampleGrp>
-                        <abv:example>
+                        <abv:example xml:id="example_d249e234">
                             <quote>Alyksan wydi… ændon wæragy ḱʼīrīǵyn</quote>
                             <abv:tr xml:lang="ru">
                                 <q>Александр (Македонский) был со стальной коленной чашечкой</q>
@@ -116,15 +120,15 @@
                         </abv:example>
                     </abv:exampleGrp>
                 </re>
-                <etym xml:lang="ru">Из <mentioned xml:lang="ka"><lang/>
+                <etym xml:lang="ru">Из <mentioned xml:id="mentioned_d249e257" xml:lang="ka"><lang/>
                         <w>k’veri</w>
-                        <gloss><q>колобок</q></gloss></mentioned>, <mentioned xml:lang="ka"><w/>
+                        <gloss><q>колобок</q></gloss></mentioned>, <mentioned xml:id="mentioned_d249e265" xml:lang="ka"><w/>
                         <gloss><q>лепешка</q></gloss></mentioned>; ср. груз. %isepis kʼveri%i
                             ‘просфора’.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>87,
                             325, 519</biblScope></bibl>.</etym>
-                <etym xml:lang="en">From <mentioned xml:lang="ka"><lang/>
+                <etym xml:lang="en">From <mentioned xml:id="mentioned_d249e278" xml:lang="ka"><lang/>
                         <w>k’veri</w>
-                        <gloss><q>kolobok</q></gloss></mentioned>, <mentioned xml:lang="ka"><w/>
+                        <gloss><q>kolobok</q></gloss></mentioned>, <mentioned xml:id="mentioned_d249e286" xml:lang="ka"><w/>
                         <gloss><q>flatbread</q></gloss></mentioned>; cf. Georgian %isepis kʼveri%i
                             ‘prosphora’.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>87,
                             325, 519</biblScope></bibl>.</etym>

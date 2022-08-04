@@ -1,52 +1,56 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">cyrd</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_cyrd" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>cyrd</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>curd</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d1729e72"><sense xml:id="sense_d1729e73"><abv:tr xml:lang="ru">
                             <q>проворный</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>nimble</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d1729e82"><abv:tr xml:lang="ru">
                             <q>быстрый</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>quick</q>
                         </abv:tr></sense></sense>
-                <re xml:lang="os-x-digor">
+                <re xml:id="re_d1729e92" xml:lang="os-x-digor">
                     <lang/>
                     <form type="lemma"><orth>curdʒast</orth></form>
-                    <sense><sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d1729e99"><sense xml:id="sense_d1729e100"><abv:tr xml:lang="ru">
                                 <q>бдительный</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>vigilant</q>
-                            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                            </abv:tr></sense><sense xml:id="sense_d1729e109"><abv:tr xml:lang="ru">
                                 <q>тот, кто начеку</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>one who is on guard</q>
                             </abv:tr></sense></sense>
-                    <note type="bibl">(<bibl><ref type="bibl" target="#src_SD"
-                                /><biblScope>280%l1%l</biblScope></bibl>)</note>
+                    <note type="bibl">(<bibl><ref type="bibl" target="#src_SD"/><biblScope>280%l1%l</biblScope></bibl>)</note>
                     <abv:exampleGrp>
-                        <abv:example xml:lang="os-x-digor">
+                        <abv:example xml:id="example_d1729e128" xml:lang="os-x-digor">
                             <usg><lang/></usg>
                             <quote>eci curdʒast ǧæwajgæstæ racudæncæ xwarti astæw
                                 ǧæwajgængæj</quote>
@@ -57,13 +61,12 @@
                                 <q>those vigilant watchmen passed through the bread, guarding
                                     (grain)</q>
                             </abv:tr>
-                            <bibl><ref type="bibl" target="#src_SD"
-                                /><biblScope>295%l3%l</biblScope></bibl>
+                            <bibl><ref type="bibl" target="#src_SD"/><biblScope>295%l3%l</biblScope></bibl>
                         </abv:example>
                     </abv:exampleGrp>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d1729e154">
                         <quote>cyrd læppū gælæbū ærcaxsta</quote>
                         <abv:tr xml:lang="ru">
                             <q>проворный мальчик поймал бабочку</q>
@@ -71,10 +74,9 @@
                         <abv:tr xml:lang="en">
                             <q>nimble boy caught a butterfly</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"
-                            /><biblScope>123</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>123</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1729e173">
                         <quote>cyrd læwwut</quote>
                         <abv:tr xml:lang="ru">
                             <q>смотрите за собой</q>
@@ -87,7 +89,7 @@
                         <bibl><ref type="bibl" target="#src_Марк"/><biblScope>%i13%i
                             9</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d1729e199" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>du ba curt badæ</quote>
                         <abv:tr xml:lang="ru">
@@ -101,24 +103,19 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Слово имеет облик прош. причастия от некоего глагола *%icuryn%i
-                    (как <ref type="xr" target="#entry_ʒyrd"/> от <ref type="xr"
-                        target="#entry_ʒūryn"/> ‘говорить’ и т. п.). Такой глагол действительно
-                    существует со значением ‘поджаривать’ (см. выше <ref type="xr"
-                        target="#entry_cūryn"/>) Если эта близость не обманчива, то развитие
+                    (как <ref type="xr" target="#entry_ʒyrd"/> от <ref type="xr" target="#entry_ʒūryn"/> ‘говорить’ и т. п.). Такой глагол действительно
+                    существует со значением ‘поджаривать’ (см. выше <ref type="xr" target="#entry_cūryn"/>) Если эта близость не обманчива, то развитие
                     значения было: ‘горячий’ →‘проворный’. Мало вразумительно сравнение
-                    %sBenveniste%s'a c<mentioned xml:lang="ae"><lang/>
+                    %sBenveniste%s'a c<mentioned xml:id="mentioned_d1729e231" xml:lang="ae"><lang/>
                         <w>čarətu-</w>
-                        <gloss><q>мера длины</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_BSL"/><biblScope>LII 8</biblScope></bibl>).</etym>
+                        <gloss><q>мера длины</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_BSL"/><biblScope>LII 8</biblScope></bibl>).</etym>
                 <etym xml:lang="en">The word looks like past participle of some verb *%icuryn%i
-                    (like <ref type="xr" target="#entry_ʒyrd"/> is from <ref type="xr"
-                        target="#entry_ʒūryn"/> ‘speak’ etc). Such verb does exist in the meaning
+                    (like <ref type="xr" target="#entry_ʒyrd"/> is from <ref type="xr" target="#entry_ʒūryn"/> ‘speak’ etc). Such verb does exist in the meaning
                     ‘roast’ (see above <ref type="xr" target="#entry_cūryn"/>) If this connection is
                     true, than the development of teh meaning was the following: ‘hot’ →‘nimble’.
-                    %sBenveniste%s's comparison with <mentioned xml:lang="ae"><lang/>
+                    %sBenveniste%s's comparison with <mentioned xml:id="mentioned_d1729e252" xml:lang="ae"><lang/>
                         <w>čarətu-</w>
-                        <gloss><q>linear measure</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_BSL"/><biblScope>LII 8</biblScope></bibl>) is less
+                        <gloss><q>linear measure</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_BSL"/><biblScope>LII 8</biblScope></bibl>) is less
                     conceivable.</etym>
             </entry>
         </body>

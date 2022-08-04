@@ -1,34 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">g0yffæ</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_g0yffæ" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>g˳yffæ</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>guffæ</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d867e72"><abv:tr xml:lang="ru">
                         <q>кузов арбы</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>body of a bullock-cart</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d867e84">
                         <quote>Æfxærdty Xæsanæ, Solæmany saq fyrt, dælgommæ x˳yssydī wærdony
                             g˳yffæjy</quote>
                         <abv:tr xml:lang="ru">
@@ -39,51 +44,35 @@
                             <q>Afkhardov Hassan, the valiant son of Solaman, lay face down in the
                                 back of a bullock-cart</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Æfx._Xæs."
-                                /><biblScope>112–113</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Æfx._Xæs."/><biblScope>112–113</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из <mentioned xml:lang="kbd"><lang/>
+                <etym xml:lang="ru">Из <mentioned xml:id="mentioned_d867e106" xml:lang="kbd"><lang/>
                         <w>gufä</w>
                         <gloss><q>дышло</q></gloss></mentioned>
-                            (<bibl><author>Лопатинский</author><ref type="bibl" target="#ref_Ногма"
-                            /><biblScope>547</biblScope></bibl>). В первой части <mentioned
-                        xml:lang="kbd"><lang/>
+                            (<bibl><author>Лопатинский</author><ref type="bibl" target="#ref_Ногма"/><biblScope>547</biblScope></bibl>). В первой части <mentioned xml:id="mentioned_d867e119" xml:lang="kbd"><lang/>
                         <w>gu</w>
-                        <gloss><q>арба</q></gloss></mentioned>. Ср. также <mentioned xml:lang="uby"><lang/>
+                        <gloss><q>арба</q></gloss></mentioned>. Ср. также <mentioned xml:id="mentioned_d867e127" xml:lang="uby"><lang/>
                         <w>kupaɣ</w>
-                        <gloss><q>Wagendischel</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Mészaros"/><biblScope>356</biblScope></bibl>), <mentioned
-                        xml:lang="xmf"><lang/>
+                        <gloss><q>Wagendischel</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Mészaros"/><biblScope>356</biblScope></bibl>), <mentioned xml:id="mentioned_d867e140" xml:lang="xmf"><lang/>
                         <w>k’ope</w>
-                        <gloss><q>задняя поперечная доска у арбы</q></gloss></mentioned>, <mentioned
-                        xml:lang="ka"><lang/>
+                        <gloss><q>задняя поперечная доска у арбы</q></gloss></mentioned>, <mentioned xml:id="mentioned_d867e148" xml:lang="ka"><lang/>
                         <w>k’opo</w>
-                        <gloss><q>принадлежность саней</q></gloss></mentioned> (? <bibl><ref
-                            type="bibl" target="#ref_Саба"/></bibl>). Ср. <ref type="xr"
-                        target="#entry_g0ycʼæz"/>.%n<bibl><author>Генко</author><ref type="bibl"
-                            target="#ref_ЗКВ"/><biblScope>V 715</biblScope></bibl>.</etym>
-                <etym xml:lang="en">From <mentioned xml:lang="kbd"><lang/>
+                        <gloss><q>принадлежность саней</q></gloss></mentioned> (? <bibl><ref type="bibl" target="#ref_Саба"/></bibl>). Ср. <ref type="xr" target="#entry_g0ycʼæz"/>.%n<bibl><author>Генко</author><ref type="bibl" target="#ref_ЗКВ"/><biblScope>V 715</biblScope></bibl>.</etym>
+                <etym xml:lang="en">From <mentioned xml:id="mentioned_d867e170" xml:lang="kbd"><lang/>
                         <w>gufä</w>
                         <gloss><q>towbar</q></gloss></mentioned>
-                            (<bibl><author>Lopatinskij</author><ref type="bibl" target="#ref_Ногма"
-                            /><biblScope>547</biblScope></bibl>). In the first part there is
-                        <mentioned xml:lang="kbd"><lang/>
+                            (<bibl><author>Lopatinskij</author><ref type="bibl" target="#ref_Ногма"/><biblScope>547</biblScope></bibl>). In the first part there is
+                        <mentioned xml:id="mentioned_d867e183" xml:lang="kbd"><lang/>
                         <w>gu</w>
-                        <gloss><q>bullock-cart</q></gloss></mentioned>. Cf. also <mentioned
-                        xml:lang="uby"><lang/>
+                        <gloss><q>bullock-cart</q></gloss></mentioned>. Cf. also <mentioned xml:id="mentioned_d867e191" xml:lang="uby"><lang/>
                         <w>kupaɣ</w>
-                        <gloss><q>Wagendischel</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Mészaros"/><biblScope>356</biblScope></bibl>), <mentioned
-                        xml:lang="xmf"><lang/>
+                        <gloss><q>Wagendischel</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Mészaros"/><biblScope>356</biblScope></bibl>), <mentioned xml:id="mentioned_d867e204" xml:lang="xmf"><lang/>
                         <w>k’ope</w>
                         <gloss><q>back crossbar of a bullock-cart</q></gloss></mentioned>,
-                        <mentioned xml:lang="ka"><lang/>
+                        <mentioned xml:id="mentioned_d867e212" xml:lang="ka"><lang/>
                         <w>k’opo</w>
-                        <gloss><q>sledge accessory</q></gloss></mentioned> (? <bibl><ref type="bibl"
-                            target="#ref_Саба"/></bibl>). Cf. <ref type="xr" target="#entry_g0ycʼæz"
-                            />.%n<bibl><author>Genko</author><ref type="bibl" target="#ref_ЗКВ"
-                            /><biblScope>V 715</biblScope></bibl>.</etym>
+                        <gloss><q>sledge accessory</q></gloss></mentioned> (? <bibl><ref type="bibl" target="#ref_Саба"/></bibl>). Cf. <ref type="xr" target="#entry_g0ycʼæz"/>.%n<bibl><author>Genko</author><ref type="bibl" target="#ref_ЗКВ"/><biblScope>V 715</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

@@ -1,33 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">æxtong</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_æxtong" xml:lang="os">
                 <form type="lemma"><orth>æxtong</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d4031e69"><sense xml:id="sense_d4031e70"><abv:tr xml:lang="ru">
                             <q>подпруга</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>(saddle-)girth</q>
-                        </abv:tr></sense><sense/></sense>
+                        </abv:tr></sense><sense xml:id="sense_d4031e79"/></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4031e83">
                         <quote>æxtængtæ sælvas</quote>
                         <abv:tr xml:lang="ru">
                             <q>подтяни подпруги</q>
@@ -36,7 +41,7 @@
                             <q>tighten saddle-girth</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4031e98">
                         <quote>Batyraʒ (bæxy)… dywwadæs æxtongæj sælvæsta</quote>
                         <abv:tr xml:lang="ru">
                             <q>Батрадз (коня) стянул двенадцатью подпругами</q>
@@ -46,7 +51,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_ОТ"/><biblScope>45</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4031e117">
                         <quote>ærīston warǧ; ælvæst æxtængtæ xærz gæzæmæ yswæǧd kodton</quote>
                         <abv:tr xml:lang="ru">
                             <q>я снял (с коня) поклажу; немного отпустил стянутые подпруги</q>
@@ -60,55 +65,37 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Сложение %iæx%i-%itong%i, буквально „скрепляющий (%iæx%i) ремень
-                    (%itong%i)". Элемент *%iæx%i мы находим с тем же значением в <ref type="xr"
-                        target="#entry_æǧnæg"/> (из %iæx%i-%inæg%i) ‘застежка’, %iæx%i-%ikænyn%i
+                    (%itong%i)". Элемент *%iæx%i мы находим с тем же значением в <ref type="xr" target="#entry_æǧnæg"/> (из %iæx%i-%inæg%i) ‘застежка’, %iæx%i-%ikænyn%i
                     ‘запирать’ [см. <ref type="xr" target="#entry_æxkænyn"/> ]. Предполагая частое в
                     осетинском языке выпадение %ir%i перед согласным, мы восстанавливаем *%iæx%i в
                     *%iærx%i и относим сюда же д. <ref type="xr" target="#entry_ærxu"/> ‘запертый’,
-                        <ref type="xr" target="#entry_arx"/> ‘сук’, <ref type="xr"
-                        target="#entry_ærxæg"/> ærxæg ‘сустав’ и, может быть, <ref type="xr"
-                        target="#entry_arkʼaw"/> ‘клещи’. Дальнейшее см. под <ref type="xr"
-                        target="#entry_æxkænyn"/>. Что касается второй части — %itong%i, то, хотя
+                        <ref type="xr" target="#entry_arx"/> ‘сук’, <ref type="xr" target="#entry_ærxæg"/> ærxæg ‘сустав’ и, может быть, <ref type="xr" target="#entry_arkʼaw"/> ‘клещи’. Дальнейшее см. под <ref type="xr" target="#entry_æxkænyn"/>. Что касается второй части — %itong%i, то, хотя
                     она отдельно не сохранилась, значение ее устанавливается бесспорно, как из
-                    сопоставления с %idymi%i-%itong%i „хвостовый ремень“ (может быть, также <ref
-                        type="xr" target="#entry_artʼæng"/> ‘ременная веревка’), так и из иранских
-                    соответствий: ср. <mentioned xml:lang="fa"><lang/>
+                    сопоставления с %idymi%i-%itong%i „хвостовый ремень“ (может быть, также <ref type="xr" target="#entry_artʼæng"/> ‘ременная веревка’), так и из иранских
+                    соответствий: ср. <mentioned xml:id="mentioned_d4031e156" xml:lang="fa"><lang/>
                         <w>tang</w>
-                        <gloss><q>подпруга</q></gloss></mentioned>, <mentioned xml:lang="ku"><lang/>
-                        <w>tang</w></mentioned>, <mentioned xml:lang="ps"><lang/>
-                        <w>ta-tang</w></mentioned> id. и др. (<bibl><ref type="bibl"
-                            target="#ref_Hübschmann._PSt."/><biblScope>48 сл.</biblScope></bibl>).
-                    Сюда же <mentioned xml:lang="kho"><lang/>
+                        <gloss><q>подпруга</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4031e164" xml:lang="ku"><lang/>
+                        <w>tang</w></mentioned>, <mentioned xml:id="mentioned_d4031e169" xml:lang="ps"><lang/>
+                        <w>ta-tang</w></mentioned> id. и др. (<bibl><ref type="bibl" target="#ref_Hübschmann._PSt."/><biblScope>48 сл.</biblScope></bibl>).
+                    Сюда же <mentioned xml:id="mentioned_d4031e179" xml:lang="kho"><lang/>
                         <w>ttākā</w>
-                        <gloss><q>подпруга</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_BSOAS"/><biblScope>XI 291</biblScope></bibl>)? Ср. <ref
-                        type="xr" target="#entry_dymītong"/>.%n<bibl><ref type="bibl"
-                            target="#ref_ОЯФ_I"/><biblScope>54</biblScope></bibl>.</etym>
+                        <gloss><q>подпруга</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_BSOAS"/><biblScope>XI 291</biblScope></bibl>)? Ср. <ref type="xr" target="#entry_dymītong"/>.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>54</biblScope></bibl>.</etym>
                 <etym xml:lang="en">The composition %iæx%i-%itong%i, literally ‘fastening (%iæx%i)
-                    the belt(%itong%i)’. The element *%iæx%i with the same meaning is found in <ref
-                        type="xr" target="#entry_æǧnæg"/> (from %iæx%i-%inæg%i) ‘fastener’,
+                    the belt(%itong%i)’. The element *%iæx%i with the same meaning is found in <ref type="xr" target="#entry_æǧnæg"/> (from %iæx%i-%inæg%i) ‘fastener’,
                     %iæx%i-%ikænyn%i ‘lock’ [see <ref type="xr" target="#entry_æxkænyn"/> ].
                     Assuming that r often drops out before a consonant in Ossetic, we reconstruct
-                    *%iæx%i in *%iærx%i and refer here the following words: Digor <ref type="xr"
-                        target="#entry_ærxu"/> ‘locked’, <ref type="xr" target="#entry_arx"/>
-                    ‘branch’, <ref type="xr" target="#entry_ærxæg"/> ‘joint’ and maybe <ref
-                        type="xr" target="#entry_arkʼaw"/> ‘pincers’. The further see in <ref
-                        type="xr" target="#entry_æxkænyn"/>. As for the second part, %itong%i, even
+                    *%iæx%i in *%iærx%i and refer here the following words: Digor <ref type="xr" target="#entry_ærxu"/> ‘locked’, <ref type="xr" target="#entry_arx"/>
+                    ‘branch’, <ref type="xr" target="#entry_ærxæg"/> ‘joint’ and maybe <ref type="xr" target="#entry_arkʼaw"/> ‘pincers’. The further see in <ref type="xr" target="#entry_æxkænyn"/>. As for the second part, %itong%i, even
                     that is not in usage anymore, its meaning can be restored for certain, as by
-                    comparing it with %idymi%i-%itong%i "tail belt" (may be also <ref type="xr"
-                        target="#entry_artʼæng"/> ‘belt rope’), and by finding Iranian
-                    correspondences: cf. <mentioned xml:lang="fa"><lang/>
+                    comparing it with %idymi%i-%itong%i "tail belt" (may be also <ref type="xr" target="#entry_artʼæng"/> ‘belt rope’), and by finding Iranian
+                    correspondences: cf. <mentioned xml:id="mentioned_d4031e217" xml:lang="fa"><lang/>
                         <w>tang</w>
-                        <gloss><q>girth</q></gloss></mentioned>, <mentioned xml:lang="ku"><lang/>
-                        <w>tang</w></mentioned>, <mentioned xml:lang="ps"><lang/>
-                        <w>ta-tang</w></mentioned> id. etc. (<bibl><ref type="bibl"
-                            target="#ref_Hübschmann._PSt."/><biblScope>48ff.</biblScope></bibl>).
-                    Also here <mentioned xml:lang="kho"><lang/>
+                        <gloss><q>girth</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4031e225" xml:lang="ku"><lang/>
+                        <w>tang</w></mentioned>, <mentioned xml:id="mentioned_d4031e230" xml:lang="ps"><lang/>
+                        <w>ta-tang</w></mentioned> id. etc. (<bibl><ref type="bibl" target="#ref_Hübschmann._PSt."/><biblScope>48ff.</biblScope></bibl>).
+                    Also here <mentioned xml:id="mentioned_d4031e240" xml:lang="kho"><lang/>
                         <w>ttākā</w>
-                        <gloss><q>girth</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_BSOAS"/><biblScope>XI 291</biblScope></bibl>)? Cf. <ref
-                        type="xr" target="#entry_dymītong"/>.%n<bibl><ref type="bibl"
-                            target="#ref_ОЯФ_I"/><biblScope>54</biblScope></bibl>.</etym>
+                        <gloss><q>girth</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_BSOAS"/><biblScope>XI 291</biblScope></bibl>)? Cf. <ref type="xr" target="#entry_dymītong"/>.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>54</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

@@ -1,38 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">kæʒos</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_kæʒos" xml:lang="os-x-digor">
                 <form type="lemma"><orth>kæʒos</orth></form>
                 <usg><lang/></usg>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d5922e72"><sense xml:id="sense_d5922e73"><abv:tr xml:lang="ru">
                             <q>чистый</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>clean</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d5922e82"><abv:tr xml:lang="ru">
                             <q>святой</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>holy</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d5922e94">
                         <quote>biccew bæxi nikkæʒos kodta</quote>
                         <abv:tr xml:lang="ru">
                             <q>мальчик почистил коня</q>
@@ -43,7 +48,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
                             69</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5922e113">
                         <quote>o, mæ kæʒos-od xwarz iwazgutæ!</quote>
                         <abv:tr xml:lang="ru">
                             <q>о, мои чистые душой, славные гости!</q>
@@ -51,10 +56,9 @@
                         <abv:tr xml:lang="en">
                             <q>oh my pure-souled, nice guests!</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_ОЭп."
-                            /><biblScope>60%l257%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_ОЭп."/><biblScope>60%l257%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5922e132">
                         <quote>dæ razmæ kæʒosæj læwwæntæ<note type="comment" xml:lang="ru"> (из
                                 посвящения покойнику)</note><note type="comment" xml:lang="en">
                                 (from a dedication to the dead)</note></quote>
@@ -67,7 +71,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
                             170</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5922e156">
                         <quote>ǧogæn… æ bunat ǧar æma kæʒos darun ǧæwuj</quote>
                         <abv:tr xml:lang="ru">
                             <q>стойло коровы надо содержать в тепле и чистоте</q>
@@ -78,17 +82,15 @@
                         <bibl><ref type="bibl" target="#src_FS"/><biblScope>II 19</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Ср. <mentioned xml:lang="hbo"><lang/>
+                <etym xml:lang="ru">Ср. <mentioned xml:id="mentioned_d5922e178" xml:lang="hbo"><lang/>
                         <w>qādōš</w>
                         <gloss><q>святой</q></gloss></mentioned>. Заимствовано, вероятно, аланами у
                     хазар, которые, исповедуя иудейство, должны были усвоить еврейскую
                     религиозно-ритуальную терминологию. Заимствование произошло в тот период, когда
                     в осетинском не было еще согласного %iq%i и он систематически заменялся в
                     заимствованиях согласным %ik%i; ср. <ref type="xr" target="#entry_ḱyzg"/>
-                    ‘девушка’ (тоже, быть может, из хазарского), <ref type="xr"
-                        target="#entry_akkag"/> ‘достойный’.%n<bibl><ref type="bibl"
-                            target="#ref_ОЯФ_I"/><biblScope>331 сл</biblScope></bibl>.</etym>
-                <etym xml:lang="en">Cf. <mentioned xml:lang="hbo"><lang/>
+                    ‘девушка’ (тоже, быть может, из хазарского), <ref type="xr" target="#entry_akkag"/> ‘достойный’.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>331 сл</biblScope></bibl>.</etym>
+                <etym xml:lang="en">Cf. <mentioned xml:id="mentioned_d5922e198" xml:lang="hbo"><lang/>
                         <w>qādōš</w>
                         <gloss><q>holy</q></gloss></mentioned>. It was probably borrowed by Alans
                     from the Khazars, who should have learnt Jewish religious ritual terminolody,

@@ -1,30 +1,34 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">Eltaǧan</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_Eltaǧan" xml:lang="os">
                 <form type="lemma"><orth>Eltaǧan</orth></form>
-                <sense><def xml:lang="ru">имя великана в нартовском эпосе</def><def xml:lang="en"
-                        >the name of the giant in the Nart epic</def></sense>
+                <sense xml:id="sense_d4478e69"><def xml:lang="ru">имя великана в нартовском эпосе</def><def xml:lang="en">the name of the giant in the Nart epic</def></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4478e77">
                         <quote>k˳y jyn ærxæssis K˳ycyḱḱy fyrt Eltaǧany særʒarm, wæd dæ kærc æxxæst
                             waid</quote>
                         <abv:tr xml:lang="ru">
@@ -35,50 +39,42 @@
                             <q>if you had brought the scalp of Eltagan, the son of Kutsyk, then your
                                 coat would have been ready</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Нарт._сказ."
-                            /><biblScope>81</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Нарт._сказ."/><biblScope>81</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">%bТюркское%b или %bмонгольское%b слово; причастное образование
-                    на %i-gan%i скорее всего от глагола <mentioned xml:lang="trk" extralang="mn"><lang/>
+                    на %i-gan%i скорее всего от глагола <mentioned xml:id="mentioned_d4478e99" xml:lang="trk" extralang="mn"><lang/>
                         <w>jältä</w>
-                        <gloss><q>возбуждать</q></gloss></mentioned> и пр. (<bibl><ref type="bibl"
-                            target="#ref_Радлов"/><biblScope>III 354</biblScope></bibl>), со
+                        <gloss><q>возбуждать</q></gloss></mentioned> и пр. (<bibl><ref type="bibl" target="#ref_Радлов"/><biblScope>III 354</biblScope></bibl>), со
                     значением ‘возбужденный’, ‘буйный’. Ср. эпитет Сослана %inæræmon%i ‘буйный’. В
                     пользу тюркского происхождения говорит и имя отца Елтагана — %iK˳ycykk%i =
-                        <mentioned xml:lang="trk"><lang/>
+                        <mentioned xml:id="mentioned_d4478e111" xml:lang="trk"><lang/>
                         <w>küčük</w>
-                        <gloss><q>малый</q></gloss></mentioned>, <mentioned xml:lang="trk"><w/>
-                        <gloss><q>маленький</q></gloss></mentioned>, <mentioned xml:lang="trk"><w/>
+                        <gloss><q>малый</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4478e119" xml:lang="trk"><w/>
+                        <gloss><q>маленький</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4478e125" xml:lang="trk"><w/>
                         <gloss><q>щенок</q></gloss></mentioned>. Несостоятельно и с фонетической и с
                     реальной стороны предложенное %sДюмезилем%s и поддержанное %sБэйли%s
-                    сопоставление с <mentioned xml:lang="x-oldirn"><lang/>
-                        <w>Vrθraǧna</w></mentioned> (<bibl><author>G. Dumézil</author><biblScope
-                            xml:lang="ru">А propos de „Vərəθraγna“. Annuaire de l’Institut de
+                    сопоставление с <mentioned xml:id="mentioned_d4478e132" xml:lang="x-oldirn"><lang/>
+                        <w>Vrθraǧna</w></mentioned> (<bibl><author>G. Dumézil</author><biblScope xml:lang="ru">А propos de „Vərəθraγna“. Annuaire de l’Institut de
                             philologie et d’ Histoire Orientales et Slaves, т. IX, 1949, стр.
                             223–226</biblScope></bibl>. —
-                            <bibl><author>Bailey</author><ref type="bibl" target="#ref_JRAS"
-                            /><biblScope xml:lang="ru">1953, стр. 112</biblScope></bibl>).</etym>
+                            <bibl><author>Bailey</author><ref type="bibl" target="#ref_JRAS"/><biblScope xml:lang="ru">1953, стр. 112</biblScope></bibl>).</etym>
                 <etym xml:lang="en">%bTurkic%b or %bMongolian%b word; a participial %i-gan%i
-                    derivative, most likely from the verb <mentioned xml:lang="trk" extralang="mn"><lang/>
+                    derivative, most likely from the verb <mentioned xml:id="mentioned_d4478e151" xml:lang="trk" extralang="mn"><lang/>
                         <w>jältä</w>
-                        <gloss><q>excite</q></gloss></mentioned> etc. (<bibl><ref type="bibl"
-                            target="#ref_Радлов"/><biblScope>III 354</biblScope></bibl>), with the
+                        <gloss><q>excite</q></gloss></mentioned> etc. (<bibl><ref type="bibl" target="#ref_Радлов"/><biblScope>III 354</biblScope></bibl>), with the
                     meaning ‘excited’, ‘unruly’. Cf. the Soslan's epithet %inæræmon%i ‘wild’. The
                     name of father Eltagan speaks in favor of Turkic origin as well — %iK˳ycykk%i =
-                        <mentioned xml:lang="trk"><lang/>
+                        <mentioned xml:id="mentioned_d4478e163" xml:lang="trk"><lang/>
                         <w>küčük</w>
-                        <gloss><q>small</q></gloss></mentioned>, <mentioned xml:lang="trk"><w/>
-                        <gloss><q>little</q></gloss></mentioned>, <mentioned xml:lang="trk"><w/>
-                        <gloss><q>puppy</q></gloss></mentioned>. The comparison with <mentioned
-                        xml:lang="x-oldirn"><lang/>
+                        <gloss><q>small</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4478e171" xml:lang="trk"><w/>
+                        <gloss><q>little</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4478e177" xml:lang="trk"><w/>
+                        <gloss><q>puppy</q></gloss></mentioned>. The comparison with <mentioned xml:id="mentioned_d4478e184" xml:lang="x-oldirn"><lang/>
                         <w>Vrθraǧna</w></mentioned> proposed by %sDumézil%s and supported by
                     %sBailey%s is untenable from both the phonetic and the semantic point of view
-                            (<bibl><author>G. Dumézil</author><biblScope
-                            xml:lang="en">А propos de “Vərəθraγna”. Annuaire de l’Institut de
+                            (<bibl><author>G. Dumézil</author><biblScope xml:lang="en">А propos de “Vərəθraγna”. Annuaire de l’Institut de
                             philologie et d’ Histoire Orientales et Slaves, t. IX, 1949, p.
-                            223–226</biblScope></bibl>. — <bibl><author>Bailey</author><ref
-                            type="bibl" target="#ref_JRAS"/><biblScope xml:lang="en">1953, p.
+                            223–226</biblScope></bibl>. — <bibl><author>Bailey</author><ref type="bibl" target="#ref_JRAS"/><biblScope xml:lang="en">1953, p.
                     112</biblScope></bibl>).</etym>
             </entry>
         </body>

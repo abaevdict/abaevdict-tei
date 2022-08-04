@@ -1,46 +1,51 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">axær</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_axær" xml:lang="os-x-digor">
                 <form type="lemma"><orth>axær</orth></form>
                 <usg><lang/></usg>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d152e72"><sense xml:id="sense_d152e73"><abv:tr xml:lang="ru">
                             <q>страшный суд</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>last judgment</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d152e82"><abv:tr xml:lang="ru">
                             <q>потоп</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>flood</q>
                         </abv:tr></sense></sense>
-                <re>
+                <re xml:id="re_d152e92">
                     <form type="lemma"><orth>axæri bon</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d152e97"><abv:tr xml:lang="ru">
                             <q>день страшного суда</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>doomsday</q>
                         </abv:tr></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d152e110">
                         <quote>axæri boni ficcagidær Totrazi furt Alibeg æma Soslanæn tuǧd
                             woʒænæj</quote>
                         <abv:tr xml:lang="ru">
@@ -55,38 +60,30 @@
                             23</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из <mentioned xml:lang="ar" extralang="fa"><lang/>
+                <etym xml:lang="ru">Из <mentioned xml:id="mentioned_d152e133" xml:lang="ar" extralang="fa"><lang/>
                         <w>āḫir</w>
-                        <gloss><q>последний</q></gloss></mentioned>, <mentioned xml:lang="ar"
-                        extralang="fa"><w/>
-                        <gloss><q>конец</q></gloss></mentioned>, <mentioned xml:lang="ar"
-                        extralang="fa"><w>āḫir zamān</w>
+                        <gloss><q>последний</q></gloss></mentioned>, <mentioned xml:id="mentioned_d152e141" xml:lang="ar" extralang="fa"><w/>
+                        <gloss><q>конец</q></gloss></mentioned>, <mentioned xml:id="mentioned_d152e147" xml:lang="ar" extralang="fa"><w>āḫir zamān</w>
                         <gloss><q>конец мира</q></gloss></mentioned>; термин мусульманского круга
-                    (как <ref type="xr" target="#entry_qajmæt"/>, <ref type="xr"
-                        target="#entry_aʒal"/>, <ref type="xr" target="#entry_xæram"/> и др.);
-                    встречается и в других кавказских языках: <mentioned xml:lang="av"><lang/>
+                    (как <ref type="xr" target="#entry_qajmæt"/>, <ref type="xr" target="#entry_aʒal"/>, <ref type="xr" target="#entry_xæram"/> и др.);
+                    встречается и в других кавказских языках: <mentioned xml:id="mentioned_d152e160" xml:lang="av"><lang/>
                         <w>axir</w>
-                        <gloss><q>конец</q></gloss></mentioned>, <mentioned xml:lang="kbd"><lang/>
+                        <gloss><q>конец</q></gloss></mentioned>, <mentioned xml:id="mentioned_d152e168" xml:lang="kbd"><lang/>
                         <w>axər zaman</w>
-                        <gloss><q>светопреставление</q></gloss></mentioned>, <mentioned
-                        xml:lang="krc-x-balkar"><lang/>
+                        <gloss><q>светопреставление</q></gloss></mentioned>, <mentioned xml:id="mentioned_d152e176" xml:lang="krc-x-balkar"><lang/>
                         <w>axrə, axər</w>
                         <gloss><q>конец</q></gloss></mentioned>.</etym>
-                <etym xml:lang="en">From <mentioned xml:lang="ar" extralang="fa"><lang/>
+                <etym xml:lang="en">From <mentioned xml:id="mentioned_d152e187" xml:lang="ar" extralang="fa"><lang/>
                         <w>āḫir</w>
-                        <gloss><q>last</q></gloss></mentioned>, <mentioned xml:lang="ar"
-                        extralang="fa"><w/>
-                        <gloss><q>end</q></gloss></mentioned>, <mentioned xml:lang="ar"
-                        extralang="fa"><w>āḫir zamān</w>
+                        <gloss><q>last</q></gloss></mentioned>, <mentioned xml:id="mentioned_d152e195" xml:lang="ar" extralang="fa"><w/>
+                        <gloss><q>end</q></gloss></mentioned>, <mentioned xml:id="mentioned_d152e201" xml:lang="ar" extralang="fa"><w>āḫir zamān</w>
                         <gloss><q>end of the world</q></gloss></mentioned>; term of the Muslim
-                    environment (like <ref type="xr" target="#entry_qajmæt"/>, <ref type="xr"
-                        target="#entry_aʒal"/>, <ref type="xr" target="#entry_xæram"/> etc.); found
-                    in other Caucasian languages: <mentioned xml:lang="av"><lang/>
+                    environment (like <ref type="xr" target="#entry_qajmæt"/>, <ref type="xr" target="#entry_aʒal"/>, <ref type="xr" target="#entry_xæram"/> etc.); found
+                    in other Caucasian languages: <mentioned xml:id="mentioned_d152e214" xml:lang="av"><lang/>
                         <w>axir</w>
-                        <gloss><q>end</q></gloss></mentioned>, <mentioned xml:lang="kbd"><lang/>
+                        <gloss><q>end</q></gloss></mentioned>, <mentioned xml:id="mentioned_d152e222" xml:lang="kbd"><lang/>
                         <w>axər zaman</w>
-                        <gloss><q>end of light</q></gloss></mentioned>, <mentioned
-                        xml:lang="krc-x-balkar"><lang/>
+                        <gloss><q>end of light</q></gloss></mentioned>, <mentioned xml:id="mentioned_d152e230" xml:lang="krc-x-balkar"><lang/>
                         <w>axrə, axər</w>
                         <gloss><q>end</q></gloss></mentioned>.</etym>
             </entry>

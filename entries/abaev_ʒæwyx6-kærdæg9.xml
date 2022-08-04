@@ -1,37 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Abaev Dictionary: entry <hi rendition="#rend_italic"
-                    >ʒæwyx6-kærdæg9</hi></title>
+                <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ʒæwyx6-kærdæg9</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ʒæwyx6-kærdæg9" xml:lang="os">
-                <form xml:lang="os-x-iron" type="lemma"><orth>ʒæwyx(-kærdæg)</orth><form
-                        type="variant">(<orth>-gærdæg</orth>)</form></form>
-                <form xml:lang="os-x-digor" type="dialectal"><orth>ʒæux(kærdæg)</orth><form
-                        type="variant">(<orth>-gærdæg</orth>)</form></form>
-                <sense><abv:tr xml:lang="ru">
+                <form xml:lang="os-x-iron" type="lemma"><orth>ʒæwyx(-kærdæg)</orth><form type="variant">(<orth>-gærdæg</orth>)</form></form>
+                <form xml:lang="os-x-digor" type="dialectal"><orth>ʒæux(kærdæg)</orth><form type="variant">(<orth>-gærdæg</orth>)</form></form>
+                <sense xml:id="sense_d463e80"><abv:tr xml:lang="ru">
                         <q>пырей</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>Elytrigia plant, bluegrass</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d463e92">
                         <quote>bæxgæs jæ ræǧaw zamanajy xīzæny xīzy: ʒæwyxkærdæg — ronbastmæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>табунщик пасет свой табун на отличном пастбище: пырей — по пояс</q>
@@ -43,7 +45,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>IV
                             37</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d463e111">
                         <quote>astæwmæ kærdæǵy īw saw kʼobor gal xīzy, xīzy, je ʽvzagæj ʒæwyxkærdæg
                             ævzary æmæ jæ dasy jæ fætæn dændægtæj</quote>
                         <abv:tr xml:lang="ru">
@@ -58,7 +60,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>IV
                             127</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d463e130">
                         <quote>Bestaw ærdikkæj nillæg kʼulduntæ cʼæx ʒæuxgærdægæj ærvænxuz</quote>
                         <abv:tr xml:lang="ru">
                             <q>в сторону Бештау низкие предгорья синеют („небесного цвета“) от
@@ -72,10 +74,10 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Происхождение слова %iʒæwyx%i | %iʒæux%i не выяснено. Ср.
-                        <mentioned xml:lang="kbd"><lang/>
+                        <mentioned xml:id="mentioned_d463e152" xml:lang="kbd"><lang/>
                         <w>ašäxw</w></mentioned>.</etym>
                 <etym xml:lang="en">The etymology of the word %iʒæwyx%i | %iʒæux%i is not clear. Cf.
-                        <mentioned xml:lang="kbd"><lang/>
+                        <mentioned xml:id="mentioned_d463e161" xml:lang="kbd"><lang/>
                         <w>ašäxw</w></mentioned>.</etym>
             </entry>
         </body>

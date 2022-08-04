@@ -1,32 +1,35 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">bu6r9rutti</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_bu6r9rutti" xml:lang="os-x-digor">
-                <form type="lemma"><orth>bu(r)rutti</orth><form type="variant"
-                        ><orth>brotti</orth></form></form>
+                <form type="lemma"><orth>bu(r)rutti</orth><form type="variant"><orth>brotti</orth></form></form>
                 <usg><lang/></usg>
-                <sense><def xml:lang="ru">выражение недовольства, гнева, каприза</def><def
-                        xml:lang="en">an expression of discontent, anger, caprice</def></sense>
+                <sense xml:id="sense_d5655e74"><def xml:lang="ru">выражение недовольства, гнева, каприза</def><def xml:lang="en">an expression of discontent, anger, caprice</def></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d5655e82">
                         <quote>Majra eci burruttitæj xæʒari zelæn kænun bajdædta</quote>
                         <abv:tr xml:lang="ru">
                             <q>Майра, такая же гневная, стала возиться по хозяйству</q>
@@ -39,10 +42,10 @@
                             39</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из <mentioned xml:lang="ka"><lang/>
+                <etym xml:lang="ru">Из <mentioned xml:id="mentioned_d5655e104" xml:lang="ka"><lang/>
                         <w>borotʼi</w>
                         <gloss><q>злой</q></gloss></mentioned>.</etym>
-                <etym xml:lang="en">From <mentioned xml:lang="ka"><lang/>
+                <etym xml:lang="en">From <mentioned xml:id="mentioned_d5655e116" xml:lang="ka"><lang/>
                         <w>borotʼi</w>
                         <gloss><q>evil</q></gloss></mentioned>.</etym>
             </entry>

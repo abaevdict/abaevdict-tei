@@ -1,34 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">gollag</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_gollag" xml:lang="os-x-iron">
                 <form type="lemma"><orth>gollag</orth></form>
                 <usg><lang/></usg>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d212e72"><abv:tr xml:lang="ru">
                         <q>мешок</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>sack</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d212e84">
                         <quote>bajʒag kodta gollægtæ (ævzalyjæ)</quote>
                         <abv:tr xml:lang="ru">
                             <q>наполнил мешки (углями)</q>
@@ -36,10 +41,9 @@
                         <abv:tr xml:lang="en">
                             <q>filled the bags (with coals)</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Munk."
-                            /><biblScope>154</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Munk."/><biblScope>154</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d212e103">
                         <quote>bajʒag kodtoj æxcajæ jæ golǵytæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>наполнили ему мешки деньгами</q>
@@ -47,10 +51,9 @@
                         <abv:tr xml:lang="en">
                             <q>his bags were filled with money</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Munk."
-                            /><biblScope>154</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Munk."/><biblScope>154</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d212e122">
                         <quote>læg… ūrs īgar gollaǵy cæværdta</quote>
                         <abv:tr xml:lang="ru">
                             <q>человек положил в мешок белую борзую собаку</q>
@@ -62,57 +65,44 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Культурное слово персидского (?) происхождения, получившее
-                    широкое распространение: <mentioned xml:lang="fa"><lang/>
-                        <w>guvāl</w></mentioned>, арабизированное %ijuval%i (отсюда через <mentioned
-                        xml:lang="trk"><lang/>
+                    широкое распространение: <mentioned xml:id="mentioned_d212e144" xml:lang="fa"><lang/>
+                        <w>guvāl</w></mentioned>, арабизированное %ijuval%i (отсюда через <mentioned xml:id="mentioned_d212e149" xml:lang="trk"><lang/>
                         <w>čūval</w></mentioned>
-                    <mentioned xml:lang="ru"><lang/>
-                        <w>чувал</w></mentioned>), <mentioned xml:lang="x-balochi"><lang/>
+                    <mentioned xml:id="mentioned_d212e154" xml:lang="ru"><lang/>
+                        <w>чувал</w></mentioned>), <mentioned xml:id="mentioned_d212e159" xml:lang="x-balochi"><lang/>
                         <w>gwala(g)</w>
-                        <gloss><q>мешок</q></gloss></mentioned> (иначе: <bibl><ref type="bibl"
-                            target="#ref_NTS"/><biblScope>V 41</biblScope></bibl>), <mentioned
-                        xml:lang="ka"><lang/>
+                        <gloss><q>мешок</q></gloss></mentioned> (иначе: <bibl><ref type="bibl" target="#ref_NTS"/><biblScope>V 41</biblScope></bibl>), <mentioned xml:id="mentioned_d212e172" xml:lang="ka"><lang/>
                         <w>gvalagi</w>
-                        <gloss><q>вьюк для вещей</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Саба"/></bibl>), <mentioned xml:lang="udi"><lang/>
-                        <w>gaval</w></mentioned>, <mentioned xml:lang="dar"><lang/>
-                        <w>gavlag</w></mentioned>, <mentioned xml:lang="ani"><lang/>
-                        <w>gvala</w></mentioned>, <mentioned xml:lang="ce"><lang/>
+                        <gloss><q>вьюк для вещей</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Саба"/></bibl>), <mentioned xml:id="mentioned_d212e183" xml:lang="udi"><lang/>
+                        <w>gaval</w></mentioned>, <mentioned xml:id="mentioned_d212e188" xml:lang="dar"><lang/>
+                        <w>gavlag</w></mentioned>, <mentioned xml:id="mentioned_d212e193" xml:lang="ani"><lang/>
+                        <w>gvala</w></mentioned>, <mentioned xml:id="mentioned_d212e198" xml:lang="ce"><lang/>
                         <w>galaj</w>
                         <gloss><q>мешок</q></gloss></mentioned>. Параллельная %bгрузинская%b форма
-                        <mentioned xml:lang="ka"><lang/>
-                        <w>gvardakʼi</w></mentioned> указывает на <mentioned xml:lang="pal"><lang/>
+                        <mentioned xml:id="mentioned_d212e207" xml:lang="ka"><lang/>
+                        <w>gvardakʼi</w></mentioned> указывает на <mentioned xml:id="mentioned_d212e212" xml:lang="pal"><lang/>
                         <w>*guvārdāk</w></mentioned>. Ос. %igollag%i идет, вероятно, из
-                            грузинского.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"
-                            /><biblScope>II 67, III 146</biblScope></bibl>; <bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._Gr."/><biblScope>10</biblScope></bibl>. —
-                            <bibl><ref type="bibl" target="#ref_MSt."
-                        /><biblScope>81</biblScope></bibl>.</etym>
+                            грузинского.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 67, III 146</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>10</biblScope></bibl>. —
+                            <bibl><ref type="bibl" target="#ref_MSt."/><biblScope>81</biblScope></bibl>.</etym>
                 <etym xml:lang="en">A cultural word of Persian (?) origin, which got widespread:
-                        <mentioned xml:lang="fa"><lang/>
-                        <w>guvāl</w></mentioned>, arabized %ijuval%i (<mentioned xml:lang="ru"><lang/>
-                        <w>čuval</w></mentioned> is from it through <mentioned xml:lang="trk"><lang/>
-                        <w>čūval</w></mentioned>), <mentioned xml:lang="x-balochi"><lang/>
+                        <mentioned xml:id="mentioned_d212e233" xml:lang="fa"><lang/>
+                        <w>guvāl</w></mentioned>, arabized %ijuval%i (<mentioned xml:id="mentioned_d212e238" xml:lang="ru"><lang/>
+                        <w>čuval</w></mentioned> is from it through <mentioned xml:id="mentioned_d212e243" xml:lang="trk"><lang/>
+                        <w>čūval</w></mentioned>), <mentioned xml:id="mentioned_d212e248" xml:lang="x-balochi"><lang/>
                         <w>gwala(g)</w>
-                        <gloss><q>bag</q></gloss></mentioned> (differently: <bibl><ref type="bibl"
-                            target="#ref_NTS"/><biblScope>V 41</biblScope></bibl>), <mentioned
-                        xml:lang="ka"><lang/>
+                        <gloss><q>bag</q></gloss></mentioned> (differently: <bibl><ref type="bibl" target="#ref_NTS"/><biblScope>V 41</biblScope></bibl>), <mentioned xml:id="mentioned_d212e261" xml:lang="ka"><lang/>
                         <w>gvalagi</w>
-                        <gloss><q>pack for stuff</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Саба"/></bibl>), <mentioned xml:lang="udi"><lang/>
-                        <w>gaval</w></mentioned>, <mentioned xml:lang="dar"><lang/>
-                        <w>gavlag</w></mentioned>, <mentioned xml:lang="ani"><lang/>
-                        <w>gvala</w></mentioned>, <mentioned xml:lang="ce"><lang/>
+                        <gloss><q>pack for stuff</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Саба"/></bibl>), <mentioned xml:id="mentioned_d212e272" xml:lang="udi"><lang/>
+                        <w>gaval</w></mentioned>, <mentioned xml:id="mentioned_d212e277" xml:lang="dar"><lang/>
+                        <w>gavlag</w></mentioned>, <mentioned xml:id="mentioned_d212e282" xml:lang="ani"><lang/>
+                        <w>gvala</w></mentioned>, <mentioned xml:id="mentioned_d212e287" xml:lang="ce"><lang/>
                         <w>galaj</w>
                         <gloss><q>sack</q></gloss></mentioned>. A parallel %bGeorgian%b form
-                        <mentioned xml:lang="ka"><lang/>
-                        <w>gvardakʼi</w></mentioned> points to <mentioned xml:lang="pal"><lang/>
+                        <mentioned xml:id="mentioned_d212e296" xml:lang="ka"><lang/>
+                        <w>gvardakʼi</w></mentioned> points to <mentioned xml:id="mentioned_d212e301" xml:lang="pal"><lang/>
                         <w>*guvārdāk</w></mentioned>. Ossetic %igollag%i probably comes from
-                            Georgian.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"
-                            /><biblScope>II 67, III 146</biblScope></bibl>; <bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._Gr."/><biblScope>10</biblScope></bibl>. —
-                            <bibl><ref type="bibl" target="#ref_MSt."
-                        /><biblScope>81</biblScope></bibl>.</etym>
+                            Georgian.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 67, III 146</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>10</biblScope></bibl>. —
+                            <bibl><ref type="bibl" target="#ref_MSt."/><biblScope>81</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

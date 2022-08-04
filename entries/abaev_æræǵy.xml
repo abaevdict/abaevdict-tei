@@ -1,63 +1,66 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">æræǵy</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_æræǵy" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>æræǵy</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>ærægi</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d1697e72"><sense xml:id="sense_d1697e73"><abv:tr xml:lang="ru">
                             <q>недавно</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>recently</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d1697e82"><abv:tr xml:lang="ru">
                             <q>поздно</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>late</q>
                         </abv:tr></sense></sense>
-                <re>
+                <re xml:id="re_d1697e92">
                     <form type="lemma"><orth>bajræǵy myn is</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d1697e97"><abv:tr xml:lang="ru">
                             <q>я опоздал</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>I was late</q>
                         </abv:tr></sense>
                 </re>
-                <re xml:lang="os-x-digor">
+                <re xml:id="re_d1697e108" xml:lang="os-x-digor">
                     <lang/>
                     <form type="lemma"><orth>ærægi-durægi</orth></form>
-                    <sense><sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d1697e115"><sense xml:id="sense_d1697e116"><abv:tr xml:lang="ru">
                                 <q>рано или поздно</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>sooner or later</q>
-                            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                            </abv:tr></sense><sense xml:id="sense_d1697e125"><abv:tr xml:lang="ru">
                                 <q>в конце концов</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>in the end</q>
                             </abv:tr></sense></sense>
-                    <note type="comment" xml:lang="ru"> (см. <ref type="xr" target="#entry_durægi"
-                        />)</note>
-                    <note type="comment" xml:lang="en"> (see <ref type="xr" target="#entry_durægi"
-                        />)</note>
+                    <note type="comment" xml:lang="ru"> (см. <ref type="xr" target="#entry_durægi"/>)</note>
+                    <note type="comment" xml:lang="en"> (see <ref type="xr" target="#entry_durægi"/>)</note>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d1697e149">
                         <quote>raǵy zæǧon, æmæ raǵy k˳yd wydaid? īwyl æræǵy zæǧon, æmæ —
                             sajddær</quote>
                         <abv:tr xml:lang="ru">
@@ -68,10 +71,9 @@
                             <q>I could say “long ago”, but could it have been long ago? were I to
                                 say “just recently”, it would have been even more of a lie</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"
-                            /><biblScope>132</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>132</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1697e168">
                         <quote>ægær feræǵy</quote>
                         <abv:tr xml:lang="ru">
                             <q>было слишком поздно</q>
@@ -81,7 +83,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Сека"/><biblScope>60</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1697e187">
                         <quote>æræǵy ma kæn</quote>
                         <abv:tr xml:lang="ru">
                             <q>не мешкай</q>
@@ -90,7 +92,7 @@
                             <q>don't be tardy</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1697e202">
                         <quote>poezdmæ baræǵy kodton</quote>
                         <abv:tr xml:lang="ru">
                             <q>я опоздал на поезд</q>
@@ -100,20 +102,20 @@
                         </abv:tr>
                     </abv:example>
                 </abv:exampleGrp>
-                <re xml:lang="os-x-digor">
+                <re xml:id="re_d1697e218" xml:lang="os-x-digor">
                     <lang/>
                     <form type="lemma"><orth>ærægi-durægi</orth></form>
-                    <sense><sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d1697e225"><sense xml:id="sense_d1697e226"><abv:tr xml:lang="ru">
                                 <q>наконец</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>finally</q>
-                            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                            </abv:tr></sense><sense xml:id="sense_d1697e235"><abv:tr xml:lang="ru">
                                 <q>напоследок</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>lastly</q>
                             </abv:tr></sense></sense>
                     <abv:exampleGrp>
-                        <abv:example>
+                        <abv:example xml:id="example_d1697e247">
                             <quote>ærægi-durægi sæ Ʒanbolat bajjafta</quote>
                             <abv:tr xml:lang="ru">
                                 <q>наконец-то Дзанболат нагнал их</q>
@@ -121,20 +123,14 @@
                             <abv:tr xml:lang="en">
                                 <q>at last Dzanbolat caught up with them</q>
                             </abv:tr>
-                            <bibl><ref type="bibl" target="#src_Диг._сказ."
-                                    /><biblScope>21</biblScope></bibl>
+                            <bibl><ref type="bibl" target="#src_Диг._сказ."/><biblScope>21</biblScope></bibl>
                         </abv:example>
                     </abv:exampleGrp>
                 </re>
-                <etym xml:lang="ru">Местный внутренний падеж от <ref type="xr" target="#entry_æræg"
-                    /> ‘поздний’ q. v. Ср. также <ref type="xr"/> I %iraǵi%i ‘давно’, ‘рано’, <ref
-                        type="xr" target="#entry_ærægmæ"/> ‘поздно’, <ref type="xr"
-                        target="#entry_æræǵyjaw"/> ‘напоследок’, <ref type="xr"
-                        target="#entry_ærygon"/> ‘недавний’.</etym>
+                <etym xml:lang="ru">Местный внутренний падеж от <ref type="xr" target="#entry_æræg"/> ‘поздний’ q. v. Ср. также <ref type="xr"/> I %iraǵi%i ‘давно’, ‘рано’, <ref type="xr" target="#entry_ærægmæ"/> ‘поздно’, <ref type="xr" target="#entry_æræǵyjaw"/> ‘напоследок’, <ref type="xr" target="#entry_ærygon"/> ‘недавний’.</etym>
                 <etym xml:lang="en">The inessive case form of <ref type="xr" target="#entry_æræg"/>
                     ‘late’ q. v. Compare also <ref type="xr" target="#entry_raǵy"/> | %iragi%i ‘long
-                    ago’, ‘early’, <ref type="xr" target="#entry_ærægmæ"/> ‘lately’, <ref type="xr"
-                        target="#entry_æræǵyjaw"/> ‘lastly’, <ref type="xr" target="#entry_ærygon"/>
+                    ago’, ‘early’, <ref type="xr" target="#entry_ærægmæ"/> ‘lately’, <ref type="xr" target="#entry_æræǵyjaw"/> ‘lastly’, <ref type="xr" target="#entry_ærygon"/>
                     ‘recent’.</etym>
             </entry>
         </body>

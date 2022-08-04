@@ -1,34 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">dīdīnæg</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_dīdīnæg" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>dīdīnæg</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>dedenæg</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d422e72"><abv:tr xml:lang="ru">
                         <q>цветок</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>flower</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d422e84">
                         <quote>aly xorz dīdīnæǵy tæfæj adæjmaǵy zærdæ rūxs kodta</quote>
                         <abv:tr xml:lang="ru">
                             <q>от запаха разных приятных цветов светлело на сердце человека</q>
@@ -38,7 +43,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Сека"/><biblScope>16</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d422e103">
                         <quote>ærtydta aly dīdīnæg</quote>
                         <abv:tr xml:lang="ru">
                             <q>нарвал всяких цветов</q>
@@ -46,10 +51,9 @@
                         <abv:tr xml:lang="en">
                             <q>[he] picked all sorts of flowers</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Munk."
-                            /><biblScope>106</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Munk."/><biblScope>106</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d422e122" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>bajvadæncæ mæ dedengutæ</quote>
                         <abv:tr xml:lang="ru">
@@ -60,7 +64,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>12</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d422e144" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>zinnuj ærdozæ didingutæj %i(sic!)%i fælust</quote>
                         <abv:tr xml:lang="ru">
@@ -71,7 +75,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>26</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d422e166" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>mudi binʒitæ… dedengutæbæl baduncæ</quote>
                         <abv:tr xml:lang="ru">
@@ -84,27 +88,27 @@
                             64</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Вероятна связь с <mentioned xml:lang="kbd"><lang/>
-                        <w>dedī</w></mentioned>, <mentioned xml:lang="sva"><lang/>
-                        <w>dadil</w></mentioned>, <mentioned xml:lang="lbe"><lang/>
-                        <w>tuti</w></mentioned>, <mentioned xml:lang="tkr"><lang/>
-                        <w>tet</w></mentioned>, <mentioned xml:lang="kry-x-jek"><lang/>
+                <etym xml:lang="ru">Вероятна связь с <mentioned xml:id="mentioned_d422e191" xml:lang="kbd"><lang/>
+                        <w>dedī</w></mentioned>, <mentioned xml:id="mentioned_d422e196" xml:lang="sva"><lang/>
+                        <w>dadil</w></mentioned>, <mentioned xml:id="mentioned_d422e201" xml:lang="lbe"><lang/>
+                        <w>tuti</w></mentioned>, <mentioned xml:id="mentioned_d422e206" xml:lang="tkr"><lang/>
+                        <w>tet</w></mentioned>, <mentioned xml:id="mentioned_d422e211" xml:lang="kry-x-jek"><lang/>
                         <w>ʒiʒi</w>
                         <gloss><q>цветок</q></gloss></mentioned>. Дальнейшее не ясно. „Детское“
-                    слово? Ср. ос. „детское“ <mentioned xml:lang="os"><lang/>
+                    слово? Ср. ос. „детское“ <mentioned xml:id="mentioned_d422e220" xml:lang="os"><lang/>
                         <w>didi</w>
-                        <gloss><q>украшение</q></gloss></mentioned>, <mentioned xml:lang="os"><w/>
+                        <gloss><q>украшение</q></gloss></mentioned>, <mentioned xml:id="mentioned_d422e228" xml:lang="os"><w/>
                         <gloss><q>игрушка</q></gloss></mentioned>.</etym>
-                <etym xml:lang="en">There is a possible connection with <mentioned xml:lang="kbd"><lang/>
-                        <w>dedī</w></mentioned>, <mentioned xml:lang="sva"><lang/>
-                        <w>dadil</w></mentioned>, <mentioned xml:lang="lbe"><lang/>
-                        <w>tuti</w></mentioned>, <mentioned xml:lang="tkr"><lang/>
-                        <w>tet</w></mentioned>, <mentioned xml:lang="kry-x-jek"><lang/>
+                <etym xml:lang="en">There is a possible connection with <mentioned xml:id="mentioned_d422e238" xml:lang="kbd"><lang/>
+                        <w>dedī</w></mentioned>, <mentioned xml:id="mentioned_d422e243" xml:lang="sva"><lang/>
+                        <w>dadil</w></mentioned>, <mentioned xml:id="mentioned_d422e248" xml:lang="lbe"><lang/>
+                        <w>tuti</w></mentioned>, <mentioned xml:id="mentioned_d422e253" xml:lang="tkr"><lang/>
+                        <w>tet</w></mentioned>, <mentioned xml:id="mentioned_d422e258" xml:lang="kry-x-jek"><lang/>
                         <w>ʒiʒi</w>
                         <gloss><q>flower</q></gloss></mentioned>. The further path is unclear. Is
-                    this a “child” word? Cf. Ossetic “child” word <mentioned xml:lang="os"><lang/>
+                    this a “child” word? Cf. Ossetic “child” word <mentioned xml:id="mentioned_d422e267" xml:lang="os"><lang/>
                         <w>didi</w>
-                        <gloss><q>decoration</q></gloss></mentioned>, <mentioned xml:lang="os"><w/>
+                        <gloss><q>decoration</q></gloss></mentioned>, <mentioned xml:id="mentioned_d422e275" xml:lang="os"><w/>
                         <gloss><q>toy</q></gloss></mentioned>.</etym>
             </entry>
         </body>

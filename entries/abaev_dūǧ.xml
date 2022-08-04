@@ -1,67 +1,72 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">dūǧ</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_dūǧ" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>dūǧ</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>doǧ</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d5385e72"><sense xml:id="sense_d5385e73"><abv:tr xml:lang="ru">
                             <q>скачки</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>horse races</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d5385e82"><abv:tr xml:lang="ru">
                             <q>бег</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>running</q>
                         </abv:tr></sense></sense>
-                <re>
+                <re xml:id="re_d5385e92">
                     <form type="lemma"><orth>dūǧ kænyn</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d5385e97"><abv:tr xml:lang="ru">
                             <q>бежать</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>run</q>
                         </abv:tr></sense>
                 </re>
-                <re>
+                <re xml:id="re_d5385e108">
                     <form xml:lang="os-x-iron" type="lemma"><orth>dūǧon</orth></form>
                     <form xml:lang="os-x-digor" type="dialectal"><orth>doǧon</orth></form>
-                    <sense><sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d5385e116"><sense xml:id="sense_d5385e117"><abv:tr xml:lang="ru">
                                 <q>скакун</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>racer</q>
-                            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                            </abv:tr></sense><sense xml:id="sense_d5385e126"><abv:tr xml:lang="ru">
                                 <q>скаковая лошадь</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>racehorse</q>
                             </abv:tr></sense></sense>
                 </re>
-                <re>
+                <re xml:id="re_d5385e138">
                     <form type="lemma"><orth>dūǧy syf</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d5385e143"><abv:tr xml:lang="ru">
                             <q>подорожник</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>rib grass</q>
                         </abv:tr></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d5385e156">
                         <quote>wældaj kad ḱī kodta jæ mardæn, ūj aræzta dūǧtæ, qabaqqytæ,
                             ælæmtæ</quote>
                         <abv:tr xml:lang="ru">
@@ -72,10 +77,9 @@
                             <q>one who wanted to especially honor the deceased organize races,
                                 shooting at the target, %sælæm%s (see this word)</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Čerm."
-                            /><biblScope>148</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Čerm."/><biblScope>148</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5385e175">
                         <quote>ḱi waʒʒæn mæ dūǧy jæ bæx?</quote>
                         <abv:tr xml:lang="ru">
                             <q>кто пустит своего коня на моих (погребальных) скачках?</q>
@@ -85,7 +89,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>33</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5385e194">
                         <quote>Būræfærnyg xærnæg kodta; īw dūǧ Wastyrǵyjæn radta, innæ dūǧ
                             Batyrazæn</quote>
                         <abv:tr xml:lang="ru">
@@ -99,7 +103,7 @@
                         <bibl><ref type="bibl" target="#src_ЮОПам."/><biblScope>I
                             115</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5385e213">
                         <quote>īw læg xist kodtā æmæ dūǧ waǧta</quote>
                         <abv:tr xml:lang="ru">
                             <q>один человек справлял тризну и устраивал скачки</q>
@@ -110,7 +114,7 @@
                         <bibl><ref type="bibl" target="#src_ОЭ"/><biblScope>I 74,
                             128</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5385e232">
                         <quote>kæmæn īs, ūj jæ fydy fydæn dær dūǧ waʒy</quote>
                         <abv:tr xml:lang="ru">
                             <q>у кого есть (средства), тот и в честь (покойного) дедушки устраивает
@@ -120,10 +124,9 @@
                             <q>one who has (money) organizes races in honor of (deceased)
                                 grandfather</q>
                         </abv:tr>
-                        <bibl><biblScope xml:lang="ru">пословица</biblScope><biblScope xml:lang="en"
-                                >saying</biblScope></bibl>
+                        <bibl><biblScope xml:lang="ru">пословица</biblScope><biblScope xml:lang="en">saying</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5385e254">
                         <quote>jæ bæx dūǧy kæmæn wa æmæ jæ ūs ævǧædy kæmæn wa, ūdon zærdætæ
                             æmgyppgypp kænync</quote>
                         <abv:tr xml:lang="ru">
@@ -137,7 +140,7 @@
                         <bibl><ref type="bibl" target="#src_ЮОПам."/><biblScope>III
                             209</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5385e273" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>Kænti xistitæ, qabaǧtæ, doǧtæ kud nʽ adtajdæ</quote>
                         <abv:tr xml:lang="ru">
@@ -151,7 +154,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
                             44</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5385e295" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>ew doǧi Oræzmægi Ærfæn rawaǧtoncæ</quote>
                         <abv:tr xml:lang="ru">
@@ -163,7 +166,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
                             44</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5385e317" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>hejtt, zærdi wadæj wajetæ, doǧi ma wotæ fæstag!</quote>
                         <abv:tr xml:lang="ru">
@@ -177,40 +180,33 @@
                         <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>9</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Сближается c <mentioned xml:lang="trk"><lang/>
+                <etym xml:lang="ru">Сближается c <mentioned xml:id="mentioned_d5385e342" xml:lang="trk"><lang/>
                         <w>joǧ</w>
-                        <gloss><q>погребальный обряд</q></gloss></mentioned>; ср. также <mentioned
-                        xml:lang="trk"><lang/>
+                        <gloss><q>погребальный обряд</q></gloss></mentioned>; ср. также <mentioned xml:id="mentioned_d5385e350" xml:lang="trk"><lang/>
                         <w>joǧla</w>
-                        <gloss><q>исполнять похоронный обряд</q></gloss></mentioned>, <mentioned
-                        xml:lang="trk"><w>joǧiə</w>
-                        <gloss><q>участник погребальной церемонии</q></gloss><note type="comment"
-                            xml:lang="ru"> (<bibl><ref type="bibl" target="#ref_Радлов"
-                                    /><biblScope>III 409, 413</biblScope></bibl>)</note></mentioned>. Форма %ijoǧ%i не могла,
-                    однако, послужить непосредственным источником для <mentioned xml:lang="os"><lang/>
+                        <gloss><q>исполнять похоронный обряд</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5385e358" xml:lang="trk"><w>joǧiə</w>
+                        <gloss><q>участник погребальной церемонии</q></gloss><note type="comment" xml:lang="ru"> (<bibl><ref type="bibl" target="#ref_Радлов"/><biblScope>III 409, 413</biblScope></bibl>)</note></mentioned>. Форма %ijoǧ%i не могла,
+                    однако, послужить непосредственным источником для <mentioned xml:id="mentioned_d5385e370" xml:lang="os"><lang/>
                         <w>doǧ</w></mentioned>, так как переход %ij%i→%id%i невозможен. Не могла
                     быть таким источником и джекающая форма %iǯoǧ(joǧ)%i, так как в этом случае
-                    имели бы в осетинском %iʒoǧ%i. Для объяснения <mentioned xml:lang="os"><lang/>
+                    имели бы в осетинском %iʒoǧ%i. Для объяснения <mentioned xml:id="mentioned_d5385e375" xml:lang="os"><lang/>
                         <w>doǧ</w></mentioned> приходится исходить из тюркской формы с начальным
                     %idʼ%i (палатализованный %id%i), т. е. *%id'oǧ%i.<note type="footnote" n="1">
                         PUT NOTE HERE </note> Реальность такой формы поддерживается как звуковыми
                     возможностями тюркских языков [ср. в алтайском (телеутском) начальный %idʼ%i
-                        (<mentioned xml:lang="alt" extralang="alt-x-teleut"><lang/>
-                        <w>dʼura-</w></mentioned>, <mentioned xml:lang="alt"
-                        extralang="alt-x-teleut"><w>d’arytqys</w></mentioned>] вместо %ij%i, %iǯ%i,
+                        (<mentioned xml:id="mentioned_d5385e384" xml:lang="alt" extralang="alt-x-teleut"><lang/>
+                        <w>dʼura-</w></mentioned>, <mentioned xml:id="mentioned_d5385e389" xml:lang="alt" extralang="alt-x-teleut"><w>d’arytqys</w></mentioned>] вместо %ij%i, %iǯ%i,
                     так и прямым свидетельством византийского писателя
                             <bibl><author>Менандра</author></bibl>. Из его сообщения видно, что
                     византийский посол Земарх, посетивший западнотюркский каганат в 568 г. и
                     описавший обряд погребения кагана, назвал всю церемонию термином δoχia. Ср. у
                     того же <bibl><author>Менандра</author></bibl> для названия реки Урал (Яик)
-                    форму Δαιξ = %id'ayiq%i (<bibl><author>А. Бернштам.</author><biblScope
-                            xml:lang="ru">О древнейших следах джекания в тюркских языках Средней
+                    форму Δαιξ = %id'ayiq%i (<bibl><author>А. Бернштам.</author><biblScope xml:lang="ru">О древнейших следах джекания в тюркских языках Средней
                             Азии. Сб. „Памяти ак. Н. Я. Марра“, 1938, стр. 18
                             сл.</biblScope></bibl>). Итак, слово %idoǧ%i представляет старый вклад в
                     аланский из среднеазиатских тюркских языков. Особо следует остановиться на
                     развитии значения. Какая связь между „погребальным обрядом“ и „скачками“? Связь
-                    самая близкая. Конские ристания (%idoǧ%i) наряду со стрельбой в цель (<ref
-                        type="xr" target="#entry_qabaq"/>) составляли существеннейшую часть
+                    самая близкая. Конские ристания (%idoǧ%i) наряду со стрельбой в цель (<ref type="xr" target="#entry_qabaq"/>) составляли существеннейшую часть
                     погребальных церемоний. Поэтому %idūǧ%i | %idoǧ%i обычно и понималось как
                     „скачки в честь умершего“. В этом именно значении употребляет, например, слово
                     %idūǧ%i осетинский народный поэт Коста Хетагуров (см. выше). Близкое значение
@@ -226,65 +222,51 @@
                     — скачки с призами из одежи покойного, его оружия, седла, иногда из лошади,
                     быка, денег”.<note type="footnote" n="2"> PUT NOTE HERE </note> Таким образом и
                     звуковую, и смысловую историю слова %idūǧ%i | %idoǧ%i можно считать ясной. О
-                    скачках у осетин см. также: <bibl><author>Вахушти</author><biblScope
-                            xml:lang="ru">География Грузии, стр. 143</biblScope></bibl>;
+                    скачках у осетин см. также: <bibl><author>Вахушти</author><biblScope xml:lang="ru">География Грузии, стр. 143</biblScope></bibl>;
                             <bibl><author>Г. Ф. Чурсин</author><biblScope xml:lang="ru">сб.
                             „Юго-Осетия“, стр. 220</biblScope></bibl>. — Из осетинского (аланского)
-                    слово вошло в некоторые кавказские языки: <mentioned xml:lang="ka"><lang/>
-                        <w>doǧi</w></mentioned>, <mentioned xml:lang="bbl"><lang/>
+                    слово вошло в некоторые кавказские языки: <mentioned xml:id="mentioned_d5385e419" xml:lang="ka"><lang/>
+                        <w>doǧi</w></mentioned>, <mentioned xml:id="mentioned_d5385e424" xml:lang="bbl"><lang/>
                         <w>doǧ</w>
                         <gloss><q>скачки</q></gloss></mentioned>. Из аланского (ясского) идет также,
-                    по-видимому, <mentioned xml:lang="ru"><lang/>
+                    по-видимому, <mentioned xml:id="mentioned_d5385e433" xml:lang="ru"><lang/>
                         <w>доган</w>
-                        <gloss><q>стригун</q></gloss></mentioned>, <mentioned xml:lang="ru"><w/>
+                        <gloss><q>стригун</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5385e441" xml:lang="ru"><w/>
                         <gloss><q>лошадь во втором ряду</q></gloss></mentioned>, представляющее
-                    старую форму осетинского <mentioned xml:lang="os"><lang/>
+                    старую форму осетинского <mentioned xml:id="mentioned_d5385e447" xml:lang="os"><lang/>
                         <w>doǧon</w>
-                        <gloss><q>скакун</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Даль"/></bibl>.— <bibl><ref type="bibl" target="#ref_Филин"
-                            /><biblScope>159</biblScope></bibl>). Ср. <ref type="xr"
-                        target="#entry_dūǧwat"/> | %idoǧwāt%i ‘место скачек’,
-                            ‘ипподром’.%n<bibl><author>Jos. Markwart</author><biblScope
-                            xml:lang="ru">Ungar. Jahrbücher IX (1929), стр. 81</biblScope></bibl>.—
-                            <bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                        /><biblScope>86</biblScope></bibl>.</etym>
-                <etym xml:lang="en">The word is close to <mentioned xml:lang="trk"><lang/>
+                        <gloss><q>скакун</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Даль"/></bibl>.— <bibl><ref type="bibl" target="#ref_Филин"/><biblScope>159</biblScope></bibl>). Ср. <ref type="xr" target="#entry_dūǧwat"/> | %idoǧwāt%i ‘место скачек’,
+                            ‘ипподром’.%n<bibl><author>Jos. Markwart</author><biblScope xml:lang="ru">Ungar. Jahrbücher IX (1929), стр. 81</biblScope></bibl>.—
+                            <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>86</biblScope></bibl>.</etym>
+                <etym xml:lang="en">The word is close to <mentioned xml:id="mentioned_d5385e477" xml:lang="trk"><lang/>
                         <w>joǧ</w>
-                        <gloss><q>funeral rite</q></gloss></mentioned>; cf. also <mentioned
-                        xml:lang="trk"><lang/>
+                        <gloss><q>funeral rite</q></gloss></mentioned>; cf. also <mentioned xml:id="mentioned_d5385e485" xml:lang="trk"><lang/>
                         <w>joǧla</w>
-                        <gloss><q>perform a funeral rite</q></gloss></mentioned>, <mentioned
-                        xml:lang="trk"><w>joǧiə</w>
-                        <gloss><q>funeral participant</q></gloss><note type="comment"
-                            xml:lang="en"> (<bibl><ref type="bibl" target="#ref_Радлов"
-                                    /><biblScope>III 409,
+                        <gloss><q>perform a funeral rite</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5385e493" xml:lang="trk"><w>joǧiə</w>
+                        <gloss><q>funeral participant</q></gloss><note type="comment" xml:lang="en"> (<bibl><ref type="bibl" target="#ref_Радлов"/><biblScope>III 409,
                     413</biblScope></bibl>)</note></mentioned>. However, the form %ijoǧ%i could not
-                    be a direct source for <mentioned xml:lang="os"><lang/>
+                    be a direct source for <mentioned xml:id="mentioned_d5385e505" xml:lang="os"><lang/>
                         <w>doǧ</w></mentioned>, because the transition %ij%i→%id%i is impossible.
                     Neither could the form %iǯoǧ(joǧ)%i be this source, because in this case we
-                    would have %iʒoǧ%i in Ossetic. To explain <mentioned xml:lang="os"><lang/>
+                    would have %iʒoǧ%i in Ossetic. To explain <mentioned xml:id="mentioned_d5385e510" xml:lang="os"><lang/>
                         <w>doǧ</w></mentioned> we have to consider the Turkic form with the initial
                     %idʼ%i (palatalized %id%i), i.e. *%id'oǧ%i.<note type="footnote" n="1"> PUT NOTE
                         HERE </note> The reality of this form is supported by both phonetic
-                    capabilities of the Turkic languages [cf. in Altaic (Teleut) %idʼ%i (<mentioned
-                        xml:lang="alt" extralang="alt-x-teleut"><lang/>
-                        <w>dʼura-</w></mentioned>, <mentioned xml:lang="alt"
-                        extralang="alt-x-teleut"><w>d’arytqys</w></mentioned>] instead of %ij%i,
+                    capabilities of the Turkic languages [cf. in Altaic (Teleut) %idʼ%i (<mentioned xml:id="mentioned_d5385e519" xml:lang="alt" extralang="alt-x-teleut"><lang/>
+                        <w>dʼura-</w></mentioned>, <mentioned xml:id="mentioned_d5385e524" xml:lang="alt" extralang="alt-x-teleut"><w>d’arytqys</w></mentioned>] instead of %ij%i,
                     %iǯ%i], and direct evidence made by the Byzantine writer
                             <bibl><author>Menander</author></bibl>. It is clear from his message
                     that the Byzantine ambassador Zemarchus, who visited the Western Turkic
                     Khaganate in 568 and described the rite of the khagan's burial, called the whole
                     ceremony by the term δoχia. Cf. also in <bibl><author>Menander</author></bibl>
                     the form Δαιξ = %id'ayiq%i for the name of the Ural river (Yaik)
-                            (<bibl><author>A. Bernstam.</author><biblScope xml:lang="en"
-                            >About the oldest traces of pronouncing %iǧ%i in the Turkic languages
+                            (<bibl><author>A. Bernstam.</author><biblScope xml:lang="en">About the oldest traces of pronouncing %iǧ%i in the Turkic languages
                             ​​of Central Asia. Collection “In memory of academic N. Ya. Marr “,
                             1938, p.18 ff.</biblScope></bibl>). So, the word %idoǧ%i represents an
                     old borrowing into Alan from the Central Asian Turkic languages. Special
                     attention should be paid to the development of meaning. What is the connection
                     between the “funeral rite” and “horse racing”? The connection is the closest.
-                    Horse riding (%idoǧ%i) along with target shooting (<ref type="xr"
-                        target="#entry_qabaq"/>) were an essential part of funeral ceremonies.
+                    Horse riding (%idoǧ%i) along with target shooting (<ref type="xr" target="#entry_qabaq"/>) were an essential part of funeral ceremonies.
                     Therefore,%idūǧ%i | %idoǧ%i was usually understood as “horse racing in honor of
                     the deceased”. For example, the Ossetian national poet Kosta Khetagurov uses the
                     word %idūǧ%i in this particular sense (see above). The Slavic %itrizna%i had a
@@ -302,27 +284,21 @@
                         HERE </note> Therefore, both the semantic and phonetic history of %idūǧ%i |
                     %idoǧ%i can be considered to be clear. On horse racing among the Ossetians see
                     also: <bibl><author>Vakhushti</author><biblScope xml:lang="en">Georgian geography, p.
-                            143</biblScope></bibl>; <bibl><author>G. F. Chursin</author><biblScope
-                            xml:lang="en">Collection “South Ossetia”, p.220</biblScope></bibl>. —
+                            143</biblScope></bibl>; <bibl><author>G. F. Chursin</author><biblScope xml:lang="en">Collection “South Ossetia”, p.220</biblScope></bibl>. —
                     From Ossetic (Alan) the word also entered some of the Caucasian languages:
-                        <mentioned xml:lang="ka"><lang/>
-                        <w>doǧi</w></mentioned>, <mentioned xml:lang="bbl"><lang/>
+                        <mentioned xml:id="mentioned_d5385e554" xml:lang="ka"><lang/>
+                        <w>doǧi</w></mentioned>, <mentioned xml:id="mentioned_d5385e559" xml:lang="bbl"><lang/>
                         <w>doǧ</w>
                         <gloss><q>races</q></gloss></mentioned>. The following word is probably a
-                    loanword from Ossetic (Jassic): <mentioned xml:lang="ru"><lang/>
+                    loanword from Ossetic (Jassic): <mentioned xml:id="mentioned_d5385e568" xml:lang="ru"><lang/>
                         <w>dogan</w>
-                        <gloss><q>yearling</q></gloss></mentioned>, <mentioned xml:lang="ru"><w/>
+                        <gloss><q>yearling</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5385e576" xml:lang="ru"><w/>
                         <gloss><q>a horse in the second row</q></gloss></mentioned>, it represents a
-                    more old form of the Ossetic <mentioned xml:lang="os"><lang/>
+                    more old form of the Ossetic <mentioned xml:id="mentioned_d5385e582" xml:lang="os"><lang/>
                         <w>doǧon</w>
-                        <gloss><q>racer</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Даль"/></bibl>.— <bibl><ref type="bibl" target="#ref_Филин"
-                            /><biblScope>159</biblScope></bibl>). Cf. <ref type="xr"
-                        target="#entry_dūǧwat"/> | %idoǧwāt%i ‘race track’,
-                            ‘hippodrome’.%n<bibl><author>Jos. Markwart</author><biblScope
-                            xml:lang="en">Ungar. Jahrbücher IX (1929), p. 81</biblScope></bibl>.—
-                            <bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                        /><biblScope>86</biblScope></bibl>.</etym>
+                        <gloss><q>racer</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Даль"/></bibl>.— <bibl><ref type="bibl" target="#ref_Филин"/><biblScope>159</biblScope></bibl>). Cf. <ref type="xr" target="#entry_dūǧwat"/> | %idoǧwāt%i ‘race track’,
+                            ‘hippodrome’.%n<bibl><author>Jos. Markwart</author><biblScope xml:lang="en">Ungar. Jahrbücher IX (1929), p. 81</biblScope></bibl>.—
+                            <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>86</biblScope></bibl>.</etym>
                 <note type="footnote" xml:lang="ru" n="1">О чередовании в тюркских языках в
                     начальном положении %ij%i, %iǯ%i и %id%i см.: <bibl><author>М.
                             Räsänen</author><biblScope xml:lang="ru">Materialien zur Lautgeschichte

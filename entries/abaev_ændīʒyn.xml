@@ -1,45 +1,49 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ændīʒyn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ændīʒyn" xml:lang="os">
-                <form type="lemma"><orth>ændīʒyn</orth><form type="variant"
-                        ><orth>ændeʒun</orth></form></form>
-                <sense><abv:tr xml:lang="ru">
+                <form type="lemma"><orth>ændīʒyn</orth><form type="variant"><orth>ændeʒun</orth></form></form>
+                <sense xml:id="sense_d88e71"><abv:tr xml:lang="ru">
                         <q>сваривать, спаивать (металл)</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>to weld, to solder</q>
                     </abv:tr><note type="comment" xml:lang="ru">(ppf. не засвидетельствовано)
                         </note><note type="comment" xml:lang="en">(ppf. is not attested)
                     </note></sense>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d88e85"><sense xml:id="sense_d88e86"><abv:tr xml:lang="ru">
                             <q>оправляться (после болезни)</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>to recover (from illness)</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d88e95"><abv:tr xml:lang="ru">
                             <q>поправляться</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>to get better</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d88e107">
                         <quote>ræxysy cægtæ dæ tūǵy fendīʒydtoj… com æmæ jæ wælarv Kurdalægonaw
                             sændīʒæm</quote>
                         <abv:tr xml:lang="ru">
@@ -52,7 +56,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Брит."/><biblScope>81</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d88e126">
                         <quote>næ rynḱyn ændīʒyn baidydta</quote>
                         <abv:tr xml:lang="ru">
                             <q>наш больной стал поправляться</q>
@@ -63,33 +67,23 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Вариант к <ref type="xr" target="#entry_ændaʒyn"/>(←
-                    *%iham-tač%i-) ‘скрепляться’; ср. такое же чередование гласных в <ref type="xr"
-                        target="#entry_aryn"/> | %ierun%i, <ref type="xr" target="#entry_axadyn"/> |
-                    %iaxedun%i, <ref type="xr" target="#entry_kalyn"/> | %iæzgelun%i, <ref type="xr"
-                        target="#entry_7rǧævyn"/> рядом с <ref type="xr" target="#entry_7lǧīvyn"/> |
+                    *%iham-tač%i-) ‘скрепляться’; ср. такое же чередование гласных в <ref type="xr" target="#entry_aryn"/> | %ierun%i, <ref type="xr" target="#entry_axadyn"/> |
+                    %iaxedun%i, <ref type="xr" target="#entry_kalyn"/> | %iæzgelun%i, <ref type="xr" target="#entry_7rǧævyn"/> рядом с <ref type="xr" target="#entry_7lǧīvyn"/> |
                     ælqevun, см. также <ref type="xr" target="#entry_ændewun"/> (из *%iham-tav-?%i);
-                    ср. <mentioned xml:lang="sgh"><lang/>
-                        <w>andez- : andūīd-</w></mentioned>, <mentioned xml:lang="x-rushani"><lang/>
+                    ср. <mentioned xml:id="mentioned_d88e159" xml:lang="sgh"><lang/>
+                        <w>andez- : andūīd-</w></mentioned>, <mentioned xml:id="mentioned_d88e164" xml:lang="x-rushani"><lang/>
                         <w>indiz-</w>
                         <gloss><q>подыматься</q></gloss></mentioned>, ˈвставатьˈ. Ос. значение
                     (ˈпоправлятьсяˈ) может рассматриваться как переходное к памирскому, слишком
                     далеко отошедшему от древнеиранского (ср.:
-                            <bibl><author>Morgenstierne</author><ref type="bibl" target="#ref_NTS"
-                            /><biblScope>I 46</biblScope></bibl>).</etym>
-                <etym xml:lang="en">This is a variant form to <ref type="xr" target="#entry_ændaʒyn"
-                    />(← *%iham-tač%i-) ‘to become attached’; cf. also the same vowel alternation in
-                        <ref type="xr" target="#entry_aryn"/> | %ierun%i, <ref type="xr"
-                        target="#entry_axadyn"/> | %iaxedun%i, <ref type="xr" target="#entry_kalyn"
-                    /> | %iæzgelun%i, <ref type="xr" target="#entry_7rǧævyn"/> near <ref type="xr"
-                        target="#entry_7lǧīvyn"/> | %iælqevun%i, cf. also <ref type="xr"
-                        target="#entry_ændewun"/> (from *%iham-tav-?%i); cf. <mentioned
-                        xml:lang="sgh"><lang/>
-                        <w>andez- : andūīd-</w></mentioned>, <mentioned xml:lang="x-rushani"><lang/>
+                            <bibl><author>Morgenstierne</author><ref type="bibl" target="#ref_NTS"/><biblScope>I 46</biblScope></bibl>).</etym>
+                <etym xml:lang="en">This is a variant form to <ref type="xr" target="#entry_ændaʒyn"/>(← *%iham-tač%i-) ‘to become attached’; cf. also the same vowel alternation in
+                        <ref type="xr" target="#entry_aryn"/> | %ierun%i, <ref type="xr" target="#entry_axadyn"/> | %iaxedun%i, <ref type="xr" target="#entry_kalyn"/> | %iæzgelun%i, <ref type="xr" target="#entry_7rǧævyn"/> near <ref type="xr" target="#entry_7lǧīvyn"/> | %iælqevun%i, cf. also <ref type="xr" target="#entry_ændewun"/> (from *%iham-tav-?%i); cf. <mentioned xml:id="mentioned_d88e196" xml:lang="sgh"><lang/>
+                        <w>andez- : andūīd-</w></mentioned>, <mentioned xml:id="mentioned_d88e201" xml:lang="x-rushani"><lang/>
                         <w>indiz-</w>
                         <gloss><q>to stand up</q></gloss></mentioned>, ˈto get upˈ. The main meaning
                     (ˈto recoverˈ) may be considered as transitional to the Pamir one, which has
-                    deviated too far from Old Iranian (cf.: <bibl><author>Morgenstierne</author><ref
-                            type="bibl" target="#ref_NTS"/><biblScope>I
+                    deviated too far from Old Iranian (cf.: <bibl><author>Morgenstierne</author><ref type="bibl" target="#ref_NTS"/><biblScope>I
                     46</biblScope></bibl>).</etym>
             </entry>
         </body>

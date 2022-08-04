@@ -1,38 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">bilcʼ</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_bilcʼ" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>bilcʼ</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>bircʼ</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d4224e72"><sense xml:id="sense_d4224e73"><abv:tr xml:lang="ru">
                             <q>побег</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>shoot</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d4224e82"><abv:tr xml:lang="ru">
                             <q>почка (у растения)</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>bud</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4224e94">
                         <quote>kartoytæ wærmy tævdæj bilcʼ rawaǧtoj</quote>
                         <abv:tr xml:lang="ru">
                             <q>картофель в яме от тепла пустил побеги</q>
@@ -42,7 +47,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Сл."/></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4224e112" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>dukkag bonmæ qædori næmug ninnærstæj; yænʒæjmag bonmæ rawaǧta
                             bircʼ</quote>
@@ -58,16 +63,13 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Происхождение не ясно. В пшавском диалекте %bгрузинского%b
-                    отмечено близкое по значению и звучанию слово <mentioned xml:lang="ka"><lang/>
+                    отмечено близкое по значению и звучанию слово <mentioned xml:id="mentioned_d4224e137" xml:lang="ka"><lang/>
                         <w>bitʼli</w>
-                        <gloss><q>мелкий плод</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Чкония"/></bibl>).</etym>
+                        <gloss><q>мелкий плод</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Чкония"/></bibl>).</etym>
                 <etym xml:lang="en">The etymology is not clear. In Pshavi dialect of the Georgian
-                    language a word closed by the meaning and phonetics is found: <mentioned
-                        xml:lang="ka"><lang/>
+                    language a word closed by the meaning and phonetics is found: <mentioned xml:id="mentioned_d4224e152" xml:lang="ka"><lang/>
                         <w>bitʼli</w>
-                        <gloss><q>small fruit</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Чкония"/></bibl>).</etym>
+                        <gloss><q>small fruit</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Чкония"/></bibl>).</etym>
             </entry>
         </body>
     </text>

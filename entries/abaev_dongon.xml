@@ -1,34 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">dongon</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_dongon" xml:lang="os-x-digor">
                 <form type="lemma"><orth>dongon</orth></form>
                 <usg><lang/></usg>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d3339e72"><abv:tr xml:lang="ru">
                         <q>у реки</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>near the river</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d3339e84">
                         <quote>æristadæncæ dongoni</quote>
                         <abv:tr xml:lang="ru">
                             <q>остановились у реки</q>
@@ -38,7 +43,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>41</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3339e103">
                         <quote>Soslan i dongon mardæj bajzadæj</quote>
                         <abv:tr xml:lang="ru">
                             <q>Сослан остался мертвый у реки</q>
@@ -49,7 +54,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
                             50</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3339e122">
                         <quote>xætuj xansi medag ædas xæstæg dongænttæmæ cʼæx ars</quote>
                         <abv:tr xml:lang="ru">
                             <q>бродит в чаще безопасно близ речных берегов серый медведь</q>
@@ -60,7 +65,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>62</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3339e141">
                         <quote>dongoni kinʒxontæ bæxtæn don darunbæl ew usmæ baʒebæl æncæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>у реки сопровождающие невесту люди некоторое время замешкались, давая
@@ -72,7 +77,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>120</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3339e160">
                         <quote>fæidton næ dongon donmistæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>я увидела у нашей речки водяную мышь</q>
@@ -87,14 +92,12 @@
                 <etym xml:lang="ru">От <ref type="xr" target="#entry_don"/> с суффиксом -%igon%i,
                     встречающимся только в дигорском в значении ‘около’, ‘близ’: %iǧæw-gon%i ‘возле
                     аула’, %ibil-gon%i ‘у берега’ и некоторые другие. Вероятно, -%igon%i восходит к
-                        <ref type="xr" target="#entry_kom"/> ‘рот’.%n<bibl><ref type="bibl"
-                            target="#ref_ОЯФ_I"/><biblScope>422</biblScope></bibl>.</etym>
+                        <ref type="xr" target="#entry_kom"/> ‘рот’.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>422</biblScope></bibl>.</etym>
                 <etym xml:lang="en">From <ref type="xr" target="#entry_don"/> with the suffix
                     -%igon%i, which is attested only in Digor in the meaning ‘near’, ‘around’:
                     %iǧæw-gon%i ‘near the aul’, %ibil-gon%i ‘near the river bank’ and some others.
                     Probably, -%igon%i traces back to <ref type="xr" target="#entry_kom"/>
-                            ‘mouth’.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                            /><biblScope>422</biblScope></bibl>.</etym>
+                            ‘mouth’.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>422</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

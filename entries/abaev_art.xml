@@ -1,33 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">art</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_art" xml:lang="os">
                 <form type="lemma"><orth>art</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d5685e69"><abv:tr xml:lang="ru">
                         <q>огонь</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>fire</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d5685e81">
                         <quote>arxajy jæ artyl īw sawdæræg ūs</quote>
                         <abv:tr xml:lang="ru">
                             <q>возится над огнем женщина в трауре</q>
@@ -37,7 +42,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>43</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5685e100">
                         <quote>art banʒærstoj qædy</quote>
                         <abv:tr xml:lang="ru">
                             <q>развели костер в лесу</q>
@@ -47,7 +52,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Munk."/><biblScope>60</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5685e119">
                         <quote>K˳yrdalægon yn zaǧta: „æz dæ bajsærdin, fælæ dy basūʒʒynæ
                             arty“</quote>
                         <abv:tr xml:lang="ru">
@@ -58,7 +63,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_ОЭ"/><biblScope>I 18</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5685e138">
                         <quote>xūrmæ dær næ xūs kæny, artmæ dær næ</quote>
                         <abv:tr xml:lang="ru">
                             <q>не сохнет ни на солнце, ни на огне</q>
@@ -66,10 +71,9 @@
                         <abv:tr xml:lang="en">
                             <q>it dries neither in the sun nor on fire</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_ОТ"
-                            /><biblScope>32%l25%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_ОТ"/><biblScope>32%l25%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5685e157">
                         <quote>cyraǧ æmæ art nyxx˳yssyn kæn, xæʒary rūxs k˳yd næwal wa, aftæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>загаси лучину и огонь, чтобы в доме не было больше света</q>
@@ -80,7 +84,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_ОЭ"/><biblScope>I 88</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5685e177">
                         <quote>K˳ycykk artyl arxajdta, mæqījy sæddæntæ artyl ænʒærsta</quote>
                         <abv:tr xml:lang="ru">
                             <q>Куцык возился с огнем, подкладывал в огонь обломки сапетки</q>
@@ -90,7 +94,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Сека"/><biblScope>75</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5685e196" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>arti qwæcæmæ xanī kosgutæ ærcudæncæ</quote>
                         <abv:tr xml:lang="ru">
@@ -99,10 +103,9 @@
                         <abv:tr xml:lang="en">
                             <q>the khan's servants came to the smoke of the fire</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>12%l3%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>12%l3%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5685e218" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>mæ arti wazal!</quote>
                         <abv:tr xml:lang="ru">
@@ -116,7 +119,7 @@
                             despair)</note>
                         <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>89</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5685e247">
                         <quote>dæ art æmæ xsonæj zyng acæǧd</quote>
                         <abv:tr xml:lang="ru">
                             <q>твоим огнивом и кремнем высеки огонь</q>
@@ -128,19 +131,19 @@
                             48</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <re>
+                <re xml:id="re_d5685e267">
                     <form type="lemma"><orth>artag</orth></form>
-                    <sense><sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d5685e272"><sense xml:id="sense_d5685e273"><abv:tr xml:lang="ru">
                                 <q>топливо</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>fuel</q>
-                            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                            </abv:tr></sense><sense xml:id="sense_d5685e282"><abv:tr xml:lang="ru">
                                 <q>горючее</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>petrol</q>
                             </abv:tr></sense></sense>
                     <abv:exampleGrp>
-                        <abv:example xml:lang="os-x-digor">
+                        <abv:example xml:id="example_d5685e294" xml:lang="os-x-digor">
                             <usg><lang/></usg>
                             <quote>artag afojnadæbæl sæ kʼoxi ne ʽftudæj</quote>
                             <abv:tr xml:lang="ru">
@@ -154,100 +157,71 @@
                         </abv:example>
                     </abv:exampleGrp>
                 </re>
-                <etym xml:lang="ru">Закономерная перестановка из %i*atr%i (ср. <ref type="xr"
-                        target="#entry_fyrt"/> ‘сын’, <ref type="xr" target="#entry_7rtæ"/> ‘три’);
-                    восходит к <mentioned xml:lang="ira"><lang/>
+                <etym xml:lang="ru">Закономерная перестановка из %i*atr%i (ср. <ref type="xr" target="#entry_fyrt"/> ‘сын’, <ref type="xr" target="#entry_7rtæ"/> ‘три’);
+                    восходит к <mentioned xml:id="mentioned_d5685e324" xml:lang="ira"><lang/>
                         <w>*ātar-, *aθr-</w>
-                        <gloss><q>огонь</q></gloss></mentioned>; ср. <mentioned xml:lang="ku"><lang/>
-                        <w>ār</w></mentioned>, <mentioned xml:lang="ps"><lang/>
-                        <w>or</w></mentioned>, <mentioned xml:lang="prc"><lang/>
-                        <w>âṛ</w></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Morgenstierne._IIFL"/><biblScope>I 235</biblScope></bibl>),
-                        <mentioned xml:lang="yai"><lang/>
+                        <gloss><q>огонь</q></gloss></mentioned>; ср. <mentioned xml:id="mentioned_d5685e332" xml:lang="ku"><lang/>
+                        <w>ār</w></mentioned>, <mentioned xml:id="mentioned_d5685e337" xml:lang="ps"><lang/>
+                        <w>or</w></mentioned>, <mentioned xml:id="mentioned_d5685e343" xml:lang="prc"><lang/>
+                        <w>âṛ</w></mentioned> (<bibl><ref type="bibl" target="#ref_Morgenstierne._IIFL"/><biblScope>I 235</biblScope></bibl>),
+                        <mentioned xml:id="mentioned_d5685e352" xml:lang="yai"><lang/>
                         <w>āl</w>
-                        <gloss><q>огонь</q></gloss></mentioned>, <mentioned xml:lang="x-rushani"><lang/>
+                        <gloss><q>огонь</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5685e360" xml:lang="x-rushani"><lang/>
                         <w>arθōn</w><note type="comment" xml:lang="ru"> (←
                             %i*aθr-dāna%i)</note>
-                        <gloss><q>очаг</q></gloss></mentioned>, <mentioned xml:lang="x-rushani"
-                            ><w>aθēr</w>
-                        <gloss><q>зола</q></gloss></mentioned>, <mentioned xml:lang="x-rushani"><w/>
-                        <gloss><q>пепел</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_РТ"/><biblScope>57</biblScope></bibl>), <mentioned
-                        xml:lang="mnj"><lang/>
-                        <w>yūṛ</w></mentioned>, <mentioned xml:lang="zza"><lang/>
-                        <w>adir</w></mentioned>, <mentioned xml:lang="fa"><lang/>
-                        <w>aδar</w></mentioned>, <mentioned xml:lang="pal"><lang/>
-                        <w>aδur, atur</w></mentioned>, <mentioned xml:lang="zkh"><lang/>
-                        <w>’rw</w></mentioned> (<bibl><ref type="bibl" target="#ref_Henning._Khwar."
-                            /><biblScope>13</biblScope></bibl>), <mentioned xml:lang="sog"><lang/>
-                        <w>*ātr-(ʼʼtr), *ārt (ʼrδ)</w></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Reichelt"/><biblScope>ZIIIV 247</biblScope></bibl>. —
+                        <gloss><q>очаг</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5685e370" xml:lang="x-rushani"><w>aθēr</w>
+                        <gloss><q>зола</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5685e376" xml:lang="x-rushani"><w/>
+                        <gloss><q>пепел</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_РТ"/><biblScope>57</biblScope></bibl>), <mentioned xml:id="mentioned_d5685e387" xml:lang="mnj"><lang/>
+                        <w>yūṛ</w></mentioned>, <mentioned xml:id="mentioned_d5685e392" xml:lang="zza"><lang/>
+                        <w>adir</w></mentioned>, <mentioned xml:id="mentioned_d5685e397" xml:lang="fa"><lang/>
+                        <w>aδar</w></mentioned>, <mentioned xml:id="mentioned_d5685e402" xml:lang="pal"><lang/>
+                        <w>aδur, atur</w></mentioned>, <mentioned xml:id="mentioned_d5685e407" xml:lang="zkh"><lang/>
+                        <w>’rw</w></mentioned> (<bibl><ref type="bibl" target="#ref_Henning._Khwar."/><biblScope>13</biblScope></bibl>), <mentioned xml:id="mentioned_d5685e417" xml:lang="sog"><lang/>
+                        <w>*ātr-(ʼʼtr), *ārt (ʼrδ)</w></mentioned> (<bibl><ref type="bibl" target="#ref_Reichelt"/><biblScope>ZIIIV 247</biblScope></bibl>. —
                             <bibl><ref type="bibl" target="#ref_Morgenstierne._IIFL"/><biblScope>II
-                            273</biblScope></bibl>), <mentioned xml:lang="xbc"><lang/>
-                        <w>ΑΘΡΟ</w></mentioned> (<bibl><ref type="bibl" target="#ref_JRAS"
-                            /><biblScope xml:lang="ru">1953, стр. 110</biblScope></bibl>), <mentioned xml:lang="ae"><lang/>
+                            273</biblScope></bibl>), <mentioned xml:id="mentioned_d5685e430" xml:lang="xbc"><lang/>
+                        <w>ΑΘΡΟ</w></mentioned> (<bibl><ref type="bibl" target="#ref_JRAS"/><biblScope xml:lang="ru">1953, стр. 110</biblScope></bibl>), <mentioned xml:id="mentioned_d5685e441" xml:lang="ae"><lang/>
                         <w>ātar-, āθr-</w>
                         <gloss><q>огонь</q></gloss></mentioned>. В %bскифском%b собственном имени
-                        <mentioned xml:lang="xsc"><lang/>
-                        <w>ίατραγόρας</w></mentioned> (<bibl><ref type="bibl" target="#ref_Латышев"
-                            /><biblScope>II 56</biblScope></bibl>), может быть, можно видеть в
-                    первой части %i*atr%i ‘огонь’, а во второй — <mentioned xml:lang="os"><lang/>
+                        <mentioned xml:id="mentioned_d5685e449" xml:lang="xsc"><lang/>
+                        <w>ίατραγόρας</w></mentioned> (<bibl><ref type="bibl" target="#ref_Латышев"/><biblScope>II 56</biblScope></bibl>), может быть, можно видеть в
+                    первой части %i*atr%i ‘огонь’, а во второй — <mentioned xml:id="mentioned_d5685e458" xml:lang="os"><lang/>
                         <w>agur-</w>
-                        <gloss><q>искать</q></gloss></mentioned>. Ср. <ref type="xr"
-                        target="#entry_ærtxūron"/>, д. <ref type="xr" target="#entry_ærtdor"
-                            />.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II
-                            49</biblScope></bibl>; <bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._Gr."/><biblScope>41</biblScope></bibl>. —
-                            <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."
-                            /><biblScope>24</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_ОЯФ_I"/><biblScope>52, 158, 213</biblScope></bibl>.</etym>
-                <etym xml:lang="en">A regular inversion from %i*atr%i (cf. <ref type="xr"
-                        target="#entry_fyrt"/> ‘son’, <ref type="xr" target="#entry_7rtæ"/> ‘three’);
-                    traces back to <mentioned xml:lang="ira"><lang/>
+                        <gloss><q>искать</q></gloss></mentioned>. Ср. <ref type="xr" target="#entry_ærtxūron"/>, д. <ref type="xr" target="#entry_ærtdor"/>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II
+                            49</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>41</biblScope></bibl>. —
+                            <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>24</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>52, 158, 213</biblScope></bibl>.</etym>
+                <etym xml:lang="en">A regular inversion from %i*atr%i (cf. <ref type="xr" target="#entry_fyrt"/> ‘son’, <ref type="xr" target="#entry_7rtæ"/> ‘three’);
+                    traces back to <mentioned xml:id="mentioned_d5685e495" xml:lang="ira"><lang/>
                         <w>*ātar-, *aθr-</w>
-                        <gloss><q>fire</q></gloss></mentioned>; cf. <mentioned xml:lang="ku"><lang/>
-                        <w>ār</w></mentioned>, <mentioned xml:lang="ps"><lang/>
-                        <w>or</w></mentioned>, <mentioned xml:lang="prc"><lang/>
-                        <w>âṛ</w></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Morgenstierne._IIFL"/><biblScope>I 235</biblScope></bibl>),
-                        <mentioned xml:lang="yai"><lang/>
+                        <gloss><q>fire</q></gloss></mentioned>; cf. <mentioned xml:id="mentioned_d5685e503" xml:lang="ku"><lang/>
+                        <w>ār</w></mentioned>, <mentioned xml:id="mentioned_d5685e508" xml:lang="ps"><lang/>
+                        <w>or</w></mentioned>, <mentioned xml:id="mentioned_d5685e514" xml:lang="prc"><lang/>
+                        <w>âṛ</w></mentioned> (<bibl><ref type="bibl" target="#ref_Morgenstierne._IIFL"/><biblScope>I 235</biblScope></bibl>),
+                        <mentioned xml:id="mentioned_d5685e523" xml:lang="yai"><lang/>
                         <w>āl</w>
-                        <gloss><q>fire</q></gloss></mentioned>, <mentioned xml:lang="x-rushani"><lang/>
+                        <gloss><q>fire</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5685e531" xml:lang="x-rushani"><lang/>
                         <w>arθōn</w><note type="comment" xml:lang="en"> (←
                             %i*aθr-dāna%i)</note>
-                        <gloss><q>hearth</q></gloss></mentioned>, <mentioned xml:lang="x-rushani"
-                            ><w>aθēr</w>
-                        <gloss><q>ash</q></gloss></mentioned>, <mentioned xml:lang="x-rushani"><w/>
-                        <gloss><q>ashes</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_РТ"/><biblScope>57</biblScope></bibl>), <mentioned
-                        xml:lang="mnj"><lang/>
-                        <w>yūṛ</w></mentioned>, <mentioned xml:lang="zza"><lang/>
-                        <w>adir</w></mentioned>, <mentioned xml:lang="fa"><lang/>
-                        <w>aδar</w></mentioned>, <mentioned xml:lang="pal"><lang/>
-                        <w>aδur, atur</w></mentioned>, <mentioned xml:lang="zkh"><lang/>
-                        <w>’rw</w></mentioned> (<bibl><ref type="bibl" target="#ref_Henning._Khwar."
-                            /><biblScope>13</biblScope></bibl>), <mentioned xml:lang="sog"><lang/>
-                        <w>*ātr-(ʼʼtr), *ārt (ʼrδ)</w></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Reichelt"/><biblScope>ZIIIV 247</biblScope></bibl>. —
+                        <gloss><q>hearth</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5685e541" xml:lang="x-rushani"><w>aθēr</w>
+                        <gloss><q>ash</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5685e547" xml:lang="x-rushani"><w/>
+                        <gloss><q>ashes</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_РТ"/><biblScope>57</biblScope></bibl>), <mentioned xml:id="mentioned_d5685e558" xml:lang="mnj"><lang/>
+                        <w>yūṛ</w></mentioned>, <mentioned xml:id="mentioned_d5685e563" xml:lang="zza"><lang/>
+                        <w>adir</w></mentioned>, <mentioned xml:id="mentioned_d5685e568" xml:lang="fa"><lang/>
+                        <w>aδar</w></mentioned>, <mentioned xml:id="mentioned_d5685e573" xml:lang="pal"><lang/>
+                        <w>aδur, atur</w></mentioned>, <mentioned xml:id="mentioned_d5685e578" xml:lang="zkh"><lang/>
+                        <w>’rw</w></mentioned> (<bibl><ref type="bibl" target="#ref_Henning._Khwar."/><biblScope>13</biblScope></bibl>), <mentioned xml:id="mentioned_d5685e588" xml:lang="sog"><lang/>
+                        <w>*ātr-(ʼʼtr), *ārt (ʼrδ)</w></mentioned> (<bibl><ref type="bibl" target="#ref_Reichelt"/><biblScope>ZIIIV 247</biblScope></bibl>. —
                             <bibl><ref type="bibl" target="#ref_Morgenstierne._IIFL"/><biblScope>II
-                            273</biblScope></bibl>), <mentioned xml:lang="xbc"><lang/>
-                        <w>ΑΘΡΟ</w></mentioned> (<bibl><ref type="bibl" target="#ref_JRAS"
-                            /><biblScope
-                            xml:lang="en">1953, p. 110</biblScope></bibl>), <mentioned xml:lang="ae"><lang/>
+                            273</biblScope></bibl>), <mentioned xml:id="mentioned_d5685e601" xml:lang="xbc"><lang/>
+                        <w>ΑΘΡΟ</w></mentioned> (<bibl><ref type="bibl" target="#ref_JRAS"/><biblScope xml:lang="en">1953, p. 110</biblScope></bibl>), <mentioned xml:id="mentioned_d5685e612" xml:lang="ae"><lang/>
                         <w>ātar-, āθr-</w>
                         <gloss><q>огонь</q></gloss></mentioned>. In a %bScythian%b proper name
-                        <mentioned xml:lang="xsc"><lang/>
-                        <w>ίατραγόρας</w></mentioned> (<bibl><ref type="bibl" target="#ref_Латышев"
-                            /><biblScope>II 56</biblScope></bibl>), may be %i*atr%i ‘fire’ in the
-                    first part, and <mentioned xml:lang="os"><lang/>
+                        <mentioned xml:id="mentioned_d5685e620" xml:lang="xsc"><lang/>
+                        <w>ίατραγόρας</w></mentioned> (<bibl><ref type="bibl" target="#ref_Латышев"/><biblScope>II 56</biblScope></bibl>), may be %i*atr%i ‘fire’ in the
+                    first part, and <mentioned xml:id="mentioned_d5685e629" xml:lang="os"><lang/>
                         <w>agur-</w>
-                        <gloss><q>look for</q></gloss></mentioned>in the second part. Cf. <ref
-                        type="xr" target="#entry_ærtxūron"/>, Digor <ref type="xr"
-                        target="#entry_ærtdor"/>.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 49</biblScope></bibl>;
-                            <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>41</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_Hübschmann._Oss."/><biblScope>24</biblScope></bibl>. —
+                        <gloss><q>look for</q></gloss></mentioned>in the second part. Cf. <ref type="xr" target="#entry_ærtxūron"/>, Digor <ref type="xr" target="#entry_ærtdor"/>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 49</biblScope></bibl>;
+                            <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>41</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>24</biblScope></bibl>. —
                             <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>52, 158,
                             213</biblScope></bibl>.</etym>
             </entry>

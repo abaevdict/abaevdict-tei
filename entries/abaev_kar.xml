@@ -1,46 +1,49 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">kar</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_kar" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>kar</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>karæ</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d348e72"><abv:tr xml:lang="ru">
                         <q>возраст</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>age</q>
                     </abv:tr></sense>
-                <re>
+                <re xml:id="re_d348e82">
                     <form type="lemma"><orth>æmgar</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d348e87"><abv:tr xml:lang="ru">
                             <q>ровесник</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>person of the same age</q>
-                        </abv:tr><note type="comment" xml:lang="ru">(из %iæm-kar%i) </note><note
-                            type="comment" xml:lang="en">(from %iæm-kar%i) </note></sense>
+                        </abv:tr><note type="comment" xml:lang="ru">(из %iæm-kar%i) </note><note type="comment" xml:lang="en">(from %iæm-kar%i) </note></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d348e104">
                         <quote>mæ karæn qæd æmæ dūr dær nal ī<note type="comment" xml:lang="ru">(из
-                                слов Чендзе Абаевой, дожившей до 140 лет)</note><note type="comment"
-                                xml:lang="en">(from the words of Chendze Abaeva, who lived to be 140
+                                слов Чендзе Абаевой, дожившей до 140 лет)</note><note type="comment" xml:lang="en">(from the words of Chendze Abaeva, who lived to be 140
                                 years old)</note></quote>
                         <abv:tr xml:lang="ru">
                             <q>моего возраста нет даже дерева и камня</q>
@@ -49,7 +52,7 @@
                             <q>There is even no wood or stone of my age</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d348e124" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>æz dær adtæn dæ kari</quote>
                         <abv:tr xml:lang="ru">
@@ -58,31 +61,25 @@
                         <abv:tr xml:lang="en">
                             <q>I was your age once</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Gurdž._Æduli"
-                                /><biblScope>100</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Gurdž._Æduli"/><biblScope>100</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Сближается с <mentioned xml:lang="ab"><lang/>
+                <etym xml:lang="ru">Сближается с <mentioned xml:id="mentioned_d348e150" xml:lang="ab"><lang/>
                         <w>a-k˳ra</w>
                         <gloss><q>возраст</q></gloss></mentioned>. Дальнейшее не ясно. Не
-                    исключается иранское происхождение; ср. <mentioned xml:lang="sog"><lang/>
+                    исключается иранское происхождение; ср. <mentioned xml:id="mentioned_d348e158" xml:lang="sog"><lang/>
                         <w>kry’</w>
-                        <gloss><q>время</q></gloss></mentioned>, <mentioned xml:lang="sog"><w/>
+                        <gloss><q>время</q></gloss></mentioned>, <mentioned xml:id="mentioned_d348e166" xml:lang="sog"><w/>
                         <gloss><q>период</q></gloss></mentioned>. В этом случае абхазское слово
-                    может быть заимствованием из аланского.%n<bibl><ref type="bibl"
-                            target="#ref_ОЯФ_I"/><biblScope>316</biblScope></bibl>. — <bibl><ref
-                            type="bibl" target="#ref_Gershevitch"
-                        /><biblScope>1120</biblScope></bibl>.</etym>
-                <etym xml:lang="en">It is close to <mentioned xml:lang="ab"><lang/>
+                    может быть заимствованием из аланского.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>316</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Gershevitch"/><biblScope>1120</biblScope></bibl>.</etym>
+                <etym xml:lang="en">It is close to <mentioned xml:id="mentioned_d348e183" xml:lang="ab"><lang/>
                         <w>a-k˳ra</w>
                         <gloss><q>age</q></gloss></mentioned>. The rest is not clear. Iranian origin
-                    is not excluded; cf. <mentioned xml:lang="sog"><lang/>
+                    is not excluded; cf. <mentioned xml:id="mentioned_d348e191" xml:lang="sog"><lang/>
                         <w>kry’</w>
-                        <gloss><q>time</q></gloss></mentioned>, <mentioned xml:lang="sog"><w/>
+                        <gloss><q>time</q></gloss></mentioned>, <mentioned xml:id="mentioned_d348e199" xml:lang="sog"><w/>
                         <gloss><q>period</q></gloss></mentioned>. In this case the Abkhaz word might
-                    be borrowed from Alan.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                            /><biblScope>316</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_Gershevitch"/><biblScope>1120</biblScope></bibl>.</etym>
+                    be borrowed from Alan.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>316</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Gershevitch"/><biblScope>1120</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

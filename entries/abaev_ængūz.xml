@@ -1,44 +1,49 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ængūz</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ængūz" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>ængūz</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>ængozæ</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d5656e72"><abv:tr xml:lang="ru">
                         <q>грецкий орех</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>walnut</q>
                     </abv:tr></sense>
-                <re>
+                <re xml:id="re_d5656e82">
                     <note type="comment" xml:lang="ru">ср.</note>
                     <note type="comment" xml:lang="en">compare</note>
                     <form type="lemma"><orth>æxsær</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d5656e93"><abv:tr xml:lang="ru">
                             <q>лесной орех</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>hazelnut</q>
                         </abv:tr></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d5656e106">
                         <quote>styr ængūx bælæstæ kæræʒījæ kæræʒīmæ awwon æppærstoj</quote>
                         <abv:tr xml:lang="ru">
                             <q>большие деревья грецкого ореха бросали тень друг к другу</q>
@@ -48,7 +53,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Сека"/><biblScope>96</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5656e125">
                         <quote>ængūzy bælas jæ wīdagæj x˳ysk’ kæny</quote>
                         <abv:tr xml:lang="ru">
                             <q>грецкий орех сохнет от корня</q>
@@ -56,65 +61,48 @@
                         <abv:tr xml:lang="en">
                             <q>walnut tree withers from its root</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_ОТ"
-                            /><biblScope>6%l10%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_ОТ"/><biblScope>6%l10%l</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Ближайшие связи с <mentioned xml:lang="xcl"><lang/>
-                        <w>əngoyz</w></mentioned>, <mentioned xml:lang="xcl"
-                        ><w>ənkoyz</w></mentioned> и <mentioned xml:lang="ka"><lang/>
-                        <w>nigozi</w></mentioned>, далее ср. <mentioned xml:lang="fa"><lang/>
-                        <w>gauz, göz, gūz</w></mentioned>, <mentioned xml:lang="ku"><lang/>
-                        <w>əgviz, guviz, gujz</w></mentioned>,<mentioned xml:lang="sgh"><lang/>
-                        <w>ɣōz</w></mentioned>, <mentioned xml:lang="ps"><lang/>
-                        <w>ɣuz</w></mentioned>, <mentioned xml:lang="ydg"><lang/>
-                        <w>oɣuzo</w></mentioned>, <mentioned xml:lang="tr"><lang/>
-                        <w>koz</w></mentioned>, <mentioned xml:lang="hbo"><lang/>
-                        <w>egōz</w></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Hübschmann._Arm._Gr."/><biblScope>393</biblScope></bibl>).
-                    Исходная форма %igoz, koz%i. Начальное %in%i- (<mentioned xml:lang="os"><lang/>
-                        <w>æn-</w></mentioned>,<mentioned xml:lang="xcl"><lang/>
-                        <w>ən-</w></mentioned>, <mentioned xml:lang="ka"><lang/>
+                <etym xml:lang="ru">Ближайшие связи с <mentioned xml:id="mentioned_d5656e148" xml:lang="xcl"><lang/>
+                        <w>əngoyz</w></mentioned>, <mentioned xml:id="mentioned_d5656e153" xml:lang="xcl"><w>ənkoyz</w></mentioned> и <mentioned xml:id="mentioned_d5656e156" xml:lang="ka"><lang/>
+                        <w>nigozi</w></mentioned>, далее ср. <mentioned xml:id="mentioned_d5656e161" xml:lang="fa"><lang/>
+                        <w>gauz, göz, gūz</w></mentioned>, <mentioned xml:id="mentioned_d5656e166" xml:lang="ku"><lang/>
+                        <w>əgviz, guviz, gujz</w></mentioned>,<mentioned xml:id="mentioned_d5656e172" xml:lang="sgh"><lang/>
+                        <w>ɣōz</w></mentioned>, <mentioned xml:id="mentioned_d5656e177" xml:lang="ps"><lang/>
+                        <w>ɣuz</w></mentioned>, <mentioned xml:id="mentioned_d5656e182" xml:lang="ydg"><lang/>
+                        <w>oɣuzo</w></mentioned>, <mentioned xml:id="mentioned_d5656e187" xml:lang="tr"><lang/>
+                        <w>koz</w></mentioned>, <mentioned xml:id="mentioned_d5656e192" xml:lang="hbo"><lang/>
+                        <w>egōz</w></mentioned> (<bibl><ref type="bibl" target="#ref_Hübschmann._Arm._Gr."/><biblScope>393</biblScope></bibl>).
+                    Исходная форма %igoz, koz%i. Начальное %in%i- (<mentioned xml:id="mentioned_d5656e202" xml:lang="os"><lang/>
+                        <w>æn-</w></mentioned>,<mentioned xml:id="mentioned_d5656e207" xml:lang="xcl"><lang/>
+                        <w>ən-</w></mentioned>, <mentioned xml:id="mentioned_d5656e212" xml:lang="ka"><lang/>
                         <w>ni-</w></mentioned>) представляет наращение, возникшее на кавказской
                     почве; ср. <ref type="xr" target="#entry_ænʒalm"/>. В армянском есть и форма без
-                    этого наращения: %iguz%i (<bibl><ref type="bibl" target="#ref_Яф._сб."
-                            /><biblScope>VI 35</biblScope></bibl>). Связь с <mentioned
-                        xml:lang="xcl"><lang/>
+                    этого наращения: %iguz%i (<bibl><ref type="bibl" target="#ref_Яф._сб."/><biblScope>VI 35</biblScope></bibl>). Связь с <mentioned xml:id="mentioned_d5656e223" xml:lang="xcl"><lang/>
                         <w>angoužat</w>
                         <gloss><q>пахучая смола</q></gloss></mentioned>, ‘камедь’
-                            (<bibl><author>Bailey</author><ref type="bibl" target="#ref_BSOAS"
-                            /><biblScope>XX 50</biblScope></bibl>) семантически
-                            неправдоподобна.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>10</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_Hübschmann._Oss."
-                    /><biblScope>124</biblScope></bibl>.</etym>
-                <etym xml:lang="en">Its closest relations can be found in <mentioned xml:lang="xcl"><lang/>
-                        <w>əngoyz, ənkoyz</w></mentioned> and <mentioned xml:lang="ka"><lang/>
-                        <w>nigozi</w></mentioned>, compare further <mentioned xml:lang="fa"><lang/>
-                        <w>gauz, göz, gūz</w></mentioned>, <mentioned xml:lang="ku"><lang/>
-                        <w>əgviz, guviz, gujz</w></mentioned>,<mentioned xml:lang="sgh"><lang/>
-                        <w>ɣōz</w></mentioned>, <mentioned xml:lang="ps"><lang/>
-                        <w>ɣuz</w></mentioned>, <mentioned xml:lang="ydg"><lang/>
-                        <w>oɣuzo</w></mentioned>, <mentioned xml:lang="tr"><lang/>
-                        <w>koz</w></mentioned>, <mentioned xml:lang="hbo"><lang/>
-                        <w>egōz</w></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Hübschmann._Arm._Gr."/><biblScope>393</biblScope></bibl>).
-                    The initial form is %igoz, koz%i. The initial %in%i- (<mentioned xml:lang="os"><lang/>
-                        <w>æn-</w></mentioned>,<mentioned xml:lang="xcl"><lang/>
-                        <w>ən-</w></mentioned>, <mentioned xml:lang="ka"><lang/>
-                        <w>ni-</w></mentioned>) is augmentation of Caucasian origin; cf. <ref
-                        type="xr" target="#entry_ænʒalm"/>. In %bArmenian%b there is a form without
-                    this augmentation: %iguz%i (<bibl><ref type="bibl" target="#ref_Яф._сб."
-                            /><biblScope>VI 35</biblScope></bibl>). The relation with <mentioned
-                        xml:lang="xcl"><lang/>
+                            (<bibl><author>Bailey</author><ref type="bibl" target="#ref_BSOAS"/><biblScope>XX 50</biblScope></bibl>) семантически
+                            неправдоподобна.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>10</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>124</biblScope></bibl>.</etym>
+                <etym xml:lang="en">Its closest relations can be found in <mentioned xml:id="mentioned_d5656e248" xml:lang="xcl"><lang/>
+                        <w>əngoyz, ənkoyz</w></mentioned> and <mentioned xml:id="mentioned_d5656e253" xml:lang="ka"><lang/>
+                        <w>nigozi</w></mentioned>, compare further <mentioned xml:id="mentioned_d5656e258" xml:lang="fa"><lang/>
+                        <w>gauz, göz, gūz</w></mentioned>, <mentioned xml:id="mentioned_d5656e263" xml:lang="ku"><lang/>
+                        <w>əgviz, guviz, gujz</w></mentioned>,<mentioned xml:id="mentioned_d5656e268" xml:lang="sgh"><lang/>
+                        <w>ɣōz</w></mentioned>, <mentioned xml:id="mentioned_d5656e274" xml:lang="ps"><lang/>
+                        <w>ɣuz</w></mentioned>, <mentioned xml:id="mentioned_d5656e279" xml:lang="ydg"><lang/>
+                        <w>oɣuzo</w></mentioned>, <mentioned xml:id="mentioned_d5656e284" xml:lang="tr"><lang/>
+                        <w>koz</w></mentioned>, <mentioned xml:id="mentioned_d5656e289" xml:lang="hbo"><lang/>
+                        <w>egōz</w></mentioned> (<bibl><ref type="bibl" target="#ref_Hübschmann._Arm._Gr."/><biblScope>393</biblScope></bibl>).
+                    The initial form is %igoz, koz%i. The initial %in%i- (<mentioned xml:id="mentioned_d5656e298" xml:lang="os"><lang/>
+                        <w>æn-</w></mentioned>,<mentioned xml:id="mentioned_d5656e304" xml:lang="xcl"><lang/>
+                        <w>ən-</w></mentioned>, <mentioned xml:id="mentioned_d5656e309" xml:lang="ka"><lang/>
+                        <w>ni-</w></mentioned>) is augmentation of Caucasian origin; cf. <ref type="xr" target="#entry_ænʒalm"/>. In %bArmenian%b there is a form without
+                    this augmentation: %iguz%i (<bibl><ref type="bibl" target="#ref_Яф._сб."/><biblScope>VI 35</biblScope></bibl>). The relation with <mentioned xml:id="mentioned_d5656e320" xml:lang="xcl"><lang/>
                         <w>angoužat</w>
                         <gloss><q>fragrant raisin</q></gloss></mentioned>, ‘gum’
-                            (<bibl><author>Bailey</author><ref type="bibl" target="#ref_BSOAS"
-                            /><biblScope>XX 50</biblScope></bibl>) is semantically
-                            inappropriate.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>10</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_Hübschmann._Oss."
-                    /><biblScope>124</biblScope></bibl>.</etym>
+                            (<bibl><author>Bailey</author><ref type="bibl" target="#ref_BSOAS"/><biblScope>XX 50</biblScope></bibl>) is semantically
+                            inappropriate.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>10</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>124</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

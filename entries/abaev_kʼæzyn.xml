@@ -1,34 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">kʼæzyn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_kʼæzyn" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>kʼæzyn</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>kʼwæzun</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d4806e72"><abv:tr xml:lang="ru">
                         <q>заикаться</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>stutter</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4806e84">
                         <quote>ænækʼæzgæjæ ʒūry</quote>
                         <abv:tr xml:lang="ru">
                             <q>говорит не заикаясь</q>
@@ -40,34 +45,30 @@
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Звукоподражательное. Иран. %i*kwaz-%i, и.е. %i*k˳ag-%i
                     представляет, по-видимому, вариацию индоевропейского %i*k˳ak-%i, наличного в
-                    славянских (<mentioned xml:lang="sr"><lang/>
+                    славянских (<mentioned xml:id="mentioned_d4806e102" xml:lang="sr"><lang/>
                         <w>kvakati</w>
-                        <gloss><q>крякать</q></gloss></mentioned>, <mentioned xml:lang="ru"><lang/>
-                        <w>квакать</w></mentioned> и пр.), германских (<mentioned xml:lang="de"><lang/>
+                        <gloss><q>крякать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4806e110" xml:lang="ru"><lang/>
+                        <w>квакать</w></mentioned> и пр.), германских (<mentioned xml:id="mentioned_d4806e115" xml:lang="de"><lang/>
                         <w>quacken, quaken</w>
-                        <gloss><q>квакать</q></gloss></mentioned>, <mentioned xml:lang="de"><w/>
-                        <gloss><q>крякать</q></gloss></mentioned>, <mentioned xml:lang="de"
-                            ><w>quackeln</w>
+                        <gloss><q>квакать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4806e123" xml:lang="de"><w/>
+                        <gloss><q>крякать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4806e129" xml:lang="de"><w>quackeln</w>
                         <gloss><q>тараторить</q></gloss></mentioned> и пр.). Появление
                     смычно-гортанного %ikʼ%i — как в других звукоподражательных и экспрессивных
-                    словах (<bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                            /><biblScope>522—533</biblScope></bibl>).</etym>
+                    словах (<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>522—533</biblScope></bibl>).</etym>
                 <etym xml:lang="en">Onomatopoeic. Iranian %i*kwaz-%i, Indo-European %i*k˳ag-%i is
                     apparently a variant of Indo-European %i*k˳ak-%i, which is attested in Slavic
-                    languages (<mentioned xml:lang="sr"><lang/>
+                    languages (<mentioned xml:id="mentioned_d4806e144" xml:lang="sr"><lang/>
                         <w>kvakati</w>
-                        <gloss><q>quack</q></gloss></mentioned>, <mentioned xml:lang="ru"><lang/>
+                        <gloss><q>quack</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4806e152" xml:lang="ru"><lang/>
                         <w>kvakatʼ</w>
                         <gloss><q>croack</q></gloss></mentioned> etc.), in Germanic languages
-                        (<mentioned xml:lang="de"><lang/>
+                        (<mentioned xml:id="mentioned_d4806e160" xml:lang="de"><lang/>
                         <w>quacken, quaken</w>
-                        <gloss><q>croack</q></gloss></mentioned>, <mentioned xml:lang="de"><w/>
-                        <gloss><q>quack</q></gloss></mentioned>, <mentioned xml:lang="de"
-                            ><w>quackeln</w>
+                        <gloss><q>croack</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4806e168" xml:lang="de"><w/>
+                        <gloss><q>quack</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4806e174" xml:lang="de"><w>quackeln</w>
                         <gloss><q>gabble</q></gloss></mentioned> etc.). The emergence of an
                     obstruent guttural consonant %ikʼ%i is as in other onomatopoeic and expressive
-                    words (<bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                            /><biblScope>522—533</biblScope></bibl>).</etym>
+                    words (<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>522—533</biblScope></bibl>).</etym>
                 <note type="internal">хехе в примере каритив</note>
             </entry>
         </body>

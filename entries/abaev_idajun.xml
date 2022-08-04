@@ -1,35 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">idajun</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_idajun" xml:lang="os-x-digor">
-                <form type="lemma"><orth>idajun</orth><form type="participle"
-                        ><orth>idad</orth></form></form>
+                <form type="lemma"><orth>idajun</orth><form type="participle"><orth>idad</orth></form></form>
                 <usg><lang/></usg>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d1283e74"><abv:tr xml:lang="ru">
                         <q>начинать</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>to start</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d1283e86">
                         <quote>hæjda-ha, kæwun nijdajuj</quote>
                         <abv:tr xml:lang="ru">
                             <q>как начнет плакать</q>
@@ -39,7 +43,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>24</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1283e105">
                         <quote>destæ-tæmæstæ kænun sidajuj</quote>
                         <abv:tr xml:lang="ru">
                             <q>наначинает дивоваться</q>
@@ -53,33 +57,27 @@
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Старое сращение преверба %ivi%i- с глаголом %idā%i-
                     ‘устанавливать’, ‘основывать’, ‘давать начало’ и пр. (*%ivi-dā%i- → *%iida%i-),
-                    ср. <mentioned xml:lang="ae"><lang/>
+                    ср. <mentioned xml:id="mentioned_d1283e127" xml:lang="ae"><lang/>
                         <w>dā-</w>
-                        <gloss><q>устанавливать</q></gloss></mentioned>, <mentioned xml:lang="ae"><w/>
+                        <gloss><q>устанавливать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1283e135" xml:lang="ae"><w/>
                         <gloss><q>создавать</q></gloss></mentioned> и пр., %ivi-da%i- ‘делать’,
-                    ‘устанавливать’, ‘направлять’; <mentioned xml:lang="sa"><lang/>
+                    ‘устанавливать’, ‘направлять’; <mentioned xml:id="mentioned_d1283e141" xml:lang="sa"><lang/>
                         <w>dhā-</w>
-                        <gloss><q>устанавливать</q></gloss></mentioned>, <mentioned xml:lang="sa"
-                        ><w/></mentioned>, <mentioned xml:lang="sa"><w>vi-dhā-</w>
-                        <gloss><q>распределять</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
-                        <gloss><q>создавать</q></gloss></mentioned>. Ср. <ref type="xr"
-                        target="#entry_bajdajyn"/>, <ref type="xr"/>.%n<bibl/>; <bibl/>Gr.
+                        <gloss><q>устанавливать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1283e149" xml:lang="sa"><w/></mentioned>, <mentioned xml:id="mentioned_d1283e152" xml:lang="sa"><w>vi-dhā-</w>
+                        <gloss><q>распределять</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1283e159" xml:lang="sa"><w/>
+                        <gloss><q>создавать</q></gloss></mentioned>. Ср. <ref type="xr" target="#entry_bajdajyn"/>, <ref type="xr"/>.%n<bibl/>; <bibl/>Gr.
                     64.</etym>
                 <etym xml:lang="en">It is an old fusion of the preverb %ivi%i- with the verb %idā%i-
-                    ‘mount’, ‘establish’, ‘originate’ etc. (*%ivi-dā%i- → *%iida%i-), cf. <mentioned
-                        xml:lang="ae"><lang/>
+                    ‘mount’, ‘establish’, ‘originate’ etc. (*%ivi-dā%i- → *%iida%i-), cf. <mentioned xml:id="mentioned_d1283e177" xml:lang="ae"><lang/>
                         <w>dā-</w>
-                        <gloss><q>mount</q></gloss></mentioned>, <mentioned xml:lang="ae"><w/>
+                        <gloss><q>mount</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1283e185" xml:lang="ae"><w/>
                         <gloss><q>create</q></gloss></mentioned> etc., %ivi-da%i- ‘make’, ‘mount’,
-                    ‘direct’; <mentioned xml:lang="sa"><lang/>
+                    ‘direct’; <mentioned xml:id="mentioned_d1283e191" xml:lang="sa"><lang/>
                         <w>dhā-</w>
-                        <gloss><q>mount</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
-                        <gloss><q>originate</q></gloss></mentioned>, <mentioned xml:lang="sa"
-                            ><w>vi-dhā-</w>
-                        <gloss><q>spread</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
-                        <gloss><q>create</q></gloss></mentioned>. Cf. <ref type="xr"
-                        target="#entry_bajdajyn"/>, <ref type="xr" target="#entry_rajdajyn"
-                            />.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II
+                        <gloss><q>mount</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1283e199" xml:lang="sa"><w/>
+                        <gloss><q>originate</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1283e205" xml:lang="sa"><w>vi-dhā-</w>
+                        <gloss><q>spread</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1283e212" xml:lang="sa"><w/>
+                        <gloss><q>create</q></gloss></mentioned>. Cf. <ref type="xr" target="#entry_bajdajyn"/>, <ref type="xr" target="#entry_rajdajyn"/>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II
                             49</biblScope></bibl>; <bibl/>Gr. 64.</etym>
             </entry>
         </body>

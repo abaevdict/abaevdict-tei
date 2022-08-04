@@ -1,42 +1,47 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ægongæj</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ægongæj" xml:lang="os-x-iron">
                 <form type="lemma"><orth>ægongæj</orth></form>
                 <usg><lang/></usg>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d122e72"><sense xml:id="sense_d122e73"><abv:tr xml:lang="ru">
                             <q>не слушайся!</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>do not obey!</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d122e82"><abv:tr xml:lang="ru">
                             <q>не делай!</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>don't do it!</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d122e91"><abv:tr xml:lang="ru">
                             <q>неправда!</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>it's not true!</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d122e103">
                         <note type="comment" xml:lang="ru">Выражение, которым третье лицо,
                             вмешиваясь в разговор, запрещает или отрицает что-либо, сказанное одним
                             лицом другому. 1-е лицо 2-му:</note>
@@ -51,7 +56,7 @@
                             <q>give me araq (vodka)</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d122e124">
                         <note type="comment" xml:lang="ru">3-ье лицо:</note>
                         <note type="comment" xml:lang="en">3%rrd%r person:</note>
                         <quote>ægongæj, ma jyn radd, rasyg ū!</quote>
@@ -62,7 +67,7 @@
                             <q>no, don't give him, he's drunk</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d122e145">
                         <note type="comment" xml:lang="ru">1-е лицо 2-му:</note>
                         <note type="comment" xml:lang="en">1%rst%r person to 2%rnd%r:</note>
                         <quote>Gaʒbe rūʒyng asasta</quote>
@@ -73,7 +78,7 @@
                             <q>Gadzbe broke the window</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d122e166">
                         <note type="comment" xml:lang="ru">Гадзбе:</note>
                         <note type="comment" xml:lang="en">Gadzbe:</note>
                         <quote>ægongæj, æz næ wydtæn!</quote>
@@ -84,7 +89,7 @@
                             <q>no, it was not me</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d122e187">
                         <quote>dæwæn æj wæddær næ zæǧʒynæn. -— ægongæj! maxæn æj zæǧ</quote>
                         <abv:tr xml:lang="ru">
                             <q>тебе я этого все равно не скажу. — нет, нет! скажи это нам</q>
@@ -97,21 +102,16 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Из %iæ-kom-gæj%i, где <ref type="xr" target="#entry_æ-"/> —
-                    негативная частица, а %ikomgæj%i — деепричастная форма от <ref type="xr"
-                        target="#entry_komyn"/> ‘слушаться’, ‘повиноваться’; перебой %im%i → %in%i
-                    перед %ig%i как в <ref type="xr" target="#entry_ængom"/> из %iæmkom%i, <ref
-                        type="xr" target="#entry_ængæs"/> из %iæmkæs-%i, %iæ-komgæj (wæd)%i! „не
+                    негативная частица, а %ikomgæj%i — деепричастная форма от <ref type="xr" target="#entry_komyn"/> ‘слушаться’, ‘повиноваться’; перебой %im%i → %in%i
+                    перед %ig%i как в <ref type="xr" target="#entry_ængom"/> из %iæmkom%i, <ref type="xr" target="#entry_ængæs"/> из %iæmkæs-%i, %iæ-komgæj (wæd)%i! „не
                     надо слушаться, повиноваться!“. Деепричастные формы до сих пор охотно
-                    употребляются вместо императива: %icæwgæ!%i „ступай!“ (вм. %icu!%i). См. <ref
-                        type="xr" target="#entry_komyn"/>.</etym>
+                    употребляются вместо императива: %icæwgæ!%i „ступай!“ (вм. %icu!%i). См. <ref type="xr" target="#entry_komyn"/>.</etym>
                 <etym xml:lang="en">From %iæ-kom-gæj%i where <ref type="xr" target="#entry_æ-"/> is
-                    a negative particle and %ikomgæj%i is a converb from <ref type="xr"
-                        target="#entry_komyn"/> ‘hold by’, ‘obey’; the alternation %im%i → %in%i
+                    a negative particle and %ikomgæj%i is a converb from <ref type="xr" target="#entry_komyn"/> ‘hold by’, ‘obey’; the alternation %im%i → %in%i
                     before %ig%i is the same as in <ref type="xr" target="#entry_ængom"/> from
                     %iæmkom%i, <ref type="xr" target="#entry_ængæs"/> from %iæmkæs-%i, %iæ-komgæj
                     (wæd)%i! „don't obey!“. The converb forms are still readily used instead of the
-                    imperative: %icæwgæ!%i “go!” (instead of %icu!%i). See <ref type="xr"
-                        target="#entry_komyn"/>.</etym>
+                    imperative: %icæwgæ!%i “go!” (instead of %icu!%i). See <ref type="xr" target="#entry_komyn"/>.</etym>
             </entry>
         </body>
     </text>

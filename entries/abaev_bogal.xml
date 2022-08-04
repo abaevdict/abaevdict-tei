@@ -1,33 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">bogal</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_bogal" xml:lang="os">
                 <form type="lemma"><orth>bogal</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d901e69"><abv:tr xml:lang="ru">
                         <q>силач</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>strong man</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d901e81">
                         <quote>Ḱermen g˳yrʒyjy padcaxy bogaltyl fætyx ī</quote>
                         <abv:tr xml:lang="ru">
                             <q>Чермен одолел силачей грузинского царя</q>
@@ -36,7 +41,7 @@
                             <q>Chermen defeated Georgian king's strong men</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d901e96">
                         <quote>Barsægaty tyzmæg ænærcæf bogaltæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>суровые, не терпящие обиды богатыри Барсаговы</q>
@@ -44,27 +49,20 @@
                         <abv:tr xml:lang="en">
                             <q>severe, unoffendable Barsagov heroes</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Čerm."
-                            /><biblScope>120</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Čerm."/><biblScope>120</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Вероятно, из %iboǧ%i-%igal%i буквально ‘бугай-бык’. См. <ref
-                        type="xr" target="#entry_boǧ"/> и <ref type="xr" target="#entry_gal"/>. Ср.
-                    также <mentioned xml:lang="trk"><lang/>
-                        <w>bökä</w></mentioned> (<bibl><author>0</author><ref type="bibl"
-                            target="#ref_Радлов"/><biblScope>VI 1693</biblScope></bibl>), <mentioned
-                        xml:lang="mn"><lang/>
+                <etym xml:lang="ru">Вероятно, из %iboǧ%i-%igal%i буквально ‘бугай-бык’. См. <ref type="xr" target="#entry_boǧ"/> и <ref type="xr" target="#entry_gal"/>. Ср.
+                    также <mentioned xml:id="mentioned_d901e122" xml:lang="trk"><lang/>
+                        <w>bökä</w></mentioned> (<bibl><author>0</author><ref type="bibl" target="#ref_Радлов"/><biblScope>VI 1693</biblScope></bibl>), <mentioned xml:id="mentioned_d901e132" xml:lang="mn"><lang/>
                         <w>böx</w>
-                        <gloss><q>силач</q></gloss></mentioned>, <mentioned xml:lang="mn"><w/>
+                        <gloss><q>силач</q></gloss></mentioned>, <mentioned xml:id="mentioned_d901e141" xml:lang="mn"><w/>
                         <gloss><q>борец</q></gloss></mentioned>.</etym>
-                <etym xml:lang="en">Probably, from %iboǧ%i-%igal%i, literally ‘bull-ox’. See <ref
-                        type="xr" target="#entry_boǧ"/> and <ref type="xr" target="#entry_gal"/>.
-                    Cf. also <mentioned xml:lang="trk"><lang/>
-                        <w>bökä</w></mentioned> (<bibl><author>0</author><ref type="bibl"
-                            target="#ref_Радлов"/><biblScope>VI 1693</biblScope></bibl>), <mentioned
-                        xml:lang="mn"><lang/>
+                <etym xml:lang="en">Probably, from %iboǧ%i-%igal%i, literally ‘bull-ox’. See <ref type="xr" target="#entry_boǧ"/> and <ref type="xr" target="#entry_gal"/>.
+                    Cf. also <mentioned xml:id="mentioned_d901e154" xml:lang="trk"><lang/>
+                        <w>bökä</w></mentioned> (<bibl><author>0</author><ref type="bibl" target="#ref_Радлов"/><biblScope>VI 1693</biblScope></bibl>), <mentioned xml:id="mentioned_d901e164" xml:lang="mn"><lang/>
                         <w>böx</w>
-                        <gloss><q>strong man</q></gloss></mentioned>, <mentioned xml:lang="mn"><w/>
+                        <gloss><q>strong man</q></gloss></mentioned>, <mentioned xml:id="mentioned_d901e173" xml:lang="mn"><w/>
                         <gloss><q>fighter</q></gloss></mentioned>.</etym>
             </entry>
         </body>

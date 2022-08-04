@@ -1,41 +1,46 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">færsmæ</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_færsmæ" xml:lang="os">
                 <form type="lemma"><orth>færsmæ</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d3927e69"><sense xml:id="sense_d3927e70"><abv:tr xml:lang="ru">
                             <q>боком</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>sideways</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d3927e79"><abv:tr xml:lang="ru">
                             <q>наискось</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>aslant</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d3927e88"><abv:tr xml:lang="ru">
                             <q>в сторону</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>to the side</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d3927e100" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>tikis … æ bicʼotæ niffærsmitæ kodta</quote>
                         <abv:tr xml:lang="ru">
@@ -48,16 +53,11 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Направительный падеж от <ref type="xr" target="#entry_fars"/>
-                    ‘бок’, ‘сторона’ с ослаблением гласного основы %iа%i → %iæ%i (ср. <ref type="xr"
-                        target="#entry_rast"/> || <ref type="xr" target="#entry_ræstmæ"/> и др.).
-                    Такое же образование, но без ослабления гласного (<ref type="xr"
-                        target="#entry_farsmæ"/>) получило значение ‘рядом’, ‘возле’. См. <ref
-                        type="xr" target="#entry_fars"/>.</etym>
+                    ‘бок’, ‘сторона’ с ослаблением гласного основы %iа%i → %iæ%i (ср. <ref type="xr" target="#entry_rast"/> || <ref type="xr" target="#entry_ræstmæ"/> и др.).
+                    Такое же образование, но без ослабления гласного (<ref type="xr" target="#entry_farsmæ"/>) получило значение ‘рядом’, ‘возле’. См. <ref type="xr" target="#entry_fars"/>.</etym>
                 <etym xml:lang="en">An allative case from <ref type="xr" target="#entry_fars"/>
-                    ‘side’ with the stem vowel weakening %iа%i → %iæ%i (cf. <ref type="xr"
-                        target="#entry_rast"/> || <ref type="xr" target="#entry_ræstmæ"/> etc.). The
-                    word with the same derivation pattern, but without the vowel weakening (<ref
-                        type="xr" target="#entry_farsmæ"/>) received the meaning ‘next’, ‘near’. See
+                    ‘side’ with the stem vowel weakening %iа%i → %iæ%i (cf. <ref type="xr" target="#entry_rast"/> || <ref type="xr" target="#entry_ræstmæ"/> etc.). The
+                    word with the same derivation pattern, but without the vowel weakening (<ref type="xr" target="#entry_farsmæ"/>) received the meaning ‘next’, ‘near’. See
                         <ref type="xr" target="#entry_fars"/>.</etym>
             </entry>
         </body>

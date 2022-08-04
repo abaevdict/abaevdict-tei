@@ -1,34 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ajdæn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ajdæn" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>ajdæn</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>ajdanæ</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d421e72"><abv:tr xml:lang="ru">
                         <q>зеркало</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>mirror</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d421e84">
                         <quote>ḱyzg kæsyn bajdydta ajdæny</quote>
                         <abv:tr xml:lang="ru">
                             <q>девушка стала глядеть в зеркало</q>
@@ -38,7 +43,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Munk."/><biblScope>96</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d421e103">
                         <quote>arvy ajdæn lystæg pyrx nycci</quote>
                         <abv:tr xml:lang="ru">
                             <q>небесное зеркало разбилось вдребезги</q>
@@ -49,7 +54,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>III
                             63</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d421e122">
                         <quote>xūry ajdæn rajsta kʼūlæj æmæ ʒy kæsy</quote>
                         <abv:tr xml:lang="ru">
                             <q>сняла со стены солнечное зеркало и смотрит в него</q>
@@ -61,7 +66,7 @@
                         <bibl><ref type="bibl" target="#src_ЮОПам."/><biblScope>II
                             58</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d421e141">
                         <quote>arvy ajdæny arǧaw</quote>
                         <abv:tr xml:lang="ru">
                             <q>сказка о небесном зеркале</q>
@@ -72,7 +77,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>IV
                             93</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d421e160" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>stur ajdænæ ærttevæntæ kodta xormæ</quote>
                         <abv:tr xml:lang="ru">
@@ -84,55 +89,43 @@
                         <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>119</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Восходит к <mentioned xml:lang="ira"><lang/>
-                        <w>*ā-dayana-</w></mentioned> от <mentioned xml:lang="ira"><lang/>
-                        <w>dī</w></mentioned>, <mentioned xml:lang="ira"><w>day-</w>
-                        <gloss><q>глядеть</q></gloss></mentioned> („гляделка“); ср. <mentioned
-                        xml:lang="x-balochi"><lang/>
-                        <w>ādēn</w></mentioned>, <mentioned xml:lang="x-balochi"
-                        ><w>ādēnk</w></mentioned>, <mentioned xml:lang="pal"><lang/>
-                        <w>āδēnak</w></mentioned>, <mentioned xml:lang="pal"><w>ādēng</w><note
-                            type="comment" xml:lang="ru"> (<bibl><ref type="bibl" target="#ref_BSOS"
-                                    /><biblScope>IX 77</biblScope></bibl>)</note></mentioned>,
-                        <mentioned xml:lang="sog"><lang/>
-                        <w>āδēnak(''δ'yn'k)</w></mentioned>, <mentioned xml:lang="kho"><lang/>
-                        <w>āyəna</w></mentioned>, <mentioned xml:lang="kho"><w>ātīna</w></mentioned>
-                    (ср. также <mentioned xml:lang="kho"><lang/>
+                <etym xml:lang="ru">Восходит к <mentioned xml:id="mentioned_d421e185" xml:lang="ira"><lang/>
+                        <w>*ā-dayana-</w></mentioned> от <mentioned xml:id="mentioned_d421e190" xml:lang="ira"><lang/>
+                        <w>dī</w></mentioned>, <mentioned xml:id="mentioned_d421e195" xml:lang="ira"><w>day-</w>
+                        <gloss><q>глядеть</q></gloss></mentioned> („гляделка“); ср. <mentioned xml:id="mentioned_d421e201" xml:lang="x-balochi"><lang/>
+                        <w>ādēn</w></mentioned>, <mentioned xml:id="mentioned_d421e206" xml:lang="x-balochi"><w>ādēnk</w></mentioned>, <mentioned xml:id="mentioned_d421e210" xml:lang="pal"><lang/>
+                        <w>āδēnak</w></mentioned>, <mentioned xml:id="mentioned_d421e215" xml:lang="pal"><w>ādēng</w><note type="comment" xml:lang="ru"> (<bibl><ref type="bibl" target="#ref_BSOS"/><biblScope>IX 77</biblScope></bibl>)</note></mentioned>,
+                        <mentioned xml:id="mentioned_d421e224" xml:lang="sog"><lang/>
+                        <w>āδēnak(''δ'yn'k)</w></mentioned>, <mentioned xml:id="mentioned_d421e229" xml:lang="kho"><lang/>
+                        <w>āyəna</w></mentioned>, <mentioned xml:id="mentioned_d421e234" xml:lang="kho"><w>ātīna</w></mentioned>
+                    (ср. также <mentioned xml:id="mentioned_d421e237" xml:lang="kho"><lang/>
                         <w>dyāna</w>
-                        <gloss><q>видимый</q></gloss></mentioned>), <mentioned xml:lang="fa"><lang/>
+                        <gloss><q>видимый</q></gloss></mentioned>), <mentioned xml:id="mentioned_d421e246" xml:lang="fa"><lang/>
                         <w>āyīna</w></mentioned>. Звуковая история слова может быть уточнена
-                    привлечением таких случаев стяжения группы %iауа%i, как <ref type="xr"
-                        target="#entry_fijjaw"/> ‘пастух’ из %ifæjau%i, fæstijæ ‘сзади’ из
+                    привлечением таких случаев стяжения группы %iауа%i, как <ref type="xr" target="#entry_fijjaw"/> ‘пастух’ из %ifæjau%i, fæstijæ ‘сзади’ из
                     %ifæstæjæ%i, %izærdijæn%i ‘сердцу’ из %izærdæjæn%i, %iærtijæn%i ‘трем’ из
                     %iærtæjæn%i и т. п.; по аналогии с этими случаями предполагаем: *%iādayana%i
                     →*%iadæjæn%i → *%iadijæn%i → *%iadjæn%i → %iajdæn%i. Из *%iādaina%i
-                            (<bibl><author>Benveniste</author><ref type="bibl" target="#ref_BSL"
-                            /><biblScope>LII 9</biblScope></bibl>) имели бы *%iadīn%i, как из
+                            (<bibl><author>Benveniste</author><ref type="bibl" target="#ref_BSL"/><biblScope>LII 9</biblScope></bibl>) имели бы *%iadīn%i, как из
                     %iaxšaina%i- → <ref type="xr" target="#entry_æxsīn"/>.</etym>
-                <etym xml:lang="en">It traces back to <mentioned xml:lang="ira"><lang/>
-                        <w>*ā-dayana-</w></mentioned> from <mentioned xml:lang="ira"><lang/>
-                        <w>dī</w></mentioned>, <mentioned xml:lang="ira"><w>day-</w>
-                        <gloss><q>look</q></gloss></mentioned>(“looker”): <mentioned
-                        xml:lang="x-balochi"><lang/>
-                        <w>ādēn</w></mentioned>, <mentioned xml:lang="x-balochi"
-                        ><w>ādēnk</w></mentioned>, <mentioned xml:lang="pal"><lang/>
-                        <w>āδēnak</w></mentioned>, <mentioned xml:lang="pal"><w>ādēng</w><note
-                            type="comment" xml:lang="en"> (<bibl><ref type="bibl" target="#ref_BSOS"
-                                    /><biblScope>IX 77</biblScope></bibl>)</note></mentioned>,
-                        <mentioned xml:lang="sog"><lang/>
-                        <w>āδēnak(ˈˈδ'ynyk)</w></mentioned>, <mentioned xml:lang="kho"><lang/>
-                        <w>āyəna</w></mentioned>, <mentioned xml:lang="kho"><w>ātīna</w></mentioned>
-                    (cf. also <mentioned xml:lang="kho"><lang/>
+                <etym xml:lang="en">It traces back to <mentioned xml:id="mentioned_d421e264" xml:lang="ira"><lang/>
+                        <w>*ā-dayana-</w></mentioned> from <mentioned xml:id="mentioned_d421e269" xml:lang="ira"><lang/>
+                        <w>dī</w></mentioned>, <mentioned xml:id="mentioned_d421e274" xml:lang="ira"><w>day-</w>
+                        <gloss><q>look</q></gloss></mentioned>(“looker”): <mentioned xml:id="mentioned_d421e280" xml:lang="x-balochi"><lang/>
+                        <w>ādēn</w></mentioned>, <mentioned xml:id="mentioned_d421e285" xml:lang="x-balochi"><w>ādēnk</w></mentioned>, <mentioned xml:id="mentioned_d421e289" xml:lang="pal"><lang/>
+                        <w>āδēnak</w></mentioned>, <mentioned xml:id="mentioned_d421e294" xml:lang="pal"><w>ādēng</w><note type="comment" xml:lang="en"> (<bibl><ref type="bibl" target="#ref_BSOS"/><biblScope>IX 77</biblScope></bibl>)</note></mentioned>,
+                        <mentioned xml:id="mentioned_d421e303" xml:lang="sog"><lang/>
+                        <w>āδēnak(ˈˈδ'ynyk)</w></mentioned>, <mentioned xml:id="mentioned_d421e308" xml:lang="kho"><lang/>
+                        <w>āyəna</w></mentioned>, <mentioned xml:id="mentioned_d421e313" xml:lang="kho"><w>ātīna</w></mentioned>
+                    (cf. also <mentioned xml:id="mentioned_d421e316" xml:lang="kho"><lang/>
                         <w>dyāna</w>
-                        <gloss><q>visible</q></gloss></mentioned>), <mentioned xml:lang="fa"><lang/>
+                        <gloss><q>visible</q></gloss></mentioned>), <mentioned xml:id="mentioned_d421e325" xml:lang="fa"><lang/>
                         <w>āyīna</w></mentioned>. The sound history of the word can be refined by
-                    invoking such cases of contraction of the %iaya%i group as <ref type="xr"
-                        target="#entry_fijjaw"/> ‘shepherd’ from %ifæjau%i, %ifæstijæ%i ‘behind’
+                    invoking such cases of contraction of the %iaya%i group as <ref type="xr" target="#entry_fijjaw"/> ‘shepherd’ from %ifæjau%i, %ifæstijæ%i ‘behind’
                     from %ifæstæjæ%i, %izærdijæn%i ‘heart (dat)’ from %izærdæjæn%i, %iærtijæn%i
                     ‘three (dat)’ from %iærtæjæn%i and so on; by analogy with these cases, we
                     assume: *%iādayana%i →*%iadæjæn%i → *%iadijæn%i → *%iadjæn%i → %iajdæn%i. From
-                    *%iādaina%i (<bibl><author>Benveniste</author><ref type="bibl" target="#ref_BSL"
-                            /><biblScope>LII 9</biblScope></bibl>) we would have had *%iadīn%i, as
+                    *%iādaina%i (<bibl><author>Benveniste</author><ref type="bibl" target="#ref_BSL"/><biblScope>LII 9</biblScope></bibl>) we would have had *%iadīn%i, as
                     from %iaxšaina%i- → <ref type="xr" target="#entry_æxsīn"/>.</etym>
             </entry>
         </body>

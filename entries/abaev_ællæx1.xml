@@ -1,32 +1,37 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ællæx1</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ællæx1" xml:lang="os">
                 <form type="lemma"><orth>ællæx!</orth></form>
-                <sense><def xml:lang="ru">восклицание боли, ужаса; при удвоении (%iællæx-ællæx!%i)
+                <sense xml:id="sense_d3610e69"><def xml:lang="ru">восклицание боли, ужаса; при удвоении (%iællæx-ællæx!%i)
                         также удивления, иронии и пр</def><def xml:lang="en">an exclamation of pain
                         or horror; with reduplication (%iællæx-ællæx!%i) also of surprise, irony
                         etc</def></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d3610e77">
                         <quote>ællæx! amardta mæ!</quote>
                         <abv:tr xml:lang="ru">
                             <q>аллах! он убил меня!</q>
@@ -36,24 +41,18 @@
                         </abv:tr>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из <mentioned xml:lang="ar" extralang="fa"><lang/>
+                <etym xml:lang="ru">Из <mentioned xml:id="mentioned_d3610e95" xml:lang="ar" extralang="fa"><lang/>
                         <w>allāh</w>
-                        <gloss><q>Бог</q></gloss></mentioned>, <mentioned xml:lang="ar"
-                        extralang="fa"><w>allāh-allāh</w>
+                        <gloss><q>Бог</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3610e103" xml:lang="ar" extralang="fa"><w>allāh-allāh</w>
                         <gloss><q>о, боже!</q></gloss></mentioned> Распространено по всему
                     мусульманскому миру. В осетинском сошло на роль междометия и в значении ‘Бог’ не
-                    употребляется (см. <ref type="xr" target="#entry_x0ycaw"/>).%n<bibl><ref
-                            type="bibl" target="#ref_ОЯФ_I"
-                    /><biblScope>194</biblScope></bibl>.</etym>
-                <etym xml:lang="en">From <mentioned xml:lang="ar" extralang="fa"><lang/>
+                    употребляется (см. <ref type="xr" target="#entry_x0ycaw"/>).%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>194</biblScope></bibl>.</etym>
+                <etym xml:lang="en">From <mentioned xml:id="mentioned_d3610e118" xml:lang="ar" extralang="fa"><lang/>
                         <w>allāh</w>
-                        <gloss><q>God</q></gloss></mentioned>, <mentioned xml:lang="ar"
-                        extralang="fa"><w>allāh-allāh</w>
+                        <gloss><q>God</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3610e126" xml:lang="ar" extralang="fa"><w>allāh-allāh</w>
                         <gloss><q>oh God!</q></gloss></mentioned> Widespread throughout the Muslim
                     world. In Ossetic, this word has reduced to the role of interjection and is not
-                    used in the meaning ‘God’ (see <ref type="xr" target="#entry_x0ycaw"
-                            />).%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                            /><biblScope>194</biblScope></bibl>.</etym>
+                    used in the meaning ‘God’ (see <ref type="xr" target="#entry_x0ycaw"/>).%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>194</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

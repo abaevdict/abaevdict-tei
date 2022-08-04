@@ -1,50 +1,55 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">fīdæn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_fīdæn" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>fīdæn</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>fedæn</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d5558e72"><sense xml:id="sense_d5558e73"><abv:tr xml:lang="ru">
                             <q>будущее</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>future</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d5558e82"><abv:tr xml:lang="ru">
                             <q>будущий год</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>future year</q>
                         </abv:tr></sense></sense>
-                <re>
+                <re xml:id="re_d5558e92">
                     <form type="lemma"><orth>fīdænmæ</orth></form>
-                    <sense><sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d5558e97"><sense xml:id="sense_d5558e98"><abv:tr xml:lang="ru">
                                 <q>до будущего года</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>till the next year</q>
-                            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                            </abv:tr></sense><sense xml:id="sense_d5558e107"><abv:tr xml:lang="ru">
                                 <q>в будущем году</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>in the next year</q>
                             </abv:tr></sense></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d5558e120">
                         <quote>cy wyʒæn næ fīdæn?</quote>
                         <abv:tr xml:lang="ru">
                             <q>каким будет наше будущее?</q>
@@ -54,7 +59,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>31</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5558e139">
                         <quote>wæ fīdænmæ færnygdær wat!</quote>
                         <abv:tr xml:lang="ru">
                             <q>к будущему году да будете вы еще обильнее фарном!</q>
@@ -62,10 +67,9 @@
                         <abv:tr xml:lang="en">
                             <q>may you have even more farn for the next year!</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"
-                            /><biblScope>109</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>109</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5558e158">
                         <quote>fīdæn abon wyl qælʒægdæræj ærcæwæd!</quote>
                         <abv:tr xml:lang="ru">
                             <q>в будущем году этот день да встретите вы еще веселее!</q>
@@ -78,13 +82,11 @@
                 <etym xml:lang="ru">Может быть, от <ref type="xr" target="#entry_fīdyn"/> |
                     %ifedun%i ‘платить’ в смысле „время расплаты“, „время расчетов“. Такое
                     образование могло возникнуть в условиях военно-дружинного быта: „будущее“ =
-                    „время расплаты с дружиной“%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                            /><biblScope>165</biblScope></bibl>.</etym>
+                    „время расплаты с дружиной“%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>165</biblScope></bibl>.</etym>
                 <etym xml:lang="en">Maybe, from <ref type="xr" target="#entry_fīdyn"/> | %ifedun%i
                     ‘pay’ in the sense ‘time of payment’. Such meaning might have arisen in the
                     conditions of military life: “future” = “time of payment for a militia
-                            unit”.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                            /><biblScope>165</biblScope></bibl>.</etym>
+                            unit”.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>165</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

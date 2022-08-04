@@ -1,35 +1,40 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">Alardy</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_Alardy" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>Alardy</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>Alaurdi</orth></form>
-                <sense><def xml:lang="ru">название одного из осетинских дзуаров („божеств“). Культ
+                <sense xml:id="sense_d774e72"><def xml:lang="ru">название одного из осетинских дзуаров („божеств“). Культ
                         Аларды в Осетии связан с древним ритуалом „очищения“ от эпидемических
                         заболеваний, специально — оспы</def><def xml:lang="en">the name of one of
                         the Ossetic %idzwar%is (“deities”). The cult of Alardy in Ossetia is
                         associated with the ancient ritual of “cleansing” from epidemic diseases,
                         especially smallpox</def></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d774e80">
                         <quote>wæd wælarvæj k˳y ʽrcæjcæwy næ syǧzærin syrx Alardy</quote>
                         <abv:tr xml:lang="ru">
                             <q>вот спускается с неба наш золотой красный Аларды</q>
@@ -39,10 +44,9 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_ЮОПам."/><biblScope>II
                             103</biblScope></bibl>
-                        <bibl><biblScope xml:lang="ru">из песни Аларды</biblScope><biblScope
-                                xml:lang="en">from the song Alardy</biblScope></bibl>
+                        <bibl><biblScope xml:lang="ru">из песни Аларды</biblScope><biblScope xml:lang="en">from the song Alardy</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d774e105">
                         <quote>wæ, Alardy, dæ ḱʼyldymmæ dyn kūvʒystæm, de ʽrgom næm ma
                             razdax</quote>
                         <abv:tr xml:lang="ru">
@@ -54,7 +58,7 @@
                                 face to us</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d774e120" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>Ʒandari ǧæw Alaurdijy bærægbænttæ kodtoncæ</quote>
                         <abv:tr xml:lang="ru">
@@ -65,7 +69,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_LQ"/><biblScope>40</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d774e142" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>(næ kuvd) Alaurdijæn barst fæwwæd</quote>
                         <abv:tr xml:lang="ru">
@@ -74,8 +78,7 @@
                         <abv:tr xml:lang="en">
                             <q>may our prayer please Alaurdi</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Диг._сказ."
-                            /><biblScope>62</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Диг._сказ."/><biblScope>62</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Название %iAlardy%i, как и названия большинства осетинских
@@ -86,21 +89,18 @@
                     в том числе много больных, приезжавших в надежде получить исцеление от
                     „святого“.%r1%r В пользу происхождения %iAlardy%i из Алаверды говорит в
                     особенности дигорская форма %iAlaurdi%i. Для переноса названия местности на
-                    название божества ср. хотя бы <mentioned xml:lang="os"><lang/>
+                    название божества ср. хотя бы <mentioned xml:id="mentioned_d774e167" xml:lang="os"><lang/>
                         <w>Tætærtupp</w></mentioned> (название местности → название дзуара) или
-                        <mentioned xml:lang="grc"><lang/>
+                        <mentioned xml:id="mentioned_d774e172" xml:lang="grc"><lang/>
                         <w>Κύπρις</w>
                         <gloss><q>Киприда</q></gloss></mentioned>. У осетин и грузин-мохевцев
                     Дарьяльского ущелья праздник %iAlardy%i совпадает с днем Иоанна Крестителя, что
                     позволяет думать, что именно на последнего были перенесены черты древнего
                     божества, одновременно и насылающего болезнь и исцеляющего от нее. Известно, что
                     в христианской народной традиции за Иоанном Крестителем закрепилась репутация
-                    святого-целителя. %r2%r Типологическим двойником <mentioned xml:lang="os"><lang/>
-                        <w>Alardy</w></mentioned> является <mentioned xml:lang="ab"><lang/>
-                        <w>Aq̇ǝ́ Zəsħàn</w></mentioned>.%r3%r %n%n<bibl><ref type="bibl"
-                            target="#ref_ZDMG"/><biblScope>XLII 418</biblScope></bibl>. — <bibl><ref
-                            type="bibl" target="#ref_ОЯФ_I"
-                    /><biblScope>93</biblScope></bibl>.</etym>
+                    святого-целителя. %r2%r Типологическим двойником <mentioned xml:id="mentioned_d774e180" xml:lang="os"><lang/>
+                        <w>Alardy</w></mentioned> является <mentioned xml:id="mentioned_d774e185" xml:lang="ab"><lang/>
+                        <w>Aq̇ǝ́ Zəsħàn</w></mentioned>.%r3%r %n%n<bibl><ref type="bibl" target="#ref_ZDMG"/><biblScope>XLII 418</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>93</biblScope></bibl>.</etym>
                 <etym xml:lang="en">The name %iAlardy%i, like the names of most Ossetic %idzwar%is,
                     is incomparably younger than the cult associated with it. According to R.
                     Stackelberg's opinion, shared by us as well, it comes from the name of the
@@ -109,9 +109,8 @@
                     attracting many pilgrims, including many sick people who came in hope receive
                     healing from a “saint”.%r1%r Especially the Digor form %iAlaurdi%i speaks in
                     favor of the fact that %iAlardy%i originated from Alaverdy. For the transfer of
-                    an area name to a deity name, cf. at least <mentioned xml:lang="os"><lang/>
-                        <w>Tætærtupp</w></mentioned> (area name → %idzwar%i name) or <mentioned
-                        xml:lang="grc"><lang/>
+                    an area name to a deity name, cf. at least <mentioned xml:id="mentioned_d774e203" xml:lang="os"><lang/>
+                        <w>Tætærtupp</w></mentioned> (area name → %idzwar%i name) or <mentioned xml:id="mentioned_d774e208" xml:lang="grc"><lang/>
                         <w>Κύπρις</w>
                         <gloss><q>Cypris, Aphrodite</q></gloss></mentioned>. Among the Ossetic
                     people and Georgians-Mokhevites of the Darial Gorge, the %iAlardy%i holiday
@@ -119,12 +118,9 @@
                     ancient deity were transferred onto the latter, simultaneously sending illness
                     and healing from it. It is known that in the Christian folk tradition John the
                     Baptist has a reputation as a healer saint.%r2%r%n A typological twin of
-                        <mentioned xml:lang="os"><lang/>
-                        <w>Alardy</w></mentioned> is <mentioned xml:lang="ab"><lang/>
-                        <w>Aq̇ǝ́ Zəsħàn</w></mentioned>.%r3%r %n<bibl><ref type="bibl"
-                            target="#ref_ZDMG"/><biblScope>XLII 418</biblScope></bibl>. — <bibl><ref
-                            type="bibl" target="#ref_ОЯФ_I"
-                    /><biblScope>93</biblScope></bibl>.</etym>
+                        <mentioned xml:id="mentioned_d774e216" xml:lang="os"><lang/>
+                        <w>Alardy</w></mentioned> is <mentioned xml:id="mentioned_d774e221" xml:lang="ab"><lang/>
+                        <w>Aq̇ǝ́ Zəsħàn</w></mentioned>.%r3%r %n<bibl><ref type="bibl" target="#ref_ZDMG"/><biblScope>XLII 418</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>93</biblScope></bibl>.</etym>
                 <note type="footnote" xml:lang="ru" n="1">См. юбилейный сборник в честь В. Ф.
                     Миллера (1930, стр. 22). Об „Алавердском празднике“ 14 сентября см. также
                     „Невский альманах“ (1829).</note>
@@ -145,8 +141,7 @@
                             т. IV, вып. I, стр. 111 сл.</biblScope><biblScope xml:lang="en">%bХр.
                             Вост., v. IV, issue. I, p. 111 ff.%b</biblScope></bibl></note>
                 <note type="footnote" xml:lang="en" n="3"><bibl><biblScope xml:lang="ru">Хр. Вост.,
-                            т. IV, вып. I, стр. 111 сл.</biblScope><biblScope xml:lang="en"
-                            >Xristianskij Vostok, IV (1), pp. 111ff.</biblScope></bibl></note>
+                            т. IV, вып. I, стр. 111 сл.</biblScope><biblScope xml:lang="en">Xristianskij Vostok, IV (1), pp. 111ff.</biblScope></bibl></note>
             </entry>
         </body>
     </text>

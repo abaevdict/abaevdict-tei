@@ -1,42 +1,47 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">k0y</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_k0y" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>k˳y</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>ku</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d5155e72"><sense xml:id="sense_d5155e73"><abv:tr xml:lang="ru">
                             <q>когда</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>when</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d5155e82"><abv:tr xml:lang="ru">
                             <q>если</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>if</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d5155e91"><abv:tr xml:lang="ru">
                             <q>если бы</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>if only</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d5155e103">
                         <quote>mīt īw k˳y waryd, wæd īw nyzzaryd kʼæʒæx lægæty</quote>
                         <abv:tr xml:lang="ru">
                             <q>когда шел снег, он распевал в пещере под скалой</q>
@@ -46,7 +51,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>48</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5155e122">
                         <quote>k˳y bambæxsaj baræj, wæd ūsy kærdæny myggagmæ fæxæt</quote>
                         <abv:tr xml:lang="ru">
                             <q>если ты спрячешься умышленно, то ходи весь век в женском платке</q>
@@ -57,7 +62,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>42</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5155e141">
                         <note type="comment" xml:lang="ru">при оптативе: </note>
                         <note type="comment" xml:lang="en">with optative: </note>
                         <quote>k˳y ravdīsis dæxī!</quote>
@@ -67,10 +72,9 @@
                         <abv:tr xml:lang="en">
                             <q>Oh, if only you showed up!</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"
-                            /><biblScope>110</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>110</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5155e167">
                         <note type="comment" xml:lang="ru">%ik˳y%i … %ik˳y%i ‘то … то’: </note>
                         <note type="comment" xml:lang="en">%ik˳y%i … %ik˳y%i ‘sometimes …
                             sometimes’: </note>
@@ -86,72 +90,58 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Восходит к иран. %i*ku-%i, вопросительной частице, обычно со
-                    значением ‘где’; ср. <mentioned xml:lang="fa"><lang/>
-                        <w>kū</w></mentioned> (<bibl><ref type="bibl" target="#ref_GIPh."
-                            /><biblScope>II 164</biblScope></bibl>), <mentioned xml:lang="prc"><lang/>
+                    значением ‘где’; ср. <mentioned xml:id="mentioned_d5155e196" xml:lang="fa"><lang/>
+                        <w>kū</w></mentioned> (<bibl><ref type="bibl" target="#ref_GIPh."/><biblScope>II 164</biblScope></bibl>), <mentioned xml:id="mentioned_d5155e205" xml:lang="prc"><lang/>
                         <w>ku</w>
                         <gloss><q>где</q></gloss></mentioned>
                             (<bibl><author>Morgenstierne</author><biblScope>HFL I
-                        263</biblScope></bibl>), <mentioned xml:lang="yai"><lang/>
+                        263</biblScope></bibl>), <mentioned xml:id="mentioned_d5155e217" xml:lang="yai"><lang/>
                         <w>kū</w>
-                        <gloss><q>где</q></gloss></mentioned>, <mentioned xml:lang="yai"><w/>
-                        <gloss><q>куда</q></gloss></mentioned>, <mentioned xml:lang="yai"
-                            ><w>čikū</w>
-                        <gloss><q>откуда</q></gloss></mentioned>, <mentioned xml:lang="sog"><lang/>
+                        <gloss><q>где</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5155e226" xml:lang="yai"><w/>
+                        <gloss><q>куда</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5155e232" xml:lang="yai"><w>čikū</w>
+                        <gloss><q>откуда</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5155e238" xml:lang="sog"><lang/>
                         <w>*kū(kw)</w>
-                        <gloss><q>где</q></gloss></mentioned>, <mentioned xml:lang="kho"><lang/>
+                        <gloss><q>где</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5155e246" xml:lang="kho"><lang/>
                         <w>ku</w>
-                        <gloss><q>где</q></gloss></mentioned>, <mentioned xml:lang="kho"><w/>
-                        <gloss><q>когда</q></gloss></mentioned>, <mentioned xml:lang="kho"><w/>
+                        <gloss><q>где</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5155e254" xml:lang="kho"><w/>
+                        <gloss><q>когда</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5155e260" xml:lang="kho"><w/>
                         <gloss><q>если</q></gloss></mentioned> (как связка придаточного
-                    предложения), <mentioned xml:lang="ae"><lang/>
-                        <w>ḱū</w></mentioned>, <mentioned xml:lang="sa"><lang/>
+                    предложения), <mentioned xml:id="mentioned_d5155e267" xml:lang="ae"><lang/>
+                        <w>ḱū</w></mentioned>, <mentioned xml:id="mentioned_d5155e272" xml:lang="sa"><lang/>
                         <w>kū</w></mentioned> id. — По употреблению осетинский особенно близок к
                     сакскому. Пространственное значение отчетливо выступает в дигорском %ikumæ%i
-                    ‘куда’, представляющем направительный падеж от %iku%i; ср. также <ref type="xr"
-                        target="#entry_īsk0y"/> ‘где-либо’, <ref type="xr" target="#entry_nīk0y"/>
-                    ‘нигде’. С течением времени в значении ‘где’ утвердилось <ref type="xr"
-                        target="#entry_kæm"/> | %ikæmi%i (др.иран. %ikahmi%i), а %ik˳y%i | %iku%i
+                    ‘куда’, представляющем направительный падеж от %iku%i; ср. также <ref type="xr" target="#entry_īsk0y"/> ‘где-либо’, <ref type="xr" target="#entry_nīk0y"/>
+                    ‘нигде’. С течением времени в значении ‘где’ утвердилось <ref type="xr" target="#entry_kæm"/> | %ikæmi%i (др.иран. %ikahmi%i), а %ik˳y%i | %iku%i
                     получило преобладающее употребление при временных и условных придаточных
                     предложениях. — Ср. <ref type="xr" target="#entry_k0yd"/> | %ikud%i
-                            ‘как’.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"
-                            /><biblScope>II 57</biblScope></bibl>; <bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._Gr."/><biblScope>18, 86, 87</biblScope></bibl>.
-                    — <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."
-                            /><biblScope>45</biblScope></bibl>.</etym>
+                            ‘как’.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 57</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>18, 86, 87</biblScope></bibl>.
+                    — <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>45</biblScope></bibl>.</etym>
                 <etym xml:lang="en">It traces back to Iranian %i*ku-%i, a question particle, usually
-                    with the meaning ‘where’; cf. <mentioned xml:lang="fa"><lang/>
-                        <w>kū</w></mentioned> (<bibl><ref type="bibl" target="#ref_GIPh."
-                            /><biblScope>II 164</biblScope></bibl>), <mentioned xml:lang="prc"><lang/>
+                    with the meaning ‘where’; cf. <mentioned xml:id="mentioned_d5155e302" xml:lang="fa"><lang/>
+                        <w>kū</w></mentioned> (<bibl><ref type="bibl" target="#ref_GIPh."/><biblScope>II 164</biblScope></bibl>), <mentioned xml:id="mentioned_d5155e311" xml:lang="prc"><lang/>
                         <w>ku</w>
                         <gloss><q>где</q></gloss></mentioned>
                             (<bibl><author>Morgenstierne</author><biblScope>HFL I
-                        263</biblScope></bibl>), <mentioned xml:lang="yai"><lang/>
+                        263</biblScope></bibl>), <mentioned xml:id="mentioned_d5155e323" xml:lang="yai"><lang/>
                         <w>kū</w>
-                        <gloss><q>where</q></gloss></mentioned>, <mentioned xml:lang="yai"><w/>
-                        <gloss><q>where to</q></gloss></mentioned>, <mentioned xml:lang="yai"
-                            ><w>čikū</w>
-                        <gloss><q>from where</q></gloss></mentioned>, <mentioned xml:lang="sog"><lang/>
+                        <gloss><q>where</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5155e332" xml:lang="yai"><w/>
+                        <gloss><q>where to</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5155e338" xml:lang="yai"><w>čikū</w>
+                        <gloss><q>from where</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5155e344" xml:lang="sog"><lang/>
                         <w>*kū(kw)</w>
-                        <gloss><q>where</q></gloss></mentioned>, <mentioned xml:lang="kho"><lang/>
+                        <gloss><q>where</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5155e352" xml:lang="kho"><lang/>
                         <w>ku</w>
-                        <gloss><q>where</q></gloss></mentioned>, <mentioned xml:lang="kho"><w/>
-                        <gloss><q>when</q></gloss></mentioned>, <mentioned xml:lang="kho"><w/>
+                        <gloss><q>where</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5155e360" xml:lang="kho"><w/>
+                        <gloss><q>when</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5155e366" xml:lang="kho"><w/>
                         <gloss><q>if</q></gloss></mentioned> (as a link for the a subordinate
-                    clause), <mentioned xml:lang="ae"><lang/>
-                        <w>ḱū</w></mentioned>, <mentioned xml:lang="sa"><lang/>
+                    clause), <mentioned xml:id="mentioned_d5155e373" xml:lang="ae"><lang/>
+                        <w>ḱū</w></mentioned>, <mentioned xml:id="mentioned_d5155e378" xml:lang="sa"><lang/>
                         <w>kū</w></mentioned> id. — The usage of the Ossetic word is the closest to
                     сакскому. The spatial meaning is distinctly seen in Digor %ikumæ%i ‘where to’,
-                    which is an illative case from %iku%i; cf. also <ref type="xr"
-                        target="#entry_īsk0y"/> ‘somewhere’, <ref type="xr" target="#entry_nīk0y"/>
-                    ‘nowhere’. Eventually the meaning ‘where’ was taken by <ref type="xr"
-                        target="#entry_kæm"/> | %ikæmi%i (Old Iranian %ikahmi%i), and %ik˳y%i |
-                    %iku%i is used mostly with temporal and conditional clauses. — Cf. <ref
-                        type="xr" target="#entry_k0yd"/> | %ikud%i ‘how’.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 57</biblScope></bibl>;
+                    which is an illative case from %iku%i; cf. also <ref type="xr" target="#entry_īsk0y"/> ‘somewhere’, <ref type="xr" target="#entry_nīk0y"/>
+                    ‘nowhere’. Eventually the meaning ‘where’ was taken by <ref type="xr" target="#entry_kæm"/> | %ikæmi%i (Old Iranian %ikahmi%i), and %ik˳y%i |
+                    %iku%i is used mostly with temporal and conditional clauses. — Cf. <ref type="xr" target="#entry_k0yd"/> | %ikud%i ‘how’.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 57</biblScope></bibl>;
                             <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>18, 86,
-                            87</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_Hübschmann._Oss."/><biblScope>45</biblScope></bibl>.</etym>
+                            87</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>45</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

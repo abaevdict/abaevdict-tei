@@ -1,43 +1,47 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">æftiag</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_æftiag" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>æftiag</orth></form>
-                <form xml:lang="os-x-digor" type="dialectal"><orth>æftujag</orth><form
-                        type="variant"><orth>ær-æftujag</orth></form></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <form xml:lang="os-x-digor" type="dialectal"><orth>æftujag</orth><form type="variant"><orth>ær-æftujag</orth></form></form>
+                <sense xml:id="sense_d3434e74"><sense xml:id="sense_d3434e75"><abv:tr xml:lang="ru">
                             <q>прибыль</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>profit</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d3434e84"><abv:tr xml:lang="ru">
                             <q>доход</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>income</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d3434e93"><abv:tr xml:lang="ru">
                             <q>барыш</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>lucre</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d3434e105" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>xwar kooperacimæ wæjæ kænunæj ci æftujagæ xawuj xæʒaræmæ, obæl qalon
                             ivard næ cæwuj</quote>
@@ -49,10 +53,9 @@
                             <q>income received by the farm from the sale of cooperative bread is not
                                 taxed</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_SD"
-                            /><biblScope>278%l3%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_SD"/><biblScope>278%l3%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3434e127">
                         <quote>æftujagi ræstæmbes normitæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>средние нормы прибыли</q>
@@ -60,18 +63,14 @@
                         <abv:tr xml:lang="en">
                             <q>average rates of return</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_SD"
-                            /><biblScope>278%l2%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_SD"/><biblScope>278%l2%l</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">От глагола <ref type="xr" target="#entry_æftyn"/> | %iæftujun%i
                     ‘попадать’, ‘прибавляться’ и пр. Образование с помощью форманта %i-ag%i
-                            (<bibl><ref type="bibl" target="#ref_РОСл."
-                        /><biblScope>592</biblScope></bibl>).</etym>
+                            (<bibl><ref type="bibl" target="#ref_РОСл."/><biblScope>592</biblScope></bibl>).</etym>
                 <etym xml:lang="en">From the verb <ref type="xr" target="#entry_æftyn"/> |
-                    %iæftujun%i ‘get’, ‘add’ etc. Derivation with the formant %i-ag%i (<bibl><ref
-                            type="bibl" target="#ref_РОСл."
-                    /><biblScope>592</biblScope></bibl>).</etym>
+                    %iæftujun%i ‘get’, ‘add’ etc. Derivation with the formant %i-ag%i (<bibl><ref type="bibl" target="#ref_РОСл."/><biblScope>592</biblScope></bibl>).</etym>
             </entry>
         </body>
     </text>

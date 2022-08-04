@@ -1,40 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">fædyn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_fædyn" xml:lang="os">
-                <form xml:lang="os-x-iron" type="lemma"><orth>fædyn</orth><form type="participle"
-                            ><orth>fast</orth></form></form>
-                <form xml:lang="os-x-digor" type="dialectal"><orth>fædun</orth><form
-                        type="participle"><orth>fast</orth></form></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <form xml:lang="os-x-iron" type="lemma"><orth>fædyn</orth><form type="participle"><orth>fast</orth></form></form>
+                <form xml:lang="os-x-digor" type="dialectal"><orth>fædun</orth><form type="participle"><orth>fast</orth></form></form>
+                <sense xml:id="sense_d4016e76"><sense xml:id="sense_d4016e77"><abv:tr xml:lang="ru">
                             <q>раскалываться</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>split open</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d4016e86"><abv:tr xml:lang="ru">
                             <q>рассекаться</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>be dissected</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4016e98">
                         <quote>je raǧ afastī fyr nærstæj</quote>
                         <abv:tr xml:lang="ru">
                             <q>его хребет растрескался от избытка жира</q>
@@ -47,14 +50,10 @@
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Медиальное соответствие к переходному глаголу %ifadyn%i |
                     %ifadun%i ‘раскалывать’, ‘рассекать’ с обычным в этих случаях ослаблением
-                    гласного: %ifad%i || %ifæd-%i (см. <bibl><ref type="bibl" target="#ref_РОСл."
-                            /><biblScope>574</biblScope></bibl>). См. <ref type="xr"
-                        target="#entry_fadyn"/>.</etym>
+                    гласного: %ifad%i || %ifæd-%i (см. <bibl><ref type="bibl" target="#ref_РОСл."/><biblScope>574</biblScope></bibl>). См. <ref type="xr" target="#entry_fadyn"/>.</etym>
                 <etym xml:lang="en">A middle voice counterpart of a transitive verb %ifadyn%i |
                     %ifadun%i ‘split’, ‘dissect’ with the usual in these cases vowel weakening:
-                    %ifad%i || %ifæd-%i (see <bibl><ref type="bibl" target="#ref_РОСл."
-                            /><biblScope>574</biblScope></bibl>). See <ref type="xr"
-                        target="#entry_fadyn"/>.</etym>
+                    %ifad%i || %ifæd-%i (see <bibl><ref type="bibl" target="#ref_РОСл."/><biblScope>574</biblScope></bibl>). See <ref type="xr" target="#entry_fadyn"/>.</etym>
             </entry>
         </body>
     </text>

@@ -1,34 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">Būrxoraly</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_Būrxoraly" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>Būrxoraly</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>BorxwaraIi</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d3097e72"><abv:tr xml:lang="ru">
                         <q>божество хлебных злаков и урожая</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>a deity of cereals and harvest</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d3097e84">
                         <quote>Narty Batraʒ ʒūryn bajdydta: … Būræ-Færnyǵy fyrt Būrxor-Alyjy æz
                             amardton</quote>
                         <abv:tr xml:lang="ru">
@@ -49,17 +54,14 @@
                     %iKurd-Al-Wærgon%i „кузнец-аланский-Варгон“. То, что в названии хлебного
                     божества мы находим именно просо, а не другой злак, говорит о том особом
                     значении, какое имела для древних осетин культура проса, по сравнению с другими
-                    злаками. — Об „инверсии“ в сложных словах типа %itatpurusa%i см. под словом <ref
-                        type="xr" target="#entry_cæfxad"/> ‘подкова’, а также <bibl><ref type="bibl"
-                            target="#ref_ОЯФ_I"/><biblScope>231—235</biblScope></bibl>.</etym>
+                    злаками. — Об „инверсии“ в сложных словах типа %itatpurusa%i см. под словом <ref type="xr" target="#entry_cæfxad"/> ‘подкова’, а также <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>231—235</biblScope></bibl>.</etym>
                 <etym xml:lang="en">It is an "inversed" compound (instead of %iAly-Būrxor%i, where
                     %iАly%i — is genitive case form of the word %iAl%i ‘Alans’, a collective noun),
                     literally “Alans' millet”. Cf. the element %iАl%i in the blacksmith god's name
                     %iKurd-Al-Wærgon%i "blacksmith-Alans'-Wærgon". The fact that in the cereal
                     deity's name we found millet and not another herb tells about that special
                     meaning which millet had for ancient Ossetic people, compaired to other herbs. —
-                    See the <ref type="xr" target="#entry_cæfxad"/> ‘horseshoe’, and also <bibl><ref
-                            type="bibl" target="#ref_ОЯФ_I"/><biblScope>231—235</biblScope></bibl>
+                    See the <ref type="xr" target="#entry_cæfxad"/> ‘horseshoe’, and also <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>231—235</biblScope></bibl>
                     for the inversion in compounds..</etym>
             </entry>
         </body>

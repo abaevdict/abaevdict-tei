@@ -1,46 +1,51 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">fætkʼ0y</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_fætkʼ0y" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>fætkʼ˳y</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>fætkʼu</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d3428e72"><sense xml:id="sense_d3428e73"><abv:tr xml:lang="ru">
                             <q>яблоко</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>apple</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d3428e82"><abv:tr xml:lang="ru">
                             <q>яблоня</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>apple tree</q>
                         </abv:tr></sense></sense>
-                <re>
+                <re xml:id="re_d3428e92">
                     <form type="lemma"><orth>fætk˳ʼy bælas</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d3428e97"><abv:tr xml:lang="ru">
                             <q>яблоня</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>apple tree</q>
                         </abv:tr></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d3428e110">
                         <quote>wydī syn īw fætk˳ʼy bælas, æmæ jyl zadī īw fætk˳ʼy afæʒæj
                             afæʒmæ</quote>
                         <abv:tr xml:lang="ru">
@@ -52,7 +57,7 @@
                         <bibl><ref type="bibl" target="#src_ЮОПам."/><biblScope>I
                             5</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3428e129">
                         <quote>fætk˳ʼyjyl abadtysty ærtæ marǧy</quote>
                         <abv:tr xml:lang="ru">
                             <q>три птицы сели на яблоню</q>
@@ -62,7 +67,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_ОЭп."/><biblScope>14</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d3428e148" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>i fætkʼu… izæræj tala rawaʒidæ, æ dedenæg rafadidæ, rafætkʼu widæ,
                             sæwmæmæ ba æǧzælun raidaidæ</quote>
@@ -77,7 +82,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
                             5</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d3428e170" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>tawæg fætkʼu</quote>
                         <abv:tr xml:lang="ru">

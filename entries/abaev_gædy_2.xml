@@ -1,38 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">gædy_2</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_gædy_2" n="2" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>gædy</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>gædi</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d4751e72"><sense xml:id="sense_d4751e73"><abv:tr xml:lang="ru">
                             <q>лживый</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>lying</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d4751e82"><abv:tr xml:lang="ru">
                             <q>ложь</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>lie</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4751e94">
                         <quote>gædy ʒyrdæj zærdæ ma ævær</quote>
                         <abv:tr xml:lang="ru">
                             <q>лживыми словами не обнадеживай</q>
@@ -43,7 +48,7 @@
                         <bibl><ref type="bibl" target="#src_ЮОПам."/><biblScope>III
                             206</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4751e113">
                         <quote>acū, gædy rūvas!</quote>
                         <abv:tr xml:lang="ru">
                             <q>уходи, обманщица лиса!</q>
@@ -51,10 +56,9 @@
                         <abv:tr xml:lang="en">
                             <q>go away, deceiving fox!</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Munk."
-                            /><biblScope>106</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Munk."/><biblScope>106</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4751e132">
                         <quote>gædyjy kʼax cybyr ū</quote>
                         <abv:tr xml:lang="ru">
                             <q>нога обманщика коротка („на лжи далеко не уедешь“)</q>
@@ -67,15 +71,14 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Идентично с <ref type="xr" target="#entry_gædy"/> ‘кошка’,
-                    ‘кот’. Ср. репутацию кота в фольклоре („Кот в сапогах“ и др.). Ср. в <mentioned
-                        xml:lang="ady"><lang/>
+                    ‘кот’. Ср. репутацию кота в фольклоре („Кот в сапогах“ и др.). Ср. в <mentioned xml:id="mentioned_d4751e156" xml:lang="ady"><lang/>
                         <w>gedu</w>
                         <gloss><q>кот</q></gloss></mentioned> в применении к человеку в смысле
                     ‘лукавый’, ‘лживый’ (<bibl><ref type="bibl" target="#ref_СМК"/><biblScope>XXVI
                             %i3%i 18</biblScope></bibl>).</etym>
                 <etym xml:lang="en">Identical to <ref type="xr" target="#entry_gædy"/> ‘cat’.
                     Compare with the reputation of cats in folklore (“Puss in Boots” etc.). Cf. in
-                        <mentioned xml:lang="ady"><lang/>
+                        <mentioned xml:id="mentioned_d4751e174" xml:lang="ady"><lang/>
                         <w>gedu</w>
                         <gloss><q>cat</q></gloss></mentioned> in reference to a human in the sense
                     ‘sly’, ‘lying’ (<bibl><ref type="bibl" target="#ref_СМК"/><biblScope>XXVI %i3%i

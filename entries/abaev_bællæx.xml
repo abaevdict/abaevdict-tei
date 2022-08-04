@@ -1,34 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">bællæx</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_bællæx" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>bællæx</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>bællax</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d5343e72"><abv:tr xml:lang="ru">
                         <q>беда</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>misfortune</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d5343e84">
                         <quote>styr bællæxtæ jyl sæmbældī</quote>
                         <abv:tr xml:lang="ru">
                             <q>его постигли большие несчастья</q>
@@ -37,7 +42,7 @@
                             <q>big misfortune came to him</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5343e99">
                         <quote>cydær bællæx ærxæstæg kæny</quote>
                         <abv:tr xml:lang="ru">
                             <q>приближается какая-то беда</q>
@@ -45,10 +50,9 @@
                         <abv:tr xml:lang="en">
                             <q>some bad luck is coming</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Брит."
-                            /><biblScope>108</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Брит."/><biblScope>108</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5343e118" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>ke bællaxæj næ baxumæ kodta skʼola?</quote>
                         <abv:tr xml:lang="ru">
@@ -58,10 +62,9 @@
                             <q>whose fault (“misfortune”) was the fact that the school did not make
                                 ploughing?</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_SD"
-                            /><biblScope>273%l2%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_SD"/><biblScope>273%l2%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5343e140" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>razamundi bællaxæj næ jes kust</quote>
                         <abv:tr xml:lang="ru">
@@ -71,37 +74,34 @@
                             <q>the work is not in progress due to the weakness (“misfortune”) of the
                                 direction</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_SD"
-                            /><biblScope>246%l3%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_SD"/><biblScope>246%l3%l</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из <mentioned xml:lang="ar" extralang="fa"><lang/>
-                        <w>balā</w></mentioned>, <mentioned xml:lang="tr"><lang/>
+                <etym xml:lang="ru">Из <mentioned xml:id="mentioned_d5343e165" xml:lang="ar" extralang="fa"><lang/>
+                        <w>balā</w></mentioned>, <mentioned xml:id="mentioned_d5343e170" xml:lang="tr"><lang/>
                         <w>bala</w>
                         <gloss><q>беда</q></gloss></mentioned>. Распространено у всех кавказских
-                    народов мусульманской культуры: <mentioned xml:lang="inh"><lang/>
-                        <w>balæ</w></mentioned>, <mentioned xml:lang="ce"><lang/>
-                        <w>bala</w></mentioned>, <mentioned xml:lang="av"><lang/>
-                        <w>baláh</w></mentioned>, <mentioned xml:lang="lbe"><lang/>
-                        <w>balā</w></mentioned>, <mentioned xml:lang="dar"><lang/>
-                        <w>balá</w></mentioned>, <mentioned xml:lang="lez"><lang/>
-                        <w>balá</w></mentioned> и др. Конечное -%iх%i находит поддержку в <mentioned
-                        xml:lang="av"><lang/>
-                        <w>baláh</w></mentioned>, <mentioned xml:lang="krc-x-balkar"><lang/>
+                    народов мусульманской культуры: <mentioned xml:id="mentioned_d5343e178" xml:lang="inh"><lang/>
+                        <w>balæ</w></mentioned>, <mentioned xml:id="mentioned_d5343e183" xml:lang="ce"><lang/>
+                        <w>bala</w></mentioned>, <mentioned xml:id="mentioned_d5343e188" xml:lang="av"><lang/>
+                        <w>baláh</w></mentioned>, <mentioned xml:id="mentioned_d5343e194" xml:lang="lbe"><lang/>
+                        <w>balā</w></mentioned>, <mentioned xml:id="mentioned_d5343e199" xml:lang="dar"><lang/>
+                        <w>balá</w></mentioned>, <mentioned xml:id="mentioned_d5343e204" xml:lang="lez"><lang/>
+                        <w>balá</w></mentioned> и др. Конечное -%iх%i находит поддержку в <mentioned xml:id="mentioned_d5343e209" xml:lang="av"><lang/>
+                        <w>baláh</w></mentioned>, <mentioned xml:id="mentioned_d5343e214" xml:lang="krc-x-balkar"><lang/>
                         <w>balah</w></mentioned>.</etym>
-                <etym xml:lang="en">From <mentioned xml:lang="ar" extralang="fa"><lang/>
-                        <w>balā</w></mentioned>, <mentioned xml:lang="tr"><lang/>
+                <etym xml:lang="en">From <mentioned xml:id="mentioned_d5343e223" xml:lang="ar" extralang="fa"><lang/>
+                        <w>balā</w></mentioned>, <mentioned xml:id="mentioned_d5343e228" xml:lang="tr"><lang/>
                         <w>bala</w>
                         <gloss><q>misfortune</q></gloss></mentioned>. The word is widespread through
-                    all Caucasian people of Islamic culture: <mentioned xml:lang="inh"><lang/>
-                        <w>balæ</w></mentioned>, <mentioned xml:lang="ce"><lang/>
-                        <w>bala</w></mentioned>, <mentioned xml:lang="av"><lang/>
-                        <w>baláh</w></mentioned>, <mentioned xml:lang="lbe"><lang/>
-                        <w>balā</w></mentioned>, <mentioned xml:lang="dar"><lang/>
-                        <w>balá</w></mentioned>, <mentioned xml:lang="lez"><lang/>
-                        <w>balá</w></mentioned> etc. The final -%iх%i is found in <mentioned
-                        xml:lang="av"><lang/>
-                        <w>baláh</w></mentioned>, <mentioned xml:lang="krc-x-balkar"><lang/>
+                    all Caucasian people of Islamic culture: <mentioned xml:id="mentioned_d5343e236" xml:lang="inh"><lang/>
+                        <w>balæ</w></mentioned>, <mentioned xml:id="mentioned_d5343e241" xml:lang="ce"><lang/>
+                        <w>bala</w></mentioned>, <mentioned xml:id="mentioned_d5343e246" xml:lang="av"><lang/>
+                        <w>baláh</w></mentioned>, <mentioned xml:id="mentioned_d5343e252" xml:lang="lbe"><lang/>
+                        <w>balā</w></mentioned>, <mentioned xml:id="mentioned_d5343e257" xml:lang="dar"><lang/>
+                        <w>balá</w></mentioned>, <mentioned xml:id="mentioned_d5343e262" xml:lang="lez"><lang/>
+                        <w>balá</w></mentioned> etc. The final -%iх%i is found in <mentioned xml:id="mentioned_d5343e267" xml:lang="av"><lang/>
+                        <w>baláh</w></mentioned>, <mentioned xml:id="mentioned_d5343e272" xml:lang="krc-x-balkar"><lang/>
                         <w>balah</w></mentioned>.</etym>
             </entry>
         </body>

@@ -1,32 +1,37 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">bocʼo</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_bocʼo" xml:lang="os-x-iron">
                 <form type="lemma"><orth>bocʼo</orth></form>
                 <usg><lang/></usg>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d1260e72"><abv:tr xml:lang="ru">
                         <q>борода</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d1260e80">
                         <quote>wæ, wasæg, wasæg, syrx zældag bocʼo!</quote>
                         <abv:tr xml:lang="ru">
                             <q>петушок, петушок, красная шелковая бородушка!</q>
@@ -34,10 +39,9 @@
                         <abv:tr xml:lang="en">
                             <q>cockerel, cockerel, red silk beard!</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"
-                            /><biblScope>116</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>116</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d1260e99" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>æ duwwæ becʼojebæl duwwæ æxsærfæmbali isbasta</quote>
                         <abv:tr xml:lang="ru">
@@ -50,43 +54,30 @@
                             36</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Ср. <mentioned xml:lang="ab"><lang/>
+                <etym xml:lang="ru">Ср. <mentioned xml:id="mentioned_d1260e124" xml:lang="ab"><lang/>
                         <w>pacʼa</w>
-                        <gloss><q>усы</q></gloss></mentioned>, <mentioned xml:lang="kbd-x-crc"><lang/>
-                        <w>paače</w><note type="comment" xml:lang="ru"> (<bibl><ref type="bibl"
-                                    target="#ref_Люлье"/></bibl>)</note></mentioned>, <mentioned xml:lang="kbd-x-crc"
-                        ><w>pačʼe</w></mentioned>, <mentioned xml:lang="inh"><lang/>
+                        <gloss><q>усы</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1260e132" xml:lang="kbd-x-crc"><lang/>
+                        <w>paače</w><note type="comment" xml:lang="ru"> (<bibl><ref type="bibl" target="#ref_Люлье"/></bibl>)</note></mentioned>, <mentioned xml:id="mentioned_d1260e142" xml:lang="kbd-x-crc"><w>pačʼe</w></mentioned>, <mentioned xml:id="mentioned_d1260e145" xml:lang="inh"><lang/>
                         <w>mož</w>
-                        <gloss><q>борода</q></gloss></mentioned> (<bibl><author>Генко</author><ref
-                            type="bibl" target="#ref_ЗКВ"/><biblScope>V 723</biblScope></bibl>).
-                    Есть параллели и на иранской почве: <mentioned xml:lang="fa"><lang/>
+                        <gloss><q>борода</q></gloss></mentioned> (<bibl><author>Генко</author><ref type="bibl" target="#ref_ЗКВ"/><biblScope>V 723</biblScope></bibl>).
+                    Есть параллели и на иранской почве: <mentioned xml:id="mentioned_d1260e159" xml:lang="fa"><lang/>
                         <w>buč</w>
-                        <gloss><q>comae anticae capitis</q></gloss></mentioned>, <mentioned
-                        xml:lang="zkh"><lang/>
+                        <gloss><q>comae anticae capitis</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1260e167" xml:lang="zkh"><lang/>
                         <w>pūca</w>
-                        <gloss><q>борода</q></gloss></mentioned>.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._Gr."/><biblScope>10</biblScope></bibl>.
-                            —<bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                        /><biblScope>315</biblScope></bibl>.</etym>
-                <etym xml:lang="en">Cf. <mentioned xml:lang="ab"><lang/>
+                        <gloss><q>борода</q></gloss></mentioned>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>10</biblScope></bibl>.
+                            —<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>315</biblScope></bibl>.</etym>
+                <etym xml:lang="en">Cf. <mentioned xml:id="mentioned_d1260e187" xml:lang="ab"><lang/>
                         <w>pacʼa</w>
-                        <gloss><q>moustache</q></gloss></mentioned>, <mentioned xml:lang="kbd-x-crc"><lang/>
-                        <w>paače</w><note type="comment"
-                            xml:lang="en"> (<bibl><ref type="bibl" target="#ref_Люлье"
-                            /></bibl>)</note></mentioned>, <mentioned xml:lang="kbd-x-crc"
-                        ><w>pačʼe</w></mentioned>, <mentioned xml:lang="inh"><lang/>
+                        <gloss><q>moustache</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1260e195" xml:lang="kbd-x-crc"><lang/>
+                        <w>paače</w><note type="comment" xml:lang="en"> (<bibl><ref type="bibl" target="#ref_Люлье"/></bibl>)</note></mentioned>, <mentioned xml:id="mentioned_d1260e205" xml:lang="kbd-x-crc"><w>pačʼe</w></mentioned>, <mentioned xml:id="mentioned_d1260e208" xml:lang="inh"><lang/>
                         <w>mož</w>
-                        <gloss><q>beard</q></gloss></mentioned> (<bibl><author>Генко</author><ref
-                            type="bibl" target="#ref_ЗКВ"/><biblScope>V 723</biblScope></bibl>).
-                    There are also parallels in Iranian languages: <mentioned xml:lang="fa"><lang/>
+                        <gloss><q>beard</q></gloss></mentioned> (<bibl><author>Генко</author><ref type="bibl" target="#ref_ЗКВ"/><biblScope>V 723</biblScope></bibl>).
+                    There are also parallels in Iranian languages: <mentioned xml:id="mentioned_d1260e222" xml:lang="fa"><lang/>
                         <w>buč</w>
-                        <gloss><q>comae anticae capitis</q></gloss></mentioned>, <mentioned
-                        xml:lang="zkh"><lang/>
+                        <gloss><q>comae anticae capitis</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1260e230" xml:lang="zkh"><lang/>
                         <w>pūca</w>
-                        <gloss><q>beard</q></gloss></mentioned>.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._Gr."/><biblScope>10</biblScope></bibl>.
-                            —<bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                        /><biblScope>315</biblScope></bibl>.</etym>
+                        <gloss><q>beard</q></gloss></mentioned>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>10</biblScope></bibl>.
+                            —<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>315</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

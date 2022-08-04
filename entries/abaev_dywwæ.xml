@@ -1,44 +1,48 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">dywwæ</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_dywwæ" xml:lang="os">
-                <form xml:lang="os-x-iron" type="lemma"><orth>dywwæ</orth><form type="variant"
-                            ><orth>duwæ</orth></form></form>
+                <form xml:lang="os-x-iron" type="lemma"><orth>dywwæ</orth><form type="variant"><orth>duwæ</orth></form></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>duw(w)æ</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d4620e74"><abv:tr xml:lang="ru">
                         <q>два</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>two</q>
                     </abv:tr></sense>
-                <re>
+                <re xml:id="re_d4620e84">
                     <form xml:lang="os-x-iron" type="lemma"><orth>dywwæ</orth></form>
                     <form xml:lang="os-x-digor" type="dialectal"><orth>duwwemæj</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d4620e92"><abv:tr xml:lang="ru">
                             <q>вдвоем</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>two together</q>
                         </abv:tr></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4620e105">
                         <quote>saw dywwæ cæsty</quote>
                         <abv:tr xml:lang="ru">
                             <q>два черных глаза</q>
@@ -46,10 +50,9 @@
                         <abv:tr xml:lang="en">
                             <q>two black eyes</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"
-                            /><biblScope>105</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>105</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4620e124" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>ustur i Nartmæ bærægdær adtæj duwwæ muggagi: Boriatæ cema
                             Æxsærtæggatæ</quote>
@@ -65,90 +68,78 @@
                             5</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Общеиндоевропейское числительное: <mentioned xml:lang="fa"><lang/>
-                        <w>du</w></mentioned>, <mentioned xml:lang="pal"><lang/>
-                        <w>dō</w></mentioned>, <mentioned xml:lang="ku"><lang/>
-                        <w>du</w></mentioned>, <mentioned xml:lang="x-balochi"><lang/>
-                        <w>dō</w></mentioned>, <mentioned xml:lang="x-rushani"
-                        extralang="sgh-x-bartang sgh-x-oroshori"><lang/>
-                        <w>δaw</w></mentioned>, <mentioned xml:lang="yah"><lang/>
-                        <w>δow</w></mentioned>, <mentioned xml:lang="isk"><lang/>
-                        <w>du</w></mentioned>, <mentioned xml:lang="sgh"><lang/>
-                        <w>δiun</w></mentioned>, <mentioned xml:lang="ps"><lang/>
-                        <w>dwa</w></mentioned>, <mentioned xml:lang="yai"><lang/>
-                        <w>du</w></mentioned>, <mentioned xml:lang="sog"><lang/>
-                        <w>*δ''wa</w></mentioned>, <mentioned xml:lang="sog"><w>*aδ''wa(δw',
-                            'δw')</w></mentioned>, <mentioned xml:lang="zkh"><lang/>
-                        <w>δuwa</w></mentioned>, <mentioned xml:lang="kho"><lang/>
-                        <w>duva-</w></mentioned>, <mentioned xml:lang="kho"><w>dva-</w></mentioned>,
-                        <mentioned xml:lang="ae"><lang/>
-                        <w>dva-</w></mentioned>, <mentioned xml:lang="sa"><lang/>
-                        <w>dva-</w></mentioned>, <mentioned xml:lang="sa"><w>duva-</w></mentioned>,
-                        <mentioned xml:lang="sa"><w>dvau-</w></mentioned>, <mentioned xml:lang="sa"
-                            ><w>duvau-</w></mentioned>, <mentioned xml:lang="cu"><lang/>
-                        <w n="0">дъва</w></mentioned>, <mentioned xml:lang="ru"><lang/>
-                        <w>два</w></mentioned>, <mentioned xml:lang="lt"><lang/>
-                        <w>dà</w></mentioned>, <mentioned xml:lang="prg"><lang/>
-                        <w>dwai</w></mentioned>, <mentioned xml:lang="got"><lang/>
-                        <w>twai</w></mentioned>, <mentioned xml:lang="en"><lang/>
-                        <w>two</w></mentioned>, <mentioned xml:lang="de"><lang/>
-                        <w>zwei</w></mentioned>, <mentioned xml:lang="grc"><lang/>
-                        <w>δύο</w></mentioned>, <mentioned xml:lang="sqj"><lang/>
-                        <w>dü</w></mentioned>, <mentioned xml:lang="la"><lang/>
-                        <w>duo</w></mentioned>, <mentioned xml:lang="sga"><lang/>
-                        <w>dāu</w></mentioned>, <mentioned xml:lang="sga"><w>do</w></mentioned>,
-                        <mentioned xml:lang="br"><lang/>
+                <etym xml:lang="ru">Общеиндоевропейское числительное: <mentioned xml:id="mentioned_d4620e150" xml:lang="fa"><lang/>
+                        <w>du</w></mentioned>, <mentioned xml:id="mentioned_d4620e155" xml:lang="pal"><lang/>
+                        <w>dō</w></mentioned>, <mentioned xml:id="mentioned_d4620e160" xml:lang="ku"><lang/>
+                        <w>du</w></mentioned>, <mentioned xml:id="mentioned_d4620e165" xml:lang="x-balochi"><lang/>
+                        <w>dō</w></mentioned>, <mentioned xml:id="mentioned_d4620e170" xml:lang="x-rushani" extralang="sgh-x-bartang sgh-x-oroshori"><lang/>
+                        <w>δaw</w></mentioned>, <mentioned xml:id="mentioned_d4620e176" xml:lang="yah"><lang/>
+                        <w>δow</w></mentioned>, <mentioned xml:id="mentioned_d4620e181" xml:lang="isk"><lang/>
+                        <w>du</w></mentioned>, <mentioned xml:id="mentioned_d4620e186" xml:lang="sgh"><lang/>
+                        <w>δiun</w></mentioned>, <mentioned xml:id="mentioned_d4620e191" xml:lang="ps"><lang/>
+                        <w>dwa</w></mentioned>, <mentioned xml:id="mentioned_d4620e196" xml:lang="yai"><lang/>
+                        <w>du</w></mentioned>, <mentioned xml:id="mentioned_d4620e201" xml:lang="sog"><lang/>
+                        <w>*δ''wa</w></mentioned>, <mentioned xml:id="mentioned_d4620e207" xml:lang="sog"><w>*aδ''wa(δw',
+                            'δw')</w></mentioned>, <mentioned xml:id="mentioned_d4620e210" xml:lang="zkh"><lang/>
+                        <w>δuwa</w></mentioned>, <mentioned xml:id="mentioned_d4620e215" xml:lang="kho"><lang/>
+                        <w>duva-</w></mentioned>, <mentioned xml:id="mentioned_d4620e220" xml:lang="kho"><w>dva-</w></mentioned>,
+                        <mentioned xml:id="mentioned_d4620e223" xml:lang="ae"><lang/>
+                        <w>dva-</w></mentioned>, <mentioned xml:id="mentioned_d4620e228" xml:lang="sa"><lang/>
+                        <w>dva-</w></mentioned>, <mentioned xml:id="mentioned_d4620e234" xml:lang="sa"><w>duva-</w></mentioned>,
+                        <mentioned xml:id="mentioned_d4620e237" xml:lang="sa"><w>dvau-</w></mentioned>, <mentioned xml:id="mentioned_d4620e240" xml:lang="sa"><w>duvau-</w></mentioned>, <mentioned xml:id="mentioned_d4620e243" xml:lang="cu"><lang/>
+                        <w n="0">дъва</w></mentioned>, <mentioned xml:id="mentioned_d4620e249" xml:lang="ru"><lang/>
+                        <w>два</w></mentioned>, <mentioned xml:id="mentioned_d4620e254" xml:lang="lt"><lang/>
+                        <w>dà</w></mentioned>, <mentioned xml:id="mentioned_d4620e260" xml:lang="prg"><lang/>
+                        <w>dwai</w></mentioned>, <mentioned xml:id="mentioned_d4620e265" xml:lang="got"><lang/>
+                        <w>twai</w></mentioned>, <mentioned xml:id="mentioned_d4620e270" xml:lang="en"><lang/>
+                        <w>two</w></mentioned>, <mentioned xml:id="mentioned_d4620e275" xml:lang="de"><lang/>
+                        <w>zwei</w></mentioned>, <mentioned xml:id="mentioned_d4620e280" xml:lang="grc"><lang/>
+                        <w>δύο</w></mentioned>, <mentioned xml:id="mentioned_d4620e285" xml:lang="sqj"><lang/>
+                        <w>dü</w></mentioned>, <mentioned xml:id="mentioned_d4620e291" xml:lang="la"><lang/>
+                        <w>duo</w></mentioned>, <mentioned xml:id="mentioned_d4620e296" xml:lang="sga"><lang/>
+                        <w>dāu</w></mentioned>, <mentioned xml:id="mentioned_d4620e301" xml:lang="sga"><w>do</w></mentioned>,
+                        <mentioned xml:id="mentioned_d4620e304" xml:lang="br"><lang/>
                         <w>dou</w></mentioned> и пр. В первой части сложения выступает в краткой
                     форме <ref type="xr" target="#entry_dy-"/> | %idu%i (%idy-vær, dy-vænd,
-                    dy-zærdyg%i [см. <ref type="xr" target="#entry_dyzærdyg"/> ] и др.).%n<bibl><ref
-                            type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II
-                        159</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>47</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_Hübschmann._Oss."/><biblScope>37, 113</biblScope></bibl>. —
-                            <bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                        /><biblScope>21</biblScope></bibl>.</etym>
-                <etym xml:lang="en">A common Indo-European numeral: <mentioned xml:lang="fa"><lang/>
-                        <w>du</w></mentioned>, <mentioned xml:lang="pal"><lang/>
-                        <w>dō</w></mentioned>, <mentioned xml:lang="ku"><lang/>
-                        <w>du</w></mentioned>, <mentioned xml:lang="x-balochi"><lang/>
-                        <w>dō</w></mentioned>, <mentioned xml:lang="x-rushani"
-                        extralang="sgh-x-bartang sgh-x-oroshori"><lang/>
-                        <w>δaw</w></mentioned>, <mentioned xml:lang="yah"><lang/>
-                        <w>δow</w></mentioned>, <mentioned xml:lang="isk"><lang/>
-                        <w>du</w></mentioned>, <mentioned xml:lang="sgh"><lang/>
-                        <w>δiun</w></mentioned>, <mentioned xml:lang="ps"><lang/>
-                        <w>dwa</w></mentioned>, <mentioned xml:lang="yai"><lang/>
-                        <w>du</w></mentioned>, <mentioned xml:lang="sog"><lang/>
-                        <w>*δ''wa</w></mentioned>, <mentioned xml:lang="sog"><w>*aδ''wa(δw',
-                            'δw')</w></mentioned>, <mentioned xml:lang="zkh"><lang/>
-                        <w>δuwa</w></mentioned>, <mentioned xml:lang="kho"><lang/>
-                        <w>duva-</w></mentioned>, <mentioned xml:lang="kho"><w>dva-</w></mentioned>,
-                        <mentioned xml:lang="ae"><lang/>
-                        <w>dva-</w></mentioned>, <mentioned xml:lang="sa"><lang/>
-                        <w>dva-</w></mentioned>, <mentioned xml:lang="sa"><w>duva-</w></mentioned>,
-                        <mentioned xml:lang="sa"><w>dvau-</w></mentioned>, <mentioned xml:lang="sa"
-                            ><w>duvau-</w></mentioned>, <mentioned xml:lang="cu"><lang/>
-                        <w>dъva</w></mentioned>, <mentioned xml:lang="ru"><lang/>
-                        <w>dva</w></mentioned>, <mentioned xml:lang="lt"><lang/>
-                        <w>dà</w></mentioned>, <mentioned xml:lang="prg"><lang/>
-                        <w>dwai</w></mentioned>, <mentioned xml:lang="got"><lang/>
-                        <w>twai</w></mentioned>, <mentioned xml:lang="en"><lang/>
-                        <w>two</w></mentioned>, <mentioned xml:lang="de"><lang/>
-                        <w>zwei</w></mentioned>, <mentioned xml:lang="grc"><lang/>
-                        <w>δύο</w></mentioned>, <mentioned xml:lang="sqj"><lang/>
-                        <w>dü</w></mentioned>, <mentioned xml:lang="la"><lang/>
-                        <w>duo</w></mentioned>, <mentioned xml:lang="sga"><lang/>
-                        <w>dāu</w></mentioned>, <mentioned xml:lang="sga"><w>do</w></mentioned>,
-                        <mentioned xml:lang="br"><lang/>
+                    dy-zærdyg%i [см. <ref type="xr" target="#entry_dyzærdyg"/> ] и др.).%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II
+                        159</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>47</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>37, 113</biblScope></bibl>. —
+                            <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>21</biblScope></bibl>.</etym>
+                <etym xml:lang="en">A common Indo-European numeral: <mentioned xml:id="mentioned_d4620e333" xml:lang="fa"><lang/>
+                        <w>du</w></mentioned>, <mentioned xml:id="mentioned_d4620e338" xml:lang="pal"><lang/>
+                        <w>dō</w></mentioned>, <mentioned xml:id="mentioned_d4620e343" xml:lang="ku"><lang/>
+                        <w>du</w></mentioned>, <mentioned xml:id="mentioned_d4620e348" xml:lang="x-balochi"><lang/>
+                        <w>dō</w></mentioned>, <mentioned xml:id="mentioned_d4620e353" xml:lang="x-rushani" extralang="sgh-x-bartang sgh-x-oroshori"><lang/>
+                        <w>δaw</w></mentioned>, <mentioned xml:id="mentioned_d4620e359" xml:lang="yah"><lang/>
+                        <w>δow</w></mentioned>, <mentioned xml:id="mentioned_d4620e364" xml:lang="isk"><lang/>
+                        <w>du</w></mentioned>, <mentioned xml:id="mentioned_d4620e369" xml:lang="sgh"><lang/>
+                        <w>δiun</w></mentioned>, <mentioned xml:id="mentioned_d4620e374" xml:lang="ps"><lang/>
+                        <w>dwa</w></mentioned>, <mentioned xml:id="mentioned_d4620e379" xml:lang="yai"><lang/>
+                        <w>du</w></mentioned>, <mentioned xml:id="mentioned_d4620e384" xml:lang="sog"><lang/>
+                        <w>*δ''wa</w></mentioned>, <mentioned xml:id="mentioned_d4620e390" xml:lang="sog"><w>*aδ''wa(δw',
+                            'δw')</w></mentioned>, <mentioned xml:id="mentioned_d4620e393" xml:lang="zkh"><lang/>
+                        <w>δuwa</w></mentioned>, <mentioned xml:id="mentioned_d4620e398" xml:lang="kho"><lang/>
+                        <w>duva-</w></mentioned>, <mentioned xml:id="mentioned_d4620e403" xml:lang="kho"><w>dva-</w></mentioned>,
+                        <mentioned xml:id="mentioned_d4620e406" xml:lang="ae"><lang/>
+                        <w>dva-</w></mentioned>, <mentioned xml:id="mentioned_d4620e411" xml:lang="sa"><lang/>
+                        <w>dva-</w></mentioned>, <mentioned xml:id="mentioned_d4620e417" xml:lang="sa"><w>duva-</w></mentioned>,
+                        <mentioned xml:id="mentioned_d4620e420" xml:lang="sa"><w>dvau-</w></mentioned>, <mentioned xml:id="mentioned_d4620e423" xml:lang="sa"><w>duvau-</w></mentioned>, <mentioned xml:id="mentioned_d4620e426" xml:lang="cu"><lang/>
+                        <w>dъva</w></mentioned>, <mentioned xml:id="mentioned_d4620e431" xml:lang="ru"><lang/>
+                        <w>dva</w></mentioned>, <mentioned xml:id="mentioned_d4620e436" xml:lang="lt"><lang/>
+                        <w>dà</w></mentioned>, <mentioned xml:id="mentioned_d4620e442" xml:lang="prg"><lang/>
+                        <w>dwai</w></mentioned>, <mentioned xml:id="mentioned_d4620e447" xml:lang="got"><lang/>
+                        <w>twai</w></mentioned>, <mentioned xml:id="mentioned_d4620e452" xml:lang="en"><lang/>
+                        <w>two</w></mentioned>, <mentioned xml:id="mentioned_d4620e457" xml:lang="de"><lang/>
+                        <w>zwei</w></mentioned>, <mentioned xml:id="mentioned_d4620e462" xml:lang="grc"><lang/>
+                        <w>δύο</w></mentioned>, <mentioned xml:id="mentioned_d4620e467" xml:lang="sqj"><lang/>
+                        <w>dü</w></mentioned>, <mentioned xml:id="mentioned_d4620e473" xml:lang="la"><lang/>
+                        <w>duo</w></mentioned>, <mentioned xml:id="mentioned_d4620e478" xml:lang="sga"><lang/>
+                        <w>dāu</w></mentioned>, <mentioned xml:id="mentioned_d4620e483" xml:lang="sga"><w>do</w></mentioned>,
+                        <mentioned xml:id="mentioned_d4620e486" xml:lang="br"><lang/>
                         <w>dou</w></mentioned> etc. It is used in a short form in the first part of
                     compounds: <ref type="xr" target="#entry_dy-"/> | %idu%i (%idy-vær, dy-vænd,
-                    dy-zærdyg%i [see <ref type="xr" target="#entry_dyzærdyg"/> ] etc.).%n<bibl><ref
-                            type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II
-                        159</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>47</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_Hübschmann._Oss."/><biblScope>37, 113</biblScope></bibl>. —
-                            <bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                        /><biblScope>21</biblScope></bibl>.</etym>
+                    dy-zærdyg%i [see <ref type="xr" target="#entry_dyzærdyg"/> ] etc.).%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II
+                        159</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>47</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>37, 113</biblScope></bibl>. —
+                            <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>21</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

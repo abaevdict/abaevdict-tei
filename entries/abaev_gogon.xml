@@ -1,34 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">gogon</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_gogon" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>gogon</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>gogojnæ</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d3981e72"><abv:tr xml:lang="ru">
                         <q>высокий металлический кувшин для воды</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>tall metal jug for water</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d3981e84">
                         <quote>qæwæj racæwy zargæ īw ḱyzg, gogon jæ congyl</quote>
                         <abv:tr xml:lang="ru">
                             <q>из аула идет напевая одна девушка, на руке у нее %sgogon%s</q>
@@ -40,7 +45,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>IV
                             28</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d3981e103" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>mæjroxs felawuj æ ors gogojnæj</quote>
                         <abv:tr xml:lang="ru">
@@ -49,28 +54,25 @@
                         <abv:tr xml:lang="en">
                             <q>moonlight is pouring out of her white %sgogon%s</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_ОЭп."
-                            /><biblScope>54%l11%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_ОЭп."/><biblScope>54%l11%l</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из <mentioned xml:lang="trk"><lang/>
+                <etym xml:lang="ru">Из <mentioned xml:id="mentioned_d3981e128" xml:lang="trk"><lang/>
                         <w>gügün</w>
-                        <gloss><q>медный сосуд для воды</q></gloss></mentioned> (<bibl><ref
-                            type="bibl" target="#ref_Радлов"/><biblScope>II
-                    1633</biblScope></bibl>); ср. <mentioned xml:lang="krc-x-balkar"><lang/>
-                        <w>gögän</w></mentioned>, <mentioned xml:lang="ady"><lang/>
-                        <w>gogon</w></mentioned>, <mentioned xml:lang="av"><lang/>
-                        <w>gurgun, gulgun</w></mentioned>, <mentioned xml:lang="lbe"><lang/>
+                        <gloss><q>медный сосуд для воды</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Радлов"/><biblScope>II
+                    1633</biblScope></bibl>); ср. <mentioned xml:id="mentioned_d3981e140" xml:lang="krc-x-balkar"><lang/>
+                        <w>gögän</w></mentioned>, <mentioned xml:id="mentioned_d3981e145" xml:lang="ady"><lang/>
+                        <w>gogon</w></mentioned>, <mentioned xml:id="mentioned_d3981e150" xml:lang="av"><lang/>
+                        <w>gurgun, gulgun</w></mentioned>, <mentioned xml:id="mentioned_d3981e156" xml:lang="lbe"><lang/>
                         <w>gungume</w>
                         <gloss><q>медный кувшин для воды</q></gloss></mentioned> и др.</etym>
-                <etym xml:lang="en">From <mentioned xml:lang="trk"><lang/>
+                <etym xml:lang="en">From <mentioned xml:id="mentioned_d3981e168" xml:lang="trk"><lang/>
                         <w>gügün</w>
-                        <gloss><q>copper vessel for water</q></gloss></mentioned> (<bibl><ref
-                            type="bibl" target="#ref_Радлов"/><biblScope>II
-                    1633</biblScope></bibl>); compare <mentioned xml:lang="krc-x-balkar"><lang/>
-                        <w>gögän</w></mentioned>, <mentioned xml:lang="ady"><lang/>
-                        <w>gogon</w></mentioned>, <mentioned xml:lang="av"><lang/>
-                        <w>gurgun, gulgun</w></mentioned>, <mentioned xml:lang="lbe"><lang/>
+                        <gloss><q>copper vessel for water</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Радлов"/><biblScope>II
+                    1633</biblScope></bibl>); compare <mentioned xml:id="mentioned_d3981e180" xml:lang="krc-x-balkar"><lang/>
+                        <w>gögän</w></mentioned>, <mentioned xml:id="mentioned_d3981e185" xml:lang="ady"><lang/>
+                        <w>gogon</w></mentioned>, <mentioned xml:id="mentioned_d3981e190" xml:lang="av"><lang/>
+                        <w>gurgun, gulgun</w></mentioned>, <mentioned xml:id="mentioned_d3981e196" xml:lang="lbe"><lang/>
                         <w>gungume</w>
                         <gloss><q>copper water jug</q></gloss></mentioned> and others.</etym>
             </entry>

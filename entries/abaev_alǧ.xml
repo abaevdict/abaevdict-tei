@@ -1,37 +1,42 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">alǧ</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_alǧ" xml:lang="os">
                 <form type="lemma"><orth>alǧ</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d3702e69"><sense xml:id="sense_d3702e70"><abv:tr xml:lang="ru">
                             <q>оконечность</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>extremity</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d3702e79"><abv:tr xml:lang="ru">
                             <q>кончик (пальцев, губ, языка)</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>tip (of finger, lip, tongue)</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d3702e91">
                         <quote>me ʽvzaǵy alǧyl rawaj-bawaj kæny</quote>
                         <abv:tr xml:lang="ru">
                             <q>(нужное слово) бегает на кончике моего языка</q>
@@ -44,7 +49,7 @@
                         <note type="comment" xml:lang="en"> (it is said while trying to remember a
                             word or name)</note>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3702e112">
                         <quote>arvīt Lazary, cæmæj ystūla je ʽng˳ylʒy alǧ dony æmæ myn me ʽvzag
                             awazal kæna</quote>
                         <abv:tr xml:lang="ru">
@@ -58,7 +63,7 @@
                         <bibl><ref type="bibl" target="#src_Лука"/><biblScope>%i16%i
                             24</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3702e131">
                         <quote>sæ byly ælǧtæj myl sæxī mætgænæg k˳y skænoj…</quote>
                         <abv:tr xml:lang="ru">
                             <q>если они будут беспокоиться обо мне кончиками губ (т. е.
@@ -70,7 +75,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Брит."/><biblScope>22</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3702e150">
                         <quote>je ʽng˳ylʒ jæ ʽvzaǵy alǧyl ax˳ylyʒ kodta</quote>
                         <abv:tr xml:lang="ru">
                             <q>он смочил палец кончиком языка</q>
@@ -81,7 +86,7 @@
                         <bibl><ref type="bibl" target="#src_F."/><biblScope>1957 II
                             25</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d3702e169" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>alǧ—ængulʒi kæron</quote>
                         <abv:tr xml:lang="ru">
@@ -93,7 +98,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
                             188</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d3702e192" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>æfsadæn ælǧ-dungæ næbal adtæj</quote>
                         <abv:tr xml:lang="ru">
@@ -109,26 +114,23 @@
                             45</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Ср. <mentioned xml:lang="ae"><lang/>
-                        <w>aɣra-</w></mentioned>, <mentioned xml:lang="sa"><lang/>
+                <etym xml:lang="ru">Ср. <mentioned xml:id="mentioned_d3702e224" xml:lang="ae"><lang/>
+                        <w>aɣra-</w></mentioned>, <mentioned xml:id="mentioned_d3702e229" xml:lang="sa"><lang/>
                         <w>ágra-</w>
-                        <gloss><q>оконечность</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
-                        <gloss><q>верхушка</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
+                        <gloss><q>оконечность</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3702e237" xml:lang="sa"><w/>
+                        <gloss><q>верхушка</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3702e243" xml:lang="sa"><w/>
                         <gloss><q>начало</q></gloss></mentioned>; наличие %iI%i вместо %ir%i можно
                     объяснить исходя из адъективного образования %iagrya%i- (%ir%i перед %iу%i дает
-                    %il%i). Метатеза %igr%i → %ilǧ%i закономерна, ср. <ref type="xr"
-                        target="#entry_arǧævnæ"/> и др. Ос. <ref type="xr" target="#entry_dysalǧ"/>
+                    %il%i). Метатеза %igr%i → %ilǧ%i закономерна, ср. <ref type="xr" target="#entry_arǧævnæ"/> и др. Ос. <ref type="xr" target="#entry_dysalǧ"/>
                     ‘подкладка рукава’ заключает во второй части %ialǧ%i.</etym>
-                <etym xml:lang="en">Cf. <mentioned xml:lang="ae"><lang/>
-                        <w>aɣra-</w></mentioned>, <mentioned xml:lang="sa"><lang/>
+                <etym xml:lang="en">Cf. <mentioned xml:id="mentioned_d3702e257" xml:lang="ae"><lang/>
+                        <w>aɣra-</w></mentioned>, <mentioned xml:id="mentioned_d3702e262" xml:lang="sa"><lang/>
                         <w>ágra-</w>
-                        <gloss><q>extremity</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
-                        <gloss><q>top</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
+                        <gloss><q>extremity</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3702e270" xml:lang="sa"><w/>
+                        <gloss><q>top</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3702e276" xml:lang="sa"><w/>
                         <gloss><q>begining</q></gloss></mentioned>; the presence of %iI%i instead of
                     %ir%i could be explained by an adjective form %iagrya%i- (%ir%i before %iу%i
-                    gives %il%i). Metathesis %igr%i → %ilǧ%i is regular; cf. <ref type="xr"
-                        target="#entry_arǧævnæ"/> etc. Ossetic <ref type="xr" target="#entry_dysalǧ"
-                    /> ‘sleeve lining’ has %ialǧ%i in the second part.</etym>
+                    gives %il%i). Metathesis %igr%i → %ilǧ%i is regular; cf. <ref type="xr" target="#entry_arǧævnæ"/> etc. Ossetic <ref type="xr" target="#entry_dysalǧ"/> ‘sleeve lining’ has %ialǧ%i in the second part.</etym>
             </entry>
         </body>
     </text>

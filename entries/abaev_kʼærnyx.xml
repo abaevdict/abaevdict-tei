@@ -1,55 +1,59 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">kʼærnyx</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_kʼærnyx" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>kʼærnyx</orth></form>
-                <form xml:lang="os-x-digor" type="dialectal"><orth>kʼærnæx</orth><form
-                        type="variant"><orth>kʼærnix</orth></form></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <form xml:lang="os-x-digor" type="dialectal"><orth>kʼærnæx</orth><form type="variant"><orth>kʼærnix</orth></form></form>
+                <sense xml:id="sense_d349e74"><sense xml:id="sense_d349e75"><abv:tr xml:lang="ru">
                             <q>вор</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>thief</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d349e84"><abv:tr xml:lang="ru">
                             <q>воровство</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>theft</q>
                         </abv:tr></sense></sense>
-                <re>
+                <re xml:id="re_d349e94">
                     <form type="lemma"><orth>kʼærnyx kænyn</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d349e99"><abv:tr xml:lang="ru">
                             <q>красть</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>steal</q>
                         </abv:tr></sense>
                 </re>
-                <re>
+                <re xml:id="re_d349e110">
                     <form type="lemma"><orth>kʼærnyxæggag</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d349e115"><abv:tr xml:lang="ru">
                             <q>краденое</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>stolen goods</q>
                         </abv:tr></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d349e129">
                         <quote>raǵy wydī ærtæ kʼærnyx ævsymæry; kʼærnyx kænyn k˳yd zydtoj, aftæ
                             kʼærnyxæggaǵy æmbæxsyn æmæ fæd safynmæ dær styr dæsnytæ wydysty</quote>
                         <abv:tr xml:lang="ru">
@@ -64,7 +68,7 @@
                         <bibl><ref type="bibl" target="#src_ЮОПам."/><biblScope>III
                             147</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d349e148" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>isæfuj ænaxur, talingæ; kʼærnixæn æ koj æstæn æj</quote>
                         <abv:tr xml:lang="ru">
@@ -75,19 +79,15 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Qazb."/><biblScope>22</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d349e170">
                         <note type="comment" xml:lang="ru">Другие примеры употребления этого слова
-                            (в поговорках) см. <bibl><ref type="bibl" target="#ref_ЮОПам."
-                                    /><biblScope>III 243</biblScope></bibl>. Параллельное
-                            употребление %ikʼærnyx%i и %ix˳ysnæg%i см. <bibl><ref type="bibl"
-                                    target="#ref_СОПам."/><biblScope xml:lang="ru">III 83
+                            (в поговорках) см. <bibl><ref type="bibl" target="#ref_ЮОПам."/><biblScope>III 243</biblScope></bibl>. Параллельное
+                            употребление %ikʼærnyx%i и %ix˳ysnæg%i см. <bibl><ref type="bibl" target="#ref_СОПам."/><biblScope xml:lang="ru">III 83
                                     сл.</biblScope><biblScope xml:lang="en">III 83
                                 ff.</biblScope></bibl>: </note>
                         <note type="comment" xml:lang="en">For other examples of the use of this
-                            word (in proverbs) see <bibl><ref type="bibl" target="#ref_ЮОПам."
-                                    /><biblScope>III 243</biblScope></bibl>. For the parallel use of
-                                <oRef>kʼærnyx</oRef> and %ix˳ysnæg%i see <bibl><ref type="bibl"
-                                    target="#ref_СОПам."/><biblScope xml:lang="ru">III 83
+                            word (in proverbs) see <bibl><ref type="bibl" target="#ref_ЮОПам."/><biblScope>III 243</biblScope></bibl>. For the parallel use of
+                                <oRef>kʼærnyx</oRef> and %ix˳ysnæg%i see <bibl><ref type="bibl" target="#ref_СОПам."/><biblScope xml:lang="ru">III 83
                                     сл.</biblScope><biblScope xml:lang="en">III 83
                                 ff.</biblScope></bibl>: </note>
                         <quote>g˳yrʒiag kʼærnyx æmæ iron x˳ysnæg</quote>
@@ -100,35 +100,31 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Дигорскую форму %ikʼærnæx%i, хорошо засвидетельствованную
-                    (например %ikʼærnæx Kuʒigo%i „вор Кудзиго“: <bibl><ref type="bibl"
-                            target="#src_SD"/><biblScope>193%l2%l</biblScope></bibl>), следует
+                    (например %ikʼærnæx Kuʒigo%i „вор Кудзиго“: <bibl><ref type="bibl" target="#src_SD"/><biblScope>193%l2%l</biblScope></bibl>), следует
                     считать более старой. Форма %ikʼærnyx%i | %i-nix%i могла возникнуть в результате
                     контаминации с <ref type="xr" target="#entry_nyx_1"/> | <w>nix</w> ‘коготь’. —
-                    Надежной этимологии нет. Может быть, из <mentioned xml:lang="trk"><lang/>
+                    Надежной этимологии нет. Может быть, из <mentioned xml:id="mentioned_d349e226" xml:lang="trk"><lang/>
                         <w>*qaraǧ-naq</w></mentioned>, ср. %iqaraq%i, %iqaraǧ%i ‘грабеж’,
                     ‘разбойник’ (<bibl><ref type="bibl" target="#ref_Радлов"/><biblScope>II 147,
                             150</biblScope></bibl>) и формант <m>-naq</m> (%i*qaraǧnaq%i →
-                    %i*qarnaq%i → %ikʼærnæx%i). — <mentioned xml:lang="av"><lang/>
+                    %i*qarnaq%i → %ikʼærnæx%i). — <mentioned xml:id="mentioned_d349e238" xml:lang="av"><lang/>
                         <w>karnyš</w>
                         <gloss><q>вор</q></gloss></mentioned>, которое приводится Штакельбергом
-                            (<bibl><ref type="bibl" target="#ref_MSt."
-                        /><biblScope>82</biblScope></bibl>) со ссылкой на Клапрота
+                            (<bibl><ref type="bibl" target="#ref_MSt."/><biblScope>82</biblScope></bibl>) со ссылкой на Клапрота
                             (<bibl><biblScope>Asia Polyglotta 134</biblScope></bibl>), в доступных
                     нам источниках не обнаружено.</etym>
                 <etym xml:lang="en">Digor form <oRef>kʼærnæx</oRef>, which is well-documented (e.g.
-                    %ikʼærnæx Kuʒigo%i “thief Kudzigo”: <bibl><ref type="bibl" target="#src_SD"
-                            /><biblScope>193%l2%l</biblScope></bibl>), should be considered more
+                    %ikʼærnæx Kuʒigo%i “thief Kudzigo”: <bibl><ref type="bibl" target="#src_SD"/><biblScope>193%l2%l</biblScope></bibl>), should be considered more
                     old. A form <oRef>kʼærnyx</oRef> | %i-nix%i might have emerged as a result of
                     contamination with <ref type="xr" target="#entry_nyx_1"/> | <w>nix</w> ‘claw’. —
-                    There is no reliable etymology. It may be from <mentioned xml:lang="trk"><lang/>
+                    There is no reliable etymology. It may be from <mentioned xml:id="mentioned_d349e269" xml:lang="trk"><lang/>
                         <w>*qaraǧ-naq</w></mentioned>, cf. %iqaraq%i, %iqaraǧ%i ‘robbery’, ‘robber’
                             (<bibl><ref type="bibl" target="#ref_Радлов"/><biblScope>II 147,
                             150</biblScope></bibl>) and formant %i-naq%i (%i*qaraǧnaq%i →
-                    %i*qarnaq%i → %ikʼærnæx%i). — <mentioned xml:lang="av"><lang/>
+                    %i*qarnaq%i → %ikʼærnæx%i). — <mentioned xml:id="mentioned_d349e278" xml:lang="av"><lang/>
                         <w>karnyš</w>
                         <gloss><q>thief</q></gloss></mentioned>, which is cited by Stackelberg
-                            (<bibl><ref type="bibl" target="#ref_MSt."
-                        /><biblScope>82</biblScope></bibl>) with a reference to Klaproth
+                            (<bibl><ref type="bibl" target="#ref_MSt."/><biblScope>82</biblScope></bibl>) with a reference to Klaproth
                             (<bibl><biblScope>Asia Polyglotta 134</biblScope></bibl>), is not found
                     in available to us resources.</etym>
             </entry>

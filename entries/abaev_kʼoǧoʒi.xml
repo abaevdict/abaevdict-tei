@@ -1,34 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">kʼoǧoʒi</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_kʼoǧoʒi" xml:lang="os">
-                <form type="lemma"><orth>kʼoǧoʒi</orth><form type="variant"
-                        ><orth>kʼoxoʒi</orth></form></form>
-                <sense><abv:tr xml:lang="ru">
+                <form type="lemma"><orth>kʼoǧoʒi</orth><form type="variant"><orth>kʼoxoʒi</orth></form></form>
+                <sense xml:id="sense_d460e71"><abv:tr xml:lang="ru">
                         <q>лапоть</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>bast shoe</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d460e83">
                         <quote>jæ særakʒabyrtæ kʼoxoʒitæj raīvta</quote>
                         <abv:tr xml:lang="ru">
                             <q>он сменил сафьяновые чувяки на лапти</q>
@@ -38,25 +42,19 @@
                         </abv:tr>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из <mentioned xml:lang="ka"><lang/>
-                        <w>kʼoxuʒi, kʼoxunǵi</w></mentioned>, <mentioned xml:lang="ka-x-rachian"><lang/>
-                        <w>k’vaxufi</w></mentioned> (<bibl><ref type="bibl" target="#ref_Беридзе"
-                        /></bibl>), <mentioned xml:lang="ka-x-rachian"><lang/>
+                <etym xml:lang="ru">Из <mentioned xml:id="mentioned_d460e101" xml:lang="ka"><lang/>
+                        <w>kʼoxuʒi, kʼoxunǵi</w></mentioned>, <mentioned xml:id="mentioned_d460e106" xml:lang="ka-x-rachian"><lang/>
+                        <w>k’vaxufi</w></mentioned> (<bibl><ref type="bibl" target="#ref_Беридзе"/></bibl>), <mentioned xml:id="mentioned_d460e114" xml:lang="ka-x-rachian"><lang/>
                         <w>kʼvexuʒi</w></mentioned> (сообщение Ш. %sДзидзигури%s);
-                        <mentioned xml:lang="ka-x-mokhev"><lang>(мохев.)</lang>
-                        <w>kʼoxuǵi</w></mentioned> (<bibl><ref type="bibl" target="#ref_Макалатия"
-                            /><biblScope xml:lang="ru">Хеви, стр. 146</biblScope></bibl>); характерно больше для
+                        <mentioned xml:id="mentioned_d460e119" xml:lang="ka-x-mokhev"><lang>(мохев.)</lang>
+                        <w>kʼoxuǵi</w></mentioned> (<bibl><ref type="bibl" target="#ref_Макалатия"/><biblScope xml:lang="ru">Хеви, стр. 146</biblScope></bibl>); характерно больше для
                     западногрузинских диалектов (<bibl><ref type="bibl" target="#ref_Саба"/></bibl>
                     объясняет %ikʼoxuʒi%i как „имерский лапоть“ — %iimeruli kalamani%i).</etym>
-                <etym xml:lang="en">From <mentioned xml:lang="ka"><lang/>
-                        <w>kʼoxuʒi, kʼoxunǵi</w></mentioned>, <mentioned xml:lang="ka-x-rachian"><lang/>
-                        <w>k’vaxufi</w></mentioned> (<bibl><ref type="bibl" target="#ref_Беридзе"
-                        /></bibl>), <mentioned xml:lang="ka-x-rachian"><lang/>
-                        <w>kʼvexuʒi</w></mentioned> (Sh. %sDzidziguri%s, p.c.); <mentioned
-                        xml:lang="ka" dialect="ka-x-mokhev"><lang/>
-                        <w>kʼoxuǵi</w></mentioned> (<bibl><ref type="bibl" target="#ref_Макалатия"
-                            /><biblScope
-                            xml:lang="en">Khevi, p. 146</biblScope></bibl>); more typical for West
+                <etym xml:lang="en">From <mentioned xml:id="mentioned_d460e136" xml:lang="ka"><lang/>
+                        <w>kʼoxuʒi, kʼoxunǵi</w></mentioned>, <mentioned xml:id="mentioned_d460e141" xml:lang="ka-x-rachian"><lang/>
+                        <w>k’vaxufi</w></mentioned> (<bibl><ref type="bibl" target="#ref_Беридзе"/></bibl>), <mentioned xml:id="mentioned_d460e149" xml:lang="ka-x-rachian"><lang/>
+                        <w>kʼvexuʒi</w></mentioned> (Sh. %sDzidziguri%s, p.c.); <mentioned xml:id="mentioned_d460e154" xml:lang="ka" dialect="ka-x-mokhev"><lang/>
+                        <w>kʼoxuǵi</w></mentioned> (<bibl><ref type="bibl" target="#ref_Макалатия"/><biblScope xml:lang="en">Khevi, p. 146</biblScope></bibl>); more typical for West
                     Georgian dialects (<bibl><ref type="bibl" target="#ref_Саба"/></bibl> explains
                     %ikʼoxuʒi%i as “Imeretian bast shoe” — %iimeruli kalamani%i).</etym>
             </entry>

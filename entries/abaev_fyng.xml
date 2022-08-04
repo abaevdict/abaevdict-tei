@@ -1,34 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">fyng</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_fyng" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>fyng</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>fingæ</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d4446e72"><abv:tr xml:lang="ru">
                         <q>стол</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>table</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4446e84">
                         <quote>fyng ærtækʼaxyg wazægæn jæ fællad safy</quote>
                         <abv:tr xml:lang="ru">
                             <q>треногий стол уничтожает усталость гостя</q>
@@ -36,10 +41,9 @@
                         <abv:tr xml:lang="en">
                             <q>a tripod table destroyes fatigue of a guest</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"
-                            /><biblScope>105</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>105</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4446e103">
                         <quote>æræværdtoj fyngtæ, ærxastoj kærʒyntæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>поставили столы, принесли хлебы</q>
@@ -47,10 +51,9 @@
                         <abv:tr xml:lang="en">
                             <q>they set tables and brought bread</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Munk."
-                            /><biblScope>48–50</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Munk."/><biblScope>48–50</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4446e122">
                         <quote>fynǵy bærkad</quote>
                         <abv:tr xml:lang="ru">
                             <q rendition="rend_singlequotes">обилие стола</q>
@@ -61,7 +64,7 @@
                         <bibl><ref type="bibl" target="#src_ЮОПам."/><biblScope>III
                             205</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4446e143" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>ævzestin kʼæxtæ zurnæ fingitæ æræværuncæ izædti razmæ</quote>
                         <abv:tr xml:lang="ru">
@@ -71,10 +74,9 @@
                             <q>chiseled tables with silver legs are placed in front of the
                                 celestials</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_ОЭп."
-                                /><biblScope>61%l304–305</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_ОЭп."/><biblScope>61%l304–305</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4446e165" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>fingæ in niwardta, xwærujnag, niwazujnag</quote>
                         <abv:tr xml:lang="ru">
@@ -83,10 +85,9 @@
                         <abv:tr xml:lang="en">
                             <q>he set a table for him, some food and drink</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>26%l7%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>26%l7%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4446e188">
                         <quote>mæ arm syn fyngæn dardton</quote>
                         <abv:tr xml:lang="ru">
                             <q>я держал им руку в качестве стола (т. е. был к ним очень заботлив,
@@ -99,71 +100,60 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru"><bibl><biblScope>Hübschmann</biblScope></bibl> считает
-                    заимствованием из кавказских языков: <mentioned xml:lang="ka"><lang/>
+                    заимствованием из кавказских языков: <mentioned xml:id="mentioned_d4446e208" xml:lang="ka"><lang/>
                         <w>pʼinaki</w>
-                        <gloss><q>блюдо</q></gloss></mentioned>, <mentioned xml:lang="udi"><lang/>
-                        <w>pʼinak</w></mentioned>, <mentioned xml:lang="xcl"><lang/>
-                        <w>pʼnakʼ</w></mentioned> ( ← <mentioned xml:lang="grc"><lang/>
+                        <gloss><q>блюдо</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4446e216" xml:lang="udi"><lang/>
+                        <w>pʼinak</w></mentioned>, <mentioned xml:id="mentioned_d4446e221" xml:lang="xcl"><lang/>
+                        <w>pʼnakʼ</w></mentioned> ( ← <mentioned xml:id="mentioned_d4446e226" xml:lang="grc"><lang/>
                         <w>πίναξ</w>
-                        <gloss><q>доска</q></gloss></mentioned>, <mentioned xml:lang="grc"><w/>
+                        <gloss><q>доска</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4446e234" xml:lang="grc"><w/>
                         <gloss><q>блюдо</q></gloss></mentioned>). Вс. %sМиллер%s думал сперва о
-                    родстве с индоевропейской группой слов: <mentioned xml:lang="sa"><lang/>
+                    родстве с индоевропейской группой слов: <mentioned xml:id="mentioned_d4446e241" xml:lang="sa"><lang/>
                         <w>pināka-</w>
-                        <gloss><q>палка</q></gloss></mentioned>, <mentioned xml:lang="grc"><lang/>
+                        <gloss><q>палка</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4446e249" xml:lang="grc"><lang/>
                         <w>πίναξ</w>
-                        <gloss><q>доска</q></gloss></mentioned>, <mentioned xml:lang="grc"><w/>
-                        <gloss><q>блюдо</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 86</biblScope></bibl>).
-                    Позднее он присоединился к мнению %sНübsсhmann%s’а (<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._Gr."/><biblScope>10</biblScope></bibl>).
+                        <gloss><q>доска</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4446e257" xml:lang="grc"><w/>
+                        <gloss><q>блюдо</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 86</biblScope></bibl>).
+                    Позднее он присоединился к мнению %sНübsсhmann%s’а (<bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>10</biblScope></bibl>).
                     %sШтакельберг%s сопоставляет %ifyng%i и <ref type="xr" target="#entry_fæjnæg"/>
-                    ‘доска’ (<bibl><ref type="bibl" target="#ref_MSt."
-                        /><biblScope>71</biblScope></bibl>). Начальный %if%i, а также отсутствие
+                    ‘доска’ (<bibl><ref type="bibl" target="#ref_MSt."/><biblScope>71</biblScope></bibl>). Начальный %if%i, а также отсутствие
                     второго гласного заставляет думать скорее, что перед нами или старое осетинское
-                    (иранское) слово, родственное <mentioned xml:lang="cu"><lang/>
-                        <w n="0">пьнь</w></mentioned>, <mentioned xml:lang="ru"><lang/>
+                    (иранское) слово, родственное <mentioned xml:id="mentioned_d4446e278" xml:lang="cu"><lang/>
+                        <w n="0">пьнь</w></mentioned>, <mentioned xml:id="mentioned_d4446e284" xml:lang="ru"><lang/>
                         <w>пень</w></mentioned> и приведенным выше древнеиндийскому и греческому
                     словам, или заимствование из греческого (%iπίναξ%i) еще в скифскую эпоху. К гр.
-                    %iπίναξ%i примыкает и <mentioned xml:lang="fa"><lang/>
+                    %iπίναξ%i примыкает и <mentioned xml:id="mentioned_d4446e289" xml:lang="fa"><lang/>
                         <w>ping, pingān</w>
-                        <gloss><q>чаша</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_GIPh."/><biblScope>II 6</biblScope></bibl>).%n<bibl><ref
-                            type="bibl" target="#ref_ОЯФ_I"
-                    /><biblScope>56</biblScope></bibl>.</etym>
+                        <gloss><q>чаша</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_GIPh."/><biblScope>II 6</biblScope></bibl>).%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>56</biblScope></bibl>.</etym>
                 <etym xml:lang="en"><bibl><biblScope>Hübschmann</biblScope></bibl> considers this
-                    word to be borrowed from Caucasian languages: <mentioned xml:lang="ka"><lang/>
+                    word to be borrowed from Caucasian languages: <mentioned xml:id="mentioned_d4446e311" xml:lang="ka"><lang/>
                         <w>pʼinaki</w>
-                        <gloss><q>plate</q></gloss></mentioned>, <mentioned xml:lang="udi"><lang/>
-                        <w>pʼinak</w></mentioned>, <mentioned xml:lang="xcl"><lang/>
-                        <w>pʼnakʼ</w></mentioned> ( ← <mentioned xml:lang="grc"><lang/>
+                        <gloss><q>plate</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4446e319" xml:lang="udi"><lang/>
+                        <w>pʼinak</w></mentioned>, <mentioned xml:id="mentioned_d4446e324" xml:lang="xcl"><lang/>
+                        <w>pʼnakʼ</w></mentioned> ( ← <mentioned xml:id="mentioned_d4446e329" xml:lang="grc"><lang/>
                         <w>πίναξ</w>
-                        <gloss><q>plank</q></gloss></mentioned>, <mentioned xml:lang="grc"><w/>
+                        <gloss><q>plank</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4446e337" xml:lang="grc"><w/>
                         <gloss><q>plate</q></gloss></mentioned>). Ws. %sMiller%s thought at first
-                    about the relationship with the Indo-European group of words: <mentioned
-                        xml:lang="sa"><lang/>
+                    about the relationship with the Indo-European group of words: <mentioned xml:id="mentioned_d4446e344" xml:lang="sa"><lang/>
                         <w>pināka-</w>
-                        <gloss><q>stick</q></gloss></mentioned>, <mentioned xml:lang="grc"><lang/>
+                        <gloss><q>stick</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4446e352" xml:lang="grc"><lang/>
                         <w>πίναξ</w>
-                        <gloss><q>plank</q></gloss></mentioned>, <mentioned xml:lang="grc"><w/>
-                        <gloss><q>plate</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 86</biblScope></bibl>). He
-                    later joined the opinion of %sНübsсhmann%s (<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._Gr."/><biblScope>10</biblScope></bibl>).
+                        <gloss><q>plank</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4446e360" xml:lang="grc"><w/>
+                        <gloss><q>plate</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 86</biblScope></bibl>). He
+                    later joined the opinion of %sНübsсhmann%s (<bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>10</biblScope></bibl>).
                     %sStackelberg%s compares %ifyng%i and <ref type="xr" target="#entry_fæjnæg"/>
-                    ‘plank’ (<bibl><ref type="bibl" target="#ref_MSt."
-                        /><biblScope>71</biblScope></bibl>). The initial %if%i, as well as the
+                    ‘plank’ (<bibl><ref type="bibl" target="#ref_MSt."/><biblScope>71</biblScope></bibl>). The initial %if%i, as well as the
                     absence of a second vowel makes us think rather that we are dealing with an old
-                    Ossetic (Iranian) word related to <mentioned xml:lang="cu"><lang/>
-                        <w>pьnь</w></mentioned>, <mentioned xml:lang="ru"><lang/>
+                    Ossetic (Iranian) word related to <mentioned xml:id="mentioned_d4446e381" xml:lang="cu"><lang/>
+                        <w>pьnь</w></mentioned>, <mentioned xml:id="mentioned_d4446e386" xml:lang="ru"><lang/>
                         <w>penʼ</w>
                         <gloss><q>stump</q></gloss></mentioned> and the above mentioned ancient
                     Indian and Greek words, or borrowing from Greek (%iπίναξ%i) way back in the
-                    Scythian era. <mentioned xml:lang="fa"><lang/>
+                    Scythian era. <mentioned xml:id="mentioned_d4446e394" xml:lang="fa"><lang/>
                         <w>ping, pingān</w>
                         <gloss><q>cup</q></gloss></mentioned> is also close to Greek %iπίναξ%i
                             (<bibl><ref type="bibl" target="#ref_GIPh."/><biblScope>II
-                        6</biblScope></bibl>).%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                            /><biblScope>56</biblScope></bibl>.</etym>
+                        6</biblScope></bibl>).%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>56</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

@@ -1,34 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">dongæmttæ</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_dongæmttæ" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>dongæmttæ</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>dongontæ</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d4541e72"><abv:tr xml:lang="ru">
                         <q>углы губ</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>lip corners</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4541e84">
                         <quote>nyrma jæ qwymyz jæ dongæmttæj kæly</quote>
                         <abv:tr xml:lang="ru">
                             <q>пока у него молозиво течет из углов губ</q>
@@ -37,7 +42,7 @@
                             <q>beestings still flow from the corners of his lips</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4541e99" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>omæn ba neræn æ madi æxsir æ dongontæj ku kæluj</quote>
                         <abv:tr xml:lang="ru">
@@ -50,12 +55,10 @@
                             99</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Мн. ч. от <ref type="xr" target="#entry_don"/>-<ref type="xr"
-                        target="#entry_kom"/>; <ref type="xr" target="#entry_don"/> здесь в значении
+                <etym xml:lang="ru">Мн. ч. от <ref type="xr" target="#entry_don"/>-<ref type="xr" target="#entry_kom"/>; <ref type="xr" target="#entry_don"/> здесь в значении
                     ‘слюна’, <ref type="xr" target="#entry_kom"/> — ‘рот’: „обильные слюной части
                     рта“. Ср. <ref type="xr" target="#entry_komydon"/> ‘слюна’.</etym>
-                <etym xml:lang="en">Plural form of <ref type="xr" target="#entry_don"/>-<ref
-                        type="xr" target="#entry_kom"/>; <ref type="xr" target="#entry_don"/> here
+                <etym xml:lang="en">Plural form of <ref type="xr" target="#entry_don"/>-<ref type="xr" target="#entry_kom"/>; <ref type="xr" target="#entry_don"/> here
                     means ‘saliva’, <ref type="xr" target="#entry_kom"/> — ‘mouth’: “abundant saliva
                     in the mouth”. Cf. <ref type="xr" target="#entry_komydon"/> ‘saliva’.</etym>
             </entry>

@@ -1,37 +1,42 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">carm</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_carm" xml:lang="os">
                 <form type="lemma"><orth>carm</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d5914e69"><sense xml:id="sense_d5914e70"><abv:tr xml:lang="ru">
                             <q>шкура</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>fell</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d5914e79"><abv:tr xml:lang="ru">
                             <q>кожа</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>skin</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d5914e91">
                         <quote>bastyǧtoj ruvasæn jæ carm</quote>
                         <abv:tr xml:lang="ru">
                             <q>содрали с (мертвой) лисицы шкуру</q>
@@ -39,10 +44,9 @@
                         <abv:tr xml:lang="en">
                             <q>[they] peeled the skin from fox's hide</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Нарт._сказ."
-                            /><biblScope>290</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Нарт._сказ."/><biblScope>290</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5914e110">
                         <quote>galʒarm sæ wælæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>на них шкура быка</q>
@@ -52,7 +56,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>72</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5914e129">
                         <quote>tærqūsʒarm sæ byny tyd</quote>
                         <abv:tr xml:lang="ru">
                             <q>заячья шкура постлана под ними</q>
@@ -62,7 +66,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>72</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5914e148">
                         <quote>lægʒarm tænæg ū</quote>
                         <abv:tr xml:lang="ru">
                             <q>человеческая кожа тонка</q>
@@ -72,7 +76,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>50</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5914e167" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>caræj fidi æxsæn ralæstæj</quote>
                         <abv:tr xml:lang="ru">
@@ -84,7 +88,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
                             77</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5914e190">
                         <quote>fusʒarm xodæ, bijnag ronæ…</quote>
                         <abv:tr xml:lang="ru">
                             <q>в шапке из овечьей шкуры, с войлочным поясом</q>
@@ -95,71 +99,56 @@
                         <bibl><ref type="bibl" target="#src_Sam."/><biblScope>97</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Восходит к <mentioned xml:lang="ira"><lang/>
+                <etym xml:lang="ru">Восходит к <mentioned xml:id="mentioned_d5914e212" xml:lang="ira"><lang/>
                         <w>*čārman-</w>
-                        <gloss><q>шкура</q></gloss></mentioned>, <mentioned xml:lang="ira"><w/>
+                        <gloss><q>шкура</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5914e220" xml:lang="ira"><w/>
                         <gloss><q>кожа</q></gloss></mentioned>, c отпадением конечного -%ian%i-, как
-                    в <ref type="xr" target="#entry_wærm"/> ‘яма’, <ref type="xr"
-                        target="#entry_casm"/> ‘петля’ и др. Ср.<mentioned xml:lang="ps"><lang/>
-                        <w>carman</w></mentioned>, <mentioned xml:lang="fa"><lang/>
-                        <w>čarm</w></mentioned>, <mentioned xml:lang="pal"><lang/>
-                        <w>čarm</w></mentioned>, <mentioned xml:lang="zkh"><lang/>
-                        <w>carm</w></mentioned>, <mentioned xml:lang="sog"><lang/>
-                        <w>*čarn(črm)</w></mentioned>, <mentioned xml:lang="kho"><lang/>
-                        <w>čarman-</w></mentioned>, <mentioned xml:lang="peo"><lang/>
-                        <w>čarman-</w><note type="comment" xml:lang="ru"> (<bibl><ref type="bibl"
-                                    target="#ref_BSL"/><biblScope xml:lang="ru">1951, стр.
-                                    41</biblScope></bibl>)</note></mentioned>, <mentioned
-                        xml:lang="ae"><lang/>
-                        <w>čarəman-</w></mentioned>, <mentioned xml:lang="sa"><lang/>
+                    в <ref type="xr" target="#entry_wærm"/> ‘яма’, <ref type="xr" target="#entry_casm"/> ‘петля’ и др. Ср.<mentioned xml:id="mentioned_d5914e230" xml:lang="ps"><lang/>
+                        <w>carman</w></mentioned>, <mentioned xml:id="mentioned_d5914e236" xml:lang="fa"><lang/>
+                        <w>čarm</w></mentioned>, <mentioned xml:id="mentioned_d5914e241" xml:lang="pal"><lang/>
+                        <w>čarm</w></mentioned>, <mentioned xml:id="mentioned_d5914e246" xml:lang="zkh"><lang/>
+                        <w>carm</w></mentioned>, <mentioned xml:id="mentioned_d5914e251" xml:lang="sog"><lang/>
+                        <w>*čarn(črm)</w></mentioned>, <mentioned xml:id="mentioned_d5914e256" xml:lang="kho"><lang/>
+                        <w>čarman-</w></mentioned>, <mentioned xml:id="mentioned_d5914e261" xml:lang="peo"><lang/>
+                        <w>čarman-</w><note type="comment" xml:lang="ru"> (<bibl><ref type="bibl" target="#ref_BSL"/><biblScope xml:lang="ru">1951, стр.
+                                    41</biblScope></bibl>)</note></mentioned>, <mentioned xml:id="mentioned_d5914e274" xml:lang="ae"><lang/>
+                        <w>čarəman-</w></mentioned>, <mentioned xml:id="mentioned_d5914e279" xml:lang="sa"><lang/>
                         <w>čarman-</w>
-                        <gloss><q>шкура</q></gloss></mentioned>, <mentioned xml:lang="cu"><lang/>
+                        <gloss><q>шкура</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5914e287" xml:lang="cu"><lang/>
                         <w n="0">чрѣмъ</w>
-                        <gloss><q>шатер</q></gloss></mentioned>. <mentioned xml:lang="os"
-                        extralang="os-x-digor"><lang/>
+                        <gloss><q>шатер</q></gloss></mentioned>. <mentioned xml:id="mentioned_d5914e296" xml:lang="os" extralang="os-x-digor"><lang/>
                         <w>cærmin</w>
-                        <gloss><q>кожаный</q></gloss></mentioned> — <mentioned xml:lang="fa"><lang/>
+                        <gloss><q>кожаный</q></gloss></mentioned> — <mentioned xml:id="mentioned_d5914e304" xml:lang="fa"><lang/>
                         <w>čarmin</w></mentioned>. — О технике обработки кожи у осетин см. под
                     словом <ref type="xr" target="#entry_yldyǧ"/>. Нерасчлененность значений ‘шкура’
                     и ‘кожа’ говорит о том, что кожевенное производство не достигло значительного
-                            развития.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"
-                            /><biblScope>II 50, 78</biblScope></bibl>; <bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._Gr."/><biblScope>28</biblScope></bibl>. —
+                            развития.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 50, 78</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>28</biblScope></bibl>. —
                             <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>18,
                             161</biblScope></bibl>.</etym>
-                <etym xml:lang="en">It traces back to <mentioned xml:lang="ira"><lang/>
+                <etym xml:lang="en">It traces back to <mentioned xml:id="mentioned_d5914e327" xml:lang="ira"><lang/>
                         <w>*čārman-</w>
-                        <gloss><q>fell</q></gloss></mentioned>, <mentioned xml:lang="ira"><w/>
+                        <gloss><q>fell</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5914e335" xml:lang="ira"><w/>
                         <gloss><q>skin</q></gloss></mentioned>, with the loss of the final -%ian%i-,
-                    like in <ref type="xr" target="#entry_wærm"/> ‘hole’, <ref type="xr"
-                        target="#entry_casm"/> ‘loop’ etc. Cf.<mentioned xml:lang="ps"><lang/>
-                        <w>carman</w></mentioned>, <mentioned xml:lang="fa"><lang/>
-                        <w>čarm</w></mentioned>, <mentioned xml:lang="pal"><lang/>
-                        <w>čarm</w></mentioned>, <mentioned xml:lang="zkh"><lang/>
-                        <w>carm</w></mentioned>, <mentioned xml:lang="sog"><lang/>
-                        <w>*čarn(črm)</w></mentioned>, <mentioned xml:lang="kho"><lang/>
-                        <w>čarman-</w></mentioned>, <mentioned xml:lang="peo"><lang/>
+                    like in <ref type="xr" target="#entry_wærm"/> ‘hole’, <ref type="xr" target="#entry_casm"/> ‘loop’ etc. Cf.<mentioned xml:id="mentioned_d5914e345" xml:lang="ps"><lang/>
+                        <w>carman</w></mentioned>, <mentioned xml:id="mentioned_d5914e351" xml:lang="fa"><lang/>
+                        <w>čarm</w></mentioned>, <mentioned xml:id="mentioned_d5914e356" xml:lang="pal"><lang/>
+                        <w>čarm</w></mentioned>, <mentioned xml:id="mentioned_d5914e361" xml:lang="zkh"><lang/>
+                        <w>carm</w></mentioned>, <mentioned xml:id="mentioned_d5914e366" xml:lang="sog"><lang/>
+                        <w>*čarn(črm)</w></mentioned>, <mentioned xml:id="mentioned_d5914e371" xml:lang="kho"><lang/>
+                        <w>čarman-</w></mentioned>, <mentioned xml:id="mentioned_d5914e376" xml:lang="peo"><lang/>
                         <w>čarman-</w><note type="comment" xml:lang="en">
-                                    (<bibl><ref type="bibl" target="#ref_BSL"/><biblScope xml:lang="en"
-                                    >1951, p. 41</biblScope></bibl>)</note></mentioned>, <mentioned
-                        xml:lang="ae"><lang/>
-                        <w>čarəman-</w></mentioned>, <mentioned xml:lang="sa"><lang/>
+                                    (<bibl><ref type="bibl" target="#ref_BSL"/><biblScope xml:lang="en">1951, p. 41</biblScope></bibl>)</note></mentioned>, <mentioned xml:id="mentioned_d5914e389" xml:lang="ae"><lang/>
+                        <w>čarəman-</w></mentioned>, <mentioned xml:id="mentioned_d5914e394" xml:lang="sa"><lang/>
                         <w>čarman-</w>
-                        <gloss><q>fell</q></gloss></mentioned>, <mentioned xml:lang="cu"><lang/>
+                        <gloss><q>fell</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5914e402" xml:lang="cu"><lang/>
                         <w>črěmъ</w>
-                        <gloss><q>tent</q></gloss></mentioned>. <mentioned xml:lang="os"
-                        extralang="os-x-digor"><lang/>
+                        <gloss><q>tent</q></gloss></mentioned>. <mentioned xml:id="mentioned_d5914e410" xml:lang="os" extralang="os-x-digor"><lang/>
                         <w>cærmin</w>
-                        <gloss><q>(made of) leather</q></gloss></mentioned> — <mentioned
-                        xml:lang="fa"><lang/>
-                        <w>čarmin</w></mentioned>. — See the word <ref type="xr"
-                        target="#entry_yldyǧ"/> for the technique of leather working in Ossetia .
+                        <gloss><q>(made of) leather</q></gloss></mentioned> — <mentioned xml:id="mentioned_d5914e418" xml:lang="fa"><lang/>
+                        <w>čarmin</w></mentioned>. — See the word <ref type="xr" target="#entry_yldyǧ"/> for the technique of leather working in Ossetia .
                     The indivisibility of meanings ‘fell’ and ‘skin’ shows that leathermaking has
-                    not reached significant development.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 50, 78</biblScope></bibl>;
-                            <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>28</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_ОЯФ_I"/><biblScope>18, 161</biblScope></bibl>.</etym>
+                    not reached significant development.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 50, 78</biblScope></bibl>;
+                            <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>28</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>18, 161</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

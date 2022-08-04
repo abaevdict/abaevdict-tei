@@ -1,51 +1,55 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">færæz</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_færæz" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>færæz</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>færæznæ</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d1576e72"><sense xml:id="sense_d1576e73"><abv:tr xml:lang="ru">
                             <q>средство</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>means</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d1576e82"><abv:tr xml:lang="ru">
                             <q>способ</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>method</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d1576e91"><abv:tr xml:lang="ru">
                             <q>возможность</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>possibility</q>
                         </abv:tr></sense></sense>
-                <re>
+                <re xml:id="re_d1576e101">
                     <form type="lemma"><orth>æværæz</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d1576e106"><abv:tr xml:lang="ru">
                             <q>беспомощный</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>helpless</q>
-                        </abv:tr><note type="comment" xml:lang="ru">(из %iæ-færæz%i) </note><note
-                            type="comment" xml:lang="en">(from %iæ-færæz%i) </note></sense>
+                        </abv:tr><note type="comment" xml:lang="ru">(из %iæ-færæz%i) </note><note type="comment" xml:lang="en">(from %iæ-færæz%i) </note></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d1576e123">
                         <quote>k˳yst — cardæn færæz</quote>
                         <abv:tr xml:lang="ru">
                             <q>работа (дает) возможность жить</q>
@@ -55,7 +59,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>55</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1576e142">
                         <quote>æværæz synʒy kʼūtæryl bast</quote>
                         <abv:tr xml:lang="ru">
                             <q>беспомощный (как бы) привязан к кусту терновника</q>
@@ -66,24 +70,17 @@
                         <bibl><ref type="bibl" target="#src_Ӕмб."/><biblScope>8</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Отглагольное образование от <ref type="xr"
-                        target="#entry_færazyn"/> | %ifærazun%i ‘мочь’, ‘быть, в состоянии что-либо
+                <etym xml:lang="ru">Отглагольное образование от <ref type="xr" target="#entry_færazyn"/> | %ifærazun%i ‘мочь’, ‘быть, в состоянии что-либо
                     сделать’. Аналогичные образования с помощью суффикса %i-n%i | %i-næ%i более
                     распространены в дигорском; ср. <ref type="xr" target="#entry_xæsnæ"/> и др.
-                            (<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope xml:lang="ru"
-                            >537 сл.</biblScope></bibl>). Иронский утратил конечное %i-n%i после %iz%i, как и в
+                            (<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope xml:lang="ru">537 сл.</biblScope></bibl>). Иронский утратил конечное %i-n%i после %iz%i, как и в
                     некоторых других случаях; ср. <ref type="xr" target="#entry_xæs"/> (из
-                    %ixæsn%i), <ref type="xr" target="#entry_qwaz"/> (из %iqwazn%i).%n<bibl><ref
-                            type="bibl" target="#ref_ОЯФ_I"
-                    /><biblScope>574</biblScope></bibl>.</etym>
-                <etym xml:lang="en">A deverbal derivative of <ref type="xr" target="#entry_færazyn"
-                    /> | %ifærazun%i ‘be able to’. The analogous %i-n%i | %i-næ%i derivatives are
+                    %ixæsn%i), <ref type="xr" target="#entry_qwaz"/> (из %iqwazn%i).%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>574</biblScope></bibl>.</etym>
+                <etym xml:lang="en">A deverbal derivative of <ref type="xr" target="#entry_færazyn"/> | %ifærazun%i ‘be able to’. The analogous %i-n%i | %i-næ%i derivatives are
                     more widespread in Digor; cf. <ref type="xr" target="#entry_xæsnæ"/> etc.
                             (<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope xml:lang="en">537
                     ff.</biblScope></bibl>). Iron has dropped the final %i-n%i after %iz%i, as in
-                    some other cases; cf. <ref type="xr" target="#entry_xæs"/> (from %ixæsn%i), <ref
-                        type="xr" target="#entry_qwaz"/> (from %iqwazn%i).%n<bibl><ref type="bibl"
-                            target="#ref_ОЯФ_I"/><biblScope>574</biblScope></bibl>.</etym>
+                    some other cases; cf. <ref type="xr" target="#entry_xæs"/> (from %ixæsn%i), <ref type="xr" target="#entry_qwaz"/> (from %iqwazn%i).%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>574</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

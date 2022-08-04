@@ -1,28 +1,33 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ḱʼyrxyn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ḱʼyrxyn" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>ḱʼyrxyn</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>kʼirxun</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d718e72"><abv:tr xml:lang="ru">
                         <q>выпивать</q>
                     </abv:tr><note type="comment" xml:lang="ru"> (экспрессивное
                         выражение)</note><note type="comment" xml:lang="en">
@@ -31,17 +36,17 @@
                     </abv:tr><note type="comment" xml:lang="ru"> (экспрессивное
                         выражение)</note><note type="comment" xml:lang="en">
                     (expressive)</note></sense>
-                <re>
-                    <re>
+                <re xml:id="re_d718e90">
+                    <re xml:id="re_d718e92">
                         <form type="lemma"><orth>aḱʼyrxta</orth></form>
                     </re>
-                    <re>
+                    <re xml:id="re_d718e98">
                         <form type="lemma"><orth>nyḱʼḱʼyrxta</orth></form>
-                        <sense><sense><abv:tr xml:lang="ru">
+                        <sense xml:id="sense_d718e103"><sense xml:id="sense_d718e104"><abv:tr xml:lang="ru">
                                     <q>выпил</q>
                                 </abv:tr><abv:tr xml:lang="en">
                                     <q>drank</q>
-                                </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                                </abv:tr></sense><sense xml:id="sense_d718e113"><abv:tr xml:lang="ru">
                                     <q>опрокинул</q>
                                 </abv:tr><note type="comment" xml:lang="ru"> (обычно о спиртных
                                     напитках)</note><note type="comment" xml:lang="en"> (usually
@@ -57,9 +62,8 @@
                     причудливых и неожиданных семантических переносов и ассоциаций. Ср.
                     экспрессивные значения русского %iжарить%i („бежать“, „играть на инструментах“ и
                     пр.), в том числе значение „пить“ (у %sЕсенина%s: „с бандитами жарю спирт“). Ос.
-                    %ikʼirxun%i сближается с <mentioned xml:lang="ru"><lang/>
-                        <w>черкать</w></mentioned>, <mentioned xml:lang="ru"
-                        ><w>чиркать</w></mentioned>, которое, наряду с основным значением ‘тереть’,
+                    %ikʼirxun%i сближается с <mentioned xml:id="mentioned_d718e135" xml:lang="ru"><lang/>
+                        <w>черкать</w></mentioned>, <mentioned xml:id="mentioned_d718e140" xml:lang="ru"><w>чиркать</w></mentioned>, которое, наряду с основным значением ‘тереть’,
                     ‘царапать’ и пр., употребляется в диалектах со значением „пить хмельные напитки“
                             (<bibl><ref type="bibl" target="#ref_Даль"/><biblScope>%r3%r IV
                             1345</biblScope></bibl>). Если это совпадение не случайно, то мы имеем в
@@ -73,11 +77,9 @@
                     of Russian %iжарить%i ‘roast’ (“run”, “play musical instruments” etc.),
                     including the meaning “drink” (%sEsenin%s writes: %iс бандитами жарю спирт%i
                     “lit. I am roasting raw alcohol with bandits”). Ossetic %ikʼirxun%i comes close
-                    to <mentioned xml:lang="ru"><lang/>
-                        <w>čerkatʼ</w></mentioned>, <mentioned xml:lang="ru"
-                        ><w>čirkatʼ</w></mentioned>, which, along with the basic meaning ‘rub’,
-                    ‘scratch’ etc., is used in dialects with the meaning “drink alcohol” (<bibl><ref
-                            type="bibl" target="#ref_Даль"/><biblScope>%r3%r IV
+                    to <mentioned xml:id="mentioned_d718e153" xml:lang="ru"><lang/>
+                        <w>čerkatʼ</w></mentioned>, <mentioned xml:id="mentioned_d718e158" xml:lang="ru"><w>čirkatʼ</w></mentioned>, which, along with the basic meaning ‘rub’,
+                    ‘scratch’ etc., is used in dialects with the meaning “drink alcohol” (<bibl><ref type="bibl" target="#ref_Даль"/><biblScope>%r3%r IV
                         1345</biblScope></bibl>). If this coincidence is not accidental, in both
                     languages there is the same onomatopoeic stem %i*kirk-%i with the meaning “make
                     a striking sound”, and then expressively — “drink”. For semantics cf. also

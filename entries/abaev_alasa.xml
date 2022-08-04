@@ -1,33 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">alasa</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_alasa" xml:lang="os">
                 <form type="lemma"><orth>alasa</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d486e69"><abv:tr xml:lang="ru">
                         <q>мерин</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>gelt horse</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d486e81" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>æ borcʼux bor alasabæl æ saw sarǧ ængon fevardta</quote>
                         <abv:tr xml:lang="ru">
@@ -38,10 +43,9 @@
                             <q>he put the black saddle tightly on his yellow-faced cream-coloured
                                 gelt horse</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Диг._сказ."
-                            /><biblScope>52</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Диг._сказ."/><biblScope>52</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d486e103" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>sæxe bæxtæ — alasatæ</quote>
                         <abv:tr xml:lang="ru">
@@ -51,7 +55,7 @@
                             <q>their horses (are called) %salasa%s</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d486e121" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>Mædinæ isbadun kodta nærton alasabæl jeʽnsuværi</quote>
                         <abv:tr xml:lang="ru">
@@ -64,34 +68,31 @@
                             35</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из <mentioned xml:lang="trk"><lang/>
-                        <w>alaša</w></mentioned>; ср. <mentioned xml:lang="chm"><lang/>
+                <etym xml:lang="ru">Из <mentioned xml:id="mentioned_d486e146" xml:lang="trk"><lang/>
+                        <w>alaša</w></mentioned>; ср. <mentioned xml:id="mentioned_d486e151" xml:lang="chm"><lang/>
                         <w>aлaшa</w>
-                        <gloss><q>мерин</q></gloss></mentioned>, <mentioned xml:lang="x-mordvin"><lang/>
-                        <w>aлaшa</w></mentioned>, <mentioned xml:lang="cv"><lang/>
+                        <gloss><q>мерин</q></gloss></mentioned>, <mentioned xml:id="mentioned_d486e159" xml:lang="x-mordvin"><lang/>
+                        <w>aлaшa</w></mentioned>, <mentioned xml:id="mentioned_d486e164" xml:lang="cv"><lang/>
                         <w n="0">лaтa</w>
-                        <gloss><q>лошадь</q></gloss></mentioned>, <mentioned xml:lang="ab"><lang/>
-                        <w>alaša</w></mentioned>, <mentioned xml:lang="kbd"><lang/>
-                        <w>alaše</w></mentioned> (о нечистокровной лошади: <bibl><ref type="bibl"
-                            target="#ref_СМК"/><biblScope>XXV %i3%i 25</biblScope></bibl>),
-                        <mentioned xml:lang="ce"><lang/>
-                        <w>alaš</w></mentioned>, <mentioned xml:lang="inh"><lang/>
-                        <w>alæčæ</w></mentioned>, <mentioned xml:lang="inh"><w>alčæ</w>
+                        <gloss><q>лошадь</q></gloss></mentioned>, <mentioned xml:id="mentioned_d486e173" xml:lang="ab"><lang/>
+                        <w>alaša</w></mentioned>, <mentioned xml:id="mentioned_d486e179" xml:lang="kbd"><lang/>
+                        <w>alaše</w></mentioned> (о нечистокровной лошади: <bibl><ref type="bibl" target="#ref_СМК"/><biblScope>XXV %i3%i 25</biblScope></bibl>),
+                        <mentioned xml:id="mentioned_d486e188" xml:lang="ce"><lang/>
+                        <w>alaš</w></mentioned>, <mentioned xml:id="mentioned_d486e193" xml:lang="inh"><lang/>
+                        <w>alæčæ</w></mentioned>, <mentioned xml:id="mentioned_d486e198" xml:lang="inh"><w>alčæ</w>
                         <gloss><q>мерин</q></gloss></mentioned>.</etym>
-                <etym xml:lang="en">From <mentioned xml:lang="trk"><lang/>
-                        <w>alaša</w></mentioned>; cf. <mentioned xml:lang="chm"><lang/>
+                <etym xml:lang="en">From <mentioned xml:id="mentioned_d486e207" xml:lang="trk"><lang/>
+                        <w>alaša</w></mentioned>; cf. <mentioned xml:id="mentioned_d486e212" xml:lang="chm"><lang/>
                         <w>alaša</w>
-                        <gloss><q>gelt horse</q></gloss></mentioned>, <mentioned
-                        xml:lang="x-mordvin"><lang/>
-                        <w>alaša</w></mentioned>, <mentioned xml:lang="cv"><lang/>
+                        <gloss><q>gelt horse</q></gloss></mentioned>, <mentioned xml:id="mentioned_d486e220" xml:lang="x-mordvin"><lang/>
+                        <w>alaša</w></mentioned>, <mentioned xml:id="mentioned_d486e225" xml:lang="cv"><lang/>
                         <w>lata</w>
-                        <gloss><q>horse</q></gloss></mentioned>, <mentioned xml:lang="ab"><lang/>
-                        <w>alaša</w></mentioned>, <mentioned xml:lang="kbd"><lang/>
-                        <w>alaše</w></mentioned> (about a non-purebred horse:<bibl><ref type="bibl"
-                            target="#ref_СМК"/><biblScope>XXV %i3%i 25</biblScope></bibl>),
-                        <mentioned xml:lang="ce"><lang/>
-                        <w>alaš</w></mentioned>, <mentioned xml:lang="inh"><lang/>
-                        <w>alæčæ</w></mentioned>, <mentioned xml:lang="inh"><w>alčæ</w>
+                        <gloss><q>horse</q></gloss></mentioned>, <mentioned xml:id="mentioned_d486e233" xml:lang="ab"><lang/>
+                        <w>alaša</w></mentioned>, <mentioned xml:id="mentioned_d486e239" xml:lang="kbd"><lang/>
+                        <w>alaše</w></mentioned> (about a non-purebred horse:<bibl><ref type="bibl" target="#ref_СМК"/><biblScope>XXV %i3%i 25</biblScope></bibl>),
+                        <mentioned xml:id="mentioned_d486e248" xml:lang="ce"><lang/>
+                        <w>alaš</w></mentioned>, <mentioned xml:id="mentioned_d486e253" xml:lang="inh"><lang/>
+                        <w>alæčæ</w></mentioned>, <mentioned xml:id="mentioned_d486e258" xml:lang="inh"><w>alčæ</w>
                         <gloss><q>gelt horse</q></gloss></mentioned>.</etym>
             </entry>
         </body>

@@ -1,34 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ædyly</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ædyly" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>ædyly</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>æduli</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d4744e72"><abv:tr xml:lang="ru">
                         <q>глупый</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>stupid</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4744e84">
                         <quote>wydis dywwæ ʽvsymæry; īw ʒy wydī zændǵyn, īnnæ ædyly</quote>
                         <abv:tr xml:lang="ru">
                             <q>было два брата; один из них был умный, другой глупый</q>
@@ -37,10 +42,9 @@
                             <q>there were two brothers; one of them was smart, the other was
                                 stupid</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Munk."
-                            /><biblScope>146</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Munk."/><biblScope>146</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4744e103">
                         <quote>ædylyjy fændaggag razdær fæxærync</quote>
                         <abv:tr xml:lang="ru">
                             <q>дорожная провизия глупого съедается в начале (пути)</q>
@@ -52,7 +56,7 @@
                         <bibl><ref type="bibl" target="#src_ЮОПам."/><biblScope>III
                             234</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4744e122" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>wæd ma mæ xonæntæ æduli!</quote>
                         <abv:tr xml:lang="ru">
@@ -61,10 +65,9 @@
                         <abv:tr xml:lang="en">
                             <q>then let them still call me a fool!</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Gurdž._Æduli"
-                            /><biblScope>77</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Gurdž._Æduli"/><biblScope>77</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4744e144" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>næ færazun mæ mednimær kænun mæxe ædulijæn ænkʼaj</quote>
                         <abv:tr xml:lang="ru">
@@ -73,59 +76,55 @@
                         <abv:tr xml:lang="en">
                             <q>I can not imagine that I would become the wife of a fool</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Gurdž._Æduli"
-                            /><biblScope>89</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Gurdž._Æduli"/><biblScope>89</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Ср. <mentioned xml:lang="trk"><lang/>
+                <etym xml:lang="ru">Ср. <mentioned xml:id="mentioned_d4744e169" xml:lang="trk"><lang/>
                         <w>deli, däli</w>
-                        <gloss><q>глупый</q></gloss></mentioned>, <mentioned xml:lang="trk"><w/>
-                        <gloss><q>дурак</q></gloss></mentioned>, <mentioned xml:lang="trk"><w/>
+                        <gloss><q>глупый</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4744e177" xml:lang="trk"><w/>
+                        <gloss><q>дурак</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4744e183" xml:lang="trk"><w/>
                         <gloss><q>сумасшедший</q></gloss></mentioned>; проникло и в другие
-                    кавказские языки: <mentioned xml:lang="kbd"><lang/>
+                    кавказские языки: <mentioned xml:id="mentioned_d4744e189" xml:lang="kbd"><lang/>
                         <w>delä, dejlä</w>
-                        <gloss><q>глупый</q></gloss></mentioned>, <mentioned xml:lang="kbd"><w/>
-                        <gloss><q>дурак</q></gloss></mentioned>, <mentioned xml:lang="lez"><lang/>
+                        <gloss><q>глупый</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4744e197" xml:lang="kbd"><w/>
+                        <gloss><q>дурак</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4744e204" xml:lang="lez"><lang/>
                         <w>deli</w>
                         <gloss><q>сумасшедший</q></gloss></mentioned>. Появление в начале %iæ%i,
                     осмысляемого, по-видимому, как α privativum, явилось результатом восприятия
                     этого слова как негативного: „не-разумный“, „без-умный“. Может быть, сыграла
-                    также роль контаминация с <mentioned xml:lang="ar"><lang/>
+                    также роль контаминация с <mentioned xml:id="mentioned_d4744e212" xml:lang="ar"><lang/>
                         <w>abdāl</w>
-                        <gloss><q>отшельник</q></gloss></mentioned>, <mentioned xml:lang="ar"><w/>
-                        <gloss><q>безумец</q></gloss></mentioned>, ср. <mentioned xml:lang="av"><lang/>
+                        <gloss><q>отшельник</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4744e220" xml:lang="ar"><w/>
+                        <gloss><q>безумец</q></gloss></mentioned>, ср. <mentioned xml:id="mentioned_d4744e226" xml:lang="av"><lang/>
                         <w>’adal-</w>
-                        <gloss><q>глупый</q></gloss></mentioned>. <bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._Gr."/><biblScope>80</biblScope></bibl> выводил
-                    из %i*a-turya%i, ср. <mentioned xml:lang="sa"><lang/>
+                        <gloss><q>глупый</q></gloss></mentioned>. <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>80</biblScope></bibl> выводил
+                    из %i*a-turya%i, ср. <mentioned xml:id="mentioned_d4744e238" xml:lang="sa"><lang/>
                         <w>turas</w>
-                        <gloss><q>мощный</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
+                        <gloss><q>мощный</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4744e247" xml:lang="sa"><w/>
                         <gloss><q>быстрый</q></gloss></mentioned>. Однако значения плохо
                     вяжутся.</etym>
-                <etym xml:lang="en">Cf. <mentioned xml:lang="trk"><lang/>
+                <etym xml:lang="en">Cf. <mentioned xml:id="mentioned_d4744e257" xml:lang="trk"><lang/>
                         <w>deli, däli</w>
-                        <gloss><q>stupid</q></gloss></mentioned>, <mentioned xml:lang="trk"><w/>
-                        <gloss><q>fool</q></gloss></mentioned>, <mentioned xml:lang="trk"><w/>
+                        <gloss><q>stupid</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4744e265" xml:lang="trk"><w/>
+                        <gloss><q>fool</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4744e271" xml:lang="trk"><w/>
                         <gloss><q>crazy</q></gloss></mentioned>; found its way into other Caucasian
-                    languages: <mentioned xml:lang="kbd"><lang/>
+                    languages: <mentioned xml:id="mentioned_d4744e277" xml:lang="kbd"><lang/>
                         <w>delä, dejlä</w>
-                        <gloss><q>stupid</q></gloss></mentioned>, <mentioned xml:lang="kbd"><w/>
-                        <gloss><q>fool</q></gloss></mentioned>, <mentioned xml:lang="lez"><lang/>
+                        <gloss><q>stupid</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4744e285" xml:lang="kbd"><w/>
+                        <gloss><q>fool</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4744e292" xml:lang="lez"><lang/>
                         <w>deli</w>
                         <gloss><q>crazy</q></gloss></mentioned>. The appearance of %iæ%i at the
                     beginning, which was treated, apparently, as α privativum, was the result of the
                     fact that this word was percepted as negative: “not-intelligent”,
-                    “without-intelligent”. Perhaps, contamination with <mentioned xml:lang="ar"><lang/>
+                    “without-intelligent”. Perhaps, contamination with <mentioned xml:id="mentioned_d4744e300" xml:lang="ar"><lang/>
                         <w>abdāl</w>
-                        <gloss><q>отшельник</q></gloss></mentioned>, <mentioned xml:lang="ar"><w/>
-                        <gloss><q>безумец</q></gloss></mentioned> played its role, cf. <mentioned
-                        xml:lang="av"><lang/>
+                        <gloss><q>отшельник</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4744e308" xml:lang="ar"><w/>
+                        <gloss><q>безумец</q></gloss></mentioned> played its role, cf. <mentioned xml:id="mentioned_d4744e314" xml:lang="av"><lang/>
                         <w>’adal-</w>
-                        <gloss><q>stupid</q></gloss></mentioned>. <bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._Gr."/><biblScope>80</biblScope></bibl> traced
-                    it back to %i*a-turya%i, cf. <mentioned xml:lang="sa"><lang/>
+                        <gloss><q>stupid</q></gloss></mentioned>. <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>80</biblScope></bibl> traced
+                    it back to %i*a-turya%i, cf. <mentioned xml:id="mentioned_d4744e326" xml:lang="sa"><lang/>
                         <w>turas</w>
-                        <gloss><q>powerful</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
+                        <gloss><q>powerful</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4744e335" xml:lang="sa"><w/>
                         <gloss><q>fast</q></gloss></mentioned>. However, the meanings do not fit
                     well.</etym>
             </entry>

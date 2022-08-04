@@ -1,38 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">fælvyx</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_fælvyx" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>fælvyx</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>fælvunx</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d4574e72"><sense xml:id="sense_d4574e73"><abv:tr xml:lang="ru">
                             <q>полуиспеченный</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>half-baked</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d4574e82"><abv:tr xml:lang="ru">
                             <q>пропеченный слегка</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>slightly baked</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4574e94" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>fons… xoræj æmpuld nillæg fælvunx kærdægbæl xezgæj…</quote>
                         <abv:tr xml:lang="ru">
@@ -46,15 +51,11 @@
                         <bibl><ref type="bibl" target="#src_Sam."/><biblScope>83</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Вероятно, из %ifælm-fyx%i, где %ifælm%i — усеченное <ref
-                        type="xr" target="#entry_fælmæn"/> ‘мягкий’, <ref type="xr"
-                        target="#entry_fyx"/> ‘печеный’, ‘вареный’, ‘кипяченый’. В правильности
+                <etym xml:lang="ru">Вероятно, из %ifælm-fyx%i, где %ifælm%i — усеченное <ref type="xr" target="#entry_fælmæn"/> ‘мягкий’, <ref type="xr" target="#entry_fyx"/> ‘печеный’, ‘вареный’, ‘кипяченый’. В правильности
                     такого разъяснения убеждает в особенности то, что антонимическим выражением
-                    является %iqæbær-fyx%i ‘сильно, круто пролеченный’, где <ref type="xr"
-                        target="#entry_qæbær"/> ‘твердый’ представляет антоним к %ifælmæn%i.</etym>
+                    является %iqæbær-fyx%i ‘сильно, круто пролеченный’, где <ref type="xr" target="#entry_qæbær"/> ‘твердый’ представляет антоним к %ifælmæn%i.</etym>
                 <etym xml:lang="en">It is probably from %ifælm-fyx%i, where %ifælm%i is a truncated
-                        <ref type="xr" target="#entry_fælmæn"/> ‘soft’, <ref type="xr"
-                        target="#entry_fyx"/> ‘baked’, ‘cooked’, ‘boiled’. The correctness of this
+                        <ref type="xr" target="#entry_fælmæn"/> ‘soft’, <ref type="xr" target="#entry_fyx"/> ‘baked’, ‘cooked’, ‘boiled’. The correctness of this
                     explanation is convinced in particular by the fact that the antonymic expression
                     is %iqæbær-fyx%i ‘well-baked’, where <ref type="xr" target="#entry_qæbær"/>
                     ‘hard’ is the antonym of %ifælmæn%i.</etym>

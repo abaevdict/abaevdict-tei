@@ -1,34 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">kʼædor</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_kʼædor" xml:lang="os-x-iron">
                 <form type="lemma"><orth>kʼædor</orth></form>
                 <usg><lang/></usg>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d3120e72"><abv:tr xml:lang="ru">
                         <q>творог, приготовленный из пахтанья (%imīsyn%i)</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>buttermilk curd (%imīsyn%i)</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d3120e84">
                         <quote>xædʒū wazæg k'ædor k˳y bajjafa wæddær qwamæ būznyg wa</quote>
                         <abv:tr xml:lang="ru">
                             <q>непрошенный гость, если застанет хоть %skʼædor%s, должен быть
@@ -42,18 +47,17 @@
                             228</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Если <mentioned xml:lang="ka" dialect="ka-x-khevs"><lang/>
+                <etym xml:lang="ru">Если <mentioned xml:id="mentioned_d3120e106" xml:lang="ka" dialect="ka-x-khevs"><lang/>
                         <w>k’alt’i</w>
                         <gloss><q>творог</q></gloss></mentioned> представляет метатезу из
                     %i*k’at’li%i, то можно восстановить закономерную %bмегрельскую%b форму
-                        <mentioned xml:lang="xmf"><lang/>
+                        <mentioned xml:id="mentioned_d3120e114" xml:lang="xmf"><lang/>
                         <w>*kʼotʼori</w></mentioned> (ср. %iʒaǧli%i || %iʒoǧori%i ‘собака’), которая
                     и могла дать ос. %ikʼædor%i.</etym>
-                <etym xml:lang="en">If <mentioned xml:lang="ka" dialect="ka-x-khevs"><lang/>
+                <etym xml:lang="en">If <mentioned xml:id="mentioned_d3120e123" xml:lang="ka" dialect="ka-x-khevs"><lang/>
                         <w>k’alt’i</w>
                         <gloss><q>curd</q></gloss></mentioned> is a metathesis from %i*k’at’li%i,
-                    then it is possible to reconstruct a regular %bMingrelian%b form <mentioned
-                        xml:lang="xmf"><lang/>
+                    then it is possible to reconstruct a regular %bMingrelian%b form <mentioned xml:id="mentioned_d3120e131" xml:lang="xmf"><lang/>
                         <w>*kʼotʼori</w></mentioned> (cf. %iʒaǧli%i || %iʒoǧori%i ‘dog’), which
                     could have given Ossetic %ikʼædor%i.</etym>
             </entry>

@@ -1,45 +1,48 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ævzīdun</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ævzīdun" xml:lang="os">
-                <form xml:lang="os-x-iron" type="lemma"><orth>ævzīdun</orth><form type="participle"
-                            ><orth>ævzyst</orth><note type="footnote" n="1"> PUT NOTE HERE
+                <form xml:lang="os-x-iron" type="lemma"><orth>ævzīdun</orth><form type="participle"><orth>ævzyst</orth><note type="footnote" n="1"> PUT NOTE HERE
                         </note></form></form>
-                <form xml:lang="os-x-digor" type="dialectal"><orth>ævzedun</orth><form
-                        type="participle"><orth>ævzist</orth></form></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <form xml:lang="os-x-digor" type="dialectal"><orth>ævzedun</orth><form type="participle"><orth>ævzist</orth></form></form>
+                <sense xml:id="sense_d158e78"><sense xml:id="sense_d158e79"><abv:tr xml:lang="ru">
                             <q>замахиваться</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>to chop</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d158e88"><abv:tr xml:lang="ru">
                             <q>потрясать рукой или оружием</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>to shake hand or weapon</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d158e97"><abv:tr xml:lang="ru">
                             <q>грозить</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>to threaten</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d158e109">
                         <quote>bæxmæ jæxsæj fevzysta</quote>
                         <abv:tr xml:lang="ru">
                             <q>он замахнулся на коня плеткой</q>
@@ -48,7 +51,7 @@
                             <q>he threatened his horse with a whip</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d158e124">
                         <quote>ævzīdæg æm næj</quote>
                         <abv:tr xml:lang="ru">
                             <q>у него нет стимула</q>
@@ -57,7 +60,7 @@
                             <q>he has no incentive</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d158e139">
                         <quote>īw jæxsy fevzīdt</quote>
                         <abv:tr xml:lang="ru">
                             <q>один взмах плетки</q>
@@ -67,7 +70,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>70</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d158e158">
                         <quote>fevzysta bæxmæ — cærgæsaw æj obawmæ sdavta jæ sawlæxag</quote>
                         <abv:tr xml:lang="ru">
                             <q>он замахнулся на коня, (и) шаулох (кабардинский конь), как орел,
@@ -77,10 +80,9 @@
                             <q>he threatened the horse (and) a shauloh (Kabarda horse) lifted him to
                                 a burial mound, like an eagle</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"
-                            /><biblScope>134</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>134</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d158e177" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>de ʽvzist niwwaʒæ, wo ældar</quote>
                         <abv:tr xml:lang="ru">
@@ -91,7 +93,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>66</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d158e200" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>kʼoxæj ævzedgæ niǧǧærtæ kænuj</quote>
                         <abv:tr xml:lang="ru">
@@ -102,7 +104,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>38</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d158e222" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>(cærgæs) kærkbalmæ ravzedidæ</quote>
                         <abv:tr xml:lang="ru">
@@ -113,7 +115,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Sam."/><biblScope>104</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d158e244" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>ævzeduj æ tumbul kʼoxæj</quote>
                         <abv:tr xml:lang="ru">
@@ -122,73 +124,66 @@
                         <abv:tr xml:lang="en">
                             <q>[s/he] threatens with fist</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Gurdž._Æduli"
-                            /><biblScope>84</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Gurdž._Æduli"/><biblScope>84</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Сращение преверба %iæv%i- (из %iabī%i или %iapa%i) с основой
-                    %izīd%i- | %ized%i-, cр. <mentioned xml:lang="srh"><lang/>
-                        <w>ba-zéid-</w></mentioned>, <mentioned xml:lang="srh"><w>bi-zéid-</w>
-                        <gloss><q>ударять</q></gloss></mentioned>, <mentioned xml:lang="srh"><w/>
-                        <gloss><q>толкать</q></gloss></mentioned>, <mentioned xml:lang="srh"><w/>
-                        <gloss><q>попадать в цель</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Tomaschek"/><biblScope>887</biblScope></bibl>); вероятно, к
-                        <mentioned xml:lang="ae"><lang/>
-                        <w>zi-</w></mentioned>, <mentioned xml:lang="sa"><lang/>
+                    %izīd%i- | %ized%i-, cр. <mentioned xml:id="mentioned_d158e269" xml:lang="srh"><lang/>
+                        <w>ba-zéid-</w></mentioned>, <mentioned xml:id="mentioned_d158e274" xml:lang="srh"><w>bi-zéid-</w>
+                        <gloss><q>ударять</q></gloss></mentioned>, <mentioned xml:id="mentioned_d158e280" xml:lang="srh"><w/>
+                        <gloss><q>толкать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d158e286" xml:lang="srh"><w/>
+                        <gloss><q>попадать в цель</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Tomaschek"/><biblScope>887</biblScope></bibl>); вероятно, к
+                        <mentioned xml:id="mentioned_d158e297" xml:lang="ae"><lang/>
+                        <w>zi-</w></mentioned>, <mentioned xml:id="mentioned_d158e302" xml:lang="sa"><lang/>
                         <w>hi-</w>
-                        <gloss><q>погонять</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
-                        <gloss><q>толкать</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
+                        <gloss><q>погонять</q></gloss></mentioned>, <mentioned xml:id="mentioned_d158e310" xml:lang="sa"><w/>
+                        <gloss><q>толкать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d158e316" xml:lang="sa"><w/>
                         <gloss><q>метать</q></gloss></mentioned> и пр., причем в осетинском основа
-                    прош. причастия (<mentioned xml:lang="x-oldirn"><lang/>
-                        <w>zita-</w></mentioned>, <mentioned xml:lang="sa"><lang/>
+                    прош. причастия (<mentioned xml:id="mentioned_d158e322" xml:lang="x-oldirn"><lang/>
+                        <w>zita-</w></mentioned>, <mentioned xml:id="mentioned_d158e327" xml:lang="sa"><lang/>
                         <w>hita-</w></mentioned>) была взята за основу наст, времени; ср. в этом
                     отношении <ref type="xr" target="#entry_ūdyn"/>. От корня %izi%i-, %ihi%i-
                     образован в иранском и древнеиндийском ряд слов, по семантике тесно примыкающих
-                    к <mentioned xml:lang="os"><lang/>
-                        <w>ævzīdyn</w></mentioned>: <mentioned xml:lang="ae"><lang/>
-                        <w>zaena-</w></mentioned>, <mentioned xml:lang="pal"><lang/>
-                        <w>zēn</w></mentioned>, <mentioned xml:lang="fa"><lang/>
+                    к <mentioned xml:id="mentioned_d158e335" xml:lang="os"><lang/>
+                        <w>ævzīdyn</w></mentioned>: <mentioned xml:id="mentioned_d158e340" xml:lang="ae"><lang/>
+                        <w>zaena-</w></mentioned>, <mentioned xml:id="mentioned_d158e345" xml:lang="pal"><lang/>
+                        <w>zēn</w></mentioned>, <mentioned xml:id="mentioned_d158e350" xml:lang="fa"><lang/>
                         <w>zīn</w>
-                        <gloss><q>оружие</q></gloss></mentioned>, <mentioned xml:lang="sa"><lang/>
+                        <gloss><q>оружие</q></gloss></mentioned>, <mentioned xml:id="mentioned_d158e358" xml:lang="sa"><lang/>
                         <w>heti-</w>
-                        <gloss><q>метательное оружие</q></gloss></mentioned>, <mentioned xml:lang="sa"><w>hetú</w>
-                        <gloss><q>побуждение</q></gloss>, <gloss><q>стимул</q></gloss></mentioned>, <mentioned xml:lang="sa"
-                            ><w>hetṛ-</w>
-                        <gloss><q>погонщик лошадей</q></gloss></mentioned> и др. Связь с <ref
-                        type="xr" target="#entry_sīdyn"/> ‘призывать’ невероятна как по необычности
+                        <gloss><q>метательное оружие</q></gloss></mentioned>, <mentioned xml:id="mentioned_d158e367" xml:lang="sa"><w>hetú</w>
+                        <gloss><q>побуждение</q></gloss>, <gloss><q>стимул</q></gloss></mentioned>, <mentioned xml:id="mentioned_d158e376" xml:lang="sa"><w>hetṛ-</w>
+                        <gloss><q>погонщик лошадей</q></gloss></mentioned> и др. Связь с <ref type="xr" target="#entry_sīdyn"/> ‘призывать’ невероятна как по необычности
                     перехода %is%i → %iz%i и различию форм прош. основы (sīdt, ævzyst), так и по
                     семантической отдаленности.</etym>
                 <etym xml:lang="en">The fusion of the preverb %iæv%i- (from %iabī%i or %iapa%i) with
-                    the stem %izīd%i- | %ized%i-, cf. <mentioned xml:lang="srh"><lang/>
-                        <w>ba-zéid-</w></mentioned>, <mentioned xml:lang="srh"><w>bi-zéid-</w>
-                        <gloss><q>to hit</q></gloss></mentioned>, <mentioned xml:lang="srh"><w/>
-                        <gloss><q>to push</q></gloss></mentioned>, <mentioned xml:lang="srh"><w/>
-                        <gloss><q>to hit the target</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Tomaschek"/><biblScope>887</biblScope></bibl>); probably,
-                    it traces back to <mentioned xml:lang="ae"><lang/>
-                        <w>zi-</w></mentioned>, <mentioned xml:lang="sa"><lang/>
+                    the stem %izīd%i- | %ized%i-, cf. <mentioned xml:id="mentioned_d158e388" xml:lang="srh"><lang/>
+                        <w>ba-zéid-</w></mentioned>, <mentioned xml:id="mentioned_d158e393" xml:lang="srh"><w>bi-zéid-</w>
+                        <gloss><q>to hit</q></gloss></mentioned>, <mentioned xml:id="mentioned_d158e399" xml:lang="srh"><w/>
+                        <gloss><q>to push</q></gloss></mentioned>, <mentioned xml:id="mentioned_d158e405" xml:lang="srh"><w/>
+                        <gloss><q>to hit the target</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Tomaschek"/><biblScope>887</biblScope></bibl>); probably,
+                    it traces back to <mentioned xml:id="mentioned_d158e416" xml:lang="ae"><lang/>
+                        <w>zi-</w></mentioned>, <mentioned xml:id="mentioned_d158e421" xml:lang="sa"><lang/>
                         <w>hi-</w>
-                        <gloss><q>to chase</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
-                        <gloss><q>to push</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
+                        <gloss><q>to chase</q></gloss></mentioned>, <mentioned xml:id="mentioned_d158e429" xml:lang="sa"><w/>
+                        <gloss><q>to push</q></gloss></mentioned>, <mentioned xml:id="mentioned_d158e435" xml:lang="sa"><w/>
                         <gloss><q>to throw</q></gloss></mentioned> etc., moreover, in Ossetic the
-                    stem of a past participle form (<mentioned xml:lang="x-oldirn"><lang/>
-                        <w>zita-</w></mentioned>, <mentioned xml:lang="sa"><lang/>
+                    stem of a past participle form (<mentioned xml:id="mentioned_d158e441" xml:lang="x-oldirn"><lang/>
+                        <w>zita-</w></mentioned>, <mentioned xml:id="mentioned_d158e446" xml:lang="sa"><lang/>
                         <w>hita-</w></mentioned>) was taken as a present tense stem; cf. in this
                     relation <ref type="xr" target="#entry_ūdyn"/>. A range of Iranian and %bOld
                     Indian%b words is derived from the root %izi%i-, %ihi%i-; these words are
-                    semantically very close to <mentioned xml:lang="os"><lang/>
-                        <w>ævzīdyn</w></mentioned>: <mentioned xml:lang="ae"><lang/>
-                        <w>zaena-</w></mentioned>, <mentioned xml:lang="pal"><lang/>
-                        <w>zēn</w></mentioned>, <mentioned xml:lang="fa"><lang/>
+                    semantically very close to <mentioned xml:id="mentioned_d158e454" xml:lang="os"><lang/>
+                        <w>ævzīdyn</w></mentioned>: <mentioned xml:id="mentioned_d158e459" xml:lang="ae"><lang/>
+                        <w>zaena-</w></mentioned>, <mentioned xml:id="mentioned_d158e464" xml:lang="pal"><lang/>
+                        <w>zēn</w></mentioned>, <mentioned xml:id="mentioned_d158e469" xml:lang="fa"><lang/>
                         <w>zīn</w>
-                        <gloss><q>weapon</q></gloss></mentioned>, <mentioned xml:lang="sa"><lang/>
+                        <gloss><q>weapon</q></gloss></mentioned>, <mentioned xml:id="mentioned_d158e477" xml:lang="sa"><lang/>
                         <w>heti-</w>
-                        <gloss><q>throwing weapon</q></gloss></mentioned>, <mentioned xml:lang="sa"><lang/>
+                        <gloss><q>throwing weapon</q></gloss></mentioned>, <mentioned xml:id="mentioned_d158e486" xml:lang="sa"><lang/>
                         <w>hetú</w>
-                        <gloss><q>motive</q></gloss>, <gloss><q>incitement</q></gloss></mentioned>, <mentioned xml:lang="sa"
-                            ><w>hetṛ-</w>
-                        <gloss><q>horse driver</q></gloss></mentioned> etc. The connection with <ref
-                        type="xr" target="#entry_sīdyn"/> ‘to urge’ is unreal because of both an
+                        <gloss><q>motive</q></gloss>, <gloss><q>incitement</q></gloss></mentioned>, <mentioned xml:id="mentioned_d158e497" xml:lang="sa"><w>hetṛ-</w>
+                        <gloss><q>horse driver</q></gloss></mentioned> etc. The connection with <ref type="xr" target="#entry_sīdyn"/> ‘to urge’ is unreal because of both an
                     unusual transposition %is%i → %iz%i and the difference between forms of past
                     tense (%isīdt%i, %iævzyst%i), and because of semantic distance.</etym>
                 <note type="footnote" xml:lang="ru" n="1">У поэта %sКоста%s встречается также форма

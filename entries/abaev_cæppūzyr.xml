@@ -1,38 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">cæppūzyr</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_cæppūzyr" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>cæppūzyr</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>cæppozur</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d1634e72"><sense xml:id="sense_d1634e73"><abv:tr xml:lang="ru">
                             <q>жемчужина</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>pearl</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d1634e82"><abv:tr xml:lang="ru">
                             <q>жемчужная или перламутровая пуговка, шарик</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>pearl or nacre little button, little ball</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d1634e94">
                         <quote>ḱyzg kwydta, æmæ jæ cæstysyg cæppūzyraw abūzta</quote>
                         <abv:tr xml:lang="ru">
                             <q>девушка плакала, и слезы ее лились в изобилии подобно жемчугу</q>
@@ -41,7 +46,7 @@
                             <q>the girl cried, and her tears flowed iabundantly like pearls</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1634e109">
                         <quote>stavd cæssyg… jæ razy cæppūzyræj ænqīzy</quote>
                         <abv:tr xml:lang="ru">
                             <q>крупные слезы… перед ней бурлят жемчугом</q>
@@ -52,7 +57,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>III
                             16</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1634e128">
                         <quote>sawǵyny fyrt ratydta jæ cæppūzyr æmæ jæ æræppærsta bælasy
                             bynmæ</quote>
                         <abv:tr xml:lang="ru">
@@ -66,7 +71,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>IV
                             130</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d1634e147" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>æ siwtæj ba in kænuncæ særvasæntæ, cæppozurtæ</quote>
                         <abv:tr xml:lang="ru">
@@ -80,14 +85,12 @@
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Вероятно, контаминация <ref type="xr" target="#entry_cæppær"/>
                     ‘пуговица’ с *%ipuzyr%i | *%ipozur%i, самостоятельно не сохранившимся. Ср.
-                        <mentioned xml:lang="ru"><lang/>
+                        <mentioned xml:id="mentioned_d1634e174" xml:lang="ru"><lang/>
                         <w>пузырь</w></mentioned> и ос. <ref type="xr" target="#entry_abūzyn"/>
                     ‘вспучиваться’.</etym>
-                <etym xml:lang="en">Probably, it is contamination of <ref type="xr"
-                        target="#entry_cæppær"/> ‘button’ and *%ipuzyr%i | *%ipozur%i which is not
-                    in use as a separate word. Cf. <mentioned xml:lang="ru"><lang/>
-                        <w>puzyrʼ</w></mentioned> and Ossetic <ref type="xr" target="#entry_abūzyn"
-                    /> ‘bubble’.</etym>
+                <etym xml:lang="en">Probably, it is contamination of <ref type="xr" target="#entry_cæppær"/> ‘button’ and *%ipuzyr%i | *%ipozur%i which is not
+                    in use as a separate word. Cf. <mentioned xml:id="mentioned_d1634e187" xml:lang="ru"><lang/>
+                        <w>puzyrʼ</w></mentioned> and Ossetic <ref type="xr" target="#entry_abūzyn"/> ‘bubble’.</etym>
             </entry>
         </body>
     </text>

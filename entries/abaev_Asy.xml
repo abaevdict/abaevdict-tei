@@ -1,39 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">Asy</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_Asy" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>Asy</orth></form>
-                <form xml:lang="os-x-digor" type="dialectal"><orth>Asi</orth><form type="variant"
-                            ><orth>Assi</orth></form></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <form xml:lang="os-x-digor" type="dialectal"><orth>Asi</orth><form type="variant"><orth>Assi</orth></form></form>
+                <sense xml:id="sense_d5854e74"><sense xml:id="sense_d5854e75"><abv:tr xml:lang="ru">
                             <q>Балкария</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>Balkaria</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d5854e84"><abv:tr xml:lang="ru">
                             <q>балкарцы</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>Balkars</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d5854e96">
                         <quote>Asyjy xoxmæ bakūvæm, wænyǵy ʒæbæx ūrdygæj k˳y cæwy</quote>
                         <abv:tr xml:lang="ru">
                             <q>помолимся горам Аси, оттуда идет лучшая (порода) тельцов</q>
@@ -42,10 +46,9 @@
                             <q>letʼs pray to the mountains of Asi, from there comes the best (breed
                                 of) calves</q>
                         </abv:tr>
-                        <bibl><biblScope xml:lang="ru">из старинной песни</biblScope><biblScope
-                                xml:lang="en">from an old song</biblScope></bibl>
+                        <bibl><biblScope xml:lang="ru">из старинной песни</biblScope><biblScope xml:lang="en">from an old song</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5854e117">
                         <quote>asiag ældar Ajdæboly fyrt Sawloxæn Aslænbeg jæ ræǧaw atardta</quote>
                         <abv:tr xml:lang="ru">
                             <q>Асланбег угнал табун балкарского князя Шавлоха Айдаболова</q>
@@ -57,7 +60,7 @@
                                 Бата</biblScope><biblScope xml:lang="en">from the song about
                                 Aslanbeg, son of Bat</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5854e138" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>Donifars… Assimæ dær qærtuncæ</quote>
                         <abv:tr xml:lang="ru">
@@ -73,67 +76,51 @@
                 <etym xml:lang="ru">Происхождение самого термина %ias%i не ясно. Древность его
                     подтверждается свидетельством %sПтолемея%s (<bibl><biblScope>V 9,
                         16</biblScope></bibl>: %iἈσχῖοι%i ‘сарматское племя’) и %sСтрабона%s
-                    (<bibl/>: %i’Ἀσιοι%i рядом с %iΤόχροι%i!). Сопоставляется с <mentioned
-                        xml:lang="ae"><lang/>
+                    (<bibl/>: %i’Ἀσιοι%i рядом с %iΤόχροι%i!). Сопоставляется с <mentioned xml:id="mentioned_d5854e168" xml:lang="ae"><lang/>
                         <w>āsu</w>
                         <gloss><q>быстрый</q></gloss></mentioned>. Нет оснований возводить %iAsi%i к
-                    %iArsi%i, вопреки %sBailey%s (<bibl><ref type="bibl" target="#ref_BSOAS"
-                            /><biblScope xml:lang="ru">XIII 135 сл.</biblScope></bibl>, ср.:
+                    %iArsi%i, вопреки %sBailey%s (<bibl><ref type="bibl" target="#ref_BSOAS"/><biblScope xml:lang="ru">XIII 135 сл.</biblScope></bibl>, ср.:
                             <bibl><author>Altheim</author><biblScope xml:lang="ru">Geschichte der
                             lateinischen Sprache. 1951, стр. 1</biblScope></bibl>). Нельзя также
-                    связывать %ias%i с <mentioned xml:lang="ab"><lang/>
-                        <w>waφs</w></mentioned>, <mentioned xml:lang="ka"><lang/>
+                    связывать %ias%i с <mentioned xml:id="mentioned_d5854e187" xml:lang="ab"><lang/>
+                        <w>waφs</w></mentioned>, <mentioned xml:id="mentioned_d5854e192" xml:lang="ka"><lang/>
                         <w>os-</w>
                         <gloss><q>осетин</q></gloss></mentioned>, так как последнее восходит к
                     %iovs-%i (вопреки %sMarquart%s’y и %sГ. Вернадскому%s: <bibl><biblScope>Sur
-                            l’origine des Alains. Byzantion XVI 83</biblScope></bibl>).%n<bibl><ref
-                            type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>III 7,
-                            38</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_Vasmer._Ir._i._S."/><biblScope>33</biblScope></bibl>. —
-                            <bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                        /><biblScope>157</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_Bailey._Asica"/><biblScope xml:lang="ru">1
+                            l’origine des Alains. Byzantion XVI 83</biblScope></bibl>).%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>III 7,
+                            38</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Vasmer._Ir._i._S."/><biblScope>33</biblScope></bibl>. —
+                            <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>157</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Bailey._Asica"/><biblScope xml:lang="ru">1
                         сл.</biblScope></bibl></etym>
                 <etym xml:lang="en">The origin of the term %ias%i is not clear. Its ancient
                     character is confirmed by %sPtolemy%s (<bibl><biblScope>V 9,
                         16</biblScope></bibl>: %iἈσχῖοι%i ‘Sarmat tribe’) and %sStrabo%s
                             (<bibl><biblScope>XI 8</biblScope></bibl>: %i’Ἀσιοι%i along with
-                    %iΤόχροι%i!). Compared to <mentioned xml:lang="ae"><lang/>
+                    %iΤόχροι%i!). Compared to <mentioned xml:id="mentioned_d5854e230" xml:lang="ae"><lang/>
                         <w>āsu</w>
                         <gloss><q>quick</q></gloss></mentioned>. There is no reason to trace %iAsi%i
-                    back to %iArsi%i, contra %sBailey%s (<bibl><ref type="bibl" target="#ref_BSOAS"
-                            /><biblScope xml:lang="en">XIII 135 ff.</biblScope></bibl>, cf.:
+                    back to %iArsi%i, contra %sBailey%s (<bibl><ref type="bibl" target="#ref_BSOAS"/><biblScope xml:lang="en">XIII 135 ff.</biblScope></bibl>, cf.:
                             <bibl><author>Altheim</author><biblScope xml:lang="en">Geschichte der
                             lateinischen Sprache. 1951, p. 1</biblScope></bibl>). One cannot relate
-                    %ias%i to <mentioned xml:lang="ab"><lang/>
-                        <w>waφs</w></mentioned>, <mentioned xml:lang="ka"><lang/>
+                    %ias%i to <mentioned xml:id="mentioned_d5854e249" xml:lang="ab"><lang/>
+                        <w>waφs</w></mentioned>, <mentioned xml:id="mentioned_d5854e254" xml:lang="ka"><lang/>
                         <w>os-</w>
                         <gloss><q>Ossetian</q></gloss></mentioned>, since the latter goes back to
                     %iovs-%i (contra %sMarquart%s and %sG. Vernadsky%s: <bibl><biblScope>Sur
-                            l’origine des Alains. Byzantion XVI 83</biblScope></bibl>).%n<bibl><ref
-                            type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>III 7,
-                            38</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_Vasmer._Ir._i._S."/><biblScope>33</biblScope></bibl>. —
-                            <bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                        /><biblScope>157</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_Bailey._Asica"/><biblScope xml:lang="en">1
+                            l’origine des Alains. Byzantion XVI 83</biblScope></bibl>).%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>III 7,
+                            38</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Vasmer._Ir._i._S."/><biblScope>33</biblScope></bibl>. —
+                            <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>157</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Bailey._Asica"/><biblScope xml:lang="en">1
                         ff.</biblScope></bibl></etym>
                 <note type="footnote" xml:lang="ru" n="1">Характерно также в этом плане, что старый
                     иранский десятичный счет, сохранившийся кое-где среди пастухов Дигории и
-                    Балкарии, дигорцами зовется %iæsson nimæʒæ%i, т. е. „асским счетом“ (<bibl><ref
-                            type="bibl" target="#ref_ОЯФ_I"
-                    /><biblScope>282</biblScope></bibl>).</note>
+                    Балкарии, дигорцами зовется %iæsson nimæʒæ%i, т. е. „асским счетом“ (<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>282</biblScope></bibl>).</note>
                 <note type="footnote" xml:lang="en" n="1">It is also noteworthy that the old Iranian
                     decimal counting system, preserved in some places among the shepherds of Digoria
                     and Balkaria, is called %iæsson nimæʒæ%i by the Digors, that is, “As counting”
-                            (<bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                        /><biblScope>282</biblScope></bibl>).</note>
+                            (<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>282</biblScope></bibl>).</note>
                 <note type="footnote" xml:lang="ru" n="2">„Абхазы называют весь Северный Кавказ
-                            %iAš%i''<bibl><author>Лопатинский</author><ref type="bibl"
-                            target="#ref_СМК"/><biblScope>XII 4</biblScope></bibl>).</note>
+                            %iAš%i''<bibl><author>Лопатинский</author><ref type="bibl" target="#ref_СМК"/><biblScope>XII 4</biblScope></bibl>).</note>
                 <note type="footnote" xml:lang="en" n="2">“Abkhazians call the entire North Caucasus
-                    %iAš%i” (<bibl><author>Lopatinskij</author><ref type="bibl" target="#ref_СМК"
-                            /><biblScope>XII 4</biblScope></bibl>).</note>
+                    %iAš%i” (<bibl><author>Lopatinskij</author><ref type="bibl" target="#ref_СМК"/><biblScope>XII 4</biblScope></bibl>).</note>
             </entry>
         </body>
     </text>

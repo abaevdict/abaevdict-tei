@@ -1,33 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">donʒaw</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_donʒaw" xml:lang="os">
                 <form type="lemma"><orth>donʒaw</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d1516e69"><abv:tr xml:lang="ru">
                         <q>водонос</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>water carrier</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d1516e81">
                         <quote>Ḱermen donʒawy donmæ nal waǧta</quote>
                         <abv:tr xml:lang="ru">
                             <q>Чермен не подпускал больше водоноса к воде</q>
@@ -35,10 +40,9 @@
                         <abv:tr xml:lang="en">
                             <q>Chermen did not let the water carrier come near the water anymore</q>
                         </abv:tr>
-                        <bibl><biblScope xml:lang="ru">из песни о Чермене</biblScope><biblScope
-                                xml:lang="en">from the song about Čermen</biblScope></bibl>
+                        <bibl><biblScope xml:lang="ru">из песни о Чермене</biblScope><biblScope xml:lang="en">from the song about Čermen</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d1516e102" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>i ǧæwgoni, zur-zurgængæ kæmi leʒuj sawædon, æristadæncæ donʒawtæ æd
                             kʼusteltæ sæwmigon</quote>
@@ -54,14 +58,12 @@
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Из <ref type="xr" target="#entry_don"/>-%icaw%i, где во второй
                     части основа глагола <ref type="xr" target="#entry_cæwyn"/> ‘идти’ на сильной
-                    ступени, так же как в %ixos-ʒaw %i ‘косарь’ [см. <ref type="xr"
-                        target="#entry_xosʒaw"/>], %ikwyroj-ʒaw%i „идущий на мельницу“ и др.
+                    ступени, так же как в %ixos-ʒaw %i ‘косарь’ [см. <ref type="xr" target="#entry_xosʒaw"/>], %ikwyroj-ʒaw%i „идущий на мельницу“ и др.
                             (<bibl><ref type="bibl" target="#ref_РОСл."/><biblScope>607,
                             614</biblScope></bibl>).</etym>
                 <etym xml:lang="en">From <ref type="xr" target="#entry_don"/>-%icaw%i, where in the
                     second part there is the stem of the verb <ref type="xr" target="#entry_cæwyn"/>
-                    ‘go’, in its strong variant, as well as in %ixos-ʒaw %i ‘mower’ [see <ref
-                        type="xr" target="#entry_xosʒaw"/>], %ikwyroj-ʒaw%i “going to the mill” etc.
+                    ‘go’, in its strong variant, as well as in %ixos-ʒaw %i ‘mower’ [see <ref type="xr" target="#entry_xosʒaw"/>], %ikwyroj-ʒaw%i “going to the mill” etc.
                             (<bibl><ref type="bibl" target="#ref_РОСл."/><biblScope>607,
                             614</biblScope></bibl>).</etym>
             </entry>

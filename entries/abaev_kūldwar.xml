@@ -1,34 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">kūldwar</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_kūldwar" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>kūldwar</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>koldwar</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d4995e72"><abv:tr xml:lang="ru">
                         <q>ворота</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>gate</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4995e84">
                         <quote>Ḱabæxan rawadīs ūstyty watæj kūldwarmæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>Чабахан выбежала из женской комнаты к воротам</q>
@@ -36,20 +41,19 @@
                         <abv:tr xml:lang="en">
                             <q>Chabahan ran out of the women's room to the gate</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"
-                            /><biblScope>223</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>223</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Вероятно, с диссимиляцией плавных из %i*kor-dwar%i, где во
                     второй части <ref type="xr" target="#entry_dwar"/> ‘дверь’; для первой ср.
-                        <mentioned xml:lang="sva"><lang/>
+                        <mentioned xml:id="mentioned_d4995e108" xml:lang="sva"><lang/>
                         <w>kor</w>
                         <gloss><q>дверь</q></gloss></mentioned>; точное значение, стало быть, —
                     „дверь, (ведущая) во двор“. Здесь, как и в некоторых других случаях, в сложном
                     слове соединились иранское слово с субстратным кавказским.</etym>
                 <etym xml:lang="en">Probably, it is from %i*kor-dwar%i with the dissimilation of
                     liquid consonants, the second part is <ref type="xr" target="#entry_dwar"/>
-                    ‘door’; for the first cf. <mentioned xml:lang="sva"><lang/>
+                    ‘door’; for the first cf. <mentioned xml:id="mentioned_d4995e122" xml:lang="sva"><lang/>
                         <w>kor</w>
                         <gloss><q>door</q></gloss></mentioned>; so the exact meaning is — “door
                     (leading) to the yard”. Here, as in some other cases, a composite word consists

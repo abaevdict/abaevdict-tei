@@ -1,31 +1,36 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">kʼada</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_kʼada" xml:lang="os">
                 <form type="lemma"><orth>kʼada</orth></form>
-                <sense n="1" xml:id="sense_kʼada.1"><sense><abv:tr xml:lang="ru">
+                <sense n="1" xml:id="sense_kʼada.1"><sense xml:id="sense_d5157e70"><abv:tr xml:lang="ru">
                             <q>маленькая речка</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>small river</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d5157e79"><abv:tr xml:lang="ru">
                             <q>ручей</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>brook</q>
@@ -44,7 +49,7 @@
                         combination %ikʼada-k˳yroj%i, but %ikʼada%i may mean ‘mill’ individually as
                         well)</note></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d5157e109">
                         <quote>Styr Lewaxi kʼadajy as k˳y wydi…</quote>
                         <abv:tr xml:lang="ru">
                             <q>когда Большая Лиахва была величиной c ручей…</q>
@@ -55,7 +60,7 @@
                         <bibl><ref type="bibl" target="#src_ЮОПам."/><biblScope>III
                             169</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5157e128">
                         <quote>ivyld kʼadajaw</quote>
                         <abv:tr xml:lang="ru">
                             <q>как разлившаяся река</q>
@@ -63,12 +68,11 @@
                         <abv:tr xml:lang="en">
                             <q>like a flooded river</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Čerm."
-                            /><biblScope>118</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Čerm."/><biblScope>118</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
                 <abv:exampleGrp>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5157e150" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>es Iræfi sakʼadæxtæbæl kʼadatæ, fal ku raivuluj, wædta sæ nimpursuj
                             ma sæ fællasuj</quote>
@@ -82,7 +86,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>125</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5157e172" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>mægur xwænxag æxecæn kʼada basaʒuj</quote>
                         <abv:tr xml:lang="ru">
@@ -94,28 +98,24 @@
                         <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>125</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из <mentioned xml:lang="ccs"><lang/>
+                <etym xml:lang="ru">Из <mentioned xml:id="mentioned_d5157e198" xml:lang="ccs"><lang/>
                         <w>k’ad-, k’od-</w>
-                        <gloss><q>ручей</q></gloss></mentioned>, <mentioned xml:lang="ccs"><w/>
-                        <gloss><q>речка</q></gloss></mentioned>; ср. <mentioned xml:lang="ka"><lang/>
+                        <gloss><q>ручей</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5157e206" xml:lang="ccs"><w/>
+                        <gloss><q>речка</q></gloss></mentioned>; ср. <mentioned xml:id="mentioned_d5157e212" xml:lang="ka"><lang/>
                         <w>na-k’ad-uli, na-k’adi</w>
-                        <gloss><q>ручей</q></gloss></mentioned>, <mentioned xml:lang="ka"
-                        dialect="ka-x-imer"><lang/>
+                        <gloss><q>ручей</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5157e220" xml:lang="ka" dialect="ka-x-imer"><lang/>
                         <w>kʼodis cʼiskvili</w><note type="comment" xml:lang="ru"> (с мегрельской
                             огласовкой!)</note>
-                        <gloss><q>мельница на малой воде</q></gloss></mentioned> (<bibl><ref
-                            type="bibl" target="#ref_Беридзе"/></bibl>).</etym>
-                <etym xml:lang="en">From <mentioned xml:lang="ccs"><lang/>
+                        <gloss><q>мельница на малой воде</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Беридзе"/></bibl>).</etym>
+                <etym xml:lang="en">From <mentioned xml:id="mentioned_d5157e236" xml:lang="ccs"><lang/>
                         <w>k’ad-, k’od-</w>
-                        <gloss><q>brook</q></gloss></mentioned>, <mentioned xml:lang="ccs"><w/>
-                        <gloss><q>river</q></gloss></mentioned>; cf. <mentioned xml:lang="ka"><lang/>
+                        <gloss><q>brook</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5157e244" xml:lang="ccs"><w/>
+                        <gloss><q>river</q></gloss></mentioned>; cf. <mentioned xml:id="mentioned_d5157e250" xml:lang="ka"><lang/>
                         <w>na-k’ad-uli, na-k’adi</w>
-                        <gloss><q>ручей</q></gloss></mentioned>, <mentioned xml:lang="ka"
-                        dialect="ka-x-imer"><lang/>
+                        <gloss><q>ручей</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5157e258" xml:lang="ka" dialect="ka-x-imer"><lang/>
                         <w>kʼodis cʼiskvili</w><note type="comment" xml:lang="en"> (with Mingrelian
                             vocalisation!)</note>
-                        <gloss><q>small water mill</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Беридзе"/></bibl>).</etym>
+                        <gloss><q>small water mill</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Беридзе"/></bibl>).</etym>
             </entry>
         </body>
     </text>

@@ -1,70 +1,75 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">fædīs</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_fædīs" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>fædīs</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>fædes</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d4508e72"><sense xml:id="sense_d4508e73"><abv:tr xml:lang="ru">
                             <q>тревога</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>alarm</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d4508e82"><abv:tr xml:lang="ru">
                             <q>погоня</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>pursuit</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d4508e91"><abv:tr xml:lang="ru">
                             <q>люди, вышедшие на тревогу, в погоню</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>people who came out because of alert, for pursuit</q>
                         </abv:tr></sense></sense>
-                <re>
+                <re xml:id="re_d4508e101">
                     <form type="lemma"><orth>fædīson</orth></form>
-                    <sense><sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d4508e106"><sense xml:id="sense_d4508e107"><abv:tr xml:lang="ru">
                                 <q>поспешивший на тревогу или в погоню</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>person who is in a hurry for an alarm of for a pursuit</q>
-                            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                            </abv:tr></sense><sense xml:id="sense_d4508e116"><abv:tr xml:lang="ru">
                                 <q>участник %sfædīs%s’a</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>participant of %sfædīs%s</q>
                             </abv:tr></sense></sense>
                 </re>
-                <re>
+                <re xml:id="re_d4508e127">
                     <form type="lemma"><orth>qæwvædīs</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d4508e132"><abv:tr xml:lang="ru">
                             <q>%sfædīs%s (всем) селом (%iqæw%i)</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>%sfædīs%s by (all) the village (%iqæw%i)</q>
                         </abv:tr></sense>
                 </re>
-                <re>
+                <re xml:id="re_d4508e144">
                     <form type="lemma"><orth>komvædīs</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d4508e149"><abv:tr xml:lang="ru">
                             <q>%sfædīs%s (всем) ущельем (%ikom%i)</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>%sfædīs%s by (all) gorge (%ikom%i)</q>
                         </abv:tr></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4508e162">
                         <quote>cyma sæ fædīsæj yskʼæry — tynʒy</quote>
                         <abv:tr xml:lang="ru">
                             <q>он спешит, как будто гонит их (гусей) на тревогу</q>
@@ -74,7 +79,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>88</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4508e181">
                         <quote>īsk˳y fæcæwæd fædīsy qær, mardy qær — ūsæn ma īw ran fælæwwæn īs
                             wæd?!</quote>
                         <abv:tr xml:lang="ru">
@@ -85,10 +90,9 @@
                             <q>as soon as a cry of alarm or the news of death are heard somewhere —
                                 will then a woman stand still?!</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"
-                            /><biblScope>102</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>102</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4508e200">
                         <quote>adæm fæfædīs ysty</quote>
                         <abv:tr xml:lang="ru">
                             <q>народ кинулся на тревогу</q>
@@ -97,7 +101,7 @@
                             <q>people rushed to the alarm</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4508e215">
                         <quote>fædīsy cæwyn ḱī nal færazy, ūmæn jæ card nal bæzzy</quote>
                         <abv:tr xml:lang="ru">
                             <q>кто неспособен уже идти на тревогу, жизнь того бесполезна</q>
@@ -109,7 +113,7 @@
                         <bibl><ref type="bibl" target="#src_ЮОПам."/><biblScope>III
                             203</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4508e234">
                         <quote>Æǧ˳yzatæ ægas myggagæj fædīsy acydysty</quote>
                         <abv:tr xml:lang="ru">
                             <q>Агузовы всем родом пошли на тревогу</q>
@@ -120,7 +124,7 @@
                         <bibl><ref type="bibl" target="#src_ЮОПам."/><biblScope>II
                             128</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4508e254" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>gurgurgængæ dalæ fordmæ niffædes æncæ Kʼamatæ</quote>
                         <abv:tr xml:lang="ru">
@@ -131,7 +135,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>41</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4508e276" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>hej, fæsevæd, ci fæcajtæ! znag ærbambursuj, — fædes!</quote>
                         <abv:tr xml:lang="ru">
@@ -142,7 +146,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>57</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4508e298">
                         <quote>binontæ īwguræj dær fædīsi festi</quote>
                         <abv:tr xml:lang="ru">
                             <q>домочадцы все кинулись на тревогу</q>
@@ -165,8 +169,7 @@
                     ‘take’; %ifædīs%i means ‘taking of the trace’, i.e. ‘pursuit’. Initially it
                     meant a military alarm during the attack, the raid with the following pursuit
                     ‘by the trace’ of the enemy. In the course of time %ifædīs%i started meaning any
-                    alarm: because of fire, flood, accident etc. — See <ref type="xr"
-                        target="#entry_fæd"/> и <ref type="xr" target="#entry_īsyn"/>.</etym>
+                    alarm: because of fire, flood, accident etc. — See <ref type="xr" target="#entry_fæd"/> и <ref type="xr" target="#entry_īsyn"/>.</etym>
             </entry>
         </body>
     </text>

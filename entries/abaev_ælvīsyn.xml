@@ -1,45 +1,48 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ælvīsyn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ælvīsyn" xml:lang="os">
-                <form xml:lang="os-x-iron" type="lemma"><orth>ælvīsyn</orth><form type="participle"
-                            ><orth>ælvyst</orth></form></form>
-                <form xml:lang="os-x-digor" type="dialectal"><orth>ælvesun</orth><form
-                        type="participle"><orth>ælvist</orth></form></form>
-                <sense><abv:tr xml:lang="ru">
+                <form xml:lang="os-x-iron" type="lemma"><orth>ælvīsyn</orth><form type="participle"><orth>ælvyst</orth></form></form>
+                <form xml:lang="os-x-digor" type="dialectal"><orth>ælvesun</orth><form type="participle"><orth>ælvist</orth></form></form>
+                <sense xml:id="sense_d4263e76"><abv:tr xml:lang="ru">
                         <q>прясть</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>spin</q>
                     </abv:tr></sense>
-                <re>
+                <re xml:id="re_d4263e86">
                     <form xml:lang="os-x-iron" type="lemma"><orth>ælvīsinag</orth></form>
                     <form xml:lang="os-x-digor" type="dialectal"><orth>ælvesujnag</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d4263e94"><abv:tr xml:lang="ru">
                             <q>шерсть на пряжу</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>wool for spinning</q>
                         </abv:tr></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4263e107">
                         <quote>læg xyzæj axsta kæsægtæ, ūs ta je ʽlvīsinægtæ ælvysta</quote>
                         <abv:tr xml:lang="ru">
                             <q>муж ловил неводом рыбу, жена пряла свою пряжу</q>
@@ -47,10 +50,9 @@
                         <abv:tr xml:lang="en">
                             <q>the husband was netting fish; the wife wa spinnig her yarn</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Puškin._Arhau"
-                            /><biblScope>3</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Puškin._Arhau"/><biblScope>3</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4263e126">
                         <quote>avd xojy se ʽlxujtæ rajstoj, ælvīsinag</quote>
                         <abv:tr xml:lang="ru">
                             <q>семь сестер взяли свои веретена, пряжу</q>
@@ -60,7 +62,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Niger"/><biblScope>94</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4263e145">
                         <quote>næ wælinʒæbæl æzinæ æz sundak’æ ælviston</quote>
                         <abv:tr xml:lang="ru">
                             <q>на нашей крыше я вчера пряла шерсть</q>
@@ -72,73 +74,53 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Перестановка из %i*avlīsyn%i (← %i*abi-raiš-%i), ср. такую же
-                    метатезу в <ref type="xr" target="#entry_ælvasyn"/>, <ref type="xr"
-                        target="#entry_7lvynyn"><w>lvynyn</w></ref> и др. Перебой %ir%i || %il%i перед %ii%i также
-                    закономерен, ср. <ref type="xr" target="#entry_līʒyn"/>, <ref type="xr"
-                        target="#entry_7lǧīvyn"/>, <ref type="xr" target="#entry_7lvynyn"><w>lvynyn</w></ref> и др. Как
+                    метатезу в <ref type="xr" target="#entry_ælvasyn"/>, <ref type="xr" target="#entry_7lvynyn"><w>lvynyn</w></ref> и др. Перебой %ir%i || %il%i перед %ii%i также
+                    закономерен, ср. <ref type="xr" target="#entry_līʒyn"/>, <ref type="xr" target="#entry_7lǧīvyn"/>, <ref type="xr" target="#entry_7lvynyn"><w>lvynyn</w></ref> и др. Как
                     и другие термины ткацкого дела (см. <ref type="xr" target="#entry_wafyn"/>),
-                    относится к иранскому слою; ср. <mentioned xml:lang="yai"><lang/>
+                    относится к иранскому слою; ср. <mentioned xml:id="mentioned_d4263e183" xml:lang="yai"><lang/>
                         <w>riwis-, riwes-</w>
-                        <gloss><q>прясть</q></gloss></mentioned>, <mentioned xml:lang="yai"><lang/>
+                        <gloss><q>прясть</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4263e191" xml:lang="yai"><lang/>
                         <w>arw'ī́sna</w>
                         <gloss><q>нить</q></gloss></mentioned> (с такой же метатезой, как в ос.!),
-                        <mentioned xml:lang="ps"><lang/>
-                        <w>wrēšәl</w></mentioned>, <mentioned xml:lang="x-balochi"><lang/>
-                        <w>brēsaɣ, rēsaɣ</w></mentioned>, <mentioned xml:lang="fa"><lang/>
-                        <w>rīštan</w></mentioned>: %ires-%i ‘прясть’ (сюда же относят <mentioned
-                        xml:lang="fa"><lang/>
+                        <mentioned xml:id="mentioned_d4263e199" xml:lang="ps"><lang/>
+                        <w>wrēšәl</w></mentioned>, <mentioned xml:id="mentioned_d4263e204" xml:lang="x-balochi"><lang/>
+                        <w>brēsaɣ, rēsaɣ</w></mentioned>, <mentioned xml:id="mentioned_d4263e209" xml:lang="fa"><lang/>
+                        <w>rīštan</w></mentioned>: %ires-%i ‘прясть’ (сюда же относят <mentioned xml:id="mentioned_d4263e215" xml:lang="fa"><lang/>
                         <w>ābrēšum</w>
-                        <gloss><q>шелк</q></gloss></mentioned>), <mentioned xml:lang="zkh"><lang/>
+                        <gloss><q>шелк</q></gloss></mentioned>), <mentioned xml:id="mentioned_d4263e223" xml:lang="zkh"><lang/>
                         <w>rēsa</w>
-                        <gloss><q>пряжа</q></gloss></mentioned>, <mentioned xml:lang="sa"><lang/>
+                        <gloss><q>пряжа</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4263e231" xml:lang="sa"><lang/>
                         <w>rēš- rišati</w>
-                        <gloss><q>рвать</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
-                        <gloss><q>щипать</q></gloss></mentioned>. Ос. <ref type="xr"
-                        target="#entry_lyst6æg9"><w>lystæg</w></ref> | %ilistæg%i ‘мелкий’ <bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._Gr."/><biblScope>61</biblScope></bibl>
-                    производит от этого же корня. Ср. <ref type="xr" target="#entry_wafyn"/>, <ref
-                        type="xr" target="#entry_nyvændyn"/>, <ref type="xr" target="#entry_7lx0yj"><w>lxuj</w></ref>,
-                        <ref type="xr" target="#entry_wædært"/>.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>III 159</biblScope></bibl>;
-                            <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>61</biblScope></bibl>. —
-                            <bibl><author>Gauthiot</author><ref type="bibl" target="#ref_MSL"
-                            /><biblScope>XX 10</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_ОЯФ_I"/><biblScope>54</biblScope></bibl>.</etym>
+                        <gloss><q>рвать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4263e239" xml:lang="sa"><w/>
+                        <gloss><q>щипать</q></gloss></mentioned>. Ос. <ref type="xr" target="#entry_lyst6æg9"><w>lystæg</w></ref> | %ilistæg%i ‘мелкий’ <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>61</biblScope></bibl>
+                    производит от этого же корня. Ср. <ref type="xr" target="#entry_wafyn"/>, <ref type="xr" target="#entry_nyvændyn"/>, <ref type="xr" target="#entry_7lx0yj"><w>lxuj</w></ref>,
+                        <ref type="xr" target="#entry_wædært"/>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>III 159</biblScope></bibl>;
+                            <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>61</biblScope></bibl>. —
+                            <bibl><author>Gauthiot</author><ref type="bibl" target="#ref_MSL"/><biblScope>XX 10</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>54</biblScope></bibl>.</etym>
                 <etym xml:lang="en">Metathesis from %i*avlīsyn%i (← %i*abi-raiš-%i), cf. the same
-                    metathesis in <ref type="xr" target="#entry_ælvasyn"/>, <ref type="xr"
-                        target="#entry_7lvynyn"><w>lvynyn</w></ref> etc. The alternation %ir%i || %il%i before %ii%i is
-                    also regular, cf. <ref type="xr" target="#entry_līʒyn"/>, <ref type="xr"
-                        target="#entry_7lǧīvyn"/>, <ref type="xr" target="#entry_7lvynyn"><w>lvynyn</w></ref> etc. Like
+                    metathesis in <ref type="xr" target="#entry_ælvasyn"/>, <ref type="xr" target="#entry_7lvynyn"><w>lvynyn</w></ref> etc. The alternation %ir%i || %il%i before %ii%i is
+                    also regular, cf. <ref type="xr" target="#entry_līʒyn"/>, <ref type="xr" target="#entry_7lǧīvyn"/>, <ref type="xr" target="#entry_7lvynyn"><w>lvynyn</w></ref> etc. Like
                     other weaving terms (see <ref type="xr" target="#entry_wafyn"/>), it is Iranian;
-                    cf. <mentioned xml:lang="yai"><lang/>
+                    cf. <mentioned xml:id="mentioned_d4263e298" xml:lang="yai"><lang/>
                         <w>riwis-, riwes-</w>
-                        <gloss><q>spin</q></gloss></mentioned>, <mentioned xml:lang="yai"><lang/>
+                        <gloss><q>spin</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4263e306" xml:lang="yai"><lang/>
                         <w>arw'ī́sna</w>
                         <gloss><q>thread</q></gloss></mentioned> (with the same metathesis as in
-                    Ossetic!), <mentioned xml:lang="ps"><lang/>
-                        <w>wrēšәl</w></mentioned>, <mentioned xml:lang="x-balochi"><lang/>
-                        <w>brēsaɣ, rēsaɣ</w></mentioned>, <mentioned xml:lang="fa"><lang/>
-                        <w>rīštan</w></mentioned>: %ires-%i ‘spin’ (to here also concerns <mentioned
-                        xml:lang="fa"><lang/>
+                    Ossetic!), <mentioned xml:id="mentioned_d4263e314" xml:lang="ps"><lang/>
+                        <w>wrēšәl</w></mentioned>, <mentioned xml:id="mentioned_d4263e319" xml:lang="x-balochi"><lang/>
+                        <w>brēsaɣ, rēsaɣ</w></mentioned>, <mentioned xml:id="mentioned_d4263e324" xml:lang="fa"><lang/>
+                        <w>rīštan</w></mentioned>: %ires-%i ‘spin’ (to here also concerns <mentioned xml:id="mentioned_d4263e330" xml:lang="fa"><lang/>
                         <w>ābrēšum</w>
-                        <gloss><q>silk</q></gloss></mentioned>), <mentioned xml:lang="zkh"><lang/>
+                        <gloss><q>silk</q></gloss></mentioned>), <mentioned xml:id="mentioned_d4263e338" xml:lang="zkh"><lang/>
                         <w>rēsa</w>
-                        <gloss><q>yarn</q></gloss></mentioned>, <mentioned xml:lang="sa"><lang/>
+                        <gloss><q>yarn</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4263e346" xml:lang="sa"><lang/>
                         <w>rēš- rišati</w>
-                        <gloss><q>tear</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
-                        <gloss><q>pinch</q></gloss></mentioned>. Ossetic <ref type="xr"
-                        target="#entry_lyst6æg9"><w>lystæg</w></ref> | %ilistæg%i ‘small’ <bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._Gr."/><biblScope>61</biblScope></bibl> traces
-                    back to the same root. Cf. <ref type="xr" target="#entry_wafyn"/>, <ref
-                        type="xr" target="#entry_nyvændyn"/>, <ref type="xr" target="#entry_7lx0yj"><w>lxuj</w></ref>,
-                        <ref type="xr" target="#entry_wædært"/>.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>III 159</biblScope></bibl>;
-                            <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>61</biblScope></bibl>. —
-                            <bibl><author>Gauthiot</author><ref type="bibl" target="#ref_MSL"
-                            /><biblScope>XX 10</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_ОЯФ_I"/><biblScope>54</biblScope></bibl>.</etym>
+                        <gloss><q>tear</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4263e354" xml:lang="sa"><w/>
+                        <gloss><q>pinch</q></gloss></mentioned>. Ossetic <ref type="xr" target="#entry_lyst6æg9"><w>lystæg</w></ref> | %ilistæg%i ‘small’ <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>61</biblScope></bibl> traces
+                    back to the same root. Cf. <ref type="xr" target="#entry_wafyn"/>, <ref type="xr" target="#entry_nyvændyn"/>, <ref type="xr" target="#entry_7lx0yj"><w>lxuj</w></ref>,
+                        <ref type="xr" target="#entry_wædært"/>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>III 159</biblScope></bibl>;
+                            <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>61</biblScope></bibl>. —
+                            <bibl><author>Gauthiot</author><ref type="bibl" target="#ref_MSL"/><biblScope>XX 10</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>54</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

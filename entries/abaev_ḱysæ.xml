@@ -1,43 +1,47 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ḱysæ</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ḱysæ" xml:lang="os">
-                <form xml:lang="os-x-iron" type="lemma"><orth>ḱysæ</orth><form type="variant"
-                            ><orth>ḱyssæ</orth></form></form>
+                <form xml:lang="os-x-iron" type="lemma"><orth>ḱysæ</orth><form type="variant"><orth>ḱyssæ</orth></form></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>kisæ</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d704e74"><sense xml:id="sense_d704e75"><abv:tr xml:lang="ru">
                             <q>кошелек</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>purse</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d704e84"><abv:tr xml:lang="ru">
                             <q>мешочек</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>small bag</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d704e93"><abv:tr xml:lang="ru">
                             <q>карман</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>pocket</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d704e105" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>dukkag bon læqwæn æ kisæ i osæmæ niwwaxta</quote>
                         <abv:tr xml:lang="ru">
@@ -49,7 +53,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
                             107</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d704e127" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>næwægæj babæj æ bilet æ kisæj isesidæ</quote>
                         <abv:tr xml:lang="ru">
@@ -58,64 +62,59 @@
                         <abv:tr xml:lang="en">
                             <q>he would take his ticket out of his pocket again</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Bes._Ka_ke"
-                            /><biblScope>82</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Bes._Ka_ke"/><biblScope>82</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Арабское слово, широко распространившееся в языках передней
-                    Азии, Кавказа и восточной Европы: <mentioned xml:lang="ar"><lang/>
-                        <w>kīs</w></mentioned>, <mentioned xml:lang="fa"><lang/>
-                        <w>kīsa</w></mentioned>, <mentioned xml:lang="trk"><lang/>
+                    Азии, Кавказа и восточной Европы: <mentioned xml:id="mentioned_d704e152" xml:lang="ar"><lang/>
+                        <w>kīs</w></mentioned>, <mentioned xml:id="mentioned_d704e157" xml:lang="fa"><lang/>
+                        <w>kīsa</w></mentioned>, <mentioned xml:id="mentioned_d704e162" xml:lang="trk"><lang/>
                         <w>kise, kese</w>
-                        <gloss><q>мешочек</q></gloss></mentioned>, <mentioned xml:lang="trk"><w/>
-                        <gloss><q>сумка</q></gloss></mentioned>, <mentioned xml:lang="trk"><w/>
-                        <gloss><q>кошелек</q></gloss></mentioned>, <mentioned xml:lang="xcl"><lang/>
+                        <gloss><q>мешочек</q></gloss></mentioned>, <mentioned xml:id="mentioned_d704e170" xml:lang="trk"><w/>
+                        <gloss><q>сумка</q></gloss></mentioned>, <mentioned xml:id="mentioned_d704e176" xml:lang="trk"><w/>
+                        <gloss><q>кошелек</q></gloss></mentioned>, <mentioned xml:id="mentioned_d704e183" xml:lang="xcl"><lang/>
                         <w>ksak’</w>
-                        <gloss><q>кошелек</q></gloss></mentioned>, <mentioned xml:lang="ka"><lang/>
+                        <gloss><q>кошелек</q></gloss></mentioned>, <mentioned xml:id="mentioned_d704e191" xml:lang="ka"><lang/>
                         <w>kisa</w>
-                        <gloss><q>кошелек</q></gloss></mentioned>, <mentioned xml:lang="ka"><w/>
-                        <gloss><q>кисет</q></gloss></mentioned>, <mentioned xml:lang="av"><lang/>
+                        <gloss><q>кошелек</q></gloss></mentioned>, <mentioned xml:id="mentioned_d704e199" xml:lang="ka"><w/>
+                        <gloss><q>кисет</q></gloss></mentioned>, <mentioned xml:id="mentioned_d704e205" xml:lang="av"><lang/>
                         <w>kese</w>
-                        <gloss><q>кисет</q></gloss></mentioned>, <mentioned xml:lang="av"><w/>
-                        <gloss><q>карман</q></gloss></mentioned>, <mentioned xml:lang="dar"><lang/>
-                        <w>kisa</w></mentioned>, <mentioned xml:lang="ce"><lang/>
-                        <w>kisa</w></mentioned>, <mentioned xml:lang="kbd"><lang/>
+                        <gloss><q>кисет</q></gloss></mentioned>, <mentioned xml:id="mentioned_d704e213" xml:lang="av"><w/>
+                        <gloss><q>карман</q></gloss></mentioned>, <mentioned xml:id="mentioned_d704e219" xml:lang="dar"><lang/>
+                        <w>kisa</w></mentioned>, <mentioned xml:id="mentioned_d704e225" xml:lang="ce"><lang/>
+                        <w>kisa</w></mentioned>, <mentioned xml:id="mentioned_d704e230" xml:lang="kbd"><lang/>
                         <w>kisä</w>
-                        <gloss><q>карман</q></gloss></mentioned>, <mentioned xml:lang="ru"><lang/>
+                        <gloss><q>карман</q></gloss></mentioned>, <mentioned xml:id="mentioned_d704e238" xml:lang="ru"><lang/>
                         <w>кисá</w>
-                        <gloss><q>мошна</q></gloss></mentioned>, <mentioned xml:lang="ru"><w/>
-                        <gloss><q>кошель</q></gloss></mentioned> (сюда же %iкисет%i), <mentioned
-                        xml:lang="pl"><lang/>
+                        <gloss><q>мошна</q></gloss></mentioned>, <mentioned xml:id="mentioned_d704e246" xml:lang="ru"><w/>
+                        <gloss><q>кошель</q></gloss></mentioned> (сюда же %iкисет%i), <mentioned xml:id="mentioned_d704e252" xml:lang="pl"><lang/>
                         <w>kiesa</w>
-                        <gloss><q>мошна</q></gloss></mentioned> и др. — Ср. <ref type="xr"
-                        target="#entry_kʼæssa"/>.</etym>
+                        <gloss><q>мошна</q></gloss></mentioned> и др. — Ср. <ref type="xr" target="#entry_kʼæssa"/>.</etym>
                 <etym xml:lang="en">An Arabic word, which is widespread in the languages of Western
-                    Asia, Caucasus and Western Europe: <mentioned xml:lang="ar"><lang/>
-                        <w>kīs</w></mentioned>, <mentioned xml:lang="fa"><lang/>
-                        <w>kīsa</w></mentioned>, <mentioned xml:lang="trk"><lang/>
+                    Asia, Caucasus and Western Europe: <mentioned xml:id="mentioned_d704e266" xml:lang="ar"><lang/>
+                        <w>kīs</w></mentioned>, <mentioned xml:id="mentioned_d704e271" xml:lang="fa"><lang/>
+                        <w>kīsa</w></mentioned>, <mentioned xml:id="mentioned_d704e276" xml:lang="trk"><lang/>
                         <w>kise, kese</w>
-                        <gloss><q>small bag</q></gloss></mentioned>, <mentioned xml:lang="trk"><w/>
-                        <gloss><q>bag</q></gloss></mentioned>, <mentioned xml:lang="trk"><w/>
-                        <gloss><q>purse</q></gloss></mentioned>, <mentioned xml:lang="xcl"><lang/>
+                        <gloss><q>small bag</q></gloss></mentioned>, <mentioned xml:id="mentioned_d704e284" xml:lang="trk"><w/>
+                        <gloss><q>bag</q></gloss></mentioned>, <mentioned xml:id="mentioned_d704e290" xml:lang="trk"><w/>
+                        <gloss><q>purse</q></gloss></mentioned>, <mentioned xml:id="mentioned_d704e297" xml:lang="xcl"><lang/>
                         <w>ksak’</w>
-                        <gloss><q>purse</q></gloss></mentioned>, <mentioned xml:lang="ka"><lang/>
+                        <gloss><q>purse</q></gloss></mentioned>, <mentioned xml:id="mentioned_d704e305" xml:lang="ka"><lang/>
                         <w>kisa</w>
-                        <gloss><q>purse</q></gloss></mentioned>, <mentioned xml:lang="ka"><w/>
-                        <gloss><q>tobacco pouch</q></gloss></mentioned>, <mentioned xml:lang="av"><lang/>
+                        <gloss><q>purse</q></gloss></mentioned>, <mentioned xml:id="mentioned_d704e313" xml:lang="ka"><w/>
+                        <gloss><q>tobacco pouch</q></gloss></mentioned>, <mentioned xml:id="mentioned_d704e319" xml:lang="av"><lang/>
                         <w>kese</w>
-                        <gloss><q>tobacco pouch</q></gloss></mentioned>, <mentioned xml:lang="av"><w/>
-                        <gloss><q>pocket</q></gloss></mentioned>, <mentioned xml:lang="dar"><lang/>
-                        <w>kisa</w></mentioned>, <mentioned xml:lang="ce"><lang/>
-                        <w>kisa</w></mentioned>, <mentioned xml:lang="kbd"><lang/>
+                        <gloss><q>tobacco pouch</q></gloss></mentioned>, <mentioned xml:id="mentioned_d704e327" xml:lang="av"><w/>
+                        <gloss><q>pocket</q></gloss></mentioned>, <mentioned xml:id="mentioned_d704e333" xml:lang="dar"><lang/>
+                        <w>kisa</w></mentioned>, <mentioned xml:id="mentioned_d704e339" xml:lang="ce"><lang/>
+                        <w>kisa</w></mentioned>, <mentioned xml:id="mentioned_d704e344" xml:lang="kbd"><lang/>
                         <w>kisä</w>
-                        <gloss><q>pocket</q></gloss></mentioned>, <mentioned xml:lang="ru"><lang/>
+                        <gloss><q>pocket</q></gloss></mentioned>, <mentioned xml:id="mentioned_d704e352" xml:lang="ru"><lang/>
                         <w>kisá</w>
-                        <gloss><q>purse</q></gloss></mentioned>, <mentioned xml:lang="ru"><w/>
-                        <gloss><q>burse</q></gloss></mentioned> (see also %iкисет%i), <mentioned
-                        xml:lang="pl"><lang/>
+                        <gloss><q>purse</q></gloss></mentioned>, <mentioned xml:id="mentioned_d704e360" xml:lang="ru"><w/>
+                        <gloss><q>burse</q></gloss></mentioned> (see also %iкисет%i), <mentioned xml:id="mentioned_d704e366" xml:lang="pl"><lang/>
                         <w>kiesa</w>
-                        <gloss><q>purse</q></gloss></mentioned> etc. — Cf. <ref type="xr"
-                        target="#entry_kʼæssa"/>.</etym>
+                        <gloss><q>purse</q></gloss></mentioned> etc. — Cf. <ref type="xr" target="#entry_kʼæssa"/>.</etym>
             </entry>
         </body>
     </text>

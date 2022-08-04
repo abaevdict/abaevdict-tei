@@ -1,38 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">bædūl</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_bædūl" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>bædūl</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>bædolæ</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d346e72"><sense xml:id="sense_d346e73"><abv:tr xml:lang="ru">
                             <q>птенец</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>nestling</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d346e82"><abv:tr xml:lang="ru">
                             <q>детеныш</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>cub</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d346e94">
                         <quote>bædūl kark</quote>
                         <abv:tr xml:lang="ru">
                             <q rendition="rend_singlequotes">молодая курочка</q>
@@ -41,7 +46,7 @@
                             <q rendition="rend_singlequotes">little hen</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d346e111" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>bædolæ fons</quote>
                         <abv:tr xml:lang="ru">
@@ -52,7 +57,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_FS"/><biblScope>V 54</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d346e133" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>zumæg ba, kud bædolgun ars, xærdmæ daruj æ gubun</quote>
                         <abv:tr xml:lang="ru">
@@ -65,7 +70,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_SD"/><biblScope>99%l3</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d346e155" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>xutæj sæ ew ærægi nizzadæj farast bædoli</quote>
                         <abv:tr xml:lang="ru">
@@ -76,7 +81,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_AK"/><biblScope>I 19</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d346e177" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>i tikis (misti) æ bædælttæn rajursta</quote>
                         <abv:tr xml:lang="ru">
@@ -88,7 +93,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
                             117</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d346e200">
                         <quote>mæ bædūltæ %i|%i mæ bædælttæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>мои птенцы</q>
@@ -105,40 +110,29 @@
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Формант -%iul%i, -%iil%i, -%iуl%i выступает в ряде слов с
                     уменьшительно-ласкательным значением: <ref type="xr" target="#entry_qæbūl"/>
-                    ‘детка’, <ref type="xr" target="#entry_ʒækʼūl"/> ‘мешочек’, <ref type="xr"
-                        target="#entry_mækʼūlæg"/> ‘ящерица’, <ref type="xr" target="#entry_qybyl"/>
-                    ‘поросенок’, <ref type="xr" target="#entry_kʼæbyla"/> ‘щенок’, <ref type="xr"
-                        target="#entry_gyccyl"/> ‘маленький’ и др. (ср. <bibl><ref type="bibl"
-                            target="#ref_KPF"/><biblScope xml:lang="ru">Abt. III, Bd. II, стр.
+                    ‘детка’, <ref type="xr" target="#entry_ʒækʼūl"/> ‘мешочек’, <ref type="xr" target="#entry_mækʼūlæg"/> ‘ящерица’, <ref type="xr" target="#entry_qybyl"/>
+                    ‘поросенок’, <ref type="xr" target="#entry_kʼæbyla"/> ‘щенок’, <ref type="xr" target="#entry_gyccyl"/> ‘маленький’ и др. (ср. <bibl><ref type="bibl" target="#ref_KPF"/><biblScope xml:lang="ru">Abt. III, Bd. II, стр.
                             114</biblScope></bibl>). Отделяя -%iul%i | -%iolæ%i в слове %ibædūl%i,
-                    мы получаем %ibæd%i-, что можно возвести к древнеиранской основе <mentioned
-                        xml:lang="x-oldirn"><lang/>
-                        <w>pat-</w></mentioned> ( <mentioned xml:lang="ine"><lang/>
-                        <w>*pet-</w></mentioned>) со значением ‘летать’, ‘птица’ (<bibl><ref
-                            type="bibl" target="#ref_Walde—Pok."/><biblScope>II 19
-                        сл.</biblScope></bibl>): <mentioned xml:lang="sa"><lang/>
+                    мы получаем %ibæd%i-, что можно возвести к древнеиранской основе <mentioned xml:id="mentioned_d346e247" xml:lang="x-oldirn"><lang/>
+                        <w>pat-</w></mentioned> ( <mentioned xml:id="mentioned_d346e252" xml:lang="ine"><lang/>
+                        <w>*pet-</w></mentioned>) со значением ‘летать’, ‘птица’ (<bibl><ref type="bibl" target="#ref_Walde—Pok."/><biblScope>II 19
+                        сл.</biblScope></bibl>): <mentioned xml:id="mentioned_d346e261" xml:lang="sa"><lang/>
                         <w>pat-</w>
-                        <gloss><q>лететь</q></gloss></mentioned>, <mentioned xml:lang="sa"
-                            ><w>pataga-</w>
+                        <gloss><q>лететь</q></gloss></mentioned>, <mentioned xml:id="mentioned_d346e270" xml:lang="sa"><w>pataga-</w>
                         <gloss><q>птица</q></gloss></mentioned> и др. Переход %ip%i→%ib%i (вместо
                     обычного %ip%i→%if%i) характерен для так называемых „детских“ слов.</etym>
                 <etym xml:lang="en">The formant -%iul%i, -%iil%i, -%iуl%i is found in a number of
                     words with diminutive meaning: <ref type="xr" target="#entry_qæbūl"/> ‘kid’,
-                        <ref type="xr" target="#entry_ʒækʼūl"/> ‘little bag’, <ref type="xr"
-                        target="#entry_mækʼūlæg"/> ‘lizard’, <ref type="xr" target="#entry_qybyl"/>
-                    ‘piglet’, <ref type="xr" target="#entry_kʼæbyla"/> ‘puppy’, <ref type="xr"
-                        target="#entry_gyccyl"/> ‘little’ etc. (cf. <bibl><ref type="bibl"
-                            target="#ref_KPF"/><biblScope xml:lang="en">Abt. III, Bd. II, p.
+                        <ref type="xr" target="#entry_ʒækʼūl"/> ‘little bag’, <ref type="xr" target="#entry_mækʼūlæg"/> ‘lizard’, <ref type="xr" target="#entry_qybyl"/>
+                    ‘piglet’, <ref type="xr" target="#entry_kʼæbyla"/> ‘puppy’, <ref type="xr" target="#entry_gyccyl"/> ‘little’ etc. (cf. <bibl><ref type="bibl" target="#ref_KPF"/><biblScope xml:lang="en">Abt. III, Bd. II, p.
                             114</biblScope></bibl>). Apart the formant -%iul%i | -%iolæ%i presenting
                     in the word %ibædūl%i, there is the stem %ibæd%i-, which may be traced back to
-                    an Old Iranian stem <mentioned xml:lang="x-oldirn"><lang/>
-                        <w>pat-</w></mentioned> (<mentioned xml:lang="ine"><lang/>
-                        <w>*pet-</w></mentioned>) with the meaning ‘fly’, ‘bird’ (<bibl><ref
-                            type="bibl" target="#ref_Walde—Pok."/><biblScope>II 19
-                        сл.</biblScope></bibl>): <mentioned xml:lang="sa"><lang/>
+                    an Old Iranian stem <mentioned xml:id="mentioned_d346e298" xml:lang="x-oldirn"><lang/>
+                        <w>pat-</w></mentioned> (<mentioned xml:id="mentioned_d346e303" xml:lang="ine"><lang/>
+                        <w>*pet-</w></mentioned>) with the meaning ‘fly’, ‘bird’ (<bibl><ref type="bibl" target="#ref_Walde—Pok."/><biblScope>II 19
+                        сл.</biblScope></bibl>): <mentioned xml:id="mentioned_d346e312" xml:lang="sa"><lang/>
                         <w>pat-</w>
-                        <gloss><q>fly</q></gloss></mentioned>, <mentioned xml:lang="sa"
-                            ><w>pataga-</w>
+                        <gloss><q>fly</q></gloss></mentioned>, <mentioned xml:id="mentioned_d346e321" xml:lang="sa"><w>pataga-</w>
                         <gloss><q>bird</q></gloss></mentioned> etc. The transition %ip%i→%ib%i
                     (instead of a regular %ip%i→%if%i) is typical for so called "child"
                     words:</etym>

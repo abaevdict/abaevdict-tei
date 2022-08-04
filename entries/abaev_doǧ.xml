@@ -1,35 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">doǧ</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_doǧ" xml:lang="os">
-                <form xml:lang="os-x-iron" type="lemma"><orth>doǧ</orth><form type="variant"
-                            ><orth>donq</orth></form></form>
+                <form xml:lang="os-x-iron" type="lemma"><orth>doǧ</orth><form type="variant"><orth>donq</orth></form></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>donǧ</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d4269e74"><abv:tr xml:lang="ru">
                         <q>молоко одного удоя</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>milk of one milk yield</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4269e86">
                         <quote>næ qūǵy donq — kʼærtajy ʒag</quote>
                         <abv:tr xml:lang="ru">
                             <q>удой нашей коровы — полный подойник</q>
@@ -38,7 +42,7 @@
                             <q>milk yield of our cow is full milk box</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4269e101">
                         <quote>(qybyltæn) sæ mady doǧ sæ fag kænyn bajdydta</quote>
                         <abv:tr xml:lang="ru">
                             <q>(поросятам) стало хватать молока их матки</q>
@@ -50,17 +54,15 @@
                             186</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Восходит к <mentioned xml:lang="ira"><lang/>
-                        <w>*dauǧ-na</w></mentioned> с метатезой; к глаголу <ref type="xr"
-                        target="#entry_dūcyn"/> | %idyǧd%i ‘доить’. Ср. <mentioned xml:lang="fa"><lang/>
+                <etym xml:lang="ru">Восходит к <mentioned xml:id="mentioned_d4269e123" xml:lang="ira"><lang/>
+                        <w>*dauǧ-na</w></mentioned> с метатезой; к глаголу <ref type="xr" target="#entry_dūcyn"/> | %idyǧd%i ‘доить’. Ср. <mentioned xml:id="mentioned_d4269e130" xml:lang="fa"><lang/>
                         <w>doǧ</w>
-                        <gloss><q>кислое молоко</q></gloss></mentioned>, <mentioned xml:lang="fa"><w/>
+                        <gloss><q>кислое молоко</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4269e138" xml:lang="fa"><w/>
                         <gloss><q>пахтанье</q></gloss></mentioned>.</etym>
-                <etym xml:lang="en">It traces back to <mentioned xml:lang="ira"><lang/>
-                        <w>*dauǧ-na</w></mentioned> with metathesis; to the verb <ref type="xr"
-                        target="#entry_dūcyn"/> | %idyǧd%i ‘milk’. Cf. <mentioned xml:lang="fa"><lang/>
+                <etym xml:lang="en">It traces back to <mentioned xml:id="mentioned_d4269e148" xml:lang="ira"><lang/>
+                        <w>*dauǧ-na</w></mentioned> with metathesis; to the verb <ref type="xr" target="#entry_dūcyn"/> | %idyǧd%i ‘milk’. Cf. <mentioned xml:id="mentioned_d4269e155" xml:lang="fa"><lang/>
                         <w>doǧ</w>
-                        <gloss><q>soured milk</q></gloss></mentioned>, <mentioned xml:lang="fa"><w/>
+                        <gloss><q>soured milk</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4269e163" xml:lang="fa"><w/>
                         <gloss><q>butter milk</q></gloss></mentioned>.</etym>
             </entry>
         </body>

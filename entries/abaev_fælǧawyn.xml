@@ -1,42 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">fælǧawyn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_fælǧawyn" xml:lang="os">
-                <form xml:lang="os-x-iron" type="lemma"><orth>fælǧawyn</orth><form type="participle"
-                            ><orth>fælǧ˳yd</orth></form></form>
-                <form xml:lang="os-x-digor" type="dialectal"><orth>fælǧawun</orth><form
-                        type="participle"><orth>fælǧud</orth></form></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <form xml:lang="os-x-iron" type="lemma"><orth>fælǧawyn</orth><form type="participle"><orth>fælǧ˳yd</orth></form></form>
+                <form xml:lang="os-x-digor" type="dialectal"><orth>fælǧawun</orth><form type="participle"><orth>fælǧud</orth></form></form>
+                <sense xml:id="sense_d504e76"><sense xml:id="sense_d504e77"><abv:tr xml:lang="ru">
                             <q>домогаться</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>solicit</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d504e86"><abv:tr xml:lang="ru">
                             <q>перемещать</q>
-                        </abv:tr><note type="comment" xml:lang="ru"> (?)</note><note type="comment"
-                            xml:lang="en"> (?)</note><abv:tr xml:lang="en">
+                        </abv:tr><note type="comment" xml:lang="ru"> (?)</note><note type="comment" xml:lang="en"> (?)</note><abv:tr xml:lang="en">
                             <q>move</q>
-                        </abv:tr><note type="comment" xml:lang="ru"> (?)</note><note type="comment"
-                            xml:lang="en"> (?)</note></sense></sense>
+                        </abv:tr><note type="comment" xml:lang="ru"> (?)</note><note type="comment" xml:lang="en"> (?)</note></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d504e106">
                         <quote>cy mæ fælǧawys?</quote>
                         <abv:tr xml:lang="ru">
                             <q>чего ты от меня домогаешься?</q>
@@ -45,7 +46,7 @@
                             <q>what do you want to get from me?</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d504e121" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>mægurtæn sæ qarwæ se xsaræ fælǧawæ</quote>
                         <abv:tr xml:lang="ru">
@@ -56,7 +57,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Sam."/><biblScope>141</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d504e143" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>bafærazæd dæw fælǧawun æ bæsti</quote>
                         <abv:tr xml:lang="ru">
@@ -70,7 +71,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
                             157</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d504e172" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>stur dor nadmæ raxawdtæjy is-æj-fælǧawæ ordigi</quote>
                         <abv:tr xml:lang="ru">
@@ -82,23 +83,17 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Сращение преверба %ifæl-%i с глаголом %iǧaw-%i ‘быть нужным’,
-                    ‘потреблять’ (← %i*pari-gav-%i). Может быть, сюда <mentioned xml:lang="sog"><lang/>
+                    ‘потреблять’ (← %i*pari-gav-%i). Может быть, сюда <mentioned xml:id="mentioned_d504e193" xml:lang="sog"><lang/>
                         <w>prɣʼw-</w>
                         <gloss><q>запрещать</q></gloss></mentioned> (? значение не установлено. —
-                            <bibl><author>Benveniste</author><ref type="bibl" target="#ref_TSP"
-                            /><biblScope>255</biblScope></bibl>). См. <ref type="xr"
-                        target="#entry_qawyn"/>. Значение ‘перемещать’ связано, возможно, с другим
-                    глаголом — %i*gu-%i, %i*gav-%i ‘идти’ и пр., ср. <ref type="xr"
-                        target="#entry_evǧawun"/>.</etym>
+                            <bibl><author>Benveniste</author><ref type="bibl" target="#ref_TSP"/><biblScope>255</biblScope></bibl>). См. <ref type="xr" target="#entry_qawyn"/>. Значение ‘перемещать’ связано, возможно, с другим
+                    глаголом — %i*gu-%i, %i*gav-%i ‘идти’ и пр., ср. <ref type="xr" target="#entry_evǧawun"/>.</etym>
                 <etym xml:lang="en">A contraction of the preverb %ifæl-%i with the verb %iǧaw-%i ‘be
-                    needed’, ‘consume’ (← %i*pari-gav-%i). Maybe, <mentioned xml:lang="sog"><lang/>
+                    needed’, ‘consume’ (← %i*pari-gav-%i). Maybe, <mentioned xml:id="mentioned_d504e214" xml:lang="sog"><lang/>
                         <w>prɣʼw-</w>
                         <gloss><q>forbid</q></gloss></mentioned> is related to it as well (? the
-                    meaning is not determined. — <bibl><author>Benveniste</author><ref type="bibl"
-                            target="#ref_TSP"/><biblScope>255</biblScope></bibl>). See <ref
-                        type="xr" target="#entry_qawyn"/>. The meaning ‘move’ may be connected with
-                    the other verb — %i*gu-%i, %i*gav-%i ‘go’ etc., cf. <ref type="xr"
-                        target="#entry_evǧawun"/>.</etym>
+                    meaning is not determined. — <bibl><author>Benveniste</author><ref type="bibl" target="#ref_TSP"/><biblScope>255</biblScope></bibl>). See <ref type="xr" target="#entry_qawyn"/>. The meaning ‘move’ may be connected with
+                    the other verb — %i*gu-%i, %i*gav-%i ‘go’ etc., cf. <ref type="xr" target="#entry_evǧawun"/>.</etym>
             </entry>
         </body>
     </text>

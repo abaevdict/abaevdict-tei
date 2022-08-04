@@ -1,45 +1,49 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">jad</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_jad" xml:lang="os-x-digor">
-                <form type="lemma"><orth>jad</orth><form type="variant"
-                    ><orth>ad</orth></form></form>
+                <form type="lemma"><orth>jad</orth><form type="variant"><orth>ad</orth></form></form>
                 <usg><lang/></usg>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d1676e74"><abv:tr xml:lang="ru">
                         <q>одолжение</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>favor</q>
                     </abv:tr></sense>
-                <re>
-                    <re>
+                <re xml:id="re_d1676e84">
+                    <re xml:id="re_d1676e86">
                         <form type="lemma"><orth>jadgor</orth></form>
-                        <sense><abv:tr xml:lang="ru">
+                        <sense xml:id="sense_d1676e91"><abv:tr xml:lang="ru">
                                 <q>кто просит об одолжении</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>who asks for favors</q>
                             </abv:tr></sense>
                     </re>
-                    <re>
+                    <re xml:id="re_d1676e102">
                         <form type="lemma"><orth>jadi lævard</orth></form>
-                        <sense><abv:tr xml:lang="ru">
+                        <sense xml:id="sense_d1676e107"><abv:tr xml:lang="ru">
                                 <q>одолженный предмет</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>a borrowed object</q>
@@ -47,7 +51,7 @@
                     </re>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d1676e121">
                         <quote>dæ æxsiʒgi jadgor kizgæ kinʒi ku cæwuj</quote>
                         <abv:tr xml:lang="ru">
                             <q>твоя дочь, которая в нужде (умела) попросить об одолжении (соседей?),
@@ -61,17 +65,15 @@
                             149</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из <mentioned xml:lang="tr"><lang/>
+                <etym xml:lang="ru">Из <mentioned xml:id="mentioned_d1676e144" xml:lang="tr"><lang/>
                         <w>yât(yad-)</w>
-                        <gloss><q>память</q></gloss></mentioned>, <mentioned xml:lang="tr"><w/>
-                        <gloss><q>напоминание</q></gloss></mentioned>, <mentioned xml:lang="tr"
-                            ><w>yadigâr</w>
+                        <gloss><q>память</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1676e152" xml:lang="tr"><w/>
+                        <gloss><q>напоминание</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1676e158" xml:lang="tr"><w>yadigâr</w>
                         <gloss><q>сувенир</q></gloss></mentioned>.</etym>
-                <etym xml:lang="en">From <mentioned xml:lang="tr"><lang/>
+                <etym xml:lang="en">From <mentioned xml:id="mentioned_d1676e167" xml:lang="tr"><lang/>
                         <w>yât(yad-)</w>
-                        <gloss><q>memory</q></gloss></mentioned>, <mentioned xml:lang="tr"><w/>
-                        <gloss><q>reminder</q></gloss></mentioned>, <mentioned xml:lang="tr"
-                            ><w>yadigâr</w>
+                        <gloss><q>memory</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1676e175" xml:lang="tr"><w/>
+                        <gloss><q>reminder</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1676e181" xml:lang="tr"><w>yadigâr</w>
                         <gloss><q>souvenir</q></gloss></mentioned>.</etym>
             </entry>
         </body>

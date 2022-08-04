@@ -1,29 +1,32 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">fældīsyn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_fældīsyn" xml:lang="os">
-                <form xml:lang="os-x-iron" type="lemma"><orth>fældīsyn</orth><form type="participle"
-                            ><orth>fældyst</orth></form></form>
-                <form xml:lang="os-x-digor" type="dialectal"><orth>fældesun</orth><form
-                        type="participle"><orth>fældist</orth></form></form>
+                <form xml:lang="os-x-iron" type="lemma"><orth>fældīsyn</orth><form type="participle"><orth>fældyst</orth></form></form>
+                <form xml:lang="os-x-digor" type="dialectal"><orth>fældesun</orth><form type="participle"><orth>fældist</orth></form></form>
                 <sense n="1" xml:id="sense_fældīsyn.1"><abv:tr xml:lang="ru">
                         <q>творить</q>
                     </abv:tr><abv:tr xml:lang="en">
@@ -34,9 +37,9 @@
                     </abv:tr><abv:tr xml:lang="en">
                         <q>dedicate to the dead</q>
                     </abv:tr></sense>
-                <re>
+                <re xml:id="re_d4118e96">
                     <form type="lemma"><orth>bæxfældīsyn</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d4118e101"><abv:tr xml:lang="ru">
                             <q>обряд посвящения коня покойнику</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>ceremony of the dedication of a horse to the dead</q>
@@ -44,8 +47,7 @@
                     <note type="comment" xml:lang="ru">. Обычай посвящения умершему людей и животных
                         восходит к скифским временам (десятки заколотых коней „сопровождали“
                         скифского царя в загробный мир). В более облагороженном виде эти обычаи
-                        сохранялись у осетин до недавнего времени (<bibl><ref type="bibl"
-                                target="#src_Коста"/><biblScope xml:lang="ru">67
+                        сохранялись у осетин до недавнего времени (<bibl><ref type="bibl" target="#src_Коста"/><biblScope xml:lang="ru">67
                                 сл.</biblScope><biblScope xml:lang="en">67 ff.</biblScope></bibl> —
                                 <bibl><biblScope xml:lang="ru">Г. Ф. Чурсин, сб. „Юго-Осетия“, стр.
                                 160</biblScope><biblScope xml:lang="en">G.F. Chursin, col. "South
@@ -53,15 +55,14 @@
                     <note type="comment" xml:lang="en">. The custom of dedicating people and animals
                         to the deceased dates back to Scythian times (dozens of slaughtered horses
                         "accompanied" the Scythian king to the afterlife). In a more ennobled form,
-                        these customs were preserved among the Ossetians until recently (<bibl><ref
-                                type="bibl" target="#src_Коста"/><biblScope xml:lang="ru">67
+                        these customs were preserved among the Ossetians until recently (<bibl><ref type="bibl" target="#src_Коста"/><biblScope xml:lang="ru">67
                                 сл.</biblScope><biblScope xml:lang="en">67 ff.</biblScope></bibl> —
                                 <bibl><biblScope xml:lang="ru">Г. Ф. Чурсин, сб. „Юго-Осетия“, стр.
                                 160</biblScope><biblScope xml:lang="en">G.F. Chursin, col. ‘South
                                 Ossetia’, p. 160</biblScope></bibl>).</note>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4118e147">
                         <quote>o, X˳ycawty X˳ycaw! me sfældīsæg X˳ycaw!</quote>
                         <abv:tr xml:lang="ru">
                             <q>о, Бог Богов! создавший меня Бог!</q>
@@ -71,7 +72,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>71</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4118e166">
                         <quote>cy X˳ycaw mæ rafældysta…</quote>
                         <abv:tr xml:lang="ru">
                             <q>Бог, который меня сотворил…</q>
@@ -83,7 +84,7 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4118e188">
                         <quote>Boræty fæsīvæd Syrdony nyffældystoj Soslanæn</quote>
                         <abv:tr xml:lang="ru">
                             <q>молодежь Бораевых посвятила Сырдона (покойному) Сослану</q>
@@ -94,7 +95,7 @@
                         <bibl><ref type="bibl" target="#src_ЮОПам."/><biblScope>I
                             114</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4118e207">
                         <quote>wæjyg jæ bæxæn ʒūry: …fældysty fæwaj!</quote>
                         <abv:tr xml:lang="ru">
                             <q>великан говорит своему коню: «чтобы тебе быть посвященным
@@ -104,10 +105,9 @@
                             <q>the giant says to his horse: "so that you may be dedicated to the
                                 dead!"</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Munk."
-                            /><biblScope>38–40</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Munk."/><biblScope>38–40</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4118e226" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>digoron fældist</quote>
                         <abv:tr xml:lang="ru">
@@ -119,7 +119,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
                             169</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4118e248" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>ka æxe niffældesidæ…</quote>
                         <abv:tr xml:lang="ru">
@@ -140,30 +140,27 @@
                     ‘заклинания’: ‘творить’ = „вызывать с помощью заклинаний“; ‘посвящать покойнику’
                     = „с помощью заклинаний переводить из земного плана в загробный“. Глагол
                     %ifældīsyn%i | %ifældesun%i представляет сращение преверба %ifæl-%i с основой
-                    %idīs%i | %ides-%i (<mentioned xml:lang="x-oldirn"><lang/>
+                    %idīs%i | %ides-%i (<mentioned xml:id="mentioned_d4118e273" xml:lang="x-oldirn"><lang/>
                         <w>*pari-dais-</w></mentioned>). Эту же основу имеем в %iæv-dīs-yn%i |
-                    %iæv-des-un%i ‘показывать’. Основа <mentioned xml:lang="x-oldirn"><lang/>
-                        <w>*dais-</w></mentioned>, <mentioned xml:lang="ine"><lang/>
+                    %iæv-des-un%i ‘показывать’. Основа <mentioned xml:id="mentioned_d4118e278" xml:lang="x-oldirn"><lang/>
+                        <w>*dais-</w></mentioned>, <mentioned xml:id="mentioned_d4118e283" xml:lang="ine"><lang/>
                         <w>*deiḱ</w></mentioned>, если проследить ее развитие в разных языках,
                     имела, наряду с распространенным значением ‘показывать’, также значение
                     ‘провозглашать’, ‘посвящать’ (в религиозном смысле), а также ‘строить’. Ср.,
-                    наряду с <mentioned xml:lang="sa"><lang/>
+                    наряду с <mentioned xml:id="mentioned_d4118e288" xml:lang="sa"><lang/>
                         <w>dis-</w>
-                        <gloss><q>показывать</q></gloss></mentioned>, <mentioned xml:lang="sa"><lang/>
+                        <gloss><q>показывать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4118e296" xml:lang="sa"><lang/>
                         <w>dīkṣ-</w>
-                        <gloss><q>посвящать</q></gloss></mentioned>, <mentioned xml:lang="sa"
-                            ><w/><note type="comment" xml:lang="ru">в частности</note>
+                        <gloss><q>посвящать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4118e305" xml:lang="sa"><w/><note type="comment" xml:lang="ru">в частности</note>
                         <gloss><q>посвящать покойнику (%imaraṇāya%i)</q></gloss></mentioned>,
-                        <mentioned xml:lang="la"><lang/>
+                        <mentioned xml:id="mentioned_d4118e313" xml:lang="la"><lang/>
                         <w>dico dicāre, dedico dedicāre</w>
-                        <gloss><q>посвящать</q></gloss></mentioned> (наряду с <mentioned
-                        xml:lang="la"><lang/>
+                        <gloss><q>посвящать</q></gloss></mentioned> (наряду с <mentioned xml:id="mentioned_d4118e321" xml:lang="la"><lang/>
                         <w>dīco</w>
                         <gloss><q>говорить</q></gloss></mentioned>) и др. Для значения ‘строить’ ср.
-                        <mentioned xml:lang="sog"><lang/>
+                        <mentioned xml:id="mentioned_d4118e329" xml:lang="sog"><lang/>
                         <w>*parδēs- (prδʼys-), *δes-(δys-)</w>
-                        <gloss><q>строить</q></gloss></mentioned>. Ср. <ref type="xr"
-                        target="#entry_fīdīs"/>.</etym>
+                        <gloss><q>строить</q></gloss></mentioned>. Ср. <ref type="xr" target="#entry_fīdīs"/>.</etym>
                 <etym xml:lang="en">Despite the two strongly diverging meanings (‘create’ and
                     ‘dedicate to the dead’), we are apparently dealing with one verb, and not two
                     historically different verbs that accidentally coincided in sound form. The
@@ -171,31 +168,27 @@
                     ‘spells’: ‘create’ = ‘cause with the help of spells’; ‘dedicate to the dead’ =
                     “with the help of spells transfer from the earthly life to the afterlife”. The
                     verb %ifældīsyn%i | %ifældesun%i is a contraction of the preverb %ifæl-%i with
-                    the stem %idīs%i | %ides-%i (<mentioned xml:lang="x-oldirn"><lang/>
+                    the stem %idīs%i | %ides-%i (<mentioned xml:id="mentioned_d4118e342" xml:lang="x-oldirn"><lang/>
                         <w>*pari-dais-</w></mentioned>). The same stem is present in %iæv-dīs-yn%i |
-                    %iæv-des-un%i ‘show’. The stem <mentioned xml:lang="x-oldirn"><lang/>
-                        <w>*dais-</w></mentioned>, <mentioned xml:lang="ine"><lang/>
+                    %iæv-des-un%i ‘show’. The stem <mentioned xml:id="mentioned_d4118e347" xml:lang="x-oldirn"><lang/>
+                        <w>*dais-</w></mentioned>, <mentioned xml:id="mentioned_d4118e352" xml:lang="ine"><lang/>
                         <w>*deiḱ</w></mentioned>, if one follows its evolution in different
                     languages, apart from the widespead meaning ‘show’, also meant ‘proclaim’,
                     ‘dedicate’ (in the religious sense), and ‘build’ as well. Cf., along with
-                        <mentioned xml:lang="sa"><lang/>
+                        <mentioned xml:id="mentioned_d4118e357" xml:lang="sa"><lang/>
                         <w>dis-</w>
-                        <gloss><q>show</q></gloss></mentioned>, <mentioned xml:lang="sa"><lang/>
+                        <gloss><q>show</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4118e365" xml:lang="sa"><lang/>
                         <w>dīkṣ-</w>
-                        <gloss><q>dedicate</q></gloss></mentioned>, <mentioned xml:lang="sa"
-                            ><w/><note
-                            type="comment" xml:lang="en">particularly</note>
+                        <gloss><q>dedicate</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4118e374" xml:lang="sa"><w/><note type="comment" xml:lang="en">particularly</note>
                         <gloss><q>dedicate to the dead (%imaraṇāya%i)</q></gloss></mentioned>,
-                        <mentioned xml:lang="la"><lang/>
+                        <mentioned xml:id="mentioned_d4118e382" xml:lang="la"><lang/>
                         <w>dico dicāre, dedico dedicāre</w>
-                        <gloss><q>dedicate</q></gloss></mentioned> (along with <mentioned
-                        xml:lang="la"><lang/>
+                        <gloss><q>dedicate</q></gloss></mentioned> (along with <mentioned xml:id="mentioned_d4118e390" xml:lang="la"><lang/>
                         <w>dīco</w>
                         <gloss><q>say</q></gloss></mentioned>) etc. As for the meaning ‘build’, cf.
-                        <mentioned xml:lang="sog"><lang/>
+                        <mentioned xml:id="mentioned_d4118e398" xml:lang="sog"><lang/>
                         <w>*parδēs- (prδʼys-), *δes-(δys-)</w>
-                        <gloss><q>build</q></gloss></mentioned>. Cf. <ref type="xr"
-                        target="#entry_fīdīs"/>.</etym>
+                        <gloss><q>build</q></gloss></mentioned>. Cf. <ref type="xr" target="#entry_fīdīs"/>.</etym>
             </entry>
         </body>
     </text>

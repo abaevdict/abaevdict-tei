@@ -1,38 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">æg0yʒæg</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_æg0yʒæg" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>æg˳yʒæg</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>æguʒæg</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d1376e72"><sense xml:id="sense_d1376e73"><abv:tr xml:lang="ru">
                             <q>беспомощный</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>helpless</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d1376e82"><abv:tr xml:lang="ru">
                             <q>непредприимчивый</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>unenterprising</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d1376e94">
                         <quote>ræsuǧd Rubajon, bæg˳y ævǧaw dæ æg˳yʒæg myggagæn</quote>
                         <abv:tr xml:lang="ru">
                             <q>красавица Рубайон, как жаль, что ты (замужем) у такой нестоящей
@@ -44,7 +49,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Čerm."/><biblScope>54</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d1376e113" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>fæjjawtæ ældari furti dær æma sæxe dær æxsæværæj æguʒæg næ
                             niwwaǧtoncæ</quote>
@@ -65,20 +70,18 @@
                     уклад: такое выражение могло возникнуть только на основе пастушеского быта.
                     Действительно, у горных осетин скотоводов выражение %ik˳yʒ dær æm næj%i „у него
                     нет даже собаки“ означало предельную бедность и несостоятельность. Ср. по
-                    образованию и семантике <mentioned xml:lang="sa-vaidika"><lang/>
+                    образованию и семантике <mentioned xml:id="mentioned_d1376e138" xml:lang="sa-vaidika"><lang/>
                         <w>a-go-</w>
-                        <gloss><q>не имеющий коровы</q></gloss></mentioned> = ‘бедняк’. См. <ref
-                        type="xr" target="#entry_k0yʒ"/>.</etym>
+                        <gloss><q>не имеющий коровы</q></gloss></mentioned> = ‘бедняк’. См. <ref type="xr" target="#entry_k0yʒ"/>.</etym>
                 <etym xml:lang="en">Evidently, from %iæ%i + %ik˳yʒ-æg%i, literally “dogless”, “not
                     having a dog”, “hundlos”. The lack of a dog as a synonym for extreme poverty,
                     helplessness and failure characterizes a certain economic structure: such an
                     expression could arise only from a shepherd's life. Indeed, among the mountain
                     Ossetians, the expression %ik˳yʒ dær æm næj%i “he doesn't even have a dog” meant
                     extreme poverty and insolvency. Cf. the derivational and semantic structure of
-                        <mentioned xml:lang="sa-vaidika"><lang/>
+                        <mentioned xml:id="mentioned_d1376e152" xml:lang="sa-vaidika"><lang/>
                         <w>a-go-</w>
-                        <gloss><q>not having a cow</q></gloss></mentioned> = ‘poor man’. Cf. <ref
-                        type="xr" target="#entry_k0yʒ"/>.</etym>
+                        <gloss><q>not having a cow</q></gloss></mentioned> = ‘poor man’. Cf. <ref type="xr" target="#entry_k0yʒ"/>.</etym>
             </entry>
         </body>
     </text>

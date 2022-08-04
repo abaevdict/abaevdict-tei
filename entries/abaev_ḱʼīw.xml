@@ -1,54 +1,56 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ḱʼīw</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ḱʼīw" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>ḱʼīw</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>kʼewæ</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d2796e72"><sense xml:id="sense_d2796e73"><abv:tr xml:lang="ru">
                             <q>смола</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>resin</q>
-                        </abv:tr></sense><sense><note type="comment" xml:lang="ru"
-                            >специально</note><note type="comment" xml:lang="en"
-                            >specifically</note><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d2796e82"><note type="comment" xml:lang="ru">специально</note><note type="comment" xml:lang="en">specifically</note><abv:tr xml:lang="ru">
                             <q>жевательная смола</q>
-                        </abv:tr><note type="comment" xml:lang="ru">специально</note><note
-                            type="comment" xml:lang="en">specifically</note><abv:tr xml:lang="en">
+                        </abv:tr><note type="comment" xml:lang="ru">специально</note><note type="comment" xml:lang="en">specifically</note><abv:tr xml:lang="en">
                             <q>gum</q>
                         </abv:tr></sense></sense>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d2796e100"><abv:tr xml:lang="ru">
                         <q>затвердевшая грязь, слизь</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>hardened mud, mucus</q>
                     </abv:tr></sense>
-                <re>
+                <re xml:id="re_d2796e110">
                     <form type="lemma"><orth>ḱʼīw æwwīlyn</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d2796e115"><abv:tr xml:lang="ru">
                             <q>жевать смолу</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>chew resin</q>
                         </abv:tr></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d2796e129">
                         <quote>ḱʼīw æwwīlæg jæ g˳ybyn sajy</quote>
                         <abv:tr xml:lang="ru">
                             <q>жующий смолу обманывает свой живот</q>
@@ -59,7 +61,7 @@
                         <bibl><ref type="bibl" target="#src_ЮОПам."/><biblScope>III
                             244</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2796e148">
                         <quote>jæ cæstytæ nal zynync ḱʼīwæj</quote>
                         <abv:tr xml:lang="ru">
                             <q>его глаза покрыты затвердевшей слизью („не видны под слизью“)</q>
@@ -70,7 +72,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>68</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d2796e167" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>kʼoppati færstæ cʼumur æma kʼewæj næbal zinuncæ</quote>
                         <abv:tr xml:lang="ru">
@@ -80,19 +82,17 @@
                             <q>the sides of the bowls are covered with mud (“not visible under
                                 mud”)</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_SD"
-                            /><biblScope>179%l3%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_SD"/><biblScope>179%l3%l</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из <mentioned xml:lang="ka"><lang/>
+                <etym xml:lang="ru">Из <mentioned xml:id="mentioned_d2796e192" xml:lang="ka"><lang/>
                         <w>kʼevi</w>
-                        <gloss><q>жевательная смола</q></gloss></mentioned>. Сюда же <mentioned
-                        xml:lang="inh"><lang/>
+                        <gloss><q>жевательная смола</q></gloss></mentioned>. Сюда же <mentioned xml:id="mentioned_d2796e200" xml:lang="inh"><lang/>
                         <w>kʼuv</w>
                         <gloss><q>смола</q></gloss></mentioned>.</etym>
-                <etym xml:lang="en">From <mentioned xml:lang="ka"><lang/>
+                <etym xml:lang="en">From <mentioned xml:id="mentioned_d2796e211" xml:lang="ka"><lang/>
                         <w>kʼevi</w>
-                        <gloss><q>chewing resin</q></gloss></mentioned>. <mentioned xml:lang="inh"><lang/>
+                        <gloss><q>chewing resin</q></gloss></mentioned>. <mentioned xml:id="mentioned_d2796e219" xml:lang="inh"><lang/>
                         <w>kʼuv</w>
                         <gloss><q>resin</q></gloss></mentioned> is related to it as well.</etym>
             </entry>

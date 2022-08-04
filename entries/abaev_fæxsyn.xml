@@ -1,47 +1,51 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">fæxsyn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_fæxsyn" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>fæxsyn</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>fæxsun</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d1035e72"><sense xml:id="sense_d1035e73"><abv:tr xml:lang="ru">
                             <q>туша, заготовленная впрок</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>carcass prepared for future use</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d1035e82"><abv:tr xml:lang="ru">
                             <q>курдюк</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>fat tail</q>
                         </abv:tr></sense></sense>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d1035e92"><abv:tr xml:lang="ru">
                         <q>задняя часть барана, закопченная целиком</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>the back of the ram, which was smoked wholly</q>
-                    </abv:tr><note type="comment" xml:lang="ru">по объяснению <bibl><ref type="bibl"
-                                target="#ref_СОПам."/><biblScope>III 138</biblScope></bibl>:
+                    </abv:tr><note type="comment" xml:lang="ru">по объяснению <bibl><ref type="bibl" target="#ref_СОПам."/><biblScope>III 138</biblScope></bibl>:
                         </note><note type="comment" xml:lang="en">according to the explanation in
                                 <bibl><ref type="bibl" target="#ref_СОПам."/><biblScope>III
                                 138</biblScope></bibl>: </note></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d1035e116">
                         <quote>fīzonæg fæqæbær, fæxsyntæ nærsync</quote>
                         <abv:tr xml:lang="ru">
                             <q>шашлык покрылся корочкой, туши разбухают (от варки)</q>
@@ -54,7 +58,7 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d1035e139">
                         <quote>ūj kæj fæxsyntæ næ fædavta… axæm xæʒar næ razynʒæn Narty
                             qæwy</quote>
                         <abv:tr xml:lang="ru">
@@ -68,7 +72,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>III
                             27</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d1035e158" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>Negor ældar dær nælfusi fæxsun beræǧæn ragælsta</quote>
                         <abv:tr xml:lang="ru">
@@ -80,7 +84,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
                             74</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1035e180">
                         <quote>ærcawyǧta myn cæxǵyn fæxsyn me fcægyl</quote>
                         <abv:tr xml:lang="ru">
                             <q>повесил мне на шею соленую баранью тушу</q>
@@ -94,8 +98,7 @@
                 <etym xml:lang="ru">Если допустить, что исходное значение было ‘часть’ или ‘половина
                     туши’, то можно связать с <ref type="xr" target="#entry_faxs"/> ‘бок’.</etym>
                 <etym xml:lang="en">If we assume that the original meaning was ‘part’ or ‘half of
-                    the carcass’, then this word can be associated with <ref type="xr"
-                        target="#entry_faxs"/> ‘side’.</etym>
+                    the carcass’, then this word can be associated with <ref type="xr" target="#entry_faxs"/> ‘side’.</etym>
             </entry>
         </body>
     </text>

@@ -1,34 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">cas</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_cas" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>cas</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>cæjasæ</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d2805e72"><abv:tr xml:lang="ru">
                         <q>сколько</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>how much</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d2805e84">
                         <quote>cas fos askʼærdtat?</quote>
                         <abv:tr xml:lang="ru">
                             <q>сколько вы погнали скота?</q>
@@ -37,7 +42,7 @@
                             <q>how much cattle did you drive?</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2805e99">
                         <quote>cas tyxǵyn rædyd dæn?</quote>
                         <abv:tr xml:lang="ru">
                             <q>насколько велика („сильна“) моя ошибка?</q>
@@ -45,10 +50,9 @@
                         <abv:tr xml:lang="en">
                             <q>how big ("strong") is my mistake?</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"
-                            /><biblScope>121</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>121</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2805e118">
                         <quote>cas mæg˳yrdær kodtoj, ūjas sæ kærʒynyl kodtoj rædawdær</quote>
                         <abv:tr xml:lang="ru">
                             <q>чем беднее они становились, тем щедрее они делались на хлеб</q>
@@ -59,16 +63,10 @@
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>74</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из %icæj-as(æ)%i, буквально „в каком размере“. См. <ref
-                        type="xr" target="#entry_cy"/> | %ici%i ‘что’ и <ref type="xr"
-                        target="#entry_as"/> ‘размер’. О различии употребления <ref type="xr"
-                        target="#entry_cas"/> и <ref type="xr" target="#entry_cal"/> см. под <ref
-                        type="xr" target="#entry_cal"/>.</etym>
-                <etym xml:lang="en">From %icæj-as(æ)%i, literally “in what size”. См. <ref type="xr"
-                        target="#entry_cy"/> | %ici%i ‘what’ and <ref type="xr" target="#entry_as"/>
+                <etym xml:lang="ru">Из %icæj-as(æ)%i, буквально „в каком размере“. См. <ref type="xr" target="#entry_cy"/> | %ici%i ‘что’ и <ref type="xr" target="#entry_as"/> ‘размер’. О различии употребления <ref type="xr" target="#entry_cas"/> и <ref type="xr" target="#entry_cal"/> см. под <ref type="xr" target="#entry_cal"/>.</etym>
+                <etym xml:lang="en">From %icæj-as(æ)%i, literally “in what size”. См. <ref type="xr" target="#entry_cy"/> | %ici%i ‘what’ and <ref type="xr" target="#entry_as"/>
                     ‘size’. On the difference in use between <ref type="xr" target="#entry_cas"/>
-                    and <ref type="xr" target="#entry_cal"/> see under <ref type="xr"
-                        target="#entry_cal"/>.</etym>
+                    and <ref type="xr" target="#entry_cal"/> see under <ref type="xr" target="#entry_cal"/>.</etym>
             </entry>
         </body>
     </text>

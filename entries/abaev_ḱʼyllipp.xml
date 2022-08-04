@@ -1,54 +1,59 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ḱʼyllipp</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ḱʼyllipp" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>ḱʼyllipp</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>kʼillip</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d1301e72"><sense xml:id="sense_d1301e73"><abv:tr xml:lang="ru">
                             <q>лягание</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>kicking</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d1301e82"><abv:tr xml:lang="ru">
                             <q>брыкание</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>bucking</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d1301e91"><abv:tr xml:lang="ru">
                             <q>прыганье</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>jumping</q>
                         </abv:tr></sense></sense>
-                <re>
+                <re xml:id="re_d1301e101">
                     <form type="lemma"><orth>ḱʼyllipp kænyn</orth></form>
-                    <sense><sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d1301e106"><sense xml:id="sense_d1301e107"><abv:tr xml:lang="ru">
                                 <q>лягаться</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>kick</q>
-                            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                            </abv:tr></sense><sense xml:id="sense_d1301e116"><abv:tr xml:lang="ru">
                                 <q>брыкаться</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>buck</q>
                             </abv:tr></sense></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d1301e129">
                         <quote>bæxtæ… ḱʼyllīppgængæ fæcagajync</quote>
                         <abv:tr xml:lang="ru">
                             <q>кони… уносятся брыкаясь…</q>
@@ -58,7 +63,7 @@
                         </abv:tr>
                         <bibl><biblScope>%sPlity%s X. 26</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d1301e147" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>ragwalʒæg ǧar ræstæg kʼillippæj kafton</quote>
                         <abv:tr xml:lang="ru">
@@ -71,11 +76,11 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Хотя слово по звуковому облику кажется звукоподражательным,
-                    такое впечатление может быть обманчивым. Ср. <mentioned xml:lang="ku"><lang/>
+                    такое впечатление может быть обманчивым. Ср. <mentioned xml:id="mentioned_d1301e173" xml:lang="ku"><lang/>
                         <w>telep</w>
                         <gloss><q>галоп</q></gloss></mentioned>.</etym>
                 <etym xml:lang="en">Although the word seems onomatopoeic in terms of sound form,
-                    such an impression can be misleading. Cf. <mentioned xml:lang="ku"><lang/>
+                    such an impression can be misleading. Cf. <mentioned xml:id="mentioned_d1301e184" xml:lang="ku"><lang/>
                         <w>telep</w>
                         <gloss><q>gallop</q></gloss></mentioned>.</etym>
             </entry>

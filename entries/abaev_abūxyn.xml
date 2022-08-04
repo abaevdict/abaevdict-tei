@@ -1,40 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">abūxyn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_abūxyn" xml:lang="os">
-                <form xml:lang="os-x-iron" type="lemma"><orth>abūxyn</orth><form type="variant"
-                            ><orth>abūxt</orth></form></form>
-                <form xml:lang="os-x-digor" type="dialectal"><orth>aboxun</orth><form
-                        type="participle"><orth>abuxt</orth></form></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <form xml:lang="os-x-iron" type="lemma"><orth>abūxyn</orth><form type="variant"><orth>abūxt</orth></form></form>
+                <form xml:lang="os-x-digor" type="dialectal"><orth>aboxun</orth><form type="participle"><orth>abuxt</orth></form></form>
+                <sense xml:id="sense_d5670e76"><sense xml:id="sense_d5670e77"><abv:tr xml:lang="ru">
                             <q>буйствовать</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>behave violently</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d5670e86"><abv:tr xml:lang="ru">
                             <q>реветь</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>roar</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d5670e98">
                         <quote>aboxūncæ æfsesæj</quote>
                         <abv:tr xml:lang="ru">
                             <q>насытившись, они буйствуют</q>
@@ -44,7 +47,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Sozur"/><biblScope>39</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5670e117">
                         <quote>xwytæ cʼyfy abūxync</quote>
                         <abv:tr xml:lang="ru">
                             <q>свиньи валяются (буйствуют) в грязи</q>
@@ -53,7 +56,7 @@
                             <q>pigs are wallowing (raging) in the mud</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5670e132">
                         <quote>ysrasyg æmæ abūxy</quote>
                         <abv:tr xml:lang="ru">
                             <q>он опьянел и буйствует</q>
@@ -62,7 +65,7 @@
                             <q>he got drunk and is behaving violently</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5670e147">
                         <quote>racū næm abūxgæjæ mæ ʽrttivgæjæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>выйди к нам с ревом и сверканием</q>
@@ -73,7 +76,7 @@
                         <bibl><ref type="bibl" target="#src_ЮОПам."/><biblScope>I
                             38</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5670e166">
                         <quote>læppū jæxī buǧa kæmbeš festyn kodta æmæ wælmærdty abūxgæjæ
                             fæšawy</quote>
                         <abv:tr xml:lang="ru">
@@ -87,15 +90,15 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Вероятно, из %ia%i + *%imūx-yn%i, где *%imūx%i ← *%imūk%i, ср.
-                        <mentioned xml:lang="cs" extralang="sr"><lang/>
-                        <w>mukati</w></mentioned>, <mentioned xml:lang="ru"><lang/>
-                        <w>мычать</w></mentioned>, <mentioned xml:lang="grc"><lang/>
+                        <mentioned xml:id="mentioned_d5670e187" xml:lang="cs" extralang="sr"><lang/>
+                        <w>mukati</w></mentioned>, <mentioned xml:id="mentioned_d5670e192" xml:lang="ru"><lang/>
+                        <w>мычать</w></mentioned>, <mentioned xml:id="mentioned_d5670e197" xml:lang="grc"><lang/>
                         <w>μῦκάομαι</w></mentioned>. Переход *%iamūxyn%i→ %iabūxyn%i совершился,
                     возможно, под влиянием <ref type="xr" target="#entry_æmbūxyn"/> q. v.</etym>
                 <etym xml:lang="en">Probably, from %ia%i + *%imūx-yn%i, where *%imūx%i ← *%imūk%i,
-                    cf. <mentioned xml:lang="cs" extralang="sr"><lang/>
-                        <w>mukati</w></mentioned>, <mentioned xml:lang="ru"><lang/>
-                        <w>myčat'</w></mentioned>, <mentioned xml:lang="grc"><lang/>
+                    cf. <mentioned xml:id="mentioned_d5670e208" xml:lang="cs" extralang="sr"><lang/>
+                        <w>mukati</w></mentioned>, <mentioned xml:id="mentioned_d5670e213" xml:lang="ru"><lang/>
+                        <w>myčat'</w></mentioned>, <mentioned xml:id="mentioned_d5670e218" xml:lang="grc"><lang/>
                         <w>μῦκάομαι</w></mentioned>. The transition *%iamūxyn%i→ %iabūxyn%i probably
                     took place under the influence of <ref type="xr" target="#entry_æmbūxyn"/> q.
                     v.</etym>

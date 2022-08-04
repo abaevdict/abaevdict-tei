@@ -1,37 +1,42 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">aʒal</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_aʒal" xml:lang="os">
                 <form type="lemma"><orth>aʒal</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d2019e69"><sense xml:id="sense_d2019e70"><abv:tr xml:lang="ru">
                             <q>смертный час</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>death hour</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d2019e79"><abv:tr xml:lang="ru">
                             <q>рок</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>fate</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d2019e91">
                         <quote>aj ta jæ aʒalmæ cardi æmbæxstæj</quote>
                         <abv:tr xml:lang="ru">
                             <q>этот до смерти жил прячась (от людей)</q>
@@ -41,7 +46,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_MD"/><biblScope>75</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2019e110">
                         <quote>īw kʼord azty fæstæ mæg˳yr lægæn jæ aʒal ærxæccæ æmæ jæm ūdxæssæg
                             ærcyd</quote>
                         <abv:tr xml:lang="ru">
@@ -54,7 +59,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Сека"/><biblScope>112</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d2019e129" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>adæjmagæn æ aʒal ku ʽrxæstæg wa…, wæd in tærxon skænuncæ…, wædta
                             in odesæg æ od isesuj</quote>
@@ -66,10 +71,9 @@
                             <q>when the death hour is near to a man…, a trial of him is held…,
                                 then the angel of death takes his soul</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Диг._сказ."
-                            /><biblScope>60</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Диг._сказ."/><biblScope>60</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2019e151">
                         <quote>aʒalæn amal næj</quote>
                         <abv:tr xml:lang="ru">
                             <q>против смерти нет средства</q>
@@ -80,7 +84,7 @@
                         <bibl><ref type="bibl" target="#src_ЮОПам."/><biblScope>III
                             193</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d2019e170" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>ænaʒalæj isæfuj</quote>
                         <abv:tr xml:lang="ru">
@@ -90,60 +94,43 @@
                             <q>he dies, though the %sadzal%s (i.e. the death prescribed by fate) has
                                 not yet come</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Bes._Ka_ke"
-                            /><biblScope>28</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Bes._Ka_ke"/><biblScope>28</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из <mentioned xml:lang="ar" extralang="fa tr"><lang/>
+                <etym xml:lang="ru">Из <mentioned xml:id="mentioned_d2019e195" xml:lang="ar" extralang="fa tr"><lang/>
                         <w>ajal</w>
-                        <gloss><q>срок</q></gloss></mentioned>, <mentioned xml:lang="ar"
-                        extralang="fa tr"><w/>
-                        <gloss><q>предел</q></gloss></mentioned>, <mentioned xml:lang="ar"
-                        extralang="fa tr"><w/>
+                        <gloss><q>срок</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2019e203" xml:lang="ar" extralang="fa tr"><w/>
+                        <gloss><q>предел</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2019e209" xml:lang="ar" extralang="fa tr"><w/>
                         <gloss><q>смертный час</q></gloss></mentioned>; один из тех мусульманских
-                    терминов, которые вместе с исламом проникли во многие языки Кавказа: <mentioned
-                        xml:lang="av"><lang/>
-                        <w>ajal</w></mentioned>, <mentioned xml:lang="av"><w>'ajal</w></mentioned>,
-                        <mentioned xml:lang="lbe"><lang/>
-                        <w>ažal</w></mentioned>. <mentioned xml:lang="ani"><lang/>
-                        <w>ajal</w></mentioned>, <mentioned xml:lang="ce"><lang/>
-                        <w>ažal</w></mentioned>, <mentioned xml:lang="inh"><lang/>
-                        <w>'ožæl</w></mentioned>, <mentioned xml:lang="kbd" extralang="kbd-x-crc"><lang/>
-                        <w>ažal</w></mentioned>, <mentioned xml:lang="kbd" extralang="kbd-x-crc"
-                            ><w>ajal</w></mentioned>, <mentioned xml:lang="krc-x-balkar"><lang/>
-                        <w>ajal</w></mentioned>, <mentioned xml:lang="krc-x-balkar"
-                        ><w>azal</w></mentioned>. Ср. также <mentioned xml:lang="ka"><lang/>
+                    терминов, которые вместе с исламом проникли во многие языки Кавказа: <mentioned xml:id="mentioned_d2019e215" xml:lang="av"><lang/>
+                        <w>ajal</w></mentioned>, <mentioned xml:id="mentioned_d2019e220" xml:lang="av"><w>'ajal</w></mentioned>,
+                        <mentioned xml:id="mentioned_d2019e224" xml:lang="lbe"><lang/>
+                        <w>ažal</w></mentioned>. <mentioned xml:id="mentioned_d2019e229" xml:lang="ani"><lang/>
+                        <w>ajal</w></mentioned>, <mentioned xml:id="mentioned_d2019e234" xml:lang="ce"><lang/>
+                        <w>ažal</w></mentioned>, <mentioned xml:id="mentioned_d2019e239" xml:lang="inh"><lang/>
+                        <w>'ožæl</w></mentioned>, <mentioned xml:id="mentioned_d2019e244" xml:lang="kbd" extralang="kbd-x-crc"><lang/>
+                        <w>ažal</w></mentioned>, <mentioned xml:id="mentioned_d2019e249" xml:lang="kbd" extralang="kbd-x-crc"><w>ajal</w></mentioned>, <mentioned xml:id="mentioned_d2019e253" xml:lang="krc-x-balkar"><lang/>
+                        <w>ajal</w></mentioned>, <mentioned xml:id="mentioned_d2019e258" xml:lang="krc-x-balkar"><w>azal</w></mentioned>. Ср. также <mentioned xml:id="mentioned_d2019e261" xml:lang="ka"><lang/>
                         <w>eʒeli</w>
-                        <gloss><q>риск</q></gloss></mentioned>, <mentioned xml:lang="ka"
-                            ><w>arʒali</w>
-                        <gloss><q>смертный час</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Чкония"/></bibl>).%n <bibl><ref type="bibl"
-                            target="#ref_ОЯФ_I"/><biblScope> 93.</biblScope></bibl></etym>
-                <etym xml:lang="en">From <mentioned xml:lang="ar" extralang="fa tr"><lang/>
+                        <gloss><q>риск</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2019e269" xml:lang="ka"><w>arʒali</w>
+                        <gloss><q>смертный час</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Чкония"/></bibl>).%n <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope> 93.</biblScope></bibl></etym>
+                <etym xml:lang="en">From <mentioned xml:id="mentioned_d2019e284" xml:lang="ar" extralang="fa tr"><lang/>
                         <w>ajal</w>
-                        <gloss><q>term</q></gloss></mentioned>, <mentioned xml:lang="ar"
-                        extralang="fa tr"><w/>
-                        <gloss><q>limit</q></gloss></mentioned>, <mentioned xml:lang="ar"
-                        extralang="fa tr"><w/>
+                        <gloss><q>term</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2019e292" xml:lang="ar" extralang="fa tr"><w/>
+                        <gloss><q>limit</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2019e298" xml:lang="ar" extralang="fa tr"><w/>
                         <gloss><q>death hour</q></gloss></mentioned>; one of those Islamic terms
-                    that together with Islam spread across many Caucasian languages: <mentioned
-                        xml:lang="av"><lang/>
-                        <w>ajal</w></mentioned>, <mentioned xml:lang="av"><w>ʽajal</w></mentioned>,
-                        <mentioned xml:lang="lbe"><lang/>
-                        <w>ažal</w></mentioned>, <mentioned xml:lang="ani"><lang/>
-                        <w>ajal</w></mentioned>, <mentioned xml:lang="ce"><lang/>
-                        <w>ažal</w></mentioned>, <mentioned xml:lang="inh"><lang/>
-                        <w>ʽožæl</w></mentioned>, <mentioned xml:lang="kbd" extralang="kbd-x-crc"><lang/>
-                        <w>ažal</w></mentioned>, <mentioned xml:lang="kbd" extralang="kbd-x-crc"
-                            ><w>ajal</w></mentioned>, <mentioned xml:lang="krc-x-balkar"><lang/>
-                        <w>ajal</w></mentioned>, <mentioned xml:lang="krc-x-balkar"
-                        ><w>azal</w></mentioned>. Cf. also <mentioned xml:lang="ka"><lang/>
+                    that together with Islam spread across many Caucasian languages: <mentioned xml:id="mentioned_d2019e304" xml:lang="av"><lang/>
+                        <w>ajal</w></mentioned>, <mentioned xml:id="mentioned_d2019e309" xml:lang="av"><w>ʽajal</w></mentioned>,
+                        <mentioned xml:id="mentioned_d2019e313" xml:lang="lbe"><lang/>
+                        <w>ažal</w></mentioned>, <mentioned xml:id="mentioned_d2019e318" xml:lang="ani"><lang/>
+                        <w>ajal</w></mentioned>, <mentioned xml:id="mentioned_d2019e323" xml:lang="ce"><lang/>
+                        <w>ažal</w></mentioned>, <mentioned xml:id="mentioned_d2019e328" xml:lang="inh"><lang/>
+                        <w>ʽožæl</w></mentioned>, <mentioned xml:id="mentioned_d2019e333" xml:lang="kbd" extralang="kbd-x-crc"><lang/>
+                        <w>ažal</w></mentioned>, <mentioned xml:id="mentioned_d2019e338" xml:lang="kbd" extralang="kbd-x-crc"><w>ajal</w></mentioned>, <mentioned xml:id="mentioned_d2019e342" xml:lang="krc-x-balkar"><lang/>
+                        <w>ajal</w></mentioned>, <mentioned xml:id="mentioned_d2019e347" xml:lang="krc-x-balkar"><w>azal</w></mentioned>. Cf. also <mentioned xml:id="mentioned_d2019e350" xml:lang="ka"><lang/>
                         <w>eʒeli</w>
-                        <gloss><q>spectre</q></gloss></mentioned>, <mentioned xml:lang="ka"
-                            ><w>arʒali</w>
-                        <gloss><q>death hour</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Чкония"/></bibl>).%n <bibl><ref type="bibl"
-                            target="#ref_ОЯФ_I"/><biblScope> 93.</biblScope></bibl></etym>
+                        <gloss><q>spectre</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2019e358" xml:lang="ka"><w>arʒali</w>
+                        <gloss><q>death hour</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Чкония"/></bibl>).%n <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope> 93.</biblScope></bibl></etym>
             </entry>
         </body>
     </text>

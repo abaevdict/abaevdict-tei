@@ -1,66 +1,71 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">æxxæst</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_æxxæst" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>æxxæst</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>ænxæst</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d4074e72"><sense xml:id="sense_d4074e73"><abv:tr xml:lang="ru">
                             <q>полный</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>full</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d4074e82"><abv:tr xml:lang="ru">
                             <q>целый</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>whole</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d4074e91"><abv:tr xml:lang="ru">
                             <q>совершенный</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>perfect</q>
                         </abv:tr></sense></sense>
-                <re>
+                <re xml:id="re_d4074e101">
                     <form type="lemma"><orth>æxxæst kænyn</orth></form>
-                    <sense><sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d4074e106"><sense xml:id="sense_d4074e107"><abv:tr xml:lang="ru">
                                 <q>выполнять</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>fulfil</q>
-                            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                            </abv:tr></sense><sense xml:id="sense_d4074e116"><abv:tr xml:lang="ru">
                                 <q>исполнять</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>execute</q>
-                            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                            </abv:tr></sense><sense xml:id="sense_d4074e125"><abv:tr xml:lang="ru">
                                 <q>восполнять</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>fill up</q>
                             </abv:tr></sense></sense>
                 </re>
-                <re>
+                <re xml:id="re_d4074e136">
                     <form type="lemma"><orth>sæxxæst wyn</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d4074e141"><abv:tr xml:lang="ru">
                             <q>исполниться</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>be fulfilled</q>
                         </abv:tr></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4074e155">
                         <quote>alcæmæj æxxæst næ væjjy</quote>
                         <abv:tr xml:lang="ru">
                             <q>не бывает совершенного во всем</q>
@@ -69,7 +74,7 @@
                             <q>there is no perfection in everything</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4074e170" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>max alcæmæj æʒættæ, etæ ba ænxæst</quote>
                         <abv:tr xml:lang="ru">
@@ -78,10 +83,9 @@
                         <abv:tr xml:lang="en">
                             <q>we are not ready at all and they are provided (with eveything)</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Gurdž._Æduli"
-                                /><biblScope>101</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Gurdž._Æduli"/><biblScope>101</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4074e192" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>ænxæst næma sqærttæj, otæ ba ærǧudi kodta…</quote>
                         <abv:tr xml:lang="ru">
@@ -90,10 +94,9 @@
                         <abv:tr xml:lang="en">
                             <q>he had not reached (the place) yet, as he thought …</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>25%l11%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>25%l11%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4074e214" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>næwægʒaw ænxæst kænuj partij amundditæ</quote>
                         <abv:tr xml:lang="ru">
@@ -104,7 +107,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_FS"/><biblScope>I 83</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4074e236" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>ne ʽnxæst kodtoncæ wæddær sæ fændtæ</quote>
                         <abv:tr xml:lang="ru">
@@ -115,7 +118,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Bes."/><biblScope>110</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4074e259">
                         <quote>mæj k˳y sæxxæst…</quote>
                         <abv:tr xml:lang="ru">
                             <q>когда исполнился месяц…</q>
@@ -123,10 +126,9 @@
                         <abv:tr xml:lang="en">
                             <q>when month has passed…</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Munk."
-                            /><biblScope>130</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Munk."/><biblScope>130</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4074e278">
                         <quote>æxxæst ma zaryn k˳y zonis…</quote>
                         <abv:tr xml:lang="ru">
                             <q>если бы заодно ты умела еще петь…</q>
@@ -137,8 +139,7 @@
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>83</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Буквально „достигший“, лексикализованное прош. причастие от<ref
-                        type="xr" target="#entry_æxxæssyn"/> ‘достигать’.</etym>
+                <etym xml:lang="ru">Буквально „достигший“, лексикализованное прош. причастие от<ref type="xr" target="#entry_æxxæssyn"/> ‘достигать’.</etym>
                 <etym xml:lang="en">It is literally 'reached', a lexicalized past participle of the
                     verb <ref type="xr" target="#entry_æxxæssyn"/> ‘reach’.</etym>
             </entry>

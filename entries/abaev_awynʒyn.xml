@@ -1,36 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">awynʒyn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_awynʒyn" xml:lang="os">
-                <form xml:lang="os-x-iron" type="lemma"><orth>awynʒyn</orth><form type="participle"
-                            ><orth>awyǧd</orth></form></form>
-                <form xml:lang="os-x-digor" type="dialectal"><orth>awinʒun</orth><form
-                        type="participle"><orth>awiǧd</orth></form></form>
-                <sense><abv:tr xml:lang="ru">
+                <form xml:lang="os-x-iron" type="lemma"><orth>awynʒyn</orth><form type="participle"><orth>awyǧd</orth></form></form>
+                <form xml:lang="os-x-digor" type="dialectal"><orth>awinʒun</orth><form type="participle"><orth>awiǧd</orth></form></form>
+                <sense xml:id="sense_d742e76"><abv:tr xml:lang="ru">
                         <q>вешать</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>hang</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d742e88">
                         <quote>yssar bīræǧy carm æmæ jæ dæ bæxy bærzæjyl ærcawynʒ</quote>
                         <abv:tr xml:lang="ru">
                             <q>достань волчью шкуру и повесь ее на шею своему коню</q>
@@ -40,7 +43,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_ОЭ"/><biblScope>I 20</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d742e107">
                         <quote>…ūmæn xwyzdær wydaid fæltaw yn je ʽfcægyl k˳y ærcæwyǧdæ wydaid
                             k˳yrojy fyd æmæ jæ k˳y arcæwyǧdæ wydaid denǵyzy arfy</quote>
                         <abv:tr xml:lang="ru">
@@ -54,7 +57,7 @@
                         <bibl><ref type="bibl" target="#src_Матфей"/><biblScope>%i18%i
                             6</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d742e126">
                         <quote>Fatymæjy ratūl-batūl bajdydtoj zynævǧæd wydi æmæ, k˳y jæ bændæntyl
                             awyǧtoj</quote>
                         <abv:tr xml:lang="ru">
@@ -67,7 +70,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Сека"/><biblScope>75</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d742e145">
                         <quote>kʼambecy carm… ærcawyǧta jæ dwaryl</quote>
                         <abv:tr xml:lang="ru">
                             <q>буйволиную шкуру он повесил себе на дверь</q>
@@ -77,7 +80,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Munk."/><biblScope>80</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d742e164">
                         <quote>k’ūlyl — sagʒarm; jæ wælæ awyǧd topp, toppy aǧūd, dambaca, qama,
                             kard</quote>
                         <abv:tr xml:lang="ru">
@@ -88,10 +91,9 @@
                             <q>a deer skin is on the wall; a gun, a gun case, a pistol, a dagger, a
                                 saber are hanging on it</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Брит."
-                            /><biblScope>106</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Брит."/><biblScope>106</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d742e184" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>toppmæ ma ʽvnalæ, æ bunati ʽj isawinʒæ</quote>
                         <abv:tr xml:lang="ru">
@@ -104,51 +106,43 @@
                             46</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Общеиранское слово; ср. <mentioned xml:lang="fa"><lang/>
-                        <w>āvēz-</w></mentioned>: <mentioned xml:lang="fa"><lang/>
+                <etym xml:lang="ru">Общеиранское слово; ср. <mentioned xml:id="mentioned_d742e209" xml:lang="fa"><lang/>
+                        <w>āvēz-</w></mentioned>: <mentioned xml:id="mentioned_d742e214" xml:lang="fa"><lang/>
                         <w>āvēxt-</w>
-                        <gloss><q>висеть</q></gloss></mentioned>, <mentioned xml:lang="fa"><w/>
-                        <gloss><q>вешать</q></gloss></mentioned>, <mentioned xml:lang="fa"><w>āvēng,
+                        <gloss><q>висеть</q></gloss></mentioned>, <mentioned xml:id="mentioned_d742e222" xml:lang="fa"><w/>
+                        <gloss><q>вешать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d742e228" xml:lang="fa"><w>āvēng,
                             āvingān</w>
-                        <gloss><q>висящий</q></gloss></mentioned>, <mentioned xml:lang="ku"><lang/>
-                        <w>halavisin</w></mentioned>, <mentioned xml:lang="sgh"><lang/>
+                        <gloss><q>висящий</q></gloss></mentioned>, <mentioned xml:id="mentioned_d742e234" xml:lang="ku"><lang/>
+                        <w>halavisin</w></mentioned>, <mentioned xml:id="mentioned_d742e240" xml:lang="sgh"><lang/>
                         <w>avezun</w>
-                        <gloss><q>вешать</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Sköld._Pam."/><biblScope xml:lang="ru">1936, стр.
+                        <gloss><q>вешать</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Sköld._Pam."/><biblScope xml:lang="ru">1936, стр.
                             212</biblScope></bibl>); сращение префикса %iā%i с основой %i*vik-%i,
-                    %i*vink-%i, которую с другой огласовкой находим, по-видимому, в <mentioned
-                        xml:lang="sa"><lang/>
+                    %i*vink-%i, которую с другой огласовкой находим, по-видимому, в <mentioned xml:id="mentioned_d742e253" xml:lang="sa"><lang/>
                         <w>vañc-, vañg-</w>
-                        <gloss><q>шататься</q></gloss></mentioned>, куда примыкает <mentioned
-                        xml:lang="de"><lang/>
+                        <gloss><q>шататься</q></gloss></mentioned>, куда примыкает <mentioned xml:id="mentioned_d742e261" xml:lang="de"><lang/>
                         <w>wanken</w></mentioned>. Более отдаленная по звуковому облику, но близкая
-                    по значению связь — со <mentioned xml:lang="cu"><lang/>
-                        <w n="0">висѣти</w></mentioned>.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 78</biblScope></bibl>;
+                    по значению связь — со <mentioned xml:id="mentioned_d742e266" xml:lang="cu"><lang/>
+                        <w n="0">висѣти</w></mentioned>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 78</biblScope></bibl>;
                             <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>24,
                             63</biblScope></bibl>.</etym>
-                <etym xml:lang="en">Common Iranian word; cf. <mentioned xml:lang="fa"><lang/>
-                        <w>āvēz-</w></mentioned>: <mentioned xml:lang="fa"><lang/>
+                <etym xml:lang="en">Common Iranian word; cf. <mentioned xml:id="mentioned_d742e285" xml:lang="fa"><lang/>
+                        <w>āvēz-</w></mentioned>: <mentioned xml:id="mentioned_d742e290" xml:lang="fa"><lang/>
                         <w>āvēxt-</w>
-                        <gloss><q>hang</q></gloss></mentioned>, <mentioned xml:lang="fa"><w/>
-                        <gloss><q>hang up</q></gloss></mentioned>, <mentioned xml:lang="fa"
-                            ><w>āvēng, āvingān</w>
-                        <gloss><q>hanging</q></gloss></mentioned>, <mentioned xml:lang="ku"><lang/>
-                        <w>halavisin</w></mentioned>, <mentioned xml:lang="sgh"><lang/>
+                        <gloss><q>hang</q></gloss></mentioned>, <mentioned xml:id="mentioned_d742e298" xml:lang="fa"><w/>
+                        <gloss><q>hang up</q></gloss></mentioned>, <mentioned xml:id="mentioned_d742e304" xml:lang="fa"><w>āvēng, āvingān</w>
+                        <gloss><q>hanging</q></gloss></mentioned>, <mentioned xml:id="mentioned_d742e310" xml:lang="ku"><lang/>
+                        <w>halavisin</w></mentioned>, <mentioned xml:id="mentioned_d742e316" xml:lang="sgh"><lang/>
                         <w>avezun</w>
-                        <gloss><q>hang up</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Sköld._Pam."/><biblScope xml:lang="en">1936, p.
+                        <gloss><q>hang up</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Sköld._Pam."/><biblScope xml:lang="en">1936, p.
                     212</biblScope></bibl>); fusion of the prefix %iā%i with the stem %i*vik-%i,
                     %i*vink-%i which, with a different vocalization, we find, apparently, in
-                        <mentioned xml:lang="sa"><lang/>
+                        <mentioned xml:id="mentioned_d742e329" xml:lang="sa"><lang/>
                         <w>vañc-, vañg-</w>
-                        <gloss><q>stagger</q></gloss></mentioned>, to which is adjacent <mentioned
-                        xml:lang="de"><lang/>
+                        <gloss><q>stagger</q></gloss></mentioned>, to which is adjacent <mentioned xml:id="mentioned_d742e337" xml:lang="de"><lang/>
                         <w>wanken</w></mentioned>. More distant phonetically, but close semantically
-                    is the connection with <mentioned xml:lang="cu"><lang/>
+                    is the connection with <mentioned xml:id="mentioned_d742e342" xml:lang="cu"><lang/>
                         <w>visěti</w>
-                        <gloss><q>hang</q></gloss></mentioned>.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 78</biblScope></bibl>;
+                        <gloss><q>hang</q></gloss></mentioned>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 78</biblScope></bibl>;
                             <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>24,
                             63</biblScope></bibl>.</etym>
             </entry>

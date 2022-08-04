@@ -1,42 +1,47 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ængæs</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ængæs" xml:lang="os">
                 <form type="lemma"><orth>ængæs</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d5368e69"><sense xml:id="sense_d5368e70"><abv:tr xml:lang="ru">
                             <q>похожий</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>ressembling</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d5368e79"><abv:tr xml:lang="ru">
                             <q>хорошо выглядящий</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>good looking</q>
                         </abv:tr></sense></sense>
-                <sense xml:lang="os-x-digor"><usg><lang/></usg><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d5368e89" xml:lang="os-x-digor"><usg><lang/></usg><abv:tr xml:lang="ru">
                         <q>присмотр</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>supervision</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d5368e103">
                         <quote>acy læppū jæ fydy ʽngæs ū</quote>
                         <abv:tr xml:lang="ru">
                             <q>этот мальчик похож на своего отца</q>
@@ -45,7 +50,7 @@
                             <q>this boy looks like his father</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5368e118">
                         <quote>næ rynḱyn ængæsdær ū</quote>
                         <abv:tr xml:lang="ru">
                             <q>наш больной лучше выглядит</q>
@@ -54,7 +59,7 @@
                             <q>our patient is looking better</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5368e133" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>Dzambolat doxturi xwasti fæste fengæsændær æj</quote>
                         <abv:tr xml:lang="ru">
@@ -63,10 +68,9 @@
                         <abv:tr xml:lang="en">
                             <q>Dzambolat has got much better after taking doctor’s medicine</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Bes._Ka_ke"
-                            /><biblScope>28</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Bes._Ka_ke"/><biblScope>28</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5368e155" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>suvællænttæmæ ængæs dard næ jes</quote>
                         <abv:tr xml:lang="ru">
@@ -77,7 +81,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_AK"/><biblScope>I 117</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5368e177">
                         <quote>ængæsdaræg</quote>
                         <abv:tr xml:lang="ru">
                             <q>наблюдатель</q>
@@ -89,10 +93,8 @@
                             </biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из %iæm-kæs%i(*%iham-kasa%i-), к <ref type="xr"
-                        target="#entry_kæsyn"/> ‘смотреть’.</etym>
-                <etym xml:lang="en">From %iæm-kæs%i(*%iham-kasa%i-), is related to <ref type="xr"
-                        target="#entry_kæsyn"/> ‘to look’.</etym>
+                <etym xml:lang="ru">Из %iæm-kæs%i(*%iham-kasa%i-), к <ref type="xr" target="#entry_kæsyn"/> ‘смотреть’.</etym>
+                <etym xml:lang="en">From %iæm-kæs%i(*%iham-kasa%i-), is related to <ref type="xr" target="#entry_kæsyn"/> ‘to look’.</etym>
             </entry>
         </body>
     </text>

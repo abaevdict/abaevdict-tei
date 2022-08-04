@@ -1,43 +1,46 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">bædæjnag</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_bædæjnag" xml:lang="os">
                 <form type="lemma"><orth>bædæjnag</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d5353e69"><sense xml:id="sense_d5353e70"><abv:tr xml:lang="ru">
                             <q>бравый</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>brave</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d5353e79"><abv:tr xml:lang="ru">
                             <q>молодец</q>
                         </abv:tr><note type="comment" xml:lang="ru">, обычно о мальчике, юноше;
-                            редко о женщине (<bibl><ref type="bibl" target="#ref_СОПам."
-                                    /><biblScope>II 66</biblScope></bibl>), о ружье
+                            редко о женщине (<bibl><ref type="bibl" target="#ref_СОПам."/><biblScope>II 66</biblScope></bibl>), о ружье
                                     (<bibl><biblScope>%bДиг. сказ.
-                            55%l28%l%b</biblScope></bibl>)</note><note type="comment" xml:lang="en"
-                            >, usually speaking of a boy, young man; rarely speaking of a woman
+                            55%l28%l%b</biblScope></bibl>)</note><note type="comment" xml:lang="en">, usually speaking of a boy, young man; rarely speaking of a woman
                                     (<bibl><ref type="bibl" target="#ref_СОПам."/><biblScope>II
                                     66</biblScope></bibl>), of a gun (<bibl><biblScope>%bДиг. сказ.
                                     55%l28%l%b</biblScope></bibl>)</note></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5353e105" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>(sindi) duwwæ bædæjnag lægi Dedenægi istelioncæ</quote>
                         <abv:tr xml:lang="ru">
@@ -49,7 +52,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
                             32</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5353e127" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>bædæjnag osæ in zærditæ rajvardta</quote>
                         <abv:tr xml:lang="ru">
@@ -61,7 +64,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
                             66</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5353e149" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>Gujman — bæzærxug, bædæjnag læqwæn</quote>
                         <abv:tr xml:lang="ru">
@@ -73,7 +76,7 @@
                         <bibl><ref type="bibl" target="#src_MD"/><biblScope>1934 III—IV
                                 83</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5353e171" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>æma ibæl iswaʒuj i bædæjnag qæræjmag topp</quote>
                         <abv:tr xml:lang="ru">
@@ -82,33 +85,25 @@
                         <abv:tr xml:lang="en">
                             <q>and [s\he] fires at him with a glorious Crimean gun</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Диг._сказ."
-                                /><biblScope>55%l28%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Диг._сказ."/><biblScope>55%l28%l</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Суффикс -%iag%i означает обычно „предназначенный, способный
                     стать чем-либо“; отбросив его, а также фонетически возникающее перед носовым
                     %ij%i, мы приходим к '%ibædæn%i, которое самостоятельно не сохранилось; слово
-                    первоначально имело, по-видимому, отношение к сексуальной сфере; ср. <ref
-                        type="xr" target="#entry_wælbædæn"/> ‘лобковая область’, ‘область над
+                    первоначально имело, по-видимому, отношение к сексуальной сфере; ср. <ref type="xr" target="#entry_wælbædæn"/> ‘лобковая область’, ‘область над
                     половыми органами’ (<ref type="xr" target="#entry_wæl-"/> ‘над’). В этом случае
-                    *%ibædæn%i следует возводить к *%imadana%i-, ср. <ref type="xr"
-                        target="#entry_bæǧnæg"/> из %imaǧna%i (диссимиляция носовых); ср. <mentioned
-                        xml:lang="sa"><lang/>
+                    *%ibædæn%i следует возводить к *%imadana%i-, ср. <ref type="xr" target="#entry_bæǧnæg"/> из %imaǧna%i (диссимиляция носовых); ср. <mentioned xml:id="mentioned_d5353e202" xml:lang="sa"><lang/>
                         <w>mad-</w>
                         <gloss><q>быть в возбуждении (в частности
-                        сексуально)</q></gloss></mentioned>, <mentioned xml:lang="sa"><lang/>
-                        <w>mada-</w></mentioned>, <mentioned xml:lang="ae"><lang/>
+                        сексуально)</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5353e210" xml:lang="sa"><lang/>
+                        <w>mada-</w></mentioned>, <mentioned xml:id="mentioned_d5353e216" xml:lang="ae"><lang/>
                         <w>moδa-</w>
-                        <gloss><q>возбуждение</q></gloss></mentioned>, <mentioned xml:lang="ae"><w/>
-                        <gloss><q>опьянение</q></gloss></mentioned>. Дальнейшее см. под <ref
-                        type="xr" target="#entry_wælbædæn"/>. Менее вероятна связь с <mentioned
-                        xml:lang="ar" extralang="fa"><lang/>
+                        <gloss><q>возбуждение</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5353e224" xml:lang="ae"><w/>
+                        <gloss><q>опьянение</q></gloss></mentioned>. Дальнейшее см. под <ref type="xr" target="#entry_wælbædæn"/>. Менее вероятна связь с <mentioned xml:id="mentioned_d5353e232" xml:lang="ar" extralang="fa"><lang/>
                         <w>badan</w>
-                        <gloss><q>тело</q></gloss></mentioned>, <mentioned xml:lang="ar"
-                        extralang="fa"><w/>
-                        <gloss><q>туловище</q></gloss></mentioned>, <mentioned xml:lang="ar"
-                        extralang="fa"><w/>
+                        <gloss><q>тело</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5353e240" xml:lang="ar" extralang="fa"><w/>
+                        <gloss><q>туловище</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5353e246" xml:lang="ar" extralang="fa"><w/>
                         <gloss><q>детородные части</q></gloss></mentioned> (последнее значение у
                             <bibl><ref type="bibl" target="#ref_Ягелло"/></bibl>).</etym>
                 <etym xml:lang="en">Suffix -%iag%i usually means “able to become something”; if we
@@ -116,23 +111,20 @@
                     %ibædæn%i which is not in usage anymore; probably the word concerned the sexual
                     domain; ср. <ref type="xr" target="#entry_wælbædæn"/> ‘pubic area’, ‘area above
                     genitals’ (<ref type="xr" target="#entry_wæl-"/> ‘above’). In this case the word
-                    *%ibædæn%i should trace back to *%imadana%i-, cf. <ref type="xr"
-                        target="#entry_bæǧnæg"/> from %imaǧna%i (nasal dissimilation); cf.
-                        <mentioned xml:lang="sa"><lang/>
+                    *%ibædæn%i should trace back to *%imadana%i-, cf. <ref type="xr" target="#entry_bæǧnæg"/> from %imaǧna%i (nasal dissimilation); cf.
+                        <mentioned xml:id="mentioned_d5353e265" xml:lang="sa"><lang/>
                         <w>mad-</w>
                         <gloss><q>be in a fever (including sexual arousal)</q></gloss></mentioned>,
-                        <mentioned xml:lang="sa"><lang/>
-                        <w>mada-</w></mentioned>, <mentioned xml:lang="ae"><lang/>
+                        <mentioned xml:id="mentioned_d5353e273" xml:lang="sa"><lang/>
+                        <w>mada-</w></mentioned>, <mentioned xml:id="mentioned_d5353e279" xml:lang="ae"><lang/>
                         <w>moδa-</w>
-                        <gloss><q>arousal</q></gloss></mentioned>, <mentioned xml:lang="ae"><w/>
+                        <gloss><q>arousal</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5353e287" xml:lang="ae"><w/>
                         <gloss><q>intoxication</q></gloss></mentioned>. See further information in
                     the word <ref type="xr" target="#entry_wælbædæn"/>. The connection with the word
-                        <mentioned xml:lang="ar" extralang="fa"><lang/>
+                        <mentioned xml:id="mentioned_d5353e295" xml:lang="ar" extralang="fa"><lang/>
                         <w>badan</w>
-                        <gloss><q>body</q></gloss></mentioned>, <mentioned xml:lang="ar"
-                        extralang="fa"><w/>
-                        <gloss><q>trunk</q></gloss></mentioned>, <mentioned xml:lang="ar"
-                        extralang="fa"><w/>
+                        <gloss><q>body</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5353e303" xml:lang="ar" extralang="fa"><w/>
+                        <gloss><q>trunk</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5353e309" xml:lang="ar" extralang="fa"><w/>
                         <gloss><q>genitals</q></gloss></mentioned> (last meaning is found in
                             <bibl><ref type="bibl" target="#ref_Ягелло"/></bibl>) is less
                     probable.</etym>

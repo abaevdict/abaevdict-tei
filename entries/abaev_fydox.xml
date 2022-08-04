@@ -1,51 +1,56 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">fydox</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_fydox" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>fydox</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>fudonxæ</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d1395e72"><sense xml:id="sense_d1395e73"><abv:tr xml:lang="ru">
                             <q>скорбь (по поводу смерти близкого)</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>grief (over the death of a relative)</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d1395e82"><abv:tr xml:lang="ru">
                             <q>траур</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>mourning</q>
                         </abv:tr></sense></sense>
-                <re>
+                <re xml:id="re_d1395e92">
                     <form xml:lang="os-x-iron" type="lemma"><orth>fydoxy x˳yn</orth></form>
                     <form xml:lang="os-x-digor" type="dialectal"><orth>fudonxi tæbæǧ</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d1395e100"><abv:tr xml:lang="ru">
                             <q>приношение для поминок</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>memorial offering</q>
                         </abv:tr></sense>
                 </re>
-                <re>
+                <re xml:id="re_d1395e111">
                     <form type="lemma"><orth>fydoxy kærʒyn</orth></form>
-                    <sense><def xml:lang="ru">id</def><def xml:lang="en">id</def></sense>
+                    <sense xml:id="sense_d1395e116"><def xml:lang="ru">id</def><def xml:lang="en">id</def></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d1395e126">
                         <quote>Kʼobli æmæ jæ ūs… sæ xæstæg, se ʽvvaxsy ciny bon, ziany saxat
                             xyǧtoj, ciny bon bærægbojnag xæsgæ, ziany saxat — fydoxy kærʒyn</quote>
                         <abv:tr xml:lang="ru">
@@ -63,30 +68,22 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">В первой части %r3%r<ref type="xr" target="#entry_fyd"/> |
-                    %ifud%i ‘дурной’. Вторая часть %i-ox%i сближается с <mentioned xml:lang="pal"
-                        extralang="sog"><lang/>
+                    %ifud%i ‘дурной’. Вторая часть %i-ox%i сближается с <mentioned xml:id="mentioned_d1395e150" xml:lang="pal" extralang="sog"><lang/>
                         <w>ōx(ʼwx)</w>
-                        <gloss><q>душа</q></gloss></mentioned>, <mentioned xml:lang="pal"
-                        extralang="sog"><w/>
-                        <gloss><q>настроение</q></gloss></mentioned>, <mentioned xml:lang="pal"
-                        extralang="sog"><w/>
-                        <gloss><q>чувство</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Henning._BBB"/><biblScope>86%l730%l, 108,
-                        121</biblScope></bibl>) или <mentioned xml:lang="ae"><lang/>
+                        <gloss><q>душа</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1395e158" xml:lang="pal" extralang="sog"><w/>
+                        <gloss><q>настроение</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1395e164" xml:lang="pal" extralang="sog"><w/>
+                        <gloss><q>чувство</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Henning._BBB"/><biblScope>86%l730%l, 108,
+                        121</biblScope></bibl>) или <mentioned xml:id="mentioned_d1395e175" xml:lang="ae"><lang/>
                         <w>aŋhu-</w>
                         <gloss><q>существование</q></gloss></mentioned>. Вставка %in%i, возможно,
                     вторичная. См. <ref type="xr" target="#entry_-ox_1"><w>ox</w></ref>.</etym>
-                <etym xml:lang="en">In the first part there is %r3%r<ref type="xr"
-                        target="#entry_fyd"/> | %ifud%i ‘bad’. The second part %i-ox%i is close to
-                        <mentioned xml:lang="pal" extralang="sog"><lang/>
+                <etym xml:lang="en">In the first part there is %r3%r<ref type="xr" target="#entry_fyd"/> | %ifud%i ‘bad’. The second part %i-ox%i is close to
+                        <mentioned xml:id="mentioned_d1395e191" xml:lang="pal" extralang="sog"><lang/>
                         <w>ōx(ʼwx)</w>
-                        <gloss><q>soul</q></gloss></mentioned>, <mentioned xml:lang="pal"
-                        extralang="sog"><w/>
-                        <gloss><q>mood</q></gloss></mentioned>, <mentioned xml:lang="pal"
-                        extralang="sog"><w/>
-                        <gloss><q>feeling</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Henning._BBB"/><biblScope>86%l730%l, 108,
-                        121</biblScope></bibl>) or <mentioned xml:lang="ae"><lang/>
+                        <gloss><q>soul</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1395e199" xml:lang="pal" extralang="sog"><w/>
+                        <gloss><q>mood</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1395e205" xml:lang="pal" extralang="sog"><w/>
+                        <gloss><q>feeling</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Henning._BBB"/><biblScope>86%l730%l, 108,
+                        121</biblScope></bibl>) or <mentioned xml:id="mentioned_d1395e216" xml:lang="ae"><lang/>
                         <w>aŋhu-</w>
                         <gloss><q>existence</q></gloss></mentioned>. The %in%i insertion is probably
                     secondary. See <ref type="xr" target="#entry_-ox_1"><w>ox</w></ref>.</etym>

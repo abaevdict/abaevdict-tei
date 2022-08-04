@@ -1,38 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">æxxwyrst</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_æxxwyrst" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>æxxwyrst</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>ixwærst</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d2321e72"><sense xml:id="sense_d2321e73"><abv:tr xml:lang="ru">
                             <q>батрак</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>farm hand</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d2321e82"><abv:tr xml:lang="ru">
                             <q>наймит</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>hireling</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d2321e94">
                         <quote>yssæʒ azmæ azgaj æxxwyrsty cydtæn</quote>
                         <abv:tr xml:lang="ru">
                             <q>до двадцати лет я из года в год ходил батраком</q>
@@ -42,7 +47,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>57</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2321e113">
                         <quote>Marine æmæ jæ fyrt fæjjæwttæm æxxwyrst nyllæwwydysty, Marine
                             fosdūcæg, jæ fyrt ta fæjjaw</quote>
                         <abv:tr xml:lang="ru">
@@ -55,7 +60,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Сека"/><biblScope>100</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2321e132">
                         <quote>bacydī gorætmæ æmæ ʽxxwyrsty nyllæwwydī</quote>
                         <abv:tr xml:lang="ru">
                             <q>пошел в город и нанялся работать</q>
@@ -63,10 +68,9 @@
                         <abv:tr xml:lang="en">
                             <q>he went to the town and got a job</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Munk."
-                            /><biblScope>162</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Munk."/><biblScope>162</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2321e151">
                         <quote>æxxwyrsty myzdæj æræmbyrd (iræd)</quote>
                         <abv:tr xml:lang="ru">
                             <q>из наемной платы батрака сложился калым</q>
@@ -76,7 +80,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>60</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d2321e170" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>ixwærsti wæmæ cæwuncæ?</quote>
                         <abv:tr xml:lang="ru">
@@ -85,10 +89,9 @@
                         <abv:tr xml:lang="en">
                             <q>are you going to get hired?</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>24%l1</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>24%l1</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d2321e193" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>ixwærst osæ</quote>
                         <abv:tr xml:lang="ru">
@@ -97,14 +100,11 @@
                         <abv:tr xml:lang="en">
                             <q rendition="rend_singlequotes">housemaid</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>12%l1</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>12%l1</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Лексикализованное прош. причастие от <ref type="xr"
-                        target="#entry_æxxwyrsyn"/> | %iixwærsun%i ‘нанимать’ q. v.</etym>
-                <etym xml:lang="en">A lexicalized past participle from the verb <ref type="xr"
-                        target="#entry_æxxwyrsyn"/> | %iixwærsun%i ‘hire’ q. v.</etym>
+                <etym xml:lang="ru">Лексикализованное прош. причастие от <ref type="xr" target="#entry_æxxwyrsyn"/> | %iixwærsun%i ‘нанимать’ q. v.</etym>
+                <etym xml:lang="en">A lexicalized past participle from the verb <ref type="xr" target="#entry_æxxwyrsyn"/> | %iixwærsun%i ‘hire’ q. v.</etym>
             </entry>
         </body>
     </text>

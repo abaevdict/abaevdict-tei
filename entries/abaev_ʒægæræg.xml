@@ -1,33 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ʒægæræg</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ʒægæræg" xml:lang="os">
                 <form type="lemma"><orth>ʒægæræg</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d1640e69"><abv:tr xml:lang="ru">
                         <q>не вполне распустившийся цветок</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>not quite blooming flower</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d1640e81" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>aci fætkʼu-bælasæ … i bonæ raʒægæræg kænuj, æxsævæ ba ræzæ aǧzalun
                             bajdajuj</quote>
@@ -38,10 +43,9 @@
                             <q>this apple tree unfurls flowers during the day and at night it begins
                                 to shed its fruits</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Диг._сказ."
-                            /><biblScope>16</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Диг._сказ."/><biblScope>16</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d1640e103" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>zærond lægi fætkʼū talatæ rawaǧta æma ʒægæræg kænunmæ
                             fevnaldta</quote>
@@ -51,10 +55,9 @@
                         <abv:tr xml:lang="en">
                             <q>the old man's apple sent out shoots and began to bloom</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Диг._сказ."
-                            /><biblScope>44</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Диг._сказ."/><biblScope>44</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d1640e125" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>ævzestaw ærttevuj ræzi ʒægæræg</quote>
                         <abv:tr xml:lang="ru">
@@ -65,7 +68,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Sozur"/><biblScope>41</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d1640e147" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>ravdes dujnemæ dæ ʒægæræg</quote>
                         <abv:tr xml:lang="ru">
@@ -78,26 +81,19 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Сближается с некоторыми ботаническими терминами соседних языков:
-                        <mentioned xml:lang="sva"><lang/>
-                        <w>ǯagär</w></mentioned>, <mentioned xml:lang="xmf"><lang/>
-                        <w>ʒigiri</w></mentioned>, <mentioned xml:lang="xmf"><w>ʒəgəri</w>
-                        <gloss><q>колючка</q></gloss></mentioned>, <mentioned xml:lang="xmf"><w/>
-                        <gloss><q>терн</q></gloss></mentioned>, <mentioned xml:lang="krc-x-balkar"><lang/>
-                        <w>ǯəgəra</w></mentioned>, <mentioned xml:lang="krc-x-balkar"
-                            ><w>zəǧəra</w><note type="comment" xml:lang="ru"> (<bibl><ref
-                                    type="bibl" target="#ref_ОЯФ_I"
-                                /><biblScope>277</biblScope></bibl>)</note></mentioned>.</etym>
+                        <mentioned xml:id="mentioned_d1640e172" xml:lang="sva"><lang/>
+                        <w>ǯagär</w></mentioned>, <mentioned xml:id="mentioned_d1640e177" xml:lang="xmf"><lang/>
+                        <w>ʒigiri</w></mentioned>, <mentioned xml:id="mentioned_d1640e182" xml:lang="xmf"><w>ʒəgəri</w>
+                        <gloss><q>колючка</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1640e188" xml:lang="xmf"><w/>
+                        <gloss><q>терн</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1640e194" xml:lang="krc-x-balkar"><lang/>
+                        <w>ǯəgəra</w></mentioned>, <mentioned xml:id="mentioned_d1640e200" xml:lang="krc-x-balkar"><w>zəǧəra</w><note type="comment" xml:lang="ru"> (<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>277</biblScope></bibl>)</note></mentioned>.</etym>
                 <etym xml:lang="en">It is close to some botanical terms from neighbour
-                        languages:<mentioned xml:lang="sva"><lang/>
-                        <w>ǯagär</w></mentioned>, <mentioned xml:lang="xmf"><lang/>
-                        <w>ʒigiri</w></mentioned>, <mentioned xml:lang="xmf"><w>ʒəgəri</w>
-                        <gloss><q>burr</q></gloss></mentioned>, <mentioned xml:lang="xmf"><w/>
-                        <gloss><q>black thorn</q></gloss></mentioned>, <mentioned
-                        xml:lang="krc-x-balkar"><lang/>
-                        <w>ǯəgəra</w></mentioned>, <mentioned xml:lang="krc-x-balkar"
-                            ><w>zəǧəra</w><note type="comment"
-                            xml:lang="en"> (<bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                                    /><biblScope>277</biblScope></bibl>)</note></mentioned>.</etym>
+                        languages:<mentioned xml:id="mentioned_d1640e212" xml:lang="sva"><lang/>
+                        <w>ǯagär</w></mentioned>, <mentioned xml:id="mentioned_d1640e217" xml:lang="xmf"><lang/>
+                        <w>ʒigiri</w></mentioned>, <mentioned xml:id="mentioned_d1640e222" xml:lang="xmf"><w>ʒəgəri</w>
+                        <gloss><q>burr</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1640e228" xml:lang="xmf"><w/>
+                        <gloss><q>black thorn</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1640e234" xml:lang="krc-x-balkar"><lang/>
+                        <w>ǯəgəra</w></mentioned>, <mentioned xml:id="mentioned_d1640e240" xml:lang="krc-x-balkar"><w>zəǧəra</w><note type="comment" xml:lang="en"> (<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>277</biblScope></bibl>)</note></mentioned>.</etym>
             </entry>
         </body>
     </text>

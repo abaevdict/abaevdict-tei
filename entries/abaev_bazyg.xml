@@ -1,38 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">bazyg</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_bazyg" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>bazyg</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>bazug</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d3992e72"><sense xml:id="sense_d3992e73"><abv:tr xml:lang="ru">
                             <q>рука выше локтя</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>arm</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d3992e82"><abv:tr xml:lang="ru">
                             <q>плечевая кость</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>arm bone</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d3992e94">
                         <quote>dæ bazg˳ytæ dyn ærcæǧdʒynæn!</quote>
                         <abv:tr xml:lang="ru">
                             <q>я обломаю твои конечности!</q>
@@ -42,86 +47,62 @@
                         </abv:tr>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Общеиранское слово: <mentioned xml:lang="fa"><lang/>
+                <etym xml:lang="ru">Общеиранское слово: <mentioned xml:id="mentioned_d3992e112" xml:lang="fa"><lang/>
                         <w>bāzū</w><note type="comment" xml:lang="ru"> (← *bāzūk)</note>
-                        <gloss><q>рука (от плеча до кисти)</q></gloss></mentioned>, <mentioned
-                        xml:lang="x-balochi"><lang/>
-                        <w>bāzk</w></mentioned>, <mentioned xml:lang="ku"><lang/>
+                        <gloss><q>рука (от плеча до кисти)</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3992e122" xml:lang="x-balochi"><lang/>
+                        <w>bāzk</w></mentioned>, <mentioned xml:id="mentioned_d3992e127" xml:lang="ku"><lang/>
                         <w>bask</w>
-                        <gloss><q>сторона</q></gloss></mentioned>, <mentioned xml:lang="sgh"><lang/>
-                        <w>bāzə</w></mentioned>, <mentioned xml:lang="ps"><lang/>
-                        <w>woz%b?%b</w></mentioned>, <mentioned xml:lang="xcl"><lang/>
+                        <gloss><q>сторона</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3992e135" xml:lang="sgh"><lang/>
+                        <w>bāzə</w></mentioned>, <mentioned xml:id="mentioned_d3992e140" xml:lang="ps"><lang/>
+                        <w>woz%b?%b</w></mentioned>, <mentioned xml:id="mentioned_d3992e146" xml:lang="xcl"><lang/>
                         <note type="comment" xml:lang="ru">(%bиз иран.%b) </note><w>bazuk</w>
-                        <gloss><q>рука</q></gloss></mentioned>, <mentioned xml:lang="sog"><lang/>
+                        <gloss><q>рука</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3992e156" xml:lang="sog"><lang/>
                         <w>βāzāk(β'z'kh)</w>
-                        <gloss><q>рука</q></gloss></mentioned>, <mentioned xml:lang="sog"><w/><note
-                            type="comment" xml:lang="ru"> (<bibl><ref type="bibl" target="#ref_BSOS"
-                                    /><biblScope>XI 732</biblScope></bibl>)</note>
-                        <gloss><q>плечо</q></gloss></mentioned>, <mentioned xml:lang="kho"><lang/>
-                        <w>bāysu-</w><note type="comment" xml:lang="ru"> (<bibl><ref type="bibl"
-                                    target="#ref_BSOS"/><biblScope>X
-                            901</biblScope></bibl>)</note></mentioned>, <mentioned
-                        xml:lang="kho"><w>bāysua-</w><note type="comment" xml:lang="ru"> (из
+                        <gloss><q>рука</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3992e164" xml:lang="sog"><w/><note type="comment" xml:lang="ru"> (<bibl><ref type="bibl" target="#ref_BSOS"/><biblScope>XI 732</biblScope></bibl>)</note>
+                        <gloss><q>плечо</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3992e176" xml:lang="kho"><lang/>
+                        <w>bāysu-</w><note type="comment" xml:lang="ru"> (<bibl><ref type="bibl" target="#ref_BSOS"/><biblScope>X
+                            901</biblScope></bibl>)</note></mentioned>, <mentioned xml:id="mentioned_d3992e187" xml:lang="kho"><w>bāysua-</w><note type="comment" xml:lang="ru"> (из
                             *bāzūka)</note>
-                        <gloss><q>рука</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Leumann"/><biblScope>472</biblScope></bibl>), <mentioned
-                        xml:lang="ae"><lang/>
-                        <w>bāzu-</w></mentioned>, <mentioned xml:lang="sa"><lang/>
-                        <w>bāhu-</w></mentioned>, <mentioned xml:lang="x-tchr"><lang/>
-                        <w>poke</w></mentioned>, <mentioned xml:lang="grc"><lang/>
-                        <w>πήχυς</w></mentioned>; <mentioned xml:lang="ine"><lang/>
+                        <gloss><q>рука</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Leumann"/><biblScope>472</biblScope></bibl>), <mentioned xml:id="mentioned_d3992e200" xml:lang="ae"><lang/>
+                        <w>bāzu-</w></mentioned>, <mentioned xml:id="mentioned_d3992e205" xml:lang="sa"><lang/>
+                        <w>bāhu-</w></mentioned>, <mentioned xml:id="mentioned_d3992e210" xml:lang="x-tchr"><lang/>
+                        <w>poke</w></mentioned>, <mentioned xml:id="mentioned_d3992e215" xml:lang="grc"><lang/>
+                        <w>πήχυς</w></mentioned>; <mentioned xml:id="mentioned_d3992e220" xml:lang="ine"><lang/>
                         <w>*bhaghu-</w></mentioned>. — В грузинских летописях сохранились имена двух
                     осетинских (аланских) предводителей II в. н. э., содержащие данное слово:
-                    %iBazuk%i и %iAmbazuk%i (<bibl><ref type="bibl" target="#ref_Brosset"
-                            /><biblScope>65—70</biblScope></bibl>). — Из осетинского идет <mentioned
-                        xml:lang="krc-x-balkar"><lang/>
+                    %iBazuk%i и %iAmbazuk%i (<bibl><ref type="bibl" target="#ref_Brosset"/><biblScope>65—70</biblScope></bibl>). — Из осетинского идет <mentioned xml:id="mentioned_d3992e230" xml:lang="krc-x-balkar"><lang/>
                         <w>bazək</w>
-                        <gloss><q>предплечье</q></gloss></mentioned>. — Тот же корень в <ref
-                        type="xr" target="#entry_bazyr"/> ‘крыло’ и в <ref type="xr"
-                        target="#entry_ivazyn"/> ‘растягивать’, <ref type="xr"
-                        target="#entry_ivaz6n9"/> ‘сажень’.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 85</biblScope></bibl>. —
+                        <gloss><q>предплечье</q></gloss></mentioned>. — Тот же корень в <ref type="xr" target="#entry_bazyr"/> ‘крыло’ и в <ref type="xr" target="#entry_ivazyn"/> ‘растягивать’, <ref type="xr" target="#entry_ivaz6n9"/> ‘сажень’.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 85</biblScope></bibl>. —
                             <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>18, 160,
                             197</biblScope></bibl>.</etym>
-                <etym xml:lang="en">A common Iranian word: <mentioned xml:lang="fa"><lang/>
-                        <w>bāzū</w><note
-                            type="comment" xml:lang="en"> (← *bāzūk)</note>
-                        <gloss><q>arm</q></gloss></mentioned>, <mentioned xml:lang="x-balochi"><lang/>
-                        <w>bāzk</w></mentioned>, <mentioned xml:lang="ku"><lang/>
+                <etym xml:lang="en">A common Iranian word: <mentioned xml:id="mentioned_d3992e256" xml:lang="fa"><lang/>
+                        <w>bāzū</w><note type="comment" xml:lang="en"> (← *bāzūk)</note>
+                        <gloss><q>arm</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3992e266" xml:lang="x-balochi"><lang/>
+                        <w>bāzk</w></mentioned>, <mentioned xml:id="mentioned_d3992e271" xml:lang="ku"><lang/>
                         <w>bask</w>
-                        <gloss><q>side</q></gloss></mentioned>, <mentioned xml:lang="sgh"><lang/>
-                        <w>bāzə</w></mentioned>, <mentioned xml:lang="ps"><lang/>
-                        <w>wozə</w></mentioned>, <mentioned xml:lang="xcl"><lang/>
-                        <note
-                            type="comment" xml:lang="en">(%bfrom Iranian%b) </note><w>bazuk</w>
-                        <gloss><q>arm</q></gloss></mentioned>, <mentioned xml:lang="sog"><lang/>
+                        <gloss><q>side</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3992e279" xml:lang="sgh"><lang/>
+                        <w>bāzə</w></mentioned>, <mentioned xml:id="mentioned_d3992e284" xml:lang="ps"><lang/>
+                        <w>wozə</w></mentioned>, <mentioned xml:id="mentioned_d3992e290" xml:lang="xcl"><lang/>
+                        <note type="comment" xml:lang="en">(%bfrom Iranian%b) </note><w>bazuk</w>
+                        <gloss><q>arm</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3992e300" xml:lang="sog"><lang/>
                         <w>βāzāk(β'z'kh)</w>
-                        <gloss><q>arm</q></gloss></mentioned>, <mentioned xml:lang="sog"><w/><note
-                            type="comment" xml:lang="en"> (<bibl><ref type="bibl" target="#ref_BSOS"
-                                    /><biblScope>XI 732</biblScope></bibl>)</note>
-                        <gloss><q>shoulder</q></gloss></mentioned>, <mentioned xml:lang="kho"><lang/>
+                        <gloss><q>arm</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3992e308" xml:lang="sog"><w/><note type="comment" xml:lang="en"> (<bibl><ref type="bibl" target="#ref_BSOS"/><biblScope>XI 732</biblScope></bibl>)</note>
+                        <gloss><q>shoulder</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3992e320" xml:lang="kho"><lang/>
                         <w>bāysu-</w><note type="comment" xml:lang="en">
                                     (<bibl><ref type="bibl" target="#ref_BSOS"/><biblScope>X
-                                    901</biblScope></bibl>)</note></mentioned>, <mentioned
-                        xml:lang="kho"><w>bāysua-</w><note type="comment" xml:lang="en"> (from *bāzūka)</note>
-                        <gloss><q>arm</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Leumann"/><biblScope>472</biblScope></bibl>), <mentioned
-                        xml:lang="ae"><lang/>
-                        <w>bāzu-</w></mentioned>, <mentioned xml:lang="sa"><lang/>
-                        <w>bāhu-</w></mentioned>, <mentioned xml:lang="x-tchr"><lang/>
-                        <w>poke</w></mentioned>, <mentioned xml:lang="grc"><lang/>
-                        <w>πήχυς</w></mentioned>; <mentioned xml:lang="ine"><lang/>
+                                    901</biblScope></bibl>)</note></mentioned>, <mentioned xml:id="mentioned_d3992e331" xml:lang="kho"><w>bāysua-</w><note type="comment" xml:lang="en"> (from *bāzūka)</note>
+                        <gloss><q>arm</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Leumann"/><biblScope>472</biblScope></bibl>), <mentioned xml:id="mentioned_d3992e344" xml:lang="ae"><lang/>
+                        <w>bāzu-</w></mentioned>, <mentioned xml:id="mentioned_d3992e349" xml:lang="sa"><lang/>
+                        <w>bāhu-</w></mentioned>, <mentioned xml:id="mentioned_d3992e354" xml:lang="x-tchr"><lang/>
+                        <w>poke</w></mentioned>, <mentioned xml:id="mentioned_d3992e359" xml:lang="grc"><lang/>
+                        <w>πήχυς</w></mentioned>; <mentioned xml:id="mentioned_d3992e364" xml:lang="ine"><lang/>
                         <w>*bhaghu-</w></mentioned>. — Names of two Ossetic (Alan) leaders of 2nd c.
                     AD are found in Georgian chronicles; they contain the word of interest:
-                    %iBazuk%i and %iAmbazuk%i (<bibl><ref type="bibl" target="#ref_Brosset"
-                            /><biblScope>65—70</biblScope></bibl>). — <mentioned
-                        xml:lang="krc-x-balkar"><lang/>
+                    %iBazuk%i and %iAmbazuk%i (<bibl><ref type="bibl" target="#ref_Brosset"/><biblScope>65—70</biblScope></bibl>). — <mentioned xml:id="mentioned_d3992e374" xml:lang="krc-x-balkar"><lang/>
                         <w>bazək</w>
                         <gloss><q>forearm</q></gloss></mentioned>. — comes from Ossetic. The same
                     root is found in <ref type="xr" target="#entry_bazyr"/> ‘wing’ and in the word
-                        <ref type="xr" target="#entry_ivazyn"/>'stretch, <ref type="xr"
-                        target="#entry_ivaz6n9"/> ‘fathom’.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 85</biblScope></bibl>. —
+                        <ref type="xr" target="#entry_ivazyn"/>'stretch, <ref type="xr" target="#entry_ivaz6n9"/> ‘fathom’.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 85</biblScope></bibl>. —
                             <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>18, 160,
                             197</biblScope></bibl>.</etym>
             </entry>

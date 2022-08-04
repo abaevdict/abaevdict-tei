@@ -1,41 +1,46 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">bærgæ</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_bærgæ" xml:lang="os">
                 <form type="lemma"><orth>bærgæ</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d628e69"><sense xml:id="sense_d628e70"><abv:tr xml:lang="ru">
                             <q>хотя</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>though</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d628e79"><abv:tr xml:lang="ru">
                             <q>хотя бы</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>at least</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d628e88"><abv:tr xml:lang="ru">
                             <q>конечно</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>of course</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d628e100">
                         <quote>bærgæ nyqqær kodta, fælæ jæ niḱi feq˳ysta</quote>
                         <abv:tr xml:lang="ru">
                             <q>хотя он и крикнул, но никто его не услышал</q>
@@ -44,7 +49,7 @@
                             <q>even he shouted, no one heard him</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d628e115">
                         <quote>bær gæl bærgæ!</quote>
                         <abv:tr xml:lang="ru">
                             <q>хотя бы! хотя бы!</q>
@@ -53,7 +58,7 @@
                             <q>at least! at least!</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d628e130">
                         <quote>jæ stongæn bærgæ is cary īw nærtony xos, fælæ jæm fændag næ
                             ary</quote>
                         <abv:tr xml:lang="ru">
@@ -66,7 +71,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>92</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d628e149">
                         <quote>xorz læg dæ, bærgæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>ты, конечно, человек хороший</q>
@@ -74,10 +79,9 @@
                         <abv:tr xml:lang="en">
                             <q>you are a good person, of course</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"
-                            /><biblScope>104</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>104</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d628e168" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>bærgæ ʒi raagurdta, fal ʒi neci isserdta</quote>
                         <abv:tr xml:lang="ru">
@@ -86,10 +90,9 @@
                         <abv:tr xml:lang="en">
                             <q>he did searched for it though, but he did not find anything</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>11%l11%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>11%l11%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d628e191" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>mæ mulk in ewguræj dær bærgæ ruddinæ</quote>
                         <abv:tr xml:lang="ru">
@@ -98,10 +101,9 @@
                         <abv:tr xml:lang="en">
                             <q>of course, I would give him all my belongings</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>33%l3%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>33%l3%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d628e213">
                         <quote>ʒūl k˳ʼ waid, wæd, bærgæ, dæw dær ʒy xaj fæwid</quote>
                         <abv:tr xml:lang="ru">
                             <q>если бы был белый хлеб, то, разумеется, и тебе досталась бы доля</q>
@@ -109,10 +111,9 @@
                         <abv:tr xml:lang="en">
                             <q>if there was wheat bread then you would definitely receive some</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"
-                            /><biblScope>118</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>118</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d628e232">
                         <note type="comment" xml:lang="ru">нередко играет роль усилительной частицы,
                             остающейся по-русски без перевода: </note>
                         <note type="comment" xml:lang="en">often the word is used as a particle
@@ -124,10 +125,9 @@
                         <abv:tr xml:lang="en">
                             <q>the a young man says to his father…</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Munk."
-                            /><biblScope>158</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Munk."/><biblScope>158</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d628e258" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>æ madæ bærgæ nikkæwuj</quote>
                         <abv:tr xml:lang="ru">
@@ -138,7 +138,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Munk."/><biblScope>20</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d628e280" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>bærgæ niccæǧduj wæd darǧ xætælæj i Wazi fæjjaw</quote>
                         <abv:tr xml:lang="ru">
@@ -151,36 +151,29 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Деепричастная форма от глагола %ibær%i- ‘хотеть’, сохранившегося
-                    в форме <ref type="xr" target="#entry_bællyn"/> q. v. Таким образом, <mentioned
-                        xml:lang="os"><lang/>
+                    в форме <ref type="xr" target="#entry_bællyn"/> q. v. Таким образом, <mentioned xml:id="mentioned_d628e307" xml:lang="os"><lang/>
                         <w>bærgæ</w></mentioned> и по образованию и по значению представляет полную
-                    аналогию с <mentioned xml:lang="ru"><lang/>
-                        <w>хотя</w></mentioned> (деепричастие от <mentioned xml:lang="ru"><lang/>
-                        <w>хотеть</w></mentioned>); ср. для семантики также <mentioned xml:lang="de"><lang/>
+                    аналогию с <mentioned xml:id="mentioned_d628e312" xml:lang="ru"><lang/>
+                        <w>хотя</w></mentioned> (деепричастие от <mentioned xml:id="mentioned_d628e317" xml:lang="ru"><lang/>
+                        <w>хотеть</w></mentioned>); ср. для семантики также <mentioned xml:id="mentioned_d628e322" xml:lang="de"><lang/>
                         <w>wohl</w>
-                        <gloss><q>весьма</q></gloss></mentioned>, <mentioned xml:lang="de"><w/>
-                        <gloss><q>конечно</q></gloss></mentioned>, <mentioned xml:lang="de"
-                            ><w>wiewohl</w></mentioned>, <mentioned xml:lang="de"><w>obwohl</w>
-                        <gloss><q>хотя</q></gloss></mentioned> (от <mentioned xml:lang="de"><lang/>
+                        <gloss><q>весьма</q></gloss></mentioned>, <mentioned xml:id="mentioned_d628e331" xml:lang="de"><w/>
+                        <gloss><q>конечно</q></gloss></mentioned>, <mentioned xml:id="mentioned_d628e337" xml:lang="de"><w>wiewohl</w></mentioned>, <mentioned xml:id="mentioned_d628e340" xml:lang="de"><w>obwohl</w>
+                        <gloss><q>хотя</q></gloss></mentioned> (от <mentioned xml:id="mentioned_d628e346" xml:lang="de"><lang/>
                         <w>wollen</w>
-                        <gloss><q>хотеть</q></gloss></mentioned>). См. <ref type="xr"
-                        target="#entry_bar"/>.</etym>
-                <etym xml:lang="en">A converb of the verb %ibær%i- ‘want’ which is found in <ref
-                        type="xr" target="#entry_bællyn"/> q. v. Thus, <mentioned xml:lang="os"><lang/>
+                        <gloss><q>хотеть</q></gloss></mentioned>). См. <ref type="xr" target="#entry_bar"/>.</etym>
+                <etym xml:lang="en">A converb of the verb %ibær%i- ‘want’ which is found in <ref type="xr" target="#entry_bællyn"/> q. v. Thus, <mentioned xml:id="mentioned_d628e361" xml:lang="os"><lang/>
                         <w>bærgæ</w></mentioned> and represents a full analogy by its derivation and
-                    its meaning with <mentioned xml:lang="ru"><lang/>
-                        <w>xotja</w></mentioned> (a converb of the verb <mentioned xml:lang="ru"><lang/>
+                    its meaning with <mentioned xml:id="mentioned_d628e366" xml:lang="ru"><lang/>
+                        <w>xotja</w></mentioned> (a converb of the verb <mentioned xml:id="mentioned_d628e371" xml:lang="ru"><lang/>
                         <w>xotetʼ</w>
-                        <gloss><q>want</q></gloss></mentioned>); for semantics cf. also <mentioned
-                        xml:lang="de"><lang/>
+                        <gloss><q>want</q></gloss></mentioned>); for semantics cf. also <mentioned xml:id="mentioned_d628e379" xml:lang="de"><lang/>
                         <w>wohl</w>
-                        <gloss><q>very</q></gloss></mentioned>, <mentioned xml:lang="de"><w/>
-                        <gloss><q>of course</q></gloss></mentioned>, <mentioned xml:lang="de"
-                            ><w>wiewohl</w></mentioned>, <mentioned xml:lang="de"><w>obwohl</w>
-                        <gloss><q>though</q></gloss></mentioned> (from <mentioned xml:lang="de"><lang/>
+                        <gloss><q>very</q></gloss></mentioned>, <mentioned xml:id="mentioned_d628e388" xml:lang="de"><w/>
+                        <gloss><q>of course</q></gloss></mentioned>, <mentioned xml:id="mentioned_d628e394" xml:lang="de"><w>wiewohl</w></mentioned>, <mentioned xml:id="mentioned_d628e397" xml:lang="de"><w>obwohl</w>
+                        <gloss><q>though</q></gloss></mentioned> (from <mentioned xml:id="mentioned_d628e403" xml:lang="de"><lang/>
                         <w>wollen</w>
-                        <gloss><q>want</q></gloss></mentioned>). See <ref type="xr"
-                        target="#entry_bar"/>.</etym>
+                        <gloss><q>want</q></gloss></mentioned>). See <ref type="xr" target="#entry_bar"/>.</etym>
             </entry>
         </body>
     </text>

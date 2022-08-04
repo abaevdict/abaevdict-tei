@@ -1,63 +1,68 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">kʼūbal</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_kʼūbal" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>kʼūbal</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>kʼobalæ</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d4260e72"><abv:tr xml:lang="ru">
                         <q>шея</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>neck</q>
                     </abv:tr></sense>
-                <sense xml:lang="os-x-digor"><usg><lang/></usg><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d4260e82" xml:lang="os-x-digor"><usg><lang/></usg><sense xml:id="sense_d4260e85"><abv:tr xml:lang="ru">
                             <q>голова</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>head</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d4260e94"><abv:tr xml:lang="ru">
                             <q>головка</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>small head</q>
                         </abv:tr></sense></sense>
-                <re>
+                <re xml:id="re_d4260e104">
                     <form type="lemma"><orth>sæmæny kʼūbal</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d4260e109"><abv:tr xml:lang="ru">
                             <q>конец оси</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>extremity of axis</q>
                         </abv:tr></sense>
                 </re>
-                <re>
+                <re xml:id="re_d4260e121">
                     <form type="lemma"><orth>rakʼobalæ un</orth></form>
-                    <sense><sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d4260e126"><sense xml:id="sense_d4260e127"><abv:tr xml:lang="ru">
                                 <q>соединиться</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>unite</q>
-                            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                            </abv:tr></sense><sense xml:id="sense_d4260e136"><abv:tr xml:lang="ru">
                                 <q>сойтись</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>agree</q>
                             </abv:tr></sense></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4260e149">
                         <quote>rūvas… wasæǵy kʼūbal syskʼ˳dta</quote>
                         <abv:tr xml:lang="ru">
                             <q>лиса оторвала голову петуху</q>
@@ -67,7 +72,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Сека"/><biblScope>114</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4260e168">
                         <quote>cwanon Xæsanæ jyn jæ kʼūbal rak˳yrdta</quote>
                         <abv:tr xml:lang="ru">
                             <q>охотник Хасана отсек ему шею (= голову)</q>
@@ -75,10 +80,9 @@
                         <abv:tr xml:lang="en">
                             <q>Hassan's hunter cut off his neck (= head)</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Æfx._Xæs."
-                            /><biblScope>105</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Æfx._Xæs."/><biblScope>105</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4260e187" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>cirǧ kardi xærstæj særi kʼobalæ guræj fæxxecæn oʒænæj</quote>
                         <abv:tr xml:lang="ru">
@@ -87,10 +91,9 @@
                         <abv:tr xml:lang="en">
                             <q>the head will separate from the body from a sharp saber</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Bes._Ka_ke"
-                            /><biblScope>81</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Bes._Ka_ke"/><biblScope>81</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4260e209" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>duwwæ zærdi kæræʒemæ ku tunʒoncæ wæd… ci fændujjæjdær kæræʒebæl ænæ
                             rakʼobalæj næ bajzajuncæ</quote>
@@ -105,7 +108,7 @@
                         <bibl><ref type="bibl" target="#src_LQ"/><biblScope>III
                             38</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4260e231" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>cidær ǧælabæl rakʼobalæ an</quote>
                         <abv:tr xml:lang="ru">
@@ -114,19 +117,14 @@
                         <abv:tr xml:lang="en">
                             <q>we got in touch with some crazy person</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_SD"
-                            /><biblScope>195%l3%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_SD"/><biblScope>195%l3%l</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Относится к группе слов звукового типа %ikbl%i и пр.,
-                    обозначающих ‘круглое’, ‘выступающее’ и т. п., рассмотренных под <ref type="xr"
-                        target="#entry_tymbyl"/> ‘круглый’. Ср. <ref type="xr"
-                        target="#entry_qabolæ"/> ‘череп’, <ref type="xr" target="#entry_kʼæbūt"/>
+                    обозначающих ‘круглое’, ‘выступающее’ и т. п., рассмотренных под <ref type="xr" target="#entry_tymbyl"/> ‘круглый’. Ср. <ref type="xr" target="#entry_qabolæ"/> ‘череп’, <ref type="xr" target="#entry_kʼæbūt"/>
                     ‘затылок’ и др.</etym>
                 <etym xml:lang="en">It is related to a group of words of the sound type %ikbl%i
-                    etc., which mean ‘round’, ‘obtrusive’ etc., which are considered under <ref
-                        type="xr" target="#entry_tymbyl"/> ‘round’. Cf. <ref type="xr"
-                        target="#entry_qabolæ"/> ‘skull’, <ref type="xr" target="#entry_kʼæbūt"/>
+                    etc., which mean ‘round’, ‘obtrusive’ etc., which are considered under <ref type="xr" target="#entry_tymbyl"/> ‘round’. Cf. <ref type="xr" target="#entry_qabolæ"/> ‘skull’, <ref type="xr" target="#entry_kʼæbūt"/>
                     ‘back of the head’ etc.</etym>
             </entry>
         </body>

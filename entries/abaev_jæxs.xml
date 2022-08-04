@@ -1,46 +1,51 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">jæxs</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_jæxs" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>jæxs</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>æxsæ</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d3142e72"><sense xml:id="sense_d3142e73"><abv:tr xml:lang="ru">
                             <q>плеть</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>lash</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d3142e82"><abv:tr xml:lang="ru">
                             <q>кнут</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>whip</q>
                         </abv:tr></sense></sense>
-                <re>
+                <re xml:id="re_d3142e92">
                     <form type="lemma"><orth>jæxsy c’ykk</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d3142e97"><abv:tr xml:lang="ru">
                             <q>удар плетки</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>a whip stroke</q>
                         </abv:tr></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d3142e110">
                         <quote>īw jæxsy fevzīdtmæ…</quote>
                         <abv:tr xml:lang="ru">
                             <q>одним взмахом плетки…</q>
@@ -50,7 +55,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>70</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d3142e129" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>bujnagin æxsæ æ niværzænæj isista ma mæ omæj ærsærfta</quote>
                         <abv:tr xml:lang="ru">
@@ -64,12 +69,9 @@
                             39</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru"><bibl><ref type="bibl" target="#ref_Miller,_IF_21"
-                            /><biblScope>(стр. 328)</biblScope></bibl> сопоставлял с <mentioned
-                        xml:lang="ae"><lang/>
+                <etym xml:lang="ru"><bibl><ref type="bibl" target="#ref_Miller,_IF_21"/><biblScope>(стр. 328)</biblScope></bibl> сопоставлял с <mentioned xml:id="mentioned_d3142e158" xml:lang="ae"><lang/>
                         <w>yaxšti-</w>
-                        <gloss><q>ветка</q></gloss></mentioned>. Однако, по аналогии с <ref
-                        type="xr" target="#entry_jæfs"/> | %iæfsæ%i ‘кобыла’, надо думать, что
+                        <gloss><q>ветка</q></gloss></mentioned>. Однако, по аналогии с <ref type="xr" target="#entry_jæfs"/> | %iæfsæ%i ‘кобыла’, надо думать, что
                     начальный %ij%i в иронском является вторичным наращением и что, стало быть, в
                     этимологических разъяснениях надо исходить из дигорской формы %iæxsæ%i.
                     Последнюю нельзя возвести к %iyaxšti-.%i Она происходит, вероятно, от хорошо
@@ -78,26 +80,19 @@
                     было, таким образом, ‘погонялка’. Иранское %iaz-%i относится к %iaxš-%i, как в
                     осетинском %ifaz%i к %ifaxs%i, %iaraz-%i к %iaræxs-%i и др. В пользу данной
                     этимологии говорит также то, что и в других иранских языках корень %iaz-%i
-                    ‘гнать’ используется для образования слова ‘плеть’: <mentioned xml:lang="ae"><lang/>
+                    ‘гнать’ используется для образования слова ‘плеть’: <mentioned xml:id="mentioned_d3142e168" xml:lang="ae"><lang/>
                         <w>aštrā (← *az-trā-)</w>
-                        <gloss><q>плеть</q></gloss></mentioned>, <mentioned xml:lang="pal"><lang/>
+                        <gloss><q>плеть</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3142e176" xml:lang="pal"><lang/>
                         <w>asp-azan</w>
-                        <gloss><q>лошадиная плетка</q></gloss></mentioned>, <mentioned
-                        xml:lang="xcl"><lang/>
+                        <gloss><q>лошадиная плетка</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3142e184" xml:lang="xcl"><lang/>
                         <note type="comment" xml:lang="ru">(из иран.) </note><w>gav-azan</w>
-                        <gloss><q>стрекало для быков</q></gloss></mentioned>, <mentioned
-                        xml:lang="xcl"><w>xar-azan</w>
-                        <gloss><q>стрекало для осла</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Henning._Sogd."/><biblScope>23</biblScope></bibl>).
-                    Относительно начального %ij%i в и. %ijæxs%i ср. <ref type="xr"
-                        target="#entry_jæfs"/>.%n <bibl><author>Фрейман</author><biblScope>Rocznik
+                        <gloss><q>стрекало для быков</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3142e195" xml:lang="xcl"><w>xar-azan</w>
+                        <gloss><q>стрекало для осла</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Henning._Sogd."/><biblScope>23</biblScope></bibl>).
+                    Относительно начального %ij%i в и. %ijæxs%i ср. <ref type="xr" target="#entry_jæfs"/>.%n <bibl><author>Фрейман</author><biblScope>Rocznik
                             Orient. 1927, стр. 161</biblScope></bibl>.</etym>
-                <etym xml:lang="en"><bibl><ref type="bibl" target="#ref_Miller,_IF_21"
-                            /><biblScope>(p. 328)</biblScope></bibl> compared it to <mentioned
-                        xml:lang="ae"><lang/>
+                <etym xml:lang="en"><bibl><ref type="bibl" target="#ref_Miller,_IF_21"/><biblScope>(p. 328)</biblScope></bibl> compared it to <mentioned xml:id="mentioned_d3142e217" xml:lang="ae"><lang/>
                         <w>yaxšti-</w>
-                        <gloss><q>branch</q></gloss></mentioned>. However, by analogy with <ref
-                        type="xr" target="#entry_jæfs"/> | %iæfsæ%i ‘mare’, the initial %ij%i in
+                        <gloss><q>branch</q></gloss></mentioned>. However, by analogy with <ref type="xr" target="#entry_jæfs"/> | %iæfsæ%i ‘mare’, the initial %ij%i in
                     Iron should be considered as a secondary augment and thus etymological
                     explanations should proceed from a Digor form %iæxsæ%i. The latter cannot be
                     traced back to %iyaxšti-.%i Apparently it originates from a well known Iranian
@@ -106,17 +101,14 @@
                     was ‘thing that drives away’. Iranian %iaz-%i is related to %iaxš-%i, as in
                     Ossetic %ifaz%i is related to %ifaxs%i, %iaraz-%i is related to %iaræxs-%i etc.
                     This etymology is supported by the fact that in other Iranian languages a word
-                    ‘whip’ is derived from a root %iaz-%i ‘drive away’: <mentioned xml:lang="ae"><lang/>
+                    ‘whip’ is derived from a root %iaz-%i ‘drive away’: <mentioned xml:id="mentioned_d3142e227" xml:lang="ae"><lang/>
                         <w>aštrā (← *az-trā-)</w>
-                        <gloss><q>whip</q></gloss></mentioned>, <mentioned xml:lang="pal"><lang/>
+                        <gloss><q>whip</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3142e235" xml:lang="pal"><lang/>
                         <w>asp-azan</w>
-                        <gloss><q>a horse whip</q></gloss></mentioned>, <mentioned xml:lang="xcl"><lang/>
-                        <note type="comment"
-                            xml:lang="en">(from Iranian) </note><w>gav-azan</w>
-                        <gloss><q>goad for bulls</q></gloss></mentioned>, <mentioned xml:lang="xcl"
-                            ><w>xar-azan</w>
-                        <gloss><q>goad for a donkey</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Henning._Sogd."/><biblScope>23</biblScope></bibl>). As for
+                        <gloss><q>a horse whip</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3142e243" xml:lang="xcl"><lang/>
+                        <note type="comment" xml:lang="en">(from Iranian) </note><w>gav-azan</w>
+                        <gloss><q>goad for bulls</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3142e254" xml:lang="xcl"><w>xar-azan</w>
+                        <gloss><q>goad for a donkey</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Henning._Sogd."/><biblScope>23</biblScope></bibl>). As for
                     the initial %ij%i in Iron %ijæxs%i cf. <ref type="xr" target="#entry_jæfs"/>.%n
                             %b<bibl><author>Freiman</author><biblScope>Rocznik Orient. 1927, p.
                             161</biblScope></bibl>.</etym>

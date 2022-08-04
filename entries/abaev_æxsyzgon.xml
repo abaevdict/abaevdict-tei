@@ -1,21 +1,26 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">æxsyzgon</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
@@ -33,7 +38,7 @@
                         <q>strongly needed</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d1063e94">
                         <quote>kæj dæ wynyn ʒæbæxæj, ūj myn æxsyzgon ū</quote>
                         <abv:tr xml:lang="ru">
                             <q>мне приятно, что вижу тебя здоровым</q>
@@ -42,7 +47,7 @@
                             <q>I am glad to see you healthy</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1063e109">
                         <quote>æxsyzgon xorz dyl ærcæwæd</quote>
                         <abv:tr xml:lang="ru">
                             <q>да придет на тебя приятное благо</q>
@@ -51,7 +56,7 @@
                             <q>may good luck come upon you</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d1063e124" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>æxsiʒgæj Xan-Gwassæ iskænʒænæj næ kʼæsi wat</quote>
                         <abv:tr xml:lang="ru">
@@ -60,12 +65,11 @@
                         <abv:tr xml:lang="en">
                             <q>Xan-Gwassæ is happy to make a bed in our house</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Gurdž._Æduli"
-                            /><biblScope>73</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Gurdž._Æduli"/><biblScope>73</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d1063e150">
                         <quote>æxsyzgon ma qæwys</quote>
                         <abv:tr xml:lang="ru">
                             <q>ты мне очень нужен</q>
@@ -74,7 +78,7 @@
                             <q>I need you very much</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1063e165">
                         <quote>æxsyzgon qwyddag ma īs</quote>
                         <abv:tr xml:lang="ru">
                             <q>у меня есть настоятельное дело</q>
@@ -83,7 +87,7 @@
                             <q>I have an urgent deal</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1063e180">
                         <quote>je ʽxsyzgon'æ saræzta saw noǵiag Satanajæn</quote>
                         <abv:tr xml:lang="ru">
                             <q>черный ногаец удовлетворил нужды Шатаны</q>
@@ -94,7 +98,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>III
                             12</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d1063e199" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>næbal færsuncæ muggagæj, yal æxsiʒgæ agoruncæ qal kiræ</quote>
                         <abv:tr xml:lang="ru">
@@ -105,37 +109,32 @@
                             <q>Family (nobility) is no longer point of interest, but a luxurious
                                 trunk is in pursuit</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Gurdž._Æduli"
-                            /><biblScope>72</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Gurdž._Æduli"/><biblScope>72</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Вероятно, из %iæx%i-%isiʒ%i-%igæ%i. В первой части (%iæх%i) —
-                        <mentioned xml:lang="x-oldirn"><lang/>
+                        <mentioned xml:id="mentioned_d1063e224" xml:lang="x-oldirn"><lang/>
                         <w>vahu-</w>
-                        <gloss><q>хороший</q></gloss></mentioned>? Ср. <ref type="xr"
-                        target="#entry_æxcon"/> ‘угодный’, ‘приятный’ и д. <ref type="xr"
-                        target="#entry_æxcul"/> ‘привязанный’, ‘любящий’. Вторая часть %isiʒgæ%i
+                        <gloss><q>хороший</q></gloss></mentioned>? Ср. <ref type="xr" target="#entry_æxcon"/> ‘угодный’, ‘приятный’ и д. <ref type="xr" target="#entry_æxcul"/> ‘привязанный’, ‘любящий’. Вторая часть %isiʒgæ%i
                     (дигорская форма), имеет вид при- частного образования на -%igæ%i от какого-то
-                    глагола *%isiʒ%i-', ср <mentioned xml:lang="sa"><lang/>
+                    глагола *%isiʒ%i-', ср <mentioned xml:id="mentioned_d1063e236" xml:lang="sa"><lang/>
                         <w>śikṣati</w>
-                        <gloss><q>помогает</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
-                        <gloss><q>благоприятствует</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
+                        <gloss><q>помогает</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1063e244" xml:lang="sa"><w/>
+                        <gloss><q>благоприятствует</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1063e251" xml:lang="sa"><w/>
                         <gloss><q>служит</q></gloss></mentioned>. В этом случае %iæx%i-%isiʒgæ%i
-                    построено по такой же модели, как <mentioned xml:lang="ru"><lang/>
+                    построено по такой же модели, как <mentioned xml:id="mentioned_d1063e257" xml:lang="ru"><lang/>
                         <w>благо-приятный</w></mentioned>.</etym>
                 <etym xml:lang="en">Probably from %iæx%i-%isiʒ%i-%igæ%i. In the first part (%iæх%i)
-                    there is <mentioned xml:lang="x-oldirn"><lang/>
+                    there is <mentioned xml:id="mentioned_d1063e265" xml:lang="x-oldirn"><lang/>
                         <w>vahu-</w>
-                        <gloss><q>good</q></gloss></mentioned>? Cf. <ref type="xr"
-                        target="#entry_æxcon"/> ‘pleasant’, ‘pleasing’ и д. <ref type="xr"
-                        target="#entry_æxcul"/> ‘attached', ‘loving’. The second part %isiʒgæ%i
+                        <gloss><q>good</q></gloss></mentioned>? Cf. <ref type="xr" target="#entry_æxcon"/> ‘pleasant’, ‘pleasing’ и д. <ref type="xr" target="#entry_æxcul"/> ‘attached', ‘loving’. The second part %isiʒgæ%i
                     (Digor) is a past participle derived with -%igæ%i from some verb *%isiʒ%i-, cf.
-                        <mentioned xml:lang="sa"><lang/>
+                        <mentioned xml:id="mentioned_d1063e277" xml:lang="sa"><lang/>
                         <w>śikṣati</w>
-                        <gloss><q>s/he helps</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
-                        <gloss><q>s/he favours</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
+                        <gloss><q>s/he helps</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1063e285" xml:lang="sa"><w/>
+                        <gloss><q>s/he favours</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1063e292" xml:lang="sa"><w/>
                         <gloss><q>s/he serves</q></gloss></mentioned>. In this case %iæx%i-%isiʒgæ%i
-                    is formed according to the same model as <mentioned xml:lang="ru"><lang/>
+                    is formed according to the same model as <mentioned xml:id="mentioned_d1063e298" xml:lang="ru"><lang/>
                         <w>blago-prijatnyj</w></mentioned>.</etym>
             </entry>
         </body>

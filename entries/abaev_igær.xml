@@ -1,42 +1,46 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">igær</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_igær" xml:lang="os">
                 <form type="lemma"><orth>igær</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d706e69"><abv:tr xml:lang="ru">
                         <q>печень</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>liver</q>
                     </abv:tr></sense>
-                <re>
+                <re xml:id="re_d706e79">
                     <form type="lemma"><orth>de ‘gær fækalaj</orth></form>
                     <note type="comment" xml:lang="ru">— в иронском употребительное выражение брани,
-                        укора; но имеем ли здесь дело с ‘печеньюˈ или другим словом <ref type="xr"
-                            target="#entry_ægær"/> ‘избытокˈ?</note>
+                        укора; но имеем ли здесь дело с ‘печеньюˈ или другим словом <ref type="xr" target="#entry_ægær"/> ‘избытокˈ?</note>
                     <note type="comment" xml:lang="en">— in Iron, a widespread expression of abuse
                         or reproach; but does it include the word for ‘liverˈor rather a different
                         word <ref type="xr" target="#entry_ægær"/> ‘surplusˈ?</note>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d706e97">
                         <quote>æxsyry cady īw x˳y ī, æmæ myn ūj igærtæ ærxæssūt, ændæra æz
                             amælʒynæn</quote>
                         <abv:tr xml:lang="ru">
@@ -49,7 +53,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Munk."/><biblScope>52</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d706e116" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>de ‘gær fækkalaj, Satana!</quote>
                         <abv:tr xml:lang="ru">
@@ -65,52 +69,42 @@
                 <etym xml:lang="ru">Как и другие основные анатомические термины, является
                     общеиндоевропейским словом. Существовали два варианта основы: *%iyek''r-%i и
                     *%iyek''n-%i. Осетинская форма возводится к др.иран. *%iyakar-%i, и.е.
-                    *%iyek''r-%i. Ср. <mentioned xml:lang="fa"><lang/>
-                        <w>jigar</w></mentioned>, <mentioned xml:lang="ku"><lang/>
-                        <w>jerk</w></mentioned>, <mentioned xml:lang="x-balochi"><lang/>
-                        <w>jagar</w></mentioned>, <mentioned xml:lang="ydg"><lang/>
-                        <w>yēɣən (← *yaxna)</w></mentioned>, <mentioned xml:lang="ps"><lang/>
-                        <w>yina</w></mentioned>, <mentioned xml:lang="kho"><lang/>
-                        <w>gyagarrä</w></mentioned>, <mentioned xml:lang="ae"><lang/>
-                        <w>yākar-</w></mentioned>, <mentioned xml:lang="sa"><lang/>
-                        <w>yakṛt</w></mentioned>, родительный падеж %iyaknah%i, <mentioned
-                        xml:lang="la"><lang/>
-                        <w>jecur</w></mentioned>, <mentioned xml:lang="grc"><lang/>
-                        <w>ήπαρ</w></mentioned>, <mentioned xml:lang="lt"><lang/>
-                        <w>jēknos</w></mentioned>, <mentioned xml:lang="lv"><lang/>
-                        <w>aknas</w></mentioned> и пр. (<bibl><ref type="bibl" target="#ref_Pokorny"
-                            /><biblScope>504</biblScope></bibl>). Начальный %ii%i в %iigær%i — из
-                    %iуа%i, как <ref type="xr" target="#entry_i"/> (артикль) из %iya%i, <ref
-                        type="xr" target="#entry_izæd"/> д. из %iyazata%i.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 67, 90, III 160; Gr.
-                            17</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_Hübschmann._Oss."/><biblScope>41</biblScope></bibl>. —
-                            <bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                        /><biblScope>18</biblScope></bibl>.</etym>
+                    *%iyek''r-%i. Ср. <mentioned xml:id="mentioned_d706e141" xml:lang="fa"><lang/>
+                        <w>jigar</w></mentioned>, <mentioned xml:id="mentioned_d706e146" xml:lang="ku"><lang/>
+                        <w>jerk</w></mentioned>, <mentioned xml:id="mentioned_d706e151" xml:lang="x-balochi"><lang/>
+                        <w>jagar</w></mentioned>, <mentioned xml:id="mentioned_d706e156" xml:lang="ydg"><lang/>
+                        <w>yēɣən (← *yaxna)</w></mentioned>, <mentioned xml:id="mentioned_d706e161" xml:lang="ps"><lang/>
+                        <w>yina</w></mentioned>, <mentioned xml:id="mentioned_d706e167" xml:lang="kho"><lang/>
+                        <w>gyagarrä</w></mentioned>, <mentioned xml:id="mentioned_d706e172" xml:lang="ae"><lang/>
+                        <w>yākar-</w></mentioned>, <mentioned xml:id="mentioned_d706e177" xml:lang="sa"><lang/>
+                        <w>yakṛt</w></mentioned>, родительный падеж %iyaknah%i, <mentioned xml:id="mentioned_d706e182" xml:lang="la"><lang/>
+                        <w>jecur</w></mentioned>, <mentioned xml:id="mentioned_d706e187" xml:lang="grc"><lang/>
+                        <w>ήπαρ</w></mentioned>, <mentioned xml:id="mentioned_d706e192" xml:lang="lt"><lang/>
+                        <w>jēknos</w></mentioned>, <mentioned xml:id="mentioned_d706e198" xml:lang="lv"><lang/>
+                        <w>aknas</w></mentioned> и пр. (<bibl><ref type="bibl" target="#ref_Pokorny"/><biblScope>504</biblScope></bibl>). Начальный %ii%i в %iigær%i — из
+                    %iуа%i, как <ref type="xr" target="#entry_i"/> (артикль) из %iya%i, <ref type="xr" target="#entry_izæd"/> д. из %iyazata%i.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 67, 90, III 160; Gr.
+                            17</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>41</biblScope></bibl>. —
+                            <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>18</biblScope></bibl>.</etym>
                 <etym xml:lang="en">It is a Proto-Indo-European word, as well as other general
                     anatomical terms. Two stem variants existed: *%iyek''r-%i and *%iyek''n-%i. The
                     Ossetic form is traced to Old Iranian *%iyakar-%i, Indo-European *%iyek''r-%i.
-                    Cf. <mentioned xml:lang="fa"><lang/>
-                        <w>jigar</w></mentioned>, <mentioned xml:lang="ku"><lang/>
-                        <w>jerk</w></mentioned>, <mentioned xml:lang="x-balochi"><lang/>
-                        <w>jagar</w></mentioned>, <mentioned xml:lang="ydg"><lang/>
-                        <w>yēɣən (← *yaxna)</w></mentioned>, <mentioned xml:lang="ps"><lang/>
-                        <w>yina</w></mentioned>, <mentioned xml:lang="kho"><lang/>
-                        <w>gyagarrä</w></mentioned>, <mentioned xml:lang="ae"><lang/>
-                        <w>yākar-</w></mentioned>, <mentioned xml:lang="sa"><lang/>
-                        <w>yakṛt</w></mentioned>, genitive case %iyaknah%i, <mentioned xml:lang="la"><lang/>
-                        <w>jecur</w></mentioned>, <mentioned xml:lang="grc"><lang/>
-                        <w>ήπαρ</w></mentioned>, <mentioned xml:lang="lt"><lang/>
-                        <w>jēknos</w></mentioned>, <mentioned xml:lang="lv"><lang/>
-                        <w>aknas</w></mentioned> etc. (<bibl><ref type="bibl" target="#ref_Pokorny"
-                            /><biblScope>504</biblScope></bibl>). The initial %ii%i in %iigær%i —
+                    Cf. <mentioned xml:id="mentioned_d706e228" xml:lang="fa"><lang/>
+                        <w>jigar</w></mentioned>, <mentioned xml:id="mentioned_d706e233" xml:lang="ku"><lang/>
+                        <w>jerk</w></mentioned>, <mentioned xml:id="mentioned_d706e238" xml:lang="x-balochi"><lang/>
+                        <w>jagar</w></mentioned>, <mentioned xml:id="mentioned_d706e243" xml:lang="ydg"><lang/>
+                        <w>yēɣən (← *yaxna)</w></mentioned>, <mentioned xml:id="mentioned_d706e248" xml:lang="ps"><lang/>
+                        <w>yina</w></mentioned>, <mentioned xml:id="mentioned_d706e254" xml:lang="kho"><lang/>
+                        <w>gyagarrä</w></mentioned>, <mentioned xml:id="mentioned_d706e259" xml:lang="ae"><lang/>
+                        <w>yākar-</w></mentioned>, <mentioned xml:id="mentioned_d706e264" xml:lang="sa"><lang/>
+                        <w>yakṛt</w></mentioned>, genitive case %iyaknah%i, <mentioned xml:id="mentioned_d706e269" xml:lang="la"><lang/>
+                        <w>jecur</w></mentioned>, <mentioned xml:id="mentioned_d706e274" xml:lang="grc"><lang/>
+                        <w>ήπαρ</w></mentioned>, <mentioned xml:id="mentioned_d706e279" xml:lang="lt"><lang/>
+                        <w>jēknos</w></mentioned>, <mentioned xml:id="mentioned_d706e285" xml:lang="lv"><lang/>
+                        <w>aknas</w></mentioned> etc. (<bibl><ref type="bibl" target="#ref_Pokorny"/><biblScope>504</biblScope></bibl>). The initial %ii%i in %iigær%i —
                     from %iуа%i, like <ref type="xr" target="#entry_i"/> (the article) from %iya%i,
-                        <ref type="xr" target="#entry_izæd"/> Digor from %iyazata%i.%n<bibl><ref
-                            type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 67, 90, III 160;
-                            Gr. 17</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_Hübschmann._Oss."/><biblScope>41</biblScope></bibl>. —
-                            <bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                        /><biblScope>18</biblScope></bibl>.</etym>
+                        <ref type="xr" target="#entry_izæd"/> Digor from %iyazata%i.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 67, 90, III 160;
+                            Gr. 17</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>41</biblScope></bibl>. —
+                            <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>18</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

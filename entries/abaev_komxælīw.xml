@@ -1,34 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">komxælīw</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_komxælīw" xml:lang="os-x-iron">
                 <form type="lemma"><orth>komxælīw</orth></form>
                 <usg><lang/></usg>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d3812e72"><abv:tr xml:lang="ru">
                         <q>с разинутым ртом</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>open-mouthed</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d3812e84">
                         <quote>rast jæ x˳yzæn dūr komxælīwæj qen læwwydī læskʒærægy cur</quote>
                         <abv:tr xml:lang="ru">
                             <q>в точности подобный (великану) камень стоял стоймя с разинутым ртом
@@ -38,20 +43,15 @@
                             <q>a stone, which looked exactly like a giant, stood upright with an
                                 open mouth near the shepherd</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"
-                            /><biblScope>108</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>108</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Сложное слово с „инверсией“ (вм. %ixælīw-kom%i, ср.
                     %ixælīw-ʒyx%i (<ref type="xr" target="#entry_xælīwʒyx"/>) с тем же значением).
-                    См. <ref type="xr" target="#entry_kom"/> и <ref type="xr" target="#entry_xælīw"
-                            />.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                            /><biblScope>232</biblScope></bibl>ОЯФ I 232.</etym>
+                    См. <ref type="xr" target="#entry_kom"/> и <ref type="xr" target="#entry_xælīw"/>.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>232</biblScope></bibl>ОЯФ I 232.</etym>
                 <etym xml:lang="en">A composite word with an “inversion” (instead of %ixælīw-kom%i,
                     cf. %ixælīw-ʒyx%i (<ref type="xr" target="#entry_xælīwʒyx"/>) with the same
-                    meaning). See <ref type="xr" target="#entry_kom"/> and <ref type="xr"
-                        target="#entry_xælīw"/>.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                            /><biblScope>232</biblScope></bibl>ОЯФ I 232.</etym>
+                    meaning). See <ref type="xr" target="#entry_kom"/> and <ref type="xr" target="#entry_xælīw"/>.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>232</biblScope></bibl>ОЯФ I 232.</etym>
             </entry>
         </body>
     </text>

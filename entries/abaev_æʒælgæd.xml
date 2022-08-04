@@ -1,42 +1,47 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">æʒælgæd</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_æʒælgæd" xml:lang="os-x-iron">
                 <form type="lemma"><orth>æʒælgæd</orth></form>
                 <usg><lang/></usg>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d5492e72"><sense xml:id="sense_d5492e73"><abv:tr xml:lang="ru">
                             <q>ненужный</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>unnecessary</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d5492e82"><abv:tr xml:lang="ru">
                             <q>бесполезный</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>useless</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d5492e91"><abv:tr xml:lang="ru">
                             <q>вздорный</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>absurd</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d5492e103">
                         <quote>æʒælǧæd kʼ˳ydīpʒinad</quote>
                         <abv:tr xml:lang="ru">
                             <q>ненужное франтовство</q>
@@ -44,10 +49,9 @@
                         <abv:tr xml:lang="en">
                             <q>unnecessary smartness</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Čerm."
-                            /><biblScope>107</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Čerm."/><biblScope>107</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5492e122">
                         <quote>æʒælǧædy adæm</quote>
                         <abv:tr xml:lang="ru">
                             <q>лишний народ</q>
@@ -55,15 +59,12 @@
                         <abv:tr xml:lang="en">
                             <q>extra people</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Čerm."
-                            /><biblScope>112</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Čerm."/><biblScope>112</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Из %iæ-cær-ǧæd%i буквально „не имеющий жизненного (%icær-%i
                         [<ref type="xr"/>]) значения (<ref type="xr" target="#entry_ǧæd"/>)ʼ.</etym>
-                <etym xml:lang="en">From %iæ-cær-ǧæd%i, literally “not having vital (%icær-%i [<ref
-                        type="xr" target="#entry_cæryn"/>]) importance (<ref type="xr"
-                        target="#entry_ǧæd"/>)ʼ.</etym>
+                <etym xml:lang="en">From %iæ-cær-ǧæd%i, literally “not having vital (%icær-%i [<ref type="xr" target="#entry_cæryn"/>]) importance (<ref type="xr" target="#entry_ǧæd"/>)ʼ.</etym>
             </entry>
         </body>
     </text>

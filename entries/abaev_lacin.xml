@@ -1,39 +1,41 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
       <titleStmt>
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">lacin</hi></title>
       </titleStmt>
-      <xi:include href="../pubstmt.xml" parse="xml"/>
+      <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope
-            unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-            >??–??</biblScope>.</bibl>
+            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
-    <xi:include href="../encodingdesc.xml"/>
+    <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
   </teiHeader>
   <text>
     <body>
       <entry xml:id="entry_lacin" xml:lang="os-x-digor">
         <form type="lemma"><orth>lacin</orth></form>
         <usg><lang/></usg>
-        <sense><abv:tr xml:lang="ru">
+        <sense xml:id="sense_d5464e72"><abv:tr xml:lang="ru">
             <q>сокол</q>
           </abv:tr><abv:tr xml:lang="en">
             <q>falcon</q>
           </abv:tr>
         </sense>
-        <note xml:lang="ru" type="comment">(преимущественно в дигорском); ср. <ref
-            target="#entry_wari" type="xr"/></note>
-        <note xml:lang="en" type="comment">(mainly in Digor); cf. <ref target="#entry_wari"
-            type="xr"/></note>
+        <note xml:lang="ru" type="comment">(преимущественно в дигорском); ср. <ref target="#entry_wari" type="xr"/></note>
+        <note xml:lang="en" type="comment">(mainly in Digor); cf. <ref target="#entry_wari" type="xr"/></note>
         <abv:exampleGrp>
-          <abv:example>
+          <abv:example xml:id="example_d5464e94">
             <quote>arvy bydyr kl skara lacinaw…</quote>
             <abv:tr xml:lang="ru">
               <q>кто рыщет по небесной равнине, как сокол</q>
@@ -44,7 +46,7 @@
             <bibl><ref target="#src_Xar._Zærdæ" type="bibl"/>
               <biblScope>85</biblScope></bibl>
           </abv:example>
-          <abv:example xml:lang="os-x-digor">
+          <abv:example xml:id="example_d5464e114" xml:lang="os-x-digor">
             <usg><lang/></usg>
             <quote>wæjug saw bæxbæl badtæj, duwwæ saw lacini æ duwwæ usqebæl</quote>
             <abv:tr xml:lang="ru">
@@ -56,7 +58,7 @@
             <bibl><ref target="#src_СОПам." type="bibl"/>
               <biblScope>II 98</biblScope></bibl>
           </abv:example>
-          <abv:example xml:lang="os-x-digor">
+          <abv:example xml:id="example_d5464e137" xml:lang="os-x-digor">
             <usg><lang/></usg>
             <quote>duwwæ lacini arvmæ xætæg sijjafta</quote>
             <abv:tr xml:lang="ru">
@@ -68,7 +70,7 @@
             <bibl><ref target="#src_MSt." type="bibl"/>
               <biblScope>34<hi rendition="#rend_subscript">1</hi></biblScope></bibl>
           </abv:example>
-          <abv:example xml:lang="os-x-digor">
+          <abv:example xml:id="example_d5464e163" xml:lang="os-x-digor">
             <usg><lang/></usg>
             <quote>cʼæx lacin ærbacæwuj</quote>
             <abv:tr xml:lang="ru">
@@ -80,7 +82,7 @@
             <bibl><ref target="#src_DZ" type="bibl"/>
               <biblScope>84</biblScope></bibl>
           </abv:example>
-          <abv:example xml:lang="os-x-digor">
+          <abv:example xml:id="example_d5464e186" xml:lang="os-x-digor">
             <usg><lang/></usg>
             <quote>saw lacin æma bor wari næ woʒænæncæ</quote>
             <abv:tr xml:lang="ru">
@@ -93,28 +95,24 @@
               <biblScope>168</biblScope></bibl>
           </abv:example>
         </abv:exampleGrp>
-        <etym xml:lang="ru">Из <mentioned xml:lang="trk"><lang/>
+        <etym xml:lang="ru">Из <mentioned xml:id="mentioned_d5464e216" xml:lang="trk"><lang/>
             <w>lacin</w>
             <gloss xml:lang="ru"><q>сокол</q></gloss></mentioned>
           <bibl>(<ref target="#ref_Радлов" type="bibl"/>
-            <biblScope>III 735</biblScope>)</bibl>; во многих кавказских языках: <mentioned
-            xml:lang="av"><lang/>
-            <w>lačen</w></mentioned>, <mentioned xml:lang="dar"><lang/>
-            <w>lačin</w></mentioned>, <mentioned xml:lang="lbe"><lang/>
-            <w>lačin</w></mentioned>, <mentioned xml:lang="ce"><lang/>
-            <w>leči</w></mentioned> и др.<lb/><bibl><ref target="#ref_MSt." type="bibl"
-              /><biblScope>59</biblScope></bibl>.</etym>
-        <etym xml:lang="en">From <mentioned xml:lang="trk"><lang/>
+            <biblScope>III 735</biblScope>)</bibl>; во многих кавказских языках: <mentioned xml:id="mentioned_d5464e231" xml:lang="av"><lang/>
+            <w>lačen</w></mentioned>, <mentioned xml:id="mentioned_d5464e236" xml:lang="dar"><lang/>
+            <w>lačin</w></mentioned>, <mentioned xml:id="mentioned_d5464e241" xml:lang="lbe"><lang/>
+            <w>lačin</w></mentioned>, <mentioned xml:id="mentioned_d5464e247" xml:lang="ce"><lang/>
+            <w>leči</w></mentioned> и др.<lb/><bibl><ref target="#ref_MSt." type="bibl"/><biblScope>59</biblScope></bibl>.</etym>
+        <etym xml:lang="en">From <mentioned xml:id="mentioned_d5464e260" xml:lang="trk"><lang/>
             <w>lacin</w>
             <gloss xml:lang="ru"><q>falcon</q></gloss></mentioned>
           <bibl>(<ref target="#ref_Радлов" type="bibl"/>
-            <biblScope>III 735</biblScope>)</bibl>; in many Caucasian languages: <mentioned
-            xml:lang="av"><lang/>
-            <w>lačen</w></mentioned>, <mentioned xml:lang="dar"><lang/>
-            <w>lačin</w></mentioned>, <mentioned xml:lang="lbe"><lang/>
-            <w>lačin</w></mentioned>, <mentioned xml:lang="ce"><lang/>
-            <w>leči</w></mentioned> etc.<lb/><bibl><ref target="#ref_MSt." type="bibl"
-              /><biblScope>59</biblScope></bibl>.</etym>
+            <biblScope>III 735</biblScope>)</bibl>; in many Caucasian languages: <mentioned xml:id="mentioned_d5464e275" xml:lang="av"><lang/>
+            <w>lačen</w></mentioned>, <mentioned xml:id="mentioned_d5464e280" xml:lang="dar"><lang/>
+            <w>lačin</w></mentioned>, <mentioned xml:id="mentioned_d5464e285" xml:lang="lbe"><lang/>
+            <w>lačin</w></mentioned>, <mentioned xml:id="mentioned_d5464e291" xml:lang="ce"><lang/>
+            <w>leči</w></mentioned> etc.<lb/><bibl><ref target="#ref_MSt." type="bibl"/><biblScope>59</biblScope></bibl>.</etym>
       </entry>
     </body>
   </text>

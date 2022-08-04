@@ -1,37 +1,42 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">Amyran</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_Amyran" xml:lang="os-x-iron">
                 <form type="lemma"><orth>Amyran</orth></form>
                 <usg><lang/></usg>
-                <sense><def xml:lang="ru">герой „Даредзановского“ цикла эпических сказаний, бытующих
+                <sense xml:id="sense_d336e72"><def xml:lang="ru">герой „Даредзановского“ цикла эпических сказаний, бытующих
                         у осетин и грузин. Образ, близкий к греческому Прометею. Принадлежал к роду
-                        %iDareʒantæ%i (<mentioned xml:lang="ka"><lang/>
+                        %iDareʒantæ%i (<mentioned xml:id="mentioned_d336e75" xml:lang="ka"><lang/>
                             <w>Dareǯan is-ʒe</w></mentioned>)</def><def xml:lang="en">the hero of
                         the ‘Daredzan's’ cycle of epic legends that exist among the Ossetians and
                         Georgians. An image close to the Greek Prometheus. Belonged to the
-                        %iDareʒantæ%i family (<mentioned xml:lang="ka"><lang/>
+                        %iDareʒantæ%i family (<mentioned xml:id="mentioned_d336e82" xml:lang="ka"><lang/>
                             <w>Dareǯan is-ʒe</w></mentioned>)</def></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d336e90">
                         <quote>æz dæn Dareʒanty Jamony fyrt, X˳ycawy xæræfyrt Amyran</quote>
                         <abv:tr xml:lang="ru">
                             <q>я — сын Ямона Даредзанова, племянник Божий Амиран</q>
@@ -42,7 +47,7 @@
                         <bibl><ref type="bibl" target="#src_ЮОПам."/><biblScope>II
                             13</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d336e109">
                         <quote>sbastoj K˳yrdalægony kond ræxystæj Amyrany</quote>
                         <abv:tr xml:lang="ru">
                             <q>связали Амирана цепями, изготовленными Курдалагоном</q>
@@ -54,29 +59,25 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Даредзановские сказания, равно как имя %iАмиран%i, восприняты
-                    осетинами у грузин, ср. <mentioned xml:lang="ka"><lang/>
+                    осетинами у грузин, ср. <mentioned xml:id="mentioned_d336e131" xml:lang="ka"><lang/>
                         <w>Amirani</w></mentioned>, герой эпоса. Грузинские варианты восходят в
                     большинстве к средневековому грузинскому роману „Амиран-Дареджаниани“ Мосе
                             <bibl><biblScope xml:lang="ru">%sХонели%s</biblScope></bibl>. С этимологической стороны
                     остается в силе разъяснение Н. Я. %sМарра%s, согласно которому
-                    „%iAmiran-Dareǯan%i'' есть переразложение <mentioned xml:lang="fa"><lang/>
+                    „%iAmiran-Dareǯan%i'' есть переразложение <mentioned xml:id="mentioned_d336e140" xml:lang="fa"><lang/>
                         <w>amir-andare-jehān</w>
-                        <gloss><q>князь в мире</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_ЖМНП"/><biblScope xml:lang="ru">Н. Я. Марр. Персидская
+                        <gloss><q>князь в мире</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_ЖМНП"/><biblScope xml:lang="ru">Н. Я. Марр. Персидская
                             национальная тенденция в грузинском романе „Амирандареджаниани“. 1895,
                             июнь, стр. 361</biblScope></bibl>).%n<bibl><biblScope xml:lang="ru">Амран. Изд.
                             Academia, 1932, стр. 13—17</biblScope></bibl>.</etym>
                 <etym xml:lang="en">Daredzanian legends, like the name %sAmiran%s, were acquired by
-                    the Ossetians via the Georgians, cf. <mentioned xml:lang="ka"><lang/>
+                    the Ossetians via the Georgians, cf. <mentioned xml:id="mentioned_d336e161" xml:lang="ka"><lang/>
                         <w>Amirani</w></mentioned>, epic hero. Most of the Georgian variants go back
-                    to the medieval Georgian novel "Amiran-Darejaniani" by Mose <bibl><biblScope xml:lang="en"
-                            >%sKhoneli%s</biblScope></bibl>. From the etymological point of view, N.
+                    to the medieval Georgian novel "Amiran-Darejaniani" by Mose <bibl><biblScope xml:lang="en">%sKhoneli%s</biblScope></bibl>. From the etymological point of view, N.
                     Ya. %sMarr%s's explanation remains in force, according to which
-                    ‘%iAmiran-Dareǯan%i’ is a decomposition of <mentioned xml:lang="fa"><lang/>
+                    ‘%iAmiran-Dareǯan%i’ is a decomposition of <mentioned xml:id="mentioned_d336e170" xml:lang="fa"><lang/>
                         <w>amir-andare-jehān</w>
-                        <gloss><q>prince in the world</q></gloss></mentioned> (<bibl><ref
-                            type="bibl" target="#ref_ЖМНП"/><biblScope
-                            xml:lang="en">N. Ya. Marr. Persian national tendency in the Georgian
+                        <gloss><q>prince in the world</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_ЖМНП"/><biblScope xml:lang="en">N. Ya. Marr. Persian national tendency in the Georgian
                             novel "Amirandarejaniani". 1895, June, p.
                             361</biblScope></bibl>).%n<bibl><biblScope xml:lang="en">Amran.
                             Academia publ., 1932, p. 13—17</biblScope></bibl>.</etym>

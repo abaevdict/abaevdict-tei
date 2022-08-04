@@ -1,47 +1,51 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">azun</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_azun" xml:lang="os-x-digor">
-                <form type="lemma"><orth>azun</orth><form type="participle"
-                    ><orth>azt</orth></form></form>
+                <form type="lemma"><orth>azun</orth><form type="participle"><orth>azt</orth></form></form>
                 <usg><lang/></usg>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d3907e74"><sense xml:id="sense_d3907e75"><abv:tr xml:lang="ru">
                             <q>давать приют</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>give shelter</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d3907e84"><abv:tr xml:lang="ru">
                             <q>лелеять</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>cherish</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d3907e93"><abv:tr xml:lang="ru">
                             <q>ласкать</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>caress</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d3907e102"><abv:tr xml:lang="ru">
                             <q>кормить</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>feed</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d3907e114">
                         <quote>xæstæg næ xasta, sinxoni næ warzta, binonti næ azta</quote>
                         <abv:tr xml:lang="ru">
                             <q>родича не кормил, соседа не любил, домочадцев не ласкал</q>
@@ -52,7 +56,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_ОЭ"/><biblScope>I 110</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3907e133">
                         <quote>xæstægi xasta, sinxoni azta</quote>
                         <abv:tr xml:lang="ru">
                             <q>родственника кормил, с соседом был ласков</q>
@@ -62,7 +66,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_ОЭ"/><biblScope>I 108</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3907e152">
                         <quote>iwazæg Xucawi iwazæg æj, zæǧgæ, ma sæ baaztoncæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>«гость — Божий гость», — сказали они и приютили их</q>
@@ -77,55 +81,35 @@
                 <note type="comment" xml:lang="ru">Мало распространенное.</note>
                 <note type="comment" xml:lang="en">Uncommon.</note>
                 <etym xml:lang="ru">Корень %iaz-%i, восходя к %i*ag-%i, мог иметь закономерное
-                    развитие: %i*аg%i + %is-%i → %i*axš-%i, что мы и усматриваем в <mentioned
-                        xml:lang="ae"><lang/>
+                    развитие: %i*аg%i + %is-%i → %i*axš-%i, что мы и усматриваем в <mentioned xml:id="mentioned_d3907e181" xml:lang="ae"><lang/>
                         <w>āxš-</w>
-                        <gloss><q>беречь</q></gloss></mentioned>, <mentioned xml:lang="ae"><lang/>
-                        <w>āxšti-</w></mentioned>, <mentioned xml:lang="pal"><lang/>
-                        <w>āštīh</w></mentioned>, <mentioned xml:lang="fa"><lang/>
+                        <gloss><q>беречь</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3907e189" xml:lang="ae"><lang/>
+                        <w>āxšti-</w></mentioned>, <mentioned xml:id="mentioned_d3907e194" xml:lang="pal"><lang/>
+                        <w>āštīh</w></mentioned>, <mentioned xml:id="mentioned_d3907e199" xml:lang="fa"><lang/>
                         <w>āšti</w>
-                        <gloss><q>мир</q></gloss></mentioned>, <mentioned xml:lang="fa"><w/>
-                        <gloss><q>согласие</q></gloss></mentioned>, а также в и. <ref type="xr"
-                        target="#entry_axston"/> (из %iaxs-don%i) ‘гнездо’, <ref type="xr"
-                        target="#entry_axsǵiag"/> ‘любимый’; вариант %iaz-%i, с другой стороны,
+                        <gloss><q>мир</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3907e207" xml:lang="fa"><w/>
+                        <gloss><q>согласие</q></gloss></mentioned>, а также в и. <ref type="xr" target="#entry_axston"/> (из %iaxs-don%i) ‘гнездо’, <ref type="xr" target="#entry_axsǵiag"/> ‘любимый’; вариант %iaz-%i, с другой стороны,
                     отложился в д. <ref type="xr" target="#entry_astʼonæ"/> (из %iaz-donæ%i)
-                    ‘гнездо’. Формально %iaz-%i относится к %iaxs-%i, как %iaraz-%i [<ref type="xr"
-                        target="#entry_arazyn"/>] к %iaræxs-%i [<ref type="xr"
-                        target="#entry_aræxsyn"/>], %iæmbærz-%i [<ref type="xr"
-                        target="#entry_æmbærzyn"/>] к %iæmbæxs-%i (*%iæmbærxs-%i) [<ref type="xr"
-                        target="#entry_æmbæxsyn"/>], <mentioned xml:lang="ira"><lang/>
+                    ‘гнездо’. Формально %iaz-%i относится к %iaxs-%i, как %iaraz-%i [<ref type="xr" target="#entry_arazyn"/>] к %iaræxs-%i [<ref type="xr" target="#entry_aræxsyn"/>], %iæmbærz-%i [<ref type="xr" target="#entry_æmbærzyn"/>] к %iæmbæxs-%i (*%iæmbærxs-%i) [<ref type="xr" target="#entry_æmbæxsyn"/>], <mentioned xml:id="mentioned_d3907e229" xml:lang="ira"><lang/>
                         <w>*az-</w>
-                        <gloss><q>гнать</q></gloss></mentioned> к <ref type="xr"
-                        target="#entry_æxsæ"/> ‘плеть’, <mentioned xml:lang="ira"><lang/>
+                        <gloss><q>гнать</q></gloss></mentioned> к <ref type="xr" target="#entry_æxsæ"/> ‘плеть’, <mentioned xml:id="mentioned_d3907e239" xml:lang="ira"><lang/>
                         <w>*ā-haz-</w>
-                        <gloss><q>хватать</q></gloss></mentioned> к <ref type="xr"
-                        target="#entry_axæssun"/> ‘ловить’. См. <ref type="xr"
-                        target="#entry_axston"/>, <ref type="xr" target="#entry_axsǵiag"/>.</etym>
+                        <gloss><q>хватать</q></gloss></mentioned> к <ref type="xr" target="#entry_axæssun"/> ‘ловить’. См. <ref type="xr" target="#entry_axston"/>, <ref type="xr" target="#entry_axsǵiag"/>.</etym>
                 <etym xml:lang="en">The root %iaz-%i, going back to %i*ag-%i, could have a natural
-                    development: %i*аg%i + %is-%i → %i*axš-%i, что мы и усматриваем в <mentioned
-                        xml:lang="ae"><lang/>
+                    development: %i*аg%i + %is-%i → %i*axš-%i, что мы и усматриваем в <mentioned xml:id="mentioned_d3907e257" xml:lang="ae"><lang/>
                         <w>āxš-</w>
-                        <gloss><q>cherish</q></gloss></mentioned>, <mentioned xml:lang="ae"><lang/>
-                        <w>āxšti-</w></mentioned>, <mentioned xml:lang="pal"><lang/>
-                        <w>āštīh</w></mentioned>, <mentioned xml:lang="fa"><lang/>
+                        <gloss><q>cherish</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3907e265" xml:lang="ae"><lang/>
+                        <w>āxšti-</w></mentioned>, <mentioned xml:id="mentioned_d3907e270" xml:lang="pal"><lang/>
+                        <w>āštīh</w></mentioned>, <mentioned xml:id="mentioned_d3907e275" xml:lang="fa"><lang/>
                         <w>āšti</w>
-                        <gloss><q>peace</q></gloss></mentioned>, <mentioned xml:lang="fa"><w/>
-                        <gloss><q>consent</q></gloss></mentioned>, and also in Iron <ref type="xr"
-                        target="#entry_axston"/> (from %iaxs-don%i) ʽnest’, <ref type="xr"
-                        target="#entry_axsǵiag"/> ‘favourite’; the variant %iaz-%i, on the other
+                        <gloss><q>peace</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3907e283" xml:lang="fa"><w/>
+                        <gloss><q>consent</q></gloss></mentioned>, and also in Iron <ref type="xr" target="#entry_axston"/> (from %iaxs-don%i) ʽnest’, <ref type="xr" target="#entry_axsǵiag"/> ‘favourite’; the variant %iaz-%i, on the other
                     hand, developed into Digor <ref type="xr" target="#entry_astʼonæ"/> (from
-                    %iaz-donæ%i) ‘nest’. Formally, %iaz-%i relates to %iaxs-%i, like %iaraz-%i [<ref
-                        type="xr" target="#entry_arazyn"/>] to %iaræxs-%i [<ref type="xr"
-                        target="#entry_aræxsyn"/>], %iæmbærz-%i [<ref type="xr"
-                        target="#entry_æmbærzyn"/>] to %iæmbæxs-%i (*%iæmbærxs-%i) [<ref type="xr"
-                        target="#entry_æmbæxsyn"/>], <mentioned xml:lang="ira"><lang/>
+                    %iaz-donæ%i) ‘nest’. Formally, %iaz-%i relates to %iaxs-%i, like %iaraz-%i [<ref type="xr" target="#entry_arazyn"/>] to %iaræxs-%i [<ref type="xr" target="#entry_aræxsyn"/>], %iæmbærz-%i [<ref type="xr" target="#entry_æmbærzyn"/>] to %iæmbæxs-%i (*%iæmbærxs-%i) [<ref type="xr" target="#entry_æmbæxsyn"/>], <mentioned xml:id="mentioned_d3907e305" xml:lang="ira"><lang/>
                         <w>*az-</w>
-                        <gloss><q>drive</q></gloss></mentioned> to <ref type="xr"
-                        target="#entry_æxsæ"/> ‘lash’, <mentioned xml:lang="ira"><lang/>
+                        <gloss><q>drive</q></gloss></mentioned> to <ref type="xr" target="#entry_æxsæ"/> ‘lash’, <mentioned xml:id="mentioned_d3907e315" xml:lang="ira"><lang/>
                         <w>*ā-haz-</w>
-                        <gloss><q>grab</q></gloss></mentioned> to <ref type="xr"
-                        target="#entry_axæssun"/> ‘catch’. See <ref type="xr" target="#entry_axston"
-                    />, <ref type="xr" target="#entry_axsǵiag"/>.</etym>
+                        <gloss><q>grab</q></gloss></mentioned> to <ref type="xr" target="#entry_axæssun"/> ‘catch’. See <ref type="xr" target="#entry_axston"/>, <ref type="xr" target="#entry_axsǵiag"/>.</etym>
             </entry>
         </body>
     </text>

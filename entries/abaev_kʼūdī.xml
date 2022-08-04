@@ -1,35 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">kʼūdī</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_kʼūdī" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>kʼūdī</orth></form>
-                <form xml:lang="os-x-digor" type="dialectal"><orth>kʼudi</orth><form type="variant"
-                            ><orth>kʼode</orth></form></form>
-                <sense><abv:tr xml:lang="ru">
+                <form xml:lang="os-x-digor" type="dialectal"><orth>kʼudi</orth><form type="variant"><orth>kʼode</orth></form></form>
+                <sense xml:id="sense_d1917e74"><abv:tr xml:lang="ru">
                         <q>хвост</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>tail</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d1917e86">
                         <quote>jæ kʼaxy ælǧtyl dærdtyl ærzīly, jæ kʼūdī tīly</quote>
                         <abv:tr xml:lang="ru">
                             <q>на цыпочках (лиса) кружит поодаль, виляет хвостом</q>
@@ -40,7 +44,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>83</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d1917e105" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>mæ kʼudi min ninnæmioncæ</quote>
                         <abv:tr xml:lang="ru">
@@ -53,14 +57,14 @@
                             39</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <re>
+                <re xml:id="re_d1917e128">
                     <form xml:lang="os-x-iron" type="lemma"><orth>kʼūda</orth></form>
                     <form xml:lang="os-x-digor" type="dialectal"><orth>kʼoda</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d1917e136"><abv:tr xml:lang="ru">
                             <q>бесхвостый</q>
                         </abv:tr></sense>
                     <abv:exampleGrp>
-                        <abv:example>
+                        <abv:example xml:id="example_d1917e144">
                             <quote>i bæxtæ ǧosojtæ ma kʼodatæj cæwun rajdædtoncæ</quote>
                             <abv:tr xml:lang="ru">
                                 <q>лошади стали приходить безухие и бесхвостые</q>
@@ -73,21 +77,19 @@
                         </abv:example>
                     </abv:exampleGrp>
                 </re>
-                <etym xml:lang="ru">Из <mentioned xml:lang="ka"><lang/>
+                <etym xml:lang="ru">Из <mentioned xml:id="mentioned_d1917e168" xml:lang="ka"><lang/>
                         <w>k’udi</w>
-                        <gloss><q>хвост</q></gloss></mentioned>, <mentioned xml:lang="ka"
-                            ><w>kʼuda</w>
+                        <gloss><q>хвост</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1917e176" xml:lang="ka"><w>kʼuda</w>
                         <gloss><q>бесхвостый</q></gloss></mentioned>. Иберо-кавказское слово,
-                    отложившееся также в <mentioned xml:lang="la"><lang/>
-                        <w>cauda</w></mentioned>, более старое %icoda%i, <mentioned xml:lang="it"><lang/>
+                    отложившееся также в <mentioned xml:id="mentioned_d1917e182" xml:lang="la"><lang/>
+                        <w>cauda</w></mentioned>, более старое %icoda%i, <mentioned xml:id="mentioned_d1917e187" xml:lang="it"><lang/>
                         <w>coda</w></mentioned>?</etym>
-                <etym xml:lang="en">From <mentioned xml:lang="ka"><lang/>
+                <etym xml:lang="en">From <mentioned xml:id="mentioned_d1917e195" xml:lang="ka"><lang/>
                         <w>k’udi</w>
-                        <gloss><q>tail</q></gloss></mentioned>, <mentioned xml:lang="ka"
-                            ><w>kʼuda</w>
+                        <gloss><q>tail</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1917e203" xml:lang="ka"><w>kʼuda</w>
                         <gloss><q>tailless</q></gloss></mentioned>. An Ibero-Caucasian word, which
-                    is also recognized in <mentioned xml:lang="la"><lang/>
-                        <w>cauda</w></mentioned>, older %icoda%i, <mentioned xml:lang="it"><lang/>
+                    is also recognized in <mentioned xml:id="mentioned_d1917e209" xml:lang="la"><lang/>
+                        <w>cauda</w></mentioned>, older %icoda%i, <mentioned xml:id="mentioned_d1917e214" xml:lang="it"><lang/>
                         <w>coda</w></mentioned>?</etym>
                 <note type="internal">бесхвостый!</note>
             </entry>

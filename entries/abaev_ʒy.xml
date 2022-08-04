@@ -1,42 +1,47 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ʒy</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ʒy" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>ʒy</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>ʒi</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d3089e72"><sense xml:id="sense_d3089e73"><abv:tr xml:lang="ru">
                             <q>из него</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>from him/it</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d3089e82"><abv:tr xml:lang="ru">
                             <q>от него</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>therefrom</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d3089e91"><abv:tr xml:lang="ru">
                             <q>в нем</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>in him/it</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d3089e103">
                         <quote>bakodta ʒæppazy dwar, baxyzt mīdæmæ æmæ ʒy… raxasta īw ḱyzg</quote>
                         <abv:tr xml:lang="ru">
                             <q>открыл дверь склепа, влез внутрь и вынес оттуда одну девочку</q>
@@ -46,7 +51,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_ОЭп."/><biblScope>21</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3089e122">
                         <quote>næ ʒy tærsyn</quote>
                         <abv:tr xml:lang="ru">
                             <q>я его не боюсь</q>
@@ -55,7 +60,7 @@
                             <q>I'm not afraid of him</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d3089e137" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>ci ʒi kænis?</quote>
                         <abv:tr xml:lang="ru">
@@ -66,10 +71,9 @@
                         </abv:tr>
                         <note type="comment" xml:lang="ru"> (= „на что он тебе нужен?“)</note>
                         <note type="comment" xml:lang="en"> (= “what do you need him for?”)</note>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>11%l7%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>11%l7%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3089e166">
                         <quote>næj ʒy dæw akkag bæx</quote>
                         <abv:tr xml:lang="ru">
                             <q>нет там достойного тебя коня</q>
@@ -79,7 +83,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>69</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d3089e185" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>bærgæ ʽʒi raagurdta, fal ʒi neci isserdta</quote>
                         <abv:tr xml:lang="ru">
@@ -88,10 +92,9 @@
                         <abv:tr xml:lang="en">
                             <q>he looked there, but found nothing</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>11%l11%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>11%l11%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d3089e208" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>rimaxsta ʒi æ xwartæ</quote>
                         <abv:tr xml:lang="ru">
@@ -103,17 +106,17 @@
                         <bibl><ref type="bibl" target="#src_FS"/><biblScope>I 10</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Вероятно, восходит к <mentioned xml:lang="ira"><lang/>
+                <etym xml:lang="ru">Вероятно, восходит к <mentioned xml:id="mentioned_d3089e233" xml:lang="ira"><lang/>
                         <w>hačā</w>
-                        <gloss><q>от</q></gloss></mentioned>; ср. <mentioned xml:lang="kho"><lang/>
+                        <gloss><q>от</q></gloss></mentioned>; ср. <mentioned xml:id="mentioned_d3089e241" xml:lang="kho"><lang/>
                         <w>ʒa(jsa)</w>
-                        <gloss><q>с</q></gloss></mentioned>, <mentioned xml:lang="kho"><w/>
+                        <gloss><q>с</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3089e249" xml:lang="kho"><w/>
                         <gloss><q>от</q></gloss></mentioned>.</etym>
-                <etym xml:lang="en">It probably traces back to <mentioned xml:lang="ira"><lang/>
+                <etym xml:lang="en">It probably traces back to <mentioned xml:id="mentioned_d3089e259" xml:lang="ira"><lang/>
                         <w>hačā</w>
-                        <gloss><q>from</q></gloss></mentioned>; cf. <mentioned xml:lang="kho"><lang/>
+                        <gloss><q>from</q></gloss></mentioned>; cf. <mentioned xml:id="mentioned_d3089e267" xml:lang="kho"><lang/>
                         <w>ʒa(jsa)</w>
-                        <gloss><q>with</q></gloss></mentioned>, <mentioned xml:lang="kho"><w/>
+                        <gloss><q>with</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3089e275" xml:lang="kho"><w/>
                         <gloss><q>from</q></gloss></mentioned>.</etym>
             </entry>
         </body>

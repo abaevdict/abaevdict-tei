@@ -1,37 +1,42 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">cʼæmæltæ</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_cʼæmæltæ" xml:lang="os">
                 <form type="lemma"><orth>cʼæmæltæ</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d1235e69"><sense xml:id="sense_d1235e70"><abv:tr xml:lang="ru">
                             <q>отходы при молотьбе</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>milling waste</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d1235e79"><abv:tr xml:lang="ru">
                             <q>неполное зерно</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>not full grain</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d1235e91">
                         <quote>aruqqæn qæwy cʼæmæltæ æmæ sysǵyjy æxsædæntæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>для араки нужны отходы зерна и очистки овса</q>
@@ -42,7 +47,7 @@
                         <bibl><ref type="bibl" target="#src_ЮОПам."/><biblScope>III
                             192</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1235e110">
                         <quote>xorqwag cʼæmælæj ne ‘vzary</quote>
                         <abv:tr xml:lang="ru">
                             <q>нуждающийся в хлебе не разбирает отходов</q>
@@ -50,10 +55,9 @@
                         <abv:tr xml:lang="en">
                             <q>who needs bread does not dismantle waste</q>
                         </abv:tr>
-                        <bibl><biblScope xml:lang="ru">поговорка</biblScope><biblScope xml:lang="en"
-                                >proverb</biblScope></bibl>
+                        <bibl><biblScope xml:lang="ru">поговорка</biblScope><biblScope xml:lang="en">proverb</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d1235e131" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>Astæ nin cʼæmæltæ dær … nekæd ravardtoncæ</quote>
                         <abv:tr xml:lang="ru">
@@ -66,24 +70,24 @@
                             74</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Перестановка из %icʼalam%i? Ср. <mentioned xml:lang="ka"><lang/>
+                <etym xml:lang="ru">Перестановка из %icʼalam%i? Ср. <mentioned xml:id="mentioned_d1235e156" xml:lang="ka"><lang/>
                         <w>cʼalami</w>
                         <gloss><q>хворост виноградной лозы</q></gloss></mentioned>. Грузинское слово
                     стоит, возможно, в доисторическом родстве с индоевропейской группой слов, к
-                    которой относятся <mentioned xml:lang="ru"><lang/>
-                        <w>солома</w></mentioned>, <mentioned xml:lang="de"><lang/>
+                    которой относятся <mentioned xml:id="mentioned_d1235e164" xml:lang="ru"><lang/>
+                        <w>солома</w></mentioned>, <mentioned xml:id="mentioned_d1235e169" xml:lang="de"><lang/>
                         <w>Halm</w>
-                        <gloss><q>стебель</q></gloss></mentioned>, <mentioned xml:lang="grc"><lang/>
+                        <gloss><q>стебель</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1235e177" xml:lang="grc"><lang/>
                         <w>κάλαμος</w>
                         <gloss><q>стебель</q></gloss></mentioned> и пр.</etym>
-                <etym xml:lang="en">The transposition from %icʼalam%i? Cf. <mentioned xml:lang="ka"><lang/>
+                <etym xml:lang="en">The transposition from %icʼalam%i? Cf. <mentioned xml:id="mentioned_d1235e188" xml:lang="ka"><lang/>
                         <w>cʼalami</w>
                         <gloss><q>grapevine brushwood</q></gloss></mentioned>. The Georgian word is
                     perhaps in a prehistoric relationship with the Indo-European group of words to
-                    which <mentioned xml:lang="ru"><lang/>
-                        <w>soloma</w></mentioned>, <mentioned xml:lang="de"><lang/>
+                    which <mentioned xml:id="mentioned_d1235e196" xml:lang="ru"><lang/>
+                        <w>soloma</w></mentioned>, <mentioned xml:id="mentioned_d1235e201" xml:lang="de"><lang/>
                         <w>Halm</w>
-                        <gloss><q>stem</q></gloss></mentioned>, <mentioned xml:lang="grc"><lang/>
+                        <gloss><q>stem</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1235e209" xml:lang="grc"><lang/>
                         <w>κάλαμος</w>
                         <gloss><q>stem</q></gloss></mentioned> etc. relate.</etym>
             </entry>

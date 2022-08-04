@@ -1,38 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">bæzærxyg</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_bæzærxyg" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>bæzærxyg</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>bæzærxug</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d5780e72"><sense xml:id="sense_d5780e73"><abv:tr xml:lang="ru">
                             <q>коренастый</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>thickset</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d5780e82"><abv:tr xml:lang="ru">
                             <q>ширококостный</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>big-boned</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d5780e94">
                         <quote>arsaw bæzærxyg… wydī Azæmæt</quote>
                         <abv:tr xml:lang="ru">
                             <q>ширококостным, как медведь, был Азамат</q>
@@ -40,10 +45,9 @@
                         <abv:tr xml:lang="en">
                             <q>Azamat was big-boned, like bear</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Čerm."
-                            /><biblScope>130</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Čerm."/><biblScope>130</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5780e113" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>ew bæzærxug læqwæn færæti mækʼuræj kʼuma rasasta</quote>
                         <abv:tr xml:lang="ru">
@@ -54,7 +58,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>130</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5780e135" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>læqwæn bæzærxug, eci guppursær aræzt adtæj</quote>
                         <abv:tr xml:lang="ru">
@@ -63,10 +67,9 @@
                         <abv:tr xml:lang="en">
                             <q>a young man was thickset, of powerful physique</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_SD"
-                            /><biblScope>195%l2%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_SD"/><biblScope>195%l2%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5780e157" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>Biʒix adtæj bæzærxug, stavdgomaw læg</quote>
                         <abv:tr xml:lang="ru">
@@ -78,20 +81,15 @@
                         <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>118</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из %ibaz%i + %iarx%i-%iyg%i, где совершенно ясны <ref type="xr"
-                        target="#entry_bæz-"/> ‘толстый’ и конечное -%iyg%i — суффикс наделенности
+                <etym xml:lang="ru">Из %ibaz%i + %iarx%i-%iyg%i, где совершенно ясны <ref type="xr" target="#entry_bæz-"/> ‘толстый’ и конечное -%iyg%i — суффикс наделенности
                     чем-либо. Что касается <ref type="xr" target="#entry_arx"/>, то мы отождествляем
                     его с <ref type="xr" target="#entry_arx"/> ‘сук’, %iærx%i-%iæg%i ‘сустав’ [см.
                         <ref type="xr" target="#entry_ærxæg"/>]. %iBæzærxyg%i, стало быть, —
                     „суковатый“ или „широкосуставный“. См. <ref type="xr" target="#entry_ærxæg"/>, а
                     также <ref type="xr" target="#entry_æxkænyn"/> ‘запирать’.</etym>
-                <etym xml:lang="en">From %ibaz%i + %iarx%i-%iyg%i, where the elements <ref type="xr"
-                        target="#entry_bæz-"/> ‘thick’ and the final -%iyg%i (suffix meaning
-                    endowing) are perfectly clear. As for the word <ref type="xr"
-                        target="#entry_arx"/>, it is related with <ref type="xr" target="#entry_arx"
-                    /> 'bough’, %iærx%i-%iæg%i ‘joint’ [see <ref type="xr" target="#entry_ærxæg"/>].
-                    %iBæzærxyg%i, thus, means “boughed” or “wide-jointed”. See <ref type="xr"
-                        target="#entry_ærxæg"/>, and also <ref type="xr" target="#entry_æxkænyn"/>
+                <etym xml:lang="en">From %ibaz%i + %iarx%i-%iyg%i, where the elements <ref type="xr" target="#entry_bæz-"/> ‘thick’ and the final -%iyg%i (suffix meaning
+                    endowing) are perfectly clear. As for the word <ref type="xr" target="#entry_arx"/>, it is related with <ref type="xr" target="#entry_arx"/> 'bough’, %iærx%i-%iæg%i ‘joint’ [see <ref type="xr" target="#entry_ærxæg"/>].
+                    %iBæzærxyg%i, thus, means “boughed” or “wide-jointed”. See <ref type="xr" target="#entry_ærxæg"/>, and also <ref type="xr" target="#entry_æxkænyn"/>
                     ‘lock’.</etym>
             </entry>
         </body>

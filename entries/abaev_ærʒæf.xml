@@ -1,43 +1,45 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ærʒæf</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ærʒæf" xml:lang="os-x-digor">
-                <form type="lemma"><orth>ærʒæf</orth><form type="variant"
-                    ><orth>ærmʒæf</orth></form></form>
+                <form type="lemma"><orth>ærʒæf</orth><form type="variant"><orth>ærmʒæf</orth></form></form>
                 <usg><lang/></usg>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d2055e74"><abv:tr xml:lang="ru">
                         <q>отбивание такта ладонями (при танце)</q>
-                    </abv:tr><note type="comment" xml:lang="ru">; ср. <mentioned
-                            xml:lang="os-x-iron"><lang/>
+                    </abv:tr><note type="comment" xml:lang="ru">; ср. <mentioned xml:id="mentioned_d2055e81" xml:lang="os-x-iron"><lang/>
                             <w>amʒæǧd</w></mentioned></note><note type="comment" xml:lang="en">;
-                        compare <mentioned xml:lang="os-x-iron"><lang/>
+                        compare <mentioned xml:id="mentioned_d2055e87" xml:lang="os-x-iron"><lang/>
                             <w>amʒæǧd</w></mentioned></note><abv:tr xml:lang="en">
                         <q>beating out time (while dancing)</q>
-                    </abv:tr><note type="comment" xml:lang="ru">; ср. <mentioned
-                            xml:lang="os-x-iron"><lang/>
+                    </abv:tr><note type="comment" xml:lang="ru">; ср. <mentioned xml:id="mentioned_d2055e97" xml:lang="os-x-iron"><lang/>
                             <w>amʒæǧd</w></mentioned></note><note type="comment" xml:lang="en">;
-                        compare <mentioned xml:lang="os-x-iron"><lang/>
+                        compare <mentioned xml:id="mentioned_d2055e103" xml:lang="os-x-iron"><lang/>
                             <w>amʒæǧd</w></mentioned></note></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d2055e110">
                         <quote>min wæjugi kænuj stur zildæj ærmʒæf</quote>
                         <abv:tr xml:lang="ru">
                             <q>тысяча великанов в большом круге отбивают руками такт</q>
@@ -46,10 +48,9 @@
                             <q>a thousand of giants is beating out time by their hands in a big
                                 circle</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Gurdž._Saxi_ræs."
-                                /><biblScope>31</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Gurdž._Saxi_ræs."/><biblScope>31</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2055e129">
                         <quote>‘iwazægæn ærʒæf!’ zæǧgæ, kadær fæǧǧær kodta</quote>
                         <abv:tr xml:lang="ru">
                             <q>«для гостя (отбивайте) такт!» — крикнул кто-то</q>
@@ -60,7 +61,7 @@
                         <bibl><ref type="bibl" target="#src_MD"/><biblScope>1949 II
                             32</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2055e148">
                         <quote>(kærcæ) æ rewtæj ærʒæf kænuj, æ suntæj semgæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>(шуба) бортами отбивает такт, а бедрами пляшет</q>
@@ -74,19 +75,15 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Из %iærm-cæf%i, от <ref type="xr" target="#entry_arm"/> ‘рука’ и
-                        <ref type="xr" target="#entry_cæf"/> ‘удар’, как <mentioned
-                        xml:lang="os-x-iron"><lang/>
+                        <ref type="xr" target="#entry_cæf"/> ‘удар’, как <mentioned xml:id="mentioned_d2055e174" xml:lang="os-x-iron"><lang/>
                         <w>æmʒæǧd</w></mentioned> из %iærm-caǧd%i. Выпадение %im%i закономерно для
                     дигорского; ср. <ref type="xr" target="#entry_ar"/> ‘оглобля’ (← „рука“); в
-                    сложных словах %im%i выпадает в обоих диалектах, ср. <ref type="xr"
-                        target="#entry_ærxūd"/>.</etym>
-                <etym xml:lang="en">From %iærm-cæf%i, derived from <ref type="xr"
-                        target="#entry_arm"/> ‘hand’ and<ref type="xr" target="#entry_cæf"/>
-                    ‘punch’, like <mentioned xml:lang="os-x-iron"><lang/>
+                    сложных словах %im%i выпадает в обоих диалектах, ср. <ref type="xr" target="#entry_ærxūd"/>.</etym>
+                <etym xml:lang="en">From %iærm-cæf%i, derived from <ref type="xr" target="#entry_arm"/> ‘hand’ and<ref type="xr" target="#entry_cæf"/>
+                    ‘punch’, like <mentioned xml:id="mentioned_d2055e191" xml:lang="os-x-iron"><lang/>
                         <w>æmʒæǧd</w></mentioned> from %iærm-caǧd%i. The loss of %im%i is regural
                     for Digor, compare <ref type="xr" target="#entry_ar"/> ‘shaft’ (← ‘hand’); in
-                    complex words %im%i falls out in both dialects, compare <ref type="xr"
-                        target="#entry_ærxūd"/>.</etym>
+                    complex words %im%i falls out in both dialects, compare <ref type="xr" target="#entry_ærxūd"/>.</etym>
             </entry>
         </body>
     </text>

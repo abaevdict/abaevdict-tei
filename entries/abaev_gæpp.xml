@@ -1,55 +1,60 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">gæpp</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_gæpp" xml:lang="os">
                 <form type="lemma"><orth>gæpp</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d760e69"><abv:tr xml:lang="ru">
                         <q>прыжок</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>jump</q>
                     </abv:tr></sense>
-                <re>
+                <re xml:id="re_d760e79">
                     <form type="lemma"><orth>gæpp kænyn</orth><form type="variant"><orth>gæppytæ
                                 kænyn</orth></form></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d760e86"><abv:tr xml:lang="ru">
                             <q>прыгать</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>jump</q>
                         </abv:tr></sense>
                 </re>
-                <re>
+                <re xml:id="re_d760e97">
                     <form xml:lang="os-x-iron" type="lemma"><orth>gæppævvong</orth></form>
                     <form xml:lang="os-x-digor" type="dialectal"><orth>gæppærvong</orth></form>
-                    <sense><sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d760e105"><sense xml:id="sense_d760e106"><abv:tr xml:lang="ru">
                                 <q>наготове</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>(at the) ready</q>
-                            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                            </abv:tr></sense><sense xml:id="sense_d760e115"><abv:tr xml:lang="ru">
                                 <q>готовый к прыжку</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>ready to jump</q>
                             </abv:tr></sense></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d760e128">
                         <quote>agæpp æm kænon</quote>
                         <abv:tr xml:lang="ru">
                             <q>прыгну-ка я туда</q>
@@ -59,7 +64,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>79</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d760e147">
                         <quote>dæ bæx ma hæwylty agæpp kænyn kæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>заставь-ка свою лошадь прыгнуть через это</q>
@@ -69,7 +74,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Munk."/><biblScope>26</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d760e166">
                         <quote>īwmæ bagæpp kænūt nymæty astæwmæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>прыгайте вместе на середину войлока</q>
@@ -79,7 +84,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Munk."/><biblScope>72</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d760e185">
                         <quote>Sozyryqo fægæpp lasta jæ bynatæj</quote>
                         <abv:tr xml:lang="ru">
                             <q>Созрыко вскочил с места</q>
@@ -88,7 +93,7 @@
                             <q>Sozryko jumped up</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d760e200" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>æ bæx mæsugi gorenmæ fezdaxta ma ibæl bagæpp kodta</quote>
                         <abv:tr xml:lang="ru">
@@ -97,10 +102,9 @@
                         <abv:tr xml:lang="en">
                             <q>he turned his horse to the wall of the tower and jumped over it</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>14%l4%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>14%l4%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d760e223" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>mistæ ba fændurbæl ragæpp-bagæpp kodta</quote>
                         <abv:tr xml:lang="ru">
@@ -109,12 +113,11 @@
                         <abv:tr xml:lang="en">
                             <q>the mouse jumped back and forth on the fandour</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>17%l9–10%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>17%l9–10%l</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
                 <abv:exampleGrp>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d760e249" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>beræǧaw næmæ gæppærvongæj læwwuncæ</quote>
                         <abv:tr xml:lang="ru">
@@ -126,9 +129,9 @@
                         <bibl><ref type="bibl" target="#src_FS"/><biblScope>V 5</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Мимео-изобразительное слово, как <mentioned xml:lang="ru"><lang/>
+                <etym xml:lang="ru">Мимео-изобразительное слово, как <mentioned xml:id="mentioned_d760e274" xml:lang="ru"><lang/>
                         <w>гоп</w></mentioned> и т. п.</etym>
-                <etym xml:lang="en">Mimetic onomatopoeic word, like <mentioned xml:lang="ru"><lang/>
+                <etym xml:lang="en">Mimetic onomatopoeic word, like <mentioned xml:id="mentioned_d760e282" xml:lang="ru"><lang/>
                         <w>gop</w></mentioned> etc.</etym>
             </entry>
         </body>

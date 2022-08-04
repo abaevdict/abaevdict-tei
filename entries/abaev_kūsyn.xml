@@ -1,58 +1,61 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">kūsyn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_kūsyn" xml:lang="os">
-                <form xml:lang="os-x-iron" type="lemma"><orth>kūsyn</orth><form type="participle"
-                            ><orth>k˳yst</orth></form></form>
-                <form xml:lang="os-x-digor" type="dialectal"><orth>kosun</orth><form
-                        type="participle"><orth>kust</orth></form></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <form xml:lang="os-x-iron" type="lemma"><orth>kūsyn</orth><form type="participle"><orth>k˳yst</orth></form></form>
+                <form xml:lang="os-x-digor" type="dialectal"><orth>kosun</orth><form type="participle"><orth>kust</orth></form></form>
+                <sense xml:id="sense_d615e76"><sense xml:id="sense_d615e77"><abv:tr xml:lang="ru">
                             <q>работать</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>work</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d615e86"><abv:tr xml:lang="ru">
                             <q>трудиться</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>labour</q>
                         </abv:tr></sense></sense>
-                <re>
-                    <re>
+                <re xml:id="re_d615e96">
+                    <re xml:id="re_d615e98">
                         <form type="lemma"><orth>kūsæg</orth></form>
-                        <sense><abv:tr xml:lang="ru">
+                        <sense xml:id="sense_d615e103"><abv:tr xml:lang="ru">
                                 <q>рабочий</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>worker</q>
                             </abv:tr></sense>
                     </re>
-                    <re>
+                    <re xml:id="re_d615e114">
                         <form type="lemma"><orth>k˳yst</orth></form>
-                        <sense><abv:tr xml:lang="ru">
+                        <sense xml:id="sense_d615e119"><abv:tr xml:lang="ru">
                                 <q>работа</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>work (n.)</q>
                             </abv:tr></sense>
                     </re>
-                    <re>
+                    <re xml:id="re_d615e130">
                         <form type="lemma"><orth>magūsa</orth></form>
-                        <sense><abv:tr xml:lang="ru">
+                        <sense xml:id="sense_d615e135"><abv:tr xml:lang="ru">
                                 <q>бездельник</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>idler</q>
@@ -60,7 +63,7 @@
                     </re>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d615e149">
                         <quote>kūsy ta</quote>
                         <abv:tr xml:lang="ru">
                             <q>снова работает</q>
@@ -68,10 +71,9 @@
                         <abv:tr xml:lang="en">
                             <q>he is working again</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"
-                            /><biblScope>103</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>103</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d615e168">
                         <quote>k˳yst — cardæn færæz</quote>
                         <abv:tr xml:lang="ru">
                             <q>работа — опора жизни</q>
@@ -82,30 +84,24 @@
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>55</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Сближается с <mentioned xml:lang="fa"><lang/>
+                <etym xml:lang="ru">Сближается с <mentioned xml:id="mentioned_d615e191" xml:lang="fa"><lang/>
                         <w>kūsīdan</w>
-                        <gloss><q>стараться</q></gloss></mentioned>, <mentioned xml:lang="fa"><w/>
-                        <gloss><q>напрягать силы</q></gloss></mentioned>, <mentioned xml:lang="kho"><lang/>
+                        <gloss><q>стараться</q></gloss></mentioned>, <mentioned xml:id="mentioned_d615e199" xml:lang="fa"><w/>
+                        <gloss><q>напрягать силы</q></gloss></mentioned>, <mentioned xml:id="mentioned_d615e205" xml:lang="kho"><lang/>
                         <w>kūš-</w>
-                        <gloss><q>to search for</q></gloss></mentioned> (? <bibl><ref type="bibl"
-                            target="#ref_Konow._SSt."/><biblScope>153</biblScope></bibl>). Надежных
-                    древнеиранских соответствий не видно.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>III 145</biblScope></bibl>;
+                        <gloss><q>to search for</q></gloss></mentioned> (? <bibl><ref type="bibl" target="#ref_Konow._SSt."/><biblScope>153</biblScope></bibl>). Надежных
+                    древнеиранских соответствий не видно.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>III 145</biblScope></bibl>;
                             <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>20, 27,
-                            61</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_Hübschmann._Oss."/><biblScope>45</biblScope></bibl>.</etym>
-                <etym xml:lang="en">It is closely related to <mentioned xml:lang="fa"><lang/>
+                            61</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>45</biblScope></bibl>.</etym>
+                <etym xml:lang="en">It is closely related to <mentioned xml:id="mentioned_d615e233" xml:lang="fa"><lang/>
                         <w>kūsīdan</w>
-                        <gloss><q>endeavour</q></gloss></mentioned>, <mentioned xml:lang="fa"><w/>
-                        <gloss><q>exert</q></gloss></mentioned>, <mentioned xml:lang="kho"><lang/>
+                        <gloss><q>endeavour</q></gloss></mentioned>, <mentioned xml:id="mentioned_d615e241" xml:lang="fa"><w/>
+                        <gloss><q>exert</q></gloss></mentioned>, <mentioned xml:id="mentioned_d615e247" xml:lang="kho"><lang/>
                         <w>kūš-</w>
-                        <gloss><q>to search for</q></gloss></mentioned> (? <bibl><ref type="bibl"
-                            target="#ref_Konow._SSt."/><biblScope>153</biblScope></bibl>). There are
-                    no reliable Old Iranian correspondent words. %n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>III 145</biblScope></bibl>;
+                        <gloss><q>to search for</q></gloss></mentioned> (? <bibl><ref type="bibl" target="#ref_Konow._SSt."/><biblScope>153</biblScope></bibl>). There are
+                    no reliable Old Iranian correspondent words. %n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>III 145</biblScope></bibl>;
                             <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>20, 27,
-                            61</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_Hübschmann._Oss."/><biblScope>45</biblScope></bibl>.</etym>
+                            61</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>45</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

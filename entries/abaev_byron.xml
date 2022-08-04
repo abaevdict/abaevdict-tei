@@ -1,38 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">byron</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_byron" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>byron</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>burojnæ</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d17e72"><sense xml:id="sense_d17e73"><abv:tr xml:lang="ru">
                             <q>мусор</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>trash</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d17e82"><abv:tr xml:lang="ru">
                             <q>помет</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>excrement</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d17e94">
                         <quote>byrættæ ramærzūt</quote>
                         <abv:tr xml:lang="ru">
                             <q>подметите мусор</q>
@@ -41,7 +46,7 @@
                             <q>[you] sweep trash out</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d17e109">
                         <quote>wæjug æ bælasæ zænxæbæl niccavta ma bælasæ fæbburojnæ ʽj</quote>
                         <abv:tr xml:lang="ru">
                             <q>великан ударил дерево об землю, и дерево обратилось в труху</q>
@@ -52,17 +57,15 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Закономерно восстанавливается в *%iburan%i; эту форму мы находим
-                    действительно в сванском: <mentioned xml:lang="sva"><lang/>
+                    действительно в сванском: <mentioned xml:id="mentioned_d17e127" xml:lang="sva"><lang/>
                         <w>buran</w>
                         <gloss><q>помет</q></gloss></mentioned>. Дальнейших связей не
-                            видно.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                            /><biblScope>300</biblScope></bibl>.</etym>
+                            видно.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>300</biblScope></bibl>.</etym>
                 <etym xml:lang="en">It is regularly reconstructed as *%iburan%i; this form is
-                    apparently found in Svan: <mentioned xml:lang="sva"><lang/>
+                    apparently found in Svan: <mentioned xml:id="mentioned_d17e143" xml:lang="sva"><lang/>
                         <w>buran</w>
                         <gloss><q>excrement</q></gloss></mentioned>. Further connections are not
-                            noticed.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                            /><biblScope>300</biblScope></bibl>.</etym>
+                            noticed.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>300</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

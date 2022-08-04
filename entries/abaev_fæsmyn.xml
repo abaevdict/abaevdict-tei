@@ -1,58 +1,63 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">fæsmyn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_fæsmyn" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>fæsmyn</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>fæsbun</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d4225e72"><sense xml:id="sense_d4225e73"><abv:tr xml:lang="ru">
                             <q>шерстяной</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>woollen</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d4225e82"><abv:tr xml:lang="ru">
                             <q>шерстяная ткань</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>woollen cloth</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d4225e91"><abv:tr xml:lang="ru">
                             <q>сукно (домотканное)</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>smooth woollen cloth (homespun)</q>
                         </abv:tr></sense></sense>
-                <re>
+                <re xml:id="re_d4225e101">
                     <form type="lemma"><orth>fæsmyn cuqqa</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d4225e106"><abv:tr xml:lang="ru">
                             <q>черкеска из %sfæsm%s</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>Circassian coat made of %sfæsm%s</q>
                         </abv:tr></sense>
                 </re>
-                <re>
+                <re xml:id="re_d4225e117">
                     <form type="lemma"><orth>fæsmyn zængæjttæ</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d4225e122"><abv:tr xml:lang="ru">
                             <q>ноговицы из %sfæsm%s</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>gaiters made of %sfæsm%s</q>
                         </abv:tr></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4225e136">
                         <quote>moræ fæsbynæj dæ būc qæbūly zærdæ nal ysrʒūxs kodtaj, mæ mad</quote>
                         <abv:tr xml:lang="ru">
                             <q>ты, моя мать, уже не порадовала сердце любимого сына (черкеской) из
@@ -64,7 +69,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>37</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4225e155" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>Duge æ fæsmun salbarbæl fæsbun zængætti ǧostæ xærdmæ isxadta</quote>
                         <abv:tr xml:lang="ru">
@@ -75,10 +80,9 @@
                             <q>Douge pulled his gaiters made of smooth woollen cloth up the sides
                                 over his sirwal made of smooth woollen cloth</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Bes._Ka_ke"
-                            /><biblScope>36</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Bes._Ka_ke"/><biblScope>36</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4225e177" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>fæsbun ʒabur, wæǧdvadug</quote>
                         <abv:tr xml:lang="ru">
@@ -91,33 +95,26 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Образовано от <ref type="xr" target="#entry_fæsm"/> ‘шерсть’ с
-                    помощью суффикса %i-yn%i (← <mentioned xml:lang="x-oldirn"><lang/>
-                        <w>-aina</w></mentioned>). Ср. <mentioned xml:lang="fa"><lang/>
+                    помощью суффикса %i-yn%i (← <mentioned xml:id="mentioned_d4225e204" xml:lang="x-oldirn"><lang/>
+                        <w>-aina</w></mentioned>). Ср. <mentioned xml:id="mentioned_d4225e209" xml:lang="fa"><lang/>
                         <w>pašmīn</w>
-                        <gloss><q>шерстяной</q></gloss></mentioned>, <mentioned xml:lang="fa"
-                            ><w>pašmīna</w>
-                        <gloss><q>шерстяной</q></gloss></mentioned>, <mentioned xml:lang="fa"><w/>
-                        <gloss><q>шерстяная ткань или одежда</q></gloss></mentioned>, <mentioned
-                        xml:lang="kho"><lang/>
+                        <gloss><q>шерстяной</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4225e217" xml:lang="fa"><w>pašmīna</w>
+                        <gloss><q>шерстяной</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4225e223" xml:lang="fa"><w/>
+                        <gloss><q>шерстяная ткань или одежда</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4225e230" xml:lang="kho"><lang/>
                         <w>pemminaa</w><note type="comment" xml:lang="ru"> (из
                             %i*pašmīna%i)</note>
-                        <gloss><q>шерстяной</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Konow._SSt."/><biblScope>169</biblScope></bibl>). Дигорская
-                    форма %ifæsbun%i, по-видимому, вторичная, возникшая под влиянием <ref type="xr"
-                        target="#entry_tæbyn"/> | %i*tæbun%i ‘шерстяной’?</etym>
+                        <gloss><q>шерстяной</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Konow._SSt."/><biblScope>169</biblScope></bibl>). Дигорская
+                    форма %ifæsbun%i, по-видимому, вторичная, возникшая под влиянием <ref type="xr" target="#entry_tæbyn"/> | %i*tæbun%i ‘шерстяной’?</etym>
                 <etym xml:lang="en">Derived from <ref type="xr" target="#entry_fæsm"/> ‘wool’ with
-                    the suffix %i-yn%i (← <mentioned xml:lang="x-oldirn"><lang/>
-                        <w>-aina</w></mentioned>). Cf. <mentioned xml:lang="fa"><lang/>
+                    the suffix %i-yn%i (← <mentioned xml:id="mentioned_d4225e251" xml:lang="x-oldirn"><lang/>
+                        <w>-aina</w></mentioned>). Cf. <mentioned xml:id="mentioned_d4225e256" xml:lang="fa"><lang/>
                         <w>pašmīn</w>
-                        <gloss><q>woollen</q></gloss></mentioned>, <mentioned xml:lang="fa"
-                            ><w>pašmīna</w>
-                        <gloss><q>woollen</q></gloss></mentioned>, <mentioned xml:lang="fa"><w/>
-                        <gloss><q>woollen cloth or clothes</q></gloss></mentioned>, <mentioned
-                        xml:lang="kho"><lang/>
+                        <gloss><q>woollen</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4225e264" xml:lang="fa"><w>pašmīna</w>
+                        <gloss><q>woollen</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4225e270" xml:lang="fa"><w/>
+                        <gloss><q>woollen cloth or clothes</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4225e277" xml:lang="kho"><lang/>
                         <w>pemminaa</w><note type="comment" xml:lang="en"> (from
                             %i*pašmīna%i)</note>
-                        <gloss><q>woollen</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Konow._SSt."/><biblScope>169</biblScope></bibl>).
+                        <gloss><q>woollen</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Konow._SSt."/><biblScope>169</biblScope></bibl>).
                     Apparently the Digor form %ifæsbun%i is secondary, which appered under the
                     influence of <ref type="xr" target="#entry_tæbyn"/> | %i*tæbun%i
                     ‘woollen’?</etym>

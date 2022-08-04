@@ -1,50 +1,54 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">aqazzag</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_aqazzag" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>aqazzag</orth></form>
-                <form xml:lang="os-x-digor" type="dialectal"><orth>aǧazzag</orth><form
-                        type="variant"><orth>aǧajzag</orth></form></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <form xml:lang="os-x-digor" type="dialectal"><orth>aǧazzag</orth><form type="variant"><orth>aǧajzag</orth></form></form>
+                <sense xml:id="sense_d5975e74"><sense xml:id="sense_d5975e75"><abv:tr xml:lang="ru">
                             <q>отменный</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>excellent</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d5975e84"><abv:tr xml:lang="ru">
                             <q>хороший</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>good</q>
                         </abv:tr></sense></sense>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d5975e94"><sense xml:id="sense_d5975e95"><abv:tr xml:lang="ru">
                             <q>как следует</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>as it should be</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d5975e104"><abv:tr xml:lang="ru">
                             <q>основательно</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>thoroughly</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d5975e113"><abv:tr xml:lang="ru">
                             <q>хорошенько</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d5975e121">
                         <quote>X˳ycaw taǧd næ kæny, fælæ k˳y cævy, wæd aqazzag</quote>
                         <abv:tr xml:lang="ru">
                             <q>Бог не спешит, но уж если ударит, то основательно</q>
@@ -52,10 +56,9 @@
                         <abv:tr xml:lang="en">
                             <q>God is in no hurry, but if he hits, he does it thoroughly</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Čerm."
-                            /><biblScope>175</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Čerm."/><biblScope>175</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5975e140">
                         <quote>walynmæ kʼævda aqazzag nyzǧælsta</quote>
                         <abv:tr xml:lang="ru">
                             <q>тем временем дождь полил вовсю</q>
@@ -66,7 +69,7 @@
                         <bibl><ref type="bibl" target="#src_FS"/><biblScope>1957 VI
                             36</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5975e159">
                         <quote>axæstony, dam, Dawita aqazzag nal ū, mæly, dam</quote>
                         <abv:tr xml:lang="ru">
                             <q>в тюрьме, говорят, Дауита в неважном состоянии, умирает, говорят</q>
@@ -77,7 +80,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Сека"/><biblScope>61</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5975e178" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>aǧazzag lodærtæ</quote>
                         <abv:tr xml:lang="ru">
@@ -86,10 +89,9 @@
                         <abv:tr xml:lang="en">
                             <q>excellent idlers</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_SD"
-                            /><biblScope>295%l3%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_SD"/><biblScope>295%l3%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5975e200" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>tillægbæl toxi aǧazzagi bænttæ</quote>
                         <abv:tr xml:lang="ru">
@@ -98,10 +100,9 @@
                         <abv:tr xml:lang="en">
                             <q>decisive days of the struggle for the harvest</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_SD"
-                            /><biblScope>176%l1%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_SD"/><biblScope>176%l1%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5975e223" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>bæxti ænaǧazzag kænuncæ</quote>
                         <abv:tr xml:lang="ru">
@@ -110,10 +111,9 @@
                         <abv:tr xml:lang="en">
                             <q>horses are worn out</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_SD"
-                            /><biblScope>161%l4%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_SD"/><biblScope>161%l4%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5975e245" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>Ʒaxxobæl aǧaziaw %i(sic!)%i wæzzaw bonttæ iskodta</quote>
                         <abv:tr xml:lang="ru">
@@ -122,10 +122,9 @@
                         <abv:tr xml:lang="en">
                             <q>extremely difficult days have come for Dzahho</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Bes._Ka_ke"
-                            /><biblScope>38</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Bes._Ka_ke"/><biblScope>38</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5975e267">
                         <quote>sīftyǧta jæ aǧajzag, fexsta fīdaryl</quote>
                         <abv:tr xml:lang="ru">
                             <q>зарядил ее (пушку) хорошенько, выстрелил в крепость</q>
@@ -139,23 +138,20 @@
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Из <ref type="xr" target="#entry_aqaz"/> | %iaǧaz%i ‘помощь’,
                     ‘польза’ и адъективного суффикса %i-ag%i, с появлением %ij%i перед %iz%i в
-                    дигорском и закономерным удвоением %iz%i в иронском (ср. и. <ref type="xr"
-                        target="#entry_bazzajyn"/> — д. %ibajzajun%i ‘остаться’). На движение
+                    дигорском и закономерным удвоением %iz%i в иронском (ср. и. <ref type="xr" target="#entry_bazzajyn"/> — д. %ibajzajun%i ‘остаться’). На движение
                     значения ‘помощь’ → ‘отменный’ повлияла, возможно, контаминация с другим
-                    %bарабским%b словом <mentioned xml:lang="ar"><lang/>
+                    %bарабским%b словом <mentioned xml:id="mentioned_d5975e294" xml:lang="ar"><lang/>
                         <w>aḫaṣṣ</w><note type="comment" xml:lang="ru"> (ﺍﺨﺺ)</note>
-                        <gloss><q>специальный</q></gloss></mentioned>, <mentioned xml:lang="ar"><w/>
-                        <gloss><q>отменный</q></gloss></mentioned>, <mentioned xml:lang="ar"><w/>
+                        <gloss><q>специальный</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5975e304" xml:lang="ar"><w/>
+                        <gloss><q>отменный</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5975e310" xml:lang="ar"><w/>
                         <gloss><q>исключительный</q></gloss></mentioned>.</etym>
                 <etym xml:lang="en">From <ref type="xr" target="#entry_aqaz"/> | %iaǧaz%i ‘help’,
                     ‘benefit’ and the adjectivizer %i-ag%i, with the appearance of %ij%i before
-                    %iz%i in Digor and the regular doubling of %iz%i in Iron (cf. Iron <ref
-                        type="xr" target="#entry_bazzajyn"/> — Digor %ibajzajun%i ‘stay’). Perhaps
-                    contamination with the %bArabic%b word <mentioned xml:lang="ar"><lang/>
-                        <w>aḫaṣṣ</w><note
-                            type="comment" xml:lang="en"> (ﺍﺨﺺ)</note>
-                        <gloss><q>special</q></gloss></mentioned>, <mentioned xml:lang="ar"><w/>
-                        <gloss><q>excellent</q></gloss></mentioned>, <mentioned xml:lang="ar"><w/>
+                    %iz%i in Digor and the regular doubling of %iz%i in Iron (cf. Iron <ref type="xr" target="#entry_bazzajyn"/> — Digor %ibajzajun%i ‘stay’). Perhaps
+                    contamination with the %bArabic%b word <mentioned xml:id="mentioned_d5975e323" xml:lang="ar"><lang/>
+                        <w>aḫaṣṣ</w><note type="comment" xml:lang="en"> (ﺍﺨﺺ)</note>
+                        <gloss><q>special</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5975e333" xml:lang="ar"><w/>
+                        <gloss><q>excellent</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5975e339" xml:lang="ar"><w/>
                         <gloss><q>exclusive</q></gloss></mentioned> influenced the shift of the
                     meaning ‘help’ → ‘excellent’.</etym>
             </entry>

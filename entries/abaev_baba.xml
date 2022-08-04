@@ -1,37 +1,41 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">baba</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_baba" xml:lang="os">
                 <form type="lemma"><orth>baba</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d5059e69"><sense xml:id="sense_d5059e70"><abv:tr xml:lang="ru">
                             <q>дедушка</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>grandfather</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d5059e79"><abv:tr xml:lang="ru">
                             <q>тятя</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
-                        <quote>rawaj, babajy xūr!<note type="comment" xml:lang="ru"/><note
-                                type="comment" xml:lang="en"/></quote>
+                    <abv:example xml:id="example_d5059e87">
+                        <quote>rawaj, babajy xūr!<note type="comment" xml:lang="ru"/><note type="comment" xml:lang="en"/></quote>
                         <abv:tr xml:lang="ru">
                             <q>подойди, дедушкино солнышко!</q>
                         </abv:tr>
@@ -39,7 +43,7 @@
                             <q>come here, grandfather's son!</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5059e105" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>babaj cirt min ka baxwaja?</quote>
                         <abv:tr xml:lang="ru">
@@ -52,43 +56,38 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">„Детское“ слово. Встречается в самых различных по происхождению
-                    языках. Ср. на кавказской почве: <mentioned xml:lang="lez"><lang/>
-                        <w>baba</w></mentioned>, <mentioned xml:lang="udi"><lang/>
-                        <w>baba</w></mentioned>, <mentioned xml:lang="xmf"><lang/>
-                        <w>baba</w></mentioned>, <mentioned xml:lang="ka"><lang/>
-                        <w>pʼapʼa</w></mentioned>, на иранской почве: <mentioned xml:lang="kho"><lang/>
-                        <w>pāba</w></mentioned>, <mentioned xml:lang="sgh"><lang/>
-                        <w>bōb</w></mentioned>, <mentioned xml:lang="yah"><lang/>
-                        <w>bōb</w></mentioned>, <mentioned xml:lang="wbl"><lang/>
-                        <w>pūp</w></mentioned>, <mentioned xml:lang="mnj"><lang/>
-                        <w>pōp</w></mentioned>; ср. также имя верховного бога скифов <mentioned
-                        xml:lang="xsc"><lang/>
-                        <w>Παπαίος</w></mentioned> (<bibl><author>Zgusta</author><ref type="bibl"
-                            target="#ref_Arch._Or."/><biblScope>1953 II—III 270
-                        сл.</biblScope></bibl>); на европейской почве: <mentioned xml:lang="grc"><lang/>
-                        <w>πάππας</w></mentioned>, <mentioned xml:lang="fr"><lang/>
-                        <w>papa</w></mentioned>; в тюркских: <mentioned xml:lang="trk"><lang/>
-                        <w>baba</w></mentioned> и пр. Ср. <ref type="xr" target="#entry_æda"
-                    />.</etym>
+                    языках. Ср. на кавказской почве: <mentioned xml:id="mentioned_d5059e130" xml:lang="lez"><lang/>
+                        <w>baba</w></mentioned>, <mentioned xml:id="mentioned_d5059e135" xml:lang="udi"><lang/>
+                        <w>baba</w></mentioned>, <mentioned xml:id="mentioned_d5059e140" xml:lang="xmf"><lang/>
+                        <w>baba</w></mentioned>, <mentioned xml:id="mentioned_d5059e145" xml:lang="ka"><lang/>
+                        <w>pʼapʼa</w></mentioned>, на иранской почве: <mentioned xml:id="mentioned_d5059e150" xml:lang="kho"><lang/>
+                        <w>pāba</w></mentioned>, <mentioned xml:id="mentioned_d5059e156" xml:lang="sgh"><lang/>
+                        <w>bōb</w></mentioned>, <mentioned xml:id="mentioned_d5059e161" xml:lang="yah"><lang/>
+                        <w>bōb</w></mentioned>, <mentioned xml:id="mentioned_d5059e166" xml:lang="wbl"><lang/>
+                        <w>pūp</w></mentioned>, <mentioned xml:id="mentioned_d5059e171" xml:lang="mnj"><lang/>
+                        <w>pōp</w></mentioned>; ср. также имя верховного бога скифов <mentioned xml:id="mentioned_d5059e176" xml:lang="xsc"><lang/>
+                        <w>Παπαίος</w></mentioned> (<bibl><author>Zgusta</author><ref type="bibl" target="#ref_Arch._Or."/><biblScope>1953 II—III 270
+                        сл.</biblScope></bibl>); на европейской почве: <mentioned xml:id="mentioned_d5059e187" xml:lang="grc"><lang/>
+                        <w>πάππας</w></mentioned>, <mentioned xml:id="mentioned_d5059e192" xml:lang="fr"><lang/>
+                        <w>papa</w></mentioned>; в тюркских: <mentioned xml:id="mentioned_d5059e197" xml:lang="trk"><lang/>
+                        <w>baba</w></mentioned> и пр. Ср. <ref type="xr" target="#entry_æda"/>.</etym>
                 <etym xml:lang="en">A “child” word. It is found in languages of different origin.
-                    Cf. Caucasian languages: <mentioned xml:lang="lez"><lang/>
-                        <w>baba</w></mentioned>, <mentioned xml:lang="udi"><lang/>
-                        <w>baba</w></mentioned>, <mentioned xml:lang="xmf"><lang/>
-                        <w>baba</w></mentioned>, <mentioned xml:lang="ka"><lang/>
-                        <w>pʼapʼa</w></mentioned>, Iranian languages: <mentioned xml:lang="kho"><lang/>
-                        <w>pāba</w></mentioned>, <mentioned xml:lang="sgh"><lang/>
-                        <w>bōb</w></mentioned>, <mentioned xml:lang="yah"><lang/>
-                        <w>bōb</w></mentioned>, <mentioned xml:lang="wbl"><lang/>
-                        <w>pūp</w></mentioned>, <mentioned xml:lang="mnj"><lang/>
+                    Cf. Caucasian languages: <mentioned xml:id="mentioned_d5059e207" xml:lang="lez"><lang/>
+                        <w>baba</w></mentioned>, <mentioned xml:id="mentioned_d5059e212" xml:lang="udi"><lang/>
+                        <w>baba</w></mentioned>, <mentioned xml:id="mentioned_d5059e217" xml:lang="xmf"><lang/>
+                        <w>baba</w></mentioned>, <mentioned xml:id="mentioned_d5059e222" xml:lang="ka"><lang/>
+                        <w>pʼapʼa</w></mentioned>, Iranian languages: <mentioned xml:id="mentioned_d5059e227" xml:lang="kho"><lang/>
+                        <w>pāba</w></mentioned>, <mentioned xml:id="mentioned_d5059e233" xml:lang="sgh"><lang/>
+                        <w>bōb</w></mentioned>, <mentioned xml:id="mentioned_d5059e238" xml:lang="yah"><lang/>
+                        <w>bōb</w></mentioned>, <mentioned xml:id="mentioned_d5059e243" xml:lang="wbl"><lang/>
+                        <w>pūp</w></mentioned>, <mentioned xml:id="mentioned_d5059e248" xml:lang="mnj"><lang/>
                         <w>pōp</w></mentioned>; cf. also the name of the supreme Scythian god
-                        <mentioned xml:lang="xsc"><lang/>
-                        <w>Παπαίος</w></mentioned> (<bibl><author>Zgusta</author><ref type="bibl"
-                            target="#ref_Arch._Or."/><biblScope>1953 II—III
-                    270f.</biblScope></bibl>); in European languages: <mentioned xml:lang="grc"><lang/>
-                        <w>πάππας</w></mentioned>, <mentioned xml:lang="fr"><lang/>
-                        <w>papa</w></mentioned>; in Turkic languages: <mentioned xml:lang="trk"><lang/>
-                        <w>baba</w></mentioned> etc. Cf. <ref type="xr" target="#entry_æda"
-                    />.</etym>
+                        <mentioned xml:id="mentioned_d5059e253" xml:lang="xsc"><lang/>
+                        <w>Παπαίος</w></mentioned> (<bibl><author>Zgusta</author><ref type="bibl" target="#ref_Arch._Or."/><biblScope>1953 II—III
+                    270f.</biblScope></bibl>); in European languages: <mentioned xml:id="mentioned_d5059e264" xml:lang="grc"><lang/>
+                        <w>πάππας</w></mentioned>, <mentioned xml:id="mentioned_d5059e269" xml:lang="fr"><lang/>
+                        <w>papa</w></mentioned>; in Turkic languages: <mentioned xml:id="mentioned_d5059e274" xml:lang="trk"><lang/>
+                        <w>baba</w></mentioned> etc. Cf. <ref type="xr" target="#entry_æda"/>.</etym>
             </entry>
         </body>
     </text>

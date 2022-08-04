@@ -1,33 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">bajrag</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_bajrag" xml:lang="os">
                 <form type="lemma"><orth>bajrag</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d4358e69"><abv:tr xml:lang="ru">
                         <q>жеребенок</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>foal</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4358e81">
                         <quote>(zæppazæj) cydis bajraǵy wasyn</quote>
                         <abv:tr xml:lang="ru">
                             <q>(из склепа) раздавалось ржанье жеребенка</q>
@@ -37,7 +42,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_ОЭп."/><biblScope>21</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4358e100">
                         <quote>nog zad bajrag razyndi æfsūrǧ</quote>
                         <abv:tr xml:lang="ru">
                             <q>новорожденный жеребенок оказался из породы %sæfsūrǧ%s</q>
@@ -48,7 +53,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>III
                             77</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4358e119" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>bæxæn æ zajun ku ʽrqærttæj, wæd ærtæ zelæni nikkodta æma bajrag
                             razadæj</quote>
@@ -60,10 +65,9 @@
                             <q>when it was time for the horse to give birth, it made three circles
                                 and gave birth to a foal</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Диг._сказ."
-                            /><biblScope>14</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Диг._сказ."/><biblScope>14</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4358e141" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>bajragæj ʒorǵa xwarz bæx næ kænuj</quote>
                         <abv:tr xml:lang="ru">
@@ -76,44 +80,38 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">В иранских языках с древнейших времен свидетельствуется основа
-                    %ibar%i- ‘ездить верхом’ (<mentioned xml:lang="ae"><lang/>
-                        <w>bar-</w></mentioned>, <mentioned xml:lang="peo"><lang/>
-                        <w>bār-</w></mentioned> в <mentioned xml:lang="peo"><lang/>
+                    %ibar%i- ‘ездить верхом’ (<mentioned xml:id="mentioned_d4358e165" xml:lang="ae"><lang/>
+                        <w>bar-</w></mentioned>, <mentioned xml:id="mentioned_d4358e170" xml:lang="peo"><lang/>
+                        <w>bār-</w></mentioned> в <mentioned xml:id="mentioned_d4358e175" xml:lang="peo"><lang/>
                         <w>asa-bāra-</w>
                         <gloss><q>всадник</q></gloss></mentioned>). Осетинский не сохранил
                     глагольных (спрягаемых) форм этой основы, но в нем удержались две причастные
                     формы, на -%iag%i и на %iæg%i: %ibajrag%i (с закономерным появлением j перед r)
                     ‘жеребенок’, буквально „предназначенный для верховой езды“ (-%iag%i — суффикс,
                     выражающий предназначение) и <ref type="xr" target="#entry_baræg"/> ‘всадник’.
-                    Ср. <mentioned xml:lang="pal"><lang/>
+                    Ср. <mentioned xml:id="mentioned_d4358e185" xml:lang="pal"><lang/>
                         <w>bārak</w>
-                        <gloss><q>верховое животное</q></gloss></mentioned>, <mentioned
-                        xml:lang="fa"><lang/>
-                        <w>bāragī</w></mentioned>, <mentioned xml:lang="srh"><lang/>
-                        <w>wərōk</w></mentioned>, <mentioned xml:lang="srh"
-                    ><w>wərak</w></mentioned>, <mentioned xml:lang="sgh"><lang/>
+                        <gloss><q>верховое животное</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4358e194" xml:lang="fa"><lang/>
+                        <w>bāragī</w></mentioned>, <mentioned xml:id="mentioned_d4358e199" xml:lang="srh"><lang/>
+                        <w>wərōk</w></mentioned>, <mentioned xml:id="mentioned_d4358e204" xml:lang="srh"><w>wərak</w></mentioned>, <mentioned xml:id="mentioned_d4358e207" xml:lang="sgh"><lang/>
                         <w>worj</w>
-                        <gloss><q>лошадь</q></gloss></mentioned>. Под словом <ref type="xr"
-                        target="#entry_baræg"/> мы даем дальнейшие соответствия.</etym>
+                        <gloss><q>лошадь</q></gloss></mentioned>. Под словом <ref type="xr" target="#entry_baræg"/> мы даем дальнейшие соответствия.</etym>
                 <etym xml:lang="en">The stem %ibar%i- ‘ride’ has been long ago attested in Iranian
-                    languages (<mentioned xml:lang="ae"><lang/>
-                        <w>bar-</w></mentioned>, <mentioned xml:lang="peo"><lang/>
-                        <w>bār-</w></mentioned> in <mentioned xml:lang="peo"><lang/>
+                    languages (<mentioned xml:id="mentioned_d4358e220" xml:lang="ae"><lang/>
+                        <w>bar-</w></mentioned>, <mentioned xml:id="mentioned_d4358e225" xml:lang="peo"><lang/>
+                        <w>bār-</w></mentioned> in <mentioned xml:id="mentioned_d4358e230" xml:lang="peo"><lang/>
                         <w>asa-bāra-</w>
                         <gloss><q>horseman</q></gloss></mentioned>). The verb (inflective) forms of
                     this stem are not in usage in Ossetic but there are found two participle stems:
                     with the suffix -%iag%i and with the suffix %iæg%i: %ibajrag%i (with a regular
                     apperance of %ij%i in front of %ir%i) ‘foal’, literally "aimed for riding"
-                    (-%iag%i is a suffix expressing purpose) and <ref type="xr"
-                        target="#entry_baræg"/> ‘horseman’. Cf. <mentioned xml:lang="pal"><lang/>
+                    (-%iag%i is a suffix expressing purpose) and <ref type="xr" target="#entry_baræg"/> ‘horseman’. Cf. <mentioned xml:id="mentioned_d4358e240" xml:lang="pal"><lang/>
                         <w>bārak</w>
-                        <gloss><q>riding animal</q></gloss></mentioned>, <mentioned xml:lang="fa"><lang/>
-                        <w>bāragī</w></mentioned>, <mentioned xml:lang="srh"><lang/>
-                        <w>wərōk</w></mentioned>, <mentioned xml:lang="srh"
-                    ><w>wərak</w></mentioned>, <mentioned xml:lang="sgh"><lang/>
+                        <gloss><q>riding animal</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4358e249" xml:lang="fa"><lang/>
+                        <w>bāragī</w></mentioned>, <mentioned xml:id="mentioned_d4358e254" xml:lang="srh"><lang/>
+                        <w>wərōk</w></mentioned>, <mentioned xml:id="mentioned_d4358e259" xml:lang="srh"><w>wərak</w></mentioned>, <mentioned xml:id="mentioned_d4358e262" xml:lang="sgh"><lang/>
                         <w>worj</w>
-                        <gloss><q>horse</q></gloss></mentioned>. See the word <ref type="xr"
-                        target="#entry_baræg"/> for further explanations.</etym>
+                        <gloss><q>horse</q></gloss></mentioned>. See the word <ref type="xr" target="#entry_baræg"/> for further explanations.</etym>
             </entry>
         </body>
     </text>

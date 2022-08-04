@@ -1,34 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ḱyn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ḱyn" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>ḱyn</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>kin</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d3834e72"><abv:tr xml:lang="ru">
                         <q>волчок</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>spinning top</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d3834e84">
                         <quote>læppūtæ awwon ran ḱyntæj qazydysty</quote>
                         <abv:tr xml:lang="ru">
                             <q>ребята в тенистом месте играли в волчки</q>
@@ -38,7 +43,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Qazaq"/><biblScope>62</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d3834e103" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>adæm usturæj minkʼiæj kintaw zildæncæ</quote>
                         <abv:tr xml:lang="ru">
@@ -50,7 +55,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
                             91</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d3834e125" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>omi ba ew læqwæn Bestawi bærzondæj ǧazta, mænæ biccew kinæj kud ǧaza
                             otæ</quote>
@@ -61,10 +66,9 @@
                             <q>there was one young man who played with the Beshtau mountain, like a
                                 child who is spinning a top</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>8%l11%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>8%l11%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d3834e147" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>mænæn ba ærtæ kini</quote>
                         <abv:tr xml:lang="ru">
@@ -73,17 +77,15 @@
                         <abv:tr xml:lang="en">
                             <q>for me — three spinning tops</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Gurdž._Æduli"
-                            /><biblScope>87</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Gurdž._Æduli"/><biblScope>87</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Ср. <mentioned xml:lang="ady"><lang/>
-                        <w>ḱəm, ḱən</w></mentioned>, <mentioned xml:lang="abq"><lang/>
+                <etym xml:lang="ru">Ср. <mentioned xml:id="mentioned_d3834e172" xml:lang="ady"><lang/>
+                        <w>ḱəm, ḱən</w></mentioned>, <mentioned xml:id="mentioned_d3834e177" xml:lang="abq"><lang/>
                         <w>kjəm</w>
-                        <gloss><q>волчок</q></gloss></mentioned>. Сюда же, вероятно, <mentioned
-                        xml:lang="inh"><lang/>
+                        <gloss><q>волчок</q></gloss></mentioned>. Сюда же, вероятно, <mentioned xml:id="mentioned_d3834e185" xml:lang="inh"><lang/>
                         <w>gilæ</w>
-                        <gloss><q>кубарь</q></gloss></mentioned>, <mentioned xml:lang="inh"><w/>
+                        <gloss><q>кубарь</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3834e193" xml:lang="inh"><w/>
                         <gloss><q>волчок</q></gloss></mentioned>. Последняя форма могла бы навести
                     на сближение с др.инд. %ikīla-%i ‘заостренный кусок дерева’, ‘клин’, считая
                     %ikin%i перебоем из %i*kil%i, а адыгейские формы усвоенными из осетинского.
@@ -92,11 +94,11 @@
                         <ref type="xr" target="#entry_xīn"/> — инг. %ixilæ%i). Поэтому правильнее
                     считать осетинские формы заимствованными из адыгейского, а др.инд. %ikīla-%i
                     оставить в стороне.</etym>
-                <etym xml:lang="en">Cf. <mentioned xml:lang="ady"><lang/>
-                        <w>ḱəm, ḱən</w></mentioned>, <mentioned xml:lang="abq"><lang/>
+                <etym xml:lang="en">Cf. <mentioned xml:id="mentioned_d3834e205" xml:lang="ady"><lang/>
+                        <w>ḱəm, ḱən</w></mentioned>, <mentioned xml:id="mentioned_d3834e210" xml:lang="abq"><lang/>
                         <w>kjəm</w>
                         <gloss><q>spinning top</q></gloss></mentioned>. It is probably also related
-                    to <mentioned xml:lang="inh"><lang/>
+                    to <mentioned xml:id="mentioned_d3834e218" xml:lang="inh"><lang/>
                         <w>gilæ</w>
                         <gloss><q>spinning top</q></gloss></mentioned>. The latter form might
                     indicate the closeness to Old Indic %ikīla-%i ‘pointed piece of wood’, ‘wedge’,

@@ -1,44 +1,47 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">æxxælyn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_æxxælyn" xml:lang="os">
-                <form xml:lang="os-x-iron" type="lemma"><orth>æxxælyn</orth><form type="participle"
-                            ><orth>æxxæld</orth></form></form>
-                <form xml:lang="os-x-digor" type="dialectal"><orth>ætxælun</orth><form
-                        type="participle"><orth>ætxald</orth></form></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <form xml:lang="os-x-iron" type="lemma"><orth>æxxælyn</orth><form type="participle"><orth>æxxæld</orth></form></form>
+                <form xml:lang="os-x-digor" type="dialectal"><orth>ætxælun</orth><form type="participle"><orth>ætxald</orth></form></form>
+                <sense xml:id="sense_d2915e76"><sense xml:id="sense_d2915e77"><abv:tr xml:lang="ru">
                             <q>упрекать</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>reproach</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d2915e86"><abv:tr xml:lang="ru">
                             <q>мысленно или вслух отнестись с неодобрением</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>disapprove aloud or in one's mind</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d2915e95"><abv:tr xml:lang="ru">
                             <q>пожелать дурного</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>wish bad things</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d2915e107">
                         <quote>dæ wazæǵy cūr dæ č˳nʒmæ dær ma fexxæl, kænnod æj wazæg jæxīmæ
                             bambarʒæn</quote>
                         <abv:tr xml:lang="ru">
@@ -52,7 +55,7 @@
                         <bibl><ref type="bibl" target="#src_ЮОПам."/><biblScope>III
                             200</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d2915e126" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>wædæjti mæmæ jetxa'dtajtæ, æz saw adæmi særbæl ʒorun, zæggæ</quote>
                         <abv:tr xml:lang="ru">
@@ -63,7 +66,7 @@
                         </abv:tr>
                         <bibl><biblScope>из рукописи Г. %sКокиева%s</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d2915e147" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>Nartæ imæ batxaldtoncæ</quote>
                         <abv:tr xml:lang="ru">
@@ -75,7 +78,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
                             75</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d2915e169" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>kuduron ba imæ fetxaldta; ma mæ niccævæ</quote>
                         <abv:tr xml:lang="ru">
@@ -87,21 +90,18 @@
                         <bibl/>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Ср. <mentioned xml:lang="wbl"><lang/>
+                <etym xml:lang="ru">Ср. <mentioned xml:id="mentioned_d2915e192" xml:lang="wbl"><lang/>
                         <w>tẋeirị cerak</w>
-                        <gloss><q>быть недовольным</q></gloss></mentioned>, <mentioned
-                        xml:lang="wbl"><w/>
+                        <gloss><q>быть недовольным</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2915e200" xml:lang="wbl"><w/>
                         <gloss><q>испытывать недоброе чувство к кому-либо</q></gloss></mentioned>,
-                        <mentioned xml:lang="wbl"><w/>
-                        <gloss><q>to grudge</q></gloss></mentioned> ( <bibl><ref type="bibl"
-                            target="#ref_Shaw"/><biblScope>222</biblScope></bibl>)?</etym>
-                <etym xml:lang="en">Cf. <mentioned xml:lang="wbl"><lang/>
+                        <mentioned xml:id="mentioned_d2915e206" xml:lang="wbl"><w/>
+                        <gloss><q>to grudge</q></gloss></mentioned> ( <bibl><ref type="bibl" target="#ref_Shaw"/><biblScope>222</biblScope></bibl>)?</etym>
+                <etym xml:lang="en">Cf. <mentioned xml:id="mentioned_d2915e220" xml:lang="wbl"><lang/>
                         <w>tẋeirị cerak</w>
-                        <gloss><q>be displeased</q></gloss></mentioned>, <mentioned xml:lang="wbl"><w/>
+                        <gloss><q>be displeased</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2915e228" xml:lang="wbl"><w/>
                         <gloss><q>feel bad feelings regarding someine</q></gloss></mentioned>,
-                        <mentioned xml:lang="wbl"><w/>
-                        <gloss><q>to grudge</q></gloss></mentioned> ( <bibl><ref type="bibl"
-                            target="#ref_Shaw"/><biblScope>222</biblScope></bibl>)?</etym>
+                        <mentioned xml:id="mentioned_d2915e234" xml:lang="wbl"><w/>
+                        <gloss><q>to grudge</q></gloss></mentioned> ( <bibl><ref type="bibl" target="#ref_Shaw"/><biblScope>222</biblScope></bibl>)?</etym>
             </entry>
         </body>
     </text>

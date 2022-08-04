@@ -1,36 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">æng0yrstwan</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_æng0yrstwan" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>æng˳yrstwan</orth></form>
-                <form xml:lang="os-x-digor" type="dialectal"><orth>ængurstewan</orth><form
-                        type="variant"><orth>ængurstewnæ</orth></form><form type="variant"
-                            ><orth>ængurstawnæ</orth></form></form>
-                <sense><abv:tr xml:lang="ru">
+                <form xml:lang="os-x-digor" type="dialectal"><orth>ængurstewan</orth><form type="variant"><orth>ængurstewnæ</orth></form><form type="variant"><orth>ængurstawnæ</orth></form></form>
+                <sense xml:id="sense_d4230e76"><abv:tr xml:lang="ru">
                         <q>наперсток</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>thimble</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4230e88">
                         <quote>Sajnæg-ældary ḱyzg kærdǵæ-xujgæ kæny, jæ sūʒīn æmæ je ʽng˳yrstwan
                             tævd kænync, īxǵyn don jæ cūry dary, æmæ sæ ūcy ran tūly</quote>
                         <abv:tr xml:lang="ru">
@@ -45,7 +48,7 @@
                         <bibl><ref type="bibl" target="#src_ЮОПам."/><biblScope>II
                             98</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4230e107">
                         <quote>konǧædæ æ soʒīnæ, fæstæ je ʽngurstewæn</quote>
                         <abv:tr xml:lang="ru">
                             <q>бревно (служит) ей иглой, ступа — наперстком</q>
@@ -56,34 +59,25 @@
                         <bibl><ref type="bibl" target="#src_ОЭ"/><biblScope>I 108</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Восходит к <mentioned xml:lang="ira"><lang/>
+                <etym xml:lang="ru">Восходит к <mentioned xml:id="mentioned_d4230e129" xml:lang="ira"><lang/>
                         <w>*angušta-pāna-</w>
                         <gloss><q>покрышка пальца</q></gloss></mentioned> (%ipānа%i- от корня
                     %ipā%i- ‘оберегать’, ‘прикрывать’, см. <ref type="xr" target="#entry_fæjnæg"/>),
-                    ср. <mentioned xml:lang="fa"><lang/>
-                        <w>anguštpana</w></mentioned>, <mentioned xml:lang="fa"
-                        ><w>anguštbān</w></mentioned>, <mentioned xml:lang="fa"><w>anguštwāna</w>
+                    ср. <mentioned xml:id="mentioned_d4230e139" xml:lang="fa"><lang/>
+                        <w>anguštpana</w></mentioned>, <mentioned xml:id="mentioned_d4230e144" xml:lang="fa"><w>anguštbān</w></mentioned>, <mentioned xml:id="mentioned_d4230e147" xml:lang="fa"><w>anguštwāna</w>
                         <gloss><q>наперсток</q></gloss></mentioned>. Наличное в ос. %ir%i —
-                    результат контаминации с другим вариантом *%iangur%i- ‘палец’, наличным в <ref
-                        type="xr" target="#entry_æng0ylʒ"/> ‘палец’. Возможно заимствование из
-                    персидского; но через какое посредство?%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._Gr."/><biblScope>19</biblScope></bibl>. —
-                            <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."
-                            /><biblScope>22</biblScope></bibl>.</etym>
-                <etym xml:lang="en">It traces back to <mentioned xml:lang="ira"><lang/>
+                    результат контаминации с другим вариантом *%iangur%i- ‘палец’, наличным в <ref type="xr" target="#entry_æng0ylʒ"/> ‘палец’. Возможно заимствование из
+                    персидского; но через какое посредство?%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>19</biblScope></bibl>. —
+                            <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>22</biblScope></bibl>.</etym>
+                <etym xml:lang="en">It traces back to <mentioned xml:id="mentioned_d4230e168" xml:lang="ira"><lang/>
                         <w>*angušta-pāna-</w>
                         <gloss><q>finger-cover</q></gloss></mentioned> (%ipānа%i- is derived from
-                    the root %ipā%i- ‘to protect’, ‘to cover’, see <ref type="xr"
-                        target="#entry_fæjnæg"/>), compare <mentioned xml:lang="fa"><lang/>
-                        <w>anguštpana</w></mentioned>, <mentioned xml:lang="fa"
-                        ><w>anguštbān</w></mentioned>, <mentioned xml:lang="fa"><w>anguštwāna</w>
+                    the root %ipā%i- ‘to protect’, ‘to cover’, see <ref type="xr" target="#entry_fæjnæg"/>), compare <mentioned xml:id="mentioned_d4230e178" xml:lang="fa"><lang/>
+                        <w>anguštpana</w></mentioned>, <mentioned xml:id="mentioned_d4230e183" xml:lang="fa"><w>anguštbān</w></mentioned>, <mentioned xml:id="mentioned_d4230e186" xml:lang="fa"><w>anguštwāna</w>
                         <gloss><q>thimble</q></gloss></mentioned>. There is an %ir%i in Ossetic
                     because of contamination with the other variant *%iangur%i- ‘finger’, which is
                     found in <ref type="xr" target="#entry_æng0ylʒ"/> ‘finger’. Probably, it is a
-                    loan word from Persian, but what language was a mediation part?%n<bibl><ref
-                            type="bibl" target="#ref_Вс._Миллер._Gr."
-                        /><biblScope>19</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_Hübschmann._Oss."/><biblScope>22</biblScope></bibl>.</etym>
+                    loan word from Persian, but what language was a mediation part?%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>19</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>22</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

@@ -1,33 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ʒærna</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ʒærna" xml:lang="os">
                 <form type="lemma"><orth>ʒærna</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d1398e69"><abv:tr xml:lang="ru">
                         <q>каша из цельных зерен пшеницы, кукурузы</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>whole grain porridge of wheat, corn</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d1398e81" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>ærtikkag osæ ba raxæssuj ʒærna, æma ka nizzaja ejæ ʒi raxwæruj, cæmæj
                             ʒeʒe xwæzdær kæna oj tuxxæn</quote>
@@ -39,10 +44,9 @@
                             <q>the third woman brings %sdzarna%s, and the woman in labor eats from
                                 it to make milk (breast) better</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Диг._сказ."
-                            /><biblScope>58</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Диг._сказ."/><biblScope>58</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1398e103">
                         <quote>dæ nartxoræj sfyšæm žyrna</quote>
                         <abv:tr xml:lang="ru">
                             <q>из твоей кукурузы сварим %sдзарна%s</q>
@@ -54,23 +58,14 @@
                             90</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Ср. <mentioned xml:lang="krc-x-balkar"><lang/>
-                        <w>ǯərna</w></mentioned>, <mentioned xml:lang="krc-x-balkar"
-                        ><w>žərna</w></mentioned>, <mentioned xml:lang="krc-x-balkar"
-                        ><w>žarma</w></mentioned>, <mentioned xml:lang="krc-x-balkar"
-                            ><w>zarma</w><note type="comment" xml:lang="ru"> (<bibl><ref type="bibl"
-                                    target="#ref_ОЯФ_I"/></bibl>)</note></mentioned>, <mentioned xml:lang="ce"><lang/>
-                        <w>zarz</w></mentioned>, мн. ч. <mentioned xml:lang="ce"><lang/>
+                <etym xml:lang="ru">Ср. <mentioned xml:id="mentioned_d1398e125" xml:lang="krc-x-balkar"><lang/>
+                        <w>ǯərna</w></mentioned>, <mentioned xml:id="mentioned_d1398e130" xml:lang="krc-x-balkar"><w>žərna</w></mentioned>, <mentioned xml:id="mentioned_d1398e133" xml:lang="krc-x-balkar"><w>žarma</w></mentioned>, <mentioned xml:id="mentioned_d1398e136" xml:lang="krc-x-balkar"><w>zarma</w><note type="comment" xml:lang="ru"> (<bibl><ref type="bibl" target="#ref_ОЯФ_I"/></bibl>)</note></mentioned>, <mentioned xml:id="mentioned_d1398e144" xml:lang="ce"><lang/>
+                        <w>zarz</w></mentioned>, мн. ч. <mentioned xml:id="mentioned_d1398e150" xml:lang="ce"><lang/>
                         <w>žaržnaš</w>
                         <gloss><q>крупно смолотая кукуруза</q></gloss></mentioned>.</etym>
-                <etym xml:lang="en">Cf. <mentioned xml:lang="krc-x-balkar"><lang/>
-                        <w>ǯərna</w></mentioned>, <mentioned xml:lang="krc-x-balkar"
-                        ><w>žərna</w></mentioned>, <mentioned xml:lang="krc-x-balkar"
-                        ><w>žarma</w></mentioned>, <mentioned xml:lang="krc-x-balkar"
-                            ><w>zarma</w><note type="comment"
-                            xml:lang="en"> (<bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                            /></bibl>)</note></mentioned>, <mentioned xml:lang="ce"><lang/>
-                        <w>zarz</w></mentioned>, plural form <mentioned xml:lang="ce"><lang/>
+                <etym xml:lang="en">Cf. <mentioned xml:id="mentioned_d1398e161" xml:lang="krc-x-balkar"><lang/>
+                        <w>ǯərna</w></mentioned>, <mentioned xml:id="mentioned_d1398e166" xml:lang="krc-x-balkar"><w>žərna</w></mentioned>, <mentioned xml:id="mentioned_d1398e169" xml:lang="krc-x-balkar"><w>žarma</w></mentioned>, <mentioned xml:id="mentioned_d1398e172" xml:lang="krc-x-balkar"><w>zarma</w><note type="comment" xml:lang="en"> (<bibl><ref type="bibl" target="#ref_ОЯФ_I"/></bibl>)</note></mentioned>, <mentioned xml:id="mentioned_d1398e180" xml:lang="ce"><lang/>
+                        <w>zarz</w></mentioned>, plural form <mentioned xml:id="mentioned_d1398e186" xml:lang="ce"><lang/>
                         <w>žaržnaš</w>
                         <gloss><q>coarse-grained corn</q></gloss></mentioned>.</etym>
             </entry>

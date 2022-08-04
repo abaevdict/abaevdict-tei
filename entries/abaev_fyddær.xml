@@ -1,38 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">fyddær</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_fyddær" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>fyddær</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>fuddær</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d1295e72"><sense xml:id="sense_d1295e73"><abv:tr xml:lang="ru">
                             <q>хуже</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>worse</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d1295e82"><abv:tr xml:lang="ru">
                             <q>худший</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>the worst</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d1295e94">
                         <quote>mæxīcæj fyddær… yssardton dæw dær</quote>
                         <abv:tr xml:lang="ru">
                             <q>тебя я нашел в еще худшем положении, чем я сам</q>
@@ -42,7 +47,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>31</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1295e113">
                         <quote>mæxædæg fæcæwon — wæd noǵy fyddær</quote>
                         <abv:tr xml:lang="ru">
                             <q>если я сам пойду (свататься), будет еще хуже</q>
@@ -53,9 +58,9 @@
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>62</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <re>
+                <re xml:id="re_d1295e133">
                     <form type="lemma"><orth>bonvyddær</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d1295e138"><abv:tr xml:lang="ru">
                             <q>тот, кто с каждым днем делается хуже</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>the one who gets worse every day</q>
@@ -65,24 +70,17 @@
                     %ifud%i ‘зло’, ‘дурной’. Степени сравнения прилагательных ‘хороший’, ‘дурной’ во
                     многих языках выявляют супплетивность, т. е. образование от нескольких основ
                     (%iхороший%i || %iлучше%i, %imalus%i || %ipeior%i и т. п.). Супплетивная
-                    тенденция не чужда и осетинскому. Положительная степень <ref type="xr"
-                        target="#entry_fyd"/> | %ifud%i в значении ‘дурной’ самостоятельно не
-                    употребительна; она господствует лишь в сложных словах (см. %r3%r<ref type="xr"
-                        target="#entry_fyd"/> | %ifud%i). В самостоятельном употреблении мы находим
-                        <ref type="xr" target="#entry_ævzær"/> в иронском и <ref type="xr"
-                        target="#entry_læǧuz"/> в дигорском. Напротив, в сравнительной степени
+                    тенденция не чужда и осетинскому. Положительная степень <ref type="xr" target="#entry_fyd"/> | %ifud%i в значении ‘дурной’ самостоятельно не
+                    употребительна; она господствует лишь в сложных словах (см. %r3%r<ref type="xr" target="#entry_fyd"/> | %ifud%i). В самостоятельном употреблении мы находим
+                        <ref type="xr" target="#entry_ævzær"/> в иронском и <ref type="xr" target="#entry_læǧuz"/> в дигорском. Напротив, в сравнительной степени
                     %ifyddær%i | %ifuddær%i встречается несравненно чаще, чем %iævzærdær%i и
                     %ilæǧuzdær%i.</etym>
                 <etym xml:lang="en">A comparative form of <ref type="xr" target="#entry_fyd"/> |
                     %ifud%i ‘evil’, ‘bad’. The degrees of comparison of the adjectives ‘good’ and
                     ‘bad’ are suppletive in many languages, i.e., they are derived from several
                     stems (%igood%i || %ibetter%i, %imalus%i || %ipeior%i etc.). The suppletive
-                    tendency is not alien to Ossetic as well. The positive degree <ref type="xr"
-                        target="#entry_fyd"/> | %ifud%i in the meaning ‘bad’ is not used
-                    independently; it prevaild only in compound words (see %r3%r<ref type="xr"
-                        target="#entry_fyd"/> | %ifud%i). In the independent use we find <ref
-                        type="xr" target="#entry_ævzær"/> in Iron and <ref type="xr"
-                        target="#entry_læǧuz"/> in Digor. On the contrary, in comparative form
+                    tendency is not alien to Ossetic as well. The positive degree <ref type="xr" target="#entry_fyd"/> | %ifud%i in the meaning ‘bad’ is not used
+                    independently; it prevaild only in compound words (see %r3%r<ref type="xr" target="#entry_fyd"/> | %ifud%i). In the independent use we find <ref type="xr" target="#entry_ævzær"/> in Iron and <ref type="xr" target="#entry_læǧuz"/> in Digor. On the contrary, in comparative form
                     %ifyddær%i | %ifuddær%i is used much more often than %iævzærdær%i and
                     %ilæǧuzdær%i.</etym>
             </entry>

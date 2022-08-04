@@ -1,46 +1,49 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ævværsyn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ævværsyn" xml:lang="os">
-                <form xml:lang="os-x-iron" type="lemma"><orth>ævværsyn</orth><form type="participle"
-                            ><orth>ævværst</orth></form></form>
-                <form xml:lang="os-x-digor" type="dialectal"><orth>ænværsun</orth><form
-                        type="participle"><orth>ænvarst</orth></form></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <form xml:lang="os-x-iron" type="lemma"><orth>ævværsyn</orth><form type="participle"><orth>ævværst</orth></form></form>
+                <form xml:lang="os-x-digor" type="dialectal"><orth>ænværsun</orth><form type="participle"><orth>ænvarst</orth></form></form>
+                <sense xml:id="sense_d3386e76"><sense xml:id="sense_d3386e77"><abv:tr xml:lang="ru">
                             <q>снисходить</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>to deign</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d3386e86"><abv:tr xml:lang="ru">
                             <q>не брезгать</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>not to disdain</q>
                         </abv:tr></sense></sense>
-                <re>
+                <re xml:id="re_d3386e96">
                     <note type="comment" xml:lang="ru">очень часто с метатезой: </note>
                     <note type="comment" xml:lang="en">more frequent with the transpostition: </note>
                     <form xml:lang="os-x-iron" type="lemma"><orth>ærvæssyn</orth></form>
                     <form xml:lang="os-x-digor" type="dialectal"><orth>ærvænsun</orth></form>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d3386e113">
                         <quote>kæd myl ævværsys, wæd mæ X˳ycaw dæwæn zaǧta</quote>
                         <abv:tr xml:lang="ru">
                             <q>если ты не брезгаешь мной, то Бог предназначил меня тебе</q>
@@ -51,7 +54,7 @@
                         <bibl><ref type="bibl" target="#src_ЮОПам."/><biblScope>III
                             15</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3386e132">
                         <quote>Boba jæ ḱyzgæn ændær moj ag˳yrdta, Tajmurazyl nal ærvæssyd</quote>
                         <abv:tr xml:lang="ru">
                             <q>Боба искал для дочери другого мужа, Таймуразом он стал брезгать</q>
@@ -62,7 +65,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Сека"/><biblScope>44</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3386e151">
                         <quote>carv æmæ myn mydyl k˳y næ ærvæssys</quote>
                         <abv:tr xml:lang="ru">
                             <q>ты брезгаешь (даже) маслом и медом</q>
@@ -72,7 +75,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Сека"/><biblScope>45</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3386e170">
                         <quote>kæd Zazajy xæʒaryl ævværsys, wæd com</quote>
                         <abv:tr xml:lang="ru">
                             <q>если ты не брезгаешь домом Заза, то идем</q>
@@ -82,7 +85,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Čerm."/><biblScope>75</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3386e189">
                         <quote>Barsægatæ bylysḱʼīltæ kodtoj, ænævværsontæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>Барсаговы кривили губы, выражали брезгливость</q>
@@ -92,7 +95,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Čerm."/><biblScope>97</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d3386e209" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>rawaj ardæmæ æma mæbæl kæd ænværsis, wæd mæ xæccæ isæmbal kænæ… kæd
                             mæbæl du ænværsis, wæd dæbæl æz ænværsun</quote>
@@ -105,10 +108,9 @@
                             <q>come here, and if you don't disdain me, then enter into partnership
                                 with me… if you do not disdain me, then I do not disdain you</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Диг._сказ."
-                            /><biblScope>22</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Диг._сказ."/><biblScope>22</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d3386e231" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>tægænabæl ne ʼrvænsuj</quote>
                         <abv:tr xml:lang="ru">
@@ -120,7 +122,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
                             156</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d3386e253" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>es nin maxæn ewnæg xwæræ, ærvænsis ibæl bijnojnagæn, wæd din æj
                             dæddæn</quote>
@@ -136,14 +138,12 @@
                             24</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Глагол отыменного происхождения; ср.<ref type="xr"
-                        target="#entry_æmvars"/> | %iænvars%i ‘примыкающий’, ‘сторонник’;
+                <etym xml:lang="ru">Глагол отыменного происхождения; ср.<ref type="xr" target="#entry_æmvars"/> | %iænvars%i ‘примыкающий’, ‘сторонник’;
                     %iævværsyn%i, стало быть, — ‘примыкать’, ‘быть бок о бок’ → ‘не брезгать
                     близостью’. См. <ref type="xr" target="#entry_æmvars"/>.</etym>
                 <etym xml:lang="en">Denominal verb; cf. <ref type="xr" target="#entry_æmvars"/> |
                     %iænvars%i ‘adjacent’, ‘supporter’; hence, %iævværsyn%i means ‘to adjoin’, ‘to
-                    be side by side’ → ‘not to disdain intimacy’. See <ref type="xr"
-                        target="#entry_æmvars"/>.</etym>
+                    be side by side’ → ‘not to disdain intimacy’. See <ref type="xr" target="#entry_æmvars"/>.</etym>
             </entry>
         </body>
     </text>

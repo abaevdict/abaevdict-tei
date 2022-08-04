@@ -1,48 +1,51 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ændaʒyn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ændaʒyn" xml:lang="os">
-                <form xml:lang="os-x-iron" type="lemma"><orth>ændaʒyn</orth><form type="participle"
-                            ><orth>ændæǧd</orth></form></form>
-                <form xml:lang="os-x-digor" type="dialectal"><orth>ændaʒun</orth><form
-                        type="participle"><orth>ændaǧd</orth></form></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <form xml:lang="os-x-iron" type="lemma"><orth>ændaʒyn</orth><form type="participle"><orth>ændæǧd</orth></form></form>
+                <form xml:lang="os-x-digor" type="dialectal"><orth>ændaʒun</orth><form type="participle"><orth>ændaǧd</orth></form></form>
+                <sense xml:id="sense_d5634e76"><sense xml:id="sense_d5634e77"><abv:tr xml:lang="ru">
                             <q>припаивать</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>to solder</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d5634e86"><abv:tr xml:lang="ru">
                             <q>прилеплять</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>to stick</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d5634e95"><abv:tr xml:lang="ru">
                             <q>приклеивать</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>to glue</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d5634e104"><abv:tr xml:lang="ru">
                             <q>прикреплять</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>to fasten</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5634e116" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>æxsargard duwwæ ænbesi raxawdtæj…, Kurdalægon sæ næwægæj ændaʒun
                             bajdædta</quote>
@@ -53,10 +56,9 @@
                             <q>the sword broke into two parts, Kurdalagon began to braze it together
                                 again.</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Диг._сказ."
-                            /><biblScope>16</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Диг._сказ."/><biblScope>16</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5634e138">
                         <quote>Cæraj Farizety k˳y fedta, wæd yl jæ cæstytæ bandæǧta</quote>
                         <abv:tr xml:lang="ru">
                             <q>когда Царай увидел Фаризет, он устремил на нее взгляд (прилепил к ней
@@ -66,66 +68,49 @@
                             <q>when Caraj saw Farizet, he stared at her (lit. he sticked his eyes to
                                 her)</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Čerm."
-                            /><biblScope>129</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Čerm."/><biblScope>129</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из %iæm-taʒyn%i, сращение %iæm-%i с глаголом <ref type="xr"
-                        target="#entry_taʒyn"/>, бытующим и самостоятельно в значении ‘капать’,
-                    ‘лить по каплям’; <mentioned xml:lang="os"><lang/>
-                        <w>æm-taʒ-</w></mentioned> ← <mentioned xml:lang="x-oldirn"><lang/>
-                        <w>ham-tač-</w></mentioned>, ср. <mentioned xml:lang="ae"><lang/>
+                <etym xml:lang="ru">Из %iæm-taʒyn%i, сращение %iæm-%i с глаголом <ref type="xr" target="#entry_taʒyn"/>, бытующим и самостоятельно в значении ‘капать’,
+                    ‘лить по каплям’; <mentioned xml:id="mentioned_d5634e162" xml:lang="os"><lang/>
+                        <w>æm-taʒ-</w></mentioned> ← <mentioned xml:id="mentioned_d5634e167" xml:lang="x-oldirn"><lang/>
+                        <w>ham-tač-</w></mentioned>, ср. <mentioned xml:id="mentioned_d5634e172" xml:lang="ae"><lang/>
                         <w>hantačaiti</w>
-                        <gloss><q>изливается (вместе)</q></gloss></mentioned>, <mentioned
-                        xml:lang="ae"><w/>
-                        <gloss><q>сливается</q></gloss></mentioned>, <mentioned xml:lang="ae"
-                            ><w>hantačina</w>
-                        <gloss><q>вместе текущий</q></gloss></mentioned><mentioned xml:lang="sog"><lang/>
+                        <gloss><q>изливается (вместе)</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5634e180" xml:lang="ae"><w/>
+                        <gloss><q>сливается</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5634e187" xml:lang="ae"><w>hantačina</w>
+                        <gloss><q>вместе текущий</q></gloss></mentioned><mentioned xml:id="mentioned_d5634e192" xml:lang="sog"><lang/>
                         <w>*antāč-(ʽntʼč-)</w>
-                        <gloss><q>‘скопление’</q></gloss></mentioned>, <mentioned xml:lang="fa"><lang/>
+                        <gloss><q>‘скопление’</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5634e200" xml:lang="fa"><lang/>
                         <w>andāxtan : andāz-</w>
-                        <gloss><q>бросать</q></gloss></mentioned>, <mentioned xml:lang="fa"><w/>
-                        <gloss><q>наливать</q></gloss></mentioned>, <mentioned xml:lang="fa"><w/>
-                        <gloss><q>вливать</q></gloss></mentioned>, <mentioned xml:lang="ydg"><lang/>
+                        <gloss><q>бросать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5634e208" xml:lang="fa"><w/>
+                        <gloss><q>наливать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5634e214" xml:lang="fa"><w/>
+                        <gloss><q>вливать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5634e220" xml:lang="ydg"><lang/>
                         <w>vədāɤ-</w>
-                        <gloss><q>смешивать</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Morgenstierne._IIFL"/><biblScope>II
+                        <gloss><q>смешивать</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Morgenstierne._IIFL"/><biblScope>II
                     258</biblScope></bibl>). Развитие значения: ‘лить’ → ‘плавить’→ ‘паять’ →
                     ‘клеить’. По огласовке и значению <ref type="xr" target="#entry_ændaʒyn"/>
-                    представляет каузатив к <ref type="xr" target="#entry_ændæʒyn"/> Ср. <ref
-                        type="xr" target="#entry_ændæʒyn"/> ‘прилипать’ и д. <ref type="xr"
-                        target="#entry_rædaʒun"/>. См. <ref type="xr" target="#entry_taʒyn"
-                            />.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>58</biblScope></bibl></etym>
-                <etym xml:lang="en">From %iæm-taʒyn%i, the fusion of %iæm-%i with the verb <ref
-                        type="xr" target="#entry_taʒyn"/> being used in the meaning ‘to drop’, ‘to
-                    pour drop by drop’; <mentioned xml:lang="os"><lang/>
-                        <w>*æm-taʒ-</w></mentioned> ← <mentioned xml:lang="x-oldirn"><lang/>
+                    представляет каузатив к <ref type="xr" target="#entry_ændæʒyn"/> Ср. <ref type="xr" target="#entry_ændæʒyn"/> ‘прилипать’ и д. <ref type="xr" target="#entry_rædaʒun"/>. См. <ref type="xr" target="#entry_taʒyn"/>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>58</biblScope></bibl></etym>
+                <etym xml:lang="en">From %iæm-taʒyn%i, the fusion of %iæm-%i with the verb <ref type="xr" target="#entry_taʒyn"/> being used in the meaning ‘to drop’, ‘to
+                    pour drop by drop’; <mentioned xml:id="mentioned_d5634e253" xml:lang="os"><lang/>
+                        <w>*æm-taʒ-</w></mentioned> ← <mentioned xml:id="mentioned_d5634e258" xml:lang="x-oldirn"><lang/>
                         <w/>
-                        <gloss><q>*ham-tač-</q></gloss></mentioned>, cf. <mentioned xml:lang="ae"><lang/>
+                        <gloss><q>*ham-tač-</q></gloss></mentioned>, cf. <mentioned xml:id="mentioned_d5634e266" xml:lang="ae"><lang/>
                         <w>hantačaiti</w>
-                        <gloss><q>streams (together)</q></gloss></mentioned>, <mentioned
-                        xml:lang="ae"><w/>
-                        <gloss><q>flows together</q></gloss></mentioned>, <mentioned xml:lang="ae"
-                            ><w>hantačina</w>
-                        <gloss><q>flowing together</q></gloss></mentioned>, <mentioned
-                        xml:lang="sog"><lang/>
+                        <gloss><q>streams (together)</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5634e274" xml:lang="ae"><w/>
+                        <gloss><q>flows together</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5634e281" xml:lang="ae"><w>hantačina</w>
+                        <gloss><q>flowing together</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5634e287" xml:lang="sog"><lang/>
                         <w>*antāč-(ʽntʼč-)</w>
-                        <gloss><q>accumulation</q></gloss></mentioned>, <mentioned xml:lang="fa"><lang/>
+                        <gloss><q>accumulation</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5634e295" xml:lang="fa"><lang/>
                         <w>andāxtan : andāz-</w>
-                        <gloss><q>to throw</q></gloss></mentioned>, <mentioned xml:lang="fa"><w/>
-                        <gloss><q>to poor</q></gloss></mentioned>, <mentioned xml:lang="fa"><w/>
-                        <gloss><q>to poor in</q></gloss></mentioned>, <mentioned xml:lang="ydg"><lang/>
+                        <gloss><q>to throw</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5634e303" xml:lang="fa"><w/>
+                        <gloss><q>to poor</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5634e309" xml:lang="fa"><w/>
+                        <gloss><q>to poor in</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5634e315" xml:lang="ydg"><lang/>
                         <w>vədāɤ-</w>
                         <gloss><q>to
                             mix</q></gloss></mentioned>(<bibl><author>Morgenstierne</author><biblScope>IIFL
                             II)</biblScope></bibl>. The development of the meaning: ‘to pour’ → ‘to
-                    melt’→ ‘to solder’ → ‘to glue’. As for its vocalism and meaning, <ref type="xr"
-                        target="#entry_ændaʒyn"/> is a causative form to <ref type="xr"
-                        target="#entry_ændæʒyn"/>. Cf. <ref type="xr" target="#entry_ændæʒyn"/>ˈto
-                    stickˈ and Digor <ref type="xr" target="#entry_rædaʒun"/> . Cf. <ref type="xr"
-                        target="#entry_taʒyn"/>.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._Gr."/><biblScope>58</biblScope></bibl></etym>
+                    melt’→ ‘to solder’ → ‘to glue’. As for its vocalism and meaning, <ref type="xr" target="#entry_ændaʒyn"/> is a causative form to <ref type="xr" target="#entry_ændæʒyn"/>. Cf. <ref type="xr" target="#entry_ændæʒyn"/>ˈto
+                    stickˈ and Digor <ref type="xr" target="#entry_rædaʒun"/> . Cf. <ref type="xr" target="#entry_taʒyn"/>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>58</biblScope></bibl></etym>
             </entry>
         </body>
     </text>

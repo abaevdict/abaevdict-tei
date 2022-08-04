@@ -1,42 +1,45 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">babyz</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_babyz" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>babyz</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>babuz</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d1360e72"><abv:tr xml:lang="ru">
                         <q>утка</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>duck</q>
                     </abv:tr></sense>
-                <re>
-                    <note type="comment" xml:lang="ru">у Шегрена (<bibl><ref type="bibl"
-                                target="#ref_Шегрен"/></bibl>)</note>
-                    <note type="comment" xml:lang="en"><bibl><ref type="bibl" target="#ref_Шегрен"
-                            /></bibl></note>
+                <re xml:id="re_d1360e82">
+                    <note type="comment" xml:lang="ru">у Шегрена (<bibl><ref type="bibl" target="#ref_Шегрен"/></bibl>)</note>
+                    <note type="comment" xml:lang="en"><bibl><ref type="bibl" target="#ref_Шегрен"/></bibl></note>
                     <form xml:lang="os-x-iron" type="lemma"><orth>babys</orth></form>
                     <form xml:lang="os-x-digor" type="dialectal"><orth>babus</orth></form>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d1360e103">
                         <quote>qaztæ, babyztæ æmæ gogyztæ k˳y ærkæna, wæd myn ūdon kʼ˳yrī fag dær
                             wyʒysty</quote>
                         <abv:tr xml:lang="ru">
@@ -49,7 +52,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Сека"/><biblScope>115</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d1360e122" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>karkæn babuzi ajkæ ku nivardton</quote>
                         <abv:tr xml:lang="ru">
@@ -62,41 +65,35 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Вошло в осетинский из какого-то севернотюркского языка; ср.
-                        <mentioned xml:lang="nog" extralang="krc-x-balkar krc-x-karachay"><lang/>
+                        <mentioned xml:id="mentioned_d1360e148" xml:lang="nog" extralang="krc-x-balkar krc-x-karachay"><lang/>
                         <w>babuš</w></mentioned>. Усвоено и в некоторые другие кавказские языки:
-                        <mentioned xml:lang="kbd"><lang/>
-                        <w>baboš</w></mentioned>, <mentioned xml:lang="ce"><lang/>
-                        <w>babušk</w></mentioned>, <mentioned xml:lang="inh"><lang/>
-                        <w>boabæšk</w></mentioned>, <mentioned xml:lang="ani"><lang/>
+                        <mentioned xml:id="mentioned_d1360e153" xml:lang="kbd"><lang/>
+                        <w>baboš</w></mentioned>, <mentioned xml:id="mentioned_d1360e158" xml:lang="ce"><lang/>
+                        <w>babušk</w></mentioned>, <mentioned xml:id="mentioned_d1360e163" xml:lang="inh"><lang/>
+                        <w>boabæšk</w></mentioned>, <mentioned xml:id="mentioned_d1360e168" xml:lang="ani"><lang/>
                         <w>baduš</w></mentioned> (sic! <bibl><author>Дирр</author></bibl>. —
-                    Вероятно, контаминация с <mentioned xml:lang="ani"><lang/>
+                    Вероятно, контаминация с <mentioned xml:id="mentioned_d1360e177" xml:lang="ani"><lang/>
                         <w>bat</w>
                         <gloss><q>гусь</q></gloss></mentioned>). Название %ibabyz%i относилось
                     прежде исключительно к домашней утке. Для дикой утки осетинский имел старое
                     иранское название <ref type="xr" target="#entry_acc"/> q. v. Знакомство с
                     домашней уткой, а также гусем (см. <ref type="xr" target="#entry_qaz"/>)
                     относится, по свидетельству языка, к более позднему времени, чем с дикой уткой.
-                    Ср. также <ref type="xr" target="#entry_kark"/> ‘курица’.%n<bibl><ref
-                            type="bibl" target="#ref_Вс._Миллер._Gr."
-                        /><biblScope>8</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_ОЯФ_I"/><biblScope>62, 84</biblScope></bibl>.</etym>
+                    Ср. также <ref type="xr" target="#entry_kark"/> ‘курица’.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>8</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>62, 84</biblScope></bibl>.</etym>
                 <etym xml:lang="en">It came to Ossetic from some North Turkic language; cf.
-                        <mentioned xml:lang="nog" extralang="krc-x-balkar krc-x-karachay"><lang/>
+                        <mentioned xml:id="mentioned_d1360e203" xml:lang="nog" extralang="krc-x-balkar krc-x-karachay"><lang/>
                         <w>babuš</w></mentioned>. The word was adopted in some other Caucasian
-                    languages as well: <mentioned xml:lang="kbd"><lang/>
-                        <w>baboš</w></mentioned>, <mentioned xml:lang="ce"><lang/>
-                        <w>babušk</w></mentioned>, <mentioned xml:lang="inh"><lang/>
-                        <w>boabæšk</w></mentioned>, <mentioned xml:lang="ani"><lang/>
-                        <w>baduš</w></mentioned> (sic! <bibl><ref type="bibl" target="#ref_Дирр"
-                        /></bibl>. — It is probably a contamination with <mentioned xml:lang="ani"><lang/>
+                    languages as well: <mentioned xml:id="mentioned_d1360e208" xml:lang="kbd"><lang/>
+                        <w>baboš</w></mentioned>, <mentioned xml:id="mentioned_d1360e213" xml:lang="ce"><lang/>
+                        <w>babušk</w></mentioned>, <mentioned xml:id="mentioned_d1360e218" xml:lang="inh"><lang/>
+                        <w>boabæšk</w></mentioned>, <mentioned xml:id="mentioned_d1360e223" xml:lang="ani"><lang/>
+                        <w>baduš</w></mentioned> (sic! <bibl><ref type="bibl" target="#ref_Дирр"/></bibl>. — It is probably a contamination with <mentioned xml:id="mentioned_d1360e232" xml:lang="ani"><lang/>
                         <w>bat</w>
                         <gloss><q>goose</q></gloss></mentioned>). Previously the name %ibabyz%i was
-                    applied only to domestic ducks. For wild ducks there was old Iranian notion <ref
-                        type="xr" target="#entry_acc"/> q. v in Ossetic. Introduction to domestic
+                    applied only to domestic ducks. For wild ducks there was old Iranian notion <ref type="xr" target="#entry_acc"/> q. v in Ossetic. Introduction to domestic
                     ducks and geese (see <ref type="xr" target="#entry_qaz"/>) refers, according to
                     the language data, to a later time than introduction to wild ducks. Cf. also
-                        <ref type="xr" target="#entry_kark"/> ‘hen’.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._Gr."/><biblScope>8</biblScope></bibl>. —
+                        <ref type="xr" target="#entry_kark"/> ‘hen’.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>8</biblScope></bibl>. —
                             <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>62,
                             84</biblScope></bibl>.</etym>
             </entry>

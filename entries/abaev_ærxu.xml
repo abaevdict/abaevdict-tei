@@ -1,38 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ærxu</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ærxu" xml:lang="os-x-digor">
                 <form type="lemma"><orth>ærxu</orth></form>
                 <usg><lang/></usg>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d3919e72"><sense xml:id="sense_d3919e73"><abv:tr xml:lang="ru">
                             <q>плотно замкнутый</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>densely closed</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d3919e82"><abv:tr xml:lang="ru">
                             <q>запертый</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>locked</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d3919e94">
                         <quote>dwar ærxu adtæj</quote>
                         <abv:tr xml:lang="ru">
                             <q>дверь была плотно закрыта</q>
@@ -41,7 +46,7 @@
                             <q>the door was densely closed</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3919e109">
                         <quote>ærxugond</quote>
                         <abv:tr xml:lang="ru">
                             <q>запертый</q>
@@ -55,16 +60,12 @@
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Относится нами к группе слов, заключающих основу %iark%i- со
                     значением ‘скреплять’, ‘смыкать’ и пр.: <ref type="xr" target="#entry_æxkænyn"/>
-                    ‘запирать’, <ref type="xr" target="#entry_arx"/> ‘сук’, <ref type="xr"
-                        target="#entry_ærxæg"/> ‘сустав’, <ref type="xr" target="#entry_æǧnæg"/>
+                    ‘запирать’, <ref type="xr" target="#entry_arx"/> ‘сук’, <ref type="xr" target="#entry_ærxæg"/> ‘сустав’, <ref type="xr" target="#entry_æǧnæg"/>
                     ‘застежка’, <ref type="xr" target="#entry_æxtong"/> ‘подпруга’, может быть также
-                        <ref type="xr" target="#entry_arkʼaw"/> ‘клещи’. См. подробнее под <ref
-                        type="xr" target="#entry_æxkænyn"/> ‘запирать’.</etym>
+                        <ref type="xr" target="#entry_arkʼaw"/> ‘клещи’. См. подробнее под <ref type="xr" target="#entry_æxkænyn"/> ‘запирать’.</etym>
                 <etym xml:lang="en">We consider it belongs to the group of words with the stem
-                    %iark%i- with the meaning ‘to fatsen’, ‘to close’ etc.: <ref type="xr"
-                        target="#entry_æxkænyn"/> ‘to lock’, <ref type="xr" target="#entry_arx"/>
-                    ‘branch’, <ref type="xr" target="#entry_ærxæg"/> ‘joint’, <ref type="xr"
-                        target="#entry_æǧnæg"/> ‘fastener’, <ref type="xr" target="#entry_æxtong"/>
+                    %iark%i- with the meaning ‘to fatsen’, ‘to close’ etc.: <ref type="xr" target="#entry_æxkænyn"/> ‘to lock’, <ref type="xr" target="#entry_arx"/>
+                    ‘branch’, <ref type="xr" target="#entry_ærxæg"/> ‘joint’, <ref type="xr" target="#entry_æǧnæg"/> ‘fastener’, <ref type="xr" target="#entry_æxtong"/>
                     ‘saddle-girth’, maybe also <ref type="xr" target="#entry_arkʼaw"/> ‘pincers’.
                     For more details see <ref type="xr" target="#entry_æxkænyn"/> ‘to lock’.</etym>
             </entry>

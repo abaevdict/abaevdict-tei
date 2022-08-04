@@ -1,38 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">alḱī</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_alḱī" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>alḱī</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>alke</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d3107e72"><sense xml:id="sense_d3107e73"><abv:tr xml:lang="ru">
                             <q>каждый</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>each</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d3107e82"><abv:tr xml:lang="ru">
                             <q>всякий</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>every</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d3107e94">
                         <quote>alḱi zydgænæǵy bīræǧ fæxony</quote>
                         <abv:tr xml:lang="ru">
                             <q>жадного каждый обзывает волком</q>
@@ -42,7 +47,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>85</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3107e113">
                         <quote>alkæmæn je ʽǧdaw jæ gakk ū</quote>
                         <abv:tr xml:lang="ru">
                             <q>у каждого его повадки служат его отличительной приметой</q>
@@ -50,21 +55,17 @@
                         <abv:tr xml:lang="en">
                             <q>each of his habits serves as his distinctive feature</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"
-                            /><biblScope>102</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>102</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из <ref type="xr" target="#entry_aly"/> ‘всякий’ и <ref
-                        type="xr" target="#entry_ḱī"/> ‘кто’; ср. <mentioned xml:lang="fa"><lang/>
-                        <w>har ki</w></mentioned>, <mentioned xml:lang="kho"><lang/>
+                <etym xml:lang="ru">Из <ref type="xr" target="#entry_aly"/> ‘всякий’ и <ref type="xr" target="#entry_ḱī"/> ‘кто’; ср. <mentioned xml:id="mentioned_d3107e139" xml:lang="fa"><lang/>
+                        <w>har ki</w></mentioned>, <mentioned xml:id="mentioned_d3107e144" xml:lang="kho"><lang/>
                         <w>hal-cə</w></mentioned>, ср. <ref type="xr" target="#entry_alcy"/> ‘все’,
                     а для второго элемента <ref type="xr" target="#entry_nīḱī"/>.</etym>
-                <etym xml:lang="en">From <ref type="xr" target="#entry_aly"/> ‘every’ and <ref
-                        type="xr" target="#entry_ḱī"/> ‘who’; cf. <mentioned xml:lang="fa"><lang/>
-                        <w>har ki</w></mentioned>, <mentioned xml:lang="kho"><lang/>
+                <etym xml:lang="en">From <ref type="xr" target="#entry_aly"/> ‘every’ and <ref type="xr" target="#entry_ḱī"/> ‘who’; cf. <mentioned xml:id="mentioned_d3107e162" xml:lang="fa"><lang/>
+                        <w>har ki</w></mentioned>, <mentioned xml:id="mentioned_d3107e167" xml:lang="kho"><lang/>
                         <w>hal-cə</w></mentioned>, cf. <ref type="xr" target="#entry_alcy"/>
-                    ‘everything’, and for the second element <ref type="xr" target="#entry_nīḱī"
-                    />.</etym>
+                    ‘everything’, and for the second element <ref type="xr" target="#entry_nīḱī"/>.</etym>
             </entry>
         </body>
     </text>

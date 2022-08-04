@@ -1,43 +1,47 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">fæsarc</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_fæsarc" xml:lang="os">
-                <form xml:lang="os-x-iron" type="lemma"><orth>fæsarc</orth><form type="variant"
-                            ><orth>fæcarc</orth></form></form>
+                <form xml:lang="os-x-iron" type="lemma"><orth>fæsarc</orth><form type="variant"><orth>fæcarc</orth></form></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>fæsabærcæ</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d834e74"><abv:tr xml:lang="ru">
                         <q>за седлом</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>behind the saddle</q>
                     </abv:tr></sense>
-                <re>
+                <re xml:id="re_d834e84">
                     <form type="lemma"><orth>fæsarc badyn</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d834e89"><abv:tr xml:lang="ru">
                             <q>сидеть вторым на лошади</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>sit second on a horse</q>
                         </abv:tr></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d834e102">
                         <quote>fevnældta ḱyzgmæ, jæ fæsarc æj bappærsta æmæ jæ afardæg kodta jæ
                             fīdærttæm</quote>
                         <abv:tr xml:lang="ru">
@@ -51,7 +55,7 @@
                         <bibl><ref type="bibl" target="#src_ЮОПам."/><biblScope>I
                             106</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d834e121" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>i bæxgin … Soslani æ fæsabærcæmæ ærbajsta</quote>
                         <abv:tr xml:lang="ru">
@@ -67,19 +71,15 @@
                 <etym xml:lang="ru">В первой части обеих форм <ref type="xr" target="#entry_fæs-"/>
                     ‘позади’. Во второй части в и. <ref type="xr" target="#entry_arc"/> ‘копье’;
                     стало быть, %ifæs-arc%i буквально „позади копья“, которое носилось за спиной.
-                    Труднее объяснить д. %i-bærcæ%i в %ifæsa-bærcæ%i; может быть, к <ref type="xr"
-                        target="#entry_bærc"/> „мера (пороха)“, если таковая носилась за спиной; или
-                    к глаголу <ref type="xr" target="#entry_8bar"/> ‘ездить верхом’ (см. <ref
-                        type="xr" target="#entry_bajrag"/>), стало быть %ifæsa-bærcæ%i „езда верхом
+                    Труднее объяснить д. %i-bærcæ%i в %ifæsa-bærcæ%i; может быть, к <ref type="xr" target="#entry_bærc"/> „мера (пороха)“, если таковая носилась за спиной; или
+                    к глаголу <ref type="xr" target="#entry_8bar"/> ‘ездить верхом’ (см. <ref type="xr" target="#entry_bajrag"/>), стало быть %ifæsa-bærcæ%i „езда верхом
                     позади (главного всадника)“.</etym>
-                <etym xml:lang="en">In the first part of both forms there is <ref type="xr"
-                        target="#entry_fæs-"/> ‘behind’. In the second part of the Iron word there
+                <etym xml:lang="en">In the first part of both forms there is <ref type="xr" target="#entry_fæs-"/> ‘behind’. In the second part of the Iron word there
                     is <ref type="xr" target="#entry_arc"/> ‘spear’; thus, %ifæs-arc%i literally
                     means ‘behind the spear’, which was carried behind the back. It is more
                     difficult to explain Digor%i-bærcæ%i in %ifæsa-bærcæ%i; it may be related to
                         <ref type="xr" target="#entry_bærc"/> ‘measure (of gunpowder)’, if it was
-                    carried behind the back; or it may be related to the verb <ref type="xr"
-                        target="#entry_8bar"/> ‘ride’ (see <ref type="xr" target="#entry_bajrag"/>),
+                    carried behind the back; or it may be related to the verb <ref type="xr" target="#entry_8bar"/> ‘ride’ (see <ref type="xr" target="#entry_bajrag"/>),
                     and thus, %ifæsa-bærcæ%i means ‘riding behind (the chief rider)’.</etym>
             </entry>
         </body>

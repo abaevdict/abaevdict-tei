@@ -1,37 +1,42 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">bajvæd</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_bajvæd" xml:lang="os">
                 <form type="lemma"><orth>bajvæd</orth></form>
-                <re>
+                <re xml:id="re_d626e69">
                     <form xml:lang="os-x-iron" type="lemma"><orth>jæ bajvæd(yl)</orth></form>
                     <form xml:lang="os-x-digor" type="dialectal"><orth>æ bajvæd</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d626e77"><abv:tr xml:lang="ru">
                             <q>по своим свежим следам</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>in one’s own fresh footsteps</q>
                         </abv:tr></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d626e90">
                         <quote>syrd jæ bajvædyl zily</quote>
                         <abv:tr xml:lang="ru">
                             <q>зверь кружит по собственному следу</q>
@@ -40,7 +45,7 @@
                             <q>a best is circling in its own footsteps</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d626e105" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>i læg xwarzaw næbal adtæj ma æ bajvæd fæffæstæmæ ʽj</quote>
                         <abv:tr xml:lang="ru">
@@ -52,7 +57,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
                             18</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d626e127" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>æ bajvæd Tulabeg ordægæj Fæsnælmæ fæccudæj</quote>
                         <abv:tr xml:lang="ru">
@@ -65,23 +70,18 @@
                             122</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Вероятно, восходит к <mentioned xml:lang="ira"><lang/>
+                <etym xml:lang="ru">Вероятно, восходит к <mentioned xml:id="mentioned_d626e152" xml:lang="ira"><lang/>
                         <w>*upā-padam</w>
-                        <gloss><q>по следу</q></gloss></mentioned>. Ср. <mentioned xml:lang="peo"><lang/>
+                        <gloss><q>по следу</q></gloss></mentioned>. Ср. <mentioned xml:id="mentioned_d626e160" xml:lang="peo"><lang/>
                         <w>pati-padam</w>
-                        <gloss><q>на прежнее место</q></gloss></mentioned>, <mentioned
-                        xml:lang="peo"><w>ni-padiy</w>
-                        <gloss><q>вслед</q></gloss></mentioned>. См. <ref type="xr"
-                        target="#entry_fæd"/> 'след'.</etym>
-                <etym xml:lang="en">It probably traces back to <mentioned xml:lang="ira"><lang/>
+                        <gloss><q>на прежнее место</q></gloss></mentioned>, <mentioned xml:id="mentioned_d626e168" xml:lang="peo"><w>ni-padiy</w>
+                        <gloss><q>вслед</q></gloss></mentioned>. См. <ref type="xr" target="#entry_fæd"/> 'след'.</etym>
+                <etym xml:lang="en">It probably traces back to <mentioned xml:id="mentioned_d626e179" xml:lang="ira"><lang/>
                         <w>*upā-padam</w>
-                        <gloss><q>in the footsteps</q></gloss></mentioned>. Cf. <mentioned
-                        xml:lang="peo"><lang/>
+                        <gloss><q>in the footsteps</q></gloss></mentioned>. Cf. <mentioned xml:id="mentioned_d626e187" xml:lang="peo"><lang/>
                         <w>pati-padam</w>
-                        <gloss><q>to a former place</q></gloss></mentioned>, <mentioned
-                        xml:lang="peo"><w>ni-padiy</w>
-                        <gloss><q>following</q></gloss></mentioned>. See <ref type="xr"
-                        target="#entry_fæd"/> ‘footstep’.</etym>
+                        <gloss><q>to a former place</q></gloss></mentioned>, <mentioned xml:id="mentioned_d626e195" xml:lang="peo"><w>ni-padiy</w>
+                        <gloss><q>following</q></gloss></mentioned>. See <ref type="xr" target="#entry_fæd"/> ‘footstep’.</etym>
             </entry>
         </body>
     </text>

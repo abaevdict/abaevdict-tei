@@ -1,21 +1,26 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">bedun</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
@@ -23,21 +28,21 @@
                 <form xml:lang="os-x-iron" type="lemma"><orth>bedun</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>bidt</orth></form>
                 <usg><lang/></usg>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d5626e75"><sense xml:id="sense_d5626e76"><abv:tr xml:lang="ru">
                             <q>быть заметным</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>be noticable</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d5626e85"><abv:tr xml:lang="ru">
                             <q>оказывать действие</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>have an effect</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d5626e94"><abv:tr xml:lang="ru">
                             <q>идти впрок</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>profit</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d5626e106">
                         <quote>sædæ xæʒaremæj ku rajsaj (gærtan), wæddær ibæl næ beduj</quote>
                         <abv:tr xml:lang="ru">
                             <q>если даже со ста домов возьмешь (взятки), и то не пойдет впрок</q>
@@ -48,7 +53,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
                             116</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5626e125">
                         <quote>kæmæn beduj card æ cæsti…</quote>
                         <abv:tr xml:lang="ru">
                             <q>в чьих глазах жизнь становится заметной…</q>
@@ -56,27 +61,23 @@
                         <abv:tr xml:lang="en">
                             <q>in whose eyes does life become noticable…</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_SD"
-                            /><biblScope>99%l3%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_SD"/><biblScope>99%l3%l</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Если допустить, что начальный %ib%i восходит здесь к %iv%i (как
-                    в <ref type="xr" target="#entry_bærgæ"/>), то можно возводить к <mentioned
-                        xml:lang="x-oldirn"><lang/>
-                        <w>vaid-</w></mentioned>, <mentioned xml:lang="x-oldirn"><w>vid-</w>
-                        <gloss><q>знать</q></gloss></mentioned>, <mentioned xml:lang="x-oldirn"><w/>
+                    в <ref type="xr" target="#entry_bærgæ"/>), то можно возводить к <mentioned xml:id="mentioned_d5626e150" xml:lang="x-oldirn"><lang/>
+                        <w>vaid-</w></mentioned>, <mentioned xml:id="mentioned_d5626e155" xml:lang="x-oldirn"><w>vid-</w>
+                        <gloss><q>знать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5626e161" xml:lang="x-oldirn"><w/>
                         <gloss><q>замечать</q></gloss></mentioned> и пр. в каузативном значении:
-                    ‘делать заметным’. %n<bibl><author>Bailey</author><ref type="bibl"
-                            target="#ref_JRAS"/><biblScope xml:lang="ru">1954, стр.
+                    ‘делать заметным’. %n<bibl><author>Bailey</author><ref type="bibl" target="#ref_JRAS"/><biblScope xml:lang="ru">1954, стр.
                             33</biblScope></bibl>.</etym>
                 <etym xml:lang="en">If the initial %ib%i is assumed to be traced back to %iv%i (like
                     in <ref type="xr" target="#entry_bærgæ"/>), then the word can be traced back to
-                        <mentioned xml:lang="x-oldirn"><lang/>
-                        <w>vaid-</w></mentioned>, <mentioned xml:lang="x-oldirn"><w>vid-</w>
-                        <gloss><q>know</q></gloss></mentioned>, <mentioned xml:lang="x-oldirn"><w/>
+                        <mentioned xml:id="mentioned_d5626e178" xml:lang="x-oldirn"><lang/>
+                        <w>vaid-</w></mentioned>, <mentioned xml:id="mentioned_d5626e183" xml:lang="x-oldirn"><w>vid-</w>
+                        <gloss><q>know</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5626e189" xml:lang="x-oldirn"><w/>
                         <gloss><q>notice</q></gloss></mentioned> etc. in the causative meaning:
-                    ‘make noticable’. %n<bibl><author>Bailey</author><ref type="bibl"
-                            target="#ref_JRAS"/><biblScope xml:lang="en">1954, p.
+                    ‘make noticable’. %n<bibl><author>Bailey</author><ref type="bibl" target="#ref_JRAS"/><biblScope xml:lang="en">1954, p.
                     33</biblScope></bibl>.</etym>
             </entry>
         </body>

@@ -1,51 +1,55 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">dælʒæx</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_dælʒæx" xml:lang="os">
-                <form xml:lang="os-x-iron" type="lemma"><orth>dælʒæx</orth><form type="variant"
-                            ><orth>dælzæx</orth></form></form>
+                <form xml:lang="os-x-iron" type="lemma"><orth>dælʒæx</orth><form type="variant"><orth>dælzæx</orth></form></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>dælzænxæ</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d1937e74"><abv:tr xml:lang="ru">
                         <q>под землей</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>underground</q>
                     </abv:tr></sense>
-                <re>
+                <re xml:id="re_d1937e84">
                     <form type="lemma"><orth>avd dælʒæxy</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d1937e89"><abv:tr xml:lang="ru">
                             <q>в преисподней</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>in the underworld</q>
                         </abv:tr></sense>
                 </re>
-                <re>
+                <re xml:id="re_d1937e100">
                     <form type="lemma"><orth>fædælʒæx i</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d1937e105"><abv:tr xml:lang="ru">
                             <q>исчез</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>dissapeared</q>
                         </abv:tr></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d1937e119">
                         <quote>dælzæxxæj, wælzæxxæj kæmdæriddær dæ, — taǧd mæ qærmæ fæzyn!</quote>
                         <abv:tr xml:lang="ru">
                             <q>под землей или на земле, где бы ты ни был, — быстро явись на мой
@@ -57,7 +61,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>42</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1937e138">
                         <quote>dælzænxæ fæwwo!</quote>
                         <abv:tr xml:lang="ru">
                             <q>пропади ты!</q>
@@ -66,7 +70,7 @@
                             <q>vanish!</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1937e153">
                         <quote>X˳ycaw, kænæ avd dælʒæxy cæmæj fæwon, kænæ avd wælʒæxy, uj myn
                             bakæn!</quote>
                         <abv:tr xml:lang="ru">
@@ -79,7 +83,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Munk."/><biblScope>28</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1937e172">
                         <quote>wæ, avd dælʒæx ærbawa mæ nyjjaræg!</quote>
                         <abv:tr xml:lang="ru">
                             <q>о, чтобы в семь подземных миров провалилась, кто меня родила!</q>
@@ -91,10 +95,8 @@
                         <bibl><ref type="bibl" target="#src_Čerm."/><biblScope>55</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">См. <ref type="xr" target="#entry_dæl-"/> и <ref type="xr"
-                        target="#entry_zæxx"/>. Ср. <ref type="xr" target="#entry_wælʒæx"/>.</etym>
-                <etym xml:lang="en">See <ref type="xr" target="#entry_dæl-"/> and <ref type="xr"
-                        target="#entry_zæxx"/>. Cf. <ref type="xr" target="#entry_wælʒæx"/>.</etym>
+                <etym xml:lang="ru">См. <ref type="xr" target="#entry_dæl-"/> и <ref type="xr" target="#entry_zæxx"/>. Ср. <ref type="xr" target="#entry_wælʒæx"/>.</etym>
+                <etym xml:lang="en">See <ref type="xr" target="#entry_dæl-"/> and <ref type="xr" target="#entry_zæxx"/>. Cf. <ref type="xr" target="#entry_wælʒæx"/>.</etym>
             </entry>
         </body>
     </text>

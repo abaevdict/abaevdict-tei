@@ -1,29 +1,32 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ʒūryn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ʒūryn" xml:lang="os">
-                <form xml:lang="os-x-iron" type="lemma"><orth>ʒūryn</orth><form type="participle"
-                            ><orth>ʒyrd</orth></form></form>
-                <form xml:lang="os-x-digor" type="dialectal"><orth>ʒorun</orth><form
-                        type="participle"><orth>ʒurd</orth></form></form>
+                <form xml:lang="os-x-iron" type="lemma"><orth>ʒūryn</orth><form type="participle"><orth>ʒyrd</orth></form></form>
+                <form xml:lang="os-x-digor" type="dialectal"><orth>ʒorun</orth><form type="participle"><orth>ʒurd</orth></form></form>
                 <sense n="1" xml:id="sense_ʒūryn.1"><abv:tr xml:lang="ru">
                         <q>говорить</q>
                     </abv:tr><abv:tr xml:lang="en">
@@ -34,20 +37,20 @@
                     </abv:tr><abv:tr xml:lang="en">
                         <q>call</q>
                     </abv:tr></sense>
-                <re>
-                    <re>
+                <re xml:id="re_d4624e96">
+                    <re xml:id="re_d4624e98">
                         <form xml:lang="os-x-iron" type="lemma"><orth>ʒyrd</orth></form>
                         <form xml:lang="os-x-digor" type="dialectal"><orth>ʒurd</orth></form>
-                        <sense><abv:tr xml:lang="ru">
+                        <sense xml:id="sense_d4624e106"><abv:tr xml:lang="ru">
                                 <q>слово</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>word</q>
                             </abv:tr></sense>
                     </re>
-                    <re>
+                    <re xml:id="re_d4624e117">
                         <form xml:lang="os-x-iron" type="lemma"><orth>ʒyrddag</orth></form>
                         <form xml:lang="os-x-digor" type="dialectal"><orth>ʒurddag</orth></form>
-                        <sense><abv:tr xml:lang="ru">
+                        <sense xml:id="sense_d4624e125"><abv:tr xml:lang="ru">
                                 <q>спорный</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>disputable</q>
@@ -55,7 +58,7 @@
                     </re>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4624e140">
                         <quote>ʒūryn ma zynæj færazy</quote>
                         <abv:tr xml:lang="ru">
                             <q>он едва в состоянии говорить</q>
@@ -63,10 +66,9 @@
                         <abv:tr xml:lang="en">
                             <q>he is barely able to speak</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"
-                            /><biblScope>104</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>104</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4624e159">
                         <quote>fæʒūrync æj alxatt</quote>
                         <abv:tr xml:lang="ru">
                             <q>каждый раз об этом говорят</q>
@@ -76,7 +78,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>54</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4624e178">
                         <quote>ʒūry sæm lægætæj īw læg</quote>
                         <abv:tr xml:lang="ru">
                             <q>говорит им из пещеры один человек</q>
@@ -84,10 +86,9 @@
                         <abv:tr xml:lang="en">
                             <q>one man tells them from the cave</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"
-                            /><biblScope>101</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>101</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4624e197">
                         <quote>bynæj jæm ʒūry</quote>
                         <abv:tr xml:lang="ru">
                             <q>снизу обращается к нему</q>
@@ -97,7 +98,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>83</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4624e216" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>isʒoruj sæmæ mægur Mæxæmæt</quote>
                         <abv:tr xml:lang="ru">
@@ -110,7 +111,7 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4624e241">
                         <quote>baʒūrūt Xetægmæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>позовите Кетага</q>
@@ -118,10 +119,9 @@
                         <abv:tr xml:lang="en">
                             <q>call Ketag</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"
-                            /><biblScope>138</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>138</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4624e260" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>ku fæʒʒoruj wæd xan kosgutæmæ</quote>
                         <abv:tr xml:lang="ru">
@@ -132,7 +132,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>35</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4624e282">
                         <quote>cæj amondmæ ʒūryn?</quote>
                         <abv:tr xml:lang="ru">
                             <q>cæj amondmæ ʒūryn?</q>
@@ -146,39 +146,31 @@
                 <etym xml:lang="ru">Происхождение не известно. В палеонтологическом плане возможна
                     связь с <ref type="xr" target="#entry_kūryn"/> | %ikorūn%i ‘просить’; а так как
                     последнее слово несет следы магической семантики (‘заговор’, ‘заклинание’), то,
-                    может быть, осетинские слова стоят в каких-то древних отношениях с <mentioned
-                        xml:lang="ru"><lang/>
+                    может быть, осетинские слова стоят в каких-то древних отношениях с <mentioned xml:id="mentioned_d4624e306" xml:lang="ru"><lang/>
                         <w>чур</w>
-                        <gloss><q>запрет</q></gloss></mentioned>, <mentioned xml:lang="ru"
-                            ><w>чуроваться</w>
+                        <gloss><q>запрет</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4624e314" xml:lang="ru"><w>чуроваться</w>
                         <gloss><q>делать заговор от чего-либо</q></gloss></mentioned> и пр. Женское
                     имя Βευραζουρια на надписи IV—V в. из Мцхета (Грузия) имеет осетинский характер
-                    и должно означать „многоречивая“ (%ibewræ%i-%iʒur%i-: см. <bibl><ref type="bibl"
-                            target="#ref_ОЯФ_I"/><biblScope>159 сл.</biblScope></bibl>). Если так,
+                    и должно означать „многоречивая“ (%ibewræ%i-%iʒur%i-: см. <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>159 сл.</biblScope></bibl>). Если так,
                     то мы получаем terminus ante quem (V в.) для бытования слова %iʒūryn%i в
-                    осетинском. Связь с <ref type="xr" target="#entry_zaryn"/> ‘петь’ (<bibl><ref
-                            type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 59, III
-                            145</biblScope></bibl>; <bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._Gr."/><biblScope>59</biblScope></bibl>)
+                    осетинском. Связь с <ref type="xr" target="#entry_zaryn"/> ‘петь’ (<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 59, III
+                            145</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>59</biblScope></bibl>)
                     невозможна по огласовке.</etym>
                 <etym xml:lang="en">The etymology is not clear. In paleontological terms, there may
                     be a connection with <ref type="xr" target="#entry_kūryn"/> | %ikorūn%i ‘ask’;
                     and since the latter word bears traces of magical semantics (‘conspiracy’,
                     ‘spell’), then, perhaps, Ossetic words have some kind of ancient relationship
-                    with <mentioned xml:lang="ru"><lang/>
+                    with <mentioned xml:id="mentioned_d4624e340" xml:lang="ru"><lang/>
                         <w>čur</w>
-                        <gloss><q>prohibition</q></gloss></mentioned>, <mentioned xml:lang="ru"
-                            ><w>čurovatʼsja</w>
+                        <gloss><q>prohibition</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4624e348" xml:lang="ru"><w>čurovatʼsja</w>
                         <gloss><q>make a spell to protect from something</q></gloss></mentioned>
                     etc. A woman name Βευραζουρια found on an inscription dated 4th–5th cc. from
                     Mtskheta (Georgia) has an Ossetic character and means “talkative”
                     (%ibewræ%i-%iʒur%i-: see <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope xml:lang="en">159
                             ff.</biblScope></bibl>). If so, then we get terminus ante quem (V
                     century) for the existence of the word %iʒūryn%i in Ossetic. The connection with
-                        <ref type="xr" target="#entry_zaryn"/> ‘sing’ (<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 59, III
-                        145</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>59</biblScope></bibl>) is impossible because of
+                        <ref type="xr" target="#entry_zaryn"/> ‘sing’ (<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 59, III
+                        145</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>59</biblScope></bibl>) is impossible because of
                     vocalization.</etym>
             </entry>
         </body>

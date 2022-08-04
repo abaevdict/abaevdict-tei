@@ -1,34 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">færsk</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_færsk" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>færsk</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>færskʼæ</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d2457e72"><abv:tr xml:lang="ru">
                         <q>ребро</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>rib</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d2457e84">
                         <quote>max færsḱytæ nadæj nīk˳y væjjync cʼæl</quote>
                         <abv:tr xml:lang="ru">
                             <q>наши ребра не бывают никогда поломаны от колотушек</q>
@@ -38,7 +43,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>94</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d2457e103" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>mæ zærond færskʼitæ min maci basæddæ</quote>
                         <abv:tr xml:lang="ru">
@@ -47,15 +52,14 @@
                         <abv:tr xml:lang="en">
                             <q>don't break my old ribs</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>24%l7–8%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>24%l7–8%l</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <re>
+                <re xml:id="re_d2457e126">
                     <form xml:lang="os-x-iron" type="lemma"><orth>wærdony færsḱytæ</orth></form>
                     <form xml:lang="os-x-digor" type="dialectal"><orth>wærduni
                         færskʼitæ</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d2457e134"><abv:tr xml:lang="ru">
                             <q>ребра (вертикальные планки) арбы</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>ribs (vertical planks) of a bullock-cart</q>
@@ -68,41 +72,31 @@
                     и <ref type="xr" target="#entry_fædg"/>, <ref type="xr" target="#entry_xus"/> и
                         <ref type="xr" target="#entry_x0yskʼ"/>. Из многочисленных иранских
                     соответствий приведем здесь только те, в которых, как в осетинском, выступает
-                    формант %ik%i(%ig%i): <mentioned xml:lang="wbl"><lang/>
+                    формант %ik%i(%ig%i): <mentioned xml:id="mentioned_d2457e166" xml:lang="wbl"><lang/>
                         <w>pürsk</w>
-                        <gloss><q>ребро</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Shaw"/><biblScope>245</biblScope></bibl>), <mentioned
-                        xml:lang="mnj"><lang/>
-                        <w>pursiga</w></mentioned>, <mentioned xml:lang="ydg"><lang/>
-                        <w>pərsəɣё</w></mentioned>, <mentioned xml:lang="sog"><lang/>
-                        <w>*parsāk (prsʼk)</w></mentioned>, <mentioned xml:lang="kho"><lang/>
+                        <gloss><q>ребро</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Shaw"/><biblScope>245</biblScope></bibl>), <mentioned xml:id="mentioned_d2457e178" xml:lang="mnj"><lang/>
+                        <w>pursiga</w></mentioned>, <mentioned xml:id="mentioned_d2457e183" xml:lang="ydg"><lang/>
+                        <w>pərsəɣё</w></mentioned>, <mentioned xml:id="mentioned_d2457e188" xml:lang="sog"><lang/>
+                        <w>*parsāk (prsʼk)</w></mentioned>, <mentioned xml:id="mentioned_d2457e193" xml:lang="kho"><lang/>
                         <w>pālsuā</w><note type="comment" xml:lang="ru"> (из
-                            %i*рar-sukā-%i)</note></mentioned>. Остальные параллели см. под <ref
-                        type="xr" target="#entry_fars"/> ‘бок’. %bГруз.%b <mentioned xml:lang="ka"><lang/>
+                            %i*рar-sukā-%i)</note></mentioned>. Остальные параллели см. под <ref type="xr" target="#entry_fars"/> ‘бок’. %bГруз.%b <mentioned xml:id="mentioned_d2457e203" xml:lang="ka"><lang/>
                         <w>percx-ali</w>
                         <gloss><q>ребро</q></gloss></mentioned> представляет, возможно, старое
-                    заимствование из аланского.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                            /><biblScope>352</biblScope></bibl>.</etym>
+                    заимствование из аланского.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>352</biblScope></bibl>.</etym>
                 <etym xml:lang="en">A derivative of <ref type="xr" target="#entry_fars"/> ‘side’
-                    (%i*pars(v)-ka%i). Cf. the similar derivation pattern in <ref type="xr"
-                        target="#entry_fæd"/> and <ref type="xr" target="#entry_fædg"/>, in <ref
-                        type="xr" target="#entry_xus"/> and <ref type="xr" target="#entry_x0yskʼ"/>.
+                    (%i*pars(v)-ka%i). Cf. the similar derivation pattern in <ref type="xr" target="#entry_fæd"/> and <ref type="xr" target="#entry_fædg"/>, in <ref type="xr" target="#entry_xus"/> and <ref type="xr" target="#entry_x0yskʼ"/>.
                     Of the numerous Iranian correspondences, we will cite here only those in which,
-                    as in the Ossetic, the formant %ik%i(%ig%i) appears: <mentioned xml:lang="wbl"><lang/>
+                    as in the Ossetic, the formant %ik%i(%ig%i) appears: <mentioned xml:id="mentioned_d2457e229" xml:lang="wbl"><lang/>
                         <w>pürsk</w>
-                        <gloss><q>rib</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Shaw"/><biblScope>245</biblScope></bibl>), <mentioned
-                        xml:lang="mnj"><lang/>
-                        <w>pursiga</w></mentioned>, <mentioned xml:lang="ydg"><lang/>
-                        <w>pərsəɣё</w></mentioned>, <mentioned xml:lang="sog"><lang/>
-                        <w>*parsāk (prsʼk)</w></mentioned>, <mentioned xml:lang="kho"><lang/>
+                        <gloss><q>rib</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Shaw"/><biblScope>245</biblScope></bibl>), <mentioned xml:id="mentioned_d2457e241" xml:lang="mnj"><lang/>
+                        <w>pursiga</w></mentioned>, <mentioned xml:id="mentioned_d2457e246" xml:lang="ydg"><lang/>
+                        <w>pərsəɣё</w></mentioned>, <mentioned xml:id="mentioned_d2457e251" xml:lang="sog"><lang/>
+                        <w>*parsāk (prsʼk)</w></mentioned>, <mentioned xml:id="mentioned_d2457e256" xml:lang="kho"><lang/>
                         <w>pālsuā</w><note type="comment" xml:lang="en"> (from
-                            %i*рar-sukā-%i)</note></mentioned>. Other parallels see under <ref
-                        type="xr" target="#entry_fars"/> ‘side’. <mentioned xml:lang="ka"><lang/>
+                            %i*рar-sukā-%i)</note></mentioned>. Other parallels see under <ref type="xr" target="#entry_fars"/> ‘side’. <mentioned xml:id="mentioned_d2457e266" xml:lang="ka"><lang/>
                         <w>percx-ali</w>
                         <gloss><q>rib</q></gloss></mentioned> is probably an old borrowing from
-                            Alan.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                            /><biblScope>352</biblScope></bibl>.</etym>
+                            Alan.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>352</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

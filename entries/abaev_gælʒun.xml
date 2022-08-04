@@ -1,35 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">gælʒun</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_gælʒun" xml:lang="os-x-digor">
-                <form type="lemma"><orth>gælʒun</orth><form type="participle"
-                        ><orth>gælst</orth></form></form>
+                <form type="lemma"><orth>gælʒun</orth><form type="participle"><orth>gælst</orth></form></form>
                 <usg><lang/></usg>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d2872e74"><abv:tr xml:lang="ru">
                         <q>бросать</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>throw</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d2872e86">
                         <quote>oni ragælʒæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>брось их</q>
@@ -37,10 +41,9 @@
                         <abv:tr xml:lang="en">
                             <q>throw them</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>16%l13%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>16%l13%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2872e105">
                         <quote>læqwæn særvasæn ragælsta</quote>
                         <abv:tr xml:lang="ru">
                             <q>юноша бросил гребень</q>
@@ -50,7 +53,7 @@
                         </abv:tr>
                         <bibl><biblScope>18%l2–3%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2872e123">
                         <quote>æ od in æ mækʼuræj felvasta ma ʽj doni bagælsta</quote>
                         <abv:tr xml:lang="ru">
                             <q>извлекла у него душу из затылка и кинула ее в воду</q>
@@ -61,7 +64,7 @@
                         </abv:tr>
                         <bibl><biblScope>12%l2–3%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2872e141">
                         <quote>sæ kust niggælʒunmæ ǧavuncæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>они намерены бросить работу</q>
@@ -69,31 +72,26 @@
                         <abv:tr xml:lang="en">
                             <q>they intend to quit their job</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_SD"
-                            /><biblScope>273%l2%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_SD"/><biblScope>273%l2%l</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Может быть, из %ikæl-s-%i, см. <ref type="xr"
-                        target="#entry_kalyn"/> ‘бросать’, ‘лить’. Мы имели бы в этом случае одно из
+                <etym xml:lang="ru">Может быть, из %ikæl-s-%i, см. <ref type="xr" target="#entry_kalyn"/> ‘бросать’, ‘лить’. Мы имели бы в этом случае одно из
                     многочисленных глагольных образований с инхоативным %is%i. Начальный %ig%i
                     —„инфантильное“ озвончение; %i*gælsun%i → %i*gælzun%i → %igælʒun%i — как
                     %idælzæx%i → <ref type="xr" target="#entry_dælʒæx"/> ‘подземный мир’ и др. Ср.
-                        <mentioned xml:lang="kho"><lang/>
+                        <mentioned xml:id="mentioned_d2872e167" xml:lang="kho"><lang/>
                         <w>nas-kalj-</w>
-                        <gloss><q>выбрасывать</q></gloss></mentioned>, <mentioned xml:lang="kho"><w/>
-                        <gloss><q>выгонять</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Leumann"/><biblScope xml:lang="ru">447
+                        <gloss><q>выбрасывать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2872e175" xml:lang="kho"><w/>
+                        <gloss><q>выгонять</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Leumann"/><biblScope xml:lang="ru">447
                             сл.</biblScope></bibl>)?</etym>
-                <etym xml:lang="en">It may be from %ikæl-s-%i, see <ref type="xr"
-                        target="#entry_kalyn"/> ‘throw’, ‘pour’. In this case, we would have one of
+                <etym xml:lang="en">It may be from %ikæl-s-%i, see <ref type="xr" target="#entry_kalyn"/> ‘throw’, ‘pour’. In this case, we would have one of
                     the many verb derivatives with an inhoative %is%i. The initial %ig%i is an
                     “infantilized” voicing; %i*gælsun%i → %i*gælzun%i → %igælʒun%i — as %idælzæx%i →
                         <ref type="xr" target="#entry_dælʒæx"/> ‘underworld’ etc. Compare with
-                        <mentioned xml:lang="kho"><lang/>
+                        <mentioned xml:id="mentioned_d2872e194" xml:lang="kho"><lang/>
                         <w>nas-kalj-</w>
-                        <gloss><q>throw away</q></gloss></mentioned>, <mentioned xml:lang="kho"><w/>
-                        <gloss><q>chase out</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Leumann"/><biblScope xml:lang="en">447
+                        <gloss><q>throw away</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2872e202" xml:lang="kho"><w/>
+                        <gloss><q>chase out</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Leumann"/><biblScope xml:lang="en">447
                     ff.</biblScope></bibl>)?</etym>
             </entry>
         </body>

@@ -1,33 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">dæs</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_dæs" xml:lang="os">
                 <form type="lemma"><orth>dæs</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d5194e69"><abv:tr xml:lang="ru">
                         <q>десять</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>ten</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d5194e81">
                         <quote>dæs mærty myn xoræj læværdtoj myzdæn</quote>
                         <abv:tr xml:lang="ru">
                             <q>десять мер зерна мне давали в виде платы</q>
@@ -37,7 +42,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>56</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5194e100">
                         <quote>dæsazʒyd læg ū</quote>
                         <abv:tr xml:lang="ru">
                             <q>десятилетний — (уже) мужчина</q>
@@ -47,7 +52,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>55</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5194e119" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>dæs æma insæj ivazi</quote>
                         <abv:tr xml:lang="ru">
@@ -56,10 +61,9 @@
                         <abv:tr xml:lang="en">
                             <q>thirty ("ten and twenty") fathoms</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>2%l14%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>2%l14%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5194e141" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>tuxtæncæ Gubadtæ dæsemæj, ramardton he onæj æz avd</quote>
                         <abv:tr xml:lang="ru">
@@ -72,81 +76,73 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Как и другие числительные, относится к иранскому слою. Восходит
-                    к <mentioned xml:lang="ira"><lang/>
+                    к <mentioned xml:id="mentioned_d5194e166" xml:lang="ira"><lang/>
                         <w>dasa-</w></mentioned>. Закономерные соответствия имеются во всех
-                    индоевропейских языках: <mentioned xml:lang="yai"><lang/>
-                        <w>das</w></mentioned>, <mentioned xml:lang="sog"><lang/>
-                        <w>*δas(δs)</w></mentioned>, <mentioned xml:lang="wbl"><lang/>
-                        <w>δas</w></mentioned>, <mentioned xml:lang="srh"><lang/>
-                        <w>δés</w></mentioned>, <mentioned xml:lang="oru"><lang/>
-                        <w>das</w></mentioned>, <mentioned xml:lang="prc"><lang/>
-                        <w>d%bo%bs</w></mentioned>, <mentioned xml:lang="sgy"><lang/>
-                        <w>dos</w></mentioned>, <mentioned xml:lang="ps"><lang/>
-                        <w>δůs</w></mentioned>, <mentioned xml:lang="ps"><w>δīs</w></mentioned>,
-                        <mentioned xml:lang="yah"><lang/>
-                        <w>δūs</w></mentioned>, <mentioned xml:lang="ps"><lang/>
-                        <w>las</w></mentioned>, <mentioned xml:lang="fa"><lang/>
+                    индоевропейских языках: <mentioned xml:id="mentioned_d5194e171" xml:lang="yai"><lang/>
+                        <w>das</w></mentioned>, <mentioned xml:id="mentioned_d5194e176" xml:lang="sog"><lang/>
+                        <w>*δas(δs)</w></mentioned>, <mentioned xml:id="mentioned_d5194e181" xml:lang="wbl"><lang/>
+                        <w>δas</w></mentioned>, <mentioned xml:id="mentioned_d5194e186" xml:lang="srh"><lang/>
+                        <w>δés</w></mentioned>, <mentioned xml:id="mentioned_d5194e192" xml:lang="oru"><lang/>
+                        <w>das</w></mentioned>, <mentioned xml:id="mentioned_d5194e197" xml:lang="prc"><lang/>
+                        <w>d%bo%bs</w></mentioned>, <mentioned xml:id="mentioned_d5194e202" xml:lang="sgy"><lang/>
+                        <w>dos</w></mentioned>, <mentioned xml:id="mentioned_d5194e207" xml:lang="ps"><lang/>
+                        <w>δůs</w></mentioned>, <mentioned xml:id="mentioned_d5194e212" xml:lang="ps"><w>δīs</w></mentioned>,
+                        <mentioned xml:id="mentioned_d5194e215" xml:lang="yah"><lang/>
+                        <w>δūs</w></mentioned>, <mentioned xml:id="mentioned_d5194e221" xml:lang="ps"><lang/>
+                        <w>las</w></mentioned>, <mentioned xml:id="mentioned_d5194e226" xml:lang="fa"><lang/>
                         <w>dah</w><note type="comment" xml:lang="ru"> (в некоторых диалектах,
-                            например %bсемнанском%b, <mentioned xml:lang="fa"><lang/>
-                                <w>das</w></mentioned>)</note></mentioned>, <mentioned
-                        xml:lang="pal"><lang/>
-                        <w>dah</w></mentioned>, <mentioned xml:lang="kho"><lang/>
-                        <w>dasau</w></mentioned>, <mentioned xml:lang="ae"><lang/>
-                        <w>dasa-</w></mentioned>, <mentioned xml:lang="sa"><lang/>
-                        <w>daśa-</w></mentioned>, <mentioned xml:lang="xcl"><lang/>
-                        <w>tʼasn</w></mentioned>, <mentioned xml:lang="ru"><lang/>
-                        <w>десять</w></mentioned>, <mentioned xml:lang="lt"><lang/>
-                        <w>dēšimt</w></mentioned>, <mentioned xml:lang="got"><lang/>
-                        <w>táihun</w></mentioned>, <mentioned xml:lang="grc"><lang/>
-                        <w>δέκα</w></mentioned>, <mentioned xml:lang="la"><lang/>
-                        <w>decem</w></mentioned>, <mentioned xml:lang="br"><lang/>
+                            например %bсемнанском%b, <mentioned xml:id="mentioned_d5194e232" xml:lang="fa"><lang/>
+                                <w>das</w></mentioned>)</note></mentioned>, <mentioned xml:id="mentioned_d5194e238" xml:lang="pal"><lang/>
+                        <w>dah</w></mentioned>, <mentioned xml:id="mentioned_d5194e243" xml:lang="kho"><lang/>
+                        <w>dasau</w></mentioned>, <mentioned xml:id="mentioned_d5194e248" xml:lang="ae"><lang/>
+                        <w>dasa-</w></mentioned>, <mentioned xml:id="mentioned_d5194e253" xml:lang="sa"><lang/>
+                        <w>daśa-</w></mentioned>, <mentioned xml:id="mentioned_d5194e259" xml:lang="xcl"><lang/>
+                        <w>tʼasn</w></mentioned>, <mentioned xml:id="mentioned_d5194e264" xml:lang="ru"><lang/>
+                        <w>десять</w></mentioned>, <mentioned xml:id="mentioned_d5194e269" xml:lang="lt"><lang/>
+                        <w>dēšimt</w></mentioned>, <mentioned xml:id="mentioned_d5194e274" xml:lang="got"><lang/>
+                        <w>táihun</w></mentioned>, <mentioned xml:id="mentioned_d5194e279" xml:lang="grc"><lang/>
+                        <w>δέκα</w></mentioned>, <mentioned xml:id="mentioned_d5194e284" xml:lang="la"><lang/>
+                        <w>decem</w></mentioned>, <mentioned xml:id="mentioned_d5194e290" xml:lang="br"><lang/>
                         <w>dek</w></mentioned> и пр. Иранское название ‘десятка’, как и ‘сотни’,
-                    было усвоено в ряд финно-угорских языков: <mentioned xml:lang="kv"><lang/>
-                        <w n="0">дас</w></mentioned>, <mentioned xml:lang="udm"><lang/>
-                        <w n="0">дас</w></mentioned> (всего вероятнее, из скифского).%n<bibl><ref
-                            type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II
-                        48</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>48, 159</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_Hübschmann._Oss."/><biblScope>36</biblScope></bibl>. —
+                    было усвоено в ряд финно-угорских языков: <mentioned xml:id="mentioned_d5194e295" xml:lang="kv"><lang/>
+                        <w n="0">дас</w></mentioned>, <mentioned xml:id="mentioned_d5194e301" xml:lang="udm"><lang/>
+                        <w n="0">дас</w></mentioned> (всего вероятнее, из скифского).%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II
+                        48</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>48, 159</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>36</biblScope></bibl>. —
                             <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>22,
                             163</biblScope></bibl>.</etym>
                 <etym xml:lang="en">Like other numerals, the word relates to the Iranian stratum. It
-                    traces back to <mentioned xml:lang="ira"><lang/>
+                    traces back to <mentioned xml:id="mentioned_d5194e327" xml:lang="ira"><lang/>
                         <w>dasa-</w></mentioned>. Regular correspondences are found in all
-                    Indo-European languages: <mentioned xml:lang="yai"><lang/>
-                        <w>das</w></mentioned>, <mentioned xml:lang="sog"><lang/>
-                        <w>*δas(δs)</w></mentioned>, <mentioned xml:lang="wbl"><lang/>
-                        <w>δas</w></mentioned>, <mentioned xml:lang="srh"><lang/>
-                        <w>δés</w></mentioned>, <mentioned xml:lang="oru"><lang/>
-                        <w>das</w></mentioned>, <mentioned xml:lang="prc"><lang/>
-                        <w>d%bo%bs</w></mentioned>, <mentioned xml:lang="sgy"><lang/>
-                        <w>dos</w></mentioned>, <mentioned xml:lang="ps"><lang/>
-                        <w>δůs</w></mentioned>, <mentioned xml:lang="ps"><w>δīs</w></mentioned>,
-                        <mentioned xml:lang="yah"><lang/>
-                        <w>δūs</w></mentioned>, <mentioned xml:lang="ps"><lang/>
-                        <w>las</w></mentioned>, <mentioned xml:lang="fa"><lang/>
+                    Indo-European languages: <mentioned xml:id="mentioned_d5194e332" xml:lang="yai"><lang/>
+                        <w>das</w></mentioned>, <mentioned xml:id="mentioned_d5194e337" xml:lang="sog"><lang/>
+                        <w>*δas(δs)</w></mentioned>, <mentioned xml:id="mentioned_d5194e342" xml:lang="wbl"><lang/>
+                        <w>δas</w></mentioned>, <mentioned xml:id="mentioned_d5194e347" xml:lang="srh"><lang/>
+                        <w>δés</w></mentioned>, <mentioned xml:id="mentioned_d5194e353" xml:lang="oru"><lang/>
+                        <w>das</w></mentioned>, <mentioned xml:id="mentioned_d5194e358" xml:lang="prc"><lang/>
+                        <w>d%bo%bs</w></mentioned>, <mentioned xml:id="mentioned_d5194e363" xml:lang="sgy"><lang/>
+                        <w>dos</w></mentioned>, <mentioned xml:id="mentioned_d5194e368" xml:lang="ps"><lang/>
+                        <w>δůs</w></mentioned>, <mentioned xml:id="mentioned_d5194e373" xml:lang="ps"><w>δīs</w></mentioned>,
+                        <mentioned xml:id="mentioned_d5194e376" xml:lang="yah"><lang/>
+                        <w>δūs</w></mentioned>, <mentioned xml:id="mentioned_d5194e382" xml:lang="ps"><lang/>
+                        <w>las</w></mentioned>, <mentioned xml:id="mentioned_d5194e387" xml:lang="fa"><lang/>
                         <w>dah</w><note type="comment" xml:lang="en">
-                            (in some dialects, for example, in %bSemnani%b, <mentioned xml:lang="fa"><lang/>
-                                <w>das</w></mentioned>)</note></mentioned>, <mentioned
-                        xml:lang="pal"><lang/>
-                        <w>dah</w></mentioned>, <mentioned xml:lang="kho"><lang/>
-                        <w>dasau</w></mentioned>, <mentioned xml:lang="ae"><lang/>
-                        <w>dasa-</w></mentioned>, <mentioned xml:lang="sa"><lang/>
-                        <w>daśa-</w></mentioned>, <mentioned xml:lang="xcl"><lang/>
-                        <w>tʼasn</w></mentioned>, <mentioned xml:lang="ru"><lang/>
-                        <w>desjatʼ</w></mentioned>, <mentioned xml:lang="lt"><lang/>
-                        <w>dēšimt</w></mentioned>, <mentioned xml:lang="got"><lang/>
-                        <w>táihun</w></mentioned>, <mentioned xml:lang="grc"><lang/>
-                        <w>δέκα</w></mentioned>, <mentioned xml:lang="la"><lang/>
-                        <w>decem</w></mentioned>, <mentioned xml:lang="br"><lang/>
+                            (in some dialects, for example, in %bSemnani%b, <mentioned xml:id="mentioned_d5194e393" xml:lang="fa"><lang/>
+                                <w>das</w></mentioned>)</note></mentioned>, <mentioned xml:id="mentioned_d5194e399" xml:lang="pal"><lang/>
+                        <w>dah</w></mentioned>, <mentioned xml:id="mentioned_d5194e404" xml:lang="kho"><lang/>
+                        <w>dasau</w></mentioned>, <mentioned xml:id="mentioned_d5194e409" xml:lang="ae"><lang/>
+                        <w>dasa-</w></mentioned>, <mentioned xml:id="mentioned_d5194e414" xml:lang="sa"><lang/>
+                        <w>daśa-</w></mentioned>, <mentioned xml:id="mentioned_d5194e420" xml:lang="xcl"><lang/>
+                        <w>tʼasn</w></mentioned>, <mentioned xml:id="mentioned_d5194e425" xml:lang="ru"><lang/>
+                        <w>desjatʼ</w></mentioned>, <mentioned xml:id="mentioned_d5194e430" xml:lang="lt"><lang/>
+                        <w>dēšimt</w></mentioned>, <mentioned xml:id="mentioned_d5194e435" xml:lang="got"><lang/>
+                        <w>táihun</w></mentioned>, <mentioned xml:id="mentioned_d5194e440" xml:lang="grc"><lang/>
+                        <w>δέκα</w></mentioned>, <mentioned xml:id="mentioned_d5194e445" xml:lang="la"><lang/>
+                        <w>decem</w></mentioned>, <mentioned xml:id="mentioned_d5194e451" xml:lang="br"><lang/>
                         <w>dek</w></mentioned> etc. The Iranian name of ‘ten’, as well as ‘hundred’
-                    was borrowed in a number of Finno-Ugric languages: <mentioned xml:lang="kv"><lang/>
-                        <w>das</w></mentioned>, <mentioned xml:lang="udm"><lang/>
-                        <w>das</w></mentioned> (most probably, from Scythian).%n<bibl><ref
-                            type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II
-                        48</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>48, 159</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_Hübschmann._Oss."/><biblScope>36</biblScope></bibl>. —
+                    was borrowed in a number of Finno-Ugric languages: <mentioned xml:id="mentioned_d5194e456" xml:lang="kv"><lang/>
+                        <w>das</w></mentioned>, <mentioned xml:id="mentioned_d5194e461" xml:lang="udm"><lang/>
+                        <w>das</w></mentioned> (most probably, from Scythian).%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II
+                        48</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>48, 159</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>36</biblScope></bibl>. —
                             <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>22,
                             163</biblScope></bibl>.</etym>
             </entry>

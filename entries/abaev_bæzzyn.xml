@@ -1,41 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">bæzzyn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_bæzzyn" xml:lang="os">
-                <form xml:lang="os-x-iron" type="lemma"><orth>bæzzyn</orth><form type="variant"
-                            >(<orth>%bbæzzyd%b</orth>)</form><form type="participle"
-                            ><orth>bæzt</orth></form></form>
-                <form xml:lang="os-x-digor" type="dialectal"><orth>bæzzun</orth><form
-                        type="participle"><orth>bæzt</orth></form></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <form xml:lang="os-x-iron" type="lemma"><orth>bæzzyn</orth><form type="variant">(<orth>%bbæzzyd%b</orth>)</form><form type="participle"><orth>bæzt</orth></form></form>
+                <form xml:lang="os-x-digor" type="dialectal"><orth>bæzzun</orth><form type="participle"><orth>bæzt</orth></form></form>
+                <sense xml:id="sense_d5357e80"><sense xml:id="sense_d5357e81"><abv:tr xml:lang="ru">
                             <q>годиться</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>serve</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d5357e90"><abv:tr xml:lang="ru">
                             <q>быть годным</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>be useful</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d5357e102">
                         <quote>wykyʒy xærynæn bæzzy</quote>
                         <abv:tr xml:lang="ru">
                             <q>морковь (уже) годится для еды</q>
@@ -43,10 +45,9 @@
                         <abv:tr xml:lang="en">
                             <q>the carroy is already good for eating</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"
-                            /><biblScope>124</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>124</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5357e121" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>særdæn æ rajdajæni ǧæʒinʒæ rabæztæj</quote>
                         <abv:tr xml:lang="ru">
@@ -58,7 +59,7 @@
                         <bibl><ref type="bibl" target="#src_AK"/><biblScope>III
                             18</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5357e143">
                         <quote>cy k˳ystæn bæzzydtæn?</quote>
                         <abv:tr xml:lang="ru">
                             <q>на какую работу я был пригоден?</q>
@@ -68,7 +69,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>55</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5357e162">
                         <quote>ʒabyrtæ nikæmæn ysbæzzydysty</quote>
                         <abv:tr xml:lang="ru">
                             <q>чувяки никому не подошли</q>
@@ -76,10 +77,9 @@
                         <abv:tr xml:lang="en">
                             <q>chuvyaks did not fit anyone</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Munk."
-                            /><biblScope>112</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Munk."/><biblScope>112</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5357e181">
                         <quote>mæ wyndmæ myn næ kæs,-—næ bæzzyn ḱyzgæn</quote>
                         <abv:tr xml:lang="ru">
                             <q>не смотри намою внешность, — в девушки я не гожусь (не могу по
@@ -91,7 +91,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>52</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5357e201" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>…wædi walængæ din osæn næ bæzzun</quote>
                         <abv:tr xml:lang="ru">
@@ -100,10 +100,9 @@
                         <abv:tr xml:lang="en">
                             <q>…until then I am not good for being your wife</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>12%l14%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>12%l14%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5357e223" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>kæræʒemæn æmbaltæn bæztæncæ</quote>
                         <abv:tr xml:lang="ru">
@@ -112,10 +111,9 @@
                         <abv:tr xml:lang="en">
                             <q>they are good for being freind to each other</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>8%l16%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>8%l16%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5357e245" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>æz ku næ sbæzzon, wæd mæ kujtæ baxwæræntæ</quote>
                         <abv:tr xml:lang="ru">
@@ -126,10 +124,9 @@
                             <q>if I am not on top (don't cope with the deal), then let the dogs eat
                                 me</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>28%l9-10%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>28%l9-10%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5357e267" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>…kæd din estæmæn isbæzzioncæ</quote>
                         <abv:tr xml:lang="ru">
@@ -138,10 +135,9 @@
                         <abv:tr xml:lang="en">
                             <q>…may be (these things) will serve you for something</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                                /><biblScope>16%l13—14%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>16%l13—14%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5357e289" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>kæd ældari furt næ bæzzuj dæwæn, wæd bæzzon ædta ka ma
                             oʒænæj?</quote>
@@ -156,35 +152,29 @@
                         <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>38</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Ср. <mentioned xml:lang="ae"><lang/>
-                        <w>bǫz-</w></mentioned>, <mentioned xml:lang="ae"><w>debǫz-</w>
-                        <gloss><q>служить на пользу</q></gloss></mentioned>, <mentioned
-                        xml:lang="ae"><w/>
+                <etym xml:lang="ru">Ср. <mentioned xml:id="mentioned_d5357e314" xml:lang="ae"><lang/>
+                        <w>bǫz-</w></mentioned>, <mentioned xml:id="mentioned_d5357e319" xml:lang="ae"><w>debǫz-</w>
+                        <gloss><q>служить на пользу</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5357e325" xml:lang="ae"><w/>
                         <gloss><q>быть полезным</q></gloss></mentioned>. Уже <bibl><author>Вс.
-                            Миллер</author></bibl> сопоставлял с <mentioned xml:lang="ae"><lang/>
-                        <w>bązaiti</w></mentioned>, <mentioned xml:lang="sa"><lang/>
+                            Миллер</author></bibl> сопоставлял с <mentioned xml:id="mentioned_d5357e334" xml:lang="ae"><lang/>
+                        <w>bązaiti</w></mentioned>, <mentioned xml:id="mentioned_d5357e340" xml:lang="sa"><lang/>
                         <w>baṁhatē</w>
-                        <gloss><q>умножается</q></gloss></mentioned>, <mentioned xml:lang="sa"><lang/>
+                        <gloss><q>умножается</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5357e348" xml:lang="sa"><lang/>
                         <w>bahu-</w>
-                        <gloss><q>много</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._Gr."/><biblScope>32,
-                            63</biblScope></bibl>).%n<bibl><author>Benveniste</author><ref
-                            type="bibl" target="#ref_BSL"/><biblScope>LII 20
+                        <gloss><q>много</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>32,
+                            63</biblScope></bibl>).%n<bibl><author>Benveniste</author><ref type="bibl" target="#ref_BSL"/><biblScope>LII 20
                     сл.</biblScope></bibl></etym>
-                <etym xml:lang="en">Cf. <mentioned xml:lang="ae"><lang/>
-                        <w>bǫz-</w></mentioned>, <mentioned xml:lang="ae"><w>debǫz-</w>
-                        <gloss><q>serve for good</q></gloss></mentioned>, <mentioned xml:lang="ae"><w/>
+                <etym xml:lang="en">Cf. <mentioned xml:id="mentioned_d5357e368" xml:lang="ae"><lang/>
+                        <w>bǫz-</w></mentioned>, <mentioned xml:id="mentioned_d5357e373" xml:lang="ae"><w>debǫz-</w>
+                        <gloss><q>serve for good</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5357e379" xml:lang="ae"><w/>
                         <gloss><q>be useful</q></gloss></mentioned>. <bibl><author>Вс.
-                            Миллер</author></bibl> has already compared the word to the <mentioned
-                        xml:lang="ae"><lang/>
-                        <w>bązaiti</w></mentioned>, <mentioned xml:lang="sa"><lang/>
+                            Миллер</author></bibl> has already compared the word to the <mentioned xml:id="mentioned_d5357e388" xml:lang="ae"><lang/>
+                        <w>bązaiti</w></mentioned>, <mentioned xml:id="mentioned_d5357e394" xml:lang="sa"><lang/>
                         <w>baṁhatē</w>
-                        <gloss><q>(it) multiplies</q></gloss></mentioned>, <mentioned xml:lang="sa"><lang/>
+                        <gloss><q>(it) multiplies</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5357e402" xml:lang="sa"><lang/>
                         <w>bahu-</w>
-                        <gloss><q>much</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._Gr."/><biblScope>32,
-                            63</biblScope></bibl>).%n<bibl><author>Benveniste</author><ref
-                            type="bibl" target="#ref_BSL"/><biblScope>LII 20
+                        <gloss><q>much</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>32,
+                            63</biblScope></bibl>).%n<bibl><author>Benveniste</author><ref type="bibl" target="#ref_BSL"/><biblScope>LII 20
                     сл.</biblScope></bibl></etym>
             </entry>
         </body>

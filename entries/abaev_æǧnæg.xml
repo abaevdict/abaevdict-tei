@@ -1,37 +1,42 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">æǧnæg</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_æǧnæg" xml:lang="os">
                 <form type="lemma"><orth>æǧnæg</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d3048e69"><sense xml:id="sense_d3048e70"><abv:tr xml:lang="ru">
                             <q>застежка</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>clasp</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d3048e79"><abv:tr xml:lang="ru">
                             <q>пуговица</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>button</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d3048e91">
                         <quote>rīwy ʽǧnæǵytæ qazync st’alytaw</quote>
                         <abv:tr xml:lang="ru">
                             <q>застежки на груди играют, как звезды</q>
@@ -41,7 +46,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>19</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3048e110">
                         <quote>ængom cærūt, æǧnæg æmæ sæxtæg k˳yd cærync</quote>
                         <abv:tr xml:lang="ru">
                             <q>живите дружно, как живут пуговица и петля</q>
@@ -50,7 +55,7 @@
                             <q>live together like a button and a buttonhole</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3048e125">
                         <quote>ūj bæsty wal dæ æǧnæǵytæ æværyn sax˳yr ū</quote>
                         <abv:tr xml:lang="ru">
                             <q>лучше бы ты научился застегивать свои пуговицы</q>
@@ -62,45 +67,31 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Восстанавливаем в %i*æx-mæg%i, %i*ærx-næg%i, где %i-næg%i —
-                    суффиксальное (из %i-na%i + %ika%i), как в <ref type="xr" target="#entry_xærnæg"
-                    />, <ref type="xr" target="#entry_īwnæg"/>, <ref type="xr"
-                        target="#entry_ægæjnæg"/>, <ref type="xr" target="#entry_tawnæg"/> и др.
+                    суффиксальное (из %i-na%i + %ika%i), как в <ref type="xr" target="#entry_xærnæg"/>, <ref type="xr" target="#entry_īwnæg"/>, <ref type="xr" target="#entry_ægæjnæg"/>, <ref type="xr" target="#entry_tawnæg"/> и др.
                     Элемент %iæx-%i, %iærx-%i со значением ‘скрепление’, ‘скреплять’ и пр.
-                        (<mentioned xml:lang="x-oldirn"><lang/>
-                        <w>*ark-</w></mentioned>) мы находим еще в следующих словах: <ref type="xr"
-                        target="#entry_æxkænyn"/> ‘запирать’, <ref type="xr" target="#entry_æxtong"
-                    /> ‘подпруга’ и д. <ref type="xr" target="#entry_ærxu"/> ‘плотно замкнутый’,
-                        <ref type="xr" target="#entry_ærxæg"/> | %iærxængæ%i ‘сустав’, <ref
-                        type="xr" target="#entry_arx"/> ‘сук’ и, может быть, <ref type="xr"
-                        target="#entry_arkʼaw"/> ‘клещи’. Для семантического ряда ‘застежка’ — ‘сук’
-                    — ‘клещи’ ср. <mentioned xml:lang="fa"><lang/>
+                        (<mentioned xml:id="mentioned_d3048e155" xml:lang="x-oldirn"><lang/>
+                        <w>*ark-</w></mentioned>) мы находим еще в следующих словах: <ref type="xr" target="#entry_æxkænyn"/> ‘запирать’, <ref type="xr" target="#entry_æxtong"/> ‘подпруга’ и д. <ref type="xr" target="#entry_ærxu"/> ‘плотно замкнутый’,
+                        <ref type="xr" target="#entry_ærxæg"/> | %iærxængæ%i ‘сустав’, <ref type="xr" target="#entry_arx"/> ‘сук’ и, может быть, <ref type="xr" target="#entry_arkʼaw"/> ‘клещи’. Для семантического ряда ‘застежка’ — ‘сук’
+                    — ‘клещи’ ср. <mentioned xml:id="mentioned_d3048e174" xml:lang="fa"><lang/>
                         <w>giri</w>
-                        <gloss><q>застежка</q></gloss></mentioned>, <mentioned xml:lang="fa"><w/>
-                        <gloss><q>узел</q></gloss></mentioned>, <mentioned xml:lang="fa"><w/>
-                        <gloss><q>сук</q></gloss></mentioned> и <mentioned xml:lang="fa"><lang/>
+                        <gloss><q>застежка</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3048e182" xml:lang="fa"><w/>
+                        <gloss><q>узел</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3048e188" xml:lang="fa"><w/>
+                        <gloss><q>сук</q></gloss></mentioned> и <mentioned xml:id="mentioned_d3048e194" xml:lang="fa"><lang/>
                         <w>gīra</w>
-                        <gloss><q>клещи</q></gloss></mentioned>. См. <ref type="xr"
-                        target="#entry_æxkænyn"/>.</etym>
+                        <gloss><q>клещи</q></gloss></mentioned>. См. <ref type="xr" target="#entry_æxkænyn"/>.</etym>
                 <etym xml:lang="en">We reconstruct it as %i*æx-mæg%i, %i*ærx-næg%i, where %i-næg%i
-                    is a suffix (from %i-na%i + %ika%i), like in <ref type="xr"
-                        target="#entry_xærnæg"/>, <ref type="xr" target="#entry_īwnæg"/>, <ref
-                        type="xr" target="#entry_ægæjnæg"/>, <ref type="xr" target="#entry_tawnæg"/>
+                    is a suffix (from %i-na%i + %ika%i), like in <ref type="xr" target="#entry_xærnæg"/>, <ref type="xr" target="#entry_īwnæg"/>, <ref type="xr" target="#entry_ægæjnæg"/>, <ref type="xr" target="#entry_tawnæg"/>
                     etc. The element %iæx-%i, %iærx-%i with the meaning ‘fastening’, ‘fasten’ etc.
-                        (<mentioned xml:lang="x-oldirn"><lang/>
-                        <w>*ark-</w></mentioned>) we can find in other words: <ref type="xr"
-                        target="#entry_æxkænyn"/> ‘lock’, <ref type="xr" target="#entry_æxtong"/>
-                    ‘girth’ and Digor <ref type="xr" target="#entry_ærxu"/> ‘tightly closed’, <ref
-                        type="xr" target="#entry_ærxæg"/> | %iærxængæ%i ‘joint’, <ref type="xr"
-                        target="#entry_arx"/> ‘bough’ and, perhaps, <ref type="xr"
-                        target="#entry_arkʼaw"/> ‘pliers’. For the semantic chain ‘clasp’ — ‘bough’
-                    — ‘pliers’ cf. <mentioned xml:lang="fa"><lang/>
+                        (<mentioned xml:id="mentioned_d3048e215" xml:lang="x-oldirn"><lang/>
+                        <w>*ark-</w></mentioned>) we can find in other words: <ref type="xr" target="#entry_æxkænyn"/> ‘lock’, <ref type="xr" target="#entry_æxtong"/>
+                    ‘girth’ and Digor <ref type="xr" target="#entry_ærxu"/> ‘tightly closed’, <ref type="xr" target="#entry_ærxæg"/> | %iærxængæ%i ‘joint’, <ref type="xr" target="#entry_arx"/> ‘bough’ and, perhaps, <ref type="xr" target="#entry_arkʼaw"/> ‘pliers’. For the semantic chain ‘clasp’ — ‘bough’
+                    — ‘pliers’ cf. <mentioned xml:id="mentioned_d3048e234" xml:lang="fa"><lang/>
                         <w>giri</w>
-                        <gloss><q>clasp</q></gloss></mentioned>, <mentioned xml:lang="fa"><w/>
-                        <gloss><q>knot</q></gloss></mentioned>, <mentioned xml:lang="fa"><w/>
-                        <gloss><q>bough</q></gloss></mentioned> and <mentioned xml:lang="fa"><lang/>
+                        <gloss><q>clasp</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3048e242" xml:lang="fa"><w/>
+                        <gloss><q>knot</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3048e248" xml:lang="fa"><w/>
+                        <gloss><q>bough</q></gloss></mentioned> and <mentioned xml:id="mentioned_d3048e254" xml:lang="fa"><lang/>
                         <w>gīra</w>
-                        <gloss><q>pliers</q></gloss></mentioned>. Cf. <ref type="xr"
-                        target="#entry_æxkænyn"/>.</etym>
+                        <gloss><q>pliers</q></gloss></mentioned>. Cf. <ref type="xr" target="#entry_æxkænyn"/>.</etym>
             </entry>
         </body>
     </text>

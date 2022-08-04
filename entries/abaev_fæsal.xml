@@ -1,34 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">fæsal</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_fæsal" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>fæsal</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>fæsalæ</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d1931e72"><abv:tr xml:lang="ru">
                         <q>подстилка из сухой травы в горской обуви</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>dry grass bedding in mountain shoes</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d1931e84">
                         <quote>wæd fos k˳yd warzta! — fæsal syn lasta jæ sald ærḱʼījæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>как он любил скот! — таскал для них травяную подстилку своего
@@ -40,7 +45,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>48</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1931e103">
                         <quote>fæsalæj basyǧdæǵytæ kodta bæxy</quote>
                         <abv:tr xml:lang="ru">
                             <q>сухой травой он обчистил коня</q>
@@ -51,7 +56,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>IV
                             63</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1931e122">
                         <quote>næwæg fæsal jæ ærḱʼīty bakodta</quote>
                         <abv:tr xml:lang="ru">
                             <q>положил свежую подстилку в свои арчи</q>
@@ -62,7 +67,7 @@
                         <bibl><ref type="bibl" target="#src_ЮОПам."/><biblScope>III
                             38</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d1931e141" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>de ʽrkʼeti fæsalæ din ku næ barævʒæ kænon, wæd mæ baxwærʒænæ</quote>
                         <abv:tr xml:lang="ru">
@@ -76,7 +81,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
                             27</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d1931e163" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>wædi wængæ ba niffæsalæ widæ xwasæ æma næbal bæzzidæ</quote>
                         <abv:tr xml:lang="ru">
@@ -87,40 +92,36 @@
                             <q>by this time the grass was dry (‘got turned into %sfæsal%s’) and
                                 became unusable</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_SD"
-                            /><biblScope>292%l1%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_SD"/><biblScope>292%l1%l</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Может быть, из %i*fæd-sal%i, где %ifæd%i ← <ref type="xr"
-                        target="#entry_fad"/> ‘нога’ (с ослаблением гласного), а %isal%i из
-                    %i*salm%i = <mentioned xml:lang="cu"><lang/>
-                        <w n="0">слама</w></mentioned>, <mentioned xml:lang="ru"><lang/>
-                        <w>солома</w></mentioned>, <mentioned xml:lang="lv"><lang/>
+                <etym xml:lang="ru">Может быть, из %i*fæd-sal%i, где %ifæd%i ← <ref type="xr" target="#entry_fad"/> ‘нога’ (с ослаблением гласного), а %isal%i из
+                    %i*salm%i = <mentioned xml:id="mentioned_d1931e190" xml:lang="cu"><lang/>
+                        <w n="0">слама</w></mentioned>, <mentioned xml:id="mentioned_d1931e196" xml:lang="ru"><lang/>
+                        <w>солома</w></mentioned>, <mentioned xml:id="mentioned_d1931e201" xml:lang="lv"><lang/>
                         <w>salms</w>
-                        <gloss><q>солома</q></gloss></mentioned>, <mentioned xml:lang="de"><lang/>
+                        <gloss><q>солома</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1931e209" xml:lang="de"><lang/>
                         <w>Halm</w>
                         <gloss><q>соломинка</q></gloss></mentioned> и пр. Ср. другое название такой
                     же подстилки в обуви — <ref type="xr" target="#entry_fadxos"/>, где в первой
-                    части — <ref type="xr" target="#entry_fad"/> ‘нога’, во второй — <ref type="xr"
-                        target="#entry_xos"/> ‘сено’. Что в осетинском существовало в прошлом слово
+                    части — <ref type="xr" target="#entry_fad"/> ‘нога’, во второй — <ref type="xr" target="#entry_xos"/> ‘сено’. Что в осетинском существовало в прошлом слово
                     %i*salm%i (или близкое по звучанию), подтверждается косвенно балкарским
-                        <mentioned xml:lang="krc-x-balkar"><lang/>
+                        <mentioned xml:id="mentioned_d1931e224" xml:lang="krc-x-balkar"><lang/>
                         <w>salam</w>
                         <gloss><q>трава для подстилки в чувяках</q></gloss></mentioned>.</etym>
-                <etym xml:lang="en">It may be from %i*fæd-sal%i, where %ifæd%i ← <ref type="xr"
-                        target="#entry_fad"/> ‘foot’ (with the vowel weakening), and %isal%i is from
-                    %i*salm%i = <mentioned xml:lang="cu"><lang/>
-                        <w>slama</w></mentioned>, <mentioned xml:lang="ru"><lang/>
-                        <w>soloma</w></mentioned>, <mentioned xml:lang="lv"><lang/>
+                <etym xml:lang="en">It may be from %i*fæd-sal%i, where %ifæd%i ← <ref type="xr" target="#entry_fad"/> ‘foot’ (with the vowel weakening), and %isal%i is from
+                    %i*salm%i = <mentioned xml:id="mentioned_d1931e238" xml:lang="cu"><lang/>
+                        <w>slama</w></mentioned>, <mentioned xml:id="mentioned_d1931e243" xml:lang="ru"><lang/>
+                        <w>soloma</w></mentioned>, <mentioned xml:id="mentioned_d1931e248" xml:lang="lv"><lang/>
                         <w>salms</w>
-                        <gloss><q>straw</q></gloss></mentioned>, <mentioned xml:lang="de"><lang/>
+                        <gloss><q>straw</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1931e256" xml:lang="de"><lang/>
                         <w>Halm</w>
                         <gloss><q>one straw</q></gloss></mentioned> etc. Cf. the other name of the
                     same shoe bedding — <ref type="xr" target="#entry_fadxos"/>, where in the first
                     part there is <ref type="xr" target="#entry_fad"/> ‘foot’, and in the second
                     part there is <ref type="xr" target="#entry_xos"/> ‘hay’. The fact that in
                     Ossetic the word %i*salm%i (or similar in sound) existed in the past is
-                    indirectly confirmed by the <mentioned xml:lang="krc-x-balkar"><lang/>
+                    indirectly confirmed by the <mentioned xml:id="mentioned_d1931e271" xml:lang="krc-x-balkar"><lang/>
                         <w>salam</w>
                         <gloss><q>grass for shoe bedding</q></gloss></mentioned>.</etym>
             </entry>

@@ -1,43 +1,48 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">æxcin</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_æxcin" xml:lang="os-x-digor">
                 <form type="lemma"><orth>æxcin</orth></form>
                 <usg><lang/></usg>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d2563e72"><abv:tr xml:lang="ru">
                         <q>пирог с сыром</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>cheese pie</q>
                     </abv:tr></sense>
-                <re>
-                    <re xml:lang="os-x-iron">
+                <re xml:id="re_d2563e82">
+                    <re xml:id="re_d2563e84" xml:lang="os-x-iron">
                         <lang/>
                         <form type="lemma"><orth>wælīvyx</orth></form>
                     </re>
-                    <re>
+                    <re xml:id="re_d2563e92">
                         <form type="lemma"><orth>xæbīzǵyn</orth></form>
                     </re>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d2563e101">
                         <quote>ærbajvardta (madæ) tæncʽaræ æxcintæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>(мать) подала мне тонкослойные пироги</q>
@@ -45,54 +50,40 @@
                         <abv:tr xml:lang="en">
                             <q>(mother) served me thin-layer pies</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Тайм._Мӕ_зӕрд."
-                                /><biblScope>44</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Тайм._Мӕ_зӕрд."/><biblScope>44</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Вероятно, из %ixæc%i-%iin%i, где -%iin%i—суффиксальное, а
-                    %ixæc%i тождественно с <mentioned xml:lang="ka"><lang/>
-                        <w>xačʽa</w></mentioned> в <mentioned xml:lang="ka"><lang/>
+                    %ixæc%i тождественно с <mentioned xml:id="mentioned_d2563e124" xml:lang="ka"><lang/>
+                        <w>xačʽa</w></mentioned> в <mentioned xml:id="mentioned_d2563e129" xml:lang="ka"><lang/>
                         <w>xačʽapuri</w>
-                        <gloss><q>пирог</q></gloss></mentioned>, <mentioned xml:lang="ka"
-                            ><w>xačʽo</w>
-                        <gloss><q>творог</q></gloss></mentioned>, <mentioned xml:lang="sva"><lang/>
+                        <gloss><q>пирог</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2563e137" xml:lang="ka"><w>xačʽo</w>
+                        <gloss><q>творог</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2563e143" xml:lang="sva"><lang/>
                         <w>xačʽ</w></mentioned> id. Точное значение, стало быть, „творожник“,
-                    „сырник“. <mentioned xml:lang="krc-x-balkar"><lang/>
+                    „сырник“. <mentioned xml:id="mentioned_d2563e148" xml:lang="krc-x-balkar"><lang/>
                         <w>xəčən</w>
                         <gloss><q>пирог с сыром</q></gloss></mentioned> %b кар.%b примыкает к
                     дигорскому, сохраняя более старую форму без метатезы (%ixæ%i- → %iæx%i-).
                     Кулинарная терминология в осетинском весьма пестрого происхождения. Немногим
-                    иранским словам (<ref type="xr" target="#entry_fīzonæg"/> ‘шашлык’, <ref
-                        type="xr" target="#entry_fydǵyn"/> ‘пирог с мясом’, <ref type="xr"
-                        target="#entry_carv"/>‘масло’, <ref type="xr" target="#entry_mīsyn"/>
+                    иранским словам (<ref type="xr" target="#entry_fīzonæg"/> ‘шашлык’, <ref type="xr" target="#entry_fydǵyn"/> ‘пирог с мясом’, <ref type="xr" target="#entry_carv"/>‘масло’, <ref type="xr" target="#entry_mīsyn"/>
                     ‘пахтанье’, <ref type="xr" target="#entry_wælivyx"/> ‘пирог с сыром’ и некоторым
-                    другим) стоят элементы субстратные и заимствованные: <ref type="xr"
-                        target="#entry_kærzyn"/>, <ref type="xr" target="#entry_ʒūl"/> ‘хлеб’, <ref
-                        type="xr" target="#entry_ʒærna"/> (разные каши), <ref type="xr"
-                        target="#entry_xalyvvæ"/> ‘пирожок’, <ref type="xr" target="#entry_lyvzæ"/>
-                    ‘жаркое’, <ref type="xr" target="#entry_xænkʽæl"/> ‘лапша’ и др. Ср. <ref
-                        type="xr" target="#entry_xæbīzǵyn"/>.</etym>
+                    другим) стоят элементы субстратные и заимствованные: <ref type="xr" target="#entry_kærzyn"/>, <ref type="xr" target="#entry_ʒūl"/> ‘хлеб’, <ref type="xr" target="#entry_ʒærna"/> (разные каши), <ref type="xr" target="#entry_xalyvvæ"/> ‘пирожок’, <ref type="xr" target="#entry_lyvzæ"/>
+                    ‘жаркое’, <ref type="xr" target="#entry_xænkʽæl"/> ‘лапша’ и др. Ср. <ref type="xr" target="#entry_xæbīzǵyn"/>.</etym>
                 <etym xml:lang="en">It is probably from %ixæc%i-%iin%i, where -%iin%i — is suffix
-                    and %ixæc%i is identical to <mentioned xml:lang="ka"><lang/>
-                        <w>xačʽa</w></mentioned> в <mentioned xml:lang="ka"><lang/>
+                    and %ixæc%i is identical to <mentioned xml:id="mentioned_d2563e185" xml:lang="ka"><lang/>
+                        <w>xačʽa</w></mentioned> в <mentioned xml:id="mentioned_d2563e190" xml:lang="ka"><lang/>
                         <w>xačʽapuri</w>
-                        <gloss><q>pie</q></gloss></mentioned>, <mentioned xml:lang="ka"><w>xačʽo</w>
-                        <gloss><q>cottage cheese</q></gloss></mentioned>, <mentioned xml:lang="sva"><lang/>
+                        <gloss><q>pie</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2563e198" xml:lang="ka"><w>xačʽo</w>
+                        <gloss><q>cottage cheese</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2563e204" xml:lang="sva"><lang/>
                         <w>xačʽ</w></mentioned> id. Thus, the exact meaning is "curd pancake", "curd
-                    fritter". <mentioned xml:lang="krc-x-balkar" extralang="krc-x-karachay"><lang/>
+                    fritter". <mentioned xml:id="mentioned_d2563e209" xml:lang="krc-x-balkar" extralang="krc-x-karachay"><lang/>
                         <w>xəčən</w>
                         <gloss><q>cheese pie</q></gloss></mentioned> is close to Digor while
                     preserving a more ancient form without metathesis (%ixæ%i- → %iæx%i-). Culinary
-                    terminology in Ossetic is of mixed origin. Few Iranian words (<ref type="xr"
-                        target="#entry_fīzonæg"/> ‘kebab’, <ref type="xr" target="#entry_fydǵyn"/>
-                    ‘meat pie’, <ref type="xr" target="#entry_carv"/>‘butter’, <ref type="xr"
-                        target="#entry_mīsyn"/> ‘buttermilk’, <ref type="xr" target="#entry_wælivyx"
-                    /> ‘cheese pie’ and some other) are opposed to substrate and loan words: <ref
-                        type="xr" target="#entry_kærzyn"/>, <ref type="xr" target="#entry_ʒūl"/>
+                    terminology in Ossetic is of mixed origin. Few Iranian words (<ref type="xr" target="#entry_fīzonæg"/> ‘kebab’, <ref type="xr" target="#entry_fydǵyn"/>
+                    ‘meat pie’, <ref type="xr" target="#entry_carv"/>‘butter’, <ref type="xr" target="#entry_mīsyn"/> ‘buttermilk’, <ref type="xr" target="#entry_wælivyx"/> ‘cheese pie’ and some other) are opposed to substrate and loan words: <ref type="xr" target="#entry_kærzyn"/>, <ref type="xr" target="#entry_ʒūl"/>
                     ‘bread’, <ref type="xr" target="#entry_ʒærna"/> (different types of porridge),
-                        <ref type="xr" target="#entry_xalyvvæ"/> ‘little pie’, <ref type="xr"
-                        target="#entry_lyvzæ"/> ‘roast meat’, <ref type="xr" target="#entry_xænkʽæl"
-                    /> ‘noodles’ etc. Ср. <ref type="xr" target="#entry_xæbīzǵyn"/>.</etym>
+                        <ref type="xr" target="#entry_xalyvvæ"/> ‘little pie’, <ref type="xr" target="#entry_lyvzæ"/> ‘roast meat’, <ref type="xr" target="#entry_xænkʽæl"/> ‘noodles’ etc. Ср. <ref type="xr" target="#entry_xæbīzǵyn"/>.</etym>
             </entry>
         </body>
     </text>

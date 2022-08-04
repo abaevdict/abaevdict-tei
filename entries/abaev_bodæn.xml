@@ -1,38 +1,41 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">bodæn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_bodæn" xml:lang="os">
                 <form type="lemma"><orth>bodæn</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d2221e69"><abv:tr xml:lang="ru">
                         <q>чеснок</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>garlic</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
-                        <note type="comment" xml:lang="ru">Отмечено употребление <mentioned
-                                xml:lang="os-x-digor"><lang/>
+                    <abv:example xml:id="example_d2221e81">
+                        <note type="comment" xml:lang="ru">Отмечено употребление <mentioned xml:id="mentioned_d2221e85" xml:lang="os-x-digor"><lang/>
                                 <w>bodæn</w></mentioned> в значении ‘ладан’ (вместо %ibodæ%i): </note>
-                        <note type="comment" xml:lang="en">There is the example of using <mentioned
-                                xml:lang="os-x-digor"><lang/>
+                        <note type="comment" xml:lang="en">There is the example of using <mentioned xml:id="mentioned_d2221e93" xml:lang="os-x-digor"><lang/>
                                 <w>bodæn</w></mentioned> in the meaning ‘incense’ (instead of
                             %ibodæ%i): </note>
                         <quote>bodæn ciraǧæn kæmi soʒuncæ, eci citgin rawæn dæ badæn fæwwæd</quote>
@@ -51,19 +54,17 @@
                 <etym xml:lang="ru">Восходит к *%ibaudana%i-. От глагольной основы %ibod%i-
                     ‘пахнуть’, сохранившейся в <ref type="xr" target="#entry_būd"/> | %ibod%i
                     ‘ладан’, <ref type="xr" target="#entry_ysmūdyn"/> ‘обонять’; %ibodæn%i =
-                    „пахучее (растение)“. Ср. <mentioned xml:lang="sog"><lang/>
+                    „пахучее (растение)“. Ср. <mentioned xml:id="mentioned_d2221e124" xml:lang="sog"><lang/>
                         <w>βōδαη</w>
                         <gloss><q>parfuming’</q></gloss></mentioned>
-                            (<bibl><author>Bailey</author><ref type="bibl" target="#ref_TPhS"
-                            /><biblScope>1956, стр. 81</biblScope></bibl>).</etym>
+                            (<bibl><author>Bailey</author><ref type="bibl" target="#ref_TPhS"/><biblScope>1956, стр. 81</biblScope></bibl>).</etym>
                 <etym xml:lang="en">It traces back to *%ibaudana%i-. It is derived from the verbal
                     stem %ibod%i- ‘smell’, which is found in <ref type="xr" target="#entry_būd"/> |
                     %ibod%i ‘incense’, <ref type="xr" target="#entry_ysmūdyn"/> ‘smell’; %ibodæn%i =
-                    "smelling (plant)“. Cf. <mentioned xml:lang="sog"><lang/>
+                    "smelling (plant)“. Cf. <mentioned xml:id="mentioned_d2221e144" xml:lang="sog"><lang/>
                         <w>βōδαη</w>
                         <gloss><q>parfuming’</q></gloss></mentioned>
-                            (<bibl><author>Bailey</author><ref type="bibl" target="#ref_TPhS"
-                            /><biblScope>1956, стр. 81</biblScope></bibl>).</etym>
+                            (<bibl><author>Bailey</author><ref type="bibl" target="#ref_TPhS"/><biblScope>1956, стр. 81</biblScope></bibl>).</etym>
             </entry>
         </body>
     </text>

@@ -1,55 +1,59 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">kʼūtū</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_kʼūtū" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>kʼūtū</orth></form>
-                <form xml:lang="os-x-digor" type="dialectal"><orth>kʼutu</orth><form type="variant"
-                            ><orth>kʼurtu</orth></form></form>
-                <sense><abv:tr xml:lang="ru">
+                <form xml:lang="os-x-digor" type="dialectal"><orth>kʼutu</orth><form type="variant"><orth>kʼurtu</orth></form></form>
+                <sense xml:id="sense_d2510e74"><abv:tr xml:lang="ru">
                         <q>корзина для хранения зерна и пр.</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>basket for storing grain etc.</q>
                     </abv:tr></sense>
-                <re>
+                <re xml:id="re_d2510e84">
                     <form type="lemma"><orth>k˳yrojy kʼūtū</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d2510e89"><abv:tr xml:lang="ru">
                             <q>мельничная корзина (куда засыпают зерно)</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>mill basket (where the grain is poured)</q>
                         </abv:tr></sense>
                 </re>
-                <re>
+                <re xml:id="re_d2510e100">
                     <form type="lemma"><orth>kæfaxsæn kʼūtū</orth></form>
-                    <sense><sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d2510e105"><sense xml:id="sense_d2510e106"><abv:tr xml:lang="ru">
                                 <q>корзина конической формы для ловли рыб</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>basket of conical form for fishing</q>
-                            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                            </abv:tr></sense><sense xml:id="sense_d2510e115"><abv:tr xml:lang="ru">
                                 <q>верша</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>fish-trap</q>
                             </abv:tr></sense></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d2510e129">
                         <quote/>
                         <abv:tr xml:lang="ru">
                             <q>зерно очищалось, проветривалось, просушивалось, сортировалось и
@@ -62,7 +66,7 @@
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>Этн.
                             15</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2510e148">
                         <quote>kʼūtūjaw jæ tæntæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>его живот подобен корзине для зерна</q>
@@ -70,10 +74,9 @@
                         <abv:tr xml:lang="en">
                             <q>his belly looks like a basket for grain</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"
-                            /><biblScope>103</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>103</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2510e167">
                         <quote>Azaw kʼūtūjy fæstæ ambæxst</quote>
                         <abv:tr xml:lang="ru">
                             <q>Азау спряталась за %skʼūtū%s</q>
@@ -83,7 +86,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Сека"/><biblScope>51</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d2510e186" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>næ wælkʼurtu mæ uftīnæ</quote>
                         <abv:tr xml:lang="ru">
@@ -95,61 +98,50 @@
                         <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>23</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Вероятно, из <mentioned xml:lang="trk"><lang/>
+                <etym xml:lang="ru">Вероятно, из <mentioned xml:id="mentioned_d2510e211" xml:lang="trk"><lang/>
                         <w>qutu</w>
-                        <gloss><q>коробка</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Радлов"/><biblScope>II 992</biblScope></bibl>. — <bibl><ref
-                            type="bibl" target="#ref_Zenker"/><biblScope>712</biblScope></bibl>);
-                    ср. <mentioned xml:lang="fa"><lang/>
-                        <w>qūtī</w></mentioned>, <mentioned xml:lang="ka"><lang/>
+                        <gloss><q>коробка</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Радлов"/><biblScope>II 992</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Zenker"/><biblScope>712</biblScope></bibl>);
+                    ср. <mentioned xml:id="mentioned_d2510e227" xml:lang="fa"><lang/>
+                        <w>qūtī</w></mentioned>, <mentioned xml:id="mentioned_d2510e232" xml:lang="ka"><lang/>
                         <w>quti</w>
-                        <gloss><q>коробка</q></gloss></mentioned>, <mentioned xml:lang="ka"><w/>
+                        <gloss><q>коробка</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2510e241" xml:lang="ka"><w/>
                         <gloss><q>шкатулка</q></gloss></mentioned>. Для объяснения дигорской формы
                     %ikʼurtu%i следует допускать контаминацию с каким-то унаследованным иранским
-                    словом, имеющим соответствия в <mentioned xml:lang="grc"><lang/>
+                    словом, имеющим соответствия в <mentioned xml:id="mentioned_d2510e247" xml:lang="grc"><lang/>
                         <w>κύρτος, κύρτη</w>
-                        <gloss><q>рыболовная корзина</q></gloss></mentioned>, <mentioned
-                        xml:lang="grc"><w/>
-                        <gloss><q>верша</q></gloss></mentioned>, <mentioned xml:lang="sa"><lang/>
-                        <w>kata-</w></mentioned> (из %i*karta-%i), <mentioned xml:lang="la"><lang/>
+                        <gloss><q>рыболовная корзина</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2510e255" xml:lang="grc"><w/>
+                        <gloss><q>верша</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2510e261" xml:lang="sa"><lang/>
+                        <w>kata-</w></mentioned> (из %i*karta-%i), <mentioned xml:id="mentioned_d2510e266" xml:lang="la"><lang/>
                         <w>cratis</w>
-                        <gloss><q>плетенка</q></gloss></mentioned> и пр. (<bibl><ref type="bibl"
-                            target="#ref_Boisacq"/><biblScope>416</biblScope></bibl>). На
+                        <gloss><q>плетенка</q></gloss></mentioned> и пр. (<bibl><ref type="bibl" target="#ref_Boisacq"/><biblScope>416</biblScope></bibl>). На
                     контаминацию указывает и семантика: значение ‘корзина’ ближе к приведенным
-                    индоевропейским словам, чем к <mentioned xml:lang="trk"><lang/>
+                    индоевропейским словам, чем к <mentioned xml:id="mentioned_d2510e279" xml:lang="trk"><lang/>
                         <w>qutu</w>
-                        <gloss><q>коробка</q></gloss></mentioned>, <mentioned xml:lang="trk"><w/>
-                        <gloss><q>шкатулка</q></gloss></mentioned>.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 70</biblScope></bibl>. —
-                            <bibl><ref type="bibl" target="#ref_MSt."
-                        /><biblScope>82</biblScope></bibl>.</etym>
-                <etym xml:lang="en">Probably, from <mentioned xml:lang="trk"><lang/>
+                        <gloss><q>коробка</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2510e287" xml:lang="trk"><w/>
+                        <gloss><q>шкатулка</q></gloss></mentioned>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 70</biblScope></bibl>. —
+                            <bibl><ref type="bibl" target="#ref_MSt."/><biblScope>82</biblScope></bibl>.</etym>
+                <etym xml:lang="en">Probably, from <mentioned xml:id="mentioned_d2510e304" xml:lang="trk"><lang/>
                         <w>qutu</w>
-                        <gloss><q>box</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Радлов"/><biblScope>II 992</biblScope></bibl>. — <bibl><ref
-                            type="bibl" target="#ref_Zenker"/><biblScope>712</biblScope></bibl>);
-                    cf. <mentioned xml:lang="fa"><lang/>
-                        <w>qūtī</w></mentioned>, <mentioned xml:lang="ka"><lang/>
+                        <gloss><q>box</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Радлов"/><biblScope>II 992</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Zenker"/><biblScope>712</biblScope></bibl>);
+                    cf. <mentioned xml:id="mentioned_d2510e320" xml:lang="fa"><lang/>
+                        <w>qūtī</w></mentioned>, <mentioned xml:id="mentioned_d2510e325" xml:lang="ka"><lang/>
                         <w>quti</w>
-                        <gloss><q>box</q></gloss></mentioned>, <mentioned xml:lang="ka"><w/>
+                        <gloss><q>box</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2510e334" xml:lang="ka"><w/>
                         <gloss><q>casket</q></gloss></mentioned>. In order to explain the Digor form
                     %ikʼurtu%i, one should allow the contamination with some inherited Iranian word,
-                    which has correspondences in <mentioned xml:lang="grc"><lang/>
+                    which has correspondences in <mentioned xml:id="mentioned_d2510e340" xml:lang="grc"><lang/>
                         <w>κύρτος, κύρτη</w>
-                        <gloss><q>fishing basket</q></gloss></mentioned>, <mentioned xml:lang="grc"><w/>
-                        <gloss><q>fish-trap</q></gloss></mentioned>, <mentioned xml:lang="sa"><lang/>
-                        <w>kata-</w></mentioned> (from %i*karta-%i), <mentioned xml:lang="la"><lang/>
+                        <gloss><q>fishing basket</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2510e348" xml:lang="grc"><w/>
+                        <gloss><q>fish-trap</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2510e354" xml:lang="sa"><lang/>
+                        <w>kata-</w></mentioned> (from %i*karta-%i), <mentioned xml:id="mentioned_d2510e359" xml:lang="la"><lang/>
                         <w>cratis</w>
-                        <gloss><q>wattled basket</q></gloss></mentioned> etc. (<bibl><ref
-                            type="bibl" target="#ref_Boisacq"/><biblScope>416</biblScope></bibl>).
+                        <gloss><q>wattled basket</q></gloss></mentioned> etc. (<bibl><ref type="bibl" target="#ref_Boisacq"/><biblScope>416</biblScope></bibl>).
                     The semantics also indicates the contamination: the meaning ‘basket’ is closer
-                    to the given Indo-European words than to <mentioned xml:lang="trk"><lang/>
+                    to the given Indo-European words than to <mentioned xml:id="mentioned_d2510e372" xml:lang="trk"><lang/>
                         <w>qutu</w>
-                        <gloss><q>box</q></gloss></mentioned>, <mentioned xml:lang="trk"><w/>
-                        <gloss><q>casket</q></gloss></mentioned>.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 70</biblScope></bibl>. —
-                            <bibl><ref type="bibl" target="#ref_MSt."
-                        /><biblScope>82</biblScope></bibl>.</etym>
+                        <gloss><q>box</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2510e380" xml:lang="trk"><w/>
+                        <gloss><q>casket</q></gloss></mentioned>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 70</biblScope></bibl>. —
+                            <bibl><ref type="bibl" target="#ref_MSt."/><biblScope>82</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

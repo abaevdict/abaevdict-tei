@@ -1,42 +1,47 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">fes</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_fes" xml:lang="os-x-digor">
                 <form type="lemma"><orth>fes</orth></form>
                 <usg><lang/></usg>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d2409e72"><abv:tr xml:lang="ru">
                         <q>счастье</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>happiness</q>
                     </abv:tr></sense>
-                <re>
+                <re xml:id="re_d2409e82">
                     <form type="lemma"><orth>fesgun</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d2409e87"><abv:tr xml:lang="ru">
                             <q>счастливый</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>happy</q>
                         </abv:tr></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d2409e100">
                         <quote>fes, amond dæ xaj fæwæd</quote>
                         <abv:tr xml:lang="ru">
                             <q>счастье, благоденствие да будет твоим уделом</q>
@@ -46,7 +51,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Сл."/></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2409e118">
                         <quote>madta næ Xucaw fesgun xæstæg iskænæd!</quote>
                         <abv:tr xml:lang="ru">
                             <q>так пусть же Бог сделает нас счастливыми родственниками!</q>
@@ -57,7 +62,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
                             24</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2409e137">
                         <quote>omæj fesgundær nostæ wæmæ ma ʽrcæwæd</quote>
                         <abv:tr xml:lang="ru">
                             <q>пусть не придет к вам более счастливая невеста</q>
@@ -68,7 +73,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
                             46</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2409e156">
                         <quote>wæ, fesgun bon!</quote>
                         <abv:tr xml:lang="ru">
                             <q>о, счастливый день!</q>
@@ -79,7 +84,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
                             150</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2409e175">
                         <quote>fesgun igurd, nivgun igurd fæwæd!</quote>
                         <abv:tr xml:lang="ru">
                             <q>да будет (ребенок) счастливо рожденным!</q>
@@ -87,29 +92,24 @@
                         <abv:tr xml:lang="en">
                             <q>may the child be happily born!</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Диг._сказ."
-                            /><biblScope>59</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Диг._сказ."/><biblScope>59</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Закономерно восходит к <mentioned xml:lang="ira"><lang/>
+                <etym xml:lang="ru">Закономерно восходит к <mentioned xml:id="mentioned_d2409e198" xml:lang="ira"><lang/>
                         <w>*paisa-</w><note type="comment" xml:lang="ru">, буквально</note>
-                        <gloss><q>написанное</q></gloss></mentioned>, <mentioned xml:lang="ira"><w/>
+                        <gloss><q>написанное</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2409e208" xml:lang="ira"><w/>
                         <gloss><q>предопределенное</q></gloss></mentioned>, от %ipais-%i ‘писать’;
-                    см. <ref type="xr" target="#entry_fyssyn"/>. Для идеосемантики ср. ос. <ref
-                        type="xr" target="#entry_nyxyfyst"/> ‘судьба’, буквально „написанное
+                    см. <ref type="xr" target="#entry_fyssyn"/>. Для идеосемантики ср. ос. <ref type="xr" target="#entry_nyxyfyst"/> ‘судьба’, буквально „написанное
                     (%ifyst%i) на лбу (<ref type="xr" target="#entry_nyx_2"><w>nyxy</w></ref>)“. Ср.
                     другие слова со значением ‘счастье’: <ref type="xr" target="#entry_nyv"/> |
                         <w>nivæ</w>.</etym>
-                <etym xml:lang="en">Regularly traces back to <mentioned xml:lang="ira"><lang/>
-                        <w>*paisa-</w><note
-                            type="comment" xml:lang="en">, literally</note>
-                        <gloss><q>written</q></gloss></mentioned>, <mentioned xml:lang="ira"><w/>
+                <etym xml:lang="en">Regularly traces back to <mentioned xml:id="mentioned_d2409e229" xml:lang="ira"><lang/>
+                        <w>*paisa-</w><note type="comment" xml:lang="en">, literally</note>
+                        <gloss><q>written</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2409e239" xml:lang="ira"><w/>
                         <gloss><q>predetermined</q></gloss></mentioned>, from %ipais-%i ‘write’; see
                         <ref type="xr" target="#entry_fyssyn"/>. For the ideosemantics cf. Ossetic
                         <ref type="xr" target="#entry_nyxyfyst"/> ‘destiny’, literally ‘written
-                    (%ifyst%i) on the forehead (<ref type="xr" target="#entry_nyx_2"
-                        ><w>nyxy</w></ref>)’. Cf. other words with the meaning ‘happiness’: <ref
-                        type="xr" target="#entry_nyv"/> | <w>nivæ</w>.</etym>
+                    (%ifyst%i) on the forehead (<ref type="xr" target="#entry_nyx_2"><w>nyxy</w></ref>)’. Cf. other words with the meaning ‘happiness’: <ref type="xr" target="#entry_nyv"/> | <w>nivæ</w>.</etym>
             </entry>
         </body>
     </text>

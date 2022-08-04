@@ -1,33 +1,37 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">aj</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_aj" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>aj</orth></form>
-                <form xml:lang="os-x-digor" type="dialectal">(<orth>a</orth>)<form type="variant"
-                            ><orth>ajæ</orth></form></form>
-                <sense><abv:tr xml:lang="ru">
+                <form xml:lang="os-x-digor" type="dialectal">(<orth>a</orth>)<form type="variant"><orth>ajæ</orth></form></form>
+                <sense xml:id="sense_d1647e76"><abv:tr xml:lang="ru">
                         <q>этот</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d1647e84">
                         <quote>aj ta cy dissag ū?</quote>
                         <abv:tr xml:lang="ru">
                             <q>что это за чудо?</q>
@@ -37,7 +41,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>86</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1647e103">
                         <quote>a ba Æxsærtæggati æxsi ǧær æj</quote>
                         <abv:tr xml:lang="ru">
                             <q>это шум плетки Ахсартаггаевых</q>
@@ -48,7 +52,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
                             45</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1647e122">
                         <quote>Færank ajtæ-ūjtæ nal fækodta fælæ Bæbijy zængyl jæxī nyzdyxta</quote>
                         <abv:tr xml:lang="ru">
                             <q>(щенок) Барс, не долго думая (не говоря „%iajtæ-ūjtæ%i“), вцепился в
@@ -63,23 +67,17 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Восходит к старому Gen. *%iāhya%i, как %iūj%i — к %iavahyā%i,
-                    ср. <mentioned xml:lang="ae"><lang/>
-                        <w>ahuā</w></mentioned>, <mentioned xml:lang="peo"><lang/>
-                        <w>ahycyā</w></mentioned>, <mentioned xml:lang="sa"><lang/>
-                        <w>asuá</w></mentioned>. См. <ref type="xr" target="#entry_a"/>; ср. <ref
-                        type="xr" target="#entry_ūj"/>.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 153</biblScope></bibl>;
-                            <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>53</biblScope></bibl>.</etym>
+                    ср. <mentioned xml:id="mentioned_d1647e144" xml:lang="ae"><lang/>
+                        <w>ahuā</w></mentioned>, <mentioned xml:id="mentioned_d1647e149" xml:lang="peo"><lang/>
+                        <w>ahycyā</w></mentioned>, <mentioned xml:id="mentioned_d1647e154" xml:lang="sa"><lang/>
+                        <w>asuá</w></mentioned>. См. <ref type="xr" target="#entry_a"/>; ср. <ref type="xr" target="#entry_ūj"/>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 153</biblScope></bibl>;
+                            <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>53</biblScope></bibl>.</etym>
                 <etym xml:lang="en">Traces back to the old genitive form *%iāhya%i, like %iūj%i — to
-                    %iavahyā%i, cf. <mentioned xml:lang="ae"><lang/>
-                        <w>ahuā</w></mentioned>, <mentioned xml:lang="peo"><lang/>
-                        <w>ahycyā</w></mentioned>, <mentioned xml:lang="sa"><lang/>
-                        <w>asuá</w></mentioned>. See <ref type="xr" target="#entry_a"/>; cf. <ref
-                        type="xr" target="#entry_ūj"/>.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 153</biblScope></bibl>;
-                            <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>53</biblScope></bibl>.</etym>
+                    %iavahyā%i, cf. <mentioned xml:id="mentioned_d1647e176" xml:lang="ae"><lang/>
+                        <w>ahuā</w></mentioned>, <mentioned xml:id="mentioned_d1647e181" xml:lang="peo"><lang/>
+                        <w>ahycyā</w></mentioned>, <mentioned xml:id="mentioned_d1647e186" xml:lang="sa"><lang/>
+                        <w>asuá</w></mentioned>. See <ref type="xr" target="#entry_a"/>; cf. <ref type="xr" target="#entry_ūj"/>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 153</biblScope></bibl>;
+                            <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>53</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

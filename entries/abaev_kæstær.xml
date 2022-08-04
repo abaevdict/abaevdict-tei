@@ -1,37 +1,42 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">kæstær</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_kæstær" xml:lang="os">
                 <form type="lemma"><orth>kæstær</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d4065e69"><sense xml:id="sense_d4065e70"><abv:tr xml:lang="ru">
                             <q>младший</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>the youngest</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d4065e79"><abv:tr xml:lang="ru">
                             <q>младше</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>younger</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4065e91">
                         <quote>xīstær Kabæxan… sabyr, ænkʼard x˳yz… kæstær Zalixan, ræwægdær,
                             qælʒægdær ḱyzg</quote>
                         <abv:tr xml:lang="ru">
@@ -42,10 +47,9 @@
                             <q>the elder girl, Chabahan, is quiet and sadly looking, the younger
                                 girl, Zalihan, is more easygoing and fun</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"
-                            /><biblScope>137</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>137</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4065e110">
                         <quote>kæstæjrag, kæstag</quote>
                         <abv:tr xml:lang="ru">
                             <q>что положено младшему, доля младшего (из угощения)</q>
@@ -54,7 +58,7 @@
                             <q>the share of the youngest person (out of refreshments)</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4065e125" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>e ba win xestærtæn xestag, kæstærtæn ba kæstag</quote>
                         <abv:tr xml:lang="ru">
@@ -69,68 +73,50 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Восходит к иран. %i*kasu%i + %itara-%i, сравнительная степень от
-                    %ikasu-%i ‘малый’. Ср. <mentioned xml:lang="fa"><lang/>
+                    %ikasu-%i ‘малый’. Ср. <mentioned xml:id="mentioned_d4065e150" xml:lang="fa"><lang/>
                         <w>kastar, kaster, kessar %i(%i← *kestar%i)%i</w>
-                        <gloss><q>младший</q></gloss></mentioned> (диал.) (<bibl><ref type="bibl"
-                            target="#ref_Жуковский"/><biblScope>I 71, II 124</biblScope></bibl>),
-                    ср. также <mentioned xml:lang="fa"><lang/>
+                        <gloss><q>младший</q></gloss></mentioned> (диал.) (<bibl><ref type="bibl" target="#ref_Жуковский"/><biblScope>I 71, II 124</biblScope></bibl>),
+                    ср. также <mentioned xml:id="mentioned_d4065e162" xml:lang="fa"><lang/>
                         <w>kastan</w>
-                        <gloss><q>уменьшать</q></gloss></mentioned>, <mentioned xml:lang="x-balochi"><lang/>
+                        <gloss><q>уменьшать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4065e170" xml:lang="x-balochi"><lang/>
                         <w>kastir</w>
-                        <gloss><q>меньший</q></gloss></mentioned>, <mentioned xml:lang="ps"><lang/>
+                        <gloss><q>меньший</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4065e178" xml:lang="ps"><lang/>
                         <w>kašr %i(%i← *kašvr ← *kasyatara-%i)%i</w>
-                        <gloss><q>младший</q></gloss></mentioned>, <mentioned xml:lang="kho"><lang/>
+                        <gloss><q>младший</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4065e187" xml:lang="kho"><lang/>
                         <w>kastara</w>
-                        <gloss><q>ничтожный</q></gloss></mentioned> (? <bibl><ref type="bibl"
-                            target="#ref_Leumann"/><biblScope>409</biblScope></bibl>), <mentioned
-                        xml:lang="sog"><lang/>
+                        <gloss><q>ничтожный</q></gloss></mentioned> (? <bibl><ref type="bibl" target="#ref_Leumann"/><biblScope>409</biblScope></bibl>), <mentioned xml:id="mentioned_d4065e199" xml:lang="sog"><lang/>
                         <w>*kaštar(kštr)</w>
-                        <gloss><q>младший</q></gloss></mentioned>; положительная степень: <mentioned
-                        xml:lang="fa"><lang/>
-                        <w>kih</w></mentioned>, <mentioned xml:lang="pal"><lang/>
-                        <w>kas</w></mentioned>, <mentioned xml:lang="sog"><lang/>
-                        <w>*kas-(ks-)</w></mentioned>, <mentioned xml:lang="ae"><lang/>
+                        <gloss><q>младший</q></gloss></mentioned>; положительная степень: <mentioned xml:id="mentioned_d4065e207" xml:lang="fa"><lang/>
+                        <w>kih</w></mentioned>, <mentioned xml:id="mentioned_d4065e212" xml:lang="pal"><lang/>
+                        <w>kas</w></mentioned>, <mentioned xml:id="mentioned_d4065e217" xml:lang="sog"><lang/>
+                        <w>*kas-(ks-)</w></mentioned>, <mentioned xml:id="mentioned_d4065e223" xml:lang="ae"><lang/>
                         <w>kasu-</w>
-                        <gloss><q>малый</q></gloss></mentioned>. — Ср. <ref type="xr"
-                        target="#entry_xīstær"/> ‘старший’.<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 47</biblScope></bibl>;
-                            <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>27</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_Hübschmann._Oss."/><biblScope>44</biblScope></bibl>.—
-                            <bibl><ref type="bibl" target="#ref_Bailey._Asica"
-                            /><biblScope>32</biblScope></bibl>.</etym>
+                        <gloss><q>малый</q></gloss></mentioned>. — Ср. <ref type="xr" target="#entry_xīstær"/> ‘старший’.<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 47</biblScope></bibl>;
+                            <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>27</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>44</biblScope></bibl>.—
+                            <bibl><ref type="bibl" target="#ref_Bailey._Asica"/><biblScope>32</biblScope></bibl>.</etym>
                 <etym xml:lang="en">It traces back to Iranian %i*kasu%i + %itara-%i, the comparative
-                    from %ikasu-%i ‘small’. Cf. <mentioned xml:lang="fa"><lang/>
+                    from %ikasu-%i ‘small’. Cf. <mentioned xml:id="mentioned_d4065e252" xml:lang="fa"><lang/>
                         <w>kastar, kaster, kessar %i(%i← *kestar%i)%i</w>
-                        <gloss><q>the youngest</q></gloss></mentioned> (диал.) (<bibl><ref
-                            type="bibl" target="#ref_Жуковский"/><biblScope>I 71, II
-                        124</biblScope></bibl>), cf. also <mentioned xml:lang="fa"><lang/>
+                        <gloss><q>the youngest</q></gloss></mentioned> (диал.) (<bibl><ref type="bibl" target="#ref_Жуковский"/><biblScope>I 71, II
+                        124</biblScope></bibl>), cf. also <mentioned xml:id="mentioned_d4065e264" xml:lang="fa"><lang/>
                         <w>kastan</w>
-                        <gloss><q>to decrease</q></gloss></mentioned>, <mentioned
-                        xml:lang="x-balochi"><lang/>
+                        <gloss><q>to decrease</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4065e272" xml:lang="x-balochi"><lang/>
                         <w>kastir</w>
-                        <gloss><q>the smallest</q></gloss></mentioned>, <mentioned xml:lang="ps"><lang/>
+                        <gloss><q>the smallest</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4065e280" xml:lang="ps"><lang/>
                         <w>kašr %i(%i← *kašvr ← *kasyatara-%i)%i</w>
-                        <gloss><q>the youngesr</q></gloss></mentioned>, <mentioned xml:lang="kho"><lang/>
+                        <gloss><q>the youngesr</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4065e289" xml:lang="kho"><lang/>
                         <w>kastara</w>
-                        <gloss><q>worthless</q></gloss></mentioned> (? <bibl><ref type="bibl"
-                            target="#ref_Leumann"/><biblScope>409</biblScope></bibl>), <mentioned
-                        xml:lang="sog"><lang/>
+                        <gloss><q>worthless</q></gloss></mentioned> (? <bibl><ref type="bibl" target="#ref_Leumann"/><biblScope>409</biblScope></bibl>), <mentioned xml:id="mentioned_d4065e301" xml:lang="sog"><lang/>
                         <w>*kaštar(kštr)</w>
                         <gloss><q>the youngest</q></gloss></mentioned>; the positive degree:
-                        <mentioned xml:lang="fa"><lang/>
-                        <w>kih</w></mentioned>, <mentioned xml:lang="pal"><lang/>
-                        <w>kas</w></mentioned>, <mentioned xml:lang="sog"><lang/>
-                        <w>*kas-(ks-)</w></mentioned>, <mentioned xml:lang="ae"><lang/>
+                        <mentioned xml:id="mentioned_d4065e309" xml:lang="fa"><lang/>
+                        <w>kih</w></mentioned>, <mentioned xml:id="mentioned_d4065e314" xml:lang="pal"><lang/>
+                        <w>kas</w></mentioned>, <mentioned xml:id="mentioned_d4065e319" xml:lang="sog"><lang/>
+                        <w>*kas-(ks-)</w></mentioned>, <mentioned xml:id="mentioned_d4065e325" xml:lang="ae"><lang/>
                         <w>kasu-</w>
-                        <gloss><q>малый</q></gloss></mentioned>. — Cf. <ref type="xr"
-                        target="#entry_xīstær"/> ‘the eldest’.<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 47</biblScope></bibl>;
-                            <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>27</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_Hübschmann._Oss."/><biblScope>44</biblScope></bibl>.—
-                            <bibl><ref type="bibl" target="#ref_Bailey._Asica"
-                            /><biblScope>32</biblScope></bibl>.</etym>
+                        <gloss><q>малый</q></gloss></mentioned>. — Cf. <ref type="xr" target="#entry_xīstær"/> ‘the eldest’.<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 47</biblScope></bibl>;
+                            <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>27</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>44</biblScope></bibl>.—
+                            <bibl><ref type="bibl" target="#ref_Bailey._Asica"/><biblScope>32</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

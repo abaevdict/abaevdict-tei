@@ -1,34 +1,37 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">æftyn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_æftyn" xml:lang="os">
-                <form xml:lang="os-x-iron" type="lemma"><orth>æftyn</orth><form type="participle"
-                            ><orth>æftyd</orth></form></form>
-                <form xml:lang="os-x-digor" type="dialectal"><orth>æftujun</orth><form
-                        type="participle"><orth>æftud</orth></form></form>
-                <sense n="1" xml:id="sense_æftyn.1"><sense><abv:tr xml:lang="ru">
+                <form xml:lang="os-x-iron" type="lemma"><orth>æftyn</orth><form type="participle"><orth>æftyd</orth></form></form>
+                <form xml:lang="os-x-digor" type="dialectal"><orth>æftujun</orth><form type="participle"><orth>æftud</orth></form></form>
+                <sense n="1" xml:id="sense_æftyn.1"><sense xml:id="sense_d3743e77"><abv:tr xml:lang="ru">
                             <q>падать</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>to fall</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d3743e86"><abv:tr xml:lang="ru">
                             <q>заходить (о солнце)</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>to set (of sun)</q>
@@ -44,7 +47,7 @@
                         <q>to be added</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d3743e119">
                         <quote>kæfync … dyværccygæj; binægtæ sqær kænync „æræftʒystut“, wællægtæ sæm
                             ærʒūrync „ne ‘ræftʒystæm“</quote>
                         <abv:tr xml:lang="ru">
@@ -58,7 +61,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Čerm."/><biblScope>97</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3743e138">
                         <quote>rarynḱyn qyzty; qæmpyl nyffældæxt, nyftyd</quote>
                         <abv:tr xml:lang="ru">
                             <q>он заболел в стужу; повалился, упал на солому</q>
@@ -68,7 +71,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Niger"/><biblScope>68</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3743e157">
                         <quote>nyxasy æftydæj læwwydysty</quote>
                         <abv:tr xml:lang="ru">
                             <q>они лежали повалившись на нихасе</q>
@@ -78,7 +81,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_ОТ"/><biblScope>71</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d3743e176" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>baftudæj k’os dær doni æxsæni</quote>
                         <abv:tr xml:lang="ru">
@@ -89,7 +92,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Bes."/><biblScope>110</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d3743e198" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>xor raftudæj</quote>
                         <abv:tr xml:lang="ru">
@@ -99,7 +102,7 @@
                             <q>the sun went down</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d3743e217" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>kæd dæ bæxbæl cal ardoi es, wal zildi ærkænaj xor-æftudmæ
                             ʒaxan-maxan-bæl…</quote>
@@ -111,10 +114,9 @@
                             <q>if you turn around in hell before the sun goes down as many times as
                                 many hairs your horse has…</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Диг._сказ."
-                            /><biblScope>38</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Диг._сказ."/><biblScope>38</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3743e239">
                         <quote>xor iskæsæd æ niftujæni, dænttæ razdæxæntæ fæstæmæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>пусть солнце взойдет с запада, пусть реки повернут обратно</q>
@@ -122,12 +124,11 @@
                         <abv:tr xml:lang="en">
                             <q>let the sun rise from the west, let the rivers turn back</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Gurdž._Æduli"
-                            /><biblScope>96</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Gurdž._Æduli"/><biblScope>96</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
                 <abv:exampleGrp>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d3743e261" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>ew læg buduri liǧzmæ raftudta</quote>
                         <abv:tr xml:lang="ru">
@@ -136,10 +137,9 @@
                         <abv:tr xml:lang="en">
                             <q>one man appeared at the steppe flatland</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Диг._сказ."
-                            /><biblScope>23</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Диг._сказ."/><biblScope>23</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3743e283">
                         <quote>cæwync æmæ æfsæn mæsyg, æysæn galwanyl ærbaftydysty</quote>
                         <abv:tr xml:lang="ru">
                             <q>идут они и попали к железной башне, железному зáмку</q>
@@ -150,7 +150,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>IV
                             54</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d3743e302" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>baftujuj mæ zærdæ tuxsæni</quote>
                         <abv:tr xml:lang="ru">
@@ -161,7 +161,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Bes."/><biblScope>67</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d3743e324" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>m’ armi esti ku baftuja, wædta art nikkænʒinan</quote>
                         <abv:tr xml:lang="ru">
@@ -170,10 +170,9 @@
                         <abv:tr xml:lang="en">
                             <q>if I get my hands on anything, we'll start a fire</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>10%l13%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>10%l13%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3743e346">
                         <quote>smax rwāǵy baftyd Būrḱyzg mæ kʼūxy</quote>
                         <abv:tr xml:lang="ru">
                             <q>благодаря вам мне досталась в руки Бурчизг</q>
@@ -184,7 +183,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>IV
                             50</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d3743e366" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>aci æntæstitæ ewguræj dær xwarz kusti færci baftudæncæ sæ
                             k’oxi</quote>
@@ -199,7 +198,7 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d3743e391">
                         <quote>Sozyryqojæ kæj bakajttam, uj jyl baftæd ævdværæj</quote>
                         <abv:tr xml:lang="ru">
                             <q>за ущерб, который мы нанесли Созруко, пусть ему прибавится
@@ -211,7 +210,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_ОЭп."/><biblScope>31</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3743e410">
                         <quote>æz am amælʒynæn æmæ bambiʒynæn, ūmæj jyl cy baftʒæn?</quote>
                         <abv:tr xml:lang="ru">
                             <q>оттого, что я здесь умру и сгнию, что ему прибавится?</q>
@@ -221,7 +220,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_ОЭп."/><biblScope>24</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3743e429">
                         <quote>wynǵy myl īw k˳yʒ baftydi</quote>
                         <abv:tr xml:lang="ru">
                             <q>на улице одна собака пристала ко мне</q>
@@ -230,7 +229,7 @@
                             <q>on the street one dog stuck to me</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d3743e444" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>æftyjgæ nez</quote>
                         <abv:tr xml:lang="ru">
@@ -240,7 +239,7 @@
                             <q>contagious (“sticky”) disease</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d3743e462" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>æftujgæ nezæj sæjgæmæ mæ ma xæssetæ, kenædta mæbæl baftujʒænæj næz
                             æma fæssæjgæ woʒænæn</quote>
@@ -255,20 +254,20 @@
                         <bibl><ref type="bibl" target="#src_FS"/><biblScope>I 103</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <re>
+                <re xml:id="re_d3743e485">
                     <form xml:lang="os-x-iron" type="lemma"><orth>zærdyl æftyn</orth></form>
                     <form xml:lang="os-x-digor" type="dialectal"><orth>zærdi æftujun</orth></form>
-                    <sense><sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d3743e493"><sense xml:id="sense_d3743e494"><abv:tr xml:lang="ru">
                                 <q>вспоминаться</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>be remembered</q>
-                            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                            </abv:tr></sense><sense xml:id="sense_d3743e503"><abv:tr xml:lang="ru">
                                 <q>приходить на ум</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>come to mind</q>
                             </abv:tr></sense></sense>
                     <abv:exampleGrp>
-                        <abv:example xml:lang="os-x-digor">
+                        <abv:example xml:id="example_d3743e515" xml:lang="os-x-digor">
                             <usg><lang/></usg>
                             <quote>æftuwis, mæ xwæræ, mæ zærdi …, æftujuj mæ zærdi xwærz ʒæbæx
                                 mæjroxs æxsævi næ badt</quote>
@@ -280,10 +279,9 @@
                                 <q>I remember you, my sister, I remember very clearly how we sat on
                                     a moonlit night</q>
                             </abv:tr>
-                            <bibl><ref type="bibl" target="#src_Qazb."
-                                /><biblScope>40</biblScope></bibl>
+                            <bibl><ref type="bibl" target="#src_Qazb."/><biblScope>40</biblScope></bibl>
                         </abv:example>
-                        <abv:example xml:lang="os-x-digor">
+                        <abv:example xml:id="example_d3743e537" xml:lang="os-x-digor">
                             <usg><lang/></usg>
                             <quote>æræftujgæj cidær æ zærdi … læg ærfestæg æj cʼæx zældi</quote>
                             <abv:tr xml:lang="ru">
@@ -293,10 +291,9 @@
                                 <q>having remembered something, the man dismounted on the green
                                     grass</q>
                             </abv:tr>
-                            <bibl><ref type="bibl" target="#src_Gurdž._Saxi_ræs."
-                                    /><biblScope>2</biblScope></bibl>
+                            <bibl><ref type="bibl" target="#src_Gurdž._Saxi_ræs."/><biblScope>2</biblScope></bibl>
                         </abv:example>
-                        <abv:example xml:lang="os-x-digor">
+                        <abv:example xml:id="example_d3743e559" xml:lang="os-x-digor">
                             <usg><lang/></usg>
                             <quote>æ fidi ibæl isardawuni unaffæ æ zærdi æriftudæj</quote>
                             <abv:tr xml:lang="ru">
@@ -305,16 +302,15 @@
                             <abv:tr xml:lang="en">
                                 <q>it came to her mind to set her father on him</q>
                             </abv:tr>
-                            <bibl><ref type="bibl" target="#src_MSt."
-                                    /><biblScope>8%l3—4%l</biblScope></bibl>
+                            <bibl><ref type="bibl" target="#src_MSt."/><biblScope>8%l3—4%l</biblScope></bibl>
                         </abv:example>
                     </abv:exampleGrp>
                 </re>
-                <re>
+                <re xml:id="re_d3743e583">
                     <form xml:lang="os-x-iron" type="lemma"><orth>raft-baft kænyn</orth></form>
                     <form xml:lang="os-x-digor" type="dialectal"><orth>raftawæ-baftawæ
                         kænun</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d3743e591"><abv:tr xml:lang="ru">
                             <q>метаться из стороны в сторону</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>rush from side to side</q>
@@ -322,7 +318,7 @@
                     <note type="comment" xml:lang="ru">ср. %iraxaw-baxaw kænyn%i id.</note>
                     <note type="comment" xml:lang="en">cf. %iraxaw-baxaw kænyn%i id.</note>
                     <abv:exampleGrp>
-                        <abv:example>
+                        <abv:example xml:id="example_d3743e610">
                             <quote>Qæræm Soltan dær duwwerdæmæ raftawæ-baftawæ kodta</quote>
                             <abv:tr xml:lang="ru">
                                 <q>Крым Солтан метался туда-сюда</q>
@@ -335,19 +331,19 @@
                         </abv:example>
                     </abv:exampleGrp>
                 </re>
-                <re>
+                <re xml:id="re_d3743e631">
                     <form type="lemma"><orth>raftyn</orth></form>
-                    <sense><sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d3743e636"><sense xml:id="sense_d3743e637"><abv:tr xml:lang="ru">
                                 <q>сойти на нет</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>come to naught</q>
-                            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                            </abv:tr></sense><sense xml:id="sense_d3743e646"><abv:tr xml:lang="ru">
                                 <q>истощиться</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>deplete</q>
                             </abv:tr></sense></sense>
                     <abv:exampleGrp>
-                        <abv:example>
+                        <abv:example xml:id="example_d3743e658">
                             <quote>ysxæc-ysxæc ma bærgæ kæny, fælæ nicwal, jæ tyx raftyd</quote>
                             <abv:tr xml:lang="ru">
                                 <q>он еще тужился, но тщетно, сила его иссякла</q>
@@ -358,7 +354,7 @@
                             <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>IV
                                     40</biblScope></bibl>
                         </abv:example>
-                        <abv:example>
+                        <abv:example xml:id="example_d3743e677">
                             <quote>raftydysty wæzzaw k˳ystæj</quote>
                             <abv:tr xml:lang="ru">
                                 <q>от тяжелой работы они истощились</q>
@@ -366,23 +362,16 @@
                             <abv:tr xml:lang="en">
                                 <q>from hard work they are depleted</q>
                             </abv:tr>
-                            <bibl><ref type="bibl" target="#src_Хар._Кадӕг"
-                                    /><biblScope>34</biblScope></bibl>
+                            <bibl><ref type="bibl" target="#src_Хар._Кадӕг"/><biblScope>34</biblScope></bibl>
                         </abv:example>
                     </abv:exampleGrp>
                 </re>
-                <etym xml:lang="ru">Медиальное соответствие к переходному <ref type="xr"
-                        target="#entry_æftawyn"/> | %iæftawun%i ‘прибавлять’ и пр. с закономерным
-                    чередованием %iaw%i || %iu%i; ср. такие пары, как д. %iarawun%i [см. <ref
-                        type="xr" target="#entry_arawyn"/>] || %iarujun%i, <ref type="xr"
-                        target="#entry_æmbawun"/> || %iæmbujun%i. Иронская форма %iæftyn%i
+                <etym xml:lang="ru">Медиальное соответствие к переходному <ref type="xr" target="#entry_æftawyn"/> | %iæftawun%i ‘прибавлять’ и пр. с закономерным
+                    чередованием %iaw%i || %iu%i; ср. такие пары, как д. %iarawun%i [см. <ref type="xr" target="#entry_arawyn"/>] || %iarujun%i, <ref type="xr" target="#entry_æmbawun"/> || %iæmbujun%i. Иронская форма %iæftyn%i
                     представляет стяжение из %iæftyjyn%i.%n<ref type="xr"/>Вс. Миллер. Gr.
                     65.</etym>
-                <etym xml:lang="en">The middle voice counterpart to transitive <ref type="xr"
-                        target="#entry_æftawyn"/> | %iæftawun%i ‘increase’ etc. with regular
-                    alternation %iaw%i || %iu%i; cf. such pairs as Digor %iarawun%i [see <ref
-                        type="xr" target="#entry_arawyn"/>] || %iarujun%i, <ref type="xr"
-                        target="#entry_æmbawun"/> || %iæmbujun%i. The Iron form %iæftyn%i is a
+                <etym xml:lang="en">The middle voice counterpart to transitive <ref type="xr" target="#entry_æftawyn"/> | %iæftawun%i ‘increase’ etc. with regular
+                    alternation %iaw%i || %iu%i; cf. such pairs as Digor %iarawun%i [see <ref type="xr" target="#entry_arawyn"/>] || %iarujun%i, <ref type="xr" target="#entry_æmbawun"/> || %iæmbujun%i. The Iron form %iæftyn%i is a
                     contraction of %iæftyjyn%i.%n<ref type="xr"/>Вс. Миллер. Gr. 65.</etym>
             </entry>
         </body>

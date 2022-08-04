@@ -1,34 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ʒæmby</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ʒæmby" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>ʒæmby</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>ʒæmbu</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d478e72"><abv:tr xml:lang="ru">
                         <q>лапа</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>paw</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d478e84">
                         <quote>arsy ʒæmbytæj ma tyxæj rairvæstæn</quote>
                         <abv:tr xml:lang="ru">
                             <q>я с трудом спасся из лап медведя</q>
@@ -37,7 +42,7 @@
                             <q>I barely escaped from the bear's paws</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d478e99">
                         <quote>razzag galīw ʒæmby æværd wydī mard kʼæbylajyl</quote>
                         <abv:tr xml:lang="ru">
                             <q>передняя левая лапа (собаки) лежала на мертвом щенке</q>
@@ -50,59 +55,54 @@
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Вместе с <ref type="xr" target="#entry_zæmbyn"/> ‘зевать’
                     относится к группе индоевропейских слов со значением ‘хватать’, ‘пасть’, ‘зуб’ и
-                    пр.: <mentioned xml:lang="ae"><lang/>
+                    пр.: <mentioned xml:id="mentioned_d478e123" xml:lang="ae"><lang/>
                         <w>zamb-</w>
-                        <gloss><q>разбивать</q></gloss></mentioned>, <mentioned xml:lang="sa"><lang/>
+                        <gloss><q>разбивать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d478e131" xml:lang="sa"><lang/>
                         <w>jambh-</w>
-                        <gloss><q>хватать</q></gloss></mentioned>, <mentioned xml:lang="sa"
-                            ><w>jambha-</w>
-                        <gloss><q>зуб</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
-                        <gloss><q>пасть</q></gloss></mentioned>,<mentioned xml:lang="sla"><lang/>
-                        <w>*zemb-</w></mentioned>, <mentioned xml:lang="ru"><lang/>
-                        <w>зуб</w></mentioned>, <mentioned xml:lang="en"><lang/>
+                        <gloss><q>хватать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d478e139" xml:lang="sa"><w>jambha-</w>
+                        <gloss><q>зуб</q></gloss></mentioned>, <mentioned xml:id="mentioned_d478e145" xml:lang="sa"><w/>
+                        <gloss><q>пасть</q></gloss></mentioned>,<mentioned xml:id="mentioned_d478e152" xml:lang="sla"><lang/>
+                        <w>*zemb-</w></mentioned>, <mentioned xml:id="mentioned_d478e157" xml:lang="ru"><lang/>
+                        <w>зуб</w></mentioned>, <mentioned xml:id="mentioned_d478e162" xml:lang="en"><lang/>
                         <w>comb</w>
-                        <gloss><q>гребень</q></gloss></mentioned>, <mentioned xml:lang="grc"><lang/>
+                        <gloss><q>гребень</q></gloss></mentioned>, <mentioned xml:id="mentioned_d478e170" xml:lang="grc"><lang/>
                         <w>γομφος</w>
                         <gloss><q>зуб</q></gloss></mentioned>. В основе идеосемантики лежит
                     представление о „хватающем органе“; отсюда с одной стороны ‘пасть’, ‘зуб’, с
                     другой — ‘лапа’. Не должно поэтому удивлять, что ту же основу находим в значении
                     ‘зевать’ (<ref type="xr" target="#entry_zæmbyn"/>) Не беремся судить, является
-                    ли только лингвистическим курьезом близость между %izæmby%i и <mentioned
-                        xml:lang="it"><lang/>
+                    ли только лингвистическим курьезом близость между %izæmby%i и <mentioned xml:id="mentioned_d478e180" xml:lang="it"><lang/>
                         <w>zampa</w>
                         <gloss><q>лапа</q></gloss></mentioned>. Несмотря на полное совпадение формы
-                    и значения, трудно найти для него историческое обоснование (<mentioned
-                        xml:lang="it"><lang/>
+                    и значения, трудно найти для него историческое обоснование (<mentioned xml:id="mentioned_d478e189" xml:lang="it"><lang/>
                         <w>zampa</w></mentioned> производят — правда, не очень убедительно — от
-                        <mentioned xml:lang="gem"><lang/>
+                        <mentioned xml:id="mentioned_d478e194" xml:lang="gem"><lang/>
                         <w>tappe</w>
                         <gloss><q>лапа</q></gloss></mentioned>).</etym>
                 <etym xml:lang="en">Together with <ref type="xr" target="#entry_zæmbyn"/> ‘yawn’
                     relates to the group of Indo-European words with the meaning ‘grab’, ‘jaw’,
-                    ‘tooth’ etc.: <mentioned xml:lang="ae"><lang/>
+                    ‘tooth’ etc.: <mentioned xml:id="mentioned_d478e208" xml:lang="ae"><lang/>
                         <w>zamb-</w>
-                        <gloss><q>crash</q></gloss></mentioned>, <mentioned xml:lang="sa"><lang/>
+                        <gloss><q>crash</q></gloss></mentioned>, <mentioned xml:id="mentioned_d478e216" xml:lang="sa"><lang/>
                         <w>jambh-</w>
-                        <gloss><q>grab</q></gloss></mentioned>, <mentioned xml:lang="sa"
-                            ><w>jambha-</w>
-                        <gloss><q>tooth</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
-                        <gloss><q>jaw</q></gloss></mentioned>,<mentioned xml:lang="sla"><lang/>
-                        <w>*zemb-</w></mentioned>, <mentioned xml:lang="ru"><lang/>
-                        <w>zub</w></mentioned>, <mentioned xml:lang="en"><lang/>
-                        <w>comb</w></mentioned>, <mentioned xml:lang="grc"><lang/>
+                        <gloss><q>grab</q></gloss></mentioned>, <mentioned xml:id="mentioned_d478e224" xml:lang="sa"><w>jambha-</w>
+                        <gloss><q>tooth</q></gloss></mentioned>, <mentioned xml:id="mentioned_d478e230" xml:lang="sa"><w/>
+                        <gloss><q>jaw</q></gloss></mentioned>,<mentioned xml:id="mentioned_d478e237" xml:lang="sla"><lang/>
+                        <w>*zemb-</w></mentioned>, <mentioned xml:id="mentioned_d478e242" xml:lang="ru"><lang/>
+                        <w>zub</w></mentioned>, <mentioned xml:id="mentioned_d478e247" xml:lang="en"><lang/>
+                        <w>comb</w></mentioned>, <mentioned xml:id="mentioned_d478e252" xml:lang="grc"><lang/>
                         <w>γομφος</w>
                         <gloss><q>tooth</q></gloss></mentioned>. Ideosemantics is based on the
                     concept of a “grasping part of the body”; hence, on the one hand, ‘mouth’,
                     ‘tooth’, on the other, ‘paw’. It should therefore come as no surprise that we
-                    find the same stem in the meaning of ‘yawn’ (<ref type="xr"
-                        target="#entry_zæmbyn"/>) We do not undertake to judge whether the proximity
-                    between %izæmby%i and<mentioned xml:lang="it"><lang/>
+                    find the same stem in the meaning of ‘yawn’ (<ref type="xr" target="#entry_zæmbyn"/>) We do not undertake to judge whether the proximity
+                    between %izæmby%i and<mentioned xml:id="mentioned_d478e262" xml:lang="it"><lang/>
                         <w>zampa</w>
                         <gloss><q>paw</q></gloss></mentioned>. Despite the complete coincidence of
                     the form and the meaning, it is difficult to find a historical justification for
-                    it. (<mentioned xml:lang="it"><lang/>
+                    it. (<mentioned xml:id="mentioned_d478e271" xml:lang="it"><lang/>
                         <w>zampa</w></mentioned> derive — however, it is not very convincing — from
-                        <mentioned xml:lang="gem"><lang/>
+                        <mentioned xml:id="mentioned_d478e276" xml:lang="gem"><lang/>
                         <w>tappe</w>
                         <gloss><q>paw</q></gloss></mentioned>).</etym>
             </entry>

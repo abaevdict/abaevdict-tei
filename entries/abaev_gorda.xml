@@ -1,33 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">gorda</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_gorda" xml:lang="os">
                 <form type="lemma"><orth>gorda</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d3904e69"><abv:tr xml:lang="ru">
                         <q>высоко ценимый в старину сорт сабель</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>a type of saber highly valued in the old days</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d3904e81">
                         <quote>Narty qæwy fæbycæw sty; ḱī aftæ: Saw Saryǵy kard færink ū, ḱī aftæ —
                             tesmel, ḱī aftæ — gorda</quote>
                         <abv:tr xml:lang="ru">
@@ -43,26 +48,24 @@
                             143</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Ср. <mentioned xml:lang="ka"><lang/>
+                <etym xml:lang="ru">Ср. <mentioned xml:id="mentioned_d3904e103" xml:lang="ka"><lang/>
                         <w>gorda (xmali)</w>
-                        <gloss><q>старинная сабля</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Чубинов"/></bibl>). Упоминается Л. %sТолстым%s
+                        <gloss><q>старинная сабля</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Чубинов"/></bibl>). Упоминается Л. %sТолстым%s
                             (<bibl><author>Л. Толстой</author><biblScope>Казаки. М., 1953, стр.
                             58</biblScope></bibl>): „У кого первый конь, у кого шашка гурда…?…
                     Все Ерошка“. К слову %iгурда%i автор дает примечание: „Шашки и кинжалы, дороже
                     всего ценимые на Кавказе, называются по мастеру — Гурда“. Возможно, есть связь с
-                        <mentioned xml:lang="fa"><lang/>
+                        <mentioned xml:id="mentioned_d3904e118" xml:lang="fa"><lang/>
                         <w>gurd</w>
                         <gloss><q>герой</q></gloss></mentioned>.</etym>
-                <etym xml:lang="en">Cf. <mentioned xml:lang="ka"><lang/>
+                <etym xml:lang="en">Cf. <mentioned xml:id="mentioned_d3904e129" xml:lang="ka"><lang/>
                         <w>gorda (xmali)</w>
-                        <gloss><q>ancient saber</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Чубинов"/></bibl>). It is mentioned by L. %sTolstoy%s
+                        <gloss><q>ancient saber</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Чубинов"/></bibl>). It is mentioned by L. %sTolstoy%s
                             (<bibl><author>L. Tolstoy.</author><biblScope>The Cossacks. M., 1953, p.
                             58</biblScope></bibl>): „Whose was the finest horse? Who had a Gurda
                     sword…?… Why, always Eroshka!“. The author footnotes the word %iгурда%i:
                     „Sabres and daggers, most valued in the Caucasus, are called according to the
-                    master — Gurda“. It might be relation to <mentioned xml:lang="fa"><lang/>
+                    master — Gurda“. It might be relation to <mentioned xml:id="mentioned_d3904e144" xml:lang="fa"><lang/>
                         <w>gurd</w>
                         <gloss><q>hero</q></gloss></mentioned>.</etym>
             </entry>

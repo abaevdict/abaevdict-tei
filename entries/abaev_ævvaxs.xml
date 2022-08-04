@@ -1,42 +1,47 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ævvaxs</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ævvaxs" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>ævvaxs</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>ænvaxs</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d4331e72"><sense xml:id="sense_d4331e73"><abv:tr xml:lang="ru">
                             <q>близкий</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>close</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d4331e82"><abv:tr xml:lang="ru">
                             <q>близ</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>near smth.</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d4331e91"><abv:tr xml:lang="ru">
                             <q>недалеко</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>nearby</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4331e103">
                         <quote>dard lymænæj ævvaxs æznag x˳yzdær u</quote>
                         <abv:tr xml:lang="ru">
                             <q>лучше враг вблизи, чем друг вдали</q>
@@ -46,7 +51,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_ОТ"/><biblScope>10</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4331e122">
                         <quote>xīdmæ. ævvaxs æj banygædtoj</quote>
                         <abv:tr xml:lang="ru">
                             <q>его похоронили ;близ моста</q>
@@ -56,7 +61,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Munk."/><biblScope>38</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4331e141">
                         <quote>ʒwary kūvændonme sabyr bacydysty æmæ ævvaxs næ wændync</quote>
                         <abv:tr xml:lang="ru">
                             <q>тихо подошли к святилищу дзуара (божества), но близко не смеют</q>
@@ -65,26 +70,17 @@
                             <q>[they] quietly approached the sanctuary of the dzwar (deity), but did
                                 not dare to get close</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Čerm."
-                            /><biblScope>178</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Čerm."/><biblScope>178</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из %iæm%i + %ifaxs%i | %iæn%i + %ifaxs%i = <mentioned
-                        xml:lang="x-oldirn"><lang/>
-                        <w>*ham-paxša-</w></mentioned>, <mentioned xml:lang="sa"><lang/>
+                <etym xml:lang="ru">Из %iæm%i + %ifaxs%i | %iæn%i + %ifaxs%i = <mentioned xml:id="mentioned_d4331e163" xml:lang="x-oldirn"><lang/>
+                        <w>*ham-paxša-</w></mentioned>, <mentioned xml:id="mentioned_d4331e168" xml:lang="sa"><lang/>
                         <w>*sam-pakṣa-</w></mentioned>, буквально „имеющий общий бок“, „прилегающий
-                    к боку, к стороне“. См. <ref type="xr" target="#entry_æm-"/> | %iап%i- и <ref
-                        type="xr" target="#entry_faxs"/>. Ср. <ref type="xr" target="#entry_æmvars"
-                            />.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>31</biblScope></bibl>.</etym>
-                <etym xml:lang="en">From %iæm%i + %ifaxs%i | %iæn%i + %ifaxs%i = <mentioned
-                        xml:lang="x-oldirn"><lang/>
-                        <w>*ham-paxša-</w></mentioned>, <mentioned xml:lang="sa"><lang/>
+                    к боку, к стороне“. См. <ref type="xr" target="#entry_æm-"/> | %iап%i- и <ref type="xr" target="#entry_faxs"/>. Ср. <ref type="xr" target="#entry_æmvars"/>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>31</biblScope></bibl>.</etym>
+                <etym xml:lang="en">From %iæm%i + %ifaxs%i | %iæn%i + %ifaxs%i = <mentioned xml:id="mentioned_d4331e188" xml:lang="x-oldirn"><lang/>
+                        <w>*ham-paxša-</w></mentioned>, <mentioned xml:id="mentioned_d4331e193" xml:lang="sa"><lang/>
                         <w>*sam-pakṣa-</w></mentioned>, literally 'having a common side', "adjoining
-                    tto the side". See <ref type="xr" target="#entry_æm-"/> | %iап%i- and <ref
-                        type="xr" target="#entry_faxs"/>. Cf. <ref type="xr" target="#entry_æmvars"
-                            />.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>31</biblScope></bibl>.</etym>
+                    tto the side". See <ref type="xr" target="#entry_æm-"/> | %iап%i- and <ref type="xr" target="#entry_faxs"/>. Cf. <ref type="xr" target="#entry_æmvars"/>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>31</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

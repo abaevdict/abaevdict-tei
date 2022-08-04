@@ -1,21 +1,26 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">falænbulaj</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
@@ -23,28 +28,28 @@
                 <form xml:lang="os-x-iron" type="lemma"><orth>falænbulaj</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>falæmbulaj</orth></form>
                 <usg><lang/></usg>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d920e75"><abv:tr xml:lang="ru">
                         <q>вокруг</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>around</q>
                     </abv:tr></sense>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d920e85"><abv:tr xml:lang="ru">
                         <q>воротник</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>collar</q>
                     </abv:tr><note type="comment" xml:lang="ru">употребляется также в
                         значении</note><note type="comment" xml:lang="en">it is also used in the
                         meaning</note></sense>
-                <re>
+                <re xml:id="re_d920e100">
                     <form type="lemma"><orth>urd-falænbulaj</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d920e105"><abv:tr xml:lang="ru">
                             <q>бобровый воротник</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>beaver collar</q>
                         </abv:tr></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d920e118">
                         <quote>(fingi) falæmbulaj kaftoncæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>они плясали вокруг стола</q>
@@ -55,7 +60,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
                             122</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d920e137">
                         <quote>kæsuj ma mæsugi bun falæmbulaj adæmæj iʒag</quote>
                         <abv:tr xml:lang="ru">
                             <q>смотрит: под башней вокруг полно народа</q>
@@ -63,10 +68,9 @@
                         <abv:tr xml:lang="en">
                             <q>looks: under the tower there are a lot of people around</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>13%l9–10%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>13%l9–10%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d920e156">
                         <quote>(osongi) falæmbulaj bætmænttæj iʒag</quote>
                         <abv:tr xml:lang="ru">
                             <q>вокруг (шалаша) полно ульев</q>
@@ -77,45 +81,32 @@
                         <bibl><ref type="bibl" target="#src_Sam."/><biblScope>100</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Н. W. %sBailey%s (<bibl><ref type="bibl"
-                            target="#ref_Bailey._Asica"/><biblScope>9–10</biblScope></bibl>)
+                <etym xml:lang="ru">Н. W. %sBailey%s (<bibl><ref type="bibl" target="#ref_Bailey._Asica"/><biblScope>9–10</biblScope></bibl>)
                     намечает вероятный путь прохождения этого слова в осетинский: в
-                    согдийско-сакских документах встречается слово <mentioned xml:lang="sog"
-                        extralang="kho"><lang/>
+                    согдийско-сакских документах встречается слово <mentioned xml:id="mentioned_d920e182" xml:lang="sog" extralang="kho"><lang/>
                         <w>parabula-, parampulam</w></mentioned>, представляющее заимствование
-                        <mentioned xml:lang="grc"><lang/>
+                        <mentioned xml:id="mentioned_d920e187" xml:lang="grc"><lang/>
                         <w>παρεμβολή</w>
-                        <gloss><q>огороженное место</q></gloss></mentioned>, <mentioned
-                        xml:lang="grc"><w/>
+                        <gloss><q>огороженное место</q></gloss></mentioned>, <mentioned xml:id="mentioned_d920e195" xml:lang="grc"><w/>
                         <gloss><q>лагерь</q></gloss></mentioned>; из согдийско-сакских говоров слово
                     могло, по мнению %sВаilеу%s, проникнуть в староосетинский (скифский). Однако в
                     псалме 34 %ifalæmblaj%i передает не %iπαρεμβολέτ%i, а %iκύκλω%i. Переход
                     значения ‘лагерь’ → ‘вокруг’ неправдоподобен. Может быть, перед нами удвоение
                     наречия <ref type="xr" target="#entry_fal-"/> с перебоем гласных
-                    (%i*pāram-puram%i); ср. такие удвоения, как <ref type="xr"
-                        target="#entry_tybar-tybyr"/> ‘блеск’, <ref type="xr"
-                        target="#entry_gybar-gybur"/> ‘грохот’ и др. (<bibl><ref type="bibl"
-                            target="#ref_РОСл."/><biblScope>588</biblScope></bibl>). И. <ref
-                        type="xr" target="#entry_alfamblaj"/> ‘вокруг’ получилось из %ialy
+                    (%i*pāram-puram%i); ср. такие удвоения, как <ref type="xr" target="#entry_tybar-tybyr"/> ‘блеск’, <ref type="xr" target="#entry_gybar-gybur"/> ‘грохот’ и др. (<bibl><ref type="bibl" target="#ref_РОСл."/><biblScope>588</biblScope></bibl>). И. <ref type="xr" target="#entry_alfamblaj"/> ‘вокруг’ получилось из %ialy
                     falæmbylaj%i (<ref type="xr" target="#entry_aly"/> ‘всякий’).</etym>
-                <etym xml:lang="en">Н. W. %sBailey%s (<bibl><ref type="bibl"
-                            target="#ref_Bailey._Asica"/><biblScope>9–10</biblScope></bibl>)
+                <etym xml:lang="en">Н. W. %sBailey%s (<bibl><ref type="bibl" target="#ref_Bailey._Asica"/><biblScope>9–10</biblScope></bibl>)
                     outlines the probable path of this word into Ossetic: in Sogdian-Khotanese
-                    documents, there is a word <mentioned xml:lang="sog" extralang="kho"><lang/>
-                        <w>parabula-, parampulam</w></mentioned>, which is a borrowing of <mentioned
-                        xml:lang="grc"><lang/>
+                    documents, there is a word <mentioned xml:id="mentioned_d920e223" xml:lang="sog" extralang="kho"><lang/>
+                        <w>parabula-, parampulam</w></mentioned>, which is a borrowing of <mentioned xml:id="mentioned_d920e228" xml:lang="grc"><lang/>
                         <w>παρεμβολή</w>
-                        <gloss><q>enclosure</q></gloss></mentioned>, <mentioned xml:lang="grc"><w/>
+                        <gloss><q>enclosure</q></gloss></mentioned>, <mentioned xml:id="mentioned_d920e236" xml:lang="grc"><w/>
                         <gloss><q>camp</q></gloss></mentioned>; according to %sВаilеу%s, this word
                     could have entered Old Ossetic (Scythian) from Sogdian-Khotanese dialects.
                     However, in psalm 34 %ifalæmblaj%i means not %iπαρεμβολέτ%i, but %iκύκλω%i. The
                     meaning shift ‘camp’ → ‘around’ is improbable. Maybe, this word is derived from
                     the doubling of the adverb <ref type="xr" target="#entry_fal-"/> with the change
-                    in vowels (%i*pāram-puram%i); cf. also such doubling as <ref type="xr"
-                        target="#entry_tybar-tybyr"/> ‘shine’, <ref type="xr"
-                        target="#entry_gybar-gybur"/> ‘crash’ etc. (<bibl><ref type="bibl"
-                            target="#ref_РОСл."/><biblScope>588</biblScope></bibl>). Iron <ref
-                        type="xr" target="#entry_alfamblaj"/> ‘around’ is derived from %ialy
+                    in vowels (%i*pāram-puram%i); cf. also such doubling as <ref type="xr" target="#entry_tybar-tybyr"/> ‘shine’, <ref type="xr" target="#entry_gybar-gybur"/> ‘crash’ etc. (<bibl><ref type="bibl" target="#ref_РОСл."/><biblScope>588</biblScope></bibl>). Iron <ref type="xr" target="#entry_alfamblaj"/> ‘around’ is derived from %ialy
                     falæmbylaj%i (<ref type="xr" target="#entry_aly"/> ‘every’).</etym>
                 <note type="internal">сомнительные хрефы</note>
             </entry>

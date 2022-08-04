@@ -1,36 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">æmbyjyn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_æmbyjyn" xml:lang="os">
-                <form xml:lang="os-x-iron" type="lemma"><orth>æmbyjyn</orth><form type="participle"
-                            ><orth>æmbyd</orth></form></form>
-                <form xml:lang="os-x-digor" type="dialectal"><orth>æmbujun</orth><form
-                        type="participle"><orth>æmbud</orth></form></form>
-                <sense><abv:tr xml:lang="ru">
+                <form xml:lang="os-x-iron" type="lemma"><orth>æmbyjyn</orth><form type="participle"><orth>æmbyd</orth></form></form>
+                <form xml:lang="os-x-digor" type="dialectal"><orth>æmbujun</orth><form type="participle"><orth>æmbud</orth></form></form>
+                <sense xml:id="sense_d5344e76"><abv:tr xml:lang="ru">
                         <q>гнить</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>rot</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d5344e88">
                         <quote>særd dyn ma ʽmbyjænt, zymæg dyn ma sælænt</quote>
                         <abv:tr xml:lang="ru">
                             <q>пусть у тебя летом не гниют, зимой не замерзают</q>
@@ -38,10 +41,9 @@
                         <abv:tr xml:lang="en">
                             <q>let you not rot in the summer, not freeze in the winter</q>
                         </abv:tr>
-                        <bibl><biblScope xml:lang="ru">из посвящения покойнику</biblScope><biblScope
-                                xml:lang="en">from dedication to a dead person</biblScope></bibl>
+                        <bibl><biblScope xml:lang="ru">из посвящения покойнику</biblScope><biblScope xml:lang="en">from dedication to a dead person</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5344e109">
                         <quote>c’yfy wærmy dæ bambyjyn kodton</quote>
                         <abv:tr xml:lang="ru">
                             <q>я сгноила тебя в грязной яме</q>
@@ -52,99 +54,77 @@
                         <bibl><ref type="bibl" target="#src_ОЭ"/><biblScope>I 40</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Восходит к <mentioned xml:lang="ira"><lang/>
-                        <w>*ham-pu-</w></mentioned>, сращение преверба <ref type="xr"
-                        target="#entry_æm-"/> (← %iham-%i) с корнем %iрū-%i ‘гнить’. Ср. <mentioned
-                        xml:lang="fa"><lang/>
-                        <w>anbūsīdan</w></mentioned>, <mentioned xml:lang="fa"
-                        ><w>pūsīdan</w></mentioned>, <mentioned xml:lang="pal"><lang/>
-                        <w>hambūsītan</w></mentioned>, <mentioned xml:lang="x-pamir" extralang="srh"><lang/>
-                        <w>pay-: pūd-</w></mentioned>, <mentioned xml:lang="x-pamir" extralang="sgh"><lang/>
-                        <w>piy-: pud-</w></mentioned>, <mentioned xml:lang="sgy"><lang/>
+                <etym xml:lang="ru">Восходит к <mentioned xml:id="mentioned_d5344e131" xml:lang="ira"><lang/>
+                        <w>*ham-pu-</w></mentioned>, сращение преверба <ref type="xr" target="#entry_æm-"/> (← %iham-%i) с корнем %iрū-%i ‘гнить’. Ср. <mentioned xml:id="mentioned_d5344e138" xml:lang="fa"><lang/>
+                        <w>anbūsīdan</w></mentioned>, <mentioned xml:id="mentioned_d5344e143" xml:lang="fa"><w>pūsīdan</w></mentioned>, <mentioned xml:id="mentioned_d5344e146" xml:lang="pal"><lang/>
+                        <w>hambūsītan</w></mentioned>, <mentioned xml:id="mentioned_d5344e152" xml:lang="x-pamir" extralang="srh"><lang/>
+                        <w>pay-: pūd-</w></mentioned>, <mentioned xml:id="mentioned_d5344e157" xml:lang="x-pamir" extralang="sgh"><lang/>
+                        <w>piy-: pud-</w></mentioned>, <mentioned xml:id="mentioned_d5344e162" xml:lang="sgy"><lang/>
                         <w>pū-</w>
-                        <gloss><q>гнить</q></gloss></mentioned>, <mentioned xml:lang="sgy"
-                            ><w>pūduk</w>
-                        <gloss><q>гнилой</q></gloss></mentioned>, <mentioned xml:lang="ydg"><lang/>
-                        <w>pīo</w></mentioned>, <mentioned xml:lang="wbl"><lang/>
+                        <gloss><q>гнить</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5344e170" xml:lang="sgy"><w>pūduk</w>
+                        <gloss><q>гнилой</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5344e176" xml:lang="ydg"><lang/>
+                        <w>pīo</w></mentioned>, <mentioned xml:id="mentioned_d5344e181" xml:lang="wbl"><lang/>
                         <w>pītk</w>
-                        <gloss><q>гнилой</q></gloss></mentioned>, <mentioned xml:lang="yah"><lang/>
+                        <gloss><q>гнилой</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5344e190" xml:lang="yah"><lang/>
                         <w>pĭw-: pəd-</w>
-                        <gloss><q>гнить</q></gloss></mentioned>, <mentioned xml:lang="ae"><lang/>
-                        <w>pū-</w></mentioned>, <mentioned xml:lang="ae"><w>puyeiti</w>
-                        <gloss><q>гниет</q></gloss></mentioned>, <mentioned xml:lang="ae"
-                            ><w>a-puyant</w>
-                        <gloss><q>не гниющий</q></gloss></mentioned>, <mentioned xml:lang="sa"><lang/>
+                        <gloss><q>гнить</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5344e198" xml:lang="ae"><lang/>
+                        <w>pū-</w></mentioned>, <mentioned xml:id="mentioned_d5344e203" xml:lang="ae"><w>puyeiti</w>
+                        <gloss><q>гниет</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5344e209" xml:lang="ae"><w>a-puyant</w>
+                        <gloss><q>не гниющий</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5344e215" xml:lang="sa"><lang/>
                         <w>pū-</w>
-                        <gloss><q>гниет</q></gloss></mentioned>, <mentioned xml:lang="lt"><lang/>
+                        <gloss><q>гниет</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5344e223" xml:lang="lt"><lang/>
                         <w>puti</w>
-                        <gloss><q>гнить</q></gloss></mentioned>, <mentioned xml:lang="grc"><lang/>
+                        <gloss><q>гнить</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5344e232" xml:lang="grc"><lang/>
                         <w>πύω</w>
-                        <gloss><q>вызываю нагноение</q></gloss></mentioned>, <mentioned
-                        xml:lang="grc"><w>πύθω</w>
-                        <gloss><q>гною</q></gloss></mentioned>, <mentioned xml:lang="la"><lang/>
+                        <gloss><q>вызываю нагноение</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5344e240" xml:lang="grc"><w>πύθω</w>
+                        <gloss><q>гною</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5344e246" xml:lang="la"><lang/>
                         <w>pus</w>
-                        <gloss><q>гной</q></gloss></mentioned>, <mentioned xml:lang="la"
-                            ><w>puteo</w>
-                        <gloss><q>гнию</q></gloss></mentioned>, <mentioned xml:lang="la"
-                            ><w>putidus</w>
-                        <gloss><q>гнилой</q></gloss></mentioned>, <mentioned xml:lang="got"><lang/>
-                        <w>fūls</w></mentioned>, <mentioned xml:lang="de"><lang/>
+                        <gloss><q>гной</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5344e254" xml:lang="la"><w>puteo</w>
+                        <gloss><q>гнию</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5344e260" xml:lang="la"><w>putidus</w>
+                        <gloss><q>гнилой</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5344e266" xml:lang="got"><lang/>
+                        <w>fūls</w></mentioned>, <mentioned xml:id="mentioned_d5344e272" xml:lang="de"><lang/>
                         <w>faul</w>
                         <gloss><q>гнилой</q></gloss></mentioned>. Предшествие %im%i предотвратило
                     обычный для осетинского переход %ip%i → %if%i, но повлекло озвончение %ip%i →
-                    %ib%i. Старым каузативом от %iæmbujun%i является %iæmbawun%i q. v. Сюда же <ref
-                        type="xr" target="#entry_fawyn"/> ‘хулить’. Ос. <ref type="xr"
-                        target="#entry_fyd"/> | %ifyd%i ‘дурной’ считаем лексикализованным старым
+                    %ib%i. Старым каузативом от %iæmbujun%i является %iæmbawun%i q. v. Сюда же <ref type="xr" target="#entry_fawyn"/> ‘хулить’. Ос. <ref type="xr" target="#entry_fyd"/> | %ifyd%i ‘дурной’ считаем лексикализованным старым
                     причастием %ipūta-%i ‘гнилой’. Ср. <ref type="xr" target="#entry_æmbyd"/>
-                            ‘гнилой’.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>II 85</biblScope></bibl>; <bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._Gr."/><biblScope>65</biblScope></bibl>.</etym>
-                <etym xml:lang="en">Traces back to <mentioned xml:lang="ira"><lang/>
-                        <w>*ham-pu-</w></mentioned>, fusion of the preverb <ref type="xr"
-                        target="#entry_æm-"/> (← %iham-%i) with the root %iрū-%i ‘rot’. Cf.
-                        <mentioned xml:lang="fa"><lang/>
-                        <w>anbūsīdan</w></mentioned>, <mentioned xml:lang="fa"
-                        ><w>pūsīdan</w></mentioned>, <mentioned xml:lang="pal"><lang/>
-                        <w>hambūsītan</w></mentioned>, <mentioned xml:lang="x-pamir" extralang="srh"><lang/>
-                        <w>pay-: pūd-</w></mentioned>, <mentioned xml:lang="x-pamir" extralang="sgh"><lang/>
-                        <w>piy-: pud-</w></mentioned>, <mentioned xml:lang="sgy"><lang/>
+                            ‘гнилой’.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>II 85</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>65</biblScope></bibl>.</etym>
+                <etym xml:lang="en">Traces back to <mentioned xml:id="mentioned_d5344e298" xml:lang="ira"><lang/>
+                        <w>*ham-pu-</w></mentioned>, fusion of the preverb <ref type="xr" target="#entry_æm-"/> (← %iham-%i) with the root %iрū-%i ‘rot’. Cf.
+                        <mentioned xml:id="mentioned_d5344e305" xml:lang="fa"><lang/>
+                        <w>anbūsīdan</w></mentioned>, <mentioned xml:id="mentioned_d5344e310" xml:lang="fa"><w>pūsīdan</w></mentioned>, <mentioned xml:id="mentioned_d5344e313" xml:lang="pal"><lang/>
+                        <w>hambūsītan</w></mentioned>, <mentioned xml:id="mentioned_d5344e319" xml:lang="x-pamir" extralang="srh"><lang/>
+                        <w>pay-: pūd-</w></mentioned>, <mentioned xml:id="mentioned_d5344e324" xml:lang="x-pamir" extralang="sgh"><lang/>
+                        <w>piy-: pud-</w></mentioned>, <mentioned xml:id="mentioned_d5344e329" xml:lang="sgy"><lang/>
                         <w>pū-</w>
-                        <gloss><q>rot</q></gloss></mentioned>, <mentioned xml:lang="sgy"
-                            ><w>pūduk</w>
-                        <gloss><q>rotten</q></gloss></mentioned>, <mentioned xml:lang="ydg"><lang/>
-                        <w>pīo</w></mentioned>, <mentioned xml:lang="wbl"><lang/>
+                        <gloss><q>rot</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5344e337" xml:lang="sgy"><w>pūduk</w>
+                        <gloss><q>rotten</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5344e343" xml:lang="ydg"><lang/>
+                        <w>pīo</w></mentioned>, <mentioned xml:id="mentioned_d5344e348" xml:lang="wbl"><lang/>
                         <w>pītk</w>
-                        <gloss><q>rotten</q></gloss></mentioned>, <mentioned xml:lang="yah"><lang/>
+                        <gloss><q>rotten</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5344e357" xml:lang="yah"><lang/>
                         <w>pĭw-: pəd-</w>
-                        <gloss><q>rot</q></gloss></mentioned>, <mentioned xml:lang="ae"><lang/>
-                        <w>pū-</w></mentioned>, <mentioned xml:lang="ae"><w>puyeiti</w>
-                        <gloss><q>it rots</q></gloss></mentioned>, <mentioned xml:lang="ae"
-                            ><w>a-puyant</w>
-                        <gloss><q>not rotting</q></gloss></mentioned>, <mentioned xml:lang="sa"><lang/>
+                        <gloss><q>rot</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5344e365" xml:lang="ae"><lang/>
+                        <w>pū-</w></mentioned>, <mentioned xml:id="mentioned_d5344e370" xml:lang="ae"><w>puyeiti</w>
+                        <gloss><q>it rots</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5344e376" xml:lang="ae"><w>a-puyant</w>
+                        <gloss><q>not rotting</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5344e382" xml:lang="sa"><lang/>
                         <w>pū-</w>
-                        <gloss><q>it rots</q></gloss></mentioned>, <mentioned xml:lang="lt"><lang/>
+                        <gloss><q>it rots</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5344e390" xml:lang="lt"><lang/>
                         <w>puti</w>
-                        <gloss><q>rot</q></gloss></mentioned>, <mentioned xml:lang="grc"><lang/>
+                        <gloss><q>rot</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5344e399" xml:lang="grc"><lang/>
                         <w>πύω</w>
-                        <gloss><q>I cause suppuration</q></gloss></mentioned>, <mentioned
-                        xml:lang="grc"><w>πύθω</w>
-                        <gloss><q>I rot (smth.)</q></gloss></mentioned>, <mentioned xml:lang="la"><lang/>
+                        <gloss><q>I cause suppuration</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5344e407" xml:lang="grc"><w>πύθω</w>
+                        <gloss><q>I rot (smth.)</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5344e413" xml:lang="la"><lang/>
                         <w>pus</w>
-                        <gloss><q>pus</q></gloss></mentioned>, <mentioned xml:lang="la"><w>puteo</w>
-                        <gloss><q>I rot</q></gloss></mentioned>, <mentioned xml:lang="la"
-                            ><w>putidus</w>
-                        <gloss><q>rotten</q></gloss></mentioned>, <mentioned xml:lang="got"><lang/>
-                        <w>fūls</w></mentioned>, <mentioned xml:lang="de"><lang/>
+                        <gloss><q>pus</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5344e421" xml:lang="la"><w>puteo</w>
+                        <gloss><q>I rot</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5344e427" xml:lang="la"><w>putidus</w>
+                        <gloss><q>rotten</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5344e433" xml:lang="got"><lang/>
+                        <w>fūls</w></mentioned>, <mentioned xml:id="mentioned_d5344e439" xml:lang="de"><lang/>
                         <w>faul</w>
                         <gloss><q>rotten</q></gloss></mentioned>. Precedence of %im%i prevented
                     usual Ossetic alterntation %ip%i → %if%i, but it caused vocalisation %ip%i →
-                    %ib%i. An old causative to %iæmbujun%i is %iæmbawun%i q. v. Here too is <ref
-                        type="xr" target="#entry_fawyn"/> ‘blaspheme’. We consider the Ossetic <ref
-                        type="xr" target="#entry_fyd"/> | %ifyd%i ‘evil’ to be an old lexalized
+                    %ib%i. An old causative to %iæmbujun%i is %iæmbawun%i q. v. Here too is <ref type="xr" target="#entry_fawyn"/> ‘blaspheme’. We consider the Ossetic <ref type="xr" target="#entry_fyd"/> | %ifyd%i ‘evil’ to be an old lexalized
                     participle %ipūta-%i ‘rotten’. Cf. <ref type="xr" target="#entry_æmbyd"/>
-                            ‘rotten’.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>II 85</biblScope></bibl>; <bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._Gr."/><biblScope>65</biblScope></bibl>.</etym>
+                            ‘rotten’.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>II 85</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>65</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

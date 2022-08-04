@@ -1,55 +1,59 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">fīdīs</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_fīdīs" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>fīdīs</orth></form>
-                <form xml:lang="os-x-digor" type="dialectal"><orth>fedes</orth><form type="variant"
-                            ><orth>fedis</orth></form></form>
-                <sense><abv:tr xml:lang="ru">
+                <form xml:lang="os-x-digor" type="dialectal"><orth>fedes</orth><form type="variant"><orth>fedis</orth></form></form>
+                <sense xml:id="sense_d162e74"><abv:tr xml:lang="ru">
                         <q>попрек</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>reproach</q>
                     </abv:tr></sense>
-                <re>
+                <re xml:id="re_d162e84">
                     <form type="lemma"><orth>fīdīs kænyn</orth></form>
-                    <sense><sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d162e89"><sense xml:id="sense_d162e90"><abv:tr xml:lang="ru">
                                 <q>попрекать</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>reproach</q>
-                            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                            </abv:tr></sense><sense xml:id="sense_d162e99"><abv:tr xml:lang="ru">
                                 <q>позорить</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>disgrace</q>
                             </abv:tr></sense></sense>
                 </re>
-                <re>
+                <re xml:id="re_d162e110">
                     <form type="lemma"><orth>ævaw-ævīdīs</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d162e115"><abv:tr xml:lang="ru">
                             <q>безупречный</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>irreproachable</q>
                         </abv:tr></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d162e129">
                         <quote>ūs fīdīsæn nal fælæwwyd æmæ zaǧta Xæmyšæn: „Fækæn mæ, kæsæj mæ
                             ʽrkodtaj ūrdæm“</quote>
                         <abv:tr xml:lang="ru">
@@ -63,7 +67,7 @@
                         <bibl><ref type="bibl" target="#src_ЮОПам."/><biblScope>I
                             29</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d162e148">
                         <quote>fīdīsæn sæ xastajkkoj</quote>
                         <abv:tr xml:lang="ru">
                             <q>они стали бы позорищем</q>
@@ -74,7 +78,7 @@
                         <bibl><ref type="bibl" target="#src_ЮОПам."/><biblScope>II
                             129</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d162e167">
                         <quote>fīdīsmæ razdær ḱī fævæjjy, ūj jæ bakæny</quote>
                         <abv:tr xml:lang="ru">
                             <q>попреки делает тот, кто опережает в этом (других)</q>
@@ -85,7 +89,7 @@
                         <bibl><ref type="bibl" target="#src_ЮОПам."/><biblScope>III
                             204</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d162e186">
                         <quote>tæxūdiag stūt…, aly x˳yzy wyn mængæj fīdīs k˳y kænoj mæn
                             tyxxæj</quote>
                         <abv:tr xml:lang="ru">
@@ -96,10 +100,9 @@
                             <q>Blessed are ye, when … shall say all manner of evil against you
                                 falsely, for my sake.</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Матфей"/><biblScope xml:lang="ru"
-                                >5</biblScope><biblScope xml:lang="en">11</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Матфей"/><biblScope xml:lang="ru">5</biblScope><biblScope xml:lang="en">11</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d162e208">
                         <quote>fīdīssag festæm</quote>
                         <abv:tr xml:lang="ru">
                             <q>мы стали предметом поношения</q>
@@ -108,7 +111,7 @@
                             <q>we have become the subject of vilification</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d162e224" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>wæ xawæccag — isæffcag, wæ isæfccag ba — fedissag</quote>
                         <abv:tr xml:lang="ru">
@@ -127,38 +130,33 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Вероятно, из %ifī-dīs%i ← %ipati-daisa-%i, буквально „указание“
-                        (<mentioned xml:lang="x-oldirn"><lang/>
+                        (<mentioned xml:id="mentioned_d162e258" xml:lang="x-oldirn"><lang/>
                         <w>dais-</w>
                         <gloss><q>указывать</q></gloss></mentioned>).<note type="footnote" n="1">
                         PUT NOTE HERE </note> См. <ref type="xr" target="#entry_ævdīsyn"/>
-                    ‘показывать’. Для семантики и образования ср. <mentioned xml:lang="de"><lang/>
+                    ‘показывать’. Для семантики и образования ср. <mentioned xml:id="mentioned_d162e271" xml:lang="de"><lang/>
                         <w>Ver-weis</w>
-                        <gloss><q>попрек</q></gloss></mentioned> от <mentioned xml:lang="de"><lang/>
+                        <gloss><q>попрек</q></gloss></mentioned> от <mentioned xml:id="mentioned_d162e279" xml:lang="de"><lang/>
                         <w>weisen</w>
                         <gloss><q>указывать</q></gloss></mentioned>.</etym>
                 <etym xml:lang="en">Probably, from %ifī-dīs%i ← %ipati-daisa-%i, literally
-                    ‘indication’ (<mentioned xml:lang="x-oldirn"><lang/>
+                    ‘indication’ (<mentioned xml:id="mentioned_d162e290" xml:lang="x-oldirn"><lang/>
                         <w>dais-</w>
                         <gloss><q>indicate</q></gloss></mentioned>).<note type="footnote" n="1"> PUT
                         NOTE HERE </note> See <ref type="xr" target="#entry_ævdīsyn"/> ‘show’. As
-                    for the semantics and the derivation pattern, cf. <mentioned xml:lang="de"><lang/>
+                    for the semantics and the derivation pattern, cf. <mentioned xml:id="mentioned_d162e303" xml:lang="de"><lang/>
                         <w>Ver-weis</w>
-                        <gloss><q>reproach</q></gloss></mentioned> from <mentioned xml:lang="de"><lang/>
+                        <gloss><q>reproach</q></gloss></mentioned> from <mentioned xml:id="mentioned_d162e311" xml:lang="de"><lang/>
                         <w>weisen</w>
                         <gloss><q>indicate</q></gloss></mentioned>.</etym>
-                <note type="footnote" xml:lang="ru" n="1"><bibl><ref type="bibl"
-                            target="#ref_Gershevitch"/></bibl> сравнивает <mentioned xml:lang="pal"><lang/>
+                <note type="footnote" xml:lang="ru" n="1"><bibl><ref type="bibl" target="#ref_Gershevitch"/></bibl> сравнивает <mentioned xml:id="mentioned_d162e324" xml:lang="pal"><lang/>
                         <w>p'dys'gyh</w>
-                        <gloss><q>клевета</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_BSOAS"/><biblScope xml:lang="ru">XIV 494
+                        <gloss><q>клевета</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_BSOAS"/><biblScope xml:lang="ru">XIV 494
                             прим.</biblScope><biblScope xml:lang="en">XIV 494
                         fn.</biblScope></bibl>).</note>
-                <note type="footnote" xml:lang="en" n="1"><bibl><ref type="bibl"
-                            target="#ref_Gershevitch"/></bibl> compares it to <mentioned
-                        xml:lang="pal"><lang/>
+                <note type="footnote" xml:lang="en" n="1"><bibl><ref type="bibl" target="#ref_Gershevitch"/></bibl> compares it to <mentioned xml:id="mentioned_d162e344" xml:lang="pal"><lang/>
                         <w>p'dys'gyh</w>
-                        <gloss><q>slander</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_BSOAS"/><biblScope xml:lang="ru">XIV 494
+                        <gloss><q>slander</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_BSOAS"/><biblScope xml:lang="ru">XIV 494
                             прим.</biblScope><biblScope xml:lang="en">XIV 494
                         fn.</biblScope></bibl>).</note>
             </entry>

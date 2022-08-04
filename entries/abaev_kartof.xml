@@ -1,27 +1,32 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">kartof</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_kartof" xml:lang="os">
                 <form type="lemma"><orth>kartof</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d4100e69"><abv:tr xml:lang="ru">
                         <q>картофель</q>
                     </abv:tr><note type="comment" xml:lang="ru">; в южных говорах также
                         %ik’artof%i</note><note type="comment" xml:lang="en">; in South dialects
@@ -30,16 +35,16 @@
                     </abv:tr><note type="comment" xml:lang="ru">; в южных говорах также
                         %ik’artof%i</note><note type="comment" xml:lang="en">; in South dialects
                         %ik’artof%i is attested as well</note></sense>
-                <re>
+                <re xml:id="re_d4100e87">
                     <form type="lemma"><orth>kartofǵyn</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d4100e92"><abv:tr xml:lang="ru">
                             <q>пирог с картофелем</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>potato pie</q>
                         </abv:tr></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4100e105">
                         <quote>kartofy 'zmæst</quote>
                         <abv:tr xml:lang="ru">
                             <q>картофельная бурда</q>
@@ -47,10 +52,9 @@
                         <abv:tr xml:lang="en">
                             <q>potato slops</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Arsen"
-                            /><biblScope>152</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Arsen"/><biblScope>152</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4100e124" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>ældar nijjarazta kartof</quote>
                         <abv:tr xml:lang="ru">
@@ -62,27 +66,23 @@
                         <bibl><ref type="bibl" target="#src_AK"/><biblScope>II 10</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из <mentioned xml:lang="ru"><lang/>
-                        <w>картофель</w></mentioned>; ср. также <mentioned xml:lang="ka"><lang/>
-                        <w>k’artopili</w></mentioned>, <mentioned xml:lang="kbd"><lang/>
-                        <w>k’ārt’of</w></mentioned>, <mentioned xml:lang="lez"><lang/>
-                        <w>kartuf</w></mentioned> и в других кавказских языках. <mentioned
-                        xml:lang="de"><lang/>
+                <etym xml:lang="ru">Из <mentioned xml:id="mentioned_d4100e149" xml:lang="ru"><lang/>
+                        <w>картофель</w></mentioned>; ср. также <mentioned xml:id="mentioned_d4100e154" xml:lang="ka"><lang/>
+                        <w>k’artopili</w></mentioned>, <mentioned xml:id="mentioned_d4100e159" xml:lang="kbd"><lang/>
+                        <w>k’ārt’of</w></mentioned>, <mentioned xml:id="mentioned_d4100e164" xml:lang="lez"><lang/>
+                        <w>kartuf</w></mentioned> и в других кавказских языках. <mentioned xml:id="mentioned_d4100e169" xml:lang="de"><lang/>
                         <w>Kartoffel</w></mentioned>, откуда идет русское слово, представляет
-                    искажение <mentioned xml:lang="it"><lang/>
-                        <w>tartufolo</w></mentioned>.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                            /><biblScope>521</biblScope></bibl>.</etym>
-                <etym xml:lang="en">From <mentioned xml:lang="ru"><lang/>
+                    искажение <mentioned xml:id="mentioned_d4100e175" xml:lang="it"><lang/>
+                        <w>tartufolo</w></mentioned>.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>521</biblScope></bibl>.</etym>
+                <etym xml:lang="en">From <mentioned xml:id="mentioned_d4100e188" xml:lang="ru"><lang/>
                         <w>kartofelʼ</w>
-                        <gloss><q>potato</q></gloss></mentioned>; cf. also <mentioned xml:lang="ka"><lang/>
-                        <w>k’artopili</w></mentioned>, <mentioned xml:lang="kbd"><lang/>
-                        <w>k’ārt’of</w></mentioned>, <mentioned xml:lang="lez"><lang/>
-                        <w>kartuf</w></mentioned> and in other Caucasian languages. <mentioned
-                        xml:lang="de"><lang/>
+                        <gloss><q>potato</q></gloss></mentioned>; cf. also <mentioned xml:id="mentioned_d4100e196" xml:lang="ka"><lang/>
+                        <w>k’artopili</w></mentioned>, <mentioned xml:id="mentioned_d4100e201" xml:lang="kbd"><lang/>
+                        <w>k’ārt’of</w></mentioned>, <mentioned xml:id="mentioned_d4100e206" xml:lang="lez"><lang/>
+                        <w>kartuf</w></mentioned> and in other Caucasian languages. <mentioned xml:id="mentioned_d4100e211" xml:lang="de"><lang/>
                         <w>Kartoffel</w></mentioned> (from which a Russian word is borrowed) is a
-                    distortion of <mentioned xml:lang="it"><lang/>
-                        <w>tartufolo</w></mentioned>.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                            /><biblScope>521</biblScope></bibl>.</etym>
+                    distortion of <mentioned xml:id="mentioned_d4100e217" xml:lang="it"><lang/>
+                        <w>tartufolo</w></mentioned>.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>521</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

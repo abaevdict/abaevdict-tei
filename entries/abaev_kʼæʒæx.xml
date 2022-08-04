@@ -1,37 +1,42 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">kʼæʒæx</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_kʼæʒæx" xml:lang="os">
                 <form type="lemma"><orth>kʼæʒæx</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d879e69"><sense xml:id="sense_d879e70"><abv:tr xml:lang="ru">
                             <q>скала</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>cliff</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d879e79"><abv:tr xml:lang="ru">
                             <q>утес</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>rock</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d879e91">
                         <quote>bærzond ūrs xæxtæ, ænkʼard kʼæʒæxtæ fæjjawy warzync</quote>
                         <abv:tr xml:lang="ru">
                             <q>высокие белые горы, мрачные скалы любят пастуха</q>
@@ -41,7 +46,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>48</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d879e110">
                         <quote>īsk˳y dæ fæjjaw k˳y razarid īw saw kʼæʒæxy særæj</quote>
                         <abv:tr xml:lang="ru">
                             <q>если бы твой пастух запел с вершины одной черной скалы!</q>
@@ -51,7 +56,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>36</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d879e129">
                         <quote>ajnæg kʼæʒæx cʼæx arvæj fæwældær</quote>
                         <abv:tr xml:lang="ru">
                             <q>отвесная скала поднялась выше голубого неба</q>
@@ -62,7 +67,7 @@
                         <bibl><ref type="bibl" target="#src_ЮОПам."/><biblScope>III
                             38</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d879e148" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>ewgur kʼæburtæ, kʼæʒæxtæ</quote>
                         <abv:tr xml:lang="ru">
@@ -71,29 +76,25 @@
                         <abv:tr xml:lang="en">
                             <q>there are rocky ledges and cliffs everywhere</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Bes._Ka_ke"
-                            /><biblScope>41</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Bes._Ka_ke"/><biblScope>41</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Может быть, из %i*kʼæj-zæx%i „камень-земля“; см. <ref type="xr"
-                        target="#entry_kʼæj"/> и <ref type="xr" target="#entry_zæxx"/>; перебой
+                <etym xml:lang="ru">Может быть, из %i*kʼæj-zæx%i „камень-земля“; см. <ref type="xr" target="#entry_kʼæj"/> и <ref type="xr" target="#entry_zæxx"/>; перебой
                     %iz%i ← %iʒ%i, как в <ref type="xr" target="#entry_dælʒæx"/> из %idæl-zæx%i. Во
-                    второй части можно также предполагать %išax%i ‘скала’; ср. <mentioned
-                        xml:lang="yai"><lang/>
+                    второй части можно также предполагать %išax%i ‘скала’; ср. <mentioned xml:id="mentioned_d879e179" xml:lang="yai"><lang/>
                         <w>šax</w>
-                        <gloss><q>скала</q></gloss></mentioned>, <mentioned xml:lang="sog"><lang/>
-                        <w>šx</w></mentioned>, <mentioned xml:lang="mnj"><lang/>
-                        <w>šax</w></mentioned>, <mentioned xml:lang="ps"><lang/>
+                        <gloss><q>скала</q></gloss></mentioned>, <mentioned xml:id="mentioned_d879e187" xml:lang="sog"><lang/>
+                        <w>šx</w></mentioned>, <mentioned xml:id="mentioned_d879e193" xml:lang="mnj"><lang/>
+                        <w>šax</w></mentioned>, <mentioned xml:id="mentioned_d879e198" xml:lang="ps"><lang/>
                         <w>šax</w>
                         <gloss><q>твердый</q></gloss></mentioned>.</etym>
-                <etym xml:lang="en">It may be from %i*kʼæj-zæx%i „rock-earth“; see <ref type="xr"
-                        target="#entry_kʼæj"/> and <ref type="xr" target="#entry_zæxx"/>; the change
+                <etym xml:lang="en">It may be from %i*kʼæj-zæx%i „rock-earth“; see <ref type="xr" target="#entry_kʼæj"/> and <ref type="xr" target="#entry_zæxx"/>; the change
                     %iz%i ← %iʒ%i is as in <ref type="xr" target="#entry_dælʒæx"/> from %idæl-zæx%i.
-                    One may suggest %išax%i ‘rock’ in the second part; cf. <mentioned xml:lang="yai"><lang/>
+                    One may suggest %išax%i ‘rock’ in the second part; cf. <mentioned xml:id="mentioned_d879e215" xml:lang="yai"><lang/>
                         <w>šax</w>
-                        <gloss><q>rock</q></gloss></mentioned>, <mentioned xml:lang="sog"><lang/>
-                        <w>šx</w></mentioned>, <mentioned xml:lang="mnj"><lang/>
-                        <w>šax</w></mentioned>, <mentioned xml:lang="ps"><lang/>
+                        <gloss><q>rock</q></gloss></mentioned>, <mentioned xml:id="mentioned_d879e223" xml:lang="sog"><lang/>
+                        <w>šx</w></mentioned>, <mentioned xml:id="mentioned_d879e229" xml:lang="mnj"><lang/>
+                        <w>šax</w></mentioned>, <mentioned xml:id="mentioned_d879e234" xml:lang="ps"><lang/>
                         <w>šax</w>
                         <gloss><q>solid</q></gloss></mentioned>.</etym>
                 <note type="internal">Что за šax?</note>

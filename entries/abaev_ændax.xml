@@ -1,33 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ændax</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ændax" xml:lang="os">
                 <form type="lemma"><orth>ændax</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d289e69"><abv:tr xml:lang="ru">
                         <q>нитка</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>thread</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d289e81">
                         <quote>sūʒīn æmæ myn saw ændax avær</quote>
                         <abv:tr xml:lang="ru">
                             <q>дай мне иглу и черные нитки</q>
@@ -37,51 +42,36 @@
                         </abv:tr>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Восходит к <mentioned xml:lang="ira"><lang/>
+                <etym xml:lang="ru">Восходит к <mentioned xml:id="mentioned_d289e99" xml:lang="ira"><lang/>
                         <w>*ham-tāka-</w></mentioned>. На иранской почве сюда же относится,
-                    вероятно, <mentioned xml:lang="fa"><lang/>
+                    вероятно, <mentioned xml:id="mentioned_d289e104" xml:lang="fa"><lang/>
                         <w>tāya</w>
                         <gloss><q>тонкая нить</q></gloss></mentioned> (закономерно из %i*tāka%i →
-                    %itāga-%i, см.: <bibl><author>Horn</author><ref type="bibl" target="#ref_GIPh."
-                            /><biblScope>Abt. II, стр. 46)</biblScope></bibl>. Рефлексы <mentioned
-                        xml:lang="ira"><lang/>
+                    %itāga-%i, см.: <bibl><author>Horn</author><ref type="bibl" target="#ref_GIPh."/><biblScope>Abt. II, стр. 46)</biblScope></bibl>. Рефлексы <mentioned xml:id="mentioned_d289e117" xml:lang="ira"><lang/>
                         <w>*ham-taka-</w></mentioned> находим в некоторых языках в значении ˈрабˈ (в
-                    смысле „связанный“, ср. по семантике <mentioned xml:lang="peo"><lang/>
-                        <w>bandaka-</w></mentioned>): <mentioned xml:lang="wbl"><lang/>
-                        <w>andag</w></mentioned>, <mentioned xml:lang="srh"><lang/>
+                    смысле „связанный“, ср. по семантике <mentioned xml:id="mentioned_d289e122" xml:lang="peo"><lang/>
+                        <w>bandaka-</w></mentioned>): <mentioned xml:id="mentioned_d289e128" xml:lang="wbl"><lang/>
+                        <w>andag</w></mentioned>, <mentioned xml:id="mentioned_d289e133" xml:lang="srh"><lang/>
                         <w>indīj</w>
-                        <gloss><q>раб</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Morgenstierne._IIFL"/><biblScope>II
-                    514</biblScope></bibl>), в документах <mentioned xml:lang="pgd"><lang/>
-                        <w>amtag’i</w></mentioned> (<bibl><author>Burrow,</author><ref type="bibl"
-                            target="#ref_BSOS"/><biblScope>VII 779</biblScope></bibl>). Ср. <ref
-                        type="xr" target="#entry_tag"/> ˈнитьˈ, <ref type="xr"
-                        target="#entry_kættag"/>ˈполотноˈ, <ref type="xr" target="#entry_zældag"/>
-                    ˈшелкˈ и <ref type="xr" target="#entry_taxun"/> ’наряжатьˈ.%n<bibl><ref
-                            type="bibl" target="#ref_ОЯФ_I"
-                    /><biblScope>54</biblScope></bibl>.</etym>
-                <etym xml:lang="en">Comes from <mentioned xml:lang="ira"><lang/>
-                        <w>*ham-tāka-</w></mentioned>. Probably, <mentioned xml:lang="fa"><lang/>
+                        <gloss><q>раб</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Morgenstierne._IIFL"/><biblScope>II
+                    514</biblScope></bibl>), в документах <mentioned xml:id="mentioned_d289e145" xml:lang="pgd"><lang/>
+                        <w>amtag’i</w></mentioned> (<bibl><author>Burrow,</author><ref type="bibl" target="#ref_BSOS"/><biblScope>VII 779</biblScope></bibl>). Ср. <ref type="xr" target="#entry_tag"/> ˈнитьˈ, <ref type="xr" target="#entry_kættag"/>ˈполотноˈ, <ref type="xr" target="#entry_zældag"/>
+                    ˈшелкˈ и <ref type="xr" target="#entry_taxun"/> ’наряжатьˈ.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>54</biblScope></bibl>.</etym>
+                <etym xml:lang="en">Comes from <mentioned xml:id="mentioned_d289e171" xml:lang="ira"><lang/>
+                        <w>*ham-tāka-</w></mentioned>. Probably, <mentioned xml:id="mentioned_d289e176" xml:lang="fa"><lang/>
                         <w>tāya</w>
                         <gloss><q>a thin thread</q></gloss></mentioned> (regulary from *tāka-→tāga-,
-                    см.: <bibl><author>Horn,</author><ref type="bibl" target="#ref_GIPh."
-                            /><biblScope>Abt. II 46)</biblScope></bibl> has the same Iranian
-                    ethymology. Reflections of <mentioned xml:lang="ira"><lang/>
+                    см.: <bibl><author>Horn,</author><ref type="bibl" target="#ref_GIPh."/><biblScope>Abt. II 46)</biblScope></bibl> has the same Iranian
+                    ethymology. Reflections of <mentioned xml:id="mentioned_d289e189" xml:lang="ira"><lang/>
                         <w>*ham-taka-</w></mentioned> are also found in some languages with the
-                    meaning ˈslaveˈ (in the sense of ˈtied upˈ, cf. by semantics <mentioned
-                        xml:lang="peo"><lang/>
-                        <w>bandaka-</w></mentioned>): <mentioned xml:lang="wbl"><lang/>
-                        <w>andag</w></mentioned>, <mentioned xml:lang="srh"><lang/>
+                    meaning ˈslaveˈ (in the sense of ˈtied upˈ, cf. by semantics <mentioned xml:id="mentioned_d289e194" xml:lang="peo"><lang/>
+                        <w>bandaka-</w></mentioned>): <mentioned xml:id="mentioned_d289e200" xml:lang="wbl"><lang/>
+                        <w>andag</w></mentioned>, <mentioned xml:id="mentioned_d289e205" xml:lang="srh"><lang/>
                         <w>indīj</w>
-                        <gloss><q>slave</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Morgenstierne._IIFL"/><biblScope>II
+                        <gloss><q>slave</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Morgenstierne._IIFL"/><biblScope>II
                     514</biblScope></bibl>), in the documents кхарошти amtag’i
-                            (<bibl><author>Burrow</author><ref type="bibl" target="#ref_BSOS"
-                            /><biblScope>VII 779</biblScope></bibl>). Cf. <ref type="xr"
-                        target="#entry_tag"/> ˈthreadˈ, <ref type="xr" target="#entry_kættag"/>
-                    ˈlinenˈ, <ref type="xr" target="#entry_zældag"/> ˈsilkˈ and <ref type="xr"
-                        target="#entry_taxun"/> ˈto dress upˈ.%n<bibl><ref type="bibl"
-                            target="#ref_ОЯФ_I"/><biblScope>54</biblScope></bibl></etym>
+                            (<bibl><author>Burrow</author><ref type="bibl" target="#ref_BSOS"/><biblScope>VII 779</biblScope></bibl>). Cf. <ref type="xr" target="#entry_tag"/> ˈthreadˈ, <ref type="xr" target="#entry_kættag"/>
+                    ˈlinenˈ, <ref type="xr" target="#entry_zældag"/> ˈsilkˈ and <ref type="xr" target="#entry_taxun"/> ˈto dress upˈ.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>54</biblScope></bibl></etym>
             </entry>
         </body>
     </text>

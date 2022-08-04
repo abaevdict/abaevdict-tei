@@ -1,48 +1,51 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">fycyn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_fycyn" xml:lang="os">
-                <form xml:lang="os-x-iron" type="lemma"><orth>fycyn</orth><form type="participle"
-                            ><orth>fyx(t)</orth></form></form>
-                <form xml:lang="os-x-digor" type="dialectal"><orth>ficun</orth><form
-                        type="participle"><orth>funx(t)</orth></form></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <form xml:lang="os-x-iron" type="lemma"><orth>fycyn</orth><form type="participle"><orth>fyx(t)</orth></form></form>
+                <form xml:lang="os-x-digor" type="dialectal"><orth>ficun</orth><form type="participle"><orth>funx(t)</orth></form></form>
+                <sense xml:id="sense_d5893e76"><sense xml:id="sense_d5893e77"><abv:tr xml:lang="ru">
                             <q>варить(ся)</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>cook</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d5893e86"><abv:tr xml:lang="ru">
                             <q>кипятить</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>boil</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d5893e95"><abv:tr xml:lang="ru">
                             <q>кипеть</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>seethe</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d5893e104"><abv:tr xml:lang="ru">
                             <q>печь(ся)</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>bake</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d5893e116">
                         <quote>īnnæ avd (læppūjy) æddædær axodæn fycync</quote>
                         <abv:tr xml:lang="ru">
                             <q>другие семь (юношей) подальше варят завтрак</q>
@@ -52,7 +55,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>64</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5893e135">
                         <quote>æxsavær ysfyxtoj</quote>
                         <abv:tr xml:lang="ru">
                             <q>сварили ужин</q>
@@ -62,7 +65,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Munk."/><biblScope>22</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5893e154">
                         <quote>afycoj qædurtæ, abadūt æncad</quote>
                         <abv:tr xml:lang="ru">
                             <q>(пока) сварятся бобы, посидите спокойно</q>
@@ -72,7 +75,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>44</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5893e173" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>…funxtæj wæ guboræ</quote>
                         <abv:tr xml:lang="ru">
@@ -81,10 +84,9 @@
                         <abv:tr xml:lang="en">
                             <q>…your churek (flat armenian bread with sesame seeds) was baked</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Gurdž._Saxi_ræs."
-                                /><biblScope>4</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Gurdž._Saxi_ræs."/><biblScope>4</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5893e195">
                         <quote>argævstoj fys, yskodtoj fīzonǵytæ æmæ sfyxtoj fyd</quote>
                         <abv:tr xml:lang="ru">
                             <q>зарезали барана, сделали шашлыки и сварили мясо</q>
@@ -94,7 +96,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_ОЭ"/><biblScope>I 48</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5893e215">
                         <quote>xædzīlgæ waxstytæ artmæ zīlync æmæ fycync</quote>
                         <abv:tr xml:lang="ru">
                             <q>самовертящиеся вертелы вращаются над огнем и жарят (шашлык)</q>
@@ -106,191 +108,163 @@
                             9</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Восходит к <mentioned xml:lang="ira"><lang/>
-                        <w>*pač-, *pak-</w></mentioned>, <mentioned xml:lang="ine"><lang/>
+                <etym xml:lang="ru">Восходит к <mentioned xml:id="mentioned_d5893e237" xml:lang="ira"><lang/>
+                        <w>*pač-, *pak-</w></mentioned>, <mentioned xml:id="mentioned_d5893e242" xml:lang="ine"><lang/>
                         <w>*pek˳-</w>
-                        <gloss><q>жечь</q></gloss></mentioned>, <mentioned xml:lang="ine"><w/>
+                        <gloss><q>жечь</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5893e250" xml:lang="ine"><w/>
                         <gloss><q>варить</q></gloss></mentioned>. Ожидали бы ос. %i*fæc-%i.
                     Огласовка %iу%i (%ifyc-%i), д. %iu%i (%ifunx%i) могла возникнуть из %ia%i в
                     соседстве губного, как в <ref type="xr" target="#entry_fys"/> | %ifus%i из
                     %ipasu%i, <ref type="xr" target="#entry_myd"/> | %imud%i из %imadu-%i и др. В
                     этом случае огласовку %ii%i в д. %ific-%i надо считать вторичной (перед %ic%i,
                     как в превербе %iis-%i из %iuz-%i перед %is%i?). Прош. причастие %ifyx%i |
-                    %ifunx%i сопоставляется с <mentioned xml:lang="sa"><lang/>
-                        <w>pakva-</w></mentioned> с вторичной вставкой %in%i в дигорском.<note
-                        type="footnote" n="1"> PUT NOTE HERE </note> Соответствия в иранских и
-                    индоевропейских языках: <mentioned xml:lang="fa"><lang/>
-                        <w>puxtan : paz-</w></mentioned>, <mentioned xml:lang="pal"><lang/>
+                    %ifunx%i сопоставляется с <mentioned xml:id="mentioned_d5893e261" xml:lang="sa"><lang/>
+                        <w>pakva-</w></mentioned> с вторичной вставкой %in%i в дигорском.<note type="footnote" n="1"> PUT NOTE HERE </note> Соответствия в иранских и
+                    индоевропейских языках: <mentioned xml:id="mentioned_d5893e269" xml:lang="fa"><lang/>
+                        <w>puxtan : paz-</w></mentioned>, <mentioned xml:id="mentioned_d5893e274" xml:lang="pal"><lang/>
                         <w>puxtan : paz-</w>
-                        <gloss><q>варить</q></gloss></mentioned>, <mentioned xml:lang="pal"><w/>
-                        <gloss><q>печь</q></gloss></mentioned>, <mentioned xml:lang="ku"><lang/>
-                        <w>patin : piʒ-</w></mentioned>, <mentioned xml:lang="x-balochi"><lang/>
-                        <w>pāčag</w></mentioned>, <mentioned xml:lang="ps"><lang/>
-                        <w>paxawəl</w></mentioned>, <mentioned xml:lang="prc"><lang/>
-                        <w>peč</w></mentioned>, <mentioned xml:lang="sgh"><lang/>
-                        <w>piʒ : paxt-</w></mentioned>, <mentioned xml:lang="wbl"><lang/>
+                        <gloss><q>варить</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5893e282" xml:lang="pal"><w/>
+                        <gloss><q>печь</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5893e288" xml:lang="ku"><lang/>
+                        <w>patin : piʒ-</w></mentioned>, <mentioned xml:id="mentioned_d5893e294" xml:lang="x-balochi"><lang/>
+                        <w>pāčag</w></mentioned>, <mentioned xml:id="mentioned_d5893e299" xml:lang="ps"><lang/>
+                        <w>paxawəl</w></mentioned>, <mentioned xml:id="mentioned_d5893e304" xml:lang="prc"><lang/>
+                        <w>peč</w></mentioned>, <mentioned xml:id="mentioned_d5893e309" xml:lang="sgh"><lang/>
+                        <w>piʒ : paxt-</w></mentioned>, <mentioned xml:id="mentioned_d5893e314" xml:lang="wbl"><lang/>
                         <w>pac-</w>
-                        <gloss><q>варить</q></gloss></mentioned>, <mentioned xml:lang="wbl"
-                            ><w>peš-</w>
-                        <gloss><q>зреть</q></gloss></mentioned>, <mentioned xml:lang="yah"><lang/>
+                        <gloss><q>варить</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5893e322" xml:lang="wbl"><w>peš-</w>
+                        <gloss><q>зреть</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5893e329" xml:lang="yah"><lang/>
                         <w>paʒ- : pux-</w>
-                        <gloss><q>варить</q></gloss></mentioned>, <mentioned xml:lang="yah"><w>paš :
+                        <gloss><q>варить</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5893e337" xml:lang="yah"><w>paš :
                             pux</w>
-                        <gloss><q>спеть</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Андреев._Язг."/><biblScope>4–5</biblScope></bibl>),
-                        <mentioned xml:lang="yai"><lang/>
-                        <w>pač- : puxt</w></mentioned>, <mentioned xml:lang="sog"><lang/>
-                        <w>*pač- (pč-)</w></mentioned>, <mentioned xml:lang="kho"><lang/>
+                        <gloss><q>спеть</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Андреев._Язг."/><biblScope>4–5</biblScope></bibl>),
+                        <mentioned xml:id="mentioned_d5893e347" xml:lang="yai"><lang/>
+                        <w>pač- : puxt</w></mentioned>, <mentioned xml:id="mentioned_d5893e352" xml:lang="sog"><lang/>
+                        <w>*pač- (pč-)</w></mentioned>, <mentioned xml:id="mentioned_d5893e357" xml:lang="kho"><lang/>
                         <w>pajs-</w>
-                        <gloss><q>варить</q></gloss></mentioned>, <mentioned xml:lang="kho"><w/>
-                        <gloss><q>печь</q></gloss></mentioned>, <mentioned xml:lang="kho"
-                            ><w>pachāre</w>
-                        <gloss><q>они пекут</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_BSOS"/><biblScope xml:lang="ru">VIII 131
-                            сл.</biblScope></bibl>), <mentioned xml:lang="ae"><lang/>
-                        <w>pač-</w></mentioned>, <mentioned xml:lang="sa"><lang/>
+                        <gloss><q>варить</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5893e366" xml:lang="kho"><w/>
+                        <gloss><q>печь</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5893e372" xml:lang="kho"><w>pachāre</w>
+                        <gloss><q>они пекут</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_BSOS"/><biblScope xml:lang="ru">VIII 131
+                            сл.</biblScope></bibl>), <mentioned xml:id="mentioned_d5893e383" xml:lang="ae"><lang/>
+                        <w>pač-</w></mentioned>, <mentioned xml:id="mentioned_d5893e388" xml:lang="sa"><lang/>
                         <w>pač- : pakva-</w>
-                        <gloss><q>печь</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
-                        <gloss><q>варить</q></gloss></mentioned>, <mentioned xml:lang="ru"><lang/>
-                        <w>печь, пеку</w></mentioned>, <mentioned xml:lang="sqj"><lang/>
+                        <gloss><q>печь</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5893e396" xml:lang="sa"><w/>
+                        <gloss><q>варить</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5893e403" xml:lang="ru"><lang/>
+                        <w>печь, пеку</w></mentioned>, <mentioned xml:id="mentioned_d5893e408" xml:lang="sqj"><lang/>
                         <w>pjek</w>
-                        <gloss><q>пеку</q></gloss></mentioned>, <mentioned xml:lang="la"><lang/>
+                        <gloss><q>пеку</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5893e416" xml:lang="la"><lang/>
                         <w>coquo</w>
-                        <gloss><q>пеку</q></gloss></mentioned>, <mentioned xml:lang="la"><w/>
-                        <gloss><q>варю</q></gloss></mentioned>, <mentioned xml:lang="grc"><lang/>
+                        <gloss><q>пеку</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5893e424" xml:lang="la"><w/>
+                        <gloss><q>варю</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5893e430" xml:lang="grc"><lang/>
                         <w>πέσσω</w>
-                        <gloss><q>варю</q></gloss></mentioned>, <mentioned xml:lang="grc"><w/>
-                        <gloss><q>перевариваю</q></gloss></mentioned>, <mentioned xml:lang="x-tchr"><lang/>
+                        <gloss><q>варю</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5893e438" xml:lang="grc"><w/>
+                        <gloss><q>перевариваю</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5893e445" xml:lang="x-tchr"><lang/>
                         <w>pak-, päk-, päkw-</w>
-                        <gloss><q>вариться</q></gloss></mentioned>, <mentioned xml:lang="x-tchr"><w/>
+                        <gloss><q>вариться</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5893e453" xml:lang="x-tchr"><w/>
                         <gloss><q>зреть</q></gloss></mentioned>. Для %ifyx%i | %ifunx%i ср., помимо
-                        <mentioned xml:lang="sa"><lang/>
-                        <w>pakva-</w></mentioned>, еще <mentioned xml:lang="ps"><lang/>
+                        <mentioned xml:id="mentioned_d5893e459" xml:lang="sa"><lang/>
+                        <w>pakva-</w></mentioned>, еще <mentioned xml:id="mentioned_d5893e464" xml:lang="ps"><lang/>
                         <w>pōx</w>
-                        <gloss><q>печеный</q></gloss></mentioned>, <mentioned xml:lang="ps"><w/>
-                        <gloss><q>зрелый</q></gloss></mentioned>, <mentioned xml:lang="sgh"><lang/>
+                        <gloss><q>печеный</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5893e472" xml:lang="ps"><w/>
+                        <gloss><q>зрелый</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5893e478" xml:lang="sgh"><lang/>
                         <w>pēx</w>
                         <gloss><q>зрелый</q></gloss></mentioned>. Для перебоя %iа%i → %iu%i ср.
-                        <mentioned xml:lang="fa" extralang="pal"><lang/>
-                        <w>puxt-</w></mentioned>, <mentioned xml:lang="sog"><lang/>
+                        <mentioned xml:id="mentioned_d5893e487" xml:lang="fa" extralang="pal"><lang/>
+                        <w>puxt-</w></mentioned>, <mentioned xml:id="mentioned_d5893e492" xml:lang="sog"><lang/>
                         <w>pwɣš-</w>
-                        <gloss><q>котелок для варки</q></gloss></mentioned>, <mentioned
-                        xml:lang="sog"><w>pwɣtʼkʼry</w>
+                        <gloss><q>котелок для варки</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5893e500" xml:lang="sog"><w>pwɣtʼkʼry</w>
                         <gloss><q>варка</q></gloss></mentioned>. Обращает на себя внимание близость
-                    к иранскому соответствующих глаголов в пермских языках: <mentioned xml:lang="kv"><lang/>
+                    к иранскому соответствующих глаголов в пермских языках: <mentioned xml:id="mentioned_d5893e506" xml:lang="kv"><lang/>
                         <w n="0">пузь-</w>
-                        <gloss><q>кипятить</q></gloss></mentioned>, <mentioned xml:lang="kv"><w/>
-                        <gloss><q>кипеть</q></gloss></mentioned>, <mentioned xml:lang="kv"
-                            ><w n="0">пöж-</w>
-                        <gloss><q>па́рить</q></gloss></mentioned>, <mentioned xml:lang="kv"><w/>
-                        <gloss><q>печь</q></gloss></mentioned>, <mentioned xml:lang="udm"><lang/>
+                        <gloss><q>кипятить</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5893e515" xml:lang="kv"><w/>
+                        <gloss><q>кипеть</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5893e521" xml:lang="kv"><w n="0">пöж-</w>
+                        <gloss><q>па́рить</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5893e529" xml:lang="kv"><w/>
+                        <gloss><q>печь</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5893e535" xml:lang="udm"><lang/>
                         <w n="0">пыж-</w>
-                        <gloss><q>печь</q></gloss></mentioned>.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 54</biblScope></bibl>;
-                            <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>18</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_Hübschmann._Oss."/><biblScope>67</biblScope></bibl>. —
-                            <bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                        /><biblScope>24</biblScope></bibl>. — <bibl><author>Gershevitch</author><ref
-                            type="bibl" target="#ref_BSOAS"/><biblScope>XVII
+                        <gloss><q>печь</q></gloss></mentioned>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 54</biblScope></bibl>;
+                            <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>18</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>67</biblScope></bibl>. —
+                            <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>24</biblScope></bibl>. — <bibl><author>Gershevitch</author><ref type="bibl" target="#ref_BSOAS"/><biblScope>XVII
                     479</biblScope></bibl>.),</etym>
-                <etym xml:lang="en">It traces back to <mentioned xml:lang="ira"><lang/>
-                        <w>*pač-, *pak-</w></mentioned>, <mentioned xml:lang="ine"><lang/>
+                <etym xml:lang="en">It traces back to <mentioned xml:id="mentioned_d5893e570" xml:lang="ira"><lang/>
+                        <w>*pač-, *pak-</w></mentioned>, <mentioned xml:id="mentioned_d5893e575" xml:lang="ine"><lang/>
                         <w>*pek˳-</w>
-                        <gloss><q>burn</q></gloss></mentioned>, <mentioned xml:lang="ine"><w/>
+                        <gloss><q>burn</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5893e583" xml:lang="ine"><w/>
                         <gloss><q>boil</q></gloss></mentioned>. The expected Ossetic form is
                     %i*fæc-%i. The vowel %iу%i (%ifyc-%i), Digor %iu%i (%ifunx%i) could have
-                    appeared from %ia%i in the neighbourhood of a labial consonant, as in <ref
-                        type="xr" target="#entry_fys"/> | %ifus%i from %ipasu%i, <ref type="xr"
-                        target="#entry_myd"/> | %imud%i from %imadu-%i etc. In this case the vowel
+                    appeared from %ia%i in the neighbourhood of a labial consonant, as in <ref type="xr" target="#entry_fys"/> | %ifus%i from %ipasu%i, <ref type="xr" target="#entry_myd"/> | %imud%i from %imadu-%i etc. In this case the vowel
                     %ii%i in Digor %ific-%i should be considered secondary (before %ic%i, as in the
                     preverb %iis-%i from %iuz-%i before %is%i?). A past participle %ifyx%i |
-                    %ifunx%i is compared with <mentioned xml:lang="sa"><lang/>
+                    %ifunx%i is compared with <mentioned xml:id="mentioned_d5893e594" xml:lang="sa"><lang/>
                         <w>pakva-</w></mentioned> with the secondary insertion of %in%i in
                         Digor.<note type="footnote" n="1"> PUT NOTE HERE </note> Correspondences in
-                    Iranian and Indo-European languages: <mentioned xml:lang="fa"><lang/>
-                        <w>puxtan : paz-</w></mentioned>, <mentioned xml:lang="pal"><lang/>
+                    Iranian and Indo-European languages: <mentioned xml:id="mentioned_d5893e602" xml:lang="fa"><lang/>
+                        <w>puxtan : paz-</w></mentioned>, <mentioned xml:id="mentioned_d5893e607" xml:lang="pal"><lang/>
                         <w>puxtan : paz-</w>
-                        <gloss><q>boil</q></gloss></mentioned>, <mentioned xml:lang="pal"><w/>
-                        <gloss><q>bake</q></gloss></mentioned>, <mentioned xml:lang="ku"><lang/>
-                        <w>patin : piʒ-</w></mentioned>, <mentioned xml:lang="x-balochi"><lang/>
-                        <w>pāčag</w></mentioned>, <mentioned xml:lang="ps"><lang/>
-                        <w>paxawəl</w></mentioned>, <mentioned xml:lang="prc"><lang/>
-                        <w>peč</w></mentioned>, <mentioned xml:lang="sgh"><lang/>
-                        <w>piʒ : paxt-</w></mentioned>, <mentioned xml:lang="wbl"><lang/>
+                        <gloss><q>boil</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5893e615" xml:lang="pal"><w/>
+                        <gloss><q>bake</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5893e621" xml:lang="ku"><lang/>
+                        <w>patin : piʒ-</w></mentioned>, <mentioned xml:id="mentioned_d5893e627" xml:lang="x-balochi"><lang/>
+                        <w>pāčag</w></mentioned>, <mentioned xml:id="mentioned_d5893e632" xml:lang="ps"><lang/>
+                        <w>paxawəl</w></mentioned>, <mentioned xml:id="mentioned_d5893e637" xml:lang="prc"><lang/>
+                        <w>peč</w></mentioned>, <mentioned xml:id="mentioned_d5893e642" xml:lang="sgh"><lang/>
+                        <w>piʒ : paxt-</w></mentioned>, <mentioned xml:id="mentioned_d5893e647" xml:lang="wbl"><lang/>
                         <w>pac-</w>
-                        <gloss><q>варить</q></gloss></mentioned>, <mentioned xml:lang="wbl"
-                            ><w>peš-</w>
-                        <gloss><q>ripen</q></gloss></mentioned>, <mentioned xml:lang="yah"><lang/>
+                        <gloss><q>варить</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5893e655" xml:lang="wbl"><w>peš-</w>
+                        <gloss><q>ripen</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5893e662" xml:lang="yah"><lang/>
                         <w>paʒ- : pux-</w>
-                        <gloss><q>boil</q></gloss></mentioned>, <mentioned xml:lang="yah"><w>paš :
+                        <gloss><q>boil</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5893e670" xml:lang="yah"><w>paš :
                             pux</w>
-                        <gloss><q>ripen</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Андреев._Язг."/><biblScope>4–5</biblScope></bibl>),
-                        <mentioned xml:lang="yai"><lang/>
-                        <w>pač- : puxt</w></mentioned>, <mentioned xml:lang="sog"><lang/>
-                        <w>*pač- (pč-)</w></mentioned>, <mentioned xml:lang="kho"><lang/>
+                        <gloss><q>ripen</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Андреев._Язг."/><biblScope>4–5</biblScope></bibl>),
+                        <mentioned xml:id="mentioned_d5893e680" xml:lang="yai"><lang/>
+                        <w>pač- : puxt</w></mentioned>, <mentioned xml:id="mentioned_d5893e685" xml:lang="sog"><lang/>
+                        <w>*pač- (pč-)</w></mentioned>, <mentioned xml:id="mentioned_d5893e690" xml:lang="kho"><lang/>
                         <w>pajs-</w>
-                        <gloss><q>boil</q></gloss></mentioned>, <mentioned xml:lang="kho"><w/>
-                        <gloss><q>bake</q></gloss></mentioned>, <mentioned xml:lang="kho"
-                            ><w>pachāre</w>
-                        <gloss><q>they are baking</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_BSOS"/><biblScope xml:lang="en">VIII 131
-                    ff.</biblScope></bibl>), <mentioned xml:lang="ae"><lang/>
-                        <w>pač-</w></mentioned>, <mentioned xml:lang="sa"><lang/>
+                        <gloss><q>boil</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5893e699" xml:lang="kho"><w/>
+                        <gloss><q>bake</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5893e705" xml:lang="kho"><w>pachāre</w>
+                        <gloss><q>they are baking</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_BSOS"/><biblScope xml:lang="en">VIII 131
+                    ff.</biblScope></bibl>), <mentioned xml:id="mentioned_d5893e716" xml:lang="ae"><lang/>
+                        <w>pač-</w></mentioned>, <mentioned xml:id="mentioned_d5893e721" xml:lang="sa"><lang/>
                         <w>pač- : pakva-</w>
-                        <gloss><q>bake</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
-                        <gloss><q>варить</q></gloss></mentioned>, <mentioned xml:lang="ru"><lang/>
-                        <w>pečʼ, peku</w></mentioned>, <mentioned xml:lang="sqj"><lang/>
+                        <gloss><q>bake</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5893e729" xml:lang="sa"><w/>
+                        <gloss><q>варить</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5893e736" xml:lang="ru"><lang/>
+                        <w>pečʼ, peku</w></mentioned>, <mentioned xml:id="mentioned_d5893e741" xml:lang="sqj"><lang/>
                         <w>pjek</w>
-                        <gloss><q>I am baking</q></gloss></mentioned>, <mentioned xml:lang="la"><lang/>
+                        <gloss><q>I am baking</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5893e749" xml:lang="la"><lang/>
                         <w>coquo</w>
-                        <gloss><q>I am baking</q></gloss></mentioned>, <mentioned xml:lang="la"><w/>
-                        <gloss><q>I am boiling</q></gloss></mentioned>, <mentioned xml:lang="grc"><lang/>
+                        <gloss><q>I am baking</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5893e757" xml:lang="la"><w/>
+                        <gloss><q>I am boiling</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5893e763" xml:lang="grc"><lang/>
                         <w>πέσσω</w>
-                        <gloss><q>I am boiling</q></gloss></mentioned>, <mentioned xml:lang="grc"><w/>
-                        <gloss><q>I am reboiling</q></gloss></mentioned>, <mentioned
-                        xml:lang="x-tchr"><lang/>
+                        <gloss><q>I am boiling</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5893e771" xml:lang="grc"><w/>
+                        <gloss><q>I am reboiling</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5893e778" xml:lang="x-tchr"><lang/>
                         <w>pak-, päk-, päkw-</w>
-                        <gloss><q>be boiling</q></gloss></mentioned>, <mentioned xml:lang="x-tchr"><w/>
+                        <gloss><q>be boiling</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5893e786" xml:lang="x-tchr"><w/>
                         <gloss><q>ripen</q></gloss></mentioned>. For %ifyx%i | %ifunx%i, besides
-                        <mentioned xml:lang="sa"><lang/>
-                        <w>pakva-</w></mentioned>, cf. also <mentioned xml:lang="ps"><lang/>
+                        <mentioned xml:id="mentioned_d5893e792" xml:lang="sa"><lang/>
+                        <w>pakva-</w></mentioned>, cf. also <mentioned xml:id="mentioned_d5893e797" xml:lang="ps"><lang/>
                         <w>pōx</w>
-                        <gloss><q>baked</q></gloss></mentioned>, <mentioned xml:lang="ps"><w/>
-                        <gloss><q>ripe</q></gloss></mentioned>, <mentioned xml:lang="sgh"><lang/>
+                        <gloss><q>baked</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5893e805" xml:lang="ps"><w/>
+                        <gloss><q>ripe</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5893e811" xml:lang="sgh"><lang/>
                         <w>pēx</w>
                         <gloss><q>ripe</q></gloss></mentioned>. For the alteration %iа%i → %iu%i cf.
-                        <mentioned xml:lang="fa" extralang="pal"><lang/>
-                        <w>puxt-</w></mentioned>, <mentioned xml:lang="sog"><lang/>
+                        <mentioned xml:id="mentioned_d5893e820" xml:lang="fa" extralang="pal"><lang/>
+                        <w>puxt-</w></mentioned>, <mentioned xml:id="mentioned_d5893e825" xml:lang="sog"><lang/>
                         <w>pwɣš-</w>
-                        <gloss><q>cooking pot</q></gloss></mentioned>, <mentioned xml:lang="sog"
-                            ><w>pwɣtʼkʼry</w>
+                        <gloss><q>cooking pot</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5893e833" xml:lang="sog"><w>pwɣtʼkʼry</w>
                         <gloss><q>cooking</q></gloss></mentioned>. The closeness of the
                     corresponding verbs in the Permian languages to Iranian is noteworthy:
-                        <mentioned xml:lang="kv"><lang/>
+                        <mentioned xml:id="mentioned_d5893e839" xml:lang="kv"><lang/>
                         <w>puź-</w>
-                        <gloss><q>boil</q></gloss></mentioned>, <mentioned xml:lang="kv"><w/>
-                        <gloss><q>boil</q></gloss></mentioned>, <mentioned xml:lang="kv"><w>pöž-</w>
-                        <gloss><q>steam</q></gloss></mentioned>, <mentioned xml:lang="kv"><w/>
-                        <gloss><q>bake</q></gloss></mentioned>, <mentioned xml:lang="udm"><lang/>
+                        <gloss><q>boil</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5893e847" xml:lang="kv"><w/>
+                        <gloss><q>boil</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5893e853" xml:lang="kv"><w>pöž-</w>
+                        <gloss><q>steam</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5893e860" xml:lang="kv"><w/>
+                        <gloss><q>bake</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5893e866" xml:lang="udm"><lang/>
                         <w>pyž-</w>
-                        <gloss><q>bake</q></gloss></mentioned>.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 54</biblScope></bibl>;
-                            <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>18</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_Hübschmann._Oss."/><biblScope>67</biblScope></bibl>. —
-                            <bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                        /><biblScope>24</biblScope></bibl>. — <bibl><author>Gershevitch</author><ref
-                            type="bibl" target="#ref_BSOAS"/><biblScope>XVII
+                        <gloss><q>bake</q></gloss></mentioned>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 54</biblScope></bibl>;
+                            <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>18</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>67</biblScope></bibl>. —
+                            <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>24</biblScope></bibl>. — <bibl><author>Gershevitch</author><ref type="bibl" target="#ref_BSOAS"/><biblScope>XVII
                     479</biblScope></bibl>.</etym>
-                <note type="footnote" xml:lang="ru" n="1"><bibl><ref type="bibl"
-                            target="#ref_Gershevitch"/></bibl> возводит %ifyc-%i к %ipaxš-%i, как
-                    %idūc-%i [см. <ref type="xr" target="#entry_dūcyn"/>] к %iduxš-%i (<bibl><ref
-                            type="bibl" target="#ref_BSOAS"/><biblScope>XVII
+                <note type="footnote" xml:lang="ru" n="1"><bibl><ref type="bibl" target="#ref_Gershevitch"/></bibl> возводит %ifyc-%i к %ipaxš-%i, как
+                    %idūc-%i [см. <ref type="xr" target="#entry_dūcyn"/>] к %iduxš-%i (<bibl><ref type="bibl" target="#ref_BSOAS"/><biblScope>XVII
                     479</biblScope></bibl>).</note>
-                <note type="footnote" xml:lang="en" n="1"><bibl><ref type="bibl"
-                            target="#ref_Gershevitch"/></bibl> traces %ifyc-%i back to %ipaxš-%i, as
+                <note type="footnote" xml:lang="en" n="1"><bibl><ref type="bibl" target="#ref_Gershevitch"/></bibl> traces %ifyc-%i back to %ipaxš-%i, as
                     he traces %idūc-%i [see <ref type="xr" target="#entry_dūcyn"/>] back to
                     %iduxš-%i (<bibl><ref type="bibl" target="#ref_BSOAS"/><biblScope>XVII
                             479</biblScope></bibl>).</note>

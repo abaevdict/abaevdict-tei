@@ -1,54 +1,57 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ʒubandi</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ʒubandi" xml:lang="os-x-digor">
                 <form type="lemma"><orth>ʒubandi</orth></form>
                 <usg><lang/></usg>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d5080e72"><sense xml:id="sense_d5080e73"><abv:tr xml:lang="ru">
                             <q>разговор</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>talk</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d5080e82"><abv:tr xml:lang="ru">
                             <q>беседа</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>conversation</q>
                         </abv:tr></sense></sense>
-                <re>
+                <re xml:id="re_d5080e92">
                     <form type="lemma"><orth>ʒubandi kænun</orth></form>
-                    <sense><sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d5080e97"><sense xml:id="sense_d5080e98"><abv:tr xml:lang="ru">
                                 <q>разговаривать</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>talk</q>
-                            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                            </abv:tr></sense><sense xml:id="sense_d5080e107"><abv:tr xml:lang="ru">
                                 <q>беседовать</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>converse</q>
                             </abv:tr></sense></sense>
-                    <note type="comment" xml:lang="ru">; ср. <ref type="xr" target="#entry_nyxas"
-                        />%i, nyxas kænyn%i.</note>
-                    <note type="comment" xml:lang="en">; cf. <ref type="xr" target="#entry_nyxas"
-                        />%i, nyxas kænyn%i.</note>
+                    <note type="comment" xml:lang="ru">; ср. <ref type="xr" target="#entry_nyxas"/>%i, nyxas kænyn%i.</note>
+                    <note type="comment" xml:lang="en">; cf. <ref type="xr" target="#entry_nyxas"/>%i, nyxas kænyn%i.</note>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5080e130" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>æz æma Biʒix ʒubandibæl isbadianæ donxæresi bun</quote>
                         <abv:tr xml:lang="ru">
@@ -59,7 +62,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>118</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5080e152" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>i æmburdi adæmtæ baduncæ… ma ʒubanditæ ma ʒubandij særtæ
                             xæssuncæ</quote>
@@ -74,7 +77,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
                             11</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5080e174" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>xwæræ ma ʒubandimæ dær iǧosæ</quote>
                         <abv:tr xml:lang="ru">
@@ -83,10 +86,9 @@
                         <abv:tr xml:lang="en">
                             <q>eat and (at the same time) listen to the story</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>26%l8%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>26%l8%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5080e196" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>mæ ʒubanditæ ba ma feronx wo</quote>
                         <abv:tr xml:lang="ru">
@@ -95,10 +97,9 @@
                         <abv:tr xml:lang="en">
                             <q>don't forget my words</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>35%l8%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>35%l8%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5080e218" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>ærdozæj ew kʼumi ʒubandi cæwuj</quote>
                         <abv:tr xml:lang="ru">
@@ -110,30 +111,30 @@
                         <bibl><ref type="bibl" target="#src_FS"/><biblScope>I 76</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из *%isuba(n)t%i к <mentioned xml:lang="ar"><lang/>
+                <etym xml:lang="ru">Из *%isuba(n)t%i к <mentioned xml:id="mentioned_d5080e244" xml:lang="ar"><lang/>
                         <w>ṣoḣbat</w>
-                        <gloss><q>общение</q></gloss></mentioned>, <mentioned xml:lang="ar"><w/>
-                        <gloss><q>разговор</q></gloss></mentioned>, <mentioned xml:lang="ar"><w/>
-                        <gloss><q>беседа</q></gloss></mentioned>; ср. <mentioned xml:lang="fa"><lang/>
-                        <w>soḣbat</w></mentioned>, <mentioned xml:lang="tg"><lang/>
-                        <w>suhbat</w></mentioned>, <mentioned xml:lang="trk"><lang/>
+                        <gloss><q>общение</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5080e252" xml:lang="ar"><w/>
+                        <gloss><q>разговор</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5080e258" xml:lang="ar"><w/>
+                        <gloss><q>беседа</q></gloss></mentioned>; ср. <mentioned xml:id="mentioned_d5080e264" xml:lang="fa"><lang/>
+                        <w>soḣbat</w></mentioned>, <mentioned xml:id="mentioned_d5080e269" xml:lang="tg"><lang/>
+                        <w>suhbat</w></mentioned>, <mentioned xml:id="mentioned_d5080e275" xml:lang="trk"><lang/>
                         <w>sohbat</w>
-                        <gloss><q>беседа</q></gloss></mentioned>, <mentioned xml:lang="trk"><w/>
+                        <gloss><q>беседа</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5080e283" xml:lang="trk"><w/>
                         <gloss><q>разговор</q></gloss></mentioned>. Сюда же (с перебоем%i t → r%i)
-                        <mentioned xml:lang="ka"><lang/>
+                        <mentioned xml:id="mentioned_d5080e289" xml:lang="ka"><lang/>
                         <w>saubari</w></mentioned>. Для начального %iʒ%i из %is%i в %iʒubandi%i ср.
                         <ref type="xr" target="#entry_ʒænqa"/>.</etym>
-                <etym xml:lang="en">From *%isuba(n)t%i to <mentioned xml:lang="ar"><lang/>
+                <etym xml:lang="en">From *%isuba(n)t%i to <mentioned xml:id="mentioned_d5080e299" xml:lang="ar"><lang/>
                         <w>ṣoḣbat</w>
-                        <gloss><q>interaction</q></gloss></mentioned>, <mentioned xml:lang="ar"><w/>
-                        <gloss><q>talk</q></gloss></mentioned>, <mentioned xml:lang="ar"><w/>
-                        <gloss><q>conversation</q></gloss></mentioned>; cf. <mentioned xml:lang="fa"><lang/>
-                        <w>soḣbat</w></mentioned>, <mentioned xml:lang="tg"><lang/>
-                        <w>suhbat</w></mentioned>, <mentioned xml:lang="trk"><lang/>
+                        <gloss><q>interaction</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5080e307" xml:lang="ar"><w/>
+                        <gloss><q>talk</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5080e313" xml:lang="ar"><w/>
+                        <gloss><q>conversation</q></gloss></mentioned>; cf. <mentioned xml:id="mentioned_d5080e319" xml:lang="fa"><lang/>
+                        <w>soḣbat</w></mentioned>, <mentioned xml:id="mentioned_d5080e324" xml:lang="tg"><lang/>
+                        <w>suhbat</w></mentioned>, <mentioned xml:id="mentioned_d5080e330" xml:lang="trk"><lang/>
                         <w>sohbat</w>
-                        <gloss><q>conversation</q></gloss></mentioned>, <mentioned xml:lang="trk"><w/>
+                        <gloss><q>conversation</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5080e338" xml:lang="trk"><w/>
                         <gloss><q>talk</q></gloss></mentioned>. Also here (with the change %it →
-                    r%i) <mentioned xml:lang="ka"><lang/>
+                    r%i) <mentioned xml:id="mentioned_d5080e344" xml:lang="ka"><lang/>
                         <w>saubari</w></mentioned>. For the initial %iʒ%i from %is%i in %iʒubandi%i
                     cf. <ref type="xr" target="#entry_ʒænqa"/>.</etym>
             </entry>

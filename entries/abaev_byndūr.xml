@@ -1,40 +1,44 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">byndūr</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_byndūr" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>byndūr</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>bundor</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d2312e72"><abv:tr xml:lang="ru">
                         <q>фундамент</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>foundation</q>
                     </abv:tr></sense>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d2312e82"><abv:tr xml:lang="ru">
                         <q>домовой</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>house-spirit</q>
-                    </abv:tr><note type="comment" xml:lang="ru">в д. также</note><note
-                        type="comment" xml:lang="en">in Digor it also means</note></sense>
+                    </abv:tr><note type="comment" xml:lang="ru">в д. также</note><note type="comment" xml:lang="en">in Digor it also means</note></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d2312e98">
                         <quote>byndūr ævaryn</quote>
                         <abv:tr xml:lang="ru">
                             <q rendition="rend_singlequotes">закладывать фундамент, основание</q>
@@ -43,7 +47,7 @@
                             <q rendition="rend_singlequotes">lay the foundation</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2312e115">
                         <quote>ma byndūr razyld!</quote>
                         <abv:tr xml:lang="ru">
                             <q>фундамент моего (дома) закружился!</q>
@@ -56,14 +60,10 @@
                             horror)</note>
                     </abv:example>
                 </abv:exampleGrp>
-                <note type="comment" xml:lang="ru">. Ср. д. <ref type="xr" target="#entry_bundor"
-                    />.</note>
-                <note type="comment" xml:lang="en">. Cf. Digor <ref type="xr" target="#entry_bundor"
-                    />.</note>
-                <etym xml:lang="ru">Буквально „нижний, основной камень“. См. <ref type="xr"
-                        target="#entry_byn"/> и <ref type="xr" target="#entry_dur"/>.</etym>
-                <etym xml:lang="en">It literally means “lower, base stone”. See <ref type="xr"
-                        target="#entry_byn"/> and <ref type="xr" target="#entry_dur"/>.</etym>
+                <note type="comment" xml:lang="ru">. Ср. д. <ref type="xr" target="#entry_bundor"/>.</note>
+                <note type="comment" xml:lang="en">. Cf. Digor <ref type="xr" target="#entry_bundor"/>.</note>
+                <etym xml:lang="ru">Буквально „нижний, основной камень“. См. <ref type="xr" target="#entry_byn"/> и <ref type="xr" target="#entry_dur"/>.</etym>
+                <etym xml:lang="en">It literally means “lower, base stone”. See <ref type="xr" target="#entry_byn"/> and <ref type="xr" target="#entry_dur"/>.</etym>
             </entry>
         </body>
     </text>

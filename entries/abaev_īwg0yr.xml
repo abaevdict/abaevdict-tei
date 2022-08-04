@@ -1,47 +1,52 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">īwg0yr</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_īwg0yr" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>īwg˳yr</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>ewgur</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d429e72"><sense xml:id="sense_d429e73"><abv:tr xml:lang="ru">
                             <q>скопление</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>gathering</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d429e82"><abv:tr xml:lang="ru">
                             <q>масса</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>a large amount / quantity</q>
                         </abv:tr></sense></sense>
-                <re>
+                <re xml:id="re_d429e92">
                     <form xml:lang="os-x-iron" type="lemma"><orth>iwg˳yræj</orth></form>
                     <form xml:lang="os-x-digor" type="dialectal"><orth>ewguræj</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d429e100"><abv:tr xml:lang="ru">
                             <q>все вместе</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>all together</q>
                         </abv:tr></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d429e113" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>ewguræj sæ fæccaxta</quote>
                         <abv:tr xml:lang="ru">
@@ -50,10 +55,9 @@
                         <abv:tr xml:lang="en">
                             <q>he killed everyone</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>6%l1</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>6%l1</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d429e135" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>mæ mulg ewguræj dær</quote>
                         <abv:tr xml:lang="ru">
@@ -62,10 +66,9 @@
                         <abv:tr xml:lang="en">
                             <q>all my property</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>33%l3</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>33%l3</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d429e157" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>ædewgur balædærdtæn duwwæ ʒurdi</quote>
                         <abv:tr xml:lang="ru">
@@ -74,22 +77,20 @@
                         <abv:tr xml:lang="en">
                             <q>altogether I understood [only] two words</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Bes._Ka_ke"
-                            /><biblScope>99</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Bes._Ka_ke"/><biblScope>99</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">В первой части <ref type="xr" target="#entry_īw"/> | %iew%i
-                    ‘один’. Для второй части (%igur%i) ср. <mentioned xml:lang="sa"><lang/>
+                    ‘один’. Для второй части (%igur%i) ср. <mentioned xml:id="mentioned_d429e185" xml:lang="sa"><lang/>
                         <w>kula-</w>
-                        <gloss><q>род</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
-                        <gloss><q>племя</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
-                        <gloss><q>масса</q></gloss></mentioned>. Может быть, этот же корень в <ref
-                        type="xr" target="#entry_g0yryn"/> I %iigurun%i ‘рождаться’.</etym>
+                        <gloss><q>род</q></gloss></mentioned>, <mentioned xml:id="mentioned_d429e193" xml:lang="sa"><w/>
+                        <gloss><q>племя</q></gloss></mentioned>, <mentioned xml:id="mentioned_d429e199" xml:lang="sa"><w/>
+                        <gloss><q>масса</q></gloss></mentioned>. Может быть, этот же корень в <ref type="xr" target="#entry_g0yryn"/> I %iigurun%i ‘рождаться’.</etym>
                 <etym xml:lang="en"><ref type="xr" target="#entry_īw"/> | %iew%i ‘one’ is in the
-                    first part. For the second part (%igur%i) cf. <mentioned xml:lang="sa"><lang/>
+                    first part. For the second part (%igur%i) cf. <mentioned xml:id="mentioned_d429e211" xml:lang="sa"><lang/>
                         <w>kula-</w>
-                        <gloss><q>kin</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
-                        <gloss><q>tribe</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
+                        <gloss><q>kin</q></gloss></mentioned>, <mentioned xml:id="mentioned_d429e219" xml:lang="sa"><w/>
+                        <gloss><q>tribe</q></gloss></mentioned>, <mentioned xml:id="mentioned_d429e225" xml:lang="sa"><w/>
                         <gloss><q>a large amount / quantity</q></gloss></mentioned>. Maybe, the same
                     root is in <ref type="xr" target="#entry_g0yryn"/> | %iigurun%i ‘to be
                     born’.</etym>

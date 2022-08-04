@@ -1,37 +1,42 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">dadæg</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_dadæg" xml:lang="os">
                 <form type="lemma"><orth>dadæg</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d677e69"><sense xml:id="sense_d677e70"><abv:tr xml:lang="ru">
                             <q>маленький, неполный стог</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>small, incomplete stack</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d677e79"><abv:tr xml:lang="ru">
                             <q>неполная копна</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>incomplete haycock</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d677e91">
                         <quote>læppu xosy dadæǵy særmæ stærrætt lasta; næl x˳y jyl baskʼærdta jæxi,
                             scavta xosy dadæg</quote>
                         <abv:tr xml:lang="ru">
@@ -48,25 +53,21 @@
                 </abv:exampleGrp>
                 <etym xml:lang="ru">От корня %idā%i- ‘класть’, ‘укладывать’, ‘складывать’, %idāta%i-
                     ‘уложенное’, ‘сложенное’ (*%idātaka%i → %idadæg%i). Ближайшее соответствие
-                    находим в <mentioned xml:lang="ps"><lang/>
+                    находим в <mentioned xml:id="mentioned_d677e113" xml:lang="ps"><lang/>
                         <w>dalaī</w>
-                        <gloss><q>хлебный стог</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_NTS"/><biblScope>XII 263</biblScope></bibl>); ср.
-                        <mentioned xml:lang="wbl"><lang/>
+                        <gloss><q>хлебный стог</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_NTS"/><biblScope>XII 263</biblScope></bibl>); ср.
+                        <mentioned xml:id="mentioned_d677e125" xml:lang="wbl"><lang/>
                         <w>daī</w>
-                        <gloss><q>куча зерна</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Morgenstierne._IIFL"/><biblScope>II
+                        <gloss><q>куча зерна</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Morgenstierne._IIFL"/><biblScope>II
                     521</biblScope></bibl>).</etym>
                 <etym xml:lang="en">Derived from the root %idā%i- ‘put’, ‘store’, ‘pack’, %idāta%i-
                     ‘stored’, ‘packed’ (*%idātaka%i → %idadæg%i). The closest correspondence is
-                    found in <mentioned xml:lang="ps"><lang/>
+                    found in <mentioned xml:id="mentioned_d677e140" xml:lang="ps"><lang/>
                         <w>dalaī</w>
-                        <gloss><q>grain stack</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_NTS"/><biblScope>XII 263</biblScope></bibl>); cf.
-                        <mentioned xml:lang="wbl"><lang/>
+                        <gloss><q>grain stack</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_NTS"/><biblScope>XII 263</biblScope></bibl>); cf.
+                        <mentioned xml:id="mentioned_d677e152" xml:lang="wbl"><lang/>
                         <w>daī</w>
-                        <gloss><q>pole of grain</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Morgenstierne._IIFL"/><biblScope>II
+                        <gloss><q>pole of grain</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Morgenstierne._IIFL"/><biblScope>II
                     521</biblScope></bibl>).</etym>
             </entry>
         </body>

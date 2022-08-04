@@ -1,45 +1,48 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">Ærfæn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_Ærfæn" xml:lang="os">
                 <form type="lemma"><orth>Ærfæn</orth></form>
-                <sense><def xml:lang="ru">имя прославленного коня нарта Урузмага (в Нартовском
+                <sense xml:id="sense_d1850e69"><def xml:lang="ru">имя прославленного коня нарта Урузмага (в Нартовском
                         эпосе); %iÆrfæny fæd%i 'Млечный путь', буквально „след Арфана“. По некоторым
-                        сказаниям (например <bibl><ref type="bibl" target="#ref_СОПам."
-                                /><biblScope>I 74</biblScope></bibl>) — имя человека, живущего на
+                        сказаниям (например <bibl><ref type="bibl" target="#ref_СОПам."/><biblScope>I 74</biblScope></bibl>) — имя человека, живущего на
                         небе; Млечный путь — солома, которую он рассыпал, убегая от Батраза. Ср.
                         также аланское (ясское) имя %iArpan%i (XIV в., Венгрия, см.:
                                 <bibl><author>Z. Gombocz. </author><biblScope>%bOsseten-Spuren in
                                 Ungarn. Streitberg-Festgabe%b, 1924, стр.
                         108</biblScope></bibl>).</def><def xml:lang="en">The name of famous nart
                         Uryzmæg’s horse (in Nart saga); Ærfæny fæd ‘Milky way’, literally ‘Arphan’s
-                        track’. According to some legends (for example,<bibl><ref type="bibl"
-                                target="#ref_СОПам."/><biblScope>I 74</biblScope></bibl>) — it is
+                        track’. According to some legends (for example,<bibl><ref type="bibl" target="#ref_СОПам."/><biblScope>I 74</biblScope></bibl>) — it is
                         the name of a man living in the sky; Milky way is the straw which he has
                         spilled while running away from Batraz. Compare also Alan (Jasz) name
                         %iArpan%i (XIV c., Hungary, see: <bibl><author>Z. Gombocz.
                                 </author><biblScope>Osseten-Spuren in Ungarn. Streitberg-Festgabe,
                                 1924, p. 108</biblScope></bibl>).</def></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d1850e93">
                         <quote>Wyryzmæg fezdaxy barægmæ jæ razaǧd Ærfæny</quote>
                         <abv:tr xml:lang="ru">
                             <q>Урузмаг поворачивает к всаднику своего знаменитого Арфана</q>
@@ -50,7 +53,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>III
                             13</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d1850e112" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>æ razæj bawidta ew bæxgini æma ʽj soruntæ bajdædta æ ustur
                             Ærfænbæl</quote>
@@ -62,10 +65,9 @@
                             <q>he saw the horseman in front of him and started chasing him riding
                                 his big Arphan</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Диг._сказ."
-                            /><biblScope>42</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Диг._сказ."/><biblScope>42</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1850e134">
                         <quote>cæst axsy xorz Ærfæny fædy</quote>
                         <abv:tr xml:lang="ru">
                             <q>глаз хорошо различает Млечный путь</q>
@@ -73,8 +75,7 @@
                         <abv:tr xml:lang="en">
                             <q>an eye makes out well Milky way</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Niger"
-                            /><biblScope>122</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Niger"/><biblScope>122</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Может быть, из %iærv-fæn%i ← *%iabra%i-%ipana%i- „страж

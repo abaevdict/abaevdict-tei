@@ -1,53 +1,58 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">æd</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_æd" xml:lang="os">
                 <form type="lemma"><orth>æd</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d4441e69"><abv:tr xml:lang="ru">
                         <q>с</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>with</q>
                     </abv:tr></sense>
-                <re>
+                <re xml:id="re_d4441e79">
                     <form type="lemma"><orth>ædbæx, ædwærdon</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d4441e84"><abv:tr xml:lang="ru">
                             <q>с лошадью, с арбой</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>with a horse, with a cart</q>
                         </abv:tr></sense>
                 </re>
-                <re>
+                <re xml:id="re_d4441e95">
                     <form type="lemma"><orth>ædgærztæ</orth></form>
-                    <sense><sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d4441e100"><sense xml:id="sense_d4441e101"><abv:tr xml:lang="ru">
                                 <q>с оружием</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>with arms</q>
-                            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                            </abv:tr></sense><sense xml:id="sense_d4441e110"><abv:tr xml:lang="ru">
                                 <q>вооруженный</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>armed</q>
                             </abv:tr></sense></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4441e123">
                         <quote>tyxǵyn ædgærztæ k˳y qakkæny jæ xæʒar…</quote>
                         <abv:tr xml:lang="ru">
                             <q>когда сильный с оружием охраняет свой дом…</q>
@@ -58,7 +63,7 @@
                         <bibl><ref type="bibl" target="#src_Лука"/><biblScope>%i11%i
                             21</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4441e142">
                         <quote>wynync æmæ xæjræǵǵyn… bady æd daræs æmæ æd zond</quote>
                         <abv:tr xml:lang="ru">
                             <q>видят, что бесновавшийся… сидит и одет и в здравом уме</q>
@@ -70,7 +75,7 @@
                         <bibl><ref type="bibl" target="#src_Марк"/><biblScope>%i5%i
                             15</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4441e161">
                         <quote>Osepajy æd binontæ awæj kodta ne ʽldar īw kæsgonæn</quote>
                         <abv:tr xml:lang="ru">
                             <q>Осепа вместе с семьей наш князь продал одному кабардинцу</q>
@@ -80,7 +85,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Сека"/><biblScope>95</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4441e180" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>ærbaduncæ tærxoni æd læʒgutæ, æd qæmatæ</quote>
                         <abv:tr xml:lang="ru">
@@ -91,7 +96,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>40</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4441e202">
                         <quote>æz æj k'ambecy carmy nyppærston æd kʼæbilatæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>я бросил ее вместе со щенятами в буйволиную шкуру</q>
@@ -101,7 +106,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Munk."/><biblScope>88</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4441e222" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>æd æxsævæ, ædæ bonæ i mæsugæj fælgæsuj</quote>
                         <abv:tr xml:lang="ru">
@@ -112,7 +117,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>21</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4441e244" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>æd særdæ, æd zumæg</quote>
                         <abv:tr xml:lang="ru">
@@ -122,7 +127,7 @@
                             <q>in summer and in winter</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4441e262" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>æd kæstær, æd xestær</quote>
                         <abv:tr xml:lang="ru">
@@ -131,10 +136,9 @@
                         <abv:tr xml:lang="en">
                             <q>both younger and older</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_ОЯФ_I"
-                            /><biblScope>427</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_ОЯФ_I"/><biblScope>427</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4441e284" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>ædsær, ædbun bælasæ xasta</quote>
                         <abv:tr xml:lang="ru">
@@ -143,10 +147,9 @@
                         <abv:tr xml:lang="en">
                             <q>he brought a tree with a top and with roots</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>22%l5%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>22%l5%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4441e306" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>ædsarǧ, ædidonæ bæx</quote>
                         <abv:tr xml:lang="ru">
@@ -155,60 +158,45 @@
                         <abv:tr xml:lang="en">
                             <q>horse with saddle, bridle</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>31%l5%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>31%l5%l</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Восходит к иранскому предлогу <mentioned xml:lang="ira"><lang/>
-                        <w>hada</w></mentioned>. <mentioned xml:lang="pal-x-turfan"><lang/>
+                <etym xml:lang="ru">Восходит к иранскому предлогу <mentioned xml:id="mentioned_d4441e332" xml:lang="ira"><lang/>
+                        <w>hada</w></mentioned>. <mentioned xml:id="mentioned_d4441e337" xml:lang="pal-x-turfan"><lang/>
                         <w>ʼad</w></mentioned> (<bibl><biblScope>Monde Or. XV 194,
-                        238</biblScope></bibl>), <mentioned xml:lang="pal-x-turfan"><lang/>
-                        <w>ad</w></mentioned> (<bibl><ref type="bibl" target="#ref_Henning._BBB"
-                            /><biblScope>106</biblScope></bibl>), <mentioned xml:lang="ps"><lang/>
-                        <w>la</w></mentioned>, <mentioned xml:lang="ydg" extralang="mnj"><lang/>
-                        <w>la</w></mentioned> (из %ihada%i: <bibl><ref type="bibl"
-                            target="#ref_Morgenstierne._IIFL"/><biblScope>II 46</biblScope></bibl>),
-                        <mentioned xml:lang="sog"><lang/>
-                        <w>δʼwn</w></mentioned> (из %i*hada%i + %iavana%i), <mentioned xml:lang="ae"><lang/>
-                        <w>haδa</w></mentioned>, <mentioned xml:lang="peo"><lang/>
-                        <w>hada</w></mentioned>, <mentioned xml:lang="sa"><lang/>
-                        <w>sadha, saha</w></mentioned>. Отпадение %ih%i, как в <ref type="xr"
-                        target="#entry_avd"/> и др. %iÆd%i не требует падежного оформления, и
+                        238</biblScope></bibl>), <mentioned xml:id="mentioned_d4441e345" xml:lang="pal-x-turfan"><lang/>
+                        <w>ad</w></mentioned> (<bibl><ref type="bibl" target="#ref_Henning._BBB"/><biblScope>106</biblScope></bibl>), <mentioned xml:id="mentioned_d4441e355" xml:lang="ps"><lang/>
+                        <w>la</w></mentioned>, <mentioned xml:id="mentioned_d4441e360" xml:lang="ydg" extralang="mnj"><lang/>
+                        <w>la</w></mentioned> (из %ihada%i: <bibl><ref type="bibl" target="#ref_Morgenstierne._IIFL"/><biblScope>II 46</biblScope></bibl>),
+                        <mentioned xml:id="mentioned_d4441e369" xml:lang="sog"><lang/>
+                        <w>δʼwn</w></mentioned> (из %i*hada%i + %iavana%i), <mentioned xml:id="mentioned_d4441e374" xml:lang="ae"><lang/>
+                        <w>haδa</w></mentioned>, <mentioned xml:id="mentioned_d4441e379" xml:lang="peo"><lang/>
+                        <w>hada</w></mentioned>, <mentioned xml:id="mentioned_d4441e385" xml:lang="sa"><lang/>
+                        <w>sadha, saha</w></mentioned>. Отпадение %ih%i, как в <ref type="xr" target="#entry_avd"/> и др. %iÆd%i не требует падежного оформления, и
                     сочетания с ним должны рассматриваться как сложные слова, а не как предложные
                     конструкции; в осетинском господствуют послелоги. Конструкции с %iæd%i могут
-                    эвентуально заменяться союзным падежом в иронском и сочетанием с послелогом <ref
-                        type="xr"/> в дигорском: %iædbæx%i = и. %ibæximæ%i = д. %ibæxi xæccæ%i ‘с
-                    лошадью’. Ср. <ref type="xr" target="#entry_ænæ"/> ‘без’.%n<bibl><ref
-                            type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>48,
-                        75</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>95</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_Hübschmann._Oss."/><biblScope>18</biblScope></bibl>.</etym>
-                <etym xml:lang="en">Goes back to the Iranian preposition <mentioned xml:lang="ira"><lang/>
-                        <w>hada</w></mentioned>. <mentioned xml:lang="pal-x-turfan"><lang/>
+                    эвентуально заменяться союзным падежом в иронском и сочетанием с послелогом <ref type="xr"/> в дигорском: %iædbæx%i = и. %ibæximæ%i = д. %ibæxi xæccæ%i ‘с
+                    лошадью’. Ср. <ref type="xr" target="#entry_ænæ"/> ‘без’.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>48,
+                        75</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>95</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>18</biblScope></bibl>.</etym>
+                <etym xml:lang="en">Goes back to the Iranian preposition <mentioned xml:id="mentioned_d4441e412" xml:lang="ira"><lang/>
+                        <w>hada</w></mentioned>. <mentioned xml:id="mentioned_d4441e417" xml:lang="pal-x-turfan"><lang/>
                         <w>ʼad</w></mentioned> (<bibl><biblScope>Monde Or. XV 194,
-                        238</biblScope></bibl>), <mentioned xml:lang="pal-x-turfan"><lang/>
-                        <w>ad</w></mentioned> (<bibl><ref type="bibl" target="#ref_Henning._BBB"
-                            /><biblScope>106</biblScope></bibl>), <mentioned xml:lang="ps"><lang/>
-                        <w>la</w></mentioned>, <mentioned xml:lang="ydg" extralang="mnj"><lang/>
-                        <w>la</w></mentioned> (from %ihada%i: <bibl><ref type="bibl"
-                            target="#ref_Morgenstierne._IIFL"/><biblScope>II 46</biblScope></bibl>),
-                        <mentioned xml:lang="sog"><lang/>
-                        <w>δʼwn</w></mentioned> (from %i*hada%i + %iavana%i), <mentioned
-                        xml:lang="ae"><lang/>
-                        <w>haδa</w></mentioned>, <mentioned xml:lang="peo"><lang/>
-                        <w>hada</w></mentioned>, <mentioned xml:lang="sa"><lang/>
-                        <w>sadha, saha</w></mentioned>. Elision of %ih%i, like in <ref type="xr"
-                        target="#entry_avd"/> etc. %iÆd%i does not require case marking, and
+                        238</biblScope></bibl>), <mentioned xml:id="mentioned_d4441e425" xml:lang="pal-x-turfan"><lang/>
+                        <w>ad</w></mentioned> (<bibl><ref type="bibl" target="#ref_Henning._BBB"/><biblScope>106</biblScope></bibl>), <mentioned xml:id="mentioned_d4441e435" xml:lang="ps"><lang/>
+                        <w>la</w></mentioned>, <mentioned xml:id="mentioned_d4441e440" xml:lang="ydg" extralang="mnj"><lang/>
+                        <w>la</w></mentioned> (from %ihada%i: <bibl><ref type="bibl" target="#ref_Morgenstierne._IIFL"/><biblScope>II 46</biblScope></bibl>),
+                        <mentioned xml:id="mentioned_d4441e449" xml:lang="sog"><lang/>
+                        <w>δʼwn</w></mentioned> (from %i*hada%i + %iavana%i), <mentioned xml:id="mentioned_d4441e454" xml:lang="ae"><lang/>
+                        <w>haδa</w></mentioned>, <mentioned xml:id="mentioned_d4441e459" xml:lang="peo"><lang/>
+                        <w>hada</w></mentioned>, <mentioned xml:id="mentioned_d4441e465" xml:lang="sa"><lang/>
+                        <w>sadha, saha</w></mentioned>. Elision of %ih%i, like in <ref type="xr" target="#entry_avd"/> etc. %iÆd%i does not require case marking, and
                     combinations with it should be considered as compound words, and not as
                     prepositional constructions; in Ossetic postpositions prevail. Constructions
                     with %iæd%i can eventually be replaced by the comitative case in Iron and the
                     combination with the postposition <ref type="xr" target="#entry_xæccæ"/> in
                     Digor: %iædbæx%i = Iron %ibæximæ%i = Digor %ibæxi xæccæ%i ‘with a horse’. Ср.
-                        <ref type="xr" target="#entry_ænæ"/> ‘without’.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>48, 75</biblScope></bibl>;
-                            <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>95</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_Hübschmann._Oss."/><biblScope>18</biblScope></bibl>.</etym>
+                        <ref type="xr" target="#entry_ænæ"/> ‘without’.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>48, 75</biblScope></bibl>;
+                            <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>95</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>18</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

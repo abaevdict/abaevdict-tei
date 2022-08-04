@@ -1,32 +1,37 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">atæ_2</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_atæ_2" n="2" xml:lang="os-x-digor">
                 <form type="lemma"><orth>atæ</orth></form>
                 <usg><lang/></usg>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d5026e72"><abv:tr xml:lang="ru">
                         <q>так</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d5026e80">
                         <quote>ku næ bafærazaj atæ bastæj?</quote>
                         <abv:tr xml:lang="ru">
                             <q>выдержишь ли ты привязанный таким образом?</q>
@@ -37,7 +42,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
                             64</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5026e99">
                         <quote>sumax atæ læwwetæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>вы стойте так</q>
@@ -45,10 +50,9 @@
                         <abv:tr xml:lang="en">
                             <q>you, stand like this</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>10%l12%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>10%l12%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5026e118">
                         <quote>cæbæl atitæ niccajtæ?</quote>
                         <abv:tr xml:lang="ru">
                             <q>почему вы стали такие (искалеченные)?</q>
@@ -56,10 +60,9 @@
                         <abv:tr xml:lang="en">
                             <q>why did you become such (crippled)?</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Диг._сказ."
-                            /><biblScope>25</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Диг._сказ."/><biblScope>25</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5026e137">
                         <quote>ærbadæ atæ mæ cori</quote>
                         <abv:tr xml:lang="ru">
                             <q>садись вот так возле меня</q>
@@ -69,7 +72,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_ОЭ"/><biblScope>I 98</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5026e156">
                         <quote>badʒænæn æ cori atæ, otæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>буду сидеть возле нее вот так, вот этак</q>
@@ -77,10 +80,9 @@
                         <abv:tr xml:lang="en">
                             <q>I will sit next to her like this, like that</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Gurdž._Æduli"
-                            /><biblScope>78</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Gurdž._Æduli"/><biblScope>78</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5026e176">
                         <quote>atæ cæmæn æj næ cavtajtæ (gaccaj)?</quote>
                         <abv:tr xml:lang="ru">
                             <q>почему вы не ударили (суку) вот так?</q>
@@ -91,26 +93,18 @@
                         <bibl><ref type="bibl" target="#src_ОЭ"/><biblScope>I 102</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Восходит к %i*ā-tha%i (Pron. dem. <ref type="xr"
-                        target="#entry_a"/> и адвербиальная частица %i-tha%i, как д. %iotæ%i от
-                    %i*ava-tha%i): <mentioned xml:lang="ae"><lang/>
-                        <w>aθa</w></mentioned>, <mentioned xml:lang="sa"><lang/>
+                <etym xml:lang="ru">Восходит к %i*ā-tha%i (Pron. dem. <ref type="xr" target="#entry_a"/> и адвербиальная частица %i-tha%i, как д. %iotæ%i от
+                    %i*ava-tha%i): <mentioned xml:id="mentioned_d5026e200" xml:lang="ae"><lang/>
+                        <w>aθa</w></mentioned>, <mentioned xml:id="mentioned_d5026e205" xml:lang="sa"><lang/>
                         <w>atha</w>
-                        <gloss><q>тогда</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
-                        <gloss><q>так</q></gloss></mentioned>. См. <ref type="xr" target="#entry_a"
-                    />; ср. <ref type="xr" target="#entry_8ūtæ"/> | %iotæ%i, <ref type="xr"
-                        target="#entry_aftæ"/>.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                            /><biblScope>23</biblScope></bibl>.</etym>
-                <etym xml:lang="en">Goes back to %i*ā-tha%i (Pron. dem. <ref type="xr"
-                        target="#entry_a"/> and adverbial particle %i-tha%i, like Digor %iotæ%i from
-                    %i*ava-tha%i): <mentioned xml:lang="ae"><lang/>
-                        <w>aθa</w></mentioned>, <mentioned xml:lang="sa"><lang/>
+                        <gloss><q>тогда</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5026e213" xml:lang="sa"><w/>
+                        <gloss><q>так</q></gloss></mentioned>. См. <ref type="xr" target="#entry_a"/>; ср. <ref type="xr" target="#entry_8ūtæ"/> | %iotæ%i, <ref type="xr" target="#entry_aftæ"/>.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>23</biblScope></bibl>.</etym>
+                <etym xml:lang="en">Goes back to %i*ā-tha%i (Pron. dem. <ref type="xr" target="#entry_a"/> and adverbial particle %i-tha%i, like Digor %iotæ%i from
+                    %i*ava-tha%i): <mentioned xml:id="mentioned_d5026e236" xml:lang="ae"><lang/>
+                        <w>aθa</w></mentioned>, <mentioned xml:id="mentioned_d5026e241" xml:lang="sa"><lang/>
                         <w>atha</w>
-                        <gloss><q>then</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
-                        <gloss><q>so</q></gloss></mentioned>. See <ref type="xr" target="#entry_a"
-                    />; ср. <ref type="xr" target="#entry_8ūtæ"/> | %iotæ%i, <ref type="xr"
-                        target="#entry_aftæ"/>.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                            /><biblScope>23</biblScope></bibl>.</etym>
+                        <gloss><q>then</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5026e249" xml:lang="sa"><w/>
+                        <gloss><q>so</q></gloss></mentioned>. See <ref type="xr" target="#entry_a"/>; ср. <ref type="xr" target="#entry_8ūtæ"/> | %iotæ%i, <ref type="xr" target="#entry_aftæ"/>.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>23</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

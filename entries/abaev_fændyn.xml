@@ -1,49 +1,53 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">fændyn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_fændyn" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>fændyn</orth></form>
-                <form xml:lang="os-x-digor" type="dialectal"><orth>fændun</orth><form type="variant"
-                            ><orth>fændæ un</orth></form></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <form xml:lang="os-x-digor" type="dialectal"><orth>fændun</orth><form type="variant"><orth>fændæ un</orth></form></form>
+                <sense xml:id="sense_d3014e74"><sense xml:id="sense_d3014e75"><abv:tr xml:lang="ru">
                             <q>желать</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>wish</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d3014e84"><abv:tr xml:lang="ru">
                             <q>хотеть</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>want</q>
                         </abv:tr></sense></sense>
-                <re>
+                <re xml:id="re_d3014e94">
                     <note type="comment" xml:lang="ru">спрягается по объективному строю: </note>
                     <note type="comment" xml:lang="en">it is conjugated as transitive verbs: </note>
                     <form type="lemma"><orth>mæn fændy</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d3014e105"><abv:tr xml:lang="ru">
                             <q>мне хочется</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>I want</q>
                         </abv:tr></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d3014e118">
                         <quote>bīræ cydærtæ mæg˳yry fæfændy</quote>
                         <abv:tr xml:lang="ru">
                             <q>много чего хочется бедняку</q>
@@ -53,7 +57,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>16</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3014e137">
                         <quote>kæd dæ næ fændy — cū</quote>
                         <abv:tr xml:lang="ru">
                             <q>если не хочешь — уходи!</q>
@@ -61,10 +65,9 @@
                         <abv:tr xml:lang="en">
                             <q>if you don’t want it — leave!</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"
-                            /><biblScope>103</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>103</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3014e156">
                         <quote>mæn næ fændydī ūrdygæj racæwyn</quote>
                         <abv:tr xml:lang="ru">
                             <q>мне не хотелось выходить оттуда</q>
@@ -72,10 +75,9 @@
                         <abv:tr xml:lang="en">
                             <q>I didn't want to leave</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Munk."
-                            /><biblScope>142</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Munk."/><biblScope>142</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d3014e175" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>madi bærgæ næ fændadtæj ʒorun…</quote>
                         <abv:tr xml:lang="ru">
@@ -84,10 +86,9 @@
                         <abv:tr xml:lang="en">
                             <q>the mother didn't want to speak …</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Диг._сказ."
-                            /><biblScope>13</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Диг._сказ."/><biblScope>13</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d3014e197" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>oj næma fændadtæj æ osæ xonun</quote>
                         <abv:tr xml:lang="ru">
@@ -96,10 +97,9 @@
                         <abv:tr xml:lang="en">
                             <q>he didn't want to bring his wife yet</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>8%l7%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>8%l7%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3014e220">
                         <quote>kæd dæ fændy — racū, kæd dæ fændy — ma racū</quote>
                         <abv:tr xml:lang="ru">
                             <q>хочешь — выходи, не хочешь — не выходи</q>
@@ -107,10 +107,9 @@
                         <abv:tr xml:lang="en">
                             <q>if you want — come out, if you don't want — don't come out</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Нарт._сказ."
-                            /><biblScope>205</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Нарт._сказ."/><biblScope>205</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3014e239">
                         <quote>cy fændy wæd!</quote>
                         <abv:tr xml:lang="ru">
                             <q>будь, что будет!</q>
@@ -121,38 +120,30 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Перед нами сложный глагол, ставший в иронском простым в
-                    результате сращения именной части с вспомогательным глаголом: <ref type="xr"
-                        target="#entry_fænd"/> + <ref type="xr" target="#entry_wyn"/> → %ifændyn%i.
-                    В дигорском сохраняются еще формы сложного глагола: <mentioned xml:lang="os"
-                        extralang="os-x-digor"><lang/>
+                    результате сращения именной части с вспомогательным глаголом: <ref type="xr" target="#entry_fænd"/> + <ref type="xr" target="#entry_wyn"/> → %ifændyn%i.
+                    В дигорском сохраняются еще формы сложного глагола: <mentioned xml:id="mentioned_d3014e262" xml:lang="os" extralang="os-x-digor"><lang/>
                         <w>mæn fændæ uj</w>
-                        <gloss><q>мне хочется</q></gloss></mentioned>, <mentioned xml:lang="os"
-                        extralang="os-x-digor"><w>mæn fænd adtæj</w>
+                        <gloss><q>мне хочется</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3014e270" xml:lang="os" extralang="os-x-digor"><w>mæn fænd adtæj</w>
                         <gloss><q>мне хотелось</q></gloss></mentioned> и т. п. (cp.:
                             <bibl><biblScope xml:lang="ru">Stackelberg. Beiträge zur Syntax des
                             Ossetischen, стр. 7 сл.</biblScope></bibl>). См.
                         <ref type="xr" target="#entry_fænd"/>. Общеиндоевропейская основа для
-                    понятия ‘хотения’ %i*vol-%i, <mentioned xml:lang="x-oldirn"><lang/>
+                    понятия ‘хотения’ %i*vol-%i, <mentioned xml:id="mentioned_d3014e283" xml:lang="x-oldirn"><lang/>
                         <w>var-</w></mentioned>, также, по-видимому, существовала в осетинском, —
                     см. <ref type="xr" target="#entry_bar"/>. Семантическая близость обеих основ
-                    подчеркивается их сочетаниями: <mentioned xml:lang="os"><lang/>
+                    подчеркивается их сочетаниями: <mentioned xml:id="mentioned_d3014e290" xml:lang="os"><lang/>
                         <w>barvændæj, barænwændæj, barvændonæj</w>
                         <gloss><q>добровольно</q></gloss></mentioned>.</etym>
                 <etym xml:lang="en">This is a complex verb that has become simple in Iron as a
-                    result of the fusion of the nominal part with the auxiliary verb: <ref type="xr"
-                        target="#entry_fænd"/> + <ref type="xr" target="#entry_wyn"/> → %ifændyn%i.
-                    In Digor there are still complex verb forms: <mentioned xml:lang="os"
-                        extralang="os-x-digor"><lang/>
+                    result of the fusion of the nominal part with the auxiliary verb: <ref type="xr" target="#entry_fænd"/> + <ref type="xr" target="#entry_wyn"/> → %ifændyn%i.
+                    In Digor there are still complex verb forms: <mentioned xml:id="mentioned_d3014e305" xml:lang="os" extralang="os-x-digor"><lang/>
                         <w>mæn fændæ uj</w>
-                        <gloss><q>I want</q></gloss></mentioned>, <mentioned xml:lang="os"
-                        extralang="os-x-digor"><w>mæn fænd adtæj</w>
+                        <gloss><q>I want</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3014e313" xml:lang="os" extralang="os-x-digor"><w>mæn fænd adtæj</w>
                         <gloss><q>I wanted</q></gloss></mentioned> etc. (cf.: <bibl><biblScope xml:lang="en">Stackelberg. Beiträge zur Syntax
-                            des Ossetischen, p. 7 ff.</biblScope></bibl>). See <ref type="xr"
-                        target="#entry_fænd"/>. The general Indo-European stem for the concept of
-                    ‘desire’ %i*vol-%i, <mentioned xml:lang="x-oldirn"><lang/>
-                        <w>var-</w></mentioned>, apparently, also existed in Ossetic — see <ref
-                        type="xr" target="#entry_bar"/>. The semantic closeness of both stems is
-                    emphasised by their combinations: <mentioned xml:lang="os"><lang/>
+                            des Ossetischen, p. 7 ff.</biblScope></bibl>). See <ref type="xr" target="#entry_fænd"/>. The general Indo-European stem for the concept of
+                    ‘desire’ %i*vol-%i, <mentioned xml:id="mentioned_d3014e326" xml:lang="x-oldirn"><lang/>
+                        <w>var-</w></mentioned>, apparently, also existed in Ossetic — see <ref type="xr" target="#entry_bar"/>. The semantic closeness of both stems is
+                    emphasised by their combinations: <mentioned xml:id="mentioned_d3014e333" xml:lang="os"><lang/>
                         <w>barvændæj, barænwændæj, barvændonæj</w>
                         <gloss><q>voluntarily</q></gloss></mentioned>.</etym>
             </entry>

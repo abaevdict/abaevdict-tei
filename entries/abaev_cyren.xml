@@ -1,55 +1,60 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">cyren</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_cyren" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>cyren</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>ciren</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d2608e72"><abv:tr xml:lang="ru">
                         <q>яркое пламя</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>clear flame</q>
                     </abv:tr></sense>
-                <re>
+                <re xml:id="re_d2608e82">
                     <form type="lemma"><orth>cyren kænyn</orth><form type="variant">(<orth>cyryn
                                 kænyn</orth>)</form></form>
-                    <sense><sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d2608e91"><sense xml:id="sense_d2608e92"><abv:tr xml:lang="ru">
                                 <q>возбуждать</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>excite</q>
-                            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                            </abv:tr></sense><sense xml:id="sense_d2608e101"><abv:tr xml:lang="ru">
                                 <q>разжигать</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>rouse</q>
-                            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                            </abv:tr></sense><sense xml:id="sense_d2608e110"><abv:tr xml:lang="ru">
                                 <q>стимулировать</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>stimulate</q>
-                            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                            </abv:tr></sense><sense xml:id="sense_d2608e119"><abv:tr xml:lang="ru">
                                 <q>подстрекать</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>provoke</q>
                             </abv:tr></sense></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d2608e132">
                         <quote>cyraǧy cyren fæjlawæntæ kodta alyrdæm</quote>
                         <abv:tr xml:lang="ru">
                             <q>пламя свечи металось в разные стороны</q>
@@ -59,7 +64,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Qazaq"/><biblScope>79</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2608e151">
                         <quote>(cigonæn) æ buni sagi siwæj ciren art æj</quote>
                         <abv:tr xml:lang="ru">
                             <q>под ним (чугунным котлом) — яркий огонь из оленьих рогов</q>
@@ -67,10 +72,9 @@
                         <abv:tr xml:lang="en">
                             <q>under it (cast-iron kettle) there is a clear fire made of antlers</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Диг._сказ."
-                                /><biblScope>49%l16%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Диг._сказ."/><biblScope>49%l16%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d2608e170" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>dæn nurtækkæ æz ævzalu, fal festʒænæn ciren ārt</quote>
                         <abv:tr xml:lang="ru">
@@ -81,7 +85,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>111</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d2608e192" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>cʼina …æ astæwæj isciren kænidæ</quote>
                         <abv:tr xml:lang="ru">
@@ -93,7 +97,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
                             116</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d2608e214" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>næ bæstæ — qwæcæ, ciren</quote>
                         <abv:tr xml:lang="ru">
@@ -102,10 +106,9 @@
                         <abv:tr xml:lang="en">
                             <q>our land is (enveloped) in smoke, flame</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_SD"
-                            /><biblScope>292%l3%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_SD"/><biblScope>292%l3%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d2608e237" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>vagoni farsbæl cireni xuzæn pærpær kodta syrx turusa</quote>
                         <abv:tr xml:lang="ru">
@@ -114,10 +117,9 @@
                         <abv:tr xml:lang="en">
                             <q>a red banner fluttered like a flame on the wall of the car</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_SD"
-                            /><biblScope>265%l2%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_SD"/><biblScope>265%l2%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d2608e259" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>cæfsuj i ǧæw …ciren pellontæ æskʼæruj</quote>
                         <abv:tr xml:lang="ru">
@@ -128,7 +130,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>74</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d2608e281" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>…cʼæx ciren waǧta</quote>
                         <abv:tr xml:lang="ru">
@@ -139,7 +141,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Bes."/><biblScope>109</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2608e303">
                         <quote>šyryn syǧd kodtoj</quote>
                         <abv:tr xml:lang="ru">
                             <q>горели ярким пламенем</q>
@@ -151,14 +153,14 @@
                             121</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru"><mentioned xml:lang="ce"><lang/>
+                <etym xml:lang="ru"><mentioned xml:id="mentioned_d2608e325" xml:lang="ce"><lang/>
                         <w>cʼerin</w>
-                        <gloss><q>огненный</q></gloss></mentioned> (от <mentioned xml:lang="ce"><lang/>
+                        <gloss><q>огненный</q></gloss></mentioned> (от <mentioned xml:id="mentioned_d2608e333" xml:lang="ce"><lang/>
                         <w>cʼe</w>
                         <gloss><q>огонь</q></gloss></mentioned>)?</etym>
-                <etym xml:lang="en"><mentioned xml:lang="ce"><lang/>
+                <etym xml:lang="en"><mentioned xml:id="mentioned_d2608e343" xml:lang="ce"><lang/>
                         <w>cʼerin</w>
-                        <gloss><q>fiery</q></gloss></mentioned> (from <mentioned xml:lang="ce"><lang/>
+                        <gloss><q>fiery</q></gloss></mentioned> (from <mentioned xml:id="mentioned_d2608e351" xml:lang="ce"><lang/>
                         <w>cʼe</w>
                         <gloss><q>fire</q></gloss></mentioned>)?</etym>
             </entry>

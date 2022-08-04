@@ -1,47 +1,52 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">kūsart</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_kūsart" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>kūsart</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>kosart</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d38e72"><abv:tr xml:lang="ru">
                         <q>животное, заколотое для трапезы</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>animal slaughtered for a meal</q>
                     </abv:tr></sense>
-                <re>
-                    <re>
+                <re xml:id="re_d38e82">
+                    <re xml:id="re_d38e84">
                         <form xml:lang="os-x-iron" type="lemma"><orth>kūsart kænun</orth></form>
                         <form xml:lang="os-x-digor" type="dialectal"><orth>kosart
                             kænun</orth></form>
-                        <sense><abv:tr xml:lang="ru">
+                        <sense xml:id="sense_d38e92"><abv:tr xml:lang="ru">
                                 <q>закалывать животное для трапезы согласно обычаю</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>slaughter an animal by tradition</q>
                             </abv:tr></sense>
                     </re>
-                    <re>
+                    <re xml:id="re_d38e103">
                         <form xml:lang="os-x-iron" type="lemma"><orth>kūsærttag</orth></form>
                         <form xml:lang="os-x-digor" type="dialectal"><orth>kosærttag</orth></form>
-                        <sense><abv:tr xml:lang="ru">
+                        <sense xml:id="sense_d38e111"><abv:tr xml:lang="ru">
                                 <q>животное, предназначенное для заклания</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>animal destined for slaughter</q>
@@ -49,7 +54,7 @@
                     </re>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d38e125">
                         <quote>æxsævy Copan kūsart akodta jæ wazægæn</quote>
                         <abv:tr xml:lang="ru">
                             <q>ночью Цопан зарезал для гостя (барана)</q>
@@ -60,7 +65,7 @@
                         <bibl><ref type="bibl" target="#src_ЮОПам."/><biblScope>III
                             40</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d38e144" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>du eci sæǧi… rakosart kænæ</quote>
                         <abv:tr xml:lang="ru">
@@ -71,7 +76,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>82</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d38e166" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>osongi razmæ muddarti kæstær rakosart kodta bor nælfus</quote>
                         <abv:tr xml:lang="ru">
@@ -83,7 +88,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Sam."/><biblScope>100</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d38e188">
                         <quote>æz fæjjæwttæm kūsærttagmæ ssydtæn</quote>
                         <abv:tr xml:lang="ru">
                             <q>я поднялся к пастухам, чтобы (достать) барана на зарез</q>
@@ -91,10 +96,9 @@
                         <abv:tr xml:lang="en">
                             <q>I went up to the shepherds to (get) a ram to slaughter</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Брит."
-                            /><biblScope>152</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Брит."/><biblScope>152</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d38e207">
                         <quote>max bærægbon ænæ kūsart nīk˳y væjjæm</quote>
                         <abv:tr xml:lang="ru">
                             <q>мы никогда не бываем в праздник без %skusart%s</q>
@@ -106,27 +110,24 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Вероятно, восходит к иран. %i*kaušaυra-%i от %i*kauš-%i
-                    ‘закалывать’, ‘убивать’; ср. <mentioned xml:lang="fa"><lang/>
-                        <w>kuštan</w></mentioned>, <mentioned xml:lang="ae"><lang/>
+                    ‘закалывать’, ‘убивать’; ср. <mentioned xml:id="mentioned_d38e230" xml:lang="fa"><lang/>
+                        <w>kuštan</w></mentioned>, <mentioned xml:id="mentioned_d38e235" xml:lang="ae"><lang/>
                         <w>kaoš-</w></mentioned>. Специфическая семантика „закалывать %sсогласно
                     ритуалу%s“ (в отличие от <ref type="xr" target="#entry_argævdyn"/> ‘резать’
-                    вообще) могла быть результатом контаминации с <mentioned xml:lang="hbo"><lang/>
+                    вообще) могла быть результатом контаминации с <mentioned xml:id="mentioned_d38e242" xml:lang="hbo"><lang/>
                         <note type="comment" xml:lang="ru">(из хазар.) </note><w>kāšer, košer</w>
                         <gloss><q>ритуально дозволенное
-                            мясо</q></gloss></mentioned>.%n<bibl><author>Benveniste</author><ref
-                            type="bibl" target="#ref_BSL"/><biblScope>LII
+                            мясо</q></gloss></mentioned>.%n<bibl><author>Benveniste</author><ref type="bibl" target="#ref_BSL"/><biblScope>LII
                     36-38</biblScope></bibl>.</etym>
                 <etym xml:lang="en">It probably traces back to Iranian %i*kaušaυra-%i from
-                    %i*kauš-%i ‘slaughter’, ‘kill’; cf. <mentioned xml:lang="fa"><lang/>
-                        <w>kuštan</w></mentioned>, <mentioned xml:lang="ae"><lang/>
+                    %i*kauš-%i ‘slaughter’, ‘kill’; cf. <mentioned xml:id="mentioned_d38e260" xml:lang="fa"><lang/>
+                        <w>kuštan</w></mentioned>, <mentioned xml:id="mentioned_d38e265" xml:lang="ae"><lang/>
                         <w>kaoš-</w></mentioned>. The specific semantics „slaughter %sby ritual%s“
                     (as opposed to <ref type="xr" target="#entry_argævdyn"/> ‘cut’ in general) may
-                    have been a result of contamination with <mentioned xml:lang="hbo"><lang/>
-                        <note type="comment"
-                            xml:lang="en">(from Khazar) </note><w>kāšer, košer</w>
+                    have been a result of contamination with <mentioned xml:id="mentioned_d38e272" xml:lang="hbo"><lang/>
+                        <note type="comment" xml:lang="en">(from Khazar) </note><w>kāšer, košer</w>
                         <gloss><q>ritually allowed
-                            meat</q></gloss></mentioned>.%n<bibl><author>Benveniste</author><ref
-                            type="bibl" target="#ref_BSL"/><biblScope>LII
+                            meat</q></gloss></mentioned>.%n<bibl><author>Benveniste</author><ref type="bibl" target="#ref_BSL"/><biblScope>LII
                     36-38</biblScope></bibl>.</etym>
             </entry>
         </body>

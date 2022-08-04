@@ -1,43 +1,48 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">fīzonæg</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_fīzonæg" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>fīzonæg </orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>fezonæg</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d5345e72"><abv:tr xml:lang="ru">
                         <q>шашлык</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>kebab</q>
                     </abv:tr></sense>
-                <re>
+                <re xml:id="re_d5345e82">
                     <form xml:lang="os-x-iron" type="lemma"><orth>fīzonæggag</orth></form>
                     <form xml:lang="os-x-digor" type="dialectal"><orth>fezonæggag</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d5345e90"><abv:tr xml:lang="ru">
                             <q>мясо на шашлык</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>meat for kebab</q>
                         </abv:tr></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d5345e103">
                         <quote>fīzonæg fæqæbær</quote>
                         <abv:tr xml:lang="ru">
                             <q>шашлык покрылся корочкой</q>
@@ -47,7 +52,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>64</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5345e122">
                         <quote>cy mæ kænys, ūj mæ kæn…, wæxstyl fīzonæg dær mæ skæn</quote>
                         <abv:tr xml:lang="ru">
                             <q>делай со мной, что хочешь, сделай из меня хоть шашлык на вертеле</q>
@@ -58,7 +63,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>IV
                             5</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5345e141">
                         <quote>swany amardtam… īw sæg˳yt…, ūm æj bastyǧtam, art yskodtam…
                             fīzonægtæ kænæm</quote>
                         <abv:tr xml:lang="ru">
@@ -72,7 +77,7 @@
                         <bibl><ref type="bibl" target="#src_ЮОПам."/><biblScope>I
                             17</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5345e160" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>tuldta fezonæg cænxæmæ</quote>
                         <abv:tr xml:lang="ru">
@@ -83,7 +88,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Bes."/><biblScope>76</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5345e182">
                         <quote>aj myn xorz xæxxon ʒyly ʽrxastaj fīzonæggag</quote>
                         <abv:tr xml:lang="ru">
                             <q>это ты мне хорошую горную птичку принес на шашлык</q>
@@ -97,38 +102,36 @@
                 <etym xml:lang="ru">А. S. С. %sRоss%s и Н. W. %sBailey%s разлагают на %ifīz-%i |
                     %ifez-%i + %i-on%i + %i-æg%i (%i-on%i и %i-æg%i — форманты). Выделяемый корень
                     %ifīz-%i | %ifez-%i (←%i*paiz-%i, %i*paig-%i) сопоставляется с %ifig-%i в
-                        <mentioned xml:lang="ang"><lang/>
+                        <mentioned xml:id="mentioned_d5345e205" xml:lang="ang"><lang/>
                         <w>a-fig-en</w>
                         <gloss><q>жаркое</q></gloss></mentioned>. И по смыслу и с фонетической
                     стороны сопоставление не оставляет желать лучшего. Смущает только отсутствие
                     других иранских параллелей. Вышеназванные авторы считают вероятным, что
-                        <mentioned xml:lang="hu"><lang/>
+                        <mentioned xml:id="mentioned_d5345e213" xml:lang="hu"><lang/>
                         <w>föz-ni</w>
-                        <gloss><q>печь</q></gloss></mentioned>, <mentioned xml:lang="hu"><w/>
+                        <gloss><q>печь</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5345e221" xml:lang="hu"><w/>
                         <gloss><q>варить</q></gloss></mentioned> усвоено из осетинского (аланского)
                     и связано с %ifīzonæg%i.%n<bibl><biblScope xml:lang="ru">А. S. G. Rоss and Н. W.
                             Ваilеу. Old English %iafigen%i: Ossete %ifezonäg%i, %ifizonäg%i. Leeds
                             studies in English and kindred languages, № 3 (1934), стр.
                             7—9</biblScope></bibl>.
-                    — <bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                    /><biblScope>58</biblScope></bibl>.</etym>
+                    — <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>58</biblScope></bibl>.</etym>
                 <etym xml:lang="en">А. S. С. %sRоss%s and Н. W. %sBailey%s are divided into %ifīz-%i
                     | %ifez-%i + %i-on%i + %i-æg%i (%i-on%i and %i-æg%i are formats). The stem
                     %ifīz-%i | %ifez-%i (←%i*paiz-%i, %i*paig-%i) is compared to %ifig-%i in
-                        <mentioned xml:lang="ang"><lang/>
+                        <mentioned xml:id="mentioned_d5345e238" xml:lang="ang"><lang/>
                         <w>a-fig-en</w>
                         <gloss><q>roast meat</q></gloss></mentioned>. In terms of meaning and
                     phonetics, the comparison leaves much to be desired. But the absence of other
                     Iranian parallels is confusing. The aforementioned authors consider it probable
-                    that <mentioned xml:lang="hu"><lang/>
+                    that <mentioned xml:id="mentioned_d5345e246" xml:lang="hu"><lang/>
                         <w>föz-ni</w>
-                        <gloss><q>bake</q></gloss></mentioned>, <mentioned xml:lang="hu"><w/>
+                        <gloss><q>bake</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5345e254" xml:lang="hu"><w/>
                         <gloss><q>cook</q></gloss></mentioned> is acquired from Ossetic (Alan) and
                     connected to %ifīzonæg%i.%n<bibl><biblScope xml:lang="en">А. S. G. Rоss and Н. W. Ваilеу.
                             Old English %iafigen%i: Ossete %ifezonäg%i, %ifizonäg%i. Leeds studies
                             in English and kindred languages, № 3 (1934), p. 7—9</biblScope></bibl>.
-                    — <bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                    /><biblScope>58</biblScope></bibl>.</etym>
+                    — <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>58</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

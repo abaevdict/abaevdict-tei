@@ -1,34 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">kʼæbur</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_kʼæbur" xml:lang="os-x-digor">
                 <form type="lemma"><orth>kʼæbur</orth></form>
                 <usg><lang/></usg>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d2368e72"><abv:tr xml:lang="ru">
                         <q>скалистый выступ</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>rocky prominence</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d2368e84">
                         <quote>xonxi kʼæburbæl æ darǧ xætæl listæg saw qwæltæ fæxxawun kænuj</quote>
                         <abv:tr xml:lang="ru">
                             <q>о выступ горы свою длинную свирель на мелкие черные кусочки
@@ -40,7 +45,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_ОЭп."/><biblScope>57</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2368e103">
                         <quote>i mingi Gujman i kʼæburtæbæl ku nimmortæ uj, tog purxængængæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>маленький Гуйман о выступы скалы разбивается, окропляя (их)
@@ -54,13 +59,9 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Вероятно, относится к группе слов типа %ikbr%i, %itbr%i и пр.,
-                    обозначающих ‘круглые’, ‘выпуклые’, ‘выступающие’ предметы. Ср. <ref type="xr"
-                        target="#entry_kʼ0ybyr"/> и др. См. под <ref type="xr"
-                        target="#entry_tymbyl"/> ‘круглый’.</etym>
+                    обозначающих ‘круглые’, ‘выпуклые’, ‘выступающие’ предметы. Ср. <ref type="xr" target="#entry_kʼ0ybyr"/> и др. См. под <ref type="xr" target="#entry_tymbyl"/> ‘круглый’.</etym>
                 <etym xml:lang="en">Probably, it is related to the group of words like %ikbr%i,
-                    %itbr%i etc., meaning ‘round’, ‘prominent’, ‘bulging’ objects. Cf. <ref
-                        type="xr" target="#entry_kʼ0ybyr"/> etc. See under <ref type="xr"
-                        target="#entry_tymbyl"/> ‘round’.</etym>
+                    %itbr%i etc., meaning ‘round’, ‘prominent’, ‘bulging’ objects. Cf. <ref type="xr" target="#entry_kʼ0ybyr"/> etc. See under <ref type="xr" target="#entry_tymbyl"/> ‘round’.</etym>
             </entry>
         </body>
     </text>

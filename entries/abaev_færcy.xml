@@ -1,39 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">færcy</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_færcy" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>færcy</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>færci</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d2056e72"><sense xml:id="sense_d2056e73"><abv:tr xml:lang="ru">
                             <q>благодаря</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>thanks to</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d2056e82"><abv:tr xml:lang="ru">
                             <q>с помощью</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>with the help of</q>
-                        </abv:tr></sense><note type="comment" xml:lang="ru">(послелог) </note><note
-                        type="comment" xml:lang="en">(postposition) </note></sense>
+                        </abv:tr></sense><note type="comment" xml:lang="ru">(послелог) </note><note type="comment" xml:lang="en">(postposition) </note></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d2056e98">
                         <quote>dæ færcy fervæztæn</quote>
                         <abv:tr xml:lang="ru">
                             <q>я спасся благодаря тебе</q>
@@ -42,7 +46,7 @@
                             <q>I was saved thanks to you</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2056e113">
                         <quote>…cæmæj dune irvæzt ærcæwa ūj færcy</quote>
                         <abv:tr xml:lang="ru">
                             <q>…чтобы мир спасен был через него</q>
@@ -53,7 +57,7 @@
                         <bibl><ref type="bibl" target="#src_Иоанн"/><biblScope>%i3%i
                             17</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d2056e132" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>dæ færci qiamæt nekæd fækkodton</quote>
                         <abv:tr xml:lang="ru">
@@ -62,10 +66,9 @@
                         <abv:tr xml:lang="en">
                             <q>thanks to you, I never experienced any hardship</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>33%l6–7%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>33%l6–7%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d2056e154" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>næbal urux kænuj aræq bælæsti færcy</quote>
                         <abv:tr xml:lang="ru">
@@ -82,14 +85,12 @@
                     %i*færc%i, которое восходит, вероятно, к %iparšti-%i ‘спина’ (для звукового
                     развития ср. <ref type="xr" target="#entry_arc"/> ← %iaršti-%i ‘копье’). Точный
                     смысл послелога, стало быть, „за спиной“, „под защитой“ (%idæ færcy%i = „за
-                    твоей спиной“, „под твоей защитой“ = „благодаря тебе“). Ср. <mentioned
-                        xml:lang="sog"><lang/>
+                    твоей спиной“, „под твоей защитой“ = „благодаря тебе“). Ср. <mentioned xml:id="mentioned_d2056e181" xml:lang="sog"><lang/>
                         <w>*parč (prčh)</w>
-                        <gloss><q>спина</q></gloss></mentioned>, <mentioned xml:lang="sog"><w/>
-                        <gloss><q>защита</q></gloss></mentioned>, <mentioned xml:lang="sog"><w/>
-                        <gloss><q>опора</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Henning._BBB"/><biblScope>62</biblScope></bibl>),
-                        <mentioned xml:lang="ae"><lang/>
+                        <gloss><q>спина</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2056e189" xml:lang="sog"><w/>
+                        <gloss><q>защита</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2056e195" xml:lang="sog"><w/>
+                        <gloss><q>опора</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Henning._BBB"/><biblScope>62</biblScope></bibl>),
+                        <mentioned xml:id="mentioned_d2056e206" xml:lang="ae"><lang/>
                         <w>paršti-</w>
                         <gloss><q>спина</q></gloss></mentioned>.</etym>
                 <etym xml:lang="en">A locative case of a not retained independently word %i*færc%i,
@@ -97,13 +98,12 @@
                     development, cf. <ref type="xr" target="#entry_arc"/> ← %iaršti-%i ‘spear’).
                     Therefore, the exact meaning of the postposition is ‘behind the back’, ‘under
                     protection’ (%idæ færcy%i = ‘behind your back’, ‘under your protection’ =
-                    ‘thanks to you’). Cf. <mentioned xml:lang="sog"><lang/>
+                    ‘thanks to you’). Cf. <mentioned xml:id="mentioned_d2056e220" xml:lang="sog"><lang/>
                         <w>*parč (prčh)</w>
-                        <gloss><q>back</q></gloss></mentioned>, <mentioned xml:lang="sog"><w/>
-                        <gloss><q>protection</q></gloss></mentioned>, <mentioned xml:lang="sog"><w/>
-                        <gloss><q>support</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Henning._BBB"/><biblScope>62</biblScope></bibl>),
-                        <mentioned xml:lang="ae"><lang/>
+                        <gloss><q>back</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2056e228" xml:lang="sog"><w/>
+                        <gloss><q>protection</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2056e234" xml:lang="sog"><w/>
+                        <gloss><q>support</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Henning._BBB"/><biblScope>62</biblScope></bibl>),
+                        <mentioned xml:id="mentioned_d2056e245" xml:lang="ae"><lang/>
                         <w>paršti-</w>
                         <gloss><q>back</q></gloss></mentioned>.</etym>
             </entry>

@@ -1,34 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">īw_2</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_īw_2" n="2" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>īw</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>ew</orth></form>
-                <sense><def xml:lang="ru">частица, придающая глаголу значение многократности,
-                        обычности, а при повелительной форме — значение будущего времени</def><def
-                        xml:lang="en">a particle, which contributes the meaning of pluractionality
+                <sense xml:id="sense_d3606e72"><def xml:lang="ru">частица, придающая глаголу значение многократности,
+                        обычности, а при повелительной форме — значение будущего времени</def><def xml:lang="en">a particle, which contributes the meaning of pluractionality
                         and habituality to the verb, and the meaning of future tense in
                         imperatives</def></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d3606e80">
                         <quote>mæ fyd īw kʼ˳yrigaj ʒabidyrʒwan cyd</quote>
                         <abv:tr xml:lang="ru">
                             <q>мой отец, бывало, по неделям ходил на охоту за турами</q>
@@ -38,7 +42,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>54</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3606e99">
                         <quote>cy næ īw wydtæn?</quote>
                         <abv:tr xml:lang="ru">
                             <q>чем только я не бывал?</q>
@@ -48,7 +52,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>57</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3606e118">
                         <quote>cæmæn īw mæm baxudt q˳yzgæ mīdbylty?</quote>
                         <abv:tr xml:lang="ru">
                             <q>зачем она улыбалась мне крадущейся улыбкой?</q>
@@ -58,7 +62,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>59</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d3606e137" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>æ furt ew ærcæwidæ</quote>
                         <abv:tr xml:lang="ru">
@@ -67,10 +71,9 @@
                         <abv:tr xml:lang="en">
                             <q>his son used to come</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_ОЯФ_I"
-                            /><biblScope>419</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_ОЯФ_I"/><biblScope>419</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3606e159">
                         <quote>sæ wærdun ew ku fækʼkʼol æj, wæd Uruzmæg kizgæbæl bancojnæ
                             kænidæ</quote>
                         <abv:tr xml:lang="ru">
@@ -79,12 +82,11 @@
                         <abv:tr xml:lang="en">
                             <q>when the chariot tilted sideways, Uruzmag leaned against the girl</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_ОЯФ_I"
-                            /><biblScope>433</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_ОЯФ_I"/><biblScope>433</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d3606e181">
                         <quote>rakæn īw rakæ jæ saǧæs dæ qarægy, argævd īw xistæn næ qug</quote>
                         <abv:tr xml:lang="ru">
                             <q>расскажи, расскажи (в будущем) о его думах в своем причитании, зарежь
@@ -96,7 +98,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>38</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d3606e200" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>duwæ lacini ku nixxawoncæ, wæd ew agæ fæjnægæj æmbærzuni gud
                             kæntæ</quote>
@@ -108,10 +110,9 @@
                             <q>when two falcons fall (into the cauldron), try to cover the cauldron
                                 with a board</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>33%l12</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>33%l12</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d3606e222" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>mæ bæx ardæmæ ke sxæssa, oj ew niwworamiajtæ</quote>
                         <abv:tr xml:lang="ru">
@@ -120,45 +121,33 @@
                         <abv:tr xml:lang="en">
                             <q>detain those whom my horse will take here</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Диг._сказ."
-                            /><biblScope>3</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Диг._сказ."/><biblScope>3</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Ср. <mentioned xml:lang="pal"><lang/>
-                        <w>ham-ēv</w></mentioned>, <mentioned xml:lang="ae"><lang/>
+                <etym xml:lang="ru">Ср. <mentioned xml:id="mentioned_d3606e248" xml:lang="pal"><lang/>
+                        <w>ham-ēv</w></mentioned>, <mentioned xml:id="mentioned_d3606e253" xml:lang="ae"><lang/>
                         <w>yavae-</w><note type="comment" xml:lang="ru"> (в сложных
                             словах)</note>
-                        <gloss><q>постоянно</q></gloss></mentioned>. Ср. <mentioned xml:lang="sog"><lang/>
+                        <gloss><q>постоянно</q></gloss></mentioned>. Ср. <mentioned xml:id="mentioned_d3606e263" xml:lang="sog"><lang/>
                         <w>’yw</w>
-                        <gloss><q>Wunschpartikel</q></gloss></mentioned> (? <bibl><ref type="bibl"
-                            target="#ref_Henning._BBB"/><biblScope>122</biblScope></bibl>). В
-                    функции повелительного будущего может быть идентично с <ref type="xr"
-                        target="#entry_īw"/> ‘один’. Употребление числительного ‘один’ для выражения
-                    повелительного будущего известно, по-видимому, в картвельских языках: <mentioned
-                        xml:lang="lzz"><lang/>
-                        <w>čʼumani ar golomakti</w></mentioned>, <mentioned xml:lang="ka"><lang/>
-                        <w>xval erti gamomiare</w><note type="comment" xml:lang="ru"
-                            >буквально</note>
-                        <gloss><q>завтра один заверни ко мне</q></gloss></mentioned> (<bibl><ref
-                            type="bibl" target="#ref_Марр._Чан."
-                    /><biblScope>127</biblScope></bibl>).</etym>
-                <etym xml:lang="en">Cf. <mentioned xml:lang="pal"><lang/>
-                        <w>ham-ēv</w></mentioned>, <mentioned xml:lang="ae"><lang/>
+                        <gloss><q>Wunschpartikel</q></gloss></mentioned> (? <bibl><ref type="bibl" target="#ref_Henning._BBB"/><biblScope>122</biblScope></bibl>). В
+                    функции повелительного будущего может быть идентично с <ref type="xr" target="#entry_īw"/> ‘один’. Употребление числительного ‘один’ для выражения
+                    повелительного будущего известно, по-видимому, в картвельских языках: <mentioned xml:id="mentioned_d3606e278" xml:lang="lzz"><lang/>
+                        <w>čʼumani ar golomakti</w></mentioned>, <mentioned xml:id="mentioned_d3606e283" xml:lang="ka"><lang/>
+                        <w>xval erti gamomiare</w><note type="comment" xml:lang="ru">буквально</note>
+                        <gloss><q>завтра один заверни ко мне</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Марр._Чан."/><biblScope>127</biblScope></bibl>).</etym>
+                <etym xml:lang="en">Cf. <mentioned xml:id="mentioned_d3606e300" xml:lang="pal"><lang/>
+                        <w>ham-ēv</w></mentioned>, <mentioned xml:id="mentioned_d3606e305" xml:lang="ae"><lang/>
                         <w>yavae-</w><note type="comment" xml:lang="en"> (in compound
                             words)</note>
-                        <gloss><q>constantly</q></gloss></mentioned>. Cf. <mentioned xml:lang="sog"><lang/>
+                        <gloss><q>constantly</q></gloss></mentioned>. Cf. <mentioned xml:id="mentioned_d3606e315" xml:lang="sog"><lang/>
                         <w>’yw</w>
-                        <gloss><q>Wunschpartikel</q></gloss></mentioned> (? <bibl><ref type="bibl"
-                            target="#ref_Henning._BBB"/><biblScope>122</biblScope></bibl>). In the
-                    function of imperative future it may be identical to <ref type="xr"
-                        target="#entry_īw"/> ‘one’. The use of a numeral ‘one’ for the expression of
-                    imperative future is apparently attested in Kartvelian languages: <mentioned
-                        xml:lang="lzz"><lang/>
-                        <w>čʼumani ar golomakti</w></mentioned>, <mentioned xml:lang="ka"><lang/>
+                        <gloss><q>Wunschpartikel</q></gloss></mentioned> (? <bibl><ref type="bibl" target="#ref_Henning._BBB"/><biblScope>122</biblScope></bibl>). In the
+                    function of imperative future it may be identical to <ref type="xr" target="#entry_īw"/> ‘one’. The use of a numeral ‘one’ for the expression of
+                    imperative future is apparently attested in Kartvelian languages: <mentioned xml:id="mentioned_d3606e330" xml:lang="lzz"><lang/>
+                        <w>čʼumani ar golomakti</w></mentioned>, <mentioned xml:id="mentioned_d3606e335" xml:lang="ka"><lang/>
                         <w>xval erti gamomiare</w><note type="comment" xml:lang="en">literally</note>
-                        <gloss><q>wrap one for me tomorrow</q></gloss></mentioned> (<bibl><ref
-                            type="bibl" target="#ref_Марр._Чан."
-                    /><biblScope>127</biblScope></bibl>).</etym>
+                        <gloss><q>wrap one for me tomorrow</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Марр._Чан."/><biblScope>127</biblScope></bibl>).</etym>
             </entry>
         </body>
     </text>

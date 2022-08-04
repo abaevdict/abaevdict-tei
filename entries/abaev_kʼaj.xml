@@ -1,49 +1,54 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">kʼaj</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_kʼaj" xml:lang="os">
                 <form type="lemma"><orth>kʼaj</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d1536e69"><sense xml:id="sense_d1536e70"><abv:tr xml:lang="ru">
                             <q>чет</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>even number</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d1536e79"><abv:tr xml:lang="ru">
                             <q>четный</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>even</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d1536e88"><abv:tr xml:lang="ru">
                             <q>пара</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>pair</q>
                         </abv:tr></sense></sense>
-                <re>
+                <re xml:id="re_d1536e98">
                     <form type="lemma"><orth>æmkʼaj</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d1536e103"><abv:tr xml:lang="ru">
                             <q>супруг(а)</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>spouse</q>
                         </abv:tr></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d1536e116">
                         <quote>kʼaj — ænækʼaj?</quote>
                         <abv:tr xml:lang="ru">
                             <q>чет-нечет?</q>
@@ -54,7 +59,7 @@
                         <note type="comment" xml:lang="ru"> (название игры)</note>
                         <note type="comment" xml:lang="en"> (the name of a game)</note>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1536e137">
                         <quote>acy dywwæ — kʼæjttæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>эти двое — пара</q>
@@ -63,7 +68,7 @@
                             <q>these two are a couple</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1536e152">
                         <quote>kæræʒījæn kʼæjttæ k˳yd wydajkkoj?</quote>
                         <abv:tr xml:lang="ru">
                             <q>как они могли быть парой друг для друга?</q>
@@ -73,7 +78,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Сека"/><biblScope>76</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1536e171">
                         <quote>ḱyzg jæ kʼaīmæ xoxy sær dær fæcærʒæn</quote>
                         <abv:tr xml:lang="ru">
                             <q>девушка с супругом проживет и на вершине горы</q>
@@ -86,13 +91,9 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Может быть, есть связь с <ref type="xr" target="#entry_xaj"/>
-                    ‘доля’, с перебоем %ikʼ%i || %iх%i, как в <ref type="xr" target="#entry_kʼinsæ"
-                    /> || <ref type="xr" target="#entry_xyssæ"/>, <ref type="xr"
-                        target="#entry_kʼæʒ"/> || <ref type="xr" target="#entry_xæʒ"/> и др.</etym>
+                    ‘доля’, с перебоем %ikʼ%i || %iх%i, как в <ref type="xr" target="#entry_kʼinsæ"/> || <ref type="xr" target="#entry_xyssæ"/>, <ref type="xr" target="#entry_kʼæʒ"/> || <ref type="xr" target="#entry_xæʒ"/> и др.</etym>
                 <etym xml:lang="en">Maybe it is related to <ref type="xr" target="#entry_xaj"/>
-                    ‘part’, with the alternation %ikʼ%i || %iх%i, as in <ref type="xr"
-                        target="#entry_kʼinsæ"/> || <ref type="xr" target="#entry_xyssæ"/>, <ref
-                        type="xr" target="#entry_kʼæʒ"/> || <ref type="xr" target="#entry_xæʒ"/>
+                    ‘part’, with the alternation %ikʼ%i || %iх%i, as in <ref type="xr" target="#entry_kʼinsæ"/> || <ref type="xr" target="#entry_xyssæ"/>, <ref type="xr" target="#entry_kʼæʒ"/> || <ref type="xr" target="#entry_xæʒ"/>
                     etc.</etym>
             </entry>
         </body>

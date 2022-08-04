@@ -1,38 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">bas</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_bas" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>bas</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>basæ</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d5419e72"><sense xml:id="sense_d5419e73"><abv:tr xml:lang="ru">
                             <q>суп</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>soup</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d5419e82"><abv:tr xml:lang="ru">
                             <q>похлебка</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>broth</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d5419e94">
                         <quote>bas kæj basūʒy, ūj donyl dær fū kæny</quote>
                         <abv:tr xml:lang="ru">
                             <q>кого обожжет суп, тот дует и на воду</q>
@@ -43,7 +48,7 @@
                         <bibl><ref type="bibl" target="#src_ЮОПам."/><biblScope>III 193; cf.
                                 %sKosta%s 40</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5419e113">
                         <quote>jæ bas dyn xos ū, jæ fyd syn marg ū</quote>
                         <abv:tr xml:lang="ru">
                             <q>его (барана) суп для тебя целителен, его мясо для них (врагов) —
@@ -53,10 +58,9 @@
                             <q>its (ram) soup is healing for you, its meat is poison for them
                                 (enemies)</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Munk."
-                            /><biblScope>182</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Munk."/><biblScope>182</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5419e132" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>ku raxælewtæ ʽj i ciwan agæj i tævdæ basæ</quote>
                         <abv:tr xml:lang="ru">
@@ -67,7 +71,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>83</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5419e154" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>tuxwast adtæncæ siwginti basæj</quote>
                         <abv:tr xml:lang="ru">
@@ -80,7 +84,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Bes."/><biblScope>102</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5419e176">
                         <quote>kʼūsy mīdæg bas æmæ fydy xæjttæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>в миске суп и куски мяса</q>
@@ -91,44 +95,37 @@
                         <bibl><ref type="bibl" target="#src_Сека"/><biblScope>51</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Восходит к <mentioned xml:lang="ira"><lang/>
+                <etym xml:lang="ru">Восходит к <mentioned xml:id="mentioned_d5419e198" xml:lang="ira"><lang/>
                         <w>*upa-āsa</w></mentioned>, сращение приставки %ibа%i-(← %iupa%i-) с корнем
-                    %ias%i- ‘есть’, ‘вкушать’ [см. <ref type="xr"/>]; ср. <mentioned xml:lang="sa"><lang/>
+                    %ias%i- ‘есть’, ‘вкушать’ [см. <ref type="xr"/>]; ср. <mentioned xml:id="mentioned_d5419e205" xml:lang="sa"><lang/>
                         <w>aś</w>
-                        <gloss><q>кушать</q></gloss></mentioned>, <mentioned xml:lang="sa"
-                            ><w>aśana-</w>
-                        <gloss><q>еда</q></gloss></mentioned>, <mentioned xml:lang="sa"
-                            ><w>prātar-āśa-</w>
-                        <gloss><q>утренняя еда</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
-                        <gloss><q>завтрак</q></gloss></mentioned>, <mentioned xml:lang="sa"
-                            ><w>sāyam-āśa-</w>
-                        <gloss><q>вечерняя еда</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
-                        <gloss><q>ужин</q></gloss></mentioned>, <mentioned xml:lang="fa"><lang/>
+                        <gloss><q>кушать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5419e213" xml:lang="sa"><w>aśana-</w>
+                        <gloss><q>еда</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5419e219" xml:lang="sa"><w>prātar-āśa-</w>
+                        <gloss><q>утренняя еда</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5419e226" xml:lang="sa"><w/>
+                        <gloss><q>завтрак</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5419e232" xml:lang="sa"><w>sāyam-āśa-</w>
+                        <gloss><q>вечерняя еда</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5419e238" xml:lang="sa"><w/>
+                        <gloss><q>ужин</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5419e244" xml:lang="fa"><lang/>
                         <w>āš</w>
-                        <gloss><q>еда</q></gloss></mentioned>, <mentioned xml:lang="fa"><w/>
-                        <gloss><q>суп</q></gloss></mentioned> (ожидали бы *%iās%i), <mentioned
-                        xml:lang="yah"><lang/>
+                        <gloss><q>еда</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5419e252" xml:lang="fa"><w/>
+                        <gloss><q>суп</q></gloss></mentioned> (ожидали бы *%iās%i), <mentioned xml:id="mentioned_d5419e258" xml:lang="yah"><lang/>
                         <w>paś</w>
                         <gloss><q>густой компот из абрикосов</q></gloss></mentioned>
                             (<bibl><biblScope>Труды Института языкознания VI
                     279</biblScope></bibl>)?— Ср. <ref type="xr" target="#entry_margas"/> .</etym>
-                <etym xml:lang="en">It traces back to <mentioned xml:lang="ira"><lang/>
+                <etym xml:lang="en">It traces back to <mentioned xml:id="mentioned_d5419e276" xml:lang="ira"><lang/>
                         <w>*upa-āsa</w></mentioned>, the fusion of the prefix %ibа%i-(← %iupa%i-)
-                    and the root %ias%i- ‘eat’, ‘savour’; cf. <mentioned xml:lang="sa"><lang/>
+                    and the root %ias%i- ‘eat’, ‘savour’; cf. <mentioned xml:id="mentioned_d5419e281" xml:lang="sa"><lang/>
                         <w>aś</w>
-                        <gloss><q>eat</q></gloss></mentioned>, <mentioned xml:lang="sa"
-                            ><w>aśana-</w>
-                        <gloss><q>food</q></gloss></mentioned>, <mentioned xml:lang="sa"
-                            ><w>prātar-āśa-</w>
-                        <gloss><q>morning meal</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
-                        <gloss><q>breakfast</q></gloss></mentioned>, <mentioned xml:lang="sa"
-                            ><w>sāyam-āśa-</w>
-                        <gloss><q>evening meal</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
-                        <gloss><q>dinner</q></gloss></mentioned>, <mentioned xml:lang="fa"><lang/>
+                        <gloss><q>eat</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5419e289" xml:lang="sa"><w>aśana-</w>
+                        <gloss><q>food</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5419e295" xml:lang="sa"><w>prātar-āśa-</w>
+                        <gloss><q>morning meal</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5419e301" xml:lang="sa"><w/>
+                        <gloss><q>breakfast</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5419e308" xml:lang="sa"><w>sāyam-āśa-</w>
+                        <gloss><q>evening meal</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5419e314" xml:lang="sa"><w/>
+                        <gloss><q>dinner</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5419e320" xml:lang="fa"><lang/>
                         <w>āš</w>
-                        <gloss><q>meal</q></gloss></mentioned>, <mentioned xml:lang="fa"><w/>
+                        <gloss><q>meal</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5419e328" xml:lang="fa"><w/>
                         <gloss><q>soup</q></gloss></mentioned> (*%iās%i would be expected),
-                        <mentioned xml:lang="yah"><lang/>
+                        <mentioned xml:id="mentioned_d5419e334" xml:lang="yah"><lang/>
                         <w>paś</w>
                         <gloss><q>stiff compote of apricots</q></gloss></mentioned>
                             (<bibl><biblScope>Trudy Instituta jazykozanija VI

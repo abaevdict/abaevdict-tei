@@ -1,53 +1,58 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">kʼax</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_kʼax" xml:lang="os">
                 <form type="lemma"><orth>kʼax</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d5762e69"><abv:tr xml:lang="ru">
                         <q>нога</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>leg</q>
                     </abv:tr></sense>
-                <re>
-                    <re>
+                <re xml:id="re_d5762e79">
+                    <re xml:id="re_d5762e81">
                         <form type="lemma"><orth>kʼaxʒæf</orth></form>
-                        <sense><abv:tr xml:lang="ru">
+                        <sense xml:id="sense_d5762e86"><abv:tr xml:lang="ru">
                                 <q>шаг</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>step</q>
                             </abv:tr></sense>
                     </re>
-                    <re xml:lang="os-x-iron">
+                    <re xml:id="re_d5762e97" xml:lang="os-x-iron">
                         <lang/>
                         <form type="lemma"><orth>kʼaxkʼūx</orth></form>
-                        <sense><abv:tr xml:lang="ru">
+                        <sense xml:id="sense_d5762e104"><abv:tr xml:lang="ru">
                                 <q>палец ноги</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>foot toe</q>
                             </abv:tr></sense>
                     </re>
-                    <re>
+                    <re xml:id="re_d5762e115">
                         <form xml:lang="os-x-iron" type="lemma"><orth>kʼaxvændag</orth></form>
                         <form xml:lang="os-x-digor" type="dialectal"><orth>kʼaxnad</orth></form>
-                        <sense><abv:tr xml:lang="ru">
+                        <sense xml:id="sense_d5762e123"><abv:tr xml:lang="ru">
                                 <q>пешая тропа</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>pedestrian path</q>
@@ -55,7 +60,7 @@
                     </re>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d5762e137">
                         <quote>jæ kʼax næ fællad</quote>
                         <abv:tr xml:lang="ru">
                             <q>его нога не уставала</q>
@@ -65,7 +70,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>50</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5762e156">
                         <quote>duryl aværdta jæ kʼæxtæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>он стал ногами на камень</q>
@@ -75,7 +80,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>79</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5762e175">
                         <quote>cæwyny kʼaxyl nyllæwwyn</quote>
                         <abv:tr xml:lang="ru">
                             <q>изготовиться в дорогу</q>
@@ -84,7 +89,7 @@
                             <q>get ready for the trip</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5762e190">
                         <quote>sæfty kʼaxyl nyllæwwyn</quote>
                         <abv:tr xml:lang="ru">
                             <q>стать на путь погибели</q>
@@ -94,71 +99,56 @@
                         </abv:tr>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Вошло в осетинский из кавказского субстрата; ср. <mentioned
-                        xml:lang="ce"><lang/>
-                        <w>kog</w></mentioned>, <mentioned xml:lang="bbl"><lang/>
-                        <w>kok</w></mentioned>, <mentioned xml:lang="inh"><lang/>
-                        <w>kog</w></mentioned>, <mentioned xml:lang="dar-x-aqusha"><lang/>
+                <etym xml:lang="ru">Вошло в осетинский из кавказского субстрата; ср. <mentioned xml:id="mentioned_d5762e208" xml:lang="ce"><lang/>
+                        <w>kog</w></mentioned>, <mentioned xml:id="mentioned_d5762e213" xml:lang="bbl"><lang/>
+                        <w>kok</w></mentioned>, <mentioned xml:id="mentioned_d5762e218" xml:lang="inh"><lang/>
+                        <w>kog</w></mentioned>, <mentioned xml:id="mentioned_d5762e223" xml:lang="dar-x-aqusha"><lang/>
                         <w>kax</w>
-                        <gloss><q>нога</q></gloss></mentioned>, также <mentioned xml:lang="khv"><lang/>
+                        <gloss><q>нога</q></gloss></mentioned>, также <mentioned xml:id="mentioned_d5762e231" xml:lang="khv"><lang/>
                         <w>ḳaḳa</w>
                         <gloss><q>голень</q></gloss></mentioned>
                         (<bibl><biblScope>Дирр</biblScope></bibl>). О прямом заимствовании из
                     чеченского трудно думать ввиду различия огласовки и начального согласного (ос.
                     %ikʼ%i — чеч. %ik%i). Скорее приходится допускать вклад из какого-то не
                     дошедшего до нас языка восточногорской группы, родственного чеченскому. Как
-                    относятся сюда <mentioned xml:lang="kv"><lang/>
+                    относятся сюда <mentioned xml:id="mentioned_d5762e243" xml:lang="kv"><lang/>
                         <w>kok</w>
-                        <gloss><q>нога</q></gloss></mentioned>, <mentioned xml:lang="udm"><lang/>
+                        <gloss><q>нога</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5762e251" xml:lang="udm"><lang/>
                         <w>kuk</w>
-                        <gloss><q>лапа</q></gloss></mentioned>, <mentioned xml:lang="udm"><w/>
+                        <gloss><q>лапа</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5762e259" xml:lang="udm"><w/>
                         <gloss><q>нога (животных)</q></gloss></mentioned> — не беремся судить (см.:
                             <bibl><author>Munkácsi</author><biblScope xml:lang="ru">Arja es
                             kaukázusi elemek a finn-magyar nyelvekben. 1901, стр.
                             99</biblScope></bibl>).— Иранским
                     словом для ‘ноги’ было <ref type="xr" target="#entry_fad"/> (←%ipada-%i),
                     которое и сейчас широко представлено в устойчивых речениях и сложных словах.
-                    Такие же пары (иранское и кавказское слово) имеем для ‘руки’ (см. <ref type="xr"
-                        target="#entry_arm"/> и <ref type="xr" target="#entry_kʼūx"/>) и ‘рта’ (см.
-                        <ref type="xr" target="#entry_kom"/> и <ref type="xr" target="#entry_ʒyx"
-                    />ʒyx). — Ср. <ref type="xr" target="#entry_fad"/>, см. <ref type="xr"
-                        target="#entry_kʼaxyn"/>.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>III 146</biblScope></bibl>;
-                            <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>27</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_ОЯФ_I"/><biblScope>78, 105, 117</biblScope></bibl>.</etym>
-                <etym xml:lang="en">It entered Ossetic from Caucasian substrate; cf. <mentioned
-                        xml:lang="ce"><lang/>
-                        <w>kog</w></mentioned>, <mentioned xml:lang="bbl"><lang/>
-                        <w>kok</w></mentioned>, <mentioned xml:lang="inh"><lang/>
-                        <w>kog</w></mentioned>, <mentioned xml:lang="dar-x-aqusha"><lang/>
+                    Такие же пары (иранское и кавказское слово) имеем для ‘руки’ (см. <ref type="xr" target="#entry_arm"/> и <ref type="xr" target="#entry_kʼūx"/>) и ‘рта’ (см.
+                        <ref type="xr" target="#entry_kom"/> и <ref type="xr" target="#entry_ʒyx"/>ʒyx). — Ср. <ref type="xr" target="#entry_fad"/>, см. <ref type="xr" target="#entry_kʼaxyn"/>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>III 146</biblScope></bibl>;
+                            <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>27</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>78, 105, 117</biblScope></bibl>.</etym>
+                <etym xml:lang="en">It entered Ossetic from Caucasian substrate; cf. <mentioned xml:id="mentioned_d5762e302" xml:lang="ce"><lang/>
+                        <w>kog</w></mentioned>, <mentioned xml:id="mentioned_d5762e307" xml:lang="bbl"><lang/>
+                        <w>kok</w></mentioned>, <mentioned xml:id="mentioned_d5762e312" xml:lang="inh"><lang/>
+                        <w>kog</w></mentioned>, <mentioned xml:id="mentioned_d5762e317" xml:lang="dar-x-aqusha"><lang/>
                         <w>kax</w>
-                        <gloss><q>leg</q></gloss></mentioned>, also <mentioned xml:lang="khv"><lang/>
+                        <gloss><q>leg</q></gloss></mentioned>, also <mentioned xml:id="mentioned_d5762e325" xml:lang="khv"><lang/>
                         <w>ḳaḳa</w>
-                        <gloss><q>lower leg</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Дирр"/></bibl>). It is difficult to think about direct
+                        <gloss><q>lower leg</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Дирр"/></bibl>). It is difficult to think about direct
                     borrowing from Chechen because of the difference in vowel composition and
                     initial consonant (Ossetic %ikʼ%i — Chechen %ik%i). Rather, one has to admit a
                     contribution from some language of Northeast Caucasian group related to Chechen
-                    that has not reached us. We do not presume to judge how <mentioned xml:lang="kv"><lang/>
+                    that has not reached us. We do not presume to judge how <mentioned xml:id="mentioned_d5762e337" xml:lang="kv"><lang/>
                         <w>kok</w>
-                        <gloss><q>leg</q></gloss></mentioned>, <mentioned xml:lang="udm"><lang/>
+                        <gloss><q>leg</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5762e345" xml:lang="udm"><lang/>
                         <w>kuk</w>
-                        <gloss><q>paw</q></gloss></mentioned>, <mentioned xml:lang="udm"><w/>
+                        <gloss><q>paw</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5762e353" xml:lang="udm"><w/>
                         <gloss><q>(animal) leg</q></gloss></mentioned> are related to it (see:
                             <bibl><author>Munkácsi</author><biblScope xml:lang="en">Arja es kaukázusi elemek a
                             finn-magyar nyelvekben. 1901, p. 99</biblScope></bibl>).— An Iranian
                     word for ‘leg’ was <ref type="xr" target="#entry_fad"/> (←%ipada-%i), which is
                     still widely used in collocations and compound words. There are the same pairs
-                    (an Iranian word and a Caucasian one) for ‘hand’ (see <ref type="xr"
-                        target="#entry_arm"/> and <ref type="xr" target="#entry_kʼūx"/>) and ‘mouth’
-                    (see <ref type="xr" target="#entry_kom"/> and <ref type="xr" target="#entry_ʒyx"
-                    />). — Cf. <ref type="xr" target="#entry_fad"/>, see <ref type="xr"
-                        target="#entry_kʼaxyn"/>.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>III 146</biblScope></bibl>;
-                            <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>27</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_ОЯФ_I"/><biblScope>78, 105, 117</biblScope></bibl>.</etym>
+                    (an Iranian word and a Caucasian one) for ‘hand’ (see <ref type="xr" target="#entry_arm"/> and <ref type="xr" target="#entry_kʼūx"/>) and ‘mouth’
+                    (see <ref type="xr" target="#entry_kom"/> and <ref type="xr" target="#entry_ʒyx"/>). — Cf. <ref type="xr" target="#entry_fad"/>, see <ref type="xr" target="#entry_kʼaxyn"/>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>III 146</biblScope></bibl>;
+                            <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>27</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>78, 105, 117</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

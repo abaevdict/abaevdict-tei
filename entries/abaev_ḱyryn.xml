@@ -1,44 +1,47 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ḱyryn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ḱyryn" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>ḱyryn</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>kiræ</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d5855e72"><sense xml:id="sense_d5855e73"><abv:tr xml:lang="ru">
                             <q>сундук</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>chest</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d5855e82"><abv:tr xml:lang="ru">
                             <q>короб</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>box</q>
-                        </abv:tr></sense><sense><note type="comment" xml:lang="ru">также</note><note
-                            type="comment" xml:lang="en">also</note><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d5855e91"><note type="comment" xml:lang="ru">также</note><note type="comment" xml:lang="en">also</note><abv:tr xml:lang="ru">
                             <q>гроб</q>
-                        </abv:tr><note type="comment" xml:lang="ru">также</note><note type="comment"
-                            xml:lang="en">also</note><abv:tr xml:lang="en">
+                        </abv:tr><note type="comment" xml:lang="ru">также</note><note type="comment" xml:lang="en">also</note><abv:tr xml:lang="en">
                             <q>coffin</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5855e111" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>Agundæ-ræsuǧd fijjawi xætæl qanʒalgun kiri arf niuniwærduj</quote>
                         <abv:tr xml:lang="ru">
@@ -48,10 +51,9 @@
                         <abv:tr xml:lang="en">
                             <q>Beautiful Agunda deeply hides a shepherd's pipe in a spring chest</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_ОЭп."
-                                /><biblScope>57%l121-123%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_ОЭп."/><biblScope>57%l121-123%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5855e133" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>ew zærond, otid ǧædæj kond kiræ…</quote>
                         <abv:tr xml:lang="ru">
@@ -62,7 +64,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>128</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5855e155" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>niʼ j-ævardtoncæ næwæg kond kiri</quote>
                         <abv:tr xml:lang="ru">
@@ -74,40 +76,26 @@
                         <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>138</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Следует исходить из основы %ikir-%i (ср. д. <ref type="xr"
-                        target="#entry_kiræ"/>, а также сложные слова %iḱyr-ǧæd%i (<ref type="xr"
-                        target="#entry_ḱyrǧæd"/>), %iḱyr-vaz%i (<ref type="xr"
-                        target="#entry_ḱyrvaz"/>)), а конечное %i-yn%i в иронской форме
-                    рассматривать как формант. Ср. <mentioned xml:lang="inh"><lang/>
+                <etym xml:lang="ru">Следует исходить из основы %ikir-%i (ср. д. <ref type="xr" target="#entry_kiræ"/>, а также сложные слова %iḱyr-ǧæd%i (<ref type="xr" target="#entry_ḱyrǧæd"/>), %iḱyr-vaz%i (<ref type="xr" target="#entry_ḱyrvaz"/>)), а конечное %i-yn%i в иронской форме
+                    рассматривать как формант. Ср. <mentioned xml:id="mentioned_d5855e186" xml:lang="inh"><lang/>
                         <w>kirg</w>
                         <gloss><q>корзина для зерна</q></gloss></mentioned> (<bibl><author>А. Н.
                             Генко</author><biblScope xml:lang="ru">устное
                             сообщение</biblScope></bibl>).<note type="footnote" n="1"> PUT NOTE
-                        HERE </note> Возможно, что оба слова заимствованы из <mentioned
-                        xml:lang="ka"><lang/>
+                        HERE </note> Возможно, что оба слова заимствованы из <mentioned xml:id="mentioned_d5855e203" xml:lang="ka"><lang/>
                         <w>sk’ivri</w>
-                        <gloss><q>сундук</q></gloss></mentioned>. Не исключена связь с <ref
-                        type="xr" target="#entry_ḱyr"/> | %ikir%i ‘куча’. Ошибочно сближение с <ref
-                        type="xr" target="#entry_ḱyræ"/> | %ikiræ%i ‘груз, перевозимый за плату’,
-                    ‘извоз’ (<bibl><ref type="bibl" target="#ref_MSt."
-                        /><biblScope>57</biblScope></bibl>).</etym>
-                <etym xml:lang="en">One should base oneself from the stem %ikir-%i (cf. Digor <ref
-                        type="xr" target="#entry_kiræ"/>, and also composite words %iḱyr-ǧæd%i (<ref
-                        type="xr" target="#entry_ḱyrǧæd"/>), %iḱyr-vaz%i (<ref type="xr"
-                        target="#entry_ḱyrvaz"/>)), and the final %i-yn%i in Iron form should be
-                    considered to be a formant. Cf. <mentioned xml:lang="inh"><lang/>
+                        <gloss><q>сундук</q></gloss></mentioned>. Не исключена связь с <ref type="xr" target="#entry_ḱyr"/> | %ikir%i ‘куча’. Ошибочно сближение с <ref type="xr" target="#entry_ḱyræ"/> | %ikiræ%i ‘груз, перевозимый за плату’,
+                    ‘извоз’ (<bibl><ref type="bibl" target="#ref_MSt."/><biblScope>57</biblScope></bibl>).</etym>
+                <etym xml:lang="en">One should base oneself from the stem %ikir-%i (cf. Digor <ref type="xr" target="#entry_kiræ"/>, and also composite words %iḱyr-ǧæd%i (<ref type="xr" target="#entry_ḱyrǧæd"/>), %iḱyr-vaz%i (<ref type="xr" target="#entry_ḱyrvaz"/>)), and the final %i-yn%i in Iron form should be
+                    considered to be a formant. Cf. <mentioned xml:id="mentioned_d5855e229" xml:lang="inh"><lang/>
                         <w>kirg</w>
                         <gloss><q>basket for grain</q></gloss></mentioned> (<bibl><author>A. N.
                             Genko,</author><biblScope xml:lang="en">personal
                             communication</biblScope></bibl>).<note type="footnote" n="1"> PUT NOTE
-                        HERE </note> Probably, both words were borrowed from <mentioned
-                        xml:lang="ka"><lang/>
+                        HERE </note> Probably, both words were borrowed from <mentioned xml:id="mentioned_d5855e246" xml:lang="ka"><lang/>
                         <w>sk’ivri</w>
-                        <gloss><q>chest</q></gloss></mentioned>. The relation with <ref type="xr"
-                        target="#entry_ḱyr"/> | %ikir%i ‘pile’ is not excluded. The relation to <ref
-                        type="xr" target="#entry_ḱyræ"/> | %ikiræ%i ‘cargo transported for a fee’,
-                    ‘carrier's trade’ is erroneous (<bibl><ref type="bibl" target="#ref_MSt."
-                            /><biblScope>57</biblScope></bibl>).</etym>
+                        <gloss><q>chest</q></gloss></mentioned>. The relation with <ref type="xr" target="#entry_ḱyr"/> | %ikir%i ‘pile’ is not excluded. The relation to <ref type="xr" target="#entry_ḱyræ"/> | %ikiræ%i ‘cargo transported for a fee’,
+                    ‘carrier's trade’ is erroneous (<bibl><ref type="bibl" target="#ref_MSt."/><biblScope>57</biblScope></bibl>).</etym>
                 <note type="footnote" xml:lang="ru" n="1">Наращение форманта %i-g%i наблюдается в
                     ингушском и в других случаях.</note>
                 <note type="footnote" xml:lang="en" n="1">The augmentation of a formant %i-g%i is

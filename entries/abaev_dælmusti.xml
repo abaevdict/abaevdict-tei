@@ -1,34 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">dælmusti</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_dælmusti" xml:lang="os-x-digor">
                 <form type="lemma"><orth>dælmusti</orth></form>
                 <usg><lang/></usg>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d2001e72"><abv:tr xml:lang="ru">
                         <q>под мышкой</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>under one's arm</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d2001e84" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>wærtæ i ǧæwæj ostiti kʼwar sabatizæri racæwuj, iʒag tæbæǧtæ sæ
                             dælmusti otemæj</quote>
@@ -46,8 +51,8 @@
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Из <ref type="xr" target="#entry_dæl-"/> + %imus-ti%i, где
                     %imus-ti%i- внутренний местный падеж от *%imus%i ‘мышь’ → ‘мышца’. Образование
-                    вполне аналогично русскому <mentioned xml:lang="ru"><lang/>
-                        <w>под мышкой</w></mentioned>. Ср. также <mentioned xml:lang="tg"><lang/>
+                    вполне аналогично русскому <mentioned xml:id="mentioned_d2001e111" xml:lang="ru"><lang/>
+                        <w>под мышкой</w></mentioned>. Ср. также <mentioned xml:id="mentioned_d2001e116" xml:lang="tg"><lang/>
                         <w>mušák</w>
                         <gloss><q>мышца на плечевой кости</q></gloss></mentioned>. Если правильно
                     наше толкование, то в %idæl-mus-ti%i сохранилась более старая форма слова ‘мышь’
@@ -55,9 +60,8 @@
                     ‘мышь’.</etym>
                 <etym xml:lang="en">From <ref type="xr" target="#entry_dæl-"/> + %imus-ti%i, where
                     %imus-ti%i- is plural inessive case form of the word *%imus%i ‘mouse’ →
-                    ‘muscle’. The derivative is quite similar to the Russian <mentioned
-                        xml:lang="ru"><lang/>
-                        <w>pod myškoj</w></mentioned>. Cf. also <mentioned xml:lang="tg"><lang/>
+                    ‘muscle’. The derivative is quite similar to the Russian <mentioned xml:id="mentioned_d2001e132" xml:lang="ru"><lang/>
+                        <w>pod myškoj</w></mentioned>. Cf. also <mentioned xml:id="mentioned_d2001e137" xml:lang="tg"><lang/>
                         <w>mušák</w>
                         <gloss><q>muscle on the shoulder bone</q></gloss></mentioned>. If our
                     interpretation is correct then in %idæl-mus-ti%i a more old form of the word

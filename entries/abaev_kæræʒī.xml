@@ -1,38 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">kæræʒī</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_kæræʒī" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>kæræʒī</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>kæræʒej</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d2589e72"><sense xml:id="sense_d2589e73"><abv:tr xml:lang="ru">
                             <q>друг друга</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>each other</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d2589e82"><abv:tr xml:lang="ru">
                             <q>взаимно</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>mutually</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d2589e94">
                         <quote>kæræʒīmæ bakæstytæ kodtoj, fæla kæræʒī nal bazydtoj</quote>
                         <abv:tr xml:lang="ru">
                             <q>они посмотрели друг на друга, но уже не узнали друг друга</q>
@@ -43,7 +48,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Сека"/><biblScope>35</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2589e113">
                         <quote>kæd kæræʒījy fag næ rævdydtam? kæd kæræʒījæn fag næ fæʒyrdtam warzon
                             nyxæstæ?</quote>
                         <abv:tr xml:lang="ru">
@@ -56,7 +61,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>19</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2589e132">
                         <quote>kærdtæ ‘slasync kæræʒīmæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>извлекают мечи друг на друга</q>
@@ -66,7 +71,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_ОЭп."/><biblScope>38</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d2589e151" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>oj cæqaltæ kæræʒemæn desæ-ʒoræ fækodtoncæ</quote>
                         <abv:tr xml:lang="ru">
@@ -77,7 +82,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>43</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d2589e173" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>niccijnæ ‘ncæ kæræʒebæl</quote>
                         <abv:tr xml:lang="ru">
@@ -86,10 +91,9 @@
                         <abv:tr xml:lang="en">
                             <q>(they) felt happy to be seeing each other</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>8%l15–16%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>8%l15–16%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2589e196">
                         <quote>kæræʒī warzgæjæ cærūt!</quote>
                         <abv:tr xml:lang="ru">
                             <q>живите, любя друг друга!</q>
@@ -99,24 +103,23 @@
                         </abv:tr>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Может быть, из <mentioned xml:lang="trk"><lang/>
+                <etym xml:lang="ru">Может быть, из <mentioned xml:id="mentioned_d2589e214" xml:lang="trk"><lang/>
                         <w>qar(ə)šə</w>
                         <gloss><q>взаимно</q></gloss></mentioned>; ср. %iqaršə qarsə%i ‘друг против
                     друга’ (<bibl><ref type="bibl" target="#ref_Радлов"/><biblScope>II
-                            209</biblScope></bibl>), <mentioned xml:lang="tr-x-anat"><lang/>
+                            209</biblScope></bibl>), <mentioned xml:id="mentioned_d2589e226" xml:lang="tr-x-anat"><lang/>
                         <w>karšələklə</w>
-                        <gloss><q>взаимный</q></gloss></mentioned>, <mentioned xml:lang="tr-x-anat"><w/>
-                        <gloss><q>обоюдный</q></gloss></mentioned>, <mentioned xml:lang="tr-x-anat"><w/>
+                        <gloss><q>взаимный</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2589e234" xml:lang="tr-x-anat"><w/>
+                        <gloss><q>обоюдный</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2589e240" xml:lang="tr-x-anat"><w/>
                         <gloss><q>двухсторонний</q></gloss></mentioned>.</etym>
-                <etym xml:lang="en">It may be from <mentioned xml:lang="trk"><lang/>
+                <etym xml:lang="en">It may be from <mentioned xml:id="mentioned_d2589e250" xml:lang="trk"><lang/>
                         <w>qar(ə)šə</w>
                         <gloss><q>mutually</q></gloss></mentioned>; cf. %iqaršə qarsə%i ‘against
                     each other’ (<bibl><ref type="bibl" target="#ref_Радлов"/><biblScope>II
-                            209</biblScope></bibl>), <mentioned xml:lang="tr-x-anat"><lang/>
+                            209</biblScope></bibl>), <mentioned xml:id="mentioned_d2589e262" xml:lang="tr-x-anat"><lang/>
                         <w>karšələklə</w>
-                        <gloss><q>mutual</q></gloss></mentioned>, <mentioned xml:lang="tr-x-anat"><w/>
-                        <gloss><q>reciprocal</q></gloss></mentioned>, <mentioned
-                        xml:lang="tr-x-anat"><w/>
+                        <gloss><q>mutual</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2589e270" xml:lang="tr-x-anat"><w/>
+                        <gloss><q>reciprocal</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2589e276" xml:lang="tr-x-anat"><w/>
                         <gloss><q>double-sided</q></gloss></mentioned>.</etym>
             </entry>
         </body>

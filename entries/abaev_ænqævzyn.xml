@@ -1,43 +1,45 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ænqævzyn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ænqævzyn" xml:lang="os">
-                <form xml:lang="os-x-iron" type="lemma"><orth>ænqævzyn</orth><form type="participle"
-                            ><orth>ænqævzt</orth></form></form>
-                <form xml:lang="os-x-digor" type="dialectal"><orth>ævǧæzun</orth><form
-                        type="participle"><orth>ævǧazt</orth></form></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <form xml:lang="os-x-iron" type="lemma"><orth>ænqævzyn</orth><form type="participle"><orth>ænqævzt</orth></form></form>
+                <form xml:lang="os-x-digor" type="dialectal"><orth>ævǧæzun</orth><form type="participle"><orth>ævǧazt</orth></form></form>
+                <sense xml:id="sense_d2137e76"><sense xml:id="sense_d2137e77"><abv:tr xml:lang="ru">
                             <q>полоскать</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>to rinse</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d2137e86"><abv:tr xml:lang="ru">
                             <q>разливаться</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>to spill (to overflow?)</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d2137e98">
                         <quote>dæ arm æxsad, dæ kom ænqævzt<note type="comment" xml:lang="ru"> (из
-                                молитвы, посвященной умершему)</note><note type="comment"
-                                xml:lang="en"> (an extract from a pray dedicated to a dead
+                                молитвы, посвященной умершему)</note><note type="comment" xml:lang="en"> (an extract from a pray dedicated to a dead
                                 man)</note></quote>
                         <abv:tr xml:lang="ru">
                             <q>(да будет) твоя рука умытой, твой рот ополощенным</q>
@@ -46,7 +48,7 @@
                             <q>may your hand be washed, your mouth be rinsed</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2137e118">
                         <quote>ænqævzy donaw jæ tūg fæjnærdæm</quote>
                         <abv:tr xml:lang="ru">
                             <q>кровь его разливается кругом, как вода</q>
@@ -54,8 +56,7 @@
                         <abv:tr xml:lang="en">
                             <q>his blood is spilling into circle, like water</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Niger"
-                            /><biblScope>180</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Niger"/><biblScope>180</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Если дигорскую форму рассматривать как сращение %iæv-ǧæz%i
@@ -63,13 +64,13 @@
                     %iæn-%i, с дигорской формой: *%iæn-vǧæz%i → %iæn-qævz%i-. Выделяемая в этом
                     случае основа %iǧæz%i-(← *%igaz%i-) сближается <bibl><author>Вс. Миллером
                             (</author><ref type="bibl" target="#ref_IF"/><biblScope>21, стр.
-                            323</biblScope></bibl>) с <mentioned xml:lang="sa"><lang/>
+                            323</biblScope></bibl>) с <mentioned xml:id="mentioned_d2137e145" xml:lang="sa"><lang/>
                         <w>gāh-</w>
                         <gloss><q>погружаться</q></gloss></mentioned>.</etym>
                 <etym xml:lang="en">If %bDigor%b form is considered as a fusion %iæv-ǧæz%i
                     (*%iabi-gaz%i-), then %bIron%b form represents the fusion of the other prefix,
                     %iæn%i-, with %bDigor%b form: *%iæn-vǧæz%i → %iæn-qævz%i-. In this case the stem
-                    %iǧæz%i-(← *%igaz%i-) is getting close to <mentioned xml:lang="sa"><lang/>
+                    %iǧæz%i-(← *%igaz%i-) is getting close to <mentioned xml:id="mentioned_d2137e157" xml:lang="sa"><lang/>
                         <w>gāh-</w>
                         <gloss><q>plunge</q></gloss></mentioned>, according to <bibl><author>Vs.
                             Miller (</author><ref type="bibl" target="#ref_IF"/><biblScope>21, p.

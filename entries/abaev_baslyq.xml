@@ -1,35 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">baslyq</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_baslyq" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>baslyq</orth></form>
-                <form xml:lang="os-x-digor" type="dialectal"><orth>basluq</orth><form type="variant"
-                            ><orth>baslæq</orth></form></form>
-                <sense><abv:tr xml:lang="ru">
+                <form xml:lang="os-x-digor" type="dialectal"><orth>basluq</orth><form type="variant"><orth>baslæq</orth></form></form>
+                <sense xml:id="sense_d5347e74"><abv:tr xml:lang="ru">
                         <q>башлык</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>bashlyk</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d5347e86">
                         <quote>fælæværttæ kodtoj wædy ræstæǵy æǧdawmæ gæsgæ; ḱī cuqa, ḱī k˳yræt, ḱī
                             baslyq</quote>
                         <abv:tr xml:lang="ru">
@@ -44,30 +48,26 @@
                         <bibl><ref type="bibl" target="#src_Сека"/><biblScope>39</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из <mentioned xml:lang="trk"><lang/>
+                <etym xml:lang="ru">Из <mentioned xml:id="mentioned_d5347e108" xml:lang="trk"><lang/>
                         <w>bašlyq</w>
-                        <gloss><q>башлык</q></gloss></mentioned> (образовано от <mentioned
-                        xml:lang="trk"><lang/>
+                        <gloss><q>башлык</q></gloss></mentioned> (образовано от <mentioned xml:id="mentioned_d5347e116" xml:lang="trk"><lang/>
                         <w>baš</w>
-                        <gloss><q>голова</q></gloss></mentioned>, <mentioned xml:lang="trk"><lang/>
-                        <w>lyq</w></mentioned> — суффикс). Отсюда же <mentioned xml:lang="kbd"><lang/>
-                        <w>baślyq</w></mentioned>, <mentioned xml:lang="sva"><lang/>
-                        <w>bašlyq</w></mentioned>, <mentioned xml:lang="ka"><lang/>
+                        <gloss><q>голова</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5347e124" xml:lang="trk"><lang/>
+                        <w>lyq</w></mentioned> — суффикс). Отсюда же <mentioned xml:id="mentioned_d5347e129" xml:lang="kbd"><lang/>
+                        <w>baślyq</w></mentioned>, <mentioned xml:id="mentioned_d5347e134" xml:lang="sva"><lang/>
+                        <w>bašlyq</w></mentioned>, <mentioned xml:id="mentioned_d5347e140" xml:lang="ka"><lang/>
                         <w>bašluǧi</w></mentioned> и др. Известно также в южных и восточных
-                    %bрусских%b диалектах.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>8</biblScope></bibl>.</etym>
-                <etym xml:lang="en">From <mentioned xml:lang="trk"><lang/>
+                    %bрусских%b диалектах.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>8</biblScope></bibl>.</etym>
+                <etym xml:lang="en">From <mentioned xml:id="mentioned_d5347e153" xml:lang="trk"><lang/>
                         <w>bašlyq</w>
-                        <gloss><q>bashlyk</q></gloss></mentioned> (derived from <mentioned
-                        xml:lang="trk"><lang/>
+                        <gloss><q>bashlyk</q></gloss></mentioned> (derived from <mentioned xml:id="mentioned_d5347e161" xml:lang="trk"><lang/>
                         <w>baš</w>
-                        <gloss><q>head</q></gloss></mentioned>, <mentioned xml:lang="trk"><lang/>
-                        <w>lyq</w></mentioned> — suffix). Also from here <mentioned xml:lang="kbd"><lang/>
-                        <w>baślyq</w></mentioned>, <mentioned xml:lang="sva"><lang/>
-                        <w>bašlyq</w></mentioned>, <mentioned xml:lang="ka"><lang/>
+                        <gloss><q>head</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5347e169" xml:lang="trk"><lang/>
+                        <w>lyq</w></mentioned> — suffix). Also from here <mentioned xml:id="mentioned_d5347e174" xml:lang="kbd"><lang/>
+                        <w>baślyq</w></mentioned>, <mentioned xml:id="mentioned_d5347e179" xml:lang="sva"><lang/>
+                        <w>bašlyq</w></mentioned>, <mentioned xml:id="mentioned_d5347e185" xml:lang="ka"><lang/>
                         <w>bašluǧi</w></mentioned> etc. The word is also known in South and East
-                    Russian dialects. %n<bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>8</biblScope></bibl>.</etym>
+                    Russian dialects. %n<bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>8</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

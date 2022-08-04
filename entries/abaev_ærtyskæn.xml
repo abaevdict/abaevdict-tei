@@ -1,35 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ærtyskæn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ærtyskæn" xml:lang="os">
-                <form xml:lang="os-x-iron" type="lemma"><orth>ærtyskæn</orth><form type="variant"
-                            ><orth>ærcyskæn</orth></form></form>
+                <form xml:lang="os-x-iron" type="lemma"><orth>ærtyskæn</orth><form type="variant"><orth>ærcyskæn</orth></form></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>artskinæ</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d5748e74"><abv:tr xml:lang="ru">
                         <q>щипцы для угольев</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>coal-tongs</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d5748e86">
                         <quote>ærtyskæn k˳y næ wa, wæd tævd æfsæjnagyl dæ kʼūxæj nyxxæcʒynæ?</quote>
                         <abv:tr xml:lang="ru">
                             <q>если не будет щипцов, то как ты ухватишься за горячее железо
@@ -39,10 +43,9 @@
                             <q>if there is no tongs, then how will you catch hot iron by your
                                 hands?</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Нарт._сказ."
-                            /><biblScope>160</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Нарт._сказ."/><biblScope>160</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5748e105">
                         <quote>Axmæt tamako sīsta, ærtyskænæj pecæj zyng rajsta æmæ jæ
                             ssyǧta</quote>
                         <abv:tr xml:lang="ru">
@@ -57,36 +60,30 @@
                             7</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Может быть, восходит к <mentioned xml:lang="ira"><lang/>
+                <etym xml:lang="ru">Может быть, восходит к <mentioned xml:id="mentioned_d5748e127" xml:lang="ira"><lang/>
                         <w>*aθr-us-kana-</w></mentioned> „чем копаются (%ius-kan%i-) в огне (%iaθr%i
                     )“. В первой части несомненно <ref type="xr" target="#entry_art"/> ‘огонь’. Для
-                    второй части ср. <mentioned xml:lang="fa"><lang/>
+                    второй части ср. <mentioned xml:id="mentioned_d5748e134" xml:lang="fa"><lang/>
                         <w>iskana</w>
-                        <gloss><q>долото</q></gloss></mentioned>, <mentioned xml:lang="sog"><lang/>
+                        <gloss><q>долото</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5748e142" xml:lang="sog"><lang/>
                         <w>ʽskʽn</w>
                         <gloss><q>инструмент для гравировки</q></gloss></mentioned>
-                            (<bibl><author>Benveniste</author><ref type="bibl" target="#ref_TSP"
-                            /><biblScope>3 191-192</biblScope></bibl>) Не ясна, однако, дигорская
-                    форма -%iskinæ%i; возможно, -%iskinæ%i ← *%ius-kanya%i-, как <ref type="xr"
-                        target="#entry_zærinæ"/> ← <ref type="xr" target="#entry_zaranya"/> и т. д.
-                    — <mentioned xml:lang="kbd"><lang/>
+                            (<bibl><author>Benveniste</author><ref type="bibl" target="#ref_TSP"/><biblScope>3 191-192</biblScope></bibl>) Не ясна, однако, дигорская
+                    форма -%iskinæ%i; возможно, -%iskinæ%i ← *%ius-kanya%i-, как <ref type="xr" target="#entry_zærinæ"/> ← <ref type="xr" target="#entry_zaranya"/> и т. д.
+                    — <mentioned xml:id="mentioned_d5748e160" xml:lang="kbd"><lang/>
                         <w>aškinä</w>
                         <gloss><q>кочерга</q></gloss></mentioned> производит впечатление усвоенного
                     из осетинского (дигорского).</etym>
-                <etym xml:lang="en">Probably, it traces back to <mentioned xml:lang="ira"><lang/>
+                <etym xml:lang="en">Probably, it traces back to <mentioned xml:id="mentioned_d5748e172" xml:lang="ira"><lang/>
                         <w>*aθr-us-kana-</w></mentioned> „with what one digs (%ius-kan%i-) in the
                     fire (%iaθr%i )“. There is no doubt that <ref type="xr" target="#entry_art"/>
-                    ‘fire’ is in the first part. As for the second part compare. <mentioned
-                        xml:lang="fa"><lang/>
+                    ‘fire’ is in the first part. As for the second part compare. <mentioned xml:id="mentioned_d5748e179" xml:lang="fa"><lang/>
                         <w>iskana</w>
-                        <gloss><q>chisel</q></gloss></mentioned>, <mentioned xml:lang="sog"><lang/>
+                        <gloss><q>chisel</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5748e187" xml:lang="sog"><lang/>
                         <w>ʽskʽn</w>
                         <gloss><q>an instrument for engraving</q></gloss></mentioned>
-                            (<bibl><author>Benveniste</author><ref type="bibl" target="#ref_TSP"
-                            /><biblScope>3 191-192</biblScope></bibl>) The Digor form -%iskinæ%i,
-                    however, is not clear; probably, -%iskinæ%i ← *%ius-kanya%i-, like <ref
-                        type="xr" target="#entry_zærinæ"/> ← <ref type="xr" target="#entry_zaranya"
-                    /> and so on. — <mentioned xml:lang="kbd"><lang/>
+                            (<bibl><author>Benveniste</author><ref type="bibl" target="#ref_TSP"/><biblScope>3 191-192</biblScope></bibl>) The Digor form -%iskinæ%i,
+                    however, is not clear; probably, -%iskinæ%i ← *%ius-kanya%i-, like <ref type="xr" target="#entry_zærinæ"/> ← <ref type="xr" target="#entry_zaranya"/> and so on. — <mentioned xml:id="mentioned_d5748e205" xml:lang="kbd"><lang/>
                         <w>aškinä</w>
                         <gloss><q>poker</q></gloss></mentioned>seems to be borrowed from Ossetic
                     (Digor).</etym>

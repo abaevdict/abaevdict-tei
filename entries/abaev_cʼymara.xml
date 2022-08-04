@@ -1,42 +1,47 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">cʼymara</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_cʼymara" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>cʼymara</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>cʼimara</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d3210e72"><sense xml:id="sense_d3210e73"><abv:tr xml:lang="ru">
                             <q>топь</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>bog</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d3210e82"><abv:tr xml:lang="ru">
                             <q>грязь</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>dirt</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d3210e91"><abv:tr xml:lang="ru">
                             <q>болото</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>swamp</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d3210e103">
                         <quote>abyrǵytæ typpyry byn cʼymarajy baddysty</quote>
                         <abv:tr xml:lang="ru">
                             <q>абреки сидели под горой в болоте</q>
@@ -44,10 +49,9 @@
                         <abv:tr xml:lang="en">
                             <q>the abreks sat under the mountain in a swamp</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Qazaq"
-                            /><biblScope>210</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Qazaq"/><biblScope>210</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d3210e122" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>Durduri dorii ew cidær cʼimara dærittæ wadæj</quote>
                         <abv:tr xml:lang="ru">
@@ -61,23 +65,18 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Объединяем с <ref type="xr" target="#entry_cʼumur"/> ‘грязный’ и
-                        <ref type="xr" target="#entry_cʼammar"/> ‘мерзкий’. К приведенным под <ref
-                        type="xr" target="#entry_cʼammar"/> параллелям можно добавить <mentioned
-                        xml:lang="ab"><lang/>
+                        <ref type="xr" target="#entry_cʼammar"/> ‘мерзкий’. К приведенным под <ref type="xr" target="#entry_cʼammar"/> параллелям можно добавить <mentioned xml:id="mentioned_d3210e153" xml:lang="ab"><lang/>
                         <w>a-ʒbaàrra</w>
-                        <gloss><q>болото</q></gloss></mentioned>. В грузинском глоссарии <bibl><ref
-                            type="bibl" target="#ref_Чкония"/></bibl> приводится <mentioned
-                        xml:lang="ka"><lang/>
+                        <gloss><q>болото</q></gloss></mentioned>. В грузинском глоссарии <bibl><ref type="bibl" target="#ref_Чкония"/></bibl> приводится <mentioned xml:id="mentioned_d3210e165" xml:lang="ka"><lang/>
                         <w>cʼimaro cʼqali</w></mentioned>. Что это? Ошибка составителя или
                     расщепление значения?</etym>
                 <etym xml:lang="en">We combine the word with <ref type="xr" target="#entry_cʼumur"/>
                     ‘dirty’ and <ref type="xr" target="#entry_cʼammar"/> ‘disgusting’. Apart from
                     parallels quoted in <ref type="xr" target="#entry_cʼammar"/> we could add
-                        <mentioned xml:lang="ab"><lang/>
+                        <mentioned xml:id="mentioned_d3210e180" xml:lang="ab"><lang/>
                         <w>a-ʒbaàrra</w>
-                        <gloss><q>swamp</q></gloss></mentioned>. In Georgian glossary <bibl><ref
-                            type="bibl" target="#ref_Чкония"/></bibl> there is an expression
-                        <mentioned xml:lang="ka"><lang/>
+                        <gloss><q>swamp</q></gloss></mentioned>. In Georgian glossary <bibl><ref type="bibl" target="#ref_Чкония"/></bibl> there is an expression
+                        <mentioned xml:id="mentioned_d3210e192" xml:lang="ka"><lang/>
                         <w>cʼimaro cʼqali</w></mentioned>. What is this? Compiler's mistake or split
                     of the meaning?</etym>
             </entry>

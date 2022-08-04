@@ -1,34 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">eræʒyp</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_eræʒyp" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>eræʒyp</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>eræʒip</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d1749e72"><abv:tr xml:lang="ru">
                         <q>вид ружья, высоко ценимый в старину</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>highly valued in the old times shotgun</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d1749e84">
                         <quote>topp eræʒypp, qrimag</quote>
                         <abv:tr xml:lang="ru">
                             <q>ружье %sерадзып%s, крымское</q>
@@ -38,7 +43,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>65</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1749e103">
                         <quote>Tugany eræʒypp ænæryncajgæjæ arvaw nærydy</quote>
                         <abv:tr xml:lang="ru">
                             <q>%sерадзып%s Тугана гремел, не смолкая, как гром небесный</q>
@@ -49,7 +54,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Сека"/><biblScope>100</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1749e122">
                         <quote>eræʒypp īftyǧd næw</quote>
                         <abv:tr xml:lang="ru">
                             <q>ружье %sерадзып%s не заряжено</q>
@@ -59,7 +64,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>98</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1749e141">
                         <quote>wæjyg sæ eræžyppæj sævyn bajdydta æmæ næmyg lawyz kodta læpputy
                             riwyl</quote>
                         <abv:tr xml:lang="ru">
@@ -73,7 +78,7 @@
                         <bibl><ref type="bibl" target="#src_ЮОПам."/><biblScope>II
                             106</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1749e160">
                         <quote>ūj sæ bæx wyd syǧdæg sawloxag, ūj sæ topp wyd syǧdæg eræžypp</quote>
                         <abv:tr xml:lang="ru">
                             <q>уж и конь у них был чистой шавлоховской (породы), уж и ружье у них
@@ -83,30 +88,27 @@
                             <q>their horse was pure Shavlokhov breed, and their gun was a real
                                 %seræʒyp%s brand</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_ОЯФ_I"
-                            /><biblScope>499</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_ОЯФ_I"/><biblScope>499</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Усвоено у соседей: <mentioned xml:lang="kbd"><lang/>
+                <etym xml:lang="ru">Усвоено у соседей: <mentioned xml:id="mentioned_d1749e182" xml:lang="kbd"><lang/>
                         <w>(j)ereziba</w>
                         <gloss><q>старинная марка ружья</q></gloss></mentioned>
                             (<bibl><biblScope>Каб. фольклор. 1936, стр. 641</biblScope></bibl>. —
                             <bibl><ref type="bibl" target="#ref_СМК"/><biblScope>XXV %i3%i
-                            20</biblScope></bibl>), <mentioned xml:lang="ka"><lang/>
+                            20</biblScope></bibl>), <mentioned xml:id="mentioned_d1749e197" xml:lang="ka"><lang/>
                         <w>eražiba, ereʒ̆ibi</w>
                         <gloss><q>вид старинного ружья</q></gloss></mentioned>(%bпшав., хевсур.%b)
                             (<bibl><author>Важа Пшавела</author><biblScope>Этнографические труды,
                             стр. 108</biblScope></bibl>). По устному сообщению проф. Н. Ф.
                     %sЯковлева%s, %iErežib%i — собственное имя прославленного в свое время
                     оружейного мастера в западном Кавказе.</etym>
-                <etym xml:lang="en">Acquired from the neighbouring languages: <mentioned
-                        xml:lang="kbd"><lang/>
+                <etym xml:lang="en">Acquired from the neighbouring languages: <mentioned xml:id="mentioned_d1749e213" xml:lang="kbd"><lang/>
                         <w>(j)ereziba</w>
                         <gloss><q>ancient shotgun brand</q></gloss></mentioned>
                             (<bibl><biblScope>Каб. фольклор. 1936, стр. 641</biblScope></bibl>. —
                             <bibl><ref type="bibl" target="#ref_СМК"/><biblScope>XXV %i3%i
-                            20</biblScope></bibl>), <mentioned xml:lang="ka"
-                        dialect="ka-x-pshav ka-x-khevs"><lang/>
+                            20</biblScope></bibl>), <mentioned xml:id="mentioned_d1749e228" xml:lang="ka" dialect="ka-x-pshav ka-x-khevs"><lang/>
                         <w>eražiba, ereʒ̆ibi</w>
                         <gloss><q>ancient shotgun type</q></gloss></mentioned> (<bibl><author>Важа
                             Пшавела</author><biblScope>Этнографические труды, стр.

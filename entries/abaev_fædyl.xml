@@ -1,47 +1,52 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">fædyl</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_fædyl" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>fædyl</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>fædbæl</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d4872e72"><sense xml:id="sense_d4872e73"><abv:tr xml:lang="ru">
                             <q>следом</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>immediately after</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d4872e82"><abv:tr xml:lang="ru">
                             <q>за</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>behind</q>
                         </abv:tr></sense></sense>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d4872e92"><sense xml:id="sense_d4872e93"><abv:tr xml:lang="ru">
                             <q>из-за</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>because of</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d4872e102"><abv:tr xml:lang="ru">
                             <q>вследствие</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>as a result of</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4872e114">
                         <quote>jæ fædyl</quote>
                         <abv:tr xml:lang="ru">
                             <q>вслед за тем</q>
@@ -49,10 +54,9 @@
                         <abv:tr xml:lang="en">
                             <q>after that</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"
-                            /><biblScope>123</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>123</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4872e133">
                         <quote>kæstær mæ fædyl næ cæwy xæstmæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>младший не следует за мной в бой</q>
@@ -62,7 +66,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>13</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4872e152">
                         <quote>æz sæfty mærǧty fædyl cæwyn</quote>
                         <abv:tr xml:lang="ru">
                             <q>я иду следом за гибельными птицами</q>
@@ -72,7 +76,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_ОЭп."/><biblScope>14</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4872e171" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>woci fændoni fædbæl miting baunaffæ kodta eci ǧuddagi fædbæl fæjnæ
                             somi kud isxarz kænæn, zæǧgæ</quote>
@@ -84,59 +88,51 @@
                             <q>according to this wish, the meeting decided to donate a ruble per
                                 person for this cause</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_SD"
-                            /><biblScope>251%l4%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_SD"/><biblScope>251%l4%l</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Местный внешний падеж от %ifæd%i ‘след’, технизовавшийся в
                     послеложном употреблении. Аналогичное (предложно-послеложное и наречное)
-                    употребление не чуждо и другим индоевропейским языкам: ср. <mentioned
-                        xml:lang="oru"><lang/>
+                    употребление не чуждо и другим индоевропейским языкам: ср. <mentioned xml:id="mentioned_d4872e197" xml:lang="oru"><lang/>
                         <w>padak</w>
-                        <gloss><q>подобно</q></gloss></mentioned>, <mentioned xml:lang="fa"><lang/>
+                        <gloss><q>подобно</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4872e205" xml:lang="fa"><lang/>
                         <w>pai</w>
-                        <gloss><q>за</q></gloss></mentioned>, <mentioned xml:lang="fa"><w/>
-                        <gloss><q>сзади</q></gloss></mentioned> (<mentioned xml:lang="fa"><lang/>
+                        <gloss><q>за</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4872e213" xml:lang="fa"><w/>
+                        <gloss><q>сзади</q></gloss></mentioned> (<mentioned xml:id="mentioned_d4872e219" xml:lang="fa"><lang/>
                         <w>pai</w>
-                        <gloss><q>след</q></gloss></mentioned>), <mentioned xml:lang="xpr"><lang/>
+                        <gloss><q>след</q></gloss></mentioned>), <mentioned xml:id="mentioned_d4872e227" xml:lang="xpr"><lang/>
                         <w>pt, pd</w>
-                        <gloss><q>с</q></gloss></mentioned>, <mentioned xml:lang="xpr"><w/>
-                        <gloss><q>через</q></gloss></mentioned>, <mentioned xml:lang="xpr"><w/>
-                        <gloss><q>благодаря</q></gloss></mentioned>(<bibl><ref type="bibl"
-                            target="#ref_Henning._BBB"/><biblScope>113</biblScope></bibl>),
-                        <mentioned xml:lang="peo"><lang/>
+                        <gloss><q>с</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4872e236" xml:lang="xpr"><w/>
+                        <gloss><q>через</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4872e242" xml:lang="xpr"><w/>
+                        <gloss><q>благодаря</q></gloss></mentioned>(<bibl><ref type="bibl" target="#ref_Henning._BBB"/><biblScope>113</biblScope></bibl>),
+                        <mentioned xml:id="mentioned_d4872e252" xml:lang="peo"><lang/>
                         <w>ni-padiy</w>
-                        <gloss><q>следом</q></gloss></mentioned>, <mentioned xml:lang="peo"><w/>
-                        <gloss><q>по пятам</q></gloss></mentioned>, <mentioned xml:lang="grc"><lang/>
+                        <gloss><q>следом</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4872e260" xml:lang="peo"><w/>
+                        <gloss><q>по пятам</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4872e266" xml:lang="grc"><lang/>
                         <w>πεδά</w>
-                        <gloss><q>следом</q></gloss></mentioned>, <mentioned xml:lang="grc"><w/>
-                        <gloss><q>за</q></gloss></mentioned> и др. См. <ref type="xr"
-                        target="#entry_fæd"/>.</etym>
+                        <gloss><q>следом</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4872e275" xml:lang="grc"><w/>
+                        <gloss><q>за</q></gloss></mentioned> и др. См. <ref type="xr" target="#entry_fæd"/>.</etym>
                 <etym xml:lang="en">A superessive case from of %ifæd%i ‘trace’, which started to be
                     used as a postposition. The similar (prepositional, postpositional and
                     adverbial) use is widespread in other Indo-European languages as well: cf.
-                        <mentioned xml:lang="oru"><lang/>
+                        <mentioned xml:id="mentioned_d4872e286" xml:lang="oru"><lang/>
                         <w>padak</w>
-                        <gloss><q>likewise</q></gloss></mentioned>, <mentioned xml:lang="fa"><lang/>
+                        <gloss><q>likewise</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4872e294" xml:lang="fa"><lang/>
                         <w>pai</w>
-                        <gloss><q>behind</q></gloss></mentioned> (<mentioned xml:lang="fa"><lang/>
+                        <gloss><q>behind</q></gloss></mentioned> (<mentioned xml:id="mentioned_d4872e302" xml:lang="fa"><lang/>
                         <w>pai</w>
-                        <gloss><q>trace</q></gloss></mentioned>), <mentioned xml:lang="xpr"><lang/>
+                        <gloss><q>trace</q></gloss></mentioned>), <mentioned xml:id="mentioned_d4872e310" xml:lang="xpr"><lang/>
                         <w>pt, pd</w>
-                        <gloss><q>with</q></gloss></mentioned>, <mentioned xml:lang="xpr"><w/>
-                        <gloss><q>through</q></gloss></mentioned>, <mentioned xml:lang="xpr"><w/>
-                        <gloss><q>thanks to</q></gloss></mentioned>(<bibl><ref type="bibl"
-                            target="#ref_Henning._BBB"/><biblScope>113</biblScope></bibl>),
-                        <mentioned xml:lang="peo"><lang/>
+                        <gloss><q>with</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4872e318" xml:lang="xpr"><w/>
+                        <gloss><q>through</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4872e325" xml:lang="xpr"><w/>
+                        <gloss><q>thanks to</q></gloss></mentioned>(<bibl><ref type="bibl" target="#ref_Henning._BBB"/><biblScope>113</biblScope></bibl>),
+                        <mentioned xml:id="mentioned_d4872e335" xml:lang="peo"><lang/>
                         <w>ni-padiy</w>
-                        <gloss><q>следом</q></gloss></mentioned>, <mentioned xml:lang="peo"><w/>
-                        <gloss><q>upon smb.'s heels</q></gloss></mentioned>, <mentioned
-                        xml:lang="grc"><lang/>
+                        <gloss><q>следом</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4872e343" xml:lang="peo"><w/>
+                        <gloss><q>upon smb.'s heels</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4872e349" xml:lang="grc"><lang/>
                         <w>πεδά</w>
-                        <gloss><q>immediately after</q></gloss></mentioned>, <mentioned
-                        xml:lang="grc"><w/>
-                        <gloss><q>behind</q></gloss></mentioned> etc. See <ref type="xr"
-                        target="#entry_fæd"/>.</etym>
+                        <gloss><q>immediately after</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4872e357" xml:lang="grc"><w/>
+                        <gloss><q>behind</q></gloss></mentioned> etc. See <ref type="xr" target="#entry_fæd"/>.</etym>
             </entry>
         </body>
     </text>

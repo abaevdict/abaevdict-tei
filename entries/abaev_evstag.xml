@@ -1,50 +1,53 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">evstag</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_evstag" xml:lang="os-x-digor">
                 <form type="lemma"><orth>evstag</orth></form>
                 <usg><lang/></usg>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d5144e72"><abv:tr xml:lang="ru">
                         <q>редкий</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>rare</q>
                     </abv:tr></sense>
-                <re>
+                <re xml:id="re_d5144e82">
                     <form type="lemma"><orth>evstagmæ</orth></form>
-                    <sense><sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d5144e87"><sense xml:id="sense_d5144e88"><abv:tr xml:lang="ru">
                                 <q>изредка</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>rarely</q>
-                            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                            </abv:tr></sense><sense xml:id="sense_d5144e97"><abv:tr xml:lang="ru">
                                 <q>время от времени</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>from time to time</q>
                             </abv:tr></sense></sense>
-                    <note type="comment" xml:lang="ru">; ср. и. <ref type="xr" target="#entry_æstæm"
-                        />, %iæstærn xatt%i</note>
-                    <note type="comment" xml:lang="en">; compare Iron <ref type="xr"
-                            target="#entry_æstæm"/>, %iæstærn xatt%i</note>
+                    <note type="comment" xml:lang="ru">; ср. и. <ref type="xr" target="#entry_æstæm"/>, %iæstærn xatt%i</note>
+                    <note type="comment" xml:lang="en">; compare Iron <ref type="xr" target="#entry_æstæm"/>, %iæstærn xatt%i</note>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d5144e120">
                         <quote>dumgæ adæjmagi ǧostæmæ dællæj, arf komæj, Iræfi evstag sur-sur
                             iscæjxæssidæ</quote>
                         <abv:tr xml:lang="ru">
@@ -55,10 +58,9 @@
                             <q>the wind brought the rare (intermittent) noise of the Iraf (river) to
                                 human ears from below, from a deep gorge</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Bes._Ka_ke"
-                            /><biblScope>6</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Bes._Ka_ke"/><biblScope>6</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5144e139">
                         <quote>tævdæ æʒæræg bæstiti evstag rawænti fæwuj don</quote>
                         <abv:tr xml:lang="ru">
                             <q>в жарких пустынных странах в редких местах бывает вода</q>
@@ -68,7 +70,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_AK"/><biblScope>I 48</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5144e158">
                         <quote>wo evstag dæ zundæj…</quote>
                         <abv:tr xml:lang="ru">
                             <q>будь ты хоть редким по уму…</q>
@@ -76,8 +78,7 @@
                         <abv:tr xml:lang="en">
                             <q>even if your intellect is rare…</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Gurdž._Æduli"
-                            /><biblScope>90</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Gurdž._Æduli"/><biblScope>90</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Отделяя суффикс %i-ag%i, получаем %ievst%i, в котором можно
@@ -88,8 +89,7 @@
                 <etym xml:lang="en">Separating the suffix %i-ag%i, we get %ievst%i, in which one may
                     see the old past participle from %ievun%i ‘change’. Such form (with an
                     inchoative %is%i) might have existed alongside with the usual %iivd%i, as
-                    %iyzdyxst%i exists alongside with %iyzdyxt%i ‘twisted’ (see <ref type="xr"
-                        target="#entry_yzdūxyn"/>) etc.</etym>
+                    %iyzdyxst%i exists alongside with %iyzdyxt%i ‘twisted’ (see <ref type="xr" target="#entry_yzdūxyn"/>) etc.</etym>
             </entry>
         </body>
     </text>

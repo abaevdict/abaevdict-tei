@@ -1,64 +1,69 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">awwon</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_awwon" xml:lang="os">
                 <form type="lemma"><orth>awwon</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d3899e69"><sense xml:id="sense_d3899e70"><abv:tr xml:lang="ru">
                             <q>тень</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>shadow</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d3899e79"><abv:tr xml:lang="ru">
                             <q>прикрытие</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>cover</q>
                         </abv:tr></sense></sense>
-                <re>
+                <re xml:id="re_d3899e89">
                     <form type="lemma"><orth>xūrawwon</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d3899e94"><abv:tr xml:lang="ru">
                             <q>зонт</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>umbrella</q>
                         </abv:tr></sense>
                 </re>
-                <re>
+                <re xml:id="re_d3899e105">
                     <form type="lemma"><orth>fæsawwonmæ</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d3899e110"><abv:tr xml:lang="ru">
                             <q>за глаза</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>behind oneʼs back</q>
                         </abv:tr></sense>
                 </re>
-                <re>
+                <re xml:id="re_d3899e121">
                     <form type="lemma"><orth>fæawwon īs</orth></form>
-                    <sense><sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d3899e126"><sense xml:id="sense_d3899e127"><abv:tr xml:lang="ru">
                                 <q>исчез</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>disappeared</q>
-                            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                            </abv:tr></sense><sense xml:id="sense_d3899e136"><abv:tr xml:lang="ru">
                                 <q>скрылся из глаз</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>disappeared from sight</q>
                             </abv:tr></sense></sense>
                     <abv:exampleGrp>
-                        <abv:example>
+                        <abv:example xml:id="example_d3899e148">
                             <quote>Ajssæ, Axmætmæ fækæs-fækæs gængæ, kʼ˳ybyræj fæawwon īs</quote>
                             <abv:tr xml:lang="ru">
                                 <q>Айсса, поминутно оглядываясь на Ахмата, скрылась за бугром</q>
@@ -67,10 +72,9 @@
                                 <q>Aissa, constantly looking back at Akhmat, disappeared behind the
                                     hill</q>
                             </abv:tr>
-                            <bibl><ref type="bibl" target="#src_Сека"
-                                /><biblScope>57</biblScope></bibl>
+                            <bibl><ref type="bibl" target="#src_Сека"/><biblScope>57</biblScope></bibl>
                         </abv:example>
-                        <abv:example xml:lang="os-x-digor">
+                        <abv:example xml:id="example_d3899e167" xml:lang="os-x-digor">
                             <usg><lang/></usg>
                             <quote>mæ farsmæ awwonæw du cudtæ</quote>
                             <abv:tr xml:lang="ru">
@@ -79,10 +83,9 @@
                             <abv:tr xml:lang="en">
                                 <q>you walked next to me like a shadow</q>
                             </abv:tr>
-                            <bibl><ref type="bibl" target="#src_Тайм._Ӕмдз."
-                                    /><biblScope>21</biblScope></bibl>
+                            <bibl><ref type="bibl" target="#src_Тайм._Ӕмдз."/><biblScope>21</biblScope></bibl>
                         </abv:example>
-                        <abv:example xml:lang="os-x-digor">
+                        <abv:example xml:id="example_d3899e189" xml:lang="os-x-digor">
                             <usg><lang/></usg>
                             <quote>etæ… sæ cæstiti razæj fæjjawwon æncæ</quote>
                             <abv:tr xml:lang="ru">
@@ -91,13 +94,12 @@
                             <abv:tr xml:lang="en">
                                 <q>they disappeared from their eyes</q>
                             </abv:tr>
-                            <bibl><ref type="bibl" target="#src_Диг._сказ."
-                                    /><biblScope>24</biblScope></bibl>
+                            <bibl><ref type="bibl" target="#src_Диг._сказ."/><biblScope>24</biblScope></bibl>
                         </abv:example>
                     </abv:exampleGrp>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d3899e216">
                         <quote>styr ængūz bælæstæ kæræʒījæ kæraʒīmæ awwon æppærstoj</quote>
                         <abv:tr xml:lang="ru">
                             <q>большие деревья грецкого ореха бросали тень друг к другу</q>
@@ -107,7 +109,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Сека"/><biblScope>96</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3899e235">
                         <quote>bælasy awwon</quote>
                         <abv:tr xml:lang="ru">
                             <q>под тенью дерева</q>
@@ -116,7 +118,7 @@
                             <q>under the shade of a tree</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3899e250">
                         <quote>jæ awwonæj dær tærsgæ kæny</quote>
                         <abv:tr xml:lang="ru">
                             <q>он боится даже своей тени</q>
@@ -125,7 +127,7 @@
                             <q>he is afraid even of his shadow</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3899e265">
                         <quote>kʼūxawwonæj akast saw komy bynmæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>сделав рукой тень (над глазами), (юноша) посмотрел на дно черного
@@ -139,29 +141,24 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Может быть, восходит к %i*āyavana%i с ассимиляцией %iу%i, ср.
-                        <mentioned xml:lang="ae"><lang/>
+                        <mentioned xml:id="mentioned_d3899e287" xml:lang="ae"><lang/>
                         <w>ayaona-</w>
-                        <gloss><q>жилище</q></gloss></mentioned>, <mentioned xml:lang="ae"
-                            ><w>hu-āyaonəm</w>
-                        <gloss><q>доброе жилище</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Yašt"/><biblScope>%i3%i 3</biblScope></bibl>). Или к
-                        <mentioned xml:lang="fa"><lang/>
+                        <gloss><q>жилище</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3899e295" xml:lang="ae"><w>hu-āyaonəm</w>
+                        <gloss><q>доброе жилище</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Yašt"/><biblScope>%i3%i 3</biblScope></bibl>). Или к
+                        <mentioned xml:id="mentioned_d3899e305" xml:lang="fa"><lang/>
                         <w>aivān</w>
-                        <gloss><q>веранда</q></gloss></mentioned>? Из осетинского усвоено <mentioned
-                        xml:lang="krc-x-balkar"><lang/>
+                        <gloss><q>веранда</q></gloss></mentioned>? Из осетинского усвоено <mentioned xml:id="mentioned_d3899e313" xml:lang="krc-x-balkar"><lang/>
                         <w>awana</w>
                         <gloss><q>тень</q></gloss></mentioned>.</etym>
                 <etym xml:lang="en">Probably goes back to %i*āyavana%i with assimilation of %iу%i,
-                    cf. <mentioned xml:lang="ae"><lang/>
+                    cf. <mentioned xml:id="mentioned_d3899e324" xml:lang="ae"><lang/>
                         <w>ayaona-</w>
-                        <gloss><q>dwelling</q></gloss></mentioned>, <mentioned xml:lang="ae"
-                            ><w>hu-āyaonəm</w>
-                        <gloss><q>good dwelling</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Yašt"/><biblScope>%i3%i 3</biblScope></bibl>). Or to
-                        <mentioned xml:lang="fa"><lang/>
+                        <gloss><q>dwelling</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3899e332" xml:lang="ae"><w>hu-āyaonəm</w>
+                        <gloss><q>good dwelling</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Yašt"/><biblScope>%i3%i 3</biblScope></bibl>). Or to
+                        <mentioned xml:id="mentioned_d3899e342" xml:lang="fa"><lang/>
                         <w>aivān</w>
                         <gloss><q>veranda</q></gloss></mentioned>? Borrowed from Ossetic is
-                        <mentioned xml:lang="krc-x-balkar"><lang/>
+                        <mentioned xml:id="mentioned_d3899e350" xml:lang="krc-x-balkar"><lang/>
                         <w>awana</w>
                         <gloss><q>shadow</q></gloss></mentioned>.</etym>
             </entry>

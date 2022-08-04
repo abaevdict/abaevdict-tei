@@ -1,41 +1,46 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ænakkag</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ænakkag" xml:lang="os">
                 <form type="lemma"><orth>ænakkag</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d398e69"><sense xml:id="sense_d398e70"><abv:tr xml:lang="ru">
                             <q>недостойный</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>unworthy</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d398e79"><abv:tr xml:lang="ru">
                             <q>гнусный</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>vile</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d398e88"><abv:tr xml:lang="ru">
                             <q>негодяй</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>villain</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d398e100">
                         <quote>īw ænakkag syly tyxxæj dæxī safys</quote>
                         <abv:tr xml:lang="ru">
                             <q>ради одной недостойной женщины ты себя губишь</q>
@@ -45,7 +50,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Сека"/><biblScope>48</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d398e119">
                         <quote>kæræʒī fæcæǧdūt, ænakkægtæ!</quote>
                         <abv:tr xml:lang="ru">
                             <q>чтобы вам перебить друг друга, негодники!</q>
@@ -53,10 +58,9 @@
                         <abv:tr xml:lang="en">
                             <q>so you can kill each other, scoundrels!</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Čerm."
-                            /><biblScope>166</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Čerm."/><biblScope>166</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d398e138">
                         <quote>ūcy ænakkagmæ acæwyny bæsty mæm mælæt x˳yzdær fækast</quote>
                         <abv:tr xml:lang="ru">
                             <q>чем выйти замуж за этого негодяя, я предпочла смерть</q>
@@ -67,11 +71,9 @@
                         <bibl><ref type="bibl" target="#src_Брит."/><biblScope>47</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Сложение из %iænæ%i + %iakkag%i. См. <ref type="xr"
-                        target="#entry_akkag"/> ‘достойный’ и <ref type="xr" target="#entry_ænæ"/>
+                <etym xml:lang="ru">Сложение из %iænæ%i + %iakkag%i. См. <ref type="xr" target="#entry_akkag"/> ‘достойный’ и <ref type="xr" target="#entry_ænæ"/>
                     ‘не-’, ‘без-’.</etym>
-                <etym xml:lang="en">Compound of %iænæ%i + %iakkag%i. See <ref type="xr"
-                        target="#entry_akkag"/> ‘worthy’ and <ref type="xr" target="#entry_ænæ"/>
+                <etym xml:lang="en">Compound of %iænæ%i + %iakkag%i. See <ref type="xr" target="#entry_akkag"/> ‘worthy’ and <ref type="xr" target="#entry_ænæ"/>
                     ‘un-’, ‘without-’.</etym>
             </entry>
         </body>

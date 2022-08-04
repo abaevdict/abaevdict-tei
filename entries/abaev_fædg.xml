@@ -1,27 +1,31 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">fædg</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_fædg" xml:lang="os">
-                <form xml:lang="os-x-iron" type="lemma"><orth>fædg</orth><form type="variant"
-                            ><orth>fædk</orth></form></form>
+                <form xml:lang="os-x-iron" type="lemma"><orth>fædg</orth><form type="variant"><orth>fædk</orth></form></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>fædgæ</orth></form>
                 <sense n="1" xml:id="sense_fædg.1"><abv:tr xml:lang="ru">
                         <q>обычай</q>
@@ -33,12 +37,11 @@
                     </abv:tr><abv:tr xml:lang="en">
                         <q>descendants</q>
                     </abv:tr></sense>
-                <sense n="3" xml:id="sense_fædg.3" xml:lang="os-x-digor"
-                            ><usg><lang/></usg><sense><abv:tr xml:lang="ru">
+                <sense n="3" xml:id="sense_fædg.3" xml:lang="os-x-digor"><usg><lang/></usg><sense xml:id="sense_d4989e97"><abv:tr xml:lang="ru">
                             <q>дань</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>tribute</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d4989e106"><abv:tr xml:lang="ru">
                             <q>подать</q>
                         </abv:tr><note type="comment" xml:lang="ru"> (в смысле
                             „следуемое“)</note><note type="comment" xml:lang="en"> (in the sense
@@ -46,12 +49,10 @@
                             <q>tax</q>
                         </abv:tr><note type="comment" xml:lang="ru"> (в смысле
                             „следуемое“)</note><note type="comment" xml:lang="en"> (in the sense
-                            ‘thing that should be done’)</note></sense><note type="comment"
-                        xml:lang="ru">в дигорском употреблялось также в значении</note><note
-                        type="comment" xml:lang="en">in Digor it was also used in the
+                            ‘thing that should be done’)</note></sense><note type="comment" xml:lang="ru">в дигорском употреблялось также в значении</note><note type="comment" xml:lang="en">in Digor it was also used in the
                     meaning</note></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4989e131">
                         <quote>Narty fædk næ fexalʒynæn</quote>
                         <abv:tr xml:lang="ru">
                             <q>я не нарушу обычая Нартов</q>
@@ -59,10 +60,9 @@
                         <abv:tr xml:lang="en">
                             <q>I will not break the Narts custom</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Нарт._сказ."
-                            /><biblScope>205</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Нарт._сказ."/><biblScope>205</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4989e150">
                         <quote>mælæt fædk ū, æmæ ūmæj tærsyn næ qæwy</quote>
                         <abv:tr xml:lang="ru">
                             <q>смерть — в порядке вещей, и ее не надо бояться</q>
@@ -74,7 +74,7 @@
                         <bibl><ref type="bibl" target="#src_ЮОПам."/><biblScope>I
                             47</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4989e169">
                         <quote>zæxxon adæmmæ cy fædǵytæ īs, udon myn fæzūr</quote>
                         <abv:tr xml:lang="ru">
                             <q>расскажи мне, какие обычаи у земных людей</q>
@@ -85,7 +85,7 @@
                         <bibl><ref type="bibl" target="#src_ЮОПам."/><biblScope>II
                             78</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4989e188">
                         <quote>X˳ysaw zaǧta: asy q˳yddag fædk fæwæg, fælæ sūsæg mak˳y bawæt</quote>
                         <abv:tr xml:lang="ru">
                             <q>Бог сказал: пусть это дело (женская неверность) станет обычаем, но
@@ -98,7 +98,7 @@
                         <bibl><ref type="bibl" target="#src_ЮОПам."/><biblScope>II
                             95</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4989e207" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>næbal erun fædgi adæ: kuvd, minasæ ma nivond</quote>
                         <abv:tr xml:lang="ru">
@@ -111,7 +111,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>25</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4989e230" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>mærdti ci fædgæ, fændag es womæj xwarz rakoræ</quote>
                         <abv:tr xml:lang="ru">
@@ -125,7 +125,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
                             169</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4989e252" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>mærdtæj racæwun fædgæ næ adtæj</quote>
                         <abv:tr xml:lang="ru">
@@ -137,7 +137,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
                             78</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4989e274" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>„næ feǧuston” make zæǧæd ǧazti fædgæ, ǧazti æǧdæw</quote>
                         <abv:tr xml:lang="ru">
@@ -150,7 +150,7 @@
                         <bibl><ref type="bibl" target="#src_MD"/><biblScope>1936 I
                             72</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4989e296">
                         <quote>fædǵy qædæn fæwaʒyn, fædǵy qædæn aværyn ḱysyl īsty</quote>
                         <abv:tr xml:lang="ru">
                             <q>оставить или дать малое количество чего-либо для приличия, чтобы не
@@ -161,7 +161,7 @@
                                 violate custom</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4989e311" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>ændon kard din dæ bazi buni fædki ǧædæj æværun</quote>
                         <abv:tr xml:lang="ru">
@@ -170,12 +170,11 @@
                         <abv:tr xml:lang="en">
                             <q>I put a steel knife under your pillow according to custom</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Gurdž._Wadž."
-                            /><biblScope>4</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Gurdž._Wadž."/><biblScope>4</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4989e336">
                         <quote>sæ fædkæn cærænbonty adæmy ræǧy racæwæn nal wydait</quote>
                         <abv:tr xml:lang="ru">
                             <q>их потомству нельзя было бы больше выйти в ряды людей</q>
@@ -186,7 +185,7 @@
                         <bibl><ref type="bibl" target="#src_ЮОПам."/><biblScope>II
                             129</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4989e355">
                         <quote>fyd-vædk</quote>
                         <abv:tr xml:lang="ru">
                             <q>дурное потомство</q>
@@ -199,7 +198,7 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <abv:exampleGrp>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4989e377" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>fædgæ di agoruj; kizgæ ma læqwæn — etæ ba æ fædgæ æncæ</quote>
                         <abv:tr xml:lang="ru">
@@ -214,7 +213,7 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Образовано от <ref type="xr" target="#entry_fæd"/> ‘след’
-                        (<mentioned xml:lang="x-oldirn"><lang/>
+                        (<mentioned xml:id="mentioned_d4989e404" xml:lang="x-oldirn"><lang/>
                         <w>pada-</w></mentioned>) с помощью суффикса %i-k%i(%ig%i); ср. тот же
                     суффикс в <ref type="xr" target="#entry_rong"/> и др. Идеосемантика ‘след’ —
                     ‘обычай’ не требует особых пояснений; ср. в русском, с одной стороны, %iслед%i,
@@ -224,28 +223,26 @@
                     принято одалживать огонь“). Эти формы предполагают как будто существование
                     отыменного глагола %i*fædǵyn%i. Вероятнее, однако, что перед нами сращение слова
                     %ifædg%i с вспомогательным глаголом %iun%i ‘быть’. Слово %ifædg%i, %ifædk%i
-                    имеет яркое соответствие в <mentioned xml:lang="sog"><lang/>
+                    имеет яркое соответствие в <mentioned xml:id="mentioned_d4989e411" xml:lang="sog"><lang/>
                         <w>*padg-, *paδk-</w><note type="comment" xml:lang="ru"> (%ipdgʼ, рδkʼ,
                             pδkh%i)</note>
-                        <gloss><q>обычай</q></gloss></mentioned>, <mentioned xml:lang="sog"><w/>
-                        <gloss><q>долг</q></gloss></mentioned>, <mentioned xml:lang="sog"><w/>
+                        <gloss><q>обычай</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4989e421" xml:lang="sog"><w/>
+                        <gloss><q>долг</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4989e428" xml:lang="sog"><w/>
                         <gloss><q>закон</q></gloss></mentioned> (в буддийских текстах передает
-                        <mentioned xml:lang="sa"><lang/>
+                        <mentioned xml:id="mentioned_d4989e434" xml:lang="sa"><lang/>
                         <w>dharma-</w>
                         <gloss><q>закон</q></gloss></mentioned>). Достаточных оснований производить
-                    это иранское слово через <mentioned xml:lang="syr"><lang/>
+                    это иранское слово через <mentioned xml:id="mentioned_d4989e442" xml:lang="syr"><lang/>
                         <w>ptq</w>
-                        <gloss><q>таблица</q></gloss></mentioned> от <mentioned xml:lang="grc"><lang/>
+                        <gloss><q>таблица</q></gloss></mentioned> от <mentioned xml:id="mentioned_d4989e450" xml:lang="grc"><lang/>
                         <w>πιττάχιον</w>
                         <gloss><q>таблица</q></gloss></mentioned> (<bibl><biblScope>А. von
                             %sGabain%s und %sRachmati%s. Turkische Turfan-Texte %i6%i
                         72</biblScope></bibl>; <bibl><biblScope xml:lang="ru">А. von %sGabain%s.
-                            AIttürkische Grammatik. Leipzig, 1950, стр. 304</biblScope></bibl>) не имеется. См. <ref type="xr"
-                        target="#entry_fæd"/> ‘след’. Ср. <ref type="xr" target="#entry_ævæǵiaw"/>
-                            ‘отменный’.%n<bibl><ref type="bibl" target="#ref_Bailey._Asica"
-                            /><biblScope>11–12</biblScope></bibl>.</etym>
+                            AIttürkische Grammatik. Leipzig, 1950, стр. 304</biblScope></bibl>) не имеется. См. <ref type="xr" target="#entry_fæd"/> ‘след’. Ср. <ref type="xr" target="#entry_ævæǵiaw"/>
+                            ‘отменный’.%n<bibl><ref type="bibl" target="#ref_Bailey._Asica"/><biblScope>11–12</biblScope></bibl>.</etym>
                 <etym xml:lang="en">Derived from <ref type="xr" target="#entry_fæd"/> ‘trace’
-                        (<mentioned xml:lang="x-oldirn"><lang/>
+                        (<mentioned xml:id="mentioned_d4989e479" xml:lang="x-oldirn"><lang/>
                         <w>pada-</w></mentioned>) with the suffix %i-k%i(%ig%i); cf. the same suffix
                     in <ref type="xr" target="#entry_rong"/> etc. Ideosemantics of ‘trace’ —
                     ‘custom’ does not require special explanation; cf. Russian, on the one hand,
@@ -256,27 +253,24 @@
                     sunset’). These forms suggest as if there used to be a denominal verb
                     %i*fædǵyn%i. However, it is more probable that this word represents a fusion of
                     the word %ifædg%i with the auxilary verb %iun%i ‘be’. The word %ifædg%i,
-                    %ifædk%i has a correspondence in <mentioned xml:lang="sog"><lang/>
+                    %ifædk%i has a correspondence in <mentioned xml:id="mentioned_d4989e486" xml:lang="sog"><lang/>
                         <w>*padg-, *paδk-</w><note type="comment" xml:lang="en"> (%ipdgʼ, рδkʼ,
                             pδkh%i)</note>
-                        <gloss><q>custom</q></gloss></mentioned>, <mentioned xml:lang="sog"><w/>
-                        <gloss><q>duty</q></gloss></mentioned>, <mentioned xml:lang="sog"><w/>
+                        <gloss><q>custom</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4989e496" xml:lang="sog"><w/>
+                        <gloss><q>duty</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4989e503" xml:lang="sog"><w/>
                         <gloss><q>law</q></gloss></mentioned> (in buddhistic texts it is conveyed by
-                        <mentioned xml:lang="sa"><lang/>
+                        <mentioned xml:id="mentioned_d4989e509" xml:lang="sa"><lang/>
                         <w>dharma-</w>
                         <gloss><q>law</q></gloss></mentioned>). There is not enough arguments in
-                    favour of relating this Iranian word to <mentioned xml:lang="syr"><lang/>
+                    favour of relating this Iranian word to <mentioned xml:id="mentioned_d4989e517" xml:lang="syr"><lang/>
                         <w>ptq</w>
-                        <gloss><q>chart</q></gloss></mentioned> from <mentioned xml:lang="grc"><lang/>
+                        <gloss><q>chart</q></gloss></mentioned> from <mentioned xml:id="mentioned_d4989e525" xml:lang="grc"><lang/>
                         <w>πιττάχιον</w>
                         <gloss><q>chart</q></gloss></mentioned> (<bibl><biblScope>А. von %sGabain%s
                             und %sRachmati%s. Turkische Turfan-Texte %i6%i 72</biblScope></bibl>;
-                            <bibl><biblScope xml:lang="en"
-                            >А. von %sGabain%s. AIttürkische Grammatik. Leipzig, 1950, p.
+                            <bibl><biblScope xml:lang="en">А. von %sGabain%s. AIttürkische Grammatik. Leipzig, 1950, p.
                             304</biblScope></bibl>). See <ref type="xr" target="#entry_fæd"/>
-                    ‘trace’. Cf. <ref type="xr" target="#entry_ævæǵiaw"/> ‘excellent’.%n<bibl><ref
-                            type="bibl" target="#ref_Bailey._Asica"
-                        /><biblScope>11–12</biblScope></bibl>.</etym>
+                    ‘trace’. Cf. <ref type="xr" target="#entry_ævæǵiaw"/> ‘excellent’.%n<bibl><ref type="bibl" target="#ref_Bailey._Asica"/><biblScope>11–12</biblScope></bibl>.</etym>
                 <note type="internal">надо вставить примеры в посткоммент к сенсгруп и потом уже все
                     перевести // еще пример в этимологии!</note>
             </entry>

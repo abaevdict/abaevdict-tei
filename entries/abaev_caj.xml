@@ -1,41 +1,46 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">caj</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_caj" xml:lang="os">
                 <form type="lemma"><orth>caj</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d4588e69"><abv:tr xml:lang="ru">
                         <q>чай (напиток)</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>tea (drink)</q>
                     </abv:tr></sense>
-                <re>
+                <re xml:id="re_d4588e79">
                     <form type="lemma"><orth>cajgærdæg</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d4588e84"><abv:tr xml:lang="ru">
                             <q>чай (растение)</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>tea (plant)</q>
                         </abv:tr></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4588e97">
                         <quote>adǵyn caj cymʒynæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>ты будешь пить сладкий чай</q>
@@ -43,10 +48,9 @@
                         <abv:tr xml:lang="en">
                             <q>you will drink sweet tea</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"
-                            /><biblScope>121</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>121</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4588e116">
                         <quote>cajcymæn (ag˳yvzæ)</quote>
                         <abv:tr xml:lang="ru">
                             <q rendition="rend_singlequotes">чайный стакан</q>
@@ -55,7 +59,7 @@
                             <q rendition="rend_singlequotes">tea glass</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4588e133" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>zakʼuskaj xæccæ cajcumæntæ beræ raniwazta</quote>
                         <abv:tr xml:lang="ru">
@@ -64,10 +68,9 @@
                         <abv:tr xml:lang="en">
                             <q>he drank a lot of tea glasses with a snack</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_SD"
-                            /><biblScope>176%l4%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_SD"/><biblScope>176%l4%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4588e155" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>tævdæ bæstiti iræzuncæ kofe bælæstæ, cajgærdægi kʼotærtæ</quote>
                         <abv:tr xml:lang="ru">
@@ -79,20 +82,17 @@
                         <bibl><ref type="bibl" target="#src_AK"/><biblScope>I 46</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Китайское слово (<mentioned xml:lang="zh"><lang/>
+                <etym xml:lang="ru">Китайское слово (<mentioned xml:id="mentioned_d4588e180" xml:lang="zh"><lang/>
                         <w>čā</w></mentioned>); в осетинский усвоено из русского или персидского
                     (cp. <ref type="xr" target="#entry_cajdan"/>). Налично во всех тюркских и
-                    кавказских языках. Для %icajgærdæg%i (из %icaj%i-<ref type="xr"
-                        target="#entry_kærdæg"/> „чайная трава“) ср. <mentioned
-                        xml:lang="krc-x-balkar"><lang/>
+                    кавказских языках. Для %icajgærdæg%i (из %icaj%i-<ref type="xr" target="#entry_kærdæg"/> „чайная трава“) ср. <mentioned xml:id="mentioned_d4588e189" xml:lang="krc-x-balkar"><lang/>
                         <w>šaj-kardək</w>
                         <gloss><q>мята</q></gloss></mentioned> (употреблялась для приготовления
                     чая).</etym>
-                <etym xml:lang="en">The Chinese word (<mentioned xml:lang="zh"><lang/>
+                <etym xml:lang="en">The Chinese word (<mentioned xml:id="mentioned_d4588e201" xml:lang="zh"><lang/>
                         <w>čā</w></mentioned>); it was borrowed into Ossetic through Russian or
                     Persian (cf. <ref type="xr" target="#entry_cajdan"/>). It is found in all Turkic
-                    and Caucasian languages. For %icajgærdæg%i (from %icaj%i-<ref type="xr"
-                        target="#entry_kærdæg"/> „tea grass“) cf. <mentioned xml:lang="krc-x-balkar"><lang/>
+                    and Caucasian languages. For %icajgærdæg%i (from %icaj%i-<ref type="xr" target="#entry_kærdæg"/> „tea grass“) cf. <mentioned xml:id="mentioned_d4588e210" xml:lang="krc-x-balkar"><lang/>
                         <w>šaj-kardək</w>
                         <gloss><q>mint</q></gloss></mentioned> (it was used for preparing
                     tea).</etym>

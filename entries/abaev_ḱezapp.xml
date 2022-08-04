@@ -1,28 +1,33 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ḱezapp</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ḱezapp" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>ḱezapp</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>kezapp</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d968e72"><abv:tr xml:lang="ru">
                         <q>царская водка</q>
                     </abv:tr><note type="comment" xml:lang="ru"> (смесь азотной и серной
                         кислоты)</note><note type="comment" xml:lang="en"> (a mixture of nitric acid
@@ -32,7 +37,7 @@
                         кислоты)</note><note type="comment" xml:lang="en"> (a mixture of nitric acid
                         and hydrochloric acid)</note></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d968e92">
                         <quote>zærīnǧ˳yrdtæ ænæ ḱezapp næ bakūsʒysty</quote>
                         <abv:tr xml:lang="ru">
                             <q>золотых дел мастера не обходятся без царской водки</q>
@@ -43,7 +48,7 @@
                         <bibl><ref type="bibl" target="#src_Сл."/><biblScope>1713</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из <mentioned xml:lang="fa"><lang/>
+                <etym xml:lang="ru">Из <mentioned xml:id="mentioned_d968e114" xml:lang="fa"><lang/>
                         <w>tīzāb</w>
                         <gloss><q>царская водка</q></gloss></mentioned> (%itīz%i ‘острый’, ‘едкий’,
                     %iāb%i ‘вода’). Перебой %it%i → %iḱ%i(%ic%i) отражает, может быть, произношение
@@ -51,7 +56,7 @@
                     касается д. %ikezapp%i, то оно возникло как противоставление иронской форме, т.
                     е. как „гипердигоризм“, так же как д. %ikexotka%i из и. %ičеxotka%i (русск.
                     %iчахотка%i).</etym>
-                <etym xml:lang="en">From <mentioned xml:lang="fa"><lang/>
+                <etym xml:lang="en">From <mentioned xml:id="mentioned_d968e126" xml:lang="fa"><lang/>
                         <w>tīzāb</w>
                         <gloss><q>aqua regia</q></gloss></mentioned> (%itīz%i ‘spicy’, ‘caustic’,
                     %iāb%i ‘water’). The change %it%i → %iḱ%i(%ic%i) may reflect the pronunciation

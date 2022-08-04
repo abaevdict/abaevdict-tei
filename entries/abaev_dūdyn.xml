@@ -1,36 +1,41 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">dūdyn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_dūdyn" xml:lang="os-x-iron">
                 <form type="lemma"><orth>dūdyn</orth></form>
                 <usg><lang/></usg>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d4266e72"><sense xml:id="sense_d4266e73"><abv:tr xml:lang="ru">
                             <q>зудеть</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>itch</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d4266e82"><abv:tr xml:lang="ru">
                             <q>burn (about skin)</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4266e90">
                         <quote>mæ bwar dūdy</quote>
                         <abv:tr xml:lang="ru">
                             <q>мое тело зудит</q>
@@ -39,7 +44,7 @@
                             <q>my body itches</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4266e105">
                         <quote>dūdgæ fæbadæj <note type="comment" xml:lang="ru">или</note><note type="comment" xml:lang="en">or</note> sūʒgæ fæbadaj</quote>
                         <abv:tr xml:lang="ru">
                             <q>пребывай в зудении (горении)</q>
@@ -47,10 +52,9 @@
                         <abv:tr xml:lang="en">
                             <q>be itchy (burning)</q>
                         </abv:tr>
-                        <bibl><biblScope xml:lang="ru">проклятие</biblScope><biblScope xml:lang="en"
-                                >curse</biblScope></bibl>
+                        <bibl><biblScope xml:lang="ru">проклятие</biblScope><biblScope xml:lang="en">curse</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4266e132">
                         <quote>dūdgæ fæbada zæjy byn næ daræg</quote>
                         <abv:tr xml:lang="ru">
                             <q>проклятие тому, кто держит нас под (угрозой) лавины</q>
@@ -60,7 +64,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>44</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4266e151">
                         <quote>kæd nūry næ baxordtaj, wæd dæ kom cæmæn dūdy?</quote>
                         <abv:tr xml:lang="ru">
                             <q>если ты не ел чеснока, то почему у тебя зудит рот?</q>
@@ -72,27 +76,23 @@
                             211</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Мы видим здесь „детскую“ вариацию глагола <ref type="xr"
-                        target="#entry_sūʒyn"/> ‘гореть’, ‘жечь’ в соответствии со звуковыми нормами
-                    „детской“ речи. Судя по <mentioned xml:lang="os-x-digor"><lang/>
+                <etym xml:lang="ru">Мы видим здесь „детскую“ вариацию глагола <ref type="xr" target="#entry_sūʒyn"/> ‘гореть’, ‘жечь’ в соответствии со звуковыми нормами
+                    „детской“ речи. Судя по <mentioned xml:id="mentioned_d4266e175" xml:lang="os-x-digor"><lang/>
                         <w>ʒoʒægi</w>
-                        <gloss><q>крессалат</q></gloss></mentioned> (см. <ref type="xr"
-                        target="#entry_dūdgæ"/>), существовала параллельная форма *%iʒoʒun%i,
+                        <gloss><q>крессалат</q></gloss></mentioned> (см. <ref type="xr" target="#entry_dūdgæ"/>), существовала параллельная форма *%iʒoʒun%i,
                     которая еще ближе подводит нас к %isoʒun%i ‘жечь’. Из староосетинского
-                    („скифского“) идет, возможно, <mentioned xml:lang="ru"><lang/>
-                        <w>зуд</w></mentioned>, <mentioned xml:lang="ru"><w>зудеть</w></mentioned>,
+                    („скифского“) идет, возможно, <mentioned xml:id="mentioned_d4266e185" xml:lang="ru"><lang/>
+                        <w>зуд</w></mentioned>, <mentioned xml:id="mentioned_d4266e190" xml:lang="ru"><w>зудеть</w></mentioned>,
                     которое не имеет до сих пор удовлетворительного разъяснения (см.:
                             <bibl><author>Louise Wanstrat</author><biblScope xml:lang="ru">Beiträge
                             zur Charakteristik des russischen Wortschatzes. 1933, стр.
                             103</biblScope></bibl>).</etym>
-                <etym xml:lang="en">We see here a “child” version of the verb <ref type="xr"
-                        target="#entry_sūʒyn"/> ‘burn’, in accordance with the phonetic standards of
-                    “child” speech. Judging by<mentioned xml:lang="os-x-digor"><lang/>
+                <etym xml:lang="en">We see here a “child” version of the verb <ref type="xr" target="#entry_sūʒyn"/> ‘burn’, in accordance with the phonetic standards of
+                    “child” speech. Judging by<mentioned xml:id="mentioned_d4266e205" xml:lang="os-x-digor"><lang/>
                         <w>ʒoʒægi</w>
-                        <gloss><q>garden cress</q></gloss></mentioned> (see <ref type="xr"
-                        target="#entry_dūdgæ"/>), there was a parallel form *%iʒoʒun%i, which leads
-                    us to %isoʒun%i ‘burn’ even closer. <mentioned xml:lang="ru"><lang/>
-                        <w>zud</w></mentioned>, <mentioned xml:lang="ru"><w>zudetʼ</w></mentioned>
+                        <gloss><q>garden cress</q></gloss></mentioned> (see <ref type="xr" target="#entry_dūdgæ"/>), there was a parallel form *%iʒoʒun%i, which leads
+                    us to %isoʒun%i ‘burn’ even closer. <mentioned xml:id="mentioned_d4266e215" xml:lang="ru"><lang/>
+                        <w>zud</w></mentioned>, <mentioned xml:id="mentioned_d4266e220" xml:lang="ru"><w>zudetʼ</w></mentioned>
                     which still does not have a suitable explanation, probably comes from Old
                     Ossetic (Scythian), (see <bibl><author>Louise Wanstrat</author><biblScope xml:lang="en">Beiträge zur
                             Charakteristik des russischen Wortschatzes. 1933, p.

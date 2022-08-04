@@ -1,46 +1,51 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">bydyrǧ</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_bydyrǧ" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>bydyrǧ</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>budurǧæ</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d373e72"><sense xml:id="sense_d373e73"><abv:tr xml:lang="ru">
                             <q>лохмотья</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>rags</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d373e82"><abv:tr xml:lang="ru">
                             <q>тряпье</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>clobber</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d373e91"><abv:tr xml:lang="ru">
                             <q>чучело</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>jackstraw</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d373e100"><abv:tr xml:lang="ru">
                             <q>огородное пугало</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>scarecrow</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d373e112" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>cæf fæwwo, Asinæt, mæ budurgæj</quote>
                         <abv:tr xml:lang="ru">
@@ -55,25 +60,25 @@
                             73</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Сближается с <mentioned xml:lang="ru"><lang/>
+                <etym xml:lang="ru">Сближается с <mentioned xml:id="mentioned_d373e137" xml:lang="ru"><lang/>
                         <w>бутор</w>
-                        <gloss><q>тряпье</q></gloss></mentioned>, <mentioned xml:lang="ru"><w/>
-                        <gloss><q>хлам</q></gloss></mentioned>, <mentioned xml:lang="ru"><w/>
+                        <gloss><q>тряпье</q></gloss></mentioned>, <mentioned xml:id="mentioned_d373e145" xml:lang="ru"><w/>
+                        <gloss><q>хлам</q></gloss></mentioned>, <mentioned xml:id="mentioned_d373e151" xml:lang="ru"><w/>
                         <gloss><q>пожитки</q></gloss></mentioned>, что в свою очередь связывается с
-                        <mentioned xml:lang="hu"><lang/>
+                        <mentioned xml:id="mentioned_d373e157" xml:lang="hu"><lang/>
                         <w>butor</w>
-                        <gloss><q>утварь</q></gloss></mentioned>, <mentioned xml:lang="hu"><w/>
+                        <gloss><q>утварь</q></gloss></mentioned>, <mentioned xml:id="mentioned_d373e165" xml:lang="hu"><w/>
                         <gloss><q>вещи</q></gloss></mentioned>. Осетинское слово могло быть усвоено
                     как непосредственно из венгерского (в эпоху алано-венгерского соседства), так и
                     из славянских.</etym>
-                <etym xml:lang="en">The word is close to <mentioned xml:lang="ru"><lang/>
+                <etym xml:lang="en">The word is close to <mentioned xml:id="mentioned_d373e175" xml:lang="ru"><lang/>
                         <w>butor</w>
-                        <gloss><q>clobber</q></gloss></mentioned>, <mentioned xml:lang="ru"><w/>
-                        <gloss><q>trash</q></gloss></mentioned>, <mentioned xml:lang="ru"><w/>
+                        <gloss><q>clobber</q></gloss></mentioned>, <mentioned xml:id="mentioned_d373e183" xml:lang="ru"><w/>
+                        <gloss><q>trash</q></gloss></mentioned>, <mentioned xml:id="mentioned_d373e189" xml:lang="ru"><w/>
                         <gloss><q>belongings</q></gloss></mentioned>, что в свою очередь связывается
-                    с <mentioned xml:lang="hu"><lang/>
+                    с <mentioned xml:id="mentioned_d373e195" xml:lang="hu"><lang/>
                         <w>butor</w>
-                        <gloss><q>implements</q></gloss></mentioned>, <mentioned xml:lang="hu"><w/>
+                        <gloss><q>implements</q></gloss></mentioned>, <mentioned xml:id="mentioned_d373e203" xml:lang="hu"><w/>
                         <gloss><q>belongings</q></gloss></mentioned>. The Ossetic word could be
                     adopted either directly from Hungarian (during Alan-Hungarian neighbourhood
                     times) or from Slavic languages.</etym>

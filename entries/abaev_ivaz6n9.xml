@@ -1,35 +1,40 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ivaz6n9</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ivaz6n9" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>ivaz(n)</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>ivaz(n)æ</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d3198e72"><abv:tr xml:lang="ru">
                         <q>маховая сажень (расстояние между концами горизонтально растянутых
                             рук)</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>swung fathom (distance between tips of arms stretched sidewards)</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d3198e84" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>dæs æma insæj ivazi æ dærǧcæ…</quote>
                         <abv:tr xml:lang="ru">
@@ -38,10 +43,9 @@
                         <abv:tr xml:lang="en">
                             <q>thirty fathoms long</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>2%l14</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>2%l14</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3198e106">
                         <quote>Nartæ sk’axtoj dywwadæs ivazny wærm æmæ Syrdony wym awagtoj, cæmæj ta
                             sæ wargæjæ kæræʒī mīdæg ma skæna</quote>
                         <abv:tr xml:lang="ru">
@@ -55,47 +59,30 @@
                         </abv:tr>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Восходит к иран. %i*vi-bāz(a)na-%i, как <ref type="xr"
-                        target="#entry_araznæ"/> к %i*аraz(а)na-%i, <ref type="xr"
-                        target="#entry_izaznæ"/> к %i*vizāz(a)na-%i, <ref type="xr"
-                        target="#entry_arǧævnæ"/> к %i*āgrab(a)na-%i; ср. <mentioned xml:lang="ae"><lang/>
+                <etym xml:lang="ru">Восходит к иран. %i*vi-bāz(a)na-%i, как <ref type="xr" target="#entry_araznæ"/> к %i*аraz(а)na-%i, <ref type="xr" target="#entry_izaznæ"/> к %i*vizāz(a)na-%i, <ref type="xr" target="#entry_arǧævnæ"/> к %i*āgrab(a)na-%i; ср. <mentioned xml:id="mentioned_d3198e130" xml:lang="ae"><lang/>
                         <w>vī-bāzu-</w>
-                        <gloss><q>сажень</q></gloss></mentioned>, <mentioned xml:lang="ae"><w/>
+                        <gloss><q>сажень</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3198e138" xml:lang="ae"><w/>
                         <gloss><q>длина растянутых (%ivī-%i) рук
-                    (%ibāzu-%i)</q></gloss></mentioned>, <mentioned xml:lang="sog"><lang/>
-                        <w>ωβ"z</w></mentioned>, <mentioned xml:lang="ps"><lang/>
-                        <w>wazə</w></mentioned>, <mentioned xml:lang="x-balochi"><lang/>
+                    (%ibāzu-%i)</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3198e145" xml:lang="sog"><lang/>
+                        <w>ωβ"z</w></mentioned>, <mentioned xml:id="mentioned_d3198e150" xml:lang="ps"><lang/>
+                        <w>wazə</w></mentioned>, <mentioned xml:id="mentioned_d3198e155" xml:lang="x-balochi"><lang/>
                         <w>awaz</w>
-                        <gloss><q>сажень</q></gloss></mentioned>, <mentioned xml:lang="fa"><lang/>
-                        <w>bāzū</w></mentioned> (<bibl><ref type="bibl" target="#ref_Ягелло"
-                        /></bibl>). Ср. <ref type="xr" target="#entry_ivazyn"/>.%n<bibl><ref
-                            type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>III
-                        144</biblScope></bibl>;<bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>17</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_Hübschmann._Oss."/><biblScope>40</biblScope></bibl>.—
-                            <bibl><author>Benveniste,</author><ref type="bibl" target="#ref_BSL"
-                            /><biblScope>LII 65 сл.</biblScope></bibl>.</etym>
-                <etym xml:lang="en">It traces back to Iranian %i*vi-bāz(a)na-%i, like <ref type="xr"
-                        target="#entry_araznæ"/> does to %i*аraz(а)na-%i, <ref type="xr"
-                        target="#entry_izaznæ"/> does to %i*vizāz(a)na-%i, <ref type="xr"
-                        target="#entry_arǧævnæ"/> does to %i*āgrab(a)na-%i; cf. <mentioned
-                        xml:lang="ae"><lang/>
+                        <gloss><q>сажень</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3198e163" xml:lang="fa"><lang/>
+                        <w>bāzū</w></mentioned> (<bibl><ref type="bibl" target="#ref_Ягелло"/></bibl>). Ср. <ref type="xr" target="#entry_ivazyn"/>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>III
+                        144</biblScope></bibl>;<bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>17</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>40</biblScope></bibl>.—
+                            <bibl><author>Benveniste,</author><ref type="bibl" target="#ref_BSL"/><biblScope>LII 65 сл.</biblScope></bibl>.</etym>
+                <etym xml:lang="en">It traces back to Iranian %i*vi-bāz(a)na-%i, like <ref type="xr" target="#entry_araznæ"/> does to %i*аraz(а)na-%i, <ref type="xr" target="#entry_izaznæ"/> does to %i*vizāz(a)na-%i, <ref type="xr" target="#entry_arǧævnæ"/> does to %i*āgrab(a)na-%i; cf. <mentioned xml:id="mentioned_d3198e201" xml:lang="ae"><lang/>
                         <w>vī-bāzu-</w>
-                        <gloss><q>sazhen</q></gloss></mentioned>, <mentioned xml:lang="ae"><w/>
+                        <gloss><q>sazhen</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3198e209" xml:lang="ae"><w/>
                         <gloss><q>distance between stretched (%ivī-%i) arms
-                        (%ibāzu-%i)</q></gloss></mentioned>, <mentioned xml:lang="sog"><lang/>
-                        <w>ωβ"z</w></mentioned>, <mentioned xml:lang="ps"><lang/>
-                        <w>wazə</w></mentioned>, <mentioned xml:lang="x-balochi"><lang/>
+                        (%ibāzu-%i)</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3198e216" xml:lang="sog"><lang/>
+                        <w>ωβ"z</w></mentioned>, <mentioned xml:id="mentioned_d3198e221" xml:lang="ps"><lang/>
+                        <w>wazə</w></mentioned>, <mentioned xml:id="mentioned_d3198e226" xml:lang="x-balochi"><lang/>
                         <w>awaz</w>
-                        <gloss><q>sazhen</q></gloss></mentioned>, <mentioned xml:lang="fa"><lang/>
-                        <w>bāzū</w></mentioned> (<bibl><ref type="bibl" target="#ref_Ягелло"
-                        /></bibl>). Cf. <ref type="xr" target="#entry_ivazyn"/>.%n<bibl><ref
-                            type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>III
-                        144</biblScope></bibl>;<bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>17</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_Hübschmann._Oss."/><biblScope>40</biblScope></bibl>.—
-                            <bibl><author>Benveniste,</author><ref type="bibl" target="#ref_BSL"
-                            /><biblScope>LII 65 сл.</biblScope></bibl>.</etym>
+                        <gloss><q>sazhen</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3198e234" xml:lang="fa"><lang/>
+                        <w>bāzū</w></mentioned> (<bibl><ref type="bibl" target="#ref_Ягелло"/></bibl>). Cf. <ref type="xr" target="#entry_ivazyn"/>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>III
+                        144</biblScope></bibl>;<bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>17</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>40</biblScope></bibl>.—
+                            <bibl><author>Benveniste,</author><ref type="bibl" target="#ref_BSL"/><biblScope>LII 65 сл.</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

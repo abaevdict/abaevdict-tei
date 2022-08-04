@@ -1,40 +1,45 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">gag0y</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_gag0y" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>gag˳y</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>gagu</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d4668e72"><sense xml:id="sense_d4668e73"><abv:tr xml:lang="ru">
                             <q>глазное яблоко</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>eyeball</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d4668e82"><abv:tr xml:lang="ru">
                             <q>зеница</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>pupil (of the eye)</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d4668e91"><abv:tr xml:lang="ru">
                             <q>зрачок</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4668e99">
                         <quote>mæ cæsty gag˳y!</quote>
                         <abv:tr xml:lang="ru">
                             <q>о, зеница моего ока!</q>
@@ -46,27 +51,22 @@
                         <note type="comment" xml:lang="en"> (affectionate expression)</note>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из <mentioned xml:lang="ka"><lang/>
+                <etym xml:lang="ru">Из <mentioned xml:id="mentioned_d4668e123" xml:lang="ka"><lang/>
                         <w>guga</w>
-                        <gloss><q>зеница</q></gloss></mentioned>, <mentioned xml:lang="ka"><w/>
-                        <gloss><q>зрачок</q></gloss></mentioned> с метатезой гласных. Ср. <mentioned
-                        xml:lang="fa"><lang/>
+                        <gloss><q>зеница</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4668e131" xml:lang="ka"><w/>
+                        <gloss><q>зрачок</q></gloss></mentioned> с метатезой гласных. Ср. <mentioned xml:id="mentioned_d4668e137" xml:lang="fa"><lang/>
                         <w>kāk</w>
-                        <gloss><q>глазное яблоко</q></gloss></mentioned>, <mentioned xml:lang="fa"><w/>
-                        <gloss><q>зрачок</q></gloss></mentioned> („pupilla oculi“: <bibl><ref
-                            type="bibl" target="#ref_Vullers"/></bibl>). Возможна связь с обширной
-                    группой „детских“ слов, означающих ‘орех’, ‘зерно’ и пр.; см. <ref type="xr"
-                        target="#entry_gaga"/>.</etym>
-                <etym xml:lang="en">From <mentioned xml:lang="ka"><lang/>
+                        <gloss><q>глазное яблоко</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4668e145" xml:lang="fa"><w/>
+                        <gloss><q>зрачок</q></gloss></mentioned> („pupilla oculi“: <bibl><ref type="bibl" target="#ref_Vullers"/></bibl>). Возможна связь с обширной
+                    группой „детских“ слов, означающих ‘орех’, ‘зерно’ и пр.; см. <ref type="xr" target="#entry_gaga"/>.</etym>
+                <etym xml:lang="en">From <mentioned xml:id="mentioned_d4668e161" xml:lang="ka"><lang/>
                         <w>guga</w>
                         <gloss><q>pupil</q></gloss></mentioned> with vowel metathesis. Compare
-                        <mentioned xml:lang="fa"><lang/>
+                        <mentioned xml:id="mentioned_d4668e169" xml:lang="fa"><lang/>
                         <w>kāk</w>
-                        <gloss><q>eyeball</q></gloss></mentioned>, <mentioned xml:lang="fa"><w/>
-                        <gloss><q>pupil</q></gloss></mentioned> (“pupilla oculi”: <bibl><ref
-                            type="bibl" target="#ref_Vullers"/></bibl>). It may be related to the
-                    vast group of “baby” words, which mean ‘nut’, ‘grain’ etc.; see <ref type="xr"
-                        target="#entry_gaga"/>.</etym>
+                        <gloss><q>eyeball</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4668e177" xml:lang="fa"><w/>
+                        <gloss><q>pupil</q></gloss></mentioned> (“pupilla oculi”: <bibl><ref type="bibl" target="#ref_Vullers"/></bibl>). It may be related to the
+                    vast group of “baby” words, which mean ‘nut’, ‘grain’ etc.; see <ref type="xr" target="#entry_gaga"/>.</etym>
             </entry>
         </body>
     </text>

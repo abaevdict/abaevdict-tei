@@ -1,21 +1,26 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ærwagæs_un</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
@@ -24,17 +29,17 @@
                             un</orth></form><form type="variant"><orth>iragæs
                     un</orth></form></form>
                 <usg><lang/></usg>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d2700e76"><abv:tr xml:lang="ru">
                         <q>верить</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>to believe</q>
                     </abv:tr></sense>
-                <re xml:lang="os-x-iron">
+                <re xml:id="re_d2700e86" xml:lang="os-x-iron">
                     <lang/>
                     <form type="lemma"><orth>wyrnyn</orth></form>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d2700e96">
                         <quote>næ mi ærwagæs kænuj</quote>
                         <abv:tr xml:lang="ru">
                             <q>я не верю</q>
@@ -42,10 +47,9 @@
                         <abv:tr xml:lang="en">
                             <q>I don’t beleive</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Диг._сказ."
-                            /><biblScope>37</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Диг._сказ."/><biblScope>37</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2700e115">
                         <quote>ba-di-ʼrwagæs wæd!</quote>
                         <abv:tr xml:lang="ru">
                             <q>поверь!</q>
@@ -56,7 +60,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
                             129</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2700e134">
                         <quote>osæj dær ba ʼragæs æj</quote>
                         <abv:tr xml:lang="ru">
                             <q>женщина поверила</q>
@@ -64,10 +68,9 @@
                         <abv:tr xml:lang="en">
                             <q>a woman believed</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>5%l10%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>5%l10%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2700e153">
                         <quote>kæmi mi barwagæs adtæjdæ!</quote>
                         <abv:tr xml:lang="ru">
                             <q>где мне было поверить!</q>
@@ -78,7 +81,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
                             42</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2700e172">
                         <quote>kænæd di ærwagæs, kænʒænæj dæmæ eris</quote>
                         <abv:tr xml:lang="ru">
                             <q>будь уверена, она будет с тобой спорить</q>
@@ -86,29 +89,26 @@
                         <abv:tr xml:lang="en">
                             <q>be sure, she will argue with you</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Gurdž._Æduli"
-                            /><biblScope>99</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Gurdž._Æduli"/><biblScope>99</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Начальная дигорская группа %iærw%i- восходит обычно к %ivr%i-:
-                        <ref type="xr" target="#entry_ærwæz"/> из *%ivraza%i-, %iærwæd%i (и. <ref
-                        type="xr" target="#entry_iræd"/>) из *%ivrata%i; %iærwagæs%i могло
+                        <ref type="xr" target="#entry_ærwæz"/> из *%ivraza%i-, %iærwæd%i (и. <ref type="xr" target="#entry_iræd"/>) из *%ivrata%i; %iærwagæs%i могло
                     получиться из %ivṛ%i- + %iākas-%i „казаться (%iākas%i-) верным (%ivṛ%i-)“,
                     „принять за верное“. Ср. <ref type="xr" target="#entry_kæsyn"/> в значении
                     ‘казаться’, а для первой части — <ref type="xr" target="#entry_wyrnyn"/>
-                    ‘верить’, <mentioned xml:lang="ru"><lang/>
-                        <w>вера</w></mentioned>, <mentioned xml:lang="goh"><lang/>
-                        <w>wār</w></mentioned>, <mentioned xml:lang="la"><lang/>
+                    ‘верить’, <mentioned xml:id="mentioned_d2700e203" xml:lang="ru"><lang/>
+                        <w>вера</w></mentioned>, <mentioned xml:id="mentioned_d2700e209" xml:lang="goh"><lang/>
+                        <w>wār</w></mentioned>, <mentioned xml:id="mentioned_d2700e214" xml:lang="la"><lang/>
                         <w>verus</w></mentioned>.</etym>
                 <etym xml:lang="en">The initial digor group %iærw%i- usually traces back to
                         %ivr%i-:<ref type="xr" target="#entry_ærwæz"/> from *%ivraza%i-, %iærwæd%i
                     (Iron <ref type="xr" target="#entry_iræd"/>) from *%ivrata%i; %iærwagæs%i could
                     have been derived from %ivṛ%i- + %iākas-%i "to seem (%iākas%i-) true (%ivṛ%i-)",
-                    "to take something for a right thing". Compare <ref type="xr"
-                        target="#entry_kæsyn"/> in the meaning ‘to seem’, and as for the first part
-                    — <ref type="xr" target="#entry_wyrnyn"/> ‘believe’, <mentioned xml:lang="ru"><lang/>
-                        <w>vera</w></mentioned>, <mentioned xml:lang="goh"><lang/>
-                        <w>wār</w></mentioned>, <mentioned xml:lang="la"><lang/>
+                    "to take something for a right thing". Compare <ref type="xr" target="#entry_kæsyn"/> in the meaning ‘to seem’, and as for the first part
+                    — <ref type="xr" target="#entry_wyrnyn"/> ‘believe’, <mentioned xml:id="mentioned_d2700e230" xml:lang="ru"><lang/>
+                        <w>vera</w></mentioned>, <mentioned xml:id="mentioned_d2700e236" xml:lang="goh"><lang/>
+                        <w>wār</w></mentioned>, <mentioned xml:id="mentioned_d2700e241" xml:lang="la"><lang/>
                         <w>verus</w></mentioned>.</etym>
             </entry>
         </body>

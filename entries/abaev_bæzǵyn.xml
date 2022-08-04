@@ -1,60 +1,63 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">bæzǵyn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_bæzǵyn" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>bæzǵyn</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>bæzgin</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d5649e72"><sense xml:id="sense_d5649e73"><abv:tr xml:lang="ru">
                             <q>толстый</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>thick</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d5649e82"><abv:tr xml:lang="ru">
                             <q>густой</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>dense</q>
                         </abv:tr></sense></sense>
-                <re>
-                    <re>
+                <re xml:id="re_d5649e92">
+                    <re xml:id="re_d5649e94">
                         <form type="lemma"><orth>bæzǵyn kʼ˳ymæl</orth></form>
-                        <sense><abv:tr xml:lang="ru">
+                        <sense xml:id="sense_d5649e99"><abv:tr xml:lang="ru">
                                 <q>густая брага</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>thick wash</q>
                             </abv:tr></sense>
                     </re>
-                    <re>
+                    <re xml:id="re_d5649e110">
                         <form type="lemma"><orth>bæzǵyn kærdæg</orth></form>
-                        <sense><abv:tr xml:lang="ru">
+                        <sense xml:id="sense_d5649e115"><abv:tr xml:lang="ru">
                                 <q>густая трава</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>thick grass</q>
                             </abv:tr></sense>
-                        <note type="comment" xml:lang="ru">; ант. — <ref type="xr"
-                                target="#entry_tænæg"/> ‘тонкий’, ‘жидкий'</note>
-                        <note type="comment" xml:lang="en">; ant. <ref type="xr"
-                                target="#entry_tænæg"/> ‘thin’, ‘liquid'</note>
+                        <note type="comment" xml:lang="ru">; ант. — <ref type="xr" target="#entry_tænæg"/> ‘тонкий’, ‘жидкий'</note>
+                        <note type="comment" xml:lang="en">; ant. <ref type="xr" target="#entry_tænæg"/> ‘thin’, ‘liquid'</note>
                     </re>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d5649e139">
                         <quote>bæzǵyn carm</quote>
                         <abv:tr xml:lang="ru">
                             <q>толстая кожа</q>
@@ -63,7 +66,7 @@
                             <q>thick skin</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5649e154">
                         <quote>(læppū) donæn jæ bæzǵyny ærbas-kʼærdta</quote>
                         <abv:tr xml:lang="ru">
                             <q>(юноша) погнал (лошадь) по глубокому (месту) реки</q>
@@ -73,7 +76,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Munk."/><biblScope>20</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5649e173">
                         <quote>ʒæbæxdær baqyrnyt wæ bæzǵyn qælæstæj</quote>
                         <abv:tr xml:lang="ru">
                             <q>получше подпевайте вашими густыми голосами</q>
@@ -81,10 +84,9 @@
                         <abv:tr xml:lang="en">
                             <q>join better with your deep voices</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Æfx._Xæs."
-                            /><biblScope>99</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Æfx._Xæs."/><biblScope>99</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5649e192" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>bæzgin quræj niccæjxoduj (Bæbæt)</quote>
                         <abv:tr xml:lang="ru">
@@ -97,11 +99,9 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Основа <ref type="xr" target="#entry_bæz-"/> ‘толстый’,
-                    ‘толщина’ + адъективный суффикс -%iǵyn%i I -%igin%i.%n<bibl><ref type="bibl"
-                            target="#ref_РОСл."/><biblScope>596, 603</biblScope></bibl>.</etym>
+                    ‘толщина’ + адъективный суффикс -%iǵyn%i I -%igin%i.%n<bibl><ref type="bibl" target="#ref_РОСл."/><biblScope>596, 603</biblScope></bibl>.</etym>
                 <etym xml:lang="en">The stem is <ref type="xr" target="#entry_bæz-"/> ‘thick’,
-                    ‘thickness’ + adjectival suffix -%iǵyn%i | -%igin%i.%n<bibl><ref type="bibl"
-                            target="#ref_РОСл."/><biblScope>596, 603</biblScope></bibl>.</etym>
+                    ‘thickness’ + adjectival suffix -%iǵyn%i | -%igin%i.%n<bibl><ref type="bibl" target="#ref_РОСл."/><biblScope>596, 603</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

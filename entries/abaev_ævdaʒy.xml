@@ -1,38 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ævdaʒy</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ævdaʒy" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>ævdaʒy</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>ævdaʒi</orth></form>
-                <re>
+                <re xml:id="re_d2080e72">
                     <form xml:lang="os-x-iron" type="lemma"><orth>ævdaʒy xos</orth></form>
                     <form xml:lang="os-x-digor" type="dialectal"><orth>ævdaʒi xwasæ</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d2080e80"><abv:tr xml:lang="ru">
                             <q>магическое, быстро исцеляющее лекарство</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>magic, fast curing medicine</q>
                         </abv:tr></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d2080e93" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>ævdaʒi xwasæ ʽj afonæ zærdi ristæn</quote>
                         <abv:tr xml:lang="ru">
@@ -44,7 +49,7 @@
                         <bibl><ref type="bibl" target="#src_MD"/><biblScope>1940 III
                             58</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d2080e115" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>Ciwaltasi sawær — ævdaʒi xwasæ</quote>
                         <abv:tr xml:lang="ru">
@@ -53,19 +58,17 @@
                         <abv:tr xml:lang="en">
                             <q>Ciualtas mineral spring is a miraculous medicine</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_SD"
-                            /><biblScope>99%l4%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_SD"/><biblScope>99%l4%l</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Не употребительное вне этого сочетания %iævdaʒ%i должно по
-                    смыслу означать ‘чудесный’, ‘чудодейственный’, ‘магический’ (<ref type="xr"
-                        target="#entry_xos"/> | %ixwasæ%i ‘лекарство’). Предлагаем два возможных
+                    смыслу означать ‘чудесный’, ‘чудодейственный’, ‘магический’ (<ref type="xr" target="#entry_xos"/> | %ixwasæ%i ‘лекарство’). Предлагаем два возможных
                     объяснения: 1. %iæv-daʒ%i — старое, вышедшее из употребления числительное
-                    ‘семьдесят’ (<mentioned xml:lang="x-oldirn"><lang/>
+                    ‘семьдесят’ (<mentioned xml:id="mentioned_d2080e142" xml:lang="x-oldirn"><lang/>
                         <w>*haptāti</w></mentioned>, см. <ref type="xr" target="#entry_ævdaj"/>),
                     которому приписывалось магическое значение; 2. %iævdaʒ%i находится в связи с
-                        <mentioned xml:lang="ae"><lang/>
-                        <w>abda-</w></mentioned>, <mentioned xml:lang="pal"><lang/>
+                        <mentioned xml:id="mentioned_d2080e149" xml:lang="ae"><lang/>
+                        <w>abda-</w></mentioned>, <mentioned xml:id="mentioned_d2080e154" xml:lang="pal"><lang/>
                         <w>awd</w>
                         <gloss><q>чудесный</q></gloss></mentioned>, ‘удивительный’; впрочем значение
                     ‘чудесный’ для этих слов оспаривается <bibl><author>Junker'</author></bibl>oм
@@ -74,12 +77,10 @@
                 <etym xml:lang="en">The word %iævdaʒ%i which is out of use beyond this phrase must
                     mean ‘wonderful’, ‘miracolous’, ‘magic’ (<ref type="xr" target="#entry_xos"/> |
                     %ixwasæ%i ‘medicine’). We propose two possible solutions: 1. %iæv-daʒ%i is an
-                    ancient word for the numeral 'seventy' which is out of use (<mentioned
-                        xml:lang="x-oldirn"><lang/>
+                    ancient word for the numeral 'seventy' which is out of use (<mentioned xml:id="mentioned_d2080e175" xml:lang="x-oldirn"><lang/>
                         <w>*haptāti</w></mentioned>, see <ref type="xr" target="#entry_ævdaj"/>), to
-                    which a magic sense was ascribed; 2. %iævdaʒ%i is bound with <mentioned
-                        xml:lang="ae"><lang/>
-                        <w>abda-</w></mentioned>, <mentioned xml:lang="pal"><lang/>
+                    which a magic sense was ascribed; 2. %iævdaʒ%i is bound with <mentioned xml:id="mentioned_d2080e182" xml:lang="ae"><lang/>
+                        <w>abda-</w></mentioned>, <mentioned xml:id="mentioned_d2080e187" xml:lang="pal"><lang/>
                         <w>awd</w>
                         <gloss><q>wonderful</q></gloss></mentioned>, ‘marvelous’; however,
                             <bibl><author>Junker</author></bibl> disputes the meaning 'wonderful'

@@ -1,34 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">dywwadæs</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_dywwadæs" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>dywwadæs</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>duw(w)adæs</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d3857e72"><abv:tr xml:lang="ru">
                         <q>двенадцать</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>twelve</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d3857e84">
                         <quote>sīvtyǧtoj jyl dywwadæs cædy galty</quote>
                         <abv:tr xml:lang="ru">
                             <q>впрягли двенадцать пар быков</q>
@@ -36,34 +41,29 @@
                         <abv:tr xml:lang="en">
                             <q>twelve pairs of bulls were roped in</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Нарт._сказ."
-                            /><biblScope>263</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Нарт._сказ."/><biblScope>263</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Старое сложение из <ref type="xr" target="#entry_dywwæ"/> |
                     %iduwæ%i ‘два’ и <ref type="xr" target="#entry_dæs"/> ‘десять’. Восходит к
-                    *%idvādasa%i-. Ср. <mentioned xml:lang="sog"><lang/>
-                        <w>*δ''wādas(δw'ts)</w></mentioned>, <mentioned xml:lang="pal-x-turfan"><lang/>
-                        <w>duvādēs</w></mentioned>, <mentioned xml:lang="ps"><lang/>
-                        <w>dwālas</w></mentioned>, <mentioned xml:lang="prc"><lang/>
-                        <w>d(u)wās</w></mentioned>, <mentioned xml:lang="ae"><lang/>
-                        <w>dvadasa-</w></mentioned>, <mentioned xml:lang="sa"><lang/>
-                        <w>dvādaśa-</w></mentioned>.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._Gr."/><biblScope>48</biblScope></bibl>. —
-                            <bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                        /><biblScope>22</biblScope></bibl>.</etym>
+                    *%idvādasa%i-. Ср. <mentioned xml:id="mentioned_d3857e110" xml:lang="sog"><lang/>
+                        <w>*δ''wādas(δw'ts)</w></mentioned>, <mentioned xml:id="mentioned_d3857e115" xml:lang="pal-x-turfan"><lang/>
+                        <w>duvādēs</w></mentioned>, <mentioned xml:id="mentioned_d3857e120" xml:lang="ps"><lang/>
+                        <w>dwālas</w></mentioned>, <mentioned xml:id="mentioned_d3857e126" xml:lang="prc"><lang/>
+                        <w>d(u)wās</w></mentioned>, <mentioned xml:id="mentioned_d3857e131" xml:lang="ae"><lang/>
+                        <w>dvadasa-</w></mentioned>, <mentioned xml:id="mentioned_d3857e136" xml:lang="sa"><lang/>
+                        <w>dvādaśa-</w></mentioned>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>48</biblScope></bibl>. —
+                            <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>22</biblScope></bibl>.</etym>
                 <etym xml:lang="en">An old compound from <ref type="xr" target="#entry_dywwæ"/> |
                     %iduwæ%i ‘two’ and <ref type="xr" target="#entry_dæs"/> ‘ten’. It traces back to
-                    *%idvādasa%i-. Cf. <mentioned xml:lang="sog"><lang/>
-                        <w>*δ''wādas(δw'ts)</w></mentioned>, <mentioned xml:lang="pal-x-turfan"><lang/>
-                        <w>duvādēs</w></mentioned>, <mentioned xml:lang="ps"><lang/>
-                        <w>dwālas</w></mentioned>, <mentioned xml:lang="prc"><lang/>
-                        <w>d(u)wās</w></mentioned>, <mentioned xml:lang="ae"><lang/>
-                        <w>dvadasa-</w></mentioned>, <mentioned xml:lang="sa"><lang/>
-                        <w>dvādaśa-</w></mentioned>.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._Gr."/><biblScope>48</biblScope></bibl>. —
-                            <bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                        /><biblScope>22</biblScope></bibl>.</etym>
+                    *%idvādasa%i-. Cf. <mentioned xml:id="mentioned_d3857e157" xml:lang="sog"><lang/>
+                        <w>*δ''wādas(δw'ts)</w></mentioned>, <mentioned xml:id="mentioned_d3857e162" xml:lang="pal-x-turfan"><lang/>
+                        <w>duvādēs</w></mentioned>, <mentioned xml:id="mentioned_d3857e167" xml:lang="ps"><lang/>
+                        <w>dwālas</w></mentioned>, <mentioned xml:id="mentioned_d3857e173" xml:lang="prc"><lang/>
+                        <w>d(u)wās</w></mentioned>, <mentioned xml:id="mentioned_d3857e178" xml:lang="ae"><lang/>
+                        <w>dvadasa-</w></mentioned>, <mentioned xml:id="mentioned_d3857e183" xml:lang="sa"><lang/>
+                        <w>dvādaśa-</w></mentioned>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>48</biblScope></bibl>. —
+                            <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>22</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

@@ -1,33 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ærzæt</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ærzæt" xml:lang="os">
                 <form type="lemma"><orth>ærzæt</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d415e69"><abv:tr xml:lang="ru">
                         <q>руда</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>ore</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d415e81">
                         <quote>eci nædtæbæl lasuncæ ærzæt æma ævzalu</quote>
                         <abv:tr xml:lang="ru">
                             <q>по этим дорогам везут руду и уголь</q>
@@ -40,56 +45,51 @@
                 </abv:exampleGrp>
                 <etym xml:lang="ru">В других индоевропейских языках это слово значит ‘серебро’ и,
                     возможно, на осетинской почве оно применялось первоначально именно к серебряной
-                    руде, а потом к руде вообще. Слово восходит к <mentioned xml:lang="ira"><lang/>
-                        <w>*arzata</w></mentioned> и имеет многочисленные соответствия: <mentioned
-                        xml:lang="kho"><lang/>
-                        <w>āljsata-(=alʒata-)</w></mentioned>, <mentioned xml:lang="ae"><lang/>
-                        <w>ərəzata-</w></mentioned>, <mentioned xml:lang="peo"><lang/>
-                        <w>ardata-</w></mentioned> , <mentioned xml:lang="sa"><lang/>
-                        <w>rajata-</w></mentioned>, <mentioned xml:lang="xcl"><lang/>
-                        <w>arc’at</w></mentioned>, <mentioned xml:lang="la"><lang/>
-                        <w>argentum</w></mentioned>, <mentioned xml:lang="ga"><lang/>
-                        <w>argat</w></mentioned> , <mentioned xml:lang="br"><lang/>
-                        <w>arcʼhant</w></mentioned>, <mentioned xml:lang="grc"><lang/>
+                    руде, а потом к руде вообще. Слово восходит к <mentioned xml:id="mentioned_d415e103" xml:lang="ira"><lang/>
+                        <w>*arzata</w></mentioned> и имеет многочисленные соответствия: <mentioned xml:id="mentioned_d415e108" xml:lang="kho"><lang/>
+                        <w>āljsata-(=alʒata-)</w></mentioned>, <mentioned xml:id="mentioned_d415e113" xml:lang="ae"><lang/>
+                        <w>ərəzata-</w></mentioned>, <mentioned xml:id="mentioned_d415e118" xml:lang="peo"><lang/>
+                        <w>ardata-</w></mentioned> , <mentioned xml:id="mentioned_d415e123" xml:lang="sa"><lang/>
+                        <w>rajata-</w></mentioned>, <mentioned xml:id="mentioned_d415e129" xml:lang="xcl"><lang/>
+                        <w>arc’at</w></mentioned>, <mentioned xml:id="mentioned_d415e134" xml:lang="la"><lang/>
+                        <w>argentum</w></mentioned>, <mentioned xml:id="mentioned_d415e139" xml:lang="ga"><lang/>
+                        <w>argat</w></mentioned> , <mentioned xml:id="mentioned_d415e144" xml:lang="br"><lang/>
+                        <w>arcʼhant</w></mentioned>, <mentioned xml:id="mentioned_d415e149" xml:lang="grc"><lang/>
                         <w>άργυρος</w></mentioned> . Созвучны и некоторые кавказские названия
-                    серебра: <mentioned xml:lang="lbe"><lang/>
-                        <w>arcu</w></mentioned>, <mentioned xml:lang="inh"><lang/>
-                        <w>arsi</w></mentioned>, <mentioned xml:lang="inh"><w>orsi</w></mentioned>,
-                        <mentioned xml:lang="agx"><lang/>
-                        <w>ars</w></mentioned>, <mentioned xml:lang="aqc"><lang/>
+                    серебра: <mentioned xml:id="mentioned_d415e154" xml:lang="lbe"><lang/>
+                        <w>arcu</w></mentioned>, <mentioned xml:id="mentioned_d415e160" xml:lang="inh"><lang/>
+                        <w>arsi</w></mentioned>, <mentioned xml:id="mentioned_d415e165" xml:lang="inh"><w>orsi</w></mentioned>,
+                        <mentioned xml:id="mentioned_d415e168" xml:lang="agx"><lang/>
+                        <w>ars</w></mentioned>, <mentioned xml:id="mentioned_d415e173" xml:lang="aqc"><lang/>
                         <w>arsi</w></mentioned> и др. Возможно, что здесь речь идет не о
                     заимствовании, а о связях глубокой древности. В осетинском поствокальный %it%i
                     обычно озвончается, и мы ожидали бы *%iærzæd%i; однако есть и случаи сохранения
                     глухого в этом положении, см. <ref type="xr" target="#entry_7lǧītyn"/> и др.
-                    Возможно, был вариант *arzaθa-. Для ‘серебра’ в осетинском другое слово <ref
-                        type="xr" target="#entry_ævzīst"/> | %iævzestæ%i.%n<bibl><ref type="bibl"
-                            target="#ref_ОЯФ_I"/><biblScope>I 52</biblScope></bibl>.%n</etym>
+                    Возможно, был вариант *arzaθa-. Для ‘серебра’ в осетинском другое слово <ref type="xr" target="#entry_ævzīst"/> | %iævzestæ%i.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>I 52</biblScope></bibl>.%n</etym>
                 <etym xml:lang="en">This word means 'silver' in other Indo-European languages and,
                     probably, in Ossetic it was used originally as a word for silver ore and then
-                    for ore in general. The word traces back to <mentioned xml:lang="ira"><lang/>
-                        <w>*arzata</w></mentioned> and has many correspondences: <mentioned
-                        xml:lang="kho"><lang/>
-                        <w>āljsata-(=alʒata-)</w></mentioned>, <mentioned xml:lang="ae"><lang/>
-                        <w>ərəzata-</w></mentioned>, <mentioned xml:lang="peo"><lang/>
-                        <w>ardata-</w></mentioned> , <mentioned xml:lang="sa"><lang/>
-                        <w>rajata-</w></mentioned>, <mentioned xml:lang="xcl"><lang/>
-                        <w>arc’at</w></mentioned>, <mentioned xml:lang="la"><lang/>
-                        <w>argentum</w></mentioned>, <mentioned xml:lang="ga"><lang/>
-                        <w>argat</w></mentioned> , <mentioned xml:lang="br"><lang/>
-                        <w>arcʼhant</w></mentioned>, <mentioned xml:lang="grc"><lang/>
+                    for ore in general. The word traces back to <mentioned xml:id="mentioned_d415e190" xml:lang="ira"><lang/>
+                        <w>*arzata</w></mentioned> and has many correspondences: <mentioned xml:id="mentioned_d415e195" xml:lang="kho"><lang/>
+                        <w>āljsata-(=alʒata-)</w></mentioned>, <mentioned xml:id="mentioned_d415e200" xml:lang="ae"><lang/>
+                        <w>ərəzata-</w></mentioned>, <mentioned xml:id="mentioned_d415e205" xml:lang="peo"><lang/>
+                        <w>ardata-</w></mentioned> , <mentioned xml:id="mentioned_d415e210" xml:lang="sa"><lang/>
+                        <w>rajata-</w></mentioned>, <mentioned xml:id="mentioned_d415e216" xml:lang="xcl"><lang/>
+                        <w>arc’at</w></mentioned>, <mentioned xml:id="mentioned_d415e221" xml:lang="la"><lang/>
+                        <w>argentum</w></mentioned>, <mentioned xml:id="mentioned_d415e226" xml:lang="ga"><lang/>
+                        <w>argat</w></mentioned> , <mentioned xml:id="mentioned_d415e231" xml:lang="br"><lang/>
+                        <w>arcʼhant</w></mentioned>, <mentioned xml:id="mentioned_d415e236" xml:lang="grc"><lang/>
                         <w>άργυρος</w></mentioned>. Caucasian names for silver are also similar to
-                    this word: <mentioned xml:lang="lbe"><lang/>
-                        <w>arcu</w></mentioned>, <mentioned xml:lang="inh"><lang/>
-                        <w>arsi</w></mentioned>, <mentioned xml:lang="inh"><w>orsi</w></mentioned>,
-                        <mentioned xml:lang="agx"><lang/>
-                        <w>ars</w></mentioned>, <mentioned xml:lang="aqc"><lang/>
+                    this word: <mentioned xml:id="mentioned_d415e241" xml:lang="lbe"><lang/>
+                        <w>arcu</w></mentioned>, <mentioned xml:id="mentioned_d415e247" xml:lang="inh"><lang/>
+                        <w>arsi</w></mentioned>, <mentioned xml:id="mentioned_d415e252" xml:lang="inh"><w>orsi</w></mentioned>,
+                        <mentioned xml:id="mentioned_d415e255" xml:lang="agx"><lang/>
+                        <w>ars</w></mentioned>, <mentioned xml:id="mentioned_d415e260" xml:lang="aqc"><lang/>
                         <w>arsi</w></mentioned> etc. It is possible that it is not a question of
                     borrowing but of ancient language contacts. In Ossetic postvocal %it%i usually
                     voices and we would expect *%iærzæd%i but there are cases of an unvoiced %it%i
                     in the same position, see <ref type="xr" target="#entry_7lǧītyn"/> etc.
                     Probably, there was a variant *%iarzaθa%i-. For 'silver' there is another word
-                    in Ossetic: <ref type="xr" target="#entry_ævzīst"/> | %iævzestæ%i.%n<bibl><ref
-                            type="bibl" target="#ref_ОЯФ_I"/><biblScope>I
+                    in Ossetic: <ref type="xr" target="#entry_ævzīst"/> | %iævzestæ%i.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>I
                     52</biblScope></bibl>.%n</etym>
             </entry>
         </body>

@@ -1,42 +1,47 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">kʼ0yrī</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_kʼ0yrī" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>kʼ˳yrī</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>kʼwære</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d3389e72"><abv:tr xml:lang="ru">
                         <q>неделя</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>week</q>
                     </abv:tr></sense>
-                <re>
+                <re xml:id="re_d3389e82">
                     <form type="lemma"><orth>kʼ˳yrīsær</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d3389e87"><abv:tr xml:lang="ru">
                             <q>понедельник</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>Monday</q>
                         </abv:tr></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d3389e100">
                         <quote>mæ fyd īw kʼ˳yrīgaj ʒæbīdyrʒwan cyd</quote>
                         <abv:tr xml:lang="ru">
                             <q>мой отец по неделям охотился за турами</q>
@@ -46,7 +51,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>54</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d3389e119" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>avd kʼwærej cæwuj, oj razæj æz fesafton Ʒanʒiraqi</quote>
                         <abv:tr xml:lang="ru">
@@ -57,7 +62,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>43</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3389e141">
                         <quote>Zærdæværæny razmæ kʼ˳yrīsær bony ūcy qæwæn sæ ʒwary bon væjjy</quote>
                         <abv:tr xml:lang="ru">
                             <q>перед Троицей в понедельник бывает праздник святого-покровителя этого
@@ -69,7 +74,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Сека"/><biblScope>128</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3389e160">
                         <quote>Tūtyræn jæ kʼ˳yrīsær, dyccæg æmæ rtyccæg dæ q˳yddag kæn</quote>
                         <abv:tr xml:lang="ru">
                             <q>понедельник, вторник и среду (недели божества) Тутыр делай свои
@@ -81,7 +86,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Čerm."/><biblScope>73</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3389e179">
                         <quote>kʼwære bælasæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>недельное дерево</q>
@@ -98,29 +103,26 @@
                         <bibl><ref type="bibl" target="#src_ОЭп."/><biblScope>63</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из <mentioned xml:lang="ka"><lang/>
+                <etym xml:lang="ru">Из <mentioned xml:id="mentioned_d3389e213" xml:lang="ka"><lang/>
                         <w>k'vira</w>
-                        <gloss><q>неделя</q></gloss></mentioned>, <mentioned xml:lang="ka"><w/>
-                        <gloss><q>воскресенье</q></gloss></mentioned>. Первоисточник — <mentioned
-                        xml:lang="grc"><lang/>
+                        <gloss><q>неделя</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3389e221" xml:lang="ka"><w/>
+                        <gloss><q>воскресенье</q></gloss></mentioned>. Первоисточник — <mentioned xml:id="mentioned_d3389e227" xml:lang="grc"><lang/>
                         <w>κυριακή (ήμέρα)</w>
-                        <gloss><q>воскресенье</q></gloss></mentioned>. Сюда и <mentioned
-                        xml:lang="ce"><lang/>
-                        <w>kʼvire</w></mentioned>, <mentioned xml:lang="inh"><lang/>
+                        <gloss><q>воскресенье</q></gloss></mentioned>. Сюда и <mentioned xml:id="mentioned_d3389e235" xml:lang="ce"><lang/>
+                        <w>kʼvire</w></mentioned>, <mentioned xml:id="mentioned_d3389e240" xml:lang="inh"><lang/>
                         <w>kʼiræ</w>
-                        <gloss><q>неделя</q></gloss></mentioned>, <mentioned xml:lang="zza"><lang/>
+                        <gloss><q>неделя</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3389e249" xml:lang="zza"><lang/>
                         <w>kīrye</w>
                         <gloss><q>воскресенье</q></gloss></mentioned>.</etym>
-                <etym xml:lang="en">From <mentioned xml:lang="ka"><lang/>
+                <etym xml:lang="en">From <mentioned xml:id="mentioned_d3389e260" xml:lang="ka"><lang/>
                         <w>k'vira</w>
-                        <gloss><q>week</q></gloss></mentioned>, <mentioned xml:lang="ka"><w/>
-                        <gloss><q>Sunday</q></gloss></mentioned>. The primary source is <mentioned
-                        xml:lang="grc"><lang/>
+                        <gloss><q>week</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3389e268" xml:lang="ka"><w/>
+                        <gloss><q>Sunday</q></gloss></mentioned>. The primary source is <mentioned xml:id="mentioned_d3389e274" xml:lang="grc"><lang/>
                         <w>κυριακή (ήμέρα)</w>
-                        <gloss><q>Sunday</q></gloss></mentioned>. See aso <mentioned xml:lang="ce"><lang/>
-                        <w>kʼvire</w></mentioned>, <mentioned xml:lang="inh"><lang/>
+                        <gloss><q>Sunday</q></gloss></mentioned>. See aso <mentioned xml:id="mentioned_d3389e282" xml:lang="ce"><lang/>
+                        <w>kʼvire</w></mentioned>, <mentioned xml:id="mentioned_d3389e287" xml:lang="inh"><lang/>
                         <w>kʼiræ</w>
-                        <gloss><q>week</q></gloss></mentioned>, <mentioned xml:lang="zza"><lang/>
+                        <gloss><q>week</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3389e296" xml:lang="zza"><lang/>
                         <w>kīrye</w>
                         <gloss><q>Sunday</q></gloss></mentioned>.</etym>
             </entry>

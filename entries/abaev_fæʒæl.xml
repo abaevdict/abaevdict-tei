@@ -1,35 +1,40 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">fæʒæl</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_fæʒæl" xml:lang="os-x-iron">
                 <form type="lemma"><orth>fæʒæl</orth></form>
                 <usg><lang/></usg>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d3381e72"><abv:tr xml:lang="ru">
                         <q>тонкая нить в ушке иглы для соединения с толстой, не входящей в ушко</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>a thin thread in the eye of the needle to connect with a thick thread
                             that does not enter the eye</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d3381e84">
                         <quote>zærond ūs sūʒīny byn k˳y næwal wyny, wæd ʒy fæʒæl dary</quote>
                         <abv:tr xml:lang="ru">
                             <q>когда старая женщина не видит больше ушко иглы, она держит там
@@ -41,7 +46,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Сл."/></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3381e102">
                         <quote>sūʒīn æmæ jæ fæʒæl qwamæ īw ǵīppy waǧd woj</quote>
                         <abv:tr xml:lang="ru">
                             <q>игла и %sfæʒæl%s должны быть сделаны по одной мерке</q>
@@ -52,7 +57,7 @@
                         <bibl><ref type="bibl" target="#src_ЮОПам."/><biblScope>III
                             224</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3381e121">
                         <quote>fætk˳ʼy sūʒīn festad, læppū ta fæʒæl sūʒīny fæʒæl</quote>
                         <abv:tr xml:lang="ru">
                             <q>яблоко обратилось в иглу, а мальчик обратился в %sfæʒæl%s, игольный
@@ -65,7 +70,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>IV
                             115</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d3381e140" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>ew osæmæ baqærtʒænæ, ænʒalæ æ fæʒæl, konǧædæ — æ soʒīnæ, fæstæ — je
                             ʽngurstewæn</quote>
@@ -80,27 +85,20 @@
                         <bibl><ref type="bibl" target="#src_ОЭ"/><biblScope>I 108</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Р. %sШтакельберг%s сопоставляет с <mentioned xml:lang="fa"><lang/>
+                <etym xml:lang="ru">Р. %sШтакельберг%s сопоставляет с <mentioned xml:id="mentioned_d3381e165" xml:lang="fa"><lang/>
                         <w/>
-                        <gloss><q>pāčāl ‘insile textoris</q></gloss></mentioned>, <mentioned
-                        xml:lang="fa"><w/><note type="comment" xml:lang="ru">т.е.</note>
+                        <gloss><q>pāčāl ‘insile textoris</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3381e173" xml:lang="fa"><w/><note type="comment" xml:lang="ru">т.е.</note>
                         <gloss><q>шпулька ткача</q></gloss></mentioned> (%sШтакельберг%s дает
                     неточное значение ‘filum textoris’, т. е. ‘нить ткача’). %sBenveniste%s возводит
-                    к %i*раčаryа-%i.%n<bibl><ref type="bibl" target="#ref_MSt."
-                            /><biblScope>84</biblScope></bibl>. —
-                            <bibl><author>Benveniste</author><ref type="bibl" target="#ref_BSL"
-                            /><biblScope>LII 28</biblScope></bibl>.</etym>
-                <etym xml:lang="en">R. %sStackelberg%s compares it to <mentioned xml:lang="fa"><lang/>
+                    к %i*раčаryа-%i.%n<bibl><ref type="bibl" target="#ref_MSt."/><biblScope>84</biblScope></bibl>. —
+                            <bibl><author>Benveniste</author><ref type="bibl" target="#ref_BSL"/><biblScope>LII 28</biblScope></bibl>.</etym>
+                <etym xml:lang="en">R. %sStackelberg%s compares it to <mentioned xml:id="mentioned_d3381e194" xml:lang="fa"><lang/>
                         <w/>
-                        <gloss><q>pāčāl ‘insile textoris</q></gloss></mentioned>, <mentioned
-                        xml:lang="fa"><w/><note
-                            type="comment" xml:lang="en">i.e.</note>
+                        <gloss><q>pāčāl ‘insile textoris</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3381e202" xml:lang="fa"><w/><note type="comment" xml:lang="en">i.e.</note>
                         <gloss><q>weaver's spool</q></gloss></mentioned> (%sstackelberg%s gives an
                     inaccurate meaning ‘filum textoris’, i.e.. ‘weaver's thread’). %sBenveniste%s
-                    traces it back to %i*раčаryа-%i.%n<bibl><ref type="bibl" target="#ref_MSt."
-                            /><biblScope>84</biblScope></bibl>. —
-                            <bibl><author>Benveniste</author><ref type="bibl" target="#ref_BSL"
-                            /><biblScope>LII 28</biblScope></bibl>.</etym>
+                    traces it back to %i*раčаryа-%i.%n<bibl><ref type="bibl" target="#ref_MSt."/><biblScope>84</biblScope></bibl>. —
+                            <bibl><author>Benveniste</author><ref type="bibl" target="#ref_BSL"/><biblScope>LII 28</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

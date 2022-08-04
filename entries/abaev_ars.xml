@@ -1,47 +1,52 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ars</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ars" xml:lang="os">
                 <form type="lemma"><orth>ars</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d1816e69"><abv:tr xml:lang="ru">
                         <q>медведь</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>bear</q>
                     </abv:tr></sense>
-                <re>
+                <re xml:id="re_d1816e79">
                     <form type="lemma"><orth>ærsnyx</orth></form>
-                    <sense><def xml:lang="ru">название растения (буквально „медвежий
+                    <sense xml:id="sense_d1816e84"><def xml:lang="ru">название растения (буквально „медвежий
                             коготь“);</def><def xml:lang="en">name of the plant (literally ‘bear
                             claw’)</def></sense>
                 </re>
-                <re>
+                <re xml:id="re_d1816e91">
                     <form type="lemma"><orth>ærsʒarm</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d1816e96"><abv:tr xml:lang="ru">
                             <q>медвежья шкура</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>bear skin</q>
                         </abv:tr></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d1816e109">
                         <quote>raǵy-ma raǵy ars wydī æmæ jyn ærtæ qybyly wydī</quote>
                         <abv:tr xml:lang="ru">
                             <q>давным-давно была медведица и было у нее три медвежонка</q>
@@ -51,7 +56,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_ОТ"/><biblScope>64</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1816e128">
                         <quote>bīræǧmæ ta raǵy ars kæmdær xæcyd</quote>
                         <abv:tr xml:lang="ru">
                             <q>как- то давно медведь бранил волка</q>
@@ -61,7 +66,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>94</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1816e147">
                         <quote>arsy q˳yn jæ lystæn</quote>
                         <abv:tr xml:lang="ru">
                             <q>медвежья шерсть — его (бога Афсати) постель</q>
@@ -71,7 +76,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>64</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d1816e166" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>fæccæj-ǧuzuj cævettongæ ʒebælgængæ ǧuntʼuz ars</quote>
                         <abv:tr xml:lang="ru">
@@ -82,7 +87,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>46</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1816e188">
                         <quote>cæmæn darys acy ærsʒarm?</quote>
                         <abv:tr xml:lang="ru">
                             <q>зачем ты носишь эту медвежью шкуру?</q>
@@ -94,56 +99,48 @@
                             100</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Восходит к <mentioned xml:lang="ira"><lang/>
+                <etym xml:lang="ru">Восходит к <mentioned xml:id="mentioned_d1816e211" xml:lang="ira"><lang/>
                         <w>*ṛša-, arša-</w></mentioned>, имеет многочисленные соответствия в
-                    индоевропейских языках: <mentioned xml:lang="sgh"><lang/>
-                        <w>yūrš</w></mentioned>, <mentioned xml:lang="ydg"><lang/>
-                        <w>yerš, yarš</w></mentioned>, <mentioned xml:lang="fa"><lang/>
-                        <w>xirs</w></mentioned>, <mentioned xml:lang="ps"><lang/>
-                        <w>yaž</w></mentioned>, <mentioned xml:lang="hac"><lang/>
-                        <w>häsh</w></mentioned>, <mentioned xml:lang="zza"><lang/>
-                        <w>hash, häsh</w></mentioned> (<bibl><ref type="bibl" target="#ref_KPF"
-                            /><biblScope xml:lang="ru">Abt. III, Bd. II, стр.
-                            255</biblScope></bibl>), <mentioned xml:lang="zkh"><lang/>
-                        <w>hrs</w></mentioned> (<bibl><ref type="bibl" target="#ref_Henning._Khwar."
-                            /><biblScope>12</biblScope></bibl>), <mentioned xml:lang="sog"><lang/>
-                        <w>*ašš(ʽššh)</w></mentioned>, <mentioned xml:lang="ae"><lang/>
-                        <w>arša-</w></mentioned>, <mentioned xml:lang="sa"><lang/>
-                        <w>ṛkṣa-</w></mentioned>, <mentioned xml:lang="xcl"><lang/>
-                        <w>arj</w></mentioned>, <mentioned xml:lang="grc"><lang/>
-                        <w>ἄρκτος</w></mentioned>, <mentioned xml:lang="la"><lang/>
-                        <w>ursus</w></mentioned>, <mentioned xml:lang="cel"><lang/>
-                        <w>art, arth</w></mentioned>, <mentioned xml:lang="eu"><lang/>
+                    индоевропейских языках: <mentioned xml:id="mentioned_d1816e216" xml:lang="sgh"><lang/>
+                        <w>yūrš</w></mentioned>, <mentioned xml:id="mentioned_d1816e221" xml:lang="ydg"><lang/>
+                        <w>yerš, yarš</w></mentioned>, <mentioned xml:id="mentioned_d1816e226" xml:lang="fa"><lang/>
+                        <w>xirs</w></mentioned>, <mentioned xml:id="mentioned_d1816e231" xml:lang="ps"><lang/>
+                        <w>yaž</w></mentioned>, <mentioned xml:id="mentioned_d1816e237" xml:lang="hac"><lang/>
+                        <w>häsh</w></mentioned>, <mentioned xml:id="mentioned_d1816e242" xml:lang="zza"><lang/>
+                        <w>hash, häsh</w></mentioned> (<bibl><ref type="bibl" target="#ref_KPF"/><biblScope xml:lang="ru">Abt. III, Bd. II, стр.
+                            255</biblScope></bibl>), <mentioned xml:id="mentioned_d1816e252" xml:lang="zkh"><lang/>
+                        <w>hrs</w></mentioned> (<bibl><ref type="bibl" target="#ref_Henning._Khwar."/><biblScope>12</biblScope></bibl>), <mentioned xml:id="mentioned_d1816e261" xml:lang="sog"><lang/>
+                        <w>*ašš(ʽššh)</w></mentioned>, <mentioned xml:id="mentioned_d1816e267" xml:lang="ae"><lang/>
+                        <w>arša-</w></mentioned>, <mentioned xml:id="mentioned_d1816e272" xml:lang="sa"><lang/>
+                        <w>ṛkṣa-</w></mentioned>, <mentioned xml:id="mentioned_d1816e277" xml:lang="xcl"><lang/>
+                        <w>arj</w></mentioned>, <mentioned xml:id="mentioned_d1816e282" xml:lang="grc"><lang/>
+                        <w>ἄρκτος</w></mentioned>, <mentioned xml:id="mentioned_d1816e287" xml:lang="la"><lang/>
+                        <w>ursus</w></mentioned>, <mentioned xml:id="mentioned_d1816e292" xml:lang="cel"><lang/>
+                        <w>art, arth</w></mentioned>, <mentioned xml:id="mentioned_d1816e298" xml:lang="eu"><lang/>
                         <w>hartz</w></mentioned> (из кельтского). В славянских, балтийских и
-                    германских языках вытеснено, по всей видимости, под действием табу.%n<bibl><ref
-                            type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 50, 82; III
-                            153</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                            /><biblScope>49, 155, 223</biblScope></bibl>.</etym>
-                <etym xml:lang="en">Traces back to <mentioned xml:lang="ira"><lang/>
+                    германских языках вытеснено, по всей видимости, под действием табу.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 50, 82; III
+                            153</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>49, 155, 223</biblScope></bibl>.</etym>
+                <etym xml:lang="en">Traces back to <mentioned xml:id="mentioned_d1816e314" xml:lang="ira"><lang/>
                         <w>*ṛša-, arša-</w></mentioned>, has numerous correspondences in
-                    Indo-European languages: <mentioned xml:lang="sgh"><lang/>
-                        <w>yūrš</w></mentioned>, <mentioned xml:lang="ydg"><lang/>
-                        <w>yerš, yarš</w></mentioned>, <mentioned xml:lang="fa"><lang/>
-                        <w>xirs</w></mentioned>, <mentioned xml:lang="ps"><lang/>
-                        <w>yaž</w></mentioned>, <mentioned xml:lang="hac"><lang/>
-                        <w>häsh</w></mentioned>, <mentioned xml:lang="zza"><lang/>
-                        <w>hash, häsh</w></mentioned> (<bibl><ref type="bibl" target="#ref_KPF"
-                            /><biblScope xml:lang="en">Abt. III, Bd. II, p.
-                            255</biblScope></bibl>), <mentioned xml:lang="zkh"><lang/>
-                        <w>hrs</w></mentioned> (<bibl><ref type="bibl" target="#ref_Henning._Khwar."
-                            /><biblScope>12</biblScope></bibl>), <mentioned xml:lang="sog"><lang/>
-                        <w>*ašš(ʽššh)</w></mentioned>, <mentioned xml:lang="ae"><lang/>
-                        <w>arša-</w></mentioned>, <mentioned xml:lang="sa"><lang/>
-                        <w>ṛkṣa-</w></mentioned>, <mentioned xml:lang="xcl"><lang/>
-                        <w>arj</w></mentioned>, <mentioned xml:lang="grc"><lang/>
-                        <w>ἄρκτος</w></mentioned>, <mentioned xml:lang="la"><lang/>
-                        <w>ursus</w></mentioned>, <mentioned xml:lang="cel"><lang/>
-                        <w>art, arth</w></mentioned>, <mentioned xml:lang="eu"><lang/>
+                    Indo-European languages: <mentioned xml:id="mentioned_d1816e319" xml:lang="sgh"><lang/>
+                        <w>yūrš</w></mentioned>, <mentioned xml:id="mentioned_d1816e324" xml:lang="ydg"><lang/>
+                        <w>yerš, yarš</w></mentioned>, <mentioned xml:id="mentioned_d1816e329" xml:lang="fa"><lang/>
+                        <w>xirs</w></mentioned>, <mentioned xml:id="mentioned_d1816e334" xml:lang="ps"><lang/>
+                        <w>yaž</w></mentioned>, <mentioned xml:id="mentioned_d1816e340" xml:lang="hac"><lang/>
+                        <w>häsh</w></mentioned>, <mentioned xml:id="mentioned_d1816e345" xml:lang="zza"><lang/>
+                        <w>hash, häsh</w></mentioned> (<bibl><ref type="bibl" target="#ref_KPF"/><biblScope xml:lang="en">Abt. III, Bd. II, p.
+                            255</biblScope></bibl>), <mentioned xml:id="mentioned_d1816e355" xml:lang="zkh"><lang/>
+                        <w>hrs</w></mentioned> (<bibl><ref type="bibl" target="#ref_Henning._Khwar."/><biblScope>12</biblScope></bibl>), <mentioned xml:id="mentioned_d1816e364" xml:lang="sog"><lang/>
+                        <w>*ašš(ʽššh)</w></mentioned>, <mentioned xml:id="mentioned_d1816e370" xml:lang="ae"><lang/>
+                        <w>arša-</w></mentioned>, <mentioned xml:id="mentioned_d1816e375" xml:lang="sa"><lang/>
+                        <w>ṛkṣa-</w></mentioned>, <mentioned xml:id="mentioned_d1816e380" xml:lang="xcl"><lang/>
+                        <w>arj</w></mentioned>, <mentioned xml:id="mentioned_d1816e385" xml:lang="grc"><lang/>
+                        <w>ἄρκτος</w></mentioned>, <mentioned xml:id="mentioned_d1816e390" xml:lang="la"><lang/>
+                        <w>ursus</w></mentioned>, <mentioned xml:id="mentioned_d1816e395" xml:lang="cel"><lang/>
+                        <w>art, arth</w></mentioned>, <mentioned xml:id="mentioned_d1816e401" xml:lang="eu"><lang/>
                         <w>hartz</w></mentioned> (from Celtic).In the Slavic, Baltic and Germanic
                     languages it was apparently supplanted under the influence of a
-                            taboo.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"
-                            /><biblScope>II 50, 82; III 153</biblScope></bibl>. — <bibl><ref
-                            type="bibl" target="#ref_ОЯФ_I"/><biblScope>49, 155,
+                            taboo.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 50, 82; III 153</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>49, 155,
                         223</biblScope></bibl>.</etym>
             </entry>
         </body>

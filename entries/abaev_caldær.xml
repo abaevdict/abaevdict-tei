@@ -1,43 +1,48 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">caldær</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_caldær" xml:lang="os">
                 <form type="lemma"><orth>caldær</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d4506e69"><abv:tr xml:lang="ru">
                         <q>несколько</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>some</q>
                     </abv:tr></sense>
-                <re>
-                    <re>
+                <re xml:id="re_d4506e79">
+                    <re xml:id="re_d4506e81">
                         <form type="lemma"><orth>caldær xatty</orth></form>
-                        <sense><abv:tr xml:lang="ru">
+                        <sense xml:id="sense_d4506e86"><abv:tr xml:lang="ru">
                                 <q>несколько раз</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>several times</q>
                             </abv:tr></sense>
                     </re>
-                    <re>
+                    <re xml:id="re_d4506e97">
                         <form type="lemma"><orth>caldæriddær</orth></form>
-                        <sense><abv:tr xml:lang="ru">
+                        <sense xml:id="sense_d4506e102"><abv:tr xml:lang="ru">
                                 <q>сколько бы ни</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>no matter how much</q>
@@ -45,7 +50,7 @@
                     </re>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4506e116">
                         <quote>caldær lægy sæ kʽūxtæ sdardtoj</quote>
                         <abv:tr xml:lang="ru">
                             <q>несколько человек подняли руки</q>
@@ -56,13 +61,9 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">От <ref type="xr" target="#entry_cal"/>, с суффиксом -%idær%i,
-                    подобно другим неопределенным местоимениям: %iḱi-dær%i ‘кто-то’ [см. <ref
-                        type="xr" target="#entry_ḱīdær"/>], %icy-dær%i ‘что-то’ [см. <ref type="xr"
-                        target="#entry_cydær"/>], %ikæcy-dær%i ‘какой-то‘ и др.</etym>
+                    подобно другим неопределенным местоимениям: %iḱi-dær%i ‘кто-то’ [см. <ref type="xr" target="#entry_ḱīdær"/>], %icy-dær%i ‘что-то’ [см. <ref type="xr" target="#entry_cydær"/>], %ikæcy-dær%i ‘какой-то‘ и др.</etym>
                 <etym xml:lang="en">From <ref type="xr" target="#entry_cal"/>, with the suffix
-                    -%idær%i, like other indefinite pronouns: %iḱi-dær%i ‘someone’ [see <ref
-                        type="xr" target="#entry_ḱīdær"/>], %icy-dær%i ‘somewhat’ [see <ref
-                        type="xr" target="#entry_cydær"/>], %ikæcy-dær%i ‘certain‘ etc.</etym>
+                    -%idær%i, like other indefinite pronouns: %iḱi-dær%i ‘someone’ [see <ref type="xr" target="#entry_ḱīdær"/>], %icy-dær%i ‘somewhat’ [see <ref type="xr" target="#entry_cydær"/>], %ikæcy-dær%i ‘certain‘ etc.</etym>
             </entry>
         </body>
     </text>

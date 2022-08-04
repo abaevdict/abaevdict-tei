@@ -1,44 +1,49 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">casm</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_casm" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>casm</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>cans</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d2151e72"><sense xml:id="sense_d2151e73"><abv:tr xml:lang="ru">
                             <q>петля (сети, башлыка, при тканье)</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>loop (of net, of bashlyk)</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="en">
+                        </abv:tr></sense><sense xml:id="sense_d2151e82"><abv:tr xml:lang="en">
                             <q>link</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d2151e87"><abv:tr xml:lang="ru">
                             <q>силок</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>snare</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d2151e96"><abv:tr xml:lang="ru">
                             <q>сеть</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>net</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d2151e108" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>ficcag cans nilxij æj bunton</quote>
                         <abv:tr xml:lang="ru">
@@ -49,7 +54,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Sam."/><biblScope>64</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d2151e130" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>kæd esti sæ cansi baftudæj, wæd bærgæ</quote>
                         <abv:tr xml:lang="ru">
@@ -61,89 +66,71 @@
                         <bibl><ref type="bibl" target="#src_Bes._Ka_ke"/></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Восходит к <mentioned xml:lang="ira"><lang/>
+                <etym xml:lang="ru">Восходит к <mentioned xml:id="mentioned_d2151e154" xml:lang="ira"><lang/>
                         <w>čašman-</w>
-                        <gloss><q>глаз</q></gloss></mentioned>; ср. <mentioned xml:lang="fa"><lang/>
-                        <w>časm</w></mentioned>, <mentioned xml:lang="wbl"><lang/>
-                        <w>čöžm</w></mentioned>, <mentioned xml:lang="mnj"><lang/>
-                        <w>čōm</w></mentioned>, <mentioned xml:lang="sgh"><lang/>
-                        <w>cēm</w></mentioned>, <mentioned xml:lang="sgh"><w>cām</w></mentioned>,
-                        <mentioned xml:lang="ae"><lang/>
-                        <w>čašman-</w></mentioned>. Дальнейшие соответствия см. под <ref type="xr"
-                        target="#entry_cæst"/> ‘глаз’. Идеосемантика ‘петля’←‘глаз’ обычна; ср.
-                        <mentioned xml:lang="ru"><lang/>
-                        <w>глазок</w></mentioned>, <mentioned xml:lang="ru"><w>глаз</w><note
-                            type="comment" xml:lang="ru">‘петля ниток на ткацком станке для продевки
+                        <gloss><q>глаз</q></gloss></mentioned>; ср. <mentioned xml:id="mentioned_d2151e162" xml:lang="fa"><lang/>
+                        <w>časm</w></mentioned>, <mentioned xml:id="mentioned_d2151e167" xml:lang="wbl"><lang/>
+                        <w>čöžm</w></mentioned>, <mentioned xml:id="mentioned_d2151e172" xml:lang="mnj"><lang/>
+                        <w>čōm</w></mentioned>, <mentioned xml:id="mentioned_d2151e177" xml:lang="sgh"><lang/>
+                        <w>cēm</w></mentioned>, <mentioned xml:id="mentioned_d2151e183" xml:lang="sgh"><w>cām</w></mentioned>,
+                        <mentioned xml:id="mentioned_d2151e186" xml:lang="ae"><lang/>
+                        <w>čašman-</w></mentioned>. Дальнейшие соответствия см. под <ref type="xr" target="#entry_cæst"/> ‘глаз’. Идеосемантика ‘петля’←‘глаз’ обычна; ср.
+                        <mentioned xml:id="mentioned_d2151e193" xml:lang="ru"><lang/>
+                        <w>глазок</w></mentioned>, <mentioned xml:id="mentioned_d2151e198" xml:lang="ru"><w>глаз</w><note type="comment" xml:lang="ru">‘петля ниток на ткацком станке для продевки
                             основы’, а также</note>
-                        <gloss><q>ячея сети</q></gloss></mentioned>, <mentioned xml:lang="ka"><lang/>
+                        <gloss><q>ячея сети</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2151e206" xml:lang="ka"><lang/>
                         <w>tvali</w><note type="comment" xml:lang="ru">‘глаз’ и</note>
-                        <gloss><q>петля (сети, чулка)</q></gloss></mentioned>, <mentioned
-                        xml:lang="fa"><lang/>
+                        <gloss><q>петля (сети, чулка)</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2151e217" xml:lang="fa"><lang/>
                         <w>čašm</w><note type="comment" xml:lang="ru">‘глаз’ и</note>
-                        <gloss><q>очко</q></gloss></mentioned>, <mentioned xml:lang="en"><lang/>
+                        <gloss><q>очко</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2151e227" xml:lang="en"><lang/>
                         <w>eye</w><note type="comment" xml:lang="ru">‘глаз’ и</note>
-                        <gloss><q>петелька</q></gloss></mentioned>, <mentioned xml:lang="de"><lang/>
-                        <w>Auge</w><note type="comment" xml:lang="ru">‘глаз’ и</note></mentioned>, <mentioned
-                        xml:lang="fr"><lang/>
+                        <gloss><q>петелька</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2151e237" xml:lang="de"><lang/>
+                        <w>Auge</w><note type="comment" xml:lang="ru">‘глаз’ и</note></mentioned>, <mentioned xml:id="mentioned_d2151e244" xml:lang="fr"><lang/>
                         <w>oeil</w><note type="comment" xml:lang="ru">‘глаз’ и</note>
-                        <gloss><q>петля</q></gloss></mentioned>, <mentioned xml:lang="fr"><w/>
-                        <gloss><q>ушко</q></gloss></mentioned>, <mentioned xml:lang="ab"><lang/>
+                        <gloss><q>петля</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2151e254" xml:lang="fr"><w/>
+                        <gloss><q>ушко</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2151e260" xml:lang="ab"><lang/>
                         <w>a-bla</w><note type="comment" xml:lang="ru">‘глаз’ и</note>
                         <gloss><q>петля</q></gloss></mentioned> и др. В значении ‘глаз’ осетинский
-                    сохранил то же слово в несколько видоизмененном виде: <ref type="xr"
-                        target="#entry_cæst"/>. Для соответствия <mentioned xml:lang="os-x-iron"><lang/>
-                        <w>sm</w></mentioned> | <mentioned xml:lang="os-x-digor"><lang/>
+                    сохранил то же слово в несколько видоизмененном виде: <ref type="xr" target="#entry_cæst"/>. Для соответствия <mentioned xml:id="mentioned_d2151e273" xml:lang="os-x-iron"><lang/>
+                        <w>sm</w></mentioned> | <mentioned xml:id="mentioned_d2151e278" xml:lang="os-x-digor"><lang/>
                         <w>ns</w></mentioned> cp. <ref type="xr" target="#entry_sasm"/> | %isans%i
-                    ‘клей’, <ref type="xr" target="#entry_fæsm"/> | %ifans%i ‘шерсть’, <ref
-                        type="xr" target="#entry_fæzmyn"/> | %ifænzun%i ‘подражать’, <ref type="xr"
-                        target="#entry_az"/> | %ianz%i ‘год’. Иронский диалект сохраняет в этих
-                    случаях более старую форму.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                            /><biblScope xml:lang="ru">17, 318, 361 прим., 379</biblScope></bibl>. —
+                    ‘клей’, <ref type="xr" target="#entry_fæsm"/> | %ifans%i ‘шерсть’, <ref type="xr" target="#entry_fæzmyn"/> | %ifænzun%i ‘подражать’, <ref type="xr" target="#entry_az"/> | %ianz%i ‘год’. Иронский диалект сохраняет в этих
+                    случаях более старую форму.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope xml:lang="ru">17, 318, 361 прим., 379</biblScope></bibl>. —
                             <bibl><ref type="bibl" target="#ref_ИАН"/><biblScope xml:lang="ru">1949,
                             стр. 77</biblScope></bibl>.</etym>
-                <etym xml:lang="en">It traces back to <mentioned xml:lang="ira"><lang/>
+                <etym xml:lang="en">It traces back to <mentioned xml:id="mentioned_d2151e306" xml:lang="ira"><lang/>
                         <w>čašman-</w>
-                        <gloss><q>eye</q></gloss></mentioned>; cf. <mentioned xml:lang="fa"><lang/>
-                        <w>časm</w></mentioned>, <mentioned xml:lang="wbl"><lang/>
-                        <w>čöžm</w></mentioned>, <mentioned xml:lang="mnj"><lang/>
-                        <w>čōm</w></mentioned>, <mentioned xml:lang="sgh"><lang/>
-                        <w>cēm</w></mentioned>, <mentioned xml:lang="sgh"><w>cām</w></mentioned>,
-                        <mentioned xml:lang="ae"><lang/>
-                        <w>čašman-</w></mentioned>. See further correspondences under <ref type="xr"
-                        target="#entry_cæst"/> ‘eye’. Ideosemantics ‘loop’←‘eye’ is usual; cf.
-                        <mentioned xml:lang="ru"><lang/>
-                        <w>glazok</w></mentioned>, <mentioned xml:lang="ru"><w>glaz</w><note type="comment" xml:lang="en">‘loop of
+                        <gloss><q>eye</q></gloss></mentioned>; cf. <mentioned xml:id="mentioned_d2151e314" xml:lang="fa"><lang/>
+                        <w>časm</w></mentioned>, <mentioned xml:id="mentioned_d2151e319" xml:lang="wbl"><lang/>
+                        <w>čöžm</w></mentioned>, <mentioned xml:id="mentioned_d2151e324" xml:lang="mnj"><lang/>
+                        <w>čōm</w></mentioned>, <mentioned xml:id="mentioned_d2151e329" xml:lang="sgh"><lang/>
+                        <w>cēm</w></mentioned>, <mentioned xml:id="mentioned_d2151e335" xml:lang="sgh"><w>cām</w></mentioned>,
+                        <mentioned xml:id="mentioned_d2151e338" xml:lang="ae"><lang/>
+                        <w>čašman-</w></mentioned>. See further correspondences under <ref type="xr" target="#entry_cæst"/> ‘eye’. Ideosemantics ‘loop’←‘eye’ is usual; cf.
+                        <mentioned xml:id="mentioned_d2151e345" xml:lang="ru"><lang/>
+                        <w>glazok</w></mentioned>, <mentioned xml:id="mentioned_d2151e350" xml:lang="ru"><w>glaz</w><note type="comment" xml:lang="en">‘loop of
                             thread on a loom for threading the warp’, and also</note>
-                        <gloss><q>mesh</q></gloss></mentioned>, <mentioned xml:lang="ka"><lang/>
-                        <w>tvali</w><note
-                            type="comment" xml:lang="en">‘eye’ and</note>
-                        <gloss><q>mesh</q></gloss></mentioned>, <mentioned xml:lang="fa"><lang/>
-                        <w>čašm</w><note
-                            type="comment" xml:lang="en">‘eye’ and</note>
-                        <gloss><q>hole</q></gloss></mentioned>, <mentioned xml:lang="en"><lang/>
-                        <w>eye</w><note
-                            type="comment" xml:lang="en">‘eye’ and</note>
-                        <gloss><q>eyelet</q></gloss></mentioned>, <mentioned xml:lang="de"><lang/>
-                        <w>Auge</w><note
-                            type="comment" xml:lang="en">‘eye’ and</note>
-                        <gloss><q>loop</q></gloss></mentioned>, <mentioned xml:lang="fr"><lang/>
-                        <w>oeil</w><note
-                            type="comment" xml:lang="en">‘eye’ and</note>
-                        <gloss><q>loop</q></gloss></mentioned>, <mentioned xml:lang="fr"><w/>
-                        <gloss><q>eyelet</q></gloss></mentioned>, <mentioned xml:lang="ab"><lang/>
-                        <w>a-bla</w><note
-                            type="comment" xml:lang="en">‘eye’ and</note>
+                        <gloss><q>mesh</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2151e358" xml:lang="ka"><lang/>
+                        <w>tvali</w><note type="comment" xml:lang="en">‘eye’ and</note>
+                        <gloss><q>mesh</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2151e369" xml:lang="fa"><lang/>
+                        <w>čašm</w><note type="comment" xml:lang="en">‘eye’ and</note>
+                        <gloss><q>hole</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2151e379" xml:lang="en"><lang/>
+                        <w>eye</w><note type="comment" xml:lang="en">‘eye’ and</note>
+                        <gloss><q>eyelet</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2151e389" xml:lang="de"><lang/>
+                        <w>Auge</w><note type="comment" xml:lang="en">‘eye’ and</note>
+                        <gloss><q>loop</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2151e399" xml:lang="fr"><lang/>
+                        <w>oeil</w><note type="comment" xml:lang="en">‘eye’ and</note>
+                        <gloss><q>loop</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2151e409" xml:lang="fr"><w/>
+                        <gloss><q>eyelet</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2151e415" xml:lang="ab"><lang/>
+                        <w>a-bla</w><note type="comment" xml:lang="en">‘eye’ and</note>
                         <gloss><q>loop</q></gloss></mentioned> etc. Ossetic has kept the same word
                     for 'eye' but it is modificated a little: <ref type="xr" target="#entry_cæst"/>.
-                    For the correspondence<mentioned xml:lang="os-x-iron"><lang/>
-                        <w>sm</w></mentioned> | <mentioned xml:lang="os-x-digor"><lang/>
+                    For the correspondence<mentioned xml:id="mentioned_d2151e428" xml:lang="os-x-iron"><lang/>
+                        <w>sm</w></mentioned> | <mentioned xml:id="mentioned_d2151e433" xml:lang="os-x-digor"><lang/>
                         <w>ns</w></mentioned> cf. <ref type="xr" target="#entry_sasm"/> | %isans%i
-                    ‘glue’, <ref type="xr" target="#entry_fæsm"/> | %ifans%i ‘wool’, <ref type="xr"
-                        target="#entry_fæzmyn"/> | %ifænzun%i ‘mimic’, <ref type="xr"
-                        target="#entry_az"/> | %ianz%i ‘year’. Iron dialect keeps a more old form in
+                    ‘glue’, <ref type="xr" target="#entry_fæsm"/> | %ifans%i ‘wool’, <ref type="xr" target="#entry_fæzmyn"/> | %ifænzun%i ‘mimic’, <ref type="xr" target="#entry_az"/> | %ianz%i ‘year’. Iron dialect keeps a more old form in
                     these cases.<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope xml:lang="en">17, 318,
-                            361 footnote, 379</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_ИАН"/><biblScope xml:lang="en">1949, p.
+                            361 footnote, 379</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_ИАН"/><biblScope xml:lang="en">1949, p.
                     77</biblScope></bibl>.</etym>
             </entry>
         </body>

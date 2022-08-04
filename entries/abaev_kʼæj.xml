@@ -1,35 +1,40 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">kʼæj</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_kʼæj" xml:lang="os">
                 <form type="lemma"><orth>kʼæj</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d3027e69"><sense xml:id="sense_d3027e70"><abv:tr xml:lang="ru">
                             <q>сланец</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>shale</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d3027e79"><abv:tr xml:lang="ru">
                             <q>шифер</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>slate</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d3027e88"><abv:tr xml:lang="ru">
                             <q>шиферная плита</q>
                         </abv:tr><note type="comment" xml:lang="ru"> (в частности ‘плита домашнего
                             очага’)</note><note type="comment" xml:lang="en"> (in particular ‘home
@@ -38,23 +43,23 @@
                         </abv:tr><note type="comment" xml:lang="ru"> (в частности ‘плита домашнего
                             очага’)</note><note type="comment" xml:lang="en"> (in particular ‘home
                             stove’)</note></sense></sense>
-                <re>
-                    <re>
+                <re xml:id="re_d3027e106">
+                    <re xml:id="re_d3027e108">
                         <form xml:lang="os-x-iron" type="lemma"><orth>kʼæjdūr</orth></form>
                         <form xml:lang="os-x-digor" type="dialectal"><orth>kʼæjdor</orth></form>
-                        <sense><sense><abv:tr xml:lang="ru">
+                        <sense xml:id="sense_d3027e116"><sense xml:id="sense_d3027e117"><abv:tr xml:lang="ru">
                                     <q>плитняк</q>
                                 </abv:tr><abv:tr xml:lang="en">
                                     <q>flag</q>
-                                </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                                </abv:tr></sense><sense xml:id="sense_d3027e126"><abv:tr xml:lang="ru">
                                     <q>шифер</q>
                                 </abv:tr><abv:tr xml:lang="en">
                                     <q>slate</q>
                                 </abv:tr></sense></sense>
                     </re>
-                    <re>
+                    <re xml:id="re_d3027e137">
                         <form type="lemma"><orth>kʼæjʒar</orth></form>
-                        <sense><abv:tr xml:lang="ru">
+                        <sense xml:id="sense_d3027e142"><abv:tr xml:lang="ru">
                                 <q>покрытый или мощенный, выложенный каменными плитами</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>covered or paved with stone slabs</q>
@@ -62,7 +67,7 @@
                     </re>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d3027e156" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>wadæxsīnæ æxsīn kʼæjtæ gælʒuj</quote>
                         <abv:tr xml:lang="ru">
@@ -74,7 +79,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
                             135</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3027e178">
                         <quote>mæn kʼæjyl fæwaǧta</quote>
                         <abv:tr xml:lang="ru">
                             <q>меня она оставила на плите домашнего очага</q>
@@ -84,7 +89,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>55</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d3027e197" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>dalæ komi i kʼundægi niccæjsaǧdæj saw kʼæjdor</quote>
                         <abv:tr xml:lang="ru">
@@ -95,7 +100,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>60</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d3027e219" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>Esen iwazguti kʼæjʒar iwazægdonæmæ bakodta</quote>
                         <abv:tr xml:lang="ru">
@@ -107,7 +112,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
                             127</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3027e241">
                         <quote>wælkʼæj ʒykka</quote>
                         <abv:tr xml:lang="ru">
                             <q><ref type="xr" target="#entry_ʒykka"/> (см. это слово), спеченный на
@@ -119,31 +124,26 @@
                         </abv:tr>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из <mentioned xml:lang="sva"><lang/>
+                <etym xml:lang="ru">Из <mentioned xml:id="mentioned_d3027e263" xml:lang="sva"><lang/>
                         <w>k’a</w>
-                        <gloss><q>сланец</q></gloss></mentioned>, <mentioned xml:lang="sva"><w/>
-                        <gloss><q>шифер</q></gloss></mentioned>, <mentioned xml:lang="sva"><w/>
-                        <gloss><q>плита</q></gloss></mentioned>. Сюда же <mentioned
-                        xml:lang="krc-x-balkar"><lang/>
+                        <gloss><q>сланец</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3027e271" xml:lang="sva"><w/>
+                        <gloss><q>шифер</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3027e277" xml:lang="sva"><w/>
+                        <gloss><q>плита</q></gloss></mentioned>. Сюда же <mentioned xml:id="mentioned_d3027e283" xml:lang="krc-x-balkar"><lang/>
                         <w>gəjə</w>
                         <gloss><q>каменная плита</q></gloss></mentioned>. Термины, связанные с
-                    горной природой, идут в осетинском обычно из кавказского; ср. <ref type="xr"
-                        target="#entry_zæj"/> ‘лавина’ из сван. %ižāj%i и др. — Ср. <ref type="xr"
-                        target="#entry_kʼæʒæx"/> ‘скала’, <ref type="xr" target="#entry_kʼæjnyx"/>
+                    горной природой, идут в осетинском обычно из кавказского; ср. <ref type="xr" target="#entry_zæj"/> ‘лавина’ из сван. %ižāj%i и др. — Ср. <ref type="xr" target="#entry_kʼæʒæx"/> ‘скала’, <ref type="xr" target="#entry_kʼæjnyx"/>
                             ‘упрямый’.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>51,
                             88, 90, 276, 294, 519</biblScope></bibl>.</etym>
-                <etym xml:lang="en">From <mentioned xml:lang="sva"><lang/>
+                <etym xml:lang="en">From <mentioned xml:id="mentioned_d3027e306" xml:lang="sva"><lang/>
                         <w>k’a</w>
-                        <gloss><q>shale</q></gloss></mentioned>, <mentioned xml:lang="sva"><w/>
-                        <gloss><q>slate</q></gloss></mentioned>, <mentioned xml:lang="sva"><w/>
-                        <gloss><q>flag</q></gloss></mentioned>. <mentioned xml:lang="krc-x-balkar"><lang/>
+                        <gloss><q>shale</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3027e314" xml:lang="sva"><w/>
+                        <gloss><q>slate</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3027e320" xml:lang="sva"><w/>
+                        <gloss><q>flag</q></gloss></mentioned>. <mentioned xml:id="mentioned_d3027e326" xml:lang="krc-x-balkar"><lang/>
                         <w>gəjə</w>
                         <gloss><q>stone flag</q></gloss></mentioned> is related to it as well. The
                     terms, related to mountain nature, usually come in Ossetic from Caucasian; cf.
                         <ref type="xr" target="#entry_zæj"/> ‘avalanche’ from Svan %ižāj%i etc. —
-                    Cf. <ref type="xr" target="#entry_kʼæʒæx"/> ‘cliff’, <ref type="xr"
-                        target="#entry_kʼæjnyx"/> ‘stubborn’.%n<bibl><ref type="bibl"
-                            target="#ref_ОЯФ_I"/><biblScope>51, 88, 90, 276, 294,
+                    Cf. <ref type="xr" target="#entry_kʼæʒæx"/> ‘cliff’, <ref type="xr" target="#entry_kʼæjnyx"/> ‘stubborn’.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>51, 88, 90, 276, 294,
                         519</biblScope></bibl>.</etym>
                 <note type="internal">хреф в переводе примера</note>
             </entry>

@@ -1,38 +1,42 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">iblis</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_iblis" xml:lang="os">
-                <form type="lemma"><orth>iblis</orth><form type="variant"
-                    ><orth>ibiliz</orth></form></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <form type="lemma"><orth>iblis</orth><form type="variant"><orth>ibiliz</orth></form></form>
+                <sense xml:id="sense_d4887e71"><sense xml:id="sense_d4887e72"><abv:tr xml:lang="ru">
                             <q>дьявол</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>devil</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d4887e81"><abv:tr xml:lang="ru">
                             <q>демон</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>demon</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4887e93" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>ibiliztæ, ʒintæ, æ sajtani xæjttæ…</quote>
                         <abv:tr xml:lang="ru">
@@ -41,34 +45,29 @@
                         <abv:tr xml:lang="en">
                             <q>iblises, djinns, his Satanic henchmen</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Bes._Ka_ke"
-                            /><biblScope>21</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Bes._Ka_ke"/><biblScope>21</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из <mentioned xml:lang="ar"><lang/>
-                        <w>iblīs</w></mentioned>, <mentioned xml:lang="fa"><lang/>
-                        <w>iblīs</w></mentioned>, <mentioned xml:lang="trk"><lang/>
+                <etym xml:lang="ru">Из <mentioned xml:id="mentioned_d4887e118" xml:lang="ar"><lang/>
+                        <w>iblīs</w></mentioned>, <mentioned xml:id="mentioned_d4887e123" xml:lang="fa"><lang/>
+                        <w>iblīs</w></mentioned>, <mentioned xml:id="mentioned_d4887e128" xml:lang="trk"><lang/>
                         <w>iblis</w>
                         <gloss><q>дьявол</q></gloss></mentioned>. Вошло и в другие языки Кавказа:
-                        <mentioned xml:lang="kbd"><lang/>
-                        <w>’iblis</w></mentioned>, <mentioned xml:lang="av"><lang/>
-                        <w>ilbis, iblis</w></mentioned>, <mentioned xml:lang="lez"><lang/>
-                        <w>iblis</w></mentioned>, <mentioned xml:lang="x-vaynakh"><lang/>
-                        <w>jilbaz, lilbaz</w></mentioned> и др. Ос. <ref type="xr"
-                        target="#entry_fydbylyz"/> ‘беда’ (см. это слово) образовалось из <ref
-                        type="xr" target="#entry_fyd"/>-%iiblis%i ‘злой демон’.</etym>
-                <etym xml:lang="en">From <mentioned xml:lang="ar"><lang/>
-                        <w>iblīs</w></mentioned>, <mentioned xml:lang="fa"><lang/>
-                        <w>iblīs</w></mentioned>, <mentioned xml:lang="trk"><lang/>
+                        <mentioned xml:id="mentioned_d4887e136" xml:lang="kbd"><lang/>
+                        <w>’iblis</w></mentioned>, <mentioned xml:id="mentioned_d4887e141" xml:lang="av"><lang/>
+                        <w>ilbis, iblis</w></mentioned>, <mentioned xml:id="mentioned_d4887e147" xml:lang="lez"><lang/>
+                        <w>iblis</w></mentioned>, <mentioned xml:id="mentioned_d4887e152" xml:lang="x-vaynakh"><lang/>
+                        <w>jilbaz, lilbaz</w></mentioned> и др. Ос. <ref type="xr" target="#entry_fydbylyz"/> ‘беда’ (см. это слово) образовалось из <ref type="xr" target="#entry_fyd"/>-%iiblis%i ‘злой демон’.</etym>
+                <etym xml:lang="en">From <mentioned xml:id="mentioned_d4887e164" xml:lang="ar"><lang/>
+                        <w>iblīs</w></mentioned>, <mentioned xml:id="mentioned_d4887e169" xml:lang="fa"><lang/>
+                        <w>iblīs</w></mentioned>, <mentioned xml:id="mentioned_d4887e174" xml:lang="trk"><lang/>
                         <w>iblis</w>
                         <gloss><q>devil</q></gloss></mentioned>. Iy entered other languages of
-                    Caucasus as well: <mentioned xml:lang="kbd"><lang/>
-                        <w>’iblis</w></mentioned>, <mentioned xml:lang="av"><lang/>
-                        <w>ilbis, iblis</w></mentioned>, <mentioned xml:lang="lez"><lang/>
-                        <w>iblis</w></mentioned>, <mentioned xml:lang="x-vaynakh"><lang/>
-                        <w>jilbaz, lilbaz</w></mentioned> etc. Ossetic <ref type="xr"
-                        target="#entry_fydbylyz"/> ‘misfortune’ (see this word) was formed from <ref
-                        type="xr" target="#entry_fyd"/>-%iiblis%i ‘evil demon’.</etym>
+                    Caucasus as well: <mentioned xml:id="mentioned_d4887e182" xml:lang="kbd"><lang/>
+                        <w>’iblis</w></mentioned>, <mentioned xml:id="mentioned_d4887e187" xml:lang="av"><lang/>
+                        <w>ilbis, iblis</w></mentioned>, <mentioned xml:id="mentioned_d4887e193" xml:lang="lez"><lang/>
+                        <w>iblis</w></mentioned>, <mentioned xml:id="mentioned_d4887e198" xml:lang="x-vaynakh"><lang/>
+                        <w>jilbaz, lilbaz</w></mentioned> etc. Ossetic <ref type="xr" target="#entry_fydbylyz"/> ‘misfortune’ (see this word) was formed from <ref type="xr" target="#entry_fyd"/>-%iiblis%i ‘evil demon’.</etym>
                 <note type="internal">перевод примера!!</note>
             </entry>
         </body>

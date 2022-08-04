@@ -1,52 +1,55 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">awærdyn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_awærdyn" xml:lang="os">
-                <form xml:lang="os-x-iron" type="lemma"><orth>awærdyn</orth><form type="participle"
-                            ><orth>awærst</orth></form></form>
-                <form xml:lang="os-x-digor" type="dialectal"><orth>awærdun</orth><form
-                        type="participle"><orth>aurst</orth></form></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <form xml:lang="os-x-iron" type="lemma"><orth>awærdyn</orth><form type="participle"><orth>awærst</orth></form></form>
+                <form xml:lang="os-x-digor" type="dialectal"><orth>awærdun</orth><form type="participle"><orth>aurst</orth></form></form>
+                <sense xml:id="sense_d2272e76"><sense xml:id="sense_d2272e77"><abv:tr xml:lang="ru">
                             <q>щадить</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>spare</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d2272e86"><abv:tr xml:lang="ru">
                             <q>жалеть</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>have mercy</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d2272e95"><abv:tr xml:lang="ru">
                             <q>экономить</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>save</q>
                         </abv:tr></sense></sense>
-                <re>
+                <re xml:id="re_d2272e105">
                     <form type="lemma"><orth>ænawærdon</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d2272e110"><abv:tr xml:lang="ru">
                             <q>беспощадный</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>merciless</q>
                         </abv:tr></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d2272e123">
                         <quote>ūj zon, Qyrym, æz, amal wævgæjæ, dæwæn nicy bacawærdʒynæn</quote>
                         <abv:tr xml:lang="ru">
                             <q>знай, Кирим, я, если есть возможность, ничего для тебя не пожалею</q>
@@ -54,10 +57,9 @@
                         <abv:tr xml:lang="en">
                             <q>know, Kirim, I will not spare anything for you</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Брит."
-                            /><biblScope>146</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Брит."/><biblScope>146</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2272e142">
                         <quote>kæd færæz īs, wæd myl æxcajy tyxxæj ma bacawærd</quote>
                         <abv:tr xml:lang="ru">
                             <q>если есть возможность (помочь делу), то ты меня не щади в отношении
@@ -69,7 +71,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Сека"/><biblScope>60</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2272e161">
                         <quote>næ dæbæl awærdun</quote>
                         <abv:tr xml:lang="ru">
                             <q>я тебя не щажу</q>
@@ -77,10 +79,9 @@
                         <abv:tr xml:lang="en">
                             <q>I don't spare you</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>24%l12%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>24%l12%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d2272e180" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>næwægʒaw æxsæni mulkbæl awærduj</quote>
                         <abv:tr xml:lang="ru">
@@ -91,7 +92,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_FS"/><biblScope>V 7</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d2272e202" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>eci togcʼirtæ kosæg adæmbæl næ aurstoj</quote>
                         <abv:tr xml:lang="ru">
@@ -102,7 +103,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_FS"/><biblScope>V 117</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2272e225">
                         <quote>gaʒa bīræg æfsæstæj dær næ awærdy læbūrynyl</quote>
                         <abv:tr xml:lang="ru">
                             <q>волчица даже сытая нещадно нападает</q>
@@ -112,7 +113,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>41</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2272e244">
                         <quote>nal awærsta znaggadyl</quote>
                         <abv:tr xml:lang="ru">
                             <q>он стал бесчинствовать нещадно</q>
@@ -122,7 +123,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Čerm."/><biblScope>51</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d2272e263" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>ænawærdgæj</quote>
                         <abv:tr xml:lang="ru">
@@ -139,7 +140,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Qazb."/><biblScope>48</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d2272e296" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>zærond Ilasi sæ ew ku isræxusta ænawærdonæj</quote>
                         <abv:tr xml:lang="ru">
@@ -152,48 +153,42 @@
                                 83</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">%sВс. Миллер%s (<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._Gr."/><biblScope>56</biblScope></bibl>)
-                    сопоставляет с <mentioned xml:lang="sa"><lang/>
-                        <w>vardh-</w></mentioned>, <mentioned xml:lang="ae"><lang/>
+                <etym xml:lang="ru">%sВс. Миллер%s (<bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>56</biblScope></bibl>)
+                    сопоставляет с <mentioned xml:id="mentioned_d2272e326" xml:lang="sa"><lang/>
+                        <w>vardh-</w></mentioned>, <mentioned xml:id="mentioned_d2272e331" xml:lang="ae"><lang/>
                         <w>varəd-</w>
-                        <gloss><q>растить</q></gloss></mentioned>, <mentioned xml:lang="ae"><w/>
-                        <gloss><q>увеличивать</q></gloss></mentioned>, <mentioned xml:lang="ae"><w/>
-                        <gloss><q>множить</q></gloss></mentioned>, <mentioned xml:lang="fa"><lang/>
+                        <gloss><q>растить</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2272e339" xml:lang="ae"><w/>
+                        <gloss><q>увеличивать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2272e345" xml:lang="ae"><w/>
+                        <gloss><q>множить</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2272e352" xml:lang="fa"><lang/>
                         <w>bālīdan</w>
-                        <gloss><q>увеличиваться</q></gloss></mentioned>, <mentioned xml:lang="fa"><w/>
+                        <gloss><q>увеличиваться</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2272e360" xml:lang="fa"><w/>
                         <gloss><q>расти</q></gloss></mentioned>; ср. также предположительно
-                    усвоенное из арийских языков <mentioned xml:lang="udm"><lang/>
+                    усвоенное из арийских языков <mentioned xml:id="mentioned_d2272e366" xml:lang="udm"><lang/>
                         <w>vord-</w>
-                        <gloss><q>растить</q></gloss></mentioned>, <mentioned xml:lang="udm"><w/>
+                        <gloss><q>растить</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2272e374" xml:lang="udm"><w/>
                         <gloss><q>беречь</q></gloss></mentioned>
-                            (<bibl><author>Jacobsohn</author><ref type="bibl" target="#ref_KZ"
-                            /><biblScope>54</biblScope></bibl>). Для семантики ср. <mentioned
-                        xml:lang="gem"><lang/>
+                            (<bibl><author>Jacobsohn</author><ref type="bibl" target="#ref_KZ"/><biblScope>54</biblScope></bibl>). Для семантики ср. <mentioned xml:id="mentioned_d2272e385" xml:lang="gem"><lang/>
                         <w>spar-</w>
-                        <gloss><q>щадить</q></gloss></mentioned> при <mentioned xml:lang="sla"><lang/>
+                        <gloss><q>щадить</q></gloss></mentioned> при <mentioned xml:id="mentioned_d2272e394" xml:lang="sla"><lang/>
                         <w>sporъ</w>
                         <gloss><q>обильный</q></gloss></mentioned>.</etym>
-                <etym xml:lang="en">%sVs. Miller%s (<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._Gr."/><biblScope>56</biblScope></bibl>)
-                    compares it to <mentioned xml:lang="sa"><lang/>
-                        <w>vardh-</w></mentioned>, <mentioned xml:lang="ae"><lang/>
+                <etym xml:lang="en">%sVs. Miller%s (<bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>56</biblScope></bibl>)
+                    compares it to <mentioned xml:id="mentioned_d2272e409" xml:lang="sa"><lang/>
+                        <w>vardh-</w></mentioned>, <mentioned xml:id="mentioned_d2272e414" xml:lang="ae"><lang/>
                         <w>varəd-</w>
-                        <gloss><q>raise</q></gloss></mentioned>, <mentioned xml:lang="ae"><w/>
-                        <gloss><q>increase</q></gloss></mentioned>, <mentioned xml:lang="ae"><w/>
-                        <gloss><q>multiply</q></gloss></mentioned>, <mentioned xml:lang="fa"><lang/>
+                        <gloss><q>raise</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2272e422" xml:lang="ae"><w/>
+                        <gloss><q>increase</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2272e428" xml:lang="ae"><w/>
+                        <gloss><q>multiply</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2272e435" xml:lang="fa"><lang/>
                         <w>bālīdan</w>
-                        <gloss><q>increase</q></gloss></mentioned>, <mentioned xml:lang="fa"><w/>
+                        <gloss><q>increase</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2272e443" xml:lang="fa"><w/>
                         <gloss><q>grow</q></gloss></mentioned>; cf. also supposedly adapted from the
-                    Aryan languages<mentioned xml:lang="udm"><lang/>
+                    Aryan languages<mentioned xml:id="mentioned_d2272e449" xml:lang="udm"><lang/>
                         <w>vord-</w>
-                        <gloss><q>raise</q></gloss></mentioned>, <mentioned xml:lang="udm"><w/>
+                        <gloss><q>raise</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2272e457" xml:lang="udm"><w/>
                         <gloss><q>cherish</q></gloss></mentioned>
-                            (<bibl><author>Jacobsohn</author><ref type="bibl" target="#ref_KZ"
-                            /><biblScope>54</biblScope></bibl>). For semantics, cf. <mentioned
-                        xml:lang="gem"><lang/>
+                            (<bibl><author>Jacobsohn</author><ref type="bibl" target="#ref_KZ"/><biblScope>54</biblScope></bibl>). For semantics, cf. <mentioned xml:id="mentioned_d2272e468" xml:lang="gem"><lang/>
                         <w>spar-</w>
-                        <gloss><q>spare</q></gloss></mentioned> and <mentioned xml:lang="sla"><lang/>
+                        <gloss><q>spare</q></gloss></mentioned> and <mentioned xml:id="mentioned_d2272e477" xml:lang="sla"><lang/>
                         <w>sporъ</w>
                         <gloss><q>abundant</q></gloss></mentioned>.</etym>
             </entry>

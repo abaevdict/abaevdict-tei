@@ -1,34 +1,37 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">dymyn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_dymyn" xml:lang="os">
-                <form xml:lang="os-x-iron" type="lemma"><orth>dymyn</orth><form type="participle"
-                            ><orth>dymd</orth></form></form>
-                <form xml:lang="os-x-digor" type="dialectal"><orth>dumun</orth><form
-                        type="participle"><orth>dund</orth></form></form>
-                <sense n="1" xml:id="sense_dymyn.1"><sense><abv:tr xml:lang="ru">
+                <form xml:lang="os-x-iron" type="lemma"><orth>dymyn</orth><form type="participle"><orth>dymd</orth></form></form>
+                <form xml:lang="os-x-digor" type="dialectal"><orth>dumun</orth><form type="participle"><orth>dund</orth></form></form>
+                <sense n="1" xml:id="sense_dymyn.1"><sense xml:id="sense_d1409e77"><abv:tr xml:lang="ru">
                             <q>дуть</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>blow</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d1409e86"><abv:tr xml:lang="ru">
                             <q>надувать</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>blow up</q>
@@ -38,20 +41,20 @@
                     </abv:tr><abv:tr xml:lang="en">
                         <q>smoke</q>
                     </abv:tr></sense>
-                <re>
+                <re xml:id="re_d1409e106">
                     <form type="lemma"><orth>fædymd wyn</orth></form>
-                    <sense><sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d1409e111"><sense xml:id="sense_d1409e112"><abv:tr xml:lang="ru">
                                 <q>удрать</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>run away</q>
-                            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                            </abv:tr></sense><sense xml:id="sense_d1409e121"><abv:tr xml:lang="ru">
                                 <q>исчезнуть</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>disappear</q>
                             </abv:tr></sense></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d1409e135">
                         <quote>æfcægæj radymdta æma fændag mītæj bambærzta</quote>
                         <abv:tr xml:lang="ru">
                             <q>(ветер) подул с перевала, и дорогу занесло снегом</q>
@@ -60,7 +63,7 @@
                             <q>(wind) blew from the pass, and the road got covered with snow</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1409e150">
                         <quote>ʒuapp næ rajsgæj fæddund æj</quote>
                         <abv:tr xml:lang="ru">
                             <q>не приняв ответа, он умчался</q>
@@ -70,7 +73,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>64</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d1409e169" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>kumædær niddumdta</quote>
                         <abv:tr xml:lang="ru">
@@ -79,10 +82,9 @@
                         <abv:tr xml:lang="en">
                             <q>[he] ran away somewhere</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_SD"
-                            /><biblScope>286%l4%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_SD"/><biblScope>286%l4%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1409e191">
                         <quote>dumd fæwwæd</quote>
                         <abv:tr xml:lang="ru">
                             <q>пусть пропадет</q>
@@ -90,12 +92,11 @@
                         <abv:tr xml:lang="en">
                             <q>let he/she/it disappear</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Gurdž._Æduli"
-                            /><biblScope>82</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Gurdž._Æduli"/><biblScope>82</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d1409e213">
                         <quote>Qasbol sæ dwary raz badti æmæ lulæ dymdta</quote>
                         <abv:tr xml:lang="ru">
                             <q>Касбол сидел перед своей дверью и курил трубку</q>
@@ -105,106 +106,86 @@
                         </abv:tr>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Восходит к <mentioned xml:lang="ira"><lang/>
-                        <w>*dam</w></mentioned>; %ia → u → y%i под влиянием губного, как в <ref
-                        type="xr" target="#entry_cymyn"/> ‘хлебать’ (← %ičam%i-), <ref type="xr"
-                        target="#entry_myd"/> ‘мед’ (← %imadu%i-) и др. Общеиндоевропейский глагол:
-                        <mentioned xml:lang="fa"><lang/>
+                <etym xml:lang="ru">Восходит к <mentioned xml:id="mentioned_d1409e231" xml:lang="ira"><lang/>
+                        <w>*dam</w></mentioned>; %ia → u → y%i под влиянием губного, как в <ref type="xr" target="#entry_cymyn"/> ‘хлебать’ (← %ičam%i-), <ref type="xr" target="#entry_myd"/> ‘мед’ (← %imadu%i-) и др. Общеиндоевропейский глагол:
+                        <mentioned xml:id="mentioned_d1409e240" xml:lang="fa"><lang/>
                         <w>damīdan</w>
-                        <gloss><q>дуть</q></gloss></mentioned>, <mentioned xml:lang="fa"><w/>
-                        <gloss><q>надувать</q></gloss></mentioned>, <mentioned xml:lang="fa"
-                            ><w>dam</w>
-                        <gloss><q>дыхание</q></gloss></mentioned>, <mentioned xml:lang="fa"><w/>
-                        <gloss><q>дуновение</q></gloss></mentioned>, <mentioned xml:lang="yah"><lang/>
+                        <gloss><q>дуть</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1409e248" xml:lang="fa"><w/>
+                        <gloss><q>надувать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1409e255" xml:lang="fa"><w>dam</w>
+                        <gloss><q>дыхание</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1409e261" xml:lang="fa"><w/>
+                        <gloss><q>дуновение</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1409e267" xml:lang="yah"><lang/>
                         <w>dam-</w>
-                        <gloss><q>надувать</q></gloss></mentioned>, <mentioned xml:lang="yah"><w/>
+                        <gloss><q>надувать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1409e275" xml:lang="yah"><w/>
                         <gloss><q>раздувать мехами</q></gloss><note type="comment" xml:lang="ru">
-                                    (<bibl><ref type="bibl" target="#ref_Андреев._Язг."
-                                    /><biblScope>8</biblScope></bibl>)</note></mentioned>,
-                        <mentioned xml:lang="sog"><lang/>
+                                    (<bibl><ref type="bibl" target="#ref_Андреев._Язг."/><biblScope>8</biblScope></bibl>)</note></mentioned>,
+                        <mentioned xml:id="mentioned_d1409e287" xml:lang="sog"><lang/>
                         <w>*δam(δ'm-)</w>
-                        <gloss><q>дуть</q></gloss></mentioned>, <mentioned xml:lang="sog"><w/>
-                        <gloss><q>надувать</q></gloss></mentioned>, <mentioned xml:lang="xpr"><lang/>
-                        <w>dm-</w></mentioned>, <mentioned xml:lang="kho"><lang/>
+                        <gloss><q>дуть</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1409e295" xml:lang="sog"><w/>
+                        <gloss><q>надувать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1409e302" xml:lang="xpr"><lang/>
+                        <w>dm-</w></mentioned>, <mentioned xml:id="mentioned_d1409e307" xml:lang="kho"><lang/>
                         <w>dam-</w>
-                        <gloss><q>дуть</q></gloss></mentioned>, <mentioned xml:lang="kho"
-                            ><w>pa-dama-</w>
-                        <gloss><q>ветер</q></gloss></mentioned>, <mentioned xml:lang="kho"
-                            ><w>uys-dam-(=uz-dam-)</w>
-                        <gloss><q>тушить</q></gloss></mentioned>, <mentioned xml:lang="kho"><w/>
-                        <gloss><q>задувать</q></gloss></mentioned>, <mentioned xml:lang="ae"><lang/>
+                        <gloss><q>дуть</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1409e315" xml:lang="kho"><w>pa-dama-</w>
+                        <gloss><q>ветер</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1409e321" xml:lang="kho"><w>uys-dam-(=uz-dam-)</w>
+                        <gloss><q>тушить</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1409e327" xml:lang="kho"><w/>
+                        <gloss><q>задувать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1409e333" xml:lang="ae"><lang/>
                         <w>dāδmainya-</w>
-                        <gloss><q>надувающийся</q></gloss></mentioned>, <mentioned xml:lang="sa"><lang/>
+                        <gloss><q>надувающийся</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1409e342" xml:lang="sa"><lang/>
                         <w>dham-(dhamati)</w>
-                        <gloss><q>дуть</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
-                        <gloss><q>раздувать</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
-                        <gloss><q>надувать</q></gloss></mentioned>, <mentioned xml:lang="ru"><lang/>
-                        <w>дмить</w></mentioned> (<mentioned xml:lang="cu"><lang/>
-                        <w n="0">дъм-</w></mentioned>), <mentioned xml:lang="lt"><lang/>
-                        <w>dumiù</w></mentioned>, <mentioned xml:lang="lt"><w>dùmti</w>
-                        <gloss><q>дуть</q></gloss></mentioned>, <mentioned xml:lang="de"><lang/>
+                        <gloss><q>дуть</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1409e350" xml:lang="sa"><w/>
+                        <gloss><q>раздувать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1409e356" xml:lang="sa"><w/>
+                        <gloss><q>надувать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1409e362" xml:lang="ru"><lang/>
+                        <w>дмить</w></mentioned> (<mentioned xml:id="mentioned_d1409e367" xml:lang="cu"><lang/>
+                        <w n="0">дъм-</w></mentioned>), <mentioned xml:id="mentioned_d1409e373" xml:lang="lt"><lang/>
+                        <w>dumiù</w></mentioned>, <mentioned xml:id="mentioned_d1409e379" xml:lang="lt"><w>dùmti</w>
+                        <gloss><q>дуть</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1409e385" xml:lang="de"><lang/>
                         <w>Dampf</w>
-                        <gloss><q>пар</q></gloss></mentioned>, <mentioned xml:lang="de"><w/>
+                        <gloss><q>пар</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1409e393" xml:lang="de"><w/>
                         <gloss><q>дым</q></gloss></mentioned> и пр. Для значения ‘курить’ ср.
-                        <mentioned xml:lang="ttt"><lang/>
+                        <mentioned xml:id="mentioned_d1409e399" xml:lang="ttt"><lang/>
                         <w>dāmi</w>
-                        <gloss><q>курительная трубка</q></gloss></mentioned>. Ср. <ref type="xr"
-                        target="#entry_dymsyn"/> ‘надуваться’.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope xml:lang="ru">II 53
+                        <gloss><q>курительная трубка</q></gloss></mentioned>. Ср. <ref type="xr" target="#entry_dymsyn"/> ‘надуваться’.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope xml:lang="ru">II 53
                             сл.</biblScope></bibl>;
-                            <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>19</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_Hübschmann._Oss."/><biblScope>37</biblScope></bibl>. —
+                            <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>19</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>37</biblScope></bibl>. —
                             <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>27,
                             570</biblScope></bibl>.</etym>
-                <etym xml:lang="en">It traces back to <mentioned xml:lang="ira"><lang/>
+                <etym xml:lang="en">It traces back to <mentioned xml:id="mentioned_d1409e430" xml:lang="ira"><lang/>
                         <w>*dam</w></mentioned>; %ia → u → y%i near the labial consonant, like in
-                        <ref type="xr" target="#entry_cymyn"/> ‘slurp’ (← %ičam%i-), <ref type="xr"
-                        target="#entry_myd"/> ‘honey’ (← %imadu%i-) etc. A common Indo-European
-                    verb: <mentioned xml:lang="fa"><lang/>
+                        <ref type="xr" target="#entry_cymyn"/> ‘slurp’ (← %ičam%i-), <ref type="xr" target="#entry_myd"/> ‘honey’ (← %imadu%i-) etc. A common Indo-European
+                    verb: <mentioned xml:id="mentioned_d1409e439" xml:lang="fa"><lang/>
                         <w>damīdan</w>
-                        <gloss><q>blow</q></gloss></mentioned>, <mentioned xml:lang="fa"><w/>
-                        <gloss><q>blow up</q></gloss></mentioned>, <mentioned xml:lang="fa"
-                            ><w>dam</w>
-                        <gloss><q>breath</q></gloss></mentioned>, <mentioned xml:lang="fa"><w/>
-                        <gloss><q>waft</q></gloss></mentioned>, <mentioned xml:lang="yah"><lang/>
+                        <gloss><q>blow</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1409e447" xml:lang="fa"><w/>
+                        <gloss><q>blow up</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1409e454" xml:lang="fa"><w>dam</w>
+                        <gloss><q>breath</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1409e460" xml:lang="fa"><w/>
+                        <gloss><q>waft</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1409e466" xml:lang="yah"><lang/>
                         <w>dam-</w>
-                        <gloss><q>blow up</q></gloss></mentioned>, <mentioned xml:lang="yah"><w/>
-                        <gloss><q>pump with the bellows</q></gloss><note type="comment"
-                            xml:lang="en"> (<bibl><ref type="bibl" target="#ref_Андреев._Язг."
-                                    /><biblScope>8</biblScope></bibl>)</note></mentioned>,
-                        <mentioned xml:lang="sog"><lang/>
+                        <gloss><q>blow up</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1409e474" xml:lang="yah"><w/>
+                        <gloss><q>pump with the bellows</q></gloss><note type="comment" xml:lang="en"> (<bibl><ref type="bibl" target="#ref_Андреев._Язг."/><biblScope>8</biblScope></bibl>)</note></mentioned>,
+                        <mentioned xml:id="mentioned_d1409e486" xml:lang="sog"><lang/>
                         <w>*δam(δ'm-)</w>
-                        <gloss><q>blow</q></gloss></mentioned>, <mentioned xml:lang="sog"><w/>
-                        <gloss><q>blow up</q></gloss></mentioned>, <mentioned xml:lang="xpr"><lang/>
-                        <w>dm-</w></mentioned>, <mentioned xml:lang="kho"><lang/>
+                        <gloss><q>blow</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1409e494" xml:lang="sog"><w/>
+                        <gloss><q>blow up</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1409e501" xml:lang="xpr"><lang/>
+                        <w>dm-</w></mentioned>, <mentioned xml:id="mentioned_d1409e506" xml:lang="kho"><lang/>
                         <w>dam-</w>
-                        <gloss><q>blow</q></gloss></mentioned>, <mentioned xml:lang="kho"
-                            ><w>pa-dama-</w>
-                        <gloss><q>wind</q></gloss></mentioned>, <mentioned xml:lang="kho"
-                            ><w>uys-dam-(=uz-dam-)</w>
-                        <gloss><q>blow out</q></gloss></mentioned>, <mentioned xml:lang="kho"><w/>
-                        <gloss><q>stifle</q></gloss></mentioned>, <mentioned xml:lang="ae"><lang/>
+                        <gloss><q>blow</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1409e514" xml:lang="kho"><w>pa-dama-</w>
+                        <gloss><q>wind</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1409e520" xml:lang="kho"><w>uys-dam-(=uz-dam-)</w>
+                        <gloss><q>blow out</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1409e526" xml:lang="kho"><w/>
+                        <gloss><q>stifle</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1409e532" xml:lang="ae"><lang/>
                         <w>dāδmainya-</w>
-                        <gloss><q>blowing up</q></gloss></mentioned>, <mentioned xml:lang="sa"><lang/>
+                        <gloss><q>blowing up</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1409e541" xml:lang="sa"><lang/>
                         <w>dham-(dhamati)</w>
-                        <gloss><q>blow</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
-                        <gloss><q>blow up</q></gloss></mentioned>, <mentioned xml:lang="ru"><lang/>
-                        <w>dmitʼ</w></mentioned> (<mentioned xml:lang="cu"><lang/>
-                        <w>dъm-</w></mentioned>), <mentioned xml:lang="lt"><lang/>
-                        <w>dumiù</w></mentioned>, <mentioned xml:lang="lt"><w>dùmti</w>
-                        <gloss><q>blow</q></gloss></mentioned>, <mentioned xml:lang="de"><lang/>
+                        <gloss><q>blow</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1409e549" xml:lang="sa"><w/>
+                        <gloss><q>blow up</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1409e555" xml:lang="ru"><lang/>
+                        <w>dmitʼ</w></mentioned> (<mentioned xml:id="mentioned_d1409e560" xml:lang="cu"><lang/>
+                        <w>dъm-</w></mentioned>), <mentioned xml:id="mentioned_d1409e565" xml:lang="lt"><lang/>
+                        <w>dumiù</w></mentioned>, <mentioned xml:id="mentioned_d1409e570" xml:lang="lt"><w>dùmti</w>
+                        <gloss><q>blow</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1409e577" xml:lang="de"><lang/>
                         <w>Dampf</w>
-                        <gloss><q>steam</q></gloss></mentioned>, <mentioned xml:lang="de"><w/>
+                        <gloss><q>steam</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1409e585" xml:lang="de"><w/>
                         <gloss><q>fume</q></gloss></mentioned> etc. For the meaning ‘smoke’ cf.
-                        <mentioned xml:lang="ttt"><lang/>
+                        <mentioned xml:id="mentioned_d1409e591" xml:lang="ttt"><lang/>
                         <w>dāmi</w>
-                        <gloss><q>pipe</q></gloss></mentioned>. Cf. <ref type="xr"
-                        target="#entry_dymsyn"/> ‘blow up’.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope xml:lang="en">II 53 ff.</biblScope></bibl>;
-                            <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>19</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_Hübschmann._Oss."/><biblScope>37</biblScope></bibl>. —
+                        <gloss><q>pipe</q></gloss></mentioned>. Cf. <ref type="xr" target="#entry_dymsyn"/> ‘blow up’.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope xml:lang="en">II 53 ff.</biblScope></bibl>;
+                            <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>19</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>37</biblScope></bibl>. —
                             <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>27,
                             570</biblScope></bibl>.</etym>
                 <note type="internal">пресабэнтри к первому сенсгруп</note>

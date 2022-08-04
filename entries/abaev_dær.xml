@@ -1,37 +1,42 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">dær</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_dær" xml:lang="os">
                 <form type="lemma"><orth>dær</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d4461e69"><sense xml:id="sense_d4461e70"><abv:tr xml:lang="ru">
                             <q>также</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>too</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d4461e79"><abv:tr xml:lang="ru">
                             <q>тоже</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>also</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4461e91">
                         <quote>Inal dær jæ ūrs bæxyl racæwy</quote>
                         <abv:tr xml:lang="ru">
                             <q>Инал также выезжает на своем белом коне</q>
@@ -39,10 +44,9 @@
                         <abv:tr xml:lang="en">
                             <q>Inal also rides on his white horse</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"
-                            /><biblScope>134</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>134</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4461e110">
                         <quote>k˳y bazarin æz dær!</quote>
                         <abv:tr xml:lang="ru">
                             <q>о, если бы и мне спеть!</q>
@@ -50,10 +54,9 @@
                         <abv:tr xml:lang="en">
                             <q>oh, if only I could sing too!</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"
-                            /><biblScope>110</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>110</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4461e129">
                         <quote>nyr dær ma ærra dæn</quote>
                         <abv:tr xml:lang="ru">
                             <q>и теперь я еще безумен</q>
@@ -63,7 +66,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>55</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4461e148">
                         <quote>na wæd fosæj dær ænæ xaj, xizgæ dær lævar</quote>
                         <abv:tr xml:lang="ru">
                             <q>а не то и от скота не (получишь) доли, и пасти (будешь) бесплатно</q>
@@ -72,10 +75,9 @@
                             <q>otherwise you will not (get) a part of the cattle, and you (will)
                                 graze it for free</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"
-                            /><biblScope>104</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>104</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4461e167" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>mæn zærdi dær es burdæntæ, mæn zærdæ dær dengiz æj</quote>
                         <abv:tr xml:lang="ru">
@@ -87,7 +89,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>14</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4461e190" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>sumax dær xwarzæj fæccæretæ</quote>
                         <abv:tr xml:lang="ru">
@@ -96,10 +98,9 @@
                         <abv:tr xml:lang="en">
                             <q>you also live well</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>35%l9%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>35%l9%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4461e212" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>xwarz duwwæ bæxi dær min adtæj</quote>
                         <abv:tr xml:lang="ru">
@@ -108,27 +109,20 @@
                         <abv:tr xml:lang="en">
                             <q>I also had two good horses</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>26%l11%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>26%l11%l</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Лексикализованный формант -%idær%i, наличный в формах
                     сравнительной степени (<ref type="xr" target="#entry_zærond"/>-%idær%i ‘старее’
                     и т. п.) и в неопределенных местоимениях (д. %ika-dær%i ‘кто-то’ из %ika-tara%i-
-                    и др. [см. <ref type="xr" target="#entry_kadær"/>]). Восходит к <mentioned
-                        xml:lang="ira"><lang/>
-                        <w>*-tara</w></mentioned>, <mentioned xml:lang="ine"><lang/>
-                        <w>*-tero</w></mentioned>, <mentioned xml:lang="ine"
-                        ><w>*-toro</w></mentioned>, означавшему противоположение двух предметов.
-                    Отсюда естественно могло развиться значение ‘также’, ср. в <mentioned
-                        xml:lang="grc"><lang>др. гр</lang>
+                    и др. [см. <ref type="xr" target="#entry_kadær"/>]). Восходит к <mentioned xml:id="mentioned_d4461e241" xml:lang="ira"><lang/>
+                        <w>*-tara</w></mentioned>, <mentioned xml:id="mentioned_d4461e246" xml:lang="ine"><lang/>
+                        <w>*-tero</w></mentioned>, <mentioned xml:id="mentioned_d4461e251" xml:lang="ine"><w>*-toro</w></mentioned>, означавшему противоположение двух предметов.
+                    Отсюда естественно могло развиться значение ‘также’, ср. в <mentioned xml:id="mentioned_d4461e255" xml:lang="grc"><lang>др. гр</lang>
                         <w>ματε έοσεναίτεραν ματε θηλύτεραν</w>
-                        <gloss><q>no male, no female</q></gloss></mentioned> (= <mentioned
-                        xml:lang="os"><lang/>
-                        <w>næl-dær næ, syl-dær næ</w></mentioned>); ср. также <mentioned
-                        xml:lang="sa"><lang/>
-                        <w>aśva-tara-</w><note type="comment" xml:lang="ru"> (от <mentioned
-                                xml:lang="sa"><lang/>
+                        <gloss><q>no male, no female</q></gloss></mentioned> (= <mentioned xml:id="mentioned_d4461e263" xml:lang="os"><lang/>
+                        <w>næl-dær næ, syl-dær næ</w></mentioned>); ср. также <mentioned xml:id="mentioned_d4461e268" xml:lang="sa"><lang/>
+                        <w>aśva-tara-</w><note type="comment" xml:lang="ru"> (от <mentioned xml:id="mentioned_d4461e274" xml:lang="sa"><lang/>
                                 <w>aśva</w>
                                 <gloss><q>лошадь</q></gloss></mentioned>)</note>
                         <gloss><q>мул</q></gloss></mentioned>, буквально „тоже лошадь“
@@ -136,25 +130,18 @@
                             языков. 1938, стр. 282</biblScope></bibl>).</etym>
                 <etym xml:lang="en">A lexicalized formant -%idær%i which is found in comparative
                     forms (<ref type="xr" target="#entry_zærond"/>-%idær%i ‘older’ etc.) and in
-                    indefinite pronouns (Digor %ika-dær%i ‘someone’ from %ika-tara%i- etc. [see <ref
-                        type="xr" target="#entry_kadær"/>]). It traces back to <mentioned
-                        xml:lang="ira"><lang/>
-                        <w>*-tara</w></mentioned>, <mentioned xml:lang="ine"><lang/>
-                        <w>*-tero</w></mentioned>, <mentioned xml:lang="ine"
-                        ><w>*-toro</w></mentioned> denoting opposition of two objects. From this the
-                    meaning ‘also’ could naturally develop, cf. in <mentioned xml:lang="grc"><lang>Ancient Greek</lang>
+                    indefinite pronouns (Digor %ika-dær%i ‘someone’ from %ika-tara%i- etc. [see <ref type="xr" target="#entry_kadær"/>]). It traces back to <mentioned xml:id="mentioned_d4461e297" xml:lang="ira"><lang/>
+                        <w>*-tara</w></mentioned>, <mentioned xml:id="mentioned_d4461e302" xml:lang="ine"><lang/>
+                        <w>*-tero</w></mentioned>, <mentioned xml:id="mentioned_d4461e307" xml:lang="ine"><w>*-toro</w></mentioned> denoting opposition of two objects. From this the
+                    meaning ‘also’ could naturally develop, cf. in <mentioned xml:id="mentioned_d4461e311" xml:lang="grc"><lang>Ancient Greek</lang>
                         <w>ματε έοσεναίτεραν ματε θηλύτεραν</w>
-                        <gloss><q>no male, no female</q></gloss></mentioned> (= <mentioned
-                        xml:lang="os"><lang/>
-                        <w>næl-dær næ, syl-dær næ</w></mentioned>); cf. also <mentioned
-                        xml:lang="sa"><lang/>
-                        <w>aśva-tara-</w><note type="comment"
-                            xml:lang="en"> (from <mentioned xml:lang="sa"><lang/>
+                        <gloss><q>no male, no female</q></gloss></mentioned> (= <mentioned xml:id="mentioned_d4461e319" xml:lang="os"><lang/>
+                        <w>næl-dær næ, syl-dær næ</w></mentioned>); cf. also <mentioned xml:id="mentioned_d4461e324" xml:lang="sa"><lang/>
+                        <w>aśva-tara-</w><note type="comment" xml:lang="en"> (from <mentioned xml:id="mentioned_d4461e330" xml:lang="sa"><lang/>
                                 <w>aśva</w>
                                 <gloss><q>horse</q></gloss></mentioned>)</note>
                         <gloss><q>mule</q></gloss></mentioned>, literally “also horse”
-                            (<bibl><author>Meillet.</author><biblScope
-                            xml:lang="en">Introduction à l'étude comparative des langues
+                            (<bibl><author>Meillet.</author><biblScope xml:lang="en">Introduction à l'étude comparative des langues
                             indo-européennes, 1903</biblScope></bibl>).</etym>
             </entry>
         </body>

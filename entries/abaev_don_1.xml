@@ -1,21 +1,26 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">don_1</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
@@ -31,22 +36,22 @@
                     </abv:tr><abv:tr xml:lang="en">
                         <q>water</q>
                     </abv:tr></sense>
-                <re>
+                <re xml:id="re_d3816e89">
                     <form type="lemma"><orth>dojnag</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d3816e94"><abv:tr xml:lang="ru">
                             <q>речной</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>fluvial</q>
                         </abv:tr></sense>
                 </re>
-                <re>
+                <re xml:id="re_d3816e105">
                     <form type="lemma"><orth>don kænyn</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d3816e110"><abv:tr xml:lang="ru">
                             <q>плавить</q>
                         </abv:tr></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d3816e120">
                         <quote>don kæly jæ ræzty ūrs æxsærʒæntæj</quote>
                         <abv:tr xml:lang="ru">
                             <q>река льется перед ним белыми водопадами</q>
@@ -56,7 +61,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>63</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3816e139">
                         <quote>taǧd don fūrdy ne ʽjjafy</quote>
                         <abv:tr xml:lang="ru">
                             <q>быстрая река не достигает моря</q>
@@ -67,7 +72,7 @@
                         <bibl><ref type="bibl" target="#src_ЮОПам."/><biblScope>III
                             225</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3816e158">
                         <quote>wæ siaxsy wyn don fælasy</quote>
                         <abv:tr xml:lang="ru">
                             <q>вашего зятя уносит река</q>
@@ -75,10 +80,9 @@
                         <abv:tr xml:lang="en">
                             <q>your son-in-law is carried away by the river</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Munk."
-                            /><biblScope>108</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Munk."/><biblScope>108</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3816e177">
                         <quote>donlast</quote>
                         <abv:tr xml:lang="ru">
                             <q rendition="rend_singlequotes">утопленник</q>
@@ -87,7 +91,7 @@
                             <q rendition="rend_singlequotes">drowned man</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3816e194">
                         <quote>qrīqupp xæstæǵyty donbyltyl zīly</quote>
                         <abv:tr xml:lang="ru">
                             <q>журавль поблизости бродит по берегам реки</q>
@@ -97,7 +101,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>85</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d3816e214" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>nixxawdtæj mard i donmæ</quote>
                         <abv:tr xml:lang="ru">
@@ -108,7 +112,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>43</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d3816e236" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>don-don cæwun bajdædtoncæ</quote>
                         <abv:tr xml:lang="ru">
@@ -117,10 +121,9 @@
                         <abv:tr xml:lang="en">
                             <q>they began to walk along the river</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>10%l10%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>10%l10%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3816e258">
                         <quote>ærtæjæ ʒæǧa dojnag dūr ærbatyldtoj</quote>
                         <abv:tr xml:lang="ru">
                             <q>втроем привалили речной камень-кварц</q>
@@ -130,7 +133,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_ОЭ"/><biblScope>I 60</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d3816e277" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>donæxsincʼæ</quote>
                         <abv:tr xml:lang="ru">
@@ -143,7 +146,7 @@
                         <note type="comment" xml:lang="en"> (literally “river alycha”)</note>
                         <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>120</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d3816e306" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>donmistæ</quote>
                         <abv:tr xml:lang="ru">
@@ -155,7 +158,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
                             172</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3816e328">
                         <quote>donmæ skʼæryn æmæ fæstæmæ ænæ donæj yzdaxyn</quote>
                         <abv:tr xml:lang="ru">
                             <q>издевательски мучить кого-либо’, ‘измываться над кем-либо</q>
@@ -171,7 +174,7 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d3816e357">
                         <quote>don kæstæræj nywazync</quote>
                         <abv:tr xml:lang="ru">
                             <q>воду пьют (начиная) с младшего</q>
@@ -182,7 +185,7 @@
                         <bibl><ref type="bibl" target="#src_ЮОПам."/><biblScope>III
                             202</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3816e376">
                         <quote>ældary æxx˳yrstytæ bæxtæ raskʼærdtoj don darynmæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>слуги алдара погнали лошадей на водопой</q>
@@ -190,10 +193,9 @@
                         <abv:tr xml:lang="en">
                             <q>Aldar's servants drove the horses to the watering-place</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Нарт._сказ."
-                            /><biblScope>54</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Нарт._сказ."/><biblScope>54</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d3816e395" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>wazal doni æ kʼox ne ʽstolʒænæj</quote>
                         <abv:tr xml:lang="ru">
@@ -203,7 +205,7 @@
                             <q>he will not dip his hands in cold water</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3816e413">
                         <quote>dony aræxæn dæ card</quote>
                         <abv:tr xml:lang="ru">
                             <q>(да будет) твоя жизнь обильна, (как) вода</q>
@@ -212,7 +214,7 @@
                             <q>(let) your life be abundant, (like) water</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3816e428">
                         <quote>dony kʼūsy sæft fækodta</quote>
                         <abv:tr xml:lang="ru">
                             <q>пропал, как чаша воды</q>
@@ -222,34 +224,33 @@
                         </abv:tr>
                     </abv:example>
                 </abv:exampleGrp>
-                <re>
+                <re xml:id="re_d3816e444">
                     <form type="lemma"><orth>qærmædon</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d3816e449"><abv:tr xml:lang="ru">
                             <q>теплая (минеральная) вода</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>warm (mineral) water</q>
                         </abv:tr></sense>
                 </re>
-                <re>
+                <re xml:id="re_d3816e460">
                     <form type="lemma"><orth>komy don</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d3816e465"><abv:tr xml:lang="ru">
                             <q>слюна</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>saliva</q>
                         </abv:tr></sense>
                 </re>
-                <re>
+                <re xml:id="re_d3816e476">
                     <form type="lemma"><orth>donxuz</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d3816e481"><abv:tr xml:lang="ru">
                             <q>цвета воды</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>water flowers</q>
                         </abv:tr></sense>
-                    <note type="bibl">(<bibl><ref type="bibl" target="#src_Sam."
-                                /><biblScope>97</biblScope></bibl>)</note>
+                    <note type="bibl">(<bibl><ref type="bibl" target="#src_Sam."/><biblScope>97</biblScope></bibl>)</note>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d3816e501">
                         <quote>ūcy ḱysylty nyjjarǵyty kæwyn, ʒynazynæj kʼæʒæx badon wydaid</quote>
                         <abv:tr xml:lang="ru">
                             <q>от плача и стенания родителей тех малышей расплавилась бы скала</q>
@@ -261,23 +262,21 @@
                         <bibl><ref type="bibl" target="#src_Сека"/><biblScope>15</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Восходит к <mentioned xml:lang="ira"><lang/>
-                        <w>*dānu-</w></mentioned>: <mentioned xml:lang="ae"><lang/>
+                <etym xml:lang="ru">Восходит к <mentioned xml:id="mentioned_d3816e524" xml:lang="ira"><lang/>
+                        <w>*dānu-</w></mentioned>: <mentioned xml:id="mentioned_d3816e529" xml:lang="ae"><lang/>
                         <w>dānu-</w>
-                        <gloss><q>река</q></gloss></mentioned> (=‘Сыр-Дарья’?), <mentioned
-                        xml:lang="sa"><lang/>
+                        <gloss><q>река</q></gloss></mentioned> (=‘Сыр-Дарья’?), <mentioned xml:id="mentioned_d3816e537" xml:lang="sa"><lang/>
                         <w>dānu-</w>
-                        <gloss><q>капель</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
+                        <gloss><q>капель</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3816e545" xml:lang="sa"><w/>
                         <gloss><q>роса</q></gloss></mentioned>. Вариант того же корня с начальным
                     %idh%i выступает, может быть, в глагольной основе %idhan%i- ‘течь’, ‘бежать’,
-                        <mentioned xml:lang="sa"><lang/>
+                        <mentioned xml:id="mentioned_d3816e551" xml:lang="sa"><lang/>
                         <w>dhanayati</w>
-                        <gloss><q>бежит</q></gloss></mentioned>, <mentioned xml:lang="sa"
-                            ><w>dhanvati</w>
-                        <gloss><q>бежит</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
-                        <gloss><q>течет</q></gloss></mentioned>, <mentioned xml:lang="peo"><lang/>
+                        <gloss><q>бежит</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3816e560" xml:lang="sa"><w>dhanvati</w>
+                        <gloss><q>бежит</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3816e566" xml:lang="sa"><w/>
+                        <gloss><q>течет</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3816e572" xml:lang="peo"><lang/>
                         <w>danuvatiy</w>
-                        <gloss><q>течет</q></gloss></mentioned>, <mentioned xml:lang="fa"><lang/>
+                        <gloss><q>течет</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3816e580" xml:lang="fa"><lang/>
                         <w>danīdan</w>
                         <gloss><q>бежать</q></gloss></mentioned>. Гласный %iо%i перед носовым
                     восходит, как обычно, к %iа%i, что позволяет восстановить форму *%idan%i. Эту
@@ -285,139 +284,104 @@
                     обитания предков осетин: в горной Кабарде — %iSaw-dan%i „Черная река“,
                     %iǦar-dan%i „Теплая река“, %iKurannan%i (из %iKuran-dan%i) „Мельничная река“,
                     %iXwas-dān%i (<ref type="xr" target="#entry_xwasæ"/> д. ‘сено’), %iAǧaš-dan%i
-                        (<mentioned xml:lang="krc-x-balkar"><lang/>
+                        (<mentioned xml:id="mentioned_d3816e590" xml:lang="krc-x-balkar"><lang/>
                         <w>aǧač</w>
-                        <gloss><q>дерево</q></gloss></mentioned>, <mentioned xml:lang="krc-x-balkar"><w/>
-                        <gloss><q>лес</q></gloss></mentioned>) и др. (<bibl><ref type="bibl"
-                            target="#ref_ОЯФ_I"/><biblScope>284</biblScope></bibl>); в Кубанском
-                    крае —ʽΟυαρ-δαν-ηζ древнее название Кубани по Птолемею (<bibl><ref type="bibl"
-                            target="#ref_ОЯФ_I"/><biblScope>162</biblScope></bibl>), %iZag-dan%i (из
+                        <gloss><q>дерево</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3816e599" xml:lang="krc-x-balkar"><w/>
+                        <gloss><q>лес</q></gloss></mentioned>) и др. (<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>284</biblScope></bibl>); в Кубанском
+                    крае —ʽΟυαρ-δαν-ηζ древнее название Кубани по Птолемею (<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>162</biblScope></bibl>), %iZag-dan%i (из
                     %iSag-dan%i) „Оленья река“, %iQvai-dan%i и др.; в Южной России — Ταν-αις „Дон“,
-                    %iDan-apr%i „Днепр“, %iDan-Astr%i „Днестр“ (<bibl><ref type="bibl"
-                            target="#ref_ОЯФ_I"/><biblScope xml:lang="ru">235
+                    %iDan-apr%i „Днепр“, %iDan-Astr%i „Днестр“ (<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope xml:lang="ru">235
                             сл.</biblScope></bibl>); ср.
                     также скифское племенное название Δανδαριοι (%iDandarii%i) буквально „владеющие
                     (%idar%i) рекой (%idan%i)“ и собственное имя Δαναραζμακος (из %iDan-Varazmak%i
                     „Донской Варазмак“?). Переход %idan%i → %idon%i произошел не ранее XIII—XIV в.
-                            (<bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                        /><biblScope>256</biblScope></bibl>), когда осетинский элемент массово не
-                    был уже представлен в Южной России. Поэтому %bрусскую%b форму <mentioned
-                        xml:lang="ru"><lang/>
+                            (<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>256</biblScope></bibl>), когда осетинский элемент массово не
+                    был уже представлен в Южной России. Поэтому %bрусскую%b форму <mentioned xml:id="mentioned_d3816e622" xml:lang="ru"><lang/>
                         <w>Дон</w></mentioned> нельзя связывать непосредственно с современным
-                    осетинским %idon%i. Огласовка %iο%i в <mentioned xml:lang="ru"><w>Дон</w></mentioned> отражает, возможно, общеславянский переход %iа%i →
+                    осетинским %idon%i. Огласовка %iο%i в <mentioned xml:id="mentioned_d3816e628" xml:lang="ru"><w>Дон</w></mentioned> отражает, возможно, общеславянский переход %iа%i →
                     %iо%i. Совпадение значений ‘река’ и ‘вода’ в одном слове не было для осетинского
                     исконным. В скифо-сарматских именах и названиях сохранились следы иранского
-                    %iāp%i- в значении ‘вода’ (<bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                            /><biblScope xml:lang="ru">153 сл.</biblScope></bibl>). Этот же элемент мы распознаем в некоторых
-                    осетинских словах: см. <ref type="xr" target="#entry_avg"/> ‘стекло’, <ref
-                        type="xr" target="#entry_æfsūrǧ"/> ‘раствор золы’ и пр., <ref type="xr"
-                        target="#entry_æxsærʒæn"/> (из *%iæf-særʒæn%i) ‘водопад’. Можно поэтому
+                    %iāp%i- в значении ‘вода’ (<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope xml:lang="ru">153 сл.</biblScope></bibl>). Этот же элемент мы распознаем в некоторых
+                    осетинских словах: см. <ref type="xr" target="#entry_avg"/> ‘стекло’, <ref type="xr" target="#entry_æfsūrǧ"/> ‘раствор золы’ и пр., <ref type="xr" target="#entry_æxsærʒæn"/> (из *%iæf-særʒæn%i) ‘водопад’. Можно поэтому
                     утверждать, что в скифо-сарматскую эпоху существовало два слова: %iāp%i- →
                     %iaf%i- → %iav%i- ‘вода’ и %idān%i ‘река’. Позднее, в условиях жизни в горах
                     Кавказа, где обильные горный реки служат единственным источником получения воды,
                     легко могло произойти слияние значений ‘река’ и ‘вода’ в одном слове. Ср. у
-                    других кавказских народов: <mentioned xml:lang="ka"><lang/>
+                    других кавказских народов: <mentioned xml:id="mentioned_d3816e642" xml:lang="ka"><lang/>
                         <w>cʼqali</w>
-                        <gloss><q>вода</q></gloss></mentioned>, <mentioned xml:lang="ka"><w/>
-                        <gloss><q>река</q></gloss></mentioned> (в названиях <mentioned xml:lang="ka"><lang/>
-                        <w>Cxenis cʼqali</w></mentioned> и т. п.), <mentioned xml:lang="kbd"><lang/>
+                        <gloss><q>вода</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3816e651" xml:lang="ka"><w/>
+                        <gloss><q>река</q></gloss></mentioned> (в названиях <mentioned xml:id="mentioned_d3816e657" xml:lang="ka"><lang/>
+                        <w>Cxenis cʼqali</w></mentioned> и т. п.), <mentioned xml:id="mentioned_d3816e662" xml:lang="kbd"><lang/>
                         <w>psə</w>
-                        <gloss><q>река</q></gloss></mentioned>, <mentioned xml:lang="kbd"><w/>
-                        <gloss><q>вода</q></gloss></mentioned>, <mentioned xml:lang="x-vaynakh"><lang/>
+                        <gloss><q>река</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3816e670" xml:lang="kbd"><w/>
+                        <gloss><q>вода</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3816e676" xml:lang="x-vaynakh"><lang/>
                         <w>xij</w>
-                        <gloss><q>река</q></gloss></mentioned>, <mentioned xml:lang="x-vaynakh"><w/>
-                        <gloss><q>вода</q></gloss></mentioned> и др. — Ср. <ref type="xr"
-                        target="#entry_dojny"/> ‘жажда’, <ref type="xr" target="#entry_swadon"/>
-                            ‘родник’.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"
-                            /><biblScope>II 51</biblScope></bibl>; <bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._Gr."/><biblScope>20</biblScope></bibl>. —
-                            <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."
-                            /><biblScope>36</biblScope></bibl>.— <bibl><ref type="bibl"
-                            target="#ref_ОЯФ_I"/><biblScope xml:lang="ru">19, 46, 162, 199, 235
-                            сл</biblScope></bibl>,— <bibl><ref type="bibl" target="#ref_Arch._Or."
-                            /><biblScope>XXIV 42—44</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_Pokorny"/><biblScope>175</biblScope></bibl>.</etym>
-                <etym xml:lang="en">It traces back to <mentioned xml:lang="ira"><lang/>
-                        <w>*dānu-</w></mentioned>: <mentioned xml:lang="ae"><lang/>
+                        <gloss><q>река</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3816e684" xml:lang="x-vaynakh"><w/>
+                        <gloss><q>вода</q></gloss></mentioned> и др. — Ср. <ref type="xr" target="#entry_dojny"/> ‘жажда’, <ref type="xr" target="#entry_swadon"/>
+                            ‘родник’.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 51</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>20</biblScope></bibl>. —
+                            <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>36</biblScope></bibl>.— <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope xml:lang="ru">19, 46, 162, 199, 235
+                            сл</biblScope></bibl>,— <bibl><ref type="bibl" target="#ref_Arch._Or."/><biblScope>XXIV 42—44</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Pokorny"/><biblScope>175</biblScope></bibl>.</etym>
+                <etym xml:lang="en">It traces back to <mentioned xml:id="mentioned_d3816e724" xml:lang="ira"><lang/>
+                        <w>*dānu-</w></mentioned>: <mentioned xml:id="mentioned_d3816e729" xml:lang="ae"><lang/>
                         <w>dānu-</w>
-                        <gloss><q>river</q></gloss></mentioned> (=‘Syr Darya’?), <mentioned
-                        xml:lang="sa"><lang/>
+                        <gloss><q>river</q></gloss></mentioned> (=‘Syr Darya’?), <mentioned xml:id="mentioned_d3816e737" xml:lang="sa"><lang/>
                         <w>dānu-</w>
-                        <gloss><q>drippings</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
+                        <gloss><q>drippings</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3816e745" xml:lang="sa"><w/>
                         <gloss><q>dew</q></gloss></mentioned>. A variant of the same root with an
                     initial %idh%i appears, perhaps, in the verb stem %idhan%i- ‘flow’, ‘run’,
-                        <mentioned xml:lang="sa"><lang/>
+                        <mentioned xml:id="mentioned_d3816e751" xml:lang="sa"><lang/>
                         <w>dhanayati</w>
-                        <gloss><q>(s)he/it runs</q></gloss></mentioned>, <mentioned xml:lang="sa"
-                            ><w>dhanvati</w>
-                        <gloss><q>(s)he/it runs</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
-                        <gloss><q>(s)he/it flows</q></gloss></mentioned>, <mentioned xml:lang="peo"><lang/>
+                        <gloss><q>(s)he/it runs</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3816e760" xml:lang="sa"><w>dhanvati</w>
+                        <gloss><q>(s)he/it runs</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3816e766" xml:lang="sa"><w/>
+                        <gloss><q>(s)he/it flows</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3816e772" xml:lang="peo"><lang/>
                         <w>danuvatiy</w>
-                        <gloss><q>(s)he/it flows</q></gloss></mentioned>, <mentioned xml:lang="fa"><lang/>
+                        <gloss><q>(s)he/it flows</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3816e780" xml:lang="fa"><lang/>
                         <w>danīdan</w>
                         <gloss><q>run</q></gloss></mentioned>. The vowel %iо%i before a nasal
                     consonant regularly traces back to %iа%i, which allows us to reconstruct the
                     form *%idan%i. This older form is found in abundance in the names of rivers in
                     the places where the ancestors of the Ossetic people used to live: in the
                     mountain Kabarda — %iSaw-dan%i “Black river”, %iǦar-dan%i “Warm river”,
-                    %iKurannan%i (from %iKuran-dan%i) “Mill river”, %iXwas-dān%i (<ref type="xr"
-                        target="#entry_xwasæ"/> Digor ‘hay’), %iAǧaš-dan%i (<mentioned
-                        xml:lang="krc-x-balkar"><lang/>
+                    %iKurannan%i (from %iKuran-dan%i) “Mill river”, %iXwas-dān%i (<ref type="xr" target="#entry_xwasæ"/> Digor ‘hay’), %iAǧaš-dan%i (<mentioned xml:id="mentioned_d3816e790" xml:lang="krc-x-balkar"><lang/>
                         <w>aǧač</w>
-                        <gloss><q>tree</q></gloss></mentioned>, <mentioned xml:lang="krc-x-balkar"><w/>
-                        <gloss><q>forest</q></gloss></mentioned>) etc. (<bibl><ref type="bibl"
-                            target="#ref_ОЯФ_I"/><biblScope>284</biblScope></bibl>); in the Kuban
+                        <gloss><q>tree</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3816e799" xml:lang="krc-x-balkar"><w/>
+                        <gloss><q>forest</q></gloss></mentioned>) etc. (<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>284</biblScope></bibl>); in the Kuban
                     region —ʽΟυαρ-δαν-ηζ is an ancient name for Kuban according to Ptolemy
-                            (<bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                        /><biblScope>162</biblScope></bibl>), %iZag-dan%i (из %iSag-dan%i) “Deer
+                            (<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>162</biblScope></bibl>), %iZag-dan%i (из %iSag-dan%i) “Deer
                     river”, %iQvai-dan%i etc.; in Southern Russian — Ταν-αις “Don”, %iDan-apr%i
-                    “Dnieper”, %iDan-Astr%i “Dniester” (<bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                            /><biblScope xml:lang="en"
-                            >235 ff.</biblScope></bibl>); cf. also Scythian tribe name <mentioned
-                        xml:lang="xsc"><lang/>
+                    “Dnieper”, %iDan-Astr%i “Dniester” (<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope xml:lang="en">235 ff.</biblScope></bibl>); cf. also Scythian tribe name <mentioned xml:id="mentioned_d3816e818" xml:lang="xsc"><lang/>
                         <w>Δανδαριοι</w></mentioned> (%iDandarii%i) literally “possessing (%idar%i)
                     a river (%idan%i)” and the proper name Δαναραζμακος (from %iDan-Varazmak%i
                     „Varazmak of Don“?). The transition %idan%i → %idon%i happened not earlier than
-                    in XIII—XIV c. (<bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                            /><biblScope>256</biblScope></bibl>), when the Ossetic element was not
+                    in XIII—XIV c. (<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>256</biblScope></bibl>), when the Ossetic element was not
                     massively represented in South Russia. This is why the %bRussian%b form
-                        <mentioned xml:lang="ru"><lang/>
+                        <mentioned xml:id="mentioned_d3816e828" xml:lang="ru"><lang/>
                         <w>Don</w></mentioned> cannot be directly associated with modern Ossetic
-                    %idon%i. The vocalization %iο%i in <mentioned xml:lang="ru"><w>Don</w></mentioned> probably represents a coomon Slavic transition %iа%i
+                    %idon%i. The vocalization %iο%i in <mentioned xml:id="mentioned_d3816e833" xml:lang="ru"><w>Don</w></mentioned> probably represents a coomon Slavic transition %iа%i
                     → %iо%i. The coincidence of the meanings ‘river’ and ‘water’ in one word was not
                     original for the Ossetic. The Scythian-Sarmatian names and terms retain traces
-                    of the Iranian %iāp%i- meaning ‘water’ (<bibl><ref type="bibl"
-                            target="#ref_ОЯФ_I"/><biblScope xml:lang="en">153 ff.</biblScope></bibl>). The
-                    same element is found in some Ossetic words: see <ref type="xr"
-                        target="#entry_avg"/> ‘glass’, <ref type="xr" target="#entry_æfsūrǧ"/> ‘ash
+                    of the Iranian %iāp%i- meaning ‘water’ (<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope xml:lang="en">153 ff.</biblScope></bibl>). The
+                    same element is found in some Ossetic words: see <ref type="xr" target="#entry_avg"/> ‘glass’, <ref type="xr" target="#entry_æfsūrǧ"/> ‘ash
                     solution’ etc., <ref type="xr" target="#entry_æxsærʒæn"/> (from *%iæf-særʒæn%i)
                     ‘waterfall’. Therefore, it can be argued that in the Scythian-Sarmatian times
                     there were two words: %iāp%i- → %iaf%i- → %iav%i- ‘water’ and %idān%i ‘river’.
                     Later, in conditions of life in the mountains of the Caucasus, where abundant
                     mountain rivers serve as the only source of water, it could easily have merged
                     the meanings of ‘river’ and ‘water’ in one word. Cf. other Caucasian languages:
-                        <mentioned xml:lang="ka"><lang/>
+                        <mentioned xml:id="mentioned_d3816e848" xml:lang="ka"><lang/>
                         <w>cʼqali</w>
-                        <gloss><q>water</q></gloss></mentioned>, <mentioned xml:lang="ka"><w/>
-                        <gloss><q>river</q></gloss></mentioned> (in the names <mentioned
-                        xml:lang="ka"><lang/>
-                        <w>Cxenis cʼqali</w></mentioned> etc.), <mentioned xml:lang="kbd"><lang/>
+                        <gloss><q>water</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3816e856" xml:lang="ka"><w/>
+                        <gloss><q>river</q></gloss></mentioned> (in the names <mentioned xml:id="mentioned_d3816e862" xml:lang="ka"><lang/>
+                        <w>Cxenis cʼqali</w></mentioned> etc.), <mentioned xml:id="mentioned_d3816e867" xml:lang="kbd"><lang/>
                         <w>psə</w>
-                        <gloss><q>river</q></gloss></mentioned>, <mentioned xml:lang="kbd"><w/>
-                        <gloss><q>water</q></gloss></mentioned>, <mentioned xml:lang="x-vaynakh"><lang/>
+                        <gloss><q>river</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3816e875" xml:lang="kbd"><w/>
+                        <gloss><q>water</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3816e881" xml:lang="x-vaynakh"><lang/>
                         <w>xij</w>
-                        <gloss><q>river</q></gloss></mentioned>, <mentioned xml:lang="x-vaynakh"><w/>
-                        <gloss><q>water</q></gloss></mentioned> etc. — Cf. <ref type="xr"
-                        target="#entry_dojny"/> ‘thirst’, <ref type="xr" target="#entry_swadon"/>
-                            ‘spring’.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"
-                            /><biblScope>II 51</biblScope></bibl>; <bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._Gr."/><biblScope>20</biblScope></bibl>. —
-                            <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."
-                            /><biblScope>36</biblScope></bibl>.— <bibl><ref type="bibl"
-                            target="#ref_ОЯФ_I"/><biblScope xml:lang="en">19, 46, 162, 199, 235
-                            ff</biblScope></bibl>,— <bibl><ref type="bibl" target="#ref_Arch._Or."
-                            /><biblScope>XXIV 42—44</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_Pokorny"/><biblScope>175</biblScope></bibl>.</etym>
+                        <gloss><q>river</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3816e890" xml:lang="x-vaynakh"><w/>
+                        <gloss><q>water</q></gloss></mentioned> etc. — Cf. <ref type="xr" target="#entry_dojny"/> ‘thirst’, <ref type="xr" target="#entry_swadon"/>
+                            ‘spring’.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 51</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>20</biblScope></bibl>. —
+                            <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>36</biblScope></bibl>.— <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope xml:lang="en">19, 46, 162, 199, 235
+                            ff</biblScope></bibl>,— <bibl><ref type="bibl" target="#ref_Arch._Or."/><biblScope>XXIV 42—44</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Pokorny"/><biblScope>175</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

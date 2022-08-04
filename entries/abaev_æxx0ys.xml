@@ -1,42 +1,47 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">æxx0ys</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_æxx0ys" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>æxx˳ys</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>ænxus</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d2283e72"><abv:tr xml:lang="ru">
                         <q>помощь</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>help</q>
                     </abv:tr></sense>
-                <re>
+                <re xml:id="re_d2283e82">
                     <form type="lemma"><orth>æxx˳ys kænyn</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d2283e87"><abv:tr xml:lang="ru">
                             <q>помогать</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>help</q>
                         </abv:tr></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d2283e100">
                         <quote>xal xalæn æxxays</quote>
                         <abv:tr xml:lang="ru">
                             <q>былинка былинке в помощь</q>
@@ -46,7 +51,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Сл."/></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2283e118">
                         <quote>ma næ fesaf, baxx˳ys nyn kæl</quote>
                         <abv:tr xml:lang="ru">
                             <q>не погуби нас, помоги нам!</q>
@@ -56,7 +61,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Munk."/><biblScope>46</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d2283e137" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>kosgutæ ænxus kænuncæ kolxoztæn</quote>
                         <abv:tr xml:lang="ru">
@@ -67,7 +72,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_FS"/><biblScope>I 70</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d2283e159" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>adtæj læværd sudmæ, fal ǧuddag ænxosgænguti %i(sic!)%i færci kæmidær
                             baxawdtæj</quote>
@@ -79,10 +84,9 @@
                             <q>he was taken under trial but his case has been lost thanks to his
                                 accomplices</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_SD"
-                            /><biblScope>293%l2</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_SD"/><biblScope>293%l2</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d2283e181" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>max ærbacudan ænxuskoræg</quote>
                         <abv:tr xml:lang="ru">
@@ -93,34 +97,21 @@
                         </abv:tr>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из %iæm%i-%ikwyst%i | %iæn%i-%ikust%i (преверб <ref type="xr"
-                        target="#entry_æm-"/> | %iæn%i- и прош. причастие от <ref type="xr"
-                        target="#entry_kūsyn"/> | %ikosun%i ‘трудиться’), буквально
-                    „сотрудничество“. Спирантизация %ik%i нередка в Inlaut’e (ср. <ref type="xr"
-                        target="#entry_Wærxæg"/> и др.). Отпадение конечного %it%i, как в <ref
-                        type="xr" target="#entry_æxsar"/> и др. Ср. <ref type="xr"
-                        target="#entry_axxos"/> ‘вина’. См. <ref type="xr" target="#entry_kūsyn"
-                        />.<note type="footnote" n="1"> PUT NOTE HERE </note></etym>
-                <etym xml:lang="en">From %iæm%i-%ikwyst%i | %iæn%i-%ikust%i (preverb <ref type="xr"
-                        target="#entry_æm-"/> | %iæn%i- and the past participle of the verb <ref
-                        type="xr" target="#entry_kūsyn"/> | %ikosun%i ‘’labour), literally
-                    "collaboration". The spirantization of %ik%i in common in %iInlaut%i (cf. <ref
-                        type="xr" target="#entry_Wærxæg"/> etc.). The loss of the final %it%i, like
-                    in <ref type="xr" target="#entry_æxsar"/> etc. Cf. <ref type="xr"
-                        target="#entry_axxos"/> ‘fault’. See <ref type="xr" target="#entry_kūsyn"
-                        />.<note type="footnote" n="1"> PUT NOTE HERE </note></etym>
+                <etym xml:lang="ru">Из %iæm%i-%ikwyst%i | %iæn%i-%ikust%i (преверб <ref type="xr" target="#entry_æm-"/> | %iæn%i- и прош. причастие от <ref type="xr" target="#entry_kūsyn"/> | %ikosun%i ‘трудиться’), буквально
+                    „сотрудничество“. Спирантизация %ik%i нередка в Inlaut’e (ср. <ref type="xr" target="#entry_Wærxæg"/> и др.). Отпадение конечного %it%i, как в <ref type="xr" target="#entry_æxsar"/> и др. Ср. <ref type="xr" target="#entry_axxos"/> ‘вина’. См. <ref type="xr" target="#entry_kūsyn"/>.<note type="footnote" n="1"> PUT NOTE HERE </note></etym>
+                <etym xml:lang="en">From %iæm%i-%ikwyst%i | %iæn%i-%ikust%i (preverb <ref type="xr" target="#entry_æm-"/> | %iæn%i- and the past participle of the verb <ref type="xr" target="#entry_kūsyn"/> | %ikosun%i ‘’labour), literally
+                    "collaboration". The spirantization of %ik%i in common in %iInlaut%i (cf. <ref type="xr" target="#entry_Wærxæg"/> etc.). The loss of the final %it%i, like
+                    in <ref type="xr" target="#entry_æxsar"/> etc. Cf. <ref type="xr" target="#entry_axxos"/> ‘fault’. See <ref type="xr" target="#entry_kūsyn"/>.<note type="footnote" n="1"> PUT NOTE HERE </note></etym>
                 <note type="footnote" xml:lang="ru" n="1">Вс. %sМиллер%s c сомнением сближал вторую
-                    часть (%ixus%i) с <mentioned xml:lang="fa"><lang/>
+                    часть (%ixus%i) с <mentioned xml:id="mentioned_d2283e239" xml:lang="fa"><lang/>
                         <w>xos</w>
-                        <gloss><q>хороший</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_IF"/><biblScope xml:lang="ru">21, стр.
+                        <gloss><q>хороший</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_IF"/><biblScope xml:lang="ru">21, стр.
                             325</biblScope><biblScope xml:lang="en">21, p.
                     325</biblScope></bibl>).</note>
                 <note type="footnote" xml:lang="en" n="1">Ws. %sMiller%s cautiously connected the
-                    second part (%ixus%i) with <mentioned xml:lang="fa"><lang/>
+                    second part (%ixus%i) with <mentioned xml:id="mentioned_d2283e257" xml:lang="fa"><lang/>
                         <w>xoš</w>
-                        <gloss><q>good</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_IF"/><biblScope xml:lang="ru">21, стр.
+                        <gloss><q>good</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_IF"/><biblScope xml:lang="ru">21, стр.
                             325</biblScope><biblScope xml:lang="en">21, p.
                     325</biblScope></bibl>).</note>
             </entry>

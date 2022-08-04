@@ -1,60 +1,63 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">fællajyn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_fællajyn" xml:lang="os">
-                <form xml:lang="os-x-iron" type="lemma"><orth>fællajyn</orth><form type="participle"
-                            ><orth>fællad</orth></form></form>
-                <form xml:lang="os-x-digor" type="dialectal"><orth>fællajun</orth><form
-                        type="participle"><orth>fællad</orth></form></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <form xml:lang="os-x-iron" type="lemma"><orth>fællajyn</orth><form type="participle"><orth>fællad</orth></form></form>
+                <form xml:lang="os-x-digor" type="dialectal"><orth>fællajun</orth><form type="participle"><orth>fællad</orth></form></form>
+                <sense xml:id="sense_d5466e76"><sense xml:id="sense_d5466e77"><abv:tr xml:lang="ru">
                             <q>уставать</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>get tired</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d5466e86"><abv:tr xml:lang="ru">
                             <q>утомляться</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>fatigue</q>
                         </abv:tr></sense></sense>
-                <re>
+                <re xml:id="re_d5466e96">
                     <form type="lemma"><orth>fællad</orth></form>
-                    <sense><sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d5466e101"><sense xml:id="sense_d5466e102"><abv:tr xml:lang="ru">
                                 <q>усталый</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>tired</q>
-                            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                            </abv:tr></sense><sense xml:id="sense_d5466e111"><abv:tr xml:lang="ru">
                                 <q>усталость</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>tiredness</q>
                             </abv:tr></sense></sense>
                 </re>
-                <re>
+                <re xml:id="re_d5466e122">
                     <form type="lemma"><orth>fællad waʒyn</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d5466e127"><abv:tr xml:lang="ru">
                             <q>отдыхать</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>rest</q>
                         </abv:tr></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d5466e141">
                         <quote>jæ kʼax næ fællad</quote>
                         <abv:tr xml:lang="ru">
                             <q>его нога не уставала</q>
@@ -64,7 +67,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>50</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5466e160">
                         <quote>bafællad kæwynæj binonty kæstær</quote>
                         <abv:tr xml:lang="ru">
                             <q>устал от плача младший член семьи</q>
@@ -74,7 +77,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>45</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5466e179">
                         <quote>fyng… wazægæn jæ fællad safy</quote>
                         <abv:tr xml:lang="ru">
                             <q>(накрытый) стол устраняет усталость гостя</q>
@@ -82,10 +85,9 @@
                         <abv:tr xml:lang="en">
                             <q>a set table removes the fatigue of a guest</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"
-                            /><biblScope>105</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>105</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5466e198">
                         <quote>cy cyd fækodton, cy fællad badæn, æna!</quote>
                         <abv:tr xml:lang="ru">
                             <q>как (много) я ходил, как я устал, мать!</q>
@@ -95,7 +97,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Munk."/><biblScope>82</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5466e217">
                         <quote>fællady dwag</quote>
                         <abv:tr xml:lang="ru">
                             <q>божество усталых</q>
@@ -109,76 +111,70 @@
                             122</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Вероятно, восходит к <mentioned xml:lang="ira"><lang/>
+                <etym xml:lang="ru">Вероятно, восходит к <mentioned xml:id="mentioned_d5466e246" xml:lang="ira"><lang/>
                         <w>*para-mrā-</w></mentioned> через ступени %i*fæl-mra%i → %ifæl-ra-%i →
                     %ifælla-%i. Глагол %imra-%i ← %imla-%i ← %imle-%i ← %imel-%i —
                     общеиндоевропейский. Исходное значение — ‘размягчать(ся) путем мятия, дубления,
-                    растирания’. Ср. <mentioned xml:lang="ae"><lang/>
+                    растирания’. Ср. <mentioned xml:id="mentioned_d5466e251" xml:lang="ae"><lang/>
                         <w>mrā-</w>
-                        <gloss><q>размягчать</q></gloss></mentioned>, <mentioned xml:lang="ae"><w/>
-                        <gloss><q>дубить</q></gloss></mentioned> (в <mentioned xml:lang="ae"><lang/>
+                        <gloss><q>размягчать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5466e259" xml:lang="ae"><w/>
+                        <gloss><q>дубить</q></gloss></mentioned> (в <mentioned xml:id="mentioned_d5466e265" xml:lang="ae"><lang/>
                         <w>mrātəm čarəma</w>
-                        <gloss><q>дубленая кожа</q></gloss></mentioned>), <mentioned xml:lang="sa"><lang/>
+                        <gloss><q>дубленая кожа</q></gloss></mentioned>), <mentioned xml:id="mentioned_d5466e273" xml:lang="sa"><lang/>
                         <w>mla-</w>
-                        <gloss><q>становиться вялым, дряблым</q></gloss></mentioned>, <mentioned
-                        xml:lang="sa"><w/>
-                        <gloss><q>слабеть</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
-                        <gloss><q>млеть</q></gloss></mentioned>, <mentioned xml:lang="ga"><lang/>
+                        <gloss><q>становиться вялым, дряблым</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5466e282" xml:lang="sa"><w/>
+                        <gloss><q>слабеть</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5466e288" xml:lang="sa"><w/>
+                        <gloss><q>млеть</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5466e294" xml:lang="ga"><lang/>
                         <w>mláith</w>
-                        <gloss><q>мягкий</q></gloss></mentioned>, <mentioned xml:lang="ga"><w/>
-                        <gloss><q>нежный</q></gloss></mentioned>, <mentioned xml:lang="grc"><lang/>
+                        <gloss><q>мягкий</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5466e302" xml:lang="ga"><w/>
+                        <gloss><q>нежный</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5466e308" xml:lang="grc"><lang/>
                         <w>βλάξ</w>
-                        <gloss><q>слабый</q></gloss></mentioned>, <mentioned xml:lang="grc"><w/>
-                        <gloss><q>вялый</q></gloss></mentioned>, <mentioned xml:lang="grc"><w/>
-                        <gloss><q>ленивый</q></gloss></mentioned>, <mentioned xml:lang="la"><lang/>
+                        <gloss><q>слабый</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5466e316" xml:lang="grc"><w/>
+                        <gloss><q>вялый</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5466e323" xml:lang="grc"><w/>
+                        <gloss><q>ленивый</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5466e329" xml:lang="la"><lang/>
                         <w>flaccus</w>
-                        <gloss><q>дряблый</q></gloss></mentioned>, <mentioned xml:lang="la"><w/>
-                        <gloss><q>вислый</q></gloss></mentioned>, <mentioned xml:lang="la"><w/>
+                        <gloss><q>дряблый</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5466e337" xml:lang="la"><w/>
+                        <gloss><q>вислый</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5466e343" xml:lang="la"><w/>
                         <gloss><q>вислоухий</q></gloss></mentioned>. Исходя из метатезы %i*mle-%i ||
                     %i*mel-%i, относят сюда же индоевропейские слова со значением ‘молоть’,
-                    ‘мельница’ (<mentioned xml:lang="cu"><lang/>
+                    ‘мельница’ (<mentioned xml:id="mentioned_d5466e349" xml:lang="cu"><lang/>
                         <w n="0">млѣти</w>
-                        <gloss><q>молоть</q></gloss></mentioned> и пр.). Вс. %sМиллер%s (<bibl><ref
-                            type="bibl" target="#ref_Вс._Миллер._Gr."
-                        /><biblScope>64</biblScope></bibl>) делит %ifæ-llajyn%i на %ifæ-mlā-y-un%i,
+                        <gloss><q>молоть</q></gloss></mentioned> и пр.). Вс. %sМиллер%s (<bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>64</biblScope></bibl>) делит %ifæ-llajyn%i на %ifæ-mlā-y-un%i,
                     забывая, что для осетинского надо исходить из формы %imrā-%i, а не %imlā-%i (ср.
-                        <mentioned xml:lang="ae"><lang/>
+                        <mentioned xml:id="mentioned_d5466e363" xml:lang="ae"><lang/>
                         <w>mrā-</w></mentioned>); а в этом случае появление %iI%i остается
                     необъяснимым. Если же исходить из %ifæl-mrā-%i, то %ill%i окажется естественным
                     результатом упрощения и ассимиляции группы %i-lmr-%i.</etym>
-                <etym xml:lang="en">It probably traces back to <mentioned xml:lang="ira"><lang/>
+                <etym xml:lang="en">It probably traces back to <mentioned xml:id="mentioned_d5466e371" xml:lang="ira"><lang/>
                         <w>*para-mrā-</w></mentioned> through the stages %i*fæl-mra%i → %ifæl-ra-%i
                     → %ifælla-%i. The verb %imra-%i ← %imla-%i ← %imle-%i ← %imel-%i is a general
                     Indo-European verb. The initial meaning is ‘soften by crushing, tanning,
-                    rubbing’. Cf. <mentioned xml:lang="ae"><lang/>
+                    rubbing’. Cf. <mentioned xml:id="mentioned_d5466e376" xml:lang="ae"><lang/>
                         <w>mrā-</w>
-                        <gloss><q>soften</q></gloss></mentioned>, <mentioned xml:lang="ae"><w/>
-                        <gloss><q>tan</q></gloss></mentioned> (in <mentioned xml:lang="ae"><lang/>
+                        <gloss><q>soften</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5466e384" xml:lang="ae"><w/>
+                        <gloss><q>tan</q></gloss></mentioned> (in <mentioned xml:id="mentioned_d5466e390" xml:lang="ae"><lang/>
                         <w>mrātəm čarəma</w>
-                        <gloss><q>tanned leather</q></gloss></mentioned>), <mentioned xml:lang="sa"><lang/>
+                        <gloss><q>tanned leather</q></gloss></mentioned>), <mentioned xml:id="mentioned_d5466e398" xml:lang="sa"><lang/>
                         <w>mla-</w>
-                        <gloss><q>become faded, flabby</q></gloss></mentioned>, <mentioned
-                        xml:lang="sa"><w/>
-                        <gloss><q>weaken</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
-                        <gloss><q>faint</q></gloss></mentioned>, <mentioned xml:lang="ga"><lang/>
+                        <gloss><q>become faded, flabby</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5466e407" xml:lang="sa"><w/>
+                        <gloss><q>weaken</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5466e413" xml:lang="sa"><w/>
+                        <gloss><q>faint</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5466e419" xml:lang="ga"><lang/>
                         <w>mláith</w>
-                        <gloss><q>soft</q></gloss></mentioned>, <mentioned xml:lang="ga"><w/>
-                        <gloss><q>tender</q></gloss></mentioned>, <mentioned xml:lang="grc"><lang/>
+                        <gloss><q>soft</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5466e427" xml:lang="ga"><w/>
+                        <gloss><q>tender</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5466e433" xml:lang="grc"><lang/>
                         <w>βλάξ</w>
-                        <gloss><q>weak</q></gloss></mentioned>, <mentioned xml:lang="grc"><w/>
-                        <gloss><q>flabby</q></gloss></mentioned>, <mentioned xml:lang="grc"><w/>
-                        <gloss><q>lazy</q></gloss></mentioned>, <mentioned xml:lang="la"><lang/>
+                        <gloss><q>weak</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5466e441" xml:lang="grc"><w/>
+                        <gloss><q>flabby</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5466e448" xml:lang="grc"><w/>
+                        <gloss><q>lazy</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5466e454" xml:lang="la"><lang/>
                         <w>flaccus</w>
-                        <gloss><q>flaccid</q></gloss></mentioned>, <mentioned xml:lang="la"><w/>
+                        <gloss><q>flaccid</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5466e462" xml:lang="la"><w/>
                         <gloss><q>lop-eared</q></gloss></mentioned>. Basing on the metathesis
                     %i*mle-%i || %i*mel-%i, some people relate to it Indo-European words with the
-                    meaning ‘grind’, ‘mill’ (<mentioned xml:lang="cu"><lang/>
+                    meaning ‘grind’, ‘mill’ (<mentioned xml:id="mentioned_d5466e468" xml:lang="cu"><lang/>
                         <w>mlěti</w>
-                        <gloss><q>grind</q></gloss></mentioned> и пр.). Ws. %sMiller%s (<bibl><ref
-                            type="bibl" target="#ref_Вс._Миллер._Gr."
-                        /><biblScope>64</biblScope></bibl>) divides %ifæ-llajyn%i into
+                        <gloss><q>grind</q></gloss></mentioned> и пр.). Ws. %sMiller%s (<bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>64</biblScope></bibl>) divides %ifæ-llajyn%i into
                     %ifæ-mlā-y-un%i, forgetting that for Ossetic one should base on the form
-                    %imrā-%i, not on the %imlā-%i (cf. <mentioned xml:lang="ae"><lang/>
+                    %imrā-%i, not on the %imlā-%i (cf. <mentioned xml:id="mentioned_d5466e480" xml:lang="ae"><lang/>
                         <w>mrā-</w></mentioned>); and in this case the appearance of %iI%i remains
                     unexplained. On the contrary, if one bases on %ifæl-mrā-%i, then %ill%i will
                     turn out to be a natural result of the simplification and assimilation of the

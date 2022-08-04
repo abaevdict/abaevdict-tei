@@ -1,47 +1,52 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">færv</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_færv" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>færv</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>færwæ</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d328e72"><abv:tr xml:lang="ru">
                         <q>ольха</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>alder</q>
                     </abv:tr></sense>
-                <re>
+                <re xml:id="re_d328e82">
                     <form xml:lang="os-x-iron" type="lemma"><orth>færvbyn</orth></form>
                     <form xml:lang="os-x-digor" type="dialectal"><orth>færbun</orth></form>
-                    <sense><sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d328e90"><sense xml:id="sense_d328e91"><abv:tr xml:lang="ru">
                                 <q>ольховник</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>alder forest</q>
-                            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                            </abv:tr></sense><sense xml:id="sense_d328e100"><abv:tr xml:lang="ru">
                                 <q>ольховая роща</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>alder grove</q>
                             </abv:tr></sense></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d328e113">
                         <quote>færvy cʼaræj axoræn arazync</quote>
                         <abv:tr xml:lang="ru">
                             <q>из ольховой коры приготовляют краску</q>
@@ -50,7 +55,7 @@
                             <q>paint is prepared from alder bark</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d328e128">
                         <quote>færvy x˳ymællægæj dæ bægæniag</quote>
                         <abv:tr xml:lang="ru">
                             <q>на пиво тебе (пойдет) хмель (вьющийся вокруг) ольхи</q>
@@ -60,7 +65,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_ОЭ"/><biblScope>I 102</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d328e147" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>fæxxæssuncæ mæn færbunæj</quote>
                         <abv:tr xml:lang="ru">
@@ -71,7 +76,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>22</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d328e169" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>i calx ficcagidær færbunbæl baliǧdæj</quote>
                         <abv:tr xml:lang="ru">
@@ -84,53 +89,37 @@
                             19</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Сопоставляется с <mentioned xml:lang="goh"><lang/>
+                <etym xml:lang="ru">Сопоставляется с <mentioned xml:id="mentioned_d328e195" xml:lang="goh"><lang/>
                         <w>felawa</w>
                         <gloss><q>ива</q></gloss></mentioned>. Идеосемантика ведет либо к „влаге“,
-                    „болоту“ и т. п. („влаголюбивое дерево“), ср. <mentioned xml:lang="sa"><lang/>
+                    „болоту“ и т. п. („влаголюбивое дерево“), ср. <mentioned xml:id="mentioned_d328e203" xml:lang="sa"><lang/>
                         <w>palvala-</w>
-                        <gloss><q>пруд</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
-                        <gloss><q>лужа</q></gloss></mentioned>, <mentioned xml:lang="la"><lang/>
+                        <gloss><q>пруд</q></gloss></mentioned>, <mentioned xml:id="mentioned_d328e211" xml:lang="sa"><w/>
+                        <gloss><q>лужа</q></gloss></mentioned>, <mentioned xml:id="mentioned_d328e217" xml:lang="la"><lang/>
                         <w>palūs</w>
                         <gloss><q>болото</q></gloss></mentioned> (<bibl><author>E.
-                            Liden</author><ref type="bibl" target="#ref_IF"/><biblScope
-                            xml:lang="ru">18, стр. 486</biblScope></bibl>), либо к понятию „серого“ (по цвету коры,
-                    листвы): <mentioned xml:lang="de"><lang/>
-                        <w>fahl</w></mentioned> и пр. (<bibl><author>F. Holthausen</author><ref
-                            type="bibl" target="#ref_IF"/><biblScope xml:lang="ru">25, стр.
+                            Liden</author><ref type="bibl" target="#ref_IF"/><biblScope xml:lang="ru">18, стр. 486</biblScope></bibl>), либо к понятию „серого“ (по цвету коры,
+                    листвы): <mentioned xml:id="mentioned_d328e232" xml:lang="de"><lang/>
+                        <w>fahl</w></mentioned> и пр. (<bibl><author>F. Holthausen</author><ref type="bibl" target="#ref_IF"/><biblScope xml:lang="ru">25, стр.
                             150</biblScope></bibl>);
                     сюда же в этом случае %i*fæl-%i в <ref type="xr" target="#entry_fælūrs"/>
-                            ‘бледный’.%n<bibl><author>Kretschmer</author><ref type="bibl"
-                            target="#ref_KZ"/><biblScope>XXXI 427</biblScope></bibl>. — <bibl><ref
-                            type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II
-                        86</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>35</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_Walde"/><biblScope>557</biblScope></bibl>. — <bibl><ref
-                            type="bibl" target="#ref_ОЯФ_I"
-                    /><biblScope>32</biblScope></bibl>.</etym>
-                <etym xml:lang="en">It is compared with <mentioned xml:lang="goh"><lang/>
+                            ‘бледный’.%n<bibl><author>Kretschmer</author><ref type="bibl" target="#ref_KZ"/><biblScope>XXXI 427</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II
+                        86</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>35</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Walde"/><biblScope>557</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>32</biblScope></bibl>.</etym>
+                <etym xml:lang="en">It is compared with <mentioned xml:id="mentioned_d328e270" xml:lang="goh"><lang/>
                         <w>felawa</w>
                         <gloss><q>willow</q></gloss></mentioned>. Ideosemantics leads either to
-                    ‘moisture’, ‘swamp’, etc. (‘moisture-loving tree’), cf. <mentioned xml:lang="sa"><lang/>
+                    ‘moisture’, ‘swamp’, etc. (‘moisture-loving tree’), cf. <mentioned xml:id="mentioned_d328e278" xml:lang="sa"><lang/>
                         <w>palvala-</w>
-                        <gloss><q>pond</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
-                        <gloss><q>puddle</q></gloss></mentioned>, <mentioned xml:lang="la"><lang/>
+                        <gloss><q>pond</q></gloss></mentioned>, <mentioned xml:id="mentioned_d328e286" xml:lang="sa"><w/>
+                        <gloss><q>puddle</q></gloss></mentioned>, <mentioned xml:id="mentioned_d328e292" xml:lang="la"><lang/>
                         <w>palūs</w>
-                        <gloss><q>swamp</q></gloss></mentioned> (<bibl><author>E. Liden</author><ref
-                            type="bibl" target="#ref_IF"/><biblScope xml:lang="en">18, p. 486</biblScope></bibl>),
+                        <gloss><q>swamp</q></gloss></mentioned> (<bibl><author>E. Liden</author><ref type="bibl" target="#ref_IF"/><biblScope xml:lang="en">18, p. 486</biblScope></bibl>),
                     or to the concept of ‘gray’ (according to the color of the bark and foliage):
-                        <mentioned xml:lang="de"><lang/>
-                        <w>fahl</w></mentioned> etc. (<bibl><author>F. Holthausen</author><ref
-                            type="bibl" target="#ref_IF"/><biblScope xml:lang="en">25, p. 150</biblScope></bibl>);
+                        <mentioned xml:id="mentioned_d328e307" xml:lang="de"><lang/>
+                        <w>fahl</w></mentioned> etc. (<bibl><author>F. Holthausen</author><ref type="bibl" target="#ref_IF"/><biblScope xml:lang="en">25, p. 150</biblScope></bibl>);
                     in this case see also %i*fæl-%i in <ref type="xr" target="#entry_fælūrs"/>
-                            ‘pale’.%n<bibl><author>Kretschmer</author><ref type="bibl"
-                            target="#ref_KZ"/><biblScope>XXXI 427</biblScope></bibl>. — <bibl><ref
-                            type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II
-                        86</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>35</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_Walde"/><biblScope>557</biblScope></bibl>. — <bibl><ref
-                            type="bibl" target="#ref_ОЯФ_I"
-                    /><biblScope>32</biblScope></bibl>.</etym>
+                            ‘pale’.%n<bibl><author>Kretschmer</author><ref type="bibl" target="#ref_KZ"/><biblScope>XXXI 427</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II
+                        86</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>35</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Walde"/><biblScope>557</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>32</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

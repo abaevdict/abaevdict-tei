@@ -1,38 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">emynæ</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_emynæ" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>emynæ</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>eminæ</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d1285e72"><sense xml:id="sense_d1285e73"><abv:tr xml:lang="ru">
                             <q>чума</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>plague</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d1285e82"><abv:tr xml:lang="ru">
                             <q>мор</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>pestilence</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d1285e94" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>fonsbæl fæwuj alli xuzi neztæ: manǧaw, talæw, eminæ æma ændær
                             neztæ</quote>
@@ -46,7 +51,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_FS"/><biblScope>II 17</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1285e116">
                         <quote>emynæ wæ nyccægdæd!</quote>
                         <abv:tr xml:lang="ru">
                             <q>чума да поразит вас!</q>
@@ -55,7 +60,7 @@
                             <q>let the plague hit you!</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1285e131">
                         <quote>jæ ūs æj je ʽmgæron næ waǧta emynæjæ qawǵydær</quote>
                         <abv:tr xml:lang="ru">
                             <q>жена не подпускала его к себе близко, как чуму</q>
@@ -65,7 +70,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Čerm."/><biblScope>80</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d1285e150" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>cuma ίn kizgæ eminæ ævdesuj, oj kast kænuj</quote>
                         <abv:tr xml:lang="ru">
@@ -74,55 +79,47 @@
                         <abv:tr xml:lang="en">
                             <q>he looks at her as if the girl disgusts him like the plague</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Bes._Ka_ke"
-                            /><biblScope>36</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Bes._Ka_ke"/><biblScope>36</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Усвоено у соседей: <mentioned xml:lang="kbd"><lang/>
+                <etym xml:lang="ru">Усвоено у соседей: <mentioned xml:id="mentioned_d1285e175" xml:lang="kbd"><lang/>
                         <w>jemənä</w>
-                        <gloss><q>моровая язва</q></gloss></mentioned>, <mentioned xml:lang="kbd"><w/>
-                        <gloss><q>поветрие</q></gloss></mentioned>, <mentioned xml:lang="ady"><lang/>
+                        <gloss><q>моровая язва</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1285e183" xml:lang="kbd"><w/>
+                        <gloss><q>поветрие</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1285e189" xml:lang="ady"><lang/>
                         <w>jemənä</w>
-                        <gloss><q>чума</q></gloss></mentioned>, <mentioned xml:lang="ady"><w/>
-                        <gloss><q>холера</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_СМК"/><biblScope>XXVI %i3%i 37, 60</biblScope></bibl>),
-                        <mentioned xml:lang="abq"><lang/>
+                        <gloss><q>чума</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1285e197" xml:lang="ady"><w/>
+                        <gloss><q>холера</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_СМК"/><biblScope>XXVI %i3%i 37, 60</biblScope></bibl>),
+                        <mentioned xml:id="mentioned_d1285e208" xml:lang="abq"><lang/>
                         <w>jəməna</w>
-                        <gloss><q>эпидемия</q></gloss></mentioned>, <mentioned
-                        xml:lang="krc-x-balkar" extralang="krc-x-karachay"><lang/>
+                        <gloss><q>эпидемия</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1285e216" xml:lang="krc-x-balkar" extralang="krc-x-karachay"><lang/>
                         <w>emina</w>
-                        <gloss><q>чума</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_СМК"/><biblScope>XLIII %i1%i 68</biblScope></bibl>),
-                        <mentioned xml:lang="ka" dialect="ka-x-rach"><lang/>
+                        <gloss><q>чума</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_СМК"/><biblScope>XLIII %i1%i 68</biblScope></bibl>),
+                        <mentioned xml:id="mentioned_d1285e228" xml:lang="ka" dialect="ka-x-rach"><lang/>
                         <w>iamani</w>
                         <gloss><q>болезнь лошадей</q></gloss></mentioned> (<bibl><author>Ш. В.
                             Дзидзигури</author><biblScope>Сообщ. Акад, наук Груз. ССР, 1944, т. V, №
                             10, стр. 1035</biblScope></bibl>). Тюркского происхождения (ср.
-                        <mentioned xml:lang="ky"><lang/>
+                        <mentioned xml:id="mentioned_d1285e240" xml:lang="ky"><lang/>
                         <w>čemen</w>
                         <gloss><q>болезнь</q></gloss></mentioned>).</etym>
-                <etym xml:lang="en">Acquired from the neighbouring languages: <mentioned
-                        xml:lang="kbd"><lang/>
+                <etym xml:lang="en">Acquired from the neighbouring languages: <mentioned xml:id="mentioned_d1285e252" xml:lang="kbd"><lang/>
                         <w>jemənä</w>
-                        <gloss><q>pest</q></gloss></mentioned>, <mentioned xml:lang="kbd"><w/>
-                        <gloss><q>epidemic</q></gloss></mentioned>, <mentioned xml:lang="ady"><lang/>
+                        <gloss><q>pest</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1285e260" xml:lang="kbd"><w/>
+                        <gloss><q>epidemic</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1285e266" xml:lang="ady"><lang/>
                         <w>jemənä</w>
-                        <gloss><q>plague</q></gloss></mentioned>, <mentioned xml:lang="ady"><w/>
-                        <gloss><q>cholera</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_СМК"/><biblScope>XXVI %i3%i 37, 60</biblScope></bibl>),
-                        <mentioned xml:lang="abq"><lang/>
+                        <gloss><q>plague</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1285e274" xml:lang="ady"><w/>
+                        <gloss><q>cholera</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_СМК"/><biblScope>XXVI %i3%i 37, 60</biblScope></bibl>),
+                        <mentioned xml:id="mentioned_d1285e285" xml:lang="abq"><lang/>
                         <w>jəməna</w>
-                        <gloss><q>epidemic</q></gloss></mentioned>, <mentioned
-                        xml:lang="krc-x-balkar" extralang="krc-x-karachay"><lang/>
+                        <gloss><q>epidemic</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1285e293" xml:lang="krc-x-balkar" extralang="krc-x-karachay"><lang/>
                         <w>emina</w>
-                        <gloss><q>plague</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_СМК"/><biblScope>XLIII %i1%i 68</biblScope></bibl>),
-                        <mentioned xml:lang="ka" dialect="ka-x-rach"><lang/>
+                        <gloss><q>plague</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_СМК"/><biblScope>XLIII %i1%i 68</biblScope></bibl>),
+                        <mentioned xml:id="mentioned_d1285e305" xml:lang="ka" dialect="ka-x-rach"><lang/>
                         <w>iamani</w>
                         <gloss><q>horse disease</q></gloss></mentioned> (<bibl><author>Sh. V.
                             Dzidziguri</author><biblScope>Soobšč. Akad. nauk Gruz. SSR, 1944, vol.
                             V, № 10, p. 1035</biblScope></bibl>). It has a Turkic origin (cf.
-                        <mentioned xml:lang="ky"><lang/>
+                        <mentioned xml:id="mentioned_d1285e317" xml:lang="ky"><lang/>
                         <w>čemen</w>
                         <gloss><q>disease</q></gloss></mentioned>).</etym>
                 <note type="internal">один английский реф перевести</note>

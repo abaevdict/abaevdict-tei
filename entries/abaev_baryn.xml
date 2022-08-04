@@ -1,34 +1,37 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">baryn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_baryn" xml:lang="os">
-                <form xml:lang="os-x-iron" type="lemma"><orth>baryn</orth><form type="variant"
-                            ><orth>barst</orth></form></form>
-                <form xml:lang="os-x-digor" type="dialectal"><orth>barun</orth><form
-                        type="participle"><orth>barst</orth></form></form>
-                <sense n="1" xml:id="sense_baryn.1"><sense><abv:tr xml:lang="ru">
+                <form xml:lang="os-x-iron" type="lemma"><orth>baryn</orth><form type="variant"><orth>barst</orth></form></form>
+                <form xml:lang="os-x-digor" type="dialectal"><orth>barun</orth><form type="participle"><orth>barst</orth></form></form>
+                <sense n="1" xml:id="sense_baryn.1"><sense xml:id="sense_d106e77"><abv:tr xml:lang="ru">
                             <q>взвешивать</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>weigh</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d106e86"><abv:tr xml:lang="ru">
                             <q>измерять</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>measure</q>
@@ -39,7 +42,7 @@
                         <q>forgive</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d106e108">
                         <quote>īwmæjag zæxx īw ærbarsta mæng barænæj</quote>
                         <abv:tr xml:lang="ru">
                             <q>общественную землю он отмеривал неверной мерой</q>
@@ -49,7 +52,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>75</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d106e127">
                         <quote>cy barænæj barat, ūmæj wyn ysbarʒysty</quote>
                         <abv:tr xml:lang="ru">
                             <q>какою мерою мерите, такою отмерено будет вам</q>
@@ -60,7 +63,7 @@
                         <bibl><ref type="bibl" target="#src_Марк"/><biblScope>%i4%i
                             24</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d106e146" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>carvi fædgæ din fusi wæcʼæyæj næ rabarʒinan</quote>
                         <abv:tr xml:lang="ru">
@@ -74,7 +77,7 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d106e172">
                         <quote>sont rædydæn — barst</quote>
                         <abv:tr xml:lang="ru">
                             <q>бессознательному проступку— прощение</q>
@@ -82,10 +85,9 @@
                         <abv:tr xml:lang="en">
                             <q>forgiveness to unconscious misconduct</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"
-                            /><biblScope>117</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>117</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d106e191">
                         <quote>Xucaw bīræ bary, fælæ ægær tærīǧæd næ bary</quote>
                         <abv:tr xml:lang="ru">
                             <q>Бог многое прощает, но чрезмерного злодеяния не прощает</q>
@@ -95,7 +97,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Сека"/><biblScope>31</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d106e210">
                         <quote>nybbar myn</quote>
                         <abv:tr xml:lang="ru">
                             <q>прости мне</q>
@@ -105,7 +107,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>11</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d106e229">
                         <quote>wæ k˳yvd barst wæt!</quote>
                         <abv:tr xml:lang="ru">
                             <q>да будет ваше пиршество угодно („прощено“) (Богу)</q>
@@ -118,55 +120,43 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Если принять исходное значение ‘нести, держать тяжесть’, то
-                    осетинский глагол увязывается с индоевропейской основой <mentioned
-                        xml:lang="ine"><lang/>
+                    осетинский глагол увязывается с индоевропейской основой <mentioned xml:id="mentioned_d106e251" xml:lang="ine"><lang/>
                         <w>*bher-</w>
-                        <gloss><q>нести</q></gloss></mentioned> и пр.: <mentioned xml:lang="ae"><lang/>
-                        <w>bar-</w></mentioned>, <mentioned xml:lang="peo"><lang/>
-                        <w>bar-</w></mentioned>, <mentioned xml:lang="sog"><lang/>
+                        <gloss><q>нести</q></gloss></mentioned> и пр.: <mentioned xml:id="mentioned_d106e259" xml:lang="ae"><lang/>
+                        <w>bar-</w></mentioned>, <mentioned xml:id="mentioned_d106e264" xml:lang="peo"><lang/>
+                        <w>bar-</w></mentioned>, <mentioned xml:id="mentioned_d106e269" xml:lang="sog"><lang/>
                         <w>βār</w>
-                        <gloss><q>груз</q></gloss></mentioned>, <mentioned xml:lang="sa"><lang/>
+                        <gloss><q>груз</q></gloss></mentioned>, <mentioned xml:id="mentioned_d106e277" xml:lang="sa"><lang/>
                         <w>bhar-</w>
-                        <gloss><q>нести</q></gloss></mentioned>, <mentioned xml:lang="sa"
-                            ><w>bhāra-</w>
-                        <gloss><q>груз</q></gloss></mentioned>, <mentioned xml:lang="ru"><lang/>
-                        <w>беру</w></mentioned>, <mentioned xml:lang="grc"><lang/>
-                        <w>φέρω</w></mentioned>, <mentioned xml:lang="la"><lang/>
+                        <gloss><q>нести</q></gloss></mentioned>, <mentioned xml:id="mentioned_d106e286" xml:lang="sa"><w>bhāra-</w>
+                        <gloss><q>груз</q></gloss></mentioned>, <mentioned xml:id="mentioned_d106e292" xml:lang="ru"><lang/>
+                        <w>беру</w></mentioned>, <mentioned xml:id="mentioned_d106e297" xml:lang="grc"><lang/>
+                        <w>φέρω</w></mentioned>, <mentioned xml:id="mentioned_d106e302" xml:lang="la"><lang/>
                         <w>fero</w></mentioned> и пр. Форма прош. причастия %ibarst%i расходится с
-                    древнеиранской ( <mentioned xml:lang="x-oldirn"><lang/>
+                    древнеиранской ( <mentioned xml:id="mentioned_d106e307" xml:lang="x-oldirn"><lang/>
                         <w>bṛta</w></mentioned>) и должна рассматриваться как вторичное образование
-                    с инхоативным %is%i. — Эту же основу мы усматриваем в <ref type="xr"
-                        target="#entry_æmbaryn"/> ‘понимать’. — Значение ‘прощать’ могло развиться
-                    из ‘нести’ → ‘сносить’ → ‘переносить’.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 50, III
-                        154</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>59</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_Hübschmann._Oss."/><biblScope>27</biblScope></bibl>.</etym>
+                    с инхоативным %is%i. — Эту же основу мы усматриваем в <ref type="xr" target="#entry_æmbaryn"/> ‘понимать’. — Значение ‘прощать’ могло развиться
+                    из ‘нести’ → ‘сносить’ → ‘переносить’.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 50, III
+                        154</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>59</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>27</biblScope></bibl>.</etym>
                 <etym xml:lang="en">If we adopt the meaning ‘carry, hold heavy things’ as the
-                    initial, then the Ossetic verb is related to the Indo-European stem <mentioned
-                        xml:lang="ine"><lang/>
+                    initial, then the Ossetic verb is related to the Indo-European stem <mentioned xml:id="mentioned_d106e330" xml:lang="ine"><lang/>
                         <w>*bher-</w>
-                        <gloss><q>carry</q></gloss></mentioned> etc.: <mentioned xml:lang="ae"><lang/>
-                        <w>bar-</w></mentioned>, <mentioned xml:lang="peo"><lang/>
-                        <w>bar-</w></mentioned>, <mentioned xml:lang="sog"><lang/>
+                        <gloss><q>carry</q></gloss></mentioned> etc.: <mentioned xml:id="mentioned_d106e338" xml:lang="ae"><lang/>
+                        <w>bar-</w></mentioned>, <mentioned xml:id="mentioned_d106e343" xml:lang="peo"><lang/>
+                        <w>bar-</w></mentioned>, <mentioned xml:id="mentioned_d106e348" xml:lang="sog"><lang/>
                         <w>βār</w>
-                        <gloss><q>weight</q></gloss></mentioned>, <mentioned xml:lang="sa"><lang/>
+                        <gloss><q>weight</q></gloss></mentioned>, <mentioned xml:id="mentioned_d106e356" xml:lang="sa"><lang/>
                         <w>bhar-</w>
-                        <gloss><q>carry</q></gloss></mentioned>, <mentioned xml:lang="sa"
-                            ><w>bhāra-</w>
-                        <gloss><q>weight</q></gloss></mentioned>, <mentioned xml:lang="ru"><lang/>
-                        <w>beru</w></mentioned>, <mentioned xml:lang="grc"><lang/>
-                        <w>φέρω</w></mentioned>, <mentioned xml:lang="la"><lang/>
+                        <gloss><q>carry</q></gloss></mentioned>, <mentioned xml:id="mentioned_d106e365" xml:lang="sa"><w>bhāra-</w>
+                        <gloss><q>weight</q></gloss></mentioned>, <mentioned xml:id="mentioned_d106e371" xml:lang="ru"><lang/>
+                        <w>beru</w></mentioned>, <mentioned xml:id="mentioned_d106e376" xml:lang="grc"><lang/>
+                        <w>φέρω</w></mentioned>, <mentioned xml:id="mentioned_d106e381" xml:lang="la"><lang/>
                         <w>fero</w></mentioned> etc. Past participle form %ibarst%i differs from the
-                    Old Iranian form (<mentioned xml:lang="x-oldirn"><lang/>
+                    Old Iranian form (<mentioned xml:id="mentioned_d106e386" xml:lang="x-oldirn"><lang/>
                         <w>bṛta</w></mentioned>) and must be treated as a secondary formation with
-                    the inchoative %is%i. — The same stem is found in <ref type="xr"
-                        target="#entry_æmbaryn"/> ‘understand’. — The meaning 'forgive' could
-                    develop from 'carry' → ‘bear’ → ‘get over’.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 50, III
-                        154</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>59</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_Hübschmann._Oss."/><biblScope>27</biblScope></bibl>.</etym>
+                    the inchoative %is%i. — The same stem is found in <ref type="xr" target="#entry_æmbaryn"/> ‘understand’. — The meaning 'forgive' could
+                    develop from 'carry' → ‘bear’ → ‘get over’.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 50, III
+                        154</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>59</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>27</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

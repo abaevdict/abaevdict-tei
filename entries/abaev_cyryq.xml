@@ -1,21 +1,26 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">cyryq</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
@@ -33,7 +38,7 @@
                         <q>leather vessel</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d2794e94">
                         <quote>kæd knjaz ærbacæwa … wæd yn jæ cyryqqytæ ralas</quote>
                         <abv:tr xml:lang="ru">
                             <q>если князь придет, то сними с него сапоги</q>
@@ -41,12 +46,11 @@
                         <abv:tr xml:lang="en">
                             <q>if the prince comes, then take off his boots</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Брит."
-                            /><biblScope>135</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Брит."/><biblScope>135</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d2794e117">
                         <quote>Wask˳yppy sær mæ fydy cyryq īs</quote>
                         <abv:tr xml:lang="ru">
                             <q>на вершине Уаскупп находится кожаный сосуд моего отца</q>
@@ -57,7 +61,7 @@
                         <bibl><ref type="bibl" target="#src_ЮОПам."/><biblScope>I
                             17</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d2794e136" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>sawædonæj culuq bajʒag kodta</quote>
                         <abv:tr xml:lang="ru">
@@ -69,7 +73,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
                             96</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d2794e158" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>æ culuq bajʒag kodta æma ʽj æ ʒippi nivardta</quote>
                         <abv:tr xml:lang="ru">
@@ -82,103 +86,84 @@
                             31</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из <mentioned xml:lang="trk"><lang/>
-                        <w>čaruǧ</w></mentioned>, <mentioned xml:lang="trk"
-                    ><w>čaruq</w></mentioned>, <mentioned xml:lang="trk"><w>carəq</w>
-                        <gloss><q>род кожаной обуви</q></gloss></mentioned>, <mentioned
-                        xml:lang="trk"><w/>
-                        <gloss><q>сапог</q></gloss></mentioned>; сюда же <mentioned xml:lang="fa"><lang/>
-                        <w>čārūq</w></mentioned>, <mentioned xml:lang="ku"><lang/>
+                <etym xml:lang="ru">Из <mentioned xml:id="mentioned_d2794e183" xml:lang="trk"><lang/>
+                        <w>čaruǧ</w></mentioned>, <mentioned xml:id="mentioned_d2794e188" xml:lang="trk"><w>čaruq</w></mentioned>, <mentioned xml:id="mentioned_d2794e191" xml:lang="trk"><w>carəq</w>
+                        <gloss><q>род кожаной обуви</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2794e197" xml:lang="trk"><w/>
+                        <gloss><q>сапог</q></gloss></mentioned>; сюда же <mentioned xml:id="mentioned_d2794e203" xml:lang="fa"><lang/>
+                        <w>čārūq</w></mentioned>, <mentioned xml:id="mentioned_d2794e209" xml:lang="ku"><lang/>
                         <w>čarūx</w>
-                        <gloss><q>род обуви</q></gloss></mentioned>, <mentioned xml:lang="av"><lang/>
+                        <gloss><q>род обуви</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2794e217" xml:lang="av"><lang/>
                         <w>čerek</w>
-                        <gloss><q>чувяк</q></gloss></mentioned>, <mentioned xml:lang="krc-x-balkar"><lang/>
-                        <w>čuruq</w></mentioned>, <mentioned xml:lang="krc-x-balkar"
-                        ><w>čerik</w></mentioned> id., <mentioned xml:lang="ady"><lang/>
-                        <w>šəruq</w></mentioned>, <mentioned xml:lang="kbd"><lang/>
+                        <gloss><q>чувяк</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2794e225" xml:lang="krc-x-balkar"><lang/>
+                        <w>čuruq</w></mentioned>, <mentioned xml:id="mentioned_d2794e230" xml:lang="krc-x-balkar"><w>čerik</w></mentioned> id., <mentioned xml:id="mentioned_d2794e233" xml:lang="ady"><lang/>
+                        <w>šəruq</w></mentioned>, <mentioned xml:id="mentioned_d2794e238" xml:lang="kbd"><lang/>
                         <w>šərəqu</w>
                         <gloss><q>сапог</q></gloss></mentioned> и др. Засвидетельствовано и в
-                    южнорусских говорах: <mentioned xml:lang="ru"><lang/>
+                    южнорусских говорах: <mentioned xml:id="mentioned_d2794e247" xml:lang="ru"><lang/>
                         <note type="comment" xml:lang="ru">крым.</note><w>чарык</w>
-                        <gloss><q>мягкий сапог</q></gloss></mentioned>, <mentioned xml:lang="ru"><lang/>
+                        <gloss><q>мягкий сапог</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2794e257" xml:lang="ru"><lang/>
                         <note type="comment" xml:lang="ru">донск., терск.</note><w>чирики</w>
-                        <gloss><q>обувь</q></gloss></mentioned>. Дигорское <mentioned
-                        xml:lang="os-x-digor"><lang/>
+                        <gloss><q>обувь</q></gloss></mentioned>. Дигорское <mentioned xml:id="mentioned_d2794e267" xml:lang="os-x-digor"><lang/>
                         <w>culuq</w>
-                        <gloss><q>кожаное ведро</q></gloss></mentioned>, <mentioned
-                        xml:lang="os-x-digor"><w/>
+                        <gloss><q>кожаное ведро</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2794e275" xml:lang="os-x-digor"><w/>
                         <gloss><q>кожаный сосуд</q></gloss></mentioned>, хотя и совпало по звучанию
-                    с <mentioned xml:lang="os-x-digor"><lang/>
+                    с <mentioned xml:id="mentioned_d2794e281" xml:lang="os-x-digor"><lang/>
                         <w>culuq</w>
                         <gloss><q>сапог</q></gloss></mentioned>, имеет свои особые соответствия:
-                        <mentioned xml:lang="trk"><lang/>
+                        <mentioned xml:id="mentioned_d2794e289" xml:lang="trk"><lang/>
                         <w>suluq</w>
-                        <gloss><q>дорожный мешок для провизии</q></gloss></mentioned> (<bibl><ref
-                            type="bibl" target="#ref_Радлов"/><biblScope>IV 776</biblScope></bibl>.
+                        <gloss><q>дорожный мешок для провизии</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Радлов"/><biblScope>IV 776</biblScope></bibl>.
                     — <bibl><ref type="bibl" target="#ref_ЗКВ"/><biblScope>III
-                        241</biblScope></bibl>), <mentioned xml:lang="ady"><lang/>
+                        241</biblScope></bibl>), <mentioned xml:id="mentioned_d2794e306" xml:lang="ady"><lang/>
                         <w>suluq</w>
                         <gloss><q>кожаный сосуд наподобие ведра, в сложенном виде носился под
-                                седлом</q></gloss></mentioned>, <mentioned xml:lang="ce"><lang/>
+                                седлом</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2794e314" xml:lang="ce"><lang/>
                         <w>čilik</w>
-                        <gloss><q>ведро</q></gloss></mentioned>, <mentioned xml:lang="ru"><lang/>
-                        <w>челек</w></mentioned>, <mentioned xml:lang="ru"><w>чилек</w></mentioned>,
-                        <mentioned xml:lang="ru"><w>чиляк</w>
-                        <gloss><q>ведерко</q></gloss></mentioned>, <mentioned xml:lang="ru"><w/>
-                        <gloss><q>черпак</q></gloss></mentioned>.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 116</biblScope></bibl>;
-                            <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>9</biblScope></bibl>.</etym>
-                <etym xml:lang="en">From <mentioned xml:lang="trk"><lang/>
-                        <w>čaruǧ</w></mentioned>, <mentioned xml:lang="trk"
-                    ><w>čaruq</w></mentioned>, <mentioned xml:lang="trk"><w>carəq</w>
-                        <gloss><q>type of leather shoes</q></gloss></mentioned>, <mentioned
-                        xml:lang="trk"><w/>
-                        <gloss><q>boot</q></gloss></mentioned>; also here <mentioned xml:lang="fa"><lang/>
-                        <w>čārūq</w></mentioned>, <mentioned xml:lang="ku"><lang/>
+                        <gloss><q>ведро</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2794e322" xml:lang="ru"><lang/>
+                        <w>челек</w></mentioned>, <mentioned xml:id="mentioned_d2794e327" xml:lang="ru"><w>чилек</w></mentioned>,
+                        <mentioned xml:id="mentioned_d2794e331" xml:lang="ru"><w>чиляк</w>
+                        <gloss><q>ведерко</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2794e337" xml:lang="ru"><w/>
+                        <gloss><q>черпак</q></gloss></mentioned>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 116</biblScope></bibl>;
+                            <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>9</biblScope></bibl>.</etym>
+                <etym xml:lang="en">From <mentioned xml:id="mentioned_d2794e354" xml:lang="trk"><lang/>
+                        <w>čaruǧ</w></mentioned>, <mentioned xml:id="mentioned_d2794e359" xml:lang="trk"><w>čaruq</w></mentioned>, <mentioned xml:id="mentioned_d2794e362" xml:lang="trk"><w>carəq</w>
+                        <gloss><q>type of leather shoes</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2794e368" xml:lang="trk"><w/>
+                        <gloss><q>boot</q></gloss></mentioned>; also here <mentioned xml:id="mentioned_d2794e374" xml:lang="fa"><lang/>
+                        <w>čārūq</w></mentioned>, <mentioned xml:id="mentioned_d2794e380" xml:lang="ku"><lang/>
                         <w>čarūx</w>
-                        <gloss><q>type of shoes</q></gloss></mentioned>, <mentioned xml:lang="av"><lang/>
+                        <gloss><q>type of shoes</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2794e388" xml:lang="av"><lang/>
                         <w>čerek</w>
-                        <gloss><q>chuvyak</q></gloss></mentioned>, <mentioned
-                        xml:lang="krc-x-balkar"><lang/>
-                        <w>čuruq</w></mentioned>, <mentioned xml:lang="krc-x-balkar"
-                        ><w>čerik</w></mentioned> id., <mentioned xml:lang="ady"><lang/>
-                        <w>šəruq</w></mentioned>, <mentioned xml:lang="kbd"><lang/>
+                        <gloss><q>chuvyak</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2794e396" xml:lang="krc-x-balkar"><lang/>
+                        <w>čuruq</w></mentioned>, <mentioned xml:id="mentioned_d2794e401" xml:lang="krc-x-balkar"><w>čerik</w></mentioned> id., <mentioned xml:id="mentioned_d2794e404" xml:lang="ady"><lang/>
+                        <w>šəruq</w></mentioned>, <mentioned xml:id="mentioned_d2794e409" xml:lang="kbd"><lang/>
                         <w>šərəqu</w>
                         <gloss><q>boot</q></gloss></mentioned> etc. It is also attested in South
-                    Russian dialects: <mentioned xml:lang="ru"><lang/>
-                        <note type="comment"
-                            xml:lang="en">Crimean</note><w>čaryk</w>
-                        <gloss><q>soft boot</q></gloss></mentioned>, <mentioned xml:lang="ru"><lang/>
-                        <note type="comment"
-                            xml:lang="en">Don, %bTersky%b</note><w>čiriki</w>
-                        <gloss><q>shoes</q></gloss></mentioned>. Although Digor <mentioned
-                        xml:lang="os-x-digor"><lang/>
+                    Russian dialects: <mentioned xml:id="mentioned_d2794e418" xml:lang="ru"><lang/>
+                        <note type="comment" xml:lang="en">Crimean</note><w>čaryk</w>
+                        <gloss><q>soft boot</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2794e428" xml:lang="ru"><lang/>
+                        <note type="comment" xml:lang="en">Don, %bTersky%b</note><w>čiriki</w>
+                        <gloss><q>shoes</q></gloss></mentioned>. Although Digor <mentioned xml:id="mentioned_d2794e438" xml:lang="os-x-digor"><lang/>
                         <w>culuq</w>
-                        <gloss><q>leather bucket</q></gloss></mentioned>, <mentioned
-                        xml:lang="os-x-digor"><w/>
+                        <gloss><q>leather bucket</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2794e446" xml:lang="os-x-digor"><w/>
                         <gloss><q>leather vessel</q></gloss></mentioned> coincided phonetically with
-                        <mentioned xml:lang="os-x-digor"><lang/>
+                        <mentioned xml:id="mentioned_d2794e452" xml:lang="os-x-digor"><lang/>
                         <w>culuq</w>
                         <gloss><q>boot</q></gloss></mentioned>, has its own correspondences:
-                        <mentioned xml:lang="trk"><lang/>
+                        <mentioned xml:id="mentioned_d2794e460" xml:lang="trk"><lang/>
                         <w>suluq</w>
-                        <gloss><q>travel bag for provisions</q></gloss></mentioned> (<bibl><ref
-                            type="bibl" target="#ref_Радлов"/><biblScope>IV 776</biblScope></bibl>.
+                        <gloss><q>travel bag for provisions</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Радлов"/><biblScope>IV 776</biblScope></bibl>.
                     — <bibl><ref type="bibl" target="#ref_ЗКВ"/><biblScope>III
-                        241</biblScope></bibl>), <mentioned xml:lang="ady"><lang/>
+                        241</biblScope></bibl>), <mentioned xml:id="mentioned_d2794e477" xml:lang="ady"><lang/>
                         <w>suluq</w>
                         <gloss><q>a leather vessel, like a bucket, when folded was worn under the
-                                saddle</q></gloss></mentioned>, <mentioned xml:lang="ce"><lang/>
+                                saddle</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2794e485" xml:lang="ce"><lang/>
                         <w>čilik</w>
-                        <gloss><q>bucket</q></gloss></mentioned>, <mentioned xml:lang="ru"><lang/>
-                        <w>čelek</w></mentioned>, <mentioned xml:lang="ru"><w>čilek</w></mentioned>,
-                        <mentioned xml:lang="ru"><w>čiljak</w>
-                        <gloss><q>little bucket</q></gloss></mentioned>, <mentioned xml:lang="ru"><w/>
-                        <gloss><q>ladle</q></gloss></mentioned>.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 116</biblScope></bibl>;
-                            <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>9</biblScope></bibl>.</etym>
+                        <gloss><q>bucket</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2794e493" xml:lang="ru"><lang/>
+                        <w>čelek</w></mentioned>, <mentioned xml:id="mentioned_d2794e498" xml:lang="ru"><w>čilek</w></mentioned>,
+                        <mentioned xml:id="mentioned_d2794e502" xml:lang="ru"><w>čiljak</w>
+                        <gloss><q>little bucket</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2794e508" xml:lang="ru"><w/>
+                        <gloss><q>ladle</q></gloss></mentioned>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 116</biblScope></bibl>;
+                            <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>9</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

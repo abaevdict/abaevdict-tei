@@ -1,41 +1,46 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">cæw</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_cæw" xml:lang="os">
                 <form type="lemma"><orth>cæw</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d4640e69"><abv:tr xml:lang="ru">
                         <q>козел (некастрированный)</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>goat (entire)</q>
                     </abv:tr></sense>
-                <re>
+                <re xml:id="re_d4640e79">
                     <form type="lemma"><orth>cæwkʼa</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d4640e84"><abv:tr xml:lang="ru">
                             <q>козленок</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>baby goat</q>
                         </abv:tr></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4640e97">
                         <quote>Wyryzmæg… argævdy yxsævy jæ ʒūggæs cæw</quote>
                         <abv:tr xml:lang="ru">
                             <q>Урузмаг режет ночью сторожевого козла</q>
@@ -46,7 +51,7 @@
                         <bibl><ref type="bibl" target="#src_ОЭп."/><biblScope>42,
                             87</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4640e116">
                         <quote>xoxy dwaræj axīzy cæwʒarmy mīdæg</quote>
                         <abv:tr xml:lang="ru">
                             <q>выходит из горных ворот в шкуре козла</q>
@@ -56,7 +61,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_ОЭп."/><biblScope>43</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4640e135">
                         <quote>sæǧtīmæ wyd īw ʒwarsa cæw</quote>
                         <abv:tr xml:lang="ru">
                             <q>среди коз был один козел со скрещенными рогами</q>
@@ -64,10 +69,9 @@
                         <abv:tr xml:lang="en">
                             <q>there was one goats with crossed horns among others</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Munk."
-                            /><biblScope>148</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Munk."/><biblScope>148</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4640e154">
                         <quote>Tūtyry cæw</quote>
                         <abv:tr xml:lang="ru">
                             <q rendition="rend_singlequotes">козел, закалываемый на праздник
@@ -77,10 +81,9 @@
                             <q rendition="rend_singlequotes">a goat slaughtered for the Tutyr
                                 holiday</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Munk."
-                            /><biblScope>217</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Munk."/><biblScope>217</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4640e175" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>wæjug æ fusti ʒogæ æ cæwi evged bakodta</quote>
                         <abv:tr xml:lang="ru">
@@ -92,7 +95,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
                             14</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4640e198">
                         <quote>i cæw-boʒo ravgarston</quote>
                         <abv:tr xml:lang="ru">
                             <q>я зарезал козла-вожака</q>
@@ -104,34 +107,31 @@
                             15</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru"><bibl><author>О. Densusianu</author></bibl> (<bibl><biblScope
-                            xml:lang="ru">Irano-Romanica I. Grai şi Suflet I, 1924, стр.
+                <etym xml:lang="ru"><bibl><author>О. Densusianu</author></bibl> (<bibl><biblScope xml:lang="ru">Irano-Romanica I. Grai şi Suflet I, 1924, стр.
                             242—245</biblScope></bibl>) предполагает
-                    скифо-иранское <mentioned xml:lang="xsc" extralang="ira"><lang/>
-                        <w>čap-</w></mentioned> (ср. <mentioned xml:lang="fa"><lang/>
+                    скифо-иранское <mentioned xml:id="mentioned_d4640e226" xml:lang="xsc" extralang="ira"><lang/>
+                        <w>čap-</w></mentioned> (ср. <mentioned xml:id="mentioned_d4640e231" xml:lang="fa"><lang/>
                         <w>čapiš</w>
                         <gloss><q>годовалый козленок</q></gloss></mentioned>), откуда идут, по его
-                    мнению, <mentioned xml:lang="ro"><lang/>
-                        <w>ţap</w></mentioned>, <mentioned xml:lang="sqj"><lang/>
-                        <w>tsap</w></mentioned>, <mentioned xml:lang="it"><lang/>
+                    мнению, <mentioned xml:id="mentioned_d4640e239" xml:lang="ro"><lang/>
+                        <w>ţap</w></mentioned>, <mentioned xml:id="mentioned_d4640e244" xml:lang="sqj"><lang/>
+                        <w>tsap</w></mentioned>, <mentioned xml:id="mentioned_d4640e250" xml:lang="it"><lang/>
                         <w>tsappo</w>
-                        <gloss><q>козел</q></gloss></mentioned>. Однако переход %ip%i → <mentioned
-                        xml:lang="os"><lang/>
+                        <gloss><q>козел</q></gloss></mentioned>. Однако переход %ip%i → <mentioned xml:id="mentioned_d4640e258" xml:lang="os"><lang/>
                         <w>w</w></mentioned> представляет трудности. Ср., впрочем, %ixaw-yn%i [см.
                         <ref type="xr" target="#entry_xawyn"/>] из %ikap%i-.</etym>
                 <etym xml:lang="en"><bibl><author>О. Densusianu</author></bibl> (<bibl><biblScope xml:lang="en">Irano-Romanica I. Grai şi
-                            Suflet I, 1924, p. 242—245</biblScope></bibl>) assumes a <mentioned
-                        xml:lang="xsc" extralang="ira"><lang/>
-                        <w>čap-</w></mentioned> (cf. <mentioned xml:lang="fa"><lang/>
+                            Suflet I, 1924, p. 242—245</biblScope></bibl>) assumes a <mentioned xml:id="mentioned_d4640e275" xml:lang="xsc" extralang="ira"><lang/>
+                        <w>čap-</w></mentioned> (cf. <mentioned xml:id="mentioned_d4640e280" xml:lang="fa"><lang/>
                         <w>čapiš</w>
                         <gloss><q>year-old kid</q></gloss></mentioned>), откуда идут, по его мнению,
-                        <mentioned xml:lang="ro"><lang/>
-                        <w>ţap</w></mentioned>, <mentioned xml:lang="sqj"><lang/>
+                        <mentioned xml:id="mentioned_d4640e288" xml:lang="ro"><lang/>
+                        <w>ţap</w></mentioned>, <mentioned xml:id="mentioned_d4640e293" xml:lang="sqj"><lang/>
                         <w>tsap</w>
-                        <gloss><q>heberling</q></gloss></mentioned>, <mentioned xml:lang="it"><lang/>
+                        <gloss><q>heberling</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4640e302" xml:lang="it"><lang/>
                         <w>tsappo</w>
                         <gloss><q>goat</q></gloss></mentioned>. However the transition %ip%i →
-                        <mentioned xml:lang="os"><lang/>
+                        <mentioned xml:id="mentioned_d4640e310" xml:lang="os"><lang/>
                         <w>w</w></mentioned> present difficulties. Cf., however, %ixaw-yn%i [see
                         <ref type="xr" target="#entry_xawyn"/>] from %ikap%i-.</etym>
             </entry>

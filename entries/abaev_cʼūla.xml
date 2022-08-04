@@ -1,50 +1,55 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">cʼūla</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_cʼūla" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>cʼūla</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>cʼola</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d5327e72"><sense xml:id="sense_d5327e73"><abv:tr xml:lang="ru">
                             <q>притупленный</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>dull</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d5327e82"><abv:tr xml:lang="ru">
                             <q>с погнувшимся лезвием</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>with bent blade</q>
                         </abv:tr></sense></sense>
-                <re>
+                <re xml:id="re_d5327e92">
                     <form type="lemma"><orth>kʼært-cʼūla næ kæny</orth></form>
-                    <sense><sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d5327e97"><sense xml:id="sense_d5327e98"><abv:tr xml:lang="ru">
                                 <q>и в ус не дует</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>he doen not turn a hair</q>
-                            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                            </abv:tr></sense><sense xml:id="sense_d5327e107"><abv:tr xml:lang="ru">
                                 <q>ему нипочем</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>he does not care</q>
                             </abv:tr></sense></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d5327e120">
                         <quote>mæ færæt fæcʼūla</quote>
                         <abv:tr xml:lang="ru">
                             <q rendition="rend_singlequotes">мой топор притупился</q>
@@ -53,7 +58,7 @@
                             <q rendition="rend_singlequotes">my axe hase become dull</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5327e137">
                         <quote>bajdydtoj fīdærttyl xæcyn, æmæ ʒy nīcy xawy kʼærttæjcʼūlajæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>стали биться (чтобы взять) укрепления, но они оставались
@@ -66,7 +71,7 @@
                         <bibl><ref type="bibl" target="#src_ЮОПам."/><biblScope>I
                             106</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5327e156">
                         <quote>ūs kʼærttæj cʼūla næ kæny, nīcæmæ dary jæ læǵy nyxas</quote>
                         <abv:tr xml:lang="ru">
                             <q>жена и ухом не ведет, ни во что не ставит слова мужа</q>
@@ -78,7 +83,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>III
                             105</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5327e175" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>Soslani æfsædtæ tuxtæncæ galaoni færstæbæl, ma sin kʼærtt-cʼola dær
                             næ xawdtæncæ</quote>
@@ -93,7 +98,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
                             49</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5327e197" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>wæddær kʼærttæj cʼola næ gælʒuj</quote>
                         <abv:tr xml:lang="ru">
@@ -106,12 +111,9 @@
                             35</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Вероятно, перебой из %itūla%i | %itola%i, от <ref type="xr"
-                        target="#entry_tūlyn"/> | %itolun%i ‘комкать’; ср. тот же перебой в <ref
-                        type="xr" target="#entry_æncʼūlyn"/> | %iæncʼolun%i ‘комкать’, ‘морщить’ (из
+                <etym xml:lang="ru">Вероятно, перебой из %itūla%i | %itola%i, от <ref type="xr" target="#entry_tūlyn"/> | %itolun%i ‘комкать’; ср. тот же перебой в <ref type="xr" target="#entry_æncʼūlyn"/> | %iæncʼolun%i ‘комкать’, ‘морщить’ (из
                     *%iæmtūlyn%i | *%iæm-tolun%i).</etym>
-                <etym xml:lang="en">It is probably a change from %itūla%i | %itola%i, from <ref
-                        type="xr" target="#entry_tūlyn"/> | %itolun%i ‘crumple’; cf. the same change
+                <etym xml:lang="en">It is probably a change from %itūla%i | %itola%i, from <ref type="xr" target="#entry_tūlyn"/> | %itolun%i ‘crumple’; cf. the same change
                     in <ref type="xr" target="#entry_æncʼūlyn"/> | %iæncʼolun%i ‘crumple’, ‘wrinkle
                     up’ (from *%iæmtūlyn%i | *%iæm-tolun%i).</etym>
             </entry>

@@ -1,42 +1,47 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">fyldær</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_fyldær" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>fyldær</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>fuldær</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d1404e72"><sense xml:id="sense_d1404e73"><abv:tr xml:lang="ru">
                             <q>больше (по количеству)</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>more (in quantity)</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d1404e82"><abv:tr xml:lang="ru">
                             <q>большая часть</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>the greater part</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d1404e91"><abv:tr xml:lang="ru">
                             <q>большей частью</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>mostly</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d1404e103">
                         <quote>xæxbæsty mīt fyldær wary</quote>
                         <abv:tr xml:lang="ru">
                             <q>в горах больше выпадает снега</q>
@@ -45,7 +50,7 @@
                             <q>more snow falls in the mountains</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1404e118">
                         <quote>kūsǵytæ dær fæfyldær kodtoj bæxtæn sæ xærd</quote>
                         <abv:tr xml:lang="ru">
                             <q>работники увеличили корм лошадям</q>
@@ -55,7 +60,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Munk."/><biblScope>74</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d1404e137" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>fuldær ke warzton…</quote>
                         <abv:tr xml:lang="ru">
@@ -64,10 +69,9 @@
                         <abv:tr xml:lang="en">
                             <q>whom I loved more</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>26%l12%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>26%l12%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1404e159">
                         <quote>fyldær rynḱyn væjjyn</quote>
                         <abv:tr xml:lang="ru">
                             <q>большей частью я хвораю</q>
@@ -76,7 +80,7 @@
                             <q>mostly I am sick</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1404e174">
                         <quote>fæsīvædæn sæ fyldær ax˳yrmæ acydysty</quote>
                         <abv:tr xml:lang="ru">
                             <q>большая часть молодежи поехала на учебу</q>
@@ -86,39 +90,23 @@
                         </abv:tr>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из <ref type="xr" target="#entry_fyr"/>-<ref type="xr"
-                        target="#entry_dær"/> | %ifur-dær%i, сравнительная степень от %r2%r<ref
-                        type="xr" target="#entry_fyr"/> | %ifur%i ‘много’, ‘очень’ (в сложных
-                    словах). Ср. <mentioned xml:lang="sog"><lang/>
+                <etym xml:lang="ru">Из <ref type="xr" target="#entry_fyr"/>-<ref type="xr" target="#entry_dær"/> | %ifur-dær%i, сравнительная степень от %r2%r<ref type="xr" target="#entry_fyr"/> | %ifur%i ‘много’, ‘очень’ (в сложных
+                    словах). Ср. <mentioned xml:id="mentioned_d1404e198" xml:lang="sog"><lang/>
                         <w>prtr</w>
                         <gloss><q>plutôt</q></gloss></mentioned>
-                            (<bibl><author>Benveniste</author><ref type="bibl" target="#ref_VJ"
-                            /><biblScope>1328</biblScope></bibl>). Обычное слово для ‘много’ — <ref
-                        type="xr" target="#entry_bīræ"/> | %ibewræ%i; однако %ibīræ-dær%i не
-                    говорят. Ср. такую же супплетивность в сравнительной степени <ref type="xr"
-                        target="#entry_fyddær"/> ‘хуже’, при положительной <ref type="xr"
-                        target="#entry_ævzær"/> I <ref type="xr" target="#entry_læǧuz"/> ‘плохой’.
+                            (<bibl><author>Benveniste</author><ref type="bibl" target="#ref_VJ"/><biblScope>1328</biblScope></bibl>). Обычное слово для ‘много’ — <ref type="xr" target="#entry_bīræ"/> | %ibewræ%i; однако %ibīræ-dær%i не
+                    говорят. Ср. такую же супплетивность в сравнительной степени <ref type="xr" target="#entry_fyddær"/> ‘хуже’, при положительной <ref type="xr" target="#entry_ævzær"/> I <ref type="xr" target="#entry_læǧuz"/> ‘плохой’.
                     Перебой %ir%i → %il%i (%ifyrdær%i → %ifyldær%i) — по диссимиляции плавных; ср.
-                        <ref type="xr" target="#entry_styldær"/> ‘больше (по размеру)’ из <ref
-                        type="xr" target="#entry_styr"/>-<ref type="xr" target="#entry_dær"
-                            />.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II
+                        <ref type="xr" target="#entry_styldær"/> ‘больше (по размеру)’ из <ref type="xr" target="#entry_styr"/>-<ref type="xr" target="#entry_dær"/>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II
                             89</biblScope></bibl>.</etym>
-                <etym xml:lang="en">From <ref type="xr" target="#entry_fyr"/>-<ref type="xr"
-                        target="#entry_dær"/> | %ifur-dær%i, a comparative form of %r2%r<ref
-                        type="xr" target="#entry_fyr"/> | %ifur%i ‘many’, ‘very’ (in compound
-                    words). Compare with <mentioned xml:lang="sog"><lang/>
+                <etym xml:lang="en">From <ref type="xr" target="#entry_fyr"/>-<ref type="xr" target="#entry_dær"/> | %ifur-dær%i, a comparative form of %r2%r<ref type="xr" target="#entry_fyr"/> | %ifur%i ‘many’, ‘very’ (in compound
+                    words). Compare with <mentioned xml:id="mentioned_d1404e241" xml:lang="sog"><lang/>
                         <w>prtr</w>
                         <gloss><q>plutôt</q></gloss></mentioned>
-                            (<bibl><author>Benveniste</author><ref type="bibl" target="#ref_VJ"
-                            /><biblScope>1328</biblScope></bibl>). The usual word for ‘many’ is <ref
-                        type="xr" target="#entry_bīræ"/> | %ibewræ%i; however, no-one says
-                    %ibīræ-dær%i. Cf. the same suppletion in a comparative form <ref type="xr"
-                        target="#entry_fyddær"/> ‘worse’, with a positive form <ref type="xr"
-                        target="#entry_ævzær"/> I <ref type="xr" target="#entry_læǧuz"/> ‘bad’. The
+                            (<bibl><author>Benveniste</author><ref type="bibl" target="#ref_VJ"/><biblScope>1328</biblScope></bibl>). The usual word for ‘many’ is <ref type="xr" target="#entry_bīræ"/> | %ibewræ%i; however, no-one says
+                    %ibīræ-dær%i. Cf. the same suppletion in a comparative form <ref type="xr" target="#entry_fyddær"/> ‘worse’, with a positive form <ref type="xr" target="#entry_ævzær"/> I <ref type="xr" target="#entry_læǧuz"/> ‘bad’. The
                     change %ir%i → %il%i (%ifyrdær%i → %ifyldær%i) is due to liquid dissimilation;
-                    compare with <ref type="xr" target="#entry_styldær"/> ‘more (in size)’ from <ref
-                        type="xr" target="#entry_styr"/>-<ref type="xr" target="#entry_dær"
-                            />.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II
+                    compare with <ref type="xr" target="#entry_styldær"/> ‘more (in size)’ from <ref type="xr" target="#entry_styr"/>-<ref type="xr" target="#entry_dær"/>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II
                             89</biblScope></bibl>.</etym>
             </entry>
         </body>

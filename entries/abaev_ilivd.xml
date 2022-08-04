@@ -1,38 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ilivd</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ilivd" xml:lang="os-x-digor">
                 <form type="lemma"><orth>ilivd</orth></form>
                 <usg><lang/></usg>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d3300e72"><sense xml:id="sense_d3300e73"><abv:tr xml:lang="ru">
                             <q>жалкий</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>pitiful</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d3300e82"><abv:tr xml:lang="ru">
                             <q>несчастный</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>unhappy</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d3300e94">
                         <quote>ilivd, særigon, feče, bæǧnægæj xætuj mægurgor</quote>
                         <abv:tr xml:lang="ru">
                             <q>несчастный, с непокрытой головой, в лохмотьях, без одежды бродит
@@ -41,10 +46,9 @@
                         <abv:tr xml:lang="en">
                             <q>unhappy, bareheaded, in tatters, without clothes a beggar wanders</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Gurdž._Wadž."
-                            /><biblScope>7</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Gurdž._Wadž."/><biblScope>7</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3300e113">
                         <quote>ma næ waʒæ ilivdæj</quote>
                         <abv:tr xml:lang="ru">
                             <q>не оставляй нас несчастными</q>
@@ -52,26 +56,21 @@
                         <abv:tr xml:lang="en">
                             <q>do not leave us miserable</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Gurdž._Wadž."
-                            /><biblScope>26</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Gurdž._Wadž."/><biblScope>26</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Вероятно, восходит к иран. *%ivi-ripta-%i (*%ivi-lipta-%i),
                     прош. причастию от *%ivi-rip-%i ‘пачкать’. Исходное значение было в этом случае
-                    ‘запачканный’, ‘грязный’. Ср. <mentioned xml:lang="sa"><lang/>
+                    ‘запачканный’, ‘грязный’. Ср. <mentioned xml:id="mentioned_d3300e135" xml:lang="sa"><lang/>
                         <w>rip-, lip-</w>
-                        <gloss><q>пачкать</q></gloss></mentioned>, <mentioned xml:lang="sa"
-                            ><w>vi-lipta-</w>
-                        <gloss><q>измазанный</q></gloss></mentioned>. Этот же корень в <ref
-                        type="xr" target="#entry_fælīvyn"/> | %ifælevun%i ‘обманывать’ q. v.</etym>
+                        <gloss><q>пачкать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3300e143" xml:lang="sa"><w>vi-lipta-</w>
+                        <gloss><q>измазанный</q></gloss></mentioned>. Этот же корень в <ref type="xr" target="#entry_fælīvyn"/> | %ifælevun%i ‘обманывать’ q. v.</etym>
                 <etym xml:lang="en">Probably it traces back to Iranian *%ivi-ripta-%i
                     (*%ivi-lipta-%i), past participle of *%ivi-rip-%i ‘to dirty’. The initial
-                    meaning was in this case ‘dirty’, ‘filthy’. Cf. <mentioned xml:lang="sa"><lang/>
+                    meaning was in this case ‘dirty’, ‘filthy’. Cf. <mentioned xml:id="mentioned_d3300e155" xml:lang="sa"><lang/>
                         <w>rip-, lip-</w>
-                        <gloss><q>to dirty</q></gloss></mentioned>, <mentioned xml:lang="sa"
-                            ><w>vi-lipta-</w>
-                        <gloss><q>blurred</q></gloss></mentioned>. The same root is in<ref type="xr"
-                        target="#entry_fælīvyn"/> | %ifælevun%i ‘to deceive’ q. v.</etym>
+                        <gloss><q>to dirty</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3300e163" xml:lang="sa"><w>vi-lipta-</w>
+                        <gloss><q>blurred</q></gloss></mentioned>. The same root is in<ref type="xr" target="#entry_fælīvyn"/> | %ifælevun%i ‘to deceive’ q. v.</etym>
             </entry>
         </body>
     </text>

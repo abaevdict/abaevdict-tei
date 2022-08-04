@@ -1,37 +1,42 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">kʼalati</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_kʼalati" xml:lang="os">
                 <form type="lemma"><orth>kʼalati</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d680e69"><sense xml:id="sense_d680e70"><abv:tr xml:lang="ru">
                             <q>корзинка</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>basket</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d680e79"><abv:tr xml:lang="ru">
                             <q>клетка (птичья)</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>cage (for a bird)</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d680e91">
                         <quote>ḱyzǵytæ sæ kʼalatitæ sawnæmygæj bajʒag kodtoj</quote>
                         <abv:tr xml:lang="ru">
                             <q>девушки наполнили свои корзиночки черникой</q>
@@ -40,7 +45,7 @@
                             <q>girls filled their baskets with blueberries</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d680e106">
                         <quote>am dæ kʼalati cættæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>здесь тебе готова клетка</q>
@@ -48,36 +53,29 @@
                         <abv:tr xml:lang="en">
                             <q>here is the cell ready for you</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"
-                            /><biblScope>122</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>122</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из <mentioned xml:lang="ka"><lang/>
+                <etym xml:lang="ru">Из <mentioned xml:id="mentioned_d680e128" xml:lang="ka"><lang/>
                         <w>k’alata</w>
-                        <gloss><q>корзинка</q></gloss></mentioned>. Последнее — из <mentioned
-                        xml:lang="grc"><lang/>
-                        <w>κάλαθος</w></mentioned> (<mentioned xml:lang="gr"><lang/>
-                        <w>κάλάθi</w></mentioned>) через <mentioned xml:lang="xcl"><lang/>
+                        <gloss><q>корзинка</q></gloss></mentioned>. Последнее — из <mentioned xml:id="mentioned_d680e136" xml:lang="grc"><lang/>
+                        <w>κάλαθος</w></mentioned> (<mentioned xml:id="mentioned_d680e141" xml:lang="gr"><lang/>
+                        <w>κάλάθi</w></mentioned>) через <mentioned xml:id="mentioned_d680e146" xml:lang="xcl"><lang/>
                         <w>k’alat</w>
                         <gloss><q>корзина</q></gloss></mentioned>. Происхождение греческого слова не
                     ясно (<bibl><ref type="bibl" target="#ref_Boisacq"/><biblScope>s.
-                        v.</biblScope></bibl>). Возможна отдаленная связь %ikʼalati%i с <ref
-                        type="xr" target="#entry_kʼælæt"/> ‘дугообразно изогнутая
-                            палка’.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                            /><biblScope>519</biblScope></bibl>.</etym>
-                <etym xml:lang="en">From <mentioned xml:lang="ka"><lang/>
+                        v.</biblScope></bibl>). Возможна отдаленная связь %ikʼalati%i с <ref type="xr" target="#entry_kʼælæt"/> ‘дугообразно изогнутая
+                            палка’.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>519</biblScope></bibl>.</etym>
+                <etym xml:lang="en">From <mentioned xml:id="mentioned_d680e168" xml:lang="ka"><lang/>
                         <w>k’alata</w>
-                        <gloss><q>basket</q></gloss></mentioned>. The latter is from <mentioned
-                        xml:lang="grc"><lang/>
-                        <w>κάλαθος</w></mentioned> (<mentioned xml:lang="el"><lang/>
-                        <w>κάλάθi</w></mentioned>) through <mentioned xml:lang="xcl"><lang/>
+                        <gloss><q>basket</q></gloss></mentioned>. The latter is from <mentioned xml:id="mentioned_d680e176" xml:lang="grc"><lang/>
+                        <w>κάλαθος</w></mentioned> (<mentioned xml:id="mentioned_d680e181" xml:lang="el"><lang/>
+                        <w>κάλάθi</w></mentioned>) through <mentioned xml:id="mentioned_d680e186" xml:lang="xcl"><lang/>
                         <w>k’alat</w>
                         <gloss><q>basket</q></gloss></mentioned>. The origin of Greek word is not
                     clear (<bibl><ref type="bibl" target="#ref_Boisacq"/><biblScope>s.
                             v.</biblScope></bibl>). The word %ikʼalati%i may be remotely related to
-                        <ref type="xr" target="#entry_kʼælæt"/> ‘curved stick’.%n<bibl><ref
-                            type="bibl" target="#ref_ОЯФ_I"
-                    /><biblScope>519</biblScope></bibl>.</etym>
+                        <ref type="xr" target="#entry_kʼælæt"/> ‘curved stick’.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>519</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

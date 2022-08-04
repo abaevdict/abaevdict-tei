@@ -1,46 +1,51 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ævǵīd</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ævǵīd" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>ævǵīd</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>evged</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d737e72"><sense xml:id="sense_d737e73"><abv:tr xml:lang="ru">
                             <q>порука</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>bail</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d737e82"><abv:tr xml:lang="ru">
                             <q>поручитель</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>guarantee</q>
                         </abv:tr></sense></sense>
-                <re>
+                <re xml:id="re_d737e92">
                     <form type="lemma"><orth>ævǵīd kænyn</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d737e97"><abv:tr xml:lang="ru">
                             <q>поручать</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>to charge</q>
                         </abv:tr></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d737e110">
                         <quote>Sadullæ ūcy ūsæn sæ warzonʒinady xabar særgom kodta æmæ jyn q˳yddag
                             je ʽvǵīd bakodta, cæmæj ḱyzgæn æmbaryn kæna</quote>
                         <abv:tr xml:lang="ru">
@@ -53,7 +58,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Сека"/><biblScope>80</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d737e129">
                         <quote>kæj ævǵīd nywwaǧtaj syvællætty?</quote>
                         <abv:tr xml:lang="ru">
                             <q>на чьем попечении ты оставил детей?</q>
@@ -63,67 +68,43 @@
                         </abv:tr>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Восходит к <mentioned xml:lang="ira"><lang/>
-                        <w>*abi-kaita</w></mentioned>, <mentioned xml:lang="ine"><lang/>
-                        <note type="comment" xml:lang="ru">база</note><w>*k˳ei(t)-</w></mentioned>, ср. <mentioned
-                        xml:lang="ae"><lang/>
+                <etym xml:lang="ru">Восходит к <mentioned xml:id="mentioned_d737e148" xml:lang="ira"><lang/>
+                        <w>*abi-kaita</w></mentioned>, <mentioned xml:id="mentioned_d737e153" xml:lang="ine"><lang/>
+                        <note type="comment" xml:lang="ru">база</note><w>*k˳ei(t)-</w></mentioned>, ср. <mentioned xml:id="mentioned_d737e160" xml:lang="ae"><lang/>
                         <w>kāy-</w>
-                        <gloss><q>брать на себя</q></gloss></mentioned>, <mentioned xml:lang="ae"><w/>
-                        <gloss><q>искуплять</q></gloss></mentioned>, <mentioned xml:lang="ae"
-                            ><w>kaet-</w>
-                        <gloss><q>заботиться</q></gloss></mentioned>, <mentioned xml:lang="sa"><lang/>
-                        <w>kāy-</w></mentioned>, <mentioned xml:lang="sa"><w>čāy-</w>
-                        <gloss><q>заботиться</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
-                        <gloss><q>наблюдать</q></gloss></mentioned>, <mentioned xml:lang="sa"
-                            ><w>čit-</w>
-                        <gloss><q>замечать</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
-                        <gloss><q>осознавать</q></gloss></mentioned>, <mentioned xml:lang="cu"><lang/>
+                        <gloss><q>брать на себя</q></gloss></mentioned>, <mentioned xml:id="mentioned_d737e168" xml:lang="ae"><w/>
+                        <gloss><q>искуплять</q></gloss></mentioned>, <mentioned xml:id="mentioned_d737e174" xml:lang="ae"><w>kaet-</w>
+                        <gloss><q>заботиться</q></gloss></mentioned>, <mentioned xml:id="mentioned_d737e181" xml:lang="sa"><lang/>
+                        <w>kāy-</w></mentioned>, <mentioned xml:id="mentioned_d737e186" xml:lang="sa"><w>čāy-</w>
+                        <gloss><q>заботиться</q></gloss></mentioned>, <mentioned xml:id="mentioned_d737e192" xml:lang="sa"><w/>
+                        <gloss><q>наблюдать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d737e198" xml:lang="sa"><w>čit-</w>
+                        <gloss><q>замечать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d737e204" xml:lang="sa"><w/>
+                        <gloss><q>осознавать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d737e210" xml:lang="cu"><lang/>
                         <w>čayati</w>
-                        <gloss><q>ждать</q></gloss></mentioned> и пр. (<bibl><ref type="bibl"
-                            target="#ref_Walde—Pok."/><biblScope>I 508 сл.</biblScope></bibl>). В
-                    осетинском от этого же корня *%ika(y)%i- образованы д. <ref type="xr"
-                        target="#entry_kīnæ"/>, %ikenæ%i ‘месть’, <ref type="xr" target="#entry_cyt"
-                    /> | %icitæ%i ‘почет’ и, вероятно, <ref type="xr" target="#entry_kad"/> ‘слава’.
+                        <gloss><q>ждать</q></gloss></mentioned> и пр. (<bibl><ref type="bibl" target="#ref_Walde—Pok."/><biblScope>I 508 сл.</biblScope></bibl>). В
+                    осетинском от этого же корня *%ika(y)%i- образованы д. <ref type="xr" target="#entry_kīnæ"/>, %ikenæ%i ‘месть’, <ref type="xr" target="#entry_cyt"/> | %icitæ%i ‘почет’ и, вероятно, <ref type="xr" target="#entry_kad"/> ‘слава’.
                     Чередование %iæv%i- | %iew%i- есть чередование двух вариантов преверба: %iabi%i
-                    и %iaibi%i (ср. <mentioned xml:lang="peo"><lang/>
-                        <w>abiy</w></mentioned> и <mentioned xml:lang="ae"><lang/>
-                        <w>aiwi</w></mentioned>) ср. в этом отношении <ref type="xr"
-                        target="#entry_ævdælyn"/> | %ievdælun%i, а также <ref type="xr"
-                        target="#entry_annæ"/> и <ref type="xr" target="#entry_īnnæ"
-                            />.%n<bibl><author>Benveniste</author><ref type="bibl" target="#ref_BSL"
-                            /><biblScope>LII 47</biblScope></bibl>.</etym>
-                <etym xml:lang="en">It traces back to <mentioned xml:lang="ira"><lang/>
-                        <w>*abi-kaita</w></mentioned>, <mentioned xml:lang="ine"><lang/>
-                        <note type="comment"
-                            xml:lang="en">base</note><w>*k˳ei(t)-</w></mentioned>, cf. <mentioned
-                        xml:lang="ae"><lang/>
+                    и %iaibi%i (ср. <mentioned xml:id="mentioned_d737e229" xml:lang="peo"><lang/>
+                        <w>abiy</w></mentioned> и <mentioned xml:id="mentioned_d737e234" xml:lang="ae"><lang/>
+                        <w>aiwi</w></mentioned>) ср. в этом отношении <ref type="xr" target="#entry_ævdælyn"/> | %ievdælun%i, а также <ref type="xr" target="#entry_annæ"/> и <ref type="xr" target="#entry_īnnæ"/>.%n<bibl><author>Benveniste</author><ref type="bibl" target="#ref_BSL"/><biblScope>LII 47</biblScope></bibl>.</etym>
+                <etym xml:lang="en">It traces back to <mentioned xml:id="mentioned_d737e254" xml:lang="ira"><lang/>
+                        <w>*abi-kaita</w></mentioned>, <mentioned xml:id="mentioned_d737e259" xml:lang="ine"><lang/>
+                        <note type="comment" xml:lang="en">base</note><w>*k˳ei(t)-</w></mentioned>, cf. <mentioned xml:id="mentioned_d737e266" xml:lang="ae"><lang/>
                         <w>kāy-</w>
-                        <gloss><q>to take upon oneself</q></gloss></mentioned>, <mentioned
-                        xml:lang="ae"><w/>
-                        <gloss><q>to expiate</q></gloss></mentioned>, <mentioned xml:lang="ae"
-                            ><w>kaet-</w>
-                        <gloss><q>to care</q></gloss></mentioned>, <mentioned xml:lang="sa"><lang/>
-                        <w>kāy-</w></mentioned>, <mentioned xml:lang="sa"><w>čāy-</w>
-                        <gloss><q>to care</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
-                        <gloss><q>to observe</q></gloss></mentioned>, <mentioned xml:lang="sa"
-                            ><w>čit-</w>
-                        <gloss><q>to notice</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
-                        <gloss><q>to reallze</q></gloss></mentioned>, <mentioned xml:lang="cu"><lang/>
+                        <gloss><q>to take upon oneself</q></gloss></mentioned>, <mentioned xml:id="mentioned_d737e274" xml:lang="ae"><w/>
+                        <gloss><q>to expiate</q></gloss></mentioned>, <mentioned xml:id="mentioned_d737e280" xml:lang="ae"><w>kaet-</w>
+                        <gloss><q>to care</q></gloss></mentioned>, <mentioned xml:id="mentioned_d737e287" xml:lang="sa"><lang/>
+                        <w>kāy-</w></mentioned>, <mentioned xml:id="mentioned_d737e292" xml:lang="sa"><w>čāy-</w>
+                        <gloss><q>to care</q></gloss></mentioned>, <mentioned xml:id="mentioned_d737e298" xml:lang="sa"><w/>
+                        <gloss><q>to observe</q></gloss></mentioned>, <mentioned xml:id="mentioned_d737e304" xml:lang="sa"><w>čit-</w>
+                        <gloss><q>to notice</q></gloss></mentioned>, <mentioned xml:id="mentioned_d737e310" xml:lang="sa"><w/>
+                        <gloss><q>to reallze</q></gloss></mentioned>, <mentioned xml:id="mentioned_d737e316" xml:lang="cu"><lang/>
                         <w>čayati</w>
-                        <gloss><q>to wait</q></gloss></mentioned> etc. (<bibl><ref type="bibl"
-                            target="#ref_Walde—Pok."/><biblScope>I 508 сл.</biblScope></bibl>).
-                    There are other derivate in Ossetic from this root *%ika(y)%i-: Digor <ref
-                        type="xr" target="#entry_kīnæ"/>, %ikenæ%i ‘revenge’, <ref type="xr"
-                        target="#entry_cyt"/> | %icitæ%i ‘honor’ and, probably, <ref type="xr"
-                        target="#entry_kad"/> ‘fame’. The alternation %iæv%i- | %iew%i- is the
-                    alternation of two variants of the preverb: %iabi%i and %iaibi%i (cf. <mentioned
-                        xml:lang="peo"><lang/>
-                        <w>abiy</w></mentioned> and <mentioned xml:lang="ae"><lang/>
-                        <w>aiwi</w></mentioned>) cf. in this relation <ref type="xr"
-                        target="#entry_ævdælyn"/> | %ievdælun%i, and also <ref type="xr"
-                        target="#entry_annæ"/> and <ref type="xr" target="#entry_īnnæ"
-                            />.%n<bibl><author>Benveniste</author><ref type="bibl" target="#ref_BSL"
-                            /><biblScope>LII 47</biblScope></bibl>.</etym>
+                        <gloss><q>to wait</q></gloss></mentioned> etc. (<bibl><ref type="bibl" target="#ref_Walde—Pok."/><biblScope>I 508 сл.</biblScope></bibl>).
+                    There are other derivate in Ossetic from this root *%ika(y)%i-: Digor <ref type="xr" target="#entry_kīnæ"/>, %ikenæ%i ‘revenge’, <ref type="xr" target="#entry_cyt"/> | %icitæ%i ‘honor’ and, probably, <ref type="xr" target="#entry_kad"/> ‘fame’. The alternation %iæv%i- | %iew%i- is the
+                    alternation of two variants of the preverb: %iabi%i and %iaibi%i (cf. <mentioned xml:id="mentioned_d737e335" xml:lang="peo"><lang/>
+                        <w>abiy</w></mentioned> and <mentioned xml:id="mentioned_d737e340" xml:lang="ae"><lang/>
+                        <w>aiwi</w></mentioned>) cf. in this relation <ref type="xr" target="#entry_ævdælyn"/> | %ievdælun%i, and also <ref type="xr" target="#entry_annæ"/> and <ref type="xr" target="#entry_īnnæ"/>.%n<bibl><author>Benveniste</author><ref type="bibl" target="#ref_BSL"/><biblScope>LII 47</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

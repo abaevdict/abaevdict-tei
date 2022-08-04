@@ -1,35 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">dūkani</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_dūkani" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>dūkani</orth></form>
-                <form xml:lang="os-x-digor" type="dialectal"><orth>dukan</orth><form type="variant"
-                            ><orth>tukan</orth></form></form>
-                <sense><abv:tr xml:lang="ru">
+                <form xml:lang="os-x-digor" type="dialectal"><orth>dukan</orth><form type="variant"><orth>tukan</orth></form></form>
+                <sense xml:id="sense_d2223e74"><abv:tr xml:lang="ru">
                         <q>лавка</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>store</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d2223e86">
                         <quote>dūkanijy sapon balxædton</quote>
                         <abv:tr xml:lang="ru">
                             <q>я купил в лавке мыло</q>
@@ -38,7 +42,7 @@
                             <q>I bought soap in the store</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2223e101">
                         <quote>dūkanijy cyræǧtæ lxædton ʒwaræn</quote>
                         <abv:tr xml:lang="ru">
                             <q>я покупал в лавке свечи для дзуара</q>
@@ -48,7 +52,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Сека"/><biblScope>72</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2223e120">
                         <quote>tukanmæ bacudæncæ æma ʒoruncæ somexagmæ: «qumac nin rawæjæ
                             kænæ»</quote>
                         <abv:tr xml:lang="ru">
@@ -58,22 +62,21 @@
                             <q>they entered a store and say to an Armenian man: ‘sell us some
                                 material’</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Диг._сказ."
-                            /><biblScope>25</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Диг._сказ."/><biblScope>25</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из <mentioned xml:lang="ar" extralang="fa"><lang/>
+                <etym xml:lang="ru">Из <mentioned xml:id="mentioned_d2223e142" xml:lang="ar" extralang="fa"><lang/>
                         <w>dukkān</w>
-                        <gloss><q>лавка</q></gloss></mentioned>; ср. <mentioned xml:lang="trk"><lang/>
-                        <w>dukan</w></mentioned>, <mentioned xml:lang="ka"><lang/>
-                        <w>dukani</w></mentioned>, а также <mentioned xml:lang="ru"><lang/>
+                        <gloss><q>лавка</q></gloss></mentioned>; ср. <mentioned xml:id="mentioned_d2223e150" xml:lang="trk"><lang/>
+                        <w>dukan</w></mentioned>, <mentioned xml:id="mentioned_d2223e155" xml:lang="ka"><lang/>
+                        <w>dukani</w></mentioned>, а также <mentioned xml:id="mentioned_d2223e160" xml:lang="ru"><lang/>
                         <w>духан</w></mentioned>. Иронская форма с конечным %ii%i усвоена из
                     грузинского; дигорская — из какого-то тюркского языка.</etym>
-                <etym xml:lang="en">From <mentioned xml:lang="ar" extralang="fa"><lang/>
+                <etym xml:lang="en">From <mentioned xml:id="mentioned_d2223e169" xml:lang="ar" extralang="fa"><lang/>
                         <w>dukkān</w>
-                        <gloss><q>store</q></gloss></mentioned>; cf. <mentioned xml:lang="trk"><lang/>
-                        <w>dukan</w></mentioned>, <mentioned xml:lang="ka"><lang/>
-                        <w>dukani</w></mentioned>, and also <mentioned xml:lang="ru"><lang/>
+                        <gloss><q>store</q></gloss></mentioned>; cf. <mentioned xml:id="mentioned_d2223e177" xml:lang="trk"><lang/>
+                        <w>dukan</w></mentioned>, <mentioned xml:id="mentioned_d2223e182" xml:lang="ka"><lang/>
+                        <w>dukani</w></mentioned>, and also <mentioned xml:id="mentioned_d2223e187" xml:lang="ru"><lang/>
                         <w>duxan</w></mentioned>. The Iron form with %ii%i was borrowed from
                     Georgian; the Digor one — from some Turkic language.</etym>
             </entry>

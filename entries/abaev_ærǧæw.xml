@@ -1,36 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ærǧæw</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ærǧæw" xml:lang="os">
                 <form type="lemma"><orth>ærǧæw</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d2722e69"><abv:tr xml:lang="ru">
                         <q>перламутр</q>
-                    </abv:tr><note type="comment" xml:lang="ru"> (?)</note><note type="comment"
-                        xml:lang="en"> (?)</note><abv:tr xml:lang="en">
+                    </abv:tr><note type="comment" xml:lang="ru"> (?)</note><note type="comment" xml:lang="en"> (?)</note><abv:tr xml:lang="en">
                         <q>nacre</q>
-                    </abv:tr><note type="comment" xml:lang="ru"> (?)</note><note type="comment"
-                        xml:lang="en"> (?)</note><note type="comment" xml:lang="ru">(в фольклоре)
+                    </abv:tr><note type="comment" xml:lang="ru"> (?)</note><note type="comment" xml:lang="en"> (?)</note><note type="comment" xml:lang="ru">(в фольклоре)
                         </note><note type="comment" xml:lang="en">(in folklor) </note></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d2722e93">
                         <quote>axæm xæʒarmæ bacyd æmæ jæ kʼūltæ — ærǧæw, jæ byn-—cʼæx avg</quote>
                         <abv:tr xml:lang="ru">
                             <q>в такой дом он пришел, что стены его — перламутр, пол — синее
@@ -42,7 +45,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_ОЭп."/><biblScope>14</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2722e112">
                         <quote>bynæj avg, jæ færstæ ærǧæw</quote>
                         <abv:tr xml:lang="ru">
                             <q>снизу стекло, бока — перламутр</q>
@@ -53,7 +56,7 @@
                         <bibl><ref type="bibl" target="#src_ЮОПам."/><biblScope>I 131, II
                                 9</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2722e131">
                         <quote>Donbettyr ta festadis ærǧæwon cæxær kæsag</quote>
                         <abv:tr xml:lang="ru">
                             <q>Донбетр же обратился в перламутровую (?) сверкающую рыбу</q>
@@ -61,10 +64,9 @@
                         <abv:tr xml:lang="en">
                             <q>Donbettyr turned into a nacre (?) shining fish</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Нарт._сказ."
-                            /><biblScope>4</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Нарт._сказ."/><biblScope>4</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2722e150">
                         <quote>stʼalyty ærǧæwsær mæj xyzta</quote>
                         <abv:tr xml:lang="ru">
                             <q>перламутроголовая (?) луна пасла звезды</q>
@@ -76,17 +78,14 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Может быть, к <ref type="xr" target="#entry_arǧ"/> ‘цена’, с
-                    исходным значением „драгоценный“, „великолепный“, ср. <mentioned xml:lang="xpr"><lang/>
-                        <w>ʽrgʼw</w></mentioned>, <mentioned xml:lang="xpr"><w>ʽgrʼw</w>
-                        <gloss><q>великолепный</q></gloss></mentioned>, ‘блестящий’ (<bibl><ref
-                            type="bibl" target="#ref_Henning._BBB"/><biblScope>27, 28, 45,
+                    исходным значением „драгоценный“, „великолепный“, ср. <mentioned xml:id="mentioned_d2722e173" xml:lang="xpr"><lang/>
+                        <w>ʽrgʼw</w></mentioned>, <mentioned xml:id="mentioned_d2722e178" xml:lang="xpr"><w>ʽgrʼw</w>
+                        <gloss><q>великолепный</q></gloss></mentioned>, ‘блестящий’ (<bibl><ref type="bibl" target="#ref_Henning._BBB"/><biblScope>27, 28, 45,
                             107</biblScope></bibl>).</etym>
                 <etym xml:lang="en">Maybe, it traces back to <ref type="xr" target="#entry_arǧ"/>
-                    ‘price’, with the initial meaning ‘precious’, ‘magnificent’, compare <mentioned
-                        xml:lang="xpr"><lang/>
-                        <w>ʽrgʼw</w></mentioned>, <mentioned xml:lang="xpr"><w>ʽgrʼw</w>
-                        <gloss><q>magnificent</q></gloss></mentioned>, ‘shining’ (<bibl><ref
-                            type="bibl" target="#ref_Henning._BBB"/><biblScope>27, 28, 45,
+                    ‘price’, with the initial meaning ‘precious’, ‘magnificent’, compare <mentioned xml:id="mentioned_d2722e193" xml:lang="xpr"><lang/>
+                        <w>ʽrgʼw</w></mentioned>, <mentioned xml:id="mentioned_d2722e198" xml:lang="xpr"><w>ʽgrʼw</w>
+                        <gloss><q>magnificent</q></gloss></mentioned>, ‘shining’ (<bibl><ref type="bibl" target="#ref_Henning._BBB"/><biblScope>27, 28, 45,
                             107</biblScope></bibl>).</etym>
             </entry>
         </body>

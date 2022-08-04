@@ -1,52 +1,57 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">fæson</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_fæson" xml:lang="os">
                 <form type="lemma"><orth>fæson</orth></form>
-                <re>
+                <re xml:id="re_d4276e69">
                     <note type="comment" xml:lang="ru">чаще во мн. ч.</note>
                     <note type="comment" xml:lang="en">used more often in plural</note>
                     <form type="lemma"><orth>fæsontæ</orth></form>
-                    <sense><sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d4276e80"><sense xml:id="sense_d4276e81"><abv:tr xml:lang="ru">
                                 <q>междуплечие</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>place between the shoulders</q>
-                            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                            </abv:tr></sense><sense xml:id="sense_d4276e90"><abv:tr xml:lang="ru">
                                 <q>спина</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>back</q>
                             </abv:tr></sense></sense>
                 </re>
-                <re>
+                <re xml:id="re_d4276e101">
                     <form type="lemma"><orth>fæsonastær</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d4276e106"><abv:tr xml:lang="ru">
                             <q>подкладка платья в области спины</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>dress lining for the back area</q>
                         </abv:tr></sense>
                 </re>
-                <re>
+                <re xml:id="re_d4276e117">
                     <form type="lemma"><orth>fæsonærxæg</orth></form>
                     <abv:exampleGrp>
-                        <abv:example>
+                        <abv:example xml:id="example_d4276e124">
                             <quote>mæ fæsonærxæǵy dær næj</quote>
                             <abv:tr xml:lang="ru">
                                 <q>у меня и в помыслах нет</q>
@@ -62,7 +67,7 @@
                     </abv:exampleGrp>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4276e153">
                         <quote>mæ fæsontæj mæ saw tūg kaldi</quote>
                         <abv:tr xml:lang="ru">
                             <q>из (ран) в спине лилась моя темная кровь</q>
@@ -70,10 +75,9 @@
                         <abv:tr xml:lang="en">
                             <q>my dark blood poured from the wounds in my back</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Munk."
-                            /><biblScope>166</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Munk."/><biblScope>166</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4276e172" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>Ærgæs raxawdtæj cæfæj wælgommæ, izasta æxe æ togfæsontæj</quote>
                         <abv:tr xml:lang="ru">
@@ -86,7 +90,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Bes."/><biblScope>113</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4276e194">
                         <quote>ædyly mītæ dæ fæsonærxæǵy, dæ zærdæjy kæron dær ma wæd</quote>
                         <abv:tr xml:lang="ru">
                             <q>глупостей у тебя пусть и в помыслах, и на краю сердца не будет</q>
@@ -98,10 +102,8 @@
                         <bibl><ref type="bibl" target="#src_Qazaq"/><biblScope>78</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Буквально „за лопаткой“, см. <ref type="xr" target="#entry_fæs-"
-                    /> и <ref type="xr" target="#entry_on"/>.</etym>
-                <etym xml:lang="en">Literally ‘behinf the shoulder-blade’, see <ref type="xr"
-                        target="#entry_fæs-"/> and <ref type="xr" target="#entry_on"/>.</etym>
+                <etym xml:lang="ru">Буквально „за лопаткой“, см. <ref type="xr" target="#entry_fæs-"/> и <ref type="xr" target="#entry_on"/>.</etym>
+                <etym xml:lang="en">Literally ‘behinf the shoulder-blade’, see <ref type="xr" target="#entry_fæs-"/> and <ref type="xr" target="#entry_on"/>.</etym>
             </entry>
         </body>
     </text>

@@ -1,37 +1,42 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">arǧ</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_arǧ" xml:lang="os">
                 <form type="lemma"><orth>arǧ</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d4400e69"><sense xml:id="sense_d4400e70"><abv:tr xml:lang="ru">
                             <q>цена</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>price</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d4400e79"><abv:tr xml:lang="ru">
                             <q>выкуп</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>ransom</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4400e91">
                         <quote>arǧ nal wyd mæ k˳ystæn</quote>
                         <abv:tr xml:lang="ru">
                             <q>не было больше цены моей работе</q>
@@ -41,7 +46,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>59</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4400e110">
                         <quote>komy arǧ læg</quote>
                         <abv:tr xml:lang="ru">
                             <q>человек, который стоит (целого) ущелья</q>
@@ -50,7 +55,7 @@
                             <q>a man who is worth a (whole) gorge</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4400e125">
                         <quote>fonʒ somy arǧ ʒūl balxæn</quote>
                         <abv:tr xml:lang="ru">
                             <q>купи на пять рублей хлеба</q>
@@ -59,7 +64,7 @@
                             <q>buy bread for five rubles</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4400e140">
                         <quote>kænæ cavær arǧ radʒæn læg jæ ūdy bæsty?</quote>
                         <abv:tr xml:lang="ru">
                             <q>или какой выкуп даст человек за душу свою?</q>
@@ -70,7 +75,7 @@
                         <bibl><ref type="bibl" target="#src_Марк"/><biblScope>%i8%i
                             37</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4400e159">
                         <quote>rarvītūt axæst arǧ; sædæ sædæ īwsion galtæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>вышлите выкуп за пленного: сто сотен однорогих быков</q>
@@ -81,7 +86,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_ОЭп."/><biblScope>25</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4400e179">
                         <quote>læværdta myn jæ særy bæsty styr arǧ</quote>
                         <abv:tr xml:lang="ru">
                             <q>давала мне за себя („за свою голову“) большой выкуп</q>
@@ -89,10 +94,9 @@
                         <abv:tr xml:lang="en">
                             <q>gave me a large ransom for herself (“for my head”)</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Puškin._Arhau"
-                            /><biblScope>4</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Puškin._Arhau"/><biblScope>4</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4400e198">
                         <quote>jæ nyxasæn īw ḱysyl arǧ yskænūt</quote>
                         <abv:tr xml:lang="ru">
                             <q>хоть немного уважьте его слово</q>
@@ -102,7 +106,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Брит."/><biblScope>22</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4400e217" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>aslan arǧæj ǧog balxædton</quote>
                         <abv:tr xml:lang="ru">
@@ -114,130 +118,91 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <note type="comment" xml:lang="ru">— В то время как термины денег и денежного
-                    обращения являются в осетинском относительно новыми и усвоенными извне (см. <ref
-                        type="xr" target="#entry_kapek6k9"/>), термины %sторговли%s относятся к
+                    обращения являются в осетинском относительно новыми и усвоенными извне (см. <ref type="xr" target="#entry_kapek6k9"/>), термины %sторговли%s относятся к
                     старому иранскому фонду, см. <ref type="xr" target="#entry_7lxænyn"><w>lxænyn</w></ref> ‘покупать’,
-                        <ref type="xr" target="#entry_wæj"/> %ikænyn%i ʽпродавать’, <ref type="xr"
-                        target="#entry_fīdyn"/> ‘платить’, <ref type="xr" target="#entry_myzd"/>
+                        <ref type="xr" target="#entry_wæj"/> %ikænyn%i ʽпродавать’, <ref type="xr" target="#entry_fīdyn"/> ‘платить’, <ref type="xr" target="#entry_myzd"/>
                     ʽплата’, <ref type="xr" target="#entry_wacajrag"/> ‘пленный’. Все эти термины
                     идут еще из той относительно ранней эпохи, которую отражают древнейшие памятники
                     и других индоевропейских народов, когда торговля сводилась к натуральному обмену
-                    и обычной меновой единицей служил скот (<bibl><ref type="bibl"
-                            target="#ref_Schrader"/></bibl> s.v. „Нandel“ и Geld”). Из %iarǧ%i с
-                    присоединением <ref type="xr" target="#entry_zyn"/> ‘трудный’ образовано <ref
-                        type="xr" target="#entry_zynarǧ"/> ‘дорогой’; более новыми для осетинского
-                    являются <ref type="xr" target="#entry_qazar"/> ‘дорогой’, <ref type="xr"
-                        target="#entry_aslam"/> ’дешевый’, а также <ref type="xr"
-                        target="#entry_pajda"/> ‘барыш’ и <ref type="xr" target="#entry_zian"/>
+                    и обычной меновой единицей служил скот (<bibl><ref type="bibl" target="#ref_Schrader"/></bibl> s.v. „Нandel“ и Geld”). Из %iarǧ%i с
+                    присоединением <ref type="xr" target="#entry_zyn"/> ‘трудный’ образовано <ref type="xr" target="#entry_zynarǧ"/> ‘дорогой’; более новыми для осетинского
+                    являются <ref type="xr" target="#entry_qazar"/> ‘дорогой’, <ref type="xr" target="#entry_aslam"/> ’дешевый’, а также <ref type="xr" target="#entry_pajda"/> ‘барыш’ и <ref type="xr" target="#entry_zian"/>
                     ‘убыток’, равно как <ref type="xr" target="#entry_xarʒ"/> ‘расход’.</note>
                 <note type="comment" xml:lang="en">— While the terms for money and money circulation
-                    are relatively new in Ossetic and are borrowed from the outside (see <ref
-                        type="xr" target="#entry_kapek6k9"/>), the terms of %strade%s belong to the
-                    old Iranian vocabulary, see <ref type="xr" target="#entry_7lxænyn"><w>lxænyn</w></ref> ‘buy’, <ref
-                        type="xr" target="#entry_wæj"/> %ikænyn%i ʽsell’, <ref type="xr"
-                        target="#entry_fīdyn"/> ‘pay’, <ref type="xr" target="#entry_myzd"/>
+                    are relatively new in Ossetic and are borrowed from the outside (see <ref type="xr" target="#entry_kapek6k9"/>), the terms of %strade%s belong to the
+                    old Iranian vocabulary, see <ref type="xr" target="#entry_7lxænyn"><w>lxænyn</w></ref> ‘buy’, <ref type="xr" target="#entry_wæj"/> %ikænyn%i ʽsell’, <ref type="xr" target="#entry_fīdyn"/> ‘pay’, <ref type="xr" target="#entry_myzd"/>
                     ʽpayment’, <ref type="xr" target="#entry_wacajrag"/> ʽcaptiveʼ. All these terms
                     come from the relatively early era which is reflected by the most ancient
                     sources for other Indo-European peoples, when the trade was reduced to natural
-                    exchange and cattle served as a usual exchange unit (<bibl><ref type="bibl"
-                            target="#ref_Schrader"/></bibl> s.v. „Нandel“ and Geld”). %iarǧ%i
-                    attached to <ref type="xr" target="#entry_zyn"/> ‘difficult’ resulted in <ref
-                        type="xr" target="#entry_zynarǧ"/> ‘expensive’; new for Ossetic are <ref
-                        type="xr" target="#entry_qazar"/> ‘expensive’, <ref type="xr"
-                        target="#entry_aslam"/> ’cheap’, as well as <ref type="xr"
-                        target="#entry_pajda"/> ‘profit’ and <ref type="xr" target="#entry_zian"/>
+                    exchange and cattle served as a usual exchange unit (<bibl><ref type="bibl" target="#ref_Schrader"/></bibl> s.v. „Нandel“ and Geld”). %iarǧ%i
+                    attached to <ref type="xr" target="#entry_zyn"/> ‘difficult’ resulted in <ref type="xr" target="#entry_zynarǧ"/> ‘expensive’; new for Ossetic are <ref type="xr" target="#entry_qazar"/> ‘expensive’, <ref type="xr" target="#entry_aslam"/> ’cheap’, as well as <ref type="xr" target="#entry_pajda"/> ‘profit’ and <ref type="xr" target="#entry_zian"/>
                     ‘lesion’, and <ref type="xr" target="#entry_xarʒ"/> ‘expense’.</note>
                 <etym xml:lang="ru">Ос. %iarǧ%i имеет многочисленные иранские и индоевропейские
-                    соответствия: <mentioned xml:lang="sog"><lang/>
+                    соответствия: <mentioned xml:id="mentioned_d4400e309" xml:lang="sog"><lang/>
                         <w>*arɣ(ʼrɣ)</w>
-                        <gloss><q>цена</q></gloss></mentioned>, <mentioned xml:lang="fa"><lang/>
+                        <gloss><q>цена</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4400e317" xml:lang="fa"><lang/>
                         <w>arz</w>
-                        <gloss><q>цена</q></gloss></mentioned>, <mentioned xml:lang="fa"
-                            ><w>arzīdan</w>
-                        <gloss><q>стоить</q></gloss></mentioned>, <mentioned xml:lang="pal"><lang/>
+                        <gloss><q>цена</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4400e325" xml:lang="fa"><w>arzīdan</w>
+                        <gloss><q>стоить</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4400e331" xml:lang="pal"><lang/>
                         <w>arǰ</w>
-                        <gloss><q>цена</q></gloss></mentioned>, <mentioned xml:lang="xcl"><lang/>
+                        <gloss><q>цена</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4400e339" xml:lang="xcl"><lang/>
                         <note type="comment" xml:lang="ru">из иранского?
-                                    <bibl><author>Pedersen</author><ref type="bibl" target="#ref_KZ"
-                                    /><biblScope>36, 76</biblScope></bibl></note><w>yargem</w>
-                        <gloss><q>ценю</q></gloss></mentioned>, <mentioned xml:lang="xcl"
-                            ><w>yargun</w>
-                        <gloss><q>ценный</q></gloss></mentioned>, <mentioned xml:lang="xcl"
-                            ><w>anarg</w>
-                        <gloss><q>недостойный</q></gloss></mentioned>, <mentioned xml:lang="xcl"><w/>
-                        <gloss><q>ничтожный</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Hübschmann._Arm._Gr."/><biblScope>I
-                        447</biblScope></bibl>),<mentioned xml:lang="ae"><lang/>
+                                    <bibl><author>Pedersen</author><ref type="bibl" target="#ref_KZ"/><biblScope>36, 76</biblScope></bibl></note><w>yargem</w>
+                        <gloss><q>ценю</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4400e354" xml:lang="xcl"><w>yargun</w>
+                        <gloss><q>ценный</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4400e360" xml:lang="xcl"><w>anarg</w>
+                        <gloss><q>недостойный</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4400e366" xml:lang="xcl"><w/>
+                        <gloss><q>ничтожный</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Hübschmann._Arm._Gr."/><biblScope>I
+                        447</biblScope></bibl>),<mentioned xml:id="mentioned_d4400e376" xml:lang="ae"><lang/>
                         <w>ar g-</w>
-                        <gloss><q>стоить</q></gloss></mentioned>, <mentioned xml:lang="ae"
-                            ><w>arəjah-</w>
-                        <gloss><q>цена</q></gloss></mentioned>, <mentioned xml:lang="sa"><lang/>
+                        <gloss><q>стоить</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4400e384" xml:lang="ae"><w>arəjah-</w>
+                        <gloss><q>цена</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4400e391" xml:lang="sa"><lang/>
                         <w>arghá-</w>
-                        <gloss><q>цена</q></gloss></mentioned>, <mentioned xml:lang="sa"><w>arh-</w>
-                        <gloss><q>стоить</q></gloss></mentioned>, <mentioned xml:lang="lt"><lang/>
+                        <gloss><q>цена</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4400e399" xml:lang="sa"><w>arh-</w>
+                        <gloss><q>стоить</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4400e405" xml:lang="lt"><lang/>
                         <w>alga</w>
-                        <gloss><q>плата</q></gloss></mentioned>, <mentioned xml:lang="grc"><lang/>
+                        <gloss><q>плата</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4400e413" xml:lang="grc"><lang/>
                         <w>ἀλφή</w>
-                        <gloss><q>прибыль</q></gloss></mentioned>. <mentioned xml:lang="hu"><lang/>
+                        <gloss><q>прибыль</q></gloss></mentioned>. <mentioned xml:id="mentioned_d4400e421" xml:lang="hu"><lang/>
                         <w>ár</w>
                         <gloss><q>цена</q></gloss></mentioned> одни склонны считать усвоенным из
-                    осетинского (аланского): <bibl><author>Munkácsi</author><ref type="bibl"
-                            target="#ref_KSz."/><biblScope>IV 381</biblScope></bibl>. — <bibl><ref
-                            type="bibl" target="#ref_Sköld._Oss."/><biblScope>96,
+                    осетинского (аланского): <bibl><author>Munkácsi</author><ref type="bibl" target="#ref_KSz."/><biblScope>IV 381</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Sköld._Oss."/><biblScope>96,
                         97</biblScope></bibl>; другие рассматривают венг. %iár%i как исконно
-                    угро-финское: <bibl><author>Z. Gombосz és J. Мeliсh</author><biblScope
-                            xml:lang="ru">Magyar etymologiai szótàr, 116 сл.</biblScope></bibl>.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 50</biblScope></bibl>;
-                            <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>25</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_ОЯФ_I"/><biblScope>66</biblScope></bibl>.</etym>
+                    угро-финское: <bibl><author>Z. Gombосz és J. Мeliсh</author><biblScope xml:lang="ru">Magyar etymologiai szótàr, 116 сл.</biblScope></bibl>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 50</biblScope></bibl>;
+                            <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>25</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>66</biblScope></bibl>.</etym>
                 <etym xml:lang="en">The Ossetic %iarǧ%i has numerous Iranian and Indo-European
-                    correspondences: <mentioned xml:lang="sog"><lang/>
+                    correspondences: <mentioned xml:id="mentioned_d4400e459" xml:lang="sog"><lang/>
                         <w>*arɣ(ʼrɣ)</w>
-                        <gloss><q>price</q></gloss></mentioned>, <mentioned xml:lang="fa"><lang/>
+                        <gloss><q>price</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4400e467" xml:lang="fa"><lang/>
                         <w>arz</w>
-                        <gloss><q>price</q></gloss></mentioned>, <mentioned xml:lang="fa"
-                            ><w>arzīdan</w>
-                        <gloss><q>cost</q></gloss></mentioned>, <mentioned xml:lang="pal"><lang/>
+                        <gloss><q>price</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4400e475" xml:lang="fa"><w>arzīdan</w>
+                        <gloss><q>cost</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4400e481" xml:lang="pal"><lang/>
                         <w>arǰ</w>
-                        <gloss><q>price</q></gloss></mentioned>, <mentioned xml:lang="xcl"><lang/>
-                        <note
-                            type="comment" xml:lang="en">from Iranian?
-                                    <bibl><author>Pedersen</author><ref type="bibl" target="#ref_KZ"
-                                    /><biblScope>36, 76</biblScope></bibl></note><w>yargem</w>
-                        <gloss><q>(I) value</q></gloss></mentioned>, <mentioned xml:lang="xcl"
-                            ><w>yargun</w>
-                        <gloss><q>valuable</q></gloss></mentioned>, <mentioned xml:lang="xcl"
-                            ><w>anarg</w>
-                        <gloss><q>unworthy</q></gloss></mentioned>, <mentioned xml:lang="xcl"><w/>
-                        <gloss><q>insignificant</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Hübschmann._Arm._Gr."/><biblScope>I
-                        447</biblScope></bibl>),<mentioned xml:lang="ae"><lang/>
+                        <gloss><q>price</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4400e489" xml:lang="xcl"><lang/>
+                        <note type="comment" xml:lang="en">from Iranian?
+                                    <bibl><author>Pedersen</author><ref type="bibl" target="#ref_KZ"/><biblScope>36, 76</biblScope></bibl></note><w>yargem</w>
+                        <gloss><q>(I) value</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4400e504" xml:lang="xcl"><w>yargun</w>
+                        <gloss><q>valuable</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4400e510" xml:lang="xcl"><w>anarg</w>
+                        <gloss><q>unworthy</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4400e516" xml:lang="xcl"><w/>
+                        <gloss><q>insignificant</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Hübschmann._Arm._Gr."/><biblScope>I
+                        447</biblScope></bibl>),<mentioned xml:id="mentioned_d4400e526" xml:lang="ae"><lang/>
                         <w>ar g-</w>
-                        <gloss><q>cost</q></gloss></mentioned>, <mentioned xml:lang="ae"
-                            ><w>arəjah-</w>
-                        <gloss><q>price</q></gloss></mentioned>, <mentioned xml:lang="sa"><lang/>
+                        <gloss><q>cost</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4400e534" xml:lang="ae"><w>arəjah-</w>
+                        <gloss><q>price</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4400e541" xml:lang="sa"><lang/>
                         <w>arghá-</w>
-                        <gloss><q>price</q></gloss></mentioned>, <mentioned xml:lang="sa"
-                            ><w>arh-</w>
-                        <gloss><q>cost</q></gloss></mentioned>, <mentioned xml:lang="lt"><lang/>
+                        <gloss><q>price</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4400e549" xml:lang="sa"><w>arh-</w>
+                        <gloss><q>cost</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4400e555" xml:lang="lt"><lang/>
                         <w>alga</w>
-                        <gloss><q>price</q></gloss></mentioned>, <mentioned xml:lang="grc"><lang/>
+                        <gloss><q>price</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4400e563" xml:lang="grc"><lang/>
                         <w>ἀλφή</w>
-                        <gloss><q>profit</q></gloss></mentioned>. <mentioned xml:lang="hu"><lang/>
+                        <gloss><q>profit</q></gloss></mentioned>. <mentioned xml:id="mentioned_d4400e571" xml:lang="hu"><lang/>
                         <w>ár</w>
                         <gloss><q>price</q></gloss></mentioned> are prone to be considered by some
-                    as borrowed from Ossetic (Alanian): <bibl><author>Munkácsi</author><ref
-                            type="bibl" target="#ref_KSz."/><biblScope>IV 381</biblScope></bibl>. —
+                    as borrowed from Ossetic (Alanian): <bibl><author>Munkácsi</author><ref type="bibl" target="#ref_KSz."/><biblScope>IV 381</biblScope></bibl>. —
                             <bibl><ref type="bibl" target="#ref_Sköld._Oss."/><biblScope>96,
                             97</biblScope></bibl>; others consider the Hungarian %iár%i as
-                    originally Finno-Ugric: <bibl><author>Z. Gombосz és J. Мeliсh</author><biblScope
-                            xml:lang="en">Magyar etymologiai szótàr, 116
-                            ff.</biblScope></bibl>.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 50</biblScope></bibl>;
-                            <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>25</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_ОЯФ_I"/><biblScope>66</biblScope></bibl>.</etym>
+                    originally Finno-Ugric: <bibl><author>Z. Gombосz és J. Мeliсh</author><biblScope xml:lang="en">Magyar etymologiai szótàr, 116
+                            ff.</biblScope></bibl>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 50</biblScope></bibl>;
+                            <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>25</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>66</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

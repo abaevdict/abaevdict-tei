@@ -1,37 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">dæddyn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_dæddyn" xml:lang="os">
-                <form xml:lang="os-x-iron" type="lemma"><orth>dæddyn</orth><form type="participle"
-                            ><orth>læværd</orth></form></form>
-                <form xml:lang="os-x-digor" type="dialectal"><orth>dæddun</orth><form type="variant"
-                            ><orth>tætun</orth></form><form type="participle"
-                        ><orth>lævard</orth></form></form>
-                <sense><abv:tr xml:lang="ru">
+                <form xml:lang="os-x-iron" type="lemma"><orth>dæddyn</orth><form type="participle"><orth>læværd</orth></form></form>
+                <form xml:lang="os-x-digor" type="dialectal"><orth>dæddun</orth><form type="variant"><orth>tætun</orth></form><form type="participle"><orth>lævard</orth></form></form>
+                <sense xml:id="sense_d4466e78"><abv:tr xml:lang="ru">
                         <q>давать</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>give</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4466e90">
                         <quote>na jæ dæddy mad</quote>
                         <abv:tr xml:lang="ru">
                             <q>мать не выдает (дочку)</q>
@@ -41,7 +43,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>62</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4466e109">
                         <quote>cydæriddær dæ qæwy, uj dyn dæddæm</quote>
                         <abv:tr xml:lang="ru">
                             <q>все, что тебе нужно, мы тебе даем</q>
@@ -51,7 +53,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Munk."/><biblScope>54</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4466e128">
                         <quote>dæ odi bæsti ma od dæddun</quote>
                         <abv:tr xml:lang="ru">
                             <q>вместо твоей души отдаю свою душу</q>
@@ -61,7 +63,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_MSt."/><biblScope>3</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4466e147" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>kures tætuj æ fæzzæg</quote>
                         <abv:tr xml:lang="ru">
@@ -70,134 +72,107 @@
                         <abv:tr xml:lang="en">
                             <q>autumn brings a sheaf (of grain)</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Gurdž._Æduli"
-                            /><biblScope>70</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Gurdž._Æduli"/><biblScope>70</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Восходит к общеиндоевропейскому <mentioned xml:lang="ine"><lang/>
-                        <w>*do-</w></mentioned>, <mentioned xml:lang="ine"><w>*da-</w>
+                <etym xml:lang="ru">Восходит к общеиндоевропейскому <mentioned xml:id="mentioned_d4466e172" xml:lang="ine"><lang/>
+                        <w>*do-</w></mentioned>, <mentioned xml:id="mentioned_d4466e177" xml:lang="ine"><w>*da-</w>
                         <gloss><q>давать</q></gloss></mentioned>. В осетинском взята за основу
-                    редуплицированная основа настоящего времени %idada%i-: <mentioned xml:lang="fa"><lang/>
+                    редуплицированная основа настоящего времени %idada%i-: <mentioned xml:id="mentioned_d4466e183" xml:lang="fa"><lang/>
                         <w>dādan</w>
-                        <gloss><q>давать</q></gloss></mentioned>, <mentioned xml:lang="ku"><lang/>
-                        <w>dāin</w></mentioned>, <mentioned xml:lang="ku"><w>dān</w></mentioned>,
-                        <mentioned xml:lang="x-balochi"><lang/>
-                        <w>dēag</w></mentioned>, <mentioned xml:lang="x-balochi"><w>dātan</w>
+                        <gloss><q>давать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4466e191" xml:lang="ku"><lang/>
+                        <w>dāin</w></mentioned>, <mentioned xml:id="mentioned_d4466e196" xml:lang="ku"><w>dān</w></mentioned>,
+                        <mentioned xml:id="mentioned_d4466e200" xml:lang="x-balochi"><lang/>
+                        <w>dēag</w></mentioned>, <mentioned xml:id="mentioned_d4466e205" xml:lang="x-balochi"><w>dātan</w>
                         <gloss><q>они дали</q></gloss><note type="comment" xml:lang="ru">
-                                    (<bibl><ref type="bibl" target="#ref_Зарубин._Бел."
-                                    /><biblScope>145</biblScope></bibl>)</note></mentioned>,
-                        <mentioned xml:lang="mnj"><lang/>
-                        <w>dal-</w></mentioned>, <mentioned xml:lang="sgh"><lang/>
-                        <w>δāδ-</w></mentioned>, <mentioned xml:lang="isk"><lang/>
+                                    (<bibl><ref type="bibl" target="#ref_Зарубин._Бел."/><biblScope>145</biblScope></bibl>)</note></mentioned>,
+                        <mentioned xml:id="mentioned_d4466e217" xml:lang="mnj"><lang/>
+                        <w>dal-</w></mentioned>, <mentioned xml:id="mentioned_d4466e222" xml:lang="sgh"><lang/>
+                        <w>δāδ-</w></mentioned>, <mentioned xml:id="mentioned_d4466e227" xml:lang="isk"><lang/>
                         <w>day- : dud</w><note type="comment" xml:lang="ru"> (ibid.)</note>
-                        <gloss><q>давать</q></gloss></mentioned>, <mentioned xml:lang="oru"><lang/>
+                        <gloss><q>давать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4466e237" xml:lang="oru"><lang/>
                         <w>dāk-</w>
-                        <gloss><q>давать</q></gloss></mentioned>, <mentioned xml:lang="oru"><w>δā(δ)
+                        <gloss><q>давать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4466e246" xml:lang="oru"><w>δā(δ)
                             : δōd</w><note type="comment" xml:lang="ru"> (в составных глаголах:
-                                    <bibl><ref type="bibl" target="#ref_Зарубин._Орош."
-                                    /><biblScope>32—33</biblScope></bibl>)</note></mentioned>,
-                        <mentioned xml:lang="wbl"><lang/>
-                        <w>δətt-</w></mentioned>, <mentioned xml:lang="yah"><lang/>
-                        <w>δaδ-</w></mentioned>, <mentioned xml:lang="yah"><w>δaδin</w>
-                        <gloss><q>я даю</q></gloss><note type="comment" xml:lang="ru"> (<bibl><ref
-                                    type="bibl" target="#ref_Андреев._Язг."
-                                    /><biblScope>8</biblScope></bibl>)</note></mentioned>,
-                        <mentioned xml:lang="srh"><lang/>
-                        <w>δād-</w></mentioned>, <mentioned xml:lang="pal"><lang/>
+                                    <bibl><ref type="bibl" target="#ref_Зарубин._Орош."/><biblScope>32—33</biblScope></bibl>)</note></mentioned>,
+                        <mentioned xml:id="mentioned_d4466e255" xml:lang="wbl"><lang/>
+                        <w>δətt-</w></mentioned>, <mentioned xml:id="mentioned_d4466e260" xml:lang="yah"><lang/>
+                        <w>δaδ-</w></mentioned>, <mentioned xml:id="mentioned_d4466e265" xml:lang="yah"><w>δaδin</w>
+                        <gloss><q>я даю</q></gloss><note type="comment" xml:lang="ru"> (<bibl><ref type="bibl" target="#ref_Андреев._Язг."/><biblScope>8</biblScope></bibl>)</note></mentioned>,
+                        <mentioned xml:id="mentioned_d4466e277" xml:lang="srh"><lang/>
+                        <w>δād-</w></mentioned>, <mentioned xml:id="mentioned_d4466e282" xml:lang="pal"><lang/>
                         <w>dātan</w>
-                        <gloss><q>давать</q></gloss></mentioned>, <mentioned xml:lang="ae"><lang/>
-                        <w>dā-</w></mentioned>, <mentioned xml:lang="peo"><lang/>
-                        <w>dā-</w></mentioned>, <mentioned xml:lang="sa"><lang/>
-                        <w>dā</w></mentioned>, <mentioned xml:lang="xcl"><lang/>
+                        <gloss><q>давать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4466e291" xml:lang="ae"><lang/>
+                        <w>dā-</w></mentioned>, <mentioned xml:id="mentioned_d4466e296" xml:lang="peo"><lang/>
+                        <w>dā-</w></mentioned>, <mentioned xml:id="mentioned_d4466e301" xml:lang="sa"><lang/>
+                        <w>dā</w></mentioned>, <mentioned xml:id="mentioned_d4466e306" xml:lang="xcl"><lang/>
                         <w>tʼam</w>
-                        <gloss><q>я даю</q></gloss></mentioned>, <mentioned xml:lang="cu"><lang/>
-                        <w n="0">дати</w></mentioned>, <mentioned xml:lang="cu"><w n="0">дадят</w>
-                        <gloss><q>они дают</q></gloss></mentioned>, <mentioned xml:lang="ru"><lang/>
-                        <w>дать</w></mentioned>, <mentioned xml:lang="grc"><lang/>
+                        <gloss><q>я даю</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4466e314" xml:lang="cu"><lang/>
+                        <w n="0">дати</w></mentioned>, <mentioned xml:id="mentioned_d4466e320" xml:lang="cu"><w n="0">дадят</w>
+                        <gloss><q>они дают</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4466e328" xml:lang="ru"><lang/>
+                        <w>дать</w></mentioned>, <mentioned xml:id="mentioned_d4466e333" xml:lang="grc"><lang/>
                         <w>δίδωμι</w>
-                        <gloss><q>я даю</q></gloss></mentioned>, <mentioned xml:lang="grc"
-                            ><w>δοτός</w><note type="comment" xml:lang="ru">прош.
-                            причастие</note></mentioned>, <mentioned xml:lang="la"><lang/>
-                        <w>dō</w></mentioned>, <mentioned xml:lang="la"><w>dare</w>
+                        <gloss><q>я даю</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4466e341" xml:lang="grc"><w>δοτός</w><note type="comment" xml:lang="ru">прош.
+                            причастие</note></mentioned>, <mentioned xml:id="mentioned_d4466e346" xml:lang="la"><lang/>
+                        <w>dō</w></mentioned>, <mentioned xml:id="mentioned_d4466e351" xml:lang="la"><w>dare</w>
                         <gloss><q>давать</q></gloss></mentioned> и пр. — Прош. форма заключает
                     другую основу %ilævær%i-(←%ifra-bar%i-). В значении совершенного вида („дать“)
                     употребляется <ref type="xr" target="#entry_raddyn"/> (←%ifra-da%i-). Не вполне
-                    ясна встречающаяся в дигорском форма <mentioned xml:lang="os-x-digor"><lang/>
+                    ясна встречающаяся в дигорском форма <mentioned xml:id="mentioned_d4466e360" xml:lang="os-x-digor"><lang/>
                         <w>æddun</w>
                         <gloss><q>давать</q></gloss></mentioned>: из *%iā-d(a)da%i? Тот же корень
                     %ida%i-, по- видимому, в <ref type="xr" target="#entry_fīdyn"/> ‘платить’. См.
-                        <ref type="xr" target="#entry_læværdton"/>.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 77</biblScope></bibl>;
-                            <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>62</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_Hübschmann._Oss."/><biblScope>57</biblScope></bibl>.—
-                            <bibl><author>Gershevitch</author><ref type="bibl" target="#ref_BSOAS"
-                            /><biblScope>XIV 494</biblScope></bibl>.—<bibl><ref type="bibl"
-                            target="#ref_ОЯФ_I"/><biblScope>24, 161</biblScope></bibl>.</etym>
-                <etym xml:lang="en">It traces back to a common Indo-European <mentioned
-                        xml:lang="ine"><lang/>
-                        <w>*do-</w></mentioned>, <mentioned xml:lang="ine"><w>*da-</w>
+                        <ref type="xr" target="#entry_læværdton"/>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 77</biblScope></bibl>;
+                            <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>62</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>57</biblScope></bibl>.—
+                            <bibl><author>Gershevitch</author><ref type="bibl" target="#ref_BSOAS"/><biblScope>XIV 494</biblScope></bibl>.—<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>24, 161</biblScope></bibl>.</etym>
+                <etym xml:lang="en">It traces back to a common Indo-European <mentioned xml:id="mentioned_d4466e398" xml:lang="ine"><lang/>
+                        <w>*do-</w></mentioned>, <mentioned xml:id="mentioned_d4466e403" xml:lang="ine"><w>*da-</w>
                         <gloss><q>give</q></gloss></mentioned>. A reduplicated present tense stem
-                    %idada%i- is taken as a basis in Ossetic: <mentioned xml:lang="fa"><lang/>
+                    %idada%i- is taken as a basis in Ossetic: <mentioned xml:id="mentioned_d4466e409" xml:lang="fa"><lang/>
                         <w>dādan</w>
-                        <gloss><q>give</q></gloss></mentioned>, <mentioned xml:lang="ku"><lang/>
-                        <w>dāin</w></mentioned>, <mentioned xml:lang="ku"><w>dān</w></mentioned>,
-                        <mentioned xml:lang="x-balochi"><lang/>
-                        <w>dēag</w></mentioned>, <mentioned xml:lang="x-balochi"><w>dātan</w>
-                        <gloss><q>they gave</q></gloss><note type="comment"
-                            xml:lang="en"> (<bibl><ref type="bibl" target="#ref_Зарубин._Бел."
-                                    /><biblScope>145</biblScope></bibl>)</note></mentioned>,
-                        <mentioned xml:lang="mnj"><lang/>
-                        <w>dal-</w></mentioned>, <mentioned xml:lang="sgh"><lang/>
-                        <w>δāδ-</w></mentioned>, <mentioned xml:lang="isk"><lang/>
-                        <w>day- : dud</w><note
-                            type="comment" xml:lang="en"> (ibid.)</note>
-                        <gloss><q>give</q></gloss></mentioned>, <mentioned xml:lang="oru"><lang/>
+                        <gloss><q>give</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4466e417" xml:lang="ku"><lang/>
+                        <w>dāin</w></mentioned>, <mentioned xml:id="mentioned_d4466e422" xml:lang="ku"><w>dān</w></mentioned>,
+                        <mentioned xml:id="mentioned_d4466e426" xml:lang="x-balochi"><lang/>
+                        <w>dēag</w></mentioned>, <mentioned xml:id="mentioned_d4466e431" xml:lang="x-balochi"><w>dātan</w>
+                        <gloss><q>they gave</q></gloss><note type="comment" xml:lang="en"> (<bibl><ref type="bibl" target="#ref_Зарубин._Бел."/><biblScope>145</biblScope></bibl>)</note></mentioned>,
+                        <mentioned xml:id="mentioned_d4466e443" xml:lang="mnj"><lang/>
+                        <w>dal-</w></mentioned>, <mentioned xml:id="mentioned_d4466e448" xml:lang="sgh"><lang/>
+                        <w>δāδ-</w></mentioned>, <mentioned xml:id="mentioned_d4466e453" xml:lang="isk"><lang/>
+                        <w>day- : dud</w><note type="comment" xml:lang="en"> (ibid.)</note>
+                        <gloss><q>give</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4466e463" xml:lang="oru"><lang/>
                         <w>dāk-</w>
-                        <gloss><q>give</q></gloss></mentioned>, <mentioned xml:lang="oru"><w>δā(δ) :
-                            δōd</w><note
-                            type="comment" xml:lang="en"> (in compound verbs <bibl><ref type="bibl"
-                                    target="#ref_Зарубин._Орош."
-                                /><biblScope>32—33</biblScope></bibl>)</note></mentioned>,
-                        <mentioned xml:lang="wbl"><lang/>
-                        <w>δətt-</w></mentioned>, <mentioned xml:lang="yah"><lang/>
-                        <w>δaδ-</w></mentioned>, <mentioned xml:lang="yah"><w>δaδin</w>
-                        <gloss><q>I give</q></gloss><note type="comment"
-                            xml:lang="en"> (<bibl><ref type="bibl" target="#ref_Андреев._Язг."
-                                    /><biblScope>8</biblScope></bibl>)</note></mentioned>,
-                        <mentioned xml:lang="srh"><lang/>
-                        <w>δād-</w></mentioned>, <mentioned xml:lang="pal"><lang/>
+                        <gloss><q>give</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4466e472" xml:lang="oru"><w>δā(δ) :
+                            δōd</w><note type="comment" xml:lang="en"> (in compound verbs <bibl><ref type="bibl" target="#ref_Зарубин._Орош."/><biblScope>32—33</biblScope></bibl>)</note></mentioned>,
+                        <mentioned xml:id="mentioned_d4466e481" xml:lang="wbl"><lang/>
+                        <w>δətt-</w></mentioned>, <mentioned xml:id="mentioned_d4466e486" xml:lang="yah"><lang/>
+                        <w>δaδ-</w></mentioned>, <mentioned xml:id="mentioned_d4466e491" xml:lang="yah"><w>δaδin</w>
+                        <gloss><q>I give</q></gloss><note type="comment" xml:lang="en"> (<bibl><ref type="bibl" target="#ref_Андреев._Язг."/><biblScope>8</biblScope></bibl>)</note></mentioned>,
+                        <mentioned xml:id="mentioned_d4466e503" xml:lang="srh"><lang/>
+                        <w>δād-</w></mentioned>, <mentioned xml:id="mentioned_d4466e508" xml:lang="pal"><lang/>
                         <w>dātan</w>
-                        <gloss><q>give</q></gloss></mentioned>, <mentioned xml:lang="ae"><lang/>
-                        <w>dā-</w></mentioned>, <mentioned xml:lang="peo"><lang/>
-                        <w>dā-</w></mentioned>, <mentioned xml:lang="sa"><lang/>
-                        <w>dā</w></mentioned>, <mentioned xml:lang="xcl"><lang/>
+                        <gloss><q>give</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4466e517" xml:lang="ae"><lang/>
+                        <w>dā-</w></mentioned>, <mentioned xml:id="mentioned_d4466e522" xml:lang="peo"><lang/>
+                        <w>dā-</w></mentioned>, <mentioned xml:id="mentioned_d4466e527" xml:lang="sa"><lang/>
+                        <w>dā</w></mentioned>, <mentioned xml:id="mentioned_d4466e532" xml:lang="xcl"><lang/>
                         <w>tʼam</w>
-                        <gloss><q>I give</q></gloss></mentioned>, <mentioned xml:lang="cu"><lang/>
-                        <w>dati</w></mentioned>, <mentioned xml:lang="cu"><w>dadęt</w>
-                        <gloss><q>they give</q></gloss></mentioned>, <mentioned xml:lang="ru"><lang/>
-                        <w>datʼ</w></mentioned>, <mentioned xml:lang="grc"><lang/>
+                        <gloss><q>I give</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4466e540" xml:lang="cu"><lang/>
+                        <w>dati</w></mentioned>, <mentioned xml:id="mentioned_d4466e545" xml:lang="cu"><w>dadęt</w>
+                        <gloss><q>they give</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4466e552" xml:lang="ru"><lang/>
+                        <w>datʼ</w></mentioned>, <mentioned xml:id="mentioned_d4466e557" xml:lang="grc"><lang/>
                         <w>δίδωμι</w>
-                        <gloss><q>I give</q></gloss></mentioned>, <mentioned xml:lang="grc"
-                            ><w>δοτός</w><note type="comment" xml:lang="en">past
-                            participle</note></mentioned>, <mentioned xml:lang="la"><lang/>
-                        <w>dō</w></mentioned>, <mentioned xml:lang="la"><w>dare</w>
+                        <gloss><q>I give</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4466e565" xml:lang="grc"><w>δοτός</w><note type="comment" xml:lang="en">past
+                            participle</note></mentioned>, <mentioned xml:id="mentioned_d4466e570" xml:lang="la"><lang/>
+                        <w>dō</w></mentioned>, <mentioned xml:id="mentioned_d4466e575" xml:lang="la"><w>dare</w>
                         <gloss><q>give</q></gloss></mentioned> etc. — Past form consists of another
                     stem %ilævær%i-(←%ifra-bar%i-). In the meaning of perfective aspect (“give”)
                         <ref type="xr" target="#entry_raddyn"/> (←%ifra-da%i-) is used. A digor form
-                        <mentioned xml:lang="os-x-digor"><lang/>
+                        <mentioned xml:id="mentioned_d4466e584" xml:lang="os-x-digor"><lang/>
                         <w>æddun</w>
                         <gloss><q>give</q></gloss></mentioned> is not quite clear: from
-                    *%iā-d(a)da%i? The same root %ida%i- apparently is found in <ref type="xr"
-                        target="#entry_fīdyn"/> ‘pay’. See <ref type="xr" target="#entry_læværdton"
-                            />.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II
-                            77</biblScope></bibl>; <bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._Gr."/><biblScope>62</biblScope></bibl>. —
-                            <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."
-                            /><biblScope>57</biblScope></bibl>.—
-                            <bibl><author>Gershevitch</author><ref type="bibl" target="#ref_BSOAS"
-                            /><biblScope>XIV 494</biblScope></bibl>.—<bibl><ref type="bibl"
-                            target="#ref_ОЯФ_I"/><biblScope>24, 161</biblScope></bibl>.</etym>
+                    *%iā-d(a)da%i? The same root %ida%i- apparently is found in <ref type="xr" target="#entry_fīdyn"/> ‘pay’. See <ref type="xr" target="#entry_læværdton"/>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II
+                            77</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>62</biblScope></bibl>. —
+                            <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>57</biblScope></bibl>.—
+                            <bibl><author>Gershevitch</author><ref type="bibl" target="#ref_BSOAS"/><biblScope>XIV 494</biblScope></bibl>.—<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>24, 161</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

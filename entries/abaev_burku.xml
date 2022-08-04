@@ -1,43 +1,48 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">burku</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_burku" xml:lang="os-x-digor">
                 <form type="lemma"><orth>burku</orth></form>
                 <usg><lang/></usg>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d4483e72"><abv:tr xml:lang="ru">
                         <q>место шабаша ведьм и колдунов</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>a place for witches and wizards' sabbat</q>
                     </abv:tr></sense>
-                <re>
+                <re xml:id="re_d4483e82">
                     <form type="lemma"><orth>burkuʒaw</orth></form>
-                    <sense><sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d4483e87"><sense xml:id="sense_d4483e88"><abv:tr xml:lang="ru">
                                 <q>участник шабаша</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>sabbath participant</q>
-                            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                            </abv:tr></sense><sense xml:id="sense_d4483e97"><abv:tr xml:lang="ru">
                                 <q>колдун</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>wizard</q>
-                            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                            </abv:tr></sense><sense xml:id="sense_d4483e106"><abv:tr xml:lang="ru">
                                 <q>ведьма</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>witch</q>
@@ -46,7 +51,7 @@
                     <note type="comment" xml:lang="en">= Iron %ik˳yrysʒaw%i</note>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4483e125">
                         <quote>taxtæj, duwwexgængæ arvi tar, wesojnæbæl burkuʒaw</quote>
                         <abv:tr xml:lang="ru">
                             <q>летел, рассекая пополам небесный мрак, на метле колдун</q>
@@ -55,10 +60,9 @@
                             <q>a wizard flew on a broomstick, slicing in half the heavenly
                                 darkness</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Gurdž._Wadž."
-                            /><biblScope>28</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Gurdž._Wadž."/><biblScope>28</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4483e144">
                         <quote>burkuʒaw ma kʼæsibadæg … kafgæj ewmæ kæsgon</quote>
                         <abv:tr xml:lang="ru">
                             <q>колдун и колдунья… пляшущие вместе кабардинский (танец)</q>
@@ -66,8 +70,7 @@
                         <abv:tr xml:lang="en">
                             <q>a wizard and a witch… dancing together a Kabardian (dance)</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Gurdž._Saxi_ræs."
-                                /><biblScope>47</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Gurdž._Saxi_ræs."/><biblScope>47</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Происхождение не известно.</etym>

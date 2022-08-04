@@ -1,34 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">cæd</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_cæd" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>cæd</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>cædæ</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d3742e72"><abv:tr xml:lang="ru">
                         <q>пара быков в упряжке</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>a pair of bulls in a team</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d3742e84">
                         <quote>sīftyǧtoj jyl dywwadæs cædy galtæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>запрягли двенадцать пар быков</q>
@@ -36,10 +41,9 @@
                         <abv:tr xml:lang="en">
                             <q>twelve pairs of bulls were roped in</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Нарт._сказ."
-                            /><biblScope>263</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Нарт._сказ."/><biblScope>263</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3742e103">
                         <quote>wæjgutæ naj kodtoj avd cædæj</quote>
                         <abv:tr xml:lang="ru">
                             <q>великаны молотили семью парами быков</q>
@@ -47,10 +51,9 @@
                         <abv:tr xml:lang="en">
                             <q>giants were beating by seven pairs of bulls</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Munk."
-                            /><biblScope>108</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Munk."/><biblScope>108</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3742e122">
                         <quote>dælæ bydyry dywwadæs cædy īw cædy x˳yzæn</quote>
                         <abv:tr xml:lang="ru">
                             <q>вон в степи двенадцать пар быков, как одна пара</q>
@@ -58,10 +61,9 @@
                         <abv:tr xml:lang="en">
                             <q>there are twelve pairs of bulls in the prairie, like one pair</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Munk."
-                            /><biblScope>182</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Munk."/><biblScope>182</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d3742e141" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>cædæj lasunmæ cæwun ǧæwuj</quote>
                         <abv:tr xml:lang="ru">
@@ -70,57 +72,50 @@
                         <abv:tr xml:lang="en">
                             <q>it is necessary to go and drag field with a pair of bulls</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Bes._Ka_ke"
-                            /><biblScope>100</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Bes._Ka_ke"/><biblScope>100</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru"><bibl><author>Штакельберг</author></bibl> (<bibl><ref
-                            type="bibl" target="#ref_MSt."/><biblScope>85</biblScope></bibl>) и
-                            <bibl><author>Вс. Миллер</author></bibl> (<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._Gr."/><biblScope>10</biblScope></bibl>)
-                    связывают с <mentioned xml:lang="dar"><lang/>
+                <etym xml:lang="ru"><bibl><author>Штакельберг</author></bibl> (<bibl><ref type="bibl" target="#ref_MSt."/><biblScope>85</biblScope></bibl>) и
+                            <bibl><author>Вс. Миллер</author></bibl> (<bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>10</biblScope></bibl>)
+                    связывают с <mentioned xml:id="mentioned_d3742e179" xml:lang="dar"><lang/>
                         <w>cadah</w>
-                        <gloss><q>пара</q></gloss></mentioned> дарг. cadah ‘пара’<note
-                        type="footnote" n="1"> PUT NOTE HERE </note>. При отсутствии других
+                        <gloss><q>пара</q></gloss></mentioned> дарг. cadah ‘пара’<note type="footnote" n="1"> PUT NOTE HERE </note>. При отсутствии других
                     кавказских параллелей такое разъяснение нельзя признать удовлетворительным.
-                    Вероятнее связь со <mentioned xml:lang="cu"><lang/>
-                        <w n="0">чета</w></mentioned>, <mentioned xml:lang="ru"><lang/>
+                    Вероятнее связь со <mentioned xml:id="mentioned_d3742e191" xml:lang="cu"><lang/>
+                        <w n="0">чета</w></mentioned>, <mentioned xml:id="mentioned_d3742e197" xml:lang="ru"><lang/>
                         <w>чета</w>
                         <gloss><q>пара</q></gloss></mentioned> (в плане старых славяно-скифских
-                    сношений). В пользу древности усвоения говорят звуковые изменения: <mentioned
-                        xml:lang="ru"><lang/>
-                        <w>е</w></mentioned> || <mentioned xml:lang="os"><lang/>
-                        <w>æ</w></mentioned>, <mentioned xml:lang="ru"><lang/>
-                        <w>т</w></mentioned> || <mentioned xml:lang="os"><lang/>
+                    сношений). В пользу древности усвоения говорят звуковые изменения: <mentioned xml:id="mentioned_d3742e205" xml:lang="ru"><lang/>
+                        <w>е</w></mentioned> || <mentioned xml:id="mentioned_d3742e210" xml:lang="os"><lang/>
+                        <w>æ</w></mentioned>, <mentioned xml:id="mentioned_d3742e215" xml:lang="ru"><lang/>
+                        <w>т</w></mentioned> || <mentioned xml:id="mentioned_d3742e220" xml:lang="os"><lang/>
                         <w>d</w></mentioned>. Сюда же <ref type="xr" target="#entry_cædīs"/>.</etym>
-                <etym xml:lang="en"><bibl><author>Stackelberg</author></bibl> (<bibl><ref
-                            type="bibl" target="#ref_MSt."/><biblScope>85</biblScope></bibl>) and
-                            <bibl><author>Ws. Miller</author></bibl> (<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._Gr."/><biblScope>10</biblScope></bibl>) connect
-                    the word with <mentioned xml:lang="dar"><lang/>
+                <etym xml:lang="en"><bibl><author>Stackelberg</author></bibl> (<bibl><ref type="bibl" target="#ref_MSt."/><biblScope>85</biblScope></bibl>) and
+                            <bibl><author>Ws. Miller</author></bibl> (<bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>10</biblScope></bibl>) connect
+                    the word with <mentioned xml:id="mentioned_d3742e245" xml:lang="dar"><lang/>
                         <w>cadah</w>
                         <gloss><q>pair</q></gloss></mentioned>.<note type="footnote" n="1"> PUT NOTE
                         HERE </note> Such an explanation cannot be accepted because of absence of
-                    other Caucasian parallels. The connection with <mentioned xml:lang="cu"><lang/>
-                        <w>četa</w></mentioned>, <mentioned xml:lang="ru"><lang/>
+                    other Caucasian parallels. The connection with <mentioned xml:id="mentioned_d3742e257" xml:lang="cu"><lang/>
+                        <w>četa</w></mentioned>, <mentioned xml:id="mentioned_d3742e262" xml:lang="ru"><lang/>
                         <w>četa</w>
                         <gloss><q>pair</q></gloss></mentioned>is more possible (in terms of old
                     Slavic-Scythian relations). Phonetic changes speak in favour of and old
-                    assimilation process: <mentioned xml:lang="ru"><lang/>
-                        <w>е</w></mentioned> || <mentioned xml:lang="os"><lang/>
-                        <w>æ</w></mentioned>, <mentioned xml:lang="ru"><lang/>
-                        <w>t</w></mentioned> || <mentioned xml:lang="os"><lang/>
+                    assimilation process: <mentioned xml:id="mentioned_d3742e270" xml:lang="ru"><lang/>
+                        <w>е</w></mentioned> || <mentioned xml:id="mentioned_d3742e275" xml:lang="os"><lang/>
+                        <w>æ</w></mentioned>, <mentioned xml:id="mentioned_d3742e280" xml:lang="ru"><lang/>
+                        <w>t</w></mentioned> || <mentioned xml:id="mentioned_d3742e285" xml:lang="os"><lang/>
                         <w>d</w></mentioned>. The word <ref type="xr" target="#entry_cædīs"/> also
                     refers here.</etym>
                 <note type="footnote" xml:lang="ru" n="1">В Русско-даргинском словаре
                             (<bibl><biblScope xml:lang="ru">Русско-даргинский словарь
                             1950</biblScope><biblScope xml:lang="en">Russian-Dargin dictionary
-                            1950</biblScope></bibl>): <mentioned xml:lang="dar"><lang/>
+                            1950</biblScope></bibl>): <mentioned xml:id="mentioned_d3742e302" xml:lang="dar"><lang/>
                         <w n="0">цадехӀ чакма</w></mentioned> (стр. 850).</note>
                 <note type="footnote" xml:lang="en" n="1">In Russian-Dargwa dictionary
                             (<bibl><biblScope xml:lang="ru">Русско-даргинский словарь
                             1950</biblScope><biblScope xml:lang="en">Russian-Dargwa dictionary
-                            1950</biblScope></bibl>): <mentioned xml:lang="dar"><lang/>
+                            1950</biblScope></bibl>): <mentioned xml:id="mentioned_d3742e317" xml:lang="dar"><lang/>
                         <w>cadeħ čakma</w></mentioned> (p. 850).</note>
             </entry>
         </body>

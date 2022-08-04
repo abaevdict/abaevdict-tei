@@ -1,59 +1,64 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">kark</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_kark" xml:lang="os">
                 <form type="lemma"><orth>kark</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d557e69"><abv:tr xml:lang="ru">
                         <q>курица</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>hen</q>
                     </abv:tr></sense>
-                <re>
-                    <re>
+                <re xml:id="re_d557e79">
+                    <re xml:id="re_d557e81">
                         <form type="lemma"><orth>kærkdon</orth></form>
-                        <sense><abv:tr xml:lang="ru">
+                        <sense xml:id="sense_d557e86"><abv:tr xml:lang="ru">
                                 <q>курятник</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>hen house</q>
                             </abv:tr></sense>
                     </re>
-                    <re>
+                    <re xml:id="re_d557e97">
                         <form type="lemma"><orth>kærknīz</orth></form>
-                        <sense><abv:tr xml:lang="ru">
+                        <sense xml:id="sense_d557e102"><abv:tr xml:lang="ru">
                                 <q>куриная эпизоотия</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>hen epizootic</q>
                             </abv:tr></sense>
                     </re>
-                    <re>
+                    <re xml:id="re_d557e113">
                         <form type="lemma"><orth>kærkwasæn</orth></form>
-                        <sense><abv:tr xml:lang="ru">
+                        <sense xml:id="sense_d557e118"><abv:tr xml:lang="ru">
                                 <q>время пения петухов</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>rooster singing time</q>
                             </abv:tr></sense>
                     </re>
-                    <re>
+                    <re xml:id="re_d557e129">
                         <form type="lemma"><orth>x˳yrgark</orth></form>
-                        <sense><abv:tr xml:lang="ru">
+                        <sense xml:id="sense_d557e134"><abv:tr xml:lang="ru">
                                 <q>куропатка</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>partridge</q>
@@ -61,7 +66,7 @@
                     </re>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d557e148">
                         <quote>kark næmyggaj wīʒy</quote>
                         <abv:tr xml:lang="ru">
                             <q>курица клюет по зернышку</q>
@@ -72,7 +77,7 @@
                         <bibl><ref type="bibl" target="#src_ЮОПам."/><biblScope>III
                             210</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d557e167">
                         <quote>qæwgæron syn īw kærkdon-k’˳ym xæʒar raddoj</quote>
                         <abv:tr xml:lang="ru">
                             <q>на краю аула им дали домишко с курятник</q>
@@ -83,7 +88,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Сека"/><biblScope>86</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d557e186">
                         <quote>Xan yn rajg˳yrdī fyccag kærkwasænty, X˳yndæǵer rajg˳yrdī dykkag
                             kærkwasænty</quote>
                         <abv:tr xml:lang="ru">
@@ -94,10 +99,9 @@
                             <q>Khan was born to her with the first roosters' craw, Kundadzher was
                                 born with the second roosters' craw</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Æfx._Xæs."
-                            /><biblScope>104</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Æfx._Xæs."/><biblScope>104</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d557e205">
                         <quote>Ǵirgol kærkwasænty festad</quote>
                         <abv:tr xml:lang="ru">
                             <q>Джиргол вскочил с петухами</q>
@@ -109,115 +113,92 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Общеиндоевропейское слово, как думают, звукоподражательного
-                    характера; и.е. %i*kerko-%i, %i*kerka-%i, иран. %i*karka-%i. Ср. <mentioned
-                        xml:lang="fa"><lang/>
+                    характера; и.е. %i*kerko-%i, %i*kerka-%i, иран. %i*karka-%i. Ср. <mentioned xml:id="mentioned_d557e227" xml:lang="fa"><lang/>
                         <w>kark</w>
-                        <gloss><q>домашняя птица</q></gloss></mentioned>, <mentioned xml:lang="fa"><w/>
-                        <gloss><q>курица</q></gloss></mentioned>, <mentioned xml:lang="fa"><lang/>
-                        <w>kärk, kärge, karg, kerk, kärgiä</w></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_KPF"/><biblScope>Abt. III, Bd. II, стр.
-                        259</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Жуковский"
-                            /><biblScope>I 194, II 336</biblScope></bibl>), <mentioned
-                        xml:lang="ttt"><lang/>
-                        <w>kärg</w></mentioned>, <mentioned xml:lang="pal"><lang/>
-                        <w>kark</w></mentioned>, <mentioned xml:lang="ku"><lang/>
+                        <gloss><q>домашняя птица</q></gloss></mentioned>, <mentioned xml:id="mentioned_d557e235" xml:lang="fa"><w/>
+                        <gloss><q>курица</q></gloss></mentioned>, <mentioned xml:id="mentioned_d557e241" xml:lang="fa"><lang/>
+                        <w>kärk, kärge, karg, kerk, kärgiä</w></mentioned> (<bibl><ref type="bibl" target="#ref_KPF"/><biblScope>Abt. III, Bd. II, стр.
+                        259</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Жуковский"/><biblScope>I 194, II 336</biblScope></bibl>), <mentioned xml:id="mentioned_d557e255" xml:lang="ttt"><lang/>
+                        <w>kärg</w></mentioned>, <mentioned xml:id="mentioned_d557e260" xml:lang="pal"><lang/>
+                        <w>kark</w></mentioned>, <mentioned xml:id="mentioned_d557e265" xml:lang="ku"><lang/>
                         <w>kerk, kerge, karg, kurk</w>
-                        <gloss><q>курица</q></gloss></mentioned>, <mentioned xml:lang="ps"><lang/>
+                        <gloss><q>курица</q></gloss></mentioned>, <mentioned xml:id="mentioned_d557e273" xml:lang="ps"><lang/>
                         <w>čərg</w>
-                        <gloss><q>петух</q></gloss></mentioned>, <mentioned xml:lang="ps"
-                            ><w>čərga</w>
-                        <gloss><q>курица</q></gloss></mentioned>, <mentioned xml:lang="prc"><lang/>
-                        <w>kurɣ</w></mentioned>, <mentioned xml:lang="wbl"><lang/>
-                        <w>kerk</w></mentioned>, <mentioned xml:lang="mnj"><lang/>
-                        <w>kariya</w></mentioned>, <mentioned xml:lang="x-pamir-n"><lang/>
-                        <w>kirio</w></mentioned>, <mentioned xml:lang="yah"><lang/>
+                        <gloss><q>петух</q></gloss></mentioned>, <mentioned xml:id="mentioned_d557e281" xml:lang="ps"><w>čərga</w>
+                        <gloss><q>курица</q></gloss></mentioned>, <mentioned xml:id="mentioned_d557e287" xml:lang="prc"><lang/>
+                        <w>kurɣ</w></mentioned>, <mentioned xml:id="mentioned_d557e293" xml:lang="wbl"><lang/>
+                        <w>kerk</w></mentioned>, <mentioned xml:id="mentioned_d557e298" xml:lang="mnj"><lang/>
+                        <w>kariya</w></mentioned>, <mentioned xml:id="mentioned_d557e303" xml:lang="x-pamir-n"><lang/>
+                        <w>kirio</w></mentioned>, <mentioned xml:id="mentioned_d557e308" xml:lang="yah"><lang/>
                         <w>karč, karj</w>
-                        <gloss><q>курица</q></gloss></mentioned>, <mentioned xml:lang="isk"><lang/>
+                        <gloss><q>курица</q></gloss></mentioned>, <mentioned xml:id="mentioned_d557e316" xml:lang="isk"><lang/>
                         <w>kərčin</w>
-                        <gloss><q>петух</q></gloss></mentioned>, <mentioned xml:lang="sgh"><lang/>
-                        <w>čax</w></mentioned>, <mentioned xml:lang="ae"><lang/>
+                        <gloss><q>петух</q></gloss></mentioned>, <mentioned xml:id="mentioned_d557e324" xml:lang="sgh"><lang/>
+                        <w>čax</w></mentioned>, <mentioned xml:id="mentioned_d557e330" xml:lang="ae"><lang/>
                         <w>kahrka-</w></mentioned>(в %ikahrkasa-%i ‘коршун’, буквально ‘куроед’),
-                        <mentioned xml:lang="sa"><lang/>
+                        <mentioned xml:id="mentioned_d557e335" xml:lang="sa"><lang/>
                         <w>kṛkara-, kṛkaṇa-</w>
-                        <gloss><q>вид куропатки</q></gloss></mentioned>, <mentioned xml:lang="sa"
-                            ><w>kṛka-vāku-</w>
-                        <gloss><q>петух</q></gloss></mentioned>, <mentioned xml:lang="prg"><lang/>
+                        <gloss><q>вид куропатки</q></gloss></mentioned>, <mentioned xml:id="mentioned_d557e343" xml:lang="sa"><w>kṛka-vāku-</w>
+                        <gloss><q>петух</q></gloss></mentioned>, <mentioned xml:id="mentioned_d557e349" xml:lang="prg"><lang/>
                         <w>kerko</w>
-                        <gloss><q>гагара</q></gloss></mentioned>,<mentioned xml:lang="grc"><lang/>
+                        <gloss><q>гагара</q></gloss></mentioned>,<mentioned xml:id="mentioned_d557e357" xml:lang="grc"><lang/>
                         <w>χέρχος</w>
-                        <gloss><q>петух</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Гесихий"/></bibl>), <mentioned xml:lang="ga"><lang/>
-                        <w>cerc</w></mentioned>, <mentioned xml:lang="x-tchr"><lang/>
+                        <gloss><q>петух</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Гесихий"/></bibl>), <mentioned xml:id="mentioned_d557e369" xml:lang="ga"><lang/>
+                        <w>cerc</w></mentioned>, <mentioned xml:id="mentioned_d557e374" xml:lang="x-tchr"><lang/>
                         <w>kraṅko</w>
-                        <gloss><q>петух</q></gloss></mentioned> и пр. — <mentioned xml:lang="kv"><lang/>
+                        <gloss><q>петух</q></gloss></mentioned> и пр. — <mentioned xml:id="mentioned_d557e382" xml:lang="kv"><lang/>
                         <w>kurög</w>
                         <gloss><q>курица</q></gloss></mentioned> идет из иранского? В осетинском (да
-                    и в персидском, — ср. <bibl><ref type="bibl" target="#ref_Hübschmann._PSt."
-                            /><biblScope>239</biblScope></bibl>) ожидали бы %i*karg%i: ср. <ref
-                        type="xr" target="#entry_marǧ"/>, <ref type="xr" target="#entry_wyrg"/>.
+                    и в персидском, — ср. <bibl><ref type="bibl" target="#ref_Hübschmann._PSt."/><biblScope>239</biblScope></bibl>) ожидали бы %i*karg%i: ср. <ref type="xr" target="#entry_marǧ"/>, <ref type="xr" target="#entry_wyrg"/>.
                     Незакономерность эта объясняется, может быть, звукоподражательным характером
                     слова. — Название ‘петуха’ <ref type="xr" target="#entry_wasæg"/> не связано по
                     корню с %ikark%i, оно образовано от <ref type="xr" target="#entry_wasyn"/>
-                    ‘петь’. — Ср. <ref type="xr" target="#entry_cærgæs"/> ‘орел’.%n<bibl><ref
-                            type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II
-                        50</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>27</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_ОЯФ_I"/><biblScope>61</biblScope></bibl>.</etym>
+                    ‘петь’. — Ср. <ref type="xr" target="#entry_cærgæs"/> ‘орел’.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II
+                        50</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>27</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>61</biblScope></bibl>.</etym>
                 <etym xml:lang="en">A general Indo-European word, it is onomatopoeical, as it is
                     thought; Indo-European %i*kerko-%i, %i*kerka-%i, Iranian %i*karka-%i. Cf.
-                        <mentioned xml:lang="fa"><lang/>
+                        <mentioned xml:id="mentioned_d557e421" xml:lang="fa"><lang/>
                         <w>kark</w>
-                        <gloss><q>poultry</q></gloss></mentioned>, <mentioned xml:lang="fa"><w/>
-                        <gloss><q>hen</q></gloss></mentioned>, <mentioned xml:lang="fa"><lang/>
-                        <w>kärk, kärge, karg, kerk, kärgiä</w></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_KPF"/><biblScope>Abt. III, Bd. II, p.
-                        259</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Жуковский"
-                            /><biblScope>I 194, II 336</biblScope></bibl>), <mentioned
-                        xml:lang="ttt"><lang/>
-                        <w>kärg</w></mentioned>, <mentioned xml:lang="pal"><lang/>
-                        <w>kark</w></mentioned>, <mentioned xml:lang="ku"><lang/>
+                        <gloss><q>poultry</q></gloss></mentioned>, <mentioned xml:id="mentioned_d557e429" xml:lang="fa"><w/>
+                        <gloss><q>hen</q></gloss></mentioned>, <mentioned xml:id="mentioned_d557e435" xml:lang="fa"><lang/>
+                        <w>kärk, kärge, karg, kerk, kärgiä</w></mentioned> (<bibl><ref type="bibl" target="#ref_KPF"/><biblScope>Abt. III, Bd. II, p.
+                        259</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Жуковский"/><biblScope>I 194, II 336</biblScope></bibl>), <mentioned xml:id="mentioned_d557e449" xml:lang="ttt"><lang/>
+                        <w>kärg</w></mentioned>, <mentioned xml:id="mentioned_d557e454" xml:lang="pal"><lang/>
+                        <w>kark</w></mentioned>, <mentioned xml:id="mentioned_d557e459" xml:lang="ku"><lang/>
                         <w>kerk, kerge, karg, kurk</w>
-                        <gloss><q>hen</q></gloss></mentioned>, <mentioned xml:lang="ps"><lang/>
+                        <gloss><q>hen</q></gloss></mentioned>, <mentioned xml:id="mentioned_d557e467" xml:lang="ps"><lang/>
                         <w>čərg</w>
-                        <gloss><q>rooster</q></gloss></mentioned>, <mentioned xml:lang="ps"
-                            ><w>čərga</w>
-                        <gloss><q>hen</q></gloss></mentioned>, <mentioned xml:lang="prc"><lang/>
-                        <w>kurɣ</w></mentioned>, <mentioned xml:lang="wbl"><lang/>
-                        <w>kerk</w></mentioned>, <mentioned xml:lang="mnj"><lang/>
-                        <w>kariya</w></mentioned>, <mentioned xml:lang="ydg"><lang/>
-                        <w>kirio</w></mentioned>, <mentioned xml:lang="yah"><lang/>
+                        <gloss><q>rooster</q></gloss></mentioned>, <mentioned xml:id="mentioned_d557e475" xml:lang="ps"><w>čərga</w>
+                        <gloss><q>hen</q></gloss></mentioned>, <mentioned xml:id="mentioned_d557e481" xml:lang="prc"><lang/>
+                        <w>kurɣ</w></mentioned>, <mentioned xml:id="mentioned_d557e487" xml:lang="wbl"><lang/>
+                        <w>kerk</w></mentioned>, <mentioned xml:id="mentioned_d557e492" xml:lang="mnj"><lang/>
+                        <w>kariya</w></mentioned>, <mentioned xml:id="mentioned_d557e497" xml:lang="ydg"><lang/>
+                        <w>kirio</w></mentioned>, <mentioned xml:id="mentioned_d557e502" xml:lang="yah"><lang/>
                         <w>karč, karj</w>
-                        <gloss><q>hen</q></gloss></mentioned>, <mentioned xml:lang="isk"><lang/>
+                        <gloss><q>hen</q></gloss></mentioned>, <mentioned xml:id="mentioned_d557e510" xml:lang="isk"><lang/>
                         <w>kərčin</w>
-                        <gloss><q>rooster</q></gloss></mentioned>, <mentioned xml:lang="sgh"><lang/>
-                        <w>čax</w></mentioned>, <mentioned xml:lang="ae"><lang/>
+                        <gloss><q>rooster</q></gloss></mentioned>, <mentioned xml:id="mentioned_d557e518" xml:lang="sgh"><lang/>
+                        <w>čax</w></mentioned>, <mentioned xml:id="mentioned_d557e524" xml:lang="ae"><lang/>
                         <w>kahrka-</w></mentioned>(in %ikahrkasa-%i ‘black kite’, literally ‘hen
-                    eater’), <mentioned xml:lang="sa"><lang/>
+                    eater’), <mentioned xml:id="mentioned_d557e529" xml:lang="sa"><lang/>
                         <w>kṛkara-, kṛkaṇa-</w>
-                        <gloss><q>a kind of partridge</q></gloss></mentioned>, <mentioned
-                        xml:lang="sa"><w>kṛka-vāku-</w>
-                        <gloss><q>rooster</q></gloss></mentioned>, <mentioned xml:lang="prg"><lang/>
+                        <gloss><q>a kind of partridge</q></gloss></mentioned>, <mentioned xml:id="mentioned_d557e537" xml:lang="sa"><w>kṛka-vāku-</w>
+                        <gloss><q>rooster</q></gloss></mentioned>, <mentioned xml:id="mentioned_d557e543" xml:lang="prg"><lang/>
                         <w>kerko</w>
-                        <gloss><q>diver bird</q></gloss></mentioned>,<mentioned xml:lang="grc"><lang/>
+                        <gloss><q>diver bird</q></gloss></mentioned>,<mentioned xml:id="mentioned_d557e551" xml:lang="grc"><lang/>
                         <w>χέρχος</w>
-                        <gloss><q>rooster</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Гесихий"/></bibl>), <mentioned xml:lang="ga"><lang/>
-                        <w>cerc</w></mentioned>, <mentioned xml:lang="x-tchr"><lang/>
+                        <gloss><q>rooster</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Гесихий"/></bibl>), <mentioned xml:id="mentioned_d557e563" xml:lang="ga"><lang/>
+                        <w>cerc</w></mentioned>, <mentioned xml:id="mentioned_d557e568" xml:lang="x-tchr"><lang/>
                         <w>kraṅko</w>
-                        <gloss><q>rooster</q></gloss></mentioned> etc. — <mentioned xml:lang="kv"><lang/>
+                        <gloss><q>rooster</q></gloss></mentioned> etc. — <mentioned xml:id="mentioned_d557e576" xml:lang="kv"><lang/>
                         <w>kurög</w>
                         <gloss><q>hen</q></gloss></mentioned> is from Iranian? In Ossetic (as well
-                    as in Persian, — cf. <bibl><ref type="bibl" target="#ref_Hübschmann._PSt."
-                            /><biblScope>239</biblScope></bibl>) %i*karg%i would be expected: cf.
-                        <ref type="xr" target="#entry_marǧ"/>, <ref type="xr" target="#entry_wyrg"
-                    />. This irregularity may be explained by onomatopoeical form of the word. — The
+                    as in Persian, — cf. <bibl><ref type="bibl" target="#ref_Hübschmann._PSt."/><biblScope>239</biblScope></bibl>) %i*karg%i would be expected: cf.
+                        <ref type="xr" target="#entry_marǧ"/>, <ref type="xr" target="#entry_wyrg"/>. This irregularity may be explained by onomatopoeical form of the word. — The
                     name ‘rooster’ <ref type="xr" target="#entry_wasæg"/> is not related with
                     %ikark%i by the root, it is derived from <ref type="xr" target="#entry_wasyn"/>
-                    ‘sing’. — Cf. <ref type="xr" target="#entry_cærgæs"/> ‘eagle’.%n<bibl><ref
-                            type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II
-                        50</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>27</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_ОЯФ_I"/><biblScope>61</biblScope></bibl>.</etym>
+                    ‘sing’. — Cf. <ref type="xr" target="#entry_cærgæs"/> ‘eagle’.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II
+                        50</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>27</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>61</biblScope></bibl>.</etym>
                 <note type="internal">OB: выяснил, что пам.н. = пам.и. т.е. йидга</note>
             </entry>
         </body>

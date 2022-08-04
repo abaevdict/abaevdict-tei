@@ -1,38 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ʒækkor</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ʒækkor" xml:lang="os-x-iron">
                 <form type="lemma"><orth>ʒækkor</orth></form>
                 <usg><lang/></usg>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d1754e72"><sense xml:id="sense_d1754e73"><abv:tr xml:lang="ru">
                             <q>деревянный молот</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>wood hammer</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d1754e82"><abv:tr xml:lang="ru">
                             <q>колотушка</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>beater</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d1754e94">
                         <quote>axæssūt æfsæn ʒækkor æmæ jyn ʒy jæ fynʒy ærǧīwtæ cævut</quote>
                         <abv:tr xml:lang="ru">
                             <q>возьмите железную колотушку и бейте по хрящам его носа</q>
@@ -44,16 +49,16 @@
                             107</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из <mentioned xml:lang="mn"><lang/>
+                <etym xml:lang="ru">Из <mentioned xml:id="mentioned_d1754e116" xml:lang="mn"><lang/>
                         <w>tsokūr</w>
-                        <gloss><q>молот</q></gloss></mentioned>, <mentioned xml:lang="mn"><w/>
-                        <gloss><q>колотушка</q></gloss></mentioned> от <mentioned xml:lang="mn"><lang/>
+                        <gloss><q>молот</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1754e124" xml:lang="mn"><w/>
+                        <gloss><q>колотушка</q></gloss></mentioned> от <mentioned xml:id="mentioned_d1754e130" xml:lang="mn"><lang/>
                         <w>čoki</w>
                         <gloss><q>ударять</q></gloss></mentioned>.</etym>
-                <etym xml:lang="en">From <mentioned xml:lang="mn"><lang/>
+                <etym xml:lang="en">From <mentioned xml:id="mentioned_d1754e142" xml:lang="mn"><lang/>
                         <w>tsokūr</w>
-                        <gloss><q>hammer</q></gloss></mentioned>, <mentioned xml:lang="mn"><w/>
-                        <gloss><q>beater</q></gloss></mentioned> from <mentioned xml:lang="mn"><lang/>
+                        <gloss><q>hammer</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1754e150" xml:lang="mn"><w/>
+                        <gloss><q>beater</q></gloss></mentioned> from <mentioned xml:id="mentioned_d1754e156" xml:lang="mn"><lang/>
                         <w>čoki</w>
                         <gloss><q>beat</q></gloss></mentioned>.</etym>
             </entry>

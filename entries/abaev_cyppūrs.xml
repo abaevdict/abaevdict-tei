@@ -1,33 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">cyppūrs</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_cyppūrs" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>cyppūrs</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>cæpporse</orth></form>
-                <sense><def xml:lang="ru">название зимнего праздника, в христианской среде
+                <sense xml:id="sense_d214e72"><def xml:lang="ru">название зимнего праздника, в христианской среде
                         приуроченного к рождеству</def><def xml:lang="en">the name of the winter
                         holiday, timed to coincide with Christmas in the Christian
                     religion</def></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d214e80">
                         <quote/>
                         <abv:tr xml:lang="ru">
                             <q>(месяц) %sCyppūrs%s | %sCæpporse%s приблизительно соответствует концу
@@ -40,7 +45,7 @@
                         <bibl><ref type="bibl" target="#src_ОЭ"/><biblScope>II
                             264</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d214e99" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>Cæpporsej bærægbon beræ zian kænuj xæʒaradæn</quote>
                         <abv:tr xml:lang="ru">
@@ -52,45 +57,36 @@
                         <bibl><ref type="bibl" target="#src_FS"/><biblScope>II 26</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Это слово тождественно с дигорским числительным <mentioned
-                        xml:lang="os-x-digor"><lang/>
+                <etym xml:lang="ru">Это слово тождественно с дигорским числительным <mentioned xml:id="mentioned_d214e124" xml:lang="os-x-digor"><lang/>
                         <w>cuppor</w>
                         <gloss><q>сорок</q></gloss></mentioned>, в настоящее время вытесненным
                     новообразованием <ref type="xr" target="#entry_duwinsæʒi"/> буквально „две
                     двадцатки“, но сохранившимся в так называемом пастушеском счете. Праздник назван
                     числительным „сорок“, вероятно, потому, что ему предшествовал сорокадневный
-                    пост. Ср. по образованию <mentioned xml:lang="grc"><lang/>
-                        <w>σαραχοστή(← τεσσαραχοστή)</w></mentioned>, <mentioned xml:lang="fr"><lang/>
-                        <w>quarantain</w><note type="comment" xml:lang="ru"> (от <mentioned
-                                xml:lang="fr"><lang/>
+                    пост. Ср. по образованию <mentioned xml:id="mentioned_d214e134" xml:lang="grc"><lang/>
+                        <w>σαραχοστή(← τεσσαραχοστή)</w></mentioned>, <mentioned xml:id="mentioned_d214e139" xml:lang="fr"><lang/>
+                        <w>quarantain</w><note type="comment" xml:lang="ru"> (от <mentioned xml:id="mentioned_d214e145" xml:lang="fr"><lang/>
                                 <w>quarante</w>
                                 <gloss><q>40</q></gloss></mentioned>)</note>
-                        <gloss><q>сорокадневный пост</q></gloss></mentioned>, <mentioned
-                        xml:lang="ru"><lang/>
-                        <w>сорокопуст</w></mentioned>, <mentioned xml:lang="ru"
-                        ><w>сорокоуст</w></mentioned>, <mentioned xml:lang="ru"
-                        ><w>Пятидесятница</w></mentioned>, <mentioned xml:lang="fr"><lang/>
-                        <w>Pentecôte</w></mentioned> ← <mentioned xml:lang="grc"><lang/>
+                        <gloss><q>сорокадневный пост</q></gloss></mentioned>, <mentioned xml:id="mentioned_d214e157" xml:lang="ru"><lang/>
+                        <w>сорокопуст</w></mentioned>, <mentioned xml:id="mentioned_d214e163" xml:lang="ru"><w>сорокоуст</w></mentioned>, <mentioned xml:id="mentioned_d214e166" xml:lang="ru"><w>Пятидесятница</w></mentioned>, <mentioned xml:id="mentioned_d214e169" xml:lang="fr"><lang/>
+                        <w>Pentecôte</w></mentioned> ← <mentioned xml:id="mentioned_d214e174" xml:lang="grc"><lang/>
                         <w>πεντήχοντα</w>
                         <gloss><q>50</q></gloss></mentioned>. Дигорское %icæpporse%i представляет
                     усеченную форму родительного падежа нумеративных слов (%icæpporse%i из
                     %icæpporsej%i). Родительный падеж объясняется здесь тем, что подразумевалось
-                    слово ‘праздник’: %icæpporsej bærægbon%i „праздник сорока“. В дальнейшем <ref
-                        type="xr" target="#entry_bærægbon"/> отпало, но форма родительного падежа
-                    осталась. Этимологически %icyppūrs%i | %icæppors%i возводится к <mentioned
-                        xml:lang="ira"><lang/>
+                    слово ‘праздник’: %icæpporsej bærægbon%i „праздник сорока“. В дальнейшем <ref type="xr" target="#entry_bærægbon"/> отпало, но форма родительного падежа
+                    осталась. Этимологически %icyppūrs%i | %icæppors%i возводится к <mentioned xml:id="mentioned_d214e184" xml:lang="ira"><lang/>
                         <w>*čatvār(in)sat</w>
-                        <gloss><q>сорок</q></gloss></mentioned> (ср. <ref type="xr"
-                        target="#entry_7rtyn"><w>rtin</w></ref> из <mentioned xml:lang="ira"><lang/>
-                        <w>*trinsat</w></mentioned>); ср <mentioned xml:lang="ae"><lang/>
-                        <w>čaθwarəsat-</w></mentioned>, <mentioned xml:lang="kho"><lang/>
+                        <gloss><q>сорок</q></gloss></mentioned> (ср. <ref type="xr" target="#entry_7rtyn"><w>rtin</w></ref> из <mentioned xml:id="mentioned_d214e196" xml:lang="ira"><lang/>
+                        <w>*trinsat</w></mentioned>); ср <mentioned xml:id="mentioned_d214e201" xml:lang="ae"><lang/>
+                        <w>čaθwarəsat-</w></mentioned>, <mentioned xml:id="mentioned_d214e206" xml:lang="kho"><lang/>
                         <w>tcahōlsə</w></mentioned>. Второй гласный %iu%i | %iо%i получился из
                     %ivā%i-, как в <ref type="xr" target="#entry_xūr"/> | %ixor%i ‘солнце’ из
                     %ixvār%i. Влияние %in%i, вопреки <bibl><author>А. Фрейману</author></bibl>
                             (<bibl><biblScope xml:lang="ru">юбилейный сборник в честь С. Ф.
                             Ольденбурга, 1934, стр. 562</biblScope></bibl>), здесь ни при чем, ибо в этом случае и в иронском было бы
-                    %iо%i а не %iū%i. Различие в огласовке между <ref type="xr"
-                        target="#entry_cyppar"/> | %icuppar%i ‘четыре’ и %icyppurs%i | %icæppors%i
+                    %iо%i а не %iū%i. Различие в огласовке между <ref type="xr" target="#entry_cyppar"/> | %icuppar%i ‘четыре’ и %icyppurs%i | %icæppors%i
                     ‘сорок’ возникло как результат следующего мыслимого звукового развития:
                     %ičatvār%i → *%ičætbar%i → %ičæppar%i → <ref type="xr" target="#entry_cyppar"/>
                     | %icuppar%i; %ičatvārinsat%i → *%icætorins%i → *%icætors%i → %icæppors%i
@@ -98,41 +94,32 @@
                     бывает, слово, законсервированное в культе (%icæppors%i), имеет более
                     архаическую форму, чем это же слово из бытового пастушеского счета (%icuppor%i):
                     в первом случае удержался на конце %is%i и %iа%i не ослабел в %iu%i. К
-                    осетинскому примыкает балкарское числительное пастушеского счета: <mentioned
-                        xml:lang="krc-x-balkar"><lang/>
+                    осетинскому примыкает балкарское числительное пастушеского счета: <mentioned xml:id="mentioned_d214e227" xml:lang="krc-x-balkar"><lang/>
                         <w>šəppor</w>
                         <gloss><q>сорок</q></gloss></mentioned>. Ср. другие десятки этого счета:
-                        <ref type="xr" target="#entry_7rtyn"><w>rtin</w></ref> ‘30’, <ref type="xr"
-                        target="#entry_fænʒaj"/> ‘50’, <ref type="xr" target="#entry_æxsaj"/> ‘60’,
-                        <ref type="xr" target="#entry_ævdaj"/> ‘70’, <ref type="xr"
-                        target="#entry_æstaj"/> ‘80’, <ref type="xr" target="#entry_næwæʒ"/> ‘90’.
-                    %bКарачаевское%b название января <mentioned xml:lang="krc-x-karachay"><lang/>
-                        <w>qərqauz aj</w></mentioned> (от <mentioned xml:lang="krc-x-karachay"><lang/>
+                        <ref type="xr" target="#entry_7rtyn"><w>rtin</w></ref> ‘30’, <ref type="xr" target="#entry_fænʒaj"/> ‘50’, <ref type="xr" target="#entry_æxsaj"/> ‘60’,
+                        <ref type="xr" target="#entry_ævdaj"/> ‘70’, <ref type="xr" target="#entry_æstaj"/> ‘80’, <ref type="xr" target="#entry_næwæʒ"/> ‘90’.
+                    %bКарачаевское%b название января <mentioned xml:id="mentioned_d214e249" xml:lang="krc-x-karachay"><lang/>
+                        <w>qərqauz aj</w></mentioned> (от <mentioned xml:id="mentioned_d214e255" xml:lang="krc-x-karachay"><lang/>
                         <w>qərq</w>
                         <gloss><q>сорок</q></gloss></mentioned>) представляет перевод осетинского
-                    названия декабря %icæpporsej mæjæ%i (<bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                            /><biblScope>286</biblScope></bibl>). Эта карачаевская калька
+                    названия декабря %icæpporsej mæjæ%i (<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>286</biblScope></bibl>). Эта карачаевская калька
                     осетинского термина лишний раз подтверждает, что в %icyppūrs%i | %icæpporse%i мы
-                    имеем забытое числительное ‘сорок’.<lb/><bibl><ref type="bibl"
-                            target="#ref_ОЯФ_I"/><biblScope>283</biblScope></bibl>.</etym>
-                <etym xml:lang="en">This word is identical to the Digor numeral <mentioned
-                        xml:lang="os-x-digor"><lang/>
+                    имеем забытое числительное ‘сорок’.<lb/><bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>283</biblScope></bibl>.</etym>
+                <etym xml:lang="en">This word is identical to the Digor numeral <mentioned xml:id="mentioned_d214e276" xml:lang="os-x-digor"><lang/>
                         <w>cuppor</w>
                         <gloss><q>forty</q></gloss></mentioned>, which is now displaced by an
                     innovation <ref type="xr" target="#entry_duwinsæʒi"/> literally “two twenty”,
                     but it remains in so-called shepherd count. The holiday is named after the
                     numeral “forty”, probably because it was preceded by a forty-day fast. Cf. by
-                    the formation <mentioned xml:lang="grc"><lang/>
-                        <w>σαραχοστή(← τεσσαραχοστή)</w></mentioned>, <mentioned xml:lang="fr"><lang/>
-                        <w>quarantain</w><note type="comment"
-                            xml:lang="en"> (from <mentioned xml:lang="fr"><lang/>
+                    the formation <mentioned xml:id="mentioned_d214e286" xml:lang="grc"><lang/>
+                        <w>σαραχοστή(← τεσσαραχοστή)</w></mentioned>, <mentioned xml:id="mentioned_d214e291" xml:lang="fr"><lang/>
+                        <w>quarantain</w><note type="comment" xml:lang="en"> (from <mentioned xml:id="mentioned_d214e297" xml:lang="fr"><lang/>
                                 <w>quarante</w>
                                 <gloss><q>40</q></gloss></mentioned>)</note>
-                        <gloss><q>forty day fast</q></gloss></mentioned>, <mentioned xml:lang="ru"><lang/>
-                        <w>sorokopust</w></mentioned>, <mentioned xml:lang="ru"
-                        ><w>sorokoust</w></mentioned>, <mentioned xml:lang="ru"
-                        ><w>Pjatidesjatnica</w></mentioned>, <mentioned xml:lang="fr"><lang/>
-                        <w>Pentecôte</w></mentioned> ← <mentioned xml:lang="grc"><lang/>
+                        <gloss><q>forty day fast</q></gloss></mentioned>, <mentioned xml:id="mentioned_d214e309" xml:lang="ru"><lang/>
+                        <w>sorokopust</w></mentioned>, <mentioned xml:id="mentioned_d214e315" xml:lang="ru"><w>sorokoust</w></mentioned>, <mentioned xml:id="mentioned_d214e318" xml:lang="ru"><w>Pjatidesjatnica</w></mentioned>, <mentioned xml:id="mentioned_d214e321" xml:lang="fr"><lang/>
+                        <w>Pentecôte</w></mentioned> ← <mentioned xml:id="mentioned_d214e326" xml:lang="grc"><lang/>
                         <w>πεντήχοντα</w>
                         <gloss><q>50</q></gloss></mentioned>. Digor <oRef>cæpporse</oRef> represents
                     an apocopic form of numelar words' genitive case (<oRef>cæpporse</oRef> from
@@ -140,17 +127,15 @@
                     have been the word ‘holiday’: %icæpporsej bærægbon%i “holiday of fourty”. Later
                         <ref type="xr" target="#entry_bærægbon"/> has been lost, but the genitive
                     case form has remained. Etymologically %icyppūrs%i | %icæppors%i traces back to
-                        <mentioned xml:lang="ira"><lang/>
+                        <mentioned xml:id="mentioned_d214e341" xml:lang="ira"><lang/>
                         <w>*čatvār(in)sat</w>
-                        <gloss><q>forty</q></gloss></mentioned> (cf. <ref type="xr"
-                        target="#entry_7rtyn"><w>rtin</w></ref> from <mentioned xml:lang="ira"><lang/>
-                        <w>*trinsat</w></mentioned>); cf. <mentioned xml:lang="ae"><lang/>
-                        <w>čaθwarəsat-</w></mentioned>, <mentioned xml:lang="kho"><lang/>
+                        <gloss><q>forty</q></gloss></mentioned> (cf. <ref type="xr" target="#entry_7rtyn"><w>rtin</w></ref> from <mentioned xml:id="mentioned_d214e352" xml:lang="ira"><lang/>
+                        <w>*trinsat</w></mentioned>); cf. <mentioned xml:id="mentioned_d214e357" xml:lang="ae"><lang/>
+                        <w>čaθwarəsat-</w></mentioned>, <mentioned xml:id="mentioned_d214e362" xml:lang="kho"><lang/>
                         <w>tcahōlsə</w></mentioned>. The second vowel %iu%i | %iо%i came from
                     %ivā%i-, like in <ref type="xr" target="#entry_xūr"/> | %ixor%i ‘sun’ from
                     %ixvār%i. The influence of %in%i, contrary to <bibl><author>A.
-                        Freiman</author></bibl> (<bibl><biblScope
-                            xml:lang="en">festschrift in honor of S.F. Oldenburg, 1934, p. 562
+                        Freiman</author></bibl> (<bibl><biblScope xml:lang="en">festschrift in honor of S.F. Oldenburg, 1934, p. 562
                         </biblScope></bibl>), is not the reason here, because in that case there
                     would be %iо%i instead of %iū%i in the Iron form as well. The different vocalism
                     in <ref type="xr" target="#entry_cyppar"/> | %icuppar%i ‘four’ and %icyppurs%i |
@@ -162,23 +147,17 @@
                     form than the same word which is in use in everyday shepherd count (%icuppor%i):
                     in the first case there remains the final %is%i and %iа%i did not weaken to
                     %iu%i. The following Balkar numeral of shepherd count relates to the Ossetic
-                    one: <mentioned xml:lang="krc-x-balkar"><lang/>
+                    one: <mentioned xml:id="mentioned_d214e384" xml:lang="krc-x-balkar"><lang/>
                         <w>šəppor</w>
-                        <gloss><q>fourty</q></gloss></mentioned>. Cf other tens of this count: <ref
-                        type="xr" target="#entry_7rtyn"><w>rtin</w></ref> ‘30’, <ref type="xr"
-                        target="#entry_fænʒaj"/> ‘50’, <ref type="xr" target="#entry_æxsaj"/> ‘60’,
-                        <ref type="xr" target="#entry_ævdaj"/> ‘70’, <ref type="xr"
-                        target="#entry_æstaj"/> ‘80’, <ref type="xr" target="#entry_næwæʒ"/> ‘90’.
-                    %bKarachay%b name for January <mentioned xml:lang="krc-x-karachay"><lang/>
-                        <w>qərqauz aj</w></mentioned> (from <mentioned xml:lang="krc-x-karachay"><lang/>
+                        <gloss><q>fourty</q></gloss></mentioned>. Cf other tens of this count: <ref type="xr" target="#entry_7rtyn"><w>rtin</w></ref> ‘30’, <ref type="xr" target="#entry_fænʒaj"/> ‘50’, <ref type="xr" target="#entry_æxsaj"/> ‘60’,
+                        <ref type="xr" target="#entry_ævdaj"/> ‘70’, <ref type="xr" target="#entry_æstaj"/> ‘80’, <ref type="xr" target="#entry_næwæʒ"/> ‘90’.
+                    %bKarachay%b name for January <mentioned xml:id="mentioned_d214e406" xml:lang="krc-x-karachay"><lang/>
+                        <w>qərqauz aj</w></mentioned> (from <mentioned xml:id="mentioned_d214e411" xml:lang="krc-x-karachay"><lang/>
                         <w>qərq</w>
                         <gloss><q>сорок</q></gloss></mentioned>) is the tranlation of December from
-                    Ossetic %icæpporsej mæjæ%i (<bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                            /><biblScope>286</biblScope></bibl>). This Karachay calque of the
+                    Ossetic %icæpporsej mæjæ%i (<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>286</biblScope></bibl>). This Karachay calque of the
                     Ossetic term confirms once again that in <oRef>cyppūrs</oRef> |
-                        <oRef>cæpporse</oRef> we have a forgotten numeral ‘forty’.<lb/><bibl><ref
-                            type="bibl" target="#ref_ОЯФ_I"
-                    /><biblScope>283</biblScope></bibl>.</etym>
+                        <oRef>cæpporse</oRef> we have a forgotten numeral ‘forty’.<lb/><bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>283</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

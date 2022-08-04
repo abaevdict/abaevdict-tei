@@ -1,47 +1,52 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">dælfad</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_dælfad" xml:lang="os">
                 <form type="lemma"><orth>dælfad</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d1652e69"><sense xml:id="sense_d1652e70"><abv:tr xml:lang="ru">
                             <q>подошва</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>sole</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d1652e79"><abv:tr xml:lang="ru">
                             <q>низ ноги</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>lower part of the leg</q>
                         </abv:tr></sense></sense>
-                <re>
-                    <re>
+                <re xml:id="re_d1652e89">
+                    <re xml:id="re_d1652e91">
                         <form type="lemma"><orth>dælfædtæm</orth></form>
-                        <sense><abv:tr xml:lang="ru">
+                        <sense xml:id="sense_d1652e96"><abv:tr xml:lang="ru">
                                 <q>в ногах</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>at the foot</q>
                             </abv:tr></sense>
                     </re>
-                    <re>
+                    <re xml:id="re_d1652e107">
                         <form type="lemma"><orth>dælfadbos</orth></form>
-                        <sense><abv:tr xml:lang="ru">
+                        <sense xml:id="sense_d1652e112"><abv:tr xml:lang="ru">
                                 <q>штрипка ноговиц, брюк</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>footstrap</q>
@@ -49,7 +54,7 @@
                     </re>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d1652e126">
                         <quote>skodta sæ ræbynæj, dælfædtæm ærbadt</quote>
                         <abv:tr xml:lang="ru">
                             <q>она уложила их (детей) у стены, (сама) села в ногах</q>
@@ -60,7 +65,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>46</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1652e145">
                         <quote>læppū fyccag æxsæv k˳y sx˳yssyd, wæd nyssaǧta jæ dælfædtæm
                             qama</quote>
                         <abv:tr xml:lang="ru">
@@ -71,10 +76,9 @@
                             <q>the young man stuck a dagger at his feet when he went to bed on the
                                 first night</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Munk."
-                            /><biblScope>114</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Munk."/><biblScope>114</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1652e164">
                         <quote>kæd rynḱynæn jæ nyværzænmæ læwwon, wæd…., kæd jæ dælfædtæm læwwon,
                             wæd…</quote>
                         <abv:tr xml:lang="ru">
@@ -88,12 +92,8 @@
                         <bibl><ref type="bibl" target="#src_Сека"/><biblScope>111</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из <ref type="xr" target="#entry_dæl-"/> ‘под’ и <ref type="xr"
-                        target="#entry_fad"/> ‘нога’. Ср. <ref type="xr" target="#entry_wælfad"
-                    />.</etym>
-                <etym xml:lang="en">From <ref type="xr" target="#entry_dæl-"/> ‘under’ and <ref
-                        type="xr" target="#entry_fad"/> ‘leg’. Cf. <ref type="xr"
-                        target="#entry_wælfad"/>.</etym>
+                <etym xml:lang="ru">Из <ref type="xr" target="#entry_dæl-"/> ‘под’ и <ref type="xr" target="#entry_fad"/> ‘нога’. Ср. <ref type="xr" target="#entry_wælfad"/>.</etym>
+                <etym xml:lang="en">From <ref type="xr" target="#entry_dæl-"/> ‘under’ and <ref type="xr" target="#entry_fad"/> ‘leg’. Cf. <ref type="xr" target="#entry_wælfad"/>.</etym>
             </entry>
         </body>
     </text>

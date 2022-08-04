@@ -1,54 +1,59 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ad</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ad" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>ad</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>adæ</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d4385e72"><abv:tr xml:lang="ru">
                         <q>вкус</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>taste</q>
                     </abv:tr></sense>
-                <re>
+                <re xml:id="re_d4385e82">
                     <form type="lemma"><orth>adǵyn</orth></form>
-                    <sense><sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d4385e87"><sense xml:id="sense_d4385e88"><abv:tr xml:lang="ru">
                                 <q>вкусный</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>tasty</q>
-                            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                            </abv:tr></sense><sense xml:id="sense_d4385e97"><abv:tr xml:lang="ru">
                                 <q>сладкий</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>sweet</q>
                             </abv:tr></sense></sense>
                 </re>
-                <re>
+                <re xml:id="re_d4385e108">
                     <form type="lemma"><orth>adginag</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d4385e113"><abv:tr xml:lang="ru">
                             <q>сладость</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>sweet</q>
                         </abv:tr></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4385e127">
                         <quote>xærzad xærīnag</quote>
                         <abv:tr xml:lang="ru">
                             <q rendition="rend_singlequotes">вкусная пища</q>
@@ -57,7 +62,7 @@
                             <q rendition="rend_singlequotes">tasty food</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4385e144">
                         <quote>cæxx jæ ad k˳y fesafa, wæd æj cæmæj ysræstmæ ḱyndæ wa?</quote>
                         <abv:tr xml:lang="ru">
                             <q>если соль потеряет силу (вкус), чем исправить ее?</q>
@@ -69,7 +74,7 @@
                         <bibl><ref type="bibl" target="#src_Лука"/><biblScope>%i14%i
                             34</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4385e163">
                         <quote>Pupæ Asiaty k˳y næ wyny, … wæd yn card ad næ kæny</quote>
                         <abv:tr xml:lang="ru">
                             <q>когда Пупа не видит Асиат, то жизнь ему не в сладость</q>
@@ -79,7 +84,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Брит."/><biblScope>20</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4385e182">
                         <quote>aci suǧzærīnæ ærdo ke særiǧunæj æj, e mæ osæn ku næ wa, wæd mænæn mæ
                             card adæ næbal iskænʒænæj</quote>
                         <abv:tr xml:lang="ru">
@@ -90,12 +95,11 @@
                             <q>if the one from whose hair this single golden hair is does not become
                                 my wife, then life will not be sweet to me</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>10%l8%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>10%l8%l</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4385e204">
                         <quote>adǵyn xærīnagæj je stong næ bæsasta</quote>
                         <abv:tr xml:lang="ru">
                             <q>вкусной пищей он (никогда) не утолил свой голод</q>
@@ -105,7 +109,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>67</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4385e223">
                         <quote>adǵyn caj cymʒynæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>ты будешь пить сладкий чай</q>
@@ -113,10 +117,9 @@
                         <abv:tr xml:lang="en">
                             <q>you are going to drink sweet tea</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"
-                            /><biblScope>121</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>121</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4385e242" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>mæ adgin iwazægi min ewʒæstug fækkodta</quote>
                         <abv:tr xml:lang="ru">
@@ -125,10 +128,9 @@
                         <abv:tr xml:lang="en">
                             <q>he made my dear guest one-eyed</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>32%l14%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>32%l14%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4385e264">
                         <quote>mady qæbysaw dyn adǵyn wæd acy zæxx</quote>
                         <abv:tr xml:lang="ru">
                             <q>да будет эта земля тебе приятна, как материнское лоно</q>
@@ -138,7 +140,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>78</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4385e283">
                         <quote>næ rajg˳yræn, næ bæstæ, cardæn adǵyn dy k˳y dæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>наша родная, наша страна, ведь ты (одна) сладка для жизни</q>
@@ -150,56 +152,45 @@
                         <bibl><ref type="bibl" target="#src_ОЭ"/><biblScope>I 104</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Происхождение слова не ясно: к корню *%ied%i- ‘есть’ (<mentioned
-                        xml:lang="sa"><lang/>
+                <etym xml:lang="ru">Происхождение слова не ясно: к корню *%ied%i- ‘есть’ (<mentioned xml:id="mentioned_d4385e305" xml:lang="sa"><lang/>
                         <w>ad-</w>
-                        <gloss><q>есть</q></gloss></mentioned>, <mentioned xml:lang="sa"
-                            ><w>ādya-</w>
-                        <gloss><q>съедобный</q></gloss></mentioned>)? к <mentioned xml:lang="la"><lang/>
-                        <w>odor</w></mentioned>, <mentioned xml:lang="xcl"><lang/>
+                        <gloss><q>есть</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4385e313" xml:lang="sa"><w>ādya-</w>
+                        <gloss><q>съедобный</q></gloss></mentioned>)? к <mentioned xml:id="mentioned_d4385e319" xml:lang="la"><lang/>
+                        <w>odor</w></mentioned>, <mentioned xml:id="mentioned_d4385e324" xml:lang="xcl"><lang/>
                         <w>hot</w>
-                        <gloss><q>запах</q></gloss></mentioned>? <mentioned xml:lang="hu"><lang/>
+                        <gloss><q>запах</q></gloss></mentioned>? <mentioned xml:id="mentioned_d4385e332" xml:lang="hu"><lang/>
                         <w>éz</w>
                         <gloss><q>вкус</q></gloss></mentioned> считается усвоенным из осетинского
-                    (аланского) (<bibl><author>Munkàcsi</author><ref type="bibl" target="#ref_KSz."
-                            /><biblScope>V 315</biblScope></bibl>); для чередования ос. %id%i —
-                        <mentioned xml:lang="hu"><lang/>
+                    (аланского) (<bibl><author>Munkàcsi</author><ref type="bibl" target="#ref_KSz."/><biblScope>V 315</biblScope></bibl>); для чередования ос. %id%i —
+                        <mentioned xml:id="mentioned_d4385e346" xml:lang="hu"><lang/>
                         <w>z</w></mentioned> ср. ос. <ref type="xr" target="#entry_būd"/> ‘ладан’ —
-                        <mentioned xml:lang="hu"><lang/>
-                        <w>büd</w></mentioned>, <mentioned xml:lang="os"><lang/>
+                        <mentioned xml:id="mentioned_d4385e353" xml:lang="hu"><lang/>
+                        <w>büd</w></mentioned>, <mentioned xml:id="mentioned_d4385e358" xml:lang="os"><lang/>
                         <w>fid-</w>
-                        <gloss><q>платить</q></gloss></mentioned> — <mentioned xml:lang="hu"><lang/>
+                        <gloss><q>платить</q></gloss></mentioned> — <mentioned xml:id="mentioned_d4385e366" xml:lang="hu"><lang/>
                         <w>fizet</w></mentioned>, ос. <ref type="xr" target="#entry_qæd_1"/> ‘лес’ —
-                        <mentioned xml:lang="hu"><lang/>
-                        <w>gaz</w></mentioned>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"
-                            /><biblScope>III 167</biblScope></bibl>; <bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._Gr."/><biblScope>38</biblScope></bibl>. —
-                            <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."
-                            /><biblScope>18</biblScope></bibl>.</etym>
+                        <mentioned xml:id="mentioned_d4385e374" xml:lang="hu"><lang/>
+                        <w>gaz</w></mentioned>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>III 167</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>38</biblScope></bibl>. —
+                            <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>18</biblScope></bibl>.</etym>
                 <etym xml:lang="en">The etymology is not clear; could it trace back to the root
-                    *%ied%i- ‘eat’ (<mentioned xml:lang="sa"><lang/>
+                    *%ied%i- ‘eat’ (<mentioned xml:id="mentioned_d4385e394" xml:lang="sa"><lang/>
                         <w>ad-</w>
-                        <gloss><q>eat</q></gloss></mentioned>, <mentioned xml:lang="sa"><w>ādya-</w>
-                        <gloss><q>edible</q></gloss></mentioned>)? to <mentioned xml:lang="la"><lang/>
-                        <w>odor</w></mentioned>, <mentioned xml:lang="xcl"><lang/>
+                        <gloss><q>eat</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4385e402" xml:lang="sa"><w>ādya-</w>
+                        <gloss><q>edible</q></gloss></mentioned>)? to <mentioned xml:id="mentioned_d4385e408" xml:lang="la"><lang/>
+                        <w>odor</w></mentioned>, <mentioned xml:id="mentioned_d4385e413" xml:lang="xcl"><lang/>
                         <w>hot</w>
-                        <gloss><q>smell</q></gloss></mentioned>? <mentioned xml:lang="hu"><lang/>
+                        <gloss><q>smell</q></gloss></mentioned>? <mentioned xml:id="mentioned_d4385e421" xml:lang="hu"><lang/>
                         <w>éz</w>
                         <gloss><q>taste</q></gloss></mentioned> is considered to be borrowed from
-                    Ossetic (Alan) (<bibl><author>Munkàcsi</author><ref type="bibl"
-                            target="#ref_KSz."/><biblScope>V 315</biblScope></bibl>); for the
-                    alternation Ossetic %id%i — Hungarian %iz%i cf. Ossetic <ref type="xr"
-                        target="#entry_būd"/> ‘frankincense’ — <mentioned xml:lang="hu"><lang/>
-                        <w>büd</w></mentioned>, <mentioned xml:lang="os"><lang/>
+                    Ossetic (Alan) (<bibl><author>Munkàcsi</author><ref type="bibl" target="#ref_KSz."/><biblScope>V 315</biblScope></bibl>); for the
+                    alternation Ossetic %id%i — Hungarian %iz%i cf. Ossetic <ref type="xr" target="#entry_būd"/> ‘frankincense’ — <mentioned xml:id="mentioned_d4385e437" xml:lang="hu"><lang/>
+                        <w>büd</w></mentioned>, <mentioned xml:id="mentioned_d4385e442" xml:lang="os"><lang/>
                         <w>fid-</w>
-                        <gloss><q>pay</q></gloss></mentioned> — <mentioned xml:lang="hu"><lang/>
+                        <gloss><q>pay</q></gloss></mentioned> — <mentioned xml:id="mentioned_d4385e450" xml:lang="hu"><lang/>
                         <w>fizet</w></mentioned>, Ossetic <ref type="xr" target="#entry_qæd_1"/>
-                    ‘forest’ — <mentioned xml:lang="hu"><lang/>
-                        <w>gaz</w></mentioned>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"
-                            /><biblScope>III 167</biblScope></bibl>; <bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._Gr."/><biblScope>38</biblScope></bibl>. —
-                            <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."
-                            /><biblScope>18</biblScope></bibl>.</etym>
+                    ‘forest’ — <mentioned xml:id="mentioned_d4385e458" xml:lang="hu"><lang/>
+                        <w>gaz</w></mentioned>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>III 167</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>38</biblScope></bibl>. —
+                            <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>18</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

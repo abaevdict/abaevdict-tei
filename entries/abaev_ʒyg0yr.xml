@@ -1,46 +1,51 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ʒyg0yr</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ʒyg0yr" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>ʒyg˳yr</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>ʒugur</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d666e72"><sense xml:id="sense_d666e73"><abv:tr xml:lang="ru">
                             <q>толпа</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>crowd</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d666e82"><abv:tr xml:lang="ru">
                             <q>куча</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>pile</q>
                         </abv:tr></sense></sense>
-                <re>
+                <re xml:id="re_d666e92">
                     <form type="lemma"><orth>ʒyg˳yræj</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d666e97"><abv:tr xml:lang="ru">
                             <q>сбившись в кучу</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>flocking up</q>
                         </abv:tr></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d666e110">
                         <quote>syḱītæ ʒyg˳yræj tīǧmæ sgæpp lastoj</quote>
                         <abv:tr xml:lang="ru">
                             <q>серны, сбившись в кучу, вскочили на выступ (горы)</q>
@@ -52,7 +57,7 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <abv:exampleGrp>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d666e133" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>adæn zildkomi avarmæ baʒugur æncæ</quote>
                         <abv:tr xml:lang="ru">
@@ -61,10 +66,9 @@
                         <abv:tr xml:lang="en">
                             <q>people crowded at the premises of the district committee</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Bes._Ka_ke"
-                            /><biblScope>66</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Bes._Ka_ke"/><biblScope>66</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d666e155" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>stʼalutæ razindtæncæ … arvi xsæntæj ʒugurtæj</quote>
                         <abv:tr xml:lang="ru">
@@ -75,7 +79,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Qazb."/><biblScope>10</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d666e177" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>mærǧtæ ʒugurtæ-ʒugurtæj tæxuncæ æma ewmæ xwærujnag agoruncæ</quote>
                         <abv:tr xml:lang="ru">
@@ -86,7 +90,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_FS"/><biblScope>II 30</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d666e199">
                         <quote>k˳yrojy ʒyg˳yrtæj ajʒag kodtoj sæ fæḱḱītæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>крупчатой мельничной (мукой) наполняли свои полы</q>
@@ -98,26 +102,26 @@
                             45</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Ср. <mentioned xml:lang="kv"><lang/>
+                <etym xml:lang="ru">Ср. <mentioned xml:id="mentioned_d666e221" xml:lang="kv"><lang/>
                         <w>čukör</w>
-                        <gloss><q>толпа</q></gloss></mentioned>, <mentioned xml:lang="kv"><w/>
+                        <gloss><q>толпа</q></gloss></mentioned>, <mentioned xml:id="mentioned_d666e229" xml:lang="kv"><w/>
                         <gloss><q>куча</q></gloss></mentioned>. Может быть, есть отдаленное родство
-                    у этих слов с ос. <mentioned xml:lang="os"><lang/>
+                    у этих слов с ос. <mentioned xml:id="mentioned_d666e235" xml:lang="os"><lang/>
                         <w>ʒog</w></mentioned> [см. <ref type="xr" target="#entry_ʒūg"/>],
-                        <mentioned xml:lang="ka"><lang/>
+                        <mentioned xml:id="mentioned_d666e242" xml:lang="ka"><lang/>
                         <w>ǯogi</w>
-                        <gloss><q>стадо</q></gloss></mentioned>, <mentioned xml:lang="ka"><lang/>
+                        <gloss><q>стадо</q></gloss></mentioned>, <mentioned xml:id="mentioned_d666e251" xml:lang="ka"><lang/>
                         <w>ǯgro</w>
                         <gloss><q>стадо дичи</q></gloss></mentioned> и пр.</etym>
-                <etym xml:lang="en">Cf. <mentioned xml:lang="kv"><lang/>
+                <etym xml:lang="en">Cf. <mentioned xml:id="mentioned_d666e262" xml:lang="kv"><lang/>
                         <w>čukör</w>
-                        <gloss><q>crowd</q></gloss></mentioned>, <mentioned xml:lang="kv"><w/>
+                        <gloss><q>crowd</q></gloss></mentioned>, <mentioned xml:id="mentioned_d666e270" xml:lang="kv"><w/>
                         <gloss><q>pile</q></gloss></mentioned>. Maybe there is a distant relation
-                    with <mentioned xml:lang="os"><lang/>
+                    with <mentioned xml:id="mentioned_d666e276" xml:lang="os"><lang/>
                         <w>ʒog</w></mentioned> [see <ref type="xr" target="#entry_ʒūg"/>],
-                        <mentioned xml:lang="ka"><lang/>
+                        <mentioned xml:id="mentioned_d666e283" xml:lang="ka"><lang/>
                         <w>ǯogi</w>
-                        <gloss><q>herd</q></gloss></mentioned>, <mentioned xml:lang="ka"><lang/>
+                        <gloss><q>herd</q></gloss></mentioned>, <mentioned xml:id="mentioned_d666e292" xml:lang="ka"><lang/>
                         <w>ǯgro</w>
                         <gloss><q>flock of wild fowl</q></gloss></mentioned> etc.</etym>
             </entry>

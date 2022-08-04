@@ -1,36 +1,41 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ʒambas</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ʒambas" xml:lang="os">
                 <form type="lemma"><orth>ʒambas</orth></form>
-                <re>
+                <re xml:id="re_d3028e69">
                     <form type="lemma"><orth>ʒambas bæx</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d3028e74"><abv:tr xml:lang="ru">
                             <q>лошадь с вывихом бедра</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>horse with hip dislocation</q>
                         </abv:tr></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d3028e87">
                         <quote>mæ bæx fæʒambas</quote>
                         <abv:tr xml:lang="ru">
                             <q>моя лошадь вывихнула бедро</q>
@@ -40,18 +45,16 @@
                         </abv:tr>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из <mentioned xml:lang="trk"><lang/>
-                        <w>ǯambaš</w></mentioned>, <mentioned xml:lang="trk"><w>janbaš</w>
-                        <gloss><q>бедро</q></gloss></mentioned>. Ср. <mentioned
-                        xml:lang="krc-x-balkar"><lang/>
-                        <w>ǯambaš</w></mentioned>, <mentioned xml:lang="x-vaynakh"><lang/>
+                <etym xml:lang="ru">Из <mentioned xml:id="mentioned_d3028e105" xml:lang="trk"><lang/>
+                        <w>ǯambaš</w></mentioned>, <mentioned xml:id="mentioned_d3028e110" xml:lang="trk"><w>janbaš</w>
+                        <gloss><q>бедро</q></gloss></mentioned>. Ср. <mentioned xml:id="mentioned_d3028e116" xml:lang="krc-x-balkar"><lang/>
+                        <w>ǯambaš</w></mentioned>, <mentioned xml:id="mentioned_d3028e121" xml:lang="x-vaynakh"><lang/>
                         <w>jambaš</w>
                         <gloss><q>хромая (с вывихом бедра) лошадь</q></gloss></mentioned>.</etym>
-                <etym xml:lang="en">From <mentioned xml:lang="trk"><lang/>
-                        <w>ǯambaš</w></mentioned>, <mentioned xml:lang="trk"><w>janbaš</w>
-                        <gloss><q>hip</q></gloss></mentioned>. Cf. <mentioned
-                        xml:lang="krc-x-balkar"><lang/>
-                        <w>ǯambaš</w></mentioned>, <mentioned xml:lang="x-vaynakh"><lang/>
+                <etym xml:lang="en">From <mentioned xml:id="mentioned_d3028e132" xml:lang="trk"><lang/>
+                        <w>ǯambaš</w></mentioned>, <mentioned xml:id="mentioned_d3028e137" xml:lang="trk"><w>janbaš</w>
+                        <gloss><q>hip</q></gloss></mentioned>. Cf. <mentioned xml:id="mentioned_d3028e143" xml:lang="krc-x-balkar"><lang/>
+                        <w>ǯambaš</w></mentioned>, <mentioned xml:id="mentioned_d3028e148" xml:lang="x-vaynakh"><lang/>
                         <w>jambaš</w>
                         <gloss><q>limping (with hip dislocation)
                     horse</q></gloss></mentioned>.</etym>

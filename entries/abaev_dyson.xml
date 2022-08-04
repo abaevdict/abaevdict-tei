@@ -1,38 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">dyson</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_dyson" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>dyson</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>ædosæ</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d4698e72"><sense xml:id="sense_d4698e73"><abv:tr xml:lang="ru">
                             <q>вчера ночью</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>last night</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d4698e82"><abv:tr xml:lang="ru">
                             <q>вчера вечером</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>yesterday evening</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4698e94">
                         <quote>dyson k˳y bafynæj dæn, ūmæj bonmæ fyny myggagæj nīcy fedton</quote>
                         <abv:tr xml:lang="ru">
                             <q>вчера ночью когда заснул, с тех пор до утра не видел ничего похожего
@@ -44,7 +49,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_ОЭп."/><biblScope>47</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4698e113">
                         <quote>dyson bonmæ… mæ cæstytæ ærcʼynd kænyn næ k˳ymdtoj</quote>
                         <abv:tr xml:lang="ru">
                             <q>вчера с ночи до утра я не мог сомкнуть глаз</q>
@@ -54,7 +59,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_ОЭ"/><biblScope>I 104</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4698e132">
                         <quote>dyson bonmæ mæ æxsænkʼytæ baxordtoj</quote>
                         <abv:tr xml:lang="ru">
                             <q>вчерашнюю ночь до утра меня покусали блохи</q>
@@ -64,7 +69,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Munk."/><biblScope>24</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4698e151">
                         <quote>dysonæj tarfdær nīk˳y bafynæj dæn</quote>
                         <abv:tr xml:lang="ru">
                             <q>никогда я не спал крепче, чем вчерашнюю ночь</q>
@@ -72,10 +77,9 @@
                         <abv:tr xml:lang="en">
                             <q>I never slept tighter than last night</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Брит."
-                            /><biblScope>109</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Брит."/><biblScope>109</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4698e170" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>ædosæ in widton mæ funi xodgæ-ǧazgæ æ soræt</quote>
                         <abv:tr xml:lang="ru">
@@ -84,85 +88,68 @@
                         <abv:tr xml:lang="en">
                             <q>last night I saw in a dream her image, laughing, playing</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Gurdž._Æduli"
-                            /><biblScope>77</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Gurdž._Æduli"/><biblScope>77</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Общеиранское слово: <mentioned xml:lang="fa"><lang/>
-                        <w>dōš</w></mentioned>, <mentioned xml:lang="pal"><lang/>
-                        <w>dōš</w></mentioned>, <mentioned xml:lang="ku"><lang/>
-                        <w>duč</w></mentioned>, <mentioned xml:lang="x-balochi"><lang/>
-                        <w>dōšī</w></mentioned>, <mentioned xml:lang="x-balochi"><w>došī</w><note
-                            type="comment" xml:lang="ru"> (<bibl><ref type="bibl"
-                                    target="#ref_Зарубин._Бел."/><biblScope>29,
+                <etym xml:lang="ru">Общеиранское слово: <mentioned xml:id="mentioned_d4698e195" xml:lang="fa"><lang/>
+                        <w>dōš</w></mentioned>, <mentioned xml:id="mentioned_d4698e200" xml:lang="pal"><lang/>
+                        <w>dōš</w></mentioned>, <mentioned xml:id="mentioned_d4698e205" xml:lang="ku"><lang/>
+                        <w>duč</w></mentioned>, <mentioned xml:id="mentioned_d4698e210" xml:lang="x-balochi"><lang/>
+                        <w>dōšī</w></mentioned>, <mentioned xml:id="mentioned_d4698e215" xml:lang="x-balochi"><w>došī</w><note type="comment" xml:lang="ru"> (<bibl><ref type="bibl" target="#ref_Зарубин._Бел."/><biblScope>29,
                                 167</biblScope></bibl>)</note>
-                        <gloss><q>вчера ночью</q></gloss></mentioned>, <mentioned xml:lang="wbl"><lang/>
-                        <w>δöš</w></mentioned>, <mentioned xml:lang="sgy"><lang/>
+                        <gloss><q>вчера ночью</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4698e228" xml:lang="wbl"><lang/>
+                        <w>δöš</w></mentioned>, <mentioned xml:id="mentioned_d4698e233" xml:lang="sgy"><lang/>
                         <w>dəš</w>
-                        <gloss><q>поздно</q></gloss></mentioned>, <mentioned xml:lang="ae"><lang/>
+                        <gloss><q>поздно</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4698e241" xml:lang="ae"><lang/>
                         <w>daos̀a-tara-</w>
-                        <gloss><q>вечерний</q></gloss></mentioned>, <mentioned xml:lang="ae"><w/>
+                        <gloss><q>вечерний</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4698e249" xml:lang="ae"><w/>
                         <gloss><q>западный</q></gloss><note type="comment" xml:lang="ru"> (от
-                            *daos̀a- ‘вечер’)</note></mentioned>, <mentioned xml:lang="sa"><lang/>
+                            *daos̀a- ‘вечер’)</note></mentioned>, <mentioned xml:id="mentioned_d4698e257" xml:lang="sa"><lang/>
                         <w>doṣā-</w>
-                        <gloss><q>вечер</q></gloss></mentioned>, <mentioned xml:lang="sa"
-                            ><w>doṣā</w></mentioned>, <mentioned xml:lang="sa"><w>doṣām</w>
-                        <gloss><q>вечером</q></gloss></mentioned>, <mentioned xml:lang="x-nuristan"><lang/>
+                        <gloss><q>вечер</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4698e265" xml:lang="sa"><w>doṣā</w></mentioned>, <mentioned xml:id="mentioned_d4698e269" xml:lang="sa"><w>doṣām</w>
+                        <gloss><q>вечером</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4698e275" xml:lang="x-nuristan"><lang/>
                         <w>dus</w>
                         <gloss><q>вчера</q></gloss></mentioned>. Обращает на себя внимание различное
                     оформление в диалектах: в иронском наращение суффикса от, в дигорском появление
-                    заставочного и концовочного гласного %iæ%i; ср. в этом отношении <ref type="xr"
-                        target="#entry_znon"/> | %iæzinæ%i ‘вчера’, <ref type="xr"
-                        target="#entry_faron"/> | %ifaræ%i ‘в прошлом году’. Необычно и отношение
-                    гласных: в дигорском сильный %iо%i, закономерно отвечающий <mentioned
-                        xml:lang="x-oldirn"><lang/>
-                        <w>*dauša-</w></mentioned>, <mentioned xml:lang="fa"><lang/>
+                    заставочного и концовочного гласного %iæ%i; ср. в этом отношении <ref type="xr" target="#entry_znon"/> | %iæzinæ%i ‘вчера’, <ref type="xr" target="#entry_faron"/> | %ifaræ%i ‘в прошлом году’. Необычно и отношение
+                    гласных: в дигорском сильный %iо%i, закономерно отвечающий <mentioned xml:id="mentioned_d4698e287" xml:lang="x-oldirn"><lang/>
+                        <w>*dauša-</w></mentioned>, <mentioned xml:id="mentioned_d4698e292" xml:lang="fa"><lang/>
                         <w>dōš</w></mentioned>; в иронском ослабление гласного в %iу%i. Однако
                     ударение %idýson%i служит бесспорным доказательством, что исторически здесь
                     сильный (долгий) гласный. Ср. слово <ref type="xr" target="#entry_dys"/> |
-                    %idus%i ‘рукав’, где в обоих диалектах ослабление гласного.%n<bibl><ref
-                            type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>III
-                        168</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>19, 31</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_Hübschmann._Oss."/><biblScope>37,
+                    %idus%i ‘рукав’, где в обоих диалектах ослабление гласного.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>III
+                        168</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>19, 31</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>37,
                     116</biblScope></bibl>.</etym>
-                <etym xml:lang="en">A common Iranian word: <mentioned xml:lang="fa"><lang/>
-                        <w>dōš</w></mentioned>, <mentioned xml:lang="pal"><lang/>
-                        <w>dōš</w></mentioned>, <mentioned xml:lang="ku"><lang/>
-                        <w>duč</w></mentioned>, <mentioned xml:lang="x-balochi"><lang/>
-                        <w>dōšī</w></mentioned>, <mentioned xml:lang="x-balochi"><w>došī</w><note type="comment" xml:lang="en">
-                                    (<bibl><ref type="bibl" target="#ref_Зарубин._Бел."
-                                    /><biblScope>29, 167</biblScope></bibl>)</note>
-                        <gloss><q>last night</q></gloss></mentioned>, <mentioned xml:lang="wbl"><lang/>
-                        <w>δöš</w></mentioned>, <mentioned xml:lang="sgy"><lang/>
+                <etym xml:lang="en">A common Iranian word: <mentioned xml:id="mentioned_d4698e316" xml:lang="fa"><lang/>
+                        <w>dōš</w></mentioned>, <mentioned xml:id="mentioned_d4698e321" xml:lang="pal"><lang/>
+                        <w>dōš</w></mentioned>, <mentioned xml:id="mentioned_d4698e326" xml:lang="ku"><lang/>
+                        <w>duč</w></mentioned>, <mentioned xml:id="mentioned_d4698e331" xml:lang="x-balochi"><lang/>
+                        <w>dōšī</w></mentioned>, <mentioned xml:id="mentioned_d4698e336" xml:lang="x-balochi"><w>došī</w><note type="comment" xml:lang="en">
+                                    (<bibl><ref type="bibl" target="#ref_Зарубин._Бел."/><biblScope>29, 167</biblScope></bibl>)</note>
+                        <gloss><q>last night</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4698e349" xml:lang="wbl"><lang/>
+                        <w>δöš</w></mentioned>, <mentioned xml:id="mentioned_d4698e354" xml:lang="sgy"><lang/>
                         <w>dəš</w>
-                        <gloss><q>late</q></gloss></mentioned>, <mentioned xml:lang="ae"><lang/>
+                        <gloss><q>late</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4698e362" xml:lang="ae"><lang/>
                         <w>daos̀a-tara-</w>
-                        <gloss><q>evening (adj.)</q></gloss></mentioned>, <mentioned xml:lang="ae"><w/>
+                        <gloss><q>evening (adj.)</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4698e370" xml:lang="ae"><w/>
                         <gloss><q>West (adj.)</q></gloss><note type="comment" xml:lang="en"> (from
-                            *daos̀a- ‘evening’)</note></mentioned>, <mentioned xml:lang="sa"><lang/>
+                            *daos̀a- ‘evening’)</note></mentioned>, <mentioned xml:id="mentioned_d4698e378" xml:lang="sa"><lang/>
                         <w>doṣā-</w>
-                        <gloss><q>evening</q></gloss></mentioned>, <mentioned xml:lang="sa"
-                            ><w>doṣā</w></mentioned>, <mentioned xml:lang="sa"><w>doṣām</w>
-                        <gloss><q>in the evening</q></gloss></mentioned>, <mentioned
-                        xml:lang="x-nuristan"><lang/>
+                        <gloss><q>evening</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4698e386" xml:lang="sa"><w>doṣā</w></mentioned>, <mentioned xml:id="mentioned_d4698e390" xml:lang="sa"><w>doṣām</w>
+                        <gloss><q>in the evening</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4698e396" xml:lang="x-nuristan"><lang/>
                         <w>dus</w>
                         <gloss><q>yesterday</q></gloss></mentioned>. Attention is drawn to the
                     different dialect forms: addition of the suffix %ion%i- in Iron, initial and
-                    final vowel %iæ%i in Digor; cf. in this respect <ref type="xr"
-                        target="#entry_znon"/> | %iæzinæ%i ‘yesterday’, <ref type="xr"
-                        target="#entry_faron"/> | %ifaræ%i ‘last year’. The relation of vowels is
+                    final vowel %iæ%i in Digor; cf. in this respect <ref type="xr" target="#entry_znon"/> | %iæzinæ%i ‘yesterday’, <ref type="xr" target="#entry_faron"/> | %ifaræ%i ‘last year’. The relation of vowels is
                     also unusual: there is a strong %io%i in Digor that regularly corresponds
-                        <mentioned xml:lang="x-oldirn"><lang/>
-                        <w>*dauša-</w></mentioned>, <mentioned xml:lang="fa"><lang/>
+                        <mentioned xml:id="mentioned_d4698e408" xml:lang="x-oldirn"><lang/>
+                        <w>*dauša-</w></mentioned>, <mentioned xml:id="mentioned_d4698e413" xml:lang="fa"><lang/>
                         <w>dōš</w></mentioned>; in Iron there is a weak vowel %iу%i. However the
                     accent %idýson%i serves as indisputable proof that historically there is a
                     strong (long) vowel. Cf. word <ref type="xr" target="#entry_dys"/> | %idus%i
-                    ‘sleeve’, where there is a weak vowel in both dialects.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>III 168</biblScope></bibl>;
+                    ‘sleeve’, where there is a weak vowel in both dialects.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>III 168</biblScope></bibl>;
                             <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>19,
-                            31</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_Hübschmann._Oss."/><biblScope>37,
+                            31</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>37,
                     116</biblScope></bibl>.</etym>
             </entry>
         </body>

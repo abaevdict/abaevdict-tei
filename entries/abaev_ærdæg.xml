@@ -1,31 +1,36 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ærdæg</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ærdæg" xml:lang="os">
                 <form type="lemma"><orth>ærdæg</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d4409e69"><sense xml:id="sense_d4409e70"><abv:tr xml:lang="ru">
                             <q>половина</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>half</q>
-                        </abv:tr></sense><sense><note type="comment" xml:lang="ru">(во второй части
+                        </abv:tr></sense><sense xml:id="sense_d4409e79"><note type="comment" xml:lang="ru">(во второй части
                             сложных слов) </note><note type="comment" xml:lang="en">(in the second
                             part of the complex words) </note><abv:tr xml:lang="ru">
                             <q>сторона</q>
@@ -34,30 +39,30 @@
                             complex words) </note><abv:tr xml:lang="en">
                             <q>side</q>
                         </abv:tr></sense></sense>
-                <re>
+                <re xml:id="re_d4409e97">
                     <note type="comment" xml:lang="ru">;</note>
                     <note type="comment" xml:lang="en">;</note>
                     <form type="lemma"><orth>ærdægmard</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d4409e108"><abv:tr xml:lang="ru">
                             <q>полумертвый</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>half dead</q>
                         </abv:tr></sense>
                 </re>
-                <re>
+                <re xml:id="re_d4409e119">
                     <form type="lemma"><orth>ærdægax˳yr</orth></form>
-                    <sense><sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d4409e124"><sense xml:id="sense_d4409e125"><abv:tr xml:lang="ru">
                                 <q>полуученый</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>half learnt</q>
-                            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                            </abv:tr></sense><sense xml:id="sense_d4409e134"><abv:tr xml:lang="ru">
                                 <q>недоучка</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>half-educated person</q>
                             </abv:tr></sense></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4409e147">
                         <quote>Batraz… c ʼītījy ærdæg ratydta æmæ jæ jæ særyl cæværdta</quote>
                         <abv:tr xml:lang="ru">
                             <q>Батраз оторвал половину глетчера и положил себе на голову</q>
@@ -67,7 +72,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_ОЭ"/><biblScope>I 26</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4409e166">
                         <quote>ræǵawæn je ʽrdæg mæn, innæ ʽrdæg—dæw</quote>
                         <abv:tr xml:lang="ru">
                             <q>половина табуна моя, другая половина — твоя</q>
@@ -76,7 +81,7 @@
                             <q>one half of the herd is mine, the other is yours</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4409e181" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>bæx ærdæg xwærd fæccæj</quote>
                         <abv:tr xml:lang="ru">
@@ -85,101 +90,75 @@
                         <abv:tr xml:lang="en">
                             <q>the horse was half eaten</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>16%l3%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>16%l3%l</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Восходит к <mentioned xml:lang="ira"><lang/>
+                <etym xml:lang="ru">Восходит к <mentioned xml:id="mentioned_d4409e207" xml:lang="ira"><lang/>
                         <w>arda-</w>
                         <gloss><q>половина</q></gloss></mentioned>, ‘сторона’ с обычным наращением
                     -%ig%i (← *%iarda-ka%i-). Без наращения %iærd%i- со значением ‘сторона’
-                    выступает во множестве производных и сложных слов: <ref type="xr"
-                        target="#entry_ardæm"/> ‘сюда’, <ref type="xr" target="#entry_ūrdæm"/>
-                    ‘туда’, <ref type="xr" target="#entry_alyrdæm"/> ‘во все стороны’, <ref
-                        type="xr" target="#entry_fæjnærdæm"/> ‘в разные стороны’, <ref type="xr"
-                        target="#entry_wælærdæm"/> ‘вверх’, <ref type="xr" target="#entry_dælærdæm"
-                    /> ‘вниз’, <ref type="xr" target="#entry_falærdæm"/> ‘на ту сторону’, <ref
-                        type="xr" target="#entry_acyrdæm"/> ‘на эту сторону’ и др.; ср. также <ref
-                        type="xr" target="#entry_ærdæbon"/> ‘давеча’. Слово хорошо представлено в
-                    индоиранских языках: <mentioned xml:lang="sog"><lang/>
-                        <note type="comment" xml:lang="ru">(в сложных словах) </note><w>*-ardak</w></mentioned>, <mentioned xml:lang="sog"
-                            ><w>*-ard(ʼrδ)</w>
-                        <gloss><q>сторона</q></gloss></mentioned> (%i*wīspard-%i = <mentioned
-                        xml:lang="os"><lang/>
+                    выступает во множестве производных и сложных слов: <ref type="xr" target="#entry_ardæm"/> ‘сюда’, <ref type="xr" target="#entry_ūrdæm"/>
+                    ‘туда’, <ref type="xr" target="#entry_alyrdæm"/> ‘во все стороны’, <ref type="xr" target="#entry_fæjnærdæm"/> ‘в разные стороны’, <ref type="xr" target="#entry_wælærdæm"/> ‘вверх’, <ref type="xr" target="#entry_dælærdæm"/> ‘вниз’, <ref type="xr" target="#entry_falærdæm"/> ‘на ту сторону’, <ref type="xr" target="#entry_acyrdæm"/> ‘на эту сторону’ и др.; ср. также <ref type="xr" target="#entry_ærdæbon"/> ‘давеча’. Слово хорошо представлено в
+                    индоиранских языках: <mentioned xml:id="mentioned_d4409e234" xml:lang="sog"><lang/>
+                        <note type="comment" xml:lang="ru">(в сложных словах) </note><w>*-ardak</w></mentioned>, <mentioned xml:id="mentioned_d4409e242" xml:lang="sog"><w>*-ard(ʼrδ)</w>
+                        <gloss><q>сторона</q></gloss></mentioned> (%i*wīspard-%i = <mentioned xml:id="mentioned_d4409e248" xml:lang="os"><lang/>
                         <w>alyrdæm</w>
-                        <gloss><q>во все стороны</q></gloss></mentioned>, ср. <mentioned
-                        xml:lang="kho"><lang/>
-                        <w>biśśi hālaa</w></mentioned> id.), <mentioned xml:lang="kho"><lang/>
-                        <w>hālaa</w></mentioned> (из *%iardaka%i), <mentioned xml:lang="pal"><lang/>
-                        <w>alak</w></mentioned> (из *%iardak%i), <mentioned xml:lang="pal-x-turfan"><lang/>
-                        <w>ʽārag</w></mentioned> (<bibl/>%bМО XV 205)%b, <mentioned xml:lang="ae"><lang/>
-                        <w>arəδa-</w></mentioned>, <mentioned xml:lang="sa"><lang/>
+                        <gloss><q>во все стороны</q></gloss></mentioned>, ср. <mentioned xml:id="mentioned_d4409e256" xml:lang="kho"><lang/>
+                        <w>biśśi hālaa</w></mentioned> id.), <mentioned xml:id="mentioned_d4409e261" xml:lang="kho"><lang/>
+                        <w>hālaa</w></mentioned> (из *%iardaka%i), <mentioned xml:id="mentioned_d4409e266" xml:lang="pal"><lang/>
+                        <w>alak</w></mentioned> (из *%iardak%i), <mentioned xml:id="mentioned_d4409e271" xml:lang="pal-x-turfan"><lang/>
+                        <w>ʽārag</w></mentioned> (<bibl/>%bМО XV 205)%b, <mentioned xml:id="mentioned_d4409e279" xml:lang="ae"><lang/>
+                        <w>arəδa-</w></mentioned>, <mentioned xml:id="mentioned_d4409e284" xml:lang="sa"><lang/>
                         <w>ardha-</w>
-                        <gloss><q>половина</q></gloss></mentioned>, ‘сторона’.— <mentioned
-                        xml:lang="kv"><lang/>
+                        <gloss><q>половина</q></gloss></mentioned>, ‘сторона’.— <mentioned xml:id="mentioned_d4409e292" xml:lang="kv"><lang/>
                         <w>ord</w><note type="comment" xml:lang="ru">'Seite'</note>
-                        <gloss><q>Umgebung</q></gloss></mentioned>, <mentioned xml:lang="kv"
-                            ><w>ordö</w>
-                        <gloss><q>zu</q></gloss></mentioned>, <mentioned xml:lang="kv"><w>ordyn</w>
+                        <gloss><q>Umgebung</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4409e302" xml:lang="kv"><w>ordö</w>
+                        <gloss><q>zu</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4409e308" xml:lang="kv"><w>ordyn</w>
                         <gloss><q>bei</q></gloss></mentioned> etc. (<bibl/>%bW i е d е m а n n.
                     Syrjänisch-Deutsches Wörterbuch 209%b), возможно, усвоено из скифского. Более
                     широкое распространение получило в других иранских языках синонимическое слово
-                    *%inaima%i-, ср. <mentioned xml:lang="ae"><lang/>
-                        <w>aδara.naemat</w></mentioned> — <mentioned xml:lang="os"><lang/>
+                    *%inaima%i-, ср. <mentioned xml:id="mentioned_d4409e317" xml:lang="ae"><lang/>
+                        <w>aδara.naemat</w></mentioned> — <mentioned xml:id="mentioned_d4409e322" xml:lang="os"><lang/>
                         <w>dælærdygæj</w>
-                        <gloss><q>снизу</q></gloss></mentioned>, <mentioned xml:lang="ae"><lang/>
-                        <w>upara.naemat</w></mentioned> =<mentioned xml:lang="os"><lang/>
+                        <gloss><q>снизу</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4409e330" xml:lang="ae"><lang/>
+                        <w>upara.naemat</w></mentioned> =<mentioned xml:id="mentioned_d4409e335" xml:lang="os"><lang/>
                         <w>wælærdygæj</w>
-                        <gloss><q>сверху</q></gloss></mentioned>.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 77</biblScope></bibl>;
+                        <gloss><q>сверху</q></gloss></mentioned>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 77</biblScope></bibl>;
                             <bibl><author>%bGr.%b</author><biblScope>50</biblScope></bibl>.</etym>
-                <etym xml:lang="en">It traces back to <mentioned xml:lang="ira"><lang/>
+                <etym xml:lang="en">It traces back to <mentioned xml:id="mentioned_d4409e355" xml:lang="ira"><lang/>
                         <w>arda-</w>
                         <gloss><q>half</q></gloss></mentioned>, ‘side’ with a regular augmentation
                     -%ig%i (← *%iarda-ka%i-). Without augmentation, %iærd%i- as ‘half’ is found in a
                     number of derivates and complex words: <ref type="xr" target="#entry_ardæm"/>
-                    'hither’, <ref type="xr" target="#entry_ūrdæm"/> ‘thither, <ref type="xr"
-                        target="#entry_alyrdæm"/> ‘towards all directions’, <ref type="xr"
-                        target="#entry_fæjnærdæm"/> ‘towards different directions’, <ref type="xr"
-                        target="#entry_wælærdæm"/> ‘up’, <ref type="xr" target="#entry_dælærdæm"/>
-                    ‘down’, <ref type="xr" target="#entry_falærdæm"/> ‘on that side’, <ref type="xr"
-                        target="#entry_acyrdæm"/> ‘on this side’ and others; compare also <ref
-                        type="xr" target="#entry_ærdæbon"/> ‘recently’. The word is well presented
-                    in Indoiranian languages: <mentioned xml:lang="sog"><lang/>
-                        <note
-                            type="comment" xml:lang="en">(in complex words)
-                        </note><w>*-ardak</w></mentioned>, <mentioned xml:lang="sog"
-                            ><w>*-ard(ʼrδ)</w>
-                        <gloss><q>side</q></gloss></mentioned> (%i*wīspard-%i = <mentioned
-                        xml:lang="os"><lang/>
+                    'hither’, <ref type="xr" target="#entry_ūrdæm"/> ‘thither, <ref type="xr" target="#entry_alyrdæm"/> ‘towards all directions’, <ref type="xr" target="#entry_fæjnærdæm"/> ‘towards different directions’, <ref type="xr" target="#entry_wælærdæm"/> ‘up’, <ref type="xr" target="#entry_dælærdæm"/>
+                    ‘down’, <ref type="xr" target="#entry_falærdæm"/> ‘on that side’, <ref type="xr" target="#entry_acyrdæm"/> ‘on this side’ and others; compare also <ref type="xr" target="#entry_ærdæbon"/> ‘recently’. The word is well presented
+                    in Indoiranian languages: <mentioned xml:id="mentioned_d4409e382" xml:lang="sog"><lang/>
+                        <note type="comment" xml:lang="en">(in complex words)
+                        </note><w>*-ardak</w></mentioned>, <mentioned xml:id="mentioned_d4409e390" xml:lang="sog"><w>*-ard(ʼrδ)</w>
+                        <gloss><q>side</q></gloss></mentioned> (%i*wīspard-%i = <mentioned xml:id="mentioned_d4409e396" xml:lang="os"><lang/>
                         <w>alyrdæm</w>
-                        <gloss><q>towards all directions</q></gloss></mentioned>, compare <mentioned
-                        xml:lang="kho"><lang/>
-                        <w>biśśi hālaa</w></mentioned> id.), <mentioned xml:lang="kho"><lang/>
-                        <w>hālaa</w></mentioned> (from *%iardaka%i), <mentioned xml:lang="pal"><lang/>
-                        <w>alak</w></mentioned> (from *%iardak%i), <mentioned
-                        xml:lang="pal-x-turfan"><lang/>
-                        <w>ʽārag</w></mentioned> (<bibl/>%bМО XV 205)%b, <mentioned xml:lang="ae"><lang/>
-                        <w>arəδa-</w></mentioned>, <mentioned xml:lang="sa"><lang/>
+                        <gloss><q>towards all directions</q></gloss></mentioned>, compare <mentioned xml:id="mentioned_d4409e404" xml:lang="kho"><lang/>
+                        <w>biśśi hālaa</w></mentioned> id.), <mentioned xml:id="mentioned_d4409e409" xml:lang="kho"><lang/>
+                        <w>hālaa</w></mentioned> (from *%iardaka%i), <mentioned xml:id="mentioned_d4409e414" xml:lang="pal"><lang/>
+                        <w>alak</w></mentioned> (from *%iardak%i), <mentioned xml:id="mentioned_d4409e419" xml:lang="pal-x-turfan"><lang/>
+                        <w>ʽārag</w></mentioned> (<bibl/>%bМО XV 205)%b, <mentioned xml:id="mentioned_d4409e427" xml:lang="ae"><lang/>
+                        <w>arəδa-</w></mentioned>, <mentioned xml:id="mentioned_d4409e432" xml:lang="sa"><lang/>
                         <w>ardha-</w>
-                        <gloss><q>half</q></gloss></mentioned>, ‘side’.— <mentioned xml:lang="kv"><lang/>
-                        <w>ord</w><note
-                            type="comment" xml:lang="en">'Seiteˈ</note>
-                        <gloss><q>Umgebung</q></gloss></mentioned>, <mentioned xml:lang="kv"
-                            ><w>ordö</w>
-                        <gloss><q>zu</q></gloss></mentioned>, <mentioned xml:lang="kv"><w>ordyn</w>
+                        <gloss><q>half</q></gloss></mentioned>, ‘side’.— <mentioned xml:id="mentioned_d4409e440" xml:lang="kv"><lang/>
+                        <w>ord</w><note type="comment" xml:lang="en">'Seiteˈ</note>
+                        <gloss><q>Umgebung</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4409e450" xml:lang="kv"><w>ordö</w>
+                        <gloss><q>zu</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4409e456" xml:lang="kv"><w>ordyn</w>
                         <gloss><q>bei</q></gloss></mentioned> etc.
                             (<bibl><author>Wiedemann</author><biblScope>Syrjänisch-Deutsches
                             Wörterbuch 209</biblScope></bibl>), possibly comes from Scythian. More
                     widespread in other Iranian languages is the synonymous word *%inaima%i-, ср.
-                        <mentioned xml:lang="ae"><lang/>
-                        <w>aδara.naemat</w></mentioned> — <mentioned xml:lang="os"><lang/>
+                        <mentioned xml:id="mentioned_d4409e467" xml:lang="ae"><lang/>
+                        <w>aδara.naemat</w></mentioned> — <mentioned xml:id="mentioned_d4409e472" xml:lang="os"><lang/>
                         <w>dælærdygæj</w>
-                        <gloss><q>underneath</q></gloss></mentioned>, <mentioned xml:lang="ae"><lang/>
-                        <w>upara.naemat</w></mentioned> =<mentioned xml:lang="os"><lang/>
+                        <gloss><q>underneath</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4409e480" xml:lang="ae"><lang/>
+                        <w>upara.naemat</w></mentioned> =<mentioned xml:id="mentioned_d4409e485" xml:lang="os"><lang/>
                         <w>wælærdygæj</w>
-                        <gloss><q>above</q></gloss></mentioned>.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 77</biblScope></bibl>;
+                        <gloss><q>above</q></gloss></mentioned>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 77</biblScope></bibl>;
                             <bibl><author>%bGr.%b</author><biblScope>50</biblScope></bibl>.</etym>
             </entry>
         </body>

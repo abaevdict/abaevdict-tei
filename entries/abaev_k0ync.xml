@@ -1,43 +1,48 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">k0ync</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_k0ync" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>k˳ync</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>kuncæ</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d842e72"><abv:tr xml:lang="ru">
                         <q>кузнечные меха</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>forge bellows</q>
                     </abv:tr></sense>
-                <re>
+                <re xml:id="re_d842e82">
                     <form xml:lang="os-x-iron" type="lemma"><orth>k˳yncgom</orth></form>
                     <form xml:lang="os-x-digor" type="dialectal"><orth>kuncgom</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d842e90"><abv:tr xml:lang="ru">
                             <q>горнило</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>hearth</q>
                         </abv:tr></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d842e103">
                         <quote>dywwadæs ærdygæj jæm dywwadæs k˳yncy saræzta æmæ jyl mæj
                             fædymdta</quote>
                         <abv:tr xml:lang="ru">
@@ -51,7 +56,7 @@
                         <bibl><ref type="bibl" target="#src_ЮОПам."/><biblScope>I
                             94</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d842e122" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>kunci dumun, kurdti zarun iǧælʒægæj iǧusuj</quote>
                         <abv:tr xml:lang="ru">
@@ -62,7 +67,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Qazb."/><biblScope>11</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d842e144">
                         <quote>jæ qælæsæj æxsīdæn art kæly, k˳yncgomæj k˳yd fækæly, aftæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>из его глотки вырывается пылающий огонь, как из горнила</q>
@@ -74,16 +79,14 @@
                             129</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Может быть, <mentioned xml:lang="trk"><lang/>
+                <etym xml:lang="ru">Может быть, <mentioned xml:id="mentioned_d842e167" xml:lang="trk"><lang/>
                         <w>kunč, kunʒ</w>
                         <gloss><q>голенище</q></gloss></mentioned> (голенище использовалось для
-                    разжигания огня)? Или %ikunc%i — перебой из %i*kurc%i и относится к <ref
-                        type="xr" target="#entry_k0yrd"/> | %ikurd%i ‘кузнец’? Ср. <mentioned xml:lang="os">ос. <w>renc</w> ‘рельс’</mentioned> (перебой %il%i II %in%i).</etym>
-                <etym xml:lang="en">Maybe, <mentioned xml:lang="trk"><lang/>
+                    разжигания огня)? Или %ikunc%i — перебой из %i*kurc%i и относится к <ref type="xr" target="#entry_k0yrd"/> | %ikurd%i ‘кузнец’? Ср. <mentioned xml:id="mentioned_d842e177" xml:lang="os">ос. <w>renc</w> ‘рельс’</mentioned> (перебой %il%i II %in%i).</etym>
+                <etym xml:lang="en">Maybe, <mentioned xml:id="mentioned_d842e185" xml:lang="trk"><lang/>
                         <w>kunč, kunʒ</w>
                         <gloss><q>bootleg</q></gloss></mentioned> (a bootleg was used for starting a
-                    fire)? Or is %ikunc%i a change from %i*kurc%i and is it related to <ref
-                        type="xr" target="#entry_k0yrd"/> | %ikurd%i ‘blacksmith’? Cf. Ossetic <mentioned xml:lang="os"><w>renc</w></mentioned> ‘rail’ (with %il%i II %in%i
+                    fire)? Or is %ikunc%i a change from %i*kurc%i and is it related to <ref type="xr" target="#entry_k0yrd"/> | %ikurd%i ‘blacksmith’? Cf. Ossetic <mentioned xml:id="mentioned_d842e195" xml:lang="os"><w>renc</w></mentioned> ‘rail’ (with %il%i II %in%i
                     alternation).</etym>
             </entry>
         </body>

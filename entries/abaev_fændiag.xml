@@ -1,38 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">fændiag</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_fændiag" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>fændiag</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>fændæwagæ</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d79e72"><sense xml:id="sense_d79e73"><abv:tr xml:lang="ru">
                             <q>желанный</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>desired</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d79e82"><abv:tr xml:lang="ru">
                             <q>соответствующий желанию</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>meeting the desire</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d79e94">
                         <quote>cær dæ mad æmæ dæ fydy fændiag</quote>
                         <abv:tr xml:lang="ru">
                             <q>живи так, как этого желают тебе мать и отец</q>
@@ -41,7 +46,7 @@
                             <q>live the way your mother and father want you to live</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d79e109">
                         <quote>znaǵy fændiag fæci</quote>
                         <abv:tr xml:lang="ru">
                             <q>с ним случилось то, что соответствует желанию врага</q>
@@ -55,7 +60,7 @@
                         <note type="comment" xml:lang="en"> (so they say about someone who has
                             suffered any trouble)</note>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d79e130">
                         <quote>atæx, cū! dæ fændag rast! cær dæxī fændiag</quote>
                         <abv:tr xml:lang="ru">
                             <q>лети же, отправляйся! добрый путь! живи, как тебе самой хочется!</q>
@@ -63,10 +68,9 @@
                         <abv:tr xml:lang="en">
                             <q>fly, go! have a good journey! live as you want for yourself!</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"
-                            /><biblScope>122</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>122</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d79e149">
                         <quote>jæ fydy fændiag kæm væjjy fyrt dær</quote>
                         <abv:tr xml:lang="ru">
                             <q>сын не бывает таким, как хочется его отцу</q>
@@ -76,7 +80,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>14</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d79e168">
                         <quote>æ madi fændæwagæ wæd</quote>
                         <abv:tr xml:lang="ru">
                             <q>пусть она будет по сердцу своей матери</q>
@@ -87,7 +91,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
                             24</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d79e188" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>wæ, ʒæbæx læqwæn, dæ nijjerægæn æ fændæwagæ ku fæccærisæ</quote>
                         <abv:tr xml:lang="ru">
@@ -104,15 +108,13 @@
                     означающего соответствие с чем-либо. За основу взято, однако, не %ifænd-%i
                     (тогда мы имели бы %i*fænddag%i) а 3-е лицо ед. ч. наст, времени. Таким образом,
                     иронская форма получилась из %ifændy%i + %iag%i, а дигорская из %ifændæ-uj%i +
-                    %iаg%i. См. <ref type="xr" target="#entry_fænd"/>. Ср. <ref type="xr"
-                        target="#entry_fændon"/>.</etym>
+                    %iаg%i. См. <ref type="xr" target="#entry_fænd"/>. Ср. <ref type="xr" target="#entry_fændon"/>.</etym>
                 <etym xml:lang="en">Derived from <ref type="xr" target="#entry_fændyn"/> | %ifændæ
                     un%i ‘wish’ (a transitive verb) with the suffix %i-ag%i, which means
                     correspondence with something. However, it was base not on %ifænd-%i (then the
                     form would be %i*fænddag%i), but on the PRS.3SG form. Thus, the Iron form was
                     derived from %ifændy%i + %iag%i, and the Digor form was derived from
-                    %ifændæ-uj%i + %iаg%i. See <ref type="xr" target="#entry_fænd"/>. Cf. <ref
-                        type="xr" target="#entry_fændon"/>.</etym>
+                    %ifændæ-uj%i + %iаg%i. See <ref type="xr" target="#entry_fænd"/>. Cf. <ref type="xr" target="#entry_fændon"/>.</etym>
                 <note type="internal">прям оставить "глагол объективного строя"?…</note>
             </entry>
         </body>

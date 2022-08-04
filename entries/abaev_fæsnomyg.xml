@@ -1,61 +1,65 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">fæsnomyg</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_fæsnomyg" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>fæsnomyg</orth></form>
-                <form xml:lang="os-x-digor" type="dialectal"><orth>fæsnomug</orth><form
-                        type="variant"><orth>fæsnomæg</orth></form></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <form xml:lang="os-x-digor" type="dialectal"><orth>fæsnomug</orth><form type="variant"><orth>fæsnomæg</orth></form></form>
+                <sense xml:id="sense_d5407e74"><sense xml:id="sense_d5407e75"><abv:tr xml:lang="ru">
                             <q>иносказательный</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>allegorical</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d5407e84"><abv:tr xml:lang="ru">
                             <q>прозвище</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>nickname</q>
                         </abv:tr></sense></sense>
-                <re>
-                    <re>
+                <re xml:id="re_d5407e94">
+                    <re xml:id="re_d5407e96">
                         <form type="lemma"><orth>fæsnomygæj</orth></form>
-                        <sense><sense><abv:tr xml:lang="ru">
+                        <sense xml:id="sense_d5407e101"><sense xml:id="sense_d5407e102"><abv:tr xml:lang="ru">
                                     <q>иносказательно</q>
                                 </abv:tr><abv:tr xml:lang="en">
                                     <q>allegorically</q>
-                                </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                                </abv:tr></sense><sense xml:id="sense_d5407e111"><abv:tr xml:lang="ru">
                                     <q>по прозвищу</q>
                                 </abv:tr><abv:tr xml:lang="en">
                                     <q>by nickname</q>
                                 </abv:tr></sense></sense>
                     </re>
-                    <re>
+                    <re xml:id="re_d5407e122">
                         <form type="lemma"><orth>fæsnomyg nyxas</orth></form>
-                        <sense><sense><abv:tr xml:lang="ru">
+                        <sense xml:id="sense_d5407e127"><sense xml:id="sense_d5407e128"><abv:tr xml:lang="ru">
                                     <q>аллегория</q>
                                 </abv:tr><abv:tr xml:lang="en">
                                     <q>allegory</q>
-                                </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                                </abv:tr></sense><sense xml:id="sense_d5407e137"><abv:tr xml:lang="ru">
                                     <q>притча</q>
                                 </abv:tr><abv:tr xml:lang="en">
                                     <q>parable</q>
-                                </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                                </abv:tr></sense><sense xml:id="sense_d5407e146"><abv:tr xml:lang="ru">
                                     <q>завуалированная речь</q>
                                 </abv:tr><abv:tr xml:lang="en">
                                     <q>veiled speech</q>
@@ -63,7 +67,7 @@
                     </re>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d5407e160">
                         <quote>næw sūsæg xorzæn je ʽcæg nom, nalatæn ta — jæ fæsnomyg</quote>
                         <abv:tr xml:lang="ru">
                             <q>не утаится истинное имя хорошего (человека), а прозвище —
@@ -84,9 +88,7 @@
                 <etym xml:lang="en">From %ifærs-nom-yg%i (<ref type="xr" target="#entry_fars"/>
                     ‘side’, <ref type="xr" target="#entry_nom"/> ‘name’, %i-yg%i | %i-ug%i — a
                     suffix): ‘the naming of things by third-party, fake names’. As for the
-                    derivation patter, cf., on the one hand, <ref type="xr"
-                        target="#entry_fæsgojmag"/>, and on the other hand, <ref type="xr"
-                        target="#entry_bæzærxyg"/> etc.</etym>
+                    derivation patter, cf., on the one hand, <ref type="xr" target="#entry_fæsgojmag"/>, and on the other hand, <ref type="xr" target="#entry_bæzærxyg"/> etc.</etym>
             </entry>
         </body>
     </text>

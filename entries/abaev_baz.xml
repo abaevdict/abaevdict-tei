@@ -1,33 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">baz</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_baz" xml:lang="os">
                 <form type="lemma"><orth>baz</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d1207e69"><abv:tr xml:lang="ru">
                         <q>подушка</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>pillow</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d1207e81">
                         <quote>gawyzy wælæ ærtæ tūrkag bazy</quote>
                         <abv:tr xml:lang="ru">
                             <q>на ковре — три турецкие подушки</q>
@@ -35,10 +40,9 @@
                         <abv:tr xml:lang="en">
                             <q>there are three turkish pillows on the carpet</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"
-                            /><biblScope>134</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>134</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1207e100">
                         <quote>æxsæv myn īw wat bakodta gobanæj, qæccūlæj, bazæj</quote>
                         <abv:tr xml:lang="ru">
                             <q>ночью он мне стелил постель (из) тюфяка, одеяла, подушки</q>
@@ -46,100 +50,81 @@
                         <abv:tr xml:lang="en">
                             <q>at night he made my bed of mattress, blanket, pillow</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Munk."
-                            /><biblScope>140</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Munk."/><biblScope>140</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Восходит к <mentioned xml:lang="ira"><lang/>
-                        <w>*barzis</w></mentioned> —, ср. <mentioned xml:lang="x-balochi"><lang/>
+                <etym xml:lang="ru">Восходит к <mentioned xml:id="mentioned_d1207e122" xml:lang="ira"><lang/>
+                        <w>*barzis</w></mentioned> —, ср. <mentioned xml:id="mentioned_d1207e127" xml:lang="x-balochi"><lang/>
                         <w>barzī</w>
-                        <gloss><q>мешок</q></gloss></mentioned>, <mentioned xml:lang="fa"><lang/>
-                        <w>bālis</w></mentioned>, <mentioned xml:lang="wbl"><lang/>
-                        <w>vōrz</w></mentioned>, <mentioned xml:lang="ydg"><lang/>
-                        <w>virzanӗ</w></mentioned>, <mentioned xml:lang="zkh"><lang/>
-                        <w>βžnyk</w></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Henning._Khwar."/><biblScope>14</biblScope></bibl>),
-                        <mentioned xml:lang="ae"><lang/>
+                        <gloss><q>мешок</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1207e135" xml:lang="fa"><lang/>
+                        <w>bālis</w></mentioned>, <mentioned xml:id="mentioned_d1207e140" xml:lang="wbl"><lang/>
+                        <w>vōrz</w></mentioned>, <mentioned xml:id="mentioned_d1207e145" xml:lang="ydg"><lang/>
+                        <w>virzanӗ</w></mentioned>, <mentioned xml:id="mentioned_d1207e151" xml:lang="zkh"><lang/>
+                        <w>βžnyk</w></mentioned> (<bibl><ref type="bibl" target="#ref_Henning._Khwar."/><biblScope>14</biblScope></bibl>),
+                        <mentioned xml:id="mentioned_d1207e160" xml:lang="ae"><lang/>
                         <w>barəziš-</w>
-                        <gloss><q>подушка</q></gloss></mentioned>, <mentioned xml:lang="sa"><lang/>
+                        <gloss><q>подушка</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1207e168" xml:lang="sa"><lang/>
                         <w>barhiš-</w>
-                        <gloss><q>подстилка</q></gloss></mentioned>, <mentioned xml:lang="sa"
-                            ><w>upa-barhaṇī</w>
-                        <gloss><q>одеяло</q></gloss></mentioned>, <mentioned xml:lang="arc"><lang/>
+                        <gloss><q>подстилка</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1207e176" xml:lang="sa"><w>upa-barhaṇī</w>
+                        <gloss><q>одеяло</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1207e182" xml:lang="arc"><lang/>
                         <w>barʒ</w>
-                        <gloss><q>подушка</q></gloss></mentioned> (из иран.), <mentioned
-                        xml:lang="sl"><lang/>
+                        <gloss><q>подушка</q></gloss></mentioned> (из иран.), <mentioned xml:id="mentioned_d1207e191" xml:lang="sl"><lang/>
                         <w>blazina</w>
-                        <gloss><q>перина</q></gloss></mentioned>, <mentioned xml:lang="sr"><lang/>
+                        <gloss><q>перина</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1207e199" xml:lang="sr"><lang/>
                         <w>blàzina</w>
-                        <gloss><q>подушка</q></gloss></mentioned>, <mentioned xml:lang="ru"><lang/>
+                        <gloss><q>подушка</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1207e207" xml:lang="ru"><lang/>
                         <w>болозень</w>
-                        <gloss><q>волдырь</q></gloss></mentioned>, <mentioned xml:lang="ru"><w/>
-                        <gloss><q>шишка</q></gloss></mentioned>, <mentioned xml:lang="prg"><lang/>
+                        <gloss><q>волдырь</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1207e215" xml:lang="ru"><w/>
+                        <gloss><q>шишка</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1207e221" xml:lang="prg"><lang/>
                         <w>balsinis</w>
-                        <gloss><q>подушка</q></gloss></mentioned>, <mentioned xml:lang="got"><lang/>
-                        <w>balgs</w></mentioned>, <mentioned xml:lang="de"><lang/>
+                        <gloss><q>подушка</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1207e229" xml:lang="got"><lang/>
+                        <w>balgs</w></mentioned>, <mentioned xml:id="mentioned_d1207e235" xml:lang="de"><lang/>
                         <w>Balg</w>
-                        <gloss><q>мех</q></gloss></mentioned> и др. (<bibl><ref type="bibl"
-                            target="#ref_Pokorny"/><biblScope>125 сл.</biblScope></bibl>). Звуковая
+                        <gloss><q>мех</q></gloss></mentioned> и др. (<bibl><ref type="bibl" target="#ref_Pokorny"/><biblScope>125 сл.</biblScope></bibl>). Звуковая
                     история осетинского слова ясна — %ir%i под влиянием %ii%i перешел в %il%i и
                     затем выпал: *%ibarzi%i→*%ibalz%i → %ibaz%i. Ср. аналогичное выпадение плавного
                     в <ref type="xr" target="#entry_x0ymgærdæn"/> ‘лучше’ (из *%ixwyrzdær%i,
                     *%ixwylzdæt%iʼ), <ref type="xr" target="#entry_xæzgūl"/> ‘любовница’ (из
                     *%ixærzgul%i) и др. — Названия других постельных принадлежностей, по-видимому,
-                    не столь древни; см. <ref type="xr" target="#entry_goban"/> ‘тюфяк’, <ref
-                        type="xr" target="#entry_qæʒʒūl"/> ‘одеяло’.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 51, 93, III
-                        141</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>32</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_Hübschmann._Oss."/><biblScope>26</biblScope></bibl>. —
-                            <bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                        /><biblScope>56</biblScope></bibl>.</etym>
-                <etym xml:lang="en">It traces abck to <mentioned xml:lang="ira"><lang/>
-                        <w>*barzis</w></mentioned> —, cf. <mentioned xml:lang="x-balochi"><lang/>
+                    не столь древни; см. <ref type="xr" target="#entry_goban"/> ‘тюфяк’, <ref type="xr" target="#entry_qæʒʒūl"/> ‘одеяло’.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 51, 93, III
+                        141</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>32</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>26</biblScope></bibl>. —
+                            <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>56</biblScope></bibl>.</etym>
+                <etym xml:lang="en">It traces abck to <mentioned xml:id="mentioned_d1207e275" xml:lang="ira"><lang/>
+                        <w>*barzis</w></mentioned> —, cf. <mentioned xml:id="mentioned_d1207e280" xml:lang="x-balochi"><lang/>
                         <w>barzī</w>
-                        <gloss><q>bag</q></gloss></mentioned>, <mentioned xml:lang="fa"><lang/>
-                        <w>bālis</w></mentioned>, <mentioned xml:lang="wbl"><lang/>
-                        <w>vōrz</w></mentioned>, <mentioned xml:lang="ydg"><lang/>
-                        <w>virzanӗ</w></mentioned>, <mentioned xml:lang="zkh"><lang/>
-                        <w>βžnyk</w></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Henning._Khwar."/><biblScope>14</biblScope></bibl>),
-                        <mentioned xml:lang="ae"><lang/>
+                        <gloss><q>bag</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1207e288" xml:lang="fa"><lang/>
+                        <w>bālis</w></mentioned>, <mentioned xml:id="mentioned_d1207e293" xml:lang="wbl"><lang/>
+                        <w>vōrz</w></mentioned>, <mentioned xml:id="mentioned_d1207e298" xml:lang="ydg"><lang/>
+                        <w>virzanӗ</w></mentioned>, <mentioned xml:id="mentioned_d1207e304" xml:lang="zkh"><lang/>
+                        <w>βžnyk</w></mentioned> (<bibl><ref type="bibl" target="#ref_Henning._Khwar."/><biblScope>14</biblScope></bibl>),
+                        <mentioned xml:id="mentioned_d1207e313" xml:lang="ae"><lang/>
                         <w>barəziš-</w>
-                        <gloss><q>pillow</q></gloss></mentioned>, <mentioned xml:lang="sa"><lang/>
+                        <gloss><q>pillow</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1207e321" xml:lang="sa"><lang/>
                         <w>barhiš-</w>
-                        <gloss><q>bedding</q></gloss></mentioned>, <mentioned xml:lang="sa"
-                            ><w>upa-barhaṇī</w>
-                        <gloss><q>blanket</q></gloss></mentioned>, <mentioned xml:lang="arc"><lang/>
+                        <gloss><q>bedding</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1207e329" xml:lang="sa"><w>upa-barhaṇī</w>
+                        <gloss><q>blanket</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1207e335" xml:lang="arc"><lang/>
                         <w>barʒ</w>
-                        <gloss><q>pillow</q></gloss></mentioned> (from Iranian), <mentioned
-                        xml:lang="sl"><lang/>
+                        <gloss><q>pillow</q></gloss></mentioned> (from Iranian), <mentioned xml:id="mentioned_d1207e344" xml:lang="sl"><lang/>
                         <w>blazina</w>
-                        <gloss><q>feather bed</q></gloss></mentioned>, <mentioned xml:lang="sr"><lang/>
+                        <gloss><q>feather bed</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1207e352" xml:lang="sr"><lang/>
                         <w>blàzina</w>
-                        <gloss><q>pillow</q></gloss></mentioned>, <mentioned xml:lang="ru"><lang/>
+                        <gloss><q>pillow</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1207e360" xml:lang="ru"><lang/>
                         <w>bolozenʼ</w>
-                        <gloss><q>blister</q></gloss></mentioned>, <mentioned xml:lang="ru"><w/>
-                        <gloss><q>bump</q></gloss></mentioned>, <mentioned xml:lang="prg"><lang/>
+                        <gloss><q>blister</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1207e368" xml:lang="ru"><w/>
+                        <gloss><q>bump</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1207e374" xml:lang="prg"><lang/>
                         <w>balsinis</w>
-                        <gloss><q>pillow</q></gloss></mentioned>, <mentioned xml:lang="got"><lang/>
-                        <w>balgs</w></mentioned>, <mentioned xml:lang="de"><lang/>
+                        <gloss><q>pillow</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1207e382" xml:lang="got"><lang/>
+                        <w>balgs</w></mentioned>, <mentioned xml:id="mentioned_d1207e388" xml:lang="de"><lang/>
                         <w>Balg</w>
-                        <gloss><q>fur</q></gloss></mentioned> etc. (<bibl><ref type="bibl"
-                            target="#ref_Pokorny"/><biblScope>125 сл.</biblScope></bibl>). The
+                        <gloss><q>fur</q></gloss></mentioned> etc. (<bibl><ref type="bibl" target="#ref_Pokorny"/><biblScope>125 сл.</biblScope></bibl>). The
                     phonecti history of the Ossetic word is clear: %ir%i became %il%i near %ii%i and
                     then got lost: *%ibarzi%i→*%ibalz%i → %ibaz%i. Cf. the analogous loss of the
                     glide in the following words: <ref type="xr" target="#entry_x0ymgærdæn"/>
-                    ‘better’ (from *%ixwyrzdær%i, *%ixwylzdæt%iʼ), <ref type="xr"
-                        target="#entry_xæzgūl"/> ‘mistress’ (from *%ixærzgul%i) etc. — Names of
+                    ‘better’ (from *%ixwyrzdær%i, *%ixwylzdæt%iʼ), <ref type="xr" target="#entry_xæzgūl"/> ‘mistress’ (from *%ixærzgul%i) etc. — Names of
                     other bedding seem to be not so old, cf. <ref type="xr" target="#entry_goban"/>
-                    ‘mattress’, <ref type="xr" target="#entry_qæʒʒūl"/> ‘pillow’.%n<bibl><ref
-                            type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 51, 93, III
-                            141</biblScope></bibl>; <bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._Gr."/><biblScope>32</biblScope></bibl>. —
-                            <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."
-                            /><biblScope>26</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_ОЯФ_I"/><biblScope>56</biblScope></bibl>.</etym>
+                    ‘mattress’, <ref type="xr" target="#entry_qæʒʒūl"/> ‘pillow’.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 51, 93, III
+                            141</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>32</biblScope></bibl>. —
+                            <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>26</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>56</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

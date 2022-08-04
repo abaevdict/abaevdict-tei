@@ -1,44 +1,49 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">g0ydyr</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_g0ydyr" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>g˳ydyr</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>gudur</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d1403e72"><abv:tr xml:lang="ru">
                         <q>замо́к</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>lock</q>
                     </abv:tr></sense>
-                <re>
+                <re xml:id="re_d1403e82">
                     <form type="lemma"><orth>rīwy g˳ydyr</orth></form>
-                    <sense><sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d1403e87"><sense xml:id="sense_d1403e88"><abv:tr xml:lang="ru">
                                 <q>грудная клетка</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>thorax</q>
-                            </abv:tr></sense><sense><abv:tr xml:lang="en">
+                            </abv:tr></sense><sense xml:id="sense_d1403e97"><abv:tr xml:lang="en">
                                 <q>chest</q>
                             </abv:tr></sense></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d1403e106">
                         <quote>dwar g˳ydyræj æxkæd ū</quote>
                         <abv:tr xml:lang="ru">
                             <q>дверь заперта на замок</q>
@@ -49,25 +54,17 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Слово %ig˳ydyr%i представляет, по-видимому, такую же вариацию к
-                        <ref type="xr" target="#entry_kʼydyr"/> ‘обрубок’, ‘чурбан’, как <ref
-                        type="xr" target="#entry_gælæw"/> к <ref type="xr" target="#entry_kʼælæw"/>,
-                        <ref type="xr" target="#entry_galīw"/> к <ref type="xr"
-                        target="#entry_kʼalīw"/> и др. Старинные осетинские замки́, которые можно
+                        <ref type="xr" target="#entry_kʼydyr"/> ‘обрубок’, ‘чурбан’, как <ref type="xr" target="#entry_gælæw"/> к <ref type="xr" target="#entry_kʼælæw"/>,
+                        <ref type="xr" target="#entry_galīw"/> к <ref type="xr" target="#entry_kʼalīw"/> и др. Старинные осетинские замки́, которые можно
                     еще видеть на некоторых башнях, а также в музеях, изготовлялись из дерева и
-                    имели вид обрубков довольно большого размера. <ref type="xr"
-                        target="#entry_kʼudur"/> | %igudur%i —субстратного происхождения; ср.
-                        <mentioned xml:lang="av"><lang/>
+                    имели вид обрубков довольно большого размера. <ref type="xr" target="#entry_kʼudur"/> | %igudur%i —субстратного происхождения; ср.
+                        <mentioned xml:id="mentioned_d1403e138" xml:lang="av"><lang/>
                         <w>gudur</w>
                         <gloss><q>капкан</q></gloss></mentioned> (с чурбаном, падавшим на зверя?).
                     Для семантики ср. д. <ref type="xr" target="#entry_kʼuma"/> ‘замо́к’.</etym>
-                <etym xml:lang="en">The word %ig˳ydyr%i is apparently related to <ref type="xr"
-                        target="#entry_kʼydyr"/> ‘stump’, ‘block’ the same way as <ref type="xr"
-                        target="#entry_gælæw"/> is related to <ref type="xr" target="#entry_kʼælæw"
-                    />, the same way <ref type="xr" target="#entry_galīw"/> is related to <ref
-                        type="xr" target="#entry_kʼalīw"/> etc. The ancient Ossetian locks, which
+                <etym xml:lang="en">The word %ig˳ydyr%i is apparently related to <ref type="xr" target="#entry_kʼydyr"/> ‘stump’, ‘block’ the same way as <ref type="xr" target="#entry_gælæw"/> is related to <ref type="xr" target="#entry_kʼælæw"/>, the same way <ref type="xr" target="#entry_galīw"/> is related to <ref type="xr" target="#entry_kʼalīw"/> etc. The ancient Ossetian locks, which
                     can still be seen on some towers, as well as in museums, were made of wood and
-                    looked like stumps of a rather large size. <ref type="xr" target="#entry_kʼudur"
-                    /> | %igudur%i — is of substrate origin; cf. <mentioned xml:lang="av"><lang/>
+                    looked like stumps of a rather large size. <ref type="xr" target="#entry_kʼudur"/> | %igudur%i — is of substrate origin; cf. <mentioned xml:id="mentioned_d1403e164" xml:lang="av"><lang/>
                         <w>gudur</w>
                         <gloss><q>trap</q></gloss></mentioned> (with a block, which falls on an
                     animal?). For the semantics cf. Digor <ref type="xr" target="#entry_kʼuma"/>

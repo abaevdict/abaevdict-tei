@@ -1,40 +1,44 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">kærdæg</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_kærdæg" xml:lang="os">
                 <form type="lemma"><orth>kærdæg</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d1873e69"><abv:tr xml:lang="ru">
                         <q>трава</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>grass</q>
                     </abv:tr></sense>
-                <re>
+                <re xml:id="re_d1873e79">
                     <form type="lemma"><orth>kærdægx˳yz</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d1873e84"><abv:tr xml:lang="ru">
                             <q>зеленый</q>
-                        </abv:tr><note type="comment" xml:lang="ru"> („цвета травы“)</note><note
-                            type="comment" xml:lang="en"> („of grass colour“)</note></sense>
+                        </abv:tr><note type="comment" xml:lang="ru"> („цвета травы“)</note><note type="comment" xml:lang="en"> („of grass colour“)</note></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d1873e97">
                         <quote>gal ma næ fæxīzy axæm cʼæx kærdægyl!</quote>
                         <abv:tr xml:lang="ru">
                             <q>волу ли не пастись на такой зеленой траве!</q>
@@ -45,31 +49,27 @@
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>75</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Лексикализованное причастие от <ref type="xr"
-                        target="#entry_kærdyn"/> ‘косить’; буквально „косимое“. Образования на
+                <etym xml:lang="ru">Лексикализованное причастие от <ref type="xr" target="#entry_kærdyn"/> ‘косить’; буквально „косимое“. Образования на
                     %i-æg%i от глаголов имеют обычно значение %sактивных%s причастий: %ifyssæg%i
                     ‘пишущий’ (от <ref type="xr" target="#entry_fyssyn"/>), %ikūræg%i ‘просящий’ (от
                         <ref type="xr" target="#entry_kūryn"/>) и т. п. Однако в некоторых случаях
-                    они получали медиальное или пассивное значение, например <ref type="xr"
-                        target="#entry_zaræg"/> ‘песня’, ‘то, что поется’, а не только ‘поющий’,
+                    они получали медиальное или пассивное значение, например <ref type="xr" target="#entry_zaræg"/> ‘песня’, ‘то, что поется’, а не только ‘поющий’,
                     ‘тот, кто поет’; <ref type="xr" target="#entry_xūdæg"/> не только ‘смеющийся’,
                     но и ‘смешной’, и др. См. „О залоговой недифференцированности причастий“
                             (<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>568
                             сл.</biblScope></bibl>). Такое употребление следует считать древним; ср.
-                        <mentioned xml:lang="peo"><lang/>
+                        <mentioned xml:id="mentioned_d1873e134" xml:lang="peo"><lang/>
                         <w>ba(n)daka-</w>
                         <gloss><q>раб</q></gloss></mentioned>, буквально ‘связанный’ (а не
-                    ‘вяжущий’). — Для семантики ‘трава’ ← ‘косить’ ср. <mentioned xml:lang="de"><lang/>
+                    ‘вяжущий’). — Для семантики ‘трава’ ← ‘косить’ ср. <mentioned xml:id="mentioned_d1873e142" xml:lang="de"><lang/>
                         <w>Heu</w>
                         <gloss><q>сено</q></gloss></mentioned> от %ihauen%i (%iGras hauen%i ‘косить
-                    сено’); стало быть, <mentioned xml:lang="de"><lang/>
+                    сено’); стало быть, <mentioned xml:id="mentioned_d1873e150" xml:lang="de"><lang/>
                         <w>Heu</w></mentioned>, как осетинское %ikærdæg%i, означает собственно
-                    „подлежащее кошению“ („das zu Hauende'': %sKluge%s s.v.); ср. также <mentioned
-                        xml:lang="x-mordvin"><lang/>
+                    „подлежащее кошению“ („das zu Hauende'': %sKluge%s s.v.); ср. также <mentioned xml:id="mentioned_d1873e155" xml:lang="x-mordvin"><lang/>
                         <w>nar</w>
-                        <gloss><q>трава</q></gloss></mentioned>, <mentioned xml:lang="x-mordvin"
-                            ><w>naran</w>
-                        <gloss><q>стричь</q></gloss></mentioned>, <mentioned xml:lang="x-mordvin"><w/>
+                        <gloss><q>трава</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1873e163" xml:lang="x-mordvin"><w>naran</w>
+                        <gloss><q>стричь</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1873e170" xml:lang="x-mordvin"><w/>
                         <gloss><q>брить</q></gloss></mentioned>
                             (<bibl><biblScope>Ahlquist</biblScope></bibl>). — %iKærdæǵy stʼaly%i
                     ‘планета Венера’ (вечерняя; ср. %iBonværnon%i ‘утренняя Венера’), буквально
@@ -80,38 +80,29 @@
                     цветоносная“. — Слово %ikærdæg%i, обычно с озвончением начального %ik%i, находим
                     в названиях многих трав: <ref type="xr" target="#entry_bæxgærdæg"/> ‘конская
                     трава’, %ixæmpælgærdæg%i ‘бурьян’ (см. <ref type="xr" target="#entry_xæmpæl"/>),
-                    %icajgærdæg%i ‘чай’ (см. <ref type="xr" target="#entry_caj"/>). См. также <ref
-                        type="xr" target="#entry_dygærdyg"/> ‘телка-двухлетка’, буквально „дважды
+                    %icajgærdæg%i ‘чай’ (см. <ref type="xr" target="#entry_caj"/>). См. также <ref type="xr" target="#entry_dygærdyg"/> ‘телка-двухлетка’, буквально „дважды
                         (<ref type="xr" target="#entry_dy-"/>) вышедшая на траву“ (%igærdyg%i из
-                    %ikærdæg%i). См. <ref type="xr" target="#entry_kærdyn"/>.%n<bibl><ref
-                            type="bibl" target="#ref_ОЯФ_I"/><biblScope>221б 568 сл.,
+                    %ikærdæg%i). См. <ref type="xr" target="#entry_kærdyn"/>.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>221б 568 сл.,
                             571</biblScope></bibl>.</etym>
-                <etym xml:lang="en">Lexicalized participle from <ref type="xr"
-                        target="#entry_kærdyn"/> ‘mow’; literally “that is being mowed”. Verb
+                <etym xml:lang="en">Lexicalized participle from <ref type="xr" target="#entry_kærdyn"/> ‘mow’; literally “that is being mowed”. Verb
                     derivatives ending with %i-æg%i usually have the meaning of %sactive%s
-                    participles: %ifyssæg%i ‘one who is writing’ (from <ref type="xr"
-                        target="#entry_fyssyn"/>), %ikūræg%i ‘one who is asking’ (from <ref
-                        type="xr" target="#entry_kūryn"/>) etc. However, in some cases they received
+                    participles: %ifyssæg%i ‘one who is writing’ (from <ref type="xr" target="#entry_fyssyn"/>), %ikūræg%i ‘one who is asking’ (from <ref type="xr" target="#entry_kūryn"/>) etc. However, in some cases they received
                     medial or passive meaning, e.g. <ref type="xr" target="#entry_zaræg"/> means
-                    ‘song’, ‘that is being sung’, not only ‘one who is singing’; <ref type="xr"
-                        target="#entry_xūdæg"/> not only means ‘one who is laughing’, but also
-                    ‘funny’, etc. See “About voice non-differentiation of participles” (<bibl><ref
-                            type="bibl" target="#ref_ОЯФ_I"/><biblScope>568 сл.</biblScope></bibl>).
-                    Such use should be considered as ancient; cf. <mentioned xml:lang="peo"><lang/>
+                    ‘song’, ‘that is being sung’, not only ‘one who is singing’; <ref type="xr" target="#entry_xūdæg"/> not only means ‘one who is laughing’, but also
+                    ‘funny’, etc. See “About voice non-differentiation of participles” (<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>568 сл.</biblScope></bibl>).
+                    Such use should be considered as ancient; cf. <mentioned xml:id="mentioned_d1873e215" xml:lang="peo"><lang/>
                         <w>ba(n)daka-</w>
                         <gloss><q>slave</q></gloss></mentioned>, literally ‘one who is tied up’ (not
-                    ‘one, who is tying’). — For the semantic shift ‘grass’ ← ‘mow’ cf. <mentioned
-                        xml:lang="de"><lang/>
+                    ‘one, who is tying’). — For the semantic shift ‘grass’ ← ‘mow’ cf. <mentioned xml:id="mentioned_d1873e223" xml:lang="de"><lang/>
                         <w>Heu</w>
                         <gloss><q>hay</q></gloss></mentioned> from %ihauen%i (%iGras hauen%i ‘mow
-                    hay’); thus, <mentioned xml:lang="de"><lang/>
+                    hay’); thus, <mentioned xml:id="mentioned_d1873e231" xml:lang="de"><lang/>
                         <w>Heu</w></mentioned>, as well as Ossetic %ikærdæg%i, means “thing that
                     should be mowed” proper („das zu Hauende'': %sKluge%s s.v.); cf. also
-                        <mentioned xml:lang="x-mordvin"><lang/>
+                        <mentioned xml:id="mentioned_d1873e236" xml:lang="x-mordvin"><lang/>
                         <w>nar</w>
-                        <gloss><q>grass</q></gloss></mentioned>, <mentioned xml:lang="x-mordvin"
-                            ><w>naran</w>
-                        <gloss><q>cut</q></gloss></mentioned>, <mentioned xml:lang="x-mordvin"><w/>
+                        <gloss><q>grass</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1873e244" xml:lang="x-mordvin"><w>naran</w>
+                        <gloss><q>cut</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1873e251" xml:lang="x-mordvin"><w/>
                         <gloss><q>shave</q></gloss></mentioned>
                             (<bibl><biblScope>Ahlquist</biblScope></bibl>). — %iKærdæǵy stʼaly%i
                     ‘Venus (planet)’ (evening; cf. %iBonværnon%i ‘morning Venus’), literally “grass
@@ -121,13 +112,8 @@
                     grass appearance”). — %iKærdægxæssæn%i name of holiday, “floriferous Pentecost”.
                     — The word %ikærdæg%i, usually with the voicing of the initial %ik%i, is found
                     in the names of many herbs: <ref type="xr" target="#entry_bæxgærdæg"/> ‘Russian
-                    dock’, %ixæmpælgærdæg%i ‘tall grasses’ (see <ref type="xr"
-                        target="#entry_xæmpæl"/>), %icajgærdæg%i ‘tea’ (see <ref type="xr"
-                        target="#entry_caj"/>). See also <ref type="xr" target="#entry_dygærdyg"/>
-                    ‘two year old heifer’, literally “who went on the grass twice (<ref type="xr"
-                        target="#entry_dy-"/>)” (%igærdyg%i из %ikærdæg%i). See <ref type="xr"
-                        target="#entry_kærdyn"/>.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                            /><biblScope>221б 568 сл., 571</biblScope></bibl>.</etym>
+                    dock’, %ixæmpælgærdæg%i ‘tall grasses’ (see <ref type="xr" target="#entry_xæmpæl"/>), %icajgærdæg%i ‘tea’ (see <ref type="xr" target="#entry_caj"/>). See also <ref type="xr" target="#entry_dygærdyg"/>
+                    ‘two year old heifer’, literally “who went on the grass twice (<ref type="xr" target="#entry_dy-"/>)” (%igærdyg%i из %ikærdæg%i). See <ref type="xr" target="#entry_kærdyn"/>.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>221б 568 сл., 571</biblScope></bibl>.</etym>
                 <note type="internal">очень сомнительный перевод примера</note>
             </entry>
         </body>

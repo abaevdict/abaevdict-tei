@@ -1,34 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">kʼabuska</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_kʼabuska" xml:lang="os">
-                <form type="lemma"><orth>kʼabuska</orth><form type="variant"
-                        ><orth>kʼabusta</orth></form></form>
-                <sense><abv:tr xml:lang="ru">
+                <form type="lemma"><orth>kʼabuska</orth><form type="variant"><orth>kʼabusta</orth></form></form>
+                <sense xml:id="sense_d5247e71"><abv:tr xml:lang="ru">
                         <q>капуста</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>cabbage</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5247e83" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>kʼabusta nikkarstan æma ʽj niccærixgun kodtan</quote>
                         <abv:tr xml:lang="ru">
@@ -40,7 +44,7 @@
                         <bibl><ref type="bibl" target="#src_AK"/><biblScope>III
                             19</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5247e105">
                         <quote>abon sīxoræn wyʒæn kʼabuskajy bas</quote>
                         <abv:tr xml:lang="ru">
                             <q>сегодня к обеду будут щи</q>
@@ -48,30 +52,24 @@
                         <abv:tr xml:lang="en">
                             <q>today we will have cabbage soup for lunch</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Arsen"
-                            /><biblScope>152</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Arsen"/><biblScope>152</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из <mentioned xml:lang="ru"><lang/>
+                <etym xml:lang="ru">Из <mentioned xml:id="mentioned_d5247e127" xml:lang="ru"><lang/>
                         <w>капуста</w></mentioned> с диссимилятивным озвончением %ip%i → %ib%i.
-                    Отсюда и <mentioned xml:lang="kbd"><lang/>
-                        <w>qäbəstä</w></mentioned>, <mentioned xml:lang="inh"><lang/>
+                    Отсюда и <mentioned xml:id="mentioned_d5247e132" xml:lang="kbd"><lang/>
+                        <w>qäbəstä</w></mentioned>, <mentioned xml:id="mentioned_d5247e137" xml:lang="inh"><lang/>
                         <w>kæbuc</w></mentioned>. Форма %ikʼabuska%i основана, может быть, на
-                    русском %iкапустка%i.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"
-                            /><biblScope>II 69</biblScope></bibl>; <bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._Gr."/><biblScope>11, 27</biblScope></bibl>. —
-                            <bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                        /><biblScope>521</biblScope></bibl>.</etym>
-                <etym xml:lang="en">From <mentioned xml:lang="ru"><lang/>
+                    русском %iкапустка%i.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 69</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>11, 27</biblScope></bibl>. —
+                            <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>521</biblScope></bibl>.</etym>
+                <etym xml:lang="en">From <mentioned xml:id="mentioned_d5247e158" xml:lang="ru"><lang/>
                         <w>kapusta</w></mentioned> with dissimilative voicing %ip%i → %ib%i.
-                        <mentioned xml:lang="kbd"><lang/>
-                        <w>qäbəstä</w></mentioned>, <mentioned xml:lang="inh"><lang/>
+                        <mentioned xml:id="mentioned_d5247e163" xml:lang="kbd"><lang/>
+                        <w>qäbəstä</w></mentioned>, <mentioned xml:id="mentioned_d5247e168" xml:lang="inh"><lang/>
                         <w>kæbuc</w></mentioned> is from it as well. The form %ikʼabuska%i may be
-                    based on Russian %iкапустка%i ‘small cabbage’.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 69</biblScope></bibl>;
+                    based on Russian %iкапустка%i ‘small cabbage’.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 69</biblScope></bibl>;
                             <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>11,
-                            27</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                            /><biblScope>521</biblScope></bibl>.</etym>
+                            27</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>521</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

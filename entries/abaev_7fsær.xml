@@ -1,42 +1,47 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">7fsær</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_7fsær" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>ᵆfsær</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>æfsæræ</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d883e72"><abv:tr xml:lang="ru">
                         <q>челюсть</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>jaw</q>
                     </abv:tr></sense>
-                <re>
+                <re xml:id="re_d883e82">
                     <form type="lemma"><orth>ʒonyǧy fsærtæ</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d883e87"><abv:tr xml:lang="ru">
                             <q>полозья саней</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>sleigh runners</q>
                         </abv:tr></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d883e100">
                         <quote>nyvond argævdync, bastīǧync æj, yswængtæ jæ kænync æmæ jæ aǵy
                             sfycync; jæ sær yn nyllopʼo kænync æmæ jyn je fsær raxīcæn
                             kænync</quote>
@@ -49,8 +54,7 @@
                                 boiled in a cauldron; his head is cleaned of hair and the jaw is
                                 separated</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Munk."
-                            /><biblScope>206</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Munk."/><biblScope>206</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Метатеза из %i*sfær%i ← %i*spar-%i. Иранское слово; в живых
@@ -58,120 +62,112 @@
                     материальной культуры: сохой, сошником, заступом и пр. Здесь, как и во многих
                     других случаях, имеет место перенос анатомического термина на орудия; см.,
                     например, под словом <ref type="xr" target="#entry_ar"/> ‘рука’, ‘оглобля’. Ср.
-                        <mentioned xml:lang="fa"><lang/>
+                        <mentioned xml:id="mentioned_d883e125" xml:lang="fa"><lang/>
                         <w>spār, supār</w>
-                        <gloss><q>соха</q></gloss></mentioned>, <mentioned xml:lang="fa"><w/>
-                        <gloss><q>плуг</q></gloss></mentioned>, <mentioned xml:lang="ku"><lang/>
+                        <gloss><q>соха</q></gloss></mentioned>, <mentioned xml:id="mentioned_d883e133" xml:lang="fa"><w/>
+                        <gloss><q>плуг</q></gloss></mentioned>, <mentioned xml:id="mentioned_d883e139" xml:lang="ku"><lang/>
                         <w>äspärä, aspereh, isperek</w>
-                        <gloss><q>заступ</q></gloss></mentioned>, <mentioned xml:lang="ku"><w/>
+                        <gloss><q>заступ</q></gloss></mentioned>, <mentioned xml:id="mentioned_d883e147" xml:lang="ku"><w/>
                         <gloss><q>изогнутая палка внизу у заступа, на которую надавливают
-                            ногой</q></gloss></mentioned>, <mentioned xml:lang="hac"><lang/>
+                            ногой</q></gloss></mentioned>, <mentioned xml:id="mentioned_d883e154" xml:lang="hac"><lang/>
                         <w>äspār</w>
-                        <gloss><q>заступ</q></gloss></mentioned>, <mentioned xml:lang="ps"><lang/>
+                        <gloss><q>заступ</q></gloss></mentioned>, <mentioned xml:id="mentioned_d883e162" xml:lang="ps"><lang/>
                         <w>spāra</w>
-                        <gloss><q>сошник</q></gloss></mentioned>, <mentioned xml:lang="sgh"><lang/>
-                        <w>səpār, s(e)pōr, spōr, sepōrn</w></mentioned>, <mentioned xml:lang="ydg"><lang/>
-                        <w>sporo</w></mentioned>, <mentioned xml:lang="mnj"><lang/>
+                        <gloss><q>сошник</q></gloss></mentioned>, <mentioned xml:id="mentioned_d883e170" xml:lang="sgh"><lang/>
+                        <w>səpār, s(e)pōr, spōr, sepōrn</w></mentioned>, <mentioned xml:id="mentioned_d883e175" xml:lang="ydg"><lang/>
+                        <w>sporo</w></mentioned>, <mentioned xml:id="mentioned_d883e180" xml:lang="mnj"><lang/>
                         <w>s'pēra, sparo, spara</w>
-                        <gloss><q>соха</q></gloss></mentioned>, <mentioned xml:lang="sgy"><lang/>
+                        <gloss><q>соха</q></gloss></mentioned>, <mentioned xml:id="mentioned_d883e188" xml:lang="sgy"><lang/>
                         <w>spər</w>
-                        <gloss><q>сошник</q></gloss></mentioned>, <mentioned xml:lang="isk"><lang/>
-                        <w>uspir</w></mentioned>, <mentioned xml:lang="yah"><lang/>
+                        <gloss><q>сошник</q></gloss></mentioned>, <mentioned xml:id="mentioned_d883e197" xml:lang="isk"><lang/>
+                        <w>uspir</w></mentioned>, <mentioned xml:id="mentioned_d883e202" xml:lang="yah"><lang/>
                         <w>s%rə%rpīr</w>
-                        <gloss><q>соха</q></gloss></mentioned>, <mentioned xml:lang="wbl"><lang/>
+                        <gloss><q>соха</q></gloss></mentioned>, <mentioned xml:id="mentioned_d883e210" xml:lang="wbl"><lang/>
                         <w>s%rə%rpundr, s'por</w>
-                        <gloss><q>сошник</q></gloss></mentioned>, <mentioned xml:lang="srh"><lang/>
-                        <w>spur, supur</w></mentioned>, <mentioned xml:lang="oru"><lang/>
+                        <gloss><q>сошник</q></gloss></mentioned>, <mentioned xml:id="mentioned_d883e218" xml:lang="srh"><lang/>
+                        <w>spur, supur</w></mentioned>, <mentioned xml:id="mentioned_d883e223" xml:lang="oru"><lang/>
                         <w>ʽspar</w>
                         <gloss><q>плуг</q></gloss></mentioned>. Перечисленные термины, частью,
                     возможно, заимствованные из персидского, частью оригинальные, восходят к
-                        <mentioned xml:lang="ira"><lang/>
+                        <mentioned xml:id="mentioned_d883e231" xml:lang="ira"><lang/>
                         <w>*spara-, *sparana-</w>
-                        <gloss><q>челюсть</q></gloss></mentioned>, <mentioned xml:lang="ira"><w/>
+                        <gloss><q>челюсть</q></gloss></mentioned>, <mentioned xml:id="mentioned_d883e240" xml:lang="ira"><w/>
                         <gloss><q>изогнутое орудие для рыхления почвы</q></gloss></mentioned>,
-                        <mentioned xml:lang="ira"><w/><note type="comment" xml:lang="ru">а
+                        <mentioned xml:id="mentioned_d883e246" xml:lang="ira"><w/><note type="comment" xml:lang="ru">а
                             также</note>
-                        <gloss><q>соха</q></gloss></mentioned>, <mentioned xml:lang="ira"><w/>
-                        <gloss><q>сошник</q></gloss></mentioned>, <mentioned xml:lang="ira"><w/>
+                        <gloss><q>соха</q></gloss></mentioned>, <mentioned xml:id="mentioned_d883e254" xml:lang="ira"><w/>
+                        <gloss><q>сошник</q></gloss></mentioned>, <mentioned xml:id="mentioned_d883e260" xml:lang="ira"><w/>
                         <gloss><q>заступ</q></gloss></mentioned>. Значение ‘челюсть’ для
-                    древнеиранского устанавливается на основании <mentioned xml:lang="ae"><lang/>
+                    древнеиранского устанавливается на основании <mentioned xml:id="mentioned_d883e266" xml:lang="ae"><lang/>
                         <w>sparnha-</w>
-                        <gloss><q>десны</q></gloss></mentioned> из <mentioned xml:lang="ae"><lang/>
+                        <gloss><q>десны</q></gloss></mentioned> из <mentioned xml:id="mentioned_d883e274" xml:lang="ae"><lang/>
                         <w>*sparam-ga</w><note type="comment" xml:lang="ru">буквально</note>
                         <gloss><q>что находится (%iga%i) на челюсти
-                        (%isparam%i)</q></gloss></mentioned>, как <mentioned xml:lang="sa"><lang/>
+                        (%isparam%i)</q></gloss></mentioned>, как <mentioned xml:id="mentioned_d883e285" xml:lang="sa"><lang/>
                         <w>śṙñga</w>
-                        <gloss><q>рог</q></gloss></mentioned> из <mentioned xml:lang="sa"><lang/>
+                        <gloss><q>рог</q></gloss></mentioned> из <mentioned xml:id="mentioned_d883e293" xml:lang="sa"><lang/>
                         <w>śiram-ga</w>
                         <gloss><q>нарост на голове (%iśiram%i)</q></gloss></mentioned>. В дальнейшем
                     возможна связь с глагольной основой %ispar-%i ‘попирать’, ‘крушить’ и пр. (см.
                         <ref type="xr" target="#entry_7fsæryn"/>). Менее вероятной кажется нам связь
-                    с <mentioned xml:lang="srh"><lang/>
+                    с <mentioned xml:id="mentioned_d883e303" xml:lang="srh"><lang/>
                         <w>pšūr</w>
-                        <gloss><q>щека</q></gloss></mentioned>, <mentioned xml:lang="srh"><w/>
-                        <gloss><q>лицо</q></gloss></mentioned>. Ос. <ref type="xr"
-                        target="#entry_xsærfars"/> ‘щека’ представляет очевидную диссимиляцию из
+                        <gloss><q>щека</q></gloss></mentioned>, <mentioned xml:id="mentioned_d883e311" xml:lang="srh"><w/>
+                        <gloss><q>лицо</q></gloss></mentioned>. Ос. <ref type="xr" target="#entry_xsærfars"/> ‘щека’ представляет очевидную диссимиляцию из
                         %ifsær%i-<ref type="xr" target="#entry_fars"/> буквально „сторона
-                            челюсти“.%n<bibl><ref type="bibl" target="#ref_Miller,_IF_21"
-                            /><biblScope xml:lang="ru">стр. 325 сл</biblScope></bibl>.</etym>
+                            челюсти“.%n<bibl><ref type="bibl" target="#ref_Miller,_IF_21"/><biblScope xml:lang="ru">стр. 325 сл</biblScope></bibl>.</etym>
                 <etym xml:lang="en">A metathesis from %i*sfær%i ← %i*spar-%i. An Iranian word; in
                     (not dead) Iranian languages, it was mainly assigned to some objects of material
                     culture: plough, ploughshare bone, spade, etc. Here, as in many other cases,
                     there is a transfer of the anatomical term to tools; see, e.g., under the word
-                        <ref type="xr" target="#entry_ar"/> ‘hand’, ‘shaft’. Cf. <mentioned
-                        xml:lang="fa"><lang/>
+                        <ref type="xr" target="#entry_ar"/> ‘hand’, ‘shaft’. Cf. <mentioned xml:id="mentioned_d883e332" xml:lang="fa"><lang/>
                         <w>spār, supār</w>
-                        <gloss><q>wooden plough</q></gloss></mentioned>, <mentioned xml:lang="fa"><w/>
-                        <gloss><q>plough</q></gloss></mentioned>, <mentioned xml:lang="ku"><lang/>
+                        <gloss><q>wooden plough</q></gloss></mentioned>, <mentioned xml:id="mentioned_d883e340" xml:lang="fa"><w/>
+                        <gloss><q>plough</q></gloss></mentioned>, <mentioned xml:id="mentioned_d883e346" xml:lang="ku"><lang/>
                         <w>äspärä, aspereh, isperek</w>
-                        <gloss><q>spade</q></gloss></mentioned>, <mentioned xml:lang="ku"><w/>
+                        <gloss><q>spade</q></gloss></mentioned>, <mentioned xml:id="mentioned_d883e354" xml:lang="ku"><w/>
                         <gloss><q>curved stick at the bottom of the spade that is pressed down on by
-                                the foot</q></gloss></mentioned>, <mentioned xml:lang="hac"><lang/>
+                                the foot</q></gloss></mentioned>, <mentioned xml:id="mentioned_d883e361" xml:lang="hac"><lang/>
                         <w>äspār</w>
-                        <gloss><q>spade</q></gloss></mentioned>, <mentioned xml:lang="ps"><lang/>
+                        <gloss><q>spade</q></gloss></mentioned>, <mentioned xml:id="mentioned_d883e369" xml:lang="ps"><lang/>
                         <w>spāra</w>
-                        <gloss><q>ploughshare</q></gloss></mentioned>, <mentioned xml:lang="sgh"><lang/>
-                        <w>səpār, s(e)pōr, spōr, sepōrn</w></mentioned>, <mentioned xml:lang="ydg"><lang/>
-                        <w>sporo</w></mentioned>, <mentioned xml:lang="mnj"><lang/>
+                        <gloss><q>ploughshare</q></gloss></mentioned>, <mentioned xml:id="mentioned_d883e377" xml:lang="sgh"><lang/>
+                        <w>səpār, s(e)pōr, spōr, sepōrn</w></mentioned>, <mentioned xml:id="mentioned_d883e382" xml:lang="ydg"><lang/>
+                        <w>sporo</w></mentioned>, <mentioned xml:id="mentioned_d883e387" xml:lang="mnj"><lang/>
                         <w>s'pēra, sparo, spara</w>
-                        <gloss><q>wooden plough</q></gloss></mentioned>, <mentioned xml:lang="sgy"><lang/>
+                        <gloss><q>wooden plough</q></gloss></mentioned>, <mentioned xml:id="mentioned_d883e395" xml:lang="sgy"><lang/>
                         <w>spər</w>
-                        <gloss><q>ploughshare</q></gloss></mentioned>, <mentioned xml:lang="isk"><lang/>
-                        <w>uspir</w></mentioned>, <mentioned xml:lang="yah"><lang/>
+                        <gloss><q>ploughshare</q></gloss></mentioned>, <mentioned xml:id="mentioned_d883e404" xml:lang="isk"><lang/>
+                        <w>uspir</w></mentioned>, <mentioned xml:id="mentioned_d883e409" xml:lang="yah"><lang/>
                         <w>s%rə%rpīr</w>
-                        <gloss><q>wooden plough</q></gloss></mentioned>, <mentioned xml:lang="wbl"><lang/>
+                        <gloss><q>wooden plough</q></gloss></mentioned>, <mentioned xml:id="mentioned_d883e417" xml:lang="wbl"><lang/>
                         <w>s%rə%rpundr, s'por</w>
-                        <gloss><q>ploughshare</q></gloss></mentioned>, <mentioned xml:lang="srh"><lang/>
-                        <w>spur, supur</w></mentioned>, <mentioned xml:lang="oru"><lang/>
+                        <gloss><q>ploughshare</q></gloss></mentioned>, <mentioned xml:id="mentioned_d883e425" xml:lang="srh"><lang/>
+                        <w>spur, supur</w></mentioned>, <mentioned xml:id="mentioned_d883e430" xml:lang="oru"><lang/>
                         <w>ʽspar</w>
                         <gloss><q>plough</q></gloss></mentioned>. The listed terms, partly possibly
-                    borrowed from Persian, partly original, go back to <mentioned xml:lang="ira"><lang/>
+                    borrowed from Persian, partly original, go back to <mentioned xml:id="mentioned_d883e438" xml:lang="ira"><lang/>
                         <w>*spara-, *sparana-</w>
-                        <gloss><q>jaw</q></gloss></mentioned>, <mentioned xml:lang="ira"><w/>
-                        <gloss><q>curved soil loosening tool</q></gloss></mentioned>, <mentioned
-                        xml:lang="ira"><w/><note
-                            type="comment" xml:lang="en">and also</note>
-                        <gloss><q>wooden plough</q></gloss></mentioned>, <mentioned xml:lang="ira"><w/>
-                        <gloss><q>ploughshare</q></gloss></mentioned>, <mentioned xml:lang="ira"><w/>
+                        <gloss><q>jaw</q></gloss></mentioned>, <mentioned xml:id="mentioned_d883e447" xml:lang="ira"><w/>
+                        <gloss><q>curved soil loosening tool</q></gloss></mentioned>, <mentioned xml:id="mentioned_d883e453" xml:lang="ira"><w/><note type="comment" xml:lang="en">and also</note>
+                        <gloss><q>wooden plough</q></gloss></mentioned>, <mentioned xml:id="mentioned_d883e461" xml:lang="ira"><w/>
+                        <gloss><q>ploughshare</q></gloss></mentioned>, <mentioned xml:id="mentioned_d883e467" xml:lang="ira"><w/>
                         <gloss><q>spade</q></gloss></mentioned>. The meaning ‘jaw’ is established
-                    for Old Iranian based on <mentioned xml:lang="ae"><lang/>
+                    for Old Iranian based on <mentioned xml:id="mentioned_d883e473" xml:lang="ae"><lang/>
                         <w>sparnha-</w>
-                        <gloss><q>gums</q></gloss></mentioned> from <mentioned xml:lang="ae"><lang/>
-                        <w>*sparam-ga</w><note
-                            type="comment" xml:lang="en">literally</note>
+                        <gloss><q>gums</q></gloss></mentioned> from <mentioned xml:id="mentioned_d883e481" xml:lang="ae"><lang/>
+                        <w>*sparam-ga</w><note type="comment" xml:lang="en">literally</note>
                         <gloss><q>thing that is (%iga%i) on a jaw
-                        (%isparam%i)</q></gloss></mentioned>, as <mentioned xml:lang="sa"><lang/>
+                        (%isparam%i)</q></gloss></mentioned>, as <mentioned xml:id="mentioned_d883e492" xml:lang="sa"><lang/>
                         <w>śṙñga</w>
-                        <gloss><q>horn</q></gloss></mentioned> from <mentioned xml:lang="sa"><lang/>
+                        <gloss><q>horn</q></gloss></mentioned> from <mentioned xml:id="mentioned_d883e500" xml:lang="sa"><lang/>
                         <w>śiram-ga</w>
                         <gloss><q>growth on the head (%iśiram%i)</q></gloss></mentioned>. Later, a
                     connection with the verb stem %ispar-%i ‘trample’, ‘destroy’ etc. is possible
-                    (see <ref type="xr" target="#entry_7fsæryn"/>). The connection to <mentioned
-                        xml:lang="srh"><lang/>
+                    (see <ref type="xr" target="#entry_7fsæryn"/>). The connection to <mentioned xml:id="mentioned_d883e510" xml:lang="srh"><lang/>
                         <w>pšūr</w>
-                        <gloss><q>cheek</q></gloss></mentioned>, <mentioned xml:lang="srh"><w/>
-                        <gloss><q>face</q></gloss></mentioned> seems less probable. Ossetic <ref
-                        type="xr" target="#entry_xsærfars"/> ‘cheek’ is an obvious dissimilation
+                        <gloss><q>cheek</q></gloss></mentioned>, <mentioned xml:id="mentioned_d883e518" xml:lang="srh"><w/>
+                        <gloss><q>face</q></gloss></mentioned> seems less probable. Ossetic <ref type="xr" target="#entry_xsærfars"/> ‘cheek’ is an obvious dissimilation
                     from %ifsær%i-<ref type="xr" target="#entry_fars"/> literaly ‘jaw
                             side’.%n<bibl><ref type="bibl" target="#ref_Miller,_IF_21"/><biblScope xml:lang="en">p. 325
                             ff</biblScope></bibl>.</etym>

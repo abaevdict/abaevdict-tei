@@ -1,44 +1,47 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">kæwyn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_kæwyn" xml:lang="os">
-                <form xml:lang="os-x-iron" type="lemma"><orth>kæwyn</orth><form type="participle"
-                            ><orth>k˳yd</orth></form></form>
-                <form xml:lang="os-x-digor" type="dialectal"><orth>kæwun</orth><form
-                        type="participle"><orth>kud</orth></form></form>
-                <sense><abv:tr xml:lang="ru">
+                <form xml:lang="os-x-iron" type="lemma"><orth>kæwyn</orth><form type="participle"><orth>k˳yd</orth></form></form>
+                <form xml:lang="os-x-digor" type="dialectal"><orth>kæwun</orth><form type="participle"><orth>kud</orth></form></form>
+                <sense xml:id="sense_d1429e76"><abv:tr xml:lang="ru">
                         <q>плакать</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>to cry</q>
                     </abv:tr></sense>
-                <re>
+                <re xml:id="re_d1429e86">
                     <form type="lemma"><orth>kæwynqælæs</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d1429e91"><abv:tr xml:lang="ru">
                             <q>заплаканный голос</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>tearful voice</q>
                         </abv:tr></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d1429e104">
                         <quote>ma kæūt, mæ xūrtæ!</quote>
                         <abv:tr xml:lang="ru">
                             <q>не плачьте, мои солнышки!</q>
@@ -48,7 +51,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>44</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1429e123">
                         <quote>ma jyl kū!</quote>
                         <abv:tr xml:lang="ru">
                             <q>не плачь о нем!</q>
@@ -58,7 +61,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>37</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1429e142">
                         <quote>bajq˳ysta ʼmæ ʒy cydīs syvællony kæwyn</quote>
                         <abv:tr xml:lang="ru">
                             <q>он прислушался; оттуда раздавался плач ребенка</q>
@@ -68,7 +71,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_ОЭп."/><biblScope>21</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1429e161">
                         <quote>Axmæt … fyr cīnæj ysk˳ydta, ysboǧ-boǧ kodta</quote>
                         <abv:tr xml:lang="ru">
                             <q>Ахмат от радости заплакал, зарыдал</q>
@@ -76,38 +79,31 @@
                         <abv:tr xml:lang="en">
                             <q>Akhmat started criying and sobbing with joy</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Сека"
-                            /><biblScope>38-39</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Сека"/><biblScope>38-39</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Содержит иранский корень %i*kū-%i, %i*kav-%i, и.е. %i*kū-%i,
-                    %i*kau-%i ‘кричать’, ‘вопить’, ср. <mentioned xml:lang="sa"><lang/>
+                    %i*kau-%i ‘кричать’, ‘вопить’, ср. <mentioned xml:id="mentioned_d1429e184" xml:lang="sa"><lang/>
                         <w>kāuti, kavate</w>
-                        <gloss><q>он кричит</q></gloss></mentioned>, <mentioned xml:lang="cu"><lang/>
+                        <gloss><q>он кричит</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1429e192" xml:lang="cu"><lang/>
                         <w n="0">кыти</w>
-                        <gloss><q>ворчать</q></gloss></mentioned>, <mentioned xml:lang="grc"><lang/>
+                        <gloss><q>ворчать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1429e201" xml:lang="grc"><lang/>
                         <w>χωχύω</w>
-                        <gloss><q>кричу</q></gloss></mentioned>, <mentioned xml:lang="grc"><w/>
-                        <gloss><q>воплю</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Pokorny"/><biblScope>535
-                            сл.</biblScope></bibl>).%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 61, III
-                        145</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_IF"
-                            /><biblScope>23, стр. 329</biblScope></bibl>.</etym>
+                        <gloss><q>кричу</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1429e209" xml:lang="grc"><w/>
+                        <gloss><q>воплю</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Pokorny"/><biblScope>535
+                            сл.</biblScope></bibl>).%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 61, III
+                        145</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_IF"/><biblScope>23, стр. 329</biblScope></bibl>.</etym>
                 <etym xml:lang="en">It has an Iranian root %i*kū-%i, %i*kav-%i, Indo-European
-                    %i*kū-%i, %i*kau-%i ‘to cry’, ‘to yell’, cf. <mentioned xml:lang="sa"><lang/>
+                    %i*kū-%i, %i*kau-%i ‘to cry’, ‘to yell’, cf. <mentioned xml:id="mentioned_d1429e231" xml:lang="sa"><lang/>
                         <w>kāuti, kavate</w>
-                        <gloss><q>he is yelling</q></gloss></mentioned>, <mentioned xml:lang="cu"><lang/>
+                        <gloss><q>he is yelling</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1429e239" xml:lang="cu"><lang/>
                         <w>kyti</w>
-                        <gloss><q>to grumble</q></gloss></mentioned>, <mentioned xml:lang="grc"><lang/>
+                        <gloss><q>to grumble</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1429e247" xml:lang="grc"><lang/>
                         <w>χωχύω</w>
-                        <gloss><q>I am yelling</q></gloss></mentioned>, <mentioned xml:lang="grc"><w/>
-                        <gloss><q>I am crying out</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Pokorny"/><biblScope>535
-                            сл.</biblScope></bibl>).%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 61, III
-                        145</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_IF"
-                            /><biblScope>23, стр. 329</biblScope></bibl>.</etym>
+                        <gloss><q>I am yelling</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1429e255" xml:lang="grc"><w/>
+                        <gloss><q>I am crying out</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Pokorny"/><biblScope>535
+                            сл.</biblScope></bibl>).%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 61, III
+                        145</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_IF"/><biblScope>23, стр. 329</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

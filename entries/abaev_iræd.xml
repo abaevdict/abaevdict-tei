@@ -1,32 +1,37 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">iræd</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_iræd" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>iræd</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>ærwæd</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d5454e72"><sense xml:id="sense_d5454e73"><abv:tr xml:lang="ru">
                             <q>калым</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>bride price</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d5454e82"><abv:tr xml:lang="ru">
                             <q>плата за невесту ее родителям</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>some form of wealth paid to the family of the bride</q>
@@ -34,7 +39,7 @@
                         %iiræd%i)</note><note type="comment" xml:lang="en">(also
                     %iiræd%i)</note></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d5454e98">
                         <quote>mæ iræd cættæ ū… æxx˳yrsty myzdæj æræmbyrd</quote>
                         <abv:tr xml:lang="ru">
                             <q>мой калым готов… я скопил его из заработков батрака</q>
@@ -45,7 +50,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>60</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5454e117" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>de 'rwædi nimæʒæ min æj</quote>
                         <abv:tr xml:lang="ru">
@@ -54,10 +59,9 @@
                         <abv:tr xml:lang="en">
                             <q>the value of your bridewealth is one thousand</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Gurdž._Wadž."
-                            /><biblScope>18</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Gurdž._Wadž."/><biblScope>18</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5454e139" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>mænæ ærtæ æmbesi ci fons rakodton, omæj duwwæ xaji dæw fæwwæd, ew
                             dæxe xaj, īnnæ ba din mæn xaj, ærwæddag</quote>
@@ -71,10 +75,9 @@
                                 yours, one is due to you, and the other is from me, as
                                 bridewealth</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_ОЯФ_I"
-                            /><biblScope>438</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_ОЯФ_I"/><biblScope>438</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5454e161" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>sæ xæznatæ in Cærugtæ nur dædduncæ ærwædi</quote>
                         <abv:tr xml:lang="ru">
@@ -85,10 +88,9 @@
                             <q>now Carugovs give for her (for a bride) their riches in the form of
                                 bridewealth</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Gurdž._Æduli"
-                            /><biblScope>98</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Gurdž._Æduli"/><biblScope>98</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5454e183" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>mæ ʒogæn se ‘mbesæj bafiston ærwæd</quote>
                         <abv:tr xml:lang="ru">
@@ -99,7 +101,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Sam."/><biblScope>111</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5454e206" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>fesafdæj irædæn æ fingæ</quote>
                         <abv:tr xml:lang="ru">
@@ -111,9 +113,8 @@
                         <bibl><ref type="bibl" target="#src_Qazb."/><biblScope>22</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Ос. %iiræd%i | %iærwæd%i стоит в несомненной связи с <mentioned
-                        xml:lang="ka"><lang/>
-                        <w>urvati</w></mentioned>, <mentioned xml:lang="ce" extralang="inh"><lang/>
+                <etym xml:lang="ru">Ос. %iiræd%i | %iærwæd%i стоит в несомненной связи с <mentioned xml:id="mentioned_d5454e231" xml:lang="ka"><lang/>
+                        <w>urvati</w></mentioned>, <mentioned xml:id="mentioned_d5454e236" xml:lang="ce" extralang="inh"><lang/>
                         <w>urdu</w>
                         <gloss><q>калым</q></gloss></mentioned>. Но кто у кого заимствовал, осетины
                     у своих кавказских соседей или последние у первых? При решении этого вопроса
@@ -125,24 +126,20 @@
                     языках и не могут быть разъяснены в системе сравнительной грамматики кавказских
                     языков. 3. По доступным материалам, слово распространено только в тех грузинских
                     диалектах, которые соседят с осетинским, например мохевском (см.:
-                            <bibl><author>С.</author><ref type="bibl" target="#ref_Макалатия"
-                            /><biblScope>Хеви 157 сл</biblScope></bibl>). Все это дает основание
+                            <bibl><author>С.</author><ref type="bibl" target="#ref_Макалатия"/><biblScope>Хеви 157 сл</biblScope></bibl>). Все это дает основание
                     думать, что грузинское и чеченское слово идут от осетинского и что следует
                     попытаться найти для осетинского слова иранскую этимологию. Сближаем с
-                        <mentioned xml:lang="sa"><lang/>
-                        <w>vrata-</w></mentioned>, <mentioned xml:lang="ae"><lang/>
+                        <mentioned xml:id="mentioned_d5454e249" xml:lang="sa"><lang/>
+                        <w>vrata-</w></mentioned>, <mentioned xml:id="mentioned_d5454e254" xml:lang="ae"><lang/>
                         <w>urvata-</w>
-                        <gloss><q>(религиозное) установление</q></gloss></mentioned>, <mentioned
-                        xml:lang="ae"><w/>
-                        <gloss><q>обычай</q></gloss></mentioned>, <mentioned xml:lang="ae"
-                            ><w>urvati-</w>
+                        <gloss><q>(религиозное) установление</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5454e263" xml:lang="ae"><w/>
+                        <gloss><q>обычай</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5454e269" xml:lang="ae"><w>urvati-</w>
                         <gloss><q>договор</q></gloss></mentioned>. С звуковой стороны %ivrata-%i
-                    относится к %iiræd%i | %iærwæd%i, как %ivraja-%i к %i(i)ræz%i (см. <ref
-                        type="xr" target="#entry_ræz"/>) и %iærwæz%i. Грузинская и чеченская форма
+                    относится к %iiræd%i | %iærwæd%i, как %ivraja-%i к %i(i)ræz%i (см. <ref type="xr" target="#entry_ræz"/>) и %iærwæz%i. Грузинская и чеченская форма
                     отражают, по-видимому, ст.ос. *%iurwæd%i.</etym>
                 <etym xml:lang="en">Ossetic %iiræd%i | %iærwæd%i is undoubtedly related to
-                        <mentioned xml:lang="ka"><lang/>
-                        <w>urvati</w></mentioned>, <mentioned xml:lang="ce" extralang="inh"><lang/>
+                        <mentioned xml:id="mentioned_d5454e281" xml:lang="ka"><lang/>
+                        <w>urvati</w></mentioned>, <mentioned xml:id="mentioned_d5454e286" xml:lang="ce" extralang="inh"><lang/>
                         <w>urdu</w>
                         <gloss><q>bridewealth</q></gloss></mentioned>. But who borrowed from whom:
                     Ossetes from their Caucasian neighbours or the latter from the former? The
@@ -154,17 +151,14 @@
                     correspond to other Caucasian words, and they cannot be explained in the system
                     of comparative grammar of Caucasian languages. 3. According to the available
                     material, this word is widespread only in Georgian dialects, neighboring
-                    Ossetic, for example, in Mokhevian (see: <bibl><author>S.</author><ref
-                            type="bibl" target="#ref_Макалатия"/><biblScope>Khevi 157
+                    Ossetic, for example, in Mokhevian (see: <bibl><author>S.</author><ref type="bibl" target="#ref_Макалатия"/><biblScope>Khevi 157
                         f.</biblScope></bibl>). All these facts give ground to think that a Georgian
                     word and a Chechen one come from Ossetic and that the Iranian etymology should
-                    be found. It is related to <mentioned xml:lang="sa"><lang/>
-                        <w>vrata-</w></mentioned>, <mentioned xml:lang="ae"><lang/>
+                    be found. It is related to <mentioned xml:id="mentioned_d5454e299" xml:lang="sa"><lang/>
+                        <w>vrata-</w></mentioned>, <mentioned xml:id="mentioned_d5454e304" xml:lang="ae"><lang/>
                         <w>urvata-</w>
-                        <gloss><q>(religious) establishment</q></gloss></mentioned>, <mentioned
-                        xml:lang="ae"><w/>
-                        <gloss><q>tradition</q></gloss></mentioned>, <mentioned xml:lang="ae"
-                            ><w>urvati-</w>
+                        <gloss><q>(religious) establishment</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5454e313" xml:lang="ae"><w/>
+                        <gloss><q>tradition</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5454e319" xml:lang="ae"><w>urvati-</w>
                         <gloss><q>contract</q></gloss></mentioned>. As for the sound composition,
                     %ivrata-%i is related to %iiræd%i | %iærwæd%i, as %ivraja-%i is related to
                     %i(i)ræz%i (see <ref type="xr" target="#entry_ræz"/>) and %iærwæz%i. Georgian

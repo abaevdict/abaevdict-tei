@@ -1,33 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">dæǧæl</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_dæǧæl" xml:lang="os">
                 <form type="lemma"><orth>dæǧæl</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d5770e69"><abv:tr xml:lang="ru">
                         <q>ключ</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>key</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d5770e81">
                         <quote>dæǧæltæ jæm radda æmæ jyn zaǧta: ast dwary bakæn, faræstæm ma
                             bakæn</quote>
                         <abv:tr xml:lang="ru">
@@ -39,7 +44,7 @@
                                 ninth</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5770e96" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>dwarmæ baqærttæj i dæǧæltæ ævzarun bajdædta ma ʽj ew dæǧælæj bajgon
                             kodta</quote>
@@ -53,7 +58,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
                             74</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5770e118">
                         <quote>ʒwary læg balcy wydī, æmæ jyn kuvændony dæǧæltæ jæ xæʒary æfsnajd
                             wydysty</quote>
                         <abv:tr xml:lang="ru">
@@ -63,38 +68,32 @@
                             <q>the priest was away, and the keys to the sanctuary were hidden in the
                                 house</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Čerm."
-                            /><biblScope>177</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Čerm."/><biblScope>177</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Надежные соответствия есть в кавказских языках: <mentioned
-                        xml:lang="inh"><lang/>
-                        <w>dhoaghæ</w></mentioned>, <mentioned xml:lang="ce"><lang/>
+                <etym xml:lang="ru">Надежные соответствия есть в кавказских языках: <mentioned xml:id="mentioned_d5770e140" xml:lang="inh"><lang/>
+                        <w>dhoaghæ</w></mentioned>, <mentioned xml:id="mentioned_d5770e145" xml:lang="ce"><lang/>
                         <w>doghu</w>
-                        <gloss><q>ключ</q></gloss></mentioned>. Слово <ref type="xr"
-                        target="#entry_zægæl"/> ‘гвоздь’ созвучно, по-видимому, не случайно; оно
+                        <gloss><q>ключ</q></gloss></mentioned>. Слово <ref type="xr" target="#entry_zægæl"/> ‘гвоздь’ созвучно, по-видимому, не случайно; оно
                     также имеет вейнахские соответствия, и оба слова, возможно, дифференцировались
                     из одного субстратного комплекса со значением ‘палки’, ‘гвоздя’, ‘ключа’ и т. п.
-                    Для развития значения ср. <mentioned xml:lang="ru"><lang/>
-                        <w>ключ</w></mentioned> и <mentioned xml:lang="ru"><lang/>
-                        <w>клюка</w></mentioned>, <mentioned xml:lang="la"><lang/>
-                        <w>clavis</w></mentioned> и <mentioned xml:lang="la"><lang/>
-                        <w>clavus</w></mentioned>.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                            /><biblScope>105</biblScope></bibl>.</etym>
+                    Для развития значения ср. <mentioned xml:id="mentioned_d5770e155" xml:lang="ru"><lang/>
+                        <w>ключ</w></mentioned> и <mentioned xml:id="mentioned_d5770e160" xml:lang="ru"><lang/>
+                        <w>клюка</w></mentioned>, <mentioned xml:id="mentioned_d5770e166" xml:lang="la"><lang/>
+                        <w>clavis</w></mentioned> и <mentioned xml:id="mentioned_d5770e171" xml:lang="la"><lang/>
+                        <w>clavus</w></mentioned>.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>105</biblScope></bibl>.</etym>
                 <etym xml:lang="en">Reliable correspondences are found in Caucasian languages:
-                        <mentioned xml:lang="inh"><lang/>
-                        <w>dhoaghæ</w></mentioned>, <mentioned xml:lang="ce"><lang/>
+                        <mentioned xml:id="mentioned_d5770e183" xml:lang="inh"><lang/>
+                        <w>dhoaghæ</w></mentioned>, <mentioned xml:id="mentioned_d5770e188" xml:lang="ce"><lang/>
                         <w>doghu</w>
-                        <gloss><q>key</q></gloss></mentioned>. The word <ref type="xr"
-                        target="#entry_zægæl"/> ‘nail’ sounds similar apparently for some reason; it
+                        <gloss><q>key</q></gloss></mentioned>. The word <ref type="xr" target="#entry_zægæl"/> ‘nail’ sounds similar apparently for some reason; it
                     also has Vainakh correspondences, and both words probably came from one
                     substrate complex with the meaning ‘stick’, ‘nail’, ‘key’ etc. For the meaining
-                    development cf. <mentioned xml:lang="ru"><lang/>
-                        <w>ključ</w></mentioned> and <mentioned xml:lang="ru"><lang/>
-                        <w>kljuka</w></mentioned>, <mentioned xml:lang="la"><lang/>
-                        <w>clavis</w></mentioned> and <mentioned xml:lang="la"><lang/>
-                        <w>clavus</w></mentioned>.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                            /><biblScope>105</biblScope></bibl>.</etym>
+                    development cf. <mentioned xml:id="mentioned_d5770e198" xml:lang="ru"><lang/>
+                        <w>ključ</w></mentioned> and <mentioned xml:id="mentioned_d5770e203" xml:lang="ru"><lang/>
+                        <w>kljuka</w></mentioned>, <mentioned xml:id="mentioned_d5770e209" xml:lang="la"><lang/>
+                        <w>clavis</w></mentioned> and <mentioned xml:id="mentioned_d5770e214" xml:lang="la"><lang/>
+                        <w>clavus</w></mentioned>.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>105</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

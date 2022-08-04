@@ -1,37 +1,42 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">adærgæj</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_adærgæj" xml:lang="os">
                 <form type="lemma"><orth>adærgæj</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d3177e69"><sense xml:id="sense_d3177e70"><abv:tr xml:lang="ru">
                             <q>в крайности</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>as a last resort</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d3177e79"><abv:tr xml:lang="ru">
                             <q>в отчаянии</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>despairingly</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d3177e91">
                         <quote>adærgæj ma iw qær nykkodta</quote>
                         <abv:tr xml:lang="ru">
                             <q>в отчаянии он издал еще один крик</q>
@@ -40,7 +45,7 @@
                             <q>in despair he screamed once again</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3177e106">
                         <quote>adærgæj arawaj-bawaj kodta ʒwary alyfars</quote>
                         <abv:tr xml:lang="ru">
                             <q>в замешательстве он побегал туда-сюда вокруг святилища</q>
@@ -48,10 +53,9 @@
                         <abv:tr xml:lang="en">
                             <q>confused he ran back and forth around the sanctuary</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Čerm."
-                            /><biblScope>179</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Čerm."/><biblScope>179</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d3177e125" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>æ biccewi adærgæjti madæ mæluj</quote>
                         <abv:tr xml:lang="ru">
@@ -63,22 +67,18 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Орудно-отложительный падеж от какого-то несохранившегося слова
-                        <mentioned xml:lang="os"><lang/>
+                        <mentioned xml:id="mentioned_d3177e146" xml:lang="os"><lang/>
                         <w>*adærg</w></mentioned> в значении ‘страх’, ‘ужас’, ‘отчаяние’ и т.
                     п.?%r2%r</etym>
-                <etym xml:lang="en">Instrumental-ablative case from a nonextant word <mentioned
-                        xml:lang="os"><lang/>
+                <etym xml:lang="en">Instrumental-ablative case from a nonextant word <mentioned xml:id="mentioned_d3177e154" xml:lang="os"><lang/>
                         <w>*adærg</w></mentioned> in the meaning ‘fearʼ, ‘horror’, ‘despair’,
                     etc.?%r1%r</etym>
-                <note type="footnote" xml:lang="ru" n="1">„Не попытаться ли объяснить <mentioned
-                        xml:lang="os"><lang/>
+                <note type="footnote" xml:lang="ru" n="1">„Не попытаться ли объяснить <mentioned xml:id="mentioned_d3177e163" xml:lang="os"><lang/>
                         <w>adærgæj</w></mentioned> в связи с <ref type="xr" target="#entry_tærgaj"/>
                     ‘каприз’, ‘обида’?” (<bibl><author>Г. Ахвледиани</author><biblScope> — в
                             письме</biblScope></bibl>)</note>
-                <note type="footnote" xml:lang="en" n="1">“Could one explain <mentioned
-                        xml:lang="os"><lang/>
-                        <w>adærgæj</w></mentioned> in connection with <ref type="xr"
-                        target="#entry_tærgaj"/> ‘caprice’, ‘offence’?” (<bibl><author>G.
+                <note type="footnote" xml:lang="en" n="1">“Could one explain <mentioned xml:id="mentioned_d3177e177" xml:lang="os"><lang/>
+                        <w>adærgæj</w></mentioned> in connection with <ref type="xr" target="#entry_tærgaj"/> ‘caprice’, ‘offence’?” (<bibl><author>G.
                             Akhvlediani</author><biblScope> — in a letter</biblScope></bibl>)</note>
             </entry>
         </body>

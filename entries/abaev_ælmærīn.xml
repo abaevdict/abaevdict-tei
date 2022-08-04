@@ -1,34 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ælmærīn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ælmærīn" xml:lang="os-x-iron">
                 <form type="lemma"><orth>ælmærīn</orth></form>
                 <usg><lang/></usg>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d2027e72"><abv:tr xml:lang="ru">
                         <q>локоть (мера длины)</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>cubit</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d2027e84">
                         <quote>ærtæ ʽrmærīny zæxx</quote>
                         <abv:tr xml:lang="ru">
                             <q>три локтя земли</q>
@@ -40,7 +45,7 @@
                                 121</biblScope><biblScope xml:lang="en">Liter. xrestom., 1933,
                                 Stalinir, p. 121</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2027e105">
                         <quote>wæ asyl… īw ærmærīn baftawyn ḱī bafærazʒæn?</quote>
                         <abv:tr xml:lang="ru">
                             <q>кто из вас… может прибавить себе росту на один локоть?</q>
@@ -51,7 +56,7 @@
                         <bibl><ref type="bibl" target="#src_Матфей"/><biblScope>%i6%i
                             27</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2027e124">
                         <quote>am barync nyr ælmærīnæj mænæwy narst æsfīr</quote>
                         <abv:tr xml:lang="ru">
                             <q>здесь измеряют теперь на локоть полный колос пшеницы</q>
@@ -64,88 +69,68 @@
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Сложное из <ref type="xr" target="#entry_arm"/> ‘рука’ (с
                     ослаблением гласного) и %i*ærīn%i. Последнее восходит к %iaraθni-%i и само уже
-                    значило ‘локоть’; ср. <mentioned xml:lang="fa"><lang/>
-                        <w>ā̌ranj</w></mentioned>, <mentioned xml:lang="fa"><w>ā̌ran</w>
-                        <gloss><q>локоть</q></gloss></mentioned> и <mentioned xml:lang="fa"><lang/>
+                    значило ‘локоть’; ср. <mentioned xml:id="mentioned_d2027e148" xml:lang="fa"><lang/>
+                        <w>ā̌ranj</w></mentioned>, <mentioned xml:id="mentioned_d2027e153" xml:lang="fa"><w>ā̌ran</w>
+                        <gloss><q>локоть</q></gloss></mentioned> и <mentioned xml:id="mentioned_d2027e159" xml:lang="fa"><lang/>
                         <w/>
-                        <gloss><q>локоть (мера)</q></gloss></mentioned><mentioned xml:lang="yai"><lang/>
-                        <w>arinǰ</w></mentioned>, <mentioned xml:lang="x-pamir"><lang/>
-                        <w>ȧrinǰ</w></mentioned>, <mentioned xml:lang="sgh"><lang/>
-                        <w>arenǰ</w></mentioned> (возможно, заимствованы из персидского), <mentioned
-                        xml:lang="srh"><lang/>
-                        <w>yorn</w></mentioned>, <mentioned xml:lang="sgh"><lang/>
+                        <gloss><q>локоть (мера)</q></gloss></mentioned><mentioned xml:id="mentioned_d2027e166" xml:lang="yai"><lang/>
+                        <w>arinǰ</w></mentioned>, <mentioned xml:id="mentioned_d2027e171" xml:lang="x-pamir"><lang/>
+                        <w>ȧrinǰ</w></mentioned>, <mentioned xml:id="mentioned_d2027e177" xml:lang="sgh"><lang/>
+                        <w>arenǰ</w></mentioned> (возможно, заимствованы из персидского), <mentioned xml:id="mentioned_d2027e182" xml:lang="srh"><lang/>
+                        <w>yorn</w></mentioned>, <mentioned xml:id="mentioned_d2027e187" xml:lang="sgh"><lang/>
                         <w>-yērn</w></mentioned> в %iwīṣ̄tyērn%i ‘локоть’
-                            (<bibl><author>Morgenstierne</author><ref type="bibl" target="#ref_NTS"
-                            /><biblScope>I 74</biblScope></bibl>), <mentioned xml:lang="sog"><lang/>
-                        <w>*arīnč(ʼrʼync)</w></mentioned>, <mentioned xml:lang="ae"><lang/>
+                            (<bibl><author>Morgenstierne</author><ref type="bibl" target="#ref_NTS"/><biblScope>I 74</biblScope></bibl>), <mentioned xml:id="mentioned_d2027e197" xml:lang="sog"><lang/>
+                        <w>*arīnč(ʼrʼync)</w></mentioned>, <mentioned xml:id="mentioned_d2027e202" xml:lang="ae"><lang/>
                         <w>arəθna-</w>
-                        <gloss><q>локоть</q></gloss></mentioned>, <mentioned xml:lang="ae"
-                            ><w>frāraθni-</w></mentioned>, <mentioned xml:lang="peo"><lang/>
+                        <gloss><q>локоть</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2027e211" xml:lang="ae"><w>frāraθni-</w></mentioned>, <mentioned xml:id="mentioned_d2027e214" xml:lang="peo"><lang/>
                         <w>arašni-</w>
-                        <gloss><q>локоть (мера)</q></gloss></mentioned>, <mentioned xml:lang="sa"><lang/>
-                        <w>áratni-</w></mentioned>, <mentioned xml:lang="got"><lang/>
-                        <w>aleina</w></mentioned>, <mentioned xml:lang="goh"><lang/>
-                        <w>elina</w></mentioned>, <mentioned xml:lang="grc"><lang/>
-                        <w>ὠλένη</w></mentioned>, <mentioned xml:lang="la"><lang/>
-                        <w>ulna</w></mentioned>, <mentioned xml:lang="cel"><lang/>
-                        <w>uilenn</w></mentioned>, <mentioned xml:lang="cel"
-                    ><w>elin</w></mentioned>, <mentioned xml:lang="cel"><w>ilin</w>
+                        <gloss><q>локоть (мера)</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2027e222" xml:lang="sa"><lang/>
+                        <w>áratni-</w></mentioned>, <mentioned xml:id="mentioned_d2027e227" xml:lang="got"><lang/>
+                        <w>aleina</w></mentioned>, <mentioned xml:id="mentioned_d2027e232" xml:lang="goh"><lang/>
+                        <w>elina</w></mentioned>, <mentioned xml:id="mentioned_d2027e237" xml:lang="grc"><lang/>
+                        <w>ὠλένη</w></mentioned>, <mentioned xml:id="mentioned_d2027e243" xml:lang="la"><lang/>
+                        <w>ulna</w></mentioned>, <mentioned xml:id="mentioned_d2027e248" xml:lang="cel"><lang/>
+                        <w>uilenn</w></mentioned>, <mentioned xml:id="mentioned_d2027e253" xml:lang="cel"><w>elin</w></mentioned>, <mentioned xml:id="mentioned_d2027e256" xml:lang="cel"><w>ilin</w>
                         <gloss><q>локоть</q></gloss></mentioned>. Ос. %i*ærīn%i получилось из
                     %iaraθni-%i, как xsīn из %i*xsaθni-%i (в других случаях %i-īn%i восходит к
                     %iaina%i или %i-ani%i, например %izærīn%i из %izaranya%i). Усиление слова
-                    %i*ærīn%i ‘локоть’ детерминативом <ref type="xr" target="#entry_arm"/> или <ref
-                        type="xr" target="#entry_cong"/> ‘рука’ („ручной локоть“) понадобилось, надо
-                    думать, тогда, когда в значении ‘локоть (анат.)’ утвердилось <ref type="xr"
-                        target="#entry_ræmbyn"/> q. v. Д. <ref type="xr" target="#entry_cængærīnæ"/>
-                    ‘локоть (мера)’ заключает в первой части вместо %iarm%i синонимическое <ref
-                        type="xr" target="#entry_cong"/> с ослабленным гласным. Ср. другие меры
-                    длины: <ref type="xr" target="#entry_ivaz6n9"/>, <ref type="xr"
-                        target="#entry_wylyng"/>, <ref type="xr" target="#entry_dīsny"
-                            />.%n<bibl><ref type="bibl" target="#ref_Horn._Gr."
-                            /><biblScope>5</biblScope></bibl> — <bibl><ref type="bibl"
-                            target="#ref_ОЯФ_I"/><biblScope>29</biblScope></bibl>.</etym>
+                    %i*ærīn%i ‘локоть’ детерминативом <ref type="xr" target="#entry_arm"/> или <ref type="xr" target="#entry_cong"/> ‘рука’ („ручной локоть“) понадобилось, надо
+                    думать, тогда, когда в значении ‘локоть (анат.)’ утвердилось <ref type="xr" target="#entry_ræmbyn"/> q. v. Д. <ref type="xr" target="#entry_cængærīnæ"/>
+                    ‘локоть (мера)’ заключает в первой части вместо %iarm%i синонимическое <ref type="xr" target="#entry_cong"/> с ослабленным гласным. Ср. другие меры
+                    длины: <ref type="xr" target="#entry_ivaz6n9"/>, <ref type="xr" target="#entry_wylyng"/>, <ref type="xr" target="#entry_dīsny"/>.%n<bibl><ref type="bibl" target="#ref_Horn._Gr."/><biblScope>5</biblScope></bibl> — <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>29</biblScope></bibl>.</etym>
                 <etym xml:lang="en">Compound from <ref type="xr" target="#entry_arm"/> ‘arm’ (with
                     vowel weakening) and %i*ærīn%i. The latter goes back to %iaraθni-%i и and meant
-                    ‘elbow’ itself; cf. <mentioned xml:lang="fa"><lang/>
-                        <w>ā̌ranj</w></mentioned>, <mentioned xml:lang="fa"><w>ā̌ran</w>
-                        <gloss><q>elbow</q></gloss></mentioned> и <mentioned xml:lang="fa"><lang/>
+                    ‘elbow’ itself; cf. <mentioned xml:id="mentioned_d2027e294" xml:lang="fa"><lang/>
+                        <w>ā̌ranj</w></mentioned>, <mentioned xml:id="mentioned_d2027e299" xml:lang="fa"><w>ā̌ran</w>
+                        <gloss><q>elbow</q></gloss></mentioned> и <mentioned xml:id="mentioned_d2027e305" xml:lang="fa"><lang/>
                         <w/>
-                        <gloss><q>ell</q></gloss></mentioned><mentioned xml:lang="yai"><lang/>
-                        <w>arinǰ</w></mentioned>, <mentioned xml:lang="x-pamir"><lang/>
-                        <w>ȧrinǰ</w></mentioned>, <mentioned xml:lang="sgh"><lang/>
-                        <w>arenǰ</w></mentioned> (perhaps, borrowed from Persian), <mentioned
-                        xml:lang="srh"><lang/>
-                        <w>yorn</w></mentioned>, <mentioned xml:lang="sgh"><lang/>
+                        <gloss><q>ell</q></gloss></mentioned><mentioned xml:id="mentioned_d2027e312" xml:lang="yai"><lang/>
+                        <w>arinǰ</w></mentioned>, <mentioned xml:id="mentioned_d2027e317" xml:lang="x-pamir"><lang/>
+                        <w>ȧrinǰ</w></mentioned>, <mentioned xml:id="mentioned_d2027e323" xml:lang="sgh"><lang/>
+                        <w>arenǰ</w></mentioned> (perhaps, borrowed from Persian), <mentioned xml:id="mentioned_d2027e328" xml:lang="srh"><lang/>
+                        <w>yorn</w></mentioned>, <mentioned xml:id="mentioned_d2027e333" xml:lang="sgh"><lang/>
                         <w>-yērn</w></mentioned> in %iwīṣ̄tyērn%i ‘elbow’
-                            (<bibl><author>Morgenstierne</author><ref type="bibl" target="#ref_NTS"
-                            /><biblScope>I 74</biblScope></bibl>), <mentioned xml:lang="sog"><lang/>
-                        <w>*arīnč(ʼrʼync)</w></mentioned>, <mentioned xml:lang="ae"><lang/>
+                            (<bibl><author>Morgenstierne</author><ref type="bibl" target="#ref_NTS"/><biblScope>I 74</biblScope></bibl>), <mentioned xml:id="mentioned_d2027e343" xml:lang="sog"><lang/>
+                        <w>*arīnč(ʼrʼync)</w></mentioned>, <mentioned xml:id="mentioned_d2027e348" xml:lang="ae"><lang/>
                         <w>arəθna-</w>
-                        <gloss><q>elbow</q></gloss></mentioned>, <mentioned xml:lang="ae"
-                            ><w>frāraθni-</w></mentioned>, <mentioned xml:lang="peo"><lang/>
+                        <gloss><q>elbow</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2027e357" xml:lang="ae"><w>frāraθni-</w></mentioned>, <mentioned xml:id="mentioned_d2027e360" xml:lang="peo"><lang/>
                         <w>arašni-</w>
-                        <gloss><q>ell</q></gloss></mentioned>, <mentioned xml:lang="sa"><lang/>
-                        <w>áratni-</w></mentioned>, <mentioned xml:lang="got"><lang/>
-                        <w>aleina</w></mentioned>, <mentioned xml:lang="goh"><lang/>
-                        <w>elina</w></mentioned>, <mentioned xml:lang="grc"><lang/>
-                        <w>ὠλένη</w></mentioned>, <mentioned xml:lang="la"><lang/>
-                        <w>ulna</w></mentioned>, <mentioned xml:lang="cel"><lang/>
-                        <w>uilenn</w></mentioned>, <mentioned xml:lang="cel"
-                    ><w>elin</w></mentioned>, <mentioned xml:lang="cel"><w>ilin</w>
+                        <gloss><q>ell</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2027e368" xml:lang="sa"><lang/>
+                        <w>áratni-</w></mentioned>, <mentioned xml:id="mentioned_d2027e373" xml:lang="got"><lang/>
+                        <w>aleina</w></mentioned>, <mentioned xml:id="mentioned_d2027e378" xml:lang="goh"><lang/>
+                        <w>elina</w></mentioned>, <mentioned xml:id="mentioned_d2027e383" xml:lang="grc"><lang/>
+                        <w>ὠλένη</w></mentioned>, <mentioned xml:id="mentioned_d2027e389" xml:lang="la"><lang/>
+                        <w>ulna</w></mentioned>, <mentioned xml:id="mentioned_d2027e394" xml:lang="cel"><lang/>
+                        <w>uilenn</w></mentioned>, <mentioned xml:id="mentioned_d2027e399" xml:lang="cel"><w>elin</w></mentioned>, <mentioned xml:id="mentioned_d2027e402" xml:lang="cel"><w>ilin</w>
                         <gloss><q>elbow</q></gloss></mentioned>. The Ossetic %i*ærīn%i resulted from
                     %iaraθni-%i, like xsīn from %i*xsaθni-%i (in other cases %i-īn%i goes back to
                     %iaina%i or %i-ani%i, for instance, %izærīn%i from %izaranya%i). Reinforcement
-                    of the word %i*ærīn%i ‘elbow’ by the determinative <ref type="xr"
-                        target="#entry_arm"/> or <ref type="xr" target="#entry_cong"/> ‘arm’ (“elbow
-                    of arm”) was needed, supposedly, when the word <ref type="xr"
-                        target="#entry_ræmbyn"/>was established in the meaning 'elbow' q. v. The
+                    of the word %i*ærīn%i ‘elbow’ by the determinative <ref type="xr" target="#entry_arm"/> or <ref type="xr" target="#entry_cong"/> ‘arm’ (“elbow
+                    of arm”) was needed, supposedly, when the word <ref type="xr" target="#entry_ræmbyn"/>was established in the meaning 'elbow' q. v. The
                     Digor <ref type="xr" target="#entry_cængærīnæ"/> ‘ell’ contains (instead of
                     %iarm%i) the synonymous <ref type="xr" target="#entry_cong"/> with a weakened
                     vowel. Cf. other measures of length: <ref type="xr" target="#entry_ivaz6n9"/>,
-                        <ref type="xr" target="#entry_wylyng"/>, <ref type="xr"
-                        target="#entry_dīsny"/>.%n<bibl><ref type="bibl" target="#ref_Horn._Gr."
-                            /><biblScope>5</biblScope></bibl> — <bibl><ref type="bibl"
-                            target="#ref_ОЯФ_I"/><biblScope>29</biblScope></bibl>.</etym>
+                        <ref type="xr" target="#entry_wylyng"/>, <ref type="xr" target="#entry_dīsny"/>.%n<bibl><ref type="bibl" target="#ref_Horn._Gr."/><biblScope>5</biblScope></bibl> — <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>29</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

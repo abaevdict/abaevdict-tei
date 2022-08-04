@@ -1,50 +1,55 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">dombaj</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_dombaj" xml:lang="os">
                 <form type="lemma"><orth>dombaj</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d368e69"><abv:tr xml:lang="ru">
                         <q>зубр</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>bison</q>
                     </abv:tr></sense>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d368e79"><abv:tr xml:lang="ru">
                         <q>лев</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>lion</q>
                     </abv:tr><note type="comment" xml:lang="ru">в новейшем употреблении
                         также</note><note type="comment" xml:lang="en">in newest use
                     also</note></sense>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d368e93"><sense xml:id="sense_d368e94"><abv:tr xml:lang="ru">
                             <q>мощный</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>powerful</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d368e103"><abv:tr xml:lang="ru">
                             <q>сильный</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>strong</q>
                         </abv:tr></sense><note type="comment" xml:lang="ru">как прилагательное
                         —</note><note type="comment" xml:lang="en">as an adjective —</note></sense>
                 <abv:exampleGrp>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d368e119" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>dombaji siwtæ</quote>
                         <abv:tr xml:lang="ru">
@@ -55,7 +60,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Tujǧ."/><biblScope>32</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d368e141" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>sag æma ʒæbodur, ǧolon tuska ma dombaj… kodtoncæ ewmæ
                             coppaj</quote>
@@ -67,10 +72,9 @@
                             <q>deer and mountain tour, wild boar and bison led a round dance of
                                 %scoppaj%s</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Gurdž._Saxi_ræs."
-                                /><biblScope>47</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Gurdž._Saxi_ræs."/><biblScope>47</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d368e163">
                         <quote>Tuǧan jæ mady cur dombajy qævdyny læwd yskodta</quote>
                         <abv:tr xml:lang="ru">
                             <q>Туган стал возле матери, как львенок</q>
@@ -80,7 +84,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Сека"/><biblScope>94</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d368e182">
                         <quote>jæ dombaj æng˳ylʒtæ wadynʒy amonæntyl zyrzyr kodtoj</quote>
                         <abv:tr xml:lang="ru">
                             <q>его сильные пальцы дрожали на отверстиях свирели</q>
@@ -91,44 +95,37 @@
                         <bibl><ref type="bibl" target="#src_Сека"/><biblScope>57</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Общекавкайское слово: <mentioned xml:lang="krc-x-balkar"><lang/>
-                        <w>dommaj</w></mentioned>, <mentioned xml:lang="krc-x-karachay"><lang/>
-                        <w>dommaj</w></mentioned>, <mentioned xml:lang="kbd"><lang/>
-                        <w>dombej</w></mentioned>, <mentioned xml:lang="ab"><lang/>
-                        <w>a-dompʼèj</w></mentioned>, <mentioned xml:lang="sva"><lang/>
-                        <w>dombäj</w></mentioned>, <mentioned xml:lang="ka"><lang/>
-                        <w>dombai</w><note type="comment" xml:lang="ru"><bibl><ref type="bibl"
-                                    target="#ref_Чкония"/></bibl></note>
+                <etym xml:lang="ru">Общекавкайское слово: <mentioned xml:id="mentioned_d368e205" xml:lang="krc-x-balkar"><lang/>
+                        <w>dommaj</w></mentioned>, <mentioned xml:id="mentioned_d368e210" xml:lang="krc-x-karachay"><lang/>
+                        <w>dommaj</w></mentioned>, <mentioned xml:id="mentioned_d368e215" xml:lang="kbd"><lang/>
+                        <w>dombej</w></mentioned>, <mentioned xml:id="mentioned_d368e220" xml:lang="ab"><lang/>
+                        <w>a-dompʼèj</w></mentioned>, <mentioned xml:id="mentioned_d368e225" xml:lang="sva"><lang/>
+                        <w>dombäj</w></mentioned>, <mentioned xml:id="mentioned_d368e231" xml:lang="ka"><lang/>
+                        <w>dombai</w><note type="comment" xml:lang="ru"><bibl><ref type="bibl" target="#ref_Чкония"/></bibl></note>
                         <gloss><q>зубр</q></gloss></mentioned>. Кавказ, наряду с Беловежской пущей,
                     был местом, где до недавнего времени водились зубры (всего дольше в заповеднике
                     Клухорского района). Отсюда понятно существование общего названия для этого
                     животного у ряда кавказских народов. Перенос значения на ‘льва’ сделан по
                     признаку физической силы и объясняется слабым знакомством осетин со львом. В
-                        <mentioned xml:lang="sva"><lang/>
+                        <mentioned xml:id="mentioned_d368e242" xml:lang="sva"><lang/>
                         <w>dombäj</w></mentioned> применяется в настоящее время к быку крупного и
-                    мощного сложения.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"
-                            /><biblScope>III 13</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_ОЯФ_I"/><biblScope>32, 84, 297</biblScope></bibl>.</etym>
-                <etym xml:lang="en">A common Caucasian word: <mentioned xml:lang="krc-x-balkar"><lang/>
-                        <w>dommaj</w></mentioned>, <mentioned xml:lang="krc-x-karachay"><lang/>
-                        <w>dommaj</w></mentioned>, <mentioned xml:lang="kbd"><lang/>
-                        <w>dombej</w></mentioned>, <mentioned xml:lang="ab"><lang/>
-                        <w>a-dompʼèj</w></mentioned>, <mentioned xml:lang="sva"><lang/>
-                        <w>dombäj</w></mentioned>, <mentioned xml:lang="ka"><lang/>
-                        <w>dombai</w><note type="comment"
-                            xml:lang="en"><bibl><ref type="bibl" target="#ref_Чкония"
-                            /></bibl></note>
+                    мощного сложения.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>III 13</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>32, 84, 297</biblScope></bibl>.</etym>
+                <etym xml:lang="en">A common Caucasian word: <mentioned xml:id="mentioned_d368e258" xml:lang="krc-x-balkar"><lang/>
+                        <w>dommaj</w></mentioned>, <mentioned xml:id="mentioned_d368e263" xml:lang="krc-x-karachay"><lang/>
+                        <w>dommaj</w></mentioned>, <mentioned xml:id="mentioned_d368e268" xml:lang="kbd"><lang/>
+                        <w>dombej</w></mentioned>, <mentioned xml:id="mentioned_d368e273" xml:lang="ab"><lang/>
+                        <w>a-dompʼèj</w></mentioned>, <mentioned xml:id="mentioned_d368e278" xml:lang="sva"><lang/>
+                        <w>dombäj</w></mentioned>, <mentioned xml:id="mentioned_d368e284" xml:lang="ka"><lang/>
+                        <w>dombai</w><note type="comment" xml:lang="en"><bibl><ref type="bibl" target="#ref_Чкония"/></bibl></note>
                         <gloss><q>зубр</q></gloss></mentioned>. The Caucasus, along with
                     Belovezhskaya Pushcha, was a place where bisons were found until recently (the
                     longest in the Klukhorsky region nature reserve). Hence the existence of a
                     common name for this animal among a number of Caucasian peoples is clear. The
                     transfer of the meaning to ‘lion’ is made on the basis of physical strength and
                     is explained by the poor acquaintance of the Ossetic people with the lion. In
-                        <mentioned xml:lang="sva"><lang/>
+                        <mentioned xml:id="mentioned_d368e295" xml:lang="sva"><lang/>
                         <w>dombäj</w></mentioned> is used as a name of an ox of big and mighty
-                            constitution.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"
-                            /><biblScope>III 13</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_ОЯФ_I"/><biblScope>32, 84, 297</biblScope></bibl>.</etym>
+                            constitution.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>III 13</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>32, 84, 297</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

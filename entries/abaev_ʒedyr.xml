@@ -1,36 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ʒedyr</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ʒedyr" xml:lang="os">
-                <form xml:lang="os-x-iron" type="lemma"><orth>ʒedyr</orth><form type="variant"
-                            ><orth>ʒeʒyr</orth></form><form type="variant"
-                        ><orth>ʒedyræg</orth></form></form>
+                <form xml:lang="os-x-iron" type="lemma"><orth>ʒedyr</orth><form type="variant"><orth>ʒeʒyr</orth></form><form type="variant"><orth>ʒedyræg</orth></form></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>ʒæduræ</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d4054e76"><abv:tr xml:lang="ru">
                         <q>ежевика</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>blackberry</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4054e88">
                         <quote>jæ saw cæstytæ ʒedyry næmygaw…</quote>
                         <abv:tr xml:lang="ru">
                             <q>ее черные глаза, подобные ягодам ежевики</q>
@@ -40,7 +43,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Сека"/><biblScope>103</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4054e107">
                         <quote>ka kæsalgʒawæn randæ wæd, ka ninæǧ, kenæ ʒæduræ tonunmæ
                             ǧædæmæ</quote>
                         <abv:tr xml:lang="ru">
@@ -55,25 +58,21 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Слово относится к группе кавказско-финских лексических
-                    схождений; ср., с одной стороны, <mentioned xml:lang="dar"><lang/>
+                    схождений; ср., с одной стороны, <mentioned xml:id="mentioned_d4054e129" xml:lang="dar"><lang/>
                         <w>čadur</w>
-                        <gloss><q>ежевика</q></gloss></mentioned>, с другой — <mentioned
-                        xml:lang="kv"><lang/>
-                        <w n="0">сэтöр</w></mentioned>, <mentioned xml:lang="udm"><lang/>
+                        <gloss><q>ежевика</q></gloss></mentioned>, с другой — <mentioned xml:id="mentioned_d4054e137" xml:lang="kv"><lang/>
+                        <w n="0">сэтöр</w></mentioned>, <mentioned xml:id="mentioned_d4054e143" xml:lang="udm"><lang/>
                         <w n="0">сутэр</w>
-                        <gloss><q>смородина</q></gloss></mentioned>. Сюда же <mentioned
-                        xml:lang="krc-x-balkar"><lang/>
+                        <gloss><q>смородина</q></gloss></mentioned>. Сюда же <mentioned xml:id="mentioned_d4054e152" xml:lang="krc-x-balkar"><lang/>
                         <w>züdür</w>
                         <gloss><q>черная смородина</q></gloss></mentioned>.</etym>
                 <etym xml:lang="en">The word belongs to the group of Caucasian-Finnish lexical
-                    convergences; Cf. on the one hand, <mentioned xml:lang="dar"><lang/>
+                    convergences; Cf. on the one hand, <mentioned xml:id="mentioned_d4054e164" xml:lang="dar"><lang/>
                         <w>čadur</w>
-                        <gloss><q>blackberry</q></gloss></mentioned>, on the other — <mentioned
-                        xml:lang="kv"><lang/>
-                        <w>setör</w></mentioned>, <mentioned xml:lang="udm"><lang/>
+                        <gloss><q>blackberry</q></gloss></mentioned>, on the other — <mentioned xml:id="mentioned_d4054e172" xml:lang="kv"><lang/>
+                        <w>setör</w></mentioned>, <mentioned xml:id="mentioned_d4054e177" xml:lang="udm"><lang/>
                         <w>suter</w>
-                        <gloss><q>currant</q></gloss></mentioned>. Also here <mentioned
-                        xml:lang="krc-x-balkar"><lang/>
+                        <gloss><q>currant</q></gloss></mentioned>. Also here <mentioned xml:id="mentioned_d4054e185" xml:lang="krc-x-balkar"><lang/>
                         <w>züdür</w>
                         <gloss><q>black-currant</q></gloss></mentioned>.</etym>
             </entry>

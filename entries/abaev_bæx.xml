@@ -1,33 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">bæx</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_bæx" xml:lang="os">
                 <form type="lemma"><orth>bæx</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d2823e69"><abv:tr xml:lang="ru">
                         <q>лошадь</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>horse</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d2823e81">
                         <quote>bæx baræggænæg næw</quote>
                         <abv:tr xml:lang="ru">
                             <q>конь не делает всадника</q>
@@ -38,7 +43,7 @@
                         <bibl><ref type="bibl" target="#src_ЮОПам."/><biblScope>III
                             194</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2823e100">
                         <quote>ædsarǧ, ædwīdon bæx</quote>
                         <abv:tr xml:lang="ru">
                             <q>лошадь с седлом и уздечкой</q>
@@ -47,7 +52,7 @@
                             <q>a horse with saddle and bridle</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d2823e115" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>Uruzmæg… æ bæx bæxti farsmæ babasta</quote>
                         <abv:tr xml:lang="ru">
@@ -56,10 +61,9 @@
                         <abv:tr xml:lang="en">
                             <q>Uruzmæg tethered his horse near horses</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_ОЯФ_I"
-                            /><biblScope>433</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_ОЯФ_I"/><biblScope>433</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2823e137">
                         <quote>xīzync ærtæ bæxy</quote>
                         <abv:tr xml:lang="ru">
                             <q>пасутся три лошади</q>
@@ -69,7 +73,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>69</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2823e156">
                         <quote>i kizgæ wærduni… rabadtæj æ bæxdærægi xæccæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>девушка уселась в колесницу с погонщиком</q>
@@ -77,20 +81,19 @@
                         <abv:tr xml:lang="en">
                             <q/>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_ОЯФ_I"
-                            /><biblScope>432</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_ОЯФ_I"/><biblScope>432</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <re>
+                <re xml:id="re_d2823e176">
                     <form xml:lang="os-x-iron" type="lemma"><orth>bæxræǧaw</orth></form>
                     <form xml:lang="os-x-digor" type="dialectal"><orth>bæxærǧaw</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d2823e184"><abv:tr xml:lang="ru">
                             <q>табун лошадей</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>herd of horses</q>
                         </abv:tr></sense>
                     <abv:exampleGrp>
-                        <abv:example>
+                        <abv:example xml:id="example_d2823e196">
                             <quote>dæ bæxærǧaw din fættardæ uj</quote>
                             <abv:tr xml:lang="ru">
                                 <q>угоняют твой табун</q>
@@ -103,15 +106,15 @@
                         </abv:example>
                     </abv:exampleGrp>
                 </re>
-                <re>
+                <re xml:id="re_d2823e217">
                     <form type="lemma"><orth>bæxgæs</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d2823e222"><abv:tr xml:lang="ru">
                             <q>табунщик</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>horseherd</q>
                         </abv:tr></sense>
                     <abv:exampleGrp>
-                        <abv:example>
+                        <abv:example xml:id="example_d2823e234">
                             <quote>bacydīs bæxgæsmæ</quote>
                             <abv:tr xml:lang="ru">
                                 <q>пришел к табунщику</q>
@@ -119,24 +122,23 @@
                             <abv:tr xml:lang="en">
                                 <q>[he] came to the horseherd</q>
                             </abv:tr>
-                            <bibl><ref type="bibl" target="#src_Munk."
-                                /><biblScope>14</biblScope></bibl>
+                            <bibl><ref type="bibl" target="#src_Munk."/><biblScope>14</biblScope></bibl>
                         </abv:example>
                     </abv:exampleGrp>
                 </re>
-                <re>
+                <re xml:id="re_d2823e256">
                     <form type="lemma"><orth>bæxbæddæn</orth></form>
-                    <sense><sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d2823e261"><sense xml:id="sense_d2823e262"><abv:tr xml:lang="ru">
                                 <q>коновязь</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>tethering</q>
-                            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                            </abv:tr></sense><sense xml:id="sense_d2823e271"><abv:tr xml:lang="ru">
                                 <q>ключица</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>clavicle</q>
                             </abv:tr></sense></sense>
                     <abv:exampleGrp>
-                        <abv:example xml:lang="os-x-digor">
+                        <abv:example xml:id="example_d2823e283" xml:lang="os-x-digor">
                             <usg><lang/></usg>
                             <quote>duwwadæs bæxi bæxbæddæntæbæl baftudta</quote>
                             <abv:tr xml:lang="ru">
@@ -150,20 +152,20 @@
                         </abv:example>
                     </abv:exampleGrp>
                 </re>
-                <re>
+                <re xml:id="re_d2823e307">
                     <form xml:lang="os-x-iron" type="lemma"><orth>bæxǵyn</orth></form>
                     <form xml:lang="os-x-digor" type="dialectal"><orth>bæxgin</orth></form>
-                    <sense><sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d2823e315"><sense xml:id="sense_d2823e316"><abv:tr xml:lang="ru">
                                 <q>всадник</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>horseman</q>
-                            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                            </abv:tr></sense><sense xml:id="sense_d2823e325"><abv:tr xml:lang="ru">
                                 <q>конный</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>horse</q>
                             </abv:tr></sense></sense>
                     <abv:exampleGrp>
-                        <abv:example>
+                        <abv:example xml:id="example_d2823e337">
                             <quote>ʒyxǵyn — bæxǵyn, ænæʒyx — wærǵǵyn</quote>
                             <abv:tr xml:lang="ru">
                                 <q>речистый — (как) конный, лишенный (дара) речи — (как) несущий
@@ -178,27 +180,25 @@
                         </abv:example>
                     </abv:exampleGrp>
                 </re>
-                <re>
+                <re xml:id="re_d2823e358">
                     <form type="lemma"><orth>bæxʒarm</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d2823e363"><abv:tr xml:lang="ru">
                             <q>лошадиная шкура, кожа</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>horse coat, skin</q>
                         </abv:tr></sense>
                 </re>
-                <re>
-                    <form type="lemma"><orth>bæxtæræg</orth><form type="variant"
-                                ><orth>bæxdæræg</orth><note type="comment" xml:lang="ru"> (в д.
-                                также %ibæxʒoræg%i, %ibæxmæʒoræg%i)</note><note type="comment"
-                                xml:lang="en"> (in Digor also %ibæxʒoræg%i,
+                <re xml:id="re_d2823e374">
+                    <form type="lemma"><orth>bæxtæræg</orth><form type="variant"><orth>bæxdæræg</orth><note type="comment" xml:lang="ru"> (в д.
+                                также %ibæxʒoræg%i, %ibæxmæʒoræg%i)</note><note type="comment" xml:lang="en"> (in Digor also %ibæxʒoræg%i,
                             %ibæxmæʒoræg%i)</note></form></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d2823e385"><abv:tr xml:lang="ru">
                             <q>погонщик лошадей</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>horse driver</q>
                         </abv:tr></sense>
                     <abv:exampleGrp>
-                        <abv:example>
+                        <abv:example xml:id="example_d2823e397">
                             <quote>…raxabar kodta bæxmæʒoræg</quote>
                             <abv:tr xml:lang="ru">
                                 <q>…сообщил погонщик лошадей</q>
@@ -206,10 +206,9 @@
                             <abv:tr xml:lang="en">
                                 <q>…reported the horse driver</q>
                             </abv:tr>
-                            <bibl><ref type="bibl" target="#src_SD"
-                                /><biblScope>194%l2%l</biblScope></bibl>
+                            <bibl><ref type="bibl" target="#src_SD"/><biblScope>194%l2%l</biblScope></bibl>
                         </abv:example>
-                        <abv:example>
+                        <abv:example xml:id="example_d2823e416">
                             <quote>i kizgæ wærduni… rabadtæj æ bæxdærægi xæccæ</quote>
                             <abv:tr xml:lang="ru">
                                 <q>девушка уселась в колесницу с погонщиком</q>
@@ -221,24 +220,24 @@
                         </abv:example>
                     </abv:exampleGrp>
                 </re>
-                <re>
+                <re xml:id="re_d2823e435">
                     <form xml:lang="os-x-iron" type="lemma"><orth>bæxdon</orth></form>
                     <form xml:lang="os-x-digor" type="dialectal"><orth>bæxdonæ</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d2823e443"><abv:tr xml:lang="ru">
                             <q>конюшня</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>stable</q>
                         </abv:tr></sense>
                 </re>
-                <re>
+                <re xml:id="re_d2823e454">
                     <form type="lemma"><orth>wælbæxæj</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d2823e459"><abv:tr xml:lang="ru">
                             <q>не слезая с коня</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>without dismounting from a horse</q>
                         </abv:tr></sense>
                     <abv:exampleGrp>
-                        <abv:example>
+                        <abv:example xml:id="example_d2823e471">
                             <quote>wælbæxæj fevnældta…</quote>
                             <abv:tr xml:lang="ru">
                                 <q>не слезая с коня, он схватил…</q>
@@ -246,16 +245,14 @@
                             <abv:tr xml:lang="en">
                                 <q>without dismounting from a horse, he grabbed</q>
                             </abv:tr>
-                            <bibl><ref type="bibl" target="#src_Munk."
-                                /><biblScope>22</biblScope></bibl>
+                            <bibl><ref type="bibl" target="#src_Munk."/><biblScope>22</biblScope></bibl>
                         </abv:example>
                     </abv:exampleGrp>
                 </re>
                 <etym xml:lang="ru">Слово относится к субстратному (кавказскому) слою осетинского
-                    языка. Как и некоторые другие субстратные слова (<ref type="xr"
-                        target="#entry_kʼūx"/> ‘рука’, <ref type="xr" target="#entry_kʼax"/>
-                    ‘нога’), оно тяготеет к чечено-ингушской среде. Ср. <mentioned xml:lang="ce"><lang/>
-                        <w>beqhi</w></mentioned>, <mentioned xml:lang="inh"><lang/>
+                    языка. Как и некоторые другие субстратные слова (<ref type="xr" target="#entry_kʼūx"/> ‘рука’, <ref type="xr" target="#entry_kʼax"/>
+                    ‘нога’), оно тяготеет к чечено-ингушской среде. Ср. <mentioned xml:id="mentioned_d2823e499" xml:lang="ce"><lang/>
+                        <w>beqhi</w></mentioned>, <mentioned xml:id="mentioned_d2823e504" xml:lang="inh"><lang/>
                         <w>baqh</w>
                         <gloss><q>жеребенок</q></gloss></mentioned>. Наличие этого слова в
                     осетинском весьма показательно c точки зрения процесса образования языка.
@@ -269,40 +266,28 @@
                     свидетельством в пользу глубины и интимности осетино-кавказских языковых связей
                     (см. об этом также под словами <ref type="xr" target="#entry_kʼax"/> и др.). —
                     Субстратное слово и на этот раз, как в ряде других случаев, не смогло полностью
-                    вытеснить иранское (См. <ref type="xr" target="#entry_arm"/> ‘рука’ рядом с <ref
-                        type="xr" target="#entry_fad"/> ‘нога’ рядом с <ref type="xr"
-                        target="#entry_kom"/> ‘рот’ рядом с <ref type="xr" target="#entry_ʒyx"/>).
-                    Иранское название лошади <mentioned xml:lang="ira"><lang/>
-                        <w>aspa-</w></mentioned> в закономерной форме <ref type="xr"
-                        target="#entry_jæfs"/> сохранилось в осетинском, но только в ограниченном
+                    вытеснить иранское (См. <ref type="xr" target="#entry_arm"/> ‘рука’ рядом с <ref type="xr" target="#entry_fad"/> ‘нога’ рядом с <ref type="xr" target="#entry_kom"/> ‘рот’ рядом с <ref type="xr" target="#entry_ʒyx"/>).
+                    Иранское название лошади <mentioned xml:id="mentioned_d2823e526" xml:lang="ira"><lang/>
+                        <w>aspa-</w></mentioned> в закономерной форме <ref type="xr" target="#entry_jæfs"/> сохранилось в осетинском, но только в ограниченном
                     значении ‘кобыла’. — Слово, означающее у одного народа вообще ‘лошадь’, получает
-                    нередко у соседей насмешливое значение ‘кляча’ и т. п. Так, <mentioned
-                        xml:lang="de"><lang/>
-                        <w>Ross</w></mentioned> значит ‘конь’, а <mentioned xml:lang="fr"><lang/>
-                        <w>rosse</w></mentioned> -— ‘кляча’. Это случилось и с <mentioned
-                        xml:lang="os"><lang/>
+                    нередко у соседей насмешливое значение ‘кляча’ и т. п. Так, <mentioned xml:id="mentioned_d2823e534" xml:lang="de"><lang/>
+                        <w>Ross</w></mentioned> значит ‘конь’, а <mentioned xml:id="mentioned_d2823e539" xml:lang="fr"><lang/>
+                        <w>rosse</w></mentioned> -— ‘кляча’. Это случилось и с <mentioned xml:id="mentioned_d2823e544" xml:lang="os"><lang/>
                         <w>bæx</w></mentioned>. В имерском диалекте %bгрузинского%b языка мы находим
-                        <mentioned xml:lang="ka"><lang/>
+                        <mentioned xml:id="mentioned_d2823e549" xml:lang="ka"><lang/>
                         <w>baxi</w>
-                        <gloss><q>невзрачная, негодная лошадь</q></gloss></mentioned>, <mentioned
-                        xml:lang="ka"><w/>
-                        <gloss><q>кляча</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Чкония"/></bibl>); отсюда <mentioned xml:lang="ka"><lang/>
+                        <gloss><q>невзрачная, негодная лошадь</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2823e557" xml:lang="ka"><w/>
+                        <gloss><q>кляча</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Чкония"/></bibl>); отсюда <mentioned xml:id="mentioned_d2823e567" xml:lang="ka"><lang/>
                         <w>baxuri</w>
                         <gloss><q>сделанный из цельного куска дерева арчак</q></gloss></mentioned>
                             (<bibl><ref type="bibl" target="#ref_Беридзе"/></bibl>). В русских
-                    говорах также отмечено слово <mentioned xml:lang="ru"><lang/>
-                        <w>бах</w></mentioned> в значении ‘кляча’ (<bibl><ref type="bibl"
-                            target="#ref_Филин"/><biblScope>159</biblScope></bibl>). Ср. <ref
-                        type="xr" target="#entry_jæfs"/> ‘кобыла’, <ref type="xr"
-                        target="#entry_bajrag"/> ‘жеребенок’.%n<bibl><ref type="bibl"
-                            target="#ref_ОЯФ_I"/><biblScope>78, 105, 118,
+                    говорах также отмечено слово <mentioned xml:id="mentioned_d2823e578" xml:lang="ru"><lang/>
+                        <w>бах</w></mentioned> в значении ‘кляча’ (<bibl><ref type="bibl" target="#ref_Филин"/><biblScope>159</biblScope></bibl>). Ср. <ref type="xr" target="#entry_jæfs"/> ‘кобыла’, <ref type="xr" target="#entry_bajrag"/> ‘жеребенок’.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>78, 105, 118,
                     200</biblScope></bibl>.</etym>
                 <etym xml:lang="en">The word relates to the substratum (Caucasian) layer of the
-                    Ossetic language. Like some other substrate words (<ref type="xr"
-                        target="#entry_kʼūx"/> ‘hand’, <ref type="xr" target="#entry_kʼax"/> ‘leg’),
-                    it is inclined to the Chechen-Ingush setting. Cf. <mentioned xml:lang="ce"><lang/>
-                        <w>beqhi</w></mentioned>, <mentioned xml:lang="inh"><lang/>
+                    Ossetic language. Like some other substrate words (<ref type="xr" target="#entry_kʼūx"/> ‘hand’, <ref type="xr" target="#entry_kʼax"/> ‘leg’),
+                    it is inclined to the Chechen-Ingush setting. Cf. <mentioned xml:id="mentioned_d2823e603" xml:lang="ce"><lang/>
+                        <w>beqhi</w></mentioned>, <mentioned xml:id="mentioned_d2823e608" xml:lang="inh"><lang/>
                         <w>baqh</w>
                         <gloss><q>foal</q></gloss></mentioned>. The presence of this word in the
                     Ossetic language is significant in respect to the process of the language
@@ -312,38 +297,31 @@
                     wonderful cavalry (see, for example: <bibl><biblScope>Vegetius (4th c.). Epitome
                             rei militaris:</biblScope></bibl>: "“For though after the example of…
                     the Alans… we have made some improvements in the arms of the cavalry”; “the Huns
-                    and Alans endeavor in vain to imitate your dexterity in horsemanship”<note
-                        type="footnote" n="1"> PUT NOTE HERE </note>). Under these conditions, the
+                    and Alans endeavor in vain to imitate your dexterity in horsemanship”<note type="footnote" n="1"> PUT NOTE HERE </note>). Under these conditions, the
                     appearance of the Caucasian word for ‘horse’ in Ossetic serves as a strong
                     evidence in favor of the depth and intimacy of the Ossetic-Caucasian linguistic
                     connection (see also the words <ref type="xr" target="#entry_kʼax"/> for further
                     information.). — And this time, as in a number of other cases, the substrate
-                    word could not completely supplant the Iranian (See <ref type="xr"
-                        target="#entry_arm"/> ‘arm’ near <ref type="xr" target="#entry_fad"/> ‘leg’
-                    near <ref type="xr" target="#entry_kom"/> ‘mouth’ near <ref type="xr"
-                        target="#entry_ʒyx"/>). The Iranian name for horse <mentioned xml:lang="ira"><lang/>
-                        <w>aspa-</w></mentioned> in a regular form <ref type="xr"
-                        target="#entry_jæfs"/> has been retained in Ossetic, but only in a
+                    word could not completely supplant the Iranian (See <ref type="xr" target="#entry_arm"/> ‘arm’ near <ref type="xr" target="#entry_fad"/> ‘leg’
+                    near <ref type="xr" target="#entry_kom"/> ‘mouth’ near <ref type="xr" target="#entry_ʒyx"/>). The Iranian name for horse <mentioned xml:id="mentioned_d2823e634" xml:lang="ira"><lang/>
+                        <w>aspa-</w></mentioned> in a regular form <ref type="xr" target="#entry_jæfs"/> has been retained in Ossetic, but only in a
                     restricted sense ‘mare’. — The word meaning among one nation ‘horse’ in general
                     often receives a mocking meaning ‘nag’ from neighbors and so on. Thus,
-                        <mentioned xml:lang="de"><lang/>
-                        <w>Ross</w></mentioned> means 'horse', and <mentioned xml:lang="fr"><lang/>
-                        <w>rosse</w></mentioned> means ‘nag’. This happened also with the <mentioned
-                        xml:lang="os"><lang/>
-                        <w>bæx</w></mentioned>. We found the word <mentioned xml:lang="ka"><lang/>
+                        <mentioned xml:id="mentioned_d2823e641" xml:lang="de"><lang/>
+                        <w>Ross</w></mentioned> means 'horse', and <mentioned xml:id="mentioned_d2823e646" xml:lang="fr"><lang/>
+                        <w>rosse</w></mentioned> means ‘nag’. This happened also with the <mentioned xml:id="mentioned_d2823e651" xml:lang="os"><lang/>
+                        <w>bæx</w></mentioned>. We found the word <mentioned xml:id="mentioned_d2823e656" xml:lang="ka"><lang/>
                         <w>baxi</w>
-                        <gloss><q>homely horse</q></gloss></mentioned>, <mentioned xml:lang="ka"><w/>
+                        <gloss><q>homely horse</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2823e665" xml:lang="ka"><w/>
                         <gloss><q>nag</q></gloss></mentioned> in the Imereti dialect of the Georgian
                     language (<bibl><ref type="bibl" target="#ref_Чкония"/></bibl>); from here is
-                    derived <mentioned xml:lang="ka"><lang/>
+                    derived <mentioned xml:id="mentioned_d2823e674" xml:lang="ka"><lang/>
                         <w>baxuri</w>
                         <gloss><q>saddle arch made of a single piece of wood</q></gloss></mentioned>
                             (<bibl><ref type="bibl" target="#ref_Беридзе"/></bibl>). The word
-                        <mentioned xml:lang="ru"><lang/>
+                        <mentioned xml:id="mentioned_d2823e685" xml:lang="ru"><lang/>
                         <w>bax</w></mentioned> in the meaning ‘nag’ is found in Russian dialects
-                            (<bibl><ref type="bibl" target="#ref_Филин"
-                        /><biblScope>159</biblScope></bibl>). Cf. <ref type="xr"
-                        target="#entry_jæfs"/> ‘mare’, <ref type="xr" target="#entry_bajrag"/>
+                            (<bibl><ref type="bibl" target="#ref_Филин"/><biblScope>159</biblScope></bibl>). Cf. <ref type="xr" target="#entry_jæfs"/> ‘mare’, <ref type="xr" target="#entry_bajrag"/>
                             ‘foal’.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>78, 105,
                             118, 200</biblScope></bibl>.</etym>
                 <note type="footnote" xml:lang="ru" n="1"/>

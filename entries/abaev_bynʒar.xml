@@ -1,51 +1,56 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">bynʒar</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_bynʒar" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>bynʒar</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>bunʒaræ</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d61e72"><sense xml:id="sense_d61e73"><abv:tr xml:lang="ru">
                             <q>основание</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>basis</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d61e82"><abv:tr xml:lang="ru">
                             <q>корень</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>root</q>
                         </abv:tr></sense></sense>
-                <re>
+                <re xml:id="re_d61e92">
                     <form xml:lang="os-x-iron" type="lemma"><orth>bynʒaræj</orth></form>
                     <form xml:lang="os-x-digor" type="dialectal"><orth>bunʒaræj</orth></form>
-                    <sense><sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d61e100"><sense xml:id="sense_d61e101"><abv:tr xml:lang="ru">
                                 <q>с корнем</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>to the root</q>
-                            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                            </abv:tr></sense><sense xml:id="sense_d61e110"><abv:tr xml:lang="ru">
                                 <q>до тла</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>to the ground</q>
                             </abv:tr></sense></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d61e123">
                         <quote>dymgæ bælas bynʒaræj ystydta</quote>
                         <abv:tr xml:lang="ru">
                             <q>ветер вырвал дерево с корнем</q>
@@ -54,7 +59,7 @@
                             <q>the wind rooted a tree away</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d61e138" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>isafæn cʼolberti bunʒaræj</quote>
                         <abv:tr xml:lang="ru">
@@ -65,7 +70,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Bes."/><biblScope>53</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d61e160" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>basoʒʒænæj ædbunʒærttæj i cʼæx pursajna cæxær</quote>
                         <abv:tr xml:lang="ru">
@@ -80,13 +85,11 @@
                 </abv:exampleGrp>
                 <etym xml:lang="ru">В первой части, очевидно, <ref type="xr" target="#entry_byn"/> |
                     %ibun%i ‘низ’, ‘дно’. Вторая часть, с звуковой стороны, может быть с равным
-                    правом восстановлена и в <ref type="xr" target="#entry_car"/> ‘потолок’ и в <ref
-                        type="xr" target="#entry_cʼar"/> | %iсʼaræ%i ‘слой’. Принимая во внимание,
+                    правом восстановлена и в <ref type="xr" target="#entry_car"/> ‘потолок’ и в <ref type="xr" target="#entry_cʼar"/> | %iсʼaræ%i ‘слой’. Принимая во внимание,
                     что первое слово в дигорском отсутствует, да и по смыслу больше подходит второе,
                     мы восстанавливаем %ibyn%i-%icʼar%i | %ibun%i-%icʼaræ%i, буквально „нижний
                     слой“.</etym>
-                <etym xml:lang="en">In the first part there is apparently <ref type="xr"
-                        target="#entry_byn"/> | %ibun%i ‘bottom’. Phonetically, the second part may
+                <etym xml:lang="en">In the first part there is apparently <ref type="xr" target="#entry_byn"/> | %ibun%i ‘bottom’. Phonetically, the second part may
                     be equally reconstructed as <ref type="xr" target="#entry_car"/> ‘ceiling’ and
                     as <ref type="xr" target="#entry_cʼar"/> | %iсʼaræ%i ‘layer'. Taking into
                     consideration that the first word does not exist in Digor and the second one

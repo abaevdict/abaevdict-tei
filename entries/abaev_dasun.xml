@@ -1,55 +1,59 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">dasun</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_dasun" xml:lang="os-x-digor">
-                <form type="lemma"><orth>dasun</orth><form type="participle"
-                        ><orth>dast</orth></form></form>
+                <form type="lemma"><orth>dasun</orth><form type="participle"><orth>dast</orth></form></form>
                 <usg><lang/></usg>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d5427e74"><sense xml:id="sense_d5427e75"><abv:tr xml:lang="ru">
                             <q>складывать</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>stack</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d5427e84"><abv:tr xml:lang="ru">
                             <q>закладывать фундамент</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>lay the groundwork</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d5427e93"><abv:tr xml:lang="ru">
                             <q>сооружать</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>raise</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d5427e102"><abv:tr xml:lang="ru">
                             <q>строить</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>build</q>
                         </abv:tr></sense></sense>
-                <re>
+                <re xml:id="re_d5427e112">
                     <form type="lemma"><orth>dast</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d5427e117"><abv:tr xml:lang="ru">
                             <q>стог</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>stack</q>
                         </abv:tr></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d5427e130">
                         <quote>dæ fæsmærdæ nomi kadæn ǧæw ne ʽsdasʒænæj mæsug</quote>
                         <abv:tr xml:lang="ru">
                             <q>после твоей смерти во славу (твоего) имени аул не построит башни</q>
@@ -60,7 +64,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>60</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5427e149">
                         <quote>xurdast isdasta</quote>
                         <abv:tr xml:lang="ru">
                             <q>он заложил фундамент из щебня</q>
@@ -69,7 +73,7 @@
                             <q>he laid the foundation of rubble</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5427e164">
                         <quote>lasæg isdasta</quote>
                         <abv:tr xml:lang="ru">
                             <q>он сложил копну</q>
@@ -79,30 +83,24 @@
                         </abv:tr>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Ср. <mentioned xml:lang="sog"><lang/>
+                <etym xml:lang="ru">Ср. <mentioned xml:id="mentioned_d5427e183" xml:lang="sog"><lang/>
                         <w>δēs-(δys-)</w>
-                        <gloss><q>строить</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Henning._BBB"/><biblScope>56</biblScope></bibl>),
-                        <mentioned xml:lang="ku"><lang/>
+                        <gloss><q>строить</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Henning._BBB"/><biblScope>56</biblScope></bibl>),
+                        <mentioned xml:id="mentioned_d5427e195" xml:lang="ku"><lang/>
                         <w>desi</w>
-                        <gloss><q>стена</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_KPF"/><biblScope xml:lang="ru">Abt. III, Bd. IV, стр.
-                            285</biblScope></bibl>). Е. %sLewy%s (<bibl><ref type="bibl"
-                            target="#ref_KZ"/><biblScope>1925 LII 307</biblScope></bibl>)
-                    сопоставляет также <mentioned xml:lang="ga"><lang/>
+                        <gloss><q>стена</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_KPF"/><biblScope xml:lang="ru">Abt. III, Bd. IV, стр.
+                            285</biblScope></bibl>). Е. %sLewy%s (<bibl><ref type="bibl" target="#ref_KZ"/><biblScope>1925 LII 307</biblScope></bibl>)
+                    сопоставляет также <mentioned xml:id="mentioned_d5427e213" xml:lang="ga"><lang/>
                         <w>dais</w>
                         <gloss><q>куча</q></gloss></mentioned>.</etym>
-                <etym xml:lang="en">Cf. <mentioned xml:lang="sog"><lang/>
+                <etym xml:lang="en">Cf. <mentioned xml:id="mentioned_d5427e224" xml:lang="sog"><lang/>
                         <w>δēs-(δys-)</w>
-                        <gloss><q>build</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Henning._BBB"/><biblScope>56</biblScope></bibl>),
-                        <mentioned xml:lang="ku"><lang/>
+                        <gloss><q>build</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Henning._BBB"/><biblScope>56</biblScope></bibl>),
+                        <mentioned xml:id="mentioned_d5427e236" xml:lang="ku"><lang/>
                         <w>desi</w>
-                        <gloss><q>wall</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_KPF"/><biblScope xml:lang="en">Abt. III, Bd. IV, p.
-                            285</biblScope></bibl>). Е. %sLewy%s (<bibl><ref type="bibl"
-                            target="#ref_KZ"/><biblScope>1925 LII 307</biblScope></bibl>) compares
-                    also with <mentioned xml:lang="ga"><lang/>
+                        <gloss><q>wall</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_KPF"/><biblScope xml:lang="en">Abt. III, Bd. IV, p.
+                            285</biblScope></bibl>). Е. %sLewy%s (<bibl><ref type="bibl" target="#ref_KZ"/><biblScope>1925 LII 307</biblScope></bibl>) compares
+                    also with <mentioned xml:id="mentioned_d5427e254" xml:lang="ga"><lang/>
                         <w>dais</w>
                         <gloss><q>pile</q></gloss></mentioned>.</etym>
             </entry>

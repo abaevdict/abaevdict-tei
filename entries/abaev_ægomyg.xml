@@ -1,50 +1,55 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ægomyg</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ægomyg" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>ægomyg</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>ægomug</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d4243e72"><sense xml:id="sense_d4243e73"><abv:tr xml:lang="ru">
                             <q>немой</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>dumb</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d4243e82"><abv:tr xml:lang="ru">
                             <q>бессловесный</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>mute</q>
                         </abv:tr></sense></sense>
-                <re>
+                <re xml:id="re_d4243e92">
                     <form type="lemma"><orth>ægomyg fos</orth></form>
-                    <sense><sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d4243e97"><sense xml:id="sense_d4243e98"><abv:tr xml:lang="ru">
                                 <q>бессловесный скот</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>dumb cattle</q>
-                            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                            </abv:tr></sense><sense xml:id="sense_d4243e107"><abv:tr xml:lang="ru">
                                 <q>животные</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>animals</q>
                             </abv:tr></sense></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4243e120">
                         <quote>k’˳yrmatæj qūsǵytæ kæny, ægomǵytæj — ʒurǵytæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>глухих делает слышащими и немых говорящими</q>
@@ -55,7 +60,7 @@
                         <bibl><ref type="bibl" target="#src_Марк"/><biblScope>%i7%i
                             37</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4243e139">
                         <quote>ærbakodtoj jæm ægomyg læǵy</quote>
                         <abv:tr xml:lang="ru">
                             <q>привели к нему человека немого</q>
@@ -66,7 +71,7 @@
                         <bibl><ref type="bibl" target="#src_Матфей"/><biblScope>%i9%i
                             32</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4243e158" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>ægomug ædonug sirdtæ imæ sæ kom satæg kænunmæ ærcæwuncæ</quote>
                         <abv:tr xml:lang="ru">
@@ -79,7 +84,7 @@
                         <bibl><ref type="bibl" target="#src_MD"/><biblScope>1956 VII
                             56</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4243e180">
                         <quote>ægomug rist kodta zærdæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>сердце болело немой болью</q>
@@ -90,44 +95,33 @@
                         <bibl><ref type="bibl" target="#src_Qazb."/><biblScope>61</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из %iæ-kom-yg%i ‘лишенный рта’ (<ref type="xr"
-                        target="#entry_æ-"/> — негативная частица, <ref type="xr"
-                        target="#entry_kom"/> ʽротʼ, %i-yg%i — суффикс обладания или наделенности
+                <etym xml:lang="ru">Из %iæ-kom-yg%i ‘лишенный рта’ (<ref type="xr" target="#entry_æ-"/> — негативная частица, <ref type="xr" target="#entry_kom"/> ʽротʼ, %i-yg%i — суффикс обладания или наделенности
                     чем-нибудь, например %idyk’ax-yg%i ‘двуногий’ и т. п.). Аналогичные по
-                    семантической структуре образования: <mentioned xml:lang="fa"><lang/>
+                    семантической структуре образования: <mentioned xml:id="mentioned_d4243e207" xml:lang="fa"><lang/>
                         <w>bīzaban</w>
-                        <gloss><q>немой</q></gloss></mentioned>, буквально „безъязычный“, <mentioned
-                        xml:lang="inh"><lang/>
-                        <w>mettaza</w></mentioned> id. (от <mentioned xml:lang="inh"><lang/>
+                        <gloss><q>немой</q></gloss></mentioned>, буквально „безъязычный“, <mentioned xml:id="mentioned_d4243e215" xml:lang="inh"><lang/>
+                        <w>mettaza</w></mentioned> id. (от <mentioned xml:id="mentioned_d4243e220" xml:lang="inh"><lang/>
                         <w>mot</w>
-                        <gloss><q>язык</q></gloss></mentioned>), <mentioned xml:lang="ka"><lang/>
+                        <gloss><q>язык</q></gloss></mentioned>), <mentioned xml:id="mentioned_d4243e229" xml:lang="ka"><lang/>
                         <w>pʼirutʼqvi</w>
                         <gloss><q>бессловесное (животное)</q></gloss></mentioned>, буквально „не
                     говорящее ртом“. „Рот“ как синоним „речи“ выступает также в таких выражениях,
-                    как д. %ifækkomægi æj%i „он заговорил“ (<bibl><ref type="bibl"
-                            target="#ref_СОПам."/><biblScope>II 29, 70</biblScope></bibl>), <ref
-                        type="xr" target="#entry_komʒog"/> ‘доносчик’ и др. См. <ref type="xr"
-                        target="#entry_kom"/>. Для структуры ср. д. <ref type="xr"
-                        target="#entry_ædonug"/> ‘жажда’.</etym>
-                <etym xml:lang="en">From %iæ-kom-yg%i ‘mouthless’ (<ref type="xr" target="#entry_æ-"
-                    /> is a negative particle, <ref type="xr" target="#entry_kom"/> is ʽmouthʼ,
+                    как д. %ifækkomægi æj%i „он заговорил“ (<bibl><ref type="bibl" target="#ref_СОПам."/><biblScope>II 29, 70</biblScope></bibl>), <ref type="xr" target="#entry_komʒog"/> ‘доносчик’ и др. См. <ref type="xr" target="#entry_kom"/>. Для структуры ср. д. <ref type="xr" target="#entry_ædonug"/> ‘жажда’.</etym>
+                <etym xml:lang="en">From %iæ-kom-yg%i ‘mouthless’ (<ref type="xr" target="#entry_æ-"/> is a negative particle, <ref type="xr" target="#entry_kom"/> is ʽmouthʼ,
                     %i-yg%i is the suffix expressing possession or endowment, for instance
                     %idyk’ax-yg%i ‘two-legged’ etc.). Semantically similar derivations are
-                        <mentioned xml:lang="fa"><lang/>
+                        <mentioned xml:id="mentioned_d4243e254" xml:lang="fa"><lang/>
                         <w>bīzaban</w>
-                        <gloss><q>mute</q></gloss></mentioned>, namely “tongueless”, <mentioned
-                        xml:lang="inh"><lang/>
-                        <w>mettaza</w></mentioned> id. (от <mentioned xml:lang="inh"><lang/>
+                        <gloss><q>mute</q></gloss></mentioned>, namely “tongueless”, <mentioned xml:id="mentioned_d4243e262" xml:lang="inh"><lang/>
+                        <w>mettaza</w></mentioned> id. (от <mentioned xml:id="mentioned_d4243e267" xml:lang="inh"><lang/>
                         <w>mot</w>
-                        <gloss><q>tongue</q></gloss></mentioned>), <mentioned xml:lang="ka"><lang/>
+                        <gloss><q>tongue</q></gloss></mentioned>), <mentioned xml:id="mentioned_d4243e276" xml:lang="ka"><lang/>
                         <w>pʼirutʼqvi</w>
                         <gloss><q>inarticulate (animal)</q></gloss></mentioned>, literally “not
                     speaking with his mouth”. “Mouth” as a synonym for “speech” also appears in such
-                    expressions as Digor %ifækkomægi æj%i “he began to speak” (<bibl><ref
-                            type="bibl" target="#ref_СОПам."/><biblScope>II 29,
+                    expressions as Digor %ifækkomægi æj%i “he began to speak” (<bibl><ref type="bibl" target="#ref_СОПам."/><biblScope>II 29,
                         70</biblScope></bibl>), <ref type="xr" target="#entry_komʒog"/> ‘informer’
-                    etc. See <ref type="xr" target="#entry_kom"/>. For the structure cf. <ref
-                        type="xr" target="#entry_ædonug"/> ‘thirst’.</etym>
+                    etc. See <ref type="xr" target="#entry_kom"/>. For the structure cf. <ref type="xr" target="#entry_ædonug"/> ‘thirst’.</etym>
                 <note type="internal">в этимологии есть пример</note>
             </entry>
         </body>

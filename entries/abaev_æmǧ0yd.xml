@@ -1,34 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">æmǧ0yd</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_æmǧ0yd" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>æmǧ˳yd</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>ænǧud</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d5339e72"><abv:tr xml:lang="ru">
                         <q>срок</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>term, deadline</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d5339e84">
                         <quote>abon majræmbon, īnnæ majræmbonmæ ne ʽmǧ˳yjd</quote>
                         <abv:tr xml:lang="ru">
                             <q>сегодня пятница, до следующей пятницы — наш срок</q>
@@ -36,10 +41,9 @@
                         <abv:tr xml:lang="en">
                             <q>today is Friday, till next Friday is our deadline</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Нарт._сказ."
-                            /><biblScope>330</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Нарт._сказ."/><biblScope>330</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5339e103">
                         <quote>æǧdaw næ wyd tūǵǵynæn æmǧ˳yd ma raddyn, īwgær kūra wad; radtoj mæjy
                             æmǧ˳yd Slany fyrtæn</quote>
                         <abv:tr xml:lang="ru">
@@ -50,10 +54,9 @@
                             <q>there was no custom not to give a term to a blood enemy (for payment
                                 for blood) if he asked (for this); they gave a month to Slanov</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Čerm."
-                            /><biblScope>156</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Čerm."/><biblScope>156</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5339e122">
                         <quote>abwalǧ fækastī æmǧ˳yd fexalyn adæmmæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>возмутительным показалось народу нарушение срока</q>
@@ -61,10 +64,9 @@
                         <abv:tr xml:lang="en">
                             <q>outrageous seemed to the people the term violation</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Čerm."
-                            /><biblScope>157</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Čerm."/><biblScope>157</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5339e141">
                         <quote>æmǧ˳ydmæ ma q˳yd fonʒ bony æ</quote>
                         <abv:tr xml:lang="ru">
                             <q>до срока оставалось пять дней</q>
@@ -73,7 +75,7 @@
                             <q>there were five days till the deadline</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5339e156" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>Bestawi bærzond sin ænǧud adtæj</quote>
                         <abv:tr xml:lang="ru">
@@ -82,10 +84,9 @@
                         <abv:tr xml:lang="en">
                             <q>Mount Beshtau was assigned (a meeting place) for them</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>3%l9%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>3%l9%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5339e179">
                         <quote>nuri walængæ æ lægbæl saw dardta, nur ba æ afæj ænǧud
                             ærqærdtæj</quote>
                         <abv:tr xml:lang="ru">
@@ -96,59 +97,45 @@
                             <q>she has been still mourning for her husband, now a year has come (to
                                 come out of mourning)</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>13%l14%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>13%l14%l</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Сложение %iæm-gud%i (← %iham-guta-%i), от %iǧæw-%i (%igav-%i)
-                    ‘быть нужным’. Ср. д. <ref type="xr" target="#entry_ǧud"/> (и. <ref type="xr"
-                        target="#entry_q0ydy"/>) ‘намерение’, ‘забота’, ‘решение’, ‘мысль’;
+                    ‘быть нужным’. Ср. д. <ref type="xr" target="#entry_ǧud"/> (и. <ref type="xr" target="#entry_q0ydy"/>) ‘намерение’, ‘забота’, ‘решение’, ‘мысль’;
                     буквально „совместное, согласованное намерение, наметка“ → ‘срок’. Ср.
-                        <mentioned xml:lang="zkh"><lang/>
+                        <mentioned xml:id="mentioned_d5339e205" xml:lang="zkh"><lang/>
                         <w>ɣuda</w>
-                        <gloss><q>срок</q></gloss></mentioned>. См. <ref type="xr"
-                        target="#entry_q0ydy"/> | %iǧud(i)%i, <ref type="xr" target="#entry_qæwyn"/>
+                        <gloss><q>срок</q></gloss></mentioned>. См. <ref type="xr" target="#entry_q0ydy"/> | %iǧud(i)%i, <ref type="xr" target="#entry_qæwyn"/>
                     и <ref type="xr" target="#entry_q0yddag"/>. По образованию и значению ср. также
-                        <mentioned xml:lang="sog"><lang/>
+                        <mentioned xml:id="mentioned_d5339e220" xml:lang="sog"><lang/>
                         <w>*anɣaw- (’nɣʼw)</w>
-                        <gloss><q>торопливость</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Benveniste._VJ"/><biblScope>91%l129%l</biblScope></bibl>).
-                    Иначе Вс. %sМиллер%s: к <mentioned xml:lang="x-oldirn"><lang/>
+                        <gloss><q>торопливость</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Benveniste._VJ"/><biblScope>91%l129%l</biblScope></bibl>).
+                    Иначе Вс. %sМиллер%s: к <mentioned xml:id="mentioned_d5339e232" xml:lang="x-oldirn"><lang/>
                         <w>gu-</w>
-                        <gloss><q>идти</q></gloss></mentioned>, наличному в <ref type="xr"
-                        target="#entry_īvǧ0yjyn"/> ‘проходить’ (<bibl><ref type="bibl"
-                            target="#ref_IF"/><biblScope xml:lang="ru">21, стр.
+                        <gloss><q>идти</q></gloss></mentioned>, наличному в <ref type="xr" target="#entry_īvǧ0yjyn"/> ‘проходить’ (<bibl><ref type="bibl" target="#ref_IF"/><biblScope xml:lang="ru">21, стр.
                             329</biblScope></bibl>).
-                    В последнем случае ср. <mentioned xml:lang="xpr"><lang/>
+                    В последнем случае ср. <mentioned xml:id="mentioned_d5339e248" xml:lang="xpr"><lang/>
                         <w>’ngwdn: ’ngw</w>
-                        <gloss><q>завершать</q></gloss></mentioned>, <mentioned xml:lang="xpr"><w/>
+                        <gloss><q>завершать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5339e256" xml:lang="xpr"><w/>
                         <gloss><q>кончать</q></gloss></mentioned>
-                            (<bibl><author>Henning</author><ref type="bibl" target="#ref_BSOS"
-                            /><biblScope>IX 80</biblScope></bibl>).</etym>
+                            (<bibl><author>Henning</author><ref type="bibl" target="#ref_BSOS"/><biblScope>IX 80</biblScope></bibl>).</etym>
                 <etym xml:lang="en">Compound from %iæm-gud%i (← %iham-guta-%i), from %iǧæw-%i
                     (%igav-%i) ‘be needed’. Cf. Digor <ref type="xr" target="#entry_ǧud"/> (Iron
                         <ref type="xr" target="#entry_q0ydy"/>) ‘intention’, ‘care’, ‘decision’,
-                    ‘thought’; literally „joint intention, outline“ → ‘term’. Compare <mentioned
-                        xml:lang="zkh"><lang/>
+                    ‘thought’; literally „joint intention, outline“ → ‘term’. Compare <mentioned xml:id="mentioned_d5339e275" xml:lang="zkh"><lang/>
                         <w>ɣuda</w>
-                        <gloss><q>term</q></gloss></mentioned>. See <ref type="xr"
-                        target="#entry_q0ydy"/> | %iǧud(i)%i, <ref type="xr" target="#entry_qæwyn"/>
+                        <gloss><q>term</q></gloss></mentioned>. See <ref type="xr" target="#entry_q0ydy"/> | %iǧud(i)%i, <ref type="xr" target="#entry_qæwyn"/>
                     and <ref type="xr" target="#entry_q0yddag"/>. For derivation and meaning, see
-                    also <mentioned xml:lang="sog"><lang/>
+                    also <mentioned xml:id="mentioned_d5339e290" xml:lang="sog"><lang/>
                         <w>*anɣaw- (’nɣʼw)</w>
-                        <gloss><q>haste</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Benveniste._VJ"/><biblScope>91%l129%l</biblScope></bibl>).
-                    Otherwise is Вс. %sМиллер%s: he traces it back to <mentioned xml:lang="x-oldirn"><lang/>
+                        <gloss><q>haste</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Benveniste._VJ"/><biblScope>91%l129%l</biblScope></bibl>).
+                    Otherwise is Вс. %sМиллер%s: he traces it back to <mentioned xml:id="mentioned_d5339e302" xml:lang="x-oldirn"><lang/>
                         <w>gu-</w>
-                        <gloss><q>go</q></gloss></mentioned>, which is available in <ref type="xr"
-                        target="#entry_īvǧ0yjyn"/> ‘pass’ (<bibl><ref type="bibl" target="#ref_IF"
-                            /><biblScope
-                            xml:lang="en">21, p. 329</biblScope></bibl>). In the latter case, see
-                    also <mentioned xml:lang="xpr"><lang/>
+                        <gloss><q>go</q></gloss></mentioned>, which is available in <ref type="xr" target="#entry_īvǧ0yjyn"/> ‘pass’ (<bibl><ref type="bibl" target="#ref_IF"/><biblScope xml:lang="en">21, p. 329</biblScope></bibl>). In the latter case, see
+                    also <mentioned xml:id="mentioned_d5339e318" xml:lang="xpr"><lang/>
                         <w>’ngwdn: ’ngw</w>
-                        <gloss><q>complete</q></gloss></mentioned>, <mentioned xml:lang="xpr"><w/>
-                        <gloss><q>end up</q></gloss></mentioned> (<bibl><author>Henning</author><ref
-                            type="bibl" target="#ref_BSOS"/><biblScope>IX
+                        <gloss><q>complete</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5339e326" xml:lang="xpr"><w/>
+                        <gloss><q>end up</q></gloss></mentioned> (<bibl><author>Henning</author><ref type="bibl" target="#ref_BSOS"/><biblScope>IX
                     80</biblScope></bibl>).</etym>
             </entry>
         </body>

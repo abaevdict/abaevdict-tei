@@ -1,36 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">cæryn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_cæryn" xml:lang="os">
-                <form xml:lang="os-x-iron" type="lemma"><orth>cæryn</orth><form type="participle"
-                            ><orth>card</orth></form></form>
-                <form xml:lang="os-x-digor" type="dialectal"><orth>cærun</orth><form
-                        type="participle"><orth>card</orth></form></form>
-                <sense><abv:tr xml:lang="ru">
+                <form xml:lang="os-x-iron" type="lemma"><orth>cæryn</orth><form type="participle"><orth>card</orth></form></form>
+                <form xml:lang="os-x-digor" type="dialectal"><orth>cærun</orth><form type="participle"><orth>card</orth></form></form>
+                <sense xml:id="sense_d5679e76"><abv:tr xml:lang="ru">
                         <q>жить</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>live</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d5679e88">
                         <quote>raǵy wæjygmæ læskʒæræn īw mæg˳yr læg card</quote>
                         <abv:tr xml:lang="ru">
                             <q>давно у великана в качестве пастуха-батрака жил один бедняк</q>
@@ -39,10 +42,9 @@
                             <q>long time ago one poor man lived with a giant as a shepherd-farm
                                 laborer</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"
-                            /><biblScope>103</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>103</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5679e107">
                         <quote>k˳yd cærʒynæn ænæ dæw…?</quote>
                         <abv:tr xml:lang="ru">
                             <q>как я буду жить без тебя?</q>
@@ -50,10 +52,9 @@
                         <abv:tr xml:lang="en">
                             <q>how will I live without you?</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"
-                            /><biblScope>112</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>112</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5679e126">
                         <quote>cæruntæ, xwæruntæ bajdædtoncæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>стали жить да есть</q>
@@ -61,126 +62,102 @@
                         <abv:tr xml:lang="en">
                             <q>[they] began to live and eat</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>15%l4%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>15%l4%l</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Основа čar- (<mentioned xml:lang="ine"><lang/>
+                <etym xml:lang="ru">Основа čar- (<mentioned xml:id="mentioned_d5679e148" xml:lang="ine"><lang/>
                         <w>*k˳el-</w></mentioned>) в других иранских языках имеет значение
                     ‘пастись’, ‘пасти скот’, ‘кочевать, пася скот’, вообще ‘кочевать’, ‘бродить’:
-                        <mentioned xml:lang="fa"><lang/>
+                        <mentioned xml:id="mentioned_d5679e153" xml:lang="fa"><lang/>
                         <w>čaridan</w>
-                        <gloss><q>пастись</q></gloss></mentioned>, <mentioned xml:lang="fa"
-                            ><w>čalīdan</w>
-                        <gloss><q>идти</q></gloss></mentioned>, <mentioned xml:lang="ps"><lang/>
+                        <gloss><q>пастись</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5679e161" xml:lang="fa"><w>čalīdan</w>
+                        <gloss><q>идти</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5679e167" xml:lang="ps"><lang/>
                         <w>carēdəl</w>
-                        <gloss><q>пастись</q></gloss></mentioned>, <mentioned xml:lang="x-balochi"><lang/>
+                        <gloss><q>пастись</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5679e175" xml:lang="x-balochi"><lang/>
                         <w>čarag</w>
-                        <gloss><q>бродить</q></gloss></mentioned>, <mentioned xml:lang="x-balochi"><w/>
-                        <gloss><q>пасти скот</q></gloss></mentioned>, <mentioned xml:lang="ku"><lang/>
+                        <gloss><q>бродить</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5679e184" xml:lang="x-balochi"><w/>
+                        <gloss><q>пасти скот</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5679e190" xml:lang="ku"><lang/>
                         <w>čarin</w>
-                        <gloss><q>пастись</q></gloss></mentioned>, <mentioned xml:lang="pal"><lang/>
+                        <gloss><q>пастись</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5679e198" xml:lang="pal"><lang/>
                         <w>vi-čar</w>
-                        <gloss><q>пребывать</q></gloss></mentioned>, <mentioned xml:lang="pal"
-                            ><w>čaraɣ</w>
-                        <gloss><q>пастбище</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Henning._BBB"/><biblScope>109</biblScope></bibl>), ср.
-                        <mentioned xml:lang="xcl"><lang/>
+                        <gloss><q>пребывать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5679e206" xml:lang="pal"><w>čaraɣ</w>
+                        <gloss><q>пастбище</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Henning._BBB"/><biblScope>109</biblScope></bibl>), ср.
+                        <mentioned xml:id="mentioned_d5679e216" xml:lang="xcl"><lang/>
                         <w>čʼarakʼ</w>
-                        <gloss><q>пастбище</q></gloss></mentioned>, <mentioned xml:lang="ae"><lang/>
+                        <gloss><q>пастбище</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5679e225" xml:lang="ae"><lang/>
                         <w>čar-</w>
-                        <gloss><q>двигаться</q></gloss></mentioned>, <mentioned xml:lang="ae"><w/>
-                        <gloss><q>ходить</q></gloss></mentioned>, <mentioned xml:lang="ae"><w/>
-                        <gloss><q>бродить</q></gloss></mentioned>, <mentioned xml:lang="sa"><lang/>
+                        <gloss><q>двигаться</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5679e233" xml:lang="ae"><w/>
+                        <gloss><q>ходить</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5679e239" xml:lang="ae"><w/>
+                        <gloss><q>бродить</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5679e245" xml:lang="sa"><lang/>
                         <w>čar-</w>
-                        <gloss><q>двигаться</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
-                        <gloss><q>бродить</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
-                        <gloss><q>пасти скот</q></gloss></mentioned>, <mentioned xml:lang="la"><lang/>
+                        <gloss><q>двигаться</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5679e253" xml:lang="sa"><w/>
+                        <gloss><q>бродить</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5679e259" xml:lang="sa"><w/>
+                        <gloss><q>пасти скот</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5679e266" xml:lang="la"><lang/>
                         <w>colo</w>
-                        <gloss><q>ухаживать</q></gloss></mentioned>, <mentioned xml:lang="la"><w/>
-                        <gloss><q>населять</q></gloss></mentioned>, <mentioned xml:lang="la"><w/>
-                        <gloss><q>жить</q></gloss></mentioned>, <mentioned xml:lang="la"
-                            ><w>incola</w>
-                        <gloss><q>обитатель</q></gloss></mentioned>, <mentioned xml:lang="grc"><lang/>
+                        <gloss><q>ухаживать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5679e274" xml:lang="la"><w/>
+                        <gloss><q>населять</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5679e280" xml:lang="la"><w/>
+                        <gloss><q>жить</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5679e286" xml:lang="la"><w>incola</w>
+                        <gloss><q>обитатель</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5679e292" xml:lang="grc"><lang/>
                         <w>πέλω</w>
-                        <gloss><q>двигаться</q></gloss></mentioned>, <mentioned xml:lang="grc"><w/>
-                        <gloss><q>становиться</q></gloss></mentioned>, <mentioned xml:lang="grc"><w/>
+                        <gloss><q>двигаться</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5679e300" xml:lang="grc"><w/>
+                        <gloss><q>становиться</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5679e307" xml:lang="grc"><w/>
                         <gloss><q>быть</q></gloss></mentioned>. Переход значения ‘пасти скот’ →
                     ‘жить’ характеризует скотоводческий народ, каким действительно и были предки
                     осетин. Аналогичное семантическое развитие наметилось и в других языках
-                        (<mentioned xml:lang="pal"><lang/>
+                        (<mentioned xml:id="mentioned_d5679e313" xml:lang="pal"><lang/>
                         <w>vi-čār</w>
-                        <gloss><q>пребывать</q></gloss></mentioned>, <mentioned xml:lang="la"><lang/>
+                        <gloss><q>пребывать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5679e321" xml:lang="la"><lang/>
                         <w>colo</w>
-                        <gloss><q>жить</q></gloss></mentioned>). Ср. <ref type="xr"
-                        target="#entry_8caryn"/> ‘оживлять’, <ref type="xr" target="#entry_ænʒaryn"
-                    /> ‘поджигать’, <ref type="xr" target="#entry_card"/> ‘жизнь’, <ref type="xr"
-                        target="#entry_cærænbon"/> ‘жизнь’, <ref type="xr" target="#entry_cærdæg"/>
-                    ‘проворный’, <ref type="xr" target="#entry_cæræccag"/> ‘долголетний’, <ref
-                        type="xr" target="#entry_calcæg"/> ‘ремонт’, <ref type="xr"
-                        target="#entry_æʒællag"/> ‘бедственный’.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>46, 78</biblScope></bibl>;
+                        <gloss><q>жить</q></gloss></mentioned>). Ср. <ref type="xr" target="#entry_8caryn"/> ‘оживлять’, <ref type="xr" target="#entry_ænʒaryn"/> ‘поджигать’, <ref type="xr" target="#entry_card"/> ‘жизнь’, <ref type="xr" target="#entry_cærænbon"/> ‘жизнь’, <ref type="xr" target="#entry_cærdæg"/>
+                    ‘проворный’, <ref type="xr" target="#entry_cæræccag"/> ‘долголетний’, <ref type="xr" target="#entry_calcæg"/> ‘ремонт’, <ref type="xr" target="#entry_æʒællag"/> ‘бедственный’.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>46, 78</biblScope></bibl>;
                             <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>57,
-                            58</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                            /><biblScope>23, 56</biblScope></bibl>.</etym>
-                <etym xml:lang="en">The stem %ičar%i- (<mentioned xml:lang="ine"><lang/>
+                            58</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>23, 56</biblScope></bibl>.</etym>
+                <etym xml:lang="en">The stem %ičar%i- (<mentioned xml:id="mentioned_d5679e363" xml:lang="ine"><lang/>
                         <w>*k˳el-</w></mentioned>) in other Iranian languages has the meaning
-                    ‘browse’, ‘pasture’, ‘wrangle’; ‘nomadise’, ‘wander’ in general: <mentioned
-                        xml:lang="fa"><lang/>
+                    ‘browse’, ‘pasture’, ‘wrangle’; ‘nomadise’, ‘wander’ in general: <mentioned xml:id="mentioned_d5679e368" xml:lang="fa"><lang/>
                         <w>čaridan</w>
-                        <gloss><q>browse</q></gloss></mentioned>, <mentioned xml:lang="fa"
-                            ><w>čalīdan</w>
-                        <gloss><q>go</q></gloss></mentioned>, <mentioned xml:lang="ps"><lang/>
+                        <gloss><q>browse</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5679e376" xml:lang="fa"><w>čalīdan</w>
+                        <gloss><q>go</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5679e382" xml:lang="ps"><lang/>
                         <w>carēdəl</w>
-                        <gloss><q>browse</q></gloss></mentioned>, <mentioned xml:lang="x-balochi"><lang/>
+                        <gloss><q>browse</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5679e390" xml:lang="x-balochi"><lang/>
                         <w>čarag</w>
-                        <gloss><q>wander</q></gloss></mentioned>, <mentioned xml:lang="x-balochi"><w/>
-                        <gloss><q>pasture</q></gloss></mentioned>, <mentioned xml:lang="ku"><lang/>
+                        <gloss><q>wander</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5679e399" xml:lang="x-balochi"><w/>
+                        <gloss><q>pasture</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5679e405" xml:lang="ku"><lang/>
                         <w>čarin</w>
-                        <gloss><q>browse</q></gloss></mentioned>, <mentioned xml:lang="pal"><lang/>
+                        <gloss><q>browse</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5679e413" xml:lang="pal"><lang/>
                         <w>vi-čar</w>
-                        <gloss><q>stay</q></gloss></mentioned>, <mentioned xml:lang="pal"
-                            ><w>čaraɣ</w>
-                        <gloss><q>pasture-land</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Henning._BBB"/><biblScope>109</biblScope></bibl>), cf.
-                        <mentioned xml:lang="xcl"><lang/>
+                        <gloss><q>stay</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5679e421" xml:lang="pal"><w>čaraɣ</w>
+                        <gloss><q>pasture-land</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Henning._BBB"/><biblScope>109</biblScope></bibl>), cf.
+                        <mentioned xml:id="mentioned_d5679e431" xml:lang="xcl"><lang/>
                         <w>čʼarakʼ</w>
-                        <gloss><q>pasture-land</q></gloss></mentioned>, <mentioned xml:lang="ae"><lang/>
+                        <gloss><q>pasture-land</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5679e440" xml:lang="ae"><lang/>
                         <w>čar-</w>
-                        <gloss><q>move</q></gloss></mentioned>, <mentioned xml:lang="ae"><w/>
-                        <gloss><q>walk</q></gloss></mentioned>, <mentioned xml:lang="ae"><w/>
-                        <gloss><q>wander</q></gloss></mentioned>, <mentioned xml:lang="sa"><lang/>
+                        <gloss><q>move</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5679e448" xml:lang="ae"><w/>
+                        <gloss><q>walk</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5679e454" xml:lang="ae"><w/>
+                        <gloss><q>wander</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5679e460" xml:lang="sa"><lang/>
                         <w>čar-</w>
-                        <gloss><q>move</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
-                        <gloss><q>wander</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
-                        <gloss><q>pasture</q></gloss></mentioned>, <mentioned xml:lang="la"><lang/>
+                        <gloss><q>move</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5679e468" xml:lang="sa"><w/>
+                        <gloss><q>wander</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5679e474" xml:lang="sa"><w/>
+                        <gloss><q>pasture</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5679e481" xml:lang="la"><lang/>
                         <w>colo</w>
-                        <gloss><q>maintain</q></gloss></mentioned>, <mentioned xml:lang="la"><w/>
-                        <gloss><q>inhabit</q></gloss></mentioned>, <mentioned xml:lang="la"><w/>
-                        <gloss><q>live</q></gloss></mentioned>, <mentioned xml:lang="la"
-                            ><w>incola</w>
-                        <gloss><q>inhabitant</q></gloss></mentioned>, <mentioned xml:lang="grc"><lang/>
+                        <gloss><q>maintain</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5679e489" xml:lang="la"><w/>
+                        <gloss><q>inhabit</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5679e495" xml:lang="la"><w/>
+                        <gloss><q>live</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5679e501" xml:lang="la"><w>incola</w>
+                        <gloss><q>inhabitant</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5679e507" xml:lang="grc"><lang/>
                         <w>πέλω</w>
-                        <gloss><q>move</q></gloss></mentioned>, <mentioned xml:lang="grc"><w/>
-                        <gloss><q>become</q></gloss></mentioned>, <mentioned xml:lang="grc"><w/>
+                        <gloss><q>move</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5679e515" xml:lang="grc"><w/>
+                        <gloss><q>become</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5679e522" xml:lang="grc"><w/>
                         <gloss><q>be</q></gloss></mentioned>. The transition of the meaning
                     ‘pasture’ → ‘live’ describes cattle-breeding people which the ancestors of the
                     Ossetic people really were. A similar semantic development has been outlined in
-                    other languages as well (<mentioned xml:lang="pal"><lang/>
+                    other languages as well (<mentioned xml:id="mentioned_d5679e528" xml:lang="pal"><lang/>
                         <w>vi-čār</w>
-                        <gloss><q>stay</q></gloss></mentioned>, <mentioned xml:lang="la"><lang/>
+                        <gloss><q>stay</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5679e536" xml:lang="la"><lang/>
                         <w>colo</w>
-                        <gloss><q>live</q></gloss></mentioned>). Cf. <ref type="xr"
-                        target="#entry_8caryn"/> ‘make alive’, <ref type="xr"
-                        target="#entry_ænʒaryn"/> ‘put on fire’, <ref type="xr" target="#entry_card"
-                    /> ‘life’, <ref type="xr" target="#entry_cærænbon"/> ‘life’, <ref type="xr"
-                        target="#entry_cærdæg"/> ‘nimble’, <ref type="xr" target="#entry_cæræccag"/>
-                    ‘longliving’, <ref type="xr" target="#entry_calcæg"/> ‘reparation’, <ref
-                        type="xr" target="#entry_æʒællag"/> ‘disastrous’.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>46, 78</biblScope></bibl>;
+                        <gloss><q>live</q></gloss></mentioned>). Cf. <ref type="xr" target="#entry_8caryn"/> ‘make alive’, <ref type="xr" target="#entry_ænʒaryn"/> ‘put on fire’, <ref type="xr" target="#entry_card"/> ‘life’, <ref type="xr" target="#entry_cærænbon"/> ‘life’, <ref type="xr" target="#entry_cærdæg"/> ‘nimble’, <ref type="xr" target="#entry_cæræccag"/>
+                    ‘longliving’, <ref type="xr" target="#entry_calcæg"/> ‘reparation’, <ref type="xr" target="#entry_æʒællag"/> ‘disastrous’.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>46, 78</biblScope></bibl>;
                             <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>57,
-                            58</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                            /><biblScope>23, 56</biblScope></bibl>.</etym>
+                            58</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>23, 56</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

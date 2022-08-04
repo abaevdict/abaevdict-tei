@@ -1,47 +1,48 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ba_1</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ba_1" n="1" xml:lang="os-x-digor">
                 <form type="lemma"><orth>ba</orth></form>
                 <usg><lang/></usg>
-                <sense><def xml:lang="ru">частица неопределенного значения, приближенно переводится
-                        русскими <mentioned xml:lang="ru"><lang/>
-                            <w>%i'же'%i</w></mentioned>, <mentioned xml:lang="ru"
-                            ><w>%i'а'%i</w></mentioned>, <mentioned xml:lang="ru"
-                            ><w>%i'но'%i</w></mentioned> , латинским <mentioned xml:lang="la"><lang/>
+                <sense xml:id="sense_d1909e72"><def xml:lang="ru">частица неопределенного значения, приближенно переводится
+                        русскими <mentioned xml:id="mentioned_d1909e75" xml:lang="ru"><lang/>
+                            <w>%i'же'%i</w></mentioned>, <mentioned xml:id="mentioned_d1909e80" xml:lang="ru"><w>%i'а'%i</w></mentioned>, <mentioned xml:id="mentioned_d1909e83" xml:lang="ru"><w>%i'но'%i</w></mentioned> , латинским <mentioned xml:id="mentioned_d1909e86" xml:lang="la"><lang/>
                             <w>%i'quidem'%i</w></mentioned>. Иногда близко по употреблению к
-                        старославянскому <mentioned xml:lang="cu"><lang/>
+                        старославянскому <mentioned xml:id="mentioned_d1909e91" xml:lang="cu"><lang/>
                             <w n="0">бо</w></mentioned></def><def xml:lang="en">a particle with an
-                        indeterminate meaning, it may be translated by Russian <mentioned
-                            xml:lang="ru"><lang/>
-                            <w>že</w></mentioned>, <mentioned xml:lang="ru"><w>a</w></mentioned>,
-                            <mentioned xml:lang="ru"><w>no</w></mentioned> , Latin <mentioned
-                            xml:lang="la"><lang/>
-                            <w>%i'quidem'%i</w></mentioned>, English <mentioned xml:lang="en"><lang/>
-                            <w>but</w></mentioned>, <mentioned xml:lang="en"><w>as for
+                        indeterminate meaning, it may be translated by Russian <mentioned xml:id="mentioned_d1909e98" xml:lang="ru"><lang/>
+                            <w>že</w></mentioned>, <mentioned xml:id="mentioned_d1909e103" xml:lang="ru"><w>a</w></mentioned>,
+                            <mentioned xml:id="mentioned_d1909e106" xml:lang="ru"><w>no</w></mentioned> , Latin <mentioned xml:id="mentioned_d1909e109" xml:lang="la"><lang/>
+                            <w>%i'quidem'%i</w></mentioned>, English <mentioned xml:id="mentioned_d1909e114" xml:lang="en"><lang/>
+                            <w>but</w></mentioned>, <mentioned xml:id="mentioned_d1909e120" xml:lang="en"><w>as for
                             smb</w></mentioned>. Sometimes it is close to Old Church Slavonic
-                            <mentioned xml:lang="cu"><lang/>
+                            <mentioned xml:id="mentioned_d1909e123" xml:lang="cu"><lang/>
                             <w>bo</w></mentioned></def></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d1909e130">
                         <quote>du ba næ Xucaw dæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>ты бо еси Богъ нашъ</q>
@@ -50,7 +51,7 @@
                             <q>for thou art our God</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1909e145">
                         <quote>nur ba ægas ærcotæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>теперь добро пожаловать</q>
@@ -58,10 +59,9 @@
                         <abv:tr xml:lang="en">
                             <q>now you are welcome</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Диг._сказ."
-                            /><biblScope>3</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Диг._сказ."/><biblScope>3</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1909e164">
                         <quote>etæ ba in zaǧtoncæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>те ему сказали</q>
@@ -69,10 +69,9 @@
                         <abv:tr xml:lang="en">
                             <q>those told him</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Диг._сказ."
-                            /><biblScope>3</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Диг._сказ."/><biblScope>3</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1909e183">
                         <quote>anzi fæste ba rajgurdæj amæn kizgæ, omæn ba mænæ aci læqwæn</quote>
                         <abv:tr xml:lang="ru">
                             <q>через год у этого родилась девочка, а у того вот этот мальчик</q>
@@ -80,10 +79,9 @@
                         <abv:tr xml:lang="en">
                             <q>a year later to this one a girl was born, and to that one, a boy</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Диг._сказ."
-                            /><biblScope>43</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Диг._сказ."/><biblScope>43</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1909e202">
                         <quote>du ba curt badæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>ты же сиди наготове</q>
@@ -94,7 +92,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
                             71</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1909e222">
                         <quote>e ba sin zaǧta</quote>
                         <abv:tr xml:lang="ru">
                             <q>он же сказал им</q>
@@ -102,10 +100,9 @@
                         <abv:tr xml:lang="en">
                             <q>and he told them</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>22%l10%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>22%l10%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1909e241">
                         <quote>ew — dæxe xaj, īnnæ ba din mæn xaj</quote>
                         <abv:tr xml:lang="ru">
                             <q>одна — твоя собственная доля, другая же тебе моя доля</q>
@@ -114,75 +111,63 @@
                             <q>one is your own part, and the other is my part, which belongs to
                                 you</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_ОЯФ_I"
-                            /><biblScope>438</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_ОЯФ_I"/><biblScope>438</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Восходит к иранской частице <mentioned xml:lang="ira"><lang/>
-                        <w>*bā</w></mentioned>, <mentioned xml:lang="ine"><lang/>
-                        <w>*bhē</w></mentioned>, <mentioned xml:lang="ine"><w>*bho</w></mentioned>;
-                    ср. <mentioned xml:lang="ae"><lang/>
-                        <w>bā</w></mentioned>, <mentioned xml:lang="ae"><w>bāδa</w></mentioned>,
-                        <mentioned xml:lang="ae"><w>bāt</w>
-                        <gloss><q>именно</q></gloss></mentioned>, <mentioned xml:lang="ae"><w/>
-                        <gloss><q>истинно</q></gloss></mentioned>, <mentioned xml:lang="ae"
-                            ><w>bōit</w></mentioned> (из <mentioned xml:lang="ae"><lang/>
-                        <w>bā + it</w></mentioned>: <bibl><ref type="bibl" target="#ref_ЗКВ"
-                            /><biblScope>I 374</biblScope></bibl>), <mentioned xml:lang="wbl"><lang/>
+                <etym xml:lang="ru">Восходит к иранской частице <mentioned xml:id="mentioned_d1909e263" xml:lang="ira"><lang/>
+                        <w>*bā</w></mentioned>, <mentioned xml:id="mentioned_d1909e268" xml:lang="ine"><lang/>
+                        <w>*bhē</w></mentioned>, <mentioned xml:id="mentioned_d1909e273" xml:lang="ine"><w>*bho</w></mentioned>;
+                    ср. <mentioned xml:id="mentioned_d1909e276" xml:lang="ae"><lang/>
+                        <w>bā</w></mentioned>, <mentioned xml:id="mentioned_d1909e281" xml:lang="ae"><w>bāδa</w></mentioned>,
+                        <mentioned xml:id="mentioned_d1909e285" xml:lang="ae"><w>bāt</w>
+                        <gloss><q>именно</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1909e291" xml:lang="ae"><w/>
+                        <gloss><q>истинно</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1909e297" xml:lang="ae"><w>bōit</w></mentioned> (из <mentioned xml:id="mentioned_d1909e300" xml:lang="ae"><lang/>
+                        <w>bā + it</w></mentioned>: <bibl><ref type="bibl" target="#ref_ЗКВ"/><biblScope>I 374</biblScope></bibl>), <mentioned xml:id="mentioned_d1909e309" xml:lang="wbl"><lang/>
                         <w>bə</w><note type="comment" xml:lang="ru"> (частица)</note>
-                        <gloss><q>же</q></gloss></mentioned>, <mentioned xml:lang="wbl"><w/>
-                        <gloss><q>и</q></gloss></mentioned>, <mentioned xml:lang="kho"><lang/>
-                        <w>bā</w></mentioned> (<bibl><ref type="bibl" target="#ref_NTS"
-                            /><biblScope>XIV 186</biblScope></bibl>), <mentioned xml:lang="sog"><lang/>
-                        <w>β'w</w></mentioned>, <mentioned xml:lang="xcl"><lang/>
-                        <w>ba</w></mentioned>, <mentioned xml:lang="got"><lang/>
-                        <w>ba</w></mentioned>, <mentioned xml:lang="lt"><lang/>
-                        <w>bà</w></mentioned>, <mentioned xml:lang="cu"><lang/>
-                        <w n="0">бо</w></mentioned>, <mentioned xml:lang="cu"><w/></mentioned>, <mentioned
-                        xml:lang="uk"><lang/>
-                        <w>бо</w></mentioned>, <mentioned xml:lang="uk"><w>ба</w></mentioned>,
-                        <mentioned xml:lang="cs"><lang/>
-                        <w>bo</w></mentioned>, <mentioned xml:lang="cs"><w>ba</w></mentioned>,
-                        <mentioned xml:lang="sr"><lang/>
-                        <w>bo</w></mentioned>, <mentioned xml:lang="grc"><lang/>
+                        <gloss><q>же</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1909e320" xml:lang="wbl"><w/>
+                        <gloss><q>и</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1909e326" xml:lang="kho"><lang/>
+                        <w>bā</w></mentioned> (<bibl><ref type="bibl" target="#ref_NTS"/><biblScope>XIV 186</biblScope></bibl>), <mentioned xml:id="mentioned_d1909e335" xml:lang="sog"><lang/>
+                        <w>β'w</w></mentioned>, <mentioned xml:id="mentioned_d1909e340" xml:lang="xcl"><lang/>
+                        <w>ba</w></mentioned>, <mentioned xml:id="mentioned_d1909e345" xml:lang="got"><lang/>
+                        <w>ba</w></mentioned>, <mentioned xml:id="mentioned_d1909e351" xml:lang="lt"><lang/>
+                        <w>bà</w></mentioned>, <mentioned xml:id="mentioned_d1909e356" xml:lang="cu"><lang/>
+                        <w n="0">бо</w></mentioned>, <mentioned xml:id="mentioned_d1909e362" xml:lang="cu"><w/></mentioned>, <mentioned xml:id="mentioned_d1909e365" xml:lang="uk"><lang/>
+                        <w>бо</w></mentioned>, <mentioned xml:id="mentioned_d1909e370" xml:lang="uk"><w>ба</w></mentioned>,
+                        <mentioned xml:id="mentioned_d1909e373" xml:lang="cs"><lang/>
+                        <w>bo</w></mentioned>, <mentioned xml:id="mentioned_d1909e379" xml:lang="cs"><w>ba</w></mentioned>,
+                        <mentioned xml:id="mentioned_d1909e382" xml:lang="sr"><lang/>
+                        <w>bo</w></mentioned>, <mentioned xml:id="mentioned_d1909e387" xml:lang="grc"><lang/>
                         <w>φή</w></mentioned> (<bibl><author>Гомер</author></bibl> ); может быть,
-                        <mentioned xml:lang="hit"><lang/>
+                        <mentioned xml:id="mentioned_d1909e395" xml:lang="hit"><lang/>
                         <w>-pe</w></mentioned> частица отождествления. В осетинском, так же как в
                     авестийском, частица %ibа%i присоединяется обычно к первому слову
-                            предложения.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"
-                            /><biblScope>II 50</biblScope></bibl>.</etym>
-                <etym xml:lang="en">It traces back to the Iranian particle <mentioned xml:lang="ira"><lang/>
-                        <w>*bā</w></mentioned>, <mentioned xml:lang="ine"><lang/>
-                        <w>*bhē</w></mentioned>, <mentioned xml:lang="ine"><w>*bho</w></mentioned>;
-                    cf. <mentioned xml:lang="ae"><lang/>
-                        <w>bā</w></mentioned>, <mentioned xml:lang="ae"><w>bāδa</w></mentioned>,
-                        <mentioned xml:lang="ae"><w>bāt</w>
-                        <gloss><q>exactly</q></gloss></mentioned>, <mentioned xml:lang="ae"><w/>
-                        <gloss><q>verily</q></gloss></mentioned>, <mentioned xml:lang="ae"
-                            ><w>bōit</w></mentioned> (from <mentioned xml:lang="ae"><lang/>
-                        <w>bā + it</w></mentioned>: <bibl><ref type="bibl" target="#ref_ЗКВ"
-                            /><biblScope>I 374</biblScope></bibl>), <mentioned xml:lang="wbl"><lang/>
-                        <w>bə</w><note
-                            type="comment" xml:lang="en"> (particle)</note>
-                        <gloss><q>and</q></gloss></mentioned>, <mentioned xml:lang="kho"><lang/>
-                        <w>bā</w></mentioned> (<bibl><ref type="bibl" target="#ref_NTS"
-                            /><biblScope>XIV 186</biblScope></bibl>), <mentioned xml:lang="sog"><lang/>
-                        <w>β'w</w></mentioned>, <mentioned xml:lang="xcl"><lang/>
-                        <w>ba</w></mentioned>, <mentioned xml:lang="got"><lang/>
-                        <w>ba</w></mentioned>, <mentioned xml:lang="lt"><lang/>
-                        <w>bà</w></mentioned>, <mentioned xml:lang="cu"><lang/>
-                        <w>bo</w></mentioned>, <mentioned xml:lang="cu"><w/></mentioned>, <mentioned
-                        xml:lang="uk"><lang/>
-                        <w>bo</w></mentioned>, <mentioned xml:lang="uk"><w>ba</w></mentioned>,
-                        <mentioned xml:lang="cs"><lang/>
-                        <w>bo</w></mentioned>, <mentioned xml:lang="cs"><w>ba</w></mentioned>,
-                        <mentioned xml:lang="sr"><lang/>
-                        <w>bo</w></mentioned>, <mentioned xml:lang="grc"><lang/>
+                            предложения.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 50</biblScope></bibl>.</etym>
+                <etym xml:lang="en">It traces back to the Iranian particle <mentioned xml:id="mentioned_d1909e408" xml:lang="ira"><lang/>
+                        <w>*bā</w></mentioned>, <mentioned xml:id="mentioned_d1909e413" xml:lang="ine"><lang/>
+                        <w>*bhē</w></mentioned>, <mentioned xml:id="mentioned_d1909e418" xml:lang="ine"><w>*bho</w></mentioned>;
+                    cf. <mentioned xml:id="mentioned_d1909e421" xml:lang="ae"><lang/>
+                        <w>bā</w></mentioned>, <mentioned xml:id="mentioned_d1909e426" xml:lang="ae"><w>bāδa</w></mentioned>,
+                        <mentioned xml:id="mentioned_d1909e430" xml:lang="ae"><w>bāt</w>
+                        <gloss><q>exactly</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1909e436" xml:lang="ae"><w/>
+                        <gloss><q>verily</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1909e442" xml:lang="ae"><w>bōit</w></mentioned> (from <mentioned xml:id="mentioned_d1909e445" xml:lang="ae"><lang/>
+                        <w>bā + it</w></mentioned>: <bibl><ref type="bibl" target="#ref_ЗКВ"/><biblScope>I 374</biblScope></bibl>), <mentioned xml:id="mentioned_d1909e454" xml:lang="wbl"><lang/>
+                        <w>bə</w><note type="comment" xml:lang="en"> (particle)</note>
+                        <gloss><q>and</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1909e465" xml:lang="kho"><lang/>
+                        <w>bā</w></mentioned> (<bibl><ref type="bibl" target="#ref_NTS"/><biblScope>XIV 186</biblScope></bibl>), <mentioned xml:id="mentioned_d1909e474" xml:lang="sog"><lang/>
+                        <w>β'w</w></mentioned>, <mentioned xml:id="mentioned_d1909e479" xml:lang="xcl"><lang/>
+                        <w>ba</w></mentioned>, <mentioned xml:id="mentioned_d1909e484" xml:lang="got"><lang/>
+                        <w>ba</w></mentioned>, <mentioned xml:id="mentioned_d1909e489" xml:lang="lt"><lang/>
+                        <w>bà</w></mentioned>, <mentioned xml:id="mentioned_d1909e495" xml:lang="cu"><lang/>
+                        <w>bo</w></mentioned>, <mentioned xml:id="mentioned_d1909e500" xml:lang="cu"><w/></mentioned>, <mentioned xml:id="mentioned_d1909e503" xml:lang="uk"><lang/>
+                        <w>bo</w></mentioned>, <mentioned xml:id="mentioned_d1909e508" xml:lang="uk"><w>ba</w></mentioned>,
+                        <mentioned xml:id="mentioned_d1909e511" xml:lang="cs"><lang/>
+                        <w>bo</w></mentioned>, <mentioned xml:id="mentioned_d1909e516" xml:lang="cs"><w>ba</w></mentioned>,
+                        <mentioned xml:id="mentioned_d1909e520" xml:lang="sr"><lang/>
+                        <w>bo</w></mentioned>, <mentioned xml:id="mentioned_d1909e525" xml:lang="grc"><lang/>
                         <w>φή</w></mentioned> (<bibl><author>Гомер</author></bibl> ); maybe,
-                        <mentioned xml:lang="hit"><lang/>
+                        <mentioned xml:id="mentioned_d1909e533" xml:lang="hit"><lang/>
                         <w>-pe</w></mentioned> identification particle. Like in Avestan, Ossetic
-                    particle %iba%i usually joins the first word in a sentence.%n<bibl><ref
-                            type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II
+                    particle %iba%i usually joins the first word in a sentence.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II
                         50</biblScope></bibl>.</etym>
             </entry>
         </body>

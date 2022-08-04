@@ -1,21 +1,26 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">fīstæg</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
@@ -32,28 +37,28 @@
                     </abv:tr><abv:tr xml:lang="en">
                         <q>rolled up (about a sleeve)</q>
                     </abv:tr></sense>
-                <re>
+                <re xml:id="re_d5878e92">
                     <form type="lemma"><orth>fīstæg kænyn</orth></form>
-                    <sense><sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d5878e97"><sense xml:id="sense_d5878e98"><abv:tr xml:lang="ru">
                                 <q>спешивать</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>dismount</q>
-                            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                            </abv:tr></sense><sense xml:id="sense_d5878e107"><abv:tr xml:lang="ru">
                                 <q>засучивать (рукава)</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>roll (sleeves) up</q>
-                            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                            </abv:tr></sense><sense xml:id="sense_d5878e116"><abv:tr xml:lang="ru">
                                 <q>подбирать (полы, штанины)</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>tuck up (skirts, trousers)</q>
-                            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                            </abv:tr></sense><sense xml:id="sense_d5878e125"><abv:tr xml:lang="ru">
                                 <q>раздевать</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>undress</q>
                             </abv:tr></sense></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d5878e139">
                         <quote>bæxǵyn fīstaǵy rīs ne ʽmbary</quote>
                         <abv:tr xml:lang="ru">
                             <q>конный не понимает усталости („боли“) пешего</q>
@@ -65,7 +70,7 @@
                         <bibl><ref type="bibl" target="#src_ЮОПам."/><biblScope>III
                             194</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5878e158">
                         <quote>adæm… saxartæj jæ fædyl fīstægæj cydysty</quote>
                         <abv:tr xml:lang="ru">
                             <q>народ .. . пошел за ним из городов пешком</q>
@@ -76,7 +81,7 @@
                         <bibl><ref type="bibl" target="#src_Матфей"/><biblScope>%i14%i
                                 13</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5878e177" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>ku baqærttæncæ duwwæ osi, wæd fæfestæg æncæ, sæ bæxtæ kæræʒebæl
                             baftudtoncæ</quote>
@@ -88,10 +93,9 @@
                             <q>when the two women arrived, they dismounted, tied their horses to
                                 each other</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                                /><biblScope>27%l12–13%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>27%l12–13%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5878e199" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>turǧi astæw ærfestæg uncæ duwwæ izædi</quote>
                         <abv:tr xml:lang="ru">
@@ -102,7 +106,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_ОЭп."/><biblScope>60</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5878e221" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>Soslan eskæmi ku rafestæ wa, wæd in cid æz ba æ bæxi idonæbæl
                             fæxxwæcʒænæn</quote>
@@ -118,7 +122,7 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d5878e246">
                         <quote>jæ cængtæ bafīstæg kodta</quote>
                         <abv:tr xml:lang="ru">
                             <q>он засучил рукава</q>
@@ -127,7 +131,7 @@
                             <q>he rolled up his sleeves</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5878e261" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>fest congæj qazawat læboruj</quote>
                         <abv:tr xml:lang="ru">
@@ -138,7 +142,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Qazb."/><biblScope>27</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5878e283" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>ævdæjmag kud fest kænaj…</quote>
                         <abv:tr xml:lang="ru">
@@ -150,7 +154,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
                             88</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5878e305" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>kizgæ… æxe fæffest kodta æma æfsnajunmæ bavnaldta</quote>
                         <abv:tr xml:lang="ru">
@@ -162,30 +166,27 @@
                         <bibl><ref type="bibl" target="#src_AK"/><biblScope>I 14</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Ср. <mentioned xml:lang="peo"><lang/>
+                <etym xml:lang="ru">Ср. <mentioned xml:id="mentioned_d5878e330" xml:lang="peo"><lang/>
                         <w>pasti-</w>
                         <gloss><q>пеший</q></gloss></mentioned> (<bibl><biblScope>Накширустемская
                             надпись В</biblScope></bibl>), из %i*pad-ti-%i от %ipad%i ‘нога’ с
-                    закономерной диссимиляцией %idt%i (%itt%i) →%ist%i, <mentioned xml:lang="sa"><lang/>
+                    закономерной диссимиляцией %idt%i (%itt%i) →%ist%i, <mentioned xml:id="mentioned_d5878e341" xml:lang="sa"><lang/>
                         <w>patti-</w>
-                        <gloss><q>пеший</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
+                        <gloss><q>пеший</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5878e349" xml:lang="sa"><w/>
                         <gloss><q>пешеход</q></gloss></mentioned>. Огласовка %ii%i | %ie%i —
                     результат эпентезы: %i*pasti-%i → %ipaisti%i →
-                            %ifest-%i.%n<bibl><author>Morgenstierne</author><ref type="bibl"
-                            target="#ref_NTS"/><biblScope>XII 267</biblScope></bibl>.</etym>
-                <etym xml:lang="en">Cf. <mentioned xml:lang="peo"><lang/>
+                            %ifest-%i.%n<bibl><author>Morgenstierne</author><ref type="bibl" target="#ref_NTS"/><biblScope>XII 267</biblScope></bibl>.</etym>
+                <etym xml:lang="en">Cf. <mentioned xml:id="mentioned_d5878e363" xml:lang="peo"><lang/>
                         <w>pasti-</w>
                         <gloss><q>pedestrian (adj.)</q></gloss></mentioned>
                             (<bibl><biblScope>Naqsh-e Rustam inscription</biblScope></bibl>), from
                     %i*pad-ti-%i from %ipad%i ‘foot’ with the regular dissimilation %idt%i (%itt%i)
-                    →%ist%i, <mentioned xml:lang="sa"><lang/>
+                    →%ist%i, <mentioned xml:id="mentioned_d5878e374" xml:lang="sa"><lang/>
                         <w>patti-</w>
-                        <gloss><q>pedestrian (adj.)</q></gloss></mentioned>, <mentioned
-                        xml:lang="sa"><w/>
+                        <gloss><q>pedestrian (adj.)</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5878e382" xml:lang="sa"><w/>
                         <gloss><q>pedestrian (n.)</q></gloss></mentioned>. The vowels %ii%i | %ie%i
                     are the result of the epenthesis: %i*pasti-%i → %ipaisti%i →
-                            %ifest-%i.%n<bibl><author>Morgenstierne</author><ref type="bibl"
-                            target="#ref_NTS"/><biblScope>XII 267</biblScope></bibl>.</etym>
+                            %ifest-%i.%n<bibl><author>Morgenstierne</author><ref type="bibl" target="#ref_NTS"/><biblScope>XII 267</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

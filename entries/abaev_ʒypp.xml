@@ -1,34 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ʒypp</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ʒypp" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>ʒypp</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>ʒippæ</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d3918e72"><abv:tr xml:lang="ru">
                         <q>карман</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>pocket</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d3918e84">
                         <quote>Yxsærtæg nyvnældta jæ ʒipmæ æmæ bazyr æmæ fydy q˳ymbyl ūrdygæj
                             sista</quote>
                         <abv:tr xml:lang="ru">
@@ -41,7 +46,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_ОЭп."/><biblScope>15</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d3918e103" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>mænæn ba æxca ʒippi ʒag</quote>
                         <abv:tr xml:lang="ru">
@@ -50,54 +55,47 @@
                         <abv:tr xml:lang="en">
                             <q>and for me a whole pocket of money</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Gurdž._Æduli"
-                            /><biblScope>87</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Gurdž._Æduli"/><biblScope>87</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из <mentioned xml:lang="ar" extralang="fa"><lang/>
+                <etym xml:lang="ru">Из <mentioned xml:id="mentioned_d3918e128" xml:lang="ar" extralang="fa"><lang/>
                         <w>jīb</w>
-                        <gloss><q>пазуха</q></gloss></mentioned>, <mentioned xml:lang="ar"
-                        extralang="fa"><w/>
+                        <gloss><q>пазуха</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3918e136" xml:lang="ar" extralang="fa"><w/>
                         <gloss><q>карман</q></gloss></mentioned>. Это малозначительное на первый
                     взгляд слово показало огромную способность к экспансии, вошло почти во все
-                    иранские, тюркские и кавказские языки, в ряд финских и т. д.: <mentioned
-                        xml:lang="ku"><lang/>
-                        <w>ǯib</w></mentioned>, <mentioned xml:lang="ps"><lang/>
-                        <w>ǯīb</w></mentioned>, <mentioned xml:lang="trk"><lang/>
-                        <w>ǯib, ǯaib</w></mentioned>, <mentioned xml:lang="ka"><lang/>
-                        <w>ǯibe</w></mentioned>, <mentioned xml:lang="udi" extralang="tab"><lang/>
-                        <w>ǯib</w></mentioned>, <mentioned xml:lang="aqc"><lang/>
-                        <w>žip</w></mentioned>, <mentioned xml:lang="lbe"><lang/>
-                        <w>žip</w></mentioned>, <mentioned xml:lang="kbd"><lang/>
-                        <w>žəp</w></mentioned>, <mentioned xml:lang="ab"><lang/>
-                        <w>a-ǯəba</w></mentioned>, <mentioned xml:lang="kv"><lang/>
+                    иранские, тюркские и кавказские языки, в ряд финских и т. д.: <mentioned xml:id="mentioned_d3918e142" xml:lang="ku"><lang/>
+                        <w>ǯib</w></mentioned>, <mentioned xml:id="mentioned_d3918e147" xml:lang="ps"><lang/>
+                        <w>ǯīb</w></mentioned>, <mentioned xml:id="mentioned_d3918e152" xml:lang="trk"><lang/>
+                        <w>ǯib, ǯaib</w></mentioned>, <mentioned xml:id="mentioned_d3918e158" xml:lang="ka"><lang/>
+                        <w>ǯibe</w></mentioned>, <mentioned xml:id="mentioned_d3918e163" xml:lang="udi" extralang="tab"><lang/>
+                        <w>ǯib</w></mentioned>, <mentioned xml:id="mentioned_d3918e168" xml:lang="aqc"><lang/>
+                        <w>žip</w></mentioned>, <mentioned xml:id="mentioned_d3918e173" xml:lang="lbe"><lang/>
+                        <w>žip</w></mentioned>, <mentioned xml:id="mentioned_d3918e178" xml:lang="kbd"><lang/>
+                        <w>žəp</w></mentioned>, <mentioned xml:id="mentioned_d3918e183" xml:lang="ab"><lang/>
+                        <w>a-ǯəba</w></mentioned>, <mentioned xml:id="mentioned_d3918e189" xml:lang="kv"><lang/>
                         <w/>
-                        <gloss><q>žep</q></gloss></mentioned>, <mentioned xml:lang="udm"><lang/>
-                        <w>žep</w></mentioned>, <mentioned xml:lang="x-mordvin"><lang/>
-                        <w>sepä</w></mentioned> и др.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 79</biblScope></bibl>;
-                            <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>29</biblScope></bibl>.</etym>
-                <etym xml:lang="en">From <mentioned xml:lang="ar" extralang="fa"><lang/>
+                        <gloss><q>žep</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3918e197" xml:lang="udm"><lang/>
+                        <w>žep</w></mentioned>, <mentioned xml:id="mentioned_d3918e202" xml:lang="x-mordvin"><lang/>
+                        <w>sepä</w></mentioned> и др.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 79</biblScope></bibl>;
+                            <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>29</biblScope></bibl>.</etym>
+                <etym xml:lang="en">From <mentioned xml:id="mentioned_d3918e219" xml:lang="ar" extralang="fa"><lang/>
                         <w>jīb</w>
                         <gloss><q>pocket</q></gloss></mentioned>. This seemingly insignificant word
                     demonstrated a great expansion capacity, it entered almost all Iranian, Turkic
-                    and Caucasian languages, also some Finno-Ugric etc.: <mentioned xml:lang="ku"><lang/>
-                        <w>ǯib</w></mentioned>, <mentioned xml:lang="ps"><lang/>
-                        <w>ǯīb</w></mentioned>, <mentioned xml:lang="trk"><lang/>
-                        <w>ǯib, ǯaib</w></mentioned>, <mentioned xml:lang="ka"><lang/>
-                        <w>ǯibe</w></mentioned>, <mentioned xml:lang="udi" extralang="tab"><lang/>
-                        <w>ǯib</w></mentioned>, <mentioned xml:lang="aqc"><lang/>
-                        <w>žip</w></mentioned>, <mentioned xml:lang="lbe"><lang/>
-                        <w>žip</w></mentioned>, <mentioned xml:lang="kbd"><lang/>
-                        <w>žəp</w></mentioned>, <mentioned xml:lang="ab"><lang/>
-                        <w>a-ǯəba</w></mentioned>, <mentioned xml:lang="kv"><lang/>
-                        <w>žep</w></mentioned>, <mentioned xml:lang="udm"><lang/>
-                        <w>žep</w></mentioned>, <mentioned xml:lang="x-mordvin"><lang/>
-                        <w>sepä</w></mentioned> and other.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 79</biblScope></bibl>;
-                            <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>29</biblScope></bibl>.</etym>
+                    and Caucasian languages, also some Finno-Ugric etc.: <mentioned xml:id="mentioned_d3918e227" xml:lang="ku"><lang/>
+                        <w>ǯib</w></mentioned>, <mentioned xml:id="mentioned_d3918e232" xml:lang="ps"><lang/>
+                        <w>ǯīb</w></mentioned>, <mentioned xml:id="mentioned_d3918e237" xml:lang="trk"><lang/>
+                        <w>ǯib, ǯaib</w></mentioned>, <mentioned xml:id="mentioned_d3918e242" xml:lang="ka"><lang/>
+                        <w>ǯibe</w></mentioned>, <mentioned xml:id="mentioned_d3918e248" xml:lang="udi" extralang="tab"><lang/>
+                        <w>ǯib</w></mentioned>, <mentioned xml:id="mentioned_d3918e253" xml:lang="aqc"><lang/>
+                        <w>žip</w></mentioned>, <mentioned xml:id="mentioned_d3918e258" xml:lang="lbe"><lang/>
+                        <w>žip</w></mentioned>, <mentioned xml:id="mentioned_d3918e263" xml:lang="kbd"><lang/>
+                        <w>žəp</w></mentioned>, <mentioned xml:id="mentioned_d3918e268" xml:lang="ab"><lang/>
+                        <w>a-ǯəba</w></mentioned>, <mentioned xml:id="mentioned_d3918e273" xml:lang="kv"><lang/>
+                        <w>žep</w></mentioned>, <mentioned xml:id="mentioned_d3918e279" xml:lang="udm"><lang/>
+                        <w>žep</w></mentioned>, <mentioned xml:id="mentioned_d3918e284" xml:lang="x-mordvin"><lang/>
+                        <w>sepä</w></mentioned> and other.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 79</biblScope></bibl>;
+                            <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>29</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

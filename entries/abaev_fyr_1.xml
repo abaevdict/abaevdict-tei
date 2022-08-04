@@ -1,49 +1,53 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">fyr_1</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_fyr_1" n="1" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>fyr</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>fur</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d2850e72"><abv:tr xml:lang="ru">
                         <q>баран-производитель</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>ram</q>
                     </abv:tr></sense>
-                <re>
+                <re xml:id="re_d2850e82">
                     <form type="lemma"><orth>fyrkʼa</orth></form>
-                    <sense><sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d2850e87"><sense xml:id="sense_d2850e88"><abv:tr xml:lang="ru">
                                 <q>барашек</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>small ram</q>
-                            </abv:tr></sense><sense><note type="comment" xml:lang="ru">а
+                            </abv:tr></sense><sense xml:id="sense_d2850e97"><note type="comment" xml:lang="ru">а
                                 также</note><note type="comment" xml:lang="en">and
                                 also</note><abv:tr xml:lang="ru">
                                 <q>изделие из теста в виде барашка</q>
-                            </abv:tr><note type="comment" xml:lang="ru">а также</note><note
-                                type="comment" xml:lang="en">and also</note><abv:tr xml:lang="en">
+                            </abv:tr><note type="comment" xml:lang="ru">а также</note><note type="comment" xml:lang="en">and also</note><abv:tr xml:lang="en">
                                 <q>lamb-shaped dough product</q>
                             </abv:tr></sense></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d2850e118">
                         <quote>Soslanæn jæ fosīmæ īs dywwæ cʼæx fyry… xæcyn bajdydtoj
                             fyrytæ</quote>
                         <abv:tr xml:lang="ru">
@@ -52,10 +56,9 @@
                         <abv:tr xml:lang="en">
                             <q>Soslan has two gray rams in the herd … the rams began to fight</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Нарт._сказ."
-                            /><biblScope>91</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Нарт._сказ."/><biblScope>91</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2850e137">
                         <quote>fyrytæ k˳y fæxæcync, wæd dalystæ æncad fæxīzync</quote>
                         <abv:tr xml:lang="ru">
                             <q>когда бараны дерутся, ягнята спокойно пасутся</q>
@@ -63,10 +66,9 @@
                         <abv:tr xml:lang="en">
                             <q>when the rams fight, the lambs graze calmly</q>
                         </abv:tr>
-                        <bibl><biblScope xml:lang="ru">поговорка</biblScope><biblScope xml:lang="en"
-                                >saying</biblScope></bibl>
+                        <bibl><biblScope xml:lang="ru">поговорка</biblScope><biblScope xml:lang="en">saying</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d2850e158" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>ʒeʒe dæjuj æ wær; fur woʒænæj ew anzmæ</quote>
                         <abv:tr xml:lang="ru">
@@ -77,7 +79,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Bes."/><biblScope>51</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d2850e180" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>isarazta duwwæ furʒar kærci</quote>
                         <abv:tr xml:lang="ru">
@@ -90,23 +92,17 @@
                             73</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">%sMorgenstierne%s возводит к %i*pṛna-%i (<mentioned
-                        xml:lang="sa"><lang/>
+                <etym xml:lang="ru">%sMorgenstierne%s возводит к %i*pṛna-%i (<mentioned xml:id="mentioned_d2850e206" xml:lang="sa"><lang/>
                         <w>pūrṇa-</w></mentioned>). В этом случае исходное значение было бы: ‘целый’
                     = ‘нехолощеный’. Сюда относится, возможно, %bскифское%b собственное имя
-                        <mentioned xml:lang="xsc"><lang/>
-                        <w>Φορος</w></mentioned>.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>III 80</biblScope></bibl>. —
-                            <bibl><author>Morgenstierne</author><ref type="bibl" target="#ref_NTS"
-                            /><biblScope>XII 267</biblScope></bibl>.</etym>
-                <etym xml:lang="en">%sMorgenstierne%s traces it back to %i*pṛna-%i (<mentioned
-                        xml:lang="sa"><lang/>
+                        <mentioned xml:id="mentioned_d2850e211" xml:lang="xsc"><lang/>
+                        <w>Φορος</w></mentioned>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>III 80</biblScope></bibl>. —
+                            <bibl><author>Morgenstierne</author><ref type="bibl" target="#ref_NTS"/><biblScope>XII 267</biblScope></bibl>.</etym>
+                <etym xml:lang="en">%sMorgenstierne%s traces it back to %i*pṛna-%i (<mentioned xml:id="mentioned_d2850e228" xml:lang="sa"><lang/>
                         <w>pūrṇa-</w></mentioned>). In this case the primary meaning would be:
-                    ‘intact’ = ‘not castrated’. A %bScythian%b proper name <mentioned xml:lang="xsc"><lang/>
-                        <w>Φορος</w></mentioned> is probably related to it as well.%n<bibl><ref
-                            type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>III
-                        80</biblScope></bibl>. — <bibl><author>Morgenstierne</author><ref
-                            type="bibl" target="#ref_NTS"/><biblScope>XII
+                    ‘intact’ = ‘not castrated’. A %bScythian%b proper name <mentioned xml:id="mentioned_d2850e233" xml:lang="xsc"><lang/>
+                        <w>Φορος</w></mentioned> is probably related to it as well.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>III
+                        80</biblScope></bibl>. — <bibl><author>Morgenstierne</author><ref type="bibl" target="#ref_NTS"/><biblScope>XII
                     267</biblScope></bibl>.</etym>
             </entry>
         </body>

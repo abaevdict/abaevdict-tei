@@ -1,40 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ævzyjyn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ævzyjyn" xml:lang="os">
-                <form xml:lang="os-x-iron" type="lemma"><orth>ævzyjyn</orth><form type="participle"
-                            ><orth>ævzyd</orth></form></form>
-                <form xml:lang="os-x-digor" type="dialectal"><orth>ævzujun</orth><form
-                        type="participle"><orth>ævzud</orth></form></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <form xml:lang="os-x-iron" type="lemma"><orth>ævzyjyn</orth><form type="participle"><orth>ævzyd</orth></form></form>
+                <form xml:lang="os-x-digor" type="dialectal"><orth>ævzujun</orth><form type="participle"><orth>ævzud</orth></form></form>
+                <sense xml:id="sense_d278e76"><sense xml:id="sense_d278e77"><abv:tr xml:lang="ru">
                             <q>выпадать, лезть(о волосах)</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>come out, fall out (of hair)</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d278e86"><abv:tr xml:lang="ru">
                             <q>чахнуть</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>pine</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d278e98">
                         <quote>mæ saryq˳yntæ gasæj bavzydysty</quote>
                         <abv:tr xml:lang="ru">
                             <q>мои волосы совсем повыпали</q>
@@ -43,7 +46,7 @@
                             <q>my hair completely fell out</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d278e113" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>ævzud ærfguti bunti misti cæstitæ…</quote>
                         <abv:tr xml:lang="ru">
@@ -52,10 +55,9 @@
                         <abv:tr xml:lang="en">
                             <q>there are mouse eyes under shabby eyebrows</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Тайм._Мӕ_зӕрд."
-                                /><biblScope>49</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Тайм._Мӕ_зӕрд."/><biblScope>49</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d278e135">
                         <quote>bonæj bonmæ (Salu) ævzujgæ, tajgæ cæuj</quote>
                         <abv:tr xml:lang="ru">
                             <q>день ото дня (Салу) чахнет, тает</q>
@@ -63,123 +65,102 @@
                         <abv:tr xml:lang="en">
                             <q>Salu is pinning, wasting away from day to day</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Bes._Ka_ke"
-                            /><biblScope>86</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Bes._Ka_ke"/><biblScope>86</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Сращение преверба %iæv%i-( ← %iabi%i) с основой
-                    *%izu%i-(*%izav%i-); ср. <mentioned xml:lang="srh"><lang/>
+                    *%izu%i-(*%izav%i-); ср. <mentioned xml:id="mentioned_d278e157" xml:lang="srh"><lang/>
                         <w>wa-zew-: wa-züd-</w>
-                        <gloss><q>чахнуть</q></gloss></mentioned>, <mentioned xml:lang="srh"><w/>
-                        <gloss><q>гибнуть</q></gloss></mentioned>, <mentioned xml:lang="srh"><w/>
-                        <gloss><q>гаснуть</q></gloss></mentioned> , <mentioned xml:lang="sgh"><lang/>
-                        <w>ziyāw-</w></mentioned>, <mentioned xml:lang="sgh"><w>ziyū-</w>
-                        <gloss><q>вянуть</q></gloss></mentioned>, <mentioned xml:lang="sgh"><w/>
-                        <gloss><q>усыхать</q></gloss></mentioned>, <mentioned xml:lang="sgh"
-                            ><w>wi-zēw- : wi-zūd-</w>
-                        <gloss><q>гасить</q></gloss></mentioned>, <mentioned xml:lang="mnj"><lang/>
+                        <gloss><q>чахнуть</q></gloss></mentioned>, <mentioned xml:id="mentioned_d278e165" xml:lang="srh"><w/>
+                        <gloss><q>гибнуть</q></gloss></mentioned>, <mentioned xml:id="mentioned_d278e171" xml:lang="srh"><w/>
+                        <gloss><q>гаснуть</q></gloss></mentioned> , <mentioned xml:id="mentioned_d278e177" xml:lang="sgh"><lang/>
+                        <w>ziyāw-</w></mentioned>, <mentioned xml:id="mentioned_d278e182" xml:lang="sgh"><w>ziyū-</w>
+                        <gloss><q>вянуть</q></gloss></mentioned>, <mentioned xml:id="mentioned_d278e189" xml:lang="sgh"><w/>
+                        <gloss><q>усыхать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d278e195" xml:lang="sgh"><w>wi-zēw- : wi-zūd-</w>
+                        <gloss><q>гасить</q></gloss></mentioned>, <mentioned xml:id="mentioned_d278e201" xml:lang="mnj"><lang/>
                         <w>w-zōw- : wi-zūd-</w>
-                        <gloss><q>гасить</q></gloss></mentioned>, <mentioned xml:lang="yah"><lang/>
+                        <gloss><q>гасить</q></gloss></mentioned>, <mentioned xml:id="mentioned_d278e209" xml:lang="yah"><lang/>
                         <w>ū-zīw-: ū-zōt-</w>
-                        <gloss><q>гаснуть</q></gloss></mentioned>, <mentioned xml:lang="yah"
-                            ><w>ū-zau-: ū-zowd-</w>
-                        <gloss><q>гасить</q></gloss></mentioned>, <mentioned xml:lang="kho"><lang/>
+                        <gloss><q>гаснуть</q></gloss></mentioned>, <mentioned xml:id="mentioned_d278e217" xml:lang="yah"><w>ū-zau-: ū-zowd-</w>
+                        <gloss><q>гасить</q></gloss></mentioned>, <mentioned xml:id="mentioned_d278e223" xml:lang="kho"><lang/>
                         <w>bu-ysu-(← *abi-žu-)</w>
-                        <gloss><q>уничтожать</q></gloss></mentioned>, <mentioned xml:lang="kho"><w/>
-                        <gloss><q>гасить</q></gloss></mentioned>, <mentioned xml:lang="kho"><w/>
-                        <gloss><q>гаснуть</q></gloss></mentioned>. Может быть, сюда же <mentioned
-                        xml:lang="lv"><lang/>
-                        <w>zùdu</w></mentioned>, <mentioned xml:lang="lv"><w>zust</w>
-                        <gloss><q>исчезать</q></gloss></mentioned>, <mentioned xml:lang="lv"><w/>
-                        <gloss><q>гибнуть</q></gloss></mentioned>, (<mentioned xml:lang="ine"><lang/>
+                        <gloss><q>уничтожать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d278e232" xml:lang="kho"><w/>
+                        <gloss><q>гасить</q></gloss></mentioned>, <mentioned xml:id="mentioned_d278e238" xml:lang="kho"><w/>
+                        <gloss><q>гаснуть</q></gloss></mentioned>. Может быть, сюда же <mentioned xml:id="mentioned_d278e244" xml:lang="lv"><lang/>
+                        <w>zùdu</w></mentioned>, <mentioned xml:id="mentioned_d278e249" xml:lang="lv"><w>zust</w>
+                        <gloss><q>исчезать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d278e255" xml:lang="lv"><w/>
+                        <gloss><q>гибнуть</q></gloss></mentioned>, (<mentioned xml:id="mentioned_d278e261" xml:lang="ine"><lang/>
                         <w>*gheū-</w></mentioned>. Основа %izu%i-, %izav%i- представляет,
-                    по-видимому, вариацию основы %igu%i-, %igaw%i-, см. <ref type="xr"
-                        target="#entry_qæwyn"/> ‘недоставать’. Та же основа, по закону расщепления
+                    по-видимому, вариацию основы %igu%i-, %igaw%i-, см. <ref type="xr" target="#entry_qæwyn"/> ‘недоставать’. Та же основа, по закону расщепления
                     значения, получила в некоторых языках диаметрально противоположный смысл:
-                        <mentioned xml:lang="peo"><lang/>
+                        <mentioned xml:id="mentioned_d278e269" xml:lang="peo"><lang/>
                         <w>abi-jāv-</w>
-                        <gloss><q>прибавлять</q></gloss></mentioned> ( <mentioned xml:lang="peo"><lang/>
+                        <gloss><q>прибавлять</q></gloss></mentioned> ( <mentioned xml:id="mentioned_d278e277" xml:lang="peo"><lang/>
                         <w>abiyajāvayam</w>
-                        <gloss><q>я прибавил</q></gloss></mentioned>), <mentioned xml:lang="sog"><lang/>
+                        <gloss><q>я прибавил</q></gloss></mentioned>), <mentioned xml:id="mentioned_d278e285" xml:lang="sog"><lang/>
                         <w>*aβžāw-('βzw-)</w>
-                        <gloss><q>прибавлять</q></gloss></mentioned>, <mentioned xml:lang="sog"
-                            ><w>aβžay-('βz'y-)</w>
-                        <gloss><q>прибавляться</q></gloss></mentioned>, <mentioned
-                        xml:lang="pal-x-turfan"><lang/>
+                        <gloss><q>прибавлять</q></gloss></mentioned>, <mentioned xml:id="mentioned_d278e293" xml:lang="sog"><w>aβžay-('βz'y-)</w>
+                        <gloss><q>прибавляться</q></gloss></mentioned>, <mentioned xml:id="mentioned_d278e299" xml:lang="pal-x-turfan"><lang/>
                         <w>aβzū-</w>
-                        <gloss><q>увеличиваться</q></gloss></mentioned>, <mentioned
-                        xml:lang="pal-x-turfan"><w/>
-                        <gloss><q>возрастать в количестве</q></gloss></mentioned>, <mentioned
-                        xml:lang="pal-x-turfan"><w>aβzāy-</w>
-                        <gloss><q>умножать</q></gloss></mentioned>, <mentioned xml:lang="pal"><lang/>
+                        <gloss><q>увеличиваться</q></gloss></mentioned>, <mentioned xml:id="mentioned_d278e308" xml:lang="pal-x-turfan"><w/>
+                        <gloss><q>возрастать в количестве</q></gloss></mentioned>, <mentioned xml:id="mentioned_d278e314" xml:lang="pal-x-turfan"><w>aβzāy-</w>
+                        <gloss><q>умножать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d278e320" xml:lang="pal"><lang/>
                         <w>abzūtan</w>
-                        <gloss><q>умножаться</q></gloss></mentioned>, при <mentioned xml:lang="pal"><lang/>
+                        <gloss><q>умножаться</q></gloss></mentioned>, при <mentioned xml:id="mentioned_d278e328" xml:lang="pal"><lang/>
                         <w>vizūtan</w>
                         <gloss><q>уменьшать(ся)</q></gloss></mentioned>
-                            (<bibl><author>%sBailey%s</author><ref type="bibl" target="#ref_BSOS"
-                            /><biblScope>VIII 292 сл.</biblScope></bibl>), <mentioned xml:lang="fa"><lang/>
+                            (<bibl><author>%sBailey%s</author><ref type="bibl" target="#ref_BSOS"/><biblScope>VIII 292 сл.</biblScope></bibl>), <mentioned xml:id="mentioned_d278e341" xml:lang="fa"><lang/>
                         <w>afzūdan</w>
-                        <gloss><q>прибавлять</q></gloss></mentioned>, <mentioned xml:lang="fa"
-                            ><w>ayzūyīdan</w>
-                        <gloss><q>прибавляться</q></gloss></mentioned>, <mentioned xml:lang="fa"><w/>
+                        <gloss><q>прибавлять</q></gloss></mentioned>, <mentioned xml:id="mentioned_d278e350" xml:lang="fa"><w>ayzūyīdan</w>
+                        <gloss><q>прибавляться</q></gloss></mentioned>, <mentioned xml:id="mentioned_d278e356" xml:lang="fa"><w/>
                         <gloss><q>умножаться</q></gloss></mentioned> (<bibl><biblScope>%bMathnawi I
                             3873 comm%b</biblScope></bibl>). — Сильную ступень основы нашего глагола
                     (%izaw%i-) имеем, по-видимому, в %izaw%i-%iwat%i ‘опустошение’.</etym>
                 <etym xml:lang="en">The fusion of the preverb %iæv%i-( ← %iabi%i) and the stem
-                    *%izu%i-(*%izav%i-); cf. <mentioned xml:lang="srh"><lang/>
+                    *%izu%i-(*%izav%i-); cf. <mentioned xml:id="mentioned_d278e369" xml:lang="srh"><lang/>
                         <w>wa-zew-: wa-züd-</w>
-                        <gloss><q>to wither</q></gloss></mentioned>, <mentioned xml:lang="srh"><w/>
-                        <gloss><q>to perish</q></gloss></mentioned>, <mentioned xml:lang="srh"><w/>
-                        <gloss><q>to fade</q></gloss></mentioned> , <mentioned xml:lang="sgh"><lang/>
-                        <w>ziyāw-</w></mentioned>, <mentioned xml:lang="sgh"><w>ziyū-</w>
-                        <gloss><q>to droop</q></gloss></mentioned>, <mentioned xml:lang="sgh"><w/>
-                        <gloss><q>to dry up</q></gloss></mentioned>, <mentioned xml:lang="sgh"
-                            ><w>wi-zēw- : wi-zūd-</w>
-                        <gloss><q>to extinguish</q></gloss></mentioned>, <mentioned xml:lang="mnj"><lang/>
+                        <gloss><q>to wither</q></gloss></mentioned>, <mentioned xml:id="mentioned_d278e377" xml:lang="srh"><w/>
+                        <gloss><q>to perish</q></gloss></mentioned>, <mentioned xml:id="mentioned_d278e383" xml:lang="srh"><w/>
+                        <gloss><q>to fade</q></gloss></mentioned> , <mentioned xml:id="mentioned_d278e389" xml:lang="sgh"><lang/>
+                        <w>ziyāw-</w></mentioned>, <mentioned xml:id="mentioned_d278e394" xml:lang="sgh"><w>ziyū-</w>
+                        <gloss><q>to droop</q></gloss></mentioned>, <mentioned xml:id="mentioned_d278e401" xml:lang="sgh"><w/>
+                        <gloss><q>to dry up</q></gloss></mentioned>, <mentioned xml:id="mentioned_d278e407" xml:lang="sgh"><w>wi-zēw- : wi-zūd-</w>
+                        <gloss><q>to extinguish</q></gloss></mentioned>, <mentioned xml:id="mentioned_d278e413" xml:lang="mnj"><lang/>
                         <w>w-zōw- : wi-zūd-</w>
-                        <gloss><q>to extinguish</q></gloss></mentioned>, <mentioned xml:lang="yah"><lang/>
+                        <gloss><q>to extinguish</q></gloss></mentioned>, <mentioned xml:id="mentioned_d278e421" xml:lang="yah"><lang/>
                         <w>ū-zīw-: ū-zōt-</w>
-                        <gloss><q>to fade</q></gloss></mentioned>, <mentioned xml:lang="yah"
-                            ><w>ū-zau-: ū-zowd-</w>
-                        <gloss><q>to extinguish</q></gloss></mentioned>, <mentioned xml:lang="kho"><lang/>
+                        <gloss><q>to fade</q></gloss></mentioned>, <mentioned xml:id="mentioned_d278e429" xml:lang="yah"><w>ū-zau-: ū-zowd-</w>
+                        <gloss><q>to extinguish</q></gloss></mentioned>, <mentioned xml:id="mentioned_d278e435" xml:lang="kho"><lang/>
                         <w>bu-ysu-(← *abi-žu-)</w>
-                        <gloss><q>to exterminate</q></gloss></mentioned>, <mentioned xml:lang="kho"><w/>
-                        <gloss><q>to extinguish</q></gloss></mentioned>, <mentioned xml:lang="kho"><w/>
+                        <gloss><q>to exterminate</q></gloss></mentioned>, <mentioned xml:id="mentioned_d278e444" xml:lang="kho"><w/>
+                        <gloss><q>to extinguish</q></gloss></mentioned>, <mentioned xml:id="mentioned_d278e450" xml:lang="kho"><w/>
                         <gloss><q>to fade</q></gloss></mentioned>. The following word probably
-                    belongs here: <mentioned xml:lang="lv"><lang/>
-                        <w>zùdu</w></mentioned>, <mentioned xml:lang="lv"><w>zust</w>
-                        <gloss><q>to disappear</q></gloss></mentioned>, <mentioned xml:lang="lv"><w/>
-                        <gloss><q>to perish</q></gloss></mentioned>, (<mentioned xml:lang="ine"><lang/>
+                    belongs here: <mentioned xml:id="mentioned_d278e456" xml:lang="lv"><lang/>
+                        <w>zùdu</w></mentioned>, <mentioned xml:id="mentioned_d278e461" xml:lang="lv"><w>zust</w>
+                        <gloss><q>to disappear</q></gloss></mentioned>, <mentioned xml:id="mentioned_d278e467" xml:lang="lv"><w/>
+                        <gloss><q>to perish</q></gloss></mentioned>, (<mentioned xml:id="mentioned_d278e473" xml:lang="ine"><lang/>
                         <w>*gheū-</w></mentioned>. The stem %izu%i-, %izav%i- seems to be another
-                    version of the stem %igu%i-, %igaw%i-, see <ref type="xr" target="#entry_qæwyn"
-                    /> ‘be lack’. According to %bthe splitiing law%b, the same stem received a
-                    diametrically opposite sense in some language: <mentioned xml:lang="peo"><lang/>
+                    version of the stem %igu%i-, %igaw%i-, see <ref type="xr" target="#entry_qæwyn"/> ‘be lack’. According to %bthe splitiing law%b, the same stem received a
+                    diametrically opposite sense in some language: <mentioned xml:id="mentioned_d278e481" xml:lang="peo"><lang/>
                         <w>abi-jāv-</w>
-                        <gloss><q>to add</q></gloss></mentioned> ( <mentioned xml:lang="peo"><lang/>
+                        <gloss><q>to add</q></gloss></mentioned> ( <mentioned xml:id="mentioned_d278e489" xml:lang="peo"><lang/>
                         <w>abiyajāvayam</w>
-                        <gloss><q>I added</q></gloss></mentioned>), <mentioned xml:lang="sog"><lang/>
+                        <gloss><q>I added</q></gloss></mentioned>), <mentioned xml:id="mentioned_d278e497" xml:lang="sog"><lang/>
                         <w>*aβžāw-('βzw-)</w>
-                        <gloss><q>to add</q></gloss></mentioned>, <mentioned xml:lang="sog"
-                            ><w>aβžay-('βz'y-)</w>
-                        <gloss><q>to be added</q></gloss></mentioned>, <mentioned
-                        xml:lang="pal-x-turfan"><lang/>
+                        <gloss><q>to add</q></gloss></mentioned>, <mentioned xml:id="mentioned_d278e505" xml:lang="sog"><w>aβžay-('βz'y-)</w>
+                        <gloss><q>to be added</q></gloss></mentioned>, <mentioned xml:id="mentioned_d278e511" xml:lang="pal-x-turfan"><lang/>
                         <w>aβzū-</w>
-                        <gloss><q>to increase</q></gloss></mentioned>, <mentioned
-                        xml:lang="pal-x-turfan"><w/>
-                        <gloss><q>to grow in number</q></gloss></mentioned>, <mentioned
-                        xml:lang="pal-x-turfan"><w>aβzāy-</w>
-                        <gloss><q>to multiply</q></gloss></mentioned>, <mentioned xml:lang="pal"><lang/>
+                        <gloss><q>to increase</q></gloss></mentioned>, <mentioned xml:id="mentioned_d278e520" xml:lang="pal-x-turfan"><w/>
+                        <gloss><q>to grow in number</q></gloss></mentioned>, <mentioned xml:id="mentioned_d278e526" xml:lang="pal-x-turfan"><w>aβzāy-</w>
+                        <gloss><q>to multiply</q></gloss></mentioned>, <mentioned xml:id="mentioned_d278e532" xml:lang="pal"><lang/>
                         <w>abzūtan</w>
-                        <gloss><q>to be multiplied</q></gloss></mentioned>, near <mentioned
-                        xml:lang="pal"><lang/>
+                        <gloss><q>to be multiplied</q></gloss></mentioned>, near <mentioned xml:id="mentioned_d278e540" xml:lang="pal"><lang/>
                         <w>vizūtan</w>
                         <gloss><q>to decrease</q></gloss></mentioned>
-                            (<bibl><author>%sBailey%s</author><ref type="bibl" target="#ref_BSOS"
-                            /><biblScope>VIII 292 сл.</biblScope></bibl>), <mentioned xml:lang="fa"><lang/>
+                            (<bibl><author>%sBailey%s</author><ref type="bibl" target="#ref_BSOS"/><biblScope>VIII 292 сл.</biblScope></bibl>), <mentioned xml:id="mentioned_d278e553" xml:lang="fa"><lang/>
                         <w>afzūdan</w>
-                        <gloss><q>to add</q></gloss></mentioned>, <mentioned xml:lang="fa"
-                            ><w>ayzūyīdan</w>
-                        <gloss><q>to be added</q></gloss></mentioned>, <mentioned xml:lang="fa"><w/>
+                        <gloss><q>to add</q></gloss></mentioned>, <mentioned xml:id="mentioned_d278e562" xml:lang="fa"><w>ayzūyīdan</w>
+                        <gloss><q>to be added</q></gloss></mentioned>, <mentioned xml:id="mentioned_d278e568" xml:lang="fa"><w/>
                         <gloss><q>to multiply</q></gloss></mentioned> (<bibl><biblScope>%bMathnawi I
                             3873 comm%b</biblScope></bibl>). — There is probably a strong variant of
                     the stem (%izaw%i-) in %izaw%i-%iwat%i ‘devastation’.</etym>

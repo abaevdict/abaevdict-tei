@@ -1,49 +1,54 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">kæsæg</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_kæsæg" xml:lang="os">
                 <form type="lemma"><orth>kæsæg</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d2441e69"><sense xml:id="sense_d2441e70"><abv:tr xml:lang="ru">
                             <q>кабардинцы</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>Kabardians</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d2441e79"><abv:tr xml:lang="ru">
                             <q>кабардинский народ и страна</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>Kabardian people and country</q>
                         </abv:tr></sense></sense>
-                <re>
+                <re xml:id="re_d2441e89">
                     <form type="lemma"><orth>kæsgon</orth></form>
-                    <sense><sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d2441e94"><sense xml:id="sense_d2441e95"><abv:tr xml:lang="ru">
                                 <q>кабардинский</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>Kabardian (adj.)</q>
-                            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                            </abv:tr></sense><sense xml:id="sense_d2441e104"><abv:tr xml:lang="ru">
                                 <q>кабардинец</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>Kabardian (person)</q>
                             </abv:tr></sense></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d2441e117">
                         <quote>kæsæg fætærync Mamajy æfsædtæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>кабардинцы гонят войска Мамая</q>
@@ -51,10 +56,9 @@
                         <abv:tr xml:lang="en">
                             <q>Kabardians are turfing Mamai’s troops out</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"
-                            /><biblScope>132</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>132</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d2441e136" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>æppælujnag mæ kæsgon</quote>
                         <abv:tr xml:lang="ru">
@@ -63,8 +67,7 @@
                         <abv:tr xml:lang="en">
                             <q>my Kabardian (horse) is praiseworthy</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Gurdž._Wadž."
-                            /><biblScope>26</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Gurdž._Wadž."/><biblScope>26</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Старое название адыгейских племен, засвидетельствованное в
@@ -79,11 +82,10 @@
                             (<bibl><biblScope>Масуди</biblScope></bibl>), народ %iКаšak%i соседит с
                     аланами (cp.: <bibl><biblScope>Berichte des Forschungs-lnstituts für Osten und
                             Orient II 71</biblScope></bibl>). %bСваны%b называют северокавказскую
-                    равнину <mentioned xml:lang="sva"><lang/>
-                        <w>Kasag</w></mentioned>; ср. также <mentioned xml:lang="ka"><lang/>
+                    равнину <mentioned xml:id="mentioned_d2441e170" xml:lang="sva"><lang/>
+                        <w>Kasag</w></mentioned>; ср. также <mentioned xml:id="mentioned_d2441e175" xml:lang="ka"><lang/>
                         <w>kasagi</w>
-                        <gloss><q>рослый невольник</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Саба"/><biblScope>365</biblScope></bibl>).— Происхождение
+                        <gloss><q>рослый невольник</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Саба"/><biblScope>365</biblScope></bibl>).— Происхождение
                     термина не установлено.</etym>
                 <etym xml:lang="en">It is the old name of Adyghean tribes, which was attested in
                     various sources: %bRussian%b, %bByzantine%b, %bArab%b, %bGeorgian%b. In the
@@ -97,11 +99,10 @@
                             (<bibl><author>Al-Masudi</author></bibl>), the people %iКаšak%i are
                     neighbours with the Alans (cp.: <bibl><biblScope>Berichte des
                             Forschungs-lnstituts für Osten und Orient II 71</biblScope></bibl>).
-                    %bThe Svans%b call a North Caucasian plain <mentioned xml:lang="sva"><lang/>
-                        <w>Kasag</w></mentioned>; cf. also <mentioned xml:lang="ka"><lang/>
+                    %bThe Svans%b call a North Caucasian plain <mentioned xml:id="mentioned_d2441e201" xml:lang="sva"><lang/>
+                        <w>Kasag</w></mentioned>; cf. also <mentioned xml:id="mentioned_d2441e206" xml:lang="ka"><lang/>
                         <w>kasagi</w>
-                        <gloss><q>big slave</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Саба"/><biblScope>365</biblScope></bibl>).— The origin of
+                        <gloss><q>big slave</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Саба"/><biblScope>365</biblScope></bibl>).— The origin of
                     the term is not established.</etym>
             </entry>
         </body>

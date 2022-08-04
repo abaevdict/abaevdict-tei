@@ -1,34 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">cym</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_cym" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>cym</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>cumæ</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d3238e72"><abv:tr xml:lang="ru">
                         <q>кизил</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>cornel</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d3238e84">
                         <quote>jæ k’ūxy ta cʽ ī? styr cym læʒæg</quote>
                         <abv:tr xml:lang="ru">
                             <q>а что у него в руке? большая кизиловая палка</q>
@@ -38,31 +43,28 @@
                         </abv:tr>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Тяготеет к дагестанским языкам: <mentioned xml:lang="lez" n="0"><lang/>
+                <etym xml:lang="ru">Тяготеет к дагестанским языкам: <mentioned xml:id="mentioned_d3238e102" xml:lang="lez" n="0"><lang/>
                         <w n="0">чумал</w>
-                        <gloss><q>кизил</q></gloss></mentioned>, <mentioned xml:lang="lez"
-                            ><w>žum</w>
-                        <gloss><q>айва</q></gloss></mentioned>, <mentioned xml:lang="tab"><lang/>
+                        <gloss><q>кизил</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3238e111" xml:lang="lez"><w>žum</w>
+                        <gloss><q>айва</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3238e117" xml:lang="tab"><lang/>
                         <w>чeмeл</w></mentioned> id. Дальнейшие связи ведут, кажется, к персидскому:
-                        <mentioned xml:lang="fa"><lang/>
+                        <mentioned xml:id="mentioned_d3238e122" xml:lang="fa"><lang/>
                         <w>čupčupī</w><note type="comment" xml:lang="ru">ﭼﭙﭽﭙی</note>
                         <gloss><q>кизил</q></gloss></mentioned>
                             (<bibl><author>Haim</author><biblScope>English-persian dictionary s.v.
-                            “cornel”</biblScope></bibl>). <mentioned xml:lang="krc-x-balkar"><lang/>
+                            “cornel”</biblScope></bibl>). <mentioned xml:id="mentioned_d3238e137" xml:lang="krc-x-balkar"><lang/>
                         <w>čum</w>
                         <gloss><q>кизил</q></gloss></mentioned> примыкает к осетинскому.</etym>
-                <etym xml:lang="en">It relates to Daghestanian languages: <mentioned xml:lang="lez"><lang/>
+                <etym xml:lang="en">It relates to Daghestanian languages: <mentioned xml:id="mentioned_d3238e149" xml:lang="lez"><lang/>
                         <w>čumal</w>
-                        <gloss><q>cornel</q></gloss></mentioned>, <mentioned xml:lang="lez"
-                            ><w>žum</w>
-                        <gloss><q>apple-quince</q></gloss></mentioned>, <mentioned xml:lang="tab"><lang/>
+                        <gloss><q>cornel</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3238e157" xml:lang="lez"><w>žum</w>
+                        <gloss><q>apple-quince</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3238e163" xml:lang="tab"><lang/>
                         <w>чeмeл</w></mentioned> id. Further connections seem to lead to Persian:
-                        <mentioned xml:lang="fa"><lang/>
-                        <w>čupčupī</w><note
-                            type="comment" xml:lang="en">ﭼﭙﭽﭙی</note>
+                        <mentioned xml:id="mentioned_d3238e168" xml:lang="fa"><lang/>
+                        <w>čupčupī</w><note type="comment" xml:lang="en">ﭼﭙﭽﭙی</note>
                         <gloss><q>cornel</q></gloss></mentioned>
                             (<bibl><author>Haim</author><biblScope>English-persian dictionary s.v.
-                            “cornel”</biblScope></bibl>). <mentioned xml:lang="krc-x-balkar"><lang/>
+                            “cornel”</biblScope></bibl>). <mentioned xml:id="mentioned_d3238e183" xml:lang="krc-x-balkar"><lang/>
                         <w>čum</w>
                         <gloss><q>cornel</q></gloss></mentioned> relates to the Ossetic word.</etym>
             </entry>

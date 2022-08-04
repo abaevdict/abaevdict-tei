@@ -1,40 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ævdasarm</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ævdasarm" xml:lang="os">
                 <form type="lemma"><orth>ævdasarm</orth></form>
-                <sense xml:lang="os-x-iron"><usg><lang/></usg><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d96e69" xml:lang="os-x-iron"><usg><lang/></usg><sense xml:id="sense_d96e72"><abv:tr xml:lang="ru">
                             <q>четверть бычьей или бараньей туши</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>a quarter of bull or lamb carcass</q>
-                        </abv:tr></sense><sense><note type="comment" xml:lang="ru">а
-                            именно</note><note type="comment" xml:lang="en">namely</note><abv:tr
-                            xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d96e81"><note type="comment" xml:lang="ru">а
+                            именно</note><note type="comment" xml:lang="en">namely</note><abv:tr xml:lang="ru">
                             <q>передняя нога с лопаткой и боком</q>
-                        </abv:tr><note type="comment" xml:lang="ru">а именно</note><note
-                            type="comment" xml:lang="en">namely</note><abv:tr xml:lang="en">
+                        </abv:tr><note type="comment" xml:lang="ru">а именно</note><note type="comment" xml:lang="en">namely</note><abv:tr xml:lang="en">
                             <q>a front leg with a shovel and a side</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d96e101">
                         <quote>syrdy (syḱʼījy) akʼærtt kodta, yswængtæ jæ kodta æmæ jyn jæ
                             ævdasarmæj fīzonǵytæ saræzta</quote>
                         <abv:tr xml:lang="ru">
@@ -49,26 +52,16 @@
                             39</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из %iæd-fars-arm%i ‘передняя нога (<ref type="xr"
-                        target="#entry_arm"/>) с боком (%iæd fars%i-)', в применении к человеку <ref
-                        type="xr" target="#entry_arm"/> значит ‘рука’, у животных — ‘передняя нога’,
+                <etym xml:lang="ru">Из %iæd-fars-arm%i ‘передняя нога (<ref type="xr" target="#entry_arm"/>) с боком (%iæd fars%i-)', в применении к человеку <ref type="xr" target="#entry_arm"/> значит ‘рука’, у животных — ‘передняя нога’,
                     ср. %iarmaccagæj cævyn%i ‘бить передними ногами’. Все звуковые процессы,
                     превратившие %iæd-fars%i в %iævdas%i, закономерны: озвончение %if%i,
                     перестановка %idv%i→%ivd%i (ср. <ref type="xr" target="#entry_qævdyn"/>),
-                    выпадение %ir%i (ср. <ref type="xr" target="#entry_xwyzdær"/> и др.). См. <ref
-                        type="xr" target="#entry_æd"/>. Ср. д. <ref type="xr" target="#entry_cavdar"
-                    /> ‘передняя нога’.%n<bibl><ref type="bibl" target="#ref_РОСл."
-                            /><biblScope>613</biblScope></bibl>.</etym>
-                <etym xml:lang="en">From %iæd-fars-arm%i ‘front leg (<ref type="xr"
-                        target="#entry_arm"/>) with a side (%iæd fars%i-)', as applied to men, <ref
-                        type="xr" target="#entry_arm"/> menas ‘arm’, as regards animals, it means
+                    выпадение %ir%i (ср. <ref type="xr" target="#entry_xwyzdær"/> и др.). См. <ref type="xr" target="#entry_æd"/>. Ср. д. <ref type="xr" target="#entry_cavdar"/> ‘передняя нога’.%n<bibl><ref type="bibl" target="#ref_РОСл."/><biblScope>613</biblScope></bibl>.</etym>
+                <etym xml:lang="en">From %iæd-fars-arm%i ‘front leg (<ref type="xr" target="#entry_arm"/>) with a side (%iæd fars%i-)', as applied to men, <ref type="xr" target="#entry_arm"/> menas ‘arm’, as regards animals, it means
                     'front leg', compare %iarmaccagæj cævyn%i ‘to hit with front legs’. All phonetic
                     processes which turned %iæd-fars%i into %iævdas%i are regular:%nvocalization of
-                    %if%i, the shift %idv%i→%ivd%i (compare <ref type="xr" target="#entry_qævdyn"
-                    />), the loss of %ir%i (compare <ref type="xr" target="#entry_xwyzdær"/> etc.).
-                    See <ref type="xr" target="#entry_æd"/>. Compare Digor <ref type="xr"
-                        target="#entry_cavdar"/> ‘front leg’.%n<bibl><ref type="bibl"
-                            target="#ref_РОСл."/><biblScope>613</biblScope></bibl>.</etym>
+                    %if%i, the shift %idv%i→%ivd%i (compare <ref type="xr" target="#entry_qævdyn"/>), the loss of %ir%i (compare <ref type="xr" target="#entry_xwyzdær"/> etc.).
+                    See <ref type="xr" target="#entry_æd"/>. Compare Digor <ref type="xr" target="#entry_cavdar"/> ‘front leg’.%n<bibl><ref type="bibl" target="#ref_РОСл."/><biblScope>613</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

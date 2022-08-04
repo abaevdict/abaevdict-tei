@@ -1,46 +1,51 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">kʼūʒī</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_kʼūʒī" xml:lang="os-x-iron">
                 <form type="lemma"><orth>kʼūʒī</orth></form>
                 <usg><lang/></usg>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d951e72"><sense xml:id="sense_d951e73"><abv:tr xml:lang="ru">
                             <q>обросший пень</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>overgrown stump</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d951e82"><abv:tr xml:lang="ru">
                             <q>пенек</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>small stump</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d951e91"><abv:tr xml:lang="ru">
                             <q>кустик</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>small bush</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d951e100"><abv:tr xml:lang="ru">
                             <q>кочка</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>hummock</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d951e112">
                         <quote>jæ īwnæg ævsymær jæ razmæ zǧorgæjæ kʼūʒījyl fækaldī</quote>
                         <abv:tr xml:lang="ru">
                             <q>его единственный брат, побежав к нему, споткнулся о пень</q>
@@ -48,10 +53,9 @@
                         <abv:tr xml:lang="en">
                             <q>his only brother ran to him and tripped over a stump</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Æfx._Xæs."
-                            /><biblScope>105</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Æfx._Xæs."/><biblScope>105</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d951e131">
                         <quote>æz cy kʼūʒījy byn, næ baskærston, axæm næ wyd</quote>
                         <abv:tr xml:lang="ru">
                             <q>не было такого кустика, под которым бы я не побывал</q>
@@ -59,26 +63,23 @@
                         <abv:tr xml:lang="en">
                             <q>there wasn’t such a bush that I wouldn’t be under</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Брит."
-                            /><biblScope>147</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Брит."/><biblScope>147</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из <mentioned xml:lang="ka"><lang/>
+                <etym xml:lang="ru">Из <mentioned xml:id="mentioned_d951e153" xml:lang="ka"><lang/>
                         <w>kʼunʒi</w>
-                        <gloss><q>пень</q></gloss></mentioned>, <mentioned xml:lang="ka"><w/>
+                        <gloss><q>пень</q></gloss></mentioned>, <mentioned xml:id="mentioned_d951e161" xml:lang="ka"><w/>
                         <gloss><q>колода</q></gloss></mentioned>.[[В грузинском словаре Д.
                     %sЧубинова%s приводится выражение %ik'unʒ-k'uʒad%i ‘кистями’ (о ежевике), что
-                    указывает на параллельную форму <mentioned xml:lang="ka"><lang/>
-                        <w>*k'uʒi.</w></mentioned>]] Ср. <ref type="xr" target="#entry_kʼ0ynʒīx"
-                    />.</etym>
-                <etym xml:lang="en">From <mentioned xml:lang="ka"><lang/>
+                    указывает на параллельную форму <mentioned xml:id="mentioned_d951e167" xml:lang="ka"><lang/>
+                        <w>*k'uʒi.</w></mentioned>]] Ср. <ref type="xr" target="#entry_kʼ0ynʒīx"/>.</etym>
+                <etym xml:lang="en">From <mentioned xml:id="mentioned_d951e178" xml:lang="ka"><lang/>
                         <w>kʼunʒi</w>
-                        <gloss><q>stump</q></gloss></mentioned>, <mentioned xml:lang="ka"><w/>
+                        <gloss><q>stump</q></gloss></mentioned>, <mentioned xml:id="mentioned_d951e186" xml:lang="ka"><w/>
                         <gloss><q>колода</q></gloss></mentioned>.[[In a Georgian dictionary by D.
                     %sChubinov%s there is an expression %ik'unʒ-k'uʒad%i ‘in bunchs’ (about
-                    blackberry), which denotes a parallel form <mentioned xml:lang="ka"><lang/>
-                        <w>*k'uʒi.</w></mentioned>]] Cf. <ref type="xr" target="#entry_kʼ0ynʒīx"
-                    />.</etym>
+                    blackberry), which denotes a parallel form <mentioned xml:id="mentioned_d951e192" xml:lang="ka"><lang/>
+                        <w>*k'uʒi.</w></mentioned>]] Cf. <ref type="xr" target="#entry_kʼ0ynʒīx"/>.</etym>
             </entry>
         </body>
     </text>

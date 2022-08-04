@@ -1,33 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">kættag</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_kættag" xml:lang="os">
                 <form type="lemma"><orth>kættag</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d3807e69"><abv:tr xml:lang="ru">
                         <q>полотно</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>linen</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d3807e81">
                         <quote>mæ xædon — ḱetænæj, mæ k˳yræt — kættag</quote>
                         <abv:tr xml:lang="ru">
                             <q>рубашка моя — холщевая, бешмет — полотно</q>
@@ -38,36 +43,28 @@
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>52</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из %i*kæn-tag%i с ассимиляцией, как в <ref type="xr"
-                        target="#entry_bæddyn"/> из %i*bændyn%i, <ref type="xr"
-                        target="#entry_sæddyn"/> из %i*sændyn%i и т. п. Первая часть %i*kæn%i
-                    означает ‘конопля’, ‘лен’ (ср. <mentioned xml:lang="sva"><lang/>
-                        <w>kan</w></mentioned>, <mentioned xml:lang="ab"><lang/>
-                        <w>a-k˳nə</w></mentioned>, <mentioned xml:lang="chm"><lang/>
+                <etym xml:lang="ru">Из %i*kæn-tag%i с ассимиляцией, как в <ref type="xr" target="#entry_bæddyn"/> из %i*bændyn%i, <ref type="xr" target="#entry_sæddyn"/> из %i*sændyn%i и т. п. Первая часть %i*kæn%i
+                    означает ‘конопля’, ‘лен’ (ср. <mentioned xml:id="mentioned_d3807e107" xml:lang="sva"><lang/>
+                        <w>kan</w></mentioned>, <mentioned xml:id="mentioned_d3807e112" xml:lang="ab"><lang/>
+                        <w>a-k˳nə</w></mentioned>, <mentioned xml:id="mentioned_d3807e117" xml:lang="chm"><lang/>
                         <w>kene</w>
                         <gloss><q>конопля</q></gloss></mentioned>. Это слово бытует в осетинском с
                     озвончением начального согласного: <ref type="xr" target="#entry_gæn"/>
                     ‘конопля’. Вторая часть <ref type="xr" target="#entry_tag"/> также известна со
                     значением ‘нить’, ‘полоса’. Все вместе означает, стало быть, ‘конопляная нить’
                     или ‘ткань’. Ср. по образованию <ref type="xr" target="#entry_zældag"/> ‘шелк’
-                    из %i*zæl-tag%i. См. <ref type="xr" target="#entry_gæn"/> и <ref type="xr"
-                        target="#entry_tag"/>.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                            /><biblScope>170, 180, 184, 296</biblScope></bibl>.</etym>
-                <etym xml:lang="en">It is from %i*kæn-tag%i with the assimilation, as in <ref
-                        type="xr" target="#entry_bæddyn"/> from %i*bændyn%i, <ref type="xr"
-                        target="#entry_sæddyn"/> from %i*sændyn%i etc. The first part %i*kæn%i means
-                    ‘hemp’, ‘flax’ (cf. <mentioned xml:lang="sva"><lang/>
-                        <w>kan</w></mentioned>, <mentioned xml:lang="ab"><lang/>
-                        <w>a-k˳nə</w></mentioned>, <mentioned xml:lang="chm"><lang/>
+                    из %i*zæl-tag%i. См. <ref type="xr" target="#entry_gæn"/> и <ref type="xr" target="#entry_tag"/>.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>170, 180, 184, 296</biblScope></bibl>.</etym>
+                <etym xml:lang="en">It is from %i*kæn-tag%i with the assimilation, as in <ref type="xr" target="#entry_bæddyn"/> from %i*bændyn%i, <ref type="xr" target="#entry_sæddyn"/> from %i*sændyn%i etc. The first part %i*kæn%i means
+                    ‘hemp’, ‘flax’ (cf. <mentioned xml:id="mentioned_d3807e147" xml:lang="sva"><lang/>
+                        <w>kan</w></mentioned>, <mentioned xml:id="mentioned_d3807e152" xml:lang="ab"><lang/>
+                        <w>a-k˳nə</w></mentioned>, <mentioned xml:id="mentioned_d3807e157" xml:lang="chm"><lang/>
                         <w>kene</w>
                         <gloss><q>hemp</q></gloss></mentioned>. This word is present in Ossetic with
                     the vocalization of the initial consonant: <ref type="xr" target="#entry_gæn"/>
                     ‘hemp’. The second part <ref type="xr" target="#entry_tag"/> is also present, it
                     means ‘thread’, ‘stripe’. Thus, altogether it means ‘hemp thread’ or ‘fabric’.
                     Cg. the derivation pattern of <ref type="xr" target="#entry_zældag"/> ‘silk’
-                    from %i*zæl-tag%i. See <ref type="xr" target="#entry_gæn"/> and <ref type="xr"
-                        target="#entry_tag"/>.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                            /><biblScope>170, 180, 184, 296</biblScope></bibl>.</etym>
+                    from %i*zæl-tag%i. See <ref type="xr" target="#entry_gæn"/> and <ref type="xr" target="#entry_tag"/>.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>170, 180, 184, 296</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

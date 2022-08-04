@@ -1,46 +1,49 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">færsūʒyn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_færsūʒyn" xml:lang="os">
-                <form xml:lang="os-x-iron" type="lemma"><orth>færsūʒyn</orth><form type="participle"
-                            ><orth>færsyǧd</orth></form></form>
-                <form xml:lang="os-x-digor" type="dialectal"><orth>fælsoʒun</orth><form
-                        type="participle"><orth>fælsuǧd</orth></form></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <form xml:lang="os-x-iron" type="lemma"><orth>færsūʒyn</orth><form type="participle"><orth>færsyǧd</orth></form></form>
+                <form xml:lang="os-x-digor" type="dialectal"><orth>fælsoʒun</orth><form type="participle"><orth>fælsuǧd</orth></form></form>
+                <sense xml:id="sense_d4378e76"><sense xml:id="sense_d4378e77"><abv:tr xml:lang="ru">
                             <q>процеживать</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>filter</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="en">
+                        </abv:tr></sense><sense xml:id="sense_d4378e86"><abv:tr xml:lang="en">
                             <q>strain</q>
                         </abv:tr></sense></sense>
-                <re>
+                <re xml:id="re_d4378e92">
                     <form type="lemma"><orth>færsūʒæn</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d4378e97"><abv:tr xml:lang="ru">
                             <q>цедилка</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>strainer</q>
                         </abv:tr></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4378e110">
                         <quote>ūrs æxsyr … cæxgærmæ īw ūs færsūʒy</quote>
                         <abv:tr xml:lang="ru">
                             <q>белое молоко в кадку одна женщина процеживает</q>
@@ -51,91 +54,67 @@
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>73</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Старое сращение преверба %ifær-%i, %ifæl-%i с глаголом <ref
-                        type="xr" target="#entry_sūʒyn"/> | %isoʒun%i означающим самостоятельно
+                <etym xml:lang="ru">Старое сращение преверба %ifær-%i, %ifæl-%i с глаголом <ref type="xr" target="#entry_sūʒyn"/> | %isoʒun%i означающим самостоятельно
                     ‘сжигать’ (← %i*para-sauč-%i). Странная, по первому впечатлению, семантика
                     (‘сжигать’ || ‘процеживать’) решительно поддерживается другими фактами
-                    осетинского языка: <ref type="xr" target="#entry_syǧdæg"/> ‘чистый’, <ref
-                        type="xr" target="#entry_ræsūg"/> | %iræsog%i ‘прозрачный’, <ref type="xr"
-                        target="#entry_ræsūǧd"/> ‘красивый’ заключают в себе ту же основу %isuk-%i
+                    осетинского языка: <ref type="xr" target="#entry_syǧdæg"/> ‘чистый’, <ref type="xr" target="#entry_ræsūg"/> | %iræsog%i ‘прозрачный’, <ref type="xr" target="#entry_ræsūǧd"/> ‘красивый’ заключают в себе ту же основу %isuk-%i
                     ‘огонь’, которую мы находим в <ref type="xr" target="#entry_sūʒyn"/> | %isoʒun%i
                     ‘жечь’. В этих словах отражены древние представления, по которым понятия
                     ‘чистоты’, ‘красоты’, ‘прозрачности’ были неотделимы от понятия ‘огня’, не
                     мыслились вне связи с ‘огнем’, как универсальной очищающей стихией. Связь
-                    „чистоты“ с „огнем“ прослеживается и в других родственных языках: ср. <mentioned
-                        xml:lang="kho"><lang/>
+                    „чистоты“ с „огнем“ прослеживается и в других родственных языках: ср. <mentioned xml:id="mentioned_d4378e144" xml:lang="kho"><lang/>
                         <w>vasūjs-</w><note type="comment" xml:lang="ru"> (←
                             %i*ava-suč-%i)</note>
-                        <gloss><q>очищать</q></gloss></mentioned>, <mentioned xml:lang="kho"
-                            ><w>vasuta-</w><note type="comment" xml:lang="ru"> (←
+                        <gloss><q>очищать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4378e154" xml:lang="kho"><w>vasuta-</w><note type="comment" xml:lang="ru"> (←
                             %i*ava-suxta-%i)</note>
-                        <gloss><q>чистый</q></gloss></mentioned>, <mentioned xml:lang="sog"><lang/>
+                        <gloss><q>чистый</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4378e162" xml:lang="sog"><lang/>
                         <w>*pasūč-, *pasūɣt-</w><note type="comment" xml:lang="ru"> (pswč,
                             pcwγt-)</note>
-                        <gloss><q>очищать</q></gloss></mentioned>, <mentioned xml:lang="sog"><w/>
-                        <gloss><q>процеживать</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Henning._BBB"/><biblScope>132</biblScope></bibl>),
-                        <mentioned xml:lang="sa"><lang/>
+                        <gloss><q>очищать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4378e172" xml:lang="sog"><w/>
+                        <gloss><q>процеживать</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Henning._BBB"/><biblScope>132</biblScope></bibl>),
+                        <mentioned xml:id="mentioned_d4378e182" xml:lang="sa"><lang/>
                         <w>śōčayāmi</w>
-                        <gloss><q>я сжигаю</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
-                        <gloss><q>я очищаю</q></gloss></mentioned>, <mentioned xml:lang="sa"
-                            ><w>pavitra-</w><note type="comment" xml:lang="ru">1.</note>
-                        <gloss><q>средство воспламенения</q></gloss></mentioned>, <mentioned
-                        xml:lang="sa"><w/><note type="comment" xml:lang="ru">2.</note>
+                        <gloss><q>я сжигаю</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4378e191" xml:lang="sa"><w/>
+                        <gloss><q>я очищаю</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4378e197" xml:lang="sa"><w>pavitra-</w><note type="comment" xml:lang="ru">1.</note>
+                        <gloss><q>средство воспламенения</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4378e205" xml:lang="sa"><w/><note type="comment" xml:lang="ru">2.</note>
                         <gloss><q>средство очищения’ = ‘сито</q></gloss></mentioned>. Неудачно
-                    сопоставление %sНаdank%s’a (<bibl><author>Handank</author><ref type="bibl"
-                            target="#ref_KPF"/><biblScope xml:lang="ru">Abt. III, Bd. IV, стр.
-                            217</biblScope></bibl>) с <mentioned xml:lang="zza"><lang/>
-                        <w>p%ri%rrôzhin</w></mentioned>, <mentioned xml:lang="prc"><lang/>
+                    сопоставление %sНаdank%s’a (<bibl><author>Handank</author><ref type="bibl" target="#ref_KPF"/><biblScope xml:lang="ru">Abt. III, Bd. IV, стр.
+                            217</biblScope></bibl>) с <mentioned xml:id="mentioned_d4378e219" xml:lang="zza"><lang/>
+                        <w>p%ri%rrôzhin</w></mentioned>, <mentioned xml:id="mentioned_d4378e224" xml:lang="prc"><lang/>
                         <w>paričūn</w>
-                        <gloss><q>сито</q></gloss></mentioned>. Ср. <ref type="xr"
-                        target="#entry_ræsūǧd"/>.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._Gr."/><biblScope>29</biblScope></bibl>. —
-                            <bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                        /><biblScope>72</biblScope></bibl>.</etym>
+                        <gloss><q>сито</q></gloss></mentioned>. Ср. <ref type="xr" target="#entry_ræsūǧd"/>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>29</biblScope></bibl>. —
+                            <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>72</biblScope></bibl>.</etym>
                 <etym xml:lang="en">The old contraction of the preverb %ifær-%i, %ifæl-%i with the
                     verb <ref type="xr" target="#entry_sūʒyn"/> | %isoʒun%i which itself means
                     ‘burn’ (← %i*para-sauč-%i). The strange, at first impression, semantics (‘burn’
                     || ‘filter’) is strongly supported by other facts of the Ossetic language: the
-                    words <ref type="xr" target="#entry_syǧdæg"/> ‘clean’, <ref type="xr"
-                        target="#entry_ræsūg"/> | %iræsog%i ‘transparent’, <ref type="xr"
-                        target="#entry_ræsūǧd"/> ‘beautiful’ consist of the same stem %isuk-%i
+                    words <ref type="xr" target="#entry_syǧdæg"/> ‘clean’, <ref type="xr" target="#entry_ræsūg"/> | %iræsog%i ‘transparent’, <ref type="xr" target="#entry_ræsūǧd"/> ‘beautiful’ consist of the same stem %isuk-%i
                     ‘fire’, which is found in <ref type="xr" target="#entry_sūʒyn"/> | %isoʒun%i
                     ‘burn’. These words reflect the ancient ideas, according to which the concepts
                     of ‘purity’, ‘beauty’, ‘transparency’ were inseparable from the concept of
                     ‘fire’, were not thought of outside of connection with ‘fire’ as a universal
                     purifying element. The connection between "purity" and "fire" can be traced in
-                    other related languages: cf. <mentioned xml:lang="kho"><lang/>
+                    other related languages: cf. <mentioned xml:id="mentioned_d4378e257" xml:lang="kho"><lang/>
                         <w>vasūjs-</w><note type="comment" xml:lang="en"> (←
                             %i*ava-suč-%i)</note>
-                        <gloss><q>purify</q></gloss></mentioned>, <mentioned xml:lang="kho"
-                            ><w>vasuta-</w><note type="comment" xml:lang="en"> (←
+                        <gloss><q>purify</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4378e267" xml:lang="kho"><w>vasuta-</w><note type="comment" xml:lang="en"> (←
                             %i*ava-suxta-%i)</note>
-                        <gloss><q>clean</q></gloss></mentioned>, <mentioned xml:lang="sog"><lang/>
+                        <gloss><q>clean</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4378e275" xml:lang="sog"><lang/>
                         <w>*pasūč-, *pasūɣt-</w><note type="comment" xml:lang="en"> (pswč, pcwγt-)</note>
-                        <gloss><q>purify</q></gloss></mentioned>, <mentioned xml:lang="sog"><w/>
-                        <gloss><q>filter</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Henning._BBB"/><biblScope>132</biblScope></bibl>),
-                        <mentioned xml:lang="sa"><lang/>
+                        <gloss><q>purify</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4378e285" xml:lang="sog"><w/>
+                        <gloss><q>filter</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Henning._BBB"/><biblScope>132</biblScope></bibl>),
+                        <mentioned xml:id="mentioned_d4378e295" xml:lang="sa"><lang/>
                         <w>śōčayāmi</w>
-                        <gloss><q>I burn</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
-                        <gloss><q>I clean</q></gloss></mentioned>, <mentioned xml:lang="sa"
-                            ><w>pavitra-</w><note
-                            type="comment" xml:lang="en">1.</note>
-                        <gloss><q>means for ignition</q></gloss></mentioned>, <mentioned
-                        xml:lang="sa"><w/><note
-                            type="comment" xml:lang="en">2.</note>
+                        <gloss><q>I burn</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4378e304" xml:lang="sa"><w/>
+                        <gloss><q>I clean</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4378e310" xml:lang="sa"><w>pavitra-</w><note type="comment" xml:lang="en">1.</note>
+                        <gloss><q>means for ignition</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4378e318" xml:lang="sa"><w/><note type="comment" xml:lang="en">2.</note>
                         <gloss><q>means for cleaning’ = ‘sieve</q></gloss></mentioned>. The
-                    %sНаdank%s’s (<bibl><author>Handank</author><ref type="bibl" target="#ref_KPF"
-                            /><biblScope xml:lang="en">Abt. III, Bd. IV, p.
-                            217</biblScope></bibl>) comparison to <mentioned xml:lang="zza"><lang/>
-                        <w>p%ri%rrôzhin</w></mentioned>, <mentioned xml:lang="prc"><lang/>
+                    %sНаdank%s’s (<bibl><author>Handank</author><ref type="bibl" target="#ref_KPF"/><biblScope xml:lang="en">Abt. III, Bd. IV, p.
+                            217</biblScope></bibl>) comparison to <mentioned xml:id="mentioned_d4378e332" xml:lang="zza"><lang/>
+                        <w>p%ri%rrôzhin</w></mentioned>, <mentioned xml:id="mentioned_d4378e337" xml:lang="prc"><lang/>
                         <w>paričūn</w>
-                        <gloss><q>sieve</q></gloss></mentioned> is unsuccessful. Cf. <ref type="xr"
-                        target="#entry_ræsūǧd"/>.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._Gr."/><biblScope>29</biblScope></bibl>. —
-                            <bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                        /><biblScope>72</biblScope></bibl>.</etym>
+                        <gloss><q>sieve</q></gloss></mentioned> is unsuccessful. Cf. <ref type="xr" target="#entry_ræsūǧd"/>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>29</biblScope></bibl>. —
+                            <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>72</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

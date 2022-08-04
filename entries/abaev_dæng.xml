@@ -1,33 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">dæng</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_dæng" xml:lang="os">
                 <form type="lemma"><orth>dæng</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d784e69"><abv:tr xml:lang="ru">
                         <q>звук выстрела</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>shooting sound</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d784e81">
                         <quote>dyson bonmæ dæng-dængæj næ bancadysty ḱynʒæxsævy</quote>
                         <abv:tr xml:lang="ru">
                             <q>вчера до утра на свадьбе не прекращалась пальба</q>
@@ -37,7 +42,7 @@
                                 morning</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d784e96">
                         <quote>ʒarmaʒani gurgur, toppi dæng˳ kardi ʒæxst…</quote>
                         <abv:tr xml:lang="ru">
                             <q>гром пушек, стрельба из ружей, удары сабель…</q>
@@ -48,21 +53,21 @@
                         <bibl><ref type="bibl" target="#src_Sam."/><biblScope>126</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Звукоподражательное; ср. <mentioned xml:lang="fa"><lang/>
+                <etym xml:lang="ru">Звукоподражательное; ср. <mentioned xml:id="mentioned_d784e118" xml:lang="fa"><lang/>
                         <w>dang</w>
                         <gloss><q>звук от удара камня о камень, двух палок и т.
-                        п.</q></gloss></mentioned>, <mentioned xml:lang="ku"><lang/>
+                        п.</q></gloss></mentioned>, <mentioned xml:id="mentioned_d784e126" xml:lang="ku"><lang/>
                         <w>däng</w>
-                        <gloss><q>звук</q></gloss></mentioned>, <mentioned xml:lang="ku"><w/>
-                        <gloss><q>шум</q></gloss></mentioned>, <mentioned xml:lang="ku"><w/>
+                        <gloss><q>звук</q></gloss></mentioned>, <mentioned xml:id="mentioned_d784e134" xml:lang="ku"><w/>
+                        <gloss><q>шум</q></gloss></mentioned>, <mentioned xml:id="mentioned_d784e140" xml:lang="ku"><w/>
                         <gloss><q>голос</q></gloss></mentioned>.</etym>
-                <etym xml:lang="en">An onomatopoetic word; cf. <mentioned xml:lang="fa"><lang/>
+                <etym xml:lang="en">An onomatopoetic word; cf. <mentioned xml:id="mentioned_d784e149" xml:lang="fa"><lang/>
                         <w>dang</w>
                         <gloss><q>the sound of a stone hitting a stone, of two sticks hitting each
-                                other, etc.</q></gloss></mentioned>, <mentioned xml:lang="ku"><lang/>
+                                other, etc.</q></gloss></mentioned>, <mentioned xml:id="mentioned_d784e157" xml:lang="ku"><lang/>
                         <w>däng</w>
-                        <gloss><q>sound</q></gloss></mentioned>, <mentioned xml:lang="ku"><w/>
-                        <gloss><q>noise</q></gloss></mentioned>, <mentioned xml:lang="ku"><w/>
+                        <gloss><q>sound</q></gloss></mentioned>, <mentioned xml:id="mentioned_d784e165" xml:lang="ku"><w/>
+                        <gloss><q>noise</q></gloss></mentioned>, <mentioned xml:id="mentioned_d784e171" xml:lang="ku"><w/>
                         <gloss><q>voice</q></gloss></mentioned>.</etym>
             </entry>
         </body>

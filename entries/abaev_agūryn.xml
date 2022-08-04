@@ -1,40 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">agūryn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_agūryn" xml:lang="os">
-                <form xml:lang="os-x-iron" type="lemma"><orth>agūryn</orth><form type="participle"
-                            ><orth>ag˳yrd</orth></form></form>
-                <form xml:lang="os-x-digor" type="dialectal"><orth>agorun</orth><form
-                        type="participle"><orth>agurd</orth></form></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <form xml:lang="os-x-iron" type="lemma"><orth>agūryn</orth><form type="participle"><orth>ag˳yrd</orth></form></form>
+                <form xml:lang="os-x-digor" type="dialectal"><orth>agorun</orth><form type="participle"><orth>agurd</orth></form></form>
+                <sense xml:id="sense_d3923e76"><sense xml:id="sense_d3923e77"><abv:tr xml:lang="ru">
                             <q>искать</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>search</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d3923e86"><abv:tr xml:lang="ru">
                             <q>требовать</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>demand</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d3923e98">
                         <quote>ḱi cy agūry, uj yssary</quote>
                         <abv:tr xml:lang="ru">
                             <q>кто что ищет, то и находит</q>
@@ -45,7 +48,7 @@
                         <bibl><ref type="bibl" target="#src_ЮОПам."/><biblScope>III
                             241</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3923e117">
                         <quote>ærtæ Narty jæ agūrync ænæqæn kʼ˳yrī</quote>
                         <abv:tr xml:lang="ru">
                             <q>три (фамилии) Нартов ищут его целую неделю</q>
@@ -55,7 +58,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_ОЭп."/><biblScope>50</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3923e136">
                         <quote>kæm sæ agūra? kæmæj sæ kūra?</quote>
                         <abv:tr xml:lang="ru">
                             <q>где их (овец) искать? у кого просить?</q>
@@ -65,7 +68,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>49</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3923e155">
                         <quote>bīræ raʒūrbaʒūr fækodtoj; Taǵī -ḱysyl læværdta, ældar ta bīræ
                             ag˳yrdta</quote>
                         <abv:tr xml:lang="ru">
@@ -77,7 +80,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Сека"/><biblScope>25</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3923e174">
                         <quote>færnyg adæmæj alḱī jæ xæʒar ærcag˳yrdta</quote>
                         <abv:tr xml:lang="ru">
                             <q>добрые (наделенные фарном) люди стали расходиться по домам (каждый
@@ -87,10 +90,9 @@
                             <q>kind (endowed with %ifarn%i) people began to go home (each searched
                                 his own house)</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Čerm."
-                            /><biblScope>131</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Čerm."/><biblScope>131</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3923e194">
                         <quote>axæst arǧ ærcagūræd zærond Wyryzmægæj</quote>
                         <abv:tr xml:lang="ru">
                             <q>пусть потребует выкуп от старого Урузмага</q>
@@ -98,10 +100,9 @@
                         <abv:tr xml:lang="en">
                             <q>let him demand a ransom from the old Uruzmag</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_ОЭп."
-                            /><biblScope>24-25</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_ОЭп."/><biblScope>24-25</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3923e213">
                         <quote>kæj zærdæ næ agūry qaræg, ūj zaræd jæxī fændiag</quote>
                         <abv:tr xml:lang="ru">
                             <q>чье сердце не ищет стенаний, тот пусть поет, как ему любо</q>
@@ -111,7 +112,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>11</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d3923e232" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>bærgæ ʒi raagurdta, fal ʒi neci issirdta</quote>
                         <abv:tr xml:lang="ru">
@@ -120,10 +121,9 @@
                         <abv:tr xml:lang="en">
                             <q>he searched there but found nothing</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>11%l11%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>11%l11%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d3923e254" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>agūrdtoncæ cid bæræg æǧdæwttæ</quote>
                         <abv:tr xml:lang="ru">
@@ -135,22 +135,18 @@
                         <bibl><ref type="bibl" target="#src_Bes."/><biblScope>104</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">По-видимому, старое сращение преверба %iа-%i с глаголом <ref
-                        type="xr" target="#entry_kūryn"/> | %ikorun%i, с закономерным озвончением
+                <etym xml:lang="ru">По-видимому, старое сращение преверба %iа-%i с глаголом <ref type="xr" target="#entry_kūryn"/> | %ikorun%i, с закономерным озвончением
                     %ik → g%i; сейчас %iа%i уже не ощущается как преверб и не отделяется; к
-                    осетинскому примыкает <mentioned xml:lang="xmf"><lang/>
+                    осетинскому примыкает <mentioned xml:id="mentioned_d3923e281" xml:lang="xmf"><lang/>
                         <w>gor-</w>
-                        <gloss><q>искать</q></gloss></mentioned>? См. <ref type="xr"
-                        target="#entry_kūryn"/>.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._Gr."/><biblScope>62</biblScope></bibl>.</etym>
+                        <gloss><q>искать</q></gloss></mentioned>? См. <ref type="xr" target="#entry_kūryn"/>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>62</biblScope></bibl>.</etym>
                 <etym xml:lang="en">Apparently, an old fusion of the preverb %iа-%i with the verb
                         <ref type="xr" target="#entry_kūryn"/> | %ikorun%i, with regular voicing of
                     %ik → g%i; now %iа%i is not perceived as a preverb and it cannot be separated;
-                    could <mentioned xml:lang="xmf"><lang/>
+                    could <mentioned xml:id="mentioned_d3923e301" xml:lang="xmf"><lang/>
                         <w>gor-</w>
                         <gloss><q>search</q></gloss></mentioned> be related to the Ossetic word? See
-                        <ref type="xr" target="#entry_kūryn"/>.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._Gr."/><biblScope>62</biblScope></bibl>.</etym>
+                        <ref type="xr" target="#entry_kūryn"/>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>62</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

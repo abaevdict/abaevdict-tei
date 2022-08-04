@@ -1,46 +1,51 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">cʼyf</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_cʼyf" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>cʼyf</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>cʼifæ</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d1525e72"><abv:tr xml:lang="ru">
                         <q>грязь</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>dirt</q>
                     </abv:tr></sense>
-                <re>
+                <re xml:id="re_d1525e82">
                     <form type="lemma"><orth>cʼyfʒast</orth></form>
-                    <sense><sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d1525e87"><sense xml:id="sense_d1525e88"><abv:tr xml:lang="ru">
                                 <q>болото</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>swamp</q>
-                            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                            </abv:tr></sense><sense xml:id="sense_d1525e97"><abv:tr xml:lang="ru">
                                 <q>топь</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>bog</q>
                             </abv:tr></sense></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d1525e110">
                         <quote>cʼyfæj nal zyny</quote>
                         <abv:tr xml:lang="ru">
                             <q>он весь в грязи</q>
@@ -52,7 +57,7 @@
                         <note type="comment" xml:lang="en"> ("he is not visible because of
                             dirt”)</note>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1525e131">
                         <quote>fændag yscʼyf ī</quote>
                         <abv:tr xml:lang="ru">
                             <q>дорога стала грязной</q>
@@ -61,7 +66,7 @@
                             <q>the road got dirty</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d1525e146" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>cʼifæ boni æppun neci æz mæxemæ ærkæsun</quote>
                         <abv:tr xml:lang="ru">
@@ -72,7 +77,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>7</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1525e168">
                         <quote>Ḱermenæn xaj ravzærstoj cʼyfʒæstytæ, kæʒæxtæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>на долю Чермена выделили болота, скалы</q>
@@ -80,10 +85,9 @@
                         <abv:tr xml:lang="en">
                             <q>swamps, rocks were assigned to Chermen</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Сека._Ир._фийау"
-                                /><biblScope>24</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Сека._Ир._фийау"/><biblScope>24</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1525e187">
                         <quote>pyrynʒy x˳ymtyl don awaǧtoj, æmæ bæstæ īwyldær cʼyfʒast yssī</quote>
                         <abv:tr xml:lang="ru">
                             <q>на рисовые поля пустили воду, и вся земля обратилась в топь</q>
@@ -92,10 +96,9 @@
                             <q>water was released into the rice fields, and the whole ground turned
                                 into a swamp</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Хаджи-Мурат"
-                            /><biblScope>228</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Хаджи-Мурат"/><biblScope>228</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d1525e207" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>Soveton Cædesi es beræ cʼifʒæstæ budurtæ</quote>
                         <abv:tr xml:lang="ru">
@@ -107,63 +110,55 @@
                         <bibl><ref type="bibl" target="#src_FS"/><biblScope>V 162</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Вс. Миллер сопоставил <mentioned xml:lang="grc"><lang/>
+                <etym xml:lang="ru">Вс. Миллер сопоставил <mentioned xml:id="mentioned_d1525e233" xml:lang="grc"><lang/>
                         <w>τϊφος</w>
-                        <gloss><q>болото</q></gloss></mentioned>, <mentioned xml:lang="la"><lang/>
+                        <gloss><q>болото</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1525e241" xml:lang="la"><lang/>
                         <w>tipula</w>
-                        <gloss><q>водяной паук</q></gloss></mentioned>, <mentioned xml:lang="sa"><lang/>
-                        <w>tip-</w></mentioned>, <mentioned xml:lang="sa"><w>tepoti</w>
-                        <gloss><q>кропить</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
-                        <gloss><q>орошать</q></gloss></mentioned>, а позднее — c <mentioned
-                        xml:lang="tt-x-kazan"><lang/>
+                        <gloss><q>водяной паук</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1525e249" xml:lang="sa"><lang/>
+                        <w>tip-</w></mentioned>, <mentioned xml:id="mentioned_d1525e254" xml:lang="sa"><w>tepoti</w>
+                        <gloss><q>кропить</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1525e260" xml:lang="sa"><w/>
+                        <gloss><q>орошать</q></gloss></mentioned>, а позднее — c <mentioned xml:id="mentioned_d1525e267" xml:lang="tt-x-kazan"><lang/>
                         <w>čub</w>
-                        <gloss><q>грязь</q></gloss></mentioned>, <mentioned xml:lang="tt-x-kazan"><w/>
-                        <gloss><q>мусор</q></gloss></mentioned>, <mentioned xml:lang="cv"><lang/>
+                        <gloss><q>грязь</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1525e275" xml:lang="tt-x-kazan"><w/>
+                        <gloss><q>мусор</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1525e281" xml:lang="cv"><lang/>
                         <w>šūp</w>
-                        <gloss><q>мусор</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._Gr."/><biblScope>28</biblScope></bibl>; ср.
-                            <bibl><ref type="bibl" target="#ref_MSt."
-                        /><biblScope>85</biblScope></bibl>). Наличие смычно-гортанного %iсʼ%i делает
-                    более вероятным кавказское происхождение; ср. <mentioned xml:lang="kbd"><lang/>
-                        <w>cʼəpä</w></mentioned>, <mentioned xml:lang="kbd-x-crc"><lang/>
+                        <gloss><q>мусор</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>28</biblScope></bibl>; ср.
+                            <bibl><ref type="bibl" target="#ref_MSt."/><biblScope>85</biblScope></bibl>). Наличие смычно-гортанного %iсʼ%i делает
+                    более вероятным кавказское происхождение; ср. <mentioned xml:id="mentioned_d1525e297" xml:lang="kbd"><lang/>
+                        <w>cʼəpä</w></mentioned>, <mentioned xml:id="mentioned_d1525e303" xml:lang="kbd-x-crc"><lang/>
                         <w>cʼəpä</w>
-                        <gloss><q>кал</q></gloss></mentioned>, <mentioned xml:lang="uby"><lang/>
-                        <w>cʼepä</w></mentioned> id., <mentioned xml:lang="kbd"><lang/>
+                        <gloss><q>кал</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1525e311" xml:lang="uby"><lang/>
+                        <w>cʼepä</w></mentioned> id., <mentioned xml:id="mentioned_d1525e316" xml:lang="kbd"><lang/>
                         <w>cʼepaǧä</w>
-                        <gloss><q>нечистота</q></gloss></mentioned>, <mentioned xml:lang="kbd"
-                            ><w>cʼapʼä</w>
-                        <gloss><q>нечистый</q></gloss></mentioned>, <mentioned xml:lang="kbd"><w/>
-                        <gloss><q>неряха</q></gloss></mentioned>, <mentioned xml:lang="sva"><lang/>
+                        <gloss><q>нечистота</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1525e324" xml:lang="kbd"><w>cʼapʼä</w>
+                        <gloss><q>нечистый</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1525e330" xml:lang="kbd"><w/>
+                        <gloss><q>неряха</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1525e336" xml:lang="sva"><lang/>
                         <w>čybh</w>
                         <gloss><q>болото</q></gloss></mentioned>
                         (<bibl><author>Эркерт</author></bibl>).</etym>
-                <etym xml:lang="en">Ws. %sMiller%s compared <mentioned xml:lang="grc"><lang/>
+                <etym xml:lang="en">Ws. %sMiller%s compared <mentioned xml:id="mentioned_d1525e351" xml:lang="grc"><lang/>
                         <w>τϊφος</w>
-                        <gloss><q>swamp</q></gloss></mentioned>, <mentioned xml:lang="la"><lang/>
+                        <gloss><q>swamp</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1525e359" xml:lang="la"><lang/>
                         <w>tipula</w>
-                        <gloss><q>water spider</q></gloss></mentioned>, <mentioned xml:lang="sa"><lang/>
-                        <w>tip-</w></mentioned>, <mentioned xml:lang="sa"><w>tepoti</w>
-                        <gloss><q>besprinkle</q></gloss></mentioned>, <mentioned xml:lang="sa"><w/>
-                        <gloss><q>irrigate</q></gloss></mentioned>, and later — with <mentioned
-                        xml:lang="tt-x-kazan"><lang/>
+                        <gloss><q>water spider</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1525e367" xml:lang="sa"><lang/>
+                        <w>tip-</w></mentioned>, <mentioned xml:id="mentioned_d1525e372" xml:lang="sa"><w>tepoti</w>
+                        <gloss><q>besprinkle</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1525e378" xml:lang="sa"><w/>
+                        <gloss><q>irrigate</q></gloss></mentioned>, and later — with <mentioned xml:id="mentioned_d1525e385" xml:lang="tt-x-kazan"><lang/>
                         <w>čub</w>
-                        <gloss><q>dirt</q></gloss></mentioned>, <mentioned xml:lang="tt-x-kazan"><w/>
-                        <gloss><q>litter</q></gloss></mentioned>, <mentioned xml:lang="cv"><lang/>
+                        <gloss><q>dirt</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1525e393" xml:lang="tt-x-kazan"><w/>
+                        <gloss><q>litter</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1525e399" xml:lang="cv"><lang/>
                         <w>šūp</w>
-                        <gloss><q>litter</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._Gr."/><biblScope>28</biblScope></bibl>; cf.
-                            <bibl><ref type="bibl" target="#ref_MSt."
-                        /><biblScope>85</biblScope></bibl>). The presence of ejective %iсʼ%i makes
-                    Caucasian origin more probable; cf. <mentioned xml:lang="kbd"><lang/>
-                        <w>cʼəpä</w></mentioned>, <mentioned xml:lang="kbd-x-crc"><lang/>
+                        <gloss><q>litter</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>28</biblScope></bibl>; cf.
+                            <bibl><ref type="bibl" target="#ref_MSt."/><biblScope>85</biblScope></bibl>). The presence of ejective %iсʼ%i makes
+                    Caucasian origin more probable; cf. <mentioned xml:id="mentioned_d1525e415" xml:lang="kbd"><lang/>
+                        <w>cʼəpä</w></mentioned>, <mentioned xml:id="mentioned_d1525e421" xml:lang="kbd-x-crc"><lang/>
                         <w>cʼəpä</w>
-                        <gloss><q>excrement</q></gloss></mentioned>, <mentioned xml:lang="uby"><lang/>
-                        <w>cʼepä</w></mentioned> id., <mentioned xml:lang="kbd"><lang/>
+                        <gloss><q>excrement</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1525e429" xml:lang="uby"><lang/>
+                        <w>cʼepä</w></mentioned> id., <mentioned xml:id="mentioned_d1525e434" xml:lang="kbd"><lang/>
                         <w>cʼepaǧä</w>
-                        <gloss><q>uncleanness</q></gloss></mentioned>, <mentioned xml:lang="kbd"
-                            ><w>cʼapʼä</w>
-                        <gloss><q>unclean</q></gloss></mentioned>, <mentioned xml:lang="kbd"><w/>
-                        <gloss><q>sloven</q></gloss></mentioned>, <mentioned xml:lang="sva"><lang/>
+                        <gloss><q>uncleanness</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1525e442" xml:lang="kbd"><w>cʼapʼä</w>
+                        <gloss><q>unclean</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1525e448" xml:lang="kbd"><w/>
+                        <gloss><q>sloven</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1525e454" xml:lang="sva"><lang/>
                         <w>čybh</w>
                         <gloss><q>swamp</q></gloss></mentioned>
                         (<bibl><author>Erckert</author></bibl>).</etym>

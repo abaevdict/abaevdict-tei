@@ -1,34 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">dykkag</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_dykkag" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>dykkag</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>dukkag</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d310e72"><abv:tr xml:lang="ru">
                         <q>второй</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>second</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d310e84">
                         <quote>dykkag ūs ærxasta</quote>
                         <abv:tr xml:lang="ru">
                             <q>он взял вторую жену</q>
@@ -38,7 +43,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>54</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d310e103">
                         <quote>dukkag ærvist ma ku bakænuncæ…</quote>
                         <abv:tr xml:lang="ru">
                             <q>когда посылают второй раз…</q>
@@ -46,82 +51,70 @@
                         <abv:tr xml:lang="en">
                             <q>when they sent for a second time</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_ОЭп."
-                            /><biblScope>61%l203%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_ОЭп."/><biblScope>61%l203%l</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Из <ref type="xr" target="#entry_dy"/> | %idu%i ‘два’ (краткая
                     форма) и суффикса -%iag%i, -%ikk%i- -— вставка для избежания зияния, так же как
-                    в иронских формах сослагательного наклонения: <mentioned xml:lang="os"><lang/>
+                    в иронских формах сослагательного наклонения: <mentioned xml:id="mentioned_d310e127" xml:lang="os"><lang/>
                         <w>cæri-kk-am</w>
-                        <gloss><q>мы жили бы</q></gloss></mentioned> (из <mentioned xml:lang="os"><lang/>
-                        <w>cæri-am</w></mentioned>) и т. д.; ср. такую же вставку в <ref type="xr"
-                        target="#entry_7rtykkag"/> ‘третий’, <mentioned xml:lang="os"><w>qæwkkæg</w>
-                        <gloss><q>селянин</q></gloss></mentioned> (см. <ref type="xr"
-                        target="#entry_qæw"/>).%r1%r <note type="footnote" n="1"> PUT NOTE HERE
+                        <gloss><q>мы жили бы</q></gloss></mentioned> (из <mentioned xml:id="mentioned_d310e135" xml:lang="os"><lang/>
+                        <w>cæri-am</w></mentioned>) и т. д.; ср. такую же вставку в <ref type="xr" target="#entry_7rtykkag"/> ‘третий’, <mentioned xml:id="mentioned_d310e142" xml:lang="os"><w>qæwkkæg</w>
+                        <gloss><q>селянин</q></gloss></mentioned> (см. <ref type="xr" target="#entry_qæw"/>).%r1%r <note type="footnote" n="1"> PUT NOTE HERE
                     </note> В отличие от остальных порядковых числительных, образуемых суффиксом
-                    -%iæm%i (<mentioned xml:lang="x-oldirn"><lang/>
+                    -%iæm%i (<mentioned xml:id="mentioned_d310e154" xml:lang="x-oldirn"><lang/>
                         <w>-ama</w></mentioned>), <ref type="xr" target="#entry_fyccag"/> ‘1-й’,
                     %idykkag%i ‘2-й’ и <ref type="xr" target="#entry_7rtykkag"/> ‘3-й’ образуются
-                    суффиксом -%iag%i (<mentioned xml:lang="x-oldirn"><lang/>
+                    суффиксом -%iag%i (<mentioned xml:id="mentioned_d310e163" xml:lang="x-oldirn"><lang/>
                         <w>-āka</w></mentioned>). Впрочем, употребительны также формы с наращением
-                    обоих суффиксов — <mentioned xml:lang="os-x-iron"><w>dykk-æg-æm</w>
-                        <gloss><q>2-й</q></gloss></mentioned>, <mentioned xml:lang="os-x-iron"><w>rtykkʼæg-æm</w>
+                    обоих суффиксов — <mentioned xml:id="mentioned_d310e169" xml:lang="os-x-iron"><w>dykk-æg-æm</w>
+                        <gloss><q>2-й</q></gloss></mentioned>, <mentioned xml:id="mentioned_d310e175" xml:lang="os-x-iron"><w>rtykkʼæg-æm</w>
                         <gloss><q>3-й</q></gloss></mentioned>, подобно тому как для других
                     порядковых числительных существуют параллельные формы c наращением тех же двух
-                    суффиксов, но в обратном порядке: <mentioned xml:lang="os"><lang/>
-                        <w>cyppær-æjm-ag</w></mentioned> | <mentioned xml:lang="os-x-digor"><lang/>
+                    суффиксов, но в обратном порядке: <mentioned xml:id="mentioned_d310e181" xml:lang="os"><lang/>
+                        <w>cyppær-æjm-ag</w></mentioned> | <mentioned xml:id="mentioned_d310e186" xml:lang="os-x-digor"><lang/>
                         <w>cuppær-æjm-ag</w>
-                        <gloss><q>4-й</q></gloss></mentioned>, <mentioned xml:lang="os"><lang/>
+                        <gloss><q>4-й</q></gloss></mentioned>, <mentioned xml:id="mentioned_d310e194" xml:lang="os"><lang/>
                         <w>fænʒ-æjm-ag</w>
                         <gloss><q>5-й</q></gloss></mentioned> и т. д. Названия вторника и среды,
-                        <ref type="xr" target="#entry_dyccæg"/> и <ref type="xr"
-                        target="#entry_7rtyccæg"/>, восходят к <mentioned xml:lang="ira"><lang/>
+                        <ref type="xr" target="#entry_dyccæg"/> и <ref type="xr" target="#entry_7rtyccæg"/>, восходят к <mentioned xml:id="mentioned_d310e207" xml:lang="ira"><lang/>
                         <w>*dvityaka</w>
-                        <gloss><q>второй</q></gloss></mentioned> и <mentioned xml:lang="ira"><lang/>
+                        <gloss><q>второй</q></gloss></mentioned> и <mentioned xml:id="mentioned_d310e215" xml:lang="ira"><lang/>
                         <w>*θrityaka</w>
                         <gloss><q>третий</q></gloss></mentioned>.</etym>
                 <etym xml:lang="en">From <ref type="xr" target="#entry_dy"/> | <w>du</w> ‘two’
                     (short form) and the suffix <m>-ag</m>, <m>-kk-</m> is inserted to avoid
-                    gapping, like in Iron forms of conjunctive mood: <mentioned xml:lang="os"><lang/>
+                    gapping, like in Iron forms of conjunctive mood: <mentioned xml:id="mentioned_d310e235" xml:lang="os"><lang/>
                         <w>cæri-kk-am</w>
-                        <gloss><q>we would live</q></gloss></mentioned> (from <mentioned
-                        xml:lang="os"><lang/>
-                        <w>cæri-am</w></mentioned>) etc.; cf. the same insertion in <ref type="xr"
-                        target="#entry_7rtykkag"/> ‘third’, <mentioned xml:lang="os"><w>qæwkkæg</w>
-                        <gloss><q>villager</q></gloss></mentioned> (see <ref type="xr"
-                        target="#entry_qæw"/>).<note type="footnote" n="1"> PUT NOTE HERE
-                    </note>Unlike other ordinal numbers formed by the suffix -%iæm%i (<mentioned
-                        xml:lang="x-oldirn"><lang/>
+                        <gloss><q>we would live</q></gloss></mentioned> (from <mentioned xml:id="mentioned_d310e244" xml:lang="os"><lang/>
+                        <w>cæri-am</w></mentioned>) etc.; cf. the same insertion in <ref type="xr" target="#entry_7rtykkag"/> ‘third’, <mentioned xml:id="mentioned_d310e251" xml:lang="os"><w>qæwkkæg</w>
+                        <gloss><q>villager</q></gloss></mentioned> (see <ref type="xr" target="#entry_qæw"/>).<note type="footnote" n="1"> PUT NOTE HERE
+                    </note>Unlike other ordinal numbers formed by the suffix -%iæm%i (<mentioned xml:id="mentioned_d310e262" xml:lang="x-oldirn"><lang/>
                         <w>-ama</w></mentioned>), <ref type="xr" target="#entry_fyccag"/> ‘1-й’,
                     %idykkag%i ‘2-й’ и <ref type="xr" target="#entry_7rtykkag"/> ‘3-й’ are formed
-                    with the suffix -%iag%i (<mentioned xml:lang="x-oldirn"><lang/>
+                    with the suffix -%iag%i (<mentioned xml:id="mentioned_d310e272" xml:lang="x-oldirn"><lang/>
                         <w>-āka</w></mentioned>). However, forms with both suffixes are also used —
-                        <mentioned xml:lang="os-x-iron"><lang/>
+                        <mentioned xml:id="mentioned_d310e277" xml:lang="os-x-iron"><lang/>
                         <w>dykk-æg-æm</w>
-                        <gloss><q>2-й</q></gloss></mentioned>, <mentioned xml:lang="os-x-iron"
-                            ><w>rtykkʼæg-æm</w>
+                        <gloss><q>2-й</q></gloss></mentioned>, <mentioned xml:id="mentioned_d310e285" xml:lang="os-x-iron"><w>rtykkʼæg-æm</w>
                         <gloss><q>3-й</q></gloss></mentioned>, just as for other ordinal numbers
                     there are parallel forms with same two augmented suffixes, but in the opposite
-                    order: <mentioned xml:lang="os"><lang/>
-                        <w>cyppær-æjm-ag</w></mentioned> | <mentioned xml:lang="os-x-digor"><lang/>
+                    order: <mentioned xml:id="mentioned_d310e291" xml:lang="os"><lang/>
+                        <w>cyppær-æjm-ag</w></mentioned> | <mentioned xml:id="mentioned_d310e297" xml:lang="os-x-digor"><lang/>
                         <w>cuppær-æjm-ag</w>
-                        <gloss><q>4-й</q></gloss></mentioned>, <mentioned xml:lang="os"><lang/>
+                        <gloss><q>4-й</q></gloss></mentioned>, <mentioned xml:id="mentioned_d310e305" xml:lang="os"><lang/>
                         <w>fænʒ-æjm-ag</w>
                         <gloss><q>5-й</q></gloss></mentioned> etc. Names for Tuesday and Wednesday
-                        <ref type="xr" target="#entry_dyccæg"/> and <ref type="xr"
-                        target="#entry_7rtyccæg"/>, trace back to <mentioned xml:lang="ira"><lang/>
+                        <ref type="xr" target="#entry_dyccæg"/> and <ref type="xr" target="#entry_7rtyccæg"/>, trace back to <mentioned xml:id="mentioned_d310e317" xml:lang="ira"><lang/>
                         <w>*dvityaka</w>
-                        <gloss><q>second</q></gloss></mentioned> and <mentioned xml:lang="ira"><lang/>
+                        <gloss><q>second</q></gloss></mentioned> and <mentioned xml:id="mentioned_d310e325" xml:lang="ira"><lang/>
                         <w>*θrityaka</w>
                         <gloss><q>third</q></gloss></mentioned>.</etym>
-                <note type="footnote" xml:lang="ru" n="1">Вс. Миллер (<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 96</biblScope></bibl>)
+                <note type="footnote" xml:lang="ru" n="1">Вс. Миллер (<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 96</biblScope></bibl>)
                     полагает, что -%ikk%i- могло получиться в результате ассимиляции %ikj%i
                     (*%iduk-jag%i → %idukkug%i). Одиако непонятно, откуда тут могло взяться
                     %ik%i.</note>
-                <note type="footnote" xml:lang="en" n="1">Ws. Miller (<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 96</biblScope></bibl>)
+                <note type="footnote" xml:lang="en" n="1">Ws. Miller (<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 96</biblScope></bibl>)
                     assumes that -%ikk%i- could result from an assimilation from %ikj%i
                     (*%iduk-jag%i → %idukkug%i). However, it is not clear where %ik%i could come
                     from.</note>

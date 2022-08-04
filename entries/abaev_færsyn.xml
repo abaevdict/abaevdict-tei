@@ -1,29 +1,32 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">færsyn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_færsyn" xml:lang="os">
-                <form xml:lang="os-x-iron" type="lemma"><orth>færsyn</orth><form type="participle"
-                            ><orth>farst</orth></form></form>
-                <form xml:lang="os-x-digor" type="dialectal"><orth>færsun</orth><form
-                        type="participle"><orth>farst</orth></form></form>
+                <form xml:lang="os-x-iron" type="lemma"><orth>færsyn</orth><form type="participle"><orth>farst</orth></form></form>
+                <form xml:lang="os-x-digor" type="dialectal"><orth>færsun</orth><form type="participle"><orth>farst</orth></form></form>
                 <sense n="1" xml:id="sense_færsyn.1"><abv:tr xml:lang="ru">
                         <q>спрашивать</q>
                     </abv:tr><abv:tr xml:lang="en">
@@ -39,25 +42,25 @@
                     </abv:tr><abv:tr xml:lang="en">
                         <q>convey greetings</q>
                     </abv:tr></sense>
-                <sense n="4" xml:id="sense_færsyn.4"><sense><abv:tr xml:lang="ru">
+                <sense n="4" xml:id="sense_færsyn.4"><sense xml:id="sense_d2518e108"><abv:tr xml:lang="ru">
                             <q>гадать</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>tell fortunes</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d2518e117"><abv:tr xml:lang="ru">
                             <q>ворожить</q>
                         </abv:tr></sense><note type="comment" xml:lang="ru">(%idæsny%i)
                         %ifærsyn%i</note><note type="comment" xml:lang="en">(%idæsny%i)
                         %ifærsyn%i</note></sense>
-                <re>
+                <re xml:id="re_d2518e127">
                     <form type="lemma"><orth>farst, farsta</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d2518e132"><abv:tr xml:lang="ru">
                             <q>вопрос</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>question</q>
                         </abv:tr></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d2518e145">
                         <quote>myggagæj mæ ma ærs</quote>
                         <abv:tr xml:lang="ru">
                             <q>не спрашивай меня о (моем) роде</q>
@@ -67,7 +70,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>52</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2518e164">
                         <quote>īw nyxasæj dæ færsʒystæm</quote>
                         <abv:tr xml:lang="ru">
                             <q>по одному слову (вопросу) мы тебя спросим</q>
@@ -77,7 +80,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_ОЭп."/><biblScope>40</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d2518e183" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>Agundæ ræsuǧd … bafærsuj æ zærond fidi</quote>
                         <abv:tr xml:lang="ru">
@@ -86,10 +89,9 @@
                         <abv:tr xml:lang="en">
                             <q>Agunda asks her old father</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_ОЭп."
-                                /><biblScope>61%l276–272%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_ОЭп."/><biblScope>61%l276–272%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d2518e205" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>wæd æj færsuncæ æ madæ ma æ fidæ</quote>
                         <abv:tr xml:lang="ru">
@@ -98,12 +100,11 @@
                         <abv:tr xml:lang="en">
                             <q>then his mother and father ask him</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>6%l1–2%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>6%l1–2%l</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d2518e230">
                         <quote>acy ḱīnyǵy cy fyst ī, ūj myn bafærs</quote>
                         <abv:tr xml:lang="ru">
                             <q>прочитай мне, что написано в этой книге</q>
@@ -114,7 +115,7 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d2518e248">
                         <quote>dæ mady myn bīræ bafærs</quote>
                         <abv:tr xml:lang="ru">
                             <q>передай большой привет твоей матери</q>
@@ -125,7 +126,7 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d2518e266">
                         <quote>cas xwyzdær læværttæ rakænæm Bīganonæn, ūjas nyn xwyzdær
                             bafærsʒæn</quote>
                         <abv:tr xml:lang="ru">
@@ -141,154 +142,126 @@
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Общеиндоевропейский глагол. Основа выступает в древнеиранском в
                     нескольких видах: %ipṛs-%i, %ipars-%i, %ifras-%i. Осетинский отражает форму
-                    %ipars-%i. Ср. <mentioned xml:lang="fa"><lang/>
+                    %ipars-%i. Ср. <mentioned xml:id="mentioned_d2518e289" xml:lang="fa"><lang/>
                         <w>pursīdan : purs-</w><note type="comment" xml:lang="ru"> (←
-                            *pṛs)</note></mentioned>, <mentioned xml:lang="pal"><lang/>
-                        <w>pursītan</w></mentioned>, <mentioned xml:lang="ku"><lang/>
-                        <w>pirsīn</w></mentioned>, <mentioned xml:lang="hac"><lang/>
-                        <w>pärs-</w></mentioned>, <mentioned xml:lang="x-balochi"><lang/>
-                        <w>pursaɣ</w></mentioned>, <mentioned xml:lang="ps"><lang/>
-                        <w>pušt-</w></mentioned>, <mentioned xml:lang="mnj"><lang/>
-                        <w>pərs-</w></mentioned>, <mentioned xml:lang="ydg"><lang/>
-                        <w>pṛs-</w></mentioned>, <mentioned xml:lang="wbl"><lang/>
-                        <w>pörs-</w></mentioned>, <mentioned xml:lang="srh"><lang/>
-                        <w>pörs-</w></mentioned>, <mentioned xml:lang="sgh"><lang/>
-                        <w>pešc-</w></mentioned>, <mentioned xml:lang="x-rushani"
-                        extralang="sgh-x-bartang sgh-x-oroshori"><lang/>
-                        <w>paws-</w></mentioned>, <mentioned xml:lang="yah"><lang/>
-                        <w>pīs</w></mentioned>, <mentioned xml:lang="sgy"><lang/>
-                        <w>f%rə%rros-</w></mentioned>, <mentioned xml:lang="yai"><lang/>
-                        <w>purs-</w></mentioned>, <mentioned xml:lang="sog"><lang/>
-                        <w>*ā-pṛs-(ʼʼprs-)</w></mentioned>, <mentioned xml:lang="kho"><lang/>
-                        <w>puls-</w></mentioned>, <mentioned xml:lang="ae"><lang/>
-                        <w>pərəs-, pars-, fras-</w></mentioned>, <mentioned xml:lang="peo"><lang/>
-                        <w>pars-, fras-</w></mentioned>, <mentioned xml:lang="sa"><lang/>
+                            *pṛs)</note></mentioned>, <mentioned xml:id="mentioned_d2518e296" xml:lang="pal"><lang/>
+                        <w>pursītan</w></mentioned>, <mentioned xml:id="mentioned_d2518e301" xml:lang="ku"><lang/>
+                        <w>pirsīn</w></mentioned>, <mentioned xml:id="mentioned_d2518e306" xml:lang="hac"><lang/>
+                        <w>pärs-</w></mentioned>, <mentioned xml:id="mentioned_d2518e311" xml:lang="x-balochi"><lang/>
+                        <w>pursaɣ</w></mentioned>, <mentioned xml:id="mentioned_d2518e317" xml:lang="ps"><lang/>
+                        <w>pušt-</w></mentioned>, <mentioned xml:id="mentioned_d2518e322" xml:lang="mnj"><lang/>
+                        <w>pərs-</w></mentioned>, <mentioned xml:id="mentioned_d2518e327" xml:lang="ydg"><lang/>
+                        <w>pṛs-</w></mentioned>, <mentioned xml:id="mentioned_d2518e332" xml:lang="wbl"><lang/>
+                        <w>pörs-</w></mentioned>, <mentioned xml:id="mentioned_d2518e337" xml:lang="srh"><lang/>
+                        <w>pörs-</w></mentioned>, <mentioned xml:id="mentioned_d2518e342" xml:lang="sgh"><lang/>
+                        <w>pešc-</w></mentioned>, <mentioned xml:id="mentioned_d2518e348" xml:lang="x-rushani" extralang="sgh-x-bartang sgh-x-oroshori"><lang/>
+                        <w>paws-</w></mentioned>, <mentioned xml:id="mentioned_d2518e353" xml:lang="yah"><lang/>
+                        <w>pīs</w></mentioned>, <mentioned xml:id="mentioned_d2518e358" xml:lang="sgy"><lang/>
+                        <w>f%rə%rros-</w></mentioned>, <mentioned xml:id="mentioned_d2518e363" xml:lang="yai"><lang/>
+                        <w>purs-</w></mentioned>, <mentioned xml:id="mentioned_d2518e368" xml:lang="sog"><lang/>
+                        <w>*ā-pṛs-(ʼʼprs-)</w></mentioned>, <mentioned xml:id="mentioned_d2518e373" xml:lang="kho"><lang/>
+                        <w>puls-</w></mentioned>, <mentioned xml:id="mentioned_d2518e379" xml:lang="ae"><lang/>
+                        <w>pərəs-, pars-, fras-</w></mentioned>, <mentioned xml:id="mentioned_d2518e384" xml:lang="peo"><lang/>
+                        <w>pars-, fras-</w></mentioned>, <mentioned xml:id="mentioned_d2518e389" xml:lang="sa"><lang/>
                         <w>praś-, pṛččh-</w>
-                        <gloss><q>спрашивать</q></gloss></mentioned>, <mentioned xml:lang="sa"
-                            ><w>prččháti</w>
-                        <gloss><q>он спрашивает</q></gloss></mentioned>, <mentioned xml:lang="cu"><lang/>
-                        <w n="0">просити</w>, <w n="0">прашати</w></mentioned>, <mentioned xml:lang="ru"><lang/>
-                        <w>просить, с-праш-иватъ, во-прос, во-прош-ать</w></mentioned>, <mentioned
-                        xml:lang="lt"><lang/>
+                        <gloss><q>спрашивать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2518e397" xml:lang="sa"><w>prččháti</w>
+                        <gloss><q>он спрашивает</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2518e403" xml:lang="cu"><lang/>
+                        <w n="0">просити</w>, <w n="0">прашати</w></mentioned>, <mentioned xml:id="mentioned_d2518e412" xml:lang="ru"><lang/>
+                        <w>просить, с-праш-иватъ, во-прос, во-прош-ать</w></mentioned>, <mentioned xml:id="mentioned_d2518e418" xml:lang="lt"><lang/>
                         <w>praszýti</w>
-                        <gloss><q>требовать</q></gloss></mentioned>, <mentioned xml:lang="lt"><w/>
-                        <gloss><q>просить</q></gloss></mentioned>, <mentioned xml:lang="got"><lang/>
-                        <w>fraihnan</w></mentioned>, <mentioned xml:lang="de"><lang/>
+                        <gloss><q>требовать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2518e426" xml:lang="lt"><w/>
+                        <gloss><q>просить</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2518e432" xml:lang="got"><lang/>
+                        <w>fraihnan</w></mentioned>, <mentioned xml:id="mentioned_d2518e437" xml:lang="de"><lang/>
                         <w>fragen</w>
-                        <gloss><q>спрашивать</q></gloss></mentioned>, <mentioned xml:lang="de"
-                            ><w>forschen</w><note type="comment" xml:lang="ru"> (<mentioned
-                                xml:lang="goh"><lang/>
+                        <gloss><q>спрашивать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2518e445" xml:lang="de"><w>forschen</w><note type="comment" xml:lang="ru"> (<mentioned xml:id="mentioned_d2518e449" xml:lang="goh"><lang/>
                                 <w>forskôn</w></mentioned>)</note>
-                        <gloss><q>исследовать</q></gloss></mentioned>, <mentioned xml:lang="la"><lang/>
+                        <gloss><q>исследовать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2518e458" xml:lang="la"><lang/>
                         <w>posco</w><note type="comment" xml:lang="ru"> (из %i*porsco%i)</note>
-                        <gloss><q>я требую</q></gloss></mentioned>, <mentioned xml:lang="la"
-                            ><w>precor</w>
-                        <gloss><q>я прошу</q></gloss></mentioned>, <mentioned xml:lang="la"><w/>
-                        <gloss><q>молю</q></gloss></mentioned>, <mentioned xml:lang="xcl"><lang/>
+                        <gloss><q>я требую</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2518e469" xml:lang="la"><w>precor</w>
+                        <gloss><q>я прошу</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2518e475" xml:lang="la"><w/>
+                        <gloss><q>молю</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2518e481" xml:lang="xcl"><lang/>
                         <w>harcanem</w>
                         <gloss><q>я спрашиваю</q></gloss></mentioned>. Значение ‘читать’ (наряду с
-                    основным ‘спрашивать’) весьма древнее; ср. <mentioned xml:lang="peo"><lang/>
+                    основным ‘спрашивать’) весьма древнее; ср. <mentioned xml:id="mentioned_d2518e489" xml:lang="peo"><lang/>
                         <w>pati-parsāhy</w>
-                        <gloss><q>ты прочитаешь</q></gloss></mentioned>, <mentioned xml:lang="pal"><lang/>
+                        <gloss><q>ты прочитаешь</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2518e497" xml:lang="pal"><lang/>
                         <w>pat-purs</w>
                         <gloss><q>читать</q></gloss></mentioned> (<bibl><biblScope>Herzfeld.
-                            Paikuli, 237</biblScope></bibl>), <mentioned xml:lang="sog"><lang/>
+                            Paikuli, 237</biblScope></bibl>), <mentioned xml:id="mentioned_d2518e509" xml:lang="sog"><lang/>
                         <w>pt-βs</w><note type="comment" xml:lang="ru"> (←
                             %i*pati-pṛs-%i)</note>
                         <gloss><q>читать</q></gloss></mentioned>
-                            (<bibl><author>Benveniste</author><ref type="bibl" target="#ref_BSL"
-                            /><biblScope xml:lang="ru">XXXI 71 сл.</biblScope></bibl>). Все приведенные четыре
-                    значения совмещаются и в некоторых кавказских языках: <mentioned xml:lang="ka"><lang/>
-                        <w>kʼitxva</w></mentioned>, <mentioned xml:lang="xmf"><lang/>
+                            (<bibl><author>Benveniste</author><ref type="bibl" target="#ref_BSL"/><biblScope xml:lang="ru">XXXI 71 сл.</biblScope></bibl>). Все приведенные четыре
+                    значения совмещаются и в некоторых кавказских языках: <mentioned xml:id="mentioned_d2518e525" xml:lang="ka"><lang/>
+                        <w>kʼitxva</w></mentioned>, <mentioned xml:id="mentioned_d2518e530" xml:lang="xmf"><lang/>
                         <w>kʼitxiri</w>
-                        <gloss><q>спрашивать</q></gloss></mentioned>, <mentioned xml:lang="xmf"><w/>
-                        <gloss><q>читать</q></gloss></mentioned>, <mentioned xml:lang="xmf"><w/>
-                        <gloss><q>передавать привет</q></gloss></mentioned>, <mentioned
-                        xml:lang="xmf"><w/>
-                        <gloss><q>ворожить</q></gloss></mentioned>. Ср. <ref type="xr"
-                        target="#entry_xyncfarst"/>.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 46</biblScope></bibl>;
-                            <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>58</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_Hübschmann._Oss."/><biblScope>65</biblScope></bibl>. —
-                            <bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                        /><biblScope>24</biblScope></bibl>.</etym>
+                        <gloss><q>спрашивать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2518e538" xml:lang="xmf"><w/>
+                        <gloss><q>читать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2518e544" xml:lang="xmf"><w/>
+                        <gloss><q>передавать привет</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2518e551" xml:lang="xmf"><w/>
+                        <gloss><q>ворожить</q></gloss></mentioned>. Ср. <ref type="xr" target="#entry_xyncfarst"/>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 46</biblScope></bibl>;
+                            <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>58</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>65</biblScope></bibl>. —
+                            <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>24</biblScope></bibl>.</etym>
                 <etym xml:lang="en">A common Indo-European verb. The base appears in ancient Iranian
                     in several forms: %ipṛs-%i, %ipars-%i, %ifras-%i. Ossetic reflects the form
-                    %ipars-%i. Cf. <mentioned xml:lang="fa"><lang/>
+                    %ipars-%i. Cf. <mentioned xml:id="mentioned_d2518e578" xml:lang="fa"><lang/>
                         <w>pursīdan : purs-</w><note type="comment" xml:lang="en"> (←
-                        *pṛs)</note></mentioned>, <mentioned xml:lang="pal"><lang/>
-                        <w>pursītan</w></mentioned>, <mentioned xml:lang="ku"><lang/>
-                        <w>pirsīn</w></mentioned>, <mentioned xml:lang="hac"><lang/>
-                        <w>pärs-</w></mentioned>, <mentioned xml:lang="x-balochi"><lang/>
-                        <w>pursaɣ</w></mentioned>, <mentioned xml:lang="ps"><lang/>
-                        <w>pušt-</w></mentioned>, <mentioned xml:lang="mnj"><lang/>
-                        <w>pərs-</w></mentioned>, <mentioned xml:lang="ydg"><lang/>
-                        <w>pṛs-</w></mentioned>, <mentioned xml:lang="wbl"><lang/>
-                        <w>pörs-</w></mentioned>, <mentioned xml:lang="srh"><lang/>
-                        <w>pörs-</w></mentioned>, <mentioned xml:lang="sgh"><lang/>
-                        <w>pešc-</w></mentioned>, <mentioned xml:lang="x-rushani"
-                        extralang="sgh-x-bartang sgh-x-oroshori"><lang/>
-                        <w>paws-</w></mentioned>, <mentioned xml:lang="yah"><lang/>
-                        <w>pīs</w></mentioned>, <mentioned xml:lang="sgy"><lang/>
-                        <w>f%rə%rros-</w></mentioned>, <mentioned xml:lang="yai"><lang/>
-                        <w>purs-</w></mentioned>, <mentioned xml:lang="sog"><lang/>
-                        <w>*ā-pṛs-(ʼʼprs-)</w></mentioned>, <mentioned xml:lang="kho"><lang/>
-                        <w>puls-</w></mentioned>, <mentioned xml:lang="ae"><lang/>
-                        <w>pərəs-, pars-, fras-</w></mentioned>, <mentioned xml:lang="peo"><lang/>
-                        <w>pars-, fras-</w></mentioned>, <mentioned xml:lang="sa"><lang/>
+                        *pṛs)</note></mentioned>, <mentioned xml:id="mentioned_d2518e585" xml:lang="pal"><lang/>
+                        <w>pursītan</w></mentioned>, <mentioned xml:id="mentioned_d2518e590" xml:lang="ku"><lang/>
+                        <w>pirsīn</w></mentioned>, <mentioned xml:id="mentioned_d2518e595" xml:lang="hac"><lang/>
+                        <w>pärs-</w></mentioned>, <mentioned xml:id="mentioned_d2518e600" xml:lang="x-balochi"><lang/>
+                        <w>pursaɣ</w></mentioned>, <mentioned xml:id="mentioned_d2518e606" xml:lang="ps"><lang/>
+                        <w>pušt-</w></mentioned>, <mentioned xml:id="mentioned_d2518e611" xml:lang="mnj"><lang/>
+                        <w>pərs-</w></mentioned>, <mentioned xml:id="mentioned_d2518e616" xml:lang="ydg"><lang/>
+                        <w>pṛs-</w></mentioned>, <mentioned xml:id="mentioned_d2518e621" xml:lang="wbl"><lang/>
+                        <w>pörs-</w></mentioned>, <mentioned xml:id="mentioned_d2518e626" xml:lang="srh"><lang/>
+                        <w>pörs-</w></mentioned>, <mentioned xml:id="mentioned_d2518e631" xml:lang="sgh"><lang/>
+                        <w>pešc-</w></mentioned>, <mentioned xml:id="mentioned_d2518e637" xml:lang="x-rushani" extralang="sgh-x-bartang sgh-x-oroshori"><lang/>
+                        <w>paws-</w></mentioned>, <mentioned xml:id="mentioned_d2518e642" xml:lang="yah"><lang/>
+                        <w>pīs</w></mentioned>, <mentioned xml:id="mentioned_d2518e647" xml:lang="sgy"><lang/>
+                        <w>f%rə%rros-</w></mentioned>, <mentioned xml:id="mentioned_d2518e652" xml:lang="yai"><lang/>
+                        <w>purs-</w></mentioned>, <mentioned xml:id="mentioned_d2518e657" xml:lang="sog"><lang/>
+                        <w>*ā-pṛs-(ʼʼprs-)</w></mentioned>, <mentioned xml:id="mentioned_d2518e662" xml:lang="kho"><lang/>
+                        <w>puls-</w></mentioned>, <mentioned xml:id="mentioned_d2518e668" xml:lang="ae"><lang/>
+                        <w>pərəs-, pars-, fras-</w></mentioned>, <mentioned xml:id="mentioned_d2518e673" xml:lang="peo"><lang/>
+                        <w>pars-, fras-</w></mentioned>, <mentioned xml:id="mentioned_d2518e678" xml:lang="sa"><lang/>
                         <w>praś-, pṛččh-</w>
-                        <gloss><q>ask</q></gloss></mentioned>, <mentioned xml:lang="sa"
-                            ><w>prččháti</w>
-                        <gloss><q>he asks</q></gloss></mentioned>, <mentioned xml:lang="cu"><lang/>
-                        <w>prositi</w>, <w>prašati</w></mentioned>, <mentioned xml:lang="ru"><lang/>
-                        <w>prositʼ, s-praš-ivatʼ, vo-pros, vo-proš-atʼ</w></mentioned>, <mentioned
-                        xml:lang="lt"><lang/>
+                        <gloss><q>ask</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2518e686" xml:lang="sa"><w>prččháti</w>
+                        <gloss><q>he asks</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2518e692" xml:lang="cu"><lang/>
+                        <w>prositi</w>, <w>prašati</w></mentioned>, <mentioned xml:id="mentioned_d2518e699" xml:lang="ru"><lang/>
+                        <w>prositʼ, s-praš-ivatʼ, vo-pros, vo-proš-atʼ</w></mentioned>, <mentioned xml:id="mentioned_d2518e705" xml:lang="lt"><lang/>
                         <w>praszýti</w>
-                        <gloss><q>demand</q></gloss></mentioned>, <mentioned xml:lang="lt"><w/>
-                        <gloss><q>ask</q></gloss></mentioned>, <mentioned xml:lang="got"><lang/>
-                        <w>fraihnan</w></mentioned>, <mentioned xml:lang="de"><lang/>
+                        <gloss><q>demand</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2518e713" xml:lang="lt"><w/>
+                        <gloss><q>ask</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2518e719" xml:lang="got"><lang/>
+                        <w>fraihnan</w></mentioned>, <mentioned xml:id="mentioned_d2518e724" xml:lang="de"><lang/>
                         <w>fragen</w>
-                        <gloss><q>ask</q></gloss></mentioned>, <mentioned xml:lang="de"
-                            ><w>forschen</w><note type="comment" xml:lang="en"
-                            > (<mentioned xml:lang="goh"><lang/>
+                        <gloss><q>ask</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2518e732" xml:lang="de"><w>forschen</w><note type="comment" xml:lang="en"> (<mentioned xml:id="mentioned_d2518e736" xml:lang="goh"><lang/>
                                 <w>forskôn</w></mentioned>)</note>
-                        <gloss><q>examine</q></gloss></mentioned>, <mentioned xml:lang="la"><lang/>
-                        <w>posco</w><note
-                            type="comment" xml:lang="en"> (from %i*porsco%i)</note>
-                        <gloss><q>я требую</q></gloss></mentioned>, <mentioned xml:lang="la"
-                            ><w>precor</w>
-                        <gloss><q>I am asking</q></gloss></mentioned>, <mentioned xml:lang="la"><w/>
-                        <gloss><q>I am praying</q></gloss></mentioned>, <mentioned xml:lang="xcl"><lang/>
+                        <gloss><q>examine</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2518e745" xml:lang="la"><lang/>
+                        <w>posco</w><note type="comment" xml:lang="en"> (from %i*porsco%i)</note>
+                        <gloss><q>я требую</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2518e756" xml:lang="la"><w>precor</w>
+                        <gloss><q>I am asking</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2518e762" xml:lang="la"><w/>
+                        <gloss><q>I am praying</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2518e768" xml:lang="xcl"><lang/>
                         <w>harcanem</w>
                         <gloss><q>I am asking</q></gloss></mentioned>. The meaning ‘read’ (along
-                    with the main meaning ‘ask’) is rather ancient; cf. <mentioned xml:lang="peo"><lang/>
+                    with the main meaning ‘ask’) is rather ancient; cf. <mentioned xml:id="mentioned_d2518e776" xml:lang="peo"><lang/>
                         <w>pati-parsāhy</w>
-                        <gloss><q>you will read</q></gloss></mentioned>, <mentioned xml:lang="pal"><lang/>
+                        <gloss><q>you will read</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2518e784" xml:lang="pal"><lang/>
                         <w>pat-purs</w>
                         <gloss><q>читать</q></gloss></mentioned> (<bibl><biblScope>Herzfeld.
-                            Paikuli, 237</biblScope></bibl>), <mentioned xml:lang="sog"><lang/>
+                            Paikuli, 237</biblScope></bibl>), <mentioned xml:id="mentioned_d2518e796" xml:lang="sog"><lang/>
                         <w>pt-βs</w><note type="comment" xml:lang="en"> (←
                             %i*pati-pṛs-%i)</note>
                         <gloss><q>читать</q></gloss></mentioned>
-                            (<bibl><author>Benveniste</author><ref type="bibl" target="#ref_BSL"
-                            /><biblScope
-                            xml:lang="en">XXXI 71 ff.</biblScope></bibl>). All these four meanings
-                    are combined in some Caucasian languages: <mentioned xml:lang="ka"><lang/>
-                        <w>kʼitxva</w></mentioned>, <mentioned xml:lang="xmf"><lang/>
+                            (<bibl><author>Benveniste</author><ref type="bibl" target="#ref_BSL"/><biblScope xml:lang="en">XXXI 71 ff.</biblScope></bibl>). All these four meanings
+                    are combined in some Caucasian languages: <mentioned xml:id="mentioned_d2518e812" xml:lang="ka"><lang/>
+                        <w>kʼitxva</w></mentioned>, <mentioned xml:id="mentioned_d2518e817" xml:lang="xmf"><lang/>
                         <w>kʼitxiri</w>
-                        <gloss><q>ask</q></gloss></mentioned>, <mentioned xml:lang="xmf"><w/>
-                        <gloss><q>read</q></gloss></mentioned>, <mentioned xml:lang="xmf"><w/>
-                        <gloss><q>convey greetings</q></gloss></mentioned>, <mentioned
-                        xml:lang="xmf"><w/>
-                        <gloss><q>tell fortunes</q></gloss></mentioned>. Cf. <ref type="xr"
-                        target="#entry_xyncfarst"/>.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 46</biblScope></bibl>;
-                            <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>58</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_Hübschmann._Oss."/><biblScope>65</biblScope></bibl>. —
-                            <bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                        /><biblScope>24</biblScope></bibl>.</etym>
+                        <gloss><q>ask</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2518e825" xml:lang="xmf"><w/>
+                        <gloss><q>read</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2518e831" xml:lang="xmf"><w/>
+                        <gloss><q>convey greetings</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2518e838" xml:lang="xmf"><w/>
+                        <gloss><q>tell fortunes</q></gloss></mentioned>. Cf. <ref type="xr" target="#entry_xyncfarst"/>.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 46</biblScope></bibl>;
+                            <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>58</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>65</biblScope></bibl>. —
+                            <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>24</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

@@ -1,38 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">avar</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_avar" xml:lang="os-x-digor">
                 <form type="lemma"><orth>avar</orth></form>
                 <usg><lang/></usg>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d2613e72"><sense xml:id="sense_d2613e73"><abv:tr xml:lang="ru">
                             <q>комната</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>room</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d2613e82"><abv:tr xml:lang="ru">
                             <q>помещение</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>premises</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d2613e94">
                         <quote>xanæn tækkæ æxe avarmæ bagæpp kodta</quote>
                         <abv:tr xml:lang="ru">
                             <q>он прыгнул как раз в собственную комнату хана</q>
@@ -40,10 +45,9 @@
                         <abv:tr xml:lang="en">
                             <q>he jumped right into the khanʼs own room</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>14%l5%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>14%l5%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2613e113">
                         <quote>avari isbadtæn</quote>
                         <abv:tr xml:lang="ru">
                             <q>я сел в комнате</q>
@@ -54,7 +58,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
                             38</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2613e132">
                         <quote>Subalci ǧolon gali barimæxsta zænxi buni aværtti</quote>
                         <abv:tr xml:lang="ru">
                             <q>Subalc hid a motley bull in an underground room</q>
@@ -65,7 +69,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
                             35</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2613e151">
                         <quote>kizgæ dær eci saxat innæ avarmæ bacudæj</quote>
                         <abv:tr xml:lang="ru">
                             <q>девушка же пошла тотчас в другую комнату</q>
@@ -76,7 +80,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
                             84</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2613e170">
                         <quote>darijti ba badʒænæ avari</quote>
                         <abv:tr xml:lang="ru">
                             <q>в шелках ты будешь сидеть в комнате</q>
@@ -84,22 +88,17 @@
                         <abv:tr xml:lang="en">
                             <q/>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Gurdž._Æduli"
-                                /><biblScope>101</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Gurdž._Æduli"/><biblScope>101</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Ср. <mentioned xml:lang="fa"><lang/>
+                <etym xml:lang="ru">Ср. <mentioned xml:id="mentioned_d2613e192" xml:lang="fa"><lang/>
                         <w>avāra</w>
-                        <gloss><q>sedes regiminis supremi</q></gloss></mentioned>, <mentioned
-                        xml:lang="fa"><w/>
-                        <gloss><q>aula imperatoris</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Vullers"/></bibl>)? Но через какое посредство?</etym>
-                <etym xml:lang="en">Cf. <mentioned xml:lang="fa"><lang/>
+                        <gloss><q>sedes regiminis supremi</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2613e200" xml:lang="fa"><w/>
+                        <gloss><q>aula imperatoris</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Vullers"/></bibl>)? Но через какое посредство?</etym>
+                <etym xml:lang="en">Cf. <mentioned xml:id="mentioned_d2613e213" xml:lang="fa"><lang/>
                         <w>avāra</w>
-                        <gloss><q>sedes regiminis supremi</q></gloss></mentioned>, <mentioned
-                        xml:lang="fa"><w/>
-                        <gloss><q>aula imperatoris</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Vullers"/></bibl>)? But through what mediation?</etym>
+                        <gloss><q>sedes regiminis supremi</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2613e221" xml:lang="fa"><w/>
+                        <gloss><q>aula imperatoris</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Vullers"/></bibl>)? But through what mediation?</etym>
             </entry>
         </body>
     </text>

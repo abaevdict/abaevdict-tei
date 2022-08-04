@@ -1,34 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">gawyz</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_gawyz" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>gawyz</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>gawiz</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d3053e72"><abv:tr xml:lang="ru">
                         <q>ковер</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>carpet</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d3053e84">
                         <quote>walʒygon kærdægyl gawyz ærytydtoj, gawyzy wælæ ærtæ turkag
                             bazy</quote>
                         <abv:tr xml:lang="ru">
@@ -39,10 +44,9 @@
                             <q>the carpet was spread on the spring grass, and on the carpet there
                                 were three Turkish pillows</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"
-                            /><biblScope>134</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>134</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3053e103">
                         <quote>styr kæsgon wærdon ræsuǧd aræzt gawyztæj</quote>
                         <abv:tr xml:lang="ru">
                             <q>большая кабардинская арба, красиво украшенная коврами</q>
@@ -50,48 +54,39 @@
                         <abv:tr xml:lang="en">
                             <q>large Kabardian cart, beautifully decorated with carpets</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"
-                            /><biblScope>142</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>142</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Идет из тюрко-монгольской языковой сферы: <mentioned
-                        xml:lang="mn"><lang/>
-                        <w>kewis, kews</w></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Ramstedt"/><biblScope>230</biblScope></bibl>. — <bibl><ref
-                            type="bibl" target="#ref_ЗКВ"/><biblScope>V 81</biblScope></bibl>),
-                        <mentioned xml:lang="mn"><lang/>
+                <etym xml:lang="ru">Идет из тюрко-монгольской языковой сферы: <mentioned xml:id="mentioned_d3053e125" xml:lang="mn"><lang/>
+                        <w>kewis, kews</w></mentioned> (<bibl><ref type="bibl" target="#ref_Ramstedt"/><biblScope>230</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_ЗКВ"/><biblScope>V 81</biblScope></bibl>),
+                        <mentioned xml:id="mentioned_d3053e138" xml:lang="mn"><lang/>
                         <w>kibes</w></mentioned> (<bibl><biblScope>Бурдуков. Русско-монг. словарь,
-                            Л., 1935, стр. 122</biblScope></bibl>), <mentioned xml:lang="alt"><lang/>
-                        <w>käbis</w></mentioned> (ср. <mentioned xml:lang="bo"><lang/>
-                        <w>kebs</w></mentioned>), <mentioned xml:lang="krc-x-balkar"><lang/>
+                            Л., 1935, стр. 122</biblScope></bibl>), <mentioned xml:id="mentioned_d3053e147" xml:lang="alt"><lang/>
+                        <w>käbis</w></mentioned> (ср. <mentioned xml:id="mentioned_d3053e152" xml:lang="bo"><lang/>
+                        <w>kebs</w></mentioned>), <mentioned xml:id="mentioned_d3053e157" xml:lang="krc-x-balkar"><lang/>
                         <w>küüz</w>
-                        <gloss><q>ковер</q></gloss></mentioned>’. Сюда примыкают и <mentioned
-                        xml:lang="ce"><lang/>
-                        <w>kuz</w></mentioned>, <mentioned xml:lang="inh"><lang/>
+                        <gloss><q>ковер</q></gloss></mentioned>’. Сюда примыкают и <mentioned xml:id="mentioned_d3053e165" xml:lang="ce"><lang/>
+                        <w>kuz</w></mentioned>, <mentioned xml:id="mentioned_d3053e170" xml:lang="inh"><lang/>
                         <w>kuvs</w>
                         <gloss><q>ковер</q></gloss></mentioned>. Исходная форма %i*kebis%i,
                     %i*kawis%i. Допуская перебой %is%i || %ir%i, мы могли иметь %i*kebir%i,
-                    %i*kawir%i, что лежит, может быть, в основе <mentioned xml:lang="sla"><lang/>
+                    %i*kawir%i, что лежит, может быть, в основе <mentioned xml:id="mentioned_d3053e178" xml:lang="sla"><lang/>
                         <w n="0">ковер</w></mentioned> (считается неразъясненным).</etym>
-                <etym xml:lang="en">It comes from the Turkic-Mongolian language sphere: <mentioned
-                        xml:lang="mn"><lang/>
-                        <w>kewis, kews</w></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Ramstedt"/><biblScope>230</biblScope></bibl>. — <bibl><ref
-                            type="bibl" target="#ref_ЗКВ"/><biblScope>V 81</biblScope></bibl>),
-                        <mentioned xml:lang="mn"><lang/>
+                <etym xml:lang="en">It comes from the Turkic-Mongolian language sphere: <mentioned xml:id="mentioned_d3053e188" xml:lang="mn"><lang/>
+                        <w>kewis, kews</w></mentioned> (<bibl><ref type="bibl" target="#ref_Ramstedt"/><biblScope>230</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_ЗКВ"/><biblScope>V 81</biblScope></bibl>),
+                        <mentioned xml:id="mentioned_d3053e201" xml:lang="mn"><lang/>
                         <w>kibes</w></mentioned>
                             (<bibl><author>Burdukov</author><biblScope>Russian-Mongolian dictionary,
-                            Leningrad, 1935, p. 122</biblScope></bibl>), <mentioned xml:lang="alt"><lang/>
-                        <w>käbis</w></mentioned> (compare with <mentioned xml:lang="bo"><lang/>
-                        <w>kebs</w></mentioned>), <mentioned xml:lang="krc-x-balkar"><lang/>
+                            Leningrad, 1935, p. 122</biblScope></bibl>), <mentioned xml:id="mentioned_d3053e211" xml:lang="alt"><lang/>
+                        <w>käbis</w></mentioned> (compare with <mentioned xml:id="mentioned_d3053e216" xml:lang="bo"><lang/>
+                        <w>kebs</w></mentioned>), <mentioned xml:id="mentioned_d3053e221" xml:lang="krc-x-balkar"><lang/>
                         <w>küüz</w>
-                        <gloss><q>ковер</q></gloss></mentioned>’. <mentioned xml:lang="ce"><lang/>
-                        <w>kuz</w></mentioned>, <mentioned xml:lang="inh"><lang/>
+                        <gloss><q>ковер</q></gloss></mentioned>’. <mentioned xml:id="mentioned_d3053e229" xml:lang="ce"><lang/>
+                        <w>kuz</w></mentioned>, <mentioned xml:id="mentioned_d3053e234" xml:lang="inh"><lang/>
                         <w>kuvs</w>
                         <gloss><q>carpet</q></gloss></mentioned> are also related. The initial form
                     is %i*kebis%i, %i*kawis%i. Supposing that there was an alternation %is%i ||
-                    %ir%i, we could have %i*kebir%i, %i*kawir%i, from which <mentioned
-                        xml:lang="sla"><lang/>
+                    %ir%i, we could have %i*kebir%i, %i*kawir%i, from which <mentioned xml:id="mentioned_d3053e242" xml:lang="sla"><lang/>
                         <w>kovьrъ</w>
                         <gloss><q>carpet</q></gloss></mentioned> might be originated (it is
                     considered unexplained).</etym>

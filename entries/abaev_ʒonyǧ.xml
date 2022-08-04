@@ -1,29 +1,32 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ʒonyǧ</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ʒonyǧ" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>ʒonyǧ</orth></form>
-                <form xml:lang="os-x-digor" type="dialectal"><orth>conæǧ</orth><form type="variant"
-                            ><orth>conuǧ</orth></form><form type="variant"
-                    ><orth>ʒonuǧ</orth></form></form>
+                <form xml:lang="os-x-digor" type="dialectal"><orth>conæǧ</orth><form type="variant"><orth>conuǧ</orth></form><form type="variant"><orth>ʒonuǧ</orth></form></form>
                 <sense n="1" xml:id="sense_ʒonyǧ.1"><abv:tr xml:lang="ru">
                         <q>сани</q>
                     </abv:tr><abv:tr xml:lang="en">
@@ -34,15 +37,15 @@
                     </abv:tr><abv:tr xml:lang="en">
                         <q>jaw</q>
                     </abv:tr></sense>
-                <re>
+                <re xml:id="re_d1161e96">
                     <form type="lemma"><orth>kʼaxʒonyǧ</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d1161e101"><abv:tr xml:lang="ru">
                             <q>лыжа</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>ski</q>
                         </abv:tr></sense>
                     <abv:exampleGrp>
-                        <abv:example>
+                        <abv:example xml:id="example_d1161e113">
                             <quote>wyrdyǵy byrync kʼaxʒonyǧtyl</quote>
                             <abv:tr xml:lang="ru">
                                 <q>скользят под гору на лыжах</q>
@@ -50,13 +53,12 @@
                             <abv:tr xml:lang="en">
                                 <q>[they] slide downhill skiing</q>
                             </abv:tr>
-                            <bibl><ref type="bibl" target="#src_Čerm."
-                                /><biblScope>97</biblScope></bibl>
+                            <bibl><ref type="bibl" target="#src_Čerm."/><biblScope>97</biblScope></bibl>
                         </abv:example>
                     </abv:exampleGrp>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d1161e137">
                         <quote>bælccon ʒonyǧy sbadti, kærcy jæxī ærbatyxta</quote>
                         <abv:tr xml:lang="ru">
                             <q>отъезжающий сел в сани, закутался в шубу</q>
@@ -67,7 +69,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Qazaq"/><biblScope>7</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d1161e156" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>mæ ʒonæǧ isrævʒæ kænon</quote>
                         <abv:tr xml:lang="ru">
@@ -80,7 +82,7 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d1161e181">
                         <quote>dæ fyd Sozyryqojæn Būry fyrt jæ žonyǧ x˳yjy žonyǧaw k˳y
                             skodta</quote>
                         <abv:tr xml:lang="ru">
@@ -94,7 +96,7 @@
                         <bibl><ref type="bibl" target="#src_ЮОПам."/><biblScope>I
                             76</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1161e200">
                         <quote>æxsyry cady īw x˳y īs, æmæ myn uj ʒonyǧ arxæss</quote>
                         <abv:tr xml:lang="ru">
                             <q>в молочном озере есть один кабан, и принеси мне его челюсть</q>
@@ -106,98 +108,86 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Культурное слово широкого европейско-азиатского распространения:
-                        <mentioned xml:lang="trk"><lang/>
-                        <w>čana</w></mentioned>, <mentioned xml:lang="trk"><w>čanaq</w></mentioned>,
-                        <mentioned xml:lang="trk"><w>sana</w></mentioned>, <mentioned xml:lang="trk"
-                            ><w>sanaq</w></mentioned>, <mentioned xml:lang="trk"><w>sanaǧ</w><note
-                            type="comment" xml:lang="ru"> (<bibl><ref type="bibl"
-                                    target="#ref_Радлов"/><biblScope>III 1855, 1856, IV
+                        <mentioned xml:id="mentioned_d1161e222" xml:lang="trk"><lang/>
+                        <w>čana</w></mentioned>, <mentioned xml:id="mentioned_d1161e227" xml:lang="trk"><w>čanaq</w></mentioned>,
+                        <mentioned xml:id="mentioned_d1161e230" xml:lang="trk"><w>sana</w></mentioned>, <mentioned xml:id="mentioned_d1161e233" xml:lang="trk"><w>sanaq</w></mentioned>, <mentioned xml:id="mentioned_d1161e236" xml:lang="trk"><w>sanaǧ</w><note type="comment" xml:lang="ru"> (<bibl><ref type="bibl" target="#ref_Радлов"/><biblScope>III 1855, 1856, IV
                                     298</biblScope></bibl>)</note>
-                        <gloss><q>сани</q></gloss></mentioned>, <mentioned xml:lang="tg"><lang/>
+                        <gloss><q>сани</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1161e249" xml:lang="tg"><lang/>
                         <w>čana</w>
-                        <gloss><q>сани</q></gloss></mentioned>, <mentioned xml:lang="bua"><lang/>
-                        <w>cana</w></mentioned>, <mentioned xml:lang="bua"><w>sana</w>
-                        <gloss><q>лыжи</q></gloss></mentioned>, <mentioned xml:lang="fi"><lang/>
-                        <w>sani</w></mentioned>, <mentioned xml:lang="et"><lang/>
-                        <w>san</w></mentioned>, <mentioned xml:lang="hu"><lang/>
-                        <w>szán</w></mentioned>, <mentioned xml:lang="ro"><lang/>
-                        <w>sanie</w></mentioned>, <mentioned xml:lang="lv"><lang/>
-                        <w>sānus</w></mentioned>, <mentioned xml:lang="lv"><w>sanas</w>
+                        <gloss><q>сани</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1161e257" xml:lang="bua"><lang/>
+                        <w>cana</w></mentioned>, <mentioned xml:id="mentioned_d1161e262" xml:lang="bua"><w>sana</w>
+                        <gloss><q>лыжи</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1161e268" xml:lang="fi"><lang/>
+                        <w>sani</w></mentioned>, <mentioned xml:id="mentioned_d1161e273" xml:lang="et"><lang/>
+                        <w>san</w></mentioned>, <mentioned xml:id="mentioned_d1161e278" xml:lang="hu"><lang/>
+                        <w>szán</w></mentioned>, <mentioned xml:id="mentioned_d1161e284" xml:lang="ro"><lang/>
+                        <w>sanie</w></mentioned>, <mentioned xml:id="mentioned_d1161e289" xml:lang="lv"><lang/>
+                        <w>sānus</w></mentioned>, <mentioned xml:id="mentioned_d1161e294" xml:lang="lv"><w>sanas</w>
                         <gloss><q>лыжи</q></gloss></mentioned>. Некоторые кавказские названия близки
-                    к тюркским: <mentioned xml:lang="ka"><lang/>
-                        <w>čana</w></mentioned>, <mentioned xml:lang="av"><lang/>
-                        <w>čanaǧ</w></mentioned>, <mentioned xml:lang="ani"><lang/>
-                        <w>čanaǧi</w></mentioned>; но <mentioned xml:lang="xcl"><lang/>
+                    к тюркским: <mentioned xml:id="mentioned_d1161e300" xml:lang="ka"><lang/>
+                        <w>čana</w></mentioned>, <mentioned xml:id="mentioned_d1161e305" xml:lang="av"><lang/>
+                        <w>čanaǧ</w></mentioned>, <mentioned xml:id="mentioned_d1161e310" xml:lang="ani"><lang/>
+                        <w>čanaǧi</w></mentioned>; но <mentioned xml:id="mentioned_d1161e316" xml:lang="xcl"><lang/>
                         <w>sahnakʼ</w></mentioned>. Гласный о перед носовыми восходит в осетинском к
                     %iа%i, и стало быть %iconæǧ%i можно восстановить (учитывая осетинское цоканье) в
                     *%ičanaǧ%i, что вполне совпадает с некоторыми тюркскими и с аварской формой.
                     По-видимому, осетинам (аланам) принадлежало какое-то техническое новшество в
                     изготовлении саней. Иначе мы не можем объяснить, что в сванском и балкарском
-                    название саней (или их части) совпадает с наименованиями осетин: <mentioned
-                        xml:lang="sva"><lang/>
+                    название саней (или их части) совпадает с наименованиями осетин: <mentioned xml:id="mentioned_d1161e321" xml:lang="sva"><lang/>
                         <w>sav</w><note type="comment" xml:lang="ru">и</note>
-                        <gloss><q>осетин</q></gloss></mentioned>, <mentioned xml:lang="sva"><w/>
-                        <gloss><q>сани</q></gloss></mentioned>, <mentioned xml:lang="krc-x-balkar"><lang/>
+                        <gloss><q>осетин</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1161e331" xml:lang="sva"><w/>
+                        <gloss><q>сани</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1161e337" xml:lang="krc-x-balkar"><lang/>
                         <w>düger</w><note type="comment" xml:lang="ru">и</note>
-                        <gloss><q>осетинец-дигорец</q></gloss></mentioned>, <mentioned
-                        xml:lang="krc-x-balkar"><w/>
+                        <gloss><q>осетинец-дигорец</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1161e347" xml:lang="krc-x-balkar"><w/>
                         <gloss><q>перекладина саней</q></gloss><note type="comment" xml:lang="ru">
-                                    (<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope
-                                    xml:lang="ru">302 прим., 280—281</biblScope></bibl>)</note></mentioned>. Об идеосемантике слова можно только строить
-                    догадки. Опираясь на <mentioned xml:lang="fa"><lang/>
+                                    (<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope xml:lang="ru">302 прим., 280—281</biblScope></bibl>)</note></mentioned>. Об идеосемантике слова можно только строить
+                    догадки. Опираясь на <mentioned xml:id="mentioned_d1161e360" xml:lang="fa"><lang/>
                         <w>čānah</w>
-                        <gloss><q>нижняя челюсть</q></gloss></mentioned>, <mentioned xml:lang="trk"><lang/>
-                        <w>ǯanax</w></mentioned>, <mentioned xml:lang="trk"><w>janak</w>
+                        <gloss><q>нижняя челюсть</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1161e369" xml:lang="trk"><lang/>
+                        <w>ǯanax</w></mentioned>, <mentioned xml:id="mentioned_d1161e374" xml:lang="trk"><w>janak</w>
                         <gloss><q>щека</q></gloss></mentioned>, можно высказать предположение, что
-                    сани были названы, по сходству формы, ‘челюстью’; ср. <mentioned xml:lang="os"><lang/>
+                    сани были названы, по сходству формы, ‘челюстью’; ср. <mentioned xml:id="mentioned_d1161e380" xml:lang="os"><lang/>
                         <w>ʒonyǵy fsær</w>
                         <gloss><q>полоз</q></gloss></mentioned>, буквально ‘челюсть саней’; само
                     %iʒonyǧ%i также употребляется иногда в значении ‘нижняя челюсть’.</etym>
-                <etym xml:lang="en">A cultural word with wide European-Asian spread: <mentioned
-                        xml:lang="trk"><lang/>
-                        <w>čana</w></mentioned>, <mentioned xml:lang="trk"><w>čanaq</w></mentioned>,
-                        <mentioned xml:lang="trk"><w>sana</w></mentioned>, <mentioned xml:lang="trk"
-                            ><w>sanaq</w></mentioned>, <mentioned xml:lang="trk"><w>sanaǧ</w><note type="comment" xml:lang="en"
-                            > (<bibl><ref type="bibl" target="#ref_Радлов"/><biblScope>III 1855,
+                <etym xml:lang="en">A cultural word with wide European-Asian spread: <mentioned xml:id="mentioned_d1161e391" xml:lang="trk"><lang/>
+                        <w>čana</w></mentioned>, <mentioned xml:id="mentioned_d1161e396" xml:lang="trk"><w>čanaq</w></mentioned>,
+                        <mentioned xml:id="mentioned_d1161e399" xml:lang="trk"><w>sana</w></mentioned>, <mentioned xml:id="mentioned_d1161e402" xml:lang="trk"><w>sanaq</w></mentioned>, <mentioned xml:id="mentioned_d1161e405" xml:lang="trk"><w>sanaǧ</w><note type="comment" xml:lang="en"> (<bibl><ref type="bibl" target="#ref_Радлов"/><biblScope>III 1855,
                                     1856, IV 298</biblScope></bibl>)</note>
-                        <gloss><q>sledge</q></gloss></mentioned>, <mentioned xml:lang="tg"><lang/>
+                        <gloss><q>sledge</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1161e418" xml:lang="tg"><lang/>
                         <w>čana</w>
-                        <gloss><q>sledge</q></gloss></mentioned>, <mentioned xml:lang="bua"><lang/>
-                        <w>cana</w></mentioned>, <mentioned xml:lang="bua"><w>sana</w>
-                        <gloss><q>ski</q></gloss></mentioned>, <mentioned xml:lang="fi"><lang/>
-                        <w>sani</w></mentioned>, <mentioned xml:lang="et"><lang/>
-                        <w>san</w></mentioned>, <mentioned xml:lang="hu"><lang/>
-                        <w>szán</w></mentioned>, <mentioned xml:lang="ro"><lang/>
-                        <w>sanie</w></mentioned>, <mentioned xml:lang="lv"><lang/>
-                        <w>sānus</w></mentioned>, <mentioned xml:lang="lv"><w>sanas</w>
+                        <gloss><q>sledge</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1161e426" xml:lang="bua"><lang/>
+                        <w>cana</w></mentioned>, <mentioned xml:id="mentioned_d1161e431" xml:lang="bua"><w>sana</w>
+                        <gloss><q>ski</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1161e437" xml:lang="fi"><lang/>
+                        <w>sani</w></mentioned>, <mentioned xml:id="mentioned_d1161e442" xml:lang="et"><lang/>
+                        <w>san</w></mentioned>, <mentioned xml:id="mentioned_d1161e447" xml:lang="hu"><lang/>
+                        <w>szán</w></mentioned>, <mentioned xml:id="mentioned_d1161e453" xml:lang="ro"><lang/>
+                        <w>sanie</w></mentioned>, <mentioned xml:id="mentioned_d1161e458" xml:lang="lv"><lang/>
+                        <w>sānus</w></mentioned>, <mentioned xml:id="mentioned_d1161e463" xml:lang="lv"><w>sanas</w>
                         <gloss><q>ski</q></gloss></mentioned>. Some Caucasian names are close to
-                    Turkic: <mentioned xml:lang="ka"><lang/>
-                        <w>čana</w></mentioned>, <mentioned xml:lang="av"><lang/>
-                        <w>čanaǧ</w></mentioned>, <mentioned xml:lang="ani"><lang/>
-                        <w>čanaǧi</w></mentioned>; but <mentioned xml:lang="xcl"><lang/>
+                    Turkic: <mentioned xml:id="mentioned_d1161e469" xml:lang="ka"><lang/>
+                        <w>čana</w></mentioned>, <mentioned xml:id="mentioned_d1161e474" xml:lang="av"><lang/>
+                        <w>čanaǧ</w></mentioned>, <mentioned xml:id="mentioned_d1161e479" xml:lang="ani"><lang/>
+                        <w>čanaǧi</w></mentioned>; but <mentioned xml:id="mentioned_d1161e485" xml:lang="xcl"><lang/>
                         <w>sahnakʼ</w></mentioned>. The vowel %io%i in Ossetic traces back to %iа%i
                     and thus %iconæǧ%i can be reconstructed to *%ičanaǧ%i (according to the Ossetic
                     pronunciation of %ič%i as %ic%i, which quite coincides with some Turkic and Avar
                     forms). Apparently, the Ossetic people (Alans) had some kind of technical
                     innovation in the manufacture of sledges. Otherwise, we cannot explain that in
                     Svan and Balkarian the name of the sledge (or part of it) coincides with the
-                    names of the Ossetian people: <mentioned xml:lang="sva"><lang/>
+                    names of the Ossetian people: <mentioned xml:id="mentioned_d1161e490" xml:lang="sva"><lang/>
                         <w>sav</w>
-                        <gloss><q>Ossetian</q></gloss></mentioned> and ‘sledge’, <mentioned
-                        xml:lang="krc-x-balkar"><lang/>
+                        <gloss><q>Ossetian</q></gloss></mentioned> and ‘sledge’, <mentioned xml:id="mentioned_d1161e498" xml:lang="krc-x-balkar"><lang/>
                         <w>düger</w>
-                        <gloss><q>Digor</q></gloss></mentioned>, <mentioned xml:lang="krc-x-balkar"><w/>
+                        <gloss><q>Digor</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1161e506" xml:lang="krc-x-balkar"><w/>
                         <gloss><q>sledge beam</q></gloss><note type="comment" xml:lang="en">
-                                    (<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope
-                                    xml:lang="en">302 footnote.,
+                                    (<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope xml:lang="en">302 footnote.,
                         280—281</biblScope></bibl>)</note></mentioned>. One can only speculate about
-                    the ideosemantics of a word. Relying on the <mentioned xml:lang="fa"><lang/>
+                    the ideosemantics of a word. Relying on the <mentioned xml:id="mentioned_d1161e519" xml:lang="fa"><lang/>
                         <w>čānah</w>
-                        <gloss><q>lower jaw</q></gloss></mentioned>, <mentioned xml:lang="trk"><lang/>
-                        <w>ǯanax</w></mentioned>, <mentioned xml:lang="trk"><w>janak</w>
+                        <gloss><q>lower jaw</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1161e527" xml:lang="trk"><lang/>
+                        <w>ǯanax</w></mentioned>, <mentioned xml:id="mentioned_d1161e533" xml:lang="trk"><w>janak</w>
                         <gloss><q>cheek</q></gloss></mentioned>, it can be assumed that the sledge
-                    was named “jaw” according to the similarity of shape; cf. <mentioned
-                        xml:lang="os"><lang/>
+                    was named “jaw” according to the similarity of shape; cf. <mentioned xml:id="mentioned_d1161e539" xml:lang="os"><lang/>
                         <w>ʒonyǵy fsær</w>
                         <gloss><q>runner</q></gloss></mentioned>, literally ‘jaw of the sledge’; the
                     word %iʒonyǧ%i itself is also used sometimes in the meaning of ‘lower

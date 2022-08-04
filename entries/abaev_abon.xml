@@ -1,34 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">abon</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_abon" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>abon</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>aboni</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d2860e72"><abv:tr xml:lang="ru">
                         <q>сегодня</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>today</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d2860e84">
                         <quote>abondærǵy</quote>
                         <abv:tr xml:lang="ru">
                             <q rendition="rend_singlequotes">в течение всего сегодняшнего дня</q>
@@ -39,7 +44,7 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d2860e104">
                         <quote>we 'ppæt dær abon mæ wazǵytæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>вы все сегодня мои гости</q>
@@ -47,10 +52,9 @@
                         <abv:tr xml:lang="en">
                             <q>you are all my guests today</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"
-                            /><biblScope>136</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>136</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2860e123">
                         <quote>abony ong</quote>
                         <abv:tr xml:lang="ru">
                             <q>до сегодняшнего дня</q>
@@ -60,7 +64,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>67</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d2860e142" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>ærinburdæncæ aboni ævdæjmag sabat Kʼamatæ</quote>
                         <abv:tr xml:lang="ru">
@@ -71,7 +75,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>40</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2860e164">
                         <quote>he ūj dyn mæ mitæ, mæ xælar, mæ faron, mæ abon, mæ fīdæn</quote>
                         <abv:tr xml:lang="ru">
                             <q>вот тебе, мой друг, мои дела, мое прошлое, мое сегодня, мое
@@ -82,7 +86,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Niger"/><biblScope>8</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2860e183">
                         <quote>abondærǧy ūstytīmæ bady</quote>
                         <abv:tr xml:lang="ru">
                             <q>сегодня весь день сидит с женщинами</q>
@@ -90,10 +94,9 @@
                         <abv:tr xml:lang="en">
                             <q>today he is sitting with women the whole day</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Брит."
-                            /><biblScope>133</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Брит."/><biblScope>133</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2860e203">
                         <quote>kæd ræǧawmæ cydtæ, wæd abondærǧy kæm wydtæ?</quote>
                         <abv:tr xml:lang="ru">
                             <q>если ты собирался идти к табуну, то где ты был весь день?</q>
@@ -101,33 +104,26 @@
                         <abv:tr xml:lang="en">
                             <q>if you had been going to go to the herd, where were you all day?</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Брит."
-                            /><biblScope>150</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Брит."/><biblScope>150</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из <ref type="xr" target="#entry_a"/> ‘этот’ и <ref type="xr"
-                        target="#entry_bon"/> ‘день’ (в дигорском — местный падеж); от него adj.
+                <etym xml:lang="ru">Из <ref type="xr" target="#entry_a"/> ‘этот’ и <ref type="xr" target="#entry_bon"/> ‘день’ (в дигорском — местный падеж); от него adj.
                         <ref type="xr" target="#entry_abonykkon"/> | %iabonikkon%i 'сегодняшний'.
-                    Ср. по образованию <mentioned xml:lang="sa"><lang/>
+                    Ср. по образованию <mentioned xml:id="mentioned_d2860e232" xml:lang="sa"><lang/>
                         <w>a-dyá</w>
-                        <gloss><q>сегодня</q></gloss></mentioned>, <mentioned xml:lang="yai"><lang/>
+                        <gloss><q>сегодня</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2860e240" xml:lang="yai"><lang/>
                         <w>a mét</w>
-                        <gloss><q>в этот день</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_KPF"/><biblScope>Abt. III, Bd. II, стр. 229, 390,
-                            418</biblScope></bibl>). См. <ref type="xr" target="#entry_a"/> и <ref
-                        type="xr" target="#entry_bon"/>; ср. <ref type="xr" target="#entry_axsæv"/>,
+                        <gloss><q>в этот день</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_KPF"/><biblScope>Abt. III, Bd. II, стр. 229, 390,
+                            418</biblScope></bibl>). См. <ref type="xr" target="#entry_a"/> и <ref type="xr" target="#entry_bon"/>; ср. <ref type="xr" target="#entry_axsæv"/>,
                         <ref type="xr" target="#entry_ībon"/>.</etym>
-                <etym xml:lang="en">From <ref type="xr" target="#entry_a"/> ‘thisʼ and <ref
-                        type="xr" target="#entry_bon"/> ‘dayʼ (in Digor — locative case); from which
+                <etym xml:lang="en">From <ref type="xr" target="#entry_a"/> ‘thisʼ and <ref type="xr" target="#entry_bon"/> ‘dayʼ (in Digor — locative case); from which
                     adj. <ref type="xr" target="#entry_abonykkon"/> | %iabonikkon%i ‘today'sʼ. Cf.
-                    similar derivates: <mentioned xml:lang="sa"><lang/>
+                    similar derivates: <mentioned xml:id="mentioned_d2860e270" xml:lang="sa"><lang/>
                         <w>a-dyá</w>
-                        <gloss><q>today</q></gloss></mentioned>, <mentioned xml:lang="yai"><lang/>
+                        <gloss><q>today</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2860e278" xml:lang="yai"><lang/>
                         <w>a mét</w>
-                        <gloss><q>on this day</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_KPF"/><biblScope>Abt. III, Bd. II, pp. 229, 390,
-                            418</biblScope></bibl>). See <ref type="xr" target="#entry_a"/> and <ref
-                        type="xr" target="#entry_bon"/>; cf. <ref type="xr" target="#entry_axsæv"/>,
+                        <gloss><q>on this day</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_KPF"/><biblScope>Abt. III, Bd. II, pp. 229, 390,
+                            418</biblScope></bibl>). See <ref type="xr" target="#entry_a"/> and <ref type="xr" target="#entry_bon"/>; cf. <ref type="xr" target="#entry_axsæv"/>,
                         <ref type="xr" target="#entry_ībon"/>.</etym>
             </entry>
         </body>

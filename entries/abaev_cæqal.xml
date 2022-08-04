@@ -1,38 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">cæqal</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_cæqal" xml:lang="os-x-digor">
                 <form type="lemma"><orth>cæqal</orth></form>
                 <usg><lang/></usg>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d4463e72"><sense xml:id="sense_d4463e73"><abv:tr xml:lang="ru">
                             <q>волна</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>wave</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d4463e82"><abv:tr xml:lang="ru">
                             <q>струя</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>jet</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4463e94">
                         <quote>Saw dengizi cæqaltæj ærbadungæ kænidæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>ветер веял от волн Черного моря</q>
@@ -40,10 +45,9 @@
                         <abv:tr xml:lang="en">
                             <q>the wind blew from the waves of the Black Sea</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Диг._сказ."
-                            /><biblScope>11</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Диг._сказ."/><biblScope>11</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4463e113">
                         <quote>kud nixxawdtæj mard i donmæ, oj æstʼalutæ widtoncæ, oj cæqaltæ
                             kæræʒemæn desæ-ʒoræ fækkodtoncæ</quote>
                         <abv:tr xml:lang="ru">
@@ -57,32 +61,31 @@
                         <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>43</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Очевидна связь с <mentioned xml:lang="ka"><lang/>
+                <etym xml:lang="ru">Очевидна связь с <mentioned xml:id="mentioned_d4463e135" xml:lang="ka"><lang/>
                         <w>cʼqali</w>
                         <gloss><q>вода</q></gloss></mentioned>. Возможно, мы имеем дело не с
                     заимствованием, а со старым субстратным отложением. Для полногласия в %icæqal%i
-                    ср. <ref type="xr" target="#entry_cæxær"/> ‘огонь’ (<mentioned xml:lang="ka"><lang/>
+                    ср. <ref type="xr" target="#entry_cæxær"/> ‘огонь’ (<mentioned xml:id="mentioned_d4463e145" xml:lang="ka"><lang/>
                         <w>cxeli</w></mentioned>), д. <ref type="xr" target="#entry_gælex"/> ‘раб’
-                        (<mentioned xml:lang="ka"><lang/>
+                        (<mentioned xml:id="mentioned_d4463e152" xml:lang="ka"><lang/>
                         <w>glexi</w></mentioned>), <ref type="xr" target="#entry_gærtam"/> ‘взятка’
-                        (<mentioned xml:lang="ka"><lang/>
+                        (<mentioned xml:id="mentioned_d4463e160" xml:lang="ka"><lang/>
                         <w>krtami</w></mentioned>), <ref type="xr" target="#entry_kʼæbæda"/>
-                    ‘болтун’ (<mentioned xml:lang="ka"><lang/>
+                    ‘болтун’ (<mentioned xml:id="mentioned_d4463e167" xml:lang="ka"><lang/>
                         <w>qbedi</w></mentioned>) и др.; <ref type="xr" target="#entry_cællaq"/>
                     ‘плеск’ представляет вариацию этого же слова, воспринимаемую ныне как
-                            звукоподражание.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                            /><biblScope>120, 325, 526</biblScope></bibl>.</etym>
-                <etym xml:lang="en">There is an obvious connection with <mentioned xml:lang="ka"><lang/>
+                            звукоподражание.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>120, 325, 526</biblScope></bibl>.</etym>
+                <etym xml:lang="en">There is an obvious connection with <mentioned xml:id="mentioned_d4463e182" xml:lang="ka"><lang/>
                         <w>cʼqali</w>
                         <gloss><q>water</q></gloss></mentioned>. Probably, we deal not with a
                     borrowing but with an old substrate word. For the full vocalism in %icæqal%i cf.
-                        <ref type="xr" target="#entry_cæxær"/> ‘fire’ (<mentioned xml:lang="ka"><lang/>
+                        <ref type="xr" target="#entry_cæxær"/> ‘fire’ (<mentioned xml:id="mentioned_d4463e192" xml:lang="ka"><lang/>
                         <w>cxeli</w></mentioned>), Digor <ref type="xr" target="#entry_gælex"/>
-                    ‘slave’ (<mentioned xml:lang="ka"><lang/>
+                    ‘slave’ (<mentioned xml:id="mentioned_d4463e199" xml:lang="ka"><lang/>
                         <w>glexi</w></mentioned>), <ref type="xr" target="#entry_gærtam"/> ‘bribe’
-                        (<mentioned xml:lang="ka"><lang/>
+                        (<mentioned xml:id="mentioned_d4463e207" xml:lang="ka"><lang/>
                         <w>krtami</w></mentioned>), <ref type="xr" target="#entry_kʼæbæda"/>
-                    ‘chatterbox’ (<mentioned xml:lang="ka"><lang/>
+                    ‘chatterbox’ (<mentioned xml:id="mentioned_d4463e214" xml:lang="ka"><lang/>
                         <w>qbedi</w></mentioned>) etc.; <ref type="xr" target="#entry_cællaq"/>
                     ‘splash’ represents the variantion of the same word which is percieved now as a
                     sound symbolism.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>120,

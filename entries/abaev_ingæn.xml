@@ -1,33 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ingæn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ingæn" xml:lang="os">
                 <form type="lemma"><orth>ingæn</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d1829e69"><abv:tr xml:lang="ru">
                         <q>могила</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>grave</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d1829e81">
                         <quote>sīʒærtæj fælyǧtæ ingænmæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>от сирот ты убежал в могилу</q>
@@ -37,7 +42,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>44</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1829e100">
                         <quote>Azaw (Tajmurazy) ingænyl adælgom, jæ ʒyxy ʒag sygyt felvæsta, æmæ
                             bazyrzyr kodta, ærbatymbyl, stæj adarǧ ingæny wælæ æmæ jæ ūd
                             sīsta</quote>
@@ -57,33 +62,27 @@
                 <etym xml:lang="ru">Возводится к иран. *%ihan-kana-%i, где %ihan-%i (← %iham-%i) —
                     приставка, %ikana-%i — от глагола %ikan-%i ‘копать’, сохранившегося в ос.
                     %inygænyn%i (*%ini-kan-%i) ‘погребать’, %inykkænd%i (*%inikanta-%i) ‘погреб’ и
-                    %iævgænyn%i (*%iabi-kan-%i) ‘погружать’. Ср. <mentioned xml:lang="ae"><lang/>
+                    %iævgænyn%i (*%iabi-kan-%i) ‘погружать’. Ср. <mentioned xml:id="mentioned_d1829e122" xml:lang="ae"><lang/>
                         <w>hankana-</w>
                         <gloss><q>подземелье</q></gloss></mentioned>. В иронском ожидали бы
                     *%iængæn%i или *%iyngæn%i (а → у, ср. <ref type="xr" target="#entry_yssyn"/> |
                     %iinsun%i, <ref type="xr" target="#entry_fynddæs"/> | %ifinddæs%i ‘15’ из
                     %ifænʒ-dæs%i, <ref type="xr" target="#entry_tynʒyn_1"/> | %iitinʒun%i из
                     %itanj-%i). Для дигорского колебание между начальным %iæ%i и %ii%i обычно. Форму
-                    %iingæn%i приходится поэтому рассматривать как „дигоризм“.%n<bibl><ref
-                            type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II
-                            56–57</biblScope></bibl>. — <bibl><author>Bailey,</author><ref
-                            type="bibl" target="#ref_BSOAS"/><biblScope>XII
+                    %iingæn%i приходится поэтому рассматривать как „дигоризм“.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II
+                            56–57</biblScope></bibl>. — <bibl><author>Bailey,</author><ref type="bibl" target="#ref_BSOAS"/><biblScope>XII
                     331</biblScope></bibl>.</etym>
                 <etym xml:lang="en">It traces back to *%ihan-kana-%i, where %ihan-%i (← %iham-%i) is
                     a prefix, %ikana-%i is derived from the verb %ikan-%i ‘to dig’, which is present
                     in Ossetic %inygænyn%i (*%ini-kan-%i) ‘to bury’, %inykkænd%i (*%inikanta-%i)
-                    ‘cellar’ and %iævgænyn%i (*%iabi-kan-%i) ‘to immerse’. Cf. <mentioned
-                        xml:lang="ae"><lang/>
+                    ‘cellar’ and %iævgænyn%i (*%iabi-kan-%i) ‘to immerse’. Cf. <mentioned xml:id="mentioned_d1829e149" xml:lang="ae"><lang/>
                         <w>hankana-</w>
                         <gloss><q>dungeon</q></gloss></mentioned>. In Iron forms like *%iængæn%i or
-                    *%iyngæn%i are expected (%iа%i → %iу%i, cf. <ref type="xr" target="#entry_yssyn"
-                    /> | %iinsun%i, <ref type="xr" target="#entry_fynddæs"/> | %ifinddæs%i ‘15’ from
+                    *%iyngæn%i are expected (%iа%i → %iу%i, cf. <ref type="xr" target="#entry_yssyn"/> | %iinsun%i, <ref type="xr" target="#entry_fynddæs"/> | %ifinddæs%i ‘15’ from
                     %ifænʒ-dæs%i, <ref type="xr" target="#entry_tynʒyn_1"/> | %iitinʒun%i из
                     %itanj-%i). For Digor the hesitation between initial %iæ%i and %ii%i is usual.
-                    The form %iingæn%i should be viewed as „digorism“.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 56–57</biblScope></bibl>. —
-                            <bibl><author>Bailey,</author><ref type="bibl" target="#ref_BSOAS"
-                            /><biblScope>XII 331</biblScope></bibl>.</etym>
+                    The form %iingæn%i should be viewed as „digorism“.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 56–57</biblScope></bibl>. —
+                            <bibl><author>Bailey,</author><ref type="bibl" target="#ref_BSOAS"/><biblScope>XII 331</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

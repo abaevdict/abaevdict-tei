@@ -1,34 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ag0yvzæ</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ag0yvzæ" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>ag˳yvzæ</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>agubze</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d1174e72"><abv:tr xml:lang="ru">
                         <q>стакан</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>glass</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d1174e84">
                         <quote>cajy ag˳yvzætæ balxædta xsæz</quote>
                         <abv:tr xml:lang="ru">
                             <q>чайных стаканов он купил шесть</q>
@@ -37,7 +42,7 @@
                             <q>he bought six tea glasses</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1174e99">
                         <quote>aguvzæ jeʒag ū</quote>
                         <abv:tr xml:lang="ru">
                             <q>стакан полон</q>
@@ -47,7 +52,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Munk."/><biblScope>26</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1174e118">
                         <quote>rawaǧta bægæny cajcymæn aǧ˳yvzæjy</quote>
                         <abv:tr xml:lang="ru">
                             <q>налил пива в чайный стакан</q>
@@ -55,10 +60,9 @@
                         <abv:tr xml:lang="en">
                             <q>he poured beer into a tea glass</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Arsen"
-                            /><biblScope>107</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Arsen"/><biblScope>107</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1174e137">
                         <quote>aǧ˳yvzæjæ-fyldær nīk˳y nwæzton; nyr īw avg jæ tækkæ bynæj ravdælon
                             kodton</quote>
                         <abv:tr xml:lang="ru">
@@ -70,7 +74,7 @@
                                 to the very bottom</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1174e152">
                         <quote>ḱyzg … jæ ronæj avg rajsta, īw agubyzæ ʒy rawaǧta æmæ jæ læppūmæ
                             aværdta</quote>
                         <abv:tr xml:lang="ru">
@@ -84,13 +88,13 @@
                         <bibl><ref type="bibl" target="#src_ОТ"/><biblScope>94</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из <mentioned xml:lang="kbd"><lang/>
+                <etym xml:lang="ru">Из <mentioned xml:id="mentioned_d1174e174" xml:lang="kbd"><lang/>
                         <w>hägwə-bże</w>
                         <gloss><q>бокал</q></gloss></mentioned> ; вторая часть, %ibże%i, значит в
                     кабардинском ‘чаша’; первая %ihägwə%i — ‘ладонь’: „чаша, помещающаяся на
                             ладони“?%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>56,
                             88</biblScope></bibl>.</etym>
-                <etym xml:lang="en">From <mentioned xml:lang="kbd"><lang/>
+                <etym xml:lang="en">From <mentioned xml:id="mentioned_d1174e190" xml:lang="kbd"><lang/>
                         <w>hägwə-bże</w>
                         <gloss><q>glass</q></gloss></mentioned> ; the second part %ibże%i means
                     ‘cup’ in Kabardian; the first one %ihägwə%i — ‘palm’: “a cup that fits in the

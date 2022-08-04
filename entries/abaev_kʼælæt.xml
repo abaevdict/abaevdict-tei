@@ -1,56 +1,61 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">kʼælæt</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_kʼælæt" xml:lang="os">
                 <form type="lemma"><orth>kʼælæt</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d691e69"><sense xml:id="sense_d691e70"><abv:tr xml:lang="ru">
                             <q>дуга</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>acr</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d691e79"><abv:tr xml:lang="ru">
                             <q>дугообразный</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>arched</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d691e88"><abv:tr xml:lang="ru">
                             <q>изогнутая в дугу палка, надеваемая на шею коровы, быка для
                                 привязывания</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>curved stick worn around the neck of a cow or a bull for tying</q>
                         </abv:tr></sense></sense>
-                <re>
-                    <re>
+                <re xml:id="re_d691e98">
+                    <re xml:id="re_d691e100">
                         <form type="lemma"><orth>kʼælætǵyn (bandon)</orth></form>
-                        <sense><abv:tr xml:lang="ru">
+                        <sense xml:id="sense_d691e105"><abv:tr xml:lang="ru">
                                 <q>кресло с изогнутой спинкой</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>chair with a bent back</q>
                             </abv:tr></sense>
                     </re>
-                    <re>
+                    <re xml:id="re_d691e116">
                         <form type="lemma"><orth>kʼælætsær</orth></form>
-                        <sense><sense><abv:tr xml:lang="ru">
+                        <sense xml:id="sense_d691e121"><sense xml:id="sense_d691e122"><abv:tr xml:lang="ru">
                                     <q>круторогий</q>
                                 </abv:tr><abv:tr xml:lang="en">
                                     <q>with bent horns</q>
-                                </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                                </abv:tr></sense><sense xml:id="sense_d691e131"><abv:tr xml:lang="ru">
                                     <q>ветвисторогий</q>
                                 </abv:tr><abv:tr xml:lang="en">
                                     <q>with branchy horns</q>
@@ -58,7 +63,7 @@
                     </re>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d691e145" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>æz din ci warzun, kizgajti kizgaj? dæ xodgæ cæstæ, dæ kʼælæt
                             ærfug</quote>
@@ -72,7 +77,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>104</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d691e167">
                         <quote>Bætæg bady jæ fydælty kʼælætgynyl ænæzmælgæjæ, ænæʒūrgæjæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>Батаг сидит на кресле своих предков, недвижимо, безмолвно</q>
@@ -81,10 +86,9 @@
                             <q>Batag is sitting on the armchair of his ancestors, motionless,
                                 speechless</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Čerm."
-                            /><biblScope>119</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Čerm."/><biblScope>119</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d691e186">
                         <quote>Wyryzmæg pylystæg kʼælætǵyn bandonyl jæxī mæsty waǧd ærkodta</quote>
                         <abv:tr xml:lang="ru">
                             <q>Урузмаг с гневом опустился на кресло из слоновой кости</q>
@@ -92,10 +96,9 @@
                         <abv:tr xml:lang="en">
                             <q>Uruzmag angrily sat on an ivory chair</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Нарт._сказ."
-                            /><biblScope>34</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Нарт._сказ."/><biblScope>34</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d691e205" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>kʼælætsær sægtæ</quote>
                         <abv:tr xml:lang="ru">
@@ -107,7 +110,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
                             145</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d691e227" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>gæwænztæ ma kʼælætsærtæ skʼærun wæd rajdajuncæ</quote>
                         <abv:tr xml:lang="ru">
@@ -117,26 +120,20 @@
                             <q>reindeer females and reindeer males with bent antlers are started to
                                 be driven away</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_ОЭп."
-                                /><biblScope>56%l70-71%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_ОЭп."/><biblScope>56%l70-71%l</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Возможна связь с <ref type="xr" target="#entry_kʼalati"/>
-                    ‘корзина’ (см. это слово). %sШтакельберг%s (<bibl><ref type="bibl"
-                            target="#ref_MSt."/><biblScope>82</biblScope></bibl>), исходя из
-                    ошибочного значения ‘ярмо’ (‘Joch’), сопоставляет с <mentioned xml:lang="ku"><lang/>
+                    ‘корзина’ (см. это слово). %sШтакельберг%s (<bibl><ref type="bibl" target="#ref_MSt."/><biblScope>82</biblScope></bibl>), исходя из
+                    ошибочного значения ‘ярмо’ (‘Joch’), сопоставляет с <mentioned xml:id="mentioned_d691e258" xml:lang="ku"><lang/>
                         <w>qelāt</w>
-                        <gloss><q>ярмо</q></gloss></mentioned>.%n<bibl><ref type="bibl"
-                            target="#ref_Hübschmann._Oss."
-                    /><biblScope>135</biblScope></bibl>.</etym>
+                        <gloss><q>ярмо</q></gloss></mentioned>.%n<bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>135</biblScope></bibl>.</etym>
                 <etym xml:lang="en">The relation to <ref type="xr" target="#entry_kʼalati"/>
-                    ‘basket’ is probable (see this word). %sStackelberg%s (<bibl><ref type="bibl"
-                            target="#ref_MSt."/><biblScope>82</biblScope></bibl>) comparing it to
-                        <mentioned xml:lang="ku"><lang/>
+                    ‘basket’ is probable (see this word). %sStackelberg%s (<bibl><ref type="bibl" target="#ref_MSt."/><biblScope>82</biblScope></bibl>) comparing it to
+                        <mentioned xml:id="mentioned_d691e280" xml:lang="ku"><lang/>
                         <w>qelāt</w>
                         <gloss><q>yoke</q></gloss></mentioned>, basing on the erroneous meaning
-                    ‘yoke’ (‘Joch’).%n<bibl><ref type="bibl" target="#ref_Hübschmann._Oss."
-                            /><biblScope>135</biblScope></bibl>.</etym>
+                    ‘yoke’ (‘Joch’).%n<bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>135</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

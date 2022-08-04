@@ -1,34 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">aryng</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_aryng" xml:lang="os-x-iron">
                 <form type="lemma"><orth>aryng</orth></form>
                 <usg><lang/></usg>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d4482e72"><abv:tr xml:lang="ru">
                         <q>корыто, в котором месят муку</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>flour trough</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4482e84">
                         <quote>rak˳yrdtais ʒy aryng, n’ aryng jæ astæwyl k˳y ayast</quote>
                         <abv:tr xml:lang="ru">
                             <q>выпросил бы у нее корыто, наше корыто пополам раскололось</q>
@@ -36,10 +41,9 @@
                         <abv:tr xml:lang="en">
                             <q>(you) wouldbegged her for a trough, our trough split in half</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Puškin._Arhau"
-                            /><biblScope>5</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Puškin._Arhau"/><biblScope>5</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4482e103">
                         <quote>læg jæ ūsmæ ʒūry: „kærʒyn ma skæn taǧd''; ūs yssad balwærsta arynǵy,
                             don yl nykkodta, æmæ xyssæ nal cæwy arynǵy</quote>
                         <abv:tr xml:lang="ru">
@@ -55,48 +59,39 @@
                             110</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Слово образовано, по-видимому, от иранского <mentioned
-                        xml:lang="ira"><lang/>
+                <etym xml:lang="ru">Слово образовано, по-видимому, от иранского <mentioned xml:id="mentioned_d4482e125" xml:lang="ira"><lang/>
                         <w>*ar-</w>
-                        <gloss><q>молоть</q></gloss></mentioned>, <mentioned xml:lang="ira"><w/>
+                        <gloss><q>молоть</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4482e133" xml:lang="ira"><w/>
                         <gloss><q>мука</q></gloss></mentioned> с помощью суффикса (не живого)
-                    %i-yng%i (из %i-anga-%i? Ср.: <bibl><author>Бенвенист</author><biblScope
-                            xml:lang="ru">И. е. именное словообразование, стр.
+                    %i-yng%i (из %i-anga-%i? Ср.: <bibl><author>Бенвенист</author><biblScope xml:lang="ru">И. е. именное словообразование, стр.
                             52—53</biblScope></bibl>), наличного, например, в словах
-                        <ref type="xr" target="#entry_rūʒyng"/> ‘окно’, <ref type="xr"
-                        target="#entry_talyng"/> ‘темный’. Основное значение, таким образом, —
-                    „мучница“, ‘корыто для муки’. Ср. <mentioned xml:lang="yai"><lang/>
-                        <w>ārt</w></mentioned>, <mentioned xml:lang="ydg"><lang/>
-                        <w>yārah</w></mentioned>, <mentioned xml:lang="ps"><lang/>
-                        <w>oṙə</w></mentioned>, <mentioned xml:lang="fa"><lang/>
-                        <w>ārd</w></mentioned>, <mentioned xml:lang="ku"><lang/>
-                        <w>ār, ārd</w></mentioned>, <mentioned xml:lang="x-balochi"><lang/>
-                        <w>ārt</w></mentioned>, <mentioned xml:lang="ae"><lang/>
+                        <ref type="xr" target="#entry_rūʒyng"/> ‘окно’, <ref type="xr" target="#entry_talyng"/> ‘темный’. Основное значение, таким образом, —
+                    „мучница“, ‘корыто для муки’. Ср. <mentioned xml:id="mentioned_d4482e149" xml:lang="yai"><lang/>
+                        <w>ārt</w></mentioned>, <mentioned xml:id="mentioned_d4482e154" xml:lang="ydg"><lang/>
+                        <w>yārah</w></mentioned>, <mentioned xml:id="mentioned_d4482e159" xml:lang="ps"><lang/>
+                        <w>oṙə</w></mentioned>, <mentioned xml:id="mentioned_d4482e164" xml:lang="fa"><lang/>
+                        <w>ārd</w></mentioned>, <mentioned xml:id="mentioned_d4482e169" xml:lang="ku"><lang/>
+                        <w>ār, ārd</w></mentioned>, <mentioned xml:id="mentioned_d4482e174" xml:lang="x-balochi"><lang/>
+                        <w>ārt</w></mentioned>, <mentioned xml:id="mentioned_d4482e180" xml:lang="ae"><lang/>
                         <w>aša-</w></mentioned> (← %i*arta-%i) ‘мука’. Самостоятельно основа %iar-%i
-                    в значении ‘мука’, ‘молоть’ в осетинском не сохранилась (см. <ref type="xr"
-                        target="#entry_yssyn"/>, <ref type="xr" target="#entry_yssad"
-                            />).%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>56,
+                    в значении ‘мука’, ‘молоть’ в осетинском не сохранилась (см. <ref type="xr" target="#entry_yssyn"/>, <ref type="xr" target="#entry_yssad"/>).%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>56,
                             574</biblScope></bibl>.</etym>
-                <etym xml:lang="en">The word is formed, apparently, from Iranian <mentioned
-                        xml:lang="ira"><lang/>
+                <etym xml:lang="en">The word is formed, apparently, from Iranian <mentioned xml:id="mentioned_d4482e197" xml:lang="ira"><lang/>
                         <w>*ar-</w>
-                        <gloss><q>grind</q></gloss></mentioned>, <mentioned xml:lang="ira"><w/>
+                        <gloss><q>grind</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4482e205" xml:lang="ira"><w/>
                         <gloss><q>flour</q></gloss></mentioned> with the (non-productive) suffix
                     %i-yng%i (from %i-anga-%i)? Cf.: <bibl><author>Benveniste</author><biblScope xml:lang="en">Indo-Euporean nominal
                             derivation, pp. 52—53</biblScope></bibl>) which is available, for
-                    example, in words <ref type="xr" target="#entry_rūʒyng"/> ‘window’, <ref
-                        type="xr" target="#entry_talyng"/> ‘dark’. The main meaning, therefore, is
-                    “flour-maker”, “trough for flour”. Cf. <mentioned xml:lang="yai"><lang/>
-                        <w>ārt</w></mentioned>, <mentioned xml:lang="ydg"><lang/>
-                        <w>yārah</w></mentioned>, <mentioned xml:lang="ps"><lang/>
-                        <w>oṙə</w></mentioned>, <mentioned xml:lang="fa"><lang/>
-                        <w>ārd</w></mentioned>, <mentioned xml:lang="ku"><lang/>
-                        <w>ār, ārd</w></mentioned>, <mentioned xml:lang="x-balochi"><lang/>
-                        <w>ārt</w></mentioned>, <mentioned xml:lang="ae"><lang/>
+                    example, in words <ref type="xr" target="#entry_rūʒyng"/> ‘window’, <ref type="xr" target="#entry_talyng"/> ‘dark’. The main meaning, therefore, is
+                    “flour-maker”, “trough for flour”. Cf. <mentioned xml:id="mentioned_d4482e221" xml:lang="yai"><lang/>
+                        <w>ārt</w></mentioned>, <mentioned xml:id="mentioned_d4482e226" xml:lang="ydg"><lang/>
+                        <w>yārah</w></mentioned>, <mentioned xml:id="mentioned_d4482e231" xml:lang="ps"><lang/>
+                        <w>oṙə</w></mentioned>, <mentioned xml:id="mentioned_d4482e236" xml:lang="fa"><lang/>
+                        <w>ārd</w></mentioned>, <mentioned xml:id="mentioned_d4482e241" xml:lang="ku"><lang/>
+                        <w>ār, ārd</w></mentioned>, <mentioned xml:id="mentioned_d4482e246" xml:lang="x-balochi"><lang/>
+                        <w>ārt</w></mentioned>, <mentioned xml:id="mentioned_d4482e252" xml:lang="ae"><lang/>
                         <w>aša-</w></mentioned> (← %i*arta-%i) ‘flour’. The base %iar-%i in the
-                    meaning ‘flour’, ‘grind’ has not been preserved in Ossetic on its own (see <ref
-                        type="xr" target="#entry_yssyn"/>, <ref type="xr" target="#entry_yssad"
-                            />).%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>56,
+                    meaning ‘flour’, ‘grind’ has not been preserved in Ossetic on its own (see <ref type="xr" target="#entry_yssyn"/>, <ref type="xr" target="#entry_yssad"/>).%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>56,
                             574</biblScope></bibl>.</etym>
             </entry>
         </body>

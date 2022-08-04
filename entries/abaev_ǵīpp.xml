@@ -1,59 +1,61 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ǵīpp</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ǵīpp" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>ǵīpp</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>gepp</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d5445e72"><abv:tr xml:lang="ru">
                         <q>форма для отливки чего-либо</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>cast</q>
                     </abv:tr></sense>
-                <re>
+                <re xml:id="re_d5445e82">
                     <form type="lemma"><orth>ǵippy waʒyn</orth></form>
-                    <sense><sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d5445e87"><sense xml:id="sense_d5445e88"><abv:tr xml:lang="ru">
                                 <q>отливать</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>cast (in a mould)</q>
-                            </abv:tr></sense><sense><note type="comment" xml:lang="ru"
-                                >также</note><note type="comment" xml:lang="en">also</note><abv:tr
-                                xml:lang="ru">
+                            </abv:tr></sense><sense xml:id="sense_d5445e97"><note type="comment" xml:lang="ru">также</note><note type="comment" xml:lang="en">also</note><abv:tr xml:lang="ru">
                                 <q>печатать</q>
-                            </abv:tr><note type="comment" xml:lang="ru">также</note><note
-                                type="comment" xml:lang="en">also</note><abv:tr xml:lang="en">
+                            </abv:tr><note type="comment" xml:lang="ru">также</note><note type="comment" xml:lang="en">also</note><abv:tr xml:lang="en">
                                 <q>print</q>
                             </abv:tr></sense></sense>
                 </re>
-                <re>
+                <re xml:id="re_d5445e116">
                     <form type="lemma"><orth>ǵippy waǧd</orth></form>
-                    <sense><sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d5445e121"><sense xml:id="sense_d5445e122"><abv:tr xml:lang="ru">
                                 <q>литой</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>cast</q>
-                            </abv:tr></sense><sense><abv:tr xml:lang="en">
+                            </abv:tr></sense><sense xml:id="sense_d5445e131"><abv:tr xml:lang="en">
                                 <q>molten</q>
                             </abv:tr></sense></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d5445e141">
                         <quote>ūdon dywwæ dær īw ǵīppy waǧd ysty</quote>
                         <abv:tr xml:lang="ru">
                             <q>они оба отлиты по одной форме</q>
@@ -62,7 +64,7 @@
                             <q>they are both cast in the same mold</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5445e156" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>zinnuj muggag dæ geppæj</quote>
                         <abv:tr xml:lang="ru">
@@ -71,10 +73,9 @@
                         <abv:tr xml:lang="en">
                             <q>the breed is visible in your appearance</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Gurdž._Saxi_ræs."
-                                /><biblScope>6</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Gurdž._Saxi_ræs."/><biblScope>6</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5445e178" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>ci æ zund, ci æ wag, ci æ gepp</quote>
                         <abv:tr xml:lang="ru">
@@ -83,34 +84,28 @@
                         <abv:tr xml:lang="en">
                             <q>she has mind, behavior and appearance</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Gurdž._Æduli"
-                            /><biblScope>94</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Gurdž._Æduli"/><biblScope>94</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из <mentioned xml:lang="trk"><lang/>
+                <etym xml:lang="ru">Из <mentioned xml:id="mentioned_d5445e203" xml:lang="trk"><lang/>
                         <w>kep</w>
-                        <gloss><q>форма</q></gloss></mentioned>, <mentioned xml:lang="trk"><w/>
-                        <gloss><q>модель</q></gloss></mentioned>, <mentioned xml:lang="trk"><w/>
-                        <gloss><q>колодка</q></gloss></mentioned>, <mentioned xml:lang="trk"><w/>
-                        <gloss><q>образец</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Радлов"/><biblScope>II 1184</biblScope></bibl>. —
-                            <bibl><ref type="bibl" target="#ref_Lokotsch"
-                        /><biblScope>92</biblScope></bibl>). Отсюда (из кумыкского) и <mentioned
-                        xml:lang="x-vaynakh"><lang/>
+                        <gloss><q>форма</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5445e211" xml:lang="trk"><w/>
+                        <gloss><q>модель</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5445e217" xml:lang="trk"><w/>
+                        <gloss><q>колодка</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5445e223" xml:lang="trk"><w/>
+                        <gloss><q>образец</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Радлов"/><biblScope>II 1184</biblScope></bibl>. —
+                            <bibl><ref type="bibl" target="#ref_Lokotsch"/><biblScope>92</biblScope></bibl>). Отсюда (из кумыкского) и <mentioned xml:id="mentioned_d5445e238" xml:lang="x-vaynakh"><lang/>
                         <w>kep</w>
-                        <gloss><q>болванка</q></gloss></mentioned>, <mentioned xml:lang="x-vaynakh"><w/>
+                        <gloss><q>болванка</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5445e246" xml:lang="x-vaynakh"><w/>
                         <gloss><q>колодка</q></gloss></mentioned>.</etym>
-                <etym xml:lang="en">From <mentioned xml:lang="trk"><lang/>
+                <etym xml:lang="en">From <mentioned xml:id="mentioned_d5445e255" xml:lang="trk"><lang/>
                         <w>kep</w>
-                        <gloss><q>form</q></gloss></mentioned>, <mentioned xml:lang="trk"><w/>
-                        <gloss><q>model</q></gloss></mentioned>, <mentioned xml:lang="trk"><w/>
-                        <gloss><q>boot-tree</q></gloss></mentioned>, <mentioned xml:lang="trk"><w/>
-                        <gloss><q>sample</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Радлов"/><biblScope>II 1184</biblScope></bibl>. —
-                            <bibl><ref type="bibl" target="#ref_Lokotsch"
-                        /><biblScope>92</biblScope></bibl>). <mentioned xml:lang="x-vaynakh"><lang/>
+                        <gloss><q>form</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5445e263" xml:lang="trk"><w/>
+                        <gloss><q>model</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5445e269" xml:lang="trk"><w/>
+                        <gloss><q>boot-tree</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5445e275" xml:lang="trk"><w/>
+                        <gloss><q>sample</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Радлов"/><biblScope>II 1184</biblScope></bibl>. —
+                            <bibl><ref type="bibl" target="#ref_Lokotsch"/><biblScope>92</biblScope></bibl>). <mentioned xml:id="mentioned_d5445e290" xml:lang="x-vaynakh"><lang/>
                         <w>kep</w>
-                        <gloss><q>blank</q></gloss></mentioned>, <mentioned xml:lang="x-vaynakh"><w/>
+                        <gloss><q>blank</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5445e298" xml:lang="x-vaynakh"><w/>
                         <gloss><q>boot-tree</q></gloss></mentioned> is also from it (from
                     Kumyk).</etym>
             </entry>

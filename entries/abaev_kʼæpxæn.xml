@@ -1,33 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">kʼæpxæn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_kʼæpxæn" xml:lang="os">
                 <form type="lemma"><orth>kʼæpxæn</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d435e69"><abv:tr xml:lang="ru">
                         <q>ступень</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>step</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d435e81" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>ficcag kʼæpxæn</quote>
                         <abv:tr xml:lang="ru">
@@ -39,18 +44,18 @@
                         <bibl><ref type="bibl" target="#src_Sam."/><biblScope>127</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из <mentioned xml:lang="trk"><lang/>
+                <etym xml:lang="ru">Из <mentioned xml:id="mentioned_d435e106" xml:lang="trk"><lang/>
                         <w>qapqan</w>
                         <gloss><q>капкан</q></gloss></mentioned>. Для семантики ср. германскую
-                    группу: <mentioned xml:lang="en"><lang/>
-                        <w>trap</w></mentioned>, <mentioned xml:lang="de"><lang/>
+                    группу: <mentioned xml:id="mentioned_d435e114" xml:lang="en"><lang/>
+                        <w>trap</w></mentioned>, <mentioned xml:id="mentioned_d435e119" xml:lang="de"><lang/>
                         <w>Treppe</w></mentioned> и пр. ‘капкан’, ‘люк’, ‘ступень’, ‘лестница’,
                     ‘трап’ (<bibl><biblScope>Kluge</biblScope></bibl>).</etym>
-                <etym xml:lang="en">From <mentioned xml:lang="trk"><lang/>
+                <etym xml:lang="en">From <mentioned xml:id="mentioned_d435e130" xml:lang="trk"><lang/>
                         <w>qapqan</w>
                         <gloss><q>trap</q></gloss></mentioned>. For semantics cf. the Gremanic
-                    group: <mentioned xml:lang="en"><lang/>
-                        <w>trap</w></mentioned>, <mentioned xml:lang="de"><lang/>
+                    group: <mentioned xml:id="mentioned_d435e138" xml:lang="en"><lang/>
+                        <w>trap</w></mentioned>, <mentioned xml:id="mentioned_d435e143" xml:lang="de"><lang/>
                         <w>Treppe</w></mentioned> etc. ‘trap’, ‘hatch’, ‘step’, ‘staircase’,
                     ‘ladder’ (<bibl><biblScope>Kluge</biblScope></bibl>).</etym>
             </entry>

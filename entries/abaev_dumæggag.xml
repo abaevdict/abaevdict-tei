@@ -1,35 +1,40 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">dumæggag</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_dumæggag" xml:lang="os-x-digor">
                 <form type="lemma"><orth>dumæggag</orth></form>
                 <usg><lang/></usg>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d693e72"><abv:tr xml:lang="ru">
                         <q>пола (одежды)</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>flap (of clothes)</q>
                     </abv:tr></sense>
-                <re>
+                <re xml:id="re_d693e82">
                     <form type="lemma"><orth>nimæti dumæggag</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d693e87"><abv:tr xml:lang="ru">
                             <q>пола бурки</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>burka's flap</q>
@@ -38,7 +43,7 @@
                                 50</biblScope></bibl>)</note>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d693e107" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>coqaj dumæggægtæ felawgæ…</quote>
                         <abv:tr xml:lang="ru">
@@ -47,10 +52,9 @@
                         <abv:tr xml:lang="en">
                             <q>with the fluttering flaps of the chokha</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Тайм._Мӕ_зӕрд."
-                                /><biblScope>4</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Тайм._Мӕ_зӕрд."/><biblScope>4</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d693e129" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>biccew … Soslanmæ bacudæj, æ dumæggag in ærivazta</quote>
                         <abv:tr xml:lang="ru">
@@ -63,16 +67,14 @@
                             48</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">От <mentioned xml:lang="os-x-digor"><lang/>
+                <etym xml:lang="ru">От <mentioned xml:id="mentioned_d693e155" xml:lang="os-x-digor"><lang/>
                         <w>dumæg</w>
                         <gloss><q>хвост</q></gloss></mentioned> с помощью суффикса -%iag%i и с
-                    закономерным удвоением %igg%i. См. <ref type="xr" target="#entry_dymæg"
-                    />.</etym>
-                <etym xml:lang="en">From <mentioned xml:lang="os-x-digor"><lang/>
+                    закономерным удвоением %igg%i. См. <ref type="xr" target="#entry_dymæg"/>.</etym>
+                <etym xml:lang="en">From <mentioned xml:id="mentioned_d693e168" xml:lang="os-x-digor"><lang/>
                         <w>dumæg</w>
                         <gloss><q>tail</q></gloss></mentioned> with the suffix -%iag%i and with a
-                    regular reduplication of %igg%i. See <ref type="xr" target="#entry_dymæg"
-                    />.</etym>
+                    regular reduplication of %igg%i. See <ref type="xr" target="#entry_dymæg"/>.</etym>
             </entry>
         </body>
     </text>

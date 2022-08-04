@@ -1,34 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">fæxt</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_fæxt" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>fæxt</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>fæstæ</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d4001e72"><abv:tr xml:lang="ru">
                         <q>ступка</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>mortar</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4001e84">
                         <quote>fæxty cæxx nyxxoj</quote>
                         <abv:tr xml:lang="ru">
                             <q>истолки в ступе соль</q>
@@ -37,7 +42,7 @@
                             <q>pestle salt in a mortar</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4001e99" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>ka si tæbæǧi… ka fæsti</quote>
                         <abv:tr xml:lang="ru">
@@ -46,10 +51,9 @@
                         <abv:tr xml:lang="en">
                             <q>some of them flew on a platter, some of them flew in a mortar</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Gurdž._Wadž."
-                            /><biblScope>28</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Gurdž._Wadž."/><biblScope>28</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4001e121" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>konǧædæ — æ soʒīnæ, fæstæ — je ʽngurstewæn</quote>
                         <abv:tr xml:lang="ru">
@@ -61,58 +65,56 @@
                         <bibl><ref type="bibl" target="#src_ОЭ"/><biblScope>I 108</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Очевидна связь с <mentioned xml:lang="ru"><lang/>
+                <etym xml:lang="ru">Очевидна связь с <mentioned xml:id="mentioned_d4001e146" xml:lang="ru"><lang/>
                         <w>пест</w></mentioned>. Если бы речь шла о первоначальном родстве, то мы
-                    имели бы в осетинском не %ifæxt%i, а %i*fist%i (<mentioned xml:lang="ine"><lang/>
+                    имели бы в осетинском не %ifæxt%i, а %i*fist%i (<mentioned xml:id="mentioned_d4001e151" xml:lang="ine"><lang/>
                         <w>*peis-</w>
-                        <gloss><q>толочь в ступе</q></gloss></mentioned>, <mentioned xml:lang="sa"><lang/>
-                        <w>piṣ-</w></mentioned>, <mentioned xml:lang="ae"><lang/>
+                        <gloss><q>толочь в ступе</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4001e159" xml:lang="sa"><lang/>
+                        <w>piṣ-</w></mentioned>, <mentioned xml:id="mentioned_d4001e164" xml:lang="ae"><lang/>
                         <w>piš-</w>
-                        <gloss><q>толочь</q></gloss></mentioned>, <mentioned xml:lang="ae"><w/>
-                        <gloss><q>молоть</q></gloss></mentioned>, <mentioned xml:lang="fa"><lang/>
+                        <gloss><q>толочь</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4001e172" xml:lang="ae"><w/>
+                        <gloss><q>молоть</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4001e179" xml:lang="fa"><lang/>
                         <w>pist</w>
-                        <gloss><q>мука</q></gloss></mentioned>, ср. <mentioned xml:lang="la"><lang/>
+                        <gloss><q>мука</q></gloss></mentioned>, ср. <mentioned xml:id="mentioned_d4001e187" xml:lang="la"><lang/>
                         <w>pistillum</w>
                         <gloss><q>пест</q></gloss></mentioned>). Формы %ifæxt%i | %ifæstæ%i можно
                     объяснить только как старое (еще в скифскую эпоху) заимствование из славянского.
                     В этом убеждает особенно чередование %iх%i | %is%i; это чередование является
-                    славянским; ср. в русских диалектах <mentioned xml:lang="ru"><lang/>
+                    славянским; ср. в русских диалектах <mentioned xml:id="mentioned_d4001e195" xml:lang="ru"><lang/>
                         <w>пехт-</w><note type="comment" xml:lang="ru"> (%iпехталь%i,
                             %iпехтило%i)</note></mentioned> рядом с %iпест%i. Для соответствия
                     гласных ос. %iæ%i ← слав. %ie%i ср. <ref type="xr" target="#entry_x0ymællæg"/>.
                     Колебание значений ‘ступка’ || ‘пест’ — естественно и наблюдается также в других
-                    языках; ср. <mentioned xml:lang="lt"><lang/>
+                    языках; ср. <mentioned xml:id="mentioned_d4001e204" xml:lang="lt"><lang/>
                         <w>pёstá</w>
-                        <gloss><q>ступка</q></gloss></mentioned> при <mentioned xml:lang="ru"><lang/>
+                        <gloss><q>ступка</q></gloss></mentioned> при <mentioned xml:id="mentioned_d4001e212" xml:lang="ru"><lang/>
                         <w>пест</w></mentioned>. С точки зрения исторических реалий предложенное
                     разъяснение также не вызывает возражений: вполне понятно, что название ступки
                     скотоводы-скифы могли усвоить у земледельцев-славян.</etym>
-                <etym xml:lang="en">The relation to <mentioned xml:lang="ru"><lang/>
+                <etym xml:lang="en">The relation to <mentioned xml:id="mentioned_d4001e221" xml:lang="ru"><lang/>
                         <w>pest</w>
                         <gloss><q>pestle</q></gloss></mentioned> is evident. If the relationship
                     between these words was initial, then in Ossetic there would have been
-                    %i*fist%i, not %ifæxt%i (<mentioned xml:lang="ine"><lang/>
+                    %i*fist%i, not %ifæxt%i (<mentioned xml:id="mentioned_d4001e229" xml:lang="ine"><lang/>
                         <w>*peis-</w>
-                        <gloss><q>pestle in a mortar</q></gloss></mentioned>, <mentioned
-                        xml:lang="sa"><lang/>
-                        <w>piṣ-</w></mentioned>, <mentioned xml:lang="ae"><lang/>
+                        <gloss><q>pestle in a mortar</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4001e237" xml:lang="sa"><lang/>
+                        <w>piṣ-</w></mentioned>, <mentioned xml:id="mentioned_d4001e242" xml:lang="ae"><lang/>
                         <w>piš-</w>
-                        <gloss><q>crush</q></gloss></mentioned>, <mentioned xml:lang="ae"><w/>
-                        <gloss><q>mill</q></gloss></mentioned>, <mentioned xml:lang="fa"><lang/>
+                        <gloss><q>crush</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4001e250" xml:lang="ae"><w/>
+                        <gloss><q>mill</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4001e257" xml:lang="fa"><lang/>
                         <w>pist</w>
-                        <gloss><q>flour</q></gloss></mentioned>, cf. <mentioned xml:lang="la"><lang/>
+                        <gloss><q>flour</q></gloss></mentioned>, cf. <mentioned xml:id="mentioned_d4001e265" xml:lang="la"><lang/>
                         <w>pistillum</w>
                         <gloss><q>pestle</q></gloss></mentioned>). The forms %ifæxt%i | %ifæstæ%i
                     could only be explained as an old (back in the Scythian era) borrowing from
                     Slavic. The alternation of %iх%i | %is%i is especially convincing; this
-                    alternation is Slavic; cf. in Russian dialects <mentioned xml:lang="ru"><lang/>
+                    alternation is Slavic; cf. in Russian dialects <mentioned xml:id="mentioned_d4001e273" xml:lang="ru"><lang/>
                         <w>pext-</w><note type="comment" xml:lang="en"> (%iпехталь%i,
                             %iпехтило%i)</note></mentioned> and %iпест%i. As for the vowel
-                    correspondence (Ossetic %iæ%i ← Slavic %ie%i) cf. <ref type="xr"
-                        target="#entry_x0ymællæg"/>. The fluctuating senses ‘mortar’ || ‘pestle’ is
-                    natural and is also observed in other languages; cf. <mentioned xml:lang="lt"><lang/>
+                    correspondence (Ossetic %iæ%i ← Slavic %ie%i) cf. <ref type="xr" target="#entry_x0ymællæg"/>. The fluctuating senses ‘mortar’ || ‘pestle’ is
+                    natural and is also observed in other languages; cf. <mentioned xml:id="mentioned_d4001e282" xml:lang="lt"><lang/>
                         <w>pёstá</w>
-                        <gloss><q>mortar</q></gloss></mentioned> and <mentioned xml:lang="ru"><lang/>
+                        <gloss><q>mortar</q></gloss></mentioned> and <mentioned xml:id="mentioned_d4001e290" xml:lang="ru"><lang/>
                         <w>pest</w>
                         <gloss><q>pestle</q></gloss></mentioned>. From the point of view of
                     historical realities, the proposed explanation also does not raise any

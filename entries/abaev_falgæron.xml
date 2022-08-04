@@ -1,50 +1,54 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">falgæron</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_falgæron" xml:lang="os">
                 <form type="lemma"><orth>falgæron</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d999e69"><sense xml:id="sense_d999e70"><abv:tr xml:lang="ru">
                             <q>окружность</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>circle</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d999e79"><abv:tr xml:lang="ru">
                             <q>места вокруг</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>places around</q>
                         </abv:tr></sense></sense>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d999e89"><abv:tr xml:lang="ru">
                         <q>края жернова</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>millstone edges</q>
-                    </abv:tr><note type="comment" xml:lang="ru">специально: </note><note
-                        type="comment" xml:lang="en">specific: </note></sense>
-                <re>
+                    </abv:tr><note type="comment" xml:lang="ru">специально: </note><note type="comment" xml:lang="en">specific: </note></sense>
+                <re xml:id="re_d999e103">
                     <note type="comment" xml:lang="ru">ср.</note>
                     <note type="comment" xml:lang="en">cf.</note>
-                    <re>
+                    <re xml:id="re_d999e111">
                         <form type="lemma"><orth>fælgætæg</orth></form>
                     </re>
-                    <re>
+                    <re xml:id="re_d999e117">
                         <form type="lemma"><orth>nyffalgæron kænyn</orth></form>
-                        <sense><abv:tr xml:lang="ru">
+                        <sense xml:id="sense_d999e122"><abv:tr xml:lang="ru">
                                 <q>разгромить</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>smash</q>
@@ -52,7 +56,7 @@
                     </re>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d999e136" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>omi kærdæg æma bælæstæ zajuncæ ærmæst doni falgæræntti</quote>
                         <abv:tr xml:lang="ru">
@@ -64,8 +68,7 @@
                         <bibl><ref type="bibl" target="#src_AK"/><biblScope>I 48</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Сложение <ref type="xr" target="#entry_fal-"/> и <ref type="xr"
-                        target="#entry_kæron"/> ‘край’, ‘конец’.</etym>
+                <etym xml:lang="ru">Сложение <ref type="xr" target="#entry_fal-"/> и <ref type="xr" target="#entry_kæron"/> ‘край’, ‘конец’.</etym>
                 <etym xml:lang="en">A compound word made of <ref type="xr" target="#entry_fal-"/>
                     and <ref type="xr" target="#entry_kæron"/> ‘edge’, ‘end’.</etym>
             </entry>

@@ -1,33 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">boǧdabi</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_boǧdabi" xml:lang="os">
                 <form type="lemma"><orth>boǧdabi</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d651e69"><abv:tr xml:lang="ru">
                         <q>грубиян</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>barker</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d651e81">
                         <quote>boǧdabi læg jæ rīwy æmbærc, cæwy</quote>
                         <abv:tr xml:lang="ru">
                             <q>неотесанный человек прет во всю ширину груди</q>
@@ -39,18 +44,14 @@
                             196</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Контаминация <mentioned xml:lang="fa" extralang="ar"><lang/>
+                <etym xml:lang="ru">Контаминация <mentioned xml:id="mentioned_d651e103" xml:lang="fa" extralang="ar"><lang/>
                         <w>bīadab</w>
-                        <gloss><q>невежа</q></gloss></mentioned>, <mentioned xml:lang="fa"
-                        extralang="ar"><w/>
-                        <gloss><q>грубиян</q></gloss></mentioned> со словом <ref type="xr"
-                        target="#entry_boǧ"/> ‘бык’?</etym>
-                <etym xml:lang="en">The contamination of the <mentioned xml:lang="fa" extralang="ar"><lang/>
+                        <gloss><q>невежа</q></gloss></mentioned>, <mentioned xml:id="mentioned_d651e111" xml:lang="fa" extralang="ar"><w/>
+                        <gloss><q>грубиян</q></gloss></mentioned> со словом <ref type="xr" target="#entry_boǧ"/> ‘бык’?</etym>
+                <etym xml:lang="en">The contamination of the <mentioned xml:id="mentioned_d651e122" xml:lang="fa" extralang="ar"><lang/>
                         <w>bīadab</w>
-                        <gloss><q>crude person</q></gloss></mentioned>, <mentioned xml:lang="fa"
-                        extralang="ar"><w/>
-                        <gloss><q>barker</q></gloss></mentioned> with the word <ref type="xr"
-                        target="#entry_boǧ"/> ‘bull’?</etym>
+                        <gloss><q>crude person</q></gloss></mentioned>, <mentioned xml:id="mentioned_d651e130" xml:lang="fa" extralang="ar"><w/>
+                        <gloss><q>barker</q></gloss></mentioned> with the word <ref type="xr" target="#entry_boǧ"/> ‘bull’?</etym>
             </entry>
         </body>
     </text>

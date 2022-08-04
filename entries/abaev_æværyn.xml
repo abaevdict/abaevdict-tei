@@ -1,57 +1,60 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">æværyn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_æværyn" xml:lang="os">
-                <form xml:lang="os-x-iron" type="lemma"><orth>æværyn</orth><form type="participle"
-                            ><orth>æværd</orth></form></form>
-                <form xml:lang="os-x-digor" type="dialectal"><orth>æværun</orth><form type="variant"
-                            ><orth>iværun</orth></form></form>
-                <sense><abv:tr xml:lang="ru">
+                <form xml:lang="os-x-iron" type="lemma"><orth>æværyn</orth><form type="participle"><orth>æværd</orth></form></form>
+                <form xml:lang="os-x-digor" type="dialectal"><orth>æværun</orth><form type="variant"><orth>iværun</orth></form></form>
+                <sense xml:id="sense_d5630e76"><abv:tr xml:lang="ru">
                         <q>класть</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>to put</q>
                     </abv:tr></sense>
-                <re>
+                <re xml:id="re_d5630e86">
                     <form type="lemma"><orth>æværæn</orth></form>
-                    <sense><sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d5630e91"><sense xml:id="sense_d5630e92"><abv:tr xml:lang="ru">
                                 <q>место, куда кладут</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>a place to put</q>
-                            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                            </abv:tr></sense><sense xml:id="sense_d5630e101"><abv:tr xml:lang="ru">
                                 <q>хранилище</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>storehouse</q>
                             </abv:tr></sense></sense>
                 </re>
-                <re>
+                <re xml:id="re_d5630e112">
                     <note type="comment" xml:lang="ru">.—</note>
                     <note type="comment" xml:lang="en">.—</note>
                     <form type="lemma"><orth>(æǧnæǵytæ) æværyn</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d5630e123"><abv:tr xml:lang="ru">
                             <q>застегивать (пуговицы)</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>to button</q>
                         </abv:tr></sense>
                     <abv:exampleGrp>
-                        <abv:example>
+                        <abv:example xml:id="example_d5630e135">
                             <quote>Xazbi jæ k˳yræty æǧnæǵytæ æværy</quote>
                             <abv:tr xml:lang="ru">
                                 <q>Хазби застегивает пуговицы своего бешмета</q>
@@ -59,13 +62,12 @@
                             <abv:tr xml:lang="en">
                                 <q>Xazbi buttons his beshmet</q>
                             </abv:tr>
-                            <bibl><ref type="bibl" target="#src_Брит."
-                                /><biblScope>106</biblScope></bibl>
+                            <bibl><ref type="bibl" target="#src_Брит."/><biblScope>106</biblScope></bibl>
                         </abv:example>
                     </abv:exampleGrp>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d5630e159">
                         <quote>stæj jyl syǧzærin sarǧ aværʒæn xūry fyrt</quote>
                         <abv:tr xml:lang="ru">
                             <q>потом сын солнца положит на него (коня) золотое седло</q>
@@ -75,7 +77,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>70</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5630e178">
                         <quote>Wærxæǵy læppūtyl næmttæ sæværdta wælarv Kurdalægon: Æxsar æmæ
                             Æxsærtæg</quote>
                         <abv:tr xml:lang="ru">
@@ -85,10 +87,9 @@
                             <q>Celestial Kurdalægon gave names to Wærxæg's sons: Æxsar and
                                 Æxsærtæg</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Нарт._сказ."
-                            /><biblScope>3</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Нарт._сказ."/><biblScope>3</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5630e197">
                         <quote>jæ zænǵy xæcʼæj ærbalyg kodta æmæ jæ cærgæsy ʒyxy aværdta</quote>
                         <abv:tr xml:lang="ru">
                             <q>он отрезал икру ноги и положил ее в рот орлу</q>
@@ -98,7 +99,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Munk."/><biblScope>34</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5630e216">
                         <quote>æværd myn īs avd xæʒary ʒag xor æmæ nwæzt</quote>
                         <abv:tr xml:lang="ru">
                             <q>у меня припасено семь полных домов зерна и напитков</q>
@@ -106,10 +107,9 @@
                         <abv:tr xml:lang="en">
                             <q>I have stored up seven full houses of grain and drinks</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Munk."
-                            /><biblScope>132</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Munk."/><biblScope>132</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5630e235">
                         <quote>æryværdtoj fyngtæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>поставили столы</q>
@@ -117,10 +117,9 @@
                         <abv:tr xml:lang="en">
                             <q>tables were set</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Munk."
-                            /><biblScope>49—50</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Munk."/><biblScope>49—50</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5630e255" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>æ od kæmi ævard æj?</quote>
                         <abv:tr xml:lang="ru">
@@ -129,10 +128,9 @@
                         <abv:tr xml:lang="en">
                             <q>where is his soul stored?</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>11%l7%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>11%l7%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5630e277" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>stur ag artbæl bajværetæ</quote>
                         <abv:tr xml:lang="ru">
@@ -141,10 +139,9 @@
                         <abv:tr xml:lang="en">
                             <q>put the big cattle on fire</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>33%l5%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>33%l5%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5630e299">
                         <quote>jæ ʒyppy ʽrtissæʒ tumany cæværdta</quote>
                         <abv:tr xml:lang="ru">
                             <q>положил в карман шестьдесят туманов</q>
@@ -154,7 +151,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_ОЭ"/><biblScope>I 18</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5630e318">
                         <quote>cyraǧ yssūʒgæjæ jæ nīḱī … æværy syntæǵy byn, fælæ jæ æværy
                             cyraǧdaræny, cæmæj mīdæmæ ærbacæwǵytæ wynoj rūxs</quote>
                         <abv:tr xml:lang="ru">
@@ -169,7 +166,7 @@
                         <bibl><ref type="bibl" target="#src_Лука"/><biblScope>%i8%i
                             16</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5630e337">
                         <quote>ūmæn bīræ sūsæg æværæntæ īs</quote>
                         <abv:tr xml:lang="ru">
                             <q>у нее много потайных мест для хранения</q>
@@ -178,7 +175,7 @@
                             <q>she has many sectret places to store things</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5630e352">
                         <quote>syrx bærzæj æværdta næ tūgæj sætoj</quote>
                         <abv:tr xml:lang="ru">
                             <q>нашей кровью (этот) слюнтяй наращивал (себе) красную шею</q>
@@ -188,7 +185,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Niger"/><biblScope>15</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5630e372" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>nissin-idvardtoncæ</quote>
                         <abv:tr xml:lang="ru">
@@ -197,10 +194,9 @@
                         <abv:tr xml:lang="en">
                             <q>(food) was delievered to them</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Диг._сказ."
-                            /><biblScope>8</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Диг._сказ."/><biblScope>8</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5630e394">
                         <quote>zyldtæn, kæd myn īsḱī kʼæbær aværid</quote>
                         <abv:tr xml:lang="ru">
                             <q>я бродил (в надежде), не даст ли мне кто кусок хлеба</q>
@@ -210,7 +206,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_ОЭ"/><biblScope>I 56</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5630e413" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>otemæj imæ ændurtæ æd fættæ ravardtoncæ</quote>
                         <abv:tr xml:lang="ru">
@@ -219,10 +215,9 @@
                         <abv:tr xml:lang="en">
                             <q>then they gave him bows with arrows</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Диг._сказ."
-                            /><biblScope>8</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Диг._сказ."/><biblScope>8</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5630e435">
                         <quote>sasīr myn aværut</quote>
                         <abv:tr xml:lang="ru">
                             <q>одолжите мне сито</q>
@@ -231,7 +226,7 @@
                             <q>lend me a sieve</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5630e450" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>læqwæn min ravardtaj</quote>
                         <abv:tr xml:lang="ru">
@@ -240,10 +235,9 @@
                         <abv:tr xml:lang="en">
                             <q>you gave ne a son</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>2%l2%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>2%l2%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5630e472" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>feværæ min dæ niwazæn</quote>
                         <abv:tr xml:lang="ru">
@@ -254,7 +248,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>97</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5630e495">
                         <quote>zærdæ myn baværdta</quote>
                         <abv:tr xml:lang="ru">
                             <q>он мне пообещал („вложил сердце“)</q>
@@ -264,108 +258,86 @@
                         </abv:tr>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">К общеиндоевропейской основе *%ibher%i-, <mentioned
-                        xml:lang="x-oldirn"><lang/>
+                <etym xml:lang="ru">К общеиндоевропейской основе *%ibher%i-, <mentioned xml:id="mentioned_d5630e513" xml:lang="x-oldirn"><lang/>
                         <w>bar-</w>
-                        <gloss><q>носить</q></gloss></mentioned> и пр. (<bibl><ref type="bibl"
-                            target="#ref_Walde—Pok."/><biblScope>II 153 сл.</biblScope></bibl>).
+                        <gloss><q>носить</q></gloss></mentioned> и пр. (<bibl><ref type="bibl" target="#ref_Walde—Pok."/><biblScope>II 153 сл.</biblScope></bibl>).
                     Начальное %iæ%i----остаток преверба (%ivi%i-? %iabi%i-?). Ср. в этом отношении
                         <ref type="xr" target="#entry_æjjafyn"/> ‘догонять’. Иранские и
-                    индоевропейские соответствия хорошо известны: <mentioned xml:lang="fa"><lang/>
+                    индоевропейские соответствия хорошо известны: <mentioned xml:id="mentioned_d5630e527" xml:lang="fa"><lang/>
                         <w>āvardan : āvar-</w>
                         <gloss><q>приносить</q></gloss></mentioned>, ‘класть’, ‘выгружать’,
-                        <mentioned xml:lang="fa"><lang/>
+                        <mentioned xml:id="mentioned_d5630e535" xml:lang="fa"><lang/>
                         <w>burdan: bar-</w>
-                        <gloss><q>носить</q></gloss></mentioned>, <mentioned xml:lang="ku"><lang/>
+                        <gloss><q>носить</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5630e544" xml:lang="ku"><lang/>
                         <w>bərən</w>
-                        <gloss><q>отнести</q></gloss></mentioned>, <mentioned xml:lang="ydg"
-                        extralang="mnj"><lang/>
+                        <gloss><q>отнести</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5630e552" xml:lang="ydg" extralang="mnj"><lang/>
                         <w>āvər-</w>
-                        <gloss><q>to bring</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Morgenstierne._IIFL"/><biblScope>II 47</biblScope></bibl>),
-                        <mentioned xml:lang="isk"><lang/>
-                        <w>avarəm</w></mentioned>, <mentioned xml:lang="yah"><lang/>
-                        <w>varī́n</w></mentioned>, <mentioned xml:lang="sgh"><lang/>
+                        <gloss><q>to bring</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Morgenstierne._IIFL"/><biblScope>II 47</biblScope></bibl>),
+                        <mentioned xml:id="mentioned_d5630e564" xml:lang="isk"><lang/>
+                        <w>avarəm</w></mentioned>, <mentioned xml:id="mentioned_d5630e569" xml:lang="yah"><lang/>
+                        <w>varī́n</w></mentioned>, <mentioned xml:id="mentioned_d5630e574" xml:lang="sgh"><lang/>
                         <w>waram</w>
-                        <gloss><q>я приношу</q></gloss></mentioned>, <mentioned xml:lang="yai"><lang/>
+                        <gloss><q>я приношу</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5630e583" xml:lang="yai"><lang/>
                         <w>war-</w>
-                        <gloss><q>нести</q></gloss></mentioned>, <mentioned xml:lang="yai"
-                            ><w>warā́m</w>
-                        <gloss><q>я несу</q></gloss></mentioned>, <mentioned xml:lang="sog"><lang/>
+                        <gloss><q>нести</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5630e591" xml:lang="yai"><w>warā́m</w>
+                        <gloss><q>я несу</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5630e597" xml:lang="sog"><lang/>
                         <w>*var-(βr)</w>
-                        <gloss><q>нести</q></gloss></mentioned>, <mentioned xml:lang="sog"
-                            ><w>*āvar-(ʽʽβr-)</w>
-                        <gloss><q>приносить</q></gloss></mentioned>, <mentioned xml:lang="ae"><lang/>
-                        <w>baraiti</w></mentioned>, <mentioned xml:lang="sa"><lang/>
+                        <gloss><q>нести</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5630e605" xml:lang="sog"><w>*āvar-(ʽʽβr-)</w>
+                        <gloss><q>приносить</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5630e611" xml:lang="ae"><lang/>
+                        <w>baraiti</w></mentioned>, <mentioned xml:id="mentioned_d5630e616" xml:lang="sa"><lang/>
                         <w>bhárati</w>
-                        <gloss><q>он несет</q></gloss></mentioned>, <mentioned xml:lang="xcl"><lang/>
+                        <gloss><q>он несет</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5630e625" xml:lang="xcl"><lang/>
                         <w>berem</w>
-                        <gloss><q>я несу</q></gloss></mentioned>, <mentioned xml:lang="grc"><lang/>
+                        <gloss><q>я несу</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5630e633" xml:lang="grc"><lang/>
                         <w>φέρω</w>
-                        <gloss><q>я несу</q></gloss></mentioned>, <mentioned xml:lang="ru"><lang/>
-                        <w>беру</w></mentioned>, <mentioned xml:lang="ru"><w>брать</w></mentioned>,
-                        <mentioned xml:lang="la"><lang/>
+                        <gloss><q>я несу</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5630e641" xml:lang="ru"><lang/>
+                        <w>беру</w></mentioned>, <mentioned xml:id="mentioned_d5630e646" xml:lang="ru"><w>брать</w></mentioned>,
+                        <mentioned xml:id="mentioned_d5630e649" xml:lang="la"><lang/>
                         <w>fero</w>
-                        <gloss><q>несу</q></gloss></mentioned> и пр. Ср. %ilæværdta%i, <ref
-                        type="xr" target="#entry_lævar"/>. Ср. также <ref type="xr"
-                        target="#entry_aryn"/> ‘находить’, <ref type="xr" target="#entry_baryn"/>
-                    ‘взвешивать’. <bibl><author>Bailey</author><ref type="bibl" target="#ref_BSOAS"
-                            /><biblScope>XX 48</biblScope></bibl> возводит к
-                            *%ia-par%i-.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"
-                            /><biblScope>II 178</biblScope></bibl>; <bibl><biblScope>Gr. 57,
-                            81</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_Hübschmann._Oss."/><biblScope>27</biblScope></bibl>.</etym>
+                        <gloss><q>несу</q></gloss></mentioned> и пр. Ср. %ilæværdta%i, <ref type="xr" target="#entry_lævar"/>. Ср. также <ref type="xr" target="#entry_aryn"/> ‘находить’, <ref type="xr" target="#entry_baryn"/>
+                    ‘взвешивать’. <bibl><author>Bailey</author><ref type="bibl" target="#ref_BSOAS"/><biblScope>XX 48</biblScope></bibl> возводит к
+                            *%ia-par%i-.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 178</biblScope></bibl>; <bibl><biblScope>Gr. 57,
+                            81</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>27</biblScope></bibl>.</etym>
                 <etym xml:lang="en">It traces back to a Common-Indoeuropean stem *%ibher%i-,
-                        <mentioned xml:lang="x-oldirn"><lang/>
+                        <mentioned xml:id="mentioned_d5630e683" xml:lang="x-oldirn"><lang/>
                         <w>bar-</w>
-                        <gloss><q>to bear</q></gloss></mentioned> etc. (<bibl><ref type="bibl"
-                            target="#ref_Walde—Pok."/><biblScope>II 153 сл.</biblScope></bibl>). The
-                    initial %iæ%i is what is left from a preverb (%ivi%i-? %iabi%i-?). Compare <ref
-                        type="xr" target="#entry_æjjafyn"/> ‘to catch up’. Iran and Indoeuropean
-                    correspondences are well known: <mentioned xml:lang="fa"><lang/>
+                        <gloss><q>to bear</q></gloss></mentioned> etc. (<bibl><ref type="bibl" target="#ref_Walde—Pok."/><biblScope>II 153 сл.</biblScope></bibl>). The
+                    initial %iæ%i is what is left from a preverb (%ivi%i-? %iabi%i-?). Compare <ref type="xr" target="#entry_æjjafyn"/> ‘to catch up’. Iran and Indoeuropean
+                    correspondences are well known: <mentioned xml:id="mentioned_d5630e697" xml:lang="fa"><lang/>
                         <w>āvardan : āvar-</w>
                         <gloss><q>to bring</q></gloss></mentioned>, ‘to put’, ‘to unload’,
-                        <mentioned xml:lang="fa"><lang/>
+                        <mentioned xml:id="mentioned_d5630e705" xml:lang="fa"><lang/>
                         <w>burdan: bar-</w>
-                        <gloss><q>to bear</q></gloss></mentioned>, <mentioned xml:lang="ku"><lang/>
+                        <gloss><q>to bear</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5630e714" xml:lang="ku"><lang/>
                         <w>bərən</w>
-                        <gloss><q>to carry</q></gloss></mentioned>, <mentioned xml:lang="ydg"
-                        extralang="mnj"><lang/>
+                        <gloss><q>to carry</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5630e722" xml:lang="ydg" extralang="mnj"><lang/>
                         <w>āvər-</w>
-                        <gloss><q>to bring</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Morgenstierne._IIFL"/><biblScope>II 47</biblScope></bibl>),
-                        <mentioned xml:lang="isk"><lang/>
-                        <w>avarəm</w></mentioned>, <mentioned xml:lang="yah"><lang/>
-                        <w>varī́n</w></mentioned>, <mentioned xml:lang="sgh"><lang/>
+                        <gloss><q>to bring</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Morgenstierne._IIFL"/><biblScope>II 47</biblScope></bibl>),
+                        <mentioned xml:id="mentioned_d5630e734" xml:lang="isk"><lang/>
+                        <w>avarəm</w></mentioned>, <mentioned xml:id="mentioned_d5630e739" xml:lang="yah"><lang/>
+                        <w>varī́n</w></mentioned>, <mentioned xml:id="mentioned_d5630e744" xml:lang="sgh"><lang/>
                         <w>waram</w>
-                        <gloss><q>I bring</q></gloss></mentioned>, <mentioned xml:lang="yai"><lang/>
+                        <gloss><q>I bring</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5630e753" xml:lang="yai"><lang/>
                         <w>war-</w>
-                        <gloss><q>to bear</q></gloss></mentioned>, <mentioned xml:lang="yai"
-                            ><w>warā́m</w>
-                        <gloss><q>I bear</q></gloss></mentioned>, <mentioned xml:lang="sog"><lang/>
+                        <gloss><q>to bear</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5630e761" xml:lang="yai"><w>warā́m</w>
+                        <gloss><q>I bear</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5630e767" xml:lang="sog"><lang/>
                         <w>*var-(βr)</w>
-                        <gloss><q>to bear</q></gloss></mentioned>, <mentioned xml:lang="sog"
-                            ><w>*āvar-(ʽʽβr-)</w>
-                        <gloss><q>to bring</q></gloss></mentioned>, <mentioned xml:lang="ae"><lang/>
-                        <w>baraiti</w></mentioned>, <mentioned xml:lang="sa"><lang/>
+                        <gloss><q>to bear</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5630e775" xml:lang="sog"><w>*āvar-(ʽʽβr-)</w>
+                        <gloss><q>to bring</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5630e781" xml:lang="ae"><lang/>
+                        <w>baraiti</w></mentioned>, <mentioned xml:id="mentioned_d5630e786" xml:lang="sa"><lang/>
                         <w>bhárati</w>
-                        <gloss><q>he bears</q></gloss></mentioned>, <mentioned xml:lang="xcl"><lang/>
+                        <gloss><q>he bears</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5630e795" xml:lang="xcl"><lang/>
                         <w>berem</w>
-                        <gloss><q>I bear</q></gloss></mentioned>, <mentioned xml:lang="grc"><lang/>
+                        <gloss><q>I bear</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5630e803" xml:lang="grc"><lang/>
                         <w>φέρω</w>
-                        <gloss><q>I bear</q></gloss></mentioned>, <mentioned xml:lang="ru"><lang/>
-                        <w>beru</w></mentioned>, <mentioned xml:lang="ru"><w>brat'</w></mentioned>,
-                        <mentioned xml:lang="la"><lang/>
+                        <gloss><q>I bear</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5630e811" xml:lang="ru"><lang/>
+                        <w>beru</w></mentioned>, <mentioned xml:id="mentioned_d5630e816" xml:lang="ru"><w>brat'</w></mentioned>,
+                        <mentioned xml:id="mentioned_d5630e819" xml:lang="la"><lang/>
                         <w>fero</w>
-                        <gloss><q>I bear</q></gloss></mentioned> etc. Compare %ilæværdta%i, <ref
-                        type="xr" target="#entry_lævar"/>. Compare also<ref type="xr"
-                        target="#entry_aryn"/> ‘to find’, <ref type="xr" target="#entry_baryn"/> ‘to
-                    weight’. <bibl><author>Bailey</author><ref type="bibl" target="#ref_BSOAS"
-                            /><biblScope>XX 48</biblScope></bibl> traces it back to
-                            *%ia-par%i-.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"
-                            /><biblScope>II 178</biblScope></bibl>; <bibl><biblScope>Gr. 57,
-                            81</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_Hübschmann._Oss."/><biblScope>27</biblScope></bibl>.</etym>
+                        <gloss><q>I bear</q></gloss></mentioned> etc. Compare %ilæværdta%i, <ref type="xr" target="#entry_lævar"/>. Compare also<ref type="xr" target="#entry_aryn"/> ‘to find’, <ref type="xr" target="#entry_baryn"/> ‘to
+                    weight’. <bibl><author>Bailey</author><ref type="bibl" target="#ref_BSOAS"/><biblScope>XX 48</biblScope></bibl> traces it back to
+                            *%ia-par%i-.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 178</biblScope></bibl>; <bibl><biblScope>Gr. 57,
+                            81</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>27</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

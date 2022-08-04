@@ -1,34 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">fæzdon</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_fæzdon" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>fæzdon</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>fæzdonæ</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d1974e72"><abv:tr xml:lang="ru">
                         <q>вымя</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>udder</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d1974e84">
                         <quote>(sæǧ) ūzgæ-ūzgæ, fæzdon nærstæj racæwy</quote>
                         <abv:tr xml:lang="ru">
                             <q>(коза) идет покачиваясь, с набухшим выменем</q>
@@ -39,7 +44,7 @@
                         <bibl><ref type="bibl" target="#src_ЮОПам."/><biblScope>III
                             164</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d1974e103">
                         <quote>sæwtyl yn læværdtoj būræ næl fystæ, fæzdættyl ta kwīst
                             dalystæ</quote>
                         <abv:tr xml:lang="ru">
@@ -54,61 +59,51 @@
                             114</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Сопоставляется с <mentioned xml:lang="fa"><lang/>
+                <etym xml:lang="ru">Сопоставляется с <mentioned xml:id="mentioned_d1974e125" xml:lang="fa"><lang/>
                         <w>pistān</w>
-                        <gloss><q>женская грудь</q></gloss></mentioned>, <mentioned xml:lang="fa"><w/>
-                        <gloss><q>вымя</q></gloss></mentioned>, <mentioned xml:lang="ydg"><lang/>
-                        <w>pīstän</w></mentioned>, <mentioned xml:lang="sgy"><lang/>
-                        <w>pēšten</w></mentioned>, <mentioned xml:lang="srh"><lang/>
-                        <w>vistān</w></mentioned>, <mentioned xml:lang="wbl"><lang/>
+                        <gloss><q>женская грудь</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1974e133" xml:lang="fa"><w/>
+                        <gloss><q>вымя</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1974e139" xml:lang="ydg"><lang/>
+                        <w>pīstän</w></mentioned>, <mentioned xml:id="mentioned_d1974e144" xml:lang="sgy"><lang/>
+                        <w>pēšten</w></mentioned>, <mentioned xml:id="mentioned_d1974e149" xml:lang="srh"><lang/>
+                        <w>vistān</w></mentioned>, <mentioned xml:id="mentioned_d1974e155" xml:lang="wbl"><lang/>
                         <w>pezïn</w>
-                        <gloss><q>вымя</q></gloss></mentioned>, <mentioned xml:lang="sog"><lang/>
-                        <w>’stn-</w></mentioned>, <mentioned xml:lang="ae"><lang/>
-                        <w>fštāna-</w></mentioned>, <mentioned xml:lang="sa"><lang/>
-                        <w>stāna-</w></mentioned>, <mentioned xml:lang="xcl"><lang/>
+                        <gloss><q>вымя</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1974e163" xml:lang="sog"><lang/>
+                        <w>’stn-</w></mentioned>, <mentioned xml:id="mentioned_d1974e168" xml:lang="ae"><lang/>
+                        <w>fštāna-</w></mentioned>, <mentioned xml:id="mentioned_d1974e173" xml:lang="sa"><lang/>
+                        <w>stāna-</w></mentioned>, <mentioned xml:id="mentioned_d1974e178" xml:lang="xcl"><lang/>
                         <w>st'in</w>
                         <gloss><q>женская грудь</q></gloss></mentioned>. Однако звуковые
                     взаимоотношения иранских форм, равно как этимология слова — не ясны. %sFr.
-                    Müller%s (<bibl><author>Müller</author><ref type="bibl" target="#ref_WZKM"
-                            /><biblScope>VI 184</biblScope></bibl>) возводил к %i*рауаstāna%i (от
-                    %i*payah-%i ‘молоко’), что вызывает возражения (<bibl><ref type="bibl"
-                            target="#ref_Hübschmann._PSt."/><biblScope>41</biblScope></bibl>). Для
+                    Müller%s (<bibl><author>Müller</author><ref type="bibl" target="#ref_WZKM"/><biblScope>VI 184</biblScope></bibl>) возводил к %i*рауаstāna%i (от
+                    %i*payah-%i ‘молоко’), что вызывает возражения (<bibl><ref type="bibl" target="#ref_Hübschmann._PSt."/><biblScope>41</biblScope></bibl>). Для
                     осетинского %ifæzdon%i всего удобнее было бы исходить из %i*payaz-dāna-%i
                     буквально „вместилище (%idāna-%i) молока (%ipayaz-%i)“ или из %i*pat-dāna%i с
-                    последующей закономерной диссимиляцией %itd%i → %izd%i. Ср. <ref type="xr"
-                        target="#entry_fædæg"/> ‘сосок’.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 86</biblScope></bibl>. —
+                    последующей закономерной диссимиляцией %itd%i → %izd%i. Ср. <ref type="xr" target="#entry_fædæg"/> ‘сосок’.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 86</biblScope></bibl>. —
                             <bibl><ref type="bibl" target="#ref_Morgenstierne._IIFL"/><biblScope>II
-                            241</biblScope></bibl>. — <bibl><author>Gershevitch</author><ref
-                            type="bibl" target="#ref_BSOAS"/><biblScope>XIV
+                            241</biblScope></bibl>. — <bibl><author>Gershevitch</author><ref type="bibl" target="#ref_BSOAS"/><biblScope>XIV
                     484</biblScope></bibl>.</etym>
-                <etym xml:lang="en">It is compared with <mentioned xml:lang="fa"><lang/>
+                <etym xml:lang="en">It is compared with <mentioned xml:id="mentioned_d1974e215" xml:lang="fa"><lang/>
                         <w>pistān</w>
-                        <gloss><q>breast</q></gloss></mentioned>, <mentioned xml:lang="fa"><w/>
-                        <gloss><q>udder</q></gloss></mentioned>, <mentioned xml:lang="ydg"><lang/>
-                        <w>pīstän</w></mentioned>, <mentioned xml:lang="sgy"><lang/>
-                        <w>pēšten</w></mentioned>, <mentioned xml:lang="srh"><lang/>
-                        <w>vistān</w></mentioned>, <mentioned xml:lang="wbl"><lang/>
+                        <gloss><q>breast</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1974e223" xml:lang="fa"><w/>
+                        <gloss><q>udder</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1974e229" xml:lang="ydg"><lang/>
+                        <w>pīstän</w></mentioned>, <mentioned xml:id="mentioned_d1974e234" xml:lang="sgy"><lang/>
+                        <w>pēšten</w></mentioned>, <mentioned xml:id="mentioned_d1974e239" xml:lang="srh"><lang/>
+                        <w>vistān</w></mentioned>, <mentioned xml:id="mentioned_d1974e245" xml:lang="wbl"><lang/>
                         <w>pezïn</w>
-                        <gloss><q>udder</q></gloss></mentioned>, <mentioned xml:lang="sog"><lang/>
-                        <w>’stn-</w></mentioned>, <mentioned xml:lang="ae"><lang/>
-                        <w>fštāna-</w></mentioned>, <mentioned xml:lang="sa"><lang/>
-                        <w>stāna-</w></mentioned>, <mentioned xml:lang="xcl"><lang/>
+                        <gloss><q>udder</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1974e253" xml:lang="sog"><lang/>
+                        <w>’stn-</w></mentioned>, <mentioned xml:id="mentioned_d1974e258" xml:lang="ae"><lang/>
+                        <w>fštāna-</w></mentioned>, <mentioned xml:id="mentioned_d1974e263" xml:lang="sa"><lang/>
+                        <w>stāna-</w></mentioned>, <mentioned xml:id="mentioned_d1974e268" xml:lang="xcl"><lang/>
                         <w>st'in</w>
                         <gloss><q>breast</q></gloss></mentioned>. However, the sound relationships
                     of the Iranian forms, as well as the etymology of the word, are not clear. %sFr.
-                    Müller%s (<bibl><author>Müller</author><ref type="bibl" target="#ref_WZKM"
-                            /><biblScope>VI 184</biblScope></bibl>) traced it back to %i*рауаstāna%i
-                    (from %i*payah-%i ‘milk’), what is objectionable (<bibl><ref type="bibl"
-                            target="#ref_Hübschmann._PSt."/><biblScope>41</biblScope></bibl>). For
+                    Müller%s (<bibl><author>Müller</author><ref type="bibl" target="#ref_WZKM"/><biblScope>VI 184</biblScope></bibl>) traced it back to %i*рауаstāna%i
+                    (from %i*payah-%i ‘milk’), what is objectionable (<bibl><ref type="bibl" target="#ref_Hübschmann._PSt."/><biblScope>41</biblScope></bibl>). For
                     Ossetic %ifæzdon%i it would be most convenient to proceed from %i*payaz-dāna-%i
                     literally ‘container (%idāna-%i) for milk (%ipayaz-%i)’ or from %i*pat-dāna%i
-                    with the following regular dissimilation %itd%i → %izd%i. Cf. <ref type="xr"
-                        target="#entry_fædæg"/> ‘сосок’.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 86</biblScope></bibl>. —
+                    with the following regular dissimilation %itd%i → %izd%i. Cf. <ref type="xr" target="#entry_fædæg"/> ‘сосок’.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 86</biblScope></bibl>. —
                             <bibl><ref type="bibl" target="#ref_Morgenstierne._IIFL"/><biblScope>II
-                            241</biblScope></bibl>. — <bibl><author>Gershevitch</author><ref
-                            type="bibl" target="#ref_BSOAS"/><biblScope>XIV
+                            241</biblScope></bibl>. — <bibl><author>Gershevitch</author><ref type="bibl" target="#ref_BSOAS"/><biblScope>XIV
                     484</biblScope></bibl>.</etym>
             </entry>
         </body>

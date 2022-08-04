@@ -1,47 +1,52 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">k0yd</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_k0yd" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>k˳yd</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>kud</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d5312e72"><abv:tr xml:lang="ru">
                         <q>как</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>how</q>
                     </abv:tr></sense>
-                <re>
+                <re xml:id="re_d5312e82">
                     <form xml:lang="os-x-iron" type="lemma"><orth>k˳yddær</orth></form>
                     <form xml:lang="os-x-digor" type="dialectal"><orth>kuddær</orth></form>
-                    <sense><sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d5312e90"><sense xml:id="sense_d5312e91"><abv:tr xml:lang="ru">
                                 <q>как-то</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>somehow</q>
-                            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                            </abv:tr></sense><sense xml:id="sense_d5312e100"><abv:tr xml:lang="ru">
                                 <q>как только</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>as soon as</q>
                             </abv:tr></sense></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d5312e113">
                         <quote>k˳yd ræsugd dæ, k˳y!</quote>
                         <abv:tr xml:lang="ru">
                             <q>как ты прекрасна!</q>
@@ -51,7 +56,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>83</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5312e132">
                         <quote>k˳yddær īw nyqus dæn</quote>
                         <abv:tr xml:lang="ru">
                             <q>я как-то немел</q>
@@ -62,19 +67,16 @@
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>59</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Восходит к иран. %i*kuda%i (%iku%i + %ida%i); ср. <mentioned
-                        xml:lang="ae"><lang/>
+                <etym xml:lang="ru">Восходит к иран. %i*kuda%i (%iku%i + %ida%i); ср. <mentioned xml:id="mentioned_d5312e155" xml:lang="ae"><lang/>
                         <w>kuda</w>
-                        <gloss><q>где</q></gloss></mentioned>, <mentioned xml:lang="ae"><w>kuua</w>
+                        <gloss><q>где</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5312e163" xml:lang="ae"><w>kuua</w>
                         <gloss><q>как</q></gloss></mentioned>. Связь и смысловая близость между
                     %ik˳yd%i и <ref type="xr" target="#entry_k0y"/> чувствуется в приведенной выше
-                    фразе (<bibl><biblScope xml:lang="ru">%sКоста%s 83</biblScope></bibl>). — Ср. <ref type="xr"
-                        target="#entry_k0y"/> | %iku%i.</etym>
+                    фразе (<bibl><biblScope xml:lang="ru">%sКоста%s 83</biblScope></bibl>). — Ср. <ref type="xr" target="#entry_k0y"/> | %iku%i.</etym>
                 <etym xml:lang="en">It traces back to Iranian %i*kuda%i (%iku%i + %ida%i); cf.
-                        <mentioned xml:lang="ae"><lang/>
+                        <mentioned xml:id="mentioned_d5312e180" xml:lang="ae"><lang/>
                         <w>kuda</w>
-                        <gloss><q>where</q></gloss></mentioned>, <mentioned xml:lang="ae"
-                            ><w>kuua</w>
+                        <gloss><q>where</q></gloss></mentioned>, <mentioned xml:id="mentioned_d5312e188" xml:lang="ae"><w>kuua</w>
                         <gloss><q>how</q></gloss></mentioned>. The relation and the semantic
                     closeness between %ik˳yd%i and <ref type="xr" target="#entry_k0y"/> is seen in
                     the above mentioned чувствуется sentence (<bibl><biblScope xml:lang="en">%sKosta%s

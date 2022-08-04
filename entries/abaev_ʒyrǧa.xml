@@ -1,49 +1,52 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ʒyrǧa</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ʒyrǧa" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>ʒyrǧa</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>ʒirǧæg</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d1979e72"><abv:tr xml:lang="ru">
                         <q>часть плуга (резец или нож)</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>part of the plough (chisel or share)</q>
                     </abv:tr></sense>
-                <re xml:lang="os-x-digor">
+                <re xml:id="re_d1979e82" xml:lang="os-x-digor">
                     <lang/>
                     <gramGrp xml:lang="ru"><number>мн. ч.</number></gramGrp>
                     <gramGrp xml:lang="en"><number>pl.</number></gramGrp>
                     <form type="lemma"><orth>ʒirǧægutæ</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d1979e95"><abv:tr xml:lang="ru">
                             <q>плужные резцы</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>plough chisels</q>
                         </abv:tr></sense>
-                    <note type="comment" xml:lang="ru"><bibl><ref type="bibl" target="#src_SD"
-                                /><biblScope>245%l3%l</biblScope></bibl></note>
-                    <note type="comment" xml:lang="en"><bibl><ref type="bibl" target="#src_SD"
-                                /><biblScope>245%l3%l</biblScope></bibl></note>
+                    <note type="comment" xml:lang="ru"><bibl><ref type="bibl" target="#src_SD"/><biblScope>245%l3%l</biblScope></bibl></note>
+                    <note type="comment" xml:lang="en"><bibl><ref type="bibl" target="#src_SD"/><biblScope>245%l3%l</biblScope></bibl></note>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d1979e119">
                         <quote>æz tærsyn… k˳yr kʼambecy ʒyrǧajæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>я боюсь плужного резца, (влекомого) бугаем-буйволом</q>
@@ -55,7 +58,7 @@
                         <bibl><ref type="bibl" target="#src_ЮОПам."/><biblScope>III
                             191</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d1979e138" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>fæd-fædi cuppærdæs traktortæ cæwuj, avd dæsi sæ ʒirǧæg awæʒtæ
                             kaluj</quote>
@@ -69,7 +72,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Sam."/><biblScope>137</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d1979e160" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>sædæ æfsæni ma sædæ ʒirǧægi æ duwwæ usqebæl ærawiǧta</quote>
                         <abv:tr xml:lang="ru">
@@ -85,16 +88,14 @@
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Как ни соблазнительно было бы и по звучанию и по значению
                     связать это слово с <ref type="xr" target="#entry_cyrǧ"/> | %icirǧ%i ‘острый’,
-                    приходится взять на учет факты других языков: <mentioned xml:lang="ka"><lang/>
+                    приходится взять на учет факты других языков: <mentioned xml:id="mentioned_d1979e188" xml:lang="ka"><lang/>
                         <w>ǯilǧa</w>
-                        <gloss><q>разновидность сохи</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Саба"/></bibl>: „соха без крыльев, рассчитанная на запряжку
+                        <gloss><q>разновидность сохи</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Саба"/></bibl>: „соха без крыльев, рассчитанная на запряжку
                     нескольких пар быков“). Существует также форма %iaǯilǧa%i (сообщение %sВ. В.
                     Бардавелидзе%s). Это последнее слово засвидетельствовано, с другой стороны, в
-                    значении ‘жеребец’ (<mentioned xml:lang="ka"><lang/>
-                        <w>aǯilǧa</w></mentioned>, <mentioned xml:lang="sva"><lang/>
-                        <w>äǯəlǧ</w></mentioned>), что приводит нас к <mentioned xml:lang="mn"
-                        extralang="trk"><lang/>
+                    значении ‘жеребец’ (<mentioned xml:id="mentioned_d1979e199" xml:lang="ka"><lang/>
+                        <w>aǯilǧa</w></mentioned>, <mentioned xml:id="mentioned_d1979e204" xml:lang="sva"><lang/>
+                        <w>äǯəlǧ</w></mentioned>), что приводит нас к <mentioned xml:id="mentioned_d1979e210" xml:lang="mn" extralang="trk"><lang/>
                         <w>aǯirǧa, ačirǧa</w>
                         <gloss><q>жеребец</q></gloss></mentioned>. Перенос значения (‘жеребец’ →
                     ‘соха’) произошел, насколько можно судить по доступным материалам, не на
@@ -105,16 +106,14 @@
                 <etym xml:lang="en">However tempting it might be to compare this word both in terms
                     of its meaning and form to <ref type="xr" target="#entry_cyrǧ"/> | %icirǧ%i
                     ‘sharp’, we have to take into account the following facts from other languages:
-                        <mentioned xml:lang="ka"><lang/>
+                        <mentioned xml:id="mentioned_d1979e223" xml:lang="ka"><lang/>
                         <w>ǯilǧa</w>
-                        <gloss><q>type of plough</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Саба"/></bibl>: “a wooden plough without a spade, intended
+                        <gloss><q>type of plough</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Саба"/></bibl>: “a wooden plough without a spade, intended
                     for several pairs of oxen”). There is also the form %iaǯilǧa%i (V. V.
                     %sBardavelidze%s, personal communication). This last word is, on the other hand,
-                    attested in the sense ‘stallion’ (<mentioned xml:lang="ka"><lang/>
-                        <w>aǯilǧa</w></mentioned>, <mentioned xml:lang="sva"><lang/>
-                        <w>äǯəlǧ</w></mentioned>), which leads us to <mentioned xml:lang="mn"
-                        extralang="trk"><lang/>
+                    attested in the sense ‘stallion’ (<mentioned xml:id="mentioned_d1979e234" xml:lang="ka"><lang/>
+                        <w>aǯilǧa</w></mentioned>, <mentioned xml:id="mentioned_d1979e239" xml:lang="sva"><lang/>
+                        <w>äǯəlǧ</w></mentioned>), which leads us to <mentioned xml:id="mentioned_d1979e245" xml:lang="mn" extralang="trk"><lang/>
                         <w>aǯirǧa, ačirǧa</w>
                         <gloss><q>stallion</q></gloss></mentioned>. The transfer of meaning
                     (‘stallion → ‘plow’) has occured, as far as we can suggest based on available

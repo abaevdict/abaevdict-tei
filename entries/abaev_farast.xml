@@ -1,41 +1,46 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">farast</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_farast" xml:lang="os">
                 <form type="lemma"><orth>farast</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d2778e69"><abv:tr xml:lang="ru">
                         <q>девять</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>nine</q>
                     </abv:tr></sense>
-                <re>
+                <re xml:id="re_d2778e79">
                     <form type="lemma"><orth>faræstæm</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d2778e84"><abv:tr xml:lang="ru">
                             <q>девятый</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>ninth</q>
                         </abv:tr></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d2778e97">
                         <quote>kūrync īw mællæg sag farast baræǵy</quote>
                         <abv:tr xml:lang="ru">
                             <q>просят (дать им) одного тощего оленя девять всадников</q>
@@ -47,7 +52,7 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">В отличие от остальных числительных, не восходит к
-                    соответствующему общеиндоевропейскому названию (<mentioned xml:lang="x-oldirn"><lang/>
+                    соответствующему общеиндоевропейскому названию (<mentioned xml:id="mentioned_d2778e119" xml:lang="x-oldirn"><lang/>
                         <w>nava-</w></mentioned>), а представляет новое, на осетинской почве
                     возникшее образование из %ifar-ast%i (%ipāra-ašta%i) буквально „за восемью“,
                     „сверх восьми“. Такой способ обозначения ‘девяти’ указывает на то, что восьмерка
@@ -55,57 +60,41 @@
                     выражения, как %iæstæmæj æstmæ%i (в эпосе) „восемь дней“ (как круглый счет
                     времени) и др. Древность подобных представлений подтверждается тем, что
                     индоевропейское название ‘девяти’ происходит от прилагательного %iновый%i (ср.
-                        <mentioned xml:lang="x-oldirn"><lang/>
+                        <mentioned xml:id="mentioned_d2778e124" xml:lang="x-oldirn"><lang/>
                         <w>nava-</w>
-                        <gloss><q>новый</q></gloss></mentioned> и <mentioned xml:lang="x-oldirn"><lang/>
+                        <gloss><q>новый</q></gloss></mentioned> и <mentioned xml:id="mentioned_d2778e132" xml:lang="x-oldirn"><lang/>
                         <w>nava-</w>
                         <gloss><q>девять</q></gloss></mentioned>) и означает „новое (после восьми)
                     число“ (см.: <bibl><biblScope xml:lang="ru">Curtius. Grundzüge dergriech. Etym.
-                            Изд. 5-е, Leipzig, 1879, стр. 310 сл.</biblScope></bibl> — <bibl><biblScope xml:lang="ru"
-                            >Нirzеl. Uber Rundzahlen</biblScope></bibl>. — <bibl><biblScope xml:lang="ru">А.
-                            Каеgi. Die Neunzahl bei dan Ostiraniern</biblScope></bibl>. —<bibl><ref type="bibl"
-                            target="#ref_Morgenstierne._EVP"/><biblScope xml:lang="ru">51
+                            Изд. 5-е, Leipzig, 1879, стр. 310 сл.</biblScope></bibl> — <bibl><biblScope xml:lang="ru">Нirzеl. Uber Rundzahlen</biblScope></bibl>. — <bibl><biblScope xml:lang="ru">А.
+                            Каеgi. Die Neunzahl bei dan Ostiraniern</biblScope></bibl>. —<bibl><ref type="bibl" target="#ref_Morgenstierne._EVP"/><biblScope xml:lang="ru">51
                             сл.</biblScope></bibl>).
                     Общеиндоевропейское название ‘девяти’ должно было звучать в осетинском
                     %i*næw-%i, что мы действительно и находим в д. %inæw-dæs%i (и. %inū-dæs%i)
-                    ‘девятнадцать’ [см. <ref type="xr" target="#entry_næwdæs"/>]. — См. <ref
-                        type="xr" target="#entry_fal-"/> и <ref type="xr" target="#entry_ast"
-                            />.%n<bibl><ref type="bibl" target="#ref_Шегрен"
-                            /><biblScope>155</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 159, III
-                        156</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>34, 48</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_ОЯФ_I"/><biblScope>158</biblScope></bibl>.</etym>
+                    ‘девятнадцать’ [см. <ref type="xr" target="#entry_næwdæs"/>]. — См. <ref type="xr" target="#entry_fal-"/> и <ref type="xr" target="#entry_ast"/>.%n<bibl><ref type="bibl" target="#ref_Шегрен"/><biblScope>155</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 159, III
+                        156</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>34, 48</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>158</biblScope></bibl>.</etym>
                 <etym xml:lang="en">Unlike other numerals, it does not go back to the corresponding
-                    general Indo-European name (<mentioned xml:lang="x-oldirn"><lang/>
+                    general Indo-European name (<mentioned xml:id="mentioned_d2778e185" xml:lang="x-oldirn"><lang/>
                         <w>nava-</w></mentioned>). It represents a new formation that has arisen in
                     Ossetic from %ifar-ast%i (%ipāra-ašta%i) literally ‘after eight’, ‘over eight’.
                     This way of naming ‘nine’ indicates that eight was considered a round number,
                     like ten. This is supported by expressions such as %iæstæmæj æstmæ%i (in an
                     epos) ‘eight days’ (as a round way of time tracking) etc. The antiquity of such
                     ideas is confirmed by the fact that the Indo-European word for ‘nine’ comes from
-                    the adjective %inew%i (cf. <mentioned xml:lang="x-oldirn"><lang/>
+                    the adjective %inew%i (cf. <mentioned xml:id="mentioned_d2778e190" xml:lang="x-oldirn"><lang/>
                         <w>nava-</w>
-                        <gloss><q>new</q></gloss></mentioned> and <mentioned xml:lang="x-oldirn"><lang/>
+                        <gloss><q>new</q></gloss></mentioned> and <mentioned xml:id="mentioned_d2778e198" xml:lang="x-oldirn"><lang/>
                         <w>nava-</w>
                         <gloss><q>ninve</q></gloss></mentioned>) and it means ‘new (after eight)
-                    number’ (see: <bibl><biblScope
-                            xml:lang="en">Curtius. Grundzüge dergriech. Etym. 5th edition, Leipzig,
+                    number’ (see: <bibl><biblScope xml:lang="en">Curtius. Grundzüge dergriech. Etym. 5th edition, Leipzig,
                             1879, p. 310 ff.</biblScope></bibl> — <bibl><biblScope xml:lang="en">Нirzеl.
-                            Uber Rundzahlen</biblScope></bibl>. — <bibl><biblScope
-                            xml:lang="en">А. Каеgi. Die Neunzahl bei dan
-                        Ostiraniern</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_Morgenstierne._EVP"/><biblScope xml:lang="en">51 ff.</biblScope></bibl>). The
+                            Uber Rundzahlen</biblScope></bibl>. — <bibl><biblScope xml:lang="en">А. Каеgi. Die Neunzahl bei dan
+                        Ostiraniern</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Morgenstierne._EVP"/><biblScope xml:lang="en">51 ff.</biblScope></bibl>). The
                     general noun for ‘nine’ was supposed to sound as %i*næw-%i in Ossetic, which
-                    indeed is found in Digor %inæw-dæs%i (Iron %inū-dæs%i) ‘nineteen’ [see <ref
-                        type="xr" target="#entry_næwdæs"/>]. — See <ref type="xr"
-                        target="#entry_fal-"/> and <ref type="xr" target="#entry_ast"/>.%n<bibl><ref
-                            type="bibl" target="#ref_Шегрен"/><biblScope>155</biblScope></bibl>. —
+                    indeed is found in Digor %inæw-dæs%i (Iron %inū-dæs%i) ‘nineteen’ [see <ref type="xr" target="#entry_næwdæs"/>]. — See <ref type="xr" target="#entry_fal-"/> and <ref type="xr" target="#entry_ast"/>.%n<bibl><ref type="bibl" target="#ref_Шегрен"/><biblScope>155</biblScope></bibl>. —
                             <bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 159,
-                            III 156</biblScope></bibl>; <bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._Gr."/><biblScope>34, 48</biblScope></bibl>. —
-                            <bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                        /><biblScope>158</biblScope></bibl>.</etym>
+                            III 156</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>34, 48</biblScope></bibl>. —
+                            <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>158</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

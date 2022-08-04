@@ -1,34 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">gūton</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_gūton" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>gūton</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>goton</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d5756e72"><abv:tr xml:lang="ru">
                         <q>плуг</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>plough</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d5756e84">
                         <quote>mæ gūton, mæ galtæ mænæn dær cættæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>мой плуг, мои быки и у меня наготове</q>
@@ -38,7 +43,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>14</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5756e103">
                         <quote>zæxxæj kæm wa fælmændær, ūm nyssaʒon mæ gūton</quote>
                         <abv:tr xml:lang="ru">
                             <q>где земля помягче, там я всажу свой плуг</q>
@@ -46,10 +51,9 @@
                         <abv:tr xml:lang="en">
                             <q>where the earth is softer, there I will plunge my plow</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Сека._Ир._фийау"
-                                /><biblScope>25</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Сека._Ир._фийау"/><biblScope>25</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d5756e122" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>wæ gotænttæ ræsteftong</quote>
                         <abv:tr xml:lang="ru">
@@ -61,7 +65,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
                             142</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5756e144">
                         <quote>wædta sæ (wæjguti) Asægo gotoni galti bæsti fæjjevtigta ma si xumæ
                             kænun bæjdædta</quote>
                         <abv:tr xml:lang="ru">
@@ -72,21 +76,19 @@
                             <q>then Asago harnessed them (the giants) to a plough instead of bulls
                                 and began to plough with them</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>7%l14–15%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>7%l14–15%l</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Общекавказское слово неизвестного происхождения: <mentioned
-                        xml:lang="xcl"><lang/>
-                        <w>gutan</w></mentioned>, <mentioned xml:lang="ku"><lang/>
-                        <w>kotan</w></mentioned>, <mentioned xml:lang="aze"><lang/>
-                        <w>kotan</w></mentioned>, <mentioned xml:lang="ka"><lang/>
-                        <w>gutani</w></mentioned>, <mentioned xml:lang="ab"><lang/>
-                        <w>a-k’˳atán</w></mentioned>, <mentioned xml:lang="av"><lang/>
-                        <w>kutan</w></mentioned>, <mentioned xml:lang="udi"><lang/>
-                        <w>kotan</w></mentioned>, <mentioned xml:lang="dar"><lang/>
-                        <w>gutan</w></mentioned>, <mentioned xml:lang="x-vaynakh"><lang/>
-                        <w>gwota</w></mentioned>, <mentioned xml:lang="krc-x-balkar"><lang/>
+                <etym xml:lang="ru">Общекавказское слово неизвестного происхождения: <mentioned xml:id="mentioned_d5756e166" xml:lang="xcl"><lang/>
+                        <w>gutan</w></mentioned>, <mentioned xml:id="mentioned_d5756e171" xml:lang="ku"><lang/>
+                        <w>kotan</w></mentioned>, <mentioned xml:id="mentioned_d5756e176" xml:lang="aze"><lang/>
+                        <w>kotan</w></mentioned>, <mentioned xml:id="mentioned_d5756e181" xml:lang="ka"><lang/>
+                        <w>gutani</w></mentioned>, <mentioned xml:id="mentioned_d5756e186" xml:lang="ab"><lang/>
+                        <w>a-k’˳atán</w></mentioned>, <mentioned xml:id="mentioned_d5756e192" xml:lang="av"><lang/>
+                        <w>kutan</w></mentioned>, <mentioned xml:id="mentioned_d5756e197" xml:lang="udi"><lang/>
+                        <w>kotan</w></mentioned>, <mentioned xml:id="mentioned_d5756e202" xml:lang="dar"><lang/>
+                        <w>gutan</w></mentioned>, <mentioned xml:id="mentioned_d5756e207" xml:lang="x-vaynakh"><lang/>
+                        <w>gwota</w></mentioned>, <mentioned xml:id="mentioned_d5756e212" xml:lang="krc-x-balkar"><lang/>
                         <w>gotan</w></mentioned>. Ни в одном из перечисленных языков слово не имеет
                     этимологических корней. К тому же почти во всех этих языках слово обозначает
                     особое, более усовершенствованное или тяжелое орудие пахоты, в отличие от
@@ -95,26 +97,21 @@
                     на происхождение данного вида орудия. Может быть, %i*kut-%i — из %i*skut-%i
                     ‘скиф’? В этом случае название %i*skutan%i, %i*kutan%i „скифский (плуг)“ можно
                     было бы связать с известной легендой скифов о получении ими плуга с
-                            неба.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"
-                            /><biblScope>II 67, III 15</biblScope></bibl>; <bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._Gr."/><biblScope>10</biblScope></bibl>. —
-                            <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."
-                            /><biblScope>122</biblScope></bibl>. —
+                            неба.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 67, III 15</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>10</biblScope></bibl>. —
+                            <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>122</biblScope></bibl>. —
                             <bibl><author>Генко</author><biblScope>О названиях плуга в
-                            северокавказских языках</biblScope></bibl>. <bibl><ref type="bibl"
-                            target="#ref_ДАН"/><biblScope xml:lang="ru">1903, стр. 133
+                            северокавказских языках</biblScope></bibl>. <bibl><ref type="bibl" target="#ref_ДАН"/><biblScope xml:lang="ru">1903, стр. 133
                             сл</biblScope></bibl>.</etym>
-                <etym xml:lang="en">It is a common Caucasian word of unknown origin: <mentioned
-                        xml:lang="xcl"><lang/>
-                        <w>gutan</w></mentioned>, <mentioned xml:lang="ku"><lang/>
-                        <w>kotan</w></mentioned>, <mentioned xml:lang="aze"><lang/>
-                        <w>kotan</w></mentioned>, <mentioned xml:lang="ka"><lang/>
-                        <w>gutani</w></mentioned>, <mentioned xml:lang="ab"><lang/>
-                        <w>a-k’˳atán</w></mentioned>, <mentioned xml:lang="av"><lang/>
-                        <w>kutan</w></mentioned>, <mentioned xml:lang="udi"><lang/>
-                        <w>kotan</w></mentioned>, <mentioned xml:lang="dar"><lang/>
-                        <w>gutan</w></mentioned>, <mentioned xml:lang="x-vaynakh"><lang/>
-                        <w>gwota</w></mentioned>, <mentioned xml:lang="krc-x-balkar"><lang/>
+                <etym xml:lang="en">It is a common Caucasian word of unknown origin: <mentioned xml:id="mentioned_d5756e243" xml:lang="xcl"><lang/>
+                        <w>gutan</w></mentioned>, <mentioned xml:id="mentioned_d5756e248" xml:lang="ku"><lang/>
+                        <w>kotan</w></mentioned>, <mentioned xml:id="mentioned_d5756e253" xml:lang="aze"><lang/>
+                        <w>kotan</w></mentioned>, <mentioned xml:id="mentioned_d5756e258" xml:lang="ka"><lang/>
+                        <w>gutani</w></mentioned>, <mentioned xml:id="mentioned_d5756e263" xml:lang="ab"><lang/>
+                        <w>a-k’˳atán</w></mentioned>, <mentioned xml:id="mentioned_d5756e269" xml:lang="av"><lang/>
+                        <w>kutan</w></mentioned>, <mentioned xml:id="mentioned_d5756e274" xml:lang="udi"><lang/>
+                        <w>kotan</w></mentioned>, <mentioned xml:id="mentioned_d5756e279" xml:lang="dar"><lang/>
+                        <w>gutan</w></mentioned>, <mentioned xml:id="mentioned_d5756e284" xml:lang="x-vaynakh"><lang/>
+                        <w>gwota</w></mentioned>, <mentioned xml:id="mentioned_d5756e289" xml:lang="krc-x-balkar"><lang/>
                         <w>gotan</w></mentioned>. The word does not have etymological roots in none
                     of the languages listed above. In addition, in almost all of these languages,
                     the word denotes a special, more advanced or heavy ploughing tool, in contrast
@@ -123,14 +120,10 @@
                     name indicating the origin of this type of tool. Maybe, %i*kut-%i is from
                     %i*skut-%i ‘Scythian’? In this case the name %i*skutan%i, %i*kutan%i “Scythian
                     (plough)” could be associated with the famous legend of the Scythians about
-                    their receiving of a plough from the sky.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 67, III
-                        15</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>10</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_Hübschmann._Oss."/><biblScope>122</biblScope></bibl>. —
+                    their receiving of a plough from the sky.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 67, III
+                        15</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>10</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>122</biblScope></bibl>. —
                             <bibl><author>Genko.</author><biblScope>On the names of the plough in
-                            the North Caucasian languages</biblScope></bibl>. <bibl><ref type="bibl"
-                            target="#ref_ДАН"/><biblScope xml:lang="en">1903, p. 133
+                            the North Caucasian languages</biblScope></bibl>. <bibl><ref type="bibl" target="#ref_ДАН"/><biblScope xml:lang="en">1903, p. 133
                         ff</biblScope></bibl>.</etym>
                 <note type="internal">перевод работы про плуг?..</note>
             </entry>

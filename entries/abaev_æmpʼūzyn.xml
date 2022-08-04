@@ -1,53 +1,56 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">æmpʼūzyn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_æmpʼūzyn" xml:lang="os">
-                <form xml:lang="os-x-iron" type="lemma"><orth>æmpʼūzyn</orth><form type="participle"
-                            ><orth>æmpʼyzt</orth></form></form>
-                <form xml:lang="os-x-digor" type="dialectal"><orth>æmpʼozun</orth><form
-                        type="participle"><orth>æmpʼuzt</orth></form></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <form xml:lang="os-x-iron" type="lemma"><orth>æmpʼūzyn</orth><form type="participle"><orth>æmpʼyzt</orth></form></form>
+                <form xml:lang="os-x-digor" type="dialectal"><orth>æmpʼozun</orth><form type="participle"><orth>æmpʼuzt</orth></form></form>
+                <sense xml:id="sense_d675e76"><sense xml:id="sense_d675e77"><abv:tr xml:lang="ru">
                             <q>чинить</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>repair</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d675e86"><abv:tr xml:lang="ru">
                             <q>латать</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>mend</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d675e95"><abv:tr xml:lang="ru">
                             <q>штопать</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>darn</q>
                         </abv:tr></sense></sense>
-                <re>
+                <re xml:id="re_d675e105">
                     <form xml:lang="os-x-iron" type="lemma"><orth>æmpʼūzæn</orth></form>
                     <form xml:lang="os-x-digor" type="dialectal"><orth>æmpʼozæn</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d675e113"><abv:tr xml:lang="ru">
                             <q>заплата</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>patch</q>
                         </abv:tr></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d675e126">
                         <quote>Totyraʒ jæxī cættæ kæny dard balcmæ, æmpʼūzy jæ xædættæ,
                             ændærtæ</quote>
                         <abv:tr xml:lang="ru">
@@ -57,10 +60,9 @@
                         <abv:tr xml:lang="en">
                             <q>Totrads prepares for a long journey, repairs his shirts and more</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Arsen"
-                            /><biblScope>233</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Arsen"/><biblScope>233</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d675e145">
                         <quote>sæ mūsong ū kæddag, æmpʼyzt</quote>
                         <abv:tr xml:lang="ru">
                             <q>их шатер — из холста, в заплатах</q>
@@ -70,7 +72,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Bar."/><biblScope>98</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d675e164">
                         <quote>fydgomæj fydæmpʼyzt x˳yzdær</quote>
                         <abv:tr xml:lang="ru">
                             <q>лучше быть в плохо починенной (одежде), чем совсем голым</q>
@@ -82,7 +84,7 @@
                         <bibl><ref type="bibl" target="#src_ЮОПам."/><biblScope>III
                             204</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d675e183">
                         <quote>de ʽmpʼozujnægtæ ærdaræ, æz ba din sæ barævʒitæ kænon</quote>
                         <abv:tr xml:lang="ru">
                             <q>покажи, что у тебя нуждается в починке, я тебе приведу в порядок</q>
@@ -93,36 +95,25 @@
                         <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>122</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Перебойно из %i*æm-dūzyn%i, %i*æm-tʼūzyn%i, как <ref type="xr"
-                        target="#entry_æmpʼūxyn"/> из %iæm-tūxyn%i, <ref type="xr"
-                        target="#entry_æmpūlyn"/> из %i*æm-tūlyn%i (%it’%i → %ipʼ%i под влиянием
+                <etym xml:lang="ru">Перебойно из %i*æm-dūzyn%i, %i*æm-tʼūzyn%i, как <ref type="xr" target="#entry_æmpʼūxyn"/> из %iæm-tūxyn%i, <ref type="xr" target="#entry_æmpūlyn"/> из %i*æm-tūlyn%i (%it’%i → %ipʼ%i под влиянием
                     %im%i). Неперебойная форма этого глагола нам не встречалась, но она
                     засвидетельствована %sВс. Миллером%s: <ref type="xr" target="#entry_ændūzyn"/> |
-                    %iændozun %i‘закреплять’ (<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"
-                            /><biblScope>II 174</biblScope></bibl> ). Ср. также <ref type="xr"
-                        target="#entry_ævdūzyn"/>, <ref type="xr" target="#entry_rætʼūzyn"/>. Все
+                    %iændozun %i‘закреплять’ (<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 174</biblScope></bibl> ). Ср. также <ref type="xr" target="#entry_ævdūzyn"/>, <ref type="xr" target="#entry_rætʼūzyn"/>. Все
                     это — сращения различных превербов (<ref type="xr" target="#entry_æm-"/>,
-                        <m>ræ-</m>) с одной и той же основой %idūz-%i | %idoz-%i; ср. <mentioned
-                        xml:lang="fa"><lang/>
+                        <m>ræ-</m>) с одной и той же основой %idūz-%i | %idoz-%i; ср. <mentioned xml:id="mentioned_d675e225" xml:lang="fa"><lang/>
                         <w>dōxtan: dōz</w>
-                        <gloss><q>пришивать</q></gloss></mentioned>, <mentioned xml:lang="fa"><w/>
-                        <gloss><q>прикреплять</q></gloss></mentioned>. Ср. еще <ref type="xr"
-                        target="#entry_ræmpʼūzyn"/> ‘протыкать’.</etym>
+                        <gloss><q>пришивать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d675e233" xml:lang="fa"><w/>
+                        <gloss><q>прикреплять</q></gloss></mentioned>. Ср. еще <ref type="xr" target="#entry_ræmpʼūzyn"/> ‘протыкать’.</etym>
                 <etym xml:lang="en">Alternating version from %i*æm-dūzyn%i, %i*æm-tʼūzyn%i, like
-                        <ref type="xr" target="#entry_æmpʼūxyn"/> from %iæm-tūxyn%i, <ref type="xr"
-                        target="#entry_æmpūlyn"/> from %i*æm-tūlyn%i (%it’%i → %ipʼ%i influenced by
+                        <ref type="xr" target="#entry_æmpʼūxyn"/> from %iæm-tūxyn%i, <ref type="xr" target="#entry_æmpūlyn"/> from %i*æm-tūlyn%i (%it’%i → %ipʼ%i influenced by
                     %im%i). We could not find non-alternating form of this verb, it has been
                     evidenced by %sWs. Miller%s: <ref type="xr" target="#entry_ændūzyn"/> |
-                    %iændozun %i‘fix’ (<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"
-                            /><biblScope>II 174</biblScope></bibl> ). Cf. also <ref type="xr"
-                        target="#entry_ævdūzyn"/>, <ref type="xr" target="#entry_rætʼūzyn"/>. All
+                    %iændozun %i‘fix’ (<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 174</biblScope></bibl> ). Cf. also <ref type="xr" target="#entry_ævdūzyn"/>, <ref type="xr" target="#entry_rætʼūzyn"/>. All
                     those are fusions of different preverbs (<ref type="xr" target="#entry_æm-"/>,
-                        <m>ræ-</m>) with the same stem %idūz-%i | %idoz-%i; compare <mentioned
-                        xml:lang="fa"><lang/>
+                        <m>ræ-</m>) with the same stem %idūz-%i | %idoz-%i; compare <mentioned xml:id="mentioned_d675e263" xml:lang="fa"><lang/>
                         <w>dōxtan: dōz</w>
-                        <gloss><q>sew down</q></gloss></mentioned>, <mentioned xml:lang="fa"><w/>
-                        <gloss><q>attach</q></gloss></mentioned>. Cf. also <ref type="xr"
-                        target="#entry_ræmpʼūzyn"/> ‘pierce’.</etym>
+                        <gloss><q>sew down</q></gloss></mentioned>, <mentioned xml:id="mentioned_d675e271" xml:lang="fa"><w/>
+                        <gloss><q>attach</q></gloss></mentioned>. Cf. also <ref type="xr" target="#entry_ræmpʼūzyn"/> ‘pierce’.</etym>
             </entry>
         </body>
     </text>

@@ -1,41 +1,46 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">cævæg</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_cævæg" xml:lang="os">
                 <form type="lemma"><orth>cævæg</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d4550e69"><abv:tr xml:lang="ru">
                         <q>коса (орудие)</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>scythe</q>
                     </abv:tr></sense>
-                <re>
+                <re xml:id="re_d4550e79">
                     <form xml:lang="os-x-iron" type="lemma"><orth>cævægqæd</orth></form>
                     <form xml:lang="os-x-digor" type="dialectal"><orth>cævægǧædæ</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d4550e87"><abv:tr xml:lang="ru">
                             <q>древко косы</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>shaft of the scythe</q>
                         </abv:tr></sense>
                     <abv:exampleGrp>
-                        <abv:example xml:lang="os-x-digor">
+                        <abv:example xml:id="example_d4550e99" xml:lang="os-x-digor">
                             <usg><lang/></usg>
                             <quote>sawdortæ cævæg insunmæ, cævægǧædtæ…</quote>
                             <abv:tr xml:lang="ru">
@@ -45,13 +50,12 @@
                                 <q>touchstones (‘black stones’) for wheting the scythe, shaft of the
                                     scythe</q>
                             </abv:tr>
-                            <bibl><ref type="bibl" target="#src_SD"
-                                /><biblScope>245%l3%l</biblScope></bibl>
+                            <bibl><ref type="bibl" target="#src_SD"/><biblScope>245%l3%l</biblScope></bibl>
                         </abv:example>
                     </abv:exampleGrp>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4550e125">
                         <quote>jæxīcæn nyssaʒy ysqælfynʒ cævæg</quote>
                         <abv:tr xml:lang="ru">
                             <q>налаживает себе косу со вздернутым концом</q>
@@ -61,7 +65,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>56</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4550e144">
                         <quote>cævægæj, … æxsyrfæj cættæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>коса, … серп наготове</q>
@@ -69,60 +73,51 @@
                         <abv:tr xml:lang="en">
                             <q>scythe, … reaping hook are ready</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"
-                            /><biblScope>124</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>124</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Лексикализованное причастие на -%iæg%i от глагола <ref type="xr"
-                        target="#entry_cævyn"/> ‘бить’, собственно „бьющее“ или „секущее“ орудие.
-                    Ср. по образованию <mentioned xml:lang="cjs"><lang/>
+                <etym xml:lang="ru">Лексикализованное причастие на -%iæg%i от глагола <ref type="xr" target="#entry_cævyn"/> ‘бить’, собственно „бьющее“ или „секущее“ орудие.
+                    Ср. по образованию <mentioned xml:id="mentioned_d4550e168" xml:lang="cjs"><lang/>
                         <w>šalga</w>
                         <gloss><q>коса</q></gloss></mentioned>, буквально „бьющее
-                    (орудие)“ от <mentioned xml:lang="cjs"><lang/>
+                    (орудие)“ от <mentioned xml:id="mentioned_d4550e176" xml:lang="cjs"><lang/>
                         <w>šal-</w>
                         <gloss><q>бить</q></gloss>, <gloss><q>ударять</q></gloss></mentioned>
                             (<bibl><author>Дыренкова</author><biblScope xml:lang="ru">Грамматика
                             шорского языка, стр. 28</biblScope></bibl>); Развитие значения ‘бить’ → ‘косить’,
-                    как в немецком <mentioned xml:lang="de"><lang/>
+                    как в немецком <mentioned xml:id="mentioned_d4550e192" xml:lang="de"><lang/>
                         <w>hauen</w>
-                        <gloss><q>бить</q></gloss></mentioned>, <mentioned xml:lang="de"><w/>
-                        <gloss><q>ударять</q></gloss></mentioned>, — <mentioned xml:lang="de"><lang/>
+                        <gloss><q>бить</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4550e201" xml:lang="de"><w/>
+                        <gloss><q>ударять</q></gloss></mentioned>, — <mentioned xml:id="mentioned_d4550e207" xml:lang="de"><lang/>
                         <w>Gras hauen</w>
                         <gloss><q>косить траву</q></gloss></mentioned>. — Из осетинского (аланского)
-                    усвоено в западнокавказские языки: <mentioned xml:lang="kbd"><lang/>
-                        <w>šāmāg</w></mentioned>, <mentioned xml:lang="kbd-x-crc"><lang/>
-                        <note type="comment" xml:lang="ru">(зап.) </note><w>čämäg</w></mentioned>, <mentioned
-                        xml:lang="abq"><lang/>
-                        <w>čbəg</w></mentioned>, <mentioned xml:lang="ab"><lang/>
+                    усвоено в западнокавказские языки: <mentioned xml:id="mentioned_d4550e215" xml:lang="kbd"><lang/>
+                        <w>šāmāg</w></mentioned>, <mentioned xml:id="mentioned_d4550e220" xml:lang="kbd-x-crc"><lang/>
+                        <note type="comment" xml:lang="ru">(зап.) </note><w>čämäg</w></mentioned>, <mentioned xml:id="mentioned_d4550e227" xml:lang="abq"><lang/>
+                        <w>čbəg</w></mentioned>, <mentioned xml:id="mentioned_d4550e232" xml:lang="ab"><lang/>
                         <w>ā-čbəga</w>
-                        <gloss><q>коса</q></gloss></mentioned>. См. <ref type="xr"
-                        target="#entry_cævyn"/>.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                            /><biblScope>313, 336</biblScope></bibl>.</etym>
+                        <gloss><q>коса</q></gloss></mentioned>. См. <ref type="xr" target="#entry_cævyn"/>.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>313, 336</biblScope></bibl>.</etym>
                 <etym xml:lang="en">A lexicalized past participle with the suffix -%iæg%i of the
                     verb <ref type="xr" target="#entry_cævyn"/> ‘beat’, in fact “beating” and
-                    “cutting” tool. Cf. by the derivation <mentioned xml:lang="cjs"><lang/>
+                    “cutting” tool. Cf. by the derivation <mentioned xml:id="mentioned_d4550e253" xml:lang="cjs"><lang/>
                         <w>šalga</w>
                         <gloss><q>scythe</q></gloss></mentioned>, literally “beating
-                    (tool)” from <mentioned xml:lang="cjs"><w>šal-</w>
+                    (tool)” from <mentioned xml:id="mentioned_d4550e261" xml:lang="cjs"><w>šal-</w>
                         <gloss><q>beat</q></gloss>, <gloss><q>hit</q></gloss></mentioned>
                             (<bibl><author>Dyrenkova</author><biblScope xml:lang="en">The grammar
                             of Shor, p. 28</biblScope></bibl>); The development of the meaning
-                    ‘beat’ → ‘scythe’, like in German <mentioned xml:lang="de"><lang/>
+                    ‘beat’ → ‘scythe’, like in German <mentioned xml:id="mentioned_d4550e275" xml:lang="de"><lang/>
                         <w>hauen</w>
-                        <gloss><q>beat</q></gloss></mentioned>, <mentioned xml:lang="de"><w/>
-                        <gloss><q>hit</q></gloss></mentioned>, — <mentioned xml:lang="de"><lang/>
+                        <gloss><q>beat</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4550e284" xml:lang="de"><w/>
+                        <gloss><q>hit</q></gloss></mentioned>, — <mentioned xml:id="mentioned_d4550e290" xml:lang="de"><lang/>
                         <w>Gras hauen</w>
                         <gloss><q>cut the grass</q></gloss></mentioned>. — The word was borrwed by
-                    West Caucasian languages from Ossetic:<mentioned xml:lang="kbd"><lang/>
-                        <w>šāmāg</w></mentioned>, <mentioned xml:lang="kbd-x-crc"><lang/>
-                        <note type="comment"
-                            xml:lang="en">(West) </note><w>čämäg</w></mentioned>, <mentioned
-                        xml:lang="abq"><lang/>
-                        <w>čbəg</w></mentioned>, <mentioned xml:lang="ab"><lang/>
+                    West Caucasian languages from Ossetic:<mentioned xml:id="mentioned_d4550e298" xml:lang="kbd"><lang/>
+                        <w>šāmāg</w></mentioned>, <mentioned xml:id="mentioned_d4550e303" xml:lang="kbd-x-crc"><lang/>
+                        <note type="comment" xml:lang="en">(West) </note><w>čämäg</w></mentioned>, <mentioned xml:id="mentioned_d4550e310" xml:lang="abq"><lang/>
+                        <w>čbəg</w></mentioned>, <mentioned xml:id="mentioned_d4550e315" xml:lang="ab"><lang/>
                         <w>ā-čbəga</w>
-                        <gloss><q>scythe</q></gloss></mentioned>. See <ref type="xr"
-                        target="#entry_cævyn"/>.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                            /><biblScope>313, 336</biblScope></bibl>.</etym>
+                        <gloss><q>scythe</q></gloss></mentioned>. See <ref type="xr" target="#entry_cævyn"/>.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>313, 336</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

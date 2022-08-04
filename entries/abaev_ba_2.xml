@@ -1,41 +1,46 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ba_2</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ba_2" n="2" xml:lang="os">
                 <form type="lemma"><orth>ba</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d2333e69"><abv:tr xml:lang="ru">
                         <q>поцелуй</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>kiss</q>
                     </abv:tr></sense>
-                <re>
+                <re xml:id="re_d2333e79">
                     <form type="lemma"><orth>ba kænyn</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d2333e84"><abv:tr xml:lang="ru">
                             <q>целовать</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>kiss</q>
                         </abv:tr></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d2333e97" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>ba dær sin rakænʒænæ?</quote>
                         <abv:tr xml:lang="ru">
@@ -44,23 +49,19 @@
                         <abv:tr xml:lang="en">
                             <q>will you kiss them?</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Диг._сказ."
-                            /><biblScope>28</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Диг._сказ."/><biblScope>28</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Инфантилизованная вариация слова <ref type="xr"
-                        target="#entry_pʼа"/> ‘поцелуй’ с обычной для „детского“ языка заменой
-                    глухого (%ipʼ%i) звонким (%ib%i). Звукоподражательное. Ср. <mentioned
-                        xml:lang="ydg"><lang/>
+                <etym xml:lang="ru">Инфантилизованная вариация слова <ref type="xr" target="#entry_pʼа"/> ‘поцелуй’ с обычной для „детского“ языка заменой
+                    глухого (%ipʼ%i) звонким (%ib%i). Звукоподражательное. Ср. <mentioned xml:id="mentioned_d2333e124" xml:lang="ydg"><lang/>
                         <w>bā</w>
-                        <gloss><q>поцелуй</q></gloss></mentioned>, <mentioned xml:lang="isk"><lang/>
+                        <gloss><q>поцелуй</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2333e132" xml:lang="isk"><lang/>
                         <w>bah</w></mentioned> и др. См.<ref type="xr" target="#entry_pʼа"/>.</etym>
                 <etym xml:lang="en">A child version of the word <ref type="xr" target="#entry_pʼа"/>
                     ‘kiss’ with a regular for “child” language replacement of a voiceless consonant
-                    (%ipʼ%i) for a voiced one (%ib%i). Ideophonic word. Cf. <mentioned
-                        xml:lang="ydg"><lang/>
+                    (%ipʼ%i) for a voiced one (%ib%i). Ideophonic word. Cf. <mentioned xml:id="mentioned_d2333e145" xml:lang="ydg"><lang/>
                         <w>bā</w>
-                        <gloss><q>kiss</q></gloss></mentioned>, <mentioned xml:lang="isk"><lang/>
+                        <gloss><q>kiss</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2333e153" xml:lang="isk"><lang/>
                         <w>bah</w></mentioned> etc. See <ref type="xr" target="#entry_pʼа"/>.</etym>
             </entry>
         </body>

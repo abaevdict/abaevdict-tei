@@ -1,36 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">æppælyn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_æppælyn" xml:lang="os">
-                <form xml:lang="os-x-iron" type="lemma"><orth>æppælyn</orth><form type="participle"
-                            ><orth>æppæld</orth></form></form>
-                <form xml:lang="os-x-digor" type="dialectal"><orth>æppælun</orth><form
-                        type="participle"><orth>æppæld</orth></form></form>
-                <sense><abv:tr xml:lang="ru">
+                <form xml:lang="os-x-iron" type="lemma"><orth>æppælyn</orth><form type="participle"><orth>æppæld</orth></form></form>
+                <form xml:lang="os-x-digor" type="dialectal"><orth>æppælun</orth><form type="participle"><orth>æppæld</orth></form></form>
+                <sense xml:id="sense_d3092e76"><abv:tr xml:lang="ru">
                         <q>хвалить</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>to compliment</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d3092e88">
                         <quote>wæxīcæj wæm īsty æppælīnag næj?</quote>
                         <abv:tr xml:lang="ru">
                             <q>нет ли у вас самих чего-нибудь достойного хвалы?</q>
@@ -40,7 +43,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>89</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3092e107">
                         <quote>ævzær, dam, æppæly jæxīcæj</quote>
                         <abv:tr xml:lang="ru">
                             <q>никчемный, говорят, хвалит себя</q>
@@ -48,10 +51,9 @@
                         <abv:tr xml:lang="en">
                             <q>they say, a useless one praises oneself</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"
-                            /><biblScope>131</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>131</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3092e126">
                         <quote>x˳yzdær makæmæj rappæl</quote>
                         <abv:tr xml:lang="ru">
                             <q>никого не хвали больше (чем его)</q>
@@ -61,7 +63,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Сека"/><biblScope>94</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d3092e145" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>æppælujnag mæ qæræjmag, æppælujnag mæ kæsgon</quote>
                         <abv:tr xml:lang="ru">
@@ -72,10 +74,9 @@
                             <q>my Crimean (gun) is praiseworthy, my Kabardinian (horse) is
                                 praiseworthy</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Gurdž._Wadž."
-                            /><biblScope>26</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Gurdž._Wadž."/><biblScope>26</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3092e167">
                         <quote>xodujnag æj xe æppælun</quote>
                         <abv:tr xml:lang="ru">
                             <q>стыдно похваляться</q>
@@ -86,27 +87,21 @@
                         <bibl><ref type="bibl" target="#src_Bes."/><biblScope>61</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">~ Из %iæm-kæl%i(← %iham%i-%ikarya%i-), как <ref type="xr"
-                        target="#entry_æppæt"/> из %iæm-kæt%i. Корень %ikar%i- в значении ‘хвалить’
-                    хорошо представлен в индоевропейских языках: <mentioned xml:lang="sa"><lang/>
-                        <w>kar-</w></mentioned> (%ičarkarti%i „он прославляет“), <mentioned
-                        xml:lang="grc"><lang/>
-                        <w>κἀῡξ</w></mentioned>, <mentioned xml:lang="grc"><w>κήρῡξ</w>
+                <etym xml:lang="ru">~ Из %iæm-kæl%i(← %iham%i-%ikarya%i-), как <ref type="xr" target="#entry_æppæt"/> из %iæm-kæt%i. Корень %ikar%i- в значении ‘хвалить’
+                    хорошо представлен в индоевропейских языках: <mentioned xml:id="mentioned_d3092e191" xml:lang="sa"><lang/>
+                        <w>kar-</w></mentioned> (%ičarkarti%i „он прославляет“), <mentioned xml:id="mentioned_d3092e196" xml:lang="grc"><lang/>
+                        <w>κἀῡξ</w></mentioned>, <mentioned xml:id="mentioned_d3092e201" xml:lang="grc"><w>κήρῡξ</w>
                         <gloss><q>глашатай</q></gloss></mentioned> и др. Неприемлемо со звуковой
-                    стороны сближение с <mentioned xml:lang="la"><lang/>
+                    стороны сближение с <mentioned xml:id="mentioned_d3092e207" xml:lang="la"><lang/>
                         <w>appello</w>
-                        <gloss><q>зову</q></gloss></mentioned> (<bibl><author>E. Lewy,</author><ref
-                            type="bibl" target="#ref_KZ"/><biblScope>1925 LII
+                        <gloss><q>зову</q></gloss></mentioned> (<bibl><author>E. Lewy,</author><ref type="bibl" target="#ref_KZ"/><biblScope>1925 LII
                     314</biblScope></bibl>).</etym>
-                <etym xml:lang="en">From %iæm-kæl%i(← %iham%i-%ikarya%i-), кlike <ref type="xr"
-                        target="#entry_æppæt"/> has derived from %iæm-kæt%i. The root %ikar%i- which
-                    means 'to compliment' is presented in Indo-Euroopean languages: <mentioned
-                        xml:lang="sa"><lang/>
-                        <w>kar-</w></mentioned> (%ičarkarti%i 'he praises'), <mentioned
-                        xml:lang="grc"><lang/>
-                        <w>κἀῡξ</w></mentioned>, <mentioned xml:lang="grc"><w>κήρῡξ</w>
+                <etym xml:lang="en">From %iæm-kæl%i(← %iham%i-%ikarya%i-), кlike <ref type="xr" target="#entry_æppæt"/> has derived from %iæm-kæt%i. The root %ikar%i- which
+                    means 'to compliment' is presented in Indo-Euroopean languages: <mentioned xml:id="mentioned_d3092e227" xml:lang="sa"><lang/>
+                        <w>kar-</w></mentioned> (%ičarkarti%i 'he praises'), <mentioned xml:id="mentioned_d3092e232" xml:lang="grc"><lang/>
+                        <w>κἀῡξ</w></mentioned>, <mentioned xml:id="mentioned_d3092e237" xml:lang="grc"><w>κήρῡξ</w>
                         <gloss><q>public crier</q></gloss></mentioned> etc. The convergence by sound
-                    with <mentioned xml:lang="la"><lang/>
+                    with <mentioned xml:id="mentioned_d3092e243" xml:lang="la"><lang/>
                         <w>appello</w>
                         <gloss><q>I call</q></gloss></mentioned> (<bibl><author>E.
                             Lewy,</author><ref type="bibl" target="#ref_KZ"/><biblScope>1925 LII

@@ -1,30 +1,34 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">caǧdi6j9</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_caǧdi6j9" xml:lang="os">
                 <form type="lemma"><orth>caǧdi(j)</orth></form>
-                <sense><def xml:lang="ru">порода кабардинских кровных лошадей</def><def
-                        xml:lang="en">breed of Kabardian blooded horses</def></sense>
+                <sense xml:id="sense_d4983e69"><def xml:lang="ru">порода кабардинских кровных лошадей</def><def xml:lang="en">breed of Kabardian blooded horses</def></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4983e77">
                         <quote>bor caǧdi</quote>
                         <abv:tr xml:lang="ru">
                             <q rendition="rend_singlequotes">буланый (конь породы) %scaǧdi%s</q>
@@ -33,10 +37,9 @@
                             <q rendition="rend_singlequotes">a cream-coloured (horse) of %scaǧdi%s
                                 (breed)</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Диг._сказ."
-                            /><biblScope>1</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Диг._сказ."/><biblScope>1</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4983e98">
                         <quote>Qaraʒawi furt Safarali caǧdijbæl baduj</quote>
                         <abv:tr xml:lang="ru">
                             <q>Карадзаев сын Сафарали сидит на %scaǧdi%s</q>
@@ -48,16 +51,15 @@
                             125</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из <mentioned xml:lang="ady"><lang/>
-                        <note type="comment" xml:lang="ru">(<mentioned xml:lang="kbd"><lang/>
+                <etym xml:lang="ru">Из <mentioned xml:id="mentioned_d4983e120" xml:lang="ady"><lang/>
+                        <note type="comment" xml:lang="ru">(<mentioned xml:id="mentioned_d4983e125" xml:lang="kbd"><lang/>
                                 <w/></mentioned>) </note><w>šaǧdi</w>
                         <gloss><q>кровная кабардинская лошадь</q></gloss></mentioned>. „Адыге немало
                     трудов потратили на то, чтобы вывести %scaǧdi%s -— так называют коня чистой
                     адыгской породы“ (<bibl><author>Т. Керашев</author><biblScope xml:lang="ru">Дочь
                             шапсугов. Майкоп, 1951, стр. 53</biblScope></bibl>).</etym>
-                <etym xml:lang="en">From <mentioned xml:lang="ady"><lang/>
-                        <note type="comment" xml:lang="en"
-                                >(<mentioned xml:lang="kbd"><lang/>
+                <etym xml:lang="en">From <mentioned xml:id="mentioned_d4983e143" xml:lang="ady"><lang/>
+                        <note type="comment" xml:lang="en">(<mentioned xml:id="mentioned_d4983e148" xml:lang="kbd"><lang/>
                                 <w/></mentioned>) </note><w>šaǧdi</w>
                         <gloss><q>blooded Kabarda horse</q></gloss></mentioned>. “The Adyghe spent a
                     lot of work to develop %scaǧdi%s breed — the so-called horse of pure Adyghe

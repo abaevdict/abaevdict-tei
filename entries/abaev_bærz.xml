@@ -1,34 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">bærz</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_bærz" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>bærz</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>bærzæ</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d2152e72"><abv:tr xml:lang="ru">
                         <q>береза</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>birch</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d2152e84">
                         <quote>fændyr yskʼaxta bærz-byzyḱʼījæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>он выдолбил фандыр из наплыва березы</q>
@@ -38,7 +43,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>48</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d2152e103" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>maxmæ zajuj bærzæ xonxi; wesojnitæ ʒi fækkænuncæ</quote>
                         <abv:tr xml:lang="ru">
@@ -49,7 +54,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_AK"/><biblScope>II 51</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2152e125">
                         <quote>ūs acydī sæ qæwy wælejæ ūm bærzǵyn kældcag sūgtæ ærxæssynmæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>женщина пошла выше своего села в березовую рощу, чтобы принести
@@ -59,92 +64,70 @@
                             <q>a woman went above her village to a birch grove to bring a
                                 deadwood</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Čerm."
-                            /><biblScope>140</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Čerm."/><biblScope>140</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Восходит к *%ibarza%i-, <mentioned xml:lang="ine"><lang/>
-                        <w>*bhrəgo-</w></mentioned>: <mentioned xml:lang="tg"><lang/>
-                        <w>burz</w></mentioned>, <mentioned xml:lang="tg"><w>burs</w>
-                        <gloss><q>арча (дерево)</q></gloss></mentioned>, <mentioned xml:lang="wbl"><lang/>
+                <etym xml:lang="ru">Восходит к *%ibarza%i-, <mentioned xml:id="mentioned_d2152e147" xml:lang="ine"><lang/>
+                        <w>*bhrəgo-</w></mentioned>: <mentioned xml:id="mentioned_d2152e152" xml:lang="tg"><lang/>
+                        <w>burz</w></mentioned>, <mentioned xml:id="mentioned_d2152e157" xml:lang="tg"><w>burs</w>
+                        <gloss><q>арча (дерево)</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2152e163" xml:lang="wbl"><lang/>
                         <w>furz</w>
-                        <gloss><q>береза</q></gloss></mentioned>, <mentioned xml:lang="sgy"><lang/>
-                        <w>bərež</w></mentioned>, <mentioned xml:lang="sgh"><lang/>
-                        <w>bəruj</w></mentioned>, <mentioned xml:lang="sgh"><w>bərüž</w>
-                        <gloss><q>береста</q></gloss></mentioned>, <mentioned xml:lang="kho"><lang/>
+                        <gloss><q>береза</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2152e171" xml:lang="sgy"><lang/>
+                        <w>bərež</w></mentioned>, <mentioned xml:id="mentioned_d2152e177" xml:lang="sgh"><lang/>
+                        <w>bəruj</w></mentioned>, <mentioned xml:id="mentioned_d2152e182" xml:lang="sgh"><w>bərüž</w>
+                        <gloss><q>береста</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2152e188" xml:lang="kho"><lang/>
                         <w>braṃja</w>
-                        <gloss><q>береза</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_BSOS"/><biblScope>VIII 120</biblScope></bibl>), <mentioned
-                        xml:lang="kho"><lang/>
+                        <gloss><q>береза</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_BSOS"/><biblScope>VIII 120</biblScope></bibl>), <mentioned xml:id="mentioned_d2152e200" xml:lang="kho"><lang/>
                         <w>bruṃjə</w>
-                        <gloss><q>береста</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Leumann"/><biblScope>481</biblScope></bibl>), <mentioned
-                        xml:lang="sa"><lang/>
-                        <w>bhūrja-</w></mentioned>, <mentioned xml:lang="cu"><lang/>
-                        <w n="0">брѣза</w></mentioned>, <mentioned xml:lang="ru"><lang/>
-                        <w>береза</w></mentioned>, <mentioned xml:lang="lt"><lang/>
-                        <w>bèržas</w></mentioned>, <mentioned xml:lang="de"><lang/>
+                        <gloss><q>береста</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Leumann"/><biblScope>481</biblScope></bibl>), <mentioned xml:id="mentioned_d2152e213" xml:lang="sa"><lang/>
+                        <w>bhūrja-</w></mentioned>, <mentioned xml:id="mentioned_d2152e218" xml:lang="cu"><lang/>
+                        <w n="0">брѣза</w></mentioned>, <mentioned xml:id="mentioned_d2152e224" xml:lang="ru"><lang/>
+                        <w>береза</w></mentioned>, <mentioned xml:id="mentioned_d2152e229" xml:lang="lt"><lang/>
+                        <w>bèržas</w></mentioned>, <mentioned xml:id="mentioned_d2152e234" xml:lang="de"><lang/>
                         <w>Birke</w>
                         <gloss><q>береза</q></gloss></mentioned> и пр. Семантически связано с
-                    понятием „свет“, „сиять“ (<mentioned xml:lang="ae"><lang/>
-                        <w>brāz-</w></mentioned>, <mentioned xml:lang="sa"><lang/>
+                    понятием „свет“, „сиять“ (<mentioned xml:id="mentioned_d2152e242" xml:lang="ae"><lang/>
+                        <w>brāz-</w></mentioned>, <mentioned xml:id="mentioned_d2152e248" xml:lang="sa"><lang/>
                         <w>bhrāj-</w></mentioned>) → „светлое дерево= береза“. Из осетинского идет
-                        <mentioned xml:lang="krc-x-balkar"><lang/>
+                        <mentioned xml:id="mentioned_d2152e253" xml:lang="krc-x-balkar"><lang/>
                         <w>mərzə</w>
                         <gloss><q>береза</q></gloss></mentioned>. Кроме ‘березы’, к индоевропейскому
-                    слою языка относятся, по-видимому, названия ивы (<ref type="xr"
-                        target="#entry_xærīs"/>), ольхи (<ref type="xr" target="#entry_færv"/>),
-                    ильма (<ref type="xr" target="#entry_talm"/>). См. также <ref type="xr"
-                        target="#entry_tūlʒ"/> ‘дуб’, <ref type="xr" target="#entry_kærz"/> ‘ясень’,
-                        <ref type="xr" target="#entry_tærs"/> ‘бук’, <ref type="xr"
-                        target="#entry_næzy"/> ‘сосна’.%n<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 85, III
-                        138</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."
-                            /><biblScope>14</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_Hübschmann._Oss."/><biblScope>28</biblScope></bibl>. —
+                    слою языка относятся, по-видимому, названия ивы (<ref type="xr" target="#entry_xærīs"/>), ольхи (<ref type="xr" target="#entry_færv"/>),
+                    ильма (<ref type="xr" target="#entry_talm"/>). См. также <ref type="xr" target="#entry_tūlʒ"/> ‘дуб’, <ref type="xr" target="#entry_kærz"/> ‘ясень’,
+                        <ref type="xr" target="#entry_tærs"/> ‘бук’, <ref type="xr" target="#entry_næzy"/> ‘сосна’.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 85, III
+                        138</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>14</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>28</biblScope></bibl>. —
                             <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>32,
                             48</biblScope></bibl>.</etym>
-                <etym xml:lang="en">It traces back to *%ibarza%i-, <mentioned xml:lang="ine"><lang/>
-                        <w>*bhrəgo-</w></mentioned>: <mentioned xml:lang="tg"><lang/>
-                        <w>burz</w></mentioned>, <mentioned xml:lang="tg"><w>burs</w>
-                        <gloss><q>Juniper</q></gloss></mentioned>, <mentioned xml:lang="wbl"><lang/>
+                <etym xml:lang="en">It traces back to *%ibarza%i-, <mentioned xml:id="mentioned_d2152e297" xml:lang="ine"><lang/>
+                        <w>*bhrəgo-</w></mentioned>: <mentioned xml:id="mentioned_d2152e302" xml:lang="tg"><lang/>
+                        <w>burz</w></mentioned>, <mentioned xml:id="mentioned_d2152e307" xml:lang="tg"><w>burs</w>
+                        <gloss><q>Juniper</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2152e313" xml:lang="wbl"><lang/>
                         <w>furz</w>
-                        <gloss><q>birch</q></gloss></mentioned>, <mentioned xml:lang="sgy"><lang/>
-                        <w>bərež</w></mentioned>, <mentioned xml:lang="sgh"><lang/>
-                        <w>bəruj</w></mentioned>, <mentioned xml:lang="sgh"><w>bərüž</w>
-                        <gloss><q>birchbark</q></gloss></mentioned>, <mentioned xml:lang="kho"><lang/>
+                        <gloss><q>birch</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2152e321" xml:lang="sgy"><lang/>
+                        <w>bərež</w></mentioned>, <mentioned xml:id="mentioned_d2152e327" xml:lang="sgh"><lang/>
+                        <w>bəruj</w></mentioned>, <mentioned xml:id="mentioned_d2152e332" xml:lang="sgh"><w>bərüž</w>
+                        <gloss><q>birchbark</q></gloss></mentioned>, <mentioned xml:id="mentioned_d2152e338" xml:lang="kho"><lang/>
                         <w>braṃja</w>
-                        <gloss><q>birch</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_BSOS"/><biblScope>VIII 120</biblScope></bibl>), <mentioned
-                        xml:lang="kho"><lang/>
+                        <gloss><q>birch</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_BSOS"/><biblScope>VIII 120</biblScope></bibl>), <mentioned xml:id="mentioned_d2152e350" xml:lang="kho"><lang/>
                         <w>bruṃjə</w>
-                        <gloss><q>birchbark</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Leumann"/><biblScope>481</biblScope></bibl>), <mentioned
-                        xml:lang="sa"><lang/>
-                        <w>bhūrja-</w></mentioned>, <mentioned xml:lang="cu"><lang/>
-                        <w>brěza</w></mentioned>, <mentioned xml:lang="ru"><lang/>
-                        <w>bereza</w></mentioned>, <mentioned xml:lang="lt"><lang/>
-                        <w>bèržas</w></mentioned>, <mentioned xml:lang="de"><lang/>
+                        <gloss><q>birchbark</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Leumann"/><biblScope>481</biblScope></bibl>), <mentioned xml:id="mentioned_d2152e363" xml:lang="sa"><lang/>
+                        <w>bhūrja-</w></mentioned>, <mentioned xml:id="mentioned_d2152e368" xml:lang="cu"><lang/>
+                        <w>brěza</w></mentioned>, <mentioned xml:id="mentioned_d2152e373" xml:lang="ru"><lang/>
+                        <w>bereza</w></mentioned>, <mentioned xml:id="mentioned_d2152e378" xml:lang="lt"><lang/>
+                        <w>bèržas</w></mentioned>, <mentioned xml:id="mentioned_d2152e383" xml:lang="de"><lang/>
                         <w>Birke</w>
                         <gloss><q>birch</q></gloss></mentioned> etc. It is semantically connected
-                    with the notion ‘light’, ‘shine’ (<mentioned xml:lang="ae"><lang/>
-                        <w>brāz-</w></mentioned>, <mentioned xml:lang="sa"><lang/>
-                        <w>bhrāj-</w></mentioned>) → “light tree” = ‘birch’. The word <mentioned
-                        xml:lang="krc-x-balkar"><lang/>
+                    with the notion ‘light’, ‘shine’ (<mentioned xml:id="mentioned_d2152e391" xml:lang="ae"><lang/>
+                        <w>brāz-</w></mentioned>, <mentioned xml:id="mentioned_d2152e397" xml:lang="sa"><lang/>
+                        <w>bhrāj-</w></mentioned>) → “light tree” = ‘birch’. The word <mentioned xml:id="mentioned_d2152e402" xml:lang="krc-x-balkar"><lang/>
                         <w>mərzə</w>
                         <gloss><q>береза</q></gloss></mentioned> comes from Ossetic. Apart from
                     ‘birch’, the following notions relate to the Indo-European part of the language:
-                    willow (<ref type="xr" target="#entry_xærīs"/>), alder-tree (<ref type="xr"
-                        target="#entry_færv"/>), elm (<ref type="xr" target="#entry_talm"/>). See
-                    also <ref type="xr" target="#entry_tūlʒ"/> ‘oak’, <ref type="xr"
-                        target="#entry_kærz"/> ‘ash-tree’, <ref type="xr" target="#entry_tærs"/>
-                    ‘beech’, <ref type="xr" target="#entry_næzy"/> ‘pine-tree’.%n<bibl><ref
-                            type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 85, III
-                            138</biblScope></bibl>; <bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._Gr."/><biblScope>14</biblScope></bibl>. —
-                            <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."
-                            /><biblScope>28</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_ОЯФ_I"/><biblScope>32, 48</biblScope></bibl>.</etym>
+                    willow (<ref type="xr" target="#entry_xærīs"/>), alder-tree (<ref type="xr" target="#entry_færv"/>), elm (<ref type="xr" target="#entry_talm"/>). See
+                    also <ref type="xr" target="#entry_tūlʒ"/> ‘oak’, <ref type="xr" target="#entry_kærz"/> ‘ash-tree’, <ref type="xr" target="#entry_tærs"/>
+                    ‘beech’, <ref type="xr" target="#entry_næzy"/> ‘pine-tree’.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 85, III
+                            138</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>14</biblScope></bibl>. —
+                            <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>28</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>32, 48</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

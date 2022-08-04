@@ -1,41 +1,46 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">æwwæl</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_æwwæl" xml:lang="os">
                 <form type="lemma"><orth>æwwæl</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d3627e69"><sense xml:id="sense_d3627e70"><abv:tr xml:lang="ru">
                             <q>состояние</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>state</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d3627e79"><abv:tr xml:lang="ru">
                             <q>положение</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>position</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d3627e88"><abv:tr xml:lang="ru">
                             <q>повадка</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>habit</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d3627e100">
                         <quote>tūg banazynyl fæstiat næ fæwyʒæn, je ʽwwæl k˳yd ū, aftæmæj</quote>
                         <abv:tr xml:lang="ru">
                             <q>он не поколеблется выпить кровь, судя по его повадкам</q>
@@ -43,10 +48,9 @@
                         <abv:tr xml:lang="en">
                             <q>he won't hesitate to drink blood, judging by his habits</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Брит."
-                            /><biblScope>149</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Брит."/><biblScope>149</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3627e119">
                         <quote>jæ ʒyrdy æwwæltæm gæsgæjæ ne ʽsrazy wyʒæn</quote>
                         <abv:tr xml:lang="ru">
                             <q>судя по характеру его речей, он не согласится</q>
@@ -55,7 +59,7 @@
                             <q>judging by the character of his speech, he won't agree</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d3627e134" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>Stepan læmbunægæj ærkastæj sæjgi æwwæltæmæ</quote>
                         <abv:tr xml:lang="ru">
@@ -64,27 +68,21 @@
                         <abv:tr xml:lang="en">
                             <q>Stepan carefully examined the state of the patient</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Bes._Ka_ke"
-                            /><biblScope>26</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Bes._Ka_ke"/><biblScope>26</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Может быть, из <mentioned xml:lang="ar" extralang="fa"><lang/>
+                <etym xml:lang="ru">Может быть, из <mentioned xml:id="mentioned_d3627e159" xml:lang="ar" extralang="fa"><lang/>
                         <w>aḥvāl</w>
-                        <gloss><q>состояние</q></gloss></mentioned>, <mentioned xml:lang="ar"
-                        extralang="fa"><w/>
-                        <gloss><q>положение</q></gloss></mentioned>, <mentioned xml:lang="ar"
-                        extralang="fa"><w/>
-                        <gloss><q>состояние здоровья</q></gloss></mentioned> (мн. ч. от <mentioned
-                        xml:lang="ar" extralang="fa"><lang/>
+                        <gloss><q>состояние</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3627e167" xml:lang="ar" extralang="fa"><w/>
+                        <gloss><q>положение</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3627e173" xml:lang="ar" extralang="fa"><w/>
+                        <gloss><q>состояние здоровья</q></gloss></mentioned> (мн. ч. от <mentioned xml:id="mentioned_d3627e179" xml:lang="ar" extralang="fa"><lang/>
                         <w>ḥāl</w></mentioned> ).</etym>
-                <etym xml:lang="en">Probably, from <mentioned xml:lang="ar" extralang="fa"><lang/>
+                <etym xml:lang="en">Probably, from <mentioned xml:id="mentioned_d3627e187" xml:lang="ar" extralang="fa"><lang/>
                         <w>aḥvāl</w>
-                        <gloss><q>state</q></gloss></mentioned>, <mentioned xml:lang="ar"
-                        extralang="fa"><w/>
-                        <gloss><q>position</q></gloss></mentioned>, <mentioned xml:lang="ar"
-                        extralang="fa"><w/>
+                        <gloss><q>state</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3627e195" xml:lang="ar" extralang="fa"><w/>
+                        <gloss><q>position</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3627e201" xml:lang="ar" extralang="fa"><w/>
                         <gloss><q>state of health</q></gloss></mentioned> (plural form from от
-                        <mentioned xml:lang="ar" extralang="fa"><lang/>
+                        <mentioned xml:id="mentioned_d3627e207" xml:lang="ar" extralang="fa"><lang/>
                         <w>ḥāl</w></mentioned> ).</etym>
             </entry>
         </body>

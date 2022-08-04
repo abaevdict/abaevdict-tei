@@ -1,53 +1,55 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">fast</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_fast" xml:lang="os-x-digor">
                 <form type="lemma"><orth>fast</orth></form>
                 <usg><lang/></usg>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d4012e72"><abv:tr xml:lang="ru">
                         <q>совет</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>advice</q>
                     </abv:tr></sense>
-                <re>
+                <re xml:id="re_d4012e82">
                     <form type="lemma"><orth>fasti xaʒi</orth></form>
-                    <sense><sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d4012e87"><sense xml:id="sense_d4012e88"><abv:tr xml:lang="ru">
                                 <q>мудрый</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>wise</q>
-                            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                            </abv:tr></sense><sense xml:id="sense_d4012e97"><abv:tr xml:lang="ru">
                                 <q>советчик</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>advisor</q>
-                            </abv:tr></sense><sense><note type="comment" xml:lang="ru"
-                                >буквально</note><note type="comment" xml:lang="en"
-                                >literally</note><abv:tr xml:lang="ru">
+                            </abv:tr></sense><sense xml:id="sense_d4012e106"><note type="comment" xml:lang="ru">буквально</note><note type="comment" xml:lang="en">literally</note><abv:tr xml:lang="ru">
                                 <q>хаджи совета</q>
-                            </abv:tr><note type="comment" xml:lang="ru">буквально</note><note
-                                type="comment" xml:lang="en">literally</note><abv:tr xml:lang="en">
+                            </abv:tr><note type="comment" xml:lang="ru">буквально</note><note type="comment" xml:lang="en">literally</note><abv:tr xml:lang="en">
                                 <q>hadji of an advice</q>
                             </abv:tr></sense></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4012e127">
                         <quote>dæ fidæ Acæ mæ fastbæl færsidæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>твой отец Аца спросил бы у меня совета</q>
@@ -58,7 +60,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
                             70</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4012e146">
                         <quote>fasti arǧæwttæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>нравоучительные сказки</q>
@@ -70,30 +72,22 @@
                                 185</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из %ifarst%i, лексикализованное прош. причастие от <ref
-                        type="xr" target="#entry_færsyn"/> ‘спрашивать’; точное значение „спрос“.
+                <etym xml:lang="ru">Из %ifarst%i, лексикализованное прош. причастие от <ref type="xr" target="#entry_færsyn"/> ‘спрашивать’; точное значение „спрос“.
                     Отсюда <ref type="xr" target="#entry_ævast"/> (← %iæ-fast%i) ‘без спроса’,
                     ‘самовольный’, ‘внезапный’, д. <ref type="xr" target="#entry_xevast"/> (←
                     %ixe-fast%i) ‘своенравный’. В %ifast%i (из %ifarst%i) выпал %ir%i перед
                     сибилянтом, как в <ref type="xr" target="#entry_tas"/> ‘страх’ (из %i*tars%i),
-                        <ref type="xr" target="#entry_baz"/> ‘подушка’ (из %i*barz%i), <ref
-                        type="xr" target="#entry_xæzgūl"/> ‘любовница’ (из %ixærzgul%i) и др. Ср.
-                    выпадение %ir%i в <mentioned xml:lang="sog"><lang/>
-                        <w>fštw, ʽβštw</w></mentioned>, прош. причастие от <mentioned xml:lang="sog"><lang/>
+                        <ref type="xr" target="#entry_baz"/> ‘подушка’ (из %i*barz%i), <ref type="xr" target="#entry_xæzgūl"/> ‘любовница’ (из %ixærzgul%i) и др. Ср.
+                    выпадение %ir%i в <mentioned xml:id="mentioned_d4012e182" xml:lang="sog"><lang/>
+                        <w>fštw, ʽβštw</w></mentioned>, прош. причастие от <mentioned xml:id="mentioned_d4012e187" xml:lang="sog"><lang/>
                         <w>pṛs-</w>
                         <gloss><q>спрашивать</q></gloss></mentioned>.</etym>
-                <etym xml:lang="en">From %ifarst%i, a lexicalized past participle of <ref type="xr"
-                        target="#entry_færsyn"/> ‘ask’; the exact meaning is ‘demand’. The following
+                <etym xml:lang="en">From %ifarst%i, a lexicalized past participle of <ref type="xr" target="#entry_færsyn"/> ‘ask’; the exact meaning is ‘demand’. The following
                     words are also from it: <ref type="xr" target="#entry_ævast"/> (← %iæ-fast%i)
-                    ‘without asking’, ‘self-willed’, ‘sudden’, Digor <ref type="xr"
-                        target="#entry_xevast"/> (← %ixe-fast%i) ‘wilful’. In %ifast%i (from
-                    %ifarst%i) the consonant %ir%i fell before the sibilant, as in <ref type="xr"
-                        target="#entry_tas"/> ‘fear’ (from %i*tars%i), <ref type="xr"
-                        target="#entry_baz"/> ‘pillow’ (from %i*barz%i), <ref type="xr"
-                        target="#entry_xæzgūl"/> ‘mistress’ (from %ixærzgul%i) etc. Cf. the fall of
-                    %ir%i in <mentioned xml:lang="sog"><lang/>
-                        <w>fštw, ʽβštw</w></mentioned>, a past participle of <mentioned
-                        xml:lang="sog"><lang/>
+                    ‘without asking’, ‘self-willed’, ‘sudden’, Digor <ref type="xr" target="#entry_xevast"/> (← %ixe-fast%i) ‘wilful’. In %ifast%i (from
+                    %ifarst%i) the consonant %ir%i fell before the sibilant, as in <ref type="xr" target="#entry_tas"/> ‘fear’ (from %i*tars%i), <ref type="xr" target="#entry_baz"/> ‘pillow’ (from %i*barz%i), <ref type="xr" target="#entry_xæzgūl"/> ‘mistress’ (from %ixærzgul%i) etc. Cf. the fall of
+                    %ir%i in <mentioned xml:id="mentioned_d4012e211" xml:lang="sog"><lang/>
+                        <w>fštw, ʽβštw</w></mentioned>, a past participle of <mentioned xml:id="mentioned_d4012e216" xml:lang="sog"><lang/>
                         <w>pṛs-</w>
                         <gloss><q>ask</q></gloss></mentioned>.</etym>
             </entry>

@@ -1,42 +1,47 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ævīppajdy</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ævīppajdy" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>ævīppajdy</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>æveppajdi</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d727e72"><sense xml:id="sense_d727e73"><abv:tr xml:lang="ru">
                             <q>неожиданно</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>unexpectedly</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d727e82"><abv:tr xml:lang="ru">
                             <q>внезапно</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>suddenly</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d727e91"><abv:tr xml:lang="ru">
                             <q>внезапный</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>sudden</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d727e103">
                         <quote>sær dyn ævīppajdy asqīwdta</quote>
                         <abv:tr xml:lang="ru">
                             <q>голова внезапно отскочила</q>
@@ -44,10 +49,9 @@
                         <abv:tr xml:lang="en">
                             <q>a head suddenly jumped off</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"
-                            /><biblScope>102</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>102</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d727e122" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>æveppajdi cawæjnon xæssuj i donmæ i-nad-nad je stong, je ʽdonug, æ
                             fællad</quote>
@@ -62,12 +66,9 @@
                         <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>62</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из %iæ%i+%ifīppajdy%i, сложение глагола <ref type="xr"
-                        target="#entry_fīppajyn"/> | %ifeppajun%i ‘замечать’ (в местном падеже от
-                    прош. причастия %ifīppajd%i | %ifeppajd%i) с негативной частицей <ref type="xr"
-                        target="#entry_æ-"/>.</etym>
-                <etym xml:lang="en">From %iæ%i+%ifīppajdy%i, the composition of the verb <ref
-                        type="xr" target="#entry_fīppajyn"/> | %ifeppajun%i ‘to notice’ (in the
+                <etym xml:lang="ru">Из %iæ%i+%ifīppajdy%i, сложение глагола <ref type="xr" target="#entry_fīppajyn"/> | %ifeppajun%i ‘замечать’ (в местном падеже от
+                    прош. причастия %ifīppajd%i | %ifeppajd%i) с негативной частицей <ref type="xr" target="#entry_æ-"/>.</etym>
+                <etym xml:lang="en">From %iæ%i+%ifīppajdy%i, the composition of the verb <ref type="xr" target="#entry_fīppajyn"/> | %ifeppajun%i ‘to notice’ (in the
                     inessive case, derived from the past participle form %ifīppajd%i | %ifeppajd%i)
                     and the negative particle <ref type="xr" target="#entry_æ-"/>.</etym>
             </entry>

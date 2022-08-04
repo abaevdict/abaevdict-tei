@@ -1,49 +1,54 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">dængæl</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_dængæl" xml:lang="os">
                 <form type="lemma"><orth>dængæl</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d4731e69"><sense xml:id="sense_d4731e70"><abv:tr xml:lang="ru">
                             <q>раздувшийся</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>bloated</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d4731e79"><abv:tr xml:lang="ru">
                             <q>распухший</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>swollen</q>
                         </abv:tr></sense></sense>
-                <re>
+                <re xml:id="re_d4731e89">
                     <form type="lemma"><orth>nyddængæl wyn</orth></form>
-                    <sense><sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d4731e94"><sense xml:id="sense_d4731e95"><abv:tr xml:lang="ru">
                                 <q>раздуться</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>swell up</q>
-                            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                            </abv:tr></sense><sense xml:id="sense_d4731e104"><abv:tr xml:lang="ru">
                                 <q>распухнуть</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>bloat</q>
                             </abv:tr></sense></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4731e117">
                         <quote>ūdon æxsæn Dadaj dær saw-dængælæj</quote>
                         <abv:tr xml:lang="ru">
                             <q>среди них (был) и Дадай, мрачный, надутый</q>
@@ -51,10 +56,9 @@
                         <abv:tr xml:lang="en">
                             <q>among them there was also Dadai, gloomy, bloated</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Čerm."
-                            /><biblScope>116</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Čerm."/><biblScope>116</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4731e136">
                         <quote>typpyr æmæ dængælæj amælaj!</quote>
                         <abv:tr xml:lang="ru">
                             <q>чтоб тебе околеть раздувшимся и распухшим</q>
@@ -62,10 +66,9 @@
                         <abv:tr xml:lang="en">
                             <q>may you die swollen and bloated!</q>
                         </abv:tr>
-                        <bibl><biblScope xml:lang="ru">бранное выражение</biblScope><biblScope
-                                xml:lang="en">pejorative expression</biblScope></bibl>
+                        <bibl><biblScope xml:lang="ru">бранное выражение</biblScope><biblScope xml:lang="en">pejorative expression</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4731e157" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>nittuppur, niddængæl æj</quote>
                         <abv:tr xml:lang="ru">
@@ -77,35 +80,27 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Входит в группу слов того же звукового типа и близкого значения:
-                        <ref type="xr" target="#entry_dynǵyr"/> ‘большой’, д. <ref type="xr"
-                        target="#entry_tunkur"/> (рядом с <ref type="xr" target="#entry_tuppur"/>)
-                    ‘выпуклый’. Ср. на иранской почве <mentioned xml:lang="yai"><lang/>
+                        <ref type="xr" target="#entry_dynǵyr"/> ‘большой’, д. <ref type="xr" target="#entry_tunkur"/> (рядом с <ref type="xr" target="#entry_tuppur"/>)
+                    ‘выпуклый’. Ср. на иранской почве <mentioned xml:id="mentioned_d4731e184" xml:lang="yai"><lang/>
                         <w>dangal</w>
-                        <gloss><q>дубина</q></gloss></mentioned>, на Кавказе <mentioned
-                        xml:lang="inh"><lang/>
+                        <gloss><q>дубина</q></gloss></mentioned>, на Кавказе <mentioned xml:id="mentioned_d4731e192" xml:lang="inh"><lang/>
                         <w>tʼængær</w>
                         <gloss><q>пузо</q></gloss></mentioned>. Группа %ing%i могла чередоваться с
-                    %iрр%i (д. <ref type="xr" target="#entry_tunkur"/> || <ref type="xr"
-                        target="#entry_tuppur"/>, %icʼong%i ||<ref type="xr" target="#entry_cʼopp"/>
+                    %iрр%i (д. <ref type="xr" target="#entry_tunkur"/> || <ref type="xr" target="#entry_tuppur"/>, %icʼong%i ||<ref type="xr" target="#entry_cʼopp"/>
                     ‘верхушка’). Если так, то %idængæl%i вводится в обширную группу
-                    мимео-изобразительных слов типа %itpl%i, как <ref type="xr"
-                        target="#entry_tæppal"/> ‘волдырь’, <ref type="xr" target="#entry_tymbyl"/>
+                    мимео-изобразительных слов типа %itpl%i, как <ref type="xr" target="#entry_tæppal"/> ‘волдырь’, <ref type="xr" target="#entry_tymbyl"/>
                     ‘круглый’; см. под последним словом.</etym>
                 <etym xml:lang="en">It is in the group of the words of the same sound type and close
-                    meaning: <ref type="xr" target="#entry_dynǵyr"/> ‘big’, Digor <ref type="xr"
-                        target="#entry_tunkur"/> (and <ref type="xr" target="#entry_tuppur"/>)
-                    ‘prominent’. Cf. the following word in one of the Iranian languages: <mentioned
-                        xml:lang="yai"><lang/>
+                    meaning: <ref type="xr" target="#entry_dynǵyr"/> ‘big’, Digor <ref type="xr" target="#entry_tunkur"/> (and <ref type="xr" target="#entry_tuppur"/>)
+                    ‘prominent’. Cf. the following word in one of the Iranian languages: <mentioned xml:id="mentioned_d4731e221" xml:lang="yai"><lang/>
                         <w>dangal</w>
                         <gloss><q>club</q></gloss></mentioned>, in the Caucasian languages:
-                        <mentioned xml:lang="inh"><lang/>
+                        <mentioned xml:id="mentioned_d4731e229" xml:lang="inh"><lang/>
                         <w>tʼængær</w>
                         <gloss><q>belly</q></gloss></mentioned>. The group %ing%i could alternate
-                    with %iрр%i (Digor <ref type="xr" target="#entry_tunkur"/> || <ref type="xr"
-                        target="#entry_tuppur"/>, %icʼong%i ||<ref type="xr" target="#entry_cʼopp"/>
+                    with %iрр%i (Digor <ref type="xr" target="#entry_tunkur"/> || <ref type="xr" target="#entry_tuppur"/>, %icʼong%i ||<ref type="xr" target="#entry_cʼopp"/>
                     ‘top’). If thi is correct, then %idængæl%i traces back to a vast group of
-                    onomatopoetic words of the type %itpl%i, like <ref type="xr"
-                        target="#entry_tæppal"/> ‘blister’, <ref type="xr" target="#entry_tymbyl"/>
+                    onomatopoetic words of the type %itpl%i, like <ref type="xr" target="#entry_tæppal"/> ‘blister’, <ref type="xr" target="#entry_tymbyl"/>
                     ‘round’; see further information under last word.</etym>
             </entry>
         </body>

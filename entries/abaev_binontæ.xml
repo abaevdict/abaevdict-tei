@@ -1,38 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">binontæ</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_binontæ" xml:lang="os">
                 <form type="lemma"><orth>binontæ</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d2342e69"><abv:tr xml:lang="ru">
                         <q>семья</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>family</q>
                     </abv:tr></sense>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d2342e79"><abv:tr xml:lang="ru">
                         <q>супруга</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>spouse</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d2342e91">
                         <quote>bafællad kæwynæj binonty kæstær</quote>
                         <abv:tr xml:lang="ru">
                             <q>устал от плача младший (член) семьи</q>
@@ -42,7 +47,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>45</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2342e110">
                         <quote>binoritæj ḱī qūccytæ dūcynmæ acyd, ḱī fosæn xāllag æværdta</quote>
                         <abv:tr xml:lang="ru">
                             <q>из домочадцев кто пошел доить коров, кто накладывал корм скоту</q>
@@ -52,7 +57,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Сека"/><biblScope>79</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d2342e129" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>i xæʒari ba gurgurgængæ i bijnontæ</quote>
                         <abv:tr xml:lang="ru">
@@ -61,10 +66,9 @@
                         <abv:tr xml:lang="en">
                             <q>household members are making noise in the house</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Диг._сказ."
-                            /><biblScope>49</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Диг._сказ."/><biblScope>49</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d2342e151" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>dæxecæn mæ bijnontæn akkag iskænæ</quote>
                         <abv:tr xml:lang="ru">
@@ -79,35 +83,25 @@
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Собственно мн. ч. от %ibinon%i(← %ibyjnon%i) ‘принадлежащий к
                         <ref type="xr" target="#entry_byn"/>, т. е. наследственному хозяйству’. По
-                    своему облику %ibinontæ%i ‘семья’ более новое образование по сравнению с <ref
-                        type="xr" target="#entry_myggag"/> ‘род’, что вполне согласуется с данными
+                    своему облику %ibinontæ%i ‘семья’ более новое образование по сравнению с <ref type="xr" target="#entry_myggag"/> ‘род’, что вполне согласуется с данными
                     исторической и этнологической науки, по которым род древнее семьи, или, перенося
                     вопрос в плоскость языка-мышления, осознание рода древнее, чем осознание семьи
                     как отличной от рода и противостоящей ей единицы. См. об этом также под словами
-                        <ref type="xr" target="#entry_7rvad"/> ‘родич’ и <ref type="xr"
-                        target="#entry_ævsymær"/> ‘брат’. Связь %ibinontæ%i с <ref type="xr"
-                        target="#entry_byn"/> ‘наследство’, ‘наследственное имущество’ указывает,
+                        <ref type="xr" target="#entry_7rvad"/> ‘родич’ и <ref type="xr" target="#entry_ævsymær"/> ‘брат’. Связь %ibinontæ%i с <ref type="xr" target="#entry_byn"/> ‘наследство’, ‘наследственное имущество’ указывает,
                     что выделение семьи из рода было связано с возникновением института частной
-                    собственности. См. <ref type="xr" target="#entry_byn"/>; ср. <ref type="xr"
-                        target="#entry_binojnag"/> ‘супруга’. <bibl><ref type="bibl"
-                            target="#ref_Gershevitch"/></bibl> (<bibl><ref type="bibl"
-                            target="#ref_BSOAS"/><biblScope>XVII 481</biblScope></bibl>) возводит к
+                    собственности. См. <ref type="xr" target="#entry_byn"/>; ср. <ref type="xr" target="#entry_binojnag"/> ‘супруга’. <bibl><ref type="bibl" target="#ref_Gershevitch"/></bibl> (<bibl><ref type="bibl" target="#ref_BSOAS"/><biblScope>XVII 481</biblScope></bibl>) возводит к
                     %ihapaθnī%i ‘co-wife’, оставляя без объяснения %ib%i (вместо закономерного
                     %if%i).</etym>
                 <etym xml:lang="en">It is in fact the plural form of the word %ibinon%i(←
                     %ibyjnon%i) ‘belonging to <ref type="xr" target="#entry_byn"/>, i.e. inheritable
-                    household’. By its form, %ibinontæ%i ‘family’ is a newer derivate than <ref
-                        type="xr" target="#entry_myggag"/> ‘genus’. This coordinates with historical
+                    household’. By its form, %ibinontæ%i ‘family’ is a newer derivate than <ref type="xr" target="#entry_myggag"/> ‘genus’. This coordinates with historical
                     and ethnological science, according to which the genus is more ancient than
                     family or, switching to the language and mentality, the awareness of genus is
                     more ancient than the awareness of the family as it is opposed to genus. See
-                    also <ref type="xr" target="#entry_7rvad"/> ‘clansman’ and <ref type="xr"
-                        target="#entry_ævsymær"/> ‘brother’ for further information. The connection
+                    also <ref type="xr" target="#entry_7rvad"/> ‘clansman’ and <ref type="xr" target="#entry_ævsymær"/> ‘brother’ for further information. The connection
                     of the word %ibinontæ%i with <ref type="xr" target="#entry_byn"/> ‘heritage’,
                     ‘inherited property’ points that the detachment of the family from the genus was
-                    connected with the appearance of the private property institution. See <ref
-                        type="xr" target="#entry_byn"/>; ср. <ref type="xr" target="#entry_binojnag"
-                    /> ‘spouse’. <bibl><ref type="bibl" target="#ref_Gershevitch"/></bibl>
+                    connected with the appearance of the private property institution. See <ref type="xr" target="#entry_byn"/>; ср. <ref type="xr" target="#entry_binojnag"/> ‘spouse’. <bibl><ref type="bibl" target="#ref_Gershevitch"/></bibl>
                             (<bibl><ref type="bibl" target="#ref_BSOAS"/><biblScope>XVII
                             481</biblScope></bibl>) trace the word back to %ihapaθnī%i ‘co-wife’,
                     leaving %ib%i (instead of a regular %if%i) without explanation.</etym>

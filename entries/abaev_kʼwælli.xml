@@ -1,38 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">kʼwælli</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_kʼwælli" xml:lang="os-x-digor">
                 <form type="lemma"><orth>kʼwælli</orth></form>
                 <usg><lang/></usg>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d3320e72"><sense xml:id="sense_d3320e73"><abv:tr xml:lang="ru">
                             <q>мозоль</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>corn</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d3320e82"><abv:tr xml:lang="ru">
                             <q>волдырь</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>blister</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d3320e94">
                         <quote>kʼwælli kʼox gotondar</quote>
                         <abv:tr xml:lang="ru">
                             <q>землепашец с мозолистыми руками</q>
@@ -43,18 +48,14 @@
                         <bibl><ref type="bibl" target="#src_Sam."/><biblScope>126</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Вероятно, из %i*kʼwærri%i (%irr%i → %ill%i, как в <ref type="xr"
-                        target="#entry_syvællon"/> и др.); ср. <mentioned xml:lang="dar"><lang/>
+                <etym xml:lang="ru">Вероятно, из %i*kʼwærri%i (%irr%i → %ill%i, как в <ref type="xr" target="#entry_syvællon"/> и др.); ср. <mentioned xml:id="mentioned_d3320e118" xml:lang="dar"><lang/>
                         <w>kʼarri</w>
-                        <gloss><q>мозоль</q></gloss></mentioned>, <mentioned xml:lang="dar"><w/>
-                        <gloss><q>волдырь</q></gloss></mentioned> (<bibl><biblScope xml:lang="ru"
-                            >Русско-дарг. сл. 1950, стр. 132, 611</biblScope></bibl>).</etym>
-                <etym xml:lang="en">Probably, from %i*kʼwærri%i (%irr%i → %ill%i, as in <ref
-                        type="xr" target="#entry_syvællon"/> etc.); cf. <mentioned xml:lang="dar"><lang/>
+                        <gloss><q>мозоль</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3320e126" xml:lang="dar"><w/>
+                        <gloss><q>волдырь</q></gloss></mentioned> (<bibl><biblScope xml:lang="ru">Русско-дарг. сл. 1950, стр. 132, 611</biblScope></bibl>).</etym>
+                <etym xml:lang="en">Probably, from %i*kʼwærri%i (%irr%i → %ill%i, as in <ref type="xr" target="#entry_syvællon"/> etc.); cf. <mentioned xml:id="mentioned_d3320e142" xml:lang="dar"><lang/>
                         <w>kʼarri</w>
-                        <gloss><q>corn</q></gloss></mentioned>, <mentioned xml:lang="dar"><w/>
-                        <gloss><q>blister</q></gloss></mentioned> (<bibl><biblScope
-                            xml:lang="en">Russian-Dargwa dictionary 1950, p. 132,
+                        <gloss><q>corn</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3320e150" xml:lang="dar"><w/>
+                        <gloss><q>blister</q></gloss></mentioned> (<bibl><biblScope xml:lang="en">Russian-Dargwa dictionary 1950, p. 132,
                         611</biblScope></bibl>).</etym>
             </entry>
         </body>

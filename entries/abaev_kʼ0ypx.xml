@@ -1,50 +1,55 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">kʼ0ypx</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_kʼ0ypx" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>kʼ˳ypx</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>kʼupxæ</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d574e72"><sense xml:id="sense_d574e73"><abv:tr xml:lang="ru">
                             <q>осадки</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>sediment</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d574e82"><abv:tr xml:lang="ru">
                             <q>выжимки остающиеся после процеживания %skʼumael%s (браги)</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>residue remaining after %skʼumael%s (wash) filtering </q>
                         </abv:tr></sense><note type="comment" xml:lang="ru">чаще мн. ч.
                         %ikʼ˳ypxytæ%i | %ikʼupxitæ%i</note><note type="comment" xml:lang="en">plural
                         form %ikʼ˳ypxytæ%i | %ikʼupxitæ%i is more commonly used</note></sense>
-                <re xml:lang="os-x-digor">
+                <re xml:id="re_d574e96" xml:lang="os-x-digor">
                     <lang/>
                     <form type="lemma"><orth>ærkʼupxæ un</orth><form type="variant"><orth>bakʼupxæ
                                 un</orth></form></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d574e105"><abv:tr xml:lang="ru">
                             <q>собраться в кучу, скучиться</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>gather together, pile up</q>
                         </abv:tr></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d574e118">
                         <quote>Altæncæqi mæsugmæ bakastæncæ ma din omi ba i osæ kʼumæl cæǧduj, ma
                             kʼupxitæ ku ralæmaridæ, wædta sæ artbæl bakalidæ, ma sæ fur soræj
                             ciraǧaw iscæfsioncæ</quote>
@@ -62,7 +67,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
                             83</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d574e137" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>ærǧaw ærkʼupxæncæ donbæl æma bonasadæn kodtoncæ</quote>
                         <abv:tr xml:lang="ru">
@@ -73,7 +78,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>118</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d574e159" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>sinxi ostitæ ew xæʒærttæj eske razi bakʼupxæ wioncæ</quote>
                         <abv:tr xml:lang="ru">
@@ -86,14 +91,12 @@
                         <bibl><ref type="bibl" target="#src_LQ"/><biblScope>35</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Вероятно, из <mentioned xml:lang="trk"><lang/>
+                <etym xml:lang="ru">Вероятно, из <mentioned xml:id="mentioned_d574e185" xml:lang="trk"><lang/>
                         <w>käpäk</w>
-                        <gloss><q>отруби</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Радлов"/><biblScope>II 1186</biblScope></bibl>).</etym>
-                <etym xml:lang="en">Probably, from <mentioned xml:lang="trk"><lang/>
+                        <gloss><q>отруби</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Радлов"/><biblScope>II 1186</biblScope></bibl>).</etym>
+                <etym xml:lang="en">Probably, from <mentioned xml:id="mentioned_d574e200" xml:lang="trk"><lang/>
                         <w>käpäk</w>
-                        <gloss><q>bran</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Радлов"/><biblScope>II 1186</biblScope></bibl>).</etym>
+                        <gloss><q>bran</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Радлов"/><biblScope>II 1186</biblScope></bibl>).</etym>
             </entry>
         </body>
     </text>

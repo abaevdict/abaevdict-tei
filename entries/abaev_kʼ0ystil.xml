@@ -1,28 +1,33 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">kʼ0ystil</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_kʼ0ystil" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>kʼ˳ystil</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>kʼustelæ</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d5889e72"><abv:tr xml:lang="ru">
                         <q>высокая кадушка (для ношения воды, для сбивания масла, для приготовления
                             %skʼumæl%s и пр.)</q>
                     </abv:tr><abv:tr xml:lang="en">
@@ -30,7 +35,7 @@
                             %skʼumæl%s etc.)</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d5889e84">
                         <quote>ūrs æxsyr kʼ˳ystīlæj xoxy jas cæxgærmæ īw ūs færsūʒy</quote>
                         <abv:tr xml:lang="ru">
                             <q>белое молоко из кадки в ведро величиной c гору одна женщина
@@ -42,7 +47,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>73</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d5889e103">
                         <quote>wynǵy ḱyzǵytæ æmæ ūstytæ gogontæ æmæ kʼ˳ystīltīmæ donmæ
                             fæcæwync</quote>
                         <abv:tr xml:lang="ru">
@@ -56,16 +61,14 @@
                         <bibl><ref type="bibl" target="#src_Брит."/><biblScope>94</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Ср. <mentioned xml:lang="sog"><lang/>
+                <etym xml:lang="ru">Ср. <mentioned xml:id="mentioned_d5889e125" xml:lang="sog"><lang/>
                         <w>*kūztīk (kwžtʼyk)</w>
-                        <gloss><q>кувшин</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Gramm._sogd."/><biblScope>I 89</biblScope></bibl>). Первая
+                        <gloss><q>кувшин</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Gramm._sogd."/><biblScope>I 89</biblScope></bibl>). Первая
                     часть слова (%ikʼus%i) относится, возможно, к группе слов, рассмотренных под
                         <ref type="xr" target="#entry_kʼūs"/> | %ikʼos%i ‘миска’.</etym>
-                <etym xml:lang="en">Cf. <mentioned xml:lang="sog"><lang/>
+                <etym xml:lang="en">Cf. <mentioned xml:id="mentioned_d5889e143" xml:lang="sog"><lang/>
                         <w>*kūztīk (kwžtʼyk)</w>
-                        <gloss><q>jug</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Gramm._sogd."/><biblScope>I 89</biblScope></bibl>). The
+                        <gloss><q>jug</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Gramm._sogd."/><biblScope>I 89</biblScope></bibl>). The
                     first part of the word (%ikʼus%i) is probably related to a group of words
                     considered under <ref type="xr" target="#entry_kʼūs"/> | %ikʼos%i ‘bowl’.</etym>
             </entry>

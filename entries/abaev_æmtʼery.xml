@@ -1,38 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">æmtʼery</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_æmtʼery" xml:lang="os-x-iron">
                 <form type="lemma"><orth>æmtʼery</orth></form>
                 <usg><lang/></usg>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d980e72"><sense xml:id="sense_d980e73"><abv:tr xml:lang="ru">
                             <q>смешение</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>mixing</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d980e82"><abv:tr xml:lang="ru">
                             <q>хаос</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>chaos</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d980e94">
                         <quote>adæm sæmtʼery sty</quote>
                         <abv:tr xml:lang="ru">
                             <q>народ смешался, обратился в беспорядочную толпу</q>
@@ -41,7 +46,7 @@
                             <q>people mixed up, turned into a messy crowd</q>
                         </abv:tr>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d980e109">
                         <quote>mīǧtæ fæstæjæ æmtʼeryjæ wajync</quote>
                         <abv:tr xml:lang="ru">
                             <q>тучи бегут сзади хаотической массой</q>
@@ -49,22 +54,21 @@
                         <abv:tr xml:lang="en">
                             <q>chaotic mass of clouds is running behind</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Niger"
-                            /><biblScope>134</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Niger"/><biblScope>134</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Ср. <mentioned xml:lang="ka"><lang/>
+                <etym xml:lang="ru">Ср. <mentioned xml:id="mentioned_d980e131" xml:lang="ka"><lang/>
                         <w>mt’veri</w>
-                        <gloss><q>пыль</q></gloss></mentioned>, <mentioned xml:lang="ka"><w/>
-                        <gloss><q>прах</q></gloss></mentioned>, <mentioned xml:lang="ka"><lang/>
+                        <gloss><q>пыль</q></gloss></mentioned>, <mentioned xml:id="mentioned_d980e139" xml:lang="ka"><w/>
+                        <gloss><q>прах</q></gloss></mentioned>, <mentioned xml:id="mentioned_d980e145" xml:lang="ka"><lang/>
                         <w>mt’vreva</w>
-                        <gloss><q>ломать</q></gloss></mentioned>, <mentioned xml:lang="ka"><w/>
+                        <gloss><q>ломать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d980e153" xml:lang="ka"><w/>
                         <gloss><q>крушить</q></gloss></mentioned>.</etym>
-                <etym xml:lang="en">Cf. <mentioned xml:lang="ka"><lang/>
+                <etym xml:lang="en">Cf. <mentioned xml:id="mentioned_d980e163" xml:lang="ka"><lang/>
                         <w>mt’veri</w>
-                        <gloss><q>dust</q></gloss></mentioned>, <mentioned xml:lang="ka"><lang/>
+                        <gloss><q>dust</q></gloss></mentioned>, <mentioned xml:id="mentioned_d980e171" xml:lang="ka"><lang/>
                         <w>mt’vreva</w>
-                        <gloss><q>break</q></gloss></mentioned>, <mentioned xml:lang="ka"><w/>
+                        <gloss><q>break</q></gloss></mentioned>, <mentioned xml:id="mentioned_d980e179" xml:lang="ka"><w/>
                         <gloss><q>destroy</q></gloss></mentioned>.</etym>
             </entry>
         </body>

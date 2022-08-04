@@ -1,42 +1,47 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ʒūl</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ʒūl" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>ʒūl</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>ʒol</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d4616e72"><abv:tr xml:lang="ru">
                         <q>хлеб пшеничный</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>wheat bread</q>
                     </abv:tr></sense>
-                <re>
+                <re xml:id="re_d4616e82">
                     <form type="lemma"><orth>ʒūllag(y)ssad</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d4616e87"><abv:tr xml:lang="ru">
                             <q>пшеничная мука</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>wheat flour</q>
                         </abv:tr></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d4616e100">
                         <quote>ʒūl … k˳y næ wa, wæd… kærʒynæj stong ærvīt</quote>
                         <abv:tr xml:lang="ru">
                             <q>если нет пшеничного хлеба, то утоли голод ячменным</q>
@@ -45,10 +50,9 @@
                             <q>if there is no wheat bread, then satisfy your hunger with barley
                                 one</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"
-                            /><biblScope>118</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>118</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4616e119">
                         <quote>ʒūl dyn tūlʒystæm mydy</quote>
                         <abv:tr xml:lang="ru">
                             <q>пшеничный хлеб мы будем тебе макать в мед</q>
@@ -56,10 +60,9 @@
                         <abv:tr xml:lang="en">
                             <q>we will dip wheat bread in honey</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"
-                            /><biblScope>121</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>121</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d4616e138" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>… ma ʽj ʒollagi… nivværuj</quote>
                         <abv:tr xml:lang="ru">
@@ -71,7 +74,7 @@
                         <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
                             143</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d4616e160">
                         <quote>ænqīzænǵyn ʒūl</quote>
                         <abv:tr xml:lang="ru">
                             <q>пшеничный хлеб на дрожжах</q>
@@ -83,47 +86,35 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Важное по культурной значимости слово, имеет верные соответствия
-                    в некоторых кавказских языках: <mentioned xml:lang="ka"><lang/>
+                    в некоторых кавказских языках: <mentioned xml:id="mentioned_d4616e183" xml:lang="ka"><lang/>
                         <w>doli</w>
-                        <gloss><q>чистая пшеница</q></gloss></mentioned>, <mentioned xml:lang="ka"
-                        dialect="ka-x-rach"><lang/>
+                        <gloss><q>чистая пшеница</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4616e191" xml:lang="ka" dialect="ka-x-rach"><lang/>
                         <w>dola</w>
-                        <gloss><q>хлеб из чистой пшеницы</q></gloss></mentioned>, <mentioned
-                        xml:lang="dar"><lang/>
+                        <gloss><q>хлеб из чистой пшеницы</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4616e199" xml:lang="dar"><lang/>
                         <w>cʼuli</w>
-                        <gloss><q>хлеб в зерне</q></gloss></mentioned>, <mentioned
-                        xml:lang="dar-x-aqusha"><lang/>
+                        <gloss><q>хлеб в зерне</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4616e207" xml:lang="dar-x-aqusha"><lang/>
                         <w>zuhla</w>
                         <gloss><q>хлеб</q></gloss></mentioned>. Культурные термины этого рода
                     получают обычно широкое распространение. Не является поэтому неожиданностью
-                    встреча с этим же словом в русских диалектах: <mentioned xml:lang="ru"><lang/>
+                    встреча с этим же словом в русских диалектах: <mentioned xml:id="mentioned_d4616e215" xml:lang="ru"><lang/>
                         <note type="comment" xml:lang="ru">(сарат.) </note><w>дыль</w>
                         <gloss><q>мучное, хлебное, крахмальное вещество в
-                        зерне</q></gloss></mentioned>.%n<bibl><ref type="bibl" target="#ref_MSt."
-                            /><biblScope>81</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_ОЯФ_I"/><biblScope>90</biblScope></bibl>.</etym>
+                        зерне</q></gloss></mentioned>.%n<bibl><ref type="bibl" target="#ref_MSt."/><biblScope>81</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>90</biblScope></bibl>.</etym>
                 <etym xml:lang="en">A culturally important word that has accurate correspondences in
-                    some Caucasian languages: <mentioned xml:lang="ka"><lang/>
+                    some Caucasian languages: <mentioned xml:id="mentioned_d4616e237" xml:lang="ka"><lang/>
                         <w>doli</w>
-                        <gloss><q>clean wheat</q></gloss></mentioned>, <mentioned xml:lang="ka"
-                        dialect="ka-x-rach"><lang/>
+                        <gloss><q>clean wheat</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4616e245" xml:lang="ka" dialect="ka-x-rach"><lang/>
                         <w>dola</w>
-                        <gloss><q>bread made of clean wheat</q></gloss></mentioned>, <mentioned
-                        xml:lang="dar"><lang/>
+                        <gloss><q>bread made of clean wheat</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4616e253" xml:lang="dar"><lang/>
                         <w>cʼuli</w>
-                        <gloss><q>bread in the grain</q></gloss></mentioned>, <mentioned
-                        xml:lang="dar-x-aqusha"><lang/>
+                        <gloss><q>bread in the grain</q></gloss></mentioned>, <mentioned xml:id="mentioned_d4616e261" xml:lang="dar-x-aqusha"><lang/>
                         <w>zuhla</w>
                         <gloss><q>bread</q></gloss></mentioned>. Cultural terms of this kind are
                     usually widely used. Therefore, it is not a surprise that the same word is also
-                    found in Russian dialects: <mentioned xml:lang="ru"><lang/>
-                        <note type="comment"
-                            xml:lang="en">(Saratov) </note><w>dylʼ</w>
+                    found in Russian dialects: <mentioned xml:id="mentioned_d4616e269" xml:lang="ru"><lang/>
+                        <note type="comment" xml:lang="en">(Saratov) </note><w>dylʼ</w>
                         <gloss><q>flour, bread, starch substance in
-                            grain</q></gloss></mentioned>.%n<bibl><ref type="bibl"
-                            target="#ref_MSt."/><biblScope>81</biblScope></bibl>. — <bibl><ref
-                            type="bibl" target="#ref_ОЯФ_I"
-                    /><biblScope>90</biblScope></bibl>.</etym>
+                            grain</q></gloss></mentioned>.%n<bibl><ref type="bibl" target="#ref_MSt."/><biblScope>81</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>90</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

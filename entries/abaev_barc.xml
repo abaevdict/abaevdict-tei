@@ -1,34 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">barc</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_barc" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>barc</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>barcæ</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d1712e72"><abv:tr xml:lang="ru">
                         <q>грива</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>mane</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d1712e84">
                         <quote>de ʽfsūrǧy barcæj myn īw syǧzærin ærdū me ʽvzær fændyræn k˳y ratonīs
                             qīsæn</quote>
                         <abv:tr xml:lang="ru">
@@ -39,10 +44,9 @@
                             <q>if only you pulled one golden hair from the mane of your wonderful
                                 horse for the string of my poorish violin</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"
-                            /><biblScope>131</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>131</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d1712e103" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>wædta in æ barcæbæl fæxxwæcʒænæn</quote>
                         <abv:tr xml:lang="ru">
@@ -55,54 +59,45 @@
                             48</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Восходит к <mentioned xml:lang="ira"><lang/>
-                        <w>*barša-</w></mentioned>, ср. <mentioned xml:lang="ae"><lang/>
-                        <w>barəša-</w></mentioned>, <mentioned xml:lang="sog"><lang/>
-                        <w>βnš</w></mentioned>, <mentioned xml:lang="xcl"><lang/>
+                <etym xml:lang="ru">Восходит к <mentioned xml:id="mentioned_d1712e128" xml:lang="ira"><lang/>
+                        <w>*barša-</w></mentioned>, ср. <mentioned xml:id="mentioned_d1712e133" xml:lang="ae"><lang/>
+                        <w>barəša-</w></mentioned>, <mentioned xml:id="mentioned_d1712e138" xml:lang="sog"><lang/>
+                        <w>βnš</w></mentioned>, <mentioned xml:id="mentioned_d1712e143" xml:lang="xcl"><lang/>
                         <note type="comment" xml:lang="ru">(из иранского) </note><w>barš</w>
-                        <gloss><q>грива</q></gloss></mentioned>, <mentioned xml:lang="xcl"><w/>
-                        <gloss><q>шея лошади</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Hübschmann._Arm._Gr."/><biblScope>118</biblScope></bibl>),
-                        <mentioned xml:lang="fa"><lang/>
+                        <gloss><q>грива</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1712e153" xml:lang="xcl"><w/>
+                        <gloss><q>шея лошади</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Hübschmann._Arm._Gr."/><biblScope>118</biblScope></bibl>),
+                        <mentioned xml:id="mentioned_d1712e164" xml:lang="fa"><lang/>
                         <w>buš</w><note type="comment" xml:lang="ru"> (←*%ibṛša%i-)</note>
-                        <gloss><q>шея, грива лошади</q></gloss></mentioned>, <mentioned
-                        xml:lang="x-balochi"><lang/>
+                        <gloss><q>шея, грива лошади</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1712e174" xml:lang="x-balochi"><lang/>
                         <w>bušk</w>
-                        <gloss><q>грива</q></gloss></mentioned>, <mentioned xml:lang="ps"><lang/>
+                        <gloss><q>грива</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1712e182" xml:lang="ps"><lang/>
                         <w>wraẓ</w>
-                        <gloss><q>грива</q></gloss></mentioned>’. <mentioned xml:lang="kv"><lang/>
+                        <gloss><q>грива</q></gloss></mentioned>’. <mentioned xml:id="mentioned_d1712e190" xml:lang="kv"><lang/>
                         <w>burši</w>
-                        <gloss><q>грива</q></gloss></mentioned>, <mentioned xml:lang="kca"><lang/>
+                        <gloss><q>грива</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1712e198" xml:lang="kca"><lang/>
                         <w>parəš</w></mentioned> идут, вероятно, из иранского. Возможно изначальное
                     родство со словом <ref type="xr" target="#entry_bærzæj"/> ‘шея’ q.
                             v.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>III
-                            152</biblScope></bibl>; <bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._Gr."/><biblScope>28</biblScope></bibl>.</etym>
-                <etym xml:lang="en">It traces back to <mentioned xml:lang="ira"><lang/>
-                        <w>*barša-</w></mentioned>, cf. <mentioned xml:lang="ae"><lang/>
-                        <w>barəša-</w></mentioned>, <mentioned xml:lang="sog"><lang/>
-                        <w>βnš</w></mentioned>, <mentioned xml:lang="xcl"><lang/>
-                        <note
-                            type="comment" xml:lang="en">(from Iranian) </note><w>barš</w>
-                        <gloss><q>mane</q></gloss></mentioned>, <mentioned xml:lang="xcl"><w/>
-                        <gloss><q>horse's neck</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Hübschmann._Arm._Gr."/><biblScope>118</biblScope></bibl>),
-                        <mentioned xml:lang="fa"><lang/>
-                        <w>buš</w><note
-                            type="comment" xml:lang="en"> (←*%ibṛša%i-)</note>
-                        <gloss><q>neck, horse's mane</q></gloss></mentioned>, <mentioned
-                        xml:lang="x-balochi"><lang/>
+                            152</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>28</biblScope></bibl>.</etym>
+                <etym xml:lang="en">It traces back to <mentioned xml:id="mentioned_d1712e218" xml:lang="ira"><lang/>
+                        <w>*barša-</w></mentioned>, cf. <mentioned xml:id="mentioned_d1712e223" xml:lang="ae"><lang/>
+                        <w>barəša-</w></mentioned>, <mentioned xml:id="mentioned_d1712e228" xml:lang="sog"><lang/>
+                        <w>βnš</w></mentioned>, <mentioned xml:id="mentioned_d1712e233" xml:lang="xcl"><lang/>
+                        <note type="comment" xml:lang="en">(from Iranian) </note><w>barš</w>
+                        <gloss><q>mane</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1712e243" xml:lang="xcl"><w/>
+                        <gloss><q>horse's neck</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Hübschmann._Arm._Gr."/><biblScope>118</biblScope></bibl>),
+                        <mentioned xml:id="mentioned_d1712e254" xml:lang="fa"><lang/>
+                        <w>buš</w><note type="comment" xml:lang="en"> (←*%ibṛša%i-)</note>
+                        <gloss><q>neck, horse's mane</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1712e264" xml:lang="x-balochi"><lang/>
                         <w>bušk</w>
-                        <gloss><q>mane</q></gloss></mentioned>, <mentioned xml:lang="ps"><lang/>
+                        <gloss><q>mane</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1712e272" xml:lang="ps"><lang/>
                         <w>wraẓ</w>
-                        <gloss><q>mane</q></gloss></mentioned>’. <mentioned xml:lang="kv"><lang/>
+                        <gloss><q>mane</q></gloss></mentioned>’. <mentioned xml:id="mentioned_d1712e280" xml:lang="kv"><lang/>
                         <w>burši</w>
-                        <gloss><q>mane</q></gloss></mentioned>, <mentioned xml:lang="kca"><lang/>
+                        <gloss><q>mane</q></gloss></mentioned>, <mentioned xml:id="mentioned_d1712e288" xml:lang="kca"><lang/>
                         <w>parəš</w></mentioned> probably trace back to the Iranian word. An initial
                     relation with the word <ref type="xr" target="#entry_bærzæj"/> ‘neck’ q. v. is
-                            possible.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"
-                            /><biblScope>III 152</biblScope></bibl>; <bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._Gr."/><biblScope>28</biblScope></bibl> .</etym>
+                            possible.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>III 152</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Вс._Миллер._Gr."/><biblScope>28</biblScope></bibl> .</etym>
             </entry>
         </body>
     </text>

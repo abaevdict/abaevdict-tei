@@ -1,37 +1,42 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">kʼaty</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_kʼaty" xml:lang="os-x-iron">
                 <form type="lemma"><orth>kʼaty</orth></form>
                 <usg><lang/></usg>
-                <re>
+                <re xml:id="re_d371e72">
                     <form type="lemma"><orth>kʼaty bon</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d371e77"><abv:tr xml:lang="ru">
                             <q>будний, рабочий день</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>workday</q>
                         </abv:tr></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d371e90">
                         <quote>zyd læg næ kʼaty bon zony, næ bæræg bon</quote>
                         <abv:tr xml:lang="ru">
                             <q>жадный человек не знает ни будней, ни праздника</q>
@@ -42,7 +47,7 @@
                         <bibl><ref type="bibl" target="#src_ЮОПам."/><biblScope>III
                             234</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d371e109">
                         <quote>bærægbonæj, kʼaty bonæj næ zydta, wazæg cy ū ūj</quote>
                         <abv:tr xml:lang="ru">
                             <q>ни в праздник, ни в будень он не знал, что такое гость</q>
@@ -50,23 +55,21 @@
                         <abv:tr xml:lang="en">
                             <q>neither on holiday nor on weekdays did he know what a guest is</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Нарт._сказ."
-                            /><biblScope>127</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Нарт._сказ."/><biblScope>127</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Может быть, из <mentioned xml:lang="ka"><lang/>
+                <etym xml:lang="ru">Может быть, из <mentioned xml:id="mentioned_d371e131" xml:lang="ka"><lang/>
                         <w>mk’ata (dǧe)</w></mentioned>, буквально „(день) жатвы“ в смысле ‘рабочий
-                    день’; ср. <mentioned xml:lang="ka"><lang/>
+                    день’; ср. <mentioned xml:id="mentioned_d371e136" xml:lang="ka"><lang/>
                         <w>mk’a</w>
-                        <gloss><q>жатва</q></gloss></mentioned>, <mentioned xml:lang="ka"><w>mk’ata
+                        <gloss><q>жатва</q></gloss></mentioned>, <mentioned xml:id="mentioned_d371e144" xml:lang="ka"><w>mk’ata
                             tve</w>
                         <gloss><q>июль</q></gloss></mentioned> („месяц жатвы“).</etym>
-                <etym xml:lang="en">It may be from <mentioned xml:lang="ka"><lang/>
+                <etym xml:lang="en">It may be from <mentioned xml:id="mentioned_d371e154" xml:lang="ka"><lang/>
                         <w>mk’ata (dǧe)</w></mentioned>, literally “(day of) harvest” in the meaning
-                    ‘workday’; cf. <mentioned xml:lang="ka"><lang/>
+                    ‘workday’; cf. <mentioned xml:id="mentioned_d371e159" xml:lang="ka"><lang/>
                         <w>mk’a</w>
-                        <gloss><q>harvest</q></gloss></mentioned>, <mentioned xml:lang="ka"
-                            ><w>mk’ata tve</w>
+                        <gloss><q>harvest</q></gloss></mentioned>, <mentioned xml:id="mentioned_d371e167" xml:lang="ka"><w>mk’ata tve</w>
                         <gloss><q>July</q></gloss></mentioned> (“harvesting month”).</etym>
             </entry>
         </body>

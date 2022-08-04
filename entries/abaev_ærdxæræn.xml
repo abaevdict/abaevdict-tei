@@ -1,41 +1,46 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ærdxæræn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ærdxæræn" xml:lang="os">
                 <form type="lemma"><orth>ærdxæræn</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d588e69"><sense xml:id="sense_d588e70"><abv:tr xml:lang="ru">
                             <q>прославленный</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>famous</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d588e79"><abv:tr xml:lang="ru">
                             <q>неслыханный</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>unprecedented</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d588e88"><abv:tr xml:lang="ru">
                             <q>ославленный</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>defaimed</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d588e100">
                         <quote>adæmæn mæ ærdxæræn, æmbīsond ma fækæn</quote>
                         <abv:tr xml:lang="ru">
                             <q>не делай меня позорищем, притчей для народа</q>
@@ -45,7 +50,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Сека"/><biblScope>46</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d588e119">
                         <quote>Beci… wæjmæ ærxasta īw ærdxæræny qyrimag</quote>
                         <abv:tr xml:lang="ru">
                             <q>Беци принес для продажи одно прославленное крымское ружье</q>
@@ -55,7 +60,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Čerm."/><biblScope>74</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d588e138">
                         <quote>ærdxæræn baræg wydī Sālǵenyq, īwyl ærdxæræn ta jæ saw arabbag
                             bæx</quote>
                         <abv:tr xml:lang="ru">
@@ -66,14 +71,11 @@
                             <q>Salgenuk was famouse horseman, and his black Arabian horse was even
                                 more famous</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Čerm."
-                            /><biblScope>104</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Čerm."/><biblScope>104</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">От %iard xæryn%i ‘клясться’. См. <ref type="xr"
-                        target="#entry_ard"/> .</etym>
-                <etym xml:lang="en">From %iard xæryn%i ‘to swear’. See <ref type="xr"
-                        target="#entry_ard"/> .</etym>
+                <etym xml:lang="ru">От %iard xæryn%i ‘клясться’. См. <ref type="xr" target="#entry_ard"/> .</etym>
+                <etym xml:lang="en">From %iard xæryn%i ‘to swear’. See <ref type="xr" target="#entry_ard"/> .</etym>
             </entry>
         </body>
     </text>

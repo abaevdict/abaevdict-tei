@@ -1,54 +1,57 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">galīw</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_galīw" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>galīw</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>galew</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d2238e72"><abv:tr xml:lang="ru">
                         <q>левый</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>left</q>
                     </abv:tr></sense>
-                <re>
+                <re xml:id="re_d2238e82">
                     <form type="lemma"><orth>galīwæg</orth></form>
-                    <sense><sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d2238e87"><sense xml:id="sense_d2238e88"><abv:tr xml:lang="ru">
                                 <q>левша</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>left-hander</q>
-                            </abv:tr></sense><sense><note type="comment" xml:lang="ru">переносно
+                            </abv:tr></sense><sense xml:id="sense_d2238e97"><note type="comment" xml:lang="ru">переносно
                                 —</note><note type="comment" xml:lang="en">figuratively
                                 —</note><abv:tr xml:lang="ru">
                                 <q>дурного поведения</q>
-                            </abv:tr><note type="comment" xml:lang="ru">переносно —</note><note
-                                type="comment" xml:lang="en">figuratively —</note><abv:tr
-                                xml:lang="en">
+                            </abv:tr><note type="comment" xml:lang="ru">переносно —</note><note type="comment" xml:lang="en">figuratively —</note><abv:tr xml:lang="en">
                                 <q>of bad behaviour</q>
-                            </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                            </abv:tr></sense><sense xml:id="sense_d2238e114"><abv:tr xml:lang="ru">
                                 <q>дурного нрава</q>
                             </abv:tr><abv:tr xml:lang="en">
                                 <q>of bad temper</q>
                             </abv:tr></sense></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d2238e127">
                         <quote>wælæ bælasæj kʼalīw raxawdta; mæ dywwæ congæj galīw axawdta</quote>
                         <abv:tr xml:lang="ru">
                             <q>вон с дерева упала ветка; из двух моих рук упала левая</q>
@@ -57,10 +60,9 @@
                             <q>a branch fell from the tree; my left hand fell out of my two
                                 hands</q>
                         </abv:tr>
-                        <bibl><biblScope xml:lang="ru">из песни</biblScope><biblScope xml:lang="en"
-                                >from a song</biblScope></bibl>
+                        <bibl><biblScope xml:lang="ru">из песни</biblScope><biblScope xml:lang="en">from a song</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d2238e148" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>sæ raxez farsæj — Qærewi bærzond, sæ galew farsæj — Bestawi
                             bærzond</quote>
@@ -72,10 +74,9 @@
                             <q>on the right side of them there is the Kareu peak, on the left side
                                 there is the Beshtau peak</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_ОЭп."
-                                /><biblScope>57%l136–137%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_ОЭп."/><biblScope>57%l136–137%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d2238e170" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>æfsæn dwar æ galew kʼoxæj ærtæ cæfi fækkodta</quote>
                         <abv:tr xml:lang="ru">
@@ -84,10 +85,9 @@
                         <abv:tr xml:lang="en">
                             <q>he hit the iron door three times with his left hand</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>6%l13%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>6%l13%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d2238e192">
                         <quote>galīw sæ nyxæstæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>дурны их речи</q>
@@ -99,16 +99,14 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Неясно. Совершенно произвольно деление %igæ-liw%i и сближение
-                    второй части с <mentioned xml:lang="ru"><lang/>
-                        <w>лев-ый</w></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>III 159</biblScope></bibl>).
+                    второй части с <mentioned xml:id="mentioned_d2238e215" xml:lang="ru"><lang/>
+                        <w>лев-ый</w></mentioned> (<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>III 159</biblScope></bibl>).
                     Может быть, исходное значение — ‘левая рука’. В этом случае %igalīw%i можно было
                     бы рассматривать как видоизменение <ref type="xr" target="#entry_kʼalīw"/>
                     ‘ветка’: левая рука называлась эвфемистически или уничижительно „веткой“.</etym>
                 <etym xml:lang="en">Unclear. The division %igæ-liw%i and bringing the second part
-                    closer to <mentioned xml:lang="ru"><lang/>
-                        <w>lev-yj</w></mentioned> is completely arbitraty (<bibl><ref type="bibl"
-                            target="#ref_Вс._Миллер._ОЭ"/><biblScope>III 159</biblScope></bibl>).
+                    closer to <mentioned xml:id="mentioned_d2238e229" xml:lang="ru"><lang/>
+                        <w>lev-yj</w></mentioned> is completely arbitraty (<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>III 159</biblScope></bibl>).
                     Maybe, the initial meaning is ‘left hand’. In this case %igalīw%i may have been
                     viewed as a changed <ref type="xr" target="#entry_kʼalīw"/> ‘branch’: a left
                     hand was called euphemistically or pejoratively a “branch”.</etym>

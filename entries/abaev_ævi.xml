@@ -1,27 +1,32 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ævi</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ævi" xml:lang="os">
                 <form type="lemma"><orth>ævi</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d545e69"><abv:tr xml:lang="ru">
                         <q>или</q>
                     </abv:tr><note type="comment" xml:lang="ru"> (в вопросительных
                         оборотах).)</note><note type="comment" xml:lang="en"> (in
@@ -29,10 +34,9 @@
                         <q>or</q>
                     </abv:tr><note type="comment" xml:lang="ru"> (в вопросительных
                         оборотах).)</note><note type="comment" xml:lang="en"> (in
-                        questions)</note><note type="comment" xml:lang="ru">союз</note><note
-                        type="comment" xml:lang="en">conjunction</note></sense>
+                        questions)</note><note type="comment" xml:lang="ru">союз</note><note type="comment" xml:lang="en">conjunction</note></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d545e93">
                         <quote>læg ævi ūs?</quote>
                         <abv:tr xml:lang="ru">
                             <q>мужчина или женщина?</q>
@@ -40,10 +44,9 @@
                         <abv:tr xml:lang="en">
                             <q>(is it) a man or a woman?</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"
-                            /><biblScope>101</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>101</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d545e112">
                         <quote>ragon æmbīsond wyn zæǧon ævi ærygon?</quote>
                         <abv:tr xml:lang="ru">
                             <q>давнее чудо вам рассказывать или недавнее?</q>
@@ -53,7 +56,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_ОТ"/><biblScope>76</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d545e131">
                         <quote>qazgæ ma kænūt ævi cy?</quote>
                         <abv:tr xml:lang="ru">
                             <q>шутите вы со мной или что?</q>
@@ -63,7 +66,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_ОЭ"/><biblScope>I 22</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d545e150">
                         <quote>cy ū æncondær zæǧæn: barst dyn wænt dæ tærīǧædtæ ævi: syst æmæ
                             cū?</quote>
                         <abv:tr xml:lang="ru">
@@ -77,7 +80,7 @@
                         <bibl><ref type="bibl" target="#src_Матфей"/><biblScope>%i9%i
                             5</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d545e169" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>dæ læg dæ beræ warzuj ævi næ?</quote>
                         <abv:tr xml:lang="ru">
@@ -86,38 +89,31 @@
                         <abv:tr xml:lang="en">
                             <q>does your husband love you much or not?</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>11%l2%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>11%l2%l</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Вероятно/ из %iva%i+%ik%i, ср. с одной стороны <mentioned
-                        xml:lang="ae"><lang/>
-                        <w>vā</w></mentioned>, <mentioned xml:lang="sa"><lang/>
-                        <w>vā</w></mentioned>, <mentioned xml:lang="sog"><lang/>
+                <etym xml:lang="ru">Вероятно/ из %iva%i+%ik%i, ср. с одной стороны <mentioned xml:id="mentioned_d545e194" xml:lang="ae"><lang/>
+                        <w>vā</w></mentioned>, <mentioned xml:id="mentioned_d545e199" xml:lang="sa"><lang/>
+                        <w>vā</w></mentioned>, <mentioned xml:id="mentioned_d545e204" xml:lang="sog"><lang/>
                         <w>*vā(β')</w>
-                        <gloss><q>или</q></gloss></mentioned>, с другой — <mentioned xml:lang="sla"><lang/>
-                        <w>i</w></mentioned>, <mentioned xml:lang="ru"><lang/>
+                        <gloss><q>или</q></gloss></mentioned>, с другой — <mentioned xml:id="mentioned_d545e212" xml:lang="sla"><lang/>
+                        <w>i</w></mentioned>, <mentioned xml:id="mentioned_d545e217" xml:lang="ru"><lang/>
                         <w>и</w><note type="comment" xml:lang="ru">, соединительный союз</note></mentioned>. Для сращения двух союзов ср. хотя бы
-                        <mentioned xml:lang="ru"><lang/>
+                        <mentioned xml:id="mentioned_d545e225" xml:lang="ru"><lang/>
                         <w>или</w><note type="comment" xml:lang="ru">из %iи%i + %iли%i</note></mentioned>.
-                    Начальное %iv%i, подверженное отпадению (ср. <ref type="xr"
-                        target="#entry_Acyrūxs"/>), было „спасено“ протетическим %iæ%i-.</etym>
+                    Начальное %iv%i, подверженное отпадению (ср. <ref type="xr" target="#entry_Acyrūxs"/>), было „спасено“ протетическим %iæ%i-.</etym>
                 <etym xml:lang="en">Probably, it is derived from %iva%i+%ik%i, cf. on the one hand
-                        <mentioned xml:lang="ae"><lang/>
-                        <w>vā</w></mentioned>, <mentioned xml:lang="sa"><lang/>
-                        <w>vā</w></mentioned>, <mentioned xml:lang="sog"><lang/>
+                        <mentioned xml:id="mentioned_d545e237" xml:lang="ae"><lang/>
+                        <w>vā</w></mentioned>, <mentioned xml:id="mentioned_d545e242" xml:lang="sa"><lang/>
+                        <w>vā</w></mentioned>, <mentioned xml:id="mentioned_d545e247" xml:lang="sog"><lang/>
                         <w>*vā(β')</w>
-                        <gloss><q>или</q></gloss></mentioned>, and on the other hand — <mentioned
-                        xml:lang="sla"><lang/>
-                        <w>i</w></mentioned>, <mentioned xml:lang="ru"><lang/>
-                        <w>i</w><note
-                            type="comment" xml:lang="en">, coordinating
+                        <gloss><q>или</q></gloss></mentioned>, and on the other hand — <mentioned xml:id="mentioned_d545e255" xml:lang="sla"><lang/>
+                        <w>i</w></mentioned>, <mentioned xml:id="mentioned_d545e260" xml:lang="ru"><lang/>
+                        <w>i</w><note type="comment" xml:lang="en">, coordinating
                         conjunction</note></mentioned>. As for the fusion of two conjunctions, cf.
-                    at least <mentioned xml:lang="ru"><lang/>
-                        <w>ili</w><note
-                            type="comment" xml:lang="en">from %ii%i + %ili%i</note></mentioned>. The
-                    initial %iv%i, which is subject to the loss (cf. <ref type="xr"
-                        target="#entry_Acyrūxs"/>), was “saved” by a prothetic %iæ%i-.</etym>
+                    at least <mentioned xml:id="mentioned_d545e268" xml:lang="ru"><lang/>
+                        <w>ili</w><note type="comment" xml:lang="en">from %ii%i + %ili%i</note></mentioned>. The
+                    initial %iv%i, which is subject to the loss (cf. <ref type="xr" target="#entry_Acyrūxs"/>), was “saved” by a prothetic %iæ%i-.</etym>
             </entry>
         </body>
     </text>

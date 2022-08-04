@@ -1,39 +1,44 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">dyvænd</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_dyvænd" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>dyvænd</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>duvændæ</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d4227e72"><sense xml:id="sense_d4227e73"><abv:tr xml:lang="ru">
                             <q>нерешимость</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>hesitation</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d4227e82"><abv:tr xml:lang="ru">
                             <q>колебание</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>doubt</q>
                         </abv:tr></sense></sense>
-                <re>
+                <re xml:id="re_d4227e92">
                     <form type="lemma"><orth>dyvænd kænyn</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d4227e97"><abv:tr xml:lang="ru">
                             <q>быть в нерешимости</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>dwell in uncertainty</q>
@@ -41,16 +46,15 @@
                 </re>
                 <etym xml:lang="ru">Буквально „двоемыслие“; см. <ref type="xr" target="#entry_dy-"/>
                     и <ref type="xr" target="#entry_fænd"/> ‘замысел’, ‘намерение’. По характеру
-                    образования ср. <mentioned xml:lang="de"><lang/>
+                    образования ср. <mentioned xml:id="mentioned_d4227e114" xml:lang="de"><lang/>
                         <w>Zweifel</w>
-                        <gloss><q>сомнение</q></gloss></mentioned> (от <mentioned xml:lang="de"><lang/>
+                        <gloss><q>сомнение</q></gloss></mentioned> (от <mentioned xml:id="mentioned_d4227e122" xml:lang="de"><lang/>
                         <w>zwei</w>
                         <gloss><q>два</q></gloss></mentioned>).</etym>
-                <etym xml:lang="en">Literally “double thinking”; see <ref type="xr"
-                        target="#entry_dy-"/> and <ref type="xr" target="#entry_fænd"/> ‘intention’,
-                    ‘purpose’. Cf. by the derivation pattern <mentioned xml:lang="de"><lang/>
+                <etym xml:lang="en">Literally “double thinking”; see <ref type="xr" target="#entry_dy-"/> and <ref type="xr" target="#entry_fænd"/> ‘intention’,
+                    ‘purpose’. Cf. by the derivation pattern <mentioned xml:id="mentioned_d4227e138" xml:lang="de"><lang/>
                         <w>Zweifel</w>
-                        <gloss><q>doubt</q></gloss></mentioned> (from <mentioned xml:lang="de"><lang/>
+                        <gloss><q>doubt</q></gloss></mentioned> (from <mentioned xml:id="mentioned_d4227e146" xml:lang="de"><lang/>
                         <w>zwei</w>
                         <gloss><q>two</q></gloss></mentioned>).</etym>
             </entry>

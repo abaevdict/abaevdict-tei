@@ -1,36 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ævdīsyn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_ævdīsyn" xml:lang="os">
-                <form xml:lang="os-x-iron" type="lemma"><orth>ævdīsyn</orth><form type="participle"
-                            ><orth>ævdyst</orth></form></form>
-                <form xml:lang="os-x-digor" type="dialectal"><orth>ævdesun</orth><form
-                        type="participle"><orth>ævdist</orth></form></form>
-                <sense><abv:tr xml:lang="ru">
+                <form xml:lang="os-x-iron" type="lemma"><orth>ævdīsyn</orth><form type="participle"><orth>ævdyst</orth></form></form>
+                <form xml:lang="os-x-digor" type="dialectal"><orth>ævdesun</orth><form type="participle"><orth>ævdist</orth></form></form>
+                <sense xml:id="sense_d910e76"><abv:tr xml:lang="ru">
                         <q>показывать</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>to show</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d910e88">
                         <quote>Xæmyc æj k˳y fedta, wæd æm jæ dændag ravdysta</quote>
                         <abv:tr xml:lang="ru">
                             <q>когда Хамыц ее увидел, он показал ей свой зуб</q>
@@ -40,7 +43,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_ОЭ"/><biblScope>I 38</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d910e107">
                         <quote>dæ qarū nyn ravdīs!</quote>
                         <abv:tr xml:lang="ru">
                             <q>покажи нам свою доблесть!</q>
@@ -50,7 +53,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>60</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d910e126" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>læqwæn adæm sæ lægiǧædæ ævdesuncæ</quote>
                         <abv:tr xml:lang="ru">
@@ -59,10 +62,9 @@
                         <abv:tr xml:lang="en">
                             <q>the young men display courage</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                                /><biblScope>13%l10—11%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>13%l10—11%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d910e148" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>oj bavdist æj xæzgoldarbæl</quote>
                         <abv:tr xml:lang="ru">
@@ -75,188 +77,137 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Сращение ныне мертвого преверба %iæv%i- (из %iара%i- или
-                    %iabi%i-) с основой %idīs%i- | %ides%i-, <mentioned xml:lang="x-oldirn"><lang/>
+                    %iabi%i-) с основой %idīs%i- | %ides%i-, <mentioned xml:id="mentioned_d910e173" xml:lang="x-oldirn"><lang/>
                         <w>dais-</w></mentioned>. Основа эта широко распространена в индоевропейских
-                    языках: <mentioned xml:lang="wbl"><lang/>
-                        <w>δīsiv-</w></mentioned>, <mentioned xml:lang="x-rushani"><lang/>
+                    языках: <mentioned xml:id="mentioned_d910e178" xml:lang="wbl"><lang/>
+                        <w>δīsiv-</w></mentioned>, <mentioned xml:id="mentioned_d910e183" xml:lang="x-rushani"><lang/>
                         <w>d’visy←(*vi-dis-?)</w>
-                        <gloss><q>показывать</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_РТ"/><biblScope>62</biblScope></bibl>), <mentioned
-                        xml:lang="pal-x-turfan"><lang/>
+                        <gloss><q>показывать</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_РТ"/><biblScope>62</biblScope></bibl>), <mentioned xml:id="mentioned_d910e195" xml:lang="pal-x-turfan"><lang/>
                         <w>ab-dēs-</w>
                         <gloss><q>указывать</q></gloss></mentioned>
-                            (<bibl><author>Tedesco</author><ref type="bibl" target="#ref_MO"
-                            /><biblScope>338</biblScope></bibl>), <mentioned xml:lang="pal"><lang/>
-                        <w>δis-</w><note type="comment" xml:lang="ru">в</note></mentioned>, <mentioned xml:lang="pal"
-                            ><w>fraδist kū</w>
-                        <gloss><q>указывается</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Nyberg"/><biblScope>II 70</biblScope></bibl>), <mentioned
-                        xml:lang="sog"><lang/>
-                        <w>*δēs-</w></mentioned>, <mentioned xml:lang="sog"><w>*δis-</w><note
-                            type="comment" xml:lang="ru">в <mentioned xml:lang="sog"><lang/>
-                                <w>ʽβδʽys-</w></mentioned>;</note></mentioned>, <mentioned
-                        xml:lang="sog"><w>fδʽys-</w></mentioned>, <mentioned xml:lang="sog"
-                            ><w>fδys-</w></mentioned>, <mentioned xml:lang="sog"
-                        ><w>pδʽys-</w></mentioned>, <mentioned xml:lang="sog"
-                        ><w>pδys-</w></mentioned>, <mentioned xml:lang="sog"><w>ʽnδʽys-</w>
-                        <gloss><q>показывать</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_JA"/><biblScope>1933, окт.—дек., стр.
-                        231</biblScope></bibl>. — <bibl><ref type="bibl"
-                            target="#ref_Henning._Sogd."/><biblScope>20</biblScope></bibl>),
-                        <mentioned xml:lang="kho"><lang/>
+                            (<bibl><author>Tedesco</author><ref type="bibl" target="#ref_MO"/><biblScope>338</biblScope></bibl>), <mentioned xml:id="mentioned_d910e209" xml:lang="pal"><lang/>
+                        <w>δis-</w><note type="comment" xml:lang="ru">в</note></mentioned>, <mentioned xml:id="mentioned_d910e216" xml:lang="pal"><w>fraδist kū</w>
+                        <gloss><q>указывается</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Nyberg"/><biblScope>II 70</biblScope></bibl>), <mentioned xml:id="mentioned_d910e226" xml:lang="sog"><lang/>
+                        <w>*δēs-</w></mentioned>, <mentioned xml:id="mentioned_d910e231" xml:lang="sog"><w>*δis-</w><note type="comment" xml:lang="ru">в <mentioned xml:id="mentioned_d910e235" xml:lang="sog"><lang/>
+                                <w>ʽβδʽys-</w></mentioned>;</note></mentioned>, <mentioned xml:id="mentioned_d910e242" xml:lang="sog"><w>fδʽys-</w></mentioned>, <mentioned xml:id="mentioned_d910e245" xml:lang="sog"><w>fδys-</w></mentioned>, <mentioned xml:id="mentioned_d910e248" xml:lang="sog"><w>pδʽys-</w></mentioned>, <mentioned xml:id="mentioned_d910e251" xml:lang="sog"><w>pδys-</w></mentioned>, <mentioned xml:id="mentioned_d910e254" xml:lang="sog"><w>ʽnδʽys-</w>
+                        <gloss><q>показывать</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_JA"/><biblScope>1933, окт.—дек., стр.
+                        231</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Henning._Sogd."/><biblScope>20</biblScope></bibl>),
+                        <mentioned xml:id="mentioned_d910e269" xml:lang="kho"><lang/>
                         <w>dīs-</w>
-                        <gloss><q>указывать</q></gloss></mentioned>, <mentioned xml:lang="kho"><w/>
-                        <gloss><q>отмечать</q></gloss></mentioned>, <mentioned xml:lang="kho"><w/>
-                        <gloss><q>свидетельствовать</q></gloss></mentioned>, <mentioned
-                        xml:lang="kho"><w>uysdīs--(=uz-dīs-)</w>
-                        <gloss><q>объяснять</q></gloss></mentioned>, <mentioned xml:lang="kho"><w/>
-                        <gloss><q>учить</q></gloss></mentioned>, <mentioned xml:lang="ae"><lang/>
+                        <gloss><q>указывать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d910e277" xml:lang="kho"><w/>
+                        <gloss><q>отмечать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d910e283" xml:lang="kho"><w/>
+                        <gloss><q>свидетельствовать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d910e289" xml:lang="kho"><w>uysdīs--(=uz-dīs-)</w>
+                        <gloss><q>объяснять</q></gloss></mentioned>, <mentioned xml:id="mentioned_d910e295" xml:lang="kho"><w/>
+                        <gloss><q>учить</q></gloss></mentioned>, <mentioned xml:id="mentioned_d910e302" xml:lang="ae"><lang/>
                         <w>daes-</w>
-                        <gloss><q>показывать</q></gloss></mentioned>, <mentioned xml:lang="ae"
-                            ><w>daesayāni</w>
-                        <gloss><q>я хочу показать</q></gloss></mentioned> (=<mentioned xml:lang="os"><lang/>
-                        <w>æv-dīson</w></mentioned>), <mentioned xml:lang="sa"><lang/>
-                        <w>deśayati</w></mentioned>, <mentioned xml:lang="sa"><w>diśati</w>
-                        <gloss><q>он показывает</q></gloss></mentioned>, <mentioned xml:lang="sa"
-                            ><w>apa-diś-</w>
-                        <gloss><q>показывать</q></gloss></mentioned>, <mentioned xml:lang="la"><lang/>
+                        <gloss><q>показывать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d910e310" xml:lang="ae"><w>daesayāni</w>
+                        <gloss><q>я хочу показать</q></gloss></mentioned> (=<mentioned xml:id="mentioned_d910e316" xml:lang="os"><lang/>
+                        <w>æv-dīson</w></mentioned>), <mentioned xml:id="mentioned_d910e321" xml:lang="sa"><lang/>
+                        <w>deśayati</w></mentioned>, <mentioned xml:id="mentioned_d910e326" xml:lang="sa"><w>diśati</w>
+                        <gloss><q>он показывает</q></gloss></mentioned>, <mentioned xml:id="mentioned_d910e332" xml:lang="sa"><w>apa-diś-</w>
+                        <gloss><q>показывать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d910e339" xml:lang="la"><lang/>
                         <w>dico</w>
-                        <gloss><q>говорю</q></gloss></mentioned> (ср. <mentioned xml:lang="ru"><lang/>
-                        <w>по-каз-ать</w><note type="comment" xml:lang="ru">и <mentioned xml:lang="ru"><lang/>
-                                <w>с-каз-ать</w></mentioned></note></mentioned>), <mentioned
-                        xml:lang="grc"><lang/>
+                        <gloss><q>говорю</q></gloss></mentioned> (ср. <mentioned xml:id="mentioned_d910e347" xml:lang="ru"><lang/>
+                        <w>по-каз-ать</w><note type="comment" xml:lang="ru">и <mentioned xml:id="mentioned_d910e353" xml:lang="ru"><lang/>
+                                <w>с-каз-ать</w></mentioned></note></mentioned>), <mentioned xml:id="mentioned_d910e358" xml:lang="grc"><lang/>
                         <w>δείκνoμι</w>
-                        <gloss><q>я показываю</q></gloss></mentioned>, <mentioned xml:lang="grc"
-                            ><w>έδειξα</w>
-                        <gloss><q>я показал</q></gloss></mentioned>, <mentioned xml:lang="ang"><lang/>
-                        <w>tekan</w></mentioned>, <mentioned xml:lang="de"><lang/>
+                        <gloss><q>я показываю</q></gloss></mentioned>, <mentioned xml:id="mentioned_d910e366" xml:lang="grc"><w>έδειξα</w>
+                        <gloss><q>я показал</q></gloss></mentioned>, <mentioned xml:id="mentioned_d910e372" xml:lang="ang"><lang/>
+                        <w>tekan</w></mentioned>, <mentioned xml:id="mentioned_d910e377" xml:lang="de"><lang/>
                         <w>Zeichen</w>
-                        <gloss><q>знак</q></gloss></mentioned>, <mentioned xml:lang="de"
-                            ><w>zeigen</w>
-                        <gloss><q>показывать</q></gloss></mentioned>, <mentioned xml:lang="de"
-                            ><w>zeihen</w>
-                        <gloss><q>обвинять</q></gloss></mentioned>. <mentioned xml:lang="os"><lang/>
+                        <gloss><q>знак</q></gloss></mentioned>, <mentioned xml:id="mentioned_d910e386" xml:lang="de"><w>zeigen</w>
+                        <gloss><q>показывать</q></gloss></mentioned>, <mentioned xml:id="mentioned_d910e392" xml:lang="de"><w>zeihen</w>
+                        <gloss><q>обвинять</q></gloss></mentioned>. <mentioned xml:id="mentioned_d910e398" xml:lang="os"><lang/>
                         <w>(æv)dyst</w>
-                        <gloss><q>показанный</q></gloss></mentioned>= <mentioned xml:lang="x-oldirn"><lang/>
-                        <w>dišta-</w></mentioned>, <mentioned xml:lang="la"><lang/>
-                        <w>dictus</w></mentioned>, как <mentioned xml:lang="os"><lang/>
+                        <gloss><q>показанный</q></gloss></mentioned>= <mentioned xml:id="mentioned_d910e406" xml:lang="x-oldirn"><lang/>
+                        <w>dišta-</w></mentioned>, <mentioned xml:id="mentioned_d910e411" xml:lang="la"><lang/>
+                        <w>dictus</w></mentioned>, как <mentioned xml:id="mentioned_d910e416" xml:lang="os"><lang/>
                         <w>fyst</w>
-                        <gloss><q>написанный</q></gloss></mentioned>=<mentioned xml:lang="x-oldirn"><lang/>
-                        <w>dišta-</w></mentioned>, <mentioned xml:lang="la"><lang/>
+                        <gloss><q>написанный</q></gloss></mentioned>=<mentioned xml:id="mentioned_d910e425" xml:lang="x-oldirn"><lang/>
+                        <w>dišta-</w></mentioned>, <mentioned xml:id="mentioned_d910e430" xml:lang="la"><lang/>
                         <w>dictus</w></mentioned>.<note type="footnote" n="1"> PUT NOTE HERE </note>
-                    На осетинской почве корень %idīs%i- | %ides%i- находим еще в словах <ref
-                        type="xr" target="#entry_fīdīs"/> | %ifedes%i ‘упрек’, <ref type="xr"
-                        target="#entry_fældīsyn"/> | %ifældesun%i ‘посвящать покойнику’, ‘творить’,
-                        <mentioned xml:lang="os-x-digor"><lang/>
+                    На осетинской почве корень %idīs%i- | %ides%i- находим еще в словах <ref type="xr" target="#entry_fīdīs"/> | %ifedes%i ‘упрек’, <ref type="xr" target="#entry_fældīsyn"/> | %ifældesun%i ‘посвящать покойнику’, ‘творить’,
+                        <mentioned xml:id="mentioned_d910e442" xml:lang="os-x-digor"><lang/>
                         <w/></mentioned>
                     <ref type="xr" target="#entry_rædesun"/> ‘показывать признаки скорого отела’ (о
                     корове); может быть, также в <ref type="xr" target="#entry_dīs"/> | %ides%i
                     ‘удивление’, <ref type="xr" target="#entry_dīssag"/> | %idessag%i ‘чудесный’.
-                    Ср. также <ref type="xr" target="#entry_ævdīsæn"/> ‘свидетель’.%n<bibl><ref
-                            type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 56, III 167; Gr.
-                            30, 60</biblScope></bibl> — <bibl><ref type="bibl"
-                            target="#ref_Hübschmann._Oss."/><biblScope>18</biblScope></bibl>.
+                    Ср. также <ref type="xr" target="#entry_ævdīsæn"/> ‘свидетель’.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 56, III 167; Gr.
+                            30, 60</biblScope></bibl> — <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>18</biblScope></bibl>.
                     (ср.</etym>
                 <etym xml:lang="en">The fusion of the preverb %iæv%i- which is now out of use (from
-                    %iара%i- or %iabi%i-) with the stem %idīs%i- | %ides%i-, <mentioned
-                        xml:lang="x-oldirn"><lang/>
+                    %iара%i- or %iabi%i-) with the stem %idīs%i- | %ides%i-, <mentioned xml:id="mentioned_d910e468" xml:lang="x-oldirn"><lang/>
                         <w>dais-</w></mentioned>. The stem is widespread in Indoeuropean languages:
-                        <mentioned xml:lang="wbl"><lang/>
-                        <w>δīsiv-</w></mentioned>, <mentioned xml:lang="x-rushani"><lang/>
+                        <mentioned xml:id="mentioned_d910e473" xml:lang="wbl"><lang/>
+                        <w>δīsiv-</w></mentioned>, <mentioned xml:id="mentioned_d910e478" xml:lang="x-rushani"><lang/>
                         <w>d’visy←(*vi-dis-?)</w>
-                        <gloss><q>to show</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_РТ"/><biblScope>62</biblScope></bibl>), <mentioned
-                        xml:lang="pal-x-turfan"><lang/>
+                        <gloss><q>to show</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_РТ"/><biblScope>62</biblScope></bibl>), <mentioned xml:id="mentioned_d910e490" xml:lang="pal-x-turfan"><lang/>
                         <w>ab-dēs-</w>
                         <gloss><q>to indicate</q></gloss></mentioned>
-                            (<bibl><author>Tedesco</author><ref type="bibl" target="#ref_MO"
-                            /><biblScope>338</biblScope></bibl>), <mentioned xml:lang="pal"><lang/>
-                        <w>δis-</w><note type="comment"
-                            xml:lang="en">in</note></mentioned>, <mentioned xml:lang="pal"
-                            ><w>fraδist kū</w>
-                        <gloss><q>it is indicated</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Nyberg"/><biblScope>II 70</biblScope></bibl>), <mentioned
-                        xml:lang="sog"><lang/>
-                        <w>*δēs-</w></mentioned>, <mentioned xml:lang="sog"><w>*δis-</w><note type="comment" xml:lang="en">in
-                                <mentioned xml:lang="sog"><lang/>
-                                <w/></mentioned>;</note></mentioned>, <mentioned xml:lang="sog"
-                            ><w>fδʽys-</w></mentioned>, <mentioned xml:lang="sog"
-                        ><w>fδys-</w></mentioned>, <mentioned xml:lang="sog"
-                        ><w>pδʽys-</w></mentioned>, <mentioned xml:lang="sog"
-                        ><w>pδys-</w></mentioned>, <mentioned xml:lang="sog"><w>ʽnδʽys-</w>
-                        <gloss><q>to show</q></gloss></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_JA"/><biblScope>1933, oct.—dec., p.231</biblScope></bibl>.
-                    — <bibl><ref type="bibl" target="#ref_Henning._Sogd."
-                        /><biblScope>20</biblScope></bibl>), <mentioned xml:lang="kho"><lang/>
+                            (<bibl><author>Tedesco</author><ref type="bibl" target="#ref_MO"/><biblScope>338</biblScope></bibl>), <mentioned xml:id="mentioned_d910e504" xml:lang="pal"><lang/>
+                        <w>δis-</w><note type="comment" xml:lang="en">in</note></mentioned>, <mentioned xml:id="mentioned_d910e511" xml:lang="pal"><w>fraδist kū</w>
+                        <gloss><q>it is indicated</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Nyberg"/><biblScope>II 70</biblScope></bibl>), <mentioned xml:id="mentioned_d910e521" xml:lang="sog"><lang/>
+                        <w>*δēs-</w></mentioned>, <mentioned xml:id="mentioned_d910e526" xml:lang="sog"><w>*δis-</w><note type="comment" xml:lang="en">in
+                                <mentioned xml:id="mentioned_d910e530" xml:lang="sog"><lang/>
+                                <w/></mentioned>;</note></mentioned>, <mentioned xml:id="mentioned_d910e537" xml:lang="sog"><w>fδʽys-</w></mentioned>, <mentioned xml:id="mentioned_d910e540" xml:lang="sog"><w>fδys-</w></mentioned>, <mentioned xml:id="mentioned_d910e543" xml:lang="sog"><w>pδʽys-</w></mentioned>, <mentioned xml:id="mentioned_d910e546" xml:lang="sog"><w>pδys-</w></mentioned>, <mentioned xml:id="mentioned_d910e549" xml:lang="sog"><w>ʽnδʽys-</w>
+                        <gloss><q>to show</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_JA"/><biblScope>1933, oct.—dec., p.231</biblScope></bibl>.
+                    — <bibl><ref type="bibl" target="#ref_Henning._Sogd."/><biblScope>20</biblScope></bibl>), <mentioned xml:id="mentioned_d910e564" xml:lang="kho"><lang/>
                         <w>dīs-</w>
-                        <gloss><q>to indicate</q></gloss></mentioned>, <mentioned xml:lang="kho"><w/>
-                        <gloss><q>to note</q></gloss></mentioned>, <mentioned xml:lang="kho"><w/>
-                        <gloss><q>to testify</q></gloss></mentioned>, <mentioned xml:lang="kho"
-                            ><w>uysdīs--(=uz-dīs-)</w>
-                        <gloss><q>to explain</q></gloss></mentioned>, <mentioned xml:lang="kho"><w/>
-                        <gloss><q>to teach</q></gloss></mentioned>, <mentioned xml:lang="ae"><lang/>
+                        <gloss><q>to indicate</q></gloss></mentioned>, <mentioned xml:id="mentioned_d910e572" xml:lang="kho"><w/>
+                        <gloss><q>to note</q></gloss></mentioned>, <mentioned xml:id="mentioned_d910e578" xml:lang="kho"><w/>
+                        <gloss><q>to testify</q></gloss></mentioned>, <mentioned xml:id="mentioned_d910e584" xml:lang="kho"><w>uysdīs--(=uz-dīs-)</w>
+                        <gloss><q>to explain</q></gloss></mentioned>, <mentioned xml:id="mentioned_d910e590" xml:lang="kho"><w/>
+                        <gloss><q>to teach</q></gloss></mentioned>, <mentioned xml:id="mentioned_d910e597" xml:lang="ae"><lang/>
                         <w>daes-</w>
-                        <gloss><q>to show</q></gloss></mentioned>, <mentioned xml:lang="ae"
-                            ><w>daesayāni</w>
-                        <gloss><q>I want to show</q></gloss></mentioned> (=<mentioned xml:lang="os"><lang/>
-                        <w>æv-dīson</w></mentioned>), <mentioned xml:lang="sa"><lang/>
-                        <w>deśayati</w></mentioned>, <mentioned xml:lang="sa"><w>diśati</w>
-                        <gloss><q>he shows</q></gloss></mentioned>, <mentioned xml:lang="sa"
-                            ><w>apa-diś-</w>
-                        <gloss><q>to show</q></gloss></mentioned>, <mentioned xml:lang="la"><lang/>
+                        <gloss><q>to show</q></gloss></mentioned>, <mentioned xml:id="mentioned_d910e605" xml:lang="ae"><w>daesayāni</w>
+                        <gloss><q>I want to show</q></gloss></mentioned> (=<mentioned xml:id="mentioned_d910e611" xml:lang="os"><lang/>
+                        <w>æv-dīson</w></mentioned>), <mentioned xml:id="mentioned_d910e616" xml:lang="sa"><lang/>
+                        <w>deśayati</w></mentioned>, <mentioned xml:id="mentioned_d910e621" xml:lang="sa"><w>diśati</w>
+                        <gloss><q>he shows</q></gloss></mentioned>, <mentioned xml:id="mentioned_d910e627" xml:lang="sa"><w>apa-diś-</w>
+                        <gloss><q>to show</q></gloss></mentioned>, <mentioned xml:id="mentioned_d910e634" xml:lang="la"><lang/>
                         <w>dico</w>
-                        <gloss><q>I say</q></gloss></mentioned> (ср. <mentioned xml:lang="ru"><lang/>
-                        <w>po-kaz-at'</w><note type="comment"
-                            xml:lang="en">and <mentioned xml:lang="ru"><lang/>
-                                <w>s-kaz-atʼ</w></mentioned></note></mentioned>), <mentioned
-                        xml:lang="grc"><lang/>
+                        <gloss><q>I say</q></gloss></mentioned> (ср. <mentioned xml:id="mentioned_d910e642" xml:lang="ru"><lang/>
+                        <w>po-kaz-at'</w><note type="comment" xml:lang="en">and <mentioned xml:id="mentioned_d910e648" xml:lang="ru"><lang/>
+                                <w>s-kaz-atʼ</w></mentioned></note></mentioned>), <mentioned xml:id="mentioned_d910e653" xml:lang="grc"><lang/>
                         <w>δείκνoμι</w>
-                        <gloss><q>I am showing</q></gloss></mentioned>, <mentioned xml:lang="grc"
-                            ><w>έδειξα</w>
-                        <gloss><q>I showed</q></gloss></mentioned>, <mentioned xml:lang="ang"><lang/>
-                        <w>tekan</w></mentioned>, <mentioned xml:lang="de"><lang/>
+                        <gloss><q>I am showing</q></gloss></mentioned>, <mentioned xml:id="mentioned_d910e661" xml:lang="grc"><w>έδειξα</w>
+                        <gloss><q>I showed</q></gloss></mentioned>, <mentioned xml:id="mentioned_d910e667" xml:lang="ang"><lang/>
+                        <w>tekan</w></mentioned>, <mentioned xml:id="mentioned_d910e672" xml:lang="de"><lang/>
                         <w>Zeichen</w>
-                        <gloss><q>sign</q></gloss></mentioned>, <mentioned xml:lang="de"
-                            ><w>zeigen</w>
-                        <gloss><q>to show</q></gloss></mentioned>, <mentioned xml:lang="de"
-                            ><w>zeihen</w>
-                        <gloss><q>to accuse</q></gloss></mentioned>. <mentioned xml:lang="os"><lang/>
+                        <gloss><q>sign</q></gloss></mentioned>, <mentioned xml:id="mentioned_d910e681" xml:lang="de"><w>zeigen</w>
+                        <gloss><q>to show</q></gloss></mentioned>, <mentioned xml:id="mentioned_d910e687" xml:lang="de"><w>zeihen</w>
+                        <gloss><q>to accuse</q></gloss></mentioned>. <mentioned xml:id="mentioned_d910e693" xml:lang="os"><lang/>
                         <w>(æv)dyst</w>
-                        <gloss><q>shown</q></gloss></mentioned>= <mentioned xml:lang="x-oldirn"><lang/>
-                        <w>dišta-</w></mentioned>, <mentioned xml:lang="la"><lang/>
-                        <w>dictus</w></mentioned>, like <mentioned xml:lang="os"><lang/>
+                        <gloss><q>shown</q></gloss></mentioned>= <mentioned xml:id="mentioned_d910e701" xml:lang="x-oldirn"><lang/>
+                        <w>dišta-</w></mentioned>, <mentioned xml:id="mentioned_d910e706" xml:lang="la"><lang/>
+                        <w>dictus</w></mentioned>, like <mentioned xml:id="mentioned_d910e711" xml:lang="os"><lang/>
                         <w>fyst</w>
-                        <gloss><q>written</q></gloss></mentioned>=<mentioned xml:lang="x-oldirn"><lang/>
-                        <w>dišta-</w></mentioned>, <mentioned xml:lang="la"><lang/>
+                        <gloss><q>written</q></gloss></mentioned>=<mentioned xml:id="mentioned_d910e720" xml:lang="x-oldirn"><lang/>
+                        <w>dišta-</w></mentioned>, <mentioned xml:id="mentioned_d910e725" xml:lang="la"><lang/>
                         <w>dictus</w></mentioned>.<note type="footnote" n="1"> PUT NOTE HERE </note>
-                    The Ossetic root %idīs%i- | %ides%i- is also found in the following words: <ref
-                        type="xr" target="#entry_fīdīs"/> | %ifedes%i ‘reproach', <ref type="xr"
-                        target="#entry_fældīsyn"/> | %ifældesun%i ‘to dedicate to a deadman’, ‘to
-                    create’, <mentioned xml:lang="os-x-digor"><lang/>
+                    The Ossetic root %idīs%i- | %ides%i- is also found in the following words: <ref type="xr" target="#entry_fīdīs"/> | %ifedes%i ‘reproach', <ref type="xr" target="#entry_fældīsyn"/> | %ifældesun%i ‘to dedicate to a deadman’, ‘to
+                    create’, <mentioned xml:id="mentioned_d910e737" xml:lang="os-x-digor"><lang/>
                         <w/></mentioned>
                     <ref type="xr" target="#entry_rædesun"/> ‘to show signs of a soon calving'
                     (about cows); maybe also in <ref type="xr" target="#entry_dīs"/> | %ides%i
                     ‘surprise’, <ref type="xr" target="#entry_dīssag"/> | %idessag%i ‘miraculous’.
-                    Cf. also <ref type="xr" target="#entry_ævdīsæn"/> ‘witness’.%n<bibl><ref
-                            type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 56, III 167; Gr.
-                            30, 60</biblScope></bibl> — <bibl><ref type="bibl"
-                            target="#ref_Hübschmann._Oss."/><biblScope>18</biblScope></bibl>.</etym>
+                    Cf. also <ref type="xr" target="#entry_ævdīsæn"/> ‘witness’.%n<bibl><ref type="bibl" target="#ref_Вс._Миллер._ОЭ"/><biblScope>II 56, III 167; Gr.
+                            30, 60</biblScope></bibl> — <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>18</biblScope></bibl>.</etym>
                 <note type="footnote" xml:lang="ru" n="1">Из новоиранской лексики следует относить
-                    сюда же, несмотря на отход эначения, <mentioned xml:lang="wbl"><lang/>
+                    сюда же, несмотря на отход эначения, <mentioned xml:id="mentioned_d910e762" xml:lang="wbl"><lang/>
                         <w>diš-: dišt-</w>
-                        <gloss><q>знать</q></gloss></mentioned> (ср. <mentioned xml:lang="os"><lang/>
+                        <gloss><q>знать</q></gloss></mentioned> (ср. <mentioned xml:id="mentioned_d910e770" xml:lang="os"><lang/>
                         <w>amonym</w>
-                        <gloss><q>показывать</q></gloss></mentioned> рядом с <mentioned
-                        xml:lang="de"><lang/>
-                        <w>meinen</w></mentioned>, <mentioned xml:lang="ru"><lang/>
+                        <gloss><q>показывать</q></gloss></mentioned> рядом с <mentioned xml:id="mentioned_d910e778" xml:lang="de"><lang/>
+                        <w>meinen</w></mentioned>, <mentioned xml:id="mentioned_d910e783" xml:lang="ru"><lang/>
                         <w>мнить</w></mentioned>).</note>
-                <note type="footnote" xml:lang="en" n="1">The <mentioned xml:lang="wbl"><lang/>
+                <note type="footnote" xml:lang="en" n="1">The <mentioned xml:id="mentioned_d910e791" xml:lang="wbl"><lang/>
                         <w>diš-: dišt-</w>
                         <gloss><q>to know</q></gloss></mentioned> (from new Iranian lexicon) has to
-                    be included here despite the difference in meaning, cf. <mentioned xml:lang="os"><lang/>
+                    be included here despite the difference in meaning, cf. <mentioned xml:id="mentioned_d910e799" xml:lang="os"><lang/>
                         <w>amonym</w>
-                        <gloss><q>to show</q></gloss></mentioned> near <mentioned xml:lang="de"><lang/>
-                        <w>meinen</w></mentioned>, <mentioned xml:lang="ru"><lang/>
+                        <gloss><q>to show</q></gloss></mentioned> near <mentioned xml:id="mentioned_d910e807" xml:lang="de"><lang/>
+                        <w>meinen</w></mentioned>, <mentioned xml:id="mentioned_d910e812" xml:lang="ru"><lang/>
                         <w>mnʼitʼ</w></mentioned>).</note>
             </entry>
         </body>

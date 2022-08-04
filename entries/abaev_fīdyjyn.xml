@@ -1,35 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">fīdyjyn</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_fīdyjyn" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>fīdyjyn</orth></form>
-                <form xml:lang="os-x-digor" type="dialectal"><orth>fedujun</orth><form
-                        type="participle"><orth>fedut</orth></form></form>
-                <sense><abv:tr xml:lang="ru">
+                <form xml:lang="os-x-digor" type="dialectal"><orth>fedujun</orth><form type="participle"><orth>fedut</orth></form></form>
+                <sense xml:id="sense_d3960e74"><abv:tr xml:lang="ru">
                         <q>иссякать</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>run out</q>
                     </abv:tr></sense>
                 <abv:exampleGrp>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d3960e86" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>dæ surx xwari gom ænæ fedujgæ</quote>
                         <abv:tr xml:lang="ru">
@@ -41,7 +45,7 @@
                         <bibl><ref type="bibl" target="#src_MD"/><biblScope>1936 II
                             55</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d3960e108" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>znagbæl toxgæj togvedut fæddæ</quote>
                         <abv:tr xml:lang="ru">
@@ -53,7 +57,7 @@
                         <bibl><ref type="bibl" target="#src_MD"/><biblScope>1936 II
                             36</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d3960e130" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>ærʒæn isfedujæn næ es</quote>
                         <abv:tr xml:lang="ru">
@@ -62,14 +66,11 @@
                         <abv:tr xml:lang="en">
                             <q>nature is inexhaustible</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_SD"
-                            /><biblScope>292%l3%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_SD"/><biblScope>292%l3%l</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из %ifæ-i-du-%i; ср. <ref type="xr" target="#entry_idujun"
-                    />.</etym>
-                <etym xml:lang="en">From %ifæ-i-du-%i; cf. <ref type="xr" target="#entry_idujun"
-                    />.</etym>
+                <etym xml:lang="ru">Из %ifæ-i-du-%i; ср. <ref type="xr" target="#entry_idujun"/>.</etym>
+                <etym xml:lang="en">From %ifæ-i-du-%i; cf. <ref type="xr" target="#entry_idujun"/>.</etym>
             </entry>
         </body>
     </text>

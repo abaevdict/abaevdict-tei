@@ -1,42 +1,47 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">kʼ0ym</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_kʼ0ym" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>kʼ˳ym</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>kʼum</orth></form>
-                <sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d3785e72"><abv:tr xml:lang="ru">
                         <q>угол (внутренний)</q>
                     </abv:tr><abv:tr xml:lang="en">
                         <q>(inner) corner</q>
                     </abv:tr></sense>
-                <re>
+                <re xml:id="re_d3785e82">
                     <form type="lemma"><orth>kʼ˳ymty zīlyn</orth></form>
-                    <sense><abv:tr xml:lang="ru">
+                    <sense xml:id="sense_d3785e87"><abv:tr xml:lang="ru">
                             <q>шарить по углам</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>fumble in the corners</q>
                         </abv:tr></sense>
                 </re>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d3785e100">
                         <quote>talyng kʼazarmajy kʼ˳ymy īw batūlʒæn</quote>
                         <abv:tr xml:lang="ru">
                             <q>в темной казарме он будет валяться в углу</q>
@@ -46,7 +51,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Коста"/><biblScope>37</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3785e119">
                         <quote>Zælda xæʒary kʼ˳ymty qarǵytæ gængæ racū-bacu kodta</quote>
                         <abv:tr xml:lang="ru">
                             <q>Залда с причитаниями ходила из угла в угол</q>
@@ -56,7 +61,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Сека"/><biblScope>71</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d3785e138" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>næ xwænxti kʼumtæj kæmi næ zildæj</quote>
                         <abv:tr xml:lang="ru">
@@ -67,7 +72,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Sozur"/><biblScope>66</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d3785e160" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>i læqwænmæ kʼumæj mistæ rawadæj</quote>
                         <abv:tr xml:lang="ru">
@@ -76,10 +81,9 @@
                         <abv:tr xml:lang="en">
                             <q>a mouse ran out of the corner to the youth</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."
-                            /><biblScope>17%l7%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>17%l7%l</biblScope></bibl>
                     </abv:example>
-                    <abv:example>
+                    <abv:example xml:id="example_d3785e182">
                         <quote>e kænuj kʼumagoræ æd æxsævæ, ædæ bon</quote>
                         <abv:tr xml:lang="ru">
                             <q>она ищет угла ночью и днем</q>
@@ -90,24 +94,20 @@
                         <bibl><ref type="bibl" target="#src_Bes."/><biblScope>92</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Вероятно, %ikʼum%i из %i*kʼulm%i (как <ref type="xr"
-                        target="#entry_xum"/> из %i*xurm%i). Ср. <mentioned xml:lang="fi"><lang/>
+                <etym xml:lang="ru">Вероятно, %ikʼum%i из %i*kʼulm%i (как <ref type="xr" target="#entry_xum"/> из %i*xurm%i). Ср. <mentioned xml:id="mentioned_d3785e207" xml:lang="fi"><lang/>
                         <w>kulma</w>
-                        <gloss><q>угол</q></gloss></mentioned>, откуда <mentioned xml:lang="ru"><lang/>
+                        <gloss><q>угол</q></gloss></mentioned>, откуда <mentioned xml:id="mentioned_d3785e215" xml:lang="ru"><lang/>
                         <w>кульма</w>
-                        <gloss><q>угол</q></gloss></mentioned>, <mentioned xml:lang="ru"><w/>
+                        <gloss><q>угол</q></gloss></mentioned>, <mentioned xml:id="mentioned_d3785e223" xml:lang="ru"><w/>
                         <gloss><q>кут</q></gloss></mentioned>. Западнофинские элементы в осетинском
                     хотя и редко, но встречаются; ср. <ref type="xr" target="#entry_mūr"/>
                     ‘крошка’.</etym>
-                <etym xml:lang="en">Probably, %ikʼum%i is from %i*kʼulm%i (as <ref type="xr"
-                        target="#entry_xum"/> is from %i*xurm%i). Cf. <mentioned xml:lang="fi"><lang/>
+                <etym xml:lang="en">Probably, %ikʼum%i is from %i*kʼulm%i (as <ref type="xr" target="#entry_xum"/> is from %i*xurm%i). Cf. <mentioned xml:id="mentioned_d3785e236" xml:lang="fi"><lang/>
                         <w>kulma</w>
-                        <gloss><q>corner</q></gloss></mentioned>, from where <mentioned
-                        xml:lang="ru"><lang/>
+                        <gloss><q>corner</q></gloss></mentioned>, from where <mentioned xml:id="mentioned_d3785e244" xml:lang="ru"><lang/>
                         <w>kulʼma</w>
                         <gloss><q>corner</q></gloss></mentioned>. Western Finnish elements in
-                    Ossetic sometimes are found, although they are rare; cf. <ref type="xr"
-                        target="#entry_mūr"/> ‘crumb’.</etym>
+                    Ossetic sometimes are found, although they are rare; cf. <ref type="xr" target="#entry_mūr"/> ‘crumb’.</etym>
                 <note type="internal">комитатиив в примерах</note>
             </entry>
         </body>

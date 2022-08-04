@@ -1,38 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
                 <title>Abaev Dictionary: entry <hi rendition="#rend_italic">æxcon</hi></title>
             </titleStmt>
-            <xi:include href="../pubstmt.xml" parse="xml"/>
+            <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
+    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
             <sourceDesc>
                 <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
                         <title>Историко-этимологический словарь осетинского языка</title>. Т.
                         <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page"
-                        >??–??</biblScope>.</bibl>
+                        <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
             </sourceDesc>
         </fileDesc>
-        <xi:include href="../encodingdesc.xml" parse="xml"/>
+        <encodingDesc xml:base="../encodingdesc.xml">
+    <tagsDecl>
+        <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
+        <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
+    </tagsDecl>
+</encodingDesc>
     </teiHeader>
     <text>
         <body>
             <entry xml:id="entry_æxcon" xml:lang="os">
                 <form xml:lang="os-x-iron" type="lemma"><orth>æxcon</orth></form>
                 <form xml:lang="os-x-digor" type="dialectal"><orth>æxcæwæn</orth></form>
-                <sense><sense><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d852e72"><sense xml:id="sense_d852e73"><abv:tr xml:lang="ru">
                             <q>приятный</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>pleasant</q>
-                        </abv:tr></sense><sense><abv:tr xml:lang="ru">
+                        </abv:tr></sense><sense xml:id="sense_d852e82"><abv:tr xml:lang="ru">
                             <q>угодный</q>
                         </abv:tr><abv:tr xml:lang="en">
                             <q>pleasing</q>
                         </abv:tr></sense></sense>
                 <abv:exampleGrp>
-                    <abv:example>
+                    <abv:example xml:id="example_d852e94">
                         <quote>X˳ycaw, dæwæn æxcon</quote>
                         <abv:tr xml:lang="ru">
                             <q>Боже, тебе да будет приятно (приношение)</q>
@@ -40,10 +45,9 @@
                         <abv:tr xml:lang="en">
                             <q>oh God, may you be pleased (with the offering)</q>
                         </abv:tr>
-                        <bibl><biblScope xml:lang="ru">из молитвенной формулы</biblScope><biblScope
-                                xml:lang="en">from a pray</biblScope></bibl>
+                        <bibl><biblScope xml:lang="ru">из молитвенной формулы</biblScope><biblScope xml:lang="en">from a pray</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d852e115" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>æxcæwæn caǧta æ fændur</quote>
                         <abv:tr xml:lang="ru">
@@ -52,10 +56,9 @@
                         <abv:tr xml:lang="en">
                             <q>he was playing the %ifændyr%i pleasantly</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Gurdž._Saxi_ræs."
-                                /><biblScope>33</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Gurdž._Saxi_ræs."/><biblScope>33</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d852e137" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>tuxwæst adtæj æxcæwæn eci ǧuddag Gæstænæn</quote>
                         <abv:tr xml:lang="ru">
@@ -66,7 +69,7 @@
                         </abv:tr>
                         <bibl><ref type="bibl" target="#src_Qazb."/><biblScope>75</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d852e159" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>Boræfærnugæn e æxcæwæn kæmi adtaidæ</quote>
                         <abv:tr xml:lang="ru">
@@ -75,10 +78,9 @@
                         <abv:tr xml:lang="en">
                             <q>Boræfærnug was so pleased by this</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Диг._сказ."
-                            /><biblScope>7</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Диг._сказ."/><biblScope>7</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d852e181" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>gubunæn ræwæg, zærdæn ba æxcæwæn æj æ baniwazt</quote>
                         <abv:tr xml:lang="ru">
@@ -91,7 +93,7 @@
                         <bibl><ref type="bibl" target="#src_MD"/><biblScope>1956 VII
                             50</biblScope></bibl>
                     </abv:example>
-                    <abv:example xml:lang="os-x-digor">
+                    <abv:example xml:id="example_d852e204" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>wældaj æxcæwændær fæwwuncæ fæjjæwttæn fæzzigon æxsævtæ</quote>
                         <abv:tr xml:lang="ru">
@@ -105,30 +107,22 @@
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Восходит к %iæx%i-%icæwæn%i ← *%ivahu%i-%ičyavuna%i
-                    „приятно-идущий“? ср. <mentioned xml:lang="x-oldirn"><lang/>
+                    „приятно-идущий“? ср. <mentioned xml:id="mentioned_d852e229" xml:lang="x-oldirn"><lang/>
                         <w>vahu-</w>
                         <gloss><q>хороший</q></gloss></mentioned> (отдельно в осетинском не
-                    сохранилось) и <mentioned xml:lang="x-oldirn"><lang/>
-                        <w>čyu-</w></mentioned>, <mentioned xml:lang="x-oldirn"><w>čyav-</w>
-                        <gloss><q>идти</q></gloss></mentioned>, <ref type="xr" target="#entry_cæwyn"
-                    />. <mentioned xml:lang="x-oldirn"><lang/>
-                        <w>vahu-</w></mentioned> могло дать в осетинском %iæx%i [см. <ref type="xr"
-                        target="#entry_8æx"/>]; для отпадения начального %iv%i ср. <ref type="xr"
-                        target="#entry_ævz-"/>(← %ivabza%i), <ref type="xr" target="#entry_Acyrūxs"
-                    /> (← %iWacyruxs%i) и др. Ср. <ref type="xr" target="#entry_ʒæbæx"/>
+                    сохранилось) и <mentioned xml:id="mentioned_d852e237" xml:lang="x-oldirn"><lang/>
+                        <w>čyu-</w></mentioned>, <mentioned xml:id="mentioned_d852e242" xml:lang="x-oldirn"><w>čyav-</w>
+                        <gloss><q>идти</q></gloss></mentioned>, <ref type="xr" target="#entry_cæwyn"/>. <mentioned xml:id="mentioned_d852e250" xml:lang="x-oldirn"><lang/>
+                        <w>vahu-</w></mentioned> могло дать в осетинском %iæx%i [см. <ref type="xr" target="#entry_8æx"/>]; для отпадения начального %iv%i ср. <ref type="xr" target="#entry_ævz-"/>(← %ivabza%i), <ref type="xr" target="#entry_Acyrūxs"/> (← %iWacyruxs%i) и др. Ср. <ref type="xr" target="#entry_ʒæbæx"/>
                     (%iʒæb%i-%iæx%i) ‘хороший’.</etym>
                 <etym xml:lang="en">It traces back to %iæx%i-%icæwæn%i ← *%ivahu%i-%ičyavuna%i
-                    "pleasantly walking"? cf. <mentioned xml:lang="x-oldirn"><lang/>
+                    "pleasantly walking"? cf. <mentioned xml:id="mentioned_d852e268" xml:lang="x-oldirn"><lang/>
                         <w>vahu-</w>
                         <gloss><q>good</q></gloss></mentioned> (it has not been preserved as a
-                    separate word) and <mentioned xml:lang="x-oldirn"><lang/>
-                        <w>čyu-</w></mentioned>, <mentioned xml:lang="x-oldirn"><w>čyav-</w>
-                        <gloss><q>go</q></gloss></mentioned>, <ref type="xr" target="#entry_cæwyn"
-                    />. <mentioned xml:lang="x-oldirn"><lang/>
-                        <w>vahu-</w></mentioned> could give %iæx%i in Osetic [see <ref type="xr"
-                        target="#entry_8æx"/>]; for the loss of the initial %iv%i cf. <ref type="xr"
-                        target="#entry_ævz-"/>(← %ivabza%i), <ref type="xr" target="#entry_Acyrūxs"
-                    /> (← %iWacyruxs%i) etc. Cf. <ref type="xr" target="#entry_ʒæbæx"/>
+                    separate word) and <mentioned xml:id="mentioned_d852e276" xml:lang="x-oldirn"><lang/>
+                        <w>čyu-</w></mentioned>, <mentioned xml:id="mentioned_d852e281" xml:lang="x-oldirn"><w>čyav-</w>
+                        <gloss><q>go</q></gloss></mentioned>, <ref type="xr" target="#entry_cæwyn"/>. <mentioned xml:id="mentioned_d852e289" xml:lang="x-oldirn"><lang/>
+                        <w>vahu-</w></mentioned> could give %iæx%i in Osetic [see <ref type="xr" target="#entry_8æx"/>]; for the loss of the initial %iv%i cf. <ref type="xr" target="#entry_ævz-"/>(← %ivabza%i), <ref type="xr" target="#entry_Acyrūxs"/> (← %iWacyruxs%i) etc. Cf. <ref type="xr" target="#entry_ʒæbæx"/>
                     (%iʒæb%i-%iæx%i) ‘good’.</etym>
             </entry>
         </body>
