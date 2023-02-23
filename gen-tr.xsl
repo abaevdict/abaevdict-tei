@@ -18,13 +18,13 @@
         </xsl:copy>
     </xsl:template>    
     
-    <xsl:template match="tei:etym//tei:note" priority="1">
+<!--    <xsl:template match="tei:etym//tei:note" priority="1">
         <xsl:copy>
             <xsl:apply-templates select="@* | node()"/>
         </xsl:copy>
-    </xsl:template>
+    </xsl:template>-->
     
-    <xsl:template match="tei:text//tei:note[@type != 'bibl' and @type != 'internal']" priority="2">
+    <xsl:template match="tei:text//tei:note[@type != 'bibl' and @type != 'internal' and not(ancestor::tei:etym)]" priority="2">
         <xsl:copy>
             <xsl:attribute name="xml:lang">ru</xsl:attribute>
             <xsl:apply-templates select="@* | node()"/>
