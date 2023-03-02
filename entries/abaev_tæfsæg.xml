@@ -5,47 +5,55 @@
         <title>Abaev Dictionary: entry <hi rendition="#rend_italic">tæfsæg</hi></title>
       </titleStmt>
       <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
-    Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
+        Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
       <sourceDesc>
         <bibl xml:lang="ru"><author>Абаев, Василий Иванович</author>.
-            <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
-            <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
+          <title>Историко-этимологический словарь осетинского языка</title>. Т. <biblScope unit="volume">I</biblScope>. A–Kʼ. <pubPlace>М.–Л.</pubPlace>:
+          <publisher>Наука</publisher>, <date>1958</date>. С. <biblScope unit="page">??–??</biblScope>.</bibl>
       </sourceDesc>
     </fileDesc>
     <encodingDesc xml:base="../encodingdesc.xml">
-    <tagsDecl>
+      <tagsDecl>
         <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
         <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
         <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
         <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
-    </tagsDecl>
-</encodingDesc>
+      </tagsDecl>
+    </encodingDesc>
   </teiHeader>
   <text>
     <body>
       <entry xml:id="entry_tæfsæg" xml:lang="os" abv:completeness="incomplete">
-        <form xml:id="form_d343e66" type="lemma"><orth>tæfsæg</orth></form>
+        <?oxy_comment_start author="oleg" timestamp="20230206T212540+0300" comment="Russian checked"?>
+        <form xml:id="form_d343e66" type="lemma"><orth>tæfsæg</orth></form><?oxy_comment_end?>
         <sense>
           <sense xml:id="sense_d343e69">
             <abv:tr xml:lang="ru">
               <q>лихорадка</q>
+            </abv:tr>
+            <abv:tr xml:lang="en">
+              <q>fever</q>
             </abv:tr>
           </sense>
           <sense>
             <abv:tr xml:lang="ru">
               <q>малярия</q>
             </abv:tr>
+            <abv:tr xml:lang="en">
+              <q>malaria</q>
+            </abv:tr>
           </sense>
-          <re>
-            <note type="comment">син. </note>
-            <form type="lemma"><orth>rīzæg</orth></form>
-          </re>
         </sense>
+        <note xml:lang="ru" type="comment">; син. <ref type="xr" target="#entry_rīzæg"/></note>
+        <note xml:lang="en" type="comment">; syn. <ref type="xr" target="#entry_rīzæg"/></note>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0"><oRef>tæfsægæj</oRef> sæjy</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">болеет малярией</q>
+            </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">suffers from malaria</q>
             </tr>
           </example>
           <example>
@@ -54,38 +62,90 @@
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">уже с неделю меня как будто лихорадит</q>
             </tr>
+            <tr xml:lang="en">
+              <q xmlns="http://www.tei-c.org/ns/1.0">I've been feverish for a week now</q>
+            </tr>
             <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Arsen"/>
               <biblScope>160</biblScope></bibl>
           </example>
         </exampleGrp>
-        <etym xml:lang="ru">Причастие на <w>-æg</w> от глагола <w>tæfsyn</w>
-          <gloss><q>согреваться</q>, <q>иметь приступ малярии</q></gloss>. На этот раз форма на
-            <w>-æg</w> имеет значение не <q>nomen agentis</q>, как обычно, а <q>nomen actionis</q>;
-          ср. в этом отношении <ref type="xr" target="#entry_x0yfæg"><w>x˳yfæg</w></ref>
-          <gloss><q>кашель</q></gloss>, <ref type="xr" target="#entry_æxsnyrsæg"
-            ><w>æxsnyrsæg</w></ref>
-          <gloss><q>насморк</q></gloss> и др. (<bibl><ref type="bibl" target="#src_ОЯФ_I"/>
-            <biblScope>569</biblScope></bibl>). База <w>*tap-</w> (<mentioned xml:lang="ine"><lang/>
-            <w>*tep-</w></mentioned>) <gloss><q>греть</q>, <q>жар</q></gloss> и пр. и ее инхоативный
-          вариант <w>*tafs-</w> фигурируют в названии лихорадки и в других иранских языках:
-            <mentioned xml:lang="fa"><lang/>
-            <w>tab</w></mentioned>, <mentioned xml:lang="pal"><lang/>
-            <w>tap</w>, <w>tapišn</w>
+        <etym xml:lang="ru">Причастие на <mentioned xml:lang="os"><m>-æg</m></mentioned> от глагола
+            <ref type="xr" target="#entry_tæfsyn"><w>tæfsyn</w>
+            <gloss><q>согреваться</q>, <q>иметь приступ малярии</q></gloss></ref>. На этот раз форма
+          на <mentioned xml:lang="os"><m>-æg</m></mentioned> имеет значение не <q>nomen agentis</q>,
+          как обычно, а <q>nomen actionis</q>; ср. в этом отношении <ref type="xr"
+            target="#entry_x0yfæg"><w>x˳yfæg</w>
+            <gloss><q>кашель</q></gloss></ref>, <ref type="xr" target="#entry_æxsnyrsæg"
+              ><w>æxsnyrsæg</w>
+            <gloss><q>насморк</q></gloss></ref> и др. (<bibl><ref type="bibl" target="#src_ОЯФ_I"/>
+            <biblScope>569</biblScope></bibl>). База <mentioned xml:lang="ira"><w type="rec"
+              >tap-</w>
+            <note xml:lang="ru" type="comment">(<mentioned xml:lang="ine"><lang/>
+                <w>*tep-</w></mentioned>)</note><note xml:lang="en" type="comment">(<mentioned
+                xml:lang="ine"><lang/>
+                <w>*tep-</w></mentioned>)</note>
+            <gloss><q>греть</q>, <q>жар</q> и пр.</gloss></mentioned> и ее инхоативный вариант
+            <mentioned xml:lang="ira"><w type="rec">tafs-</w></mentioned> фигурируют в названии
+          лихорадки и в других иранских языках: <mentioned><mentioned xml:lang="fa"><lang/>
+              <w>tab</w></mentioned>, <mentioned xml:lang="pal"><lang/>
+              <w>tap</w>, <w>tapišn</w></mentioned>
             <gloss><q>лихорадка</q></gloss></mentioned>, <mentioned xml:lang="tg"><lang/>
             <w>tafs</w>
-            <gloss><q>жар у больного</q></gloss></mentioned>, <mentioned xml:lang="ps"><lang/>
-            <w>təba</w></mentioned>, <mentioned xml:lang="sgh"><lang/>
-            <w>tābak</w></mentioned>, <mentioned xml:lang="isk"><lang/>
-            <w>tafəṣ̌</w></mentioned>, <mentioned xml:lang="wbl"><lang/>
-            <w>andav</w></mentioned>, <mentioned xml:lang="sog"><lang/>
-            <w>*tapāk</w> (<w>tp’k</w>)</mentioned>, <mentioned xml:lang="kho"><lang/>
-            <w>ttausaa-</w> (<w>*tafsaka-</w>)</mentioned>, <mentioned xml:lang="ae"><lang/>
-            <w>tafnu</w>
+            <gloss><q>жар у больного</q></gloss></mentioned>, <mentioned><mentioned xml:lang="ps"><lang/>
+              <w>təba</w></mentioned>, <mentioned xml:lang="sgh"><lang/>
+              <w>tābak</w></mentioned>, <mentioned xml:lang="isk"><lang/>
+              <w>tafəṣ̌</w></mentioned>, <mentioned xml:lang="wbl"><lang/>
+              <w>andav</w></mentioned>, <mentioned xml:lang="sog"><lang/>
+              <w>*tapāk</w> (<w>tp’k</w>)</mentioned>, <mentioned xml:lang="kho"><lang/>
+              <w>ttausaa-</w>
+              <note xml:lang="ru" type="comment">(<mentioned xml:lang="ira"><w type="rec"
+                    >tafsaka-</w></mentioned>)</note><note xml:lang="en" type="comment">(<mentioned
+                  xml:lang="ira"><w type="rec">tafsaka-</w></mentioned>)</note></mentioned>,
+              <mentioned xml:lang="ae"><lang/>
+              <w>tafnu</w></mentioned>
             <gloss><q>лихорадка</q></gloss></mentioned>. Сюда же <mentioned xml:lang="hit"><lang/>
             <w>tapašša</w>
-            <gloss>id.</gloss></mentioned> Обращает на себя внимание полное совпадение названия этой
+            <gloss>id</gloss></mentioned>. Обращает на себя внимание полное совпадение названия этой
           болезни в осетинском и сакском. — См. <ref type="xr" target="#entry_tæfsyn"
             ><w>tæfsyn</w></ref>.</etym>
+        <etym xml:lang="en">The <mentioned xml:lang="os"><m>-æg</m></mentioned> participle of the
+          verb <ref type="xr" target="#entry_tæfsyn"><w>tæfsyn</w>
+            <gloss><q>to keep warm</q>, <q>have an attack of malaria</q></gloss></ref>. This time
+          the <mentioned xml:lang="os"><m>-æg</m></mentioned> form has the meaning not <q>nomen
+            agentis</q>  as usual, but <q>nomen actionis</q>; cf. in this regard <ref type="xr"
+            target="#entry_x0yfæg"><w>x˳yfæg</w>
+            <gloss><q>cough</q></gloss></ref>, <ref type="xr" target="#entry_æxsnyrsæg"
+              ><w>æxsnyrsæg</w>
+            <gloss><q>cold</q></gloss></ref>, etc. (<bibl><ref type="bibl" target="#src_ОЯФ_I"/>
+            <biblScope>569</biblScope></bibl>). The base <mentioned xml:lang="ira"><w type="rec"
+              >tap-</w>
+            <note xml:lang="ru" type="comment">(<mentioned xml:lang="ine"><lang/>
+                <w>*tep-</w></mentioned>)</note><note xml:lang="en" type="comment">(<mentioned
+                xml:lang="ine"><lang/>
+                <w>*tep-</w></mentioned>)</note>
+            <gloss><q>to heat</q>, <q>fever</q>, etc.</gloss></mentioned> and its inhoative variant
+            <mentioned xml:lang="ira"><w type="rec">tafs-</w></mentioned> appear in the name of
+          fever in other Iranian languages as well:  <mentioned><mentioned xml:lang="fa"><lang/>
+              <w>tab</w></mentioned>, <mentioned xml:lang="pal"><lang/>
+              <w>tap</w>, <w>tapišn</w></mentioned>
+            <gloss><q>fever</q></gloss></mentioned>, <mentioned xml:lang="tg"><lang/>
+            <w>tafs</w>
+            <gloss><q>fever</q></gloss></mentioned>, <mentioned><mentioned xml:lang="ps"><lang/>
+              <w>təba</w></mentioned>, <mentioned xml:lang="sgh"><lang/>
+              <w>tābak</w></mentioned>, <mentioned xml:lang="isk"><lang/>
+              <w>tafəṣ̌</w></mentioned>, <mentioned xml:lang="wbl"><lang/>
+              <w>andav</w></mentioned>, <mentioned xml:lang="sog"><lang/>
+              <w>*tapāk</w> (<w>tp’k</w>)</mentioned>, <mentioned xml:lang="kho"><lang/>
+              <w>ttausaa-</w>
+              <note xml:lang="ru" type="comment">(<mentioned xml:lang="ira"><w type="rec"
+                    >tafsaka-</w></mentioned>)</note><note xml:lang="en" type="comment">(<mentioned
+                  xml:lang="ira"><w type="rec">tafsaka-</w></mentioned>)</note></mentioned>,
+              <mentioned xml:lang="ae"><lang/>
+              <w>tafnu</w></mentioned>
+            <gloss><q>fever</q></gloss></mentioned>. This also includes <mentioned xml:lang="hit"><lang/>
+            <w>tapašša</w>
+            <gloss>id</gloss></mentioned>. The name of this disease in Ossetian and Sakic coincides
+          completely. — См. <ref type="xr" target="#entry_tæfsyn"><w>tæfsyn</w></ref>.</etym>
       </entry>
     </body>
   </text>
