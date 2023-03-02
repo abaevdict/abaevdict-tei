@@ -24,8 +24,9 @@
   <text>
     <body>
       <entry xml:id="entry_tūxyn" xml:lang="os" abv:completeness="russian-questions">
+        <?oxy_comment_start author="oleg" timestamp="20230303T002722+0300" comment="Russian checked"?>
         <form xml:id="form_d5785e66" type="lemma" xml:lang="os-x-iron"><orth>tūxyn</orth><form
-            type="participle"><orth>tyxt</orth></form></form>
+            type="participle"><orth>tyxt</orth></form></form><?oxy_comment_end?>
         <form xml:lang="os-x-digor" type="dialectal"><orth>toxun</orth><form type="participle"
               ><orth>tuxt</orth><form type="variant" subtype="parens"
             ><orth>tuǧd</orth></form></form></form>
@@ -102,9 +103,9 @@
             </sense>
           </sense>
         </re>
-        <re>
-          <form type="lemma"><orth>toxojnæ</orth></form>
-          <?oxy_comment_start author="irina" timestamp="20230117T191639+0300" comment="сделала так вместо id., ок?"?>
+        <re xml:lang="os-x-digor">
+          <form type="lemma"><lang/><orth>toxojnæ</orth></form>
+          <?oxy_comment_start author="irina" timestamp="20230117T191639+0300" comment="сделала так вместо id., ок?" flag="done"?>
           <sense>
             <sense>
               <tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
@@ -118,22 +119,26 @@
             </sense>
           </sense><?oxy_comment_end?>
         </re>
-        <?oxy_comment_start author="irina" timestamp="20230117T191745+0300" comment="оставить это ноутом?"?>
-        <note type="comment"> — <mentioned xml:lang="os"
-                ><?oxy_comment_start author="irina" timestamp="20230117T191851+0300" comment="сделала mntnd... но по идее это re, см примеры((("?><phr><ref
-                type="xr" target="#entry_ʒawma"/> tūxæg</phr><?oxy_comment_end?>
-            <gloss>«завертывающий вещи»</gloss></mentioned>, — так зовется один из шаферов невесты,
-          в функцию которого входит укладка ее приданого</note><?oxy_comment_end?>
+        <?oxy_comment_start author="oleg" timestamp="20230303T002308+0300" comment="да, по сути это re, но точка тире, видимо, чтобы отделить его от других. но не хочется же создавать reGroup…"?>
+        <re>
+          <form type="lemma"><orth><ref type="xr" target="#entry_ʒawma">ʒawma</ref>
+            tūxæg</orth></form>
+          <sense>
+            <def xml:lang="ru"><q rendition="#rend_doublequotes">завертывающий вещи</q>, — так
+              зовется один из шаферов невесты, в функцию которого входит укладка ее приданого</def>
+          </sense>
+        </re><?oxy_comment_end?>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
-          <?oxy_comment_start author="irina" timestamp="20230117T191957+0300" comment="а это example group?.."?>
+          <?oxy_comment_start author="irina" timestamp="20230117T191957+0300" comment="а это example group?.." id="iwr_kgk_rwb" flag="done"?>
+          <?oxy_comment_start author="oleg" timestamp="20230303T002320+0300" parentID="iwr_kgk_rwb" comment="ну пусть будет" flag="done" mid="4"?>
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">zīlgæ dymgæ, <oRef>tūxgæ</oRef> wad</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">крутящийся ветер, кутающая буря</q>
             </tr>
-            <note type="comment" xmlns="http://www.tei-c.org/ns/1.0"> (так в фольклоре изображается
-              сильная буря)</note>
-          </example><?oxy_comment_end?>
+            <note type="comment" xmlns="http://www.tei-c.org/ns/1.0" xml:lang="ru"> (так в фольклоре
+              изображается сильная буря)</note>
+          </example><?oxy_comment_end?><?oxy_comment_end mid="4"?>
         </exampleGrp>
         <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
           <example>
@@ -159,7 +164,7 @@
           <example>
             <quote xmlns="http://www.tei-c.org/ns/1.0">abyrǵytæn sæ særtæ basylyqty
                 <oRef>tyxt</oRef> wydysty, æmæ
-              <?oxy_comment_start author="irina" timestamp="20230117T192312+0300" comment="так?"?>ḱī<?oxy_comment_end?>
+              <?oxy_comment_start author="irina" timestamp="20230117T192312+0300" comment="так?" flag="done"?>ḱī<?oxy_comment_end?>
               wydysty, acū æmæ sæ bazon!</quote>
             <tr xml:lang="ru">
               <q xmlns="http://www.tei-c.org/ns/1.0">у абреков головы были обмотаны башлыками, и кто
@@ -276,7 +281,7 @@
           </example>
         </exampleGrp>
         <etym xml:lang="ru">Иранская база
-            <?oxy_comment_start author="irina" timestamp="20230117T194523+0300" comment="так ок?"?><mentioned
+            <?oxy_comment_start author="irina" timestamp="20230117T194523+0300" comment="так ок?" flag="done"?><mentioned
             xml:lang="ira"><w type="rec">θwak-</w>
             <note type="comment">(<w type="rec">θwax-</w>, <w type="rec">taux-</w>) (инхоативный
               вариант <w type="rec">tuxš-</w>) имела, по видимости, исходное значение</note>
@@ -287,7 +292,7 @@
                 <gloss><q>горе</q></gloss>,
           <gloss><q>печаль</q></gloss></mentioned><?oxy_comment_end?>. Эти значения представлены в
           ряде языков:
-              <?oxy_comment_start author="irina" timestamp="20230117T195027+0300" comment="я правильно объединила?"?><mentioned><mentioned
+              <?oxy_comment_start author="irina" timestamp="20230117T195027+0300" comment="я правильно объединила?" id="iz3_rgk_rwb"?><?oxy_comment_start author="oleg" timestamp="20230303T002557+0300" parentID="iz3_rgk_rwb" comment="боюсь, что ссылка только к последнему слову, но вообще это надо проверять" mid="8"?><mentioned><mentioned
               xml:lang="fa"><lang/>
               <w>tūh</w></mentioned>, <mentioned xml:lang="pal"><lang/>
               <w>twg</w>
@@ -297,14 +302,15 @@
               <w>tūk</w></mentioned>
             <gloss><q>сгиб</q></gloss>, <gloss><q>складка</q></gloss>
             <note type="bibl">(<bibl><title>Šāyast nē šāyast</title>,
-                  <pubPlace><?oxy_comment_start author="irina" timestamp="20230117T194928+0300" comment="ok??"?>изд.
-                  Tavadia<?oxy_comment_end?></pubPlace>, <date>1930</date>, <biblScope>стр. 87,
-                  166</biblScope></bibl>. — <bibl><author>Belardi</author>, <title>Handes
-                  Amsorya</title>
-                <biblScope>1961 X–XII 621</biblScope></bibl>)</note></mentioned><?oxy_comment_end?>,
+                <?oxy_comment_start author="irina" timestamp="20230117T194928+0300" comment="ok??" id="ukw_pgk_rwb"?><?oxy_comment_start author="oleg" timestamp="20230303T002451+0300" parentID="ukw_pgk_rwb" comment="нет, это вот этот человек: https://www.iranicaonline.org/articles/tavadia-jehangir" flag="done" mid="10"?>изд.
+                  <?oxy_comment_end mid="10"?><?oxy_comment_end?><editor>Tavadia</editor>,
+                  <date>1930</date>, <biblScope>стр. 87, 166</biblScope></bibl>. —
+                  <bibl><author>Belardi</author>, <title>Handes Amsorya</title>
+                <biblScope>1961 X–XII
+          621</biblScope></bibl>)</note></mentioned><?oxy_comment_end?><?oxy_comment_end mid="8"?>,
               <mentioned><mentioned xml:lang="fa"><lang/>
               <w>tuxšīdan</w></mentioned>, <mentioned xml:lang="pal"><lang/>
-              <w>tuxš<?oxy_comment_start author="irina" timestamp="20230117T195104+0300" comment="этот символ?"?>i<?oxy_comment_end?>tan</w></mentioned>
+              <w>tuxšītan</w></mentioned>
             <gloss><q>стараться</q></gloss>, <gloss><q>усердствовать</q></gloss>,
                 <gloss><q>прилагать усилия</q></gloss></mentioned>, <mentioned><mentioned
               xml:lang="fa"><lang/>
@@ -318,8 +324,7 @@
                 <biblScope>I 149, II 58</biblScope></bibl>)</note></mentioned>, <mentioned
             xml:lang="sog"><w type="rec">andōxs-</w>
             <note type="comment">(<w>ʼndwxs-</w>)</note>
-            <?oxy_comment_start author="irina" timestamp="20230117T195404+0300" comment="так ок?"?><note
-              type="comment">id.</note><?oxy_comment_end?>
+            <gloss>id.</gloss>
             <note type="bibl">(<bibl><ref type="bibl" target="#ref_Henning._BBB"/>
                 <biblScope>119</biblScope></bibl>)</note></mentioned>, <mentioned><mentioned
               xml:lang="fa"><lang/>
@@ -332,7 +337,7 @@
                 <biblScope>203<hi rendition="#rend_subscript">33</hi>, 213<hi
                     rendition="#rend_subscript">133</hi></biblScope></bibl>)</note></mentioned>,
             <mentioned xml:lang="srh"><lang/>
-            <w>tə<?oxy_comment_start author="irina" timestamp="20230117T195912+0300" comment="гачек нормально не вставляется..."?>γ<?oxy_comment_end?></w>
+            <w>tə<?oxy_comment_start author="oleg" timestamp="20230303T002712+0300" comment="потому что гамму надо НЕ греческую, я об этом писал" flag="done"?>ɣ̌<?oxy_comment_end?></w>
             <note type="comment">(из <mentioned xml:lang="ira"><w type="rec"
               >tuxš-</w></mentioned>)</note>
             <gloss><q>мучиться</q></gloss>. <gloss><q>терзаться</q></gloss>
