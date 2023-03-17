@@ -1065,7 +1065,7 @@
                                 <field name="allowsMultipleValues">
                                     <Boolean>false</Boolean>
                                 </field>
-                                                                                                                                                                                                                                                                                                <field name="allowedValues">
+                                                                <field name="allowedValues">
                                     <profileConditionValue-array>
                                         <profileConditionValue>
                                             <field name="value">
@@ -1583,6 +1583,20 @@
                                             </field>
                                             <field name="renderName">
                                                 <String>брахуи</String>
+                                            </field>
+                                        </profileConditionValue>
+                                        <profileConditionValue>
+                                            <field name="value">
+                                                <String>bsg</String>
+                                            </field>
+                                            <field name="description">
+                                                <String>Bashkardi</String>
+                                            </field>
+                                            <field name="level">
+                                                <Integer>0</Integer>
+                                            </field>
+                                            <field name="renderName">
+                                                <String>башкарди</String>
                                             </field>
                                         </profileConditionValue>
                                         <profileConditionValue>
@@ -6182,7 +6196,7 @@
                                 <field name="allowsMultipleValues">
                                     <Boolean>true</Boolean>
                                 </field>
-                                                                                                                                                                                                                                                                                                <field name="allowedValues">
+                                                                <field name="allowedValues">
                                     <profileConditionValue-array>
                                         <profileConditionValue>
                                             <field name="value">
@@ -6700,6 +6714,20 @@
                                             </field>
                                             <field name="renderName">
                                                 <String>брахуи</String>
+                                            </field>
+                                        </profileConditionValue>
+                                        <profileConditionValue>
+                                            <field name="value">
+                                                <String>bsg</String>
+                                            </field>
+                                            <field name="description">
+                                                <String>Bashkardi</String>
+                                            </field>
+                                            <field name="level">
+                                                <Integer>0</Integer>
+                                            </field>
+                                            <field name="renderName">
+                                                <String>башкарди</String>
                                             </field>
                                         </profileConditionValue>
                                         <profileConditionValue>
@@ -11297,6 +11325,31 @@
                     <entry>
                         <String>saxon.latest.config.file</String>
                         <String>${framework(TEI for Abaev)}/saxon-config.xml</String>
+                    </entry>
+                    <entry>
+                        <String>scenario.associations</String>
+                        <scenarioAssociation-array>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>xsl/generate-lookup.xsl</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>Generate lookup table for cross-references</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XML</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                        </scenarioAssociation-array>
                     </entry>
                     <entry>
                         <String>scenarios</String>
