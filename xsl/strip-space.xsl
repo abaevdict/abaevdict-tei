@@ -6,7 +6,7 @@
     exclude-result-prefixes="xs tei"
     version="2.0">
   
-    <xsl:strip-space elements="tei:entry abv:exampleGrp abv:example abv:tr tei:re tei:cit"/>
+    <xsl:strip-space elements="tei:entry abv:exampleGrp abv:example abv:tr tei:re tei:cit tei:sense"/>
   
     <!-- XSLT Template to copy anything -->
     <xsl:template match="@* | node()">
