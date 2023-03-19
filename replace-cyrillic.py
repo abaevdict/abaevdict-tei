@@ -76,34 +76,37 @@ def replace_cyr(text: str) -> str:
   }
   return multireplace(text, repl)
 
+
 filename = sys.argv[1]
 # filename = "abaev_vol3_en.xml"
-# filename = "entries/abaev_tyn_1.xml"
+# filename = "entries/abaev_sælyn.xml"
 
 changed = False
 
 with open(filename, "r", encoding='utf-8') as f:
   tree = etree.parse(f)
-  root = tree.getroot()
 
-  for elem in tree.xpath("//abv:example[not(@xml:lang='ru')]/tei:quote[not(@n='0')] | \
-      //abv:example[not(@xml:lang='ru')]/tei:quote[not(@n='0')]/tei:oRef | \
-      //tei:mentioned[not(@xml:lang = 'ru' or starts-with(@xml:lang, 'ru-') or @extralang = 'ru' or contains(@extralang,' ru') or contains(@extralang,'ru ') or \
-      @xml:lang = 'bg' or starts-with(@xml:lang, 'bg-') or @extralang = 'bg' or contains(@extralang,' bg') or contains(@extralang,'bg ') or \
-      @xml:lang = 'uk' or starts-with(@xml:lang, 'uk-') or @extralang = 'uk' or contains(@extralang,' uk') or contains(@extralang,'uk ') or \
-      @xml:lang = 'be' or starts-with(@xml:lang, 'be-') or @extralang = 'be' or contains(@extralang,' be') or contains(@extralang,'be ') or \
-      @xml:lang = 'orv' or starts-with(@xml:lang, 'orv-') or @extralang = 'orv' or contains(@extralang,' orv') or \
-      contains(@extralang,'orv '))]/*[(local-name() = 'w' or local-name() = 'm' or local-name() = 'c' or local-name() = 'phr' or local-name() = 's') \
-      and not(@n = '0')]",
-      namespaces=NAMESPACES):
-    try:
-      newtext = replace_cyr(elem.text)
-      if newtext != elem.text:
-        elem.text = newtext
+  for elem in tree.xpath("//abv:example[not(@xml:lang = 'ru')]/tei:quote[not(@n='0')]/text() | \
+    //abv:example[not(@xml:lang = 'ru')]/tei:quote[not(@n='0')]/tei:oRef/text() | \
+    //tei:mentioned[not(@xml:lang = 'ru' or starts-with(@xml:lang, 'ru-') or @extralang = 'ru' or contains(@extralang,' ru') or contains(@extralang,'ru ') or \
+    @xml:lang = 'bg' or starts-with(@xml:lang, 'bg-') or @extralang = 'bg' or contains(@extralang,' bg') or contains(@extralang,'bg ') or \
+    @xml:lang = 'uk' or starts-with(@xml:lang, 'uk-') or @extralang = 'uk' or contains(@extralang,' uk') or contains(@extralang,'uk ') or \
+    @xml:lang = 'be' or starts-with(@xml:lang, 'be-') or @extralang = 'be' or contains(@extralang,' be') or contains(@extralang,'be ') or \
+    @xml:lang = 'orv' or starts-with(@xml:lang, 'orv-') or @extralang = 'orv' or contains(@extralang,' orv') or \
+    contains(@extralang,'orv '))]/*[(local-name() = 'w' or local-name() = 'm' or local-name() = 'c' or local-name() = 'phr' or local-name() = 's') \
+    and not(@n = '0')]/text()",
+    namespaces=NAMESPACES):
+    parent = elem.getparent()
+    if elem.is_text:
+      newtext = replace_cyr(parent.text)
+      if newtext != parent.text:
+        parent.text = newtext
         changed = True
-      # elem.text = elem.text.replace('а', 'a')
-    except TypeError:
-      pass
+    elif elem.is_tail:
+      newtext = replace_cyr(parent.tail)
+      if newtext != parent.tail:
+        parent.tail = newtext
+        changed = True
 
 if changed:
   tree.write(filename, encoding='utf-8')
