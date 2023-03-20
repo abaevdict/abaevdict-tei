@@ -14,9 +14,10 @@
         </xsl:copy>
     </xsl:template>
   
-  <xsl:template match="tei:etym|abv:tr|tei:def|tei:note">
+  <xsl:template match="tei:etym|abv:tr|tei:def|tei:note|tei:bibl">
     <xsl:choose>
-      <xsl:when test="lang($lang)"></xsl:when>
+<!--      <xsl:when test="lang($lang)"></xsl:when>-->
+      <xsl:when test="@xml:lang = $lang"></xsl:when>
       <xsl:otherwise>
         <xsl:copy>
           <xsl:apply-templates select="@* | node()"/>
