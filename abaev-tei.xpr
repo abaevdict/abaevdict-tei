@@ -1065,7 +1065,7 @@
                                 <field name="allowsMultipleValues">
                                     <Boolean>false</Boolean>
                                 </field>
-                                <field name="allowedValues">
+                                                                <field name="allowedValues">
                                     <profileConditionValue-array>
                                         <profileConditionValue>
                                             <field name="value">
@@ -1919,6 +1919,20 @@
                                             </field>
                                             <field name="renderName">
                                                 <String>дат.</String>
+                                            </field>
+                                        </profileConditionValue>
+                                        <profileConditionValue>
+                                            <field name="value">
+                                                <String>da-x-old</String>
+                                            </field>
+                                            <field name="description">
+                                                <String>Old Danish</String>
+                                            </field>
+                                            <field name="level">
+                                                <Integer>0</Integer>
+                                            </field>
+                                            <field name="renderName">
+                                                <String>стародат.</String>
                                             </field>
                                         </profileConditionValue>
                                         <profileConditionValue>
@@ -6206,7 +6220,7 @@
                                             </field>
                                         </profileConditionValue>
                                     </profileConditionValue-array>
-                                </field>                                                                                                
+                                </field>
                                 <field name="documentTypePattern">
                                     <String>TEI for Abaev</String>
                                 </field>
@@ -6224,7 +6238,7 @@
                                 <field name="allowsMultipleValues">
                                     <Boolean>true</Boolean>
                                 </field>
-                                                                                                                                <field name="allowedValues">
+                                                                <field name="allowedValues">
                                     <profileConditionValue-array>
                                         <profileConditionValue>
                                             <field name="value">
@@ -7078,6 +7092,20 @@
                                             </field>
                                             <field name="renderName">
                                                 <String>дат.</String>
+                                            </field>
+                                        </profileConditionValue>
+                                        <profileConditionValue>
+                                            <field name="value">
+                                                <String>da-x-old</String>
+                                            </field>
+                                            <field name="description">
+                                                <String>Old Danish</String>
+                                            </field>
+                                            <field name="level">
+                                                <Integer>0</Integer>
+                                            </field>
+                                            <field name="renderName">
+                                                <String>стародат.</String>
                                             </field>
                                         </profileConditionValue>
                                         <profileConditionValue>
@@ -11984,6 +12012,89 @@
                                         <String>${pdu}/xsl/insert-refs.xsl</String>
                                         <String>${pdu}/xsl/insert-langs.xsl</String>
                                     </String-array>
+                                </field>
+                                <field name="xslTransformer">
+                                    <String>Saxon-PE</String>
+                                </field>
+                                <field name="extensionURLs">
+                                    <String-array/>
+                                </field>
+                            </scenario>
+                            <scenario>
+                                <field name="advancedOptionsMap">
+                                    <null/>
+                                </field>
+                                <field name="name">
+                                    <String>Delete notes</String>
+                                </field>
+                                <field name="baseURL">
+                                    <String></String>
+                                </field>
+                                <field name="footerURL">
+                                    <String></String>
+                                </field>
+                                <field name="fOPMethod">
+                                    <String>pdf</String>
+                                </field>
+                                <field name="fOProcessorName">
+                                    <String>Apache FOP</String>
+                                </field>
+                                <field name="headerURL">
+                                    <String></String>
+                                </field>
+                                <field name="inputXSLURL">
+                                    <String>${pdu}/xsl/delete-notes.xsl</String>
+                                </field>
+                                <field name="inputXMLURL">
+                                    <String>${currentFileURL}</String>
+                                </field>
+                                <field name="defaultScenario">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="isFOPPerforming">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="type">
+                                    <String>XSL</String>
+                                </field>
+                                <field name="saveAs">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="openInBrowser">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="outputResource">
+                                    <String>${cf}</String>
+                                </field>
+                                <field name="openOtherLocationInBrowser">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="locationToOpenInBrowserURL">
+                                    <null/>
+                                </field>
+                                <field name="openInEditor">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInHTMLPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInXMLPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInSVGPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="showInResultSetPane">
+                                    <Boolean>false</Boolean>
+                                </field>
+                                <field name="useXSLTInput">
+                                    <Boolean>true</Boolean>
+                                </field>
+                                <field name="xsltParams">
+                                    <list/>
+                                </field>
+                                <field name="cascadingStylesheets">
+                                    <String-array/>
                                 </field>
                                 <field name="xslTransformer">
                                     <String>Saxon-PE</String>
