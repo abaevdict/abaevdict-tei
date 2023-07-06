@@ -1061,7 +1061,7 @@
                                 <field name="allowsMultipleValues">
                                     <Boolean>false</Boolean>
                                 </field>
-                                <field name="allowedValues">
+                                                                <field name="allowedValues">
                                     <profileConditionValue-array>
                                         <profileConditionValue>
                                             <field name="value">
@@ -4267,6 +4267,20 @@
                                             </field>
                                             <field name="renderName">
                                                 <String>пол.</String>
+                                            </field>
+                                        </profileConditionValue>
+                                        <profileConditionValue>
+                                            <field name="value">
+                                                <String>pl-x-old</String>
+                                            </field>
+                                            <field name="description">
+                                                <String>Old Polish</String>
+                                            </field>
+                                            <field name="level">
+                                                <Integer>0</Integer>
+                                            </field>
+                                            <field name="renderName">
+                                                <String>старопол.</String>
                                             </field>
                                         </profileConditionValue>
                                         <profileConditionValue>
@@ -6276,7 +6290,7 @@
                                 <field name="allowsMultipleValues">
                                     <Boolean>true</Boolean>
                                 </field>
-                                <field name="allowedValues">
+                                                                <field name="allowedValues">
                                     <profileConditionValue-array>
                                         <profileConditionValue>
                                             <field name="value">
@@ -9486,6 +9500,20 @@
                                         </profileConditionValue>
                                         <profileConditionValue>
                                             <field name="value">
+                                                <String>pl-x-old</String>
+                                            </field>
+                                            <field name="description">
+                                                <String>Old Polish</String>
+                                            </field>
+                                            <field name="level">
+                                                <Integer>0</Integer>
+                                            </field>
+                                            <field name="renderName">
+                                                <String>старопол.</String>
+                                            </field>
+                                        </profileConditionValue>
+                                        <profileConditionValue>
+                                            <field name="value">
                                                 <String>pra</String>
                                             </field>
                                             <field name="description">
@@ -11491,31 +11519,6 @@
                         <String>${framework(TEI for Abaev)}/saxon-config.xml</String>
                     </entry>
                     <entry>
-                        <String>scenario.associations</String>
-                        <scenarioAssociation-array>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>xsl/generate-lookup.xsl</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>Generate lookup table for cross-references</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XML</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioStorageLocations">
-                                    <list>
-                                        <Byte>2</Byte>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                        </scenarioAssociation-array>
-                    </entry>
-                    <entry>
                         <String>scenarios</String>
                         <scenario-array>
                             <scenario>
@@ -12268,67 +12271,7 @@
                             </scenario>
                             <scenario>
                                 <field name="advancedOptionsMap">
-                                    <serializableOrderedMap>
-                                        <entry>
-                                            <String>Saxon-PE</String>
-                                            <xsltSaxonBAdvancedOptions>
-                                                <field name="allowCallsOnExtensionFunctions">
-                                                    <Boolean>true</Boolean>
-                                                </field>
-                                                <field name="registerSaxonCEExtensions">
-                                                    <Boolean>true</Boolean>
-                                                </field>
-                                                <field name="enableAssertions">
-                                                    <Boolean>false</Boolean>
-                                                </field>
-                                                <field name="showVersionWarnings">
-                                                    <Boolean>false</Boolean>
-                                                </field>
-                                                <field name="dtdSourceValidation">
-                                                    <Boolean>false</Boolean>
-                                                </field>
-                                                <field name="dtdSourceValidationRecover">
-                                                    <Boolean>false</Boolean>
-                                                </field>
-                                                <field name="lineNumbering">
-                                                    <Boolean>false</Boolean>
-                                                </field>
-                                                <field name="initialMode">
-                                                    <null/>
-                                                </field>
-                                                <field name="initialTemplate">
-                                                    <null/>
-                                                </field>
-                                                <field name="traceXPathExpression">
-                                                    <Boolean>true</Boolean>
-                                                </field>
-                                                <field name="expandAttributeDefaults">
-                                                    <Boolean>true</Boolean>
-                                                </field>
-                                                <field name="stripWS">
-                                                    <String>saxon.strip.ws.none</String>
-                                                </field>
-                                                <field name="optimizationEnabled">
-                                                    <Boolean>true</Boolean>
-                                                </field>
-                                                <field name="useConfigFile">
-                                                    <Boolean>true</Boolean>
-                                                </field>
-                                                <field name="configSystemID">
-                                                    <String>${pdu}/saxon-config.xml</String>
-                                                </field>
-                                                <field name="initializer">
-                                                    <String></String>
-                                                </field>
-                                                <field name="profilingOutputFile">
-                                                    <String></String>
-                                                </field>
-                                                <field name="isProfilingEnabled">
-                                                    <Boolean>false</Boolean>
-                                                </field>
-                                            </xsltSaxonBAdvancedOptions>
-                                        </entry>
-                                    </serializableOrderedMap>
+                                    <serializableOrderedMap/>
                                 </field>
                                 <field name="name">
                                     <String>Generate translations</String>
@@ -12743,67 +12686,7 @@
                             </scenario>
                             <scenario>
                                 <field name="advancedOptionsMap">
-                                    <serializableOrderedMap>
-                                        <entry>
-                                            <String>Saxon-PE</String>
-                                            <xsltSaxonBAdvancedOptions>
-                                                <field name="allowCallsOnExtensionFunctions">
-                                                    <Boolean>true</Boolean>
-                                                </field>
-                                                <field name="registerSaxonCEExtensions">
-                                                    <Boolean>true</Boolean>
-                                                </field>
-                                                <field name="enableAssertions">
-                                                    <Boolean>false</Boolean>
-                                                </field>
-                                                <field name="showVersionWarnings">
-                                                    <Boolean>false</Boolean>
-                                                </field>
-                                                <field name="dtdSourceValidation">
-                                                    <Boolean>false</Boolean>
-                                                </field>
-                                                <field name="dtdSourceValidationRecover">
-                                                    <Boolean>false</Boolean>
-                                                </field>
-                                                <field name="lineNumbering">
-                                                    <Boolean>false</Boolean>
-                                                </field>
-                                                <field name="initialMode">
-                                                    <null/>
-                                                </field>
-                                                <field name="initialTemplate">
-                                                    <String>start</String>
-                                                </field>
-                                                <field name="traceXPathExpression">
-                                                    <Boolean>true</Boolean>
-                                                </field>
-                                                <field name="expandAttributeDefaults">
-                                                    <Boolean>true</Boolean>
-                                                </field>
-                                                <field name="stripWS">
-                                                    <String>saxon.strip.ws.none</String>
-                                                </field>
-                                                <field name="optimizationEnabled">
-                                                    <Boolean>true</Boolean>
-                                                </field>
-                                                <field name="useConfigFile">
-                                                    <Boolean>false</Boolean>
-                                                </field>
-                                                <field name="configSystemID">
-                                                    <String>${framework(TEI for Abaev)}/saxon-config.xml</String>
-                                                </field>
-                                                <field name="initializer">
-                                                    <String></String>
-                                                </field>
-                                                <field name="profilingOutputFile">
-                                                    <String></String>
-                                                </field>
-                                                <field name="isProfilingEnabled">
-                                                    <Boolean>false</Boolean>
-                                                </field>
-                                            </xsltSaxonBAdvancedOptions>
-                                        </entry>
-                                    </serializableOrderedMap>
+                                    <serializableOrderedMap/>
                                 </field>
                                 <field name="name">
                                     <String>Generate IDs</String>
@@ -12886,67 +12769,7 @@
                             </scenario>
                             <scenario>
                                 <field name="advancedOptionsMap">
-                                    <serializableOrderedMap>
-                                        <entry>
-                                            <String>Saxon-PE</String>
-                                            <xsltSaxonBAdvancedOptions>
-                                                <field name="allowCallsOnExtensionFunctions">
-                                                    <Boolean>true</Boolean>
-                                                </field>
-                                                <field name="registerSaxonCEExtensions">
-                                                    <Boolean>true</Boolean>
-                                                </field>
-                                                <field name="enableAssertions">
-                                                    <Boolean>false</Boolean>
-                                                </field>
-                                                <field name="showVersionWarnings">
-                                                    <Boolean>false</Boolean>
-                                                </field>
-                                                <field name="dtdSourceValidation">
-                                                    <Boolean>false</Boolean>
-                                                </field>
-                                                <field name="dtdSourceValidationRecover">
-                                                    <Boolean>false</Boolean>
-                                                </field>
-                                                <field name="lineNumbering">
-                                                    <Boolean>false</Boolean>
-                                                </field>
-                                                <field name="initialMode">
-                                                    <null/>
-                                                </field>
-                                                <field name="initialTemplate">
-                                                    <String>generate-lookup</String>
-                                                </field>
-                                                <field name="traceXPathExpression">
-                                                    <Boolean>true</Boolean>
-                                                </field>
-                                                <field name="expandAttributeDefaults">
-                                                    <Boolean>true</Boolean>
-                                                </field>
-                                                <field name="stripWS">
-                                                    <String>saxon.strip.ws.none</String>
-                                                </field>
-                                                <field name="optimizationEnabled">
-                                                    <Boolean>true</Boolean>
-                                                </field>
-                                                <field name="useConfigFile">
-                                                    <Boolean>false</Boolean>
-                                                </field>
-                                                <field name="configSystemID">
-                                                    <String>${framework(TEI for Abaev)}/saxon-config.xml</String>
-                                                </field>
-                                                <field name="initializer">
-                                                    <String></String>
-                                                </field>
-                                                <field name="profilingOutputFile">
-                                                    <String></String>
-                                                </field>
-                                                <field name="isProfilingEnabled">
-                                                    <Boolean>false</Boolean>
-                                                </field>
-                                            </xsltSaxonBAdvancedOptions>
-                                        </entry>
-                                    </serializableOrderedMap>
+                                    <serializableOrderedMap/>
                                 </field>
                                 <field name="name">
                                     <String>Generate lookup table for cross-references</String>
@@ -13054,67 +12877,7 @@
                             </scenario>
                             <scenario>
                                 <field name="advancedOptionsMap">
-                                    <serializableOrderedMap>
-                                        <entry>
-                                            <String>Saxon-PE</String>
-                                            <xsltSaxonBAdvancedOptions>
-                                                <field name="allowCallsOnExtensionFunctions">
-                                                    <Boolean>true</Boolean>
-                                                </field>
-                                                <field name="registerSaxonCEExtensions">
-                                                    <Boolean>true</Boolean>
-                                                </field>
-                                                <field name="enableAssertions">
-                                                    <Boolean>false</Boolean>
-                                                </field>
-                                                <field name="showVersionWarnings">
-                                                    <Boolean>false</Boolean>
-                                                </field>
-                                                <field name="dtdSourceValidation">
-                                                    <Boolean>false</Boolean>
-                                                </field>
-                                                <field name="dtdSourceValidationRecover">
-                                                    <Boolean>false</Boolean>
-                                                </field>
-                                                <field name="lineNumbering">
-                                                    <Boolean>false</Boolean>
-                                                </field>
-                                                <field name="initialMode">
-                                                    <null/>
-                                                </field>
-                                                <field name="initialTemplate">
-                                                    <String>start</String>
-                                                </field>
-                                                <field name="traceXPathExpression">
-                                                    <Boolean>true</Boolean>
-                                                </field>
-                                                <field name="expandAttributeDefaults">
-                                                    <Boolean>true</Boolean>
-                                                </field>
-                                                <field name="stripWS">
-                                                    <String>saxon.strip.ws.none</String>
-                                                </field>
-                                                <field name="optimizationEnabled">
-                                                    <Boolean>true</Boolean>
-                                                </field>
-                                                <field name="useConfigFile">
-                                                    <Boolean>false</Boolean>
-                                                </field>
-                                                <field name="configSystemID">
-                                                    <null/>
-                                                </field>
-                                                <field name="initializer">
-                                                    <String></String>
-                                                </field>
-                                                <field name="profilingOutputFile">
-                                                    <String></String>
-                                                </field>
-                                                <field name="isProfilingEnabled">
-                                                    <Boolean>false</Boolean>
-                                                </field>
-                                            </xsltSaxonBAdvancedOptions>
-                                        </entry>
-                                    </serializableOrderedMap>
+                                    <serializableOrderedMap/>
                                 </field>
                                 <field name="name">
                                     <String>get-refs</String>
