@@ -34,7 +34,7 @@
             <xsl:when test="$lang-code = 'ady-x-abadz'">
                 <xsl:choose>
                     <xsl:when test="$name-lang = 'ru'"><xsl:text>абадз.</xsl:text></xsl:when>
-                    <xsl:when test="$name-lang = 'en'"><xsl:text>Abzakh</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Abzakh Adyghe</xsl:text></xsl:when>
                 </xsl:choose>
             </xsl:when>
             <xsl:when test="$lang-code = 'ady-x-shpsg'">
@@ -53,6 +53,12 @@
                 <xsl:choose>
                     <xsl:when test="$name-lang = 'ru'"><xsl:text>ав. (гаты)</xsl:text></xsl:when>
                     <xsl:when test="$name-lang = 'en'"><xsl:text>Gathic Avestan</xsl:text></xsl:when>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:when test="$lang-code = 'aer'">
+                <xsl:choose>
+                    <xsl:when test="$name-lang = 'ru'"><xsl:text>аранта</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Arrernte</xsl:text></xsl:when>
                 </xsl:choose>
             </xsl:when>
             <xsl:when test="$lang-code = 'agx'">
@@ -187,6 +193,12 @@
                     <xsl:when test="$name-lang = 'en'"><xsl:text>Eastern Balochi</xsl:text></xsl:when>
                 </xsl:choose>
             </xsl:when>
+            <xsl:when test="$lang-code = 'bn'">
+                <xsl:choose>
+                    <xsl:when test="$name-lang = 'ru'"><xsl:text>бенгали</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Bengali</xsl:text></xsl:when>
+                </xsl:choose>
+            </xsl:when>
             <xsl:when test="$lang-code = 'bo'">
                 <xsl:choose>
                     <xsl:when test="$name-lang = 'ru'"><xsl:text>тибет.</xsl:text></xsl:when>
@@ -199,6 +211,12 @@
                     <xsl:when test="$name-lang = 'en'"><xsl:text>Botlikh</xsl:text></xsl:when>
                 </xsl:choose>
             </xsl:when>
+            <xsl:when test="$lang-code = 'bqi'">
+                <xsl:choose>
+                    <xsl:when test="$name-lang = 'ru'"><xsl:text>перс. (бахтиар.)</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Persian (Bakhtiari)</xsl:text></xsl:when>
+                </xsl:choose>
+            </xsl:when>
             <xsl:when test="$lang-code = 'br'">
                 <xsl:choose>
                     <xsl:when test="$name-lang = 'ru'"><xsl:text>брет.</xsl:text></xsl:when>
@@ -209,6 +227,12 @@
                 <xsl:choose>
                     <xsl:when test="$name-lang = 'ru'"><xsl:text>брахуи</xsl:text></xsl:when>
                     <xsl:when test="$name-lang = 'en'"><xsl:text>Brahui</xsl:text></xsl:when>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:when test="$lang-code = 'bsg'">
+                <xsl:choose>
+                    <xsl:when test="$name-lang = 'ru'"><xsl:text>башкарди</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Bashkardi</xsl:text></xsl:when>
                 </xsl:choose>
             </xsl:when>
             <xsl:when test="$lang-code = 'bsk'">
@@ -239,6 +263,18 @@
                 <xsl:choose>
                     <xsl:when test="$name-lang = 'ru'"><xsl:text>чеч.</xsl:text></xsl:when>
                     <xsl:when test="$name-lang = 'en'"><xsl:text>Chechen</xsl:text></xsl:when>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:when test="$lang-code = 'ce-x-goyt'">
+                <xsl:choose>
+                    <xsl:when test="$name-lang = 'ru'"><xsl:text>чеч. (гойт.)</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Chechen (Ghoyta)</xsl:text></xsl:when>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:when test="$lang-code = 'ce-x-achkh'">
+                <xsl:choose>
+                    <xsl:when test="$name-lang = 'ru'"><xsl:text>чеч. (ачхой-март.)</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Chechen (Achkhoy-Martan)</xsl:text></xsl:when>
                 </xsl:choose>
             </xsl:when>
             <xsl:when test="$lang-code = 'cel'">
@@ -337,6 +373,12 @@
                     <xsl:when test="$name-lang = 'en'"><xsl:text>Danish</xsl:text></xsl:when>
                 </xsl:choose>
             </xsl:when>
+            <xsl:when test="$lang-code = 'da-x-old'">
+                <xsl:choose>
+                    <xsl:when test="$name-lang = 'ru'"><xsl:text>стародат.</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Old Danish</xsl:text></xsl:when>
+                </xsl:choose>
+            </xsl:when>
             <xsl:when test="$lang-code = 'dar'">
                 <xsl:choose>
                     <xsl:when test="$name-lang = 'ru'"><xsl:text>дарг.</xsl:text></xsl:when>
@@ -373,10 +415,22 @@
                     <xsl:when test="$name-lang = 'en'"><xsl:text>German (dialectal)</xsl:text></xsl:when>
                 </xsl:choose>
             </xsl:when>
+            <xsl:when test="$lang-code = 'de-x-south'">
+                <xsl:choose>
+                    <xsl:when test="$name-lang = 'ru'"><xsl:text>южнонем.</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Southern German</xsl:text></xsl:when>
+                </xsl:choose>
+            </xsl:when>
             <xsl:when test="$lang-code = 'dsb'">
                 <xsl:choose>
                     <xsl:when test="$name-lang = 'ru'"><xsl:text>нижне-луж.</xsl:text></xsl:when>
                     <xsl:when test="$name-lang = 'en'"><xsl:text>Lower Sorbian</xsl:text></xsl:when>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:when test="$lang-code = 'ecr'">
+                <xsl:choose>
+                    <xsl:when test="$name-lang = 'ru'"><xsl:text>крит.</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Cretan</xsl:text></xsl:when>
                 </xsl:choose>
             </xsl:when>
             <xsl:when test="$lang-code = 'egy'">
@@ -403,6 +457,12 @@
                     <xsl:when test="$name-lang = 'en'"><xsl:text>English</xsl:text></xsl:when>
                 </xsl:choose>
             </xsl:when>
+            <xsl:when test="$lang-code = 'en-x-argt'">
+                <xsl:choose>
+                    <xsl:when test="$name-lang = 'ru'"><xsl:text>англ. (арго)</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>English (slang)</xsl:text></xsl:when>
+                </xsl:choose>
+            </xsl:when>
             <xsl:when test="$lang-code = 'es'">
                 <xsl:choose>
                     <xsl:when test="$name-lang = 'ru'"><xsl:text>исп.</xsl:text></xsl:when>
@@ -413,6 +473,12 @@
                 <xsl:choose>
                     <xsl:when test="$name-lang = 'ru'"><xsl:text>эст.</xsl:text></xsl:when>
                     <xsl:when test="$name-lang = 'en'"><xsl:text>Estonian</xsl:text></xsl:when>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:when test="$lang-code = 'ett'">
+                <xsl:choose>
+                    <xsl:when test="$name-lang = 'ru'"><xsl:text>этр.</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Etruscan</xsl:text></xsl:when>
                 </xsl:choose>
             </xsl:when>
             <xsl:when test="$lang-code = 'eu'">
@@ -437,6 +503,18 @@
                 <xsl:choose>
                     <xsl:when test="$name-lang = 'ru'"><xsl:text>перс. (диал.)</xsl:text></xsl:when>
                     <xsl:when test="$name-lang = 'en'"><xsl:text>Persian (dialectal)</xsl:text></xsl:when>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:when test="$lang-code = 'fa-x-fars'">
+                <xsl:choose>
+                    <xsl:when test="$name-lang = 'ru'"><xsl:text>перс. (диалект Фарси)</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Persian (Fars)</xsl:text></xsl:when>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:when test="$lang-code = 'fa-x-kshn'">
+                <xsl:choose>
+                    <xsl:when test="$name-lang = 'ru'"><xsl:text>перс. (кашан.)</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Persian (Kashan)</xsl:text></xsl:when>
                 </xsl:choose>
             </xsl:when>
             <xsl:when test="$lang-code = 'fa-x-krmns'">
@@ -514,7 +592,7 @@
             <xsl:when test="$lang-code = 'gem'">
                 <xsl:choose>
                     <xsl:when test="$name-lang = 'ru'"><xsl:text>герм.</xsl:text></xsl:when>
-                    <xsl:when test="$name-lang = 'en'"><xsl:text>Proto-Germanic</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Germanic</xsl:text></xsl:when>
                 </xsl:choose>
             </xsl:when>
             <xsl:when test="$lang-code = 'gem-x-old'">
@@ -571,10 +649,28 @@
                     <xsl:when test="$name-lang = 'en'"><xsl:text>Greek</xsl:text></xsl:when>
                 </xsl:choose>
             </xsl:when>
+            <xsl:when test="$lang-code = 'grc-x-byz'">
+                <xsl:choose>
+                    <xsl:when test="$name-lang = 'ru'"><xsl:text>гр. (визант.)</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Byzantine Greek</xsl:text></xsl:when>
+                </xsl:choose>
+            </xsl:when>
             <xsl:when test="$lang-code = 'grc-x-doric'">
                 <xsl:choose>
                     <xsl:when test="$name-lang = 'ru'"><xsl:text>гр. дор.</xsl:text></xsl:when>
                     <xsl:when test="$name-lang = 'en'"><xsl:text>Doric Greek</xsl:text></xsl:when>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:when test="$lang-code = 'grc-x-hom'">
+                <xsl:choose>
+                    <xsl:when test="$name-lang = 'ru'"><xsl:text>гр. (Гомер)</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Homeric Greek</xsl:text></xsl:when>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:when test="$lang-code = 'ha'">
+                <xsl:choose>
+                    <xsl:when test="$name-lang = 'ru'"><xsl:text>хауса</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Hausa</xsl:text></xsl:when>
                 </xsl:choose>
             </xsl:when>
             <xsl:when test="$lang-code = 'hac'">
@@ -607,6 +703,12 @@
                     <xsl:when test="$name-lang = 'en'"><xsl:text>Croatian</xsl:text></xsl:when>
                 </xsl:choose>
             </xsl:when>
+            <xsl:when test="$lang-code = 'hsb'">
+                <xsl:choose>
+                    <xsl:when test="$name-lang = 'ru'"><xsl:text>верхнелуж.</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Upper Sorbian</xsl:text></xsl:when>
+                </xsl:choose>
+            </xsl:when>
             <xsl:when test="$lang-code = 'hu'">
                 <xsl:choose>
                     <xsl:when test="$name-lang = 'ru'"><xsl:text>венг.</xsl:text></xsl:when>
@@ -628,7 +730,7 @@
             <xsl:when test="$lang-code = 'inc'">
                 <xsl:choose>
                     <xsl:when test="$name-lang = 'ru'"><xsl:text>инд.</xsl:text></xsl:when>
-                    <xsl:when test="$name-lang = 'en'"><xsl:text>Indic</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Indo-Aryan</xsl:text></xsl:when>
                 </xsl:choose>
             </xsl:when>
             <xsl:when test="$lang-code = 'inc-x-mid'">
@@ -751,6 +853,12 @@
                     <xsl:when test="$name-lang = 'en'"><xsl:text>Mokhevian Georgian</xsl:text></xsl:when>
                 </xsl:choose>
             </xsl:when>
+            <xsl:when test="$lang-code = 'ka-x-mtiul'">
+                <xsl:choose>
+                    <xsl:when test="$name-lang = 'ru'"><xsl:text>груз. (мтиул.)</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Mtiuletian Georgian</xsl:text></xsl:when>
+                </xsl:choose>
+            </xsl:when>
             <xsl:when test="$lang-code = 'ka-x-pshav'">
                 <xsl:choose>
                     <xsl:when test="$name-lang = 'ru'"><xsl:text>груз. (пшав.)</xsl:text></xsl:when>
@@ -767,6 +875,12 @@
                 <xsl:choose>
                     <xsl:when test="$name-lang = 'ru'"><xsl:text>каракалп.</xsl:text></xsl:when>
                     <xsl:when test="$name-lang = 'en'"><xsl:text>Kara-Kalpak</xsl:text></xsl:when>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:when test="$lang-code = 'xas'">
+                <xsl:choose>
+                    <xsl:when test="$name-lang = 'ru'"><xsl:text>камас.</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Kamas</xsl:text></xsl:when>
                 </xsl:choose>
             </xsl:when>
             <xsl:when test="$lang-code = 'kap'">
@@ -865,9 +979,15 @@
                     <xsl:when test="$name-lang = 'en'"><xsl:text>Kazakh</xsl:text></xsl:when>
                 </xsl:choose>
             </xsl:when>
+            <xsl:when test="$lang-code = 'kk-x-krgnd'">
+                <xsl:choose>
+                    <xsl:when test="$name-lang = 'ru'"><xsl:text>караг.</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Qaraghandy Kazakh</xsl:text></xsl:when>
+                </xsl:choose>
+            </xsl:when>
             <xsl:when test="$lang-code = 'ko'">
                 <xsl:choose>
-                    <xsl:when test="$name-lang = 'ru'"><xsl:text>корейское</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'ru'"><xsl:text>кор.</xsl:text></xsl:when>
                     <xsl:when test="$name-lang = 'en'"><xsl:text>Korean</xsl:text></xsl:when>
                 </xsl:choose>
             </xsl:when>
@@ -904,7 +1024,7 @@
             <xsl:when test="$lang-code = 'kry-x-jek'">
                 <xsl:choose>
                     <xsl:when test="$name-lang = 'ru'"><xsl:text>джекск.</xsl:text></xsl:when>
-                    <xsl:when test="$name-lang = 'en'"><xsl:text>Jek Kryts</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Jek Kryz</xsl:text></xsl:when>
                 </xsl:choose>
             </xsl:when>
             <xsl:when test="$lang-code = 'ku'">
@@ -925,6 +1045,12 @@
                     <xsl:when test="$name-lang = 'en'"><xsl:text>Komi</xsl:text></xsl:when>
                 </xsl:choose>
             </xsl:when>
+            <xsl:when test="$lang-code = 'kva'">
+                <xsl:choose>
+                    <xsl:when test="$name-lang = 'ru'"><xsl:text>куанад.</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Bagvalal</xsl:text></xsl:when>
+                </xsl:choose>
+            </xsl:when>
             <xsl:when test="$lang-code = 'kw'">
                 <xsl:choose>
                     <xsl:when test="$name-lang = 'ru'"><xsl:text>корн.</xsl:text></xsl:when>
@@ -941,6 +1067,18 @@
                 <xsl:choose>
                     <xsl:when test="$name-lang = 'ru'"><xsl:text>лат.</xsl:text></xsl:when>
                     <xsl:when test="$name-lang = 'en'"><xsl:text>Latin</xsl:text></xsl:when>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:when test="$lang-code = 'lah'">
+                <xsl:choose>
+                    <xsl:when test="$name-lang = 'ru'"><xsl:text>ланда</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Lahnda</xsl:text></xsl:when>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:when test="$lang-code = 'la-x-late'">
+                <xsl:choose>
+                    <xsl:when test="$name-lang = 'ru'"><xsl:text>позднелат.</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Late Latin</xsl:text></xsl:when>
                 </xsl:choose>
             </xsl:when>
             <xsl:when test="$lang-code = 'lbe'">
@@ -965,6 +1103,12 @@
                 <xsl:choose>
                     <xsl:when test="$name-lang = 'ru'"><xsl:text>лив.</xsl:text></xsl:when>
                     <xsl:when test="$name-lang = 'en'"><xsl:text>Livonian</xsl:text></xsl:when>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:when test="$lang-code = 'lrl'">
+                <xsl:choose>
+                    <xsl:when test="$name-lang = 'ru'"><xsl:text>лар.</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Lari</xsl:text></xsl:when>
                 </xsl:choose>
             </xsl:when>
             <xsl:when test="$lang-code = 'lt'">
@@ -1043,6 +1187,12 @@
                 <xsl:choose>
                     <xsl:when test="$name-lang = 'ru'"><xsl:text>манси</xsl:text></xsl:when>
                     <xsl:when test="$name-lang = 'en'"><xsl:text>Mansi</xsl:text></xsl:when>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:when test="$lang-code = 'mr'">
+                <xsl:choose>
+                    <xsl:when test="$name-lang = 'ru'"><xsl:text>маратхи</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Marathi</xsl:text></xsl:when>
                 </xsl:choose>
             </xsl:when>
             <xsl:when test="$lang-code = 'myv'">
@@ -1195,6 +1345,12 @@
                     <xsl:when test="$name-lang = 'en'"><xsl:text>Old Saxon</xsl:text></xsl:when>
                 </xsl:choose>
             </xsl:when>
+            <xsl:when test="$lang-code = 'oui'">
+                <xsl:choose>
+                    <xsl:when test="$name-lang = 'ru'"><xsl:text>др.тюрк.</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Old Turkic</xsl:text></xsl:when>
+                </xsl:choose>
+            </xsl:when>
             <xsl:when test="$lang-code = 'pa'">
                 <xsl:choose>
                     <xsl:when test="$name-lang = 'ru'"><xsl:text>пенджаби</xsl:text></xsl:when>
@@ -1217,6 +1373,12 @@
                 <xsl:choose>
                     <xsl:when test="$name-lang = 'ru'"><xsl:text>пехл. турф.</xsl:text></xsl:when>
                     <xsl:when test="$name-lang = 'en'"><xsl:text>Turfan Pahlavi</xsl:text></xsl:when>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:when test="$lang-code = 'paq'">
+                <xsl:choose>
+                    <xsl:when test="$name-lang = 'ru'"><xsl:text>парья</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Parya</xsl:text></xsl:when>
                 </xsl:choose>
             </xsl:when>
             <xsl:when test="$lang-code = 'peo'">
@@ -1243,6 +1405,18 @@
                     <xsl:when test="$name-lang = 'en'"><xsl:text>Polish</xsl:text></xsl:when>
                 </xsl:choose>
             </xsl:when>
+            <xsl:when test="$lang-code = 'pl-x-old'">
+                <xsl:choose>
+                    <xsl:when test="$name-lang = 'ru'"><xsl:text>старопол.</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Old Polish</xsl:text></xsl:when>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:when test="$lang-code = 'pox'">
+                <xsl:choose>
+                    <xsl:when test="$name-lang = 'ru'"><xsl:text>полабский</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Polabian</xsl:text></xsl:when>
+                </xsl:choose>
+            </xsl:when>
             <xsl:when test="$lang-code = 'pra'">
                 <xsl:choose>
                     <xsl:when test="$name-lang = 'ru'"><xsl:text>пракрит.</xsl:text></xsl:when>
@@ -1261,6 +1435,12 @@
                     <xsl:when test="$name-lang = 'en'"><xsl:text>Old Prussian</xsl:text></xsl:when>
                 </xsl:choose>
             </xsl:when>
+            <xsl:when test="$lang-code = 'prn'">
+                <xsl:choose>
+                    <xsl:when test="$name-lang = 'ru'"><xsl:text>прасунск.</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Prasun</xsl:text></xsl:when>
+                </xsl:choose>
+            </xsl:when>
             <xsl:when test="$lang-code = 'prs'">
                 <xsl:choose>
                     <xsl:when test="$name-lang = 'ru'"><xsl:text>тадж. (кабули)</xsl:text></xsl:when>
@@ -1277,6 +1457,12 @@
                 <xsl:choose>
                     <xsl:when test="$name-lang = 'ru'"><xsl:text>пашан</xsl:text></xsl:when>
                     <xsl:when test="$name-lang = 'en'"><xsl:text>Pashai (?)</xsl:text></xsl:when>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:when test="$lang-code = 'pt'">
+                <xsl:choose>
+                    <xsl:when test="$name-lang = 'ru'"><xsl:text>порт.</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Portuguese</xsl:text></xsl:when>
                 </xsl:choose>
             </xsl:when>
             <xsl:when test="$lang-code = 'qwm'">
@@ -1315,16 +1501,34 @@
                     <xsl:when test="$name-lang = 'en'"><xsl:text>Russian (Arkhangelsk)</xsl:text></xsl:when>
                 </xsl:choose>
             </xsl:when>
+            <xsl:when test="$lang-code = 'ru-x-astr'">
+                <xsl:choose>
+                    <xsl:when test="$name-lang = 'ru'"><xsl:text>русск. (астрах.)</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Russian (Astrakhan)</xsl:text></xsl:when>
+                </xsl:choose>
+            </xsl:when>
             <xsl:when test="$lang-code = 'ru-x-dial'">
                 <xsl:choose>
                     <xsl:when test="$name-lang = 'ru'"><xsl:text>русск. (диал.)</xsl:text></xsl:when>
                     <xsl:when test="$name-lang = 'en'"><xsl:text>Russian (dialectal)</xsl:text></xsl:when>
                 </xsl:choose>
             </xsl:when>
+            <xsl:when test="$lang-code = 'ru-x-don'">
+                <xsl:choose>
+                    <xsl:when test="$name-lang = 'ru'"><xsl:text>русск. (донской говор)</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Russian (Don variety)</xsl:text></xsl:when>
+                </xsl:choose>
+            </xsl:when>
             <xsl:when test="$lang-code = 'ru-x-novg'">
                 <xsl:choose>
                     <xsl:when test="$name-lang = 'ru'"><xsl:text>русск. (новг.)</xsl:text></xsl:when>
                     <xsl:when test="$name-lang = 'en'"><xsl:text>Russian (Novgorod)</xsl:text></xsl:when>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:when test="$lang-code = 'ru-x-sib'">
+                <xsl:choose>
+                    <xsl:when test="$name-lang = 'ru'"><xsl:text>русск. (сиб.)</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Russian (Siberian)</xsl:text></xsl:when>
                 </xsl:choose>
             </xsl:when>
             <xsl:when test="$lang-code = 'ru-x-smlnsk'">
@@ -1345,6 +1549,12 @@
                     <xsl:when test="$name-lang = 'en'"><xsl:text>Russian (Vladimir)</xsl:text></xsl:when>
                 </xsl:choose>
             </xsl:when>
+            <xsl:when test="$lang-code = 'ru-x-west'">
+                <xsl:choose>
+                    <xsl:when test="$name-lang = 'ru'"><xsl:text>русск. (зап. диал.)</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Russian (Western dialects)</xsl:text></xsl:when>
+                </xsl:choose>
+            </xsl:when>
             <xsl:when test="$lang-code = 'rut'">
                 <xsl:choose>
                     <xsl:when test="$name-lang = 'ru'"><xsl:text>рутул.</xsl:text></xsl:when>
@@ -1357,6 +1567,12 @@
                     <xsl:when test="$name-lang = 'en'"><xsl:text>Sanskrit</xsl:text></xsl:when>
                 </xsl:choose>
             </xsl:when>
+            <xsl:when test="$lang-code = 'sa-bauddha'">
+                <xsl:choose>
+                    <xsl:when test="$name-lang = 'ru'"><xsl:text>др.инд. (будд.)</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Buddhist Sanskrit</xsl:text></xsl:when>
+                </xsl:choose>
+            </xsl:when>
             <xsl:when test="$lang-code = 'sa-vaidika'">
                 <xsl:choose>
                     <xsl:when test="$name-lang = 'ru'"><xsl:text>вед.</xsl:text></xsl:when>
@@ -1367,6 +1583,18 @@
                 <xsl:choose>
                     <xsl:when test="$name-lang = 'ru'"><xsl:text>якут.</xsl:text></xsl:when>
                     <xsl:when test="$name-lang = 'en'"><xsl:text>Yakut</xsl:text></xsl:when>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:when test="$lang-code = 'sbv'">
+                <xsl:choose>
+                    <xsl:when test="$name-lang = 'ru'"><xsl:text>саб.</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Sabine</xsl:text></xsl:when>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:when test="$lang-code = 'sel'">
+                <xsl:choose>
+                    <xsl:when test="$name-lang = 'ru'"><xsl:text>селькуп.</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Selkup</xsl:text></xsl:when>
                 </xsl:choose>
             </xsl:when>
             <xsl:when test="$lang-code = 'sem'">
@@ -1429,6 +1657,18 @@
                     <xsl:when test="$name-lang = 'en'"><xsl:text>Serbo-Croatian</xsl:text></xsl:when>
                 </xsl:choose>
             </xsl:when>
+            <xsl:when test="$lang-code = 'si'">
+                <xsl:choose>
+                    <xsl:when test="$name-lang = 'ru'"><xsl:text>синг.</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Sinhalese</xsl:text></xsl:when>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:when test="$lang-code = 'sk'">
+                <xsl:choose>
+                    <xsl:when test="$name-lang = 'ru'"><xsl:text>словац.</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Slovak</xsl:text></xsl:when>
+                </xsl:choose>
+            </xsl:when>
             <xsl:when test="$lang-code = 'sl'">
                 <xsl:choose>
                     <xsl:when test="$name-lang = 'ru'"><xsl:text>слов.</xsl:text></xsl:when>
@@ -1444,7 +1684,13 @@
             <xsl:when test="$lang-code = 'smi'">
                 <xsl:choose>
                     <xsl:when test="$name-lang = 'ru'"><xsl:text>лопар.</xsl:text></xsl:when>
-                    <xsl:when test="$name-lang = 'en'"><xsl:text>Sami</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Saami</xsl:text></xsl:when>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:when test="$lang-code = 'smi-x-sm'">
+                <xsl:choose>
+                    <xsl:when test="$name-lang = 'ru'"><xsl:text>саам.</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Saami</xsl:text></xsl:when>
                 </xsl:choose>
             </xsl:when>
             <xsl:when test="$lang-code = 'smy'">
@@ -1504,7 +1750,7 @@
             <xsl:when test="$lang-code = 'sty'">
                 <xsl:choose>
                     <xsl:when test="$name-lang = 'ru'"><xsl:text>тобол.</xsl:text></xsl:when>
-                    <xsl:when test="$name-lang = 'en'"><xsl:text>Tobolsk Tatar</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Tobol Tatar</xsl:text></xsl:when>
                 </xsl:choose>
             </xsl:when>
             <xsl:when test="$lang-code = 'sux'">
@@ -1549,6 +1795,12 @@
                     <xsl:when test="$name-lang = 'en'"><xsl:text>Syriac</xsl:text></xsl:when>
                 </xsl:choose>
             </xsl:when>
+            <xsl:when test="$lang-code = 'ta'">
+                <xsl:choose>
+                    <xsl:when test="$name-lang = 'ru'"><xsl:text>тамил.</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Tamil</xsl:text></xsl:when>
+                </xsl:choose>
+            </xsl:when>
             <xsl:when test="$lang-code = 'tab'">
                 <xsl:choose>
                     <xsl:when test="$name-lang = 'ru'"><xsl:text>табас.</xsl:text></xsl:when>
@@ -1573,10 +1825,22 @@
                     <xsl:when test="$name-lang = 'en'"><xsl:text>Tajik (Qarategin)</xsl:text></xsl:when>
                 </xsl:choose>
             </xsl:when>
+            <xsl:when test="$lang-code = 'tg-x-se'">
+                <xsl:choose>
+                    <xsl:when test="$name-lang = 'ru'"><xsl:text>тадж. (юго-восточные говоры)</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Tajik (South-Eastern varieties)</xsl:text></xsl:when>
+                </xsl:choose>
+            </xsl:when>
             <xsl:when test="$lang-code = 'tg-x-vanj'">
                 <xsl:choose>
                     <xsl:when test="$name-lang = 'ru'"><xsl:text>тадж. (вандж.)</xsl:text></xsl:when>
                     <xsl:when test="$name-lang = 'en'"><xsl:text>Tajik (Vanj)</xsl:text></xsl:when>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:when test="$lang-code = 'tin'">
+                <xsl:choose>
+                    <xsl:when test="$name-lang = 'ru'"><xsl:text>тинд.</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Tindi</xsl:text></xsl:when>
                 </xsl:choose>
             </xsl:when>
             <xsl:when test="$lang-code = 'tk'">
@@ -1609,10 +1873,28 @@
                     <xsl:when test="$name-lang = 'en'"><xsl:text>Anatolian Turkish</xsl:text></xsl:when>
                 </xsl:choose>
             </xsl:when>
+            <xsl:when test="$lang-code = 'tr-x-dial'">
+                <xsl:choose>
+                    <xsl:when test="$name-lang = 'ru'"><xsl:text>тур. (диал.)</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Turkish (dialectal)</xsl:text></xsl:when>
+                </xsl:choose>
+            </xsl:when>
             <xsl:when test="$lang-code = 'trk'">
                 <xsl:choose>
                     <xsl:when test="$name-lang = 'ru'"><xsl:text>тюрк.</xsl:text></xsl:when>
                     <xsl:when test="$name-lang = 'en'"><xsl:text>Turkic</xsl:text></xsl:when>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:when test="$lang-code = 'trk-x-east'">
+                <xsl:choose>
+                    <xsl:when test="$name-lang = 'ru'"><xsl:text>восточнотюрк.</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>East Turkic</xsl:text></xsl:when>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:when test="$lang-code = 'trk-x-mid'">
+                <xsl:choose>
+                    <xsl:when test="$name-lang = 'ru'"><xsl:text>среднетюрк.</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Middle Turkic</xsl:text></xsl:when>
                 </xsl:choose>
             </xsl:when>
             <xsl:when test="$lang-code = 'trk-x-north'">
@@ -1642,7 +1924,7 @@
             <xsl:when test="$lang-code = 'ttt'">
                 <xsl:choose>
                     <xsl:when test="$name-lang = 'ru'"><xsl:text>татск.</xsl:text></xsl:when>
-                    <xsl:when test="$name-lang = 'en'"><xsl:text>Tat (Muslim?)</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Tat</xsl:text></xsl:when>
                 </xsl:choose>
             </xsl:when>
             <xsl:when test="$lang-code = 'txb'">
@@ -1705,6 +1987,12 @@
                     <xsl:when test="$name-lang = 'en'"><xsl:text>Ukrainian (western)</xsl:text></xsl:when>
                 </xsl:choose>
             </xsl:when>
+            <xsl:when test="$lang-code = 'ur'">
+                <xsl:choose>
+                    <xsl:when test="$name-lang = 'ru'"><xsl:text>урду</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Urdu</xsl:text></xsl:when>
+                </xsl:choose>
+            </xsl:when>
             <xsl:when test="$lang-code = 'uz'">
                 <xsl:choose>
                     <xsl:when test="$name-lang = 'ru'"><xsl:text>узб.</xsl:text></xsl:when>
@@ -1727,6 +2015,12 @@
                 <xsl:choose>
                     <xsl:when test="$name-lang = 'ru'"><xsl:text>луж.</xsl:text></xsl:when>
                     <xsl:when test="$name-lang = 'en'"><xsl:text>Sorbian</xsl:text></xsl:when>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:when test="$lang-code = 'wep'">
+                <xsl:choose>
+                    <xsl:when test="$name-lang = 'ru'"><xsl:text>нем. (вестф.)</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Westphalic</xsl:text></xsl:when>
                 </xsl:choose>
             </xsl:when>
             <xsl:when test="$lang-code = 'wne'">
@@ -1753,10 +2047,10 @@
                     <xsl:when test="$name-lang = 'en'"><xsl:text>Barakai</xsl:text></xsl:when>
                 </xsl:choose>
             </xsl:when>
-            <xsl:when test="$lang-code = 'x-iazyg'">
+            <xsl:when test="$lang-code = 'x-dardic'">
                 <xsl:choose>
-                    <xsl:when test="$name-lang = 'ru'"><xsl:text>языгский</xsl:text></xsl:when>
-                    <xsl:when test="$name-lang = 'en'"><xsl:text>Iazygean</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'ru'"><xsl:text>дард.</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Dardic</xsl:text></xsl:when>
                 </xsl:choose>
             </xsl:when>
             <xsl:when test="$lang-code = 'x-mordvin'">
@@ -1780,7 +2074,7 @@
             <xsl:when test="$lang-code = 'x-oldsl'">
                 <xsl:choose>
                     <xsl:when test="$name-lang = 'ru'"><xsl:text>др.слав.</xsl:text></xsl:when>
-                    <xsl:when test="$name-lang = 'en'"><xsl:text>Proto-Slavic</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Old Slavic</xsl:text></xsl:when>
                 </xsl:choose>
             </xsl:when>
             <xsl:when test="$lang-code = 'x-pamir'">
@@ -1799,6 +2093,12 @@
                 <xsl:choose>
                     <xsl:when test="$name-lang = 'ru'"><xsl:text>пам. руш.</xsl:text></xsl:when>
                     <xsl:when test="$name-lang = 'en'"><xsl:text>Rushani</xsl:text></xsl:when>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:when test="$lang-code = 'x-sarm'">
+                <xsl:choose>
+                    <xsl:when test="$name-lang = 'ru'"><xsl:text>сарм.</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Sarmatian</xsl:text></xsl:when>
                 </xsl:choose>
             </xsl:when>
             <xsl:when test="$lang-code = 'x-tchr'">
@@ -1837,10 +2137,28 @@
                     <xsl:when test="$name-lang = 'en'"><xsl:text>Armenian</xsl:text></xsl:when>
                 </xsl:choose>
             </xsl:when>
+            <xsl:when test="$lang-code = 'xco'">
+                <xsl:choose>
+                    <xsl:when test="$name-lang = 'ru'"><xsl:text>хорезм.</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Khwarezmian</xsl:text></xsl:when>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:when test="$lang-code = 'xco-x-late'">
+                <xsl:choose>
+                    <xsl:when test="$name-lang = 'ru'"><xsl:text>позднехорезм.</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Late Khwarezmian</xsl:text></xsl:when>
+                </xsl:choose>
+            </xsl:when>
             <xsl:when test="$lang-code = 'xhu'">
                 <xsl:choose>
                     <xsl:when test="$name-lang = 'ru'"><xsl:text>хурр.</xsl:text></xsl:when>
                     <xsl:when test="$name-lang = 'en'"><xsl:text>Hurrian</xsl:text></xsl:when>
+                </xsl:choose>
+            </xsl:when>
+            <xsl:when test="$lang-code = 'xld'">
+                <xsl:choose>
+                    <xsl:when test="$name-lang = 'ru'"><xsl:text>лид.</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Lydian</xsl:text></xsl:when>
                 </xsl:choose>
             </xsl:when>
             <xsl:when test="$lang-code = 'xln'">
@@ -1918,7 +2236,7 @@
             <xsl:when test="$lang-code = 'yah'">
                 <xsl:choose>
                     <xsl:when test="$name-lang = 'ru'"><xsl:text>пам. язг.</xsl:text></xsl:when>
-                    <xsl:when test="$name-lang = 'en'"><xsl:text>Yazgulyam</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Yazgulyami</xsl:text></xsl:when>
                 </xsl:choose>
             </xsl:when>
             <xsl:when test="$lang-code = 'yai'">
@@ -1951,10 +2269,10 @@
                     <xsl:when test="$name-lang = 'en'"><xsl:text>Chinese</xsl:text></xsl:when>
                 </xsl:choose>
             </xsl:when>
-            <xsl:when test="$lang-code = 'zkh'">
+            <xsl:when test="$lang-code = 'zkz'">
                 <xsl:choose>
-                    <xsl:when test="$name-lang = 'ru'"><xsl:text>хорезм.</xsl:text></xsl:when>
-                    <xsl:when test="$name-lang = 'en'"><xsl:text>Khwarezmian</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'ru'"><xsl:text>хазарск.</xsl:text></xsl:when>
+                    <xsl:when test="$name-lang = 'en'"><xsl:text>Khazar</xsl:text></xsl:when>
                 </xsl:choose>
             </xsl:when>
             <xsl:when test="$lang-code = 'zza'">
