@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Abaev Dictionary: entry <hi rendition="#rend_italic">æʒūx</hi></title>
+                <title>Abaev Dictionary: entry <w>æʒūx</w></title>
             </titleStmt>
             <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
     Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
@@ -17,28 +17,40 @@
     <tagsDecl>
         <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
         <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
-        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "<gloss><q>" "</q></gloss>";</rendition>
         <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
     </tagsDecl>
 </encodingDesc>
     </teiHeader>
     <text>
         <body>
-            <entry xml:id="entry_æʒūx" xml:lang="os">
-                <form xml:id="form_d2263e66" xml:lang="os-x-iron" type="lemma"><orth>æʒūx</orth></form>
-                <form xml:id="form_d2263e69" xml:lang="os-x-digor" type="dialectal"><orth>æʒox</orth></form>
-                <sense xml:id="sense_d2263e72"><sense xml:id="sense_d2263e73"><abv:tr xml:lang="ru">
+            <entry xml:id="entry_æʒūx" xml:lang="os" abv:completeness="complete">
+                <?oxy_comment_start author="oleg" timestamp="20240128T174205+0300" comment="checked"?>
+                <form xml:id="form_d2263e66" xml:lang="os-x-iron" type="lemma"
+                    ><orth>æʒūx</orth></form><?oxy_comment_end?>
+                <form xml:id="form_d2263e69" xml:lang="os-x-digor" type="dialectal"
+                        ><orth>æʒox</orth></form>
+                <sense xml:id="sense_d2263e72">
+                    <sense xml:id="sense_d2263e73">
+                        <abv:tr xml:lang="ru">
                             <q>постоянно</q>
-                        </abv:tr><abv:tr xml:lang="en">
+                        </abv:tr>
+                        <abv:tr xml:lang="en">
                             <q>constantly</q>
-                        </abv:tr></sense><sense xml:id="sense_d2263e82"><abv:tr xml:lang="ru">
+                        </abv:tr>
+                    </sense>
+                    <sense xml:id="sense_d2263e82">
+                        <abv:tr xml:lang="ru">
                             <q>все время</q>
-                        </abv:tr><abv:tr xml:lang="en">
+                        </abv:tr>
+                        <abv:tr xml:lang="en">
                             <q>all the time</q>
-                        </abv:tr></sense></sense>
+                        </abv:tr>
+                    </sense>
+                </sense>
                 <abv:exampleGrp xml:id="exampleGrp_d2263e92">
                     <abv:example xml:id="example_d2263e94">
-                        <quote>ḱyzg æʒūxæj rūʒyngæj kasti</quote>
+                        <quote>ḱyzg <oRef>æʒūxæj</oRef> rūʒyngæj kasti</quote>
                         <abv:tr xml:lang="ru">
                             <q>девушка все время смотрела в окно</q>
                         </abv:tr>
@@ -48,22 +60,31 @@
                     </abv:example>
                     <abv:example xml:id="example_d2263e109" xml:lang="os-x-digor">
                         <usg><lang/></usg>
-                        <quote>æ kizgi kæwunæj æʒox næbal færazta</quote>
+                        <quote>æ kizgi kæwunæj <oRef>æʒox</oRef> næbal færazta</quote>
                         <abv:tr xml:lang="ru">
                             <q>он не мог больше выносить постоянный плач дочери</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
                             <q>he could no longer bear the constant crying of his daughter</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Bes._Ka_ke"/><biblScope>49</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Bes._Ka_ke"/>
+                            <biblScope>49</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Сложение слова <ref type="xr" target="#entry_cūx"/> | <hi rendition="#rend_italic">сох</hi> (с
-                    озвончением начального согласного) с негативной частицей <ref type="xr" target="#entry_æ-"/>. См. <ref type="xr" target="#entry_cūx"/> | <hi rendition="#rend_italic">сох</hi>
-                    ‘перерыв’, ‘недостаток’ и пр.</etym>
-                <etym xml:lang="en">Compound of the word <ref type="xr" target="#entry_cūx"/> |
-                    <hi rendition="#rend_italic">cox</hi> (with voicing of the initial consonant) and <ref type="xr" target="#entry_æ-"/>. Cf. <ref type="xr" target="#entry_cūx"/> | <hi rendition="#rend_italic">cox</hi>
-                    ‘break’, ‘disadvantage’, etc.</etym>
+                <etym xml:lang="ru">Сложение слова <ref type="xr" target="#entry_cūx"><w
+                            xml:lang="os-x-iron">cūx</w><w xml:lang="os-x-digor">сох</w></ref> (с
+                    озвончением начального согласного) с негативной частицей <ref type="xr"
+                        target="#entry_æ-"/>. См. <ref type="xr" target="#entry_cūx"><w
+                            xml:lang="os-x-iron">cūx</w><w xml:lang="os-x-digor">сох</w>
+                        <gloss><q>перерыв</q></gloss>, <gloss><q>недостаток</q> и
+                    пр.</gloss></ref></etym>
+                <etym xml:lang="en">Compound of the word <ref type="xr" target="#entry_cūx"><w
+                            xml:lang="os-x-iron">cūx</w><w xml:lang="os-x-digor">cox</w></ref> (with
+                    voicing of the initial consonant) and <ref type="xr" target="#entry_æ-"/>. Cf.
+                        <ref type="xr" target="#entry_cūx"><w xml:lang="os-x-iron">cūx</w><w
+                            xml:lang="os-x-digor">cox</w>
+                        <gloss><q>break</q></gloss>, <gloss><q>disadvantage</q>
+                    etc.</gloss></ref></etym>
             </entry>
         </body>
     </text>

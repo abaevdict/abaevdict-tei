@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ædas</hi></title>
+                <title>Abaev Dictionary: entry <w>ædas</w></title>
             </titleStmt>
             <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
     Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
@@ -24,16 +24,20 @@
     </teiHeader>
     <text>
         <body>
-            <entry xml:id="entry_ædas" xml:lang="os">
-                <form xml:id="form_d4743e66" type="lemma"><orth>ædas</orth></form>
-                <sense xml:id="sense_d4743e69"><abv:tr xml:lang="ru">
+            <entry xml:id="entry_ædas" xml:lang="os" abv:completeness="complete">
+                <?oxy_comment_start author="oleg" timestamp="20240127T152646+0300" comment="checked"?>
+                <form xml:id="form_d4743e66" type="lemma"><orth>ædas</orth></form><?oxy_comment_end?>
+                <sense xml:id="sense_d4743e69">
+                    <abv:tr xml:lang="ru">
                         <q>безопасный</q>
-                    </abv:tr><abv:tr xml:lang="en">
+                    </abv:tr>
+                    <abv:tr xml:lang="en">
                         <q>safe</q>
-                    </abv:tr></sense>
+                    </abv:tr>
+                </sense>
                 <abv:exampleGrp xml:id="exampleGrp_d4743e79">
                     <abv:example xml:id="example_d4743e81">
-                        <quote>ædas ran næ bacagūryn qæwy</quote>
+                        <quote><oRef>ædas</oRef> ran næ bacagūryn qæwy</quote>
                         <abv:tr xml:lang="ru">
                             <q>нам надо разыскать безопасное место</q>
                         </abv:tr>
@@ -42,19 +46,19 @@
                         </abv:tr>
                     </abv:example>
                     <abv:example xml:id="example_d4743e96">
-                        <quote>jæ mūlk ædas ū</quote>
+                        <quote>jæ mūlk <oRef>ædas</oRef> ū</quote>
                         <abv:tr xml:lang="ru">
                             <q>в безопасности имение его</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
                             <q>his goods are in peace</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Лука"/><biblScope><hi rendition="#rend_italic">11</hi>
-                            21</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Лука"/>
+                            <biblScope><w>11</w> 21</biblScope></bibl>
                     </abv:example>
                     <abv:example xml:id="example_d4743e115">
-                        <quote>læppū kæfq˳yndary k˳y amardta, wæd donʒawtæ ædasæj cæwyn bajdydtoj
-                            donmæ</quote>
+                        <quote>læppū kæfq˳yndary k˳y amardta, wæd donʒawtæ <oRef>ædasæj</oRef> cæwyn
+                            bajdydtoj donmæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>когда юноша убил дракона, водоносы стали в безопасности ходить за
                                 водой</q>
@@ -65,18 +69,35 @@
                         </abv:tr>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из <ref type="xr" target="#entry_æ-"/> (негативная частица) +
-                        <ref type="xr" target="#entry_tas_1"/> ‘страх’, ‘опасность’. Старая форма
-                    <hi rendition="#rend_italic">*ætas</hi> сохранена в <mentioned corresp="#mentioned_d4743e165" xml:id="mentioned_d4743e137" xml:lang="xsc"><lang/>
-                        <w>Ἀτάσας</w></mentioned> — собственное имя, имевшее, вероятно, значение
-                    „бесстрашный“ (<bibl><author>Вс. Миллер</author><ref type="bibl" target="#ref_ЖМНП"/><biblScope xml:lang="ru">1886, окт., стр.
-                            263</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Vasmer._Ir._i._S."/></bibl>. — <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>151</biblScope></bibl>). См. <ref type="xr" target="#entry_tas_1"/>.</etym>
-                <etym xml:lang="en">From <ref type="xr" target="#entry_æ-"/> (negative particle) +
-                        <ref type="xr" target="#entry_tas_1"/> ‘fear’, ‘danger’. The old form
-                    <hi rendition="#rend_italic">*ætas</hi> is preserved in <mentioned corresp="#mentioned_d4743e137" xml:id="mentioned_d4743e165" xml:lang="xsc"><lang/>
-                        <w>Ἀτάσας</w></mentioned> , proper name, which probably had the meaning
-                    “fearless” (<bibl><author>Ws. Miller</author><ref type="bibl" target="#ref_ЖМНП"/><biblScope xml:lang="en">1886, oct., p. 263</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Vasmer._Ir._i._S."/></bibl>. — <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>151</biblScope></bibl>). See
-                        <ref type="xr" target="#entry_tas_1"/>.</etym>
+                <etym xml:lang="ru">Из <ref type="xr" target="#entry_æ-"><w>æ</w> (<gloss>негативная
+                            частица</gloss>)</ref> + <ref type="xr" target="#entry_tas_1"><w>tas</w>
+                        <gloss><q>страх</q></gloss>, <gloss><q>опасность</q></gloss></ref>. Старая
+                    форма <w type="rec">ætas</w> сохранена в <mentioned
+                        corresp="#mentioned_d4743e165" xml:id="mentioned_d4743e137" xml:lang="xsc"><lang/>
+                        <w>Ἀτάσας</w> — <gloss>собственное имя, имевшее, вероятно, значение <q
+                                rendition="#rend_doublequotes">бесстрашный</q></gloss>
+                        <note type="bibl">(<bibl>Вс. <author>Миллер</author>, <ref type="bibl"
+                                    target="#ref_ЖМНП"/>
+                                <biblScope xml:lang="ru">1886, окт., стр. 263</biblScope></bibl>. —
+                                    <bibl><ref type="bibl" target="#ref_Vasmer._Ir._i._S."/></bibl>.
+                            — <bibl><ref type="bibl" target="#ref_ОЯФ_I"/>
+                                <biblScope>151</biblScope></bibl>)</note></mentioned>. См. <ref
+                        type="xr" target="#entry_tas_1"/>.</etym>
+                <etym xml:lang="en">From <ref type="xr" target="#entry_æ-"><w>æ</w> (<gloss>negative
+                            particle</gloss>)</ref> + <ref type="xr" target="#entry_tas_1"
+                            ><w>tas</w>
+                        <gloss><q>fear</q></gloss>, <gloss><q>danger</q></gloss></ref>. The old form
+                        <w type="rec">ætas</w> is preserved in <mentioned
+                        corresp="#mentioned_d4743e137" xml:id="mentioned_d4743e165" xml:lang="xsc"><lang/>
+                        <w>Ἀτάσας</w> — <gloss>a proper name that probably had the meaning <q
+                                rendition="#rend_doublequotes">fearless</q></gloss>
+                        <note type="bibl">(<bibl>Ws. <author>Miller</author>, <ref type="bibl"
+                                    target="#ref_ЖМНП"/>
+                                <biblScope xml:lang="ru">1886, October, p. 263</biblScope></bibl>. —
+                                    <bibl><ref type="bibl" target="#ref_Vasmer._Ir._i._S."/></bibl>.
+                            — <bibl><ref type="bibl" target="#ref_ОЯФ_I"/>
+                                <biblScope>151</biblScope></bibl>)</note></mentioned>. See <ref
+                        type="xr" target="#entry_tas_1"/>.</etym>
             </entry>
         </body>
     </text>

@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Abaev Dictionary: entry <hi rendition="#rend_italic">Æfsatī</hi></title>
+                <title>Abaev Dictionary: entry <w>Æfsatī</w></title>
             </titleStmt>
             <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
     Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
@@ -17,58 +17,73 @@
     <tagsDecl>
         <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
         <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
-        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "<gloss><q>" "</q></gloss>";</rendition>
         <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
     </tagsDecl>
 </encodingDesc>
     </teiHeader>
     <text>
         <body>
-            <entry xml:id="entry_Æfsatī" xml:lang="os">
-                <form xml:id="form_d4121e66" type="lemma"><orth>Æfsatī</orth></form>
-                <sense xml:id="sense_d4121e69"><def xml:lang="ru">бог охоты, „хозяин“ лесных зверей, которые зовутся
-                        <hi rendition="#rend_italic">Æysatijy fos</hi> „скот Афсати“; ему молились охотники о счастливой охоте. В
-                        посвященных ему народных песнях Афсати рисуется как покровитель бедных
-                        охотников. Одна из таких песен блестяще обработана осетинским народным
-                        .поэтом Коста. —</def><def xml:lang="en">the deity of hunting, “master” of
-                        forest animals, which are called <hi rendition="#rend_italic">Æysatijy fos</hi> “Afsati's cattle”; the
-                        hunters prayed to him for a happy hunt. In folk songs dedicated to him,
-                        Afsati is portrayed as the patron saint of poor hunters. One of these songs
-                        is brilliantly adapted by the Ossetian folk poet Kosta.</def></sense>
+            <entry xml:id="entry_Æfsatī" xml:lang="os" abv:completeness="russian-questions">
+                <?oxy_comment_start author="oleg" timestamp="20240128T221227+0300" comment="checked"?>
+                <form xml:id="form_d4121e66" type="lemma"><orth>Æfsatī</orth></form><?oxy_comment_end?>
+                <sense xml:id="sense_d4121e69">
+                    <def xml:lang="ru">бог охоты, <q rendition="#rend_doublequotes">хозяин</q>
+                        лесных зверей, которые зовутся <mentioned xml:lang="os-x-iron"
+                                    ><phr><oRef>Æfsatijy</oRef> fos</phr>
+                            <gloss><q rendition="#rend_doublequotes">скот
+                            Афсати</q></gloss></mentioned>; ему молились охотники о счастливой
+                        охоте. В посвященных ему народных песнях Афсати рисуется как покровитель
+                        бедных охотников. Одна из таких песен блестяще обработана осетинским
+                        народным .поэтом Коста</def>
+                    <def xml:lang="en">the deity of hunting, the <q rendition="#rend_doublequotes"
+                            >master</q> of the forest animals, which are called <mentioned
+                            xml:lang="os"><phr><oRef>Æfsatijy</oRef> fos</phr>
+                            <gloss><q rendition="#rend_doublequotes">Afsati's
+                            cattle</q></gloss></mentioned>; the hunters prayed to him for a happy
+                        hunt. In folk songs dedicated to him Æfsati is portrayed as the patron saint
+                        of poor hunters. One of these songs has been brilliantly adapted by the
+                        Ossetian folk poet Kosta</def>
+                </sense>
                 <abv:exampleGrp xml:id="exampleGrp_d4121e75">
                     <abv:example xml:id="example_d4121e77">
-                        <quote>saǵy ūrs syk’atæj ʽFsatījæn syntæg</quote>
+                        <quote>saǵy ūrs syk’atæj <oRef>’Fsatījæn</oRef> syntæg</quote>
                         <abv:tr xml:lang="ru">
                             <q>из белых рогов оленя (сделана) для Фсати кровать</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
-                            <q>from white deer antlers Fsatiʼs bed is made</q>
+                            <q>from white deer antlers Fsati’s bed is made</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>64</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/>
+                            <biblScope>64</biblScope></bibl>
                     </abv:example>
                     <abv:example xml:id="example_d4121e96">
-                        <quote>radd nyn, Æfsatī!</quote>
+                        <quote>radd nyn, <oRef>Æfsatī</oRef>!</quote>
                         <abv:tr xml:lang="ru">
                             <q>подай нам (добычу), Афсати!</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
-                            <q>give us (the game), Afsati!</q>
+                            <q>give us (game), Afsati!</q>
                         </abv:tr>
-                        <bibl><note type="comment" xml:lang="ru">из молитвы охотников:</note><note type="comment" xml:lang="en">from the hunters' prayers:</note><ref type="bibl" target="#src_ОЯФ_I"/><biblScope>500</biblScope></bibl>
+                        <bibl><note type="comment" xml:lang="ru">из молитвы охотников:</note>
+                            <note type="comment" xml:lang="en">from the hunters' prayers:</note>
+                            <ref type="bibl" target="#src_ОЯФ_I"/>
+                            <biblScope>500</biblScope></bibl>
                     </abv:example>
                     <abv:example xml:id="example_d4121e119">
-                        <quote>Fsatījæ zæronddær dawǵytæm kæm ī?</quote>
+                        <quote><oRef>Fsatījæ</oRef> zæronddær dawǵytæm kæm ī?</quote>
                         <abv:tr xml:lang="ru">
                             <q>есть ли среди небожителей (кто-нибудь) старше Афсати?</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
-                            <q>is there (anyone) among the celestials older than Afsati?</q>
+                            <q>is there (anyone) among the celestials older than Æfsati?</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>63</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/>
+                            <biblScope>63</biblScope></bibl>
                     </abv:example>
                     <abv:example xml:id="example_d4121e138">
-                        <quote>cwanon sag k˳y amary, wæd Æfsatījy kærdīx jæ fyccag æmbælægæn
-                            dæddy</quote>
+                        <quote>cwanon sag k˳y amary, wæd <oRef>Æfsatījy</oRef> kærdīx jæ fyccag
+                            æmbælægæn dæddy</quote>
                         <abv:tr xml:lang="ru">
                             <q>когда охотник убивает оленя, он дает кусок (в честь) Афсати первому
                                 встречному</q>
@@ -77,77 +92,120 @@
                             <q>when a hunter kills a deer, he gives a piece (in honour of) Afsati to
                                 the first person he meets</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_ЮОПам."/><biblScope>III
-                            199</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_ЮОПам."/>
+                            <biblScope>III 199</biblScope></bibl>
                     </abv:example>
                     <abv:example xml:id="example_d4121e157">
-                        <quote>Sadullæ syḱʼī-cæw amardta… fīzonǵytæ scættæ sty; fyngæn jæ razy
-                            kʼæj aværdta, Æfsatīmæ sk˳yvta: „Tabu dæwæm, Æfsatī! qæzdygæn dær
-                            dæddys, mæg˳yry dær æfsadys; radd dæ fosæj ænævǧaw!“</quote>
+                        <quote>Sadullæ syḱʼī-cæw amardta… fīzonǵytæ scættæ sty; fyngæn jæ razy kʼæj
+                            aværdta, <oRef>Æfsatīmæ</oRef> sk˳yvta: <q>Tabu dæwæm, Æfsatī! qæzdygæn
+                                dær dæddys, mæg˳yry dær æfsadys; radd dæ fosæj ænævǧaw!</q></quote>
                         <abv:tr xml:lang="ru">
                             <q>Садулла убил серну-самца — шашлык был готов; в качестве стола
-                                поставил перед собой плиту, вознес молитву Афсати: «Славословие
-                                тебе, Афсати! Ты подаешь и богатому, насыщаешь и бедняка; подай
-                                щедро из твоего стада!»</q>
+                                поставил перед собой плиту, вознес молитву Афсати: <q
+                                    rendition="#rend_doublequotes">Славословие тебе, Афсати! Ты
+                                    подаешь и богатому, насыщаешь и бедняка; подай щедро из твоего
+                                    стада!</q></q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
-                            <q>Sadulla killed the chamois — the shish kebab was ready; set a stove
-                                in front of him as a table, offered up a prayer to Afsati: ʽTo you,
-                                Afsati! You give to the rich, you feed the poor too; serve
-                                generously from your flock! ʼ</q>
+                            <q>Sadullæ killed the chamois — the shish kebab was ready; he set a
+                                stove in front of him as a table, offered up a prayer to Æfsati: <q
+                                    rendition="#rend_doublequotes">To you, Afsati! You give to the
+                                    rich, you feed the poor too; give generously from your
+                                    flock!</q></q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Сека"/><biblScope>77</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Сека"/>
+                            <biblScope>77</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Общий всему центральному и западному Кавказу мифологический
-                    образ, порожденный сходными условиями охотничьего быта: <mentioned corresp="#mentioned_d4121e252" xml:id="mentioned_d4121e179" xml:lang="krc-x-balkar"><lang/>
-                        <w>Afsatə, Apsatə</w></mentioned>, <mentioned corresp="#mentioned_d4121e257" xml:id="mentioned_d4121e184" xml:lang="krc-x-karachay"><lang/>
-                        <w>Apsatə</w></mentioned>, <mentioned corresp="#mentioned_d4121e262" xml:id="mentioned_d4121e189" xml:lang="sva"><lang/>
-                        <w>Apsat’</w>
-                        <gloss><q>бог охоты</q></gloss></mentioned>.<note type="footnote" n="1"> PUT
-                        NOTE HERE </note> Типологическими двойниками осетино-балкаро-сванского
-                    Апсата являются: <mentioned corresp="#mentioned_d4121e273" xml:id="mentioned_d4121e200" xml:lang="ab"><lang/>
+                    образ, порожденный сходными условиями охотничьего быта: <mentioned><mentioned
+                            corresp="#mentioned_d4121e252" xml:id="mentioned_d4121e179"
+                            xml:lang="krc-x-balkar"><lang/>
+                            <w>Afsatə</w>, <w>Apsatə</w></mentioned>, <mentioned
+                            corresp="#mentioned_d4121e257" xml:id="mentioned_d4121e184"
+                            xml:lang="krc-x-karachay"><lang/>
+                            <w>Apsatə</w></mentioned>, <mentioned corresp="#mentioned_d4121e262"
+                            xml:id="mentioned_d4121e189" xml:lang="sva"><lang/>
+                            <w>Apsatʼ</w>
+                        </mentioned><gloss><q>бог охоты</q></gloss></mentioned>.<note
+                        type="footnote" xml:lang="ru" n="1">У сванов наряду с мужским образом
+                            <mentioned corresp="#mentioned_d4121e262" xml:lang="sva"
+                            ><w>Apsatʼ</w></mentioned> существовало <mentioned xml:lang="sva"
+                                ><gloss>женское божество охоты</gloss>
+                            <w>Dal</w></mentioned>.</note> Типологическими двойниками
+                    осетино-балкаро-сванского Апсата являются: <mentioned
+                        corresp="#mentioned_d4121e273" xml:id="mentioned_d4121e200" xml:lang="ab"><lang/>
                         <w>Ažweypšaa</w>
-                        <gloss><q>божество охоты</q></gloss></mentioned>, <mentioned corresp="#mentioned_d4121e282" xml:id="mentioned_d4121e209" xml:lang="kbd-x-crc"><lang/>
+                        <gloss><q>божество охоты</q></gloss></mentioned>, <mentioned
+                        corresp="#mentioned_d4121e282" xml:id="mentioned_d4121e209"
+                        xml:lang="kbd-x-crc"><lang/>
                         <w>Mezətha</w>
-                        <gloss><q>бог лесов и зверей</q></gloss></mentioned>, <mentioned corresp="#mentioned_d4121e290" xml:id="mentioned_d4121e217" xml:lang="ce"><lang/>
-                        <w>Elta</w></mentioned> id. О происхождении имени Apsat’ см.:
-                            <bibl><author>N. Ya. Marr</author><biblScope xml:lang="ru">Фрако-армянский Sabazios — Aspacʼ и сванское божество охоты. ИАН 1912,
-                            стр. 827—830</biblScope></bibl>; <bibl><biblScope xml:lang="ru">Бог Σαβαζιος
-                            у армян. ИАН 1911, стр. 759—774</biblScope></bibl>.
-                    <hi rendition="#rend_smallcaps">Н. Я. Марр</hi> сближает <hi rendition="#rend_italic">Apsatʼ</hi> с <mentioned corresp="#mentioned_d4121e304" xml:id="mentioned_d4121e231" xml:lang="xcl"><lang/>
-                        <w>aspacʼ, aswacʼ, astʼowac’</w>
-                        <gloss><q>бог</q></gloss></mentioned>, а в дальнейшем с <hi rendition="#rend_bold">фракийским</hi>
-                    названием бога Диониса <mentioned corresp="#mentioned_d4121e312" xml:id="mentioned_d4121e239" xml:lang="txh"><lang/>
-                        <w>Σαβάζιος (sabad || aspat)</w></mentioned>.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>88, 91, 105,
-                    300</biblScope></bibl>.</etym>
-                <etym xml:lang="en">The mythological image common to the entire Central and Western
-                    Caucasus, generated by similar conditions of hunting life: <mentioned corresp="#mentioned_d4121e179" xml:id="mentioned_d4121e252" xml:lang="krc-x-balkar"><lang/>
-                        <w>Afsatə, Apsatə</w></mentioned>, <mentioned corresp="#mentioned_d4121e184" xml:id="mentioned_d4121e257" xml:lang="krc-x-karachay"><lang/>
-                        <w>Apsatə</w></mentioned>, <mentioned corresp="#mentioned_d4121e189" xml:id="mentioned_d4121e262" xml:lang="sva"><lang/>
-                        <w>Apsat’</w>
-                        <gloss><q>deity of hunting</q></gloss></mentioned>.<note type="footnote" n="1">
-                        PUT NOTE HERE </note>Typological counterparts of the Ossetian-Balkar-Svan
-                    Apsat are: <mentioned corresp="#mentioned_d4121e200" xml:id="mentioned_d4121e273" xml:lang="ab"><lang/>
+                        <gloss><q>бог лесов и зверей</q></gloss></mentioned>, <mentioned
+                        corresp="#mentioned_d4121e290" xml:id="mentioned_d4121e217" xml:lang="ce"><lang/>
+                        <w>Elta</w>
+                        <gloss>id</gloss></mentioned>. О происхождении имени <w>Apsatʼ</w> см.:
+                        <bibl>Н. Я. <author>Марр</author>. <title>Фрако-армянский <w>Sabazios</w> —
+                                <w>Aspacʼ</w> и сванское божество охоты</title>. <ref type="bibl"
+                            target="#ref_ИАН"/>
+                        <biblScope xml:lang="ru">1912, стр. 827—830</biblScope></bibl>;
+                            <bibl><title>Бог <w>Σαβαζιος</w> у армян</title>. <ref type="bibl"
+                            target="#ref_ИАН"/>
+                        <biblScope xml:lang="ru">1911, стр. 759—774</biblScope></bibl>. Н. Я.
+                        <name>Марр</name> сближает <w>Apsatʼ</w> с <mentioned
+                        corresp="#mentioned_d4121e304" xml:id="mentioned_d4121e231" xml:lang="xcl"><lang/>
+                        <w>aspacʼ</w>, <w>aswacʼ</w>, <w>astʼowac’</w>
+                        <gloss><q>бог</q></gloss></mentioned>, а в дальнейшем с <mentioned
+                        corresp="#mentioned_d4121e312" xml:id="mentioned_d4121e239" xml:lang="txh"
+                            ><lang>фракийским</lang>
+                        <gloss>названием бога Диониса</gloss>
+                        <w>Σαβάζιος</w></mentioned> (<w>sabad</w> || <w>aspat</w>).<lb/><bibl><ref
+                            type="bibl" target="#ref_ОЯФ_I"/>
+                        <biblScope>88, 91, 105, 300</biblScope></bibl>.</etym>
+                <etym xml:lang="en">A mythological figure common to the entire Central and Western
+                    Caucasus which arose due to similar conditions of hunting life:
+                            <mentioned><mentioned corresp="#mentioned_d4121e179"
+                            xml:id="mentioned_d4121e252" xml:lang="krc-x-balkar"><lang/>
+                            <w>Afsatə</w>, <w>Apsatə</w></mentioned>, <mentioned
+                            corresp="#mentioned_d4121e184" xml:id="mentioned_d4121e257"
+                            xml:lang="krc-x-karachay"><lang/>
+                            <w>Apsatə</w></mentioned>, <mentioned corresp="#mentioned_d4121e189"
+                            xml:id="mentioned_d4121e262" xml:lang="sva"><lang/>
+                            <w>Apsat’</w>
+                        </mentioned><gloss><q>deity of hunt</q></gloss></mentioned>.<note
+                        type="footnote" xml:lang="en" n="1">Among the Svans, alongside the male
+                        figure <mentioned corresp="#mentioned_d4121e262" xml:lang="sva"
+                                ><w>Apsatʼ</w></mentioned> there was a <mentioned xml:lang="sva"
+                                ><gloss>female hunting deity</gloss>
+                            <w>Dal</w></mentioned>.</note> Typological counterparts to the
+                    Ossetian-Balkar-Svan Apsat are: <mentioned corresp="#mentioned_d4121e200"
+                        xml:id="mentioned_d4121e273" xml:lang="ab"><lang/>
                         <w>Ažweypšaa</w>
-                        <gloss><q>deity of hunt</q></gloss></mentioned>, <mentioned corresp="#mentioned_d4121e209" xml:id="mentioned_d4121e282" xml:lang="kbd-x-crc"><lang/>
+                        <gloss><q>deity of hunt</q></gloss></mentioned>, <mentioned
+                        corresp="#mentioned_d4121e209" xml:id="mentioned_d4121e282"
+                        xml:lang="kbd-x-crc"><lang/>
                         <w>Mezətha</w>
-                        <gloss><q>deity of forests and animals</q></gloss></mentioned>, <mentioned corresp="#mentioned_d4121e217" xml:id="mentioned_d4121e290" xml:lang="ce"><lang/>
-                        <w>Elta</w></mentioned> id. For the origin of the name Apsatʼ,
-                            see:<bibl><author>N. Ya. Marr</author><biblScope xml:lang="en">Thraco-Armenian
-                            Sabazios — Aspacʼ and the Svan deity of the hunt. IAN 1912, pp.
-                            827—830</biblScope></bibl>; <bibl><biblScope xml:lang="en">God
-                            Σαβαζιος among the Armenians. IAN 1911, pp. 759—774</biblScope></bibl>.
-                    <hi rendition="#rend_smallcaps">N. Ya. Marr</hi> brings together <hi rendition="#rend_italic">Apsatʼ</hi> with <mentioned corresp="#mentioned_d4121e231" xml:id="mentioned_d4121e304" xml:lang="xcl"><lang/>
-                        <w>aspacʼ, aswacʼ, astʼowac’</w>
-                        <gloss><q>God</q></gloss></mentioned>, and further with the <hi rendition="#rend_bold">Thracian</hi>
-                    name of the god Dionysus <mentioned corresp="#mentioned_d4121e239" xml:id="mentioned_d4121e312" xml:lang="txh"><lang/>
-                        <w>Σαβάζιος (sabad || aspat)</w></mentioned>.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>88, 91, 105,
-                    300</biblScope></bibl>.</etym>
-                <note type="footnote" xml:lang="ru" n="1">У сванов наряду с мужским образом
-                    <hi rendition="#rend_italic">Apsat'</hi> существовало женское божество охоты <hi rendition="#rend_italic">Dal</hi>.</note>
-                <note type="footnote" xml:lang="en" n="1">Among the Svans, along with the male image
-                    <hi rendition="#rend_italic">Apsat'</hi>, there was a female hunting deity <hi rendition="#rend_italic">Dal</hi>.</note>
+                        <gloss><q>deity of forests and animals</q></gloss></mentioned>, <mentioned
+                        corresp="#mentioned_d4121e217" xml:id="mentioned_d4121e290" xml:lang="ce"><lang/>
+                        <w>Elta</w>
+                        <gloss>id</gloss></mentioned>. For the origin of the name <w>Apsatʼ</w> see:
+                        <bibl>N. Ja. <author>Marr</author>. <title>Frako-armjanskij <w>Sabazios</w>
+                            — <w>Aspacʼ</w> i svanskoe božestvo oxoty</title> [Thraco-Armenian
+                            <w>Sabazios</w> — <w>Aspacʼ</w> and the Svan deity of hunt]. <ref
+                            type="bibl" target="#ref_ИАН"/>
+                        <biblScope xml:lang="en">1912, pp. 827–830</biblScope></bibl>;
+                            <bibl><title>Bog <w>Σαβαζιος</w> u armjan</title> [The god
+                            <w>Σαβαζιος</w> among the Armenians]. <ref type="bibl" target="#ref_ИАН"/>
+                        <biblScope xml:lang="en">1911, pp. 759—774</biblScope></bibl>. N. Ja.
+                        <name>Marr</name> connects <w>Apsatʼ</w> with <mentioned
+                        corresp="#mentioned_d4121e231" xml:id="mentioned_d4121e304" xml:lang="xcl"><lang/>
+                        <w>aspacʼ</w>, <w>aswacʼ</w>, <w>astʼowac’</w>
+                        <gloss><q>God</q></gloss></mentioned>, and further with the <mentioned
+                        corresp="#mentioned_d4121e239" xml:id="mentioned_d4121e312" xml:lang="txh"><lang/>
+                        <gloss>name of the god Dionysus</gloss>
+                        <w>Σαβάζιος</w></mentioned>
+                        (<?oxy_comment_start author="oleg" timestamp="20240128T221220+0300" comment="what are these words?"?><w>sabad</w><?oxy_comment_end?>
+                    || <w>aspat</w>).<lb/><bibl><ref type="bibl" target="#ref_ОЯФ_I"/>
+                        <biblScope>88, 91, 105, 300</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>
