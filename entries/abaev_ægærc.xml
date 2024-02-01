@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ægærc</hi></title>
+                <title>Abaev Dictionary: entry <w>ægærc</w></title>
             </titleStmt>
             <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
     Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
@@ -17,43 +17,70 @@
     <tagsDecl>
         <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
         <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
-        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "<gloss><q>" "</q></gloss>";</rendition>
         <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
     </tagsDecl>
 </encodingDesc>
     </teiHeader>
     <text>
         <body>
-            <entry xml:id="entry_ægærc" xml:lang="os">
-                <form xml:id="form_d4912e66" xml:lang="os-x-iron" type="lemma"><orth>ægærc</orth></form>
-                <form xml:id="form_d4912e69" xml:lang="os-x-digor" type="dialectal"><orth>ægærcæ</orth><form xml:id="form_d4912e71" type="variant"><orth>igærcæ</orth></form></form>
+            <entry xml:id="entry_ægærc" xml:lang="os" abv:completeness="complete">
+                <?oxy_comment_start author="oleg" timestamp="20240201T105837+0300" comment="checked"?>
+                <form xml:id="form_d4912e66" xml:lang="os-x-iron" type="lemma"
+                    ><orth>ægærc</orth></form><?oxy_comment_end?>
+                <form xml:id="form_d4912e69" xml:lang="os-x-digor" type="dialectal"
+                        ><orth>ægærcæ</orth>
+                    <form xml:id="form_d4912e71" type="variant"><orth>igærcæ</orth></form></form>
                 <re xml:id="re_d4912e74">
-                    <form xml:id="form_d4912e76" xml:lang="os-x-iron" type="lemma"><orth>gom-ægærccæj</orth></form>
-                    <form xml:id="form_d4912e79" xml:lang="os-x-digor" type="dialectal"><orth>igon-igærcæj</orth></form>
-                    <sense xml:id="sense_d4912e82"><abv:tr xml:lang="ru">
-                            <q>нагишом</q>
-                        </abv:tr><abv:tr xml:lang="en">
-                            <q>naked</q>
-                        </abv:tr></sense>
-                </re>
-                <abv:exampleGrp xml:id="exampleGrp_d4912e93">
-                    <abv:example xml:id="example_d4912e95">
-                        <quote>æz dæ fædyl wajyn gom-ægærccæj</quote>
+                    <note type="comment" xml:lang="ru"> в выражении </note>
+                    <note type="comment" xml:lang="en"> in the expression </note>
+                    <form xml:id="form_d4912e76" xml:lang="os-x-iron" type="lemma"
+                            ><orth>gom-ægærccæj</orth></form>
+                    <form xml:id="form_d4912e79" xml:lang="os-x-digor" type="dialectal"
+                            ><orth>igon-igærcæj</orth></form>
+                    <sense xml:id="sense_d4912e82">
                         <abv:tr xml:lang="ru">
-                            <q>я бегу за тобой нагишом</q>
+                            <q>нагишом</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
-                            <q>I am running naked after you</q>
+                            <q>naked</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Niger"/><biblScope>154</biblScope></bibl>
-                    </abv:example>
-                </abv:exampleGrp>
-                <etym xml:lang="ru">Из <hi rendition="#rend_italic">æ-kærc</hi> ‘без шубы’. ‘Отсутствие шубы’ как синоним ‘наготы’
-                    указывает на жизнь в суровом климате. Начальное <hi rendition="#rend_italic">i</hi> в д. <hi rendition="#rend_italic">igærcæ</hi> -—
-                    перебойное из <hi rendition="#rend_italic">æ</hi>; ср. <hi rendition="#rend_italic">idonug</hi> рядом с <ref type="xr" target="#entry_ædonug"/> ‘жажда’ и др. См. также под <ref type="xr" target="#entry_gom"/>.</etym>
-                <etym xml:lang="en">From <hi rendition="#rend_italic">æ-kærc</hi> ‘without fur coat’. ‘Absence of fur coat’
-                    synonymous to ‘nudity’ indicates life in a harsh climate. The initial <hi rendition="#rend_italic">i</hi> in
-                    Digor <hi rendition="#rend_italic">igærcæ</hi> alternates with <hi rendition="#rend_italic">æ</hi>; cf. <hi rendition="#rend_italic">idonug</hi> from <ref type="xr" target="#entry_ædonug"/> ‘thirst’ etc. See also under <ref type="xr" target="#entry_gom"/>.</etym>
+                    </sense>
+                    <abv:exampleGrp xml:id="exampleGrp_d4912e93">
+                        <abv:example xml:id="example_d4912e95">
+                            <quote><?oxy_comment_start author="oleg" timestamp="20240201T105630+0300" comment="Abaev has different punctuation but this example is technically for the RE"?>æz<?oxy_comment_end?>
+                                dæ fædyl wajyn <oRef>gom-ægærccæj</oRef></quote>
+                            <abv:tr xml:lang="ru">
+                                <q>я бегу за тобой нагишом</q>
+                            </abv:tr>
+                            <abv:tr xml:lang="en">
+                                <q>I am running naked after you</q>
+                            </abv:tr>
+                            <bibl><ref type="bibl" target="#src_Niger"/>
+                                <biblScope>154</biblScope></bibl>
+                        </abv:example>
+                    </abv:exampleGrp>
+                </re>
+                <etym xml:lang="ru">Из <w>æ-kærc</w>
+                    <gloss><q>без шубы</q></gloss>. <q>Отсутствие шубы</q> как синоним <q>наготы</q>
+                    указывает на жизнь в суровом климате. Начальное <c>i</c> в <lang
+                        xml:lang="os-x-digor"/>
+                    <oRef xml:lang="os-x-digor">igærcæ</oRef> — перебойное из <c>æ</c>; ср. <ref
+                        type="xr" target="#entry_ædonug"
+                            ><?oxy_comment_start author="oleg" timestamp="20240201T105744+0300" comment="NB: this form is not found in the entry itself"?><w>idonug</w><?oxy_comment_end?>
+                        рядом с <w>ædonug</w>
+                        <gloss><q>жажда</q></gloss></ref> и др. См. также под <ref type="xr"
+                        target="#entry_gom"/>.</etym>
+                <etym xml:lang="en">From <w>æ-kærc</w>
+                    <gloss><q>without fur coat</q></gloss>. <q>Absence of fur coat</q> as a synonym
+                    to <q>nudity</q> indicates life in a harsh climate. The initial <c>i</c> in
+                        <lang xml:lang="os-x-digor"/>
+                    <oRef xml:lang="os-x-digor">igærcæ</oRef> is an alternation from <c>æ</c>; cf.
+                        <ref type="xr" target="#entry_ædonug"
+                            ><?oxy_comment_start author="oleg" timestamp="20240201T105744+0300" comment="NB: this form is not found in the entry itself"?><w>idonug</w><?oxy_comment_end?>
+                        alongside <w>ædonug</w>
+                        <gloss><q>thirst</q></gloss></ref> etc. See also under <ref type="xr"
+                        target="#entry_gom"/>.</etym>
             </entry>
         </body>
     </text>

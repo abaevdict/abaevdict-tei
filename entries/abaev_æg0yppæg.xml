@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Abaev Dictionary: entry <hi rendition="#rend_italic">æg0yppæg</hi></title>
+                <title>Abaev Dictionary: entry <w>æg0yppæg</w></title>
             </titleStmt>
             <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
     Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
@@ -17,39 +17,56 @@
     <tagsDecl>
         <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
         <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
-        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "<gloss><q>" "</q></gloss>";</rendition>
         <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
     </tagsDecl>
 </encodingDesc>
     </teiHeader>
     <text>
         <body>
-            <entry xml:id="entry_æg0yppæg" xml:lang="os">
-                <form xml:id="form_d5957e66" xml:lang="os-x-iron" type="lemma"><orth>æg˳yppæg</orth></form>
-                <form xml:id="form_d5957e69" xml:lang="os-x-digor" type="dialectal"><orth>æguppæg</orth></form>
-                <sense xml:id="sense_d5957e72"><sense xml:id="sense_d5957e73"><abv:tr xml:lang="ru">
+            <entry xml:id="entry_æg0yppæg" xml:lang="os" abv:completeness="questions">
+                <?oxy_comment_start author="oleg" timestamp="20240201T185129+0300" comment="checked"?>
+                <form xml:id="form_d5957e66" xml:lang="os-x-iron" type="lemma"
+                    ><orth>æg˳yppæg</orth></form><?oxy_comment_end?>
+                <form xml:id="form_d5957e69" xml:lang="os-x-digor" type="dialectal"
+                        ><orth>æguppæg</orth></form>
+                <sense xml:id="sense_d5957e72">
+                    <sense xml:id="sense_d5957e73">
+                        <abv:tr xml:lang="ru">
                             <q>остолбенелый</q>
-                        </abv:tr><abv:tr xml:lang="en">
+                        </abv:tr>
+                        <abv:tr xml:lang="en">
                             <q>stunned</q>
-                        </abv:tr></sense><sense xml:id="sense_d5957e82"><abv:tr xml:lang="ru">
+                        </abv:tr>
+                    </sense>
+                    <sense xml:id="sense_d5957e82">
+                        <abv:tr xml:lang="ru">
                             <q>безмолвный</q>
-                        </abv:tr><abv:tr xml:lang="en">
+                        </abv:tr>
+                        <abv:tr xml:lang="en">
                             <q>silent</q>
-                        </abv:tr></sense></sense>
+                        </abv:tr>
+                    </sense>
+                </sense>
                 <abv:exampleGrp xml:id="exampleGrp_d5957e92">
-                    <abv:example xml:id="example_d5957e94">
-                        <quote>mæjæ isburdæj fæskʼæʒæxæj æguppægæj</quote>
+                    <abv:example xml:id="example_d5957e94" xml:lang="os-x-digor">
+                        <usg><lang/></usg>
+                        <quote>mæjæ isburdæj fæskʼæʒæxæj <oRef>æguppægæj</oRef></quote>
                         <abv:tr xml:lang="ru">
                             <q>месяц бесшумно выполз из-за скалы</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
                             <q>the moon silently crawled out from behind the rock</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Qazb."/><biblScope>23</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Qazb."/>
+                            <biblScope>23</biblScope></bibl>
                     </abv:example>
                     <abv:example xml:id="example_d5957e113" xml:lang="os-x-digor">
                         <usg><lang/></usg>
-                        <quote>æmburd feguppæg æj tuxwast, ærvʒavd fæcæj cuma ævast</quote>
+                        <quote>æmburd
+                                <?oxy_comment_start author="oleg" timestamp="20240201T184844+0300" comment="complex verb but no RE"?><oRef>feguppæg
+                                æj</oRef><?oxy_comment_end?> tuxwast, ærvʒavd fæcæj cuma
+                            ævast</quote>
                         <abv:tr xml:lang="ru">
                             <q>собрание остолбенело сразу, точно пораженное внезапно громом</q>
                         </abv:tr>
@@ -57,24 +74,36 @@
                             <q>the meeting was dumbfounded at once, as if suddenly struck by
                                 thunder</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>67</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Iræf"/>
+                            <biblScope>67</biblScope></bibl>
                     </abv:example>
                     <abv:example xml:id="example_d5957e135" xml:lang="os-x-digor">
                         <usg><lang/></usg>
-                        <quote>madæ æ sasugæj ciraǧ feguppæg kodta</quote>
+                        <quote>madæ æ sasugæj ciraǧ <oRef>feguppæg kodta</oRef></quote>
                         <abv:tr xml:lang="ru">
                             <q>мать своим платком притушила лампу</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
-                            <q>mother dimmed the lamp with her handkerchief</q>
+                            <q>mother dimmed the lamp with her shawl</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Bes._Ka_ke"/><biblScope>90</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Bes._Ka_ke"/>
+                            <biblScope>90</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из <hi rendition="#rend_italic">æ-ǧ˳ypp-æg</hi>, собственно ‘бесшумный’, ‘беззвучный’ (<ref type="xr" target="#entry_æ-"/> — негативная частица, <ref type="xr" target="#entry_g0ypp"/> ‘стук’, ‘шум’, <hi rendition="#rend_italic">-æg</hi> — обычный именной
-                    суффикс).</etym>
-                <etym xml:lang="en">From <hi rendition="#rend_italic">æ-ǧ˳ypp-æg</hi>, literally ‘soundless’, ‘silent’ (<ref type="xr" target="#entry_æ-"/> is a negative particle, <ref type="xr" target="#entry_g0ypp"/> is ‘knocking’, ‘noise’, <hi rendition="#rend_italic">-æg</hi> is a usual nominal
-                    suffix).</etym>
+                <etym xml:lang="ru">Из <w>æ-ǧ˳ypp-æg</w>, собственно
+                    <gloss><q>бесшумный</q></gloss>, <gloss><q>беззвучный</q></gloss> (<ref
+                        type="xr" target="#entry_æ-"/> — негативная частица, <ref type="xr"
+                        target="#entry_g0ypp"><w>g˳ypp</w>
+                        <gloss><q>стук</q></gloss>, <gloss><q>шум</q></gloss></ref>, <mentioned
+                        xml:lang="os"><m>-æg</m> — <gloss>обычный именной
+                        суффикс</gloss></mentioned>).</etym>
+                <etym xml:lang="en">From <w>æ-ǧ˳ypp-æg</w>, literally
+                        <gloss><q>soundless</q></gloss>, <gloss><q>silent</q></gloss> (<ref
+                        type="xr" target="#entry_æ-"/> is a negative particle, <ref type="xr"
+                        target="#entry_g0ypp"><w>g˳ypp</w> is <gloss><q>knocking</q></gloss>,
+                                <gloss><q>noise</q></gloss></ref>, <mentioned xml:lang="os"
+                            ><m>-æg</m> is a <gloss>common nominal
+                    suffix</gloss></mentioned>).</etym>
             </entry>
         </body>
     </text>

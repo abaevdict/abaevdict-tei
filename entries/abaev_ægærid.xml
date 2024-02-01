@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ægærid</hi></title>
+                <title>Abaev Dictionary: entry <w>ægærid</w></title>
             </titleStmt>
             <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
     Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
@@ -17,42 +17,66 @@
     <tagsDecl>
         <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
         <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
-        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "<gloss><q>" "</q></gloss>";</rendition>
         <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
     </tagsDecl>
 </encodingDesc>
     </teiHeader>
     <text>
         <body>
-            <entry xml:id="entry_ægærid" xml:lang="os-x-digor">
-                <form xml:id="form_d1877e66" type="lemma"><orth>ægærid</orth><form xml:id="form_d1877e68" type="variant"><orth>ægirid</orth></form><form xml:id="form_d1877e70" type="variant"><orth>ægiriddær</orth></form></form>
+            <entry xml:id="entry_ægærid" xml:lang="os-x-digor" abv:completeness="complete">
+                <?oxy_comment_start author="oleg" timestamp="20240201T160315+0300" comment="checked"?>
+                <form xml:id="form_d1877e66" type="lemma"><orth>ægærid</orth>
+                    <form xml:id="form_d1877e68" type="variant"><orth>ægirid</orth></form>
+                    <form xml:id="form_d1877e70" type="variant"><orth>ægiriddær</orth></form></form><?oxy_comment_end?>
                 <usg><lang/></usg>
-                <sense xml:id="sense_d1877e76"><sense xml:id="sense_d1877e77"><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d1877e76">
+                    <sense xml:id="sense_d1877e77">
+                        <abv:tr xml:lang="ru">
                             <q>вовсе</q>
-                        </abv:tr><abv:tr xml:lang="en">
-                            <q>at all</q>
-                        </abv:tr></sense><sense xml:id="sense_d1877e86"><abv:tr xml:lang="ru">
+                        </abv:tr>
+                        <abv:tr xml:lang="en">
+                            <q>(<?oxy_comment_start author="oleg" timestamp="20240201T110244+0300" comment="judging by the corpus, this is an NPI"?>not<?oxy_comment_end?>)
+                                at all</q>
+                        </abv:tr>
+                    </sense>
+                    <sense xml:id="sense_d1877e86">
+                        <abv:tr xml:lang="ru">
                             <q>совсем</q>
-                        </abv:tr><abv:tr xml:lang="en">
-                            <q>completely</q>
-                        </abv:tr></sense><sense xml:id="sense_d1877e95"><abv:tr xml:lang="ru">
+                        </abv:tr>
+                        <abv:tr xml:lang="en">
+                            <q>absolutely (not)</q>
+                        </abv:tr>
+                    </sense>
+                    <sense xml:id="sense_d1877e95">
+                        <abv:tr xml:lang="ru">
                             <q>совершенно</q>
-                        </abv:tr><abv:tr xml:lang="en">
-                            <q>quite</q>
-                        </abv:tr></sense></sense>
+                        </abv:tr>
+                        <abv:tr xml:lang="en">
+                            <q>totally (not)</q>
+                        </abv:tr>
+                    </sense>
+                </sense>
+                <note type="comment">; по значению = <ref type="xr" target="#entry_æppyn6dær9"
+                        xml:lang="os-x-iron"><lang/>
+                        <w>æppyn</w>, <w>æppyndær</w></ref></note>
+                <note type="comment" xml:lang="en">; in meaning = <ref type="xr"
+                        target="#entry_æppyn6dær9" xml:lang="os-x-iron"><lang/>
+                        <w>æppyn</w>, <w>æppyndær</w></ref></note>
                 <abv:exampleGrp xml:id="exampleGrp_d1877e105">
                     <abv:example xml:id="example_d1877e107">
-                        <quote>ægærid din mæ bon kæd necij…</quote>
+                        <quote><oRef>ægærid</oRef> din mæ bon kæd necij…</quote>
                         <abv:tr xml:lang="ru">
                             <q>если даже я ничего не могу с тобой сделать…</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
-                            <q>even if I can't do anything with you …</q>
+                            <q>even if I cannot do anything to you…</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Диг._сказ."/><biblScope>2</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Диг._сказ."/>
+                            <biblScope>2</biblScope></bibl>
                     </abv:example>
                     <abv:example xml:id="example_d1877e126">
-                        <quote>cæmæj tærsis? ægiriddær necæmæj</quote>
+                        <quote>cæmæj tærsis? <oRef>ægiriddær</oRef> necæmæj</quote>
                         <abv:tr xml:lang="ru">
                             <q>чего ты боишься? совершенно ничего</q>
                         </abv:tr>
@@ -61,24 +85,64 @@
                         </abv:tr>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Образовано от <ref type="xr" target="#entry_ægær"/> ‘слишком’ с
-                    помощью суффикса неопределенного значения <hi rendition="#rend_italic">-id</hi>, который мы находим еще в <ref type="xr" target="#entry_aftid"/> ‘пустой’, д. <ref type="xr" target="#entry_otid"/> ‘только’, в некоторых местоимениях и наречиях, как
-                    <hi rendition="#rend_italic">cydær-id-dær</hi> ‘что бы ни’, <hi rendition="#rend_italic">ḱīdar-id-dær</hi> ‘кто бы ни’, <hi rendition="#rend_italic">kæmdær-id-dær</hi>
-                    ‘где бы ни’ и т. п., а также в обозначениях цвета, с удвоением основы,
-                    <hi rendition="#rend_italic">ūrs-ūrs-id</hi> ‘совершенно белый’, <hi rendition="#rend_italic">syrx-syrx-id</hi> ‘совершенно красный’. Как
-                    можно видеть из этих примеров, суффикс <hi rendition="#rend_italic">-id</hi> как бы усиливает значение,
-                    присущее данной основе. Перебой <hi rendition="#rend_italic">æ</hi> || <hi rendition="#rend_italic">i</hi> перед <hi rendition="#rend_italic">r</hi> (<hi rendition="#rend_italic">ægærid</hi> ||
-                    <hi rendition="#rend_italic">ægirid</hi>) находит аналогию в таких парах, как <ref type="xr" target="#entry_ævdærzyn"/> | <hi rendition="#rend_italic">ævdirzun</hi>, <ref type="xr" target="#entry_xærynkʼa"/> | <hi rendition="#rend_italic">xirinkʼа</hi> и др. (<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>I 369</biblScope></bibl>).</etym>
-                <etym xml:lang="en">Derived from <ref type="xr" target="#entry_ægær"/> ‘too (much)’
-                    with a suffix <hi rendition="#rend_italic">-id</hi> having an undefined meaning that we can also find in <ref type="xr" target="#entry_aftid"/> ‘empty’, Digor <ref type="xr" target="#entry_otid"/> ‘only’, in some pronouns and adverbials, like
-                    <hi rendition="#rend_italic">cydær-id-dær</hi> ‘whatever’, <hi rendition="#rend_italic">ḱīdar-id-dær</hi> ‘whoever’, <hi rendition="#rend_italic">kæmdær-id-dær</hi>
-                    ‘wherever’ etc., and also in reduplicated words denoting colours, <hi rendition="#rend_italic">ūrs-ūrs-id</hi>
-                    ‘absolutely white’, <hi rendition="#rend_italic">syrx-syrx-id</hi> ‘absolutely red’. As can be seen from the
-                    examples, the suffix <hi rendition="#rend_italic">-id</hi> is likely to intensify the menaing of the base
-                    stem. The alternation <hi rendition="#rend_italic">æ</hi> || <hi rendition="#rend_italic">i</hi> before <hi rendition="#rend_italic">r</hi> (<hi rendition="#rend_italic">ægærid</hi> || <hi rendition="#rend_italic">ægirid</hi>) has
-                    analogies in couples such as <ref type="xr" target="#entry_ævdærzyn"/> |
-                    ævdirzun, <ref type="xr" target="#entry_xærynkʼa"/> | <w>xirinkʼa</w> etc. (<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>I
-                    369</biblScope></bibl>).</etym>
+                <etym xml:lang="ru">Образовано от <ref type="xr" target="#entry_ægær"><w>ægær</w>
+                        <gloss><q>слишком</q></gloss></ref> с помощью <mentioned xml:lang="os"
+                            ><gloss>суффикса неопределенного значения</gloss>
+                        <m>-id</m></mentioned>, который мы находим еще в <ref type="xr"
+                        target="#entry_aftid"><w>aftid</w>
+                        <gloss><q>пустой</q></gloss></ref>, <ref type="xr" target="#entry_otid"
+                        xml:lang="os-x-digor"><lang/>
+                        <w>otid</w>
+                        <gloss><q>только</q></gloss></ref>, в некоторых местоимениях и наречиях, как
+                        <ref type="xr" target="#entry_cydær"><w>cydær-id-dær</w>
+                        <gloss><q>что бы ни</q></gloss></ref>, <ref type="xr" target="#entry_ḱīdær"
+                            ><w>ḱīdær-id-dær</w>
+                        <gloss><q>кто бы ни</q></gloss></ref>, <ref type="xr" target="#entry_kæmdær"
+                            ><w>kæmdær-id-dær</w>
+                        <gloss><q>где бы ни</q></gloss></ref> и т. п., а также в обозначениях цвета,
+                    с удвоением основы, <ref type="xr" target="#entry_ūrs"><w>ūrs-ūrs-id</w>
+                        <gloss><q>совершенно белый</q></gloss></ref>, <ref type="xr"
+                        target="#entry_syrx"><w>syrx-syrx-id</w>
+                        <gloss><q>совершенно красный</q></gloss></ref>. Как можно видеть из этих
+                    примеров, <mentioned xml:lang="os"><gloss>суффикса</gloss>
+                        <m>-id</m></mentioned> как бы усиливает значение, присущее данной основе.
+                    Перебой <c>æ</c> ‖ <c>i</c> перед <c>r</c> (<oRef>ægærid</oRef> ||
+                        <oRef>ægirid</oRef>) находит аналогию в таких парах, как <ref type="xr"
+                        target="#entry_ævdærzyn"><w xml:lang="os-x-iron">ævdærzyn</w><w
+                            xml:lang="os-x-digor">ævdirzun</w></ref>, <ref type="xr"
+                        target="#entry_xærynkʼa"><w xml:lang="os-x-iron">xærynkʼa</w> (<w
+                            xml:lang="os-x-iron">xyrynkʼa</w>)<w xml:lang="os-x-digor"
+                        >xirinkʼа</w></ref> и др. (<bibl><ref type="bibl" target="#ref_ОЯФ_I"/>
+                        <biblScope>I 369</biblScope></bibl>).</etym>
+                <etym xml:lang="en">Derived from <ref type="xr" target="#entry_ægær"><w>ægær</w>
+                        <gloss><q>too (much)</q></gloss></ref> via the <mentioned xml:lang="os"
+                            ><gloss>suffix with indeterminate meaning</gloss>
+                        <m>-id</m></mentioned> that we also find in <ref type="xr"
+                        target="#entry_aftid"><w>aftid</w>
+                        <gloss><q>empty</q></gloss></ref>, <ref type="xr" target="#entry_otid"
+                        xml:lang="os-x-digor"><lang/>
+                        <w>otid</w>
+                        <gloss><q>only</q></gloss></ref>, in some pronouns and adverbials, like <ref
+                        type="xr" target="#entry_cydær"><w>cydær-id-dær</w>
+                        <gloss><q>whatever</q></gloss></ref>, <ref type="xr" target="#entry_ḱīdær"
+                            ><w>ḱīdær-id-dær</w>
+                        <gloss><q>whoever</q></gloss></ref>, <ref type="xr" target="#entry_kæmdær"
+                            ><w>kæmdær-id-dær</w>
+                        <gloss><q>wherever</q></gloss></ref> etc., and also in reduplicated words
+                    denoting colours, <ref type="xr" target="#entry_ūrs"><w>ūrs-ūrs-id</w>
+                        <gloss><q>totally white</q></gloss></ref>, <ref type="xr"
+                        target="#entry_syrx"><w>syrx-syrx-id</w>
+                        <gloss><q>totally red</q></gloss></ref>. As can be seen from the examples,
+                    the <mentioned xml:lang="os"><gloss>suffix</gloss>
+                        <m>-id</m></mentioned> seems to intensify the meaning of the base stem. The
+                    alternation <c>æ</c> ‖ <c>i</c> before <c>r</c> (<oRef>ægærid</oRef> ‖
+                        <oRef>ægirid</oRef>) has analogies in doublets such as <ref type="xr"
+                        target="#entry_ævdærzyn"><w xml:lang="os-x-iron">ævdærzyn</w><w
+                            xml:lang="os-x-digor">ævdirzun</w></ref>, <ref type="xr"
+                        target="#entry_xærynkʼa"><w xml:lang="os-x-iron">xærynkʼa</w> (<w
+                            xml:lang="os-x-iron">xyrynkʼa</w>)<w xml:lang="os-x-digor"
+                        >xirinkʼа</w></ref> etc. (<bibl><ref type="bibl" target="#ref_ОЯФ_I"/>
+                        <biblScope>I 369</biblScope></bibl>).</etym>
             </entry>
         </body>
     </text>

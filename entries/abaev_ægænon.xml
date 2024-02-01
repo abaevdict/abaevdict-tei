@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ægænon</hi></title>
+                <title>Abaev Dictionary: entry <w>ægænon</w></title>
             </titleStmt>
             <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
     Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
@@ -17,67 +17,89 @@
     <tagsDecl>
         <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
         <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
-        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "<gloss><q>" "</q></gloss>";</rendition>
         <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
     </tagsDecl>
 </encodingDesc>
     </teiHeader>
     <text>
         <body>
-            <entry xml:id="entry_ægænon" xml:lang="os">
-                <form xml:id="form_d855e66" type="lemma"><orth>ægænon</orth></form>
-                <sense xml:id="sense_d855e69"><sense xml:id="sense_d855e70"><abv:tr xml:lang="ru">
+            <entry xml:id="entry_ægænon" xml:lang="os" abv:completeness="questions">
+                <?oxy_comment_start author="oleg" timestamp="20240131T195446+0300" comment="checked"?>
+                <form xml:id="form_d855e66" type="lemma"><orth>ægænon</orth></form><?oxy_comment_end?>
+                <sense xml:id="sense_d855e69">
+                    <sense xml:id="sense_d855e70">
+                        <abv:tr xml:lang="ru">
                             <q>бесшабашный</q>
-                        </abv:tr><abv:tr xml:lang="en">
+                        </abv:tr>
+                        <abv:tr xml:lang="en">
                             <q>reckless</q>
-                        </abv:tr></sense><sense xml:id="sense_d855e79"><abv:tr xml:lang="ru">
+                        </abv:tr>
+                    </sense>
+                    <sense xml:id="sense_d855e79">
+                        <abv:tr xml:lang="ru">
                             <q>разнузданный</q>
-                        </abv:tr><abv:tr xml:lang="en">
+                        </abv:tr>
+                        <abv:tr xml:lang="en">
                             <q>unbridled</q>
-                        </abv:tr></sense></sense>
+                        </abv:tr>
+                    </sense>
+                </sense>
                 <abv:exampleGrp xml:id="exampleGrp_d855e89">
                     <abv:example xml:id="example_d855e91" xml:lang="os-x-digor">
                         <usg><lang/></usg>
-                        <quote>Narti ægænon sind</quote>
+                        <quote>Narti <oRef>ægænon</oRef> sind</quote>
                         <abv:tr xml:lang="ru">
-                            <q>бесшабашный (танец) sind Нартов</q>
+                            <q>бесшабашный (танец) <ref type="xr" target="#entry_simd"><hi
+                                        rendition="#rend_smallcaps">sind</hi></ref> Нартов</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
-                            <q>reckless (dance) of Narts</q>
+                            <q>the reckless <ref type="xr" target="#entry_simd"><w>sind</w></ref>
+                                (dance) of the Narts</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
-                            64</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_СОПам."/>
+                            <biblScope>II 64</biblScope></bibl>
                     </abv:example>
                     <abv:example xml:id="example_d855e113">
-                        <quote>cæj bærc sabyr adæm wydysty K’abūzty Totyratæ, uj bærc ægænon qal
-                            wydysty Xoʒy Totyratæ</quote>
+                        <quote>cæj bærc sabyr adæm wydysty Kʼabūzty Totyratæ, uj bærc
+                                <oRef>ægænon</oRef> qal wydysty Xoʒy Totyratæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>насколько тихие люди были Тотровы из Кабузта, настолько разнузданны
                                 были Тотровы из Ходза</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
-                            <q>as quiet people were Totrovs from Kabuzt, as reckless were Totrovs
-                                from Hodza</q>
+                            <q>as quiet people were the Totyratæ from Kabuzt, just as reckless were
+                                the Totyratæ from Khodz</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Čerm."/><biblScope>60</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Čerm."/>
+                            <biblScope>60</biblScope></bibl>
                     </abv:example>
                     <abv:example xml:id="example_d855e132">
-                        <quote>xuzi ægænon, ænæfsar ʒurdtæ gælsta</quote>
+                        <quote>xuzi <oRef>ægænon</oRef>, ænæfsar ʒurdtæ gælsta</quote>
                         <abv:tr xml:lang="ru">
                             <q>он извергал всякие разнузданные, бесстыдные слова</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
-                            <q>he spewed all sorts of unbridled, shameless words</q>
+                            <q>he spewed out all sorts of unbridled, shameless words</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_SD"/><biblScope>182%l4%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_SD"/>
+                            <biblScope>182%l4%l</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из <ref type="xr" target="#entry_æ-"/> (негативное) + <hi rendition="#rend_italic">kænon</hi>
-                    от <ref type="xr" target="#entry_kænyn"/> ‘делать’: „не подлежащий деланию“; ср.
-                    выражение <hi rendition="#rend_italic">gænæn kæmæn næj</hi> ‘невозможный’, ‘недопустимый’.</etym>
-                <etym xml:lang="en">From <ref type="xr" target="#entry_æ-"/> (negation) + <hi rendition="#rend_italic">kænon</hi>
-                    from <ref type="xr" target="#entry_kænyn"/> ‘do’: “not doable”; cf. the
-                    expression <hi rendition="#rend_italic">gænæn kæmæn næj</hi> ‘impossible’, ‘impermessible’.</etym>
+                <etym xml:lang="ru">Из <ref type="xr" target="#entry_æ-"/> (негативное) +
+                        <w>kænon</w> от <ref type="xr" target="#entry_kænyn"><w>kænyn</w>
+                        <gloss><q>делать</q></gloss></ref>: <gloss><q rendition="#rend_doublequotes"
+                            >не подлежащий деланию</q></gloss>; ср. выражение <mentioned
+                        xml:lang="os"><phr>gænæn kæmæn næj</phr>
+                        <gloss><q>невозможный</q></gloss>,
+                        <gloss><q>недопустимый</q></gloss></mentioned>.</etym>
+                <etym xml:lang="en">From <ref type="xr" target="#entry_æ-"/> (negative) +
+                        <w>kænon</w> from <ref type="xr" target="#entry_kænyn"><w>kænyn</w>
+                        <gloss><q>to do</q></gloss></ref>: <gloss><q rendition="#rend_doublequotes"
+                            >not doable</q></gloss>; cf. the expression <mentioned xml:lang="os"
+                            ><phr>gænæn kæmæn næj</phr>
+                        <gloss><q>impossible</q></gloss>,
+                        <gloss><q>impermissible</q></gloss></mentioned>.</etym>
             </entry>
         </body>
     </text>

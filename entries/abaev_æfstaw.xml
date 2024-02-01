@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Abaev Dictionary: entry <hi rendition="#rend_italic">æfstaw</hi></title>
+                <title>Abaev Dictionary: entry <w>æfstaw</w></title>
             </titleStmt>
             <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
     Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
@@ -17,24 +17,30 @@
     <tagsDecl>
         <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
         <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
-        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "<gloss><q>" "</q></gloss>";</rendition>
         <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
     </tagsDecl>
 </encodingDesc>
     </teiHeader>
     <text>
         <body>
-            <entry xml:id="entry_æfstaw" xml:lang="os">
-                <form xml:id="form_d3822e66" xml:lang="os-x-iron" type="lemma"><orth>æfstaw</orth><form xml:id="form_d3822e68" type="variant"><orth>fystaw</orth></form></form>
-                <form xml:id="form_d3822e71" xml:lang="os-x-digor" type="dialectal"><orth>æfstaw</orth></form>
-                <sense xml:id="sense_d3822e74"><abv:tr xml:lang="ru">
+            <entry xml:id="entry_æfstaw" xml:lang="os" abv:completeness="complete">
+                <?oxy_comment_start author="oleg" timestamp="20240130T152012+0300" comment="checked"?>
+                <form xml:id="form_d3822e66" xml:lang="os-x-iron" type="lemma"><orth>æfstaw</orth>
+                    <form xml:id="form_d3822e68" type="variant"><orth>fystaw</orth></form></form><?oxy_comment_end?>
+                <form xml:id="form_d3822e71" xml:lang="os-x-digor" type="dialectal"
+                        ><orth>æfstaw</orth></form>
+                <sense xml:id="sense_d3822e74">
+                    <abv:tr xml:lang="ru">
                         <q>взаймы</q>
-                    </abv:tr><abv:tr xml:lang="en">
+                    </abv:tr>
+                    <abv:tr xml:lang="en">
                         <q>on loan</q>
-                    </abv:tr></sense>
+                    </abv:tr>
+                </sense>
                 <abv:exampleGrp xml:id="exampleGrp_d3822e84">
                     <abv:example xml:id="example_d3822e86">
-                        <quote>æfstaw raddyn</quote>
+                        <quote><oRef>æfstaw</oRef> raddyn</quote>
                         <abv:tr xml:lang="ru">
                             <q>дать взаймы</q>
                         </abv:tr>
@@ -43,7 +49,7 @@
                         </abv:tr>
                     </abv:example>
                     <abv:example xml:id="example_d3822e101">
-                        <quote>æfstaw rajsyn</quote>
+                        <quote><oRef>æfstaw</oRef> rajsyn</quote>
                         <abv:tr xml:lang="ru">
                             <q>взять взаймы</q>
                         </abv:tr>
@@ -52,7 +58,8 @@
                         </abv:tr>
                     </abv:example>
                     <abv:example xml:id="example_d3822e116">
-                        <quote>kæmæn ʒy īvtam (mænæw) xory ʽssadæj, kæmæn æfstaw tæbæǧy ʒag</quote>
+                        <quote>kæmæn ʒy īvtam (mænæw) xory ’ssadæj, kæmæn <oRef>æfstaw</oRef> tæbæǧy
+                            ʒag</quote>
                         <abv:tr xml:lang="ru">
                             <q>кому мы меняли (пшеницу) на ячменную муку, кому (давали) взаймы
                                 полное блюдо</q>
@@ -61,16 +68,25 @@
                             <q>there were those to whom we exchanged (wheat) for barley flour, there
                                 were those to whom (we lent) a full plate</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_F."/><biblScope>1956 XII
-                            15</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_F."/>
+                            <biblScope>1956 XII 15</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Вероятно, из <hi rendition="#rend_italic">fyst-aw</hi>, прош. причастие от <ref type="xr" target="#entry_fīdyn"/> ‘платить’ в уподобительном падеже (на <hi rendition="#rend_italic">-aw</hi>):
-                    <hi rendition="#rend_italic">fystaw</hi> „подобное оплаченному“, то, что получено без оплаты, но так, как если
-                    бы оно было оплачено. См. <ref type="xr" target="#entry_fīdyn"/>.</etym>
-                <etym xml:lang="en">Probably, from <hi rendition="#rend_italic">fyst-aw</hi>, the past participle from <ref type="xr" target="#entry_fīdyn"/> ‘pay’ in equative case (<hi rendition="#rend_italic">-aw</hi>):
-                    <hi rendition="#rend_italic">fystaw</hi> “equal to the paid”, what is received without payment, but as if it
-                    had been paid for. See <ref type="xr" target="#entry_fīdyn"/>.</etym>
+                <etym xml:lang="ru">Вероятно, из <w>fyst-aw</w>, прош. причастие от <ref type="xr"
+                        target="#entry_fīdyn"><w>fīdyn</w>
+                        <gloss><q>платить</q></gloss></ref> в <mentioned xml:lang="os"
+                            ><gloss>уподобительном падеже</gloss> (на <w>-aw</w>)</mentioned>:
+                        <w>fystaw</w>
+                    <gloss><q rendition="#rend_doublequotes">подобное оплаченному</q></gloss>, то,
+                    что получено без оплаты, но так, как если бы оно было оплачено. См. <ref
+                        type="xr" target="#entry_fīdyn"/>.</etym>
+                <etym xml:lang="en">Probably from <w>fyst-aw</w>, past participle of <ref type="xr"
+                        target="#entry_fīdyn"><w>fīdyn</w>
+                        <gloss><q>pay</q></gloss></ref> in <mentioned xml:lang="os"><gloss>equative
+                            case</gloss> (<w>-aw</w>)</mentioned>: <w>fystaw</w>
+                    <gloss><q rendition="#rend_doublequotes">as if paid</q></gloss>, what is
+                    received without payment, but as if it had been paid for. See <ref type="xr"
+                        target="#entry_fīdyn"/>.</etym>
             </entry>
         </body>
     </text>

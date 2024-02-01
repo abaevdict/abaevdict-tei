@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ægajnæg</hi></title>
+                <title>Abaev Dictionary: entry <w>ægajnæg</w></title>
             </titleStmt>
             <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
     Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
@@ -17,48 +17,79 @@
     <tagsDecl>
         <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
         <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
-        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "<gloss><q>" "</q></gloss>";</rendition>
         <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
     </tagsDecl>
 </encodingDesc>
     </teiHeader>
     <text>
         <body>
-            <entry xml:id="entry_ægajnæg" xml:lang="os">
-                <form xml:id="form_d2265e66" type="lemma"><orth>ægajnæg</orth></form>
-                <sense xml:id="sense_d2265e69"><abv:tr xml:lang="ru">
+            <entry xml:id="entry_ægajnæg" xml:lang="os" abv:completeness="complete">
+                <?oxy_comment_start author="oleg" timestamp="20240131T182456+0300" comment="checked"?>
+                <form xml:id="form_d2265e66" type="lemma"><orth>ægajnæg</orth></form><?oxy_comment_end?>
+                <sense xml:id="sense_d2265e69">
+                    <abv:tr xml:lang="ru">
                         <q>нетронутый</q>
-                    </abv:tr><abv:tr xml:lang="en">
+                    </abv:tr>
+                    <abv:tr xml:lang="en">
                         <q>untouched</q>
-                    </abv:tr></sense>
-                <abv:exampleGrp xml:id="exampleGrp_d2265e79">
-                    <abv:example xml:id="example_d2265e81">
-                        <quote>ægajnæg qæd | ægajnæg ǧædæ</quote>
-                        <abv:tr xml:lang="ru">
-                            <q>девственный лес</q>
-                        </abv:tr>
+                    </abv:tr>
+                </sense>
+                <re>
+                    <form type="lemma" xml:lang="os-x-iron"><orth>ægajnæg qæd</orth></form>
+                    <form xml:lang="os-x-digor" type="dialectal"><orth>ægajnæg ǧædæ</orth></form>
+                    <sense>
+                        <tr xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="ru">
+                            <q xmlns="http://www.tei-c.org/ns/1.0">девственный лес</q>
+                        </tr>
                         <abv:tr xml:lang="en">
                             <q>virgin forest</q>
                         </abv:tr>
-                    </abv:example>
+                    </sense>
+                </re>
+                <abv:exampleGrp xml:id="exampleGrp_d2265e79">
                     <abv:example xml:id="example_d2265e96">
-                        <quote>fæz ægajnæg wydī, astæwmæ ʒy kærdæg zadī</quote>
+                        <quote>fæz <oRef>ægajnæg</oRef> wydī, astæwmæ ʒy kærdæg zadī</quote>
                         <abv:tr xml:lang="ru">
                             <q>поляна была нетронутой, трава там росла по пояс</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
-                            <q>the clearing was untouched, the grass grew there up to the waist</q>
+                            <q>the clearing was untouched, the grass there grew up to the waist</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Čerm."/><biblScope>173</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Čerm."/>
+                            <biblScope>173</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из <hi rendition="#rend_italic">æ</hi> + <hi rendition="#rend_italic">kajnæg</hi>, где <hi rendition="#rend_italic">æ-</hi> — негативная частица, а
-                    <hi rendition="#rend_italic">kajnæg</hi> — от <ref type="xr" target="#entry_kajyn"/> ‘трогать’ с суффиксом
-                    <hi rendition="#rend_italic">-næg</hi> (<hi rendition="#rend_italic">-na</hi> + <hi rendition="#rend_italic">-ka</hi>), как <hi rendition="#rend_italic">xærnæg</hi> от <ref type="xr" target="#entry_xæryn_1"/>, <hi rendition="#rend_italic">tawnæg</hi> от <ref type="xr" target="#entry_tawyn"/> и др. См. <ref type="xr" target="#entry_kajyn"/>, <ref type="xr" target="#entry_agajyn"/>.</etym>
-                <etym xml:lang="en">From <hi rendition="#rend_italic">æ</hi> + <hi rendition="#rend_italic">kajnæg</hi>, where <hi rendition="#rend_italic">æ-</hi> is a negative particle and
-                    <hi rendition="#rend_italic">kajnæg</hi> is from <ref type="xr" target="#entry_kajyn"/> ‘touch’ with the
-                    suffix <hi rendition="#rend_italic">-næg</hi> (<hi rendition="#rend_italic">-na</hi> + <hi rendition="#rend_italic">-ka</hi>), like <hi rendition="#rend_italic">xærnæg</hi> from <ref type="xr" target="#entry_xæryn_1"/>, <hi rendition="#rend_italic">tawnæg</hi> from <ref type="xr" target="#entry_tawyn"/> etc. Cf. <ref type="xr" target="#entry_kajyn"/>,
-                        <ref type="xr" target="#entry_agajyn"/>.</etym>
+                <etym xml:lang="ru">Из <m>æ</m> + <w>kajnæg</w>, где <ref type="xr"
+                        target="#entry_æ-"/> — негативная частица, а <w>kajnæg</w> — от <ref
+                        type="xr" target="#entry_kajyn"><w>kajyn</w>
+                        <gloss><q>трогать</q></gloss></ref> с <mentioned xml:lang="os"
+                            ><gloss>суффиксом</gloss>
+                        <m>-næg</m>
+                        <note type="comment">(<mentioned xml:lang="ira"><m>-na</m></mentioned> +
+                                <mentioned xml:lang="ira"
+                    ><m>-ka</m></mentioned>)</note></mentioned>, как <ref type="xr"
+                        target="#entry_xærnæg"><w>xærnæg</w>
+                        <note type="comment">от <ref type="xr" target="#entry_xæryn_1"
+                        /></note></ref>, <ref type="xr" target="#entry_tawnæg"><w>tawnæg</w>
+                        <note type="comment">от <ref type="xr" target="#entry_tawyn"/></note></ref>
+                    и др. См. <ref type="xr" target="#entry_kajyn"/>, <ref type="xr"
+                        target="#entry_agajyn"/>.</etym>
+                <etym xml:lang="en">From <m>æ</m> + <w>kajnæg</w>, where <ref type="xr"
+                        target="#entry_æ-"/> is a negative particle and <w>kajnæg</w> is from <ref
+                        type="xr" target="#entry_kajyn"><w>kajyn</w>
+                        <gloss><q>touch</q></gloss></ref> with the <mentioned xml:lang="os"
+                            ><gloss>suffix</gloss>
+                        <m>-næg</m>
+                        <note type="comment">(<mentioned xml:lang="ira"><m>-na</m></mentioned> +
+                                <mentioned xml:lang="ira"
+                    ><m>-ka</m></mentioned>)</note></mentioned>, like <ref type="xr"
+                        target="#entry_xærnæg"><w>xærnæg</w>
+                        <note type="comment">from <ref type="xr" target="#entry_xæryn_1"
+                        /></note></ref>, <ref type="xr" target="#entry_tawnæg"><w>tawnæg</w>
+                        <note type="comment">от <ref type="xr" target="#entry_tawyn"/></note></ref>
+                    etc. Cf. <ref type="xr" target="#entry_kajyn"/>, <ref type="xr"
+                        target="#entry_agajyn"/>.</etym>
             </entry>
         </body>
     </text>
