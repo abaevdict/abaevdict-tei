@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Abaev Dictionary: entry <hi rendition="#rend_italic">æǧdyncoj</hi></title>
+                <title>Abaev Dictionary: entry <w>æǧdyncoj</w></title>
             </titleStmt>
             <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
     Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
@@ -17,61 +17,96 @@
     <tagsDecl>
         <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
         <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
-        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "<gloss><q>" "</q></gloss>";</rendition>
         <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
     </tagsDecl>
 </encodingDesc>
     </teiHeader>
     <text>
         <body>
-            <entry xml:id="entry_æǧdyncoj" xml:lang="os">
-                <form xml:id="form_d1213e66" xml:lang="os-x-iron" type="lemma"><orth>æǧdyncoj</orth></form>
-                <form xml:id="form_d1213e69" xml:lang="os-x-digor" type="dialectal"><orth>æǧdincojnæ</orth></form>
-                <sense xml:id="sense_d1213e72"><abv:tr xml:lang="ru">
+            <entry xml:id="entry_æǧdyncoj" xml:lang="os" abv:completeness="complete">
+                <?oxy_comment_start author="oleg" timestamp="20240202T135450+0300" comment="checked"?>
+                <form xml:id="form_d1213e66" xml:lang="os-x-iron" type="lemma"
+                    ><orth>æǧdyncoj</orth></form><?oxy_comment_end?>
+                <form xml:id="form_d1213e69" xml:lang="os-x-digor" type="dialectal"
+                        ><orth>æǧdincojnæ</orth></form>
+                <sense xml:id="sense_d1213e72">
+                    <abv:tr xml:lang="ru">
                         <q>стремя</q>
-                    </abv:tr><abv:tr xml:lang="en">
+                    </abv:tr>
+                    <abv:tr xml:lang="en">
                         <q>stirrup</q>
-                    </abv:tr></sense>
+                    </abv:tr>
+                </sense>
                 <abv:exampleGrp xml:id="exampleGrp_d1213e82">
                     <abv:example xml:id="example_d1213e84">
-                        <quote>dæ k’axyl særak ʒabyr aftæmæj jæ æǧdyncojy cal xātty
+                        <quote>dæ kʼaxyl særak ʒabyr aftæmæj jæ <oRef>æǧdyncojy</oRef> cal xātty
                             at’ystaj?</quote>
                         <abv:tr xml:lang="ru">
                             <q>(имея) на ноге сафьяновый чувяк, сколько раз ты вложил ее в
                                 стремя?</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
-                            <q>(having) a morocco chuvyak (shoe) on your leg, how many times did you
-                                put it in the stirrup?</q>
+                            <q>(having) a morocco <ref type="xr" target="#entry_ʒabyr"
+                                        ><foreign>dzabyr</foreign></ref> shoe on your foot, how many
+                                times did you put it in the stirrup?</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Брит."/><biblScope>16</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Брит."/>
+                            <biblScope>16</biblScope></bibl>
                     </abv:example>
                     <abv:example xml:id="example_d1213e103" xml:lang="os-x-digor">
                         <usg><lang/></usg>
-                        <quote>kæsgon ældærttæ din dæ æǧdincojnæbæl xwæcioncæ</quote>
+                        <quote>kæsgon ældærttæ din dæ <oRef>æǧdincojnæbæl</oRef> xwæcioncæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>Kabardian princes would hold your stirrup</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
                             <q/>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MD"/><biblScope>1940 III
-                            54</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MD"/>
+                            <biblScope>1940 III 54</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из <ref type="xr" target="#entry_aǧd"/> ‘бедро’, ‘ляжка’ и <ref type="xr" target="#entry_æncoj"/> ‘опора’, буквально „опора бедра“; ср. по
-                    структуре <mentioned corresp="#mentioned_d1213e161" xml:id="mentioned_d1213e132" xml:lang="srh"><lang/>
+                <etym xml:lang="ru">Из <ref type="xr" target="#entry_aǧd"><w>aǧd</w>
+                        <gloss><q>бедро</q></gloss>, <gloss><q>ляжка</q></gloss></ref> и <ref
+                        type="xr" target="#entry_æncoj"><w>æncoj</w>
+                        <gloss><q>опора</q></gloss></ref>, буквально <gloss><q
+                            rendition="#rend_doublequotes">опора бедра</q></gloss>; ср. по структуре
+                        <mentioned corresp="#mentioned_d1213e161" xml:id="mentioned_d1213e132"
+                        xml:lang="srh"><lang/>
                         <w>padh-bun</w>
-                        <gloss><q>стремя</q></gloss></mentioned>, буквально „опора ноги“. Слово
-                    <hi rendition="#rend_italic">aǧd</hi> входит в состав еще некоторых сложных слов: <ref type="xr" target="#entry_aǧdræbyn"/> ‘пах’, <ref type="xr" target="#entry_rætænaǧd"/>
-                    ‘оглобля’; <hi rendition="#rend_italic">æncoj</hi> находим в <ref type="xr" target="#entry_ūdæncoj"/>, <ref type="xr" target="#entry_cælæncoj"/> ‘покой’. См. <ref type="xr" target="#entry_aǧd"/> и <ref type="xr" target="#entry_æncoj"/>.</etym>
-                <etym xml:lang="en">From <ref type="xr" target="#entry_aǧd"/> ‘thigh’, ‘hip’ and
-                        <ref type="xr" target="#entry_æncoj"/> ‘support’, literally “support of
-                    thigh”; compare the structure of the <mentioned corresp="#mentioned_d1213e132" xml:id="mentioned_d1213e161" xml:lang="srh"><lang/>
+                        <gloss><q>стремя</q></gloss>, буквально <gloss><q
+                                rendition="#rend_doublequotes">опора ноги</q></gloss></mentioned>.
+                    Слово <ref type="xr" target="#entry_aǧd"><w>aǧd</w></ref> входит в состав еще
+                    некоторых сложных слов: <ref type="xr" target="#entry_aǧdræbyn"><w>aǧdræbyn</w>
+                        <gloss><q>пах</q></gloss></ref>, <ref type="xr" target="#entry_rætænaǧd"
+                            ><w>rætænaǧd</w>
+                        <gloss><q>оглобля</q></gloss></ref>; <ref type="xr" target="#entry_æncoj"
+                            ><w>æncoj</w></ref> находим в <ref type="xr" target="#entry_ūdæncoj"/>,
+                        <ref type="xr" target="#entry_cælæncoj"><w>cælæncoj</w>
+                        <gloss><q>покой</q></gloss></ref>. См. <ref type="xr" target="#entry_aǧd"/>
+                    и <ref type="xr" target="#entry_æncoj"/>.</etym>
+                <etym xml:lang="en">From <ref type="xr" target="#entry_aǧd"><w>aǧd</w>
+                        <gloss><q>thigh</q></gloss>, <gloss><q>hip</q></gloss></ref> and <ref
+                        type="xr" target="#entry_æncoj"><w>æncoj</w>
+                        <gloss><q>support</q></gloss></ref>, literally <gloss><q
+                            rendition="#rend_doublequotes">support of thigh</q></gloss>; cf. by
+                    structure <mentioned corresp="#mentioned_d1213e132" xml:id="mentioned_d1213e161"
+                        xml:lang="srh"><lang/>
                         <w>padh-bun</w>
-                        <gloss><q>stirrup</q></gloss></mentioned>, literally “support of foot”. The
-                    word <hi rendition="#rend_italic">aǧd</hi> is part of some other compound words: <ref type="xr" target="#entry_aǧdræbyn"/> ‘groin’, <ref type="xr" target="#entry_rætænaǧd"/> ‘thill’; we can find <hi rendition="#rend_italic">æncoj</hi> in <ref type="xr" target="#entry_ūdæncoj"/>,
-                        <ref type="xr" target="#entry_cælæncoj"/> ‘peace’. Cf. <ref type="xr" target="#entry_aǧd"/> and <ref type="xr" target="#entry_æncoj"/>.</etym>
+                        <gloss><q>stirrup</q></gloss>, literally <gloss><q
+                                rendition="#rend_doublequotes">support of
+                        foot</q></gloss></mentioned>. The word <ref type="xr" target="#entry_aǧd"
+                            ><w>aǧd</w></ref> is part of some other compound words: <ref type="xr"
+                        target="#entry_aǧdræbyn"><w>aǧdræbyn</w>
+                        <gloss><q>groin</q></gloss></ref>, <ref type="xr" target="#entry_rætænaǧd"
+                            ><w>rætænaǧd</w>
+                        <gloss><q>thill</q></gloss></ref>; we find <ref type="xr"
+                        target="#entry_æncoj"><w>æncoj</w></ref> in <ref type="xr"
+                        target="#entry_ūdæncoj"/>, <ref type="xr" target="#entry_cælæncoj"
+                            ><w>cælæncoj</w>
+                        <gloss><q>calm, peace</q></gloss></ref>. Cf. <ref type="xr"
+                        target="#entry_aǧd"/> and <ref type="xr" target="#entry_æncoj"/>.</etym>
             </entry>
         </body>
     </text>
