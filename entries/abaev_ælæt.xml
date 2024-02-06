@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ælæt</hi></title>
+                <title>Abaev Dictionary: entry <w>ælæt</w></title>
             </titleStmt>
             <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
     Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
@@ -17,37 +17,53 @@
     <tagsDecl>
         <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
         <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
-        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "<gloss><q>" "</q></gloss>";</rendition>
         <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
     </tagsDecl>
 </encodingDesc>
     </teiHeader>
     <text>
         <body>
-            <entry xml:id="entry_ælæt" xml:lang="os">
-                <form xml:id="form_d1705e66" xml:lang="os-x-iron" type="lemma"><orth>ælæt</orth></form>
-                <form xml:id="form_d1705e69" xml:lang="os-x-digor" type="dialectal"><orth>ilæt</orth></form>
-                <sense xml:id="sense_d1705e72"><abv:tr xml:lang="ru">
+            <entry xml:id="entry_ælæt" xml:lang="os" abv:completeness="complete">
+                <?oxy_comment_start author="oleg" timestamp="20240205T123042+0300" comment="checked"?>
+                <form xml:id="form_d1705e66" xml:lang="os-x-iron" type="lemma"
+                    ><orth>ælæt</orth></form><?oxy_comment_end?>
+                <form xml:id="form_d1705e69" xml:lang="os-x-digor" type="dialectal"
+                        ><orth>ilæt</orth></form>
+                <sense xml:id="sense_d1705e72">
+                    <abv:tr xml:lang="ru">
                         <q>дужка котла</q>
-                    </abv:tr><abv:tr xml:lang="en">
-                        <q>bow of a kettle (device for carrying the kettle / cauldron)</q>
-                    </abv:tr></sense>
-                <etym xml:lang="ru">Из <mentioned corresp="#mentioned_d1705e123" xml:id="mentioned_d1705e84" xml:lang="ar"><lang/>
-                        <w>ālat</w></mentioned>, <mentioned corresp="#mentioned_d1705e128" xml:id="mentioned_d1705e89" xml:lang="fa"><lang/>
-                        <w>ālat</w></mentioned>, <mentioned corresp="#mentioned_d1705e133" xml:id="mentioned_d1705e94" xml:lang="tr"><lang/>
-                        <w>alet</w>
-                        <gloss><q>орудие</q></gloss></mentioned>, <mentioned corresp="#mentioned_d1705e141" xml:id="mentioned_d1705e102" xml:lang="tr"><w/>
-                        <gloss><q>инструмент</q></gloss></mentioned>, <mentioned corresp="#mentioned_d1705e147" xml:id="mentioned_d1705e108" xml:lang="tr"><w/>
-                        <gloss><q>орган</q></gloss></mentioned>; ср. <mentioned corresp="#mentioned_d1705e154" xml:id="mentioned_d1705e115" xml:lang="av"><lang/>
-                        <w>alat</w></mentioned> id.</etym>
-                <etym xml:lang="en">From <mentioned corresp="#mentioned_d1705e84" xml:id="mentioned_d1705e123" xml:lang="ar"><lang/>
-                        <w>ālat</w></mentioned>, <mentioned corresp="#mentioned_d1705e89" xml:id="mentioned_d1705e128" xml:lang="fa"><lang/>
-                        <w>ālat</w></mentioned>, <mentioned corresp="#mentioned_d1705e94" xml:id="mentioned_d1705e133" xml:lang="tr"><lang/>
-                        <w>alet</w>
-                        <gloss><q>tool</q></gloss></mentioned>, <mentioned corresp="#mentioned_d1705e102" xml:id="mentioned_d1705e141" xml:lang="tr"><w/>
-                        <gloss><q>instrument</q></gloss></mentioned>, <mentioned corresp="#mentioned_d1705e108" xml:id="mentioned_d1705e147" xml:lang="tr"><w/>
-                        <gloss><q>organ</q></gloss></mentioned>; cf. <mentioned corresp="#mentioned_d1705e115" xml:id="mentioned_d1705e154" xml:lang="av"><lang/>
-                        <w>alat</w></mentioned> id.</etym>
+                    </abv:tr>
+                    <abv:tr xml:lang="en">
+                        <q>bow of a cauldron
+                            (<?oxy_comment_start author="oleg" timestamp="20240205T123004+0300" comment="? is it a pole?"?>pole<?oxy_comment_end?>
+                            for carrying the cauldron)</q>
+                    </abv:tr>
+                </sense>
+                <etym xml:lang="ru">Из <mentioned><mentioned corresp="#mentioned_d1705e123"
+                            xml:id="mentioned_d1705e84" xml:lang="ar"><lang/>
+                            <w>ālat</w></mentioned>, <mentioned corresp="#mentioned_d1705e128"
+                            xml:id="mentioned_d1705e89" xml:lang="fa"><lang/>
+                            <w>ālat</w></mentioned>, <mentioned corresp="#mentioned_d1705e133"
+                            xml:id="mentioned_d1705e94" xml:lang="tr"><lang/>
+                            <w>alet</w>
+                        </mentioned><gloss><q>орудие</q></gloss>, <gloss><q>инструмент</q></gloss>,
+                                <gloss><q>орган</q></gloss></mentioned>; ср. <mentioned
+                        corresp="#mentioned_d1705e154" xml:id="mentioned_d1705e115" xml:lang="av"><lang/>
+                        <w>alat</w>
+                        <gloss>id</gloss></mentioned>.</etym>
+                <etym xml:lang="en">From <mentioned><mentioned corresp="#mentioned_d1705e84"
+                            xml:id="mentioned_d1705e123" xml:lang="ar"><lang/>
+                            <w>ālat</w></mentioned>, <mentioned corresp="#mentioned_d1705e89"
+                            xml:id="mentioned_d1705e128" xml:lang="fa"><lang/>
+                            <w>ālat</w></mentioned>, <mentioned corresp="#mentioned_d1705e94"
+                            xml:id="mentioned_d1705e133" xml:lang="tr"><lang/>
+                            <w>alet</w>
+                        </mentioned><gloss><q>tool</q></gloss>, <gloss><q>instrument</q></gloss>,
+                                <gloss><q>organ</q></gloss></mentioned>; cf. <mentioned
+                        corresp="#mentioned_d1705e115" xml:id="mentioned_d1705e154" xml:lang="av"><lang/>
+                        <w>alat</w>
+                        <gloss>id</gloss></mentioned>.</etym>
             </entry>
         </body>
     </text>
