@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ælūton</hi></title>
+                <title>Abaev Dictionary: entry <w>ælūton</w></title>
             </titleStmt>
             <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
     Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
@@ -17,7 +17,7 @@
     <tagsDecl>
         <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
         <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
-        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "<gloss><q>" "</q></gloss>";</rendition>
         <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
     </tagsDecl>
 </encodingDesc>
@@ -25,85 +25,126 @@
     <text>
         <body>
             <entry xml:id="entry_ælūton" xml:lang="os">
-                <form xml:id="form_d428e66" type="lemma"><orth>ælūton</orth></form>
-                <sense n="1" xml:id="sense_ælūton.1"><note type="comment" xml:lang="ru"><bibl><ref type="bibl" target="#src_Сл."/></bibl> дает значение: </note><note type="comment" xml:lang="en"><bibl><ref type="bibl" target="#src_Сл."/></bibl> gives the meaning: </note><abv:tr xml:lang="ru">
-                            <q rendition="#rend_doublequotes">сказочная пища, утоляющая голод навсегда</q>
-                        </abv:tr><abv:tr xml:lang="en">
-                            <q rendition="#rend_doublequotes">fabulous food satisfying hunger forever</q>
-                        </abv:tr></sense>
+                <form xml:id="form_d428e66" type="lemma" xml:lang="os-x-iron"
+                    ><orth>ælūton</orth></form>
+                <form xml:lang="os-x-digor" type="dialectal"><orth>ilæton</orth><form type="variant"
+                            ><orth>æluton</orth></form></form>
+                <sense xml:id="sense_ælūton.1">
+                    <note type="comment" xml:lang="ru"><bibl><ref type="bibl" target="#src_Сл."
+                            /></bibl> дает значение: </note>
+                    <note type="comment" xml:lang="en"><bibl><ref type="bibl" target="#src_Сл."
+                            /></bibl> gives the meaning: </note>
+                    <abv:tr xml:lang="ru">
+                        <q rendition="#rend_doublequotes">сказочная пища, утоляющая голод
+                            навсегда</q>
+                    </abv:tr>
+                    <abv:tr xml:lang="en">
+                        <q rendition="#rend_doublequotes">magical food satisfying hunger forever</q>
+                    </abv:tr>
+                </sense>
                 <note type="comment" xml:lang="ru">; в наших материалах имеются, однако, более
-                        конкретные объяснения слова <hi rendition="#rend_italic">æluton</hi>, записанные со слов сказителей: пиво
-                        особой варки: </note>
+                    конкретные объяснения слова <oRef>æluton</oRef>, записанные со слов сказителей: </note>
                 <note type="comment" xml:lang="en">; in our data, however, there are more specific
-                        explanations of the word <hi rendition="#rend_italic">æluton</hi> recorded from the storytellers:
-                        specially brewed beer: </note>
-                <sense n="2" xml:id="sense_ælūton.2"><abv:tr xml:lang="ru">
+                    explanations of the word <oRef>æluton</oRef> recorded from the storytellers: </note>
+                <sense>
+                    <note type="comment">1) </note>
+                    <abv:tr xml:lang="ru">
+                        <q>пиво особой варки</q>
+                    </abv:tr>
+                    <abv:tr xml:lang="en">
+                        <q>specially brewed beer</q>
+                    </abv:tr>
+                </sense>
+                <sense xml:id="sense_ælūton.2">
+                    <note type="comment">2) </note>
+                    <abv:tr xml:lang="ru">
                         <q>густое пиво</q>
-                    </abv:tr><abv:tr xml:lang="en">
-                        <q>heavy beer</q>
-                    </abv:tr></sense>
-                <sense n="3" xml:id="sense_ælūton.3"><abv:tr xml:lang="ru">
+                    </abv:tr>
+                    <abv:tr xml:lang="en">
+                        <q>thick beer</q>
+                    </abv:tr>
+                </sense>
+                <sense xml:id="sense_ælūton.3">
+                    <note type="comment">3) </note>
+                    <abv:tr xml:lang="ru">
                         <q>пиво, в котором выварены курдюки или мясо</q>
-                    </abv:tr><abv:tr xml:lang="en">
-                        <q>beer in which tail fat or meat is boiled</q>
-                    </abv:tr></sense>
-                <abv:exampleGrp xml:id="exampleGrp_d428e99">
+                    </abv:tr>
+                    <abv:tr xml:lang="en">
+                        <q>beer in which tail fat or meat has been boiled</q>
+                    </abv:tr>
+                </sense>
+                <?oxy_comment_start author="oleg" timestamp="20240207T113122+0300" comment="Punctuation is not perfect, but it is better than duplicating examples in two language notes"?>
+                <abv:exampleGrp xml:id="exampleGrp_d428e99"><?oxy_comment_end?>
+                    <note type="comment" xml:lang="ru">Значение <gloss><q>пиво</q></gloss>
+                        подтверждается и некоторыми опубликованными текстами из нартовского эпоса: </note>
+                    <note type="comment" xml:lang="en">The meaning <gloss><q>beer</q></gloss> is
+                        also confirmed by some published texts from the Nart epics: </note>
                     <abv:example xml:id="example_d428e101" xml:lang="os-x-digor">
-                        <note type="comment" xml:lang="ru">Значение ‘пиво’ подтверждается и
-                            некоторыми опубликованными текстами из нартовского эпоса: </note>
-                        <note type="comment" xml:lang="en">The meaning of ’beer’ is also confirmed
-                            by some published texts from the Nart epics: </note>
                         <usg><lang/></usg>
-                        <quote>bægænij sinon æluton funxæj æræværuncæ</quote>
+                        <quote>bægænij sinon <oRef>æluton</oRef> funxæj æræværuncæ</quote>
                         <abv:tr xml:lang="ru">
-                            <q>сосуд с пивом, сваренным (на манер) <hi rendition="#rend_smallcaps">æ'lutоn</hi>, они ставят</q>
+                            <q>сосуд с пивом, сваренным (на манер) <oRef>ælutоn</oRef>, они
+                                ставят</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
-                            <q>a vessel with beer brewed (in the manner of) <hi rendition="#rend_smallcaps">æluton</hi>, they put</q>
+                            <q>they put out a vessel with beer brewed (in the manner of)
+                                    <oRef>æluton</oRef></q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_ОЭп."/><biblScope>62</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_ОЭп."/>
+                            <biblScope>62</biblScope></bibl>
                     </abv:example>
                     <abv:example xml:id="example_d428e130" xml:lang="os-x-digor">
                         <usg><lang/></usg>
-                        <quote>ilætoni k’oppa</quote>
+                        <quote><oRef>ilætoni</oRef> kʼoppa</quote>
                         <abv:tr xml:lang="ru">
-                            <q>чаша, (наполненная) <hi rendition="#rend_smallcaps">ilæton</hi>’ом</q>
+                            <q>чаша, (наполненная) <oRef>ilæton</oRef>’ом</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
-                            <q>bowl filled with <hi rendition="#rend_smallcaps">ilæton</hi></q>
+                            <q>cup filled with <oRef>ilæton</oRef></q>
                         </abv:tr>
-                        <bibl><note type="comment" xml:lang="ru">Песнь о Сари-Асланбеге.</note><note type="comment" xml:lang="en">Song of Sari-Aslanbeg.</note><ref type="bibl" target="#src_СОПам."/><biblScope>II
-                            127</biblScope></bibl>
+                        <bibl><note type="comment" xml:lang="ru">Песнь о Сари-Асланбеге.</note>
+                            <note type="comment" xml:lang="en">Song of
+                                <?oxy_comment_start author="oleg" timestamp="20240207T113336+0300" comment="check vowels in original"?>Sari-Aslanbeg<?oxy_comment_end?>.</note>
+                            <ref type="bibl" target="#src_СОПам."/>
+                            <biblScope>II 127</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <note type="comment" xml:lang="ru">Приведенные материалы дают основание думать, что
-                    <hi rendition="#rend_smallcaps">аеlūtоn</hi> есть старое название пива или, может быть, название пива, сваренного
-                    по какому-то старому, утраченному ныне способу. Современное название пива, <ref type="xr" target="#entry_bægæny"/> | <hi rendition="#rend_italic">bægæni</hi>, обозначало, по-видимому,
-                    более низкосортный напиток, который вытеснил более высококачественный и
-                    изысканный. Однако, по утверждению некоторых престарелых осетин, <hi rendition="#rend_smallcaps">ælūton</hi> еще
-                    варился на их памяти наряду с <hi rendition="#rend_smallcaps">bægæny</hi>, причем главная особенность
-                    <hi rendition="#rend_smallcaps">ælūton</hi>’a заключалась, по их словам, в том, что в нем вываривались овечьи
-                    курдюки или даже целые бараньи туши. Таким образом, <hi rendition="#rend_smallcaps">ælūton</hi> существовал рядом
-                    с обычным пивом, как у англичан <hi rendition="#rend_italic">ale</hi> ‘эль’ существует рядом с обыкновенным
-                    пивом (<hi rendition="#rend_italic">beer</hi>).</note>
-                <note type="comment" xml:lang="en">The above materials give reason to think that
-                    <hi rendition="#rend_smallcaps">ælūton</hi> is the old name of beer or, perhaps, the name of beer brewed in some
-                    ancient way that is now forgotten. The modern name for beer, <ref type="xr" target="#entry_bægæny"/> | <hi rendition="#rend_italic">bægæni</hi>, meant, apparently, a lower-grade
-                    drink, which supplanted a higher-quality and more refined one. However,
-                    according to some elderly Ossetians, <hi rendition="#rend_smallcaps">ælūton</hi> was still boiled in their memory
-                    along with <hi rendition="#rend_smallcaps">bægæny%s, and the main feature of %sælūton</hi> was that, according to
-                    them, sheep’s fat tail or even whole lamb carcasses were boiled in it. Thus,
-                    <hi rendition="#rend_smallcaps">ælūton</hi> existed along with regular beer, as the English <hi rendition="#rend_italic">ale</hi> existed along
-                    with ordinary <hi rendition="#rend_italic">beer</hi>.</note>
-                <etym xml:lang="ru">Предположение, что <hi rendition="#rend_smallcaps">ælūtоn</hi>
-                    есть ‘пиво’, получает полное лингвистическое подтверждение. Отбрасывая
-                    суффиксальное <hi rendition="#rend_italic">-on</hi>, получаем <hi
-                        rendition="#rend_italic">ælut</hi>, т. е. хорошо известную основу
-                    северноевропейских названий пива и притом в ее „идеальном“, восстанавливаемом
-                    виде; ср. <mentioned xml:id="mentioned_d428e170" xml:lang="ang"><lang/>
-                        <w/>
-                        <gloss><q>eatu, ealud</q></gloss></mentioned>, <mentioned
-                        corresp="#mentioned_d428e301" xml:id="mentioned_d428e178" xml:lang="en"><lang/>
+                <note type="comment" xml:lang="ru">. Приведенные материалы дают основание думать,
+                    что <oRef>аеlūtоn</oRef> есть старое название пива или, может быть, название
+                    пива, сваренного по какому-то старому, утраченному ныне способу. Современное
+                    название пива, <ref type="xr" target="#entry_bægæny"><w xml:lang="os-x-iron"
+                            >bægæny</w><w xml:lang="os-x-digor">bægæni</w></ref>, обозначало,
+                    по-видимому, более низкосортный напиток, который вытеснил более
+                    высококачественный и изысканный. Однако, по утверждению некоторых престарелых
+                    осетин, <oRef>ælūton</oRef> еще варился на их памяти наряду с <ref type="xr"
+                        target="#entry_bægæny"><w xml:lang="os-x-iron">bægæny</w></ref>, причем
+                    главная особенность <oRef>ælūton</oRef>’a заключалась, по их словам, в том, что
+                    в нем вываривались овечьи курдюки или даже целые бараньи туши. Таким образом,
+                        <oRef>ælūton</oRef> существовал рядом с обычным пивом, как у англичан
+                        <mentioned xml:lang="en"><w>ale</w>
+                        <gloss><q>эль</q></gloss></mentioned> существует рядом с обыкновенным пивом
+                        (<mentioned xml:lang="en"><w>beer</w></mentioned>).</note>
+                <note type="comment" xml:lang="en">. The above materials give reason to assume that
+                        <oRef>ælūton</oRef> is the old name of beer or, perhaps, the name of beer
+                    brewed in some ancient way that is now forgotten. The modern name for beer, <ref
+                        type="xr" target="#entry_bægæny"><w xml:lang="os-x-iron">bægæny</w><w
+                            xml:lang="os-x-digor">bægæni</w></ref>, apparently meant a lower-grade
+                    drink, which supplanted a higher-quality and more refined one. However some
+                    elderly Ossetians can still recall <oRef>ælūton</oRef> being brewed during their
+                    days along with <ref type="xr" target="#entry_bægæny"><w xml:lang="os-x-iron"
+                            >bægæny</w></ref>, and the main feature of <oRef>ælūton</oRef> was that,
+                    according to them, sheep’s tail fat or even whole lamb carcasses were boiled in
+                    it. Thus, <oRef>ælūton</oRef> existed alongside regular beer, as the English
+                        <mentioned xml:lang="en"><w>ale</w></mentioned> coexists with ordinary
+                        <mentioned xml:lang="en"><w>beer</w></mentioned></note>
+                <etym xml:lang="ru">Предположение, что <oRef>ælūtоn</oRef> есть
+                        <gloss><q>пиво</q></gloss>, получает полное лингвистическое подтверждение.
+                    Отбрасывая суффиксальное <mentioned xml:lang="os"><m>-on</m></mentioned>,
+                    получаем <w>ælut</w>, т. е. хорошо известную основу северноевропейских названий
+                    пива и притом в ее <q rendition="#rend_doublequotes">идеальном</q>,
+                    восстанавливаемом виде; ср. <mentioned xml:lang="ang"><w>ealu</w>,
+                        <w>ealuđ</w></mentioned>, <mentioned corresp="#mentioned_d428e301"
+                        xml:id="mentioned_d428e178" xml:lang="en"><lang/>
                         <w>ale</w></mentioned>, <mentioned corresp="#mentioned_d428e306"
                         xml:id="mentioned_d428e183" xml:lang="non"><lang/>
                         <w>ӧl</w></mentioned>, <mentioned corresp="#mentioned_d428e311"
@@ -114,125 +155,182 @@
                         xml:id="mentioned_d428e199" xml:lang="lt"><lang/>
                         <w>alūs</w></mentioned>, <mentioned corresp="#mentioned_d428e331"
                         xml:id="mentioned_d428e204" xml:lang="fi"><lang/>
-                        <w>olut</w></mentioned>. Исходной формой для всех этих вариантов было <hi
-                        rendition="#rend_italic">*alut</hi>, <hi rendition="#rend_italic">alud</hi>,
-                    хорошо сохранившееся в осетинском. Первоначальное значение этой основы было,
-                    может быть, ‘горький’ (<bibl><ref type="bibl" target="#ref_Schrader"
-                            /><biblScope>I 142</biblScope></bibl>); ср. <mentioned
+                        <w>olut</w></mentioned>. Исходной формой для всех этих вариантов было <w
+                        type="rec">alut, alud</w>, хорошо сохранившееся в осетинском. Первоначальное
+                    значение этой основы было, может быть, <gloss><q>горький</q></gloss> (<bibl><ref
+                            type="bibl" target="#ref_Schrader"/>
+                        <biblScope>I 142</biblScope></bibl>); ср. <mentioned
                         corresp="#mentioned_d428e340" xml:id="mentioned_d428e213" xml:lang="la"><lang/>
                         <w>alumen</w>
-                        <gloss><q>квасцы</q></gloss></mentioned> (ср. по семантике русск. <hi
-                        rendition="#rend_italic">квас</hi> — <hi rendition="#rend_italic"
-                        >квасцы</hi>). Ос. <hi rendition="#rend_italic">ælūton</hi> трудно относить
-                    за счет иранского наследия, как по отсутствию арийских соответствий, так и по
-                    звуковому облику (необычно <hi rendition="#rend_italic">I</hi> перед <hi
-                        rendition="#rend_italic">u</hi>). Всего вероятнее, оно заимствовано из
-                    германского. Хотя готское <hi rendition="#rend_italic">*alut</hi> ‘пиво’ не
-                    засвидетельствовано, ничто не препятствует предполагать его существова- ние.
-                        <mentioned corresp="#mentioned_d428e348" xml:id="mentioned_d428e221"
-                        xml:lang="xsc"><lang/>
-                        <note type="comment" xml:lang="ru">собственное имя из
-                            Ольвии</note><w>Ἀλούταγος</w></mentioned> (<bibl><ref type="bibl"
-                            target="#ref_Латышев"/><biblScope>I 53</biblScope></bibl>) значило,
-                    вероятно, не что иное как „пивовар“, как Σάναγος могло значить „винодел“ (ос.
-                        <ref type="xr" target="#entry_sæn"/> ‘вино’); ср. по способу образования
-                        <ref type="xr" target="#entry_æxsyræg"/> ‘растение, дающее молоко’, от <ref
-                        type="xr" target="#entry_æxsyr"/> ‘молоко’. <mentioned
-                        corresp="#mentioned_d428e366" xml:id="mentioned_d428e239" xml:lang="ka"><lang/>
+                        <gloss><q>квасцы</q></gloss></mentioned> (ср. по семантике <mentioned
+                        xml:lang="ru"><lang/>
+                        <w>квас</w></mentioned> — <mentioned xml:lang="ru"
+                    ><w>квасцы</w></mentioned>). <lang xml:lang="os">Ос.</lang>
+                    <oRef>ælūton</oRef> трудно относить за счет иранского наследия, как по
+                    отсутствию арийских соответствий, так и по звуковому облику (необычно <c>l</c>
+                    перед <c>u</c>). Всего вероятнее, оно заимствовано из германского. Хотя готское
+                        <mentioned xml:lang="got"><w type="rec">alut</w>
+                        <gloss><q>пиво</q></gloss></mentioned> не засвидетельствовано, ничто не
+                    препятствует предполагать его существование. <mentioned
+                        corresp="#mentioned_d428e348" xml:id="mentioned_d428e221" xml:lang="xsc"
+                            ><lang>Скифское</lang>
+                        <note type="comment" xml:lang="ru">собственное имя из Ольвии</note>
+                        <w>Ἀλούταγος</w>
+                        <note type="bibl">(<bibl><ref type="bibl" target="#ref_Латышев"/>
+                                <biblScope>I 53</biblScope></bibl>)</note> значило, вероятно, не что
+                        иное как <gloss><q rendition="#rend_doublequotes"
+                        >пивовар</q></gloss></mentioned>, как <mentioned xml:lang="xsc"
+                            ><w>Σάναγος</w> могло значить <gloss><q rendition="#rend_doublequotes"
+                                >винодел</q></gloss>
+                        <note type="comment">(<ref type="xr" target="#entry_sæn" xml:lang="os"><lang/>
+                                <w>sæn</w>
+                                <gloss><q>вино</q></gloss></ref>)</note></mentioned>; ср. по способу
+                    образования <ref type="xr" target="#entry_æxsyræg"><w>æxsyræg</w>
+                        <gloss><q>растение, дающее молоко</q></gloss></ref>, от <ref type="xr"
+                        target="#entry_æxsyr"><w>æxsyr</w>
+                        <gloss><q>молоко</q></gloss></ref>. <mentioned corresp="#mentioned_d428e366"
+                        xml:id="mentioned_d428e239" xml:lang="ka"><lang/>
                         <w>ludi</w>
-                        <gloss><q>пиво</q></gloss></mentioned> (в рачинском говоре <hi
-                        rendition="#rend_italic">aludi</hi>) — заимствовано из осетинского (из
-                    простой формы <hi rendition="#rend_italic">*ælut</hi>, еще не осложненной
-                    суффиксом <hi rendition="#rend_italic">-оn</hi>, ср. выше <mentioned
+                        <gloss><q>пиво</q></gloss></mentioned> (<mentioned xml:lang="ka-x-rachian"
+                            ><note type="comment">в рачинском говоре</note>
+                        <w>aludi</w></mentioned>) — заимствовано из осетинского (из простой формы <w
+                        type="rec">ælut</w>, еще не осложненной суффиксом <mentioned xml:lang="os"
+                            ><m>-on</m></mentioned>, ср. выше <mentioned
                         corresp="#mentioned_d428e374" xml:id="mentioned_d428e247" xml:lang="xsc"><lang/>
-                        <w>Ἀλούταγος</w></mentioned>); начальное <hi rendition="#rend_italic">æ</hi>
-                    уже на осетинской почве подвержено сильной редукции, в некоторых говорах
-                    сводящей его на нет; озвончение <hi rendition="#rend_italic">t</hi> → <hi
-                        rendition="#rend_italic">d</hi> могло произойти на грузинской почве (ср.
-                        <mentioned corresp="#mentioned_d428e379" xml:id="mentioned_d428e252"
-                        xml:lang="ka"><lang/>
-                        <w>abazi</w></mentioned> из <hi rendition="#rend_italic">*abasi</hi> и др.).
+                        <w>Ἀλούταγος</w></mentioned>); начальное <c>æ</c> уже на осетинской почве
+                    подвержено сильной редукции, в некоторых говорах сводящей его на нет; озвончение
+                        <c>t</c> → <c>d</c> могло произойти на грузинской почве (ср. <mentioned
+                        corresp="#mentioned_d428e379" xml:id="mentioned_d428e252" xml:lang="ka"><lang/>
+                        <w>abazi</w>
+                        <note type="comment">из <w type="rec">abasi</w></note></mentioned> и др.).
                     Пивоварение не получило широкого распространения среди кавказских народов. Из
                     грузинских племен оно развито только у тех, кто соседит с осетинами: пшавов,
                     хевсуров, мтиульцев, мохевцев. Роль пива в быту осетин, обязательность его
                     изготовления при всяких общественных торжествах и праздниках, а также на
                     свадьбах, поминках и пр., наконец способы и навыки его изготовления, древность
                     связанного с пивоварением инвентаря (см. <ref type="xr" target="#entry_cæǵǵīnag"
-                    /> ‘пивной котел’) — все это говорит о давней и устойчивой национальной традиции
-                    в этой области. В осетинском (нартовском) эпосе пиво занимает такое же место,
-                    как в Калевале. И там и тут этому напитку посвящены особые песни, причем
-                    появление его относится к мифическим временам. В нартовском эпосе честь
-                    изобретения пива приписывается знаменитой героине Шатане. Вее это позволяет
-                    видеть в <hi rendition="#rend_smallcaps">ælūton</hi> старый аланский напиток.
-                    Спиртные напитки получают нередко название по имени изготовляющих их народов:
-                    „русская“, „английская“ и т. п. С этой точки зрения представляет интерес
-                        <lang>русское</lang> слово из „офенского“ языка (твер., влд., кстр., —
-                            <bibl><ref type="bibl" target="#ref_Даль"/><biblScope>I
-                        25</biblScope></bibl>) <mentioned corresp="#mentioned_d428e391"
-                        xml:id="mentioned_d428e264" xml:lang="ru"><w>аланя</w>
+                            ><w>cæǵǵīnag</w>
+                        <gloss><q>пивной котел</q></gloss></ref>) — все это говорит о давней и
+                    устойчивой национальной традиции в этой области. В осетинском (нартовском) эпосе
+                    пиво занимает такое же место, как в Калевале. И там и тут этому напитку
+                    посвящены особые песни, причем появление его относится к мифическим временам. В
+                    нартовском эпосе честь изобретения пива приписывается знаменитой героине Шатане.
+                    Вее это позволяет видеть в <oRef>ælūton</oRef> старый аланский напиток. Спиртные
+                    напитки получают нередко название по имени изготовляющих их народов: <q
+                        rendition="#rend_doublequotes">русская</q>, <q
+                        rendition="#rend_doublequotes">английская</q> и т. п. С этой точки зрения
+                    представляет интерес <mentioned corresp="#mentioned_d428e391"
+                        xml:id="mentioned_d428e264" xml:lang="ru-x-tvr"
+                        extralang="ru-x-kstr ru-x-vldmr"><lang>русское</lang> слово <note
+                            type="comment">из <q rendition="#rend_doublequotes">офенского</q>
+                            языка</note>
+                        <note type="bibl">(твер., влд., кстр., — <bibl><ref type="bibl"
+                                    target="#ref_Даль"/>
+                                <biblScope>I 25</biblScope></bibl>)</note><w>аланя</w>
                         <gloss><q>пиво</q></gloss></mentioned>, <mentioned
-                        corresp="#mentioned_d428e399" xml:id="mentioned_d428e272" xml:lang="ru"
-                            ><w>аланный</w>
+                        corresp="#mentioned_d428e399" xml:id="mentioned_d428e272"
+                        xml:lang="ru-x-tvr" extralang="ru-x-kstr ru-x-vldmr"><w>аланный</w>
                         <gloss><q>пивной</q></gloss></mentioned>. Нельзя ли видеть здесь название
                     народа алан, по имени которых соседи обозначали напиток, который для них
                     ассоциировался с этим народом? Другим излюбленным напитком алан был,
                     по-видимому, <ref type="xr" target="#entry_rong"/>. Ср. <ref type="xr"
                         target="#entry_bægæny"/>, <ref type="xr" target="#entry_x0ymællæg"/>, <ref
                         type="xr" target="#entry_rong"/>, <ref type="xr" target="#entry_sæn"
-                            />.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"
-                            /><biblScope>338—347</biblScope></bibl>.</etym>
-                <etym xml:lang="en">The assumption that <hi rendition="#rend_smallcaps">ælūton</hi> is ‘beer’, is confirmed
-                    linguistically. Discarding the suffix <hi rendition="#rend_italic">-on</hi>, we get <hi rendition="#rend_italic">ælut</hi>, that is, the
-                    well-known stem of the North European beer names and, moreover, in its “ideal”,
-                    reconstructed form; cf. <mentioned xml:id="mentioned_d428e296" xml:lang="ang"><lang/>
-                        <w>eatu, ealud</w></mentioned>, <mentioned corresp="#mentioned_d428e178" xml:id="mentioned_d428e301" xml:lang="en"><lang/>
-                        <w>ale</w></mentioned>, <mentioned corresp="#mentioned_d428e183" xml:id="mentioned_d428e306" xml:lang="non"><lang/>
-                        <w>ӧl</w></mentioned>, <mentioned corresp="#mentioned_d428e188" xml:id="mentioned_d428e311" xml:lang="cu"><lang/>
+                            />.<lb/><bibl><ref type="bibl" target="#ref_ОЯФ_I"/>
+                        <biblScope>338—347</biblScope></bibl>.</etym>
+                <etym xml:lang="en">The assumption that <hi rendition="#rend_smallcaps">ælūton</hi>
+                    is <gloss><q>beer</q></gloss>, is confirmed linguistically. Discarding the
+                    suffix <w>-on</w>, we get <w>ælut</w>, that is, the well-known stem of the North
+                    European beer names and, moreover, in its <gloss><q
+                            rendition="#rend_doublequotes">ideal</q></gloss>, reconstructed form;
+                    cf. <mentioned xml:id="mentioned_d428e296" xml:lang="ang"><lang/>
+                        <w>eatu</w>, <w>ealud</w>
+                    </mentioned>, <mentioned corresp="#mentioned_d428e178"
+                        xml:id="mentioned_d428e301" xml:lang="en"><lang/>
+                        <w>ale</w></mentioned>, <mentioned corresp="#mentioned_d428e183"
+                        xml:id="mentioned_d428e306" xml:lang="non"><lang/>
+                        <w>ӧl</w></mentioned>, <mentioned corresp="#mentioned_d428e188"
+                        xml:id="mentioned_d428e311" xml:lang="cu"><lang/>
                         <w>ol<?oxy_comment_start author="oleg" timestamp="20220716T183629+0300" comment="normally Abaev uses ъ, unify?"?>ŭ<?oxy_comment_end?></w></mentioned>,
-                        <mentioned corresp="#mentioned_d428e193" xml:id="mentioned_d428e320" xml:lang="prg"><lang/>
-                        <w>alu</w></mentioned>, <mentioned corresp="#mentioned_d428e199" xml:id="mentioned_d428e326" xml:lang="lt"><lang/>
-                        <w>alūs</w></mentioned>, <mentioned corresp="#mentioned_d428e204" xml:id="mentioned_d428e331" xml:lang="fi"><lang/>
-                        <w>olut</w></mentioned>. The initial form of all these variants was
-                    <hi rendition="#rend_italic">*alut</hi>, <hi rendition="#rend_italic">alud</hi>, well preserved in Ossetic. The original meaning of this
-                    stem was probably ‘bitter’ (<bibl><ref type="bibl" target="#ref_Schrader"/><biblScope>I 142</biblScope></bibl>); cf. <mentioned corresp="#mentioned_d428e213" xml:id="mentioned_d428e340" xml:lang="la"><lang/>
+                        <mentioned corresp="#mentioned_d428e193" xml:id="mentioned_d428e320"
+                        xml:lang="prg"><lang/>
+                        <w>alu</w></mentioned>, <mentioned corresp="#mentioned_d428e199"
+                        xml:id="mentioned_d428e326" xml:lang="lt"><lang/>
+                        <w>alūs</w></mentioned>, <mentioned corresp="#mentioned_d428e204"
+                        xml:id="mentioned_d428e331" xml:lang="fi"><lang/>
+                        <w>olut</w></mentioned>. The initial form of all these variants was <w
+                        type="rec">alut</w>, <w>alud</w>, well preserved in Ossetic. The original
+                    meaning of this stem was probably <gloss><q>bitter</q></gloss> (<bibl><ref
+                            type="bibl" target="#ref_Schrader"/>
+                        <biblScope>I 142</biblScope></bibl>); cf. <mentioned
+                        corresp="#mentioned_d428e213" xml:id="mentioned_d428e340" xml:lang="la"><lang/>
                         <w>alumen</w>
-                        <gloss><q>alum</q></gloss></mentioned> (cf. in semantics Russian <hi rendition="#rend_italic">kvas</hi>
-                    ‘fermented drink’— <hi rendition="#rend_italic">kvascy</hi> ‘alumen’). The Ossetic word <hi rendition="#rend_italic">ælūton</hi> can hardly
-                    be explained as an Iranian inheritance, both due to the lack of Indo-Iranian
-                    correspondences and the phonetic form (<hi rendition="#rend_italic">l</hi> before <hi rendition="#rend_italic">u</hi> is unusual). Most
-                    probably it is a loanword from Germanic. Although Gothic <hi rendition="#rend_italic">*alut</hi> ‘beer’ is not
-                    attested, nothing prevents us from assuming its existence. <mentioned corresp="#mentioned_d428e221" xml:id="mentioned_d428e348" xml:lang="xsc"><lang/>
-                        <note type="comment" xml:lang="en">proper name from
-                            Olvia</note><w>Ἀλούταγος</w></mentioned> (<bibl><ref type="bibl" target="#ref_Латышев"/><biblScope>I 53</biblScope></bibl>) probably
-                    meant nothing but “brewer”, like Σάναγος could mean “winemaker” (Ossetic <ref type="xr" target="#entry_sæn"/> ‘wine’); compare the derivational chain <ref type="xr" target="#entry_æxsyræg"/> ‘milk producing plant’, from <ref type="xr" target="#entry_æxsyr"/> ‘milk’. <mentioned corresp="#mentioned_d428e239" xml:id="mentioned_d428e366" xml:lang="ka"><lang/>
+                        <gloss><q>alum</q></gloss></mentioned> (cf. in semantics Russian <w>kvas</w>
+                    <gloss><q>fermented drink</q></gloss>— <w>kvascy</w>
+                    <gloss><q>alumen</q></gloss>). The Ossetic word <w>ælūton</w> can hardly be
+                    explained as an Iranian inheritance, both due to the lack of Indo-Iranian
+                    correspondences and the phonetic form (<w>l</w> before <w>u</w> is unusual).
+                    Most probably it is a loanword from Germanic. Although Gothic <w type="rec"
+                        >alut</w>
+                    <gloss><q>beer</q></gloss> is not attested, nothing prevents us from assuming
+                    its existence. <mentioned corresp="#mentioned_d428e221"
+                        xml:id="mentioned_d428e348" xml:lang="xsc"><lang/>
+                        <note type="comment" xml:lang="en">proper name from Olvia</note>
+                        <w>Ἀλούταγος</w></mentioned> (<bibl><ref type="bibl" target="#ref_Латышев"/>
+                        <biblScope>I 53</biblScope></bibl>) probably meant nothing but <gloss><q
+                            rendition="#rend_doublequotes">brewer</q></gloss>, like Σάναγος could
+                    mean <gloss><q rendition="#rend_doublequotes">winemaker</q></gloss> (Ossetic
+                        <ref type="xr" target="#entry_sæn"><w>sæn</w>
+                        <gloss><q>wine</q></gloss></ref>); compare the derivational chain <ref
+                        type="xr" target="#entry_æxsyræg"><w>æxsyræg</w>
+                        <gloss><q>milk producing plant</q></gloss></ref>, from <ref type="xr"
+                        target="#entry_æxsyr"><w>æxsyr</w>
+                        <gloss><q>milk</q></gloss></ref>. <mentioned corresp="#mentioned_d428e239"
+                        xml:id="mentioned_d428e366" xml:lang="ka"><lang/>
                         <w>ludi</w>
-                        <gloss><q>beer</q></gloss></mentioned> (<hi rendition="#rend_italic">aludi</hi> in Racha dialect) was
-                    loaned from Ossetic (from the simple stem <hi rendition="#rend_italic">*ælut</hi> without the suffix <hi rendition="#rend_italic">-on</hi>,
-                    see above <mentioned corresp="#mentioned_d428e247" xml:id="mentioned_d428e374" xml:lang="xsc"><lang/>
-                        <w>Ἀλούταγος</w></mentioned>); the initial <hi rendition="#rend_italic">æ</hi> even in Ossetic is subject
-                    to strong reduction, which is reduced in some dialects to zero; the voicing of
-                    <hi rendition="#rend_italic">t</hi> → <hi rendition="#rend_italic">d</hi> could occur in Georgian (cf. <mentioned corresp="#mentioned_d428e252" xml:id="mentioned_d428e379" xml:lang="ka"><lang/>
-                        <w>abazi</w></mentioned> from <hi rendition="#rend_italic">*abasi</hi> etc.). Brewing is not widespread
-                    among the Caucasian peoples. Of the Georgian tribes, it is developed only among
-                    those tribes who neighbour with Ossetians: Pshavs, Khevsurs, Mtiuls, Mohevts.
-                    The role of beer in the life of Ossetians, the obligatory nature of its
+                        <gloss><q>beer</q></gloss></mentioned> (<w>aludi</w> in Racha dialect) was
+                    loaned from Ossetic (from the simple stem <w type="rec">ælut</w> without the
+                    suffix <w>-on</w>, see above <mentioned corresp="#mentioned_d428e247"
+                        xml:id="mentioned_d428e374" xml:lang="xsc"><lang/>
+                        <w>Ἀλούταγος</w></mentioned>); the initial <w>æ</w> even in Ossetic is
+                    subject to strong reduction, which is reduced in some dialects to zero; the
+                    voicing of <w>t</w> → <w>d</w> could occur in Georgian (cf. <mentioned
+                        corresp="#mentioned_d428e252" xml:id="mentioned_d428e379" xml:lang="ka"><lang/>
+                        <w>abazi</w></mentioned> from <w type="rec">abasi</w> etc.). Brewing is not
+                    widespread among the Caucasian peoples. Of the Georgian tribes, it is developed
+                    only among those tribes who neighbour with Ossetians: Pshavs, Khevsurs, Mtiuls,
+                    Mohevts. The role of beer in the life of Ossetians, the obligatory nature of its
                     production at all public celebrations and holidays, as well as at weddings,
                     commemorations, etc., finally, the methods and skills of its manufacture, the
-                    ancient nature of brewing inventory (see <ref type="xr" target="#entry_cæǵǵīnag"/> ‘beer cauldron’) — all this confirms the long and stable national tradition
-                    in this area. In the Ossetian (Nart) epos, the beer occupies the same place as
-                    in the Kalevala. In both epic traditions special songs are dedicated to this
-                    drink, and its appearance dates back to mythical times. In the Nart epos, the
-                    honour of inventing beer is attributed to the famous hero woman Satana. This
-                    allows one to see the old Alanian drink in <hi rendition="#rend_smallcaps">ælūton</hi>. Alcohol drinks are often
-                    named after the peoples who make them: “Russian”, “English”, etc. From this
-                    point of view, the <hi rendition="#rend_bold">Russian</hi> word from the language of roving merchants is of
-                    interest (Tver, Vladimir, Kostroma - <bibl><ref type="bibl" target="#ref_Даль"/><biblScope>I 25</biblScope></bibl>) <mentioned corresp="#mentioned_d428e264" xml:id="mentioned_d428e391" xml:lang="ru"><lang/>
+                    ancient nature of brewing inventory (see <ref type="xr" target="#entry_cæǵǵīnag"
+                            ><w>cæǵǵīnag</w>
+                        <gloss><q>beer cauldron</q></gloss></ref>) — all this confirms the long and
+                    stable national tradition in this area. In the Ossetian (Nart) epos, the beer
+                    occupies the same place as in the Kalevala. In both epic traditions special
+                    songs are dedicated to this drink, and its appearance dates back to mythical
+                    times. In the Nart epos, the honour of inventing beer is attributed to the
+                    famous hero woman Satana. This allows one to see the old Alanian drink in <hi
+                        rendition="#rend_smallcaps">ælūton</hi>. Alcohol drinks are often named
+                    after the peoples who make them: <gloss><q rendition="#rend_doublequotes"
+                            >Russian</q></gloss>, <gloss><q rendition="#rend_doublequotes"
+                            >English</q></gloss>, etc. From this point of view, the <hi
+                        rendition="#rend_bold">Russian</hi> word from the language of roving
+                    merchants is of interest (Tver, Vladimir, Kostroma - <bibl><ref type="bibl"
+                            target="#ref_Даль"/>
+                        <biblScope>I 25</biblScope></bibl>) <mentioned corresp="#mentioned_d428e264"
+                        xml:id="mentioned_d428e391" xml:lang="ru"><lang/>
                         <w>alanja</w>
-                        <gloss><q>beer</q></gloss></mentioned>, <mentioned corresp="#mentioned_d428e272" xml:id="mentioned_d428e399" xml:lang="ru"><w>alannyj</w>
+                        <gloss><q>beer</q></gloss></mentioned>, <mentioned
+                        corresp="#mentioned_d428e272" xml:id="mentioned_d428e399" xml:lang="ru"
+                            ><w>alannyj</w>
                         <gloss><q>one associated with beer</q></gloss></mentioned>. Is it possible
                     to see here the name of the Alan people who gave the name to drink that was
                     associated for their neighbours with this people? Another favourite drink for
-                    Alans was probably <ref type="xr" target="#entry_rong"/>. Cf. <ref type="xr" target="#entry_bægæny"/>, <ref type="xr" target="#entry_x0ymællæg"/>, <ref type="xr" target="#entry_rong"/>, <ref type="xr" target="#entry_sæn"/>.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>338—347</biblScope></bibl>.</etym>
+                    Alans was probably <ref type="xr" target="#entry_rong"/>. Cf. <ref type="xr"
+                        target="#entry_bægæny"/>, <ref type="xr" target="#entry_x0ymællæg"/>, <ref
+                        type="xr" target="#entry_rong"/>, <ref type="xr" target="#entry_sæn"
+                            />.%n<bibl><ref type="bibl" target="#ref_ОЯФ_I"/>
+                        <biblScope>338—347</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>
