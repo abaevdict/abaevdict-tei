@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ælyg</hi></title>
+                <title>Abaev Dictionary: entry <w>ælyg</w></title>
             </titleStmt>
             <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
     Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
@@ -17,65 +17,89 @@
     <tagsDecl>
         <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
         <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
-        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "<gloss><q>" "</q></gloss>";</rendition>
         <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
     </tagsDecl>
 </encodingDesc>
     </teiHeader>
     <text>
         <body>
-            <entry xml:id="entry_ælyg" xml:lang="os-x-iron">
-                <form xml:id="form_d5646e66" type="lemma"><orth>ælyg</orth></form>
+            <entry xml:id="entry_ælyg" xml:lang="os-x-iron" abv:completeness="complete">
+                <?oxy_comment_start author="oleg" timestamp="20240207T170831+0300" comment="checked"?>
+                <form xml:id="form_d5646e66" type="lemma"><orth>ælyg</orth></form><?oxy_comment_end?>
                 <usg><lang/></usg>
-                <sense xml:id="sense_d5646e72"><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d5646e72">
+                    <abv:tr xml:lang="ru">
                         <q>глина</q>
-                    </abv:tr><abv:tr xml:lang="en">
+                    </abv:tr>
+                    <abv:tr xml:lang="en">
                         <q>clay</q>
-                    </abv:tr></sense>
+                    </abv:tr>
+                </sense>
+                <note type="comment">; <ref type="xr" target="#entry_ærǧæ" xml:lang="os-x-digor"><lang/>
+                        <w>ærǧæ</w></ref></note>
                 <abv:exampleGrp xml:id="exampleGrp_d5646e82">
                     <abv:example xml:id="example_d5646e84">
-                        <quote>caǧaræj syǧzærīn daræsty cæryny bæsty særībaræj mæ kʼūxtæj ælyg æmæ
-                            ḱ’yr k˳y ʽzmænton, ūj x˳yzdær ū</quote>
+                        <quote>caǧaræj syǧzærīn daræsty cæryny bæsty særībaræj mæ kʼūxtæj
+                                <oRef>ælyg</oRef> æmæ ḱ’yr k˳y ’zmænton, ūj x˳yzdær ū</quote>
                         <abv:tr xml:lang="ru">
                             <q>чем в золотых одеждах жить рабом, лучше (будучи) свободным месить
                                 своими руками глину и известь</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
-                            <q>than living in golden robes as a slave, it’s better to be free and
-                                knead clay and lime with your own hands</q>
+                            <q>rather than living in golden clothes as a slave, it is better to be
+                                free and knead clay and lime with your own hands</q>
                         </abv:tr>
+                        <bibl><ref type="bibl" target="#src_Сека"/>
+                            <biblScope>94</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Несмотря на значительное звуковое расхождение иронского и
-                    дигорского слова, они оба связаны, по-видимому, с <mentioned corresp="#mentioned_d5646e154" xml:id="mentioned_d5646e102" xml:lang="ira"><lang/>
-                        <w>*gri-</w></mentioned>, <mentioned corresp="#mentioned_d5646e159" xml:id="mentioned_d5646e107" xml:lang="ira"><lang/>
-                        <w>*graya-</w>
-                        <gloss><q>глина</q></gloss></mentioned>; <hi rendition="#rend_italic">ælyg</hi> может восходить к
-                    <hi rendition="#rend_italic">*ǧrika-</hi> через ступени <hi rendition="#rend_italic">*ǧlik</hi> → <hi rendition="#rend_italic">*lik</hi>, начальное <hi rendition="#rend_italic">æ</hi> протетическое
-                    (для отличия от <ref type="xr" target="#entry_lyg"/> ‘отрезанный’?). Ср.
-                        <mentioned corresp="#mentioned_d5646e169" xml:id="mentioned_d5646e117" xml:lang="sog"><lang/>
-                        <w>*ɣrīk(ɣrʼyk)</w>
-                        <gloss><q>грязь</q></gloss></mentioned>, <mentioned corresp="#mentioned_d5646e177" xml:id="mentioned_d5646e125" xml:lang="sog"><w/>
-                        <gloss><q>глина</q></gloss></mentioned>, <mentioned corresp="#mentioned_d5646e184" xml:id="mentioned_d5646e132" xml:lang="yai"><lang/>
+                    дигорского слова, они оба связаны, по-видимому, с <mentioned><mentioned
+                            corresp="#mentioned_d5646e154" xml:id="mentioned_d5646e102"
+                            xml:lang="ira"><lang/>
+                            <w type="rec">gri-</w></mentioned>, <mentioned
+                            corresp="#mentioned_d5646e159" xml:id="mentioned_d5646e107"
+                            xml:lang="ira"><lang/>
+                            <w type="rec">graya-</w></mentioned>
+                        <gloss><q>глина</q></gloss></mentioned>; <oRef>ælyg</oRef> может восходить к
+                        <mentioned xml:lang="ira"><w type="rec">ǧrika-</w></mentioned> через ступени
+                        <w type="rec">ǧlik</w> → <w type="rec">lik</w>, начальное <c>æ</c>
+                    протетическое (для отличия от <ref type="xr" target="#entry_lyg"><w>lyg</w>
+                        <gloss><q>отрезанный</q></gloss></ref>?). Ср. <mentioned
+                        corresp="#mentioned_d5646e169" xml:id="mentioned_d5646e117" xml:lang="sog"><lang/>
+                        <w type="rec">ɣrīk</w> (<w>ɣrʼyk</w>) <gloss><q>грязь</q></gloss>,
+                                <gloss><q>глина</q></gloss></mentioned>, <mentioned
+                        corresp="#mentioned_d5646e184" xml:id="mentioned_d5646e132" xml:lang="yai"><lang/>
                         <w>ʒirīk</w>
-                        <gloss><q>пыль</q></gloss></mentioned>, <mentioned corresp="#mentioned_d5646e192" xml:id="mentioned_d5646e140" xml:lang="kho"><lang/>
+                        <gloss><q>пыль</q></gloss></mentioned>, <mentioned
+                        corresp="#mentioned_d5646e192" xml:id="mentioned_d5646e140" xml:lang="kho"><lang/>
                         <w>gruikyā</w>
-                        <gloss><q>песчинка</q></gloss></mentioned>. Ср. <ref type="xr" target="#entry_ærǧæ"/>.</etym>
+                        <gloss><q>песчинка</q></gloss></mentioned>. Ср. <ref type="xr"
+                        target="#entry_ærǧæ"/>.</etym>
                 <etym xml:lang="en">Despite the significant sound discrepancy between the Iron and
-                    Digor words, they are both apparently associated with <mentioned corresp="#mentioned_d5646e102" xml:id="mentioned_d5646e154" xml:lang="ira"><lang/>
-                        <w>*gri-</w></mentioned>, <mentioned corresp="#mentioned_d5646e107" xml:id="mentioned_d5646e159" xml:lang="ira"><lang/>
-                        <w>*graya-</w>
-                        <gloss><q>clay</q></gloss></mentioned>; <hi rendition="#rend_italic">ælyg</hi> may go back to <hi rendition="#rend_italic">*ǧrika-</hi>
-                    via the stage <hi rendition="#rend_italic">*ǧlik</hi> → <hi rendition="#rend_italic">*lik</hi>, where the initial <hi rendition="#rend_italic">æ</hi> is prothetic (to
-                    distinguish from <ref type="xr" target="#entry_lyg"/> ‘cut (participle)’?). Cf.
-                        <mentioned corresp="#mentioned_d5646e117" xml:id="mentioned_d5646e169" xml:lang="sog"><lang/>
-                        <w>*ɣrīk(ɣrʼyk)</w>
-                        <gloss><q>dirt</q></gloss></mentioned>, <mentioned corresp="#mentioned_d5646e125" xml:id="mentioned_d5646e177" xml:lang="sog"><w/>
-                        <gloss><q>clay</q></gloss></mentioned>, <mentioned corresp="#mentioned_d5646e132" xml:id="mentioned_d5646e184" xml:lang="yai"><lang/>
+                    Digor words, they are both apparently associated with <mentioned><mentioned
+                            corresp="#mentioned_d5646e102" xml:id="mentioned_d5646e154"
+                            xml:lang="ira"><lang/>
+                            <w type="rec">gri-</w></mentioned>, <mentioned
+                            corresp="#mentioned_d5646e107" xml:id="mentioned_d5646e159"
+                            xml:lang="ira"><lang/>
+                            <w type="rec">graya-</w>
+                        </mentioned><gloss><q>clay</q></gloss></mentioned>; <w>ælyg</w> may go back
+                    to <w type="rec">ǧrika-</w> via the stage <w type="rec">ǧlik</w> → <w type="rec"
+                        >lik</w>, where the initial <c>æ</c> is prothetic (to distinguish from <ref
+                        type="xr" target="#entry_lyg"><w>lyg</w>
+                        <gloss><q>cut</q></gloss></ref>?). Cf. <mentioned
+                        corresp="#mentioned_d5646e117" xml:id="mentioned_d5646e169" xml:lang="sog"><lang/>
+                        <w type="rec">ɣrīk</w> (<w>ɣrʼyk</w>) <gloss><q>dirt</q></gloss>,
+                                <gloss><q>clay</q></gloss></mentioned>, <mentioned
+                        corresp="#mentioned_d5646e132" xml:id="mentioned_d5646e184" xml:lang="yai"><lang/>
                         <w>ʒirīk</w>
-                        <gloss><q>dust</q></gloss></mentioned>, <mentioned corresp="#mentioned_d5646e140" xml:id="mentioned_d5646e192" xml:lang="kho"><lang/>
+                        <gloss><q>dust</q></gloss></mentioned>, <mentioned
+                        corresp="#mentioned_d5646e140" xml:id="mentioned_d5646e192" xml:lang="kho"><lang/>
                         <w>gruikyā</w>
-                        <gloss><q>grain of sand</q></gloss></mentioned>. Cf. <ref type="xr" target="#entry_ærǧæ"/>.</etym>
+                        <gloss><q>grain of sand</q></gloss></mentioned>. Cf. <ref type="xr"
+                        target="#entry_ærǧæ"/>.</etym>
             </entry>
         </body>
     </text>

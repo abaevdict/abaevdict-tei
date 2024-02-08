@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Abaev Dictionary: entry <hi rendition="#rend_italic">æmæ</hi></title>
+                <title>Abaev Dictionary: entry <w>æmæ</w></title>
             </titleStmt>
             <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
     Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
@@ -17,54 +17,80 @@
     <tagsDecl>
         <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
         <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
-        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "<gloss><q>" "</q></gloss>";</rendition>
         <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
     </tagsDecl>
 </encodingDesc>
     </teiHeader>
     <text>
         <body>
-            <entry xml:id="entry_æmæ" xml:lang="os">
-                <form xml:id="form_d5843e66" xml:lang="os-x-iron" type="lemma"><orth>æmæ</orth><form xml:id="form_d5843e68" type="variant"><orth>ymæ</orth></form><form xml:id="form_d5843e70" type="variant"><orth>mæ</orth></form></form>
-                <form xml:id="form_d5843e73" xml:lang="os-x-digor" type="dialectal"><orth>æma</orth><form xml:id="form_d5843e75" type="variant"><orth>ma</orth></form></form>
-                <sense xml:id="sense_d5843e78"><abv:tr xml:lang="ru">
+            <entry xml:id="entry_æmæ" xml:lang="os" abv:completeness="english-questions">
+                <?oxy_comment_start author="oleg" timestamp="20240208T134615+0300" comment="checked"?>
+                <form xml:id="form_d5843e66" xml:lang="os-x-iron" type="lemma"><orth>æmæ</orth>
+                    <form xml:id="form_d5843e68" type="variant"><orth>ymæ</orth></form>
+                    <form xml:id="form_d5843e70" type="variant"><orth>mæ</orth></form></form><?oxy_comment_end?>
+                <form xml:id="form_d5843e73" xml:lang="os-x-digor" type="dialectal"><orth>æma</orth>
+                    <form xml:id="form_d5843e75" type="variant"><orth>ma</orth></form></form>
+                <sense xml:id="sense_d5843e78">
+                    <abv:tr xml:lang="ru">
                         <q>и</q>
-                    </abv:tr><abv:tr xml:lang="en">
+                    </abv:tr>
+                    <abv:tr xml:lang="en">
                         <q>and</q>
-                    </abv:tr><note type="comment" xml:lang="ru">союз</note><note type="comment" xml:lang="en">conjunction</note></sense>
-                <sense xml:id="sense_d5843e92"><sense xml:id="sense_d5843e93"><abv:tr xml:lang="ru">
+                    </abv:tr>
+                    <note type="comment" xml:lang="ru">союз</note>
+                    <note type="comment" xml:lang="en">conjunction</note>
+                </sense>
+                <sense xml:id="sense_d5843e92">
+                    <note type="comment" xml:lang="ru">иногда</note>
+                    <note type="comment" xml:lang="en">sometimes</note>
+                    <sense xml:id="sense_d5843e93">
+                        <abv:tr xml:lang="ru">
                             <q>но</q>
-                        </abv:tr><abv:tr xml:lang="en">
+                        </abv:tr>
+                        <abv:tr xml:lang="en">
                             <q>but</q>
-                        </abv:tr></sense><sense xml:id="sense_d5843e102"><abv:tr xml:lang="ru">
+                        </abv:tr>
+                    </sense>
+                    <sense xml:id="sense_d5843e102">
+                        <abv:tr xml:lang="ru">
                             <q>чтобы</q>
-                        </abv:tr><abv:tr xml:lang="en">
+                        </abv:tr>
+                        <abv:tr xml:lang="en">
                             <q>so that</q>
-                        </abv:tr></sense><sense xml:id="sense_d5843e111"><abv:tr xml:lang="ru">
+                        </abv:tr>
+                    </sense>
+                    <sense xml:id="sense_d5843e111">
+                        <abv:tr xml:lang="ru">
                             <q>что</q>
-                        </abv:tr><abv:tr xml:lang="en">
+                        </abv:tr>
+                        <abv:tr xml:lang="en">
                             <q>that</q>
-                        </abv:tr></sense><note type="comment" xml:lang="ru">иногда</note><note type="comment" xml:lang="en">sometimes</note></sense>
+                        </abv:tr>
+                    </sense>
+                </sense>
                 <abv:exampleGrp xml:id="exampleGrp_d5843e125">
                     <abv:example xml:id="example_d5843e127">
-                        <quote>rūvas æmæ zyǧaræg</quote>
+                        <quote>rūvas <oRef>æmæ</oRef> zyǧaræg</quote>
                         <abv:tr xml:lang="ru">
                             <q>лиса и барсук</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
                             <q>fox and badger</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>99</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/>
+                            <biblScope>99</biblScope></bibl>
                     </abv:example>
                     <abv:example xml:id="example_d5843e146">
-                        <quote>sag æmæ wyzyn</quote>
+                        <quote>sag <oRef>æmæ</oRef> wyzyn</quote>
                         <abv:tr xml:lang="ru">
                             <q>олень и еж</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
                             <q>deer and hedgehog</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>91</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/>
+                            <biblScope>91</biblScope></bibl>
                     </abv:example>
                     <abv:example xml:id="example_d5843e165" xml:lang="os-x-digor">
                         <usg><lang/></usg>
@@ -75,10 +101,11 @@
                         <abv:tr xml:lang="en">
                             <q>sheep and goat</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Gurdž._Wadž."/><biblScope>36</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Gurdž._Wadž."/>
+                            <biblScope>36</biblScope></bibl>
                     </abv:example>
                     <abv:example xml:id="example_d5843e187">
-                        <quote>fat æmæ ʽrdyn</quote>
+                        <quote>fat <oRef>æmæ</oRef> ’rdyn</quote>
                         <abv:tr xml:lang="ru">
                             <q>стрела и лук</q>
                         </abv:tr>
@@ -88,15 +115,15 @@
                     </abv:example>
                     <abv:example xml:id="example_d5843e202" xml:lang="os-x-digor">
                         <usg><lang/></usg>
-                        <quote>Soslani mælæt æma Ojnoni calx</quote>
+                        <quote>Soslani mælæt <oRef>æma</oRef> Ojnoni calx</quote>
                         <abv:tr xml:lang="ru">
                             <q>смерть Сослана и колесо Ойнона</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
-                            <q>the Soslan's death and the wheel of Oinon</q>
+                            <q>the death of Soslan and the wheel of Oynon</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
-                            18</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_СОПам."/>
+                            <biblScope>II 18</biblScope></bibl>
                     </abv:example>
                     <abv:example xml:id="example_d5843e225" xml:lang="os-x-digor">
                         <usg><lang/></usg>
@@ -107,19 +134,20 @@
                         <abv:tr xml:lang="en">
                             <q>wife and husband</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>1%l2%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/>
+                            <biblScope>1<hi rendition="#rend_subscript">2</hi></biblScope></bibl>
                     </abv:example>
                     <abv:example xml:id="example_d5843e247">
-                        <quote>fīzonægmæ kæs, æmæ ma basūʒa</quote>
+                        <quote>fīzonægmæ kæs, <oRef>æmæ</oRef> ma basūʒa</quote>
                         <abv:tr xml:lang="ru">
                             <q>смотри за шашлыком, чтобы он не обгорел</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
-                            <q>watch the kebab so that it does not burn</q>
+                            <q>watch the shish kebab so that it does not burn</q>
                         </abv:tr>
                     </abv:example>
                     <abv:example xml:id="example_d5843e262">
-                        <quote>zæǧ yn, æmæ racæwa</quote>
+                        <quote>zæǧ yn, <oRef>æmæ</oRef> racæwa</quote>
                         <abv:tr xml:lang="ru">
                             <q>скажи ему, чтобы он вышел</q>
                         </abv:tr>
@@ -128,105 +156,179 @@
                         </abv:tr>
                     </abv:example>
                     <abv:example xml:id="example_d5843e277">
-                        <quote>xatyn æm, æmæ næ komy</quote>
+                        <quote>xatyn æm, <oRef>æmæ</oRef> næ komy</quote>
                         <abv:tr xml:lang="ru">
                             <q>я уговариваю его, но он не соглашается</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
-                            <q>I persuade him, but he does not agree</q>
+                            <q>I am persuading him, but he does not agree</q>
                         </abv:tr>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Одного происхождения с префиксом <ref type="xr" target="#entry_æm-"/>. Как видно из сравнения с другими иранскими языками,
-                    первоначально означал ‘также’ (<hi rendition="#rend_italic">ars æmæ bīræǧ</hi> собственно „медведь также
-                    волк“). Ср. <mentioned corresp="#mentioned_d5843e489" xml:id="mentioned_d5843e298" xml:lang="sgh"><lang/>
+                <etym xml:lang="ru">Одного происхождения с префиксом <ref type="xr"
+                        target="#entry_æm-"><w>æm-</w></ref>. Как видно из сравнения с другими
+                    иранскими языками, первоначально означал <gloss><q>также</q></gloss> (<mentioned
+                        xml:lang="os"><phr>ars æmæ bīræǧ</phr>
+                        <gloss>собственно <q rendition="#rend_doublequotes">медведь также
+                            волк</q></gloss></mentioned>). Ср. <mentioned
+                        corresp="#mentioned_d5843e489" xml:id="mentioned_d5843e298" xml:lang="sgh"><lang/>
                         <w>am</w>
-                        <gloss><q>также</q></gloss></mentioned>, <mentioned corresp="#mentioned_d5843e497" xml:id="mentioned_d5843e306" xml:lang="ydg"><lang/>
-                        <w>әm</w></mentioned> id., <mentioned corresp="#mentioned_d5843e502" xml:id="mentioned_d5843e311" xml:lang="prc"><lang/>
-                        <w>ham, am</w></mentioned> (<bibl><ref type="bibl" target="#ref_Morgenstierne._IIFL"/><biblScope>I 259</biblScope></bibl>),
-                        <mentioned corresp="#mentioned_d5843e512" xml:id="mentioned_d5843e321" xml:lang="ps"><lang/>
-                        <w>ham</w></mentioned> (<bibl><ref type="bibl" target="#ref_GIPh."/><biblScope>II 223</biblScope></bibl>), <mentioned corresp="#mentioned_d5843e521" xml:id="mentioned_d5843e330" xml:lang="ps"><lang/>
-                        <w>hum</w></mentioned> (<bibl><ref type="bibl" target="#ref_Morgenstierne._EVP"/><biblScope>30</biblScope></bibl>),
-                        <mentioned corresp="#mentioned_d5843e530" xml:id="mentioned_d5843e339" xml:lang="x-balochi"><lang/>
-                        <w>ham</w>
-                        <gloss><q>также</q></gloss></mentioned>, <mentioned corresp="#mentioned_d5843e538" xml:id="mentioned_d5843e347" xml:lang="ku"><lang/>
+                        <gloss><q>также</q></gloss></mentioned>, <mentioned
+                        corresp="#mentioned_d5843e497" xml:id="mentioned_d5843e306" xml:lang="ydg"><lang/>
+                        <w>әm</w>
+                        <gloss>id.</gloss></mentioned>, <mentioned><mentioned
+                            corresp="#mentioned_d5843e502" xml:id="mentioned_d5843e311"
+                            xml:lang="prc"><lang/>
+                            <w>ham</w>, <w>am</w>
+                            <note type="bibl">(<bibl><ref type="bibl"
+                                        target="#ref_Morgenstierne._IIFL"/>
+                                    <biblScope>I 259</biblScope></bibl>)</note></mentioned>,
+                            <mentioned corresp="#mentioned_d5843e512" xml:id="mentioned_d5843e321"
+                            xml:lang="ps"><lang/>
+                            <w>ham</w>
+                            <note type="bibl">(<bibl><ref type="bibl" target="#ref_GIPh."/>
+                                    <biblScope>II 223</biblScope></bibl>)</note></mentioned>,
+                            <mentioned corresp="#mentioned_d5843e521" xml:id="mentioned_d5843e330"
+                            xml:lang="ps"><lang/>
+                            <w>hum</w>
+                            <note type="bibl">(<bibl><ref type="bibl"
+                                        target="#ref_Morgenstierne._EVP"/>
+                                    <biblScope>30</biblScope></bibl>)</note></mentioned>, <mentioned
+                            corresp="#mentioned_d5843e530" xml:id="mentioned_d5843e339"
+                            xml:lang="x-balochi"><lang/>
+                            <w>ham</w></mentioned>
+                        <gloss><q>также</q></gloss></mentioned>, <mentioned
+                        corresp="#mentioned_d5843e538" xml:id="mentioned_d5843e347" xml:lang="ku"><lang/>
                         <w>häm</w>
-                        <gloss><q>также</q></gloss></mentioned>, <mentioned corresp="#mentioned_d5843e547" xml:id="mentioned_d5843e356" xml:lang="ku"><w/>
-                        <gloss><q>и</q></gloss></mentioned> [[Употребление <hi rendition="#rend_italic">häm</hi> в курдском
-                    зачастую ничем не отличается от <hi rendition="#rend_italic">æmæ</hi> в осетинском.]], <mentioned corresp="#mentioned_d5843e553" xml:id="mentioned_d5843e362" xml:lang="fa"><lang/>
+                        <gloss><q>также</q></gloss>, <gloss><q>и</q></gloss></mentioned>,<note
+                        type="footnote">Употребление <mentioned corresp="#mentioned_d5843e538"
+                            xml:lang="ku"><w>häm</w></mentioned> в курдском зачастую ничем не
+                        отличается от <oRef>æmæ</oRef> в осетинском.</note>
+                    <mentioned corresp="#mentioned_d5843e553" xml:id="mentioned_d5843e362"
+                        xml:lang="fa"><lang/>
                         <w>ham</w>
-                        <gloss><q>также</q></gloss></mentioned>, <mentioned corresp="#mentioned_d5843e561" xml:id="mentioned_d5843e370" xml:lang="fa"><w/>
-                        <gloss><q>тоже</q></gloss></mentioned>, <mentioned corresp="#mentioned_d5843e567" xml:id="mentioned_d5843e376" xml:lang="fa"><w/>
-                        <gloss><q>и</q></gloss></mentioned>, <mentioned corresp="#mentioned_d5843e573" xml:id="mentioned_d5843e382" xml:lang="fa"><w/>
-                        <gloss><q>тот же</q></gloss></mentioned>, <mentioned corresp="#mentioned_d5843e579" xml:id="mentioned_d5843e388" xml:lang="pal"><lang/>
+                        <gloss><q>также</q></gloss>, <gloss><q>тоже</q></gloss>,
+                            <gloss><q>и</q></gloss>, <gloss><q>тот же</q></gloss></mentioned>,
+                        <mentioned corresp="#mentioned_d5843e579" xml:id="mentioned_d5843e388"
+                        xml:lang="pal"><lang/>
                         <w>ham</w>
-                        <gloss><q>точно так же</q></gloss></mentioned>, <mentioned corresp="#mentioned_d5843e588" xml:id="mentioned_d5843e397" xml:lang="pal"><w/>
-                        <gloss><q>вместе с тем</q></gloss></mentioned>, <mentioned corresp="#mentioned_d5843e594" xml:id="mentioned_d5843e403" xml:lang="pal"><w/>
-                        <gloss><q>тот же самый</q></gloss></mentioned>, <mentioned corresp="#mentioned_d5843e600" xml:id="mentioned_d5843e409" xml:lang="kho"><lang/>
-                        <w>hama</w></mentioned>, <mentioned corresp="#mentioned_d5843e605" xml:id="mentioned_d5843e414" xml:lang="ae"><lang/>
-                        <w>hama</w></mentioned>, <mentioned corresp="#mentioned_d5843e610" xml:id="mentioned_d5843e419" xml:lang="inc-x-old"><lang/>
-                        <w>samá-</w>
-                        <gloss><q>тот же самый</q></gloss></mentioned>, <mentioned corresp="#mentioned_d5843e618" xml:id="mentioned_d5843e427" xml:lang="ru"><lang/>
-                        <w>самый</w></mentioned>, <mentioned corresp="#mentioned_d5843e627" xml:id="mentioned_d5843e433" xml:lang="got"><lang/>
+                        <gloss><q>точно так же</q></gloss>, <gloss><q>вместе с тем</q></gloss>,
+                                <gloss><q>тот же самый</q></gloss></mentioned>,
+                            <mentioned><mentioned corresp="#mentioned_d5843e600"
+                            xml:id="mentioned_d5843e409" xml:lang="kho"><lang/>
+                            <w>hama</w></mentioned>, <mentioned corresp="#mentioned_d5843e605"
+                            xml:id="mentioned_d5843e414" xml:lang="ae"><lang/>
+                            <w>hama</w></mentioned>, <mentioned corresp="#mentioned_d5843e610"
+                            xml:id="mentioned_d5843e419" xml:lang="inc-x-old"><lang/>
+                            <w>samá-</w></mentioned>
+                        <gloss><q>тот же самый</q></gloss></mentioned>, <mentioned
+                        corresp="#mentioned_d5843e618" xml:id="mentioned_d5843e427" xml:lang="ru"><lang/>
+                        <w>самый</w></mentioned>, <mentioned corresp="#mentioned_d5843e627"
+                        xml:id="mentioned_d5843e433" xml:lang="got"><lang/>
                         <w>sama</w>
-                        <gloss><q>тот же самый</q></gloss></mentioned>, <mentioned corresp="#mentioned_d5843e635" xml:id="mentioned_d5843e441" xml:lang="grc"><lang/>
-                        <w>αμα</w>
-                        <gloss><q>вместе</q></gloss></mentioned>, <mentioned corresp="#mentioned_d5843e643" xml:id="mentioned_d5843e449" xml:lang="grc"><w>όμός</w>
-                        <gloss><q>одинаковый</q></gloss></mentioned>, <mentioned corresp="#mentioned_d5843e649" xml:id="mentioned_d5843e455" xml:lang="la"><lang/>
+                        <gloss><q>тот же самый</q></gloss></mentioned>, <mentioned
+                        corresp="#mentioned_d5843e635" xml:id="mentioned_d5843e441" xml:lang="grc"><lang/>
+                        <w>ἅμα</w>
+                        <gloss><q>вместе</q></gloss></mentioned>, <mentioned
+                        corresp="#mentioned_d5843e643" xml:id="mentioned_d5843e449" xml:lang="grc"
+                            ><w>ὁμός</w>
+                        <gloss><q>одинаковый</q></gloss></mentioned>, <mentioned
+                        corresp="#mentioned_d5843e649" xml:id="mentioned_d5843e455" xml:lang="la"><lang/>
                         <w>similis</w>
                         <gloss><q>подобный</q></gloss></mentioned>. Первоначальное значение
-                    индоевропейского корня <hi rendition="#rend_italic">*sem</hi> — ‘один’. Осетинский удержал на этот раз, а в
-                    дигорском даже усилил конечный гласный, чему способствовала несомненно ранняя
-                    редукция начального гласного (д. <hi rendition="#rend_italic">mа</hi>, ср. ударение в <mentioned corresp="#mentioned_d5843e657" xml:id="mentioned_d5843e463" xml:lang="inc-x-old"><lang/>
-                        <w>samá-</w></mentioned> и <mentioned corresp="#mentioned_d5843e662" xml:id="mentioned_d5843e468" xml:lang="grc"><lang/>
-                        <w>όμός</w></mentioned>. Ср. <ref type="xr" target="#entry_æm-"/>.%n<bibl><ref type="bibl" target="#ref_Миллер_Вс._ОЭ"/><biblScope>III
-                            167</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Miller._Gr."/><biblScope>38</biblScope></bibl>.</etym>
-                <etym xml:lang="en">Has the same origin as <ref type="xr" target="#entry_æm-"/>. As
-                    can be seen from comparison with other Iranian languages, its original sense was
-                    ‘also’ (<hi rendition="#rend_italic">ars æmæ bīræǧ</hi> properly „bear also wolf“). Cf. <mentioned corresp="#mentioned_d5843e298" xml:id="mentioned_d5843e489" xml:lang="sgh"><lang/>
+                    индоевропейского корня <mentioned xml:lang="ine"><w type="rec">sem</w> —
+                                <gloss><q>один</q></gloss></mentioned>. Осетинский удержал на этот
+                    раз, а в дигорском даже усилил конечный гласный, чему способствовала несомненно
+                    ранняя редукция начального гласного (<lang xml:lang="os-x-digor"/>
+                    <oRef>mа</oRef>, ср. ударение в <mentioned corresp="#mentioned_d5843e657"
+                        xml:id="mentioned_d5843e463" xml:lang="inc-x-old"><lang/>
+                        <w>samá-</w></mentioned> и <mentioned corresp="#mentioned_d5843e662"
+                        xml:id="mentioned_d5843e468" xml:lang="grc"><lang/>
+                        <w>ὁμός</w></mentioned>. Ср. <ref type="xr" target="#entry_æm-"
+                        />.<lb/><bibl>Вс. <author>Миллер</author>. <ref type="bibl"
+                            target="#ref_Миллер_Вс._ОЭ">ОЭ</ref>
+                        <biblScope>III 167</biblScope></bibl>; <bibl><ref type="bibl"
+                            target="#ref_Miller._Gr.">Gr.</ref>
+                        <biblScope>38</biblScope></bibl>.</etym>
+                <etym xml:lang="en">Has the same origin as <ref type="xr" target="#entry_æm-"
+                            ><w>æm-</w></ref>. As can be seen from comparison with other Iranian
+                    languages, the original sense of this word was <gloss><q>also</q></gloss>
+                        (<mentioned xml:lang="os"><phr>ars æmæ bīræǧ</phr>
+                        <gloss>literally <q rendition="#rend_doublequotes">bear also
+                            wolf</q></gloss></mentioned>). Cf. <mentioned
+                        corresp="#mentioned_d5843e489" xml:lang="sgh"><lang/>
                         <w>am</w>
-                        <gloss><q>also</q></gloss></mentioned>, <mentioned corresp="#mentioned_d5843e306" xml:id="mentioned_d5843e497" xml:lang="ydg"><lang/>
-                        <w>әm</w></mentioned> id., <mentioned corresp="#mentioned_d5843e311" xml:id="mentioned_d5843e502" xml:lang="prc"><lang/>
-                        <w>ham, am</w></mentioned> (<bibl><ref type="bibl" target="#ref_Morgenstierne._IIFL"/><biblScope>I 259</biblScope></bibl>),
-                        <mentioned corresp="#mentioned_d5843e321" xml:id="mentioned_d5843e512" xml:lang="ps"><lang/>
-                        <w>ham</w></mentioned> (<bibl><ref type="bibl" target="#ref_GIPh."/><biblScope>II 223</biblScope></bibl>), <mentioned corresp="#mentioned_d5843e330" xml:id="mentioned_d5843e521" xml:lang="ps"><lang/>
-                        <w>hum</w></mentioned> (<bibl><ref type="bibl" target="#ref_Morgenstierne._EVP"/><biblScope>30</biblScope></bibl>),
-                        <mentioned corresp="#mentioned_d5843e339" xml:id="mentioned_d5843e530" xml:lang="x-balochi"><lang/>
-                        <w>ham</w>
-                        <gloss><q>also</q></gloss></mentioned>, <mentioned corresp="#mentioned_d5843e347" xml:id="mentioned_d5843e538" xml:lang="ku"><lang/>
+                        <gloss><q>also</q></gloss></mentioned>, <mentioned
+                        corresp="#mentioned_d5843e497" xml:lang="ydg"><lang/>
+                        <w>әm</w>
+                        <gloss>id.</gloss></mentioned>, <mentioned><mentioned
+                            corresp="#mentioned_d5843e502" xml:lang="prc"><lang/>
+                            <w>ham</w>, <w>am</w>
+                            <note type="bibl">(<bibl><ref type="bibl"
+                                        target="#ref_Morgenstierne._IIFL"/>
+                                    <biblScope>I 259</biblScope></bibl>)</note></mentioned>,
+                            <mentioned corresp="#mentioned_d5843e512" xml:lang="ps"><lang/>
+                            <w>ham</w>
+                            <note type="bibl">(<bibl><ref type="bibl" target="#ref_GIPh."/>
+                                    <biblScope>II 223</biblScope></bibl>)</note></mentioned>,
+                            <mentioned corresp="#mentioned_d5843e521" xml:lang="ps"><lang/>
+                            <w>hum</w>
+                            <note type="bibl">(<bibl><ref type="bibl"
+                                        target="#ref_Morgenstierne._EVP"/>
+                                    <biblScope>30</biblScope></bibl>)</note></mentioned>, <mentioned
+                            corresp="#mentioned_d5843e530" xml:lang="x-balochi"><lang/>
+                            <w>ham</w></mentioned>
+                        <gloss><q>also</q></gloss></mentioned>, <mentioned
+                        corresp="#mentioned_d5843e538" xml:lang="ku"><lang/>
                         <w>häm</w>
-                        <gloss><q>also</q></gloss></mentioned>, <mentioned corresp="#mentioned_d5843e356" xml:id="mentioned_d5843e547" xml:lang="ku"><w/>
-                        <gloss><q>and</q></gloss></mentioned> [[The use of <hi rendition="#rend_italic">häm</hi> in Kurdish
-                    ususally does not differ from <hi rendition="#rend_italic">æmæ</hi> in Ossetic.]], <mentioned corresp="#mentioned_d5843e362" xml:id="mentioned_d5843e553" xml:lang="fa"><lang/>
+                        <gloss><q>also</q></gloss>, <gloss><q>and</q></gloss></mentioned>,<note
+                        type="footnote">The use of <mentioned corresp="#mentioned_d5843e538"
+                            xml:lang="ku"><w>häm</w></mentioned> in Kurdish is often no different
+                        from <oRef>æmæ</oRef> in Ossetic.</note>
+                    <mentioned corresp="#mentioned_d5843e553" xml:lang="fa"><lang/>
                         <w>ham</w>
-                        <gloss><q>also</q></gloss></mentioned>, <mentioned corresp="#mentioned_d5843e370" xml:id="mentioned_d5843e561" xml:lang="fa"><w/>
-                        <gloss><q>as well</q></gloss></mentioned>, <mentioned corresp="#mentioned_d5843e376" xml:id="mentioned_d5843e567" xml:lang="fa"><w/>
-                        <gloss><q>and</q></gloss></mentioned>, <mentioned corresp="#mentioned_d5843e382" xml:id="mentioned_d5843e573" xml:lang="fa"><w/>
-                        <gloss><q>the same</q></gloss></mentioned>, <mentioned corresp="#mentioned_d5843e388" xml:id="mentioned_d5843e579" xml:lang="pal"><lang/>
+                        <gloss><q>also</q></gloss>, <gloss><q>too</q></gloss>,
+                            <gloss><q>and</q></gloss>, <gloss><q>same</q></gloss></mentioned>,
+                        <mentioned corresp="#mentioned_d5843e579" xml:lang="pal"><lang/>
                         <w>ham</w>
-                        <gloss><q>in a similar way</q></gloss></mentioned>, <mentioned corresp="#mentioned_d5843e397" xml:id="mentioned_d5843e588" xml:lang="pal"><w/>
-                        <gloss><q>at the same time</q></gloss></mentioned>, <mentioned corresp="#mentioned_d5843e403" xml:id="mentioned_d5843e594" xml:lang="pal"><w/>
-                        <gloss><q>the same</q></gloss></mentioned>, <mentioned corresp="#mentioned_d5843e409" xml:id="mentioned_d5843e600" xml:lang="kho"><lang/>
-                        <w>hama</w></mentioned>, <mentioned corresp="#mentioned_d5843e414" xml:id="mentioned_d5843e605" xml:lang="ae"><lang/>
-                        <w>hama</w></mentioned>, <mentioned corresp="#mentioned_d5843e419" xml:id="mentioned_d5843e610" xml:lang="inc-x-old"><lang/>
-                        <w>samá-</w>
-                        <gloss><q>the same</q></gloss></mentioned>, <mentioned corresp="#mentioned_d5843e427" xml:id="mentioned_d5843e618" xml:lang="ru"><lang/>
+                        <gloss><q><?oxy_comment_start author="oleg" timestamp="20240208T134351+0300" comment="is this really the MP meaning?"?>in
+                                the same way<?oxy_comment_end?></q></gloss>,
+                            <gloss><q>moreover</q></gloss>, <gloss><q>same</q></gloss></mentioned>,
+                            <mentioned><mentioned corresp="#mentioned_d5843e600" xml:lang="kho"><lang/>
+                            <w>hama</w></mentioned>, <mentioned corresp="#mentioned_d5843e605"
+                            xml:lang="ae"><lang/>
+                            <w>hama</w></mentioned>, <mentioned corresp="#mentioned_d5843e610"
+                            xml:lang="inc-x-old"><lang/>
+                            <w>samá-</w></mentioned>
+                        <gloss><q>same</q></gloss></mentioned>, <mentioned
+                        corresp="#mentioned_d5843e618" xml:lang="ru"><lang/>
                         <w>samyj</w>
-                        <gloss><q>the same</q></gloss></mentioned>, <mentioned corresp="#mentioned_d5843e433" xml:id="mentioned_d5843e627" xml:lang="got"><lang/>
+                        <gloss><q>same, the most</q></gloss></mentioned>, <mentioned
+                        corresp="#mentioned_d5843e627" xml:lang="got"><lang/>
                         <w>sama</w>
-                        <gloss><q>the same</q></gloss></mentioned>, <mentioned corresp="#mentioned_d5843e441" xml:id="mentioned_d5843e635" xml:lang="grc"><lang/>
-                        <w>αμα</w>
-                        <gloss><q>together</q></gloss></mentioned>, <mentioned corresp="#mentioned_d5843e449" xml:id="mentioned_d5843e643" xml:lang="grc"><w>όμός</w>
-                        <gloss><q>equal</q></gloss></mentioned>, <mentioned corresp="#mentioned_d5843e455" xml:id="mentioned_d5843e649" xml:lang="la"><lang/>
+                        <gloss><q>same</q></gloss></mentioned>, <mentioned
+                        corresp="#mentioned_d5843e635" xml:lang="grc"><lang/>
+                        <w>ἅμα</w>
+                        <gloss><q>together</q></gloss></mentioned>, <mentioned
+                        corresp="#mentioned_d5843e643" xml:lang="grc"><w>ὁμός</w>
+                        <gloss><q>same</q></gloss></mentioned>, <mentioned
+                        corresp="#mentioned_d5843e649" xml:lang="la"><lang/>
                         <w>similis</w>
                         <gloss><q>similar</q></gloss></mentioned>. The original meaning of the
-                    Indo-European root <hi rendition="#rend_italic">*sem</hi> is ‘one’. The Ossetic language has retained (and
-                    even strengthened in Digor) the final vowel, which was undoubtedly facilitated
-                    by the early reduction of the initial vowel (Digor <hi rendition="#rend_italic">ma</hi>, compare the stress in
-                        <mentioned corresp="#mentioned_d5843e463" xml:id="mentioned_d5843e657" xml:lang="inc-x-old"><lang/>
-                        <w>samá-</w></mentioned> and <mentioned corresp="#mentioned_d5843e468" xml:id="mentioned_d5843e662" xml:lang="grc"><lang/>
-                        <w>όμός</w></mentioned>. Cf. <ref type="xr" target="#entry_æm-"/>.%n<bibl><ref type="bibl" target="#ref_Миллер_Вс._ОЭ"/><biblScope>III
-                            167</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Miller._Gr."/><biblScope>38</biblScope></bibl>.</etym>
+                    Indo-European root <w type="rec">sem</w> is <gloss><q>one</q></gloss>. The
+                    Ossetic language has retained (and even strengthened in Digor) the final vowel,
+                    which was undoubtedly facilitated by the early reduction of the initial vowel
+                        (<lang xml:lang="os-x-digor"/>
+                    <oRef>mа</oRef>, cf. the stress in <mentioned corresp="#mentioned_d5843e463"
+                        xml:id="mentioned_d5843e657" xml:lang="inc-x-old"><lang/>
+                        <w>samá-</w></mentioned> and <mentioned corresp="#mentioned_d5843e662"
+                        xml:lang="grc"><lang/>
+                        <w>ὁμός</w></mentioned>. Cf. <ref type="xr" target="#entry_æm-"
+                        />.<lb/><bibl>Ws. <author>Miller</author>. <ref type="bibl"
+                            target="#ref_Миллер_Вс._ОЭ">OÈ</ref>
+                        <biblScope>III 167</biblScope></bibl>; <bibl><ref type="bibl"
+                            target="#ref_Miller._Gr."/>
+                        <biblScope>38</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>
