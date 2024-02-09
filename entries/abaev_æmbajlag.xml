@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Abaev Dictionary: entry <hi rendition="#rend_italic">æmbajlag</hi></title>
+                <title>Abaev Dictionary: entry <w>æmbajlag</w></title>
             </titleStmt>
             <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
     Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
@@ -17,28 +17,43 @@
     <tagsDecl>
         <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
         <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
-        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "<gloss><q>" "</q></gloss>";</rendition>
         <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
     </tagsDecl>
 </encodingDesc>
     </teiHeader>
     <text>
         <body>
-            <entry xml:id="entry_æmbajlag" xml:lang="os">
-                <form xml:id="form_d3795e66" type="lemma"><orth>æmbajlag</orth></form>
-                <sense xml:id="sense_d3795e69"><sense xml:id="sense_d3795e70"><abv:tr xml:lang="ru">
+            <entry xml:id="entry_æmbajlag" xml:lang="os" abv:completeness="complete">
+                <?oxy_comment_start author="oleg" timestamp="20240209T104603+0300" comment="checked"?>
+                <form xml:id="form_d3795e66" type="lemma"><orth>æmbajlag</orth></form><?oxy_comment_end?>
+                <sense xml:id="sense_d3795e69">
+                    <sense xml:id="sense_d3795e70">
+                        <abv:tr xml:lang="ru">
                             <q>послед</q>
-                        </abv:tr><abv:tr xml:lang="en">
+                        </abv:tr>
+                        <abv:tr xml:lang="en">
                             <q>placenta</q>
-                        </abv:tr></sense><sense xml:id="sense_d3795e79"><abv:tr xml:lang="ru">
+                        </abv:tr>
+                    </sense>
+                    <sense xml:id="sense_d3795e79">
+                        <abv:tr xml:lang="ru">
                             <q>placenta</q>
-                        </abv:tr></sense></sense>
-                <etym xml:lang="ru">От <ref type="xr" target="#entry_æmbal"/> с суффиксом <hi rendition="#rend_italic">-ag</hi>;
-                    собственно „товарищ“ или „спутник (новорожденного)“. Плацента у животных имеет
-                    еще другое наименование — <ref type="xr" target="#entry_sal"/>.</etym>
+                        </abv:tr>
+                    </sense>
+                </sense>
+                <etym xml:lang="ru">От <ref type="xr" target="#entry_æmbal"/> с суффиксом <mentioned
+                        xml:lang="os"><m>-ag</m></mentioned>; собственно <gloss><q
+                            rendition="#rend_doublequotes">товарищ</q></gloss> или <gloss><q
+                            rendition="#rend_doublequotes">спутник (новорожденного)</q></gloss>.
+                    Плацента у животных имеет еще другое наименование — <ref type="xr"
+                        target="#entry_sal"/>.</etym>
                 <etym xml:lang="en">From <ref type="xr" target="#entry_æmbal"/> with the suffix
-                    <hi rendition="#rend_italic">-ag</hi>; properly “comrade” or “companion (of the newborn)”. Animal's placenta
-                    has also another name — <ref type="xr" target="#entry_sal"/>.</etym>
+                        <mentioned xml:lang="os"><m>-ag</m></mentioned>; literally <gloss><q
+                            rendition="#rend_doublequotes">comrade</q></gloss> or <gloss><q
+                            rendition="#rend_doublequotes">companion (of the newborn)</q></gloss>.
+                    The placenta of animals also has another name, <ref type="xr"
+                        target="#entry_sal"/>.</etym>
             </entry>
         </body>
     </text>

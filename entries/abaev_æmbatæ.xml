@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Abaev Dictionary: entry <hi rendition="#rend_italic">æmbatæ</hi></title>
+                <title>Abaev Dictionary: entry <w>æmbatæ</w></title>
             </titleStmt>
             <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
     Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
@@ -17,33 +17,49 @@
     <tagsDecl>
         <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
         <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
-        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "<gloss><q>" "</q></gloss>";</rendition>
         <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
     </tagsDecl>
 </encodingDesc>
     </teiHeader>
     <text>
         <body>
-            <entry xml:id="entry_æmbatæ" xml:lang="os">
-                <form xml:id="form_d647e66" type="lemma"><orth>æmbatæ</orth></form>
-                <sense xml:id="sense_d647e69"><sense xml:id="sense_d647e70"><abv:tr xml:lang="ru">
+            <entry xml:id="entry_æmbatæ" xml:lang="os" abv:completeness="complete">
+                <?oxy_comment_start author="oleg" timestamp="20240209T220318+0300" comment="checked"?>
+                <form xml:id="form_d647e66" type="lemma"><orth>æmbatæ</orth></form><?oxy_comment_end?>
+                <formGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
+                    <form xmlns="http://www.tei-c.org/ns/1.0" type="plural" xml:lang="os"
+                            ><gram/><orth>æmbatytæ</orth></form>
+                </formGrp>
+                <sense xml:id="sense_d647e69">
+                    <sense xml:id="sense_d647e70">
+                        <abv:tr xml:lang="ru">
                             <q>маленькая копна</q>
-                        </abv:tr><abv:tr xml:lang="en">
+                        </abv:tr>
+                        <abv:tr xml:lang="en">
                             <q>small haystack</q>
-                        </abv:tr></sense><sense xml:id="sense_d647e79"><abv:tr xml:lang="ru">
+                        </abv:tr>
+                    </sense>
+                    <sense xml:id="sense_d647e79">
+                        <abv:tr xml:lang="ru">
                             <q>кучка сена, соломы</q>
-                        </abv:tr><abv:tr xml:lang="en">
+                        </abv:tr>
+                        <abv:tr xml:lang="en">
                             <q>pile of hay, straw</q>
-                        </abv:tr></sense><note type="comment" xml:lang="ru">мн. ч.
-                        <hi rendition="#rend_italic">æmbatytæ</hi></note><note type="comment" xml:lang="en"/></sense>
-                <etym xml:lang="ru">Из <mentioned corresp="#mentioned_d647e111" xml:id="mentioned_d647e94" xml:lang="kbd"><lang/>
+                        </abv:tr>
+                    </sense>
+                    <note type="comment" xml:lang="ru">мн. ч. <w>æmbatytæ</w></note>
+                </sense>
+                <etym xml:lang="ru">Из <mentioned corresp="#mentioned_d647e111"
+                        xml:id="mentioned_d647e94" xml:lang="kbd"><lang/>
                         <w>ämbatä</w>
-                        <gloss><q>куча сена</q></gloss></mentioned>, <mentioned corresp="#mentioned_d647e119" xml:id="mentioned_d647e102" xml:lang="kbd"><w/>
-                        <gloss><q>маленькая копна</q></gloss></mentioned>.</etym>
-                <etym xml:lang="en">From <mentioned corresp="#mentioned_d647e94" xml:id="mentioned_d647e111" xml:lang="kbd"><lang/>
+                        <gloss><q>куча сена</q></gloss>, <gloss><q>маленькая
+                        копна</q></gloss></mentioned>.</etym>
+                <etym xml:lang="en">From <mentioned corresp="#mentioned_d647e94"
+                        xml:id="mentioned_d647e111" xml:lang="kbd"><lang/>
                         <w>ämbatä</w>
-                        <gloss><q>pile of hay</q></gloss></mentioned>, <mentioned corresp="#mentioned_d647e102" xml:id="mentioned_d647e119" xml:lang="kbd"><w/>
-                        <gloss><q>small haystack</q></gloss></mentioned>.</etym>
+                        <gloss><q>pile of hay</q></gloss>, <gloss><q>small
+                        haystack</q></gloss></mentioned>.</etym>
             </entry>
         </body>
     </text>
