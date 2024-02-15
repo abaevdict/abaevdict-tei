@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Abaev Dictionary: entry <hi rendition="#rend_italic">æmbond</hi></title>
+                <title>Abaev Dictionary: entry <w>æmbond</w></title>
             </titleStmt>
             <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
     Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
@@ -17,27 +17,37 @@
     <tagsDecl>
         <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
         <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
-        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "<gloss><q>" "</q></gloss>";</rendition>
         <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
     </tagsDecl>
 </encodingDesc>
     </teiHeader>
     <text>
         <body>
-            <entry xml:id="entry_æmbond" xml:lang="os">
-                <form xml:id="form_d5616e66" type="lemma"><orth>æmbond</orth></form>
-                <sense xml:id="sense_d5616e69"><sense xml:id="sense_d5616e70"><abv:tr xml:lang="ru">
+            <entry xml:id="entry_æmbond" xml:lang="os" abv:completeness="english-questions">
+                <?oxy_comment_start author="oleg" timestamp="20240215T155323+0300" comment="checked"?>
+                <form xml:id="form_d5616e66" type="lemma"><orth>æmbond</orth></form><?oxy_comment_end?>
+                <sense xml:id="sense_d5616e69">
+                    <sense xml:id="sense_d5616e70">
+                        <abv:tr xml:lang="ru">
                             <q>ограда</q>
-                        </abv:tr><abv:tr xml:lang="en">
+                        </abv:tr>
+                        <abv:tr xml:lang="en">
                             <q>fence</q>
-                        </abv:tr></sense><sense xml:id="sense_d5616e79"><abv:tr xml:lang="ru">
+                        </abv:tr>
+                    </sense>
+                    <sense xml:id="sense_d5616e79">
+                        <abv:tr xml:lang="ru">
                             <q>стена</q>
-                        </abv:tr><abv:tr xml:lang="en">
+                        </abv:tr>
+                        <abv:tr xml:lang="en">
                             <q>wall</q>
-                        </abv:tr></sense></sense>
+                        </abv:tr>
+                    </sense>
+                </sense>
                 <abv:exampleGrp xml:id="exampleGrp_d5616e89">
                     <abv:example xml:id="example_d5616e91">
-                        <quote>æmbondæn alḱī jæ nyllægyl xīzy</quote>
+                        <quote><oRef>æmbondæn</oRef> alḱī jæ nyllægyl xīzy</quote>
                         <abv:tr xml:lang="ru">
                             <q>через ограду каждый перелезает на низком месте</q>
                         </abv:tr>
@@ -46,38 +56,93 @@
                         </abv:tr>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Возводится к <hi rendition="#rend_italic">*ham-banda-</hi>, сращение префикса <ref type="xr"/>
-                    (← <hi rendition="#rend_italic">ham-</hi>) с наст. основой глагола <hi rendition="#rend_italic">band-</hi> ‘вязать’, ‘плести’, который мы
-                    находим в oc. <ref type="xr" target="#entry_bæddyn"/> (из <hi rendition="#rend_italic">*bændyn</hi>) ‘вязать’,
-                        <ref type="xr" target="#entry_bændæn"/> ‘веревка’, <ref type="xr" target="#entry_nyvændyn"/> ‘мотать (пряжу)’, <ref type="xr" target="#entry_nyvond"/> ‘жертва’. Данные лингвистической палеонтологии и
-                    истории материальной культуры показывают, что ‘плетень’ был древнейшим типом
-                    ‘изгороди’, ‘стены’ („Маuer“ = „Geflochtenes“: <bibl><ref type="bibl" target="#ref_Schrader"/><biblScope>II 46</biblScope></bibl>). Поэтому
-                    наличие основы <hi rendition="#rend_italic">band-</hi> ‘вязать’, ‘плести’ в названии ‘изгороди’, ‘стены’ в
-                    осетинском надо считать естественным. Ср. <mentioned corresp="#mentioned_d5616e173" xml:id="mentioned_d5616e124" xml:lang="fa"><lang/>
-                        <w>band</w><note type="comment" xml:lang="ru">в значении</note>
-                        <gloss><q>плотина</q></gloss></mentioned>, <mentioned corresp="#mentioned_d5616e183" xml:id="mentioned_d5616e134" xml:lang="yai"><lang/>
+                <etym xml:lang="ru">Возводится к <mentioned xml:lang="ira"><w type="rec"
+                            >ham-banda-</w></mentioned>, сращение префикса
+                        <?oxy_comment_start author="oleg" timestamp="20240215T153814+0300" comment="I assume that Abaev&apos;s am- is a typo"?><ref
+                        type="xr" target="#entry_æm-"><m>æm-</m>
+                        <note type="comment">(← <mentioned xml:lang="ira"
+                            ><m>ham-</m></mentioned>)</note></ref><?oxy_comment_end?> с наст.
+                    основой глагола <mentioned xml:lang="ira"><w>band-</w>
+                        <gloss><q>вязать</q></gloss>, <gloss><q>плести</q></gloss></mentioned>,
+                    который мы находим в <ref type="xr" target="#entry_bæddyn" xml:lang="os"><lang/>
+                        <w>bæddyn</w>
+                        <note type="comment">(из <mentioned xml:lang="ira"><w type="rec"
+                                >bændyn</w></mentioned>)</note>
+                        <gloss><q>вязать</q></gloss></ref>, <ref type="xr" target="#entry_bændæn"
+                            ><w>bændæn</w>
+                        <gloss><q>веревка</q></gloss></ref>, <ref type="xr" target="#entry_nyvændyn"
+                            ><w>nyvændyn</w>
+                        <gloss><q>мотать (пряжу)</q></gloss></ref>, <ref type="xr"
+                        target="#entry_nyvond"><w>nyvond</w>
+                        <gloss><q>жертва</q></gloss></ref>. Данные лингвистической палеонтологии и
+                    истории материальной культуры показывают, что <gloss><q>плетень</q></gloss> был
+                    древнейшим типом <gloss><q>изгороди</q></gloss>, <gloss><q>стены</q></gloss>
+                            (<gloss><q rendition="#rend_doublequotes">Маuer</q></gloss> = <gloss><q
+                            rendition="#rend_doublequotes">Geflochtenes</q></gloss>: <bibl><ref
+                            type="bibl" target="#ref_Schrader"/>
+                        <biblScope>II 46</biblScope></bibl>). Поэтому наличие основы <mentioned
+                        xml:lang="ira"><w>band-</w>
+                        <gloss><q>вязать</q></gloss>, <gloss><q>плести</q></gloss></mentioned> в
+                    названии <gloss><q>изгороди</q></gloss>, <gloss><q>стены</q></gloss> в
+                    осетинском надо считать естественным. Ср. <mentioned
+                        corresp="#mentioned_d5616e173" xml:id="mentioned_d5616e124" xml:lang="fa"><lang/>
+                        <w>band</w>
+                        <gloss>в значении <q>плотина</q></gloss></mentioned>, <mentioned
+                        corresp="#mentioned_d5616e183" xml:id="mentioned_d5616e134" xml:lang="yai"><lang/>
                         <w>vant</w>
-                        <gloss><q>запруда</q></gloss></mentioned>, <mentioned corresp="#mentioned_d5616e191" xml:id="mentioned_d5616e142" xml:lang="sog"><lang/>
+                        <gloss><q>запруда</q></gloss></mentioned>, <mentioned
+                        corresp="#mentioned_d5616e191" xml:id="mentioned_d5616e142" xml:lang="sog"><lang/>
                         <w>βnd</w>
-                        <gloss><q>тюрьма</q></gloss></mentioned>, а для семантики также <mentioned corresp="#mentioned_d5616e199" xml:id="mentioned_d5616e150" xml:lang="ru"><lang/>
-                        <w>оплот</w></mentioned> от <hi rendition="#rend_italic">плести</hi>.</etym>
-                <etym xml:lang="en">Goes back to <hi rendition="#rend_italic">*ham-banda-</hi>, the fusion of the prefix <ref type="xr" target="#entry_æm-"/> (← <hi rendition="#rend_italic">ham-</hi>) with the present tense stem of
-                    the verb <hi rendition="#rend_italic">band-</hi> ‘knit’, ‘weave’, which we find in Ossetic <ref type="xr" target="#entry_bæddyn"/> (from <hi rendition="#rend_italic">*bændyn</hi>) ‘knit’, <ref type="xr" target="#entry_bændæn"/> ‘rope’, <ref type="xr" target="#entry_nyvændyn"/>
-                    ‘wind (yarn)’, <ref type="xr" target="#entry_nyvond"/> ‘victim. Data from
-                    linguistic paleontology and the history of material culture show that ‘fence’
-                    was the most ancient type of ‘hedge’, ‘wall’ („Mauer“ = „Geflochtenes“:
-                            <bibl><ref type="bibl" target="#ref_Schrader"/><biblScope>II
-                            46</biblScope></bibl>). That is why the presence of the stem <hi rendition="#rend_italic">band-</hi>
-                    ‘knit’, ‘weave’ in the name of ‘hedge’ or ‘wall’ must be considered natural in
-                    Ossetic. Compare <mentioned corresp="#mentioned_d5616e124" xml:id="mentioned_d5616e173" xml:lang="fa"><lang/>
-                        <w>band</w><note type="comment" xml:lang="en">in the meaning</note>
-                        <gloss><q>dam</q></gloss></mentioned>, <mentioned corresp="#mentioned_d5616e134" xml:id="mentioned_d5616e183" xml:lang="yai"><lang/>
+                        <gloss><q>тюрьма</q></gloss></mentioned>, а для семантики также <mentioned
+                        corresp="#mentioned_d5616e199" xml:id="mentioned_d5616e150" xml:lang="ru"><lang/>
+                        <w>оплот</w>
+                        <note type="comment">от <mentioned xml:lang="ru"
+                            ><w>плести</w></mentioned></note></mentioned>.</etym>
+                <etym xml:lang="en">Goes back to <mentioned xml:lang="ira"><w type="rec"
+                            >ham-banda-</w></mentioned>, the fusion of the prefix
+                        <?oxy_comment_start author="oleg" timestamp="20240215T153814+0300" comment="I assume that Abaev&apos;s am- is a typo"?><ref
+                        type="xr" target="#entry_æm-"><m>æm-</m>
+                        <note type="comment">(← <mentioned xml:lang="ira"
+                            ><m>ham-</m></mentioned>)</note></ref><?oxy_comment_end?> with the
+                    present tense stem of the verb <mentioned xml:lang="ira"><w>band-</w>
+                        <gloss><q>to knit</q></gloss>, <gloss><q>to weave</q></gloss></mentioned>,
+                    which we find in <ref type="xr" target="#entry_bæddyn" xml:lang="os"><lang/>
+                        <w>bæddyn</w>
+                        <note type="comment">(из <mentioned xml:lang="ira"><w type="rec"
+                                >bændyn</w></mentioned>)</note>
+                        <gloss><q>to knit</q></gloss></ref>, <ref type="xr" target="#entry_bændæn"
+                            ><w>bændæn</w>
+                        <gloss><q>rope</q></gloss></ref>, <ref type="xr" target="#entry_nyvændyn"
+                            ><w>nyvændyn</w>
+                        <gloss><q>to reel (yarn)</q></gloss></ref>, <ref type="xr"
+                        target="#entry_nyvond"><ref type="xr" target="#entry_nyvond"><w>nyvond</w>
+                            <gloss><q>sacrifice</q></gloss></ref>. The data of linguistic
+                        <?oxy_comment_start author="oleg" timestamp="20240215T154421+0300" comment="this is Abaev&apos;s specific term which I am unsure how to translate best"?>palaeontology<?oxy_comment_end?>
+                        and the history of material culture show that the <q>wicker fence</q> was
+                        the most ancient type of a <q>hedge</q>, <q>wall</q> (<gloss><q
+                                rendition="#rend_doublequotes">Mauer</q></gloss> = <gloss><q
+                                rendition="#rend_doublequotes">Geflochtenes</q></gloss></ref>:
+                            <bibl><ref type="bibl" target="#ref_Schrader"/>
+                        <biblScope>II 46</biblScope></bibl>). That is why the presence of the stem
+                        <mentioned xml:lang="ira"><w>band-</w>
+                        <gloss><q>to knit</q></gloss>, <gloss><q>to weave</q></gloss></mentioned> in
+                    the name of the <gloss><q>hedge</q></gloss> or <gloss><q>wall</q></gloss> in
+                    Ossetic must be viewed as natural. Cf. <mentioned corresp="#mentioned_d5616e124"
+                        xml:id="mentioned_d5616e173" xml:lang="fa"><lang/>
+                        <w>band</w>
+                        <gloss>in the meaning <q>dam</q></gloss></mentioned>, <mentioned
+                        corresp="#mentioned_d5616e134" xml:id="mentioned_d5616e183" xml:lang="yai"><lang/>
                         <w>vant</w>
-                        <gloss><q>dike</q></gloss></mentioned>, <mentioned corresp="#mentioned_d5616e142" xml:id="mentioned_d5616e191" xml:lang="sog"><lang/>
+                        <gloss><q>weir</q></gloss></mentioned>, <mentioned
+                        corresp="#mentioned_d5616e142" xml:id="mentioned_d5616e191" xml:lang="sog"><lang/>
                         <w>βnd</w>
-                        <gloss><q>prison</q></gloss></mentioned>, and (semantically) also <mentioned corresp="#mentioned_d5616e150" xml:id="mentioned_d5616e199" xml:lang="ru"><lang/>
+                        <gloss><q>prison</q></gloss></mentioned>, and (semantically) also <mentioned
+                        corresp="#mentioned_d5616e199" xml:lang="ru"><lang/>
                         <w>oplot</w>
-                        <gloss><q>stronghold</q></gloss></mentioned> from <hi rendition="#rend_italic">plesti</hi> ‘weave’.</etym>
+                        <gloss><q>stronghold</q></gloss>, <gloss><q>bulwark</q></gloss>
+                        <note type="comment">from <mentioned xml:lang="ru"><w>plesti</w>
+                                <gloss><q>to
+                    weave</q></gloss></mentioned></note></mentioned>.</etym>
             </entry>
         </body>
     </text>

@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Abaev Dictionary: entry <hi rendition="#rend_italic">æmbærc</hi></title>
+                <title>Abaev Dictionary: entry <w>æmbærc</w></title>
             </titleStmt>
             <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
     Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
@@ -17,7 +17,7 @@
     <tagsDecl>
         <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
         <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
-        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "<gloss><q>" "</q></gloss>";</rendition>
         <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
     </tagsDecl>
 </encodingDesc>
@@ -26,25 +26,33 @@
         <body>
             <entry xml:id="entry_æmbærc" xml:lang="os">
                 <form xml:id="form_d864e66" type="lemma"><orth>æmbærc</orth></form>
-                <sense xml:id="sense_d864e69"><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d864e69">
+                    <abv:tr xml:lang="ru">
                         <q>равный по количеству</q>
-                    </abv:tr><abv:tr xml:lang="en">
+                    </abv:tr>
+                    <abv:tr xml:lang="en">
                         <q>equal in quantity</q>
-                    </abv:tr></sense>
+                    </abv:tr>
+                </sense>
                 <abv:exampleGrp xml:id="exampleGrp_d864e79">
                     <abv:example xml:id="example_d864e81">
-                        <quote>sarazūt myn me ʽmbærc laǧz</quote>
+                        <quote>sarazūt myn me <oRef>’mbærc</oRef> laǧz</quote>
                         <abv:tr xml:lang="ru">
                             <q>сделайте мне ковчег по моему размеру</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
-                            <q>make me an ark to my size</q>
+                            <q>make me a box to my size</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Munk."/><biblScope>112</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Munk."/>
+                            <biblScope>112</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">См. <ref type="xr" target="#entry_baryn"/> ‘взвешивать’ и <ref type="xr" target="#entry_bærc"/> ‘мера’, а также <ref type="xr" target="#entry_æm-"/>.</etym>
-                <etym xml:lang="en">See <ref type="xr" target="#entry_baryn"/> ‘weigh’, <ref type="xr" target="#entry_bærc"/> ‘measure’, and <ref type="xr" target="#entry_æm-"/>.</etym>
+                <etym xml:lang="ru">См. <ref type="xr" target="#entry_baryn"><w>baryn</w> <gloss><q>взвешивать</q></gloss></ref> и <ref type="xr" target="#entry_bærc"><w>bærc</w> <gloss><q>мера</q></gloss></ref>, а также <ref type="xr" target="#entry_æm-"/>.</etym>
+                <etym xml:lang="en">See <ref type="xr" target="#entry_baryn"><w>baryn</w>
+                        <gloss><q>to weigh</q></gloss></ref>, <ref type="xr" target="#entry_bærc"
+                            ><w>bærc</w>
+                        <gloss><q>measure</q></gloss></ref>, and <ref type="xr" target="#entry_æm-"
+                    />.</etym>
             </entry>
         </body>
     </text>

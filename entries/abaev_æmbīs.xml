@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Abaev Dictionary: entry <hi rendition="#rend_italic">æmbīs</hi></title>
+                <title>Abaev Dictionary: entry <w>æmbīs</w></title>
             </titleStmt>
             <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
     Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
@@ -17,94 +17,160 @@
     <tagsDecl>
         <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
         <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
-        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "<gloss><q>" "</q></gloss>";</rendition>
         <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
     </tagsDecl>
 </encodingDesc>
     </teiHeader>
     <text>
         <body>
-            <entry xml:id="entry_æmbīs" xml:lang="os-x-iron">
-                <form xml:id="form_d5309e66" type="lemma"><orth>æmbīs</orth></form>
+            <entry xml:id="entry_æmbīs" xml:lang="os-x-iron" abv:completeness="complete">
+                <?oxy_comment_start author="oleg" timestamp="20240214T182814+0300" comment="checked"?>
+                <form xml:id="form_d5309e66" type="lemma"><orth>æmbīs</orth></form><?oxy_comment_end?>
                 <usg><lang/></usg>
-                <sense xml:id="sense_d5309e72"><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d5309e72">
+                    <abv:tr xml:lang="ru">
                         <q>половина</q>
-                    </abv:tr><abv:tr xml:lang="en">
+                    </abv:tr>
+                    <abv:tr xml:lang="en">
                         <q>half</q>
-                    </abv:tr></sense>
+                    </abv:tr>
+                </sense>
+                <note type="comment" xml:lang="ru">; ср. <ref type="xr" target="#entry_ærdæg"
+                            ><w>ærdæg</w>
+                        <gloss>id</gloss></ref></note>
+                <note type="comment" xml:lang="en">; cf. <ref type="xr" target="#entry_ærdæg"
+                            ><w>ærdæg</w>
+                        <gloss>id</gloss></ref></note>
                 <abv:exampleGrp xml:id="exampleGrp_d5309e82">
                     <abv:example xml:id="example_d5309e84">
-                        <quote>cyxt dywwæ ʽmbīsy akodta</quote>
+                        <quote>cyxt dywwæ <oRef>’mbīsy</oRef> akodta</quote>
                         <abv:tr xml:lang="ru">
                             <q>разделил сыр на две половины</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
-                            <q>divided the cheese into two halves</q>
+                            <q>he divided the cheese into two halves</q>
                         </abv:tr>
                     </abv:example>
                     <abv:example xml:id="example_d5309e99">
-                        <quote>æmbīsbonæj æmbīsæxsævmæ fæxæcydysty</quote>
+                        <quote><oRef>æmbīsbonæj æmbīsæxsævmæ</oRef> fæxæcydysty</quote>
                         <abv:tr xml:lang="ru">
                             <q>с полудня до полуночи они боролись</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
-                            <q>from noon to midnight they fought</q>
+                            <q>from noon till midnight they fought</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Munk."/><biblScope>24</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Munk."/>
+                            <biblScope>24</biblScope></bibl>
                     </abv:example>
                     <abv:example xml:id="example_d5309e118">
-                        <quote>æmbīsxærd næma festy, aftæ waryn nykkaldta</quote>
+                        <quote><oRef>æmbīsxærd</oRef> næma festy, aftæ waryn nykkaldta</quote>
                         <abv:tr xml:lang="ru">
                             <q>они еще наполовину не закончили трапезу, как полил дождь</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
-                            <q>they haven’t finished the meal yet, and the rain poured</q>
+                            <q>they still hadn’t half-finished the meal when rain poured down</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Сека"/><biblScope>128</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Сека"/>
+                            <biblScope>128</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">По Вс. Миллеру, восходит к иран. <hi rendition="#rend_italic">*ham-paisa-</hi>, где <hi rendition="#rend_italic">paisa-</hi>
-                    ‘вид’, ‘форма’ (<hi rendition="#rend_italic">æm-bīs</hi> собственно „равный по виду, форме“) от <hi rendition="#rend_italic">pis-</hi>
-                    ‘вырезать’, ‘орнаментировать’, ‘писать’ (см. <ref type="xr" target="#entry_fyssyn"/>). Возможно, что в <hi rendition="#rend_italic">æmbīs</hi> отражено древнейшее
-                    значение основы <hi rendition="#rend_italic">piš-</hi>, засвидетельствованное в Риг-Веде: „разрезать на части
-                    (например мясо)“. Несмотря на значительное семантическое расхождение,
-                    соблазнительно привлечь сюда <mentioned corresp="#mentioned_d5309e212" xml:id="mentioned_d5309e142" xml:lang="kho"><lang/>
+                <etym xml:lang="ru">По Вс. <name>Миллеру</name>, восходит к <mentioned
+                        xml:lang="ira"><lang/>
+                        <w type="rec">ham-paisa-</w>, <note type="comment">где <mentioned
+                                xml:lang="ira"><w>paisa-</w>
+                                <gloss><q>вид</q></gloss>,
+                            <gloss><q>форма</q></gloss></mentioned></note></mentioned>
+                        (<w>æm-bīs</w> собственно <gloss><q rendition="#rend_doublequotes">равный по
+                            виду, форме</q></gloss>) от <mentioned xml:lang="ira"><w>pis-</w>
+                        <gloss><q>вырезать</q></gloss>, <gloss><q>орнаментировать</q></gloss>,
+                                <gloss><q>писать</q></gloss>
+                        <note type="comment">(см. <ref type="xr" target="#entry_fyssyn"
+                        />)</note></mentioned>. Возможно, что в <oRef>æmbīs</oRef> отражено
+                    древнейшее значение основы <mentioned xml:lang="sa-vaidika"
+                            ><w>pi<?oxy_comment_start author="oleg" timestamp="20240214T170812+0300" comment="check phonetics and also what lect/reconstruction exactly this form is meant to represent"?>ś<?oxy_comment_end?>-</w>,
+                        засвидетельствованное в Риг-Веде: <gloss><q rendition="#rend_doublequotes"
+                                >разрезать на части (например мясо)</q></gloss></mentioned>.
+                    Несмотря на значительное семантическое расхождение, соблазнительно привлечь сюда
+                        <mentioned corresp="#mentioned_d5309e142" xml:lang="kho"><lang/>
                         <w>haṃbīsa</w>
-                        <gloss><q>preparation</q></gloss></mentioned>, <mentioned corresp="#mentioned_d5309e220" xml:id="mentioned_d5309e150" xml:lang="kho"><w/>
-                        <gloss><q>collection</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Konow._SSt."/><biblScope>139</biblScope></bibl>Konow. SSt.
-                    139), <mentioned corresp="#mentioned_d5309e230" xml:id="mentioned_d5309e160" xml:lang="kho"><lang/>
-                        <w/>
-                        <gloss><q>heap</q></gloss></mentioned> (<bibl><author>Bailey</author><ref type="bibl" target="#ref_BSOAS"/><biblScope>XIX 52</biblScope></bibl>) и
-                        <mentioned corresp="#mentioned_d5309e244" xml:id="mentioned_d5309e174" xml:lang="pal"><lang/>
-                        <w>ambīs (ʽmbys)</w></mentioned>, <mentioned corresp="#mentioned_d5309e249" xml:id="mentioned_d5309e179" xml:lang="fa"><lang/>
-                        <w>ambīs</w>
-                        <gloss><q>куча зерна</q></gloss></mentioned>
-                            (<bibl><author>Henning</author><ref type="bibl" target="#ref_BSOS"/><biblScope>IX 80</biblScope></bibl>). <hi rendition="#rend_smallcaps">Ваilеу</hi> восстанавливает
-                    <hi rendition="#rend_italic">*ham-miša-</hi>. Однако реальное <hi rendition="#rend_italic">*paisa</hi> ‘кусок’, ‘отрез’ представляется более
-                    надежным, чем проблематично реконструируемое <hi rendition="#rend_italic">*miša</hi> ‘группа’.%n<bibl><ref type="bibl" target="#ref_Миллер_Вс._ОЭ"/><biblScope>III
-                        155</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Miller._Gr."/><biblScope>33</biblScope></bibl> — <bibl><author>Bailey</author><ref type="bibl" target="#ref_BSOAS"/><biblScope>XIX
-                    52</biblScope></bibl>.</etym>
-                <etym xml:lang="en">According to Ws. Miller, traces back to Iranian <hi rendition="#rend_italic">*ham-paisa-</hi>,
-                    where <hi rendition="#rend_italic">paisa-</hi> ‘shape’ (<hi rendition="#rend_italic">æm-bīs</hi> is in fact „equal in shape“) from <hi rendition="#rend_italic">pis-</hi>
-                    ‘cut out’, ‘ornament’, ‘write’ (see <ref type="xr" target="#entry_fyssyn"/>). It
-                    is possible that <hi rendition="#rend_italic">æmbīs</hi> reflects the most ancient meaning of the stem
-                    <hi rendition="#rend_italic">piš-</hi> attested in Rig-Veda: „cut to peaces (for instance, meat)“. Despite the
-                    great semantic discrepancy, it is favourable to consider here also <mentioned corresp="#mentioned_d5309e142" xml:id="mentioned_d5309e212" xml:lang="kho"><lang/>
+                        <gloss><q>preparation</q></gloss>, <gloss><q>collection</q>
+                            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Konow._SSt."/>
+                                    <biblScope>139</biblScope></bibl>)</note></gloss>,
+                                <gloss><q>heap</q>
+                            <note type="bibl">(<bibl><author>Bailey</author>
+                                    <ref type="bibl" target="#ref_BSOAS"/>
+                                    <biblScope>XIX 52</biblScope></bibl>)</note></gloss></mentioned>
+                    и <mentioned><mentioned corresp="#mentioned_d5309e244"
+                            xml:id="mentioned_d5309e174" xml:lang="pal"><lang/>
+                            <w>ambīs </w> (<w>ʼmbys</w>) </mentioned>, <mentioned
+                            corresp="#mentioned_d5309e249" xml:id="mentioned_d5309e179"
+                            xml:lang="fa"><lang/>
+                            <w>ambīs</w></mentioned>
+                        <gloss><q>куча зерна</q></gloss>
+                        <note type="bibl">(<bibl><author>Henning</author>
+                                <ref type="bibl" target="#ref_BSOS"/>
+                                <biblScope>IX 80</biblScope></bibl>)</note></mentioned>.
+                        <name>Ваilеу</name> восстанавливает <mentioned xml:lang="ira"><w type="rec"
+                            >ham-miša-</w></mentioned>. Однако реальное <mentioned xml:lang="ira"><w
+                            type="rec">paisa</w>
+                        <gloss><q>кусок</q></gloss>, <gloss><q>отрез</q></gloss></mentioned>
+                    представляется более надежным, чем проблематично реконструируемое <mentioned
+                        xml:lang="ira"><w type="rec">miša</w>
+                        <gloss><q>группа</q></gloss></mentioned>.<lb/><bibl>Вс.
+                            <author>Миллер</author>. <ref type="bibl" target="#ref_Миллер_Вс._ОЭ"
+                            >ОЭ</ref>
+                        <biblScope>III 155</biblScope></bibl>; <bibl><ref type="bibl"
+                            target="#ref_Miller._Gr.">Gr.</ref>
+                        <biblScope>33</biblScope></bibl> — <bibl><author>Bailey</author>
+                        <ref type="bibl" target="#ref_BSOAS"/>
+                        <biblScope>XIX 52</biblScope></bibl>.</etym>
+                <etym xml:lang="en">According to Ws. Miller, traces back to Iranian <w type="rec"
+                        >ham-paisa-</w>, where <w>paisa-</w>
+                    <gloss><q>shape</q></gloss> (<w>æm-bīs</w> is in fact <gloss><q
+                            rendition="#rend_doublequotes">equal in shape</q></gloss>) from
+                        <w>pis-</w>
+                    <gloss><q>cut out</q></gloss>, <gloss><q>ornament</q></gloss>,
+                            <gloss><q>write</q></gloss> (see <ref type="xr" target="#entry_fyssyn"
+                    />). It is possible that <oRef>æmbīs</oRef> reflects the most ancient meaning of
+                    the stem <mentioned xml:lang="sa-vaidika"
+                            ><w>pi<?oxy_comment_start author="oleg" timestamp="20240214T170812+0300" comment="check phonetics and also what lect/reconstruction exactly this form is meant to represent"?>ś<?oxy_comment_end?>-</w>,
+                        attested in the Rig-Veda: <gloss><q rendition="#rend_doublequotes">cut into
+                                pieces (e.g. meat)</q></gloss></mentioned>. Despite the great
+                    semantic divergence, it is tempting to consider here also <mentioned
+                        corresp="#mentioned_d5309e142" xml:id="mentioned_d5309e212" xml:lang="kho"><lang/>
                         <w>haṃbīsa</w>
-                        <gloss><q>preparation</q></gloss></mentioned>, <mentioned corresp="#mentioned_d5309e150" xml:id="mentioned_d5309e220" xml:lang="kho"><w/>
-                        <gloss><q>collection</q></gloss></mentioned> (<bibl><ref type="bibl" target="#ref_Konow._SSt."/><biblScope>139</biblScope></bibl>Konow. SSt.
-                    139), <mentioned corresp="#mentioned_d5309e160" xml:id="mentioned_d5309e230" xml:lang="kho"><lang/>
-                        <w/>
-                        <gloss><q>heap</q></gloss></mentioned> (<bibl><author>Bailey</author><ref type="bibl" target="#ref_BSOAS"/><biblScope>XIX 52</biblScope></bibl>)
-                    and <mentioned corresp="#mentioned_d5309e174" xml:id="mentioned_d5309e244" xml:lang="pal"><lang/>
-                        <w>ambīs (ʽmbys)</w></mentioned>, <mentioned corresp="#mentioned_d5309e179" xml:id="mentioned_d5309e249" xml:lang="fa"><lang/>
-                        <w>ambīs</w>
-                        <gloss><q>heap of grain</q></gloss></mentioned>
-                            (<bibl><author>Henning</author><ref type="bibl" target="#ref_BSOS"/><biblScope>IX 80</biblScope></bibl>). <hi rendition="#rend_smallcaps">Bailey</hi> reconstructs
-                    <hi rendition="#rend_italic">*ham-miša-</hi>. However, the real <hi rendition="#rend_italic">*paisa</hi> ‘piece’, ‘cut’ seems more reliable
-                    than the problematic <hi rendition="#rend_italic">*miša</hi> ‘group’.%n<bibl><ref type="bibl" target="#ref_Миллер_Вс._ОЭ"/><biblScope>III 155</biblScope></bibl>;
-                            <bibl><ref type="bibl" target="#ref_Miller._Gr."/><biblScope>33</biblScope></bibl> — <bibl><author>Bailey</author><ref type="bibl" target="#ref_BSOAS"/><biblScope>XIX
-                    52</biblScope></bibl>.</etym>
+                        <gloss><q>preparation</q></gloss>, <gloss><q>collection</q>
+                            <note type="bibl">(<bibl><ref type="bibl" target="#ref_Konow._SSt."/>
+                                    <biblScope>139</biblScope></bibl>)</note></gloss>,
+                                <gloss><q>heap</q>
+                            <note type="bibl">(<bibl><author>Bailey</author>
+                                    <ref type="bibl" target="#ref_BSOAS"/>
+                                    <biblScope>XIX 52</biblScope></bibl>)</note></gloss></mentioned>
+                    and <mentioned><mentioned corresp="#mentioned_d5309e174"
+                            xml:id="mentioned_d5309e244" xml:lang="pal"><lang/>
+                            <w>ambīs </w> (<w>ʽmbys</w>)</mentioned>, <mentioned
+                            corresp="#mentioned_d5309e179" xml:id="mentioned_d5309e249"
+                            xml:lang="fa"><lang/>
+                            <w>ambīs</w></mentioned>
+                        <gloss><q>heap of grain</q></gloss>
+                        <note type="bibl">(<bibl><author>Henning</author>
+                                <ref type="bibl" target="#ref_BSOS"/>
+                                <biblScope>IX 80</biblScope></bibl>)</note></mentioned>.
+                        <name>Bailey</name> reconstructs as <mentioned xml:lang="ira"><w type="rec"
+                            >ham-miša-</w></mentioned>. However, the actually existing <mentioned
+                        xml:lang="ira"><w type="rec">paisa</w>
+                        <gloss><q>piece</q></gloss>, <gloss><q>cut</q></gloss></mentioned> seems
+                    more reliable than the problematic <mentioned xml:lang="ira"><w type="rec"
+                            >miša</w>
+                        <gloss><q>group</q></gloss></mentioned>.<lb/><bibl>Ws.
+                            <author>Miller</author>. <ref type="bibl" target="#ref_Миллер_Вс._ОЭ"
+                            >OÈ</ref>
+                        <biblScope>III 155</biblScope></bibl>; <bibl><ref type="bibl"
+                            target="#ref_Miller._Gr.">Gr.</ref>
+                        <biblScope>33</biblScope></bibl> — <bibl><author>Bailey</author>
+                        <ref type="bibl" target="#ref_BSOAS"/>
+                        <biblScope>XIX 52</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>
