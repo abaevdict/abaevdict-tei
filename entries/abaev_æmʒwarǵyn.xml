@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Abaev Dictionary: entry <hi rendition="#rend_italic">æmʒwarǧyn</hi></title>
+                <title>Abaev Dictionary: entry <w>æmʒwarǧyn</w></title>
             </titleStmt>
             <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
     Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
@@ -17,57 +17,86 @@
     <tagsDecl>
         <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
         <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
-        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "<gloss><q>" "</q></gloss>";</rendition>
         <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
     </tagsDecl>
 </encodingDesc>
     </teiHeader>
     <text>
         <body>
-            <entry xml:id="entry_æmʒwarǵyn" xml:lang="os-x-iron">
-                <form xml:id="form_d3813e66" type="lemma"><orth>æmʒwarǵyn</orth></form>
+            <entry xml:id="entry_æmʒwarǵyn" xml:lang="os-x-iron"
+                abv:completeness="english-questions">
+                <?oxy_comment_start author="oleg" timestamp="20240224T145950+0300" comment="checked"?>
+                <form xml:id="form_d3813e66" type="lemma"><orth>æmʒwarǵyn</orth></form><?oxy_comment_end?>
                 <usg><lang/></usg>
-                <sense xml:id="sense_d3813e72"><sense xml:id="sense_d3813e73"><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d3813e72">
+                    <sense xml:id="sense_d3813e73">
+                        <abv:tr xml:lang="ru">
                             <q>крестный</q>
-                        </abv:tr><abv:tr xml:lang="en">
+                        </abv:tr>
+                        <abv:tr xml:lang="en">
                             <q>godfather</q>
-                        </abv:tr></sense><sense xml:id="sense_d3813e82"><abv:tr xml:lang="ru">
+                        </abv:tr>
+                    </sense>
+                    <sense xml:id="sense_d3813e82">
+                        <abv:tr xml:lang="ru">
                             <q>кум</q>
-                        </abv:tr></sense></sense>
-                <sense xml:id="sense_d3813e88"><abv:tr xml:lang="ru">
+                        </abv:tr>
+                        <abv:tr xml:lang="en">
+                            <q><foreign>compadre</foreign></q>
+                            <note type="comment"> (godfather of one’s child or father of one’s
+                                godchild)</note>
+                        </abv:tr>
+                    </sense>
+                </sense>
+                <sense xml:id="sense_d3813e88">
+                    <abv:tr xml:lang="ru">
                         <q>шафер</q>
-                    </abv:tr><abv:tr xml:lang="en">
+                    </abv:tr>
+                    <abv:tr xml:lang="en">
                         <q>groomsman</q>
-                    </abv:tr></sense>
+                    </abv:tr>
+                </sense>
                 <abv:exampleGrp xml:id="exampleGrp_d3813e98">
                     <abv:example xml:id="example_d3813e100">
-                        <quote>sæ læppūjæn æmʒwarǵyn xæstæg ag˳yrdtoj, fælæ syl ḱī ærvæssyd</quote>
+                        <quote>sæ læppūjæn <oRef>æmʒwarǵyn</oRef> xæstæg ag˳yrdtoj, fælæ syl ḱī
+                            ærvæssyd</quote>
                         <abv:tr xml:lang="ru">
                             <q>они искали для сына крёстного, но никто не снисходил до них</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
-                            <q>they searched for a godfather to his son, but no one condescended to
-                                them</q>
+                            <q>they searched for a godfather for their son, but who would concede to
+                                them<?oxy_comment_start author="oleg" timestamp="20240224T145710+0300" comment="a more literal translation than Abaev&apos;s Russian"?>?<?oxy_comment_end?></q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Сека"/><biblScope>109</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Сека"/>
+                            <biblScope>109</biblScope></bibl>
                     </abv:example>
                     <abv:example xml:id="example_d3813e119">
-                        <quote>bacydtæn me ʽmʒwarǵynmæ</quote>
+                        <quote>bacydtæn me <oRef>’mʒwarǵynmæ</oRef></quote>
                         <abv:tr xml:lang="ru">
                             <q>я пошел к своему куму</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
-                            <q>I went to my godfather</q>
+                            <q>I went to my <foreign>compadre</foreign></q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_ОЭ"/><biblScope>I 54</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_ОЭ"/>
+                            <biblScope>I 54</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Разлагается на <ref type="xr" target="#entry_æm-"/> (приставка
-                    совместности), <ref type="xr" target="#entry_ʒwar"/> ‘крест’ и <hi rendition="#rend_italic">-ǵyn</hi>
-                    (суффикс); буквально „сокрестник“.</etym>
+                    совместности), <ref type="xr" target="#entry_ʒwar"><w>ʒwar</w>
+                        <gloss><q>крест</q></gloss></ref> и <mentioned xml:lang="os-x-iron"
+                            ><m>-ǵyn</m>
+                        <gloss>(суффикс)</gloss></mentioned>; <gloss>буквально <q
+                            rendition="#rend_doublequotes">сокрестник</q></gloss>.</etym>
                 <etym xml:lang="en">Can be decomposed into <ref type="xr" target="#entry_æm-"/>
-                    (prefix of concomitance), <ref type="xr" target="#entry_ʒwar"/> ‘cross’ and
-                    <hi rendition="#rend_italic">-ǵyn</hi> (suffix); literally “with the same cross”.</etym>
+                    (prefix of comitativity), <ref type="xr" target="#entry_ʒwar"><w>ʒwar</w>
+                        <gloss><q>cross</q></gloss></ref> and <mentioned xml:lang="os-x-iron"
+                            ><m>-ǵyn</m>
+                        <gloss>(suffix)</gloss></mentioned>; <gloss>literally
+                            <?oxy_comment_start author="oleg" timestamp="20240224T150113+0300" comment="perhaps too literal? but Russian сокрестник does not exist as a word either"?><q
+                            rendition="#rend_doublequotes"
+                    >co-crosser</q><?oxy_comment_end?></gloss>.</etym>
             </entry>
         </body>
     </text>

@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Abaev Dictionary: entry <hi rendition="#rend_italic">æmpylyn</hi></title>
+                <title>Abaev Dictionary: entry <w>æmpylyn</w></title>
             </titleStmt>
             <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
     Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
@@ -17,7 +17,7 @@
     <tagsDecl>
         <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
         <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
-        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "<gloss><q>" "</q></gloss>";</rendition>
         <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
     </tagsDecl>
 </encodingDesc>
@@ -25,39 +25,61 @@
     <text>
         <body>
             <entry xml:id="entry_æmpylyn" xml:lang="os">
-                <form xml:id="form_d3397e66" xml:lang="os-x-iron" type="lemma"><orth>æmpylyn</orth><form xml:id="form_d3397e68" type="participle"><orth>æmpyld</orth></form></form>
-                <form xml:id="form_d3397e71" xml:lang="os-x-digor" type="dialectal"><orth>æmpulun</orth><form xml:id="form_d3397e73" type="participle"><orth>æmpuld</orth></form></form>
-                <sense xml:id="sense_d3397e76"><abv:tr xml:lang="ru">
+                <?oxy_comment_start author="oleg" timestamp="20240228T110040+0300" comment="checked"?>
+                <form xml:id="form_d3397e66" xml:lang="os-x-iron" type="lemma"><orth>æmpylyn</orth>
+                    <form xml:id="form_d3397e68" type="participle"><orth>æmpyld</orth></form></form><?oxy_comment_end?>
+                <form xml:id="form_d3397e71" xml:lang="os-x-digor" type="dialectal"
+                        ><orth>æmpulun</orth>
+                    <form xml:id="form_d3397e73" type="participle"><orth>æmpuld</orth></form></form>
+                <sense xml:id="sense_d3397e76">
+                    <abv:tr xml:lang="ru">
                         <q>морщиться</q>
-                    </abv:tr><abv:tr xml:lang="en">
-                        <q>wrinkle</q>
-                    </abv:tr></sense>
+                    </abv:tr>
+                    <abv:tr xml:lang="en">
+                        <q>to get wrinkled</q>
+                    </abv:tr>
+                </sense>
+                <note type="comment" xml:lang="ru">; ср. <ref type="xr" target="#entry_æncʼylyn"
+                            ><w>æncʼylyn</w>
+                        <gloss>id</gloss></ref></note>
+                <note type="comment" xml:lang="en">; cf. <ref type="xr" target="#entry_æncʼylyn"
+                            ><w>æncʼylyn</w>
+                        <gloss>id</gloss></ref></note>
                 <abv:exampleGrp xml:id="exampleGrp_d3397e86">
                     <abv:example xml:id="example_d3397e88">
-                        <quote>kærc ʽgasæj bampyldtæ</quote>
+                        <quote>kærc ’gasæj
+                                <?oxy_comment_start author="oleg" timestamp="20240228T105923+0300" comment="NB: resultative?"?><oRef>bampyldtæ</oRef><?oxy_comment_end?></quote>
                         <abv:tr xml:lang="ru">
                             <q>шуба вся сморщилась</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
-                            <q>the fur coat wrinkled</q>
+                            <q>the fur coat all wrinkled</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Niger"/><biblScope>148</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Niger"/>
+                            <biblScope>148</biblScope></bibl>
                     </abv:example>
                     <abv:example xml:id="example_d3397e107">
-                        <quote>cæskom nympylddytæ</quote>
+                        <quote>cæskom <oRef>nympylddytæ</oRef></quote>
                         <abv:tr xml:lang="ru">
                             <q>лицо в морщинах</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
-                            <q>the face is all wrinkled</q>
+                            <q>the face is wrinkled</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>68</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/>
+                            <biblScope>68</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Медиальное соответствие к переходному глаголу <ref type="xr" target="#entry_æmpūlyn"/> | <hi rendition="#rend_italic">æmpolun</hi> ‘комкать’ с закономерным ослаблением
-                    гласного основы (<hi rendition="#rend_italic">ū</hi> → <hi rendition="#rend_italic">y</hi>).</etym>
-                <etym xml:lang="en">Middle voice correspondence to the transitive verb <ref type="xr" target="#entry_æmpūlyn"/> | <hi rendition="#rend_italic">æmpolun</hi> ‘crumple’ with natural
-                    weakening of the vowel (<hi rendition="#rend_italic">ū</hi> → <hi rendition="#rend_italic">y</hi>).</etym>
+                <etym xml:lang="ru">Медиальное соответствие к переходному глаголу <ref type="xr"
+                        target="#entry_æmpūlyn"><w xml:lang="os-x-iron">æmpūlyn</w><w
+                            xml:lang="os-x-digor">æmpolun</w>
+                        <gloss><q>комкать</q></gloss></ref> с закономерным ослаблением гласного
+                    основы (<c>ū</c> → <c>y</c>).</etym>
+                <etym xml:lang="en">Middle voice correspondence to the transitive verb <ref
+                        type="xr" target="#entry_æmpūlyn"><w xml:lang="os-x-iron">æmpūlyn</w><w
+                            xml:lang="os-x-digor">æmpolun</w>
+                        <gloss><q>to crumple</q></gloss></ref> with regular weakening of the vowel
+                        (<c>ū</c> → <c>y</c>).</etym>
             </entry>
         </body>
     </text>

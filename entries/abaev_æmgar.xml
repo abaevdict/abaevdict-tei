@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Abaev Dictionary: entry <hi rendition="#rend_italic">æmgar</hi></title>
+                <title>Abaev Dictionary: entry <w>æmgar</w></title>
             </titleStmt>
             <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
     Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
@@ -17,64 +17,81 @@
     <tagsDecl>
         <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
         <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
-        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "<gloss><q>" "</q></gloss>";</rendition>
         <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
     </tagsDecl>
 </encodingDesc>
     </teiHeader>
     <text>
         <body>
-            <entry xml:id="entry_æmgar" xml:lang="os">
-                <form xml:id="form_d3902e66" xml:lang="os-x-iron" type="lemma"><orth>æmgar</orth></form>
-                <form xml:id="form_d3902e69" xml:lang="os-x-digor" type="dialectal"><orth>ængaræ</orth></form>
-                <sense xml:id="sense_d3902e72"><sense xml:id="sense_d3902e73"><abv:tr xml:lang="ru">
+            <entry xml:id="entry_æmgar" xml:lang="os" abv:completeness="complete">
+                <?oxy_comment_start author="oleg" timestamp="20240224T150603+0300" comment="checked"?>
+                <form xml:id="form_d3902e66" xml:lang="os-x-iron" type="lemma"
+                    ><orth>æmgar</orth></form><?oxy_comment_end?>
+                <form xml:id="form_d3902e69" xml:lang="os-x-digor" type="dialectal"
+                        ><orth>ængaræ</orth></form>
+                <sense xml:id="sense_d3902e72">
+                    <sense xml:id="sense_d3902e73">
+                        <abv:tr xml:lang="ru">
                             <q>сверстник</q>
-                        </abv:tr><abv:tr xml:lang="en">
-                            <q>peer</q>
-                        </abv:tr></sense><sense xml:id="sense_d3902e82"><abv:tr xml:lang="ru">
+                        </abv:tr>
+                        <abv:tr xml:lang="en">
+                            <q>age-mate</q>
+                        </abv:tr>
+                    </sense>
+                    <sense xml:id="sense_d3902e82">
+                        <abv:tr xml:lang="ru">
                             <q>друг</q>
-                        </abv:tr><abv:tr xml:lang="en">
+                        </abv:tr>
+                        <abv:tr xml:lang="en">
                             <q>friend</q>
-                        </abv:tr></sense></sense>
+                        </abv:tr>
+                    </sense>
+                </sense>
                 <abv:exampleGrp xml:id="exampleGrp_d3902e92">
                     <abv:example xml:id="example_d3902e94">
-                        <quote>jæ warzon æmgarty ræǧyl … q˳ysy dardmæ jæ zaræg</quote>
+                        <quote>jæ warzon <oRef>æmgarty</oRef> ræǧyl … q˳ysy dardmæ jæ zaræg</quote>
                         <abv:tr xml:lang="ru">
-                            <q>в обществе („в ряду“) любимых сверстников далеко разносится его
+                            <q>в обществе (<gloss><q rendition="#rend_doublequotes">в
+                                    ряду</q></gloss>) любимых сверстников далеко разносится его
                                 песня</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
-                            <q>in a society (“in a row”) of his favourite peers his song is flying
-                                far away</q>
+                            <q>in a society (<gloss><q rendition="#rend_doublequotes">in a
+                                    row</q></gloss>) of his favourite peers his song is flying far
+                                away</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>22</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/>
+                            <biblScope>22</biblScope></bibl>
                     </abv:example>
                     <abv:example xml:id="example_d3902e113">
-                        <quote>æmgartīmæ — syrd</quote>
+                        <quote><oRef>æmgartīmæ </oRef>— syrd</quote>
                         <abv:tr xml:lang="ru">
                             <q>со сверстниками я (груб, как) зверь</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
-                            <q>with peers I am (rude, like) a beast</q>
+                            <q>with peers (I am rude, like) a beast</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>13</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/>
+                            <biblScope>13</biblScope></bibl>
                     </abv:example>
                     <abv:example xml:id="example_d3902e132">
-                        <quote>æmæ, jæ xæʒarmæ ærcæwgæjæ, ærxonʒæn je ʽmgærtty æmæ jæ
+                        <quote>æmæ, jæ xæʒarmæ ærcæwgæjæ, ærxonʒæn je <oRef>’mgærtty</oRef> æmæ jæ
                             syxægty</quote>
                         <abv:tr xml:lang="ru">
                             <q>и, пришед домой, созовет друзей и соседей</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
-                            <q>"and goes home. Then he calls his friends and neighbors together"</q>
+                            <q>and when he cometh home, he calleth together his friends and
+                                neighbours</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Лука"/><biblScope><hi rendition="#rend_italic">15</hi>
-                            6</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Лука"/>
+                            <biblScope><w>15</w> 6</biblScope></bibl>
                     </abv:example>
                     <abv:example xml:id="example_d3902e151" xml:lang="os-x-digor">
                         <usg><lang/></usg>
-                        <quote>wærtæ eci kiri æncæ, dæw ængaræj ci qæppæltæ æmæ gærztæ dardta,
-                            etæ</quote>
+                        <quote>wærtæ eci kiri æncæ, <?oxy_comment_start author="oleg" timestamp="20240224T150405+0300" comment="NB: редкий случай полной формы местоимения в посессивной позиции"?>dæw<?oxy_comment_end?>
+                            <oRef>ængaræj</oRef> ci qæppæltæ æmæ gærztæ dardta, etæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>вон в том сундуке хранится та одежда и оружие, которые он носил в
                                 твоем возрасте (когда был твоим сверстником)</q>
@@ -83,37 +100,45 @@
                             <q>that chest contains the clothes and weapons that he wore at your age
                                 (when he was your peer)</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Диг._сказ."/><biblScope>10</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Диг._сказ."/>
+                            <biblScope>10</biblScope></bibl>
                     </abv:example>
                     <abv:example xml:id="example_d3902e173" xml:lang="os-x-digor">
                         <usg><lang/></usg>
-                        <quote>ew ǧæwi adtæj ærtæ ʽngari, læqwænlægtæ; ewmæ siræztæncæ</quote>
+                        <quote>ew ǧæwi adtæj ærtæ <oRef>’ngari</oRef>, læqwænlægtæ; ewmæ
+                            siræztæncæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>в одном ауле было три сверстника, молодые люди; они вместе
                                 выросли</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
-                            <q>there were three peers in one aul, young people; they grew up
+                            <q>there were three age-mates in one village, young people; they grew up
                                 together</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Диг._сказ."/><biblScope>47</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Диг._сказ."/>
+                            <biblScope>47</biblScope></bibl>
                     </abv:example>
                     <abv:example xml:id="example_d3902e196" xml:lang="os-x-digor">
                         <usg><lang/></usg>
-                        <quote>cæmæn dæn æz me ʽngarti ʽxsæn ægadæ?</quote>
+                        <quote>cæmæn dæn æz me <oRef>’ngarti</oRef> ’xsæn ægadæ?</quote>
                         <abv:tr xml:lang="ru">
                             <q>почему я бесславен среди своих сверстников?</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
                             <q>why am I inglorious among my peers?</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>8</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Iræf"/>
+                            <biblScope>8</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из <hi rendition="#rend_italic">æm-kar</hi>. См. <ref type="xr" target="#entry_kar"/>
-                    ‘возраст’ и префикс <ref type="xr" target="#entry_æm-"/>.</etym>
-                <etym xml:lang="en">From <hi rendition="#rend_italic">æm-kar</hi>. See <ref type="xr" target="#entry_kar"/> ‘age’
-                    and prefix <ref type="xr" target="#entry_æm-"/>.</etym>
+                <etym xml:lang="ru">Из <w>æm-kar</w>. См. <ref type="xr" target="#entry_kar"
+                            ><w>kar</w>
+                        <gloss><q>возраст</q></gloss></ref> и префикс <ref type="xr"
+                        target="#entry_æm-"/>.<lb/></etym>
+                <etym xml:lang="en">From <w>æm-kar</w>. See <ref type="xr" target="#entry_kar"
+                            ><w>kar</w>
+                        <gloss><q>age</q></gloss></ref> and the prefix <ref type="xr"
+                        target="#entry_æm-"/>.</etym>
             </entry>
         </body>
     </text>
