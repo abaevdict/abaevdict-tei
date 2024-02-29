@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Abaev Dictionary: entry <hi rendition="#rend_italic">æmtgæj</hi></title>
+                <title>Abaev Dictionary: entry <w>æmtgæj</w></title>
             </titleStmt>
             <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
     Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
@@ -17,29 +17,39 @@
     <tagsDecl>
         <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
         <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
-        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "<gloss><q>" "</q></gloss>";</rendition>
         <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
     </tagsDecl>
 </encodingDesc>
     </teiHeader>
     <text>
         <body>
-            <entry xml:id="entry_æmtgæj" xml:lang="os-x-iron">
-                <form xml:id="form_d4822e66" type="lemma"><orth>æmtgæj</orth></form>
+            <entry xml:id="entry_æmtgæj" xml:lang="os-x-iron" abv:completeness="complete">
+                <?oxy_comment_start author="oleg" timestamp="20240228T122207+0300" comment="checked"?>
+                <form xml:id="form_d4822e66" type="lemma"><orth>æmtgæj</orth></form><?oxy_comment_end?>
                 <usg><lang/></usg>
-                <sense xml:id="sense_d4822e72"><sense xml:id="sense_d4822e73"><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d4822e72">
+                    <sense xml:id="sense_d4822e73">
+                        <abv:tr xml:lang="ru">
                             <q>всего</q>
-                        </abv:tr><abv:tr xml:lang="en">
-                            <q>in all</q>
-                        </abv:tr></sense><sense xml:id="sense_d4822e82"><abv:tr xml:lang="ru">
+                        </abv:tr>
+                        <abv:tr xml:lang="en">
+                            <q>in total</q>
+                        </abv:tr>
+                    </sense>
+                    <sense xml:id="sense_d4822e82">
+                        <abv:tr xml:lang="ru">
                             <q>скопом</q>
-                        </abv:tr><abv:tr xml:lang="en">
+                        </abv:tr>
+                        <abv:tr xml:lang="en">
                             <q>together</q>
-                        </abv:tr></sense></sense>
+                        </abv:tr>
+                    </sense>
+                </sense>
                 <abv:exampleGrp xml:id="exampleGrp_d4822e92">
                     <abv:example xml:id="example_d4822e94">
-                        <quote>æstdæs fysy īw ran xīzy, avd fysy innæ ran, æmtgæj fonʒ æmæ ʽssæʒ
-                            fysy</quote>
+                        <quote>æstdæs fysy īw ran xīzy, avd fysy innæ ran, <oRef>æmtgæj</oRef> fonʒ
+                            æmæ ’ssæʒ fysy</quote>
                         <abv:tr xml:lang="ru">
                             <q>18 овец пасется в одном месте, 7 овец в другом, всего 25 овец</q>
                         </abv:tr>
@@ -49,18 +59,26 @@
                         </abv:tr>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Может быть, перебой из <hi rendition="#rend_italic">*mtlæj</hi>, ср. <mentioned corresp="#mentioned_d4822e134" xml:id="mentioned_d4822e112" xml:lang="ka"><lang/>
+                <etym xml:lang="ru">Может быть, перебой из <w type="rec">mtlæj</w>, ср. <mentioned
+                        corresp="#mentioned_d4822e134" xml:id="mentioned_d4822e112" xml:lang="ka"><lang/>
                         <w>mtlad</w>
-                        <gloss><q>целиком</q></gloss></mentioned> (от <mentioned corresp="#mentioned_d4822e142" xml:id="mentioned_d4822e120" xml:lang="ka"><lang/>
-                        <w>mteli</w>
-                        <gloss><q>целый</q></gloss></mentioned>); в этом случае имела место,
-                    очевидно, контаминация с приставкой совместности <ref type="xr" target="#entry_æm-"/>. Спорно.</etym>
-                <etym xml:lang="en">Probably, alternation from <hi rendition="#rend_italic">*mtlæj</hi>, cf. <mentioned corresp="#mentioned_d4822e112" xml:id="mentioned_d4822e134" xml:lang="ka"><lang/>
+                        <gloss><q>целиком</q></gloss>
+                        <note type="comment">(от <mentioned corresp="#mentioned_d4822e142"
+                                xml:id="mentioned_d4822e120" xml:lang="ka"><w>mteli</w>
+                                <gloss><q>целый</q></gloss></mentioned>)</note></mentioned>; в этом
+                    случае имела место, очевидно, контаминация с приставкой совместности <ref
+                        type="xr" target="#entry_æm-"/>. Спорно.</etym>
+                <etym xml:lang="en">Maybe an alternation from <w type="rec">mtlæj</w>, cf.
+                        <mentioned corresp="#mentioned_d4822e112" xml:id="mentioned_d4822e134"
+                        xml:lang="ka"><lang/>
                         <w>mtlad</w>
-                        <gloss><q>entirely</q></gloss></mentioned> (from <mentioned corresp="#mentioned_d4822e120" xml:id="mentioned_d4822e142" xml:lang="ka"><lang/>
-                        <w>mteli</w>
-                        <gloss><q>entire</q></gloss></mentioned>); in this case, obviously,
-                    contamination with the prefix of compatibility <ref type="xr" target="#entry_æm-"/> took place. It is controversial.</etym>
+                        <gloss><q>entirely</q></gloss>
+                        <note type="comment">(from <mentioned corresp="#mentioned_d4822e120"
+                                xml:id="mentioned_d4822e142" xml:lang="ka"><lang/>
+                                <w>mteli</w>
+                                <gloss><q>entire</q></gloss></mentioned>)</note></mentioned>; in
+                    this case, contamination with the comitative prefix <ref type="xr"
+                        target="#entry_æm-"/> obviously took place. Disputable.</etym>
             </entry>
         </body>
     </text>

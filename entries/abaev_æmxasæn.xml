@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Abaev Dictionary: entry <hi rendition="#rend_italic">æmxasæn</hi></title>
+                <title>Abaev Dictionary: entry <w>æmxasæn</w></title>
             </titleStmt>
             <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
     Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
@@ -17,43 +17,66 @@
     <tagsDecl>
         <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
         <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
-        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "<gloss><q>" "</q></gloss>";</rendition>
         <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
     </tagsDecl>
 </encodingDesc>
     </teiHeader>
     <text>
         <body>
-            <entry xml:id="entry_æmxasæn" xml:lang="os">
-                <form xml:id="form_d1913e66" xml:lang="os-x-iron" type="lemma"><orth>æmxasæn</orth></form>
-                <form xml:id="form_d1913e69" xml:lang="os-x-digor" type="dialectal"><orth>ænxasæn</orth></form>
-                <sense xml:id="sense_d1913e72"><sense xml:id="sense_d1913e73"><abv:tr xml:lang="ru">
+            <entry xml:id="entry_æmxasæn" xml:lang="os" abv:completeness="complete">
+                <?oxy_comment_start author="oleg" timestamp="20240228T123839+0300" comment="checked"?>
+                <form xml:id="form_d1913e66" xml:lang="os-x-iron" type="lemma"
+                    ><orth>æmxasæn</orth></form><?oxy_comment_end?>
+                <form xml:id="form_d1913e69" xml:lang="os-x-digor" type="dialectal"
+                        ><orth>ænxasæn</orth></form>
+                <sense xml:id="sense_d1913e72">
+                    <sense xml:id="sense_d1913e73">
+                        <abv:tr xml:lang="ru">
                             <q>прибавка</q>
-                        </abv:tr><abv:tr xml:lang="en">
+                        </abv:tr>
+                        <abv:tr xml:lang="en">
                             <q>increase</q>
-                        </abv:tr></sense><sense xml:id="sense_d1913e82"><abv:tr xml:lang="ru">
+                        </abv:tr>
+                    </sense>
+                    <sense xml:id="sense_d1913e82">
+                        <abv:tr xml:lang="ru">
                             <q>добавка</q>
-                        </abv:tr><abv:tr xml:lang="en">
+                        </abv:tr>
+                        <abv:tr xml:lang="en">
                             <q>addition</q>
-                        </abv:tr></sense></sense>
+                        </abv:tr>
+                    </sense>
+                </sense>
                 <abv:exampleGrp xml:id="exampleGrp_d1913e92">
                     <abv:example xml:id="example_d1913e94">
-                        <quote>dæ gollægtyl gollægtæ bamxasæn kæ</quote>
+                        <quote>dæ gollægtyl gollægtæ <oRef>bamxasæn kæ</oRef></quote>
                         <abv:tr xml:lang="ru">
                             <q>к твоим мешкам прибавь (еще) мешки</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
                             <q>add (more) bags to your bags</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Munk."/><biblScope>154</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Munk."/>
+                            <biblScope>154</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Производное от глагола <hi rendition="#rend_italic">*æmxasyn</hi> | <hi rendition="#rend_italic">ænxasun</hi> ‘прибавлять’,
-                    в спрягаемых формах не употребительного. Ср. <ref type="xr" target="#entry_nyxasyn"/> ‘приклеивать’ и <ref type="xr" target="#entry_wælæmxasæn"/> ‘надбавка’, ‘привесок’ и пр.</etym>
-                <etym xml:lang="en">Derivate from the verb <hi rendition="#rend_italic">*æmxasyn</hi> | <hi rendition="#rend_italic">ænxasun</hi> ‘add’, whose
-                    conjugated forms are not common. Cf. <ref type="xr" target="#entry_nyxasyn"/>
-                    ‘stick, glue’ and <ref type="xr" target="#entry_wælæmxasæn"/> ‘increase’,
-                    ‘weight gain’ etc.</etym>
+                <etym xml:lang="ru">Производное от глагола <w type="rec">æmxasyn</w> |
+                        <w>ænxasun</w>
+                    <gloss><q>прибавлять</q></gloss>, в спрягаемых формах не употребительного. Ср.
+                        <ref type="xr" target="#entry_nyxasyn"><w>nyxasyn</w>
+                        <gloss><q>приклеивать</q></gloss></ref> и <ref type="xr"
+                        target="#entry_wælæmxasæn"><w>wælæmxasæn</w>
+                        <gloss><q>надбавка</q></gloss>, <gloss><q>привесок</q></gloss></ref> и
+                    пр.</etym>
+                <etym xml:lang="en">Derivate from the verb <w type="rec">æmxasyn</w> |
+                        <w>ænxasun</w>
+                    <gloss><q>to add</q></gloss>, which is not commonly used in finite forms. Cf.
+                        <ref type="xr" target="#entry_nyxasyn"><w>nyxasyn</w>
+                        <gloss><q>to glue</q></gloss></ref> and <ref type="xr"
+                        target="#entry_wælæmxasæn"><w>wælæmxasæn</w>
+                        <gloss><q>increase</q></gloss>, <gloss><q>appendage</q></gloss></ref>
+                    etc.</etym>
             </entry>
         </body>
     </text>

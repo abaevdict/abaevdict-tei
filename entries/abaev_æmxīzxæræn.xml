@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Abaev Dictionary: entry <hi rendition="#rend_italic">æmxīzxæræn</hi></title>
+                <title>Abaev Dictionary: entry <w>æmxīzxæræn</w></title>
             </titleStmt>
             <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
     Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
@@ -17,38 +17,56 @@
     <tagsDecl>
         <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
         <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
-        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "<gloss><q>" "</q></gloss>";</rendition>
         <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
     </tagsDecl>
 </encodingDesc>
     </teiHeader>
     <text>
         <body>
-            <entry xml:id="entry_æmxīzxæræn" xml:lang="os-x-iron">
-                <form xml:id="form_d4393e66" type="lemma"><orth>æmxīzxæræn</orth><form xml:id="form_d4393e68" type="variant"><orth>æmxīcxæræn</orth></form></form>
+            <entry xml:id="entry_æmxīzxæræn" xml:lang="os-x-iron" abv:completeness="complete">
+                <?oxy_comment_start author="oleg" timestamp="20240229T132706+0300" comment="checked"?>
+                <form xml:id="form_d4393e66" type="lemma"><orth>æmxīzxæræn</orth>
+                    <form xml:id="form_d4393e68" type="variant"
+                    ><orth>æmxīcxæræn</orth></form></form><?oxy_comment_end?>
                 <usg><lang/></usg>
-                <sense xml:id="sense_d4393e74"><abv:tr xml:lang="ru">
+                <sense xml:id="sense_d4393e74">
+                    <abv:tr xml:lang="ru">
                         <q>пастбище общего пользования</q>
-                    </abv:tr><abv:tr xml:lang="en">
-                        <q>common pasture</q>
-                    </abv:tr></sense>
+                    </abv:tr>
+                    <abv:tr xml:lang="en">
+                        <q>shared pasture</q>
+                    </abv:tr>
+                </sense>
                 <abv:exampleGrp xml:id="exampleGrp_d4393e84">
                     <abv:example xml:id="example_d4393e86">
-                        <quote>æmxīzxæræn obawyl æm ænqælmæ kæsʒyriæn</quote>
+                        <quote><oRef>æmxīzxæræn</oRef> obawyl æm ænqælmæ kæsʒynæn</quote>
                         <abv:tr xml:lang="ru">
                             <q>на холме общего пастбища я буду его ждать</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
-                            <q>on the hill of common pasture I will wait for him</q>
+                            <q>I will wait for him on the shared pasture hill</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>III
-                            6</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_СОПам."/>
+                            <biblScope>III 6</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Сложение <hi rendition="#rend_italic">æm</hi> + <hi rendition="#rend_italic">xīz</hi> + xæræn, см. <ref type="xr" target="#entry_xīzyn"/> ‘пасти’, <ref type="xr" target="#entry_xæryn_1"/>
-                    ‘естьʼ и префикс <ref type="xr" target="#entry_æm-"/>.</etym>
-                <etym xml:lang="en">Addition <hi rendition="#rend_italic">æm</hi> + <hi rendition="#rend_italic">xīz</hi> + xæræn, cf. <ref type="xr" target="#entry_xīzyn"/> ‘graze’, <ref type="xr" target="#entry_xæryn_1"/>
-                    ‘eatʼ and prefix <ref type="xr" target="#entry_æm-"/>.</etym>
+                <etym xml:lang="ru">Сложение <ref type="xr" target="#entry_æm-"><w>æm</w></ref> +
+                        <ref type="xr" target="#entry_xīzyn_1"><w>xīz</w></ref> + <ref type="xr"
+                        target="#entry_xæryn_1"><w>xæræn</w></ref>, см. <ref type="xr"
+                        target="#entry_xīzyn_1"><w>xīzyn</w>
+                        <gloss><q>пасти</q></gloss></ref>, <ref type="xr" target="#entry_xæryn_1"
+                            ><w>xæryn</w>
+                        <gloss><q>есть</q></gloss></ref> и префикс <ref type="xr"
+                        target="#entry_æm-"/>.</etym>
+                <etym xml:lang="en">Compund of <ref type="xr" target="#entry_æm-"><w>æm</w></ref> +
+                        <ref type="xr" target="#entry_xīzyn_1"><w>xīz</w></ref> + <ref type="xr"
+                        target="#entry_xæryn_1"><w>xæræn</w></ref>, see <ref type="xr"
+                        target="#entry_xīzyn_1"><w>xīzyn</w>
+                        <gloss><q>to graze</q></gloss></ref>, <ref type="xr" target="#entry_xæryn_1"
+                            ><w>xæryn</w>
+                        <gloss><q>to eat</q></gloss></ref> and the prefix <ref type="xr"
+                        target="#entry_æm-"/>.</etym>
             </entry>
         </body>
     </text>

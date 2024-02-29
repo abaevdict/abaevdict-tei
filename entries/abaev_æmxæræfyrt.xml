@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Abaev Dictionary: entry <hi rendition="#rend_italic">æmxæræfyrt</hi></title>
+                <title>Abaev Dictionary: entry <w>æmxæræfyrt</w></title>
             </titleStmt>
             <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
     Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
@@ -17,42 +17,71 @@
     <tagsDecl>
         <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
         <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
-        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "<gloss><q>" "</q></gloss>";</rendition>
         <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
     </tagsDecl>
 </encodingDesc>
     </teiHeader>
     <text>
         <body>
-            <entry xml:id="entry_æmxæræfyrt" xml:lang="os">
-                <form xml:id="form_d5732e66" xml:lang="os-x-iron" type="lemma"><orth>æmxæræfyrt</orth></form>
-                <form xml:id="form_d5732e69" xml:lang="os-x-digor" type="dialectal"><orth>ænxwærifurt</orth></form>
-                <sense xml:id="sense_d5732e72"><sense xml:id="sense_d5732e73"><abv:tr xml:lang="ru">
+            <entry xml:id="entry_æmxæræfyrt" xml:lang="os" abv:completeness="complete">
+                <?oxy_comment_start author="oleg" timestamp="20240228T124530+0300" comment="checked"?>
+                <form xml:id="form_d5732e66" xml:lang="os-x-iron" type="lemma"
+                        ><orth>æmxæræfyrt</orth></form><?oxy_comment_end?>
+                <form xml:id="form_d5732e69" xml:lang="os-x-digor" type="dialectal"
+                        ><orth>ænxwærifurt</orth></form>
+                <sense xml:id="sense_d5732e72">
+                    <sense xml:id="sense_d5732e73">
+                        <abv:tr xml:lang="ru">
                             <q>двоюродный брат (по матери)</q>
-                        </abv:tr><abv:tr xml:lang="en">
+                        </abv:tr>
+                        <abv:tr xml:lang="en">
                             <q>cousin (maternal)</q>
-                        </abv:tr></sense><sense xml:id="sense_d5732e82"><abv:tr xml:lang="ru">
+                        </abv:tr>
+                    </sense>
+                    <sense xml:id="sense_d5732e82">
+                        <abv:tr xml:lang="ru">
                             <q>сын тетки по матери</q>
-                        </abv:tr><abv:tr xml:lang="en">
+                        </abv:tr>
+                        <abv:tr xml:lang="en">
                             <q>maternal aunt's son</q>
-                        </abv:tr></sense></sense>
+                        </abv:tr>
+                    </sense>
+                </sense>
                 <abv:exampleGrp xml:id="exampleGrp_d5732e92">
                     <abv:example xml:id="example_d5732e94" xml:lang="os-x-digor">
                         <usg><lang/></usg>
-                        <quote>etæ duwwæ ænxwærifurti razinnuncæ</quote>
+                        <quote>etæ duwwæ <oRef>ænxwærifurti</oRef> razinnuncæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>они оказываются двоюродными братьями (сыновьями двух сестер)</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
                             <q>they turn out to be cousins (sons of two sisters)</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Диг._сказ."/><biblScope>56%l31%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Диг._сказ."/>
+                            <biblScope>56<hi rendition="#rend_subscript">31</hi></biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Сложение <ref type="xr" target="#entry_æm-"/> + <hi rendition="#rend_italic">xæræ</hi> +
-                    <hi rendition="#rend_italic">fyrt</hi> | <hi rendition="#rend_italic">æn</hi> + <hi rendition="#rend_italic">xwæri</hi> + <hi rendition="#rend_italic">furt</hi>, буквально „со-племянник“; ср. <ref type="xr" target="#entry_æmsiaxs"/> „со-зять“. См. <ref type="xr" target="#entry_xæræfyrt"/>.</etym>
-                <etym xml:lang="en">Addition <ref type="xr" target="#entry_æm-"/> + <hi rendition="#rend_italic">xæræ</hi> +
-                    <hi rendition="#rend_italic">fyrt</hi> | <hi rendition="#rend_italic">æn</hi> + <hi rendition="#rend_italic">xwæri</hi> + <hi rendition="#rend_italic">furt</hi>, literally “co-nephew”; cf. <ref type="xr" target="#entry_æmsiaxs"/> “co-son-in-law”. Cf. <ref type="xr" target="#entry_xæræfyrt"/>.</etym>
+                <etym xml:lang="ru">Сложение <ref type="xr" target="#entry_æm-"><w>æm</w></ref> +
+                        <ref type="xr" target="#entry_xo"><w>xæræ</w></ref> + <ref type="xr"
+                        target="#entry_fyrt" xml:lang="os-x-iron"><w>fyrt</w></ref> | <ref type="xr"
+                        target="#entry_æm-" xml:lang="os-x-digor"><w>æn</w></ref> + <ref type="xr"
+                        target="#entry_xo" xml:lang="os-x-digor"><w>xwæri</w></ref> + <ref type="xr"
+                        target="#entry_fyrt" xml:lang="os-x-digor"><w>furt</w></ref>,
+                        <gloss>буквально <q rendition="#rend_doublequotes">со-племянник</q></gloss>;
+                    ср. <ref type="xr" target="#entry_æmsiaxs"><w>æmsiaxs</w>
+                        <gloss><q rendition="#rend_doublequotes">со-зять</q></gloss></ref>. См. <ref
+                        type="xr" target="#entry_xæræfyrt"/>.</etym>
+                <etym xml:lang="en">Compound of <ref type="xr" target="#entry_æm-"><w>æm</w></ref> +
+                        <ref type="xr" target="#entry_xo"><w>xæræ</w></ref> + <ref type="xr"
+                        target="#entry_fyrt" xml:lang="os-x-iron"><w>fyrt</w></ref> | <ref type="xr"
+                        target="#entry_æm-" xml:lang="os-x-digor"><w>æn</w></ref> + <ref type="xr"
+                        target="#entry_xo" xml:lang="os-x-digor"><w>xwæri</w></ref> + <ref type="xr"
+                        target="#entry_fyrt" xml:lang="os-x-digor"><w>furt</w></ref>,
+                        <gloss>literally <q rendition="#rend_doublequotes">co-nephew</q></gloss>;
+                    cf. <ref type="xr" target="#entry_æmsiaxs"><w>æmsiaxs</w>
+                        <gloss><q rendition="#rend_doublequotes">co-son-in-law</q></gloss></ref>.
+                    Cf. <ref type="xr" target="#entry_xæræfyrt"/>.</etym>
             </entry>
         </body>
     </text>
