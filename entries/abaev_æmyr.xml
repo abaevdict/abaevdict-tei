@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Abaev Dictionary: entry <hi rendition="#rend_italic">æmyr</hi></title>
+                <title>Abaev Dictionary: entry <w>æmyr</w></title>
             </titleStmt>
             <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
     Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
@@ -17,68 +17,86 @@
     <tagsDecl>
         <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
         <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
-        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "<gloss><q>" "</q></gloss>";</rendition>
         <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
     </tagsDecl>
 </encodingDesc>
     </teiHeader>
     <text>
         <body>
-            <entry xml:id="entry_æmyr" xml:lang="os">
-                <form xml:id="form_d2802e66" xml:lang="os-x-iron" type="lemma"><orth>æmyr</orth></form>
-                <form xml:id="form_d2802e69" xml:lang="os-x-digor" type="dialectal"><orth>æmir</orth><form xml:id="form_d2802e71" type="variant"><orth>imir</orth></form></form>
-                <sense xml:id="sense_d2802e74"><sense xml:id="sense_d2802e75"><abv:tr xml:lang="ru">
+            <entry xml:id="entry_æmyr" xml:lang="os" abv:completeness="complete">
+                <?oxy_comment_start author="oleg" timestamp="20240321T174933+0300" comment="checked"?>
+                <form xml:id="form_d2802e66" xml:lang="os-x-iron" type="lemma"
+                    ><orth>æmyr</orth></form><?oxy_comment_end?>
+                <form xml:id="form_d2802e69" xml:lang="os-x-digor" type="dialectal"
+                        ><orth>æmir</orth>
+                    <form xml:id="form_d2802e71" type="variant"><orth>imir</orth></form></form>
+                <sense xml:id="sense_d2802e74">
+                    <sense xml:id="sense_d2802e75">
+                        <abv:tr xml:lang="ru">
                             <q>плотный</q>
-                        </abv:tr><abv:tr xml:lang="en">
-                            <q>tight, solid</q>
-                        </abv:tr></sense><sense xml:id="sense_d2802e84"><abv:tr xml:lang="ru">
+                        </abv:tr>
+                        <abv:tr xml:lang="en">
+                            <q>dense</q>
+                        </abv:tr>
+                    </sense>
+                    <sense xml:id="sense_d2802e84">
+                        <abv:tr xml:lang="ru">
                             <q>плотно закрытый</q>
-                        </abv:tr><abv:tr xml:lang="en">
+                        </abv:tr>
+                        <abv:tr xml:lang="en">
                             <q>tightly closed</q>
-                        </abv:tr></sense></sense>
+                        </abv:tr>
+                    </sense>
+                </sense>
                 <abv:exampleGrp xml:id="exampleGrp_d2802e94">
                     <abv:example xml:id="example_d2802e96">
-                        <quote>fyccaǵydær ūj ḱl zaǧta, ūman jæ ʒyx bamyr wa!</quote>
+                        <quote>fyccaǵydær ūj ḱī zaǧta,
+                            ūm<?oxy_comment_start author="oleg" timestamp="20240321T174744+0300" comment="typo in Abaev"?>æ<?oxy_comment_end?>n
+                            jæ ʒyx <oRef>bamyr wa</oRef>!</quote>
                         <abv:tr xml:lang="ru">
                             <q>кто первый это сказал, пусть у того замкнутся уста!</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
                             <q>whoever said this first, let his mouth shut!</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Брит."/><biblScope>48</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Брит."/>
+                            <biblScope>48</biblScope></bibl>
                     </abv:example>
                     <abv:example xml:id="example_d2802e115">
-                        <quote>de xsæv dyl bamyr is</quote>
+                        <quote>de ’xsæv dyl <oRef>bamyr is</oRef></quote>
                         <abv:tr xml:lang="ru">
                             <q>твоя ночь на тебе сомкнулась</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
                             <q>your night closed on you</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Æfx._Xæs."/><biblScope>99</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Æfx._Xæs."/>
+                            <biblScope>99</biblScope></bibl>
                     </abv:example>
                     <abv:example xml:id="example_d2802e134" xml:lang="os-x-digor">
                         <usg><lang/></usg>
-                        <quote>festadæncæ æmir cavddortæ</quote>
+                        <quote>festadæncæ <oRef>æmir</oRef> cavddortæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>обратились в немых истуканов</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
                             <q>turned into silent idols</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>39</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Iræf"/>
+                            <biblScope>39</biblScope></bibl>
                     </abv:example>
                     <abv:example xml:id="example_d2802e156" xml:lang="os-x-digor">
                         <usg><lang/></usg>
-                        <quote>i æstæg ænxæst næma isimir æj</quote>
+                        <quote>i æstæg ænxæst næma <oRef>isimir æj</oRef></quote>
                         <abv:tr xml:lang="ru">
                             <q>кость (барашка) была еще недостаточно плотной</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
-                            <q>the (lamb) bone was still not dense</q>
+                            <q>the (lamb) bone was not yet dense enough</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
-                            98</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_СОПам."/>
+                            <biblScope>II 98</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Происхождение не ясно.</etym>

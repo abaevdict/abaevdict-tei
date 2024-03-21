@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Abaev Dictionary: entry <hi rendition="#rend_italic">æmyǵyr</hi></title>
+                <title>Abaev Dictionary: entry <w>æmyǵyr</w></title>
             </titleStmt>
             <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
     Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
@@ -17,34 +17,44 @@
     <tagsDecl>
         <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
         <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
-        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "<gloss><q>" "</q></gloss>";</rendition>
         <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
     </tagsDecl>
 </encodingDesc>
     </teiHeader>
     <text>
         <body>
-            <entry xml:id="entry_æmyǵyr" xml:lang="os">
-                <form xml:id="form_d184e66" xml:lang="os-x-iron" type="lemma"><orth>æmyǵyr</orth></form>
-                <form xml:id="form_d184e69" xml:lang="os-x-digor" type="dialectal"><orth>æmigir</orth>.</form>
+            <entry xml:id="entry_æmyǵyr" xml:lang="os" abv:completeness="complete">
+                <?oxy_comment_start author="oleg" timestamp="20240321T174618+0300" comment="checked"?>
+                <form xml:id="form_d184e66" xml:lang="os-x-iron" type="lemma"
+                    ><orth>æmyǵyr</orth></form><?oxy_comment_end?>
+                <form xml:id="form_d184e69" xml:lang="os-x-digor" type="dialectal"
+                        ><orth>æmigir</orth>.</form>
                 <sense xml:id="sense_d184e72">
                     <def xml:lang="ru">Так называется при многоженстве каждая из жен в отношении
-                        другой: <example xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="os-x-digor">
+                        другой: <example xmlns="http://ossetic-studies.org/ns/abaevdict"
+                            xml:lang="os-x-digor">
                             <quote xmlns="http://www.tei-c.org/ns/1.0">kæstær æmigir</quote>
                             <tr xml:lang="ru">
                                 <q xmlns="http://www.tei-c.org/ns/1.0">младшая из (двух) жен</q>
                             </tr>
-                            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Tujǧ."/>
+                            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl"
+                                    target="#src_Tujǧ."/>
                                 <biblScope>28</biblScope></bibl>
                         </example></def>
-                    <def xml:lang="en">In a polygamous relationship, this is the name of one of the
-                        wives with respect to the other: <example xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="os-x-digor">
-                            <quote xmlns="http://www.tei-c.org/ns/1.0">kæstær æmigir</quote>
+                    <def xml:lang="en">In a polygamous relationship, this is the name of each of the
+                        wives with respect to
+                        <?oxy_comment_start author="oleg" timestamp="20240321T173807+0300" comment="assuming there can be more than 2 (I can&apos;t quite parse what Abaev means)"?>one
+                        of the others<?oxy_comment_end?>: <example
+                            xmlns="http://ossetic-studies.org/ns/abaevdict" xml:lang="os-x-digor">
+                            <quote xmlns="http://www.tei-c.org/ns/1.0">kæstær
+                                <oRef>æmigir</oRef></quote>
                             <tr xml:lang="en">
-                                <q xmlns="http://www.tei-c.org/ns/1.0">younger of the (two)
+                                <q xmlns="http://www.tei-c.org/ns/1.0">the younger of the (two)
                                     wives</q>
                             </tr>
-                            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl" target="#src_Tujǧ."/>
+                            <bibl xmlns="http://www.tei-c.org/ns/1.0"><ref type="bibl"
+                                    target="#src_Tujǧ."/>
                                 <biblScope>28</biblScope></bibl>
                         </example></def>
                 </sense>
@@ -60,7 +70,7 @@
                         </abv:tr>
                     </sense>
                     <sense xml:id="sense_amyǵyr_2-2">
-                        <note type="comment" xml:lang="ru"> иногда также </note>
+                        <note type="comment" xml:lang="ru"> (иногда также </note>
                         <note type="comment" xml:lang="en"> sometimes also </note>
                         <abv:tr xml:lang="ru">
                             <q>соперник</q>
@@ -69,10 +79,13 @@
                             <q>male rival</q>
                         </abv:tr>
                     </sense>
-                    <note type="comment" xml:lang="ru">, которое даёт <bibl><ref type="bibl" target="#ref_Сл."/></bibl></note>
-                    <note type="comment" xml:lang="en">, given in <bibl><ref type="bibl" target="#ref_Сл."/></bibl></note>
+                    <note type="comment" xml:lang="ru">) которое даёт <bibl><ref type="bibl"
+                                target="#ref_Сл."/></bibl></note>
+                    <note type="comment" xml:lang="en"> given in <bibl><ref type="bibl"
+                                target="#ref_Сл."/></bibl></note>
                 </sense>
-                <note type="comment" xml:lang="ru"> Более точно можно перевести это слово <mentioned xml:lang="la"><lang/>
+                <note type="comment" xml:lang="ru"> Более точно можно перевести это слово <mentioned
+                        xml:lang="la"><lang/>
                         <w>pellex</w></mentioned> или <mentioned xml:lang="en"><lang/>
                         <w>co-wife</w></mentioned></note>
                 <note type="comment" xml:lang="en"> This word could be more accurately translated as
@@ -82,42 +95,49 @@
                 <abv:exampleGrp xml:id="exampleGrp_d184e74">
                     <abv:example xml:id="example_d184e76" xml:lang="os-x-digor">
                         <usg><lang/></usg>
-                        <quote>Mæxæmæti æmigir ræxistæj bastæj fæwwæǧd æj</quote>
+                        <quote>Mæxæmæti <oRef>æmigir</oRef> ræxistæj bastæj fæwwæǧd æj</quote>
                         <abv:tr xml:lang="ru">
                             <q>соперник Махамата высвободился из цепей</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
-                            <q>Mahamat's rival freed himself from chains</q>
+                            <q>Mækhæmæt’s rival freed himself from chains</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Bes._Ka_ke"/><biblScope>47</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Bes._Ka_ke"/>
+                            <biblScope>47</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">По аналогии с такими образованиями, как <ref type="xr"
-                        target="#entry_æmsiaxs"/> „со-зять“, <ref type="xr"
-                        target="#entry_æmxæræfyrt"/> „со-племянник“, <mentioned xml:lang="os"
-                            ><w>æmmadælon</w>
+                        target="#entry_æmsiaxs"><w>æmsiaxs</w>
+                        <gloss><q rendition="#rend_doublequotes">со-зять</q></gloss></ref>, <ref
+                        type="xr" target="#entry_æmxæræfyrt"><w>æmxæræfyrt</w>
+                        <gloss><q rendition="#rend_doublequotes">со-племянник</q></gloss></ref>,
+                        <mentioned xml:lang="os"><w>æmmadælon</w>
                         <gloss><q rendition="#rend_doublequotes">от одной матери
                             происходящий</q></gloss></mentioned> (ср. <mentioned
                         corresp="#mentioned_d184e157" xml:id="mentioned_d184e107" xml:lang="ae"><lang/>
                         <w>ha-paθnī-</w>
-                        <gloss><q>Nebenweib</q></gloss></mentioned>, <mentioned
-                        corresp="#mentioned_d184e165" xml:id="mentioned_d184e115" xml:lang="peo"><lang/>
-                        <w>ha(ma)-mātā</w></mentioned>, <mentioned corresp="#mentioned_d184e171"
-                        xml:id="mentioned_d184e121" xml:lang="peo"><w>hamapitā</w>
+                        <gloss><q>Nebenweib</q></gloss></mentioned>, <mentioned><mentioned
+                            corresp="#mentioned_d184e165" xml:id="mentioned_d184e115" xml:lang="peo"><lang/>
+                            <w>ha(ma)-mātā</w></mentioned>, <mentioned corresp="#mentioned_d184e171"
+                            xml:id="mentioned_d184e121" xml:lang="peo"><w>hamapitā</w></mentioned>
                         <gloss><q>от одной матери, одного отца</q></gloss></mentioned>),
-                    представляется вероятным, что <hi rendition="#rend_italic">æmyǵyr</hi> значит
-                    „сосупружная“ и заключает в первой части префикс общности <ref type="xr"
-                        target="#entry_æm-"/>, а во второй — какое-то слово со значением ‘муж’ или
-                    ‘самец’. Таким словом могло быть <hi rendition="#rend_italic">ǧir</hi>, которое
-                    теперь означает ‘боров’, ‘кабан’, но, подобно другим аналогичным терминам,
-                    относящимся к животным, первоначально могло означать вообще ‘самец’ (ср. <ref
-                        type="xr" target="#entry_wyrs"/> ‘жеребец’). См. <ref type="xr"
-                        target="#entry_ǵir"/>. Следует отметить, что многоженство существовало у
-                    осетин независимо от мусульманства и вызывалось соображениями хозяйственного
-                    порядка, а также интересами родового самосохранения (потребность в рабочей силе,
-                    бездетность первой жены). Если наше разъяснение слова <hi
-                        rendition="#rend_italic">æmyǵyr</hi> правильно, то <mentioned
-                        corresp="#mentioned_d184e183" xml:id="mentioned_d184e133" xml:lang="inh"><lang/>
+                    представляется вероятным, что <oRef>æmyǵyr</oRef> значит <gloss><q
+                            rendition="#rend_doublequotes">сосупружная</q></gloss> и заключает в
+                    первой части префикс общности <ref type="xr" target="#entry_æm-"
+                        ><w>æm-</w></ref>, а во второй — какое-то слово со значением
+                            <gloss><q>муж</q></gloss> или <gloss><q>самец</q></gloss>. Таким словом
+                    могло быть <ref type="xr" target="#entry_ǵir"><w>ǵir</w>, которое теперь
+                        означает <gloss><q>боров</q></gloss>, <gloss><q>кабан</q></gloss></ref>, но,
+                    подобно другим аналогичным терминам, относящимся к животным, первоначально могло
+                    означать вообще <gloss><q>самец</q></gloss> (ср. <ref type="xr"
+                        target="#entry_wyrs"><w>wyrs</w>
+                        <gloss><q>жеребец</q></gloss></ref>). См. <ref type="xr" target="#entry_ǵir"
+                    />. Следует отметить, что многоженство существовало у осетин независимо от
+                    мусульманства и вызывалось соображениями хозяйственного порядка, а также
+                    интересами родового самосохранения (потребность в рабочей силе, бездетность
+                    первой жены). Если наше разъяснение слова <oRef>æmyǵyr</oRef> правильно, то
+                        <mentioned corresp="#mentioned_d184e183" xml:id="mentioned_d184e133"
+                        xml:lang="inh"><lang/>
                         <w>engir</w></mentioned>, <mentioned corresp="#mentioned_d184e188"
                         xml:id="mentioned_d184e138" xml:lang="inh"><w>engær</w></mentioned>,
                         <mentioned corresp="#mentioned_d184e192" xml:id="mentioned_d184e142"
@@ -125,37 +145,44 @@
                         <w>emgær</w></mentioned> (название жен при многоженстве) придется
                     рассматривать как усвоенные из осетинского.</etym>
                 <etym xml:lang="en">By analogy with derivates such as <ref type="xr"
-                        target="#entry_æmsiaxs"/> “co-son-in-law”, <ref type="xr"
-                        target="#entry_æmxæræfyrt"/> “co-nephew”, <mentioned xml:lang="os"
-                            ><w>æmmadælon</w>
+                        target="#entry_æmsiaxs"><w>æmsiaxs</w>
+                        <gloss><q rendition="#rend_doublequotes">co-son-in-law</q></gloss></ref>,
+                        <ref type="xr" target="#entry_æmxæræfyrt"><w>æmxæræfyrt</w>
+                        <gloss><q rendition="#rend_doublequotes">co-nephew</q></gloss></ref>,
+                        <mentioned xml:lang="os"><w>æmmadælon</w>
                         <gloss><q rendition="#rend_doublequotes">born from the same
                             mother</q></gloss></mentioned> (cf. <mentioned
                         corresp="#mentioned_d184e107" xml:id="mentioned_d184e157" xml:lang="ae"><lang/>
                         <w>ha-paθnī-</w>
-                        <gloss><q>Nebenweib</q></gloss></mentioned>, <mentioned
-                        corresp="#mentioned_d184e115" xml:id="mentioned_d184e165" xml:lang="peo"><lang/>
-                        <w>ha(ma)-mātā</w></mentioned>, <mentioned corresp="#mentioned_d184e121"
-                        xml:id="mentioned_d184e171" xml:lang="peo"><w>hamapitā</w>
+                        <gloss><q>Nebenweib</q></gloss></mentioned>, <mentioned><mentioned
+                            corresp="#mentioned_d184e115" xml:id="mentioned_d184e165" xml:lang="peo"><lang/>
+                            <w>ha(ma)-mātā</w></mentioned>, <mentioned corresp="#mentioned_d184e121"
+                            xml:id="mentioned_d184e171" xml:lang="peo"><w>hamapitā</w></mentioned>
                         <gloss><q>from the same mother or father</q></gloss></mentioned>), it seems
-                    plausible that <hi rendition="#rend_italic">æmyǵyr</hi> means “co-wife” and
-                    contains the compatibility prefix <ref type="xr" target="#entry_æm-"/> in its
-                    first part, and a word meaning ʽhusbandʼ or ‘male’ in its second part. <hi
-                        rendition="#rend_italic">ǧir</hi> could be such a word which means now
-                    ‘boar’, ‘aper’, but, like other similar terms related to animals, originally
-                    could mean ‘male’ in general (cf. <ref type="xr" target="#entry_wyrs"/>
-                    ‘stallion’). See <ref type="xr" target="#entry_ǵir"/>. It should be noted that
-                    polygamy existed among Ossetians regardless of Islam and was caused by
-                    economical considerations, as well as the interests of patrimonial
-                    self-preservation (need for labour, childlessness of the first wife). If our
-                    explanation of <hi rendition="#rend_italic">æmyǵyr</hi> is on the right track,
-                    then <mentioned corresp="#mentioned_d184e133" xml:id="mentioned_d184e183"
-                        xml:lang="inh"><lang/>
+                    plausible that <oRef>æmyǵyr</oRef> means <gloss><q
+                            rendition="#rend_doublequotes">co-wife</q></gloss> and contains the
+                    comitative prefix <ref type="xr" target="#entry_æm-"><w>æm-</w></ref> in its
+                    first part, and a word meaning <gloss><q>husband</q></gloss> or
+                            <gloss><q>male</q></gloss> in its second part. This word could be
+                        <w>ǵir</w>, which now means <gloss><q>boar</q></gloss>,
+                            <gloss><q><?oxy_comment_start author="oleg" timestamp="20240321T174343+0300" comment="outdated word?"?>barrow<?oxy_comment_end?></q></gloss>,
+                    but, like other similar terms related to animals, could have originally meant
+                            <gloss><q>male</q></gloss> in general (cf. <ref type="xr"
+                        target="#entry_wyrs"><w>wyrs</w>
+                        <gloss><q>stallion</q></gloss></ref>). See <ref type="xr"
+                        target="#entry_ǵir"/>. It should be noted that polygamy used to exist among
+                    the Ossetians independently from Islam and was caused by economical
+                    considerations, as well as the interests of
+                    <?oxy_comment_start author="oleg" timestamp="20240321T174533+0300" comment="? can you say it this way?"?>patrimonial<?oxy_comment_end?>
+                    self-preservation (demand for labour, childlessness of the first wife). If our
+                    explanation of <oRef>æmyǵyr</oRef> is on the right track, then <mentioned
+                        corresp="#mentioned_d184e133" xml:id="mentioned_d184e183" xml:lang="inh"><lang/>
                         <w>engir</w></mentioned>, <mentioned corresp="#mentioned_d184e138"
                         xml:id="mentioned_d184e188" xml:lang="inh"><w>engær</w></mentioned>,
                         <mentioned corresp="#mentioned_d184e142" xml:id="mentioned_d184e192"
                         xml:lang="ce"><lang/>
-                        <w>emgær</w></mentioned> (the name of wives in polygamy) will have to be
-                    considered as adopted from Ossetic.</etym>
+                        <w>emgær</w></mentioned> (the name of wives in polygamous relationships)
+                    will have to be considered as adopted from Ossetic.</etym>
             </entry>
         </body>
     </text>
