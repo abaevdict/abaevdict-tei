@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Abaev Dictionary: entry <hi rendition="#rend_italic">æna</hi></title>
+                <title>Abaev Dictionary: entry <w>æna</w></title>
             </titleStmt>
             <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
     Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
@@ -17,7 +17,7 @@
     <tagsDecl>
         <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
         <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
-        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "<gloss><q>" "</q></gloss>";</rendition>
         <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
     </tagsDecl>
 </encodingDesc>
@@ -25,113 +25,175 @@
     <text>
         <body>
             <entry xml:id="entry_æna" xml:lang="os">
-                <form xml:id="form_d2754e66" type="lemma"><orth>æna</orth></form>
-                <sense xml:id="sense_d2754e69"><sense xml:id="sense_d2754e70"><abv:tr xml:lang="ru">
+                <?oxy_comment_start author="oleg" timestamp="20240322T100321+0300" comment="checked"?>
+                <form xml:id="form_d2754e66" type="lemma"><orth>æna</orth></form><?oxy_comment_end?>
+                <sense xml:id="sense_d2754e69">
+                    <note type="comment" xml:lang="ru">детское и почтительно-ласковое название для
+                        матери, бабки: </note>
+                    <note type="comment" xml:lang="en"
+                        ><?oxy_comment_start author="oleg" timestamp="20240322T095942+0300" comment="not sure about the syntactic validity of this translation"?>child
+                        language<?oxy_comment_end?> or honorific and affectionate name for mother,
+                        grandmother: </note>
+                    <sense xml:id="sense_d2754e70">
+                        <abv:tr xml:lang="ru">
                             <q>мама</q>
-                        </abv:tr><abv:tr xml:lang="en">
-                            <q>mama</q>
-                        </abv:tr></sense><sense xml:id="sense_d2754e79"><abv:tr xml:lang="ru">
+                        </abv:tr>
+                        <abv:tr xml:lang="en">
+                            <q>mum</q>
+                        </abv:tr>
+                    </sense>
+                    <sense xml:id="sense_d2754e79">
+                        <abv:tr xml:lang="ru">
                             <q>матушка</q>
-                        </abv:tr><abv:tr xml:lang="en">
-                            <q>mother</q>
-                        </abv:tr></sense><sense xml:id="sense_d2754e88"><abv:tr xml:lang="ru">
+                        </abv:tr>
+                        <abv:tr xml:lang="en">
+                            <q>mommy</q>
+                        </abv:tr>
+                    </sense>
+                    <sense xml:id="sense_d2754e88">
+                        <abv:tr xml:lang="ru">
                             <q>бабушка</q>
-                        </abv:tr><abv:tr xml:lang="en">
+                        </abv:tr>
+                        <abv:tr xml:lang="en">
                             <q>granny</q>
-                        </abv:tr></sense><note type="comment" xml:lang="ru">детское и
-                        почтительно-ласковое название для матери, бабки: </note><note type="comment" xml:lang="en">childish or honorific/diminutive name for mother, grandmother:
-                    </note></sense>
+                        </abv:tr>
+                    </sense>
+                </sense>
                 <abv:exampleGrp xml:id="exampleGrp_d2754e102">
                     <abv:example xml:id="example_d2754e104" xml:lang="os-x-digor">
                         <usg><lang/></usg>
-                        <quote>ox, æna, ci kænon!</quote>
+                        <quote>ox, <oRef>æna</oRef>, ci kænon!</quote>
                         <abv:tr xml:lang="ru">
                             <q>о, мать, что мне делать!</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
-                            <q>oh mother, what should I do!</q>
+                            <q>oh mother, what shall I do!</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>22</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Iræf"/>
+                            <biblScope>22</biblScope></bibl>
                     </abv:example>
                     <abv:example xml:id="example_d2754e126">
-                        <quote>æna xæbīzǵyn k˳y skodta…</quote>
+                        <quote><oRef>æna</oRef> xæbīzǵyn k˳y skodta…</quote>
                         <abv:tr xml:lang="ru">
                             <q>когда матушка приготовила пирог с сыром…</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
                             <q>when mother made a cheese pie…</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_ОТ"/><biblScope>96</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_ОТ"/>
+                            <biblScope>96</biblScope></bibl>
                     </abv:example>
                     <abv:example xml:id="example_d2754e145">
-                        <quote>ūs yn zaǧta; ænajy nom myl k˳y næ sæværdtais, wæd dæ
+                        <quote>ūs yn zaǧta; <oRef>ænajy</oRef> nom myl k˳y næ sæværdtais, wæd dæ
                             axordtain</quote>
                         <abv:tr xml:lang="ru">
-                            <q>женщина ему сказала: если бы ты не назвал меня <hi rendition="#rend_smallcaps">æna</hi>, я бы тебя
-                                съела</q>
+                            <q>женщина ему сказала: если бы ты не назвал меня <oRef>æna</oRef>, я бы
+                                тебя съела</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
-                            <q>the woman told him: if you had not called me <hi rendition="#rend_smallcaps">æna</hi>, I would have
-                                eaten you</q>
+                            <q>the woman told him: if you had not called me <oRef>æna</oRef>, I
+                                would have eaten you</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Munk."/><biblScope>82</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Munk."/>
+                            <biblScope>82</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Ср. <mentioned corresp="#mentioned_d2754e286" xml:id="mentioned_d2754e167" xml:lang="trk"><lang/>
+                <etym xml:lang="ru">Ср. <mentioned corresp="#mentioned_d2754e286"
+                        xml:id="mentioned_d2754e167" xml:lang="trk"><lang/>
                         <w>ana</w>
                         <gloss><q>мать</q></gloss></mentioned>. Распространено в кавказских языках:
-                        <mentioned corresp="#mentioned_d2754e294" xml:id="mentioned_d2754e175" xml:lang="ab"><lang/>
-                        <w>an</w></mentioned>, <mentioned corresp="#mentioned_d2754e299" xml:id="mentioned_d2754e180" xml:lang="kbd-x-crc"><lang/>
-                        <w>anne</w></mentioned>, <mentioned corresp="#mentioned_d2754e304" xml:id="mentioned_d2754e185" xml:lang="kbd"><lang/>
-                        <w>hane</w></mentioned>, <mentioned corresp="#mentioned_d2754e309" xml:id="mentioned_d2754e190" xml:lang="ce"><lang/>
-                        <w>na</w></mentioned>, <mentioned corresp="#mentioned_d2754e315" xml:id="mentioned_d2754e196" xml:lang="inh"><lang/>
-                        <w>na</w></mentioned>, <mentioned corresp="#mentioned_d2754e320" xml:id="mentioned_d2754e201" xml:lang="dar"><lang/>
-                        <w>ana</w>
-                        <gloss><q>мать</q></gloss></mentioned>, <mentioned corresp="#mentioned_d2754e328" xml:id="mentioned_d2754e209" xml:lang="dar"><w/>
-                        <gloss><q>бабушка</q></gloss></mentioned>. Ср. также <mentioned corresp="#mentioned_d2754e334" xml:id="mentioned_d2754e215" xml:lang="hit"><lang/>
+                            <mentioned><mentioned corresp="#mentioned_d2754e294"
+                            xml:id="mentioned_d2754e175" xml:lang="ab"><lang/>
+                            <w>an</w></mentioned>, <mentioned corresp="#mentioned_d2754e299"
+                            xml:id="mentioned_d2754e180" xml:lang="kbd-x-crc"><lang/>
+                            <w>anne</w></mentioned>, <mentioned corresp="#mentioned_d2754e304"
+                            xml:id="mentioned_d2754e185" xml:lang="kbd"><lang/>
+                            <w>hane</w></mentioned>, <mentioned corresp="#mentioned_d2754e309"
+                            xml:id="mentioned_d2754e190" xml:lang="ce"><lang/>
+                            <w>na</w></mentioned>, <mentioned corresp="#mentioned_d2754e315"
+                            xml:id="mentioned_d2754e196" xml:lang="inh"><lang/>
+                            <w>na</w></mentioned>, <mentioned corresp="#mentioned_d2754e320"
+                            xml:id="mentioned_d2754e201" xml:lang="dar"><lang/>
+                            <w>ana</w>
+                        </mentioned>, <gloss><q>мать</q></gloss>,
+                        <gloss><q>бабушка</q></gloss></mentioned>. Ср. также <mentioned
+                        corresp="#mentioned_d2754e334" xml:id="mentioned_d2754e215" xml:lang="hit"><lang/>
                         <w>anna</w>
-                        <gloss><q>мать</q></gloss></mentioned>, <mentioned corresp="#mentioned_d2754e342" xml:id="mentioned_d2754e223" xml:lang="la"><lang/>
+                        <gloss><q>мать</q></gloss></mentioned>, <mentioned
+                        corresp="#mentioned_d2754e342" xml:id="mentioned_d2754e223" xml:lang="la"><lang/>
                         <w>anna</w>
-                        <gloss><q>кормилица</q></gloss></mentioned>, <mentioned corresp="#mentioned_d2754e350" xml:id="mentioned_d2754e231" xml:lang="grc"><lang/>
-                        <w>ἀννίς</w></mentioned>, <mentioned corresp="#mentioned_d2754e356" xml:id="mentioned_d2754e237" xml:lang="goh"><lang/>
-                        <w>ana</w>
-                        <gloss><q>бабушка</q></gloss></mentioned>, <mentioned corresp="#mentioned_d2754e364" xml:id="mentioned_d2754e245" xml:lang="prg"><lang/>
+                        <gloss><q>кормилица</q></gloss></mentioned>, <mentioned><mentioned
+                            corresp="#mentioned_d2754e350" xml:id="mentioned_d2754e231"
+                            xml:lang="grc"><lang/>
+                            <w>ἀννίς</w></mentioned>, <mentioned corresp="#mentioned_d2754e356"
+                            xml:id="mentioned_d2754e237" xml:lang="goh"><lang/>
+                            <w>ana</w></mentioned>
+                        <gloss><q>бабушка</q></gloss></mentioned>, <mentioned
+                        corresp="#mentioned_d2754e364" xml:id="mentioned_d2754e245" xml:lang="prg"><lang/>
                         <w>ane</w>
-                        <gloss><q>старая мать</q></gloss></mentioned>, <mentioned corresp="#mentioned_d2754e372" xml:id="mentioned_d2754e253" xml:lang="ps"><lang/>
-                        <w>ana</w></mentioned>, <mentioned corresp="#mentioned_d2754e377" xml:id="mentioned_d2754e258" xml:lang="hu"><lang/>
-                        <w>anja</w></mentioned>, <mentioned corresp="#mentioned_d2754e382" xml:id="mentioned_d2754e263" xml:lang="kca" dialect="kca"><lang/>
-                        <w>ana</w></mentioned>, <mentioned corresp="#mentioned_d2754e387" xml:id="mentioned_d2754e268" xml:lang="udm"><lang/>
-                        <w>anaj</w>
-                        <gloss><q>мать</q></gloss></mentioned> и др. „Детское“ слово. Симметричный
-                    термин для ‘отца’ — <ref type="xr" target="#entry_æda"/> q. v. См. также <ref type="xr" target="#entry_nana"/>, <ref type="xr" target="#entry_dada"/>.</etym>
-                <etym xml:lang="en">Compare with <mentioned corresp="#mentioned_d2754e167" xml:id="mentioned_d2754e286" xml:lang="trk"><lang/>
+                        <gloss><q>старая мать</q></gloss></mentioned>, <mentioned><mentioned
+                            corresp="#mentioned_d2754e372" xml:id="mentioned_d2754e253"
+                            xml:lang="ps"><lang/>
+                            <w>ana</w></mentioned>, <mentioned corresp="#mentioned_d2754e377"
+                            xml:id="mentioned_d2754e258" xml:lang="hu"><lang/>
+                            <w>anja</w></mentioned>, <mentioned corresp="#mentioned_d2754e382"
+                            xml:id="mentioned_d2754e263" xml:lang="kca" dialect="kca"><lang/>
+                            <note type="comment">(остяц.)</note>
+                            <w>ana</w></mentioned>, <mentioned corresp="#mentioned_d2754e387"
+                            xml:id="mentioned_d2754e268" xml:lang="udm"><lang/>
+                            <w>anaj</w></mentioned>
+                        <gloss><q>мать</q></gloss></mentioned> и др. <q
+                        rendition="#rend_doublequotes">Детское</q> слово. Симметричный термин для
+                            <gloss><q>отца</q></gloss> — <ref type="xr" target="#entry_æda"/> q. v.
+                    См. также <ref type="xr" target="#entry_nana"/>, <ref type="xr"
+                        target="#entry_dada"/>.</etym>
+                <etym xml:lang="en">Cf. <mentioned corresp="#mentioned_d2754e167"
+                        xml:id="mentioned_d2754e286" xml:lang="trk"><lang/>
                         <w>ana</w>
                         <gloss><q>mother</q></gloss></mentioned>. Widespread in Caucasian languages:
-                        <mentioned corresp="#mentioned_d2754e175" xml:id="mentioned_d2754e294" xml:lang="ab"><lang/>
-                        <w>an</w></mentioned>, <mentioned corresp="#mentioned_d2754e180" xml:id="mentioned_d2754e299" xml:lang="kbd-x-crc"><lang/>
-                        <w>anne</w></mentioned>, <mentioned corresp="#mentioned_d2754e185" xml:id="mentioned_d2754e304" xml:lang="kbd"><lang/>
-                        <w>hane</w></mentioned>, <mentioned corresp="#mentioned_d2754e190" xml:id="mentioned_d2754e309" xml:lang="ce"><lang/>
-                        <w>na</w></mentioned>, <mentioned corresp="#mentioned_d2754e196" xml:id="mentioned_d2754e315" xml:lang="inh"><lang/>
-                        <w>na</w></mentioned>, <mentioned corresp="#mentioned_d2754e201" xml:id="mentioned_d2754e320" xml:lang="dar"><lang/>
-                        <w>ana</w>
-                        <gloss><q>mother</q></gloss></mentioned>, <mentioned corresp="#mentioned_d2754e209" xml:id="mentioned_d2754e328" xml:lang="dar"><w/>
-                        <gloss><q>grandmother</q></gloss></mentioned>. Consider also <mentioned corresp="#mentioned_d2754e215" xml:id="mentioned_d2754e334" xml:lang="hit"><lang/>
+                            <mentioned><mentioned corresp="#mentioned_d2754e175"
+                            xml:id="mentioned_d2754e294" xml:lang="ab"><lang/>
+                            <w>an</w></mentioned>, <mentioned corresp="#mentioned_d2754e180"
+                            xml:id="mentioned_d2754e299" xml:lang="kbd-x-crc"><lang/>
+                            <w>anne</w></mentioned>, <mentioned corresp="#mentioned_d2754e185"
+                            xml:id="mentioned_d2754e304" xml:lang="kbd"><lang/>
+                            <w>hane</w></mentioned>, <mentioned corresp="#mentioned_d2754e190"
+                            xml:id="mentioned_d2754e309" xml:lang="ce"><lang/>
+                            <w>na</w></mentioned>, <mentioned corresp="#mentioned_d2754e196"
+                            xml:id="mentioned_d2754e315" xml:lang="inh"><lang/>
+                            <w>na</w></mentioned>, <mentioned corresp="#mentioned_d2754e201"
+                            xml:id="mentioned_d2754e320" xml:lang="dar"><lang/>
+                            <w>ana</w>
+                        </mentioned>, <gloss><q>mother</q></gloss>,
+                            <gloss><q>grandmother</q></gloss></mentioned>. Cf. also <mentioned
+                        corresp="#mentioned_d2754e215" xml:id="mentioned_d2754e334" xml:lang="hit"><lang/>
                         <w>anna</w>
-                        <gloss><q>mother</q></gloss></mentioned>, <mentioned corresp="#mentioned_d2754e223" xml:id="mentioned_d2754e342" xml:lang="la"><lang/>
+                        <gloss><q>mother</q></gloss></mentioned>, <mentioned
+                        corresp="#mentioned_d2754e223" xml:id="mentioned_d2754e342" xml:lang="la"><lang/>
                         <w>anna</w>
-                        <gloss><q>foster-mother</q></gloss></mentioned>, <mentioned corresp="#mentioned_d2754e231" xml:id="mentioned_d2754e350" xml:lang="grc"><lang/>
-                        <w>ἀννίς</w></mentioned>, <mentioned corresp="#mentioned_d2754e237" xml:id="mentioned_d2754e356" xml:lang="goh"><lang/>
-                        <w>ana</w>
-                        <gloss><q>grandmother</q></gloss></mentioned>, <mentioned corresp="#mentioned_d2754e245" xml:id="mentioned_d2754e364" xml:lang="prg"><lang/>
+                        <gloss><q>wet nurse</q></gloss></mentioned>, <mentioned><mentioned
+                            corresp="#mentioned_d2754e231" xml:id="mentioned_d2754e350"
+                            xml:lang="grc"><lang/>
+                            <w>ἀννίς</w></mentioned>, <mentioned corresp="#mentioned_d2754e237"
+                            xml:id="mentioned_d2754e356" xml:lang="goh"><lang/>
+                            <w>ana</w></mentioned>
+                        <gloss><q>grandmother</q></gloss></mentioned>, <mentioned
+                        corresp="#mentioned_d2754e245" xml:id="mentioned_d2754e364" xml:lang="prg"><lang/>
                         <w>ane</w>
-                        <gloss><q>old mother</q></gloss></mentioned>, <mentioned corresp="#mentioned_d2754e253" xml:id="mentioned_d2754e372" xml:lang="ps"><lang/>
-                        <w>ana</w></mentioned>, <mentioned corresp="#mentioned_d2754e258" xml:id="mentioned_d2754e377" xml:lang="hu"><lang/>
-                        <w>anja</w></mentioned>, <mentioned corresp="#mentioned_d2754e263" xml:id="mentioned_d2754e382" xml:lang="kca" dialect="kca"><lang/>
-                        <w>ana</w></mentioned>, <mentioned corresp="#mentioned_d2754e268" xml:id="mentioned_d2754e387" xml:lang="udm"><lang/>
-                        <w>anaj</w>
-                        <gloss><q>mother</q></gloss></mentioned> etc. “Children's” language word.
-                    Symmetrical term for ‘father’ is <ref type="xr" target="#entry_æda"/> q. v. See
-                    also <ref type="xr" target="#entry_nana"/>, <ref type="xr" target="#entry_dada"/>.</etym>
+                        <gloss><q>old mother</q></gloss></mentioned>, <mentioned><mentioned
+                            corresp="#mentioned_d2754e253" xml:id="mentioned_d2754e372"
+                            xml:lang="ps"><lang/>
+                            <w>ana</w></mentioned>, <mentioned corresp="#mentioned_d2754e258"
+                            xml:id="mentioned_d2754e377" xml:lang="hu"><lang/>
+                            <w>anja</w></mentioned>, <mentioned corresp="#mentioned_d2754e263"
+                            xml:id="mentioned_d2754e382" xml:lang="kca" dialect="kca"><lang/>
+                            <w>ana</w></mentioned>, <mentioned corresp="#mentioned_d2754e268"
+                            xml:id="mentioned_d2754e387" xml:lang="udm"><lang/>
+                            <w>anaj</w></mentioned>
+                        <gloss><q>mother</q></gloss></mentioned> etc. A nursery word. A symmetrical
+                    term for <gloss><q>father</q></gloss> is <ref type="xr" target="#entry_æda"/> q.
+                    v. See also <ref type="xr" target="#entry_nana"/>, <ref type="xr"
+                        target="#entry_dada"/>.</etym>
             </entry>
         </body>
     </text>
