@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Abaev Dictionary: entry <hi rendition="#rend_italic">æncʼylyn</hi></title>
+                <title>Abaev Dictionary: entry <w>æncʼylyn</w></title>
             </titleStmt>
             <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
     Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
@@ -17,47 +17,72 @@
     <tagsDecl>
         <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
         <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
-        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "<gloss><q>" "</q></gloss>";</rendition>
         <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
     </tagsDecl>
 </encodingDesc>
     </teiHeader>
     <text>
         <body>
-            <entry xml:id="entry_æncʼylyn" xml:lang="os">
-                <form xml:id="form_d2721e66" xml:lang="os-x-iron" type="lemma"><orth>æncʼylyn</orth><form xml:id="form_d2721e68" type="participle"><orth>æncʼyld</orth></form></form>
-                <form xml:id="form_d2721e71" xml:lang="os-x-digor" type="dialectal"><orth>æncʼulun</orth><form xml:id="form_d2721e73" type="participle"><orth>æncʼuld</orth></form></form>
-                <sense xml:id="sense_d2721e76"><abv:tr xml:lang="ru">
+            <entry xml:id="entry_æncʼylyn" xml:lang="os" abv:completeness="complete">
+                <?oxy_comment_start author="oleg" timestamp="20240322T192448+0300" comment="checked"?>
+                <form xml:id="form_d2721e66" xml:lang="os-x-iron" type="lemma"><orth>æncʼylyn</orth>
+                    <form xml:id="form_d2721e68" type="participle"
+                    ><orth>æncʼyld</orth></form></form><?oxy_comment_end?>
+                <form xml:id="form_d2721e71" xml:lang="os-x-digor" type="dialectal"
+                        ><orth>æncʼulun</orth>
+                    <form xml:id="form_d2721e73" type="participle"
+                    ><orth>æncʼuld</orth></form></form>
+                <sense xml:id="sense_d2721e76">
+                    <abv:tr xml:lang="ru">
                         <q>морщиться</q>
-                    </abv:tr><abv:tr xml:lang="en">
+                    </abv:tr>
+                    <abv:tr xml:lang="en">
                         <q>to wrinkle up</q>
-                    </abv:tr></sense>
+                    </abv:tr>
+                </sense>
                 <abv:exampleGrp xml:id="exampleGrp_d2721e86">
                     <abv:example xml:id="example_d2721e88">
-                        <quote>mæ kʼaba nyncʼyldtæ īs</quote>
+                        <quote>mæ kʼaba
+                                <oRef><?oxy_comment_start author="oleg" timestamp="20240322T192144+0300" comment="NB: plural (and does not seem to be pluractional)"?>nyncʼyldtæ<?oxy_comment_end?>
+                                īs</oRef></quote>
                         <abv:tr xml:lang="ru">
                             <q>мое платье смялось</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
-                            <q>my dress is wrinkled up</q>
+                            <q>my dress has wrinkled up</q>
                         </abv:tr>
                     </abv:example>
                     <abv:example xml:id="example_d2721e103" xml:lang="os-x-digor">
                         <usg><lang/></usg>
-                        <quote>æ fur tæssæj ænæzmælgæ sird nincʼuldæj xunkʼi arf</quote>
+                        <quote>æ fur tæssæj ænæzmælgæ sird <oRef>nincʼuldæj</oRef> xunkʼi
+                            arf</quote>
                         <abv:tr xml:lang="ru">
                             <q>от страха, не шевелясь, съежился в берлоге зверь</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
-                            <q>a beast cowered (“wrinkled up”) from fear in its lair</q>
+                            <q>a beast cowered (<gloss><q rendition="#rend_doublequotes">wrinkled
+                                        up</q></gloss>) out of fear in its lair</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Iræf"/><biblScope>58</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Iræf"/>
+                            <biblScope>58</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Медиальное соответствие к переходному глаголу <ref type="xr" target="#entry_æncʼūlyn"/> | <hi rendition="#rend_italic">æncʼolun</hi> ‘морщить’ с закономерным
-                    ослаблением гласного основы (<hi rendition="#rend_italic">ū</hi> | <hi rendition="#rend_italic">o</hi> → <hi rendition="#rend_italic">y</hi> | <hi rendition="#rend_italic">u</hi>). Ср. <ref type="xr" target="#entry_æmpūlyn"/> и <ref type="xr" target="#entry_æmpylyn"/>.</etym>
-                <etym xml:lang="en">A middle voice pair to a transitive verb <ref type="xr" target="#entry_æncʼūlyn"/> | <hi rendition="#rend_italic">æncʼolun</hi> ‘to wrinkle (up)’ with regular
-                    weakening of the stem vowel (<hi rendition="#rend_italic">ū</hi> | <hi rendition="#rend_italic">o</hi> → <hi rendition="#rend_italic">y</hi> | <hi rendition="#rend_italic">u</hi>). Cf. <ref type="xr" target="#entry_æmpūlyn"/> and <ref type="xr" target="#entry_æmpylyn"/>.</etym>
+                <etym xml:lang="ru">Медиальное соответствие к переходному глаголу <ref type="xr"
+                        target="#entry_æncʼūlyn"><w xml:lang="os-x-iron">æncʼūlyn</w><w
+                            xml:lang="os-x-digor">æncʼolun</w>
+                        <gloss><q>морщить</q></gloss></ref> с закономерным ослаблением гласного
+                    основы (<c xml:lang="os-x-iron">ū</c><c xml:lang="os-x-digor">o</c> → <c
+                        xml:lang="os-x-iron">y</c><c xml:lang="os-x-digor">u</c>). Ср. <ref
+                        type="xr" target="#entry_æmpūlyn"/> и <ref type="xr" target="#entry_æmpylyn"
+                    />.</etym>
+                <etym xml:lang="en">A middle voice pair to a transitive verb <ref type="xr"
+                        target="#entry_æncʼūlyn"><w xml:lang="os-x-iron">æncʼūlyn</w><w
+                            xml:lang="os-x-digor">æncʼolun</w>
+                        <gloss><q>to wrinkle (up)</q></gloss></ref> with regular weakening of the
+                    stem vowel (<c>ū</c> | <c>o</c> → <c>y</c> | <c>u</c>). Cf. <ref type="xr"
+                        target="#entry_æmpūlyn"/> and <ref type="xr" target="#entry_æmpylyn"
+                    />.</etym>
             </entry>
         </body>
     </text>

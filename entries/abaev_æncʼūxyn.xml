@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Abaev Dictionary: entry <hi rendition="#rend_italic">æncʼūxyn</hi></title>
+                <title>Abaev Dictionary: entry <w>æncʼūxyn</w></title>
             </titleStmt>
             <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
     Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
@@ -17,36 +17,58 @@
     <tagsDecl>
         <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
         <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
-        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "<gloss><q>" "</q></gloss>";</rendition>
         <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
     </tagsDecl>
 </encodingDesc>
     </teiHeader>
     <text>
         <body>
-            <entry xml:id="entry_æncʼūxyn" xml:lang="os">
-                <form xml:id="form_d5201e66" xml:lang="os-x-iron" type="lemma"><orth>æncʼūxyn</orth><form xml:id="form_d5201e68" type="participle"><orth>æncʼyxt</orth></form></form>
-                <form xml:id="form_d5201e71" xml:lang="os-x-digor" type="dialectal"><orth>æncʼoxun</orth><form xml:id="form_d5201e73" type="participle"><orth>æncʼuxt</orth></form></form>
-                <sense xml:id="sense_d5201e76"><sense xml:id="sense_d5201e77"><abv:tr xml:lang="ru">
+            <entry xml:id="entry_æncʼūxyn" xml:lang="os" abv:completeness="complete">
+                <?oxy_comment_start author="oleg" timestamp="20240322T192046+0300" comment="checked"?>
+                <form xml:id="form_d5201e66" xml:lang="os-x-iron" type="lemma"
+                        ><orth>æncʼūxyn</orth><form xml:id="form_d5201e68" type="participle"
+                            ><orth>æncʼyxt</orth></form></form><?oxy_comment_end?>
+                <form xml:id="form_d5201e71" xml:lang="os-x-digor" type="dialectal"
+                        ><orth>æncʼoxun</orth><form xml:id="form_d5201e73" type="participle"
+                            ><orth>æncʼuxt</orth></form></form>
+                <sense xml:id="sense_d5201e76">
+                    <sense xml:id="sense_d5201e77">
+                        <abv:tr xml:lang="ru">
                             <q>тащить</q>
-                        </abv:tr><abv:tr xml:lang="en">
+                        </abv:tr>
+                        <abv:tr xml:lang="en">
                             <q>to pull</q>
-                        </abv:tr></sense><sense xml:id="sense_d5201e86"><abv:tr xml:lang="ru">
+                        </abv:tr>
+                    </sense>
+                    <sense xml:id="sense_d5201e86">
+                        <abv:tr xml:lang="ru">
                             <q>влачить</q>
-                        </abv:tr><abv:tr xml:lang="en">
+                        </abv:tr>
+                        <abv:tr xml:lang="en">
                             <q>to drag</q>
-                        </abv:tr></sense><sense xml:id="sense_d5201e95"><abv:tr xml:lang="ru">
+                        </abv:tr>
+                    </sense>
+                    <sense xml:id="sense_d5201e95">
+                        <abv:tr xml:lang="ru">
                             <q>выпивать</q>
-                        </abv:tr><abv:tr xml:lang="en">
+                        </abv:tr>
+                        <abv:tr xml:lang="en">
                             <q>to drink (alcohol)</q>
-                        </abv:tr></sense><sense xml:id="sense_d5201e104"><abv:tr xml:lang="ru">
-                            <q>‘хлестать’</q>
-                        </abv:tr><abv:tr xml:lang="en">
-                            <q>to swill (a drink)</q>
-                        </abv:tr></sense></sense>
+                        </abv:tr>
+                    </sense>
+                    <sense xml:id="sense_d5201e104">
+                        <abv:tr xml:lang="ru">
+                            <q rendition="#rend_doublequotes">хлестать</q>
+                        </abv:tr>
+                        <abv:tr xml:lang="en">
+                            <q rendition="#rend_doublequotes">to swill (a drink)</q>
+                        </abv:tr>
+                    </sense>
+                </sense>
                 <abv:exampleGrp xml:id="exampleGrp_d5201e114">
                     <abv:example xml:id="example_d5201e116">
-                        <quote>araqq æncʼūxy</quote>
+                        <quote>araqq <oRef>æncʼūxy</oRef></quote>
                         <abv:tr xml:lang="ru">
                             <q>хлещет водку</q>
                         </abv:tr>
@@ -55,21 +77,48 @@
                         </abv:tr>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из <ref type="xr" target="#entry_æntʼūxyn"/> | <hi rendition="#rend_italic">æntʼoxun</hi>
-                    ‘стягивать сильно’, ‘тащить’ с перебоем <hi rendition="#rend_italic">tʼ</hi> || <hi rendition="#rend_italic">сʼ</hi>, как <ref type="xr" target="#entry_æncʼūlyn"/> из *<hi rendition="#rend_italic">æmtūlyn</hi>. <ref type="xr" target="#entry_æncʼūxyn"/> и <ref type="xr" target="#entry_æntʼūxyn"/> оба
-                    развились из *<hi rendition="#rend_italic">æm-tūxyn</hi>; появление смычно-гортанных <hi rendition="#rend_italic">cʼ</hi>, <hi rendition="#rend_italic">tʼ</hi> —
-                    экспрессивное (см. <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>522</biblScope></bibl>). Этот же глагол с перебоем t || pʼ
-                    дал <ref type="xr" target="#entry_æmpʼūxyn"/> | <hi rendition="#rend_italic">æmpʼoxun</hi> ‘сильно стягивать’,
-                    ‘тащить’. Значение ‘выпивать’, „хлестать“ развилось, быть может, по ассоциации с
-                    <hi rendition="#rend_italic">cʼux</hi> ‘рот’ (см. <ref type="xr" target="#entry_ʒyx"/>). См. <ref type="xr" target="#entry_tūxyn"/>; ср. <ref type="xr" target="#entry_æntʼūxyn"/>, <ref type="xr" target="#entry_æmpʼūxyn"/>.</etym>
-                <etym xml:lang="en">From <ref type="xr" target="#entry_æntʼūxyn"/> | <hi rendition="#rend_italic">æntʼoxun</hi>
-                    ˈto drawˈ, ˈto pullˈ with the alternation <hi rendition="#rend_italic">tʼ</hi> || <hi rendition="#rend_italic">cʼ</hi>, like <ref type="xr" target="#entry_æncʼūlyn"/> from *<hi rendition="#rend_italic">æmtūlyn</hi>. Both <ref type="xr" target="#entry_æncʼūxyn"/> and<ref type="xr" target="#entry_æntʼūxyn"/>
-                    developed from *<hi rendition="#rend_italic">æm-tūxyn</hi>; the ejectives <hi rendition="#rend_italic">cʼ</hi>, <hi rendition="#rend_italic">tʼ</hi> are expressive (see
-                            <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>522</biblScope></bibl>). The same verb with the alternation
-                    <hi rendition="#rend_italic">t</hi> || <hi rendition="#rend_italic">pʼ</hi> gave <ref type="xr" target="#entry_æmpʼūxyn"/> | <hi rendition="#rend_italic">æmpʼoxun</hi>
-                    ‘to draw’, ‘to pull’. The meaning ˈto drink', “to swill” could have developed by
-                    association with <hi rendition="#rend_italic">cʼux</hi> ‘mouth’ (see <ref type="xr" target="#entry_ʒyx"/>).
-                    See <ref type="xr" target="#entry_tūxyn"/>; cf. <ref type="xr" target="#entry_æntʼūxyn"/>, <ref type="xr" target="#entry_æmpʼūxyn"/>.</etym>
+                <etym xml:lang="ru">Из <ref type="xr" target="#entry_æntʼūxyn"><w
+                            xml:lang="os-x-iron">æntʼūxyn</w><w xml:lang="os-x-digor">æntʼoxun</w>
+                        <gloss><q>стягивать сильно</q></gloss>, <gloss><q>тащить</q></gloss></ref> с
+                    перебоем <c>tʼ</c> ‖ <c>сʼ</c>, как <ref type="xr" target="#entry_æncʼūlyn"
+                            ><w>æncʼūlyn</w>
+                        <note type="comment">из <w type="rec">æmtūlyn</w></note></ref>. <ref
+                        type="xr" target="#entry_æncʼūxyn"><w>Æncʼūxyn</w></ref> и <ref type="xr"
+                        target="#entry_æntʼūxyn"/> оба развились из <w type="rec">æm-tūxyn</w>;
+                    появление смычно-гортанных <c>cʼ</c>, <c>tʼ</c> — экспрессивное (см. <bibl><ref
+                            type="bibl" target="#ref_ОЯФ_I"/>
+                        <biblScope>522</biblScope></bibl>). Этот же глагол с перебоем <c>t</c> ‖
+                        <c>pʼ</c> дал <ref type="xr" target="#entry_æmpʼūxyn"><w
+                            xml:lang="os-x-iron">æmpʼūxyn</w><w xml:lang="os-x-digor">æmpʼoxun</w>
+                        <gloss><q>сильно стягивать</q></gloss>, <gloss><q>тащить</q></gloss>.
+                        Значение <gloss><q>выпивать</q></gloss>, <gloss><q
+                                rendition="#rend_doublequotes">хлестать</q></gloss></ref> развилось,
+                    быть может, по ассоциации с <ref type="xr" target="#entry_ʒyx"
+                        xml:lang="os-x-digor"><w>cʼux</w>
+                        <gloss><q>рот</q></gloss></ref> (см. <ref type="xr" target="#entry_ʒyx"/>).
+                    См. <ref type="xr" target="#entry_tūxyn"/>; ср. <ref type="xr"
+                        target="#entry_æntʼūxyn"/>, <ref type="xr" target="#entry_æmpʼūxyn"
+                    />.</etym>
+                <etym xml:lang="en">From <ref type="xr" target="#entry_æntʼūxyn"><w
+                            xml:lang="os-x-iron">æntʼūxyn</w><w xml:lang="os-x-digor">æntʼoxun</w>
+                        <gloss><q>to draw</q></gloss>, <gloss><q>to pull</q></gloss></ref> with the
+                    alternation <c>tʼ</c> ‖ <c>cʼ</c>, like <ref type="xr" target="#entry_æncʼūlyn"
+                            ><w>æncʼūlyn</w>
+                        <note type="comment">from *<w>æmtūlyn</w></note></ref>. Both <ref type="xr"
+                        target="#entry_æncʼūxyn"/> and <ref type="xr" target="#entry_æntʼūxyn"/>
+                    developed from <w type="rec">æm-tūxyn</w>; the ejectives <c>cʼ</c>, <c>tʼ</c>
+                    are expressive (see <bibl><ref type="bibl" target="#ref_ОЯФ_I"/>
+                        <biblScope>522</biblScope></bibl>). The same verb with the alternation
+                        <c>t</c> ‖ <c>pʼ</c> gave <ref type="xr" target="#entry_æmpʼūxyn"><w
+                            xml:lang="os-x-iron">æmpʼūxyn</w><w xml:lang="os-x-digor">æmpʼoxun</w>
+                        <gloss><q>to draw</q></gloss>, <gloss><q>to pull</q></gloss>. The meaning
+                        ˈto drink', <gloss><q rendition="#rend_doublequotes">to
+                        swill</q></gloss></ref> could have developed by association with <ref
+                        type="xr" target="#entry_ʒyx" xml:lang="os-x-digor"><w>cʼux</w>
+                        <gloss><q>mouth</q></gloss></ref> (see <ref type="xr" target="#entry_ʒyx"
+                    />). See <ref type="xr" target="#entry_tūxyn"/>; cf. <ref type="xr"
+                        target="#entry_æntʼūxyn"/>, <ref type="xr" target="#entry_æmpʼūxyn"
+                    />.</etym>
             </entry>
         </body>
     </text>

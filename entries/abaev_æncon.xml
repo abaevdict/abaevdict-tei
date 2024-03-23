@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Abaev Dictionary: entry <hi rendition="#rend_italic">æncon</hi></title>
+                <title>Abaev Dictionary: entry <w>æncon</w></title>
             </titleStmt>
             <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
     Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
@@ -17,31 +17,40 @@
     <tagsDecl>
         <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
         <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
-        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "<gloss><q>" "</q></gloss>";</rendition>
         <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
     </tagsDecl>
 </encodingDesc>
     </teiHeader>
     <text>
         <body>
-            <entry xml:id="entry_æncon" xml:lang="os">
-                <form xml:id="form_d2043e66" type="lemma"><orth>æncon</orth></form>
-                <sense xml:id="sense_d2043e69"><sense xml:id="sense_d2043e70"><abv:tr xml:lang="ru">
+            <entry xml:id="entry_æncon" xml:lang="os" abv:completeness="questions">
+                <?oxy_comment_start author="oleg" timestamp="20240322T190736+0300" comment="checked"?>
+                <form xml:id="form_d2043e66" type="lemma"><orth>æncon</orth></form><?oxy_comment_end?>
+                <sense xml:id="sense_d2043e69">
+                    <sense xml:id="sense_d2043e70">
+                        <abv:tr xml:lang="ru">
                             <q>легкий</q>
-                        </abv:tr><note type="comment" xml:lang="ru"> (в противоположность
-                            ‘трудномуˈ)</note><note type="comment" xml:lang="en"> (as opposed to
-                            ‘difficultˈ)</note><abv:tr xml:lang="en">
+                        </abv:tr>
+                        <abv:tr xml:lang="en">
                             <q>easy</q>
-                        </abv:tr><note type="comment" xml:lang="ru"> (в противоположность
-                            ‘трудномуˈ)</note><note type="comment" xml:lang="en"> (as opposed to
-                            ‘difficultˈ)</note></sense><sense xml:id="sense_d2043e87"><abv:tr xml:lang="ru">
+                        </abv:tr>
+                        <note type="comment" xml:lang="ru"> (в противоположность
+                            <q>трудному</q>)</note>
+                        <note type="comment" xml:lang="en"> (as opposed to <q>difficult</q>)</note>
+                    </sense>
+                    <sense xml:id="sense_d2043e87">
+                        <abv:tr xml:lang="ru">
                             <q>facilis</q>
-                        </abv:tr><abv:tr xml:lang="en">
-                            <q><hi rendition="#rend_italic">facilis</hi></q>
-                        </abv:tr></sense></sense>
+                        </abv:tr>
+                        <abv:tr xml:lang="en">
+                            <q><w>facilis</w></q>
+                        </abv:tr>
+                    </sense>
+                </sense>
                 <abv:exampleGrp xml:id="exampleGrp_d2043e97">
                     <abv:example xml:id="example_d2043e99">
-                        <quote>æncon k˳yst</quote>
+                        <quote><oRef>æncon</oRef> k˳yst</quote>
                         <abv:tr xml:lang="ru">
                             <q>легкая работа</q>
                         </abv:tr>
@@ -49,6 +58,7 @@
                             <q>easy work</q>
                         </abv:tr>
                     </abv:example>
+                    <?oxy_comment_start author="oleg" timestamp="20240322T185651+0300" comment="should this be viewed as RE?"?>
                     <abv:example xml:id="example_d2043e114" xml:lang="os-x-digor">
                         <usg><lang/></usg>
                         <quote>ænconvadat</quote>
@@ -58,9 +68,9 @@
                         <abv:tr xml:lang="en">
                             <q>convenient</q>
                         </abv:tr>
-                    </abv:example>
+                    </abv:example><?oxy_comment_end?>
                     <abv:example xml:id="example_d2043e132">
-                        <quote>ænconævzaræn fyst</quote>
+                        <quote><oRef>ænconævzaræn</oRef> fyst</quote>
                         <abv:tr xml:lang="ru">
                             <q>разборчивое письмо</q>
                         </abv:tr>
@@ -69,58 +79,87 @@
                         </abv:tr>
                     </abv:example>
                     <abv:example xml:id="example_d2043e147">
-                        <quote>mæ bæx æncon fæxæcæn næw</quote>
+                        <quote>mæ bæx <oRef>æncon</oRef> fæxæcæn næw</quote>
                         <abv:tr xml:lang="ru">
                             <q>моего коня не легко удержать</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
                             <q>my horse is not easy to hold in place</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_ОЭ"/><biblScope>I 42</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_ОЭ"/>
+                            <biblScope>I 42</biblScope></bibl>
                     </abv:example>
                     <abv:example xml:id="example_d2043e166">
-                        <quote>cy ū æncondær zæǧæn?</quote>
+                        <quote>cy ū <oRef>æncondær</oRef> zæǧæn?</quote>
                         <abv:tr xml:lang="ru">
                             <q>что легче сказать?</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
                             <q>which is easier to say?</q>
                         </abv:tr>
-                        <bibl><biblScope>Матфей 9 5</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Матфей"/>
+                            <biblScope><hi rend="italic">9</hi> 5</biblScope></bibl>
                     </abv:example>
                     <abv:example xml:id="example_d2043e185" xml:lang="os-x-digor">
                         <usg><lang/></usg>
-                        <quote>æncon min æj dæwmæ kæsun</quote>
+                        <quote><oRef>æncon</oRef> min æj dæwmæ kæsun</quote>
                         <abv:tr xml:lang="ru">
                             <q>приятно мне смотреть на тебя</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
-                            <q>for me it is nice to look at you</q>
+                            <q>it is pleasant for me to look at you</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Qazb."/><biblScope>38</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Qazb."/>
+                            <biblScope>38</biblScope></bibl>
                     </abv:example>
                     <abv:example xml:id="example_d2043e207" xml:lang="os-x-digor">
                         <usg><lang/></usg>
-                        <quote>dombaj æncontæbæl næ fæjjervæzʒænæj</quote>
+                        <quote>dombaj
+                                <?oxy_comment_start author="oleg" timestamp="20240322T185904+0300" comment="NB: PL-SUPER in adverbial sense"?><oRef>æncontæbæl</oRef><?oxy_comment_end?>
+                            næ fæjjervæzʒænæj</quote>
                         <abv:tr xml:lang="ru">
                             <q>зубр не спасется так легко</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
-                            <q>a bison will not escape that easy</q>
+                            <q>a bison will not escape that easily</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_AK"/><biblScope>I 52</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_AK"/>
+                            <biblScope>I 52</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Параллельная форма к <ref type="xr" target="#entry_æncoj"/> |
-                    <hi rendition="#rend_italic">æncojnæ</hi> (←<hi rendition="#rend_italic">*ham-č(y)āna-</hi>); ср. <hi rendition="#rend_italic">*kuron</hi> ˈмельницаˈ (в <hi rendition="#rend_italic">don-guron</hi>
-                    ˈмельничная рекаˈ) рядом с <ref type="xr" target="#entry_k0yroj"/> | <hi rendition="#rend_italic">kurojnæ</hi>
-                    или <ref type="xr" target="#entry_byron"/> ˈмусорˈ рядом с д.
-                    <hi rendition="#rend_italic">burojnæ</hi>.</etym>
-                <etym xml:lang="en">A parallel form to <ref type="xr" target="#entry_æncoj"/> |
-                    <hi rendition="#rend_italic">æncojnæ</hi> (←<hi rendition="#rend_italic">*ham-č(y)āna-</hi>); cf. <hi rendition="#rend_italic">*kuron</hi> ‘mill’ (in <hi rendition="#rend_italic">don-guron</hi> ‘a
-                    mill river’) alongside <ref type="xr" target="#entry_k0yroj"/> | <hi rendition="#rend_italic">kurojnæ</hi> or
-                        <ref type="xr" target="#entry_byron"/>ˈlitterˈ alongside Digor
-                    <hi rendition="#rend_italic">burojnæ</hi>.</etym>
+                <etym xml:lang="ru">Параллельная форма к <ref type="xr" target="#entry_æncoj"><w
+                            xml:lang="os-x-iron">æncoj</w><w xml:lang="os-x-digor">æncojnæ</w>
+                        <note type="comment">(← <mentioned xml:lang="ira"><w type="rec"
+                                    >ham-č(y)āna-</w></mentioned>)</note></ref>; ср. <mentioned
+                        xml:lang="os-x-digor"
+                            ><?oxy_comment_start author="oleg" timestamp="20240322T190438+0300" comment="put language as Digor because this should be Digor judging by phonetics"?><w
+                            type="rec">kuron</w><?oxy_comment_end?>
+                        <gloss><q>мельница</q></gloss>
+                        <note type="comment">(в <ref type="xr" target="#entry_dong0yron"
+                                xml:lang="os-x-digor"><w>don-guron</w>
+                                <gloss><q>мельничная река</q></gloss></ref>)</note></mentioned>
+                    рядом с <ref type="xr" target="#entry_k0yroj"><w xml:lang="os-x-iron"
+                            >k˳yroj</w><w xml:lang="os-x-digor">kurojnæ</w></ref> или <ref type="xr"
+                        target="#entry_byron"><w>byron</w>
+                        <gloss><q>мусор</q></gloss></ref> рядом с <ref type="xr"
+                        target="#entry_byron" xml:lang="os-x-digor"><lang/>
+                        <w>burojnæ</w></ref>.</etym>
+                <etym xml:lang="en">A parallel form to <ref type="xr" target="#entry_æncoj"><w
+                            xml:lang="os-x-iron">æncoj</w><w xml:lang="os-x-digor">æncojnæ</w><note
+                            type="comment"> (← <mentioned xml:lang="ira"><w type="rec"
+                                    >ham-č(y)āna-</w></mentioned>)</note></ref>; cf. <mentioned
+                        xml:lang="os-x-digor"
+                            ><?oxy_comment_start author="oleg" timestamp="20240322T190438+0300" comment="put language as Digor because this should be Digor judging by phonetics"?><w
+                            type="rec">kuron</w><?oxy_comment_end?>
+                        <gloss><q>mill</q></gloss>
+                        <note type="comment">(in <ref type="xr" target="#entry_dong0yron"
+                                xml:lang="os-x-digor"><w>don-guron</w>
+                                <gloss><q>watermill stream</q></gloss></ref>)</note></mentioned>
+                    alongside <ref type="xr" target="#entry_k0yroj"><w xml:lang="os-x-iron"
+                            >k˳yroj</w><w xml:lang="os-x-digor">kurojnæ</w></ref> or <ref type="xr"
+                        target="#entry_byron"><w>byron</w><gloss><q>litter</q></gloss></ref>
+                    alongside <ref type="xr" target="#entry_byron" xml:lang="os-x-digor"><lang/>
+                        <w>burojnæ</w></ref>.</etym>
             </entry>
         </body>
     </text>
