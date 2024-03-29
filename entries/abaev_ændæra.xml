@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ændæra</hi></title>
+                <title>Abaev Dictionary: entry <w>ændæra</w></title>
             </titleStmt>
             <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
     Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
@@ -17,39 +17,52 @@
     <tagsDecl>
         <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
         <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
-        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "<gloss><q>" "</q></gloss>";</rendition>
         <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
     </tagsDecl>
 </encodingDesc>
     </teiHeader>
     <text>
         <body>
-            <entry xml:id="entry_ændæra" xml:lang="os">
-                <form xml:id="form_d3441e66" type="lemma"><orth>ændæra</orth></form>
-                <sense xml:id="sense_d3441e69"><sense xml:id="sense_d3441e70"><note type="comment" xml:lang="ru">союз</note><note type="comment" xml:lang="en">conjunction</note><abv:tr xml:lang="ru">
+            <entry xml:id="entry_ændæra" xml:lang="os" abv:completeness="complete">
+                <?oxy_comment_start author="oleg" timestamp="20240323T235307+0300" comment="checked"?>
+                <form xml:id="form_d3441e66" type="lemma"><orth>ændæra</orth></form><?oxy_comment_end?>
+                <sense xml:id="sense_d3441e69">
+                    <sense xml:id="sense_d3441e70">
+                        <note type="comment" xml:lang="ru">союз </note>
+                        <note type="comment" xml:lang="en">conjunction </note>
+                        <abv:tr xml:lang="ru">
                             <q>а не то</q>
-                        </abv:tr><note type="comment" xml:lang="ru">союз</note><note type="comment" xml:lang="en">conjunction</note><abv:tr xml:lang="en">
+                        </abv:tr>
+                        <abv:tr xml:lang="en">
                             <q>or else</q>
-                        </abv:tr></sense><sense xml:id="sense_d3441e87"><abv:tr xml:lang="ru">
+                        </abv:tr>
+                    </sense>
+                    <sense xml:id="sense_d3441e87">
+                        <abv:tr xml:lang="ru">
                             <q>иначе</q>
-                        </abv:tr><abv:tr xml:lang="en">
+                        </abv:tr>
+                        <abv:tr xml:lang="en">
                             <q>otherwise</q>
-                        </abv:tr></sense></sense>
+                        </abv:tr>
+                    </sense>
+                </sense>
                 <abv:exampleGrp xml:id="exampleGrp_d3441e97">
                     <abv:example xml:id="example_d3441e99">
-                        <quote>bafīdawæm jemæ, ændæra jemæ nīcy bakænʒystæm</quote>
+                        <quote>bafīdawæm jemæ, <oRef>ændæra</oRef> jemæ nīcy bakænʒystæm</quote>
                         <abv:tr xml:lang="ru">
                             <q>помиримся с ним, а не то нам с ним не справиться</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
-                            <q>let’s make peace with him, otherwise we will not be able to overcome
+                            <q>let’s make peace with him, or else we will not be able to overcome
                                 him</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Munk."/><biblScope>178</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Munk."/>
+                            <biblScope>178</biblScope></bibl>
                     </abv:example>
                     <abv:example xml:id="example_d3441e118">
-                        <quote>mæ fyd Xæmycy myn ḱī amardta, ūj myn zæǧ, ændæra dyn dæ ʒīʒītæ
-                            sūʒyn</quote>
+                        <quote>mæ fyd Xæmycy myn ḱī amardta, ūj myn zæǧ, <oRef>ændæra</oRef> dyn dæ
+                            ʒīʒītæ sūʒyn</quote>
                         <abv:tr xml:lang="ru">
                             <q>скажи мне, кто убил моего отца Xaмыца, а не то я сожгу твои груди</q>
                         </abv:tr>
@@ -57,72 +70,85 @@
                             <q>tell me who killed my father Khamyts, otherwise I will burn your
                                 breasts</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_ОТ"/><biblScope>44</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_ОТ"/>
+                            <biblScope>44</biblScope></bibl>
                     </abv:example>
                     <abv:example xml:id="example_d3441e137" xml:lang="os-x-digor">
                         <usg><lang/></usg>
-                        <quote>ajdaǧ bæxbæl badun næ zonun, ændæra alci dær zonun</quote>
+                        <quote>ajdaǧ bæxbæl badun næ zonun, <oRef>ændæra</oRef> alci dær
+                            zonun</quote>
                         <abv:tr xml:lang="ru">
                             <q>я не умею только сидеть на лошади, а не то все умею</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
-                            <q>I only cannot sit on a horse, else I am capable of everything</q>
+                            <q>I only cannot sit on a horse, otherwise I am capable of
+                                everything</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Gurdž._Æduli"/><biblScope>87</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Gurdž._Æduli"/>
+                            <biblScope>87</biblScope></bibl>
                     </abv:example>
                     <abv:example xml:id="example_d3441e159" xml:lang="os-x-digor">
                         <usg><lang/></usg>
-                        <quote>næ dæ warzuj, ændæra din baamonidæ</quote>
+                        <quote>næ dæ warzuj, <oRef>ændæra</oRef> din baamonidæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>не любит он тебя, а не то показал бы тебе (где его душа)</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
-                            <q>he doesn’t love you, otherwise he would show you (where his soul
-                                is)</q>
+                            <q>he does not love you, otherwise he would have shown you (who he
+                                really loves)</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>11%l13%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/>
+                            <biblScope>11<hi rendition="#rend_subscript">13</hi></biblScope></bibl>
                     </abv:example>
                     <abv:example xml:id="example_d3441e181" xml:lang="os-x-digor">
                         <usg><lang/></usg>
-                        <quote>nalat dæ du, ændæra… mæ qurmæʒinadæ dæ zærdæmæ kud næ cæwuj</quote>
+                        <quote>nalat dæ du, <oRef>ændæra</oRef>… mæ qurmæʒinadæ dæ zærdæmæ kud næ
+                            cæwuj</quote>
                         <abv:tr xml:lang="ru">
-                            <q>проклятая ты, а не то как не доходит до тебя („до твоего сердца“) мое
-                                огорчение</q>
+                            <q>проклятая ты, а не то как не доходит до тебя (<gloss><q
+                                        rendition="#rend_doublequotes">до твоего сердца</q></gloss>)
+                                мое огорчение</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
-                            <q>you are cursed, otherwise how is it that my grief doesn’t reach you
-                                (“your heart”)</q>
+                            <q>you are cursed, otherwise how is it that my grief does not reach you
+                                    (<q rendition="#rend_doublequotes">your heart</q>)</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>32%l13%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/>
+                            <biblScope>32<hi rendition="#rend_subscript">13</hi></biblScope></bibl>
                     </abv:example>
                     <abv:example xml:id="example_d3441e204">
-                        <quote>cidær bæddæntæ ma ʽj ǧæwuj, ændæra cættæ ʽj</quote>
+                        <quote>cidær bæddæntæ ma ’j ǧæwuj, <oRef>ændæra</oRef> cættæ ’j</quote>
                         <abv:tr xml:lang="ru">
                             <q>нужны еще какие-то скрепы, а то (арба) готова</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
                             <q>some more fasteners are needed, otherwise the carriage is ready</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_AK"/><biblScope>II 33</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_AK"/>
+                            <biblScope>II 33</biblScope></bibl>
                     </abv:example>
                     <abv:example xml:id="example_d3441e223" xml:lang="os-x-ksan">
                         <usg><lang/></usg>
-                        <quote>izæry ma akæsut, ændæra næ væjjy ūcy xūr</quote>
+                        <quote>izæry ma akæsut, <oRef>ændæra</oRef> næ væjjy ūcy xūr</quote>
                         <abv:tr xml:lang="ru">
                             <q>взгляните вечером, разве не бывает (видно) это солнце</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
-                            <q>take a look in the evening, isn't this sun usually there
+                            <q>take a look in the evening, isn’t this sun usually there
                                 (visible)?</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_ЮОПам."/><biblScope>I
-                            164</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_ЮОПам."/>
+                            <biblScope>I 164</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Местоимение <ref type="xr" target="#entry_ændær"/> ˈдругойˈ,
-                    усиленное формантом <hi rendition="#rend_italic">-a</hi>; ср. <ref type="xr" target="#entry_ævæʒa"/>.</etym>
-                <etym xml:lang="en">The pronoun <ref type="xr" target="#entry_ændær"/> ‘other’
-                    intensified by the formant <hi rendition="#rend_italic">-a</hi>; cf. <ref type="xr" target="#entry_ævæʒa"/>.</etym>
+                <etym xml:lang="ru">Местоимение <ref type="xr" target="#entry_ændær"><w>ændær</w>
+                        <gloss><q>другой</q></gloss></ref>, усиленное <mentioned xml:lang="os"
+                            ><gloss>формантом</gloss>
+                        <m>-a</m></mentioned>; ср. <ref type="xr" target="#entry_ævæʒa"/>.</etym>
+                <etym xml:lang="en">The pronoun <ref type="xr" target="#entry_ændær"><w>ændær</w>
+                        <gloss><q>other</q></gloss></ref> intensified by the <mentioned
+                        xml:lang="os"><gloss>suffix</gloss>
+                        <m>-a</m></mentioned>; cf. <ref type="xr" target="#entry_ævæʒa"/>.</etym>
             </entry>
         </body>
     </text>

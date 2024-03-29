@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ændæræbon</hi></title>
+                <title>Abaev Dictionary: entry <w>ændæræbon</w></title>
             </titleStmt>
             <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
     Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
@@ -17,42 +17,66 @@
     <tagsDecl>
         <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
         <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
-        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "<gloss><q>" "</q></gloss>";</rendition>
         <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
     </tagsDecl>
 </encodingDesc>
     </teiHeader>
     <text>
         <body>
-            <entry xml:id="entry_ændæræbon" xml:lang="os">
-                <form xml:id="form_d3247e66" type="lemma"><orth>ændæræbon</orth></form>
-                <sense xml:id="sense_d3247e69"><abv:tr xml:lang="ru">
+            <entry xml:id="entry_ændæræbon" xml:lang="os" abv:completeness="complete">
+                <?oxy_comment_start author="oleg" timestamp="20240324T000443+0300" comment="checked"?>
+                <form xml:id="form_d3247e66" type="lemma"><orth>ændæræbon</orth></form><?oxy_comment_end?>
+                <sense xml:id="sense_d3247e69">
+                    <abv:tr xml:lang="ru">
                         <q>позавчера</q>
-                    </abv:tr><abv:tr xml:lang="en">
+                    </abv:tr>
+                    <abv:tr xml:lang="en">
                         <q>the day before yesterday</q>
-                    </abv:tr></sense>
+                    </abv:tr>
+                </sense>
                 <abv:exampleGrp xml:id="exampleGrp_d3247e79">
                     <abv:example xml:id="example_d3247e81" xml:lang="os-x-digor">
                         <usg><lang/></usg>
-                        <quote>æncondær in adtæj æzinæ, ændæræbon</quote>
+                        <quote>æncondær in adtæj æzinæ, <oRef>ændæræbon</oRef></quote>
                         <abv:tr xml:lang="ru">
                             <q>ему было легче вчера, позавчера</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
                             <q>he felt better yesterday, the day before yesterday</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Bes._Ka_ke"/><biblScope>39</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Bes._Ka_ke"/>
+                            <biblScope>39</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из <ref type="xr" target="#entry_ændær"/> ˈдругойˈ и <ref type="xr" target="#entry_bon"/> ˈденьˈ с соединительным гласным <hi rendition="#rend_italic">-æ-</hi>.
-                    Второе слово в значении ˈдругойˈ — <ref type="xr" target="#entry_īnnæ"/>
-                    использовано для обозначения уже не прошедшего, а будущего: <ref type="xr" target="#entry_īnnæbon"/> ˈпослезавтраˈ. Ср. также <ref type="xr" target="#entry_abon"/> ˈсегодняˈ, <ref type="xr" target="#entry_ībon"/>
-                    ˈна-дняхˈ, <ref type="xr" target="#entry_ærdæbon"/> ˈдавечаˈ.</etym>
-                <etym xml:lang="en">From <ref type="xr" target="#entry_ændær"/> ˈotherˈ and <ref type="xr" target="#entry_bon"/> ˈdayˈ with a linking element <hi rendition="#rend_italic">-æ-</hi>. The
-                    second word with the meaning ˈotherˈ, <ref type="xr" target="#entry_īnnæ"/> is
-                    used to denote future, not past: <ref type="xr" target="#entry_īnnæbon"/> ˈthe
-                    day after tomorrowˈ. Cf. also <ref type="xr" target="#entry_abon"/> ˈtodayˈ,
-                        <ref type="xr" target="#entry_ībon"/> ˈthe other dayˈ, <ref type="xr" target="#entry_ærdæbon"/> ˈlatelyˈ.</etym>
+                <etym xml:lang="ru">Из <ref type="xr" target="#entry_ændær"><w>ændær</w>
+                        <gloss><q>другой</q></gloss></ref> и <ref type="xr" target="#entry_bon"
+                            ><w>bon</w>
+                        <gloss><q>день</q></gloss></ref> с соединительным гласным <c>-æ-</c>. Второе
+                    слово в значении <gloss><q>другой</q></gloss> — <ref type="xr"
+                        target="#entry_īnnæ"/> использовано для обозначения уже не прошедшего, а
+                    будущего: <ref type="xr" target="#entry_īnnæbon"><w>īnnæbon</w>
+                        <gloss><q>послезавтра</q></gloss></ref>. Ср. также <ref type="xr"
+                        target="#entry_abon"><w>abon</w>
+                        <gloss><q>сегодня</q></gloss></ref>, <ref type="xr" target="#entry_ībon"
+                            ><w>ībon</w>
+                        <gloss><q>на-днях</q></gloss></ref>, <ref type="xr" target="#entry_ærdæbon"
+                            ><w>ærdæbon</w>
+                        <gloss><q>давеча</q></gloss></ref>.</etym>
+                <etym xml:lang="en">From <ref type="xr" target="#entry_ændær"><w>ændær</w>
+                        <gloss><q>other</q></gloss></ref> and <ref type="xr" target="#entry_bon"
+                            ><w>bon</w>
+                        <gloss><q>day</q></gloss></ref> with the linking element <c>-æ-</c>. The
+                    second word with the meaning <gloss><q>other</q></gloss>, <ref type="xr"
+                        target="#entry_īnnæ"/> is used to denote the future, not the past: <ref
+                        type="xr" target="#entry_īnnæbon"><w>īnnæbon</w>
+                        <gloss><q>the day after tomorrow</q></gloss></ref>. Cf. also <ref type="xr"
+                        target="#entry_abon"><w>abon</w>
+                        <gloss><q>today</q></gloss></ref>, <ref type="xr" target="#entry_ībon"
+                            ><w>ībon</w>
+                        <gloss><q>the other day</q></gloss></ref>, <ref type="xr"
+                        target="#entry_ærdæbon"><w>ærdæbon</w>
+                        <gloss><q>lately</q></gloss></ref>.</etym>
             </entry>
         </body>
     </text>

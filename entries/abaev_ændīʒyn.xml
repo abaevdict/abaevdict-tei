@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ændīʒyn</hi></title>
+                <title>Abaev Dictionary: entry <w>ændīʒyn</w></title>
             </titleStmt>
             <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
     Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
@@ -17,47 +17,62 @@
     <tagsDecl>
         <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
         <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
-        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "<gloss><q>" "</q></gloss>";</rendition>
         <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
     </tagsDecl>
 </encodingDesc>
     </teiHeader>
     <text>
         <body>
-            <entry xml:id="entry_ændīʒyn" xml:lang="os">
-                <form xml:id="form_d88e66" type="lemma"><orth>ændīʒyn</orth><form xml:id="form_d88e68" type="variant"><orth>ændeʒun</orth></form></form>
-                <sense xml:id="sense_d88e71"><abv:tr xml:lang="ru">
+            <entry xml:id="entry_ændīʒyn" xml:lang="os" abv:completeness="complete">
+                <?oxy_comment_start author="oleg" timestamp="20240325T174352+0300" comment="checked"?>
+                <form xml:id="form_d88e66" type="lemma" xml:lang="os-x-iron"
+                        ><orth>ændīʒyn</orth><?oxy_comment_start author="oleg" timestamp="20240325T173723+0300" comment="I took the liberty to include the past stem (other dictionaries have it, although not for Digor)"?><form
+                        type="participle"><orth>ændyǧd</orth></form><?oxy_comment_end?></form><?oxy_comment_end?>
+                <form xml:lang="os-x-digor" type="dialectal"><orth>ændeʒun</orth></form>
+                <sense xml:id="sense_d88e71">
+                    <abv:tr xml:lang="ru">
                         <q>сваривать, спаивать (металл)</q>
-                    </abv:tr><abv:tr xml:lang="en">
-                        <q>to weld, to solder</q>
-                    </abv:tr><note type="comment" xml:lang="ru">(ppf. не засвидетельствовано)
-                        </note><note type="comment" xml:lang="en">(ppf. is not attested)
-                    </note></sense>
-                <sense xml:id="sense_d88e85"><sense xml:id="sense_d88e86"><abv:tr xml:lang="ru">
-                            <q>оправляться (после болезни)</q>
-                        </abv:tr><abv:tr xml:lang="en">
-                            <q>to recover (from illness)</q>
-                        </abv:tr></sense><sense xml:id="sense_d88e95"><abv:tr xml:lang="ru">
-                            <q>поправляться</q>
-                        </abv:tr><abv:tr xml:lang="en">
-                            <q>to get better</q>
-                        </abv:tr></sense></sense>
-                <abv:exampleGrp xml:id="exampleGrp_d88e105">
-                    <abv:example xml:id="example_d88e107">
-                        <quote>ræxysy cægtæ dæ tūǵy fendīʒydtoj… com æmæ jæ wælarv Kurdalægonaw
-                            sændīʒæm</quote>
+                    </abv:tr>
+                    <abv:tr xml:lang="en">
+                        <q>to weld, to solder (metal)</q>
+                    </abv:tr>
+                </sense>
+                <sense xml:id="sense_d88e85">
+                    <sense xml:id="sense_d88e86">
                         <abv:tr xml:lang="ru">
-                            <q>звенья цепи спаялись в твоей крови… пойдем спаяем его (звено)
-                                подобно небесному Курдалагону</q>
+                            <q>оправляться (после болезни)</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
-                            <q>the chain’s links were soldered with your blood… let us go solder it
-                                (the link) like heavenly Kurdalægon</q>
+                            <q>to recover (from illness)</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Брит."/><biblScope>81</biblScope></bibl>
+                    </sense>
+                    <sense xml:id="sense_d88e95">
+                        <abv:tr xml:lang="ru">
+                            <q>поправляться</q>
+                        </abv:tr>
+                        <abv:tr xml:lang="en">
+                            <q>to get better</q>
+                        </abv:tr>
+                    </sense>
+                </sense>
+                <abv:exampleGrp xml:id="exampleGrp_d88e105">
+                    <abv:example xml:id="example_d88e107">
+                        <quote>ræxysy cægtæ dæ tūǵy <oRef>fendīʒydtoj</oRef>… com æmæ jæ wælarv
+                            Kurdalægonaw <oRef>sændīʒæm</oRef></quote>
+                        <abv:tr xml:lang="ru">
+                            <q>звенья цепи спаялись в твоей крови… пойдем спаяем его (звено) подобно
+                                небесному Курдалагону</q>
+                        </abv:tr>
+                        <abv:tr xml:lang="en">
+                            <q>the chain’s links have been soldered with your blood… let’s go and
+                                solder it (the link) like heavenly Kurdalægon</q>
+                        </abv:tr>
+                        <bibl><ref type="bibl" target="#src_Брит."/>
+                            <biblScope>81</biblScope></bibl>
                     </abv:example>
                     <abv:example xml:id="example_d88e126">
-                        <quote>næ rynḱyn ændīʒyn baidydta</quote>
+                        <quote>næ rynḱyn <oRef>ændīʒyn</oRef> baidydta</quote>
                         <abv:tr xml:lang="ru">
                             <q>наш больной стал поправляться</q>
                         </abv:tr>
@@ -66,25 +81,64 @@
                         </abv:tr>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Вариант к <ref type="xr" target="#entry_ændaʒyn"/>(←
-                    *<hi rendition="#rend_italic">ham-tač</hi>-) ‘скрепляться’; ср. такое же чередование гласных в <ref type="xr" target="#entry_aryn"/> | <hi rendition="#rend_italic">erun</hi>, <ref type="xr" target="#entry_axadyn"/> |
-                    <hi rendition="#rend_italic">axedun</hi>, <ref type="xr" target="#entry_kalyn"/> | <hi rendition="#rend_italic">æzgelun</hi>, <ref type="xr" target="#entry_7rǧævyn"/> рядом с <ref type="xr" target="#entry_7lǧīvyn"/> |
-                    ælqevun, см. также <ref type="xr" target="#entry_ændewun"/> (из *<hi rendition="#rend_italic">ham-tav-?</hi>);
-                    ср. <mentioned corresp="#mentioned_d88e196" xml:id="mentioned_d88e159" xml:lang="sgh"><lang/>
-                        <w>andez- : andūīd-</w></mentioned>, <mentioned corresp="#mentioned_d88e201" xml:id="mentioned_d88e164" xml:lang="x-rushani"><lang/>
-                        <w>indiz-</w>
-                        <gloss><q>подыматься</q></gloss></mentioned>, ˈвставатьˈ. Ос. значение
-                    (ˈпоправлятьсяˈ) может рассматриваться как переходное к памирскому, слишком
-                    далеко отошедшему от древнеиранского (ср.:
-                            <bibl><author>Morgenstierne</author><ref type="bibl" target="#ref_NTS"/><biblScope>I 46</biblScope></bibl>).</etym>
-                <etym xml:lang="en">This is a variant form to <ref type="xr" target="#entry_ændaʒyn"/>(← *<hi rendition="#rend_italic">ham-tač</hi>-) ‘to become attached’; cf. also the same vowel alternation in
-                        <ref type="xr" target="#entry_aryn"/> | <hi rendition="#rend_italic">erun</hi>, <ref type="xr" target="#entry_axadyn"/> | <hi rendition="#rend_italic">axedun</hi>, <ref type="xr" target="#entry_kalyn"/> | <hi rendition="#rend_italic">æzgelun</hi>, <ref type="xr" target="#entry_7rǧævyn"/> near <ref type="xr" target="#entry_7lǧīvyn"/> | <hi rendition="#rend_italic">ælqevun</hi>, cf. also <ref type="xr" target="#entry_ændewun"/> (from *<hi rendition="#rend_italic">ham-tav-?</hi>); cf. <mentioned corresp="#mentioned_d88e159" xml:id="mentioned_d88e196" xml:lang="sgh"><lang/>
-                        <w>andez- : andūīd-</w></mentioned>, <mentioned corresp="#mentioned_d88e164" xml:id="mentioned_d88e201" xml:lang="x-rushani"><lang/>
-                        <w>indiz-</w>
-                        <gloss><q>to stand up</q></gloss></mentioned>, ˈto get upˈ. The main meaning
-                    (ˈto recoverˈ) may be considered as transitional to the Pamir one, which has
-                    deviated too far from Old Iranian (cf.: <bibl><author>Morgenstierne</author><ref type="bibl" target="#ref_NTS"/><biblScope>I
-                    46</biblScope></bibl>).</etym>
+                <etym xml:lang="ru">Вариант к <ref type="xr" target="#entry_ændaʒyn"><w>ændaʒyn</w>
+                        <note type="comment">(← <mentioned xml:lang="ira"><w type="rec"
+                                >ham-tač-</w></mentioned>)</note>
+                        <gloss><q>скрепляться</q></gloss></ref>; ср. такое же чередование гласных в
+                        <ref type="xr" target="#entry_aryn"><w xml:lang="os-x-iron">aryn</w><w
+                            xml:lang="os-x-digor">erun</w></ref>, <ref type="xr"
+                        target="#entry_axadyn"><w xml:lang="os-x-iron">axadyn</w><w
+                            xml:lang="os-x-digor">axedun</w></ref>, <ref type="xr"
+                        target="#entry_kalyn"><w xml:lang="os-x-iron">kalyn</w><w
+                            xml:lang="os-x-digor">æzgelun</w></ref>, <ref type="xr"
+                        target="#entry_7rǧævyn"/> рядом с <ref type="xr" target="#entry_7lǧīvyn"><w
+                            xml:lang="os-x-iron">ᵆlǧīvyn</w><w xml:lang="os-x-digor"
+                        >ælqevun</w></ref>, см. также <ref type="xr" target="#entry_ændewun"
+                            ><w>ændewun</w>
+                        <note type="comment">(из <mentioned xml:lang="ira"><w type="rec"
+                                    >ham-tav-</w></mentioned>?)</note></ref>; ср.
+                            <mentioned><mentioned corresp="#mentioned_d88e196"
+                            xml:id="mentioned_d88e159" xml:lang="sgh"><lang/>
+                            <w>andez-</w> : <w>andūīd-</w></mentioned>, <mentioned
+                            corresp="#mentioned_d88e201" xml:id="mentioned_d88e164"
+                            xml:lang="x-rushani"><lang/>
+                            <w>indiz-</w></mentioned>
+                        <gloss><q>подыматься</q></gloss></mentioned>,
+                    <gloss><q>вставать</q></gloss>. Ос. значение
+                    (<gloss><q>поправляться</q></gloss>) может рассматриваться как переходное к
+                    памирскому, слишком далеко отошедшему от древнеиранского (ср.:
+                            <bibl><author>Morgenstierne</author>
+                        <ref type="bibl" target="#ref_NTS"/>
+                        <biblScope>I 46</biblScope></bibl>).</etym>
+                <etym xml:lang="en">This is a variant form to <ref type="xr" target="#entry_ændaʒyn"
+                            ><w>ændaʒyn</w>
+                        <note type="comment">(← <mentioned xml:lang="ira"><w type="rec"
+                                >ham-tač-</w></mentioned>)</note>
+                        <gloss><q>to be attached</q></gloss></ref>; cf. also the same vowel
+                    alternation in <ref type="xr" target="#entry_aryn"><w xml:lang="os-x-iron"
+                            >aryn</w><w xml:lang="os-x-digor">erun</w></ref>, <ref type="xr"
+                        target="#entry_axadyn"><w xml:lang="os-x-iron">axadyn</w><w
+                            xml:lang="os-x-digor">axedun</w></ref>, <ref type="xr"
+                        target="#entry_kalyn"><w xml:lang="os-x-iron">kalyn</w><w
+                            xml:lang="os-x-digor">æzgelun</w></ref>, <ref type="xr"
+                        target="#entry_7rǧævyn"/> alongside <ref type="xr" target="#entry_7lǧīvyn"
+                            ><w xml:lang="os-x-iron">ᵆlǧīvyn</w><w xml:lang="os-x-digor"
+                        >ælqevun</w></ref>, cf. also <ref type="xr" target="#entry_ændewun"
+                            ><w>ændewun</w>
+                        <note type="comment">(from <mentioned xml:lang="ira"><w type="rec"
+                                    >ham-tav-</w></mentioned>?)</note></ref>; cf.
+                            <mentioned><mentioned corresp="#mentioned_d88e159"
+                            xml:id="mentioned_d88e196" xml:lang="sgh"><lang/>
+                            <w>andez- </w>: <w>andūīd-</w></mentioned>, <mentioned
+                            corresp="#mentioned_d88e164" xml:id="mentioned_d88e201"
+                            xml:lang="x-rushani"><lang/>
+                            <w>indiz-</w></mentioned>
+                        <gloss><q>to stand up</q></gloss>, <gloss><q>to get
+                        up</q></gloss></mentioned>. The main meaning (<gloss><q>to
+                        recover</q></gloss>) may be viewed as transitional to the Pamir one, which
+                    has deviated too far from Old Iranian (cf.: <bibl><author>Morgenstierne</author>
+                        <ref type="bibl" target="#ref_NTS"/>
+                        <biblScope>I 46</biblScope></bibl>).</etym>
             </entry>
         </body>
     </text>

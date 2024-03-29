@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ændær</hi></title>
+                <title>Abaev Dictionary: entry <w>ændær</w></title>
             </titleStmt>
             <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
     Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
@@ -17,15 +17,16 @@
     <tagsDecl>
         <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
         <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
-        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "<gloss><q>" "</q></gloss>";</rendition>
         <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
     </tagsDecl>
 </encodingDesc>
     </teiHeader>
     <text>
         <body>
-            <entry xml:id="entry_ændær" xml:lang="os">
-                <form xml:id="form_d4029e66" type="lemma"><orth>ændær</orth></form>
+            <entry xml:id="entry_ændær" xml:lang="os" abv:completeness="english-questions">
+                <?oxy_comment_start author="oleg" timestamp="20240323T221608+0300" comment="checked"?>
+                <form xml:id="form_d4029e66" type="lemma"><orth>ændær</orth></form><?oxy_comment_end?>
                 <sense xml:id="sense_d4029e69">
                     <sense xml:id="sense_d4029e70">
                         <abv:tr xml:lang="ru">
@@ -40,9 +41,29 @@
                             <q>alius</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
-                            <q><hi rendition="#rend_italic">alius</hi></q>
+                            <q><w>alius</w></q>
                         </abv:tr>
                     </sense>
+                    <note type="comment" xml:lang="ru">; ср. <ref type="xr" target="#entry_īnnæ"
+                                ><w>īnnæ</w>
+                            <gloss><q>другой (определенный)</q></gloss>,
+                            <gloss><q>alter</q></gloss></ref></note>
+                    <note type="comment" xml:lang="en">; cf. <ref type="xr" target="#entry_īnnæ"
+                                ><w>īnnæ</w>
+                            <gloss><q>the other</q></gloss>,
+                                <gloss><q><foreign>alter</foreign></q></gloss></ref></note>
+                </sense>
+                <sense xml:lang="os-x-digor">
+                    <usg xml:lang="ru">в <lang xml:lang="os-x-digor"/>
+                        <oRef/> значит также</usg>
+                    <usg xml:lang="en">in <lang xml:lang="os-x-digor"/>
+                        <oRef/> also means</usg>
+                    <abv:tr xml:lang="ru">
+                        <q>кроме</q>
+                    </abv:tr>
+                    <abv:tr xml:lang="en">
+                        <q>except</q>
+                    </abv:tr>
                 </sense>
                 <re xml:id="re_d4029e89">
                     <form xml:id="form_d4029e91" type="lemma"><orth>ændær kænyn</orth></form>
@@ -51,7 +72,7 @@
                             <q>меняться</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
-                            <q>to be changed</q>
+                            <q>to change</q>
                         </abv:tr>
                     </sense>
                 </re>
@@ -62,7 +83,7 @@
                             <q>измениться</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
-                            <q>to have been changed</q>
+                            <q>to get changed</q>
                         </abv:tr>
                     </sense>
                 </re>
@@ -104,134 +125,184 @@
                         </abv:tr>
                     </abv:example>
                     <abv:example xml:id="example_d4029e183">
-                        <quote>æz X˳ycawæj ændær cydær kūryn</quote>
+                        <quote>æz X˳ycawæj <oRef>ændær</oRef> cydær kūryn</quote>
                         <abv:tr xml:lang="ru">
                             <q>я прошу у Бога что-то другое</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
-                            <q>I will ask God for something else</q>
+                            <q>I ask God for something else</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Коста"/><biblScope>35</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Коста"/>
+                            <biblScope>35</biblScope></bibl>
                     </abv:example>
                     <abv:example xml:id="example_d4029e203" xml:lang="os-x-digor">
                         <usg><lang/></usg>
-                        <quote>kæd omæj fættærsa, ændær lægæj ba næ tærsuj</quote>
+                        <quote>kæd omæj fættærsa, <oRef>ændær</oRef> lægæj ba næ tærsuj</quote>
                         <abv:tr xml:lang="ru">
                             <q>разве что его испугается, а другого человека он не боится</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
-                            <q>only if (he) is afraid of him, and (he) is not afraid of another
-                                man</q>
+                            <q><?oxy_comment_start author="oleg" timestamp="20240323T220212+0300" comment="not sure"?>if
+                                only he gets scared of him<?oxy_comment_end?>, (otherwise) he is not
+                                afraid of any other man</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>1912</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/>
+                            <biblScope>1912</biblScope></bibl>
                     </abv:example>
                     <abv:example xml:id="example_d4029e225">
-                        <quote>mænæ dyn kærʒyny kʼæbær, ændær mæm nicy īs</quote>
+                        <quote>mænæ dyn kærʒyny kʼæbær, <oRef>ændær</oRef> mæm nicy īs</quote>
                         <abv:tr xml:lang="ru">
                             <q>вот тебе корка хлеба, больше у меня ничего нет</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
-                            <q>take this crust of bread, I don’t have anything else</q>
+                            <q>take this crust of bread, I do not have anything else</q>
                         </abv:tr>
                     </abv:example>
                     <abv:example xml:id="example_d4029e240">
-                        <quote>stæj ta jæm ællasta ændær dūrtæ</quote>
+                        <quote>stæj ta jæm ællasta <oRef>ændær</oRef> dūrtæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>потом он притащил к нему другие камни</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
                             <q>then he brought other stones to him</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_ОЭ"/><biblScope>1 18</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_ОЭ"/>
+                            <biblScope>1 18</biblScope></bibl>
                     </abv:example>
                     <abv:example xml:id="example_d4029e259">
-                        <quote>fen, k˳yd fendær īs nyr card</quote>
+                        <quote>fen, k˳yd <oRef>fendær īs</oRef> nyr card</quote>
                         <abv:tr xml:lang="ru">
                             <q>посмотри, как жизнь теперь изменилась</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
-                            <q>look how our life has changed</q>
+                            <q>look how our life has changed now</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Niger"/><biblScope>158</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Niger"/>
+                            <biblScope>158</biblScope></bibl>
                     </abv:example>
                     <abv:example xml:id="example_d4029e278" xml:lang="os-x-digor">
                         <usg><lang/></usg>
-                        <quote>sogæn ci soʒʒænæ sænaræj ændær?</quote>
+                        <quote><?oxy_comment_start author="oleg" timestamp="20240323T220330+0300" comment="NB: instrumental-like dative"?>sogæn<?oxy_comment_end?>
+                            ci soʒʒænæ sænaræj <oRef>ændær</oRef>?</quote>
                         <abv:tr xml:lang="ru">
                             <q>чем ты будешь топить, кроме кизяка?</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
-                            <q>what fuel will you use besides dry dung fuel?</q>
+                            <q>what will you burn for fuel besides dry dung?</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
-                            128</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_СОПам."/>
+                            <biblScope>II 128</biblScope></bibl>
                     </abv:example>
                     <abv:example xml:id="example_d4029e300">
-                        <quote>æxgæd ba ʼj wæxæn nikkodta ma ʼj æxecæj ændær neke rajgon
-                            kodtajdæ</quote>
+                        <quote>æxgæd ba ’j wæxæn nikkodta ma ’j æxecæj <oRef>ændær</oRef> neke
+                            rajgon kodtajdæ</quote>
                         <abv:tr xml:lang="ru">
                             <q>запер он (ворота) так (крепко), что кроме него самого никто их не
                                 отворил бы</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
-                            <q>he locked (the gates) so tight that no one except for him would open
+                            <q>he locked (the gate) so tight that no one except him would open
                                 it</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_MSt."/><biblScope>6%l8%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_MSt."/>
+                            <biblScope>6<hi rendition="#rend_subscript">8</hi></biblScope></bibl>
                     </abv:example>
                     <abv:example xml:id="example_d4029e320" xml:lang="os-x-digor">
                         <usg><lang/></usg>
-                        <quote>ew ʒolæj ændær æ armi næ baftudæj</quote>
+                        <quote>ew ʒolæj <oRef>ændær</oRef> æ armi næ baftudæj</quote>
                         <abv:tr xml:lang="ru">
                             <q>кроме одного хлеба, он ничего не раздобыл</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
-                            <q>he found nothing except a piece of bread</q>
+                            <q>he found nothing except one (piece of) bread</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_SD"/><biblScope>190%l1%l</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_SD"/>
+                            <biblScope>190<hi rendition="#rend_subscript">1</hi></biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Восходит к <mentioned corresp="#mentioned_d4029e432" xml:id="mentioned_d4029e346" xml:lang="ira"><lang/>
-                        <w>*antara-</w></mentioned>, форме сравнительной степени от местоименного
-                    элемента <hi rendition="#rend_italic">аn-</hi>, наличного в ос. <ref type="xr" target="#entry_īnnæ"/>. Ср. <mentioned xml:id="mentioned_d4029e353" xml:lang="kho"><lang/>
-                        <w/>
-                        <gloss><q>handara</q></gloss></mentioned>, <mentioned corresp="#mentioned_d4029e444" xml:id="mentioned_d4029e361" xml:lang="ae"><lang/>
-                        <w>antara-</w></mentioned>, <mentioned corresp="#mentioned_d4029e449" xml:id="mentioned_d4029e366" xml:lang="inc-x-old"><lang/>
-                        <w>antara-</w></mentioned>, <mentioned corresp="#mentioned_d4029e455" xml:id="mentioned_d4029e372" xml:lang="cu"><lang/>
-                        <w n="0">въторъ</w></mentioned>, <mentioned corresp="#mentioned_d4029e460" xml:id="mentioned_d4029e378" xml:lang="lt"><lang/>
-                        <w>antras</w></mentioned>, <mentioned corresp="#mentioned_d4029e465" xml:id="mentioned_d4029e383" xml:lang="lt"><w>añtaras</w></mentioned>,
-                        <mentioned corresp="#mentioned_d4029e468" xml:id="mentioned_d4029e386" xml:lang="got"><lang/>
-                        <w>anþar</w></mentioned>, <mentioned corresp="#mentioned_d4029e473" xml:id="mentioned_d4029e391" xml:lang="ang"><lang/>
-                        <w>andar</w></mentioned>, <mentioned corresp="#mentioned_d4029e478" xml:id="mentioned_d4029e396" xml:lang="de"><lang/>
-                        <w>ander</w></mentioned>. Ср. <ref type="xr" target="#entry_īnnæ"/>, <ref type="xr" target="#entry_annæ"/>. Распределение значения между <ref type="xr" target="#entry_ændær"/> и <ref type="xr" target="#entry_īnnæ"/> в
+                <etym xml:lang="ru">Восходит к <mentioned corresp="#mentioned_d4029e432"
+                        xml:id="mentioned_d4029e346" xml:lang="ira"><lang/>
+                        <w type="rec">antara-</w></mentioned>, форме сравнительной степени от
+                        <mentioned xml:lang="ira"><gloss>местоименного элемента</gloss>
+                        <w>аn-</w></mentioned>, наличного в <ref type="xr" target="#entry_īnnæ"
+                        xml:lang="os"><lang/>
+                        <w>īnnæ</w></ref>. Ср. <mentioned xml:id="mentioned_d4029e353"
+                        xml:lang="kho"><lang/>
+                        <w>handara</w></mentioned>, <mentioned corresp="#mentioned_d4029e444"
+                        xml:id="mentioned_d4029e361" xml:lang="ae"><lang/>
+                        <w>antara-</w></mentioned>, <mentioned corresp="#mentioned_d4029e449"
+                        xml:id="mentioned_d4029e366" xml:lang="inc-x-old"><lang/>
+                        <w>antara-</w></mentioned>, <mentioned corresp="#mentioned_d4029e455"
+                        xml:id="mentioned_d4029e372" xml:lang="cu"><lang/>
+                        <w n="0">въторъ</w></mentioned>, <mentioned corresp="#mentioned_d4029e460"
+                        xml:id="mentioned_d4029e378" xml:lang="lt"><lang/>
+                        <w>antras</w></mentioned>, <mentioned corresp="#mentioned_d4029e465"
+                        xml:id="mentioned_d4029e383" xml:lang="lt"><w>añtaras</w></mentioned>,
+                        <mentioned corresp="#mentioned_d4029e468" xml:id="mentioned_d4029e386"
+                        xml:lang="got"><lang/>
+                        <w>anþar</w></mentioned>, <mentioned corresp="#mentioned_d4029e473"
+                        xml:id="mentioned_d4029e391" xml:lang="ang"><lang/>
+                        <w>andar</w></mentioned>, <mentioned corresp="#mentioned_d4029e478"
+                        xml:id="mentioned_d4029e396" xml:lang="de"><lang/>
+                        <w>ander</w></mentioned>. Ср. <ref type="xr" target="#entry_īnnæ"/>, <ref
+                        type="xr" target="#entry_annæ"/>. Распределение значения между <ref
+                        type="xr" target="#entry_ændær"/> и <ref type="xr" target="#entry_īnnæ"/> в
                     осетинском противоположно тому, что мы имеем в других индоевропейских языках;
-                    ср.: <bibl><author>Мейе</author><biblScope>Введение в сравн. грамм. и.е. языков,
-                            изд. 2-е, стр. 282</biblScope></bibl>.<lb/><bibl>Вс.
-                            <author>Миллер</author>. <ref type="bibl" target="#ref_Миллер_Вс._ОЭ">ОЭ</ref>
-                        <biblScope>II 48, 78</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Miller._Gr.">Gr.</ref>
-                        <biblScope>55</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>20</biblScope></bibl>. —
-                            <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>23</biblScope></bibl>.</etym>
-                <etym xml:lang="en">Comes from <mentioned corresp="#mentioned_d4029e346" xml:id="mentioned_d4029e432" xml:lang="ira"><lang/>
-                        <w>*antara-</w></mentioned>, a comparative form of the pronominal element
-                        <hi rendition="#rend_italic">an-</hi>, found in Ossetic <ref type="xr" target="#entry_īnnæ"/>. Cf. <mentioned xml:id="mentioned_d4029e439" xml:lang="kho"><lang/>
-                        <w>handara</w></mentioned>, <mentioned corresp="#mentioned_d4029e361" xml:id="mentioned_d4029e444" xml:lang="ae"><lang/>
-                        <w>antara-</w></mentioned>, <mentioned corresp="#mentioned_d4029e366" xml:id="mentioned_d4029e449" xml:lang="inc-x-old"><lang/>
-                        <w>antara-</w></mentioned>, <mentioned corresp="#mentioned_d4029e372" xml:id="mentioned_d4029e455" xml:lang="cu"><lang/>
+                    ср.: <bibl><author>Мейе</author>. <title>Введение в сравн. грамм. и.е.
+                            языков</title>, <edition>изд. 2-е</edition>, <biblScope>стр.
+                            282</biblScope></bibl>.<lb/>
+                    <bibl>Вс. <author>Миллер</author>. <ref type="bibl" target="#ref_Миллер_Вс._ОЭ"
+                            >ОЭ</ref>
+                        <biblScope>II 48, 78</biblScope></bibl>; <bibl><ref type="bibl"
+                            target="#ref_Miller._Gr.">Gr.</ref>
+                        <biblScope>55</biblScope></bibl>. — <bibl><ref type="bibl"
+                            target="#ref_Hübschmann._Oss."/>
+                        <biblScope>20</biblScope></bibl>. — <bibl><ref type="bibl"
+                            target="#ref_ОЯФ_I"/>
+                        <biblScope>23</biblScope></bibl>.</etym>
+                <etym xml:lang="en">Comes from <mentioned corresp="#mentioned_d4029e346"
+                        xml:id="mentioned_d4029e432" xml:lang="ira"><lang/>
+                        <w type="rec">antara-</w></mentioned>, comparative degree of the <mentioned
+                        xml:lang="ira"><gloss>pronominal elemnt</gloss>
+                        <w>аn-</w></mentioned>, found in <ref type="xr" target="#entry_īnnæ"
+                        xml:lang="os"><lang/>
+                        <w>īnnæ</w></ref>. Cf. <mentioned xml:id="mentioned_d4029e439"
+                        xml:lang="kho"><lang/>
+                        <w>handara</w></mentioned>, <mentioned corresp="#mentioned_d4029e361"
+                        xml:id="mentioned_d4029e444" xml:lang="ae"><lang/>
+                        <w>antara-</w></mentioned>, <mentioned corresp="#mentioned_d4029e366"
+                        xml:id="mentioned_d4029e449" xml:lang="inc-x-old"><lang/>
+                        <w>antara-</w></mentioned>, <mentioned corresp="#mentioned_d4029e372"
+                        xml:id="mentioned_d4029e455" xml:lang="cu"><lang/>
                         <w>vъtorъ</w></mentioned>
-                    <mentioned corresp="#mentioned_d4029e378" xml:id="mentioned_d4029e460" xml:lang="lt"><lang/>
-                        <w>antras</w></mentioned>, <mentioned corresp="#mentioned_d4029e383" xml:id="mentioned_d4029e465" xml:lang="lt"><w>añtaras</w></mentioned>,
-                        <mentioned corresp="#mentioned_d4029e386" xml:id="mentioned_d4029e468" xml:lang="got"><lang/>
-                        <w>anþar</w></mentioned>, <mentioned corresp="#mentioned_d4029e391" xml:id="mentioned_d4029e473" xml:lang="ang"><lang/>
-                        <w>andar</w></mentioned>, <mentioned corresp="#mentioned_d4029e396" xml:id="mentioned_d4029e478" xml:lang="de"><lang/>
-                        <w>ander</w></mentioned>. Cf. <ref type="xr" target="#entry_īnnæ"/>, <ref type="xr" target="#entry_annæ"/>. The distribution of meanings between <ref type="xr" target="#entry_ændær"/> and <ref type="xr" target="#entry_īnnæ"/>
+                    <mentioned corresp="#mentioned_d4029e378" xml:id="mentioned_d4029e460"
+                        xml:lang="lt"><lang/>
+                        <w>antras</w></mentioned>, <mentioned corresp="#mentioned_d4029e383"
+                        xml:id="mentioned_d4029e465" xml:lang="lt"><w>añtaras</w></mentioned>,
+                        <mentioned corresp="#mentioned_d4029e386" xml:id="mentioned_d4029e468"
+                        xml:lang="got"><lang/>
+                        <w>anþar</w></mentioned>, <mentioned corresp="#mentioned_d4029e391"
+                        xml:id="mentioned_d4029e473" xml:lang="ang"><lang/>
+                        <w>andar</w></mentioned>, <mentioned corresp="#mentioned_d4029e396"
+                        xml:id="mentioned_d4029e478" xml:lang="de"><lang/>
+                        <w>ander</w></mentioned>. Cf. <ref type="xr" target="#entry_īnnæ"/>, <ref
+                        type="xr" target="#entry_annæ"/>. The distribution of meanings between <ref
+                        type="xr" target="#entry_ændær"/> and <ref type="xr" target="#entry_īnnæ"/>
                     in Ossetic is opposite to what we find in other Indo-European languages; cf.:
-                            <?oxy_comment_start author="oleg" timestamp="20230319T185913+0300" comment="find pages in French edition"?><bibl><author>Meillet</author><biblScope>Introduction
-                            à l'étude comparative des langues
-                        indo-européennes</biblScope></bibl><?oxy_comment_end?>.<lb/><bibl>Ws.
-                            <author>Miller</author>. <ref type="bibl" target="#ref_Миллер_Вс._ОЭ">OÈ</ref>
-                        <biblScope>II 48, 78</biblScope></bibl>; <bibl><ref type="bibl" target="#ref_Miller._Gr.">Gr.</ref>
-                        <biblScope>55</biblScope></bibl>. — <bibl><ref type="bibl" target="#ref_Hübschmann._Oss."/><biblScope>20</biblScope></bibl>. —
-                            <bibl><ref type="bibl" target="#ref_ОЯФ_I"/><biblScope>23</biblScope></bibl>.</etym>
+                            <bibl><author>Meillet</author>. <title>Introduction à l'étude
+                            comparative des langues indo-européennes</title>. <edition>2ème
+                            édition</edition>. <pubPlace>Paris</pubPlace>, <date>1908</date>,
+                            <?oxy_comment_start author="oleg" timestamp="20240323T221440+0300" comment="this is only my guess at what fragment he refers to"?><biblScope>p.
+                            230</biblScope><?oxy_comment_end?></bibl>.<lb/>
+                    <bibl>Ws. <author>Miller</author>. <ref type="bibl" target="#ref_Миллер_Вс._ОЭ"
+                            >OÈ</ref>
+                        <biblScope>II 48, 78</biblScope></bibl>; <bibl><ref type="bibl"
+                            target="#ref_Miller._Gr.">Gr.</ref>
+                        <biblScope>55</biblScope></bibl>. — <bibl><ref type="bibl"
+                            target="#ref_Hübschmann._Oss."/>
+                        <biblScope>20</biblScope></bibl>. — <bibl><ref type="bibl"
+                            target="#ref_ОЯФ_I"/>
+                        <biblScope>23</biblScope></bibl>.</etym>
             </entry>
         </body>
     </text>

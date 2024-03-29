@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ændærg</hi></title>
+                <title>Abaev Dictionary: entry <w>ændærg</w></title>
             </titleStmt>
             <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
     Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
@@ -17,67 +17,88 @@
     <tagsDecl>
         <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
         <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
-        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "<gloss><q>" "</q></gloss>";</rendition>
         <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
     </tagsDecl>
 </encodingDesc>
     </teiHeader>
     <text>
         <body>
-            <entry xml:id="entry_ændærg" xml:lang="os">
-                <form xml:id="form_d1076e66" type="lemma"><orth>ændærg</orth><form xml:id="form_d1076e68" type="variant"><orth>ændarg</orth></form></form>
-                <sense xml:id="sense_d1076e71"><abv:tr xml:lang="ru">
+            <entry xml:id="entry_ændærg" xml:lang="os" abv:completeness="complete">
+                <?oxy_comment_start author="oleg" timestamp="20240324T163718+0300" comment="checked"?>
+                <form xml:id="form_d1076e66" type="lemma"><orth>ændærg</orth>
+                    <form xml:id="form_d1076e68" type="variant"><orth>ændarg</orth></form></form><?oxy_comment_end?>
+                <sense xml:id="sense_d1076e71">
+                    <abv:tr xml:lang="ru">
                         <q>силуэт</q>
-                    </abv:tr><note type="comment" xml:lang="ru">; чаще с <hi rendition="#rend_italic">saw</hi> ˈчерныйˈ: <hi rendition="#rend_smallcaps">saw
-                        ændærg</hi>.</note><note type="comment" xml:lang="en">; often with <hi rendition="#rend_smallcaps">saw</hi>
-                        ˈblackˈ: <hi rendition="#rend_italic">saw ændærg</hi></note><abv:tr xml:lang="en">
+                    </abv:tr>
+                    <abv:tr xml:lang="en">
                         <q>silhouette</q>
-                    </abv:tr><note type="comment" xml:lang="ru">; чаще с <hi rendition="#rend_italic">saw</hi> ˈчерныйˈ: <hi rendition="#rend_smallcaps">saw
-                        ændærg</hi>.</note><note type="comment" xml:lang="en">; often with <hi rendition="#rend_smallcaps">saw</hi>
-                        ˈblackˈ: <hi rendition="#rend_italic">saw ændærg</hi></note></sense>
+                    </abv:tr>
+                </sense>
+                <re>
+                    <note type="comment" xml:lang="ru">чаще с <ref type="xr" target="#entry_saw"
+                                ><w>saw</w>
+                            <gloss><q>черный</q></gloss></ref>: </note>
+                    <note type="comment" xml:lang="en">most often with <ref type="xr"
+                            target="#entry_saw"><w>saw</w>
+                            <gloss><q>black</q></gloss></ref>: </note>
+                    <form type="lemma"><orth>saw <oRef>ændærg</oRef></orth></form>
+                    <exampleGrp xmlns="http://ossetic-studies.org/ns/abaevdict">
+                        <abv:example xmlns="http://www.tei-c.org/ns/1.0" xml:id="example_d1076e91">
+                            <quote>kæsy ’mæ dard cydær īw ran <oRef>saw ændærg</oRef> dary</quote>
+                            <abv:tr xml:lang="ru">
+                                <q>смотрит он и (видит) вдали в одном месте что-то (подобное)
+                                    темному силуэту</q>
+                            </abv:tr>
+                            <abv:tr xml:lang="en">
+                                <q>he looks, and far away in the distance he is seeing something
+                                    looking like a dark silhouette</q>
+                            </abv:tr>
+                            <bibl><ref type="bibl" target="#src_СОПам."/>
+                                <biblScope>III 108</biblScope></bibl>
+                        </abv:example>
+                        <abv:example xmlns="http://www.tei-c.org/ns/1.0" xml:id="example_d1076e129">
+                            <quote>Bætæjy xæʒar … mīt denǵyzy astæw gæzæmæ <oRef>saw ændærg</oRef>
+                                xasta</quote>
+                            <abv:tr xml:lang="ru">
+                                <q>дом Бата посреди снежного моря виднелся еле заметным черным
+                                    силуэтом</q>
+                            </abv:tr>
+                            <abv:tr xml:lang="en">
+                                <q>Bat’s house looked like a barely visible black silhouette in the
+                                    middle of a sea of snow</q>
+                            </abv:tr>
+                            <bibl><ref type="bibl" target="#src_Сека"/>
+                                <biblScope>100</biblScope></bibl>
+                        </abv:example>
+                    </exampleGrp>
+                </re>
                 <abv:exampleGrp xml:id="exampleGrp_d1076e89">
-                    <abv:example xml:id="example_d1076e91">
-                        <quote>kæsy ʽmæ dard cydær īw ran saw ændærg dary</quote>
-                        <abv:tr xml:lang="ru">
-                            <q>смотрит он и (видит) вдали в одном месте что-то (подобное) темному
-                                силуэту</q>
-                        </abv:tr>
-                        <abv:tr xml:lang="en">
-                            <q>he is looking, and far away in the distance he is seeing something
-                                looking like dark silhouette</q>
-                        </abv:tr>
-                        <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>III
-                            108</biblScope></bibl>
-                    </abv:example>
                     <abv:example xml:id="example_d1076e110">
-                        <quote>feqal dæn æmæ rakastæn… mæ razy ta ūcy ændærg… aftæ mæ ægas æxsæv
-                            cūx næ swaǧta ūcy ændærg</quote>
+                        <quote>feqal dæn æmæ rakastæn… mæ razy ta ūcy <oRef>ændærg</oRef>… aftæ mæ
+                            ægas æxsæv cūx næ swaǧta ūcy <oRef>ændærg</oRef></quote>
                         <abv:tr xml:lang="ru">
-                            <q>я проснулся и выглянул… передо мной опять тот силуэт (призрак)…
-                                так всю ночь неотступно являлся мне тот силуэт</q>
+                            <q>я проснулся и выглянул… передо мной опять тот силуэт (призрак)… так
+                                всю ночь неотступно являлся мне тот силуэт</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
                             <q>I woke up and looked out… there was that silhouette (ghost) in front
-                                of me again… this way (so?) that silhouette was constantly appearing
+                                of me again… in this way that silhouette kept constantly appearing
                                 to me all night long</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Arsen"/><biblScope>117</biblScope></bibl>
-                    </abv:example>
-                    <abv:example xml:id="example_d1076e129">
-                        <quote>Bætæjy xæʒar … mīt denǵyzy astæw gæzæmæ saw ændærg xasta</quote>
-                        <abv:tr xml:lang="ru">
-                            <q>дом Бата посреди снежного моря виднелся еле заметным черным
-                                силуэтом</q>
-                        </abv:tr>
-                        <abv:tr xml:lang="en">
-                            <q>Bat’s house looked like a barely visible black silhouette in the
-                                middle of snow see</q>
-                        </abv:tr>
-                        <bibl><ref type="bibl" target="#src_Сека"/><biblScope>100</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_Arsen"/>
+                            <biblScope>117</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Может быть, из <hi rendition="#rend_italic">æm-tar-g (*ham-tañθra-ka)</hi>. См. <ref type="xr" target="#entry_tar_1"/> ˈтемныйˈ.</etym>
-                <etym xml:lang="en">May come from <hi rendition="#rend_italic">æm-tar-g(*ham-tañθra-ka)</hi>. Cf. <ref type="xr" target="#entry_tar_1"/> ˈdark'.</etym>
+                <etym xml:lang="ru">Может быть, из <w>æm-tar-g </w> (<mentioned xml:lang="ira"><w
+                            type="rec">ham-tañθra-ka</w></mentioned>). См. <ref type="xr"
+                        target="#entry_tar_1"><w>tar</w>
+                        <gloss><q>темный</q></gloss></ref>.</etym>
+                <etym xml:lang="en">Maybe from <w>æm-tar-g</w> (<mentioned xml:lang="ira"><w
+                            type="rec">ham-tañθra-ka</w></mentioned>). See <ref type="xr"
+                        target="#entry_tar_1"><w>tar</w>
+                        <gloss><q>dark</q></gloss></ref>.</etym>
             </entry>
         </body>
     </text>

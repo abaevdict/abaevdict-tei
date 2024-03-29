@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ændysnæg</hi></title>
+                <title>Abaev Dictionary: entry <w>ændysnæg</w></title>
             </titleStmt>
             <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
     Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
@@ -17,30 +17,43 @@
     <tagsDecl>
         <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
         <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
-        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "<gloss><q>" "</q></gloss>";</rendition>
         <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
     </tagsDecl>
 </encodingDesc>
     </teiHeader>
     <text>
         <body>
-            <entry xml:id="entry_ændysnæg" xml:lang="os">
-                <form xml:id="form_d2489e66" xml:lang="os-x-iron" type="lemma"><orth>ændysnæg</orth></form>
-                <form xml:id="form_d2489e69" xml:lang="os-x-digor" type="dialectal"><orth>ændis</orth><form xml:id="form_d2489e71" type="variant"><orth>ændisnæg</orth></form></form>
-                <sense xml:id="sense_d2489e74"><sense xml:id="sense_d2489e75"><abv:tr xml:lang="ru">
+            <entry xml:id="entry_ændysnæg" xml:lang="os" abv:completeness="complete">
+                <?oxy_comment_start author="oleg" timestamp="20240329T141541+0300" comment="checked"?>
+                <form xml:id="form_d2489e66" xml:lang="os-x-iron" type="lemma"
+                    ><orth>ændysnæg</orth></form><?oxy_comment_end?>
+                <form xml:id="form_d2489e69" xml:lang="os-x-digor" type="dialectal"
+                        ><orth>ændis</orth>
+                    <form xml:id="form_d2489e71" type="variant"><orth>ændisnæg</orth></form></form>
+                <sense xml:id="sense_d2489e74">
+                    <sense xml:id="sense_d2489e75">
+                        <abv:tr xml:lang="ru">
                             <q>ломота</q>
-                        </abv:tr><abv:tr xml:lang="en">
-                            <q>rheumatic pain, (ache)</q>
-                        </abv:tr></sense><sense xml:id="sense_d2489e84"><abv:tr xml:lang="ru">
+                        </abv:tr>
+                        <abv:tr xml:lang="en">
+                            <q>dull ache</q>
+                        </abv:tr>
+                    </sense>
+                    <sense xml:id="sense_d2489e84">
+                        <abv:tr xml:lang="ru">
                             <q>ревматизм</q>
-                        </abv:tr><abv:tr xml:lang="en">
+                        </abv:tr>
+                        <abv:tr xml:lang="en">
                             <q>rheumatism</q>
-                        </abv:tr></sense></sense>
+                        </abv:tr>
+                    </sense>
+                </sense>
                 <abv:exampleGrp xml:id="exampleGrp_d2489e94">
                     <abv:example xml:id="example_d2489e96" xml:lang="os-x-digor">
                         <usg><lang/></usg>
-                        <quote>bæǧænvadæj ku xætaj omæl bon, wæd dæbæl baftujʒænæj ændis kænæ ændær
-                            nez</quote>
+                        <quote>bæǧænvadæj ku xætaj omæl bon, wæd dæbæl baftujʒænæj
+                                <oRef>ændis</oRef> kænæ ændær nez</quote>
                         <abv:tr xml:lang="ru">
                             <q>если будешь ходить босиком в сырую погоду, то схватишь ревматизм или
                                 другую болезнь</q>
@@ -49,11 +62,12 @@
                             <q>if you walk barefoot when it is damp outside, you will catch
                                 rheumatism or other illness</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_FS"/><biblScope>I 108</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_FS"/>
+                            <biblScope>I 108</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
                 <etym xml:lang="ru">Происхождение не ясно.</etym>
-                <etym xml:lang="en">The etymology is not clear.</etym>
+                <etym xml:lang="en">The origin is not clear.</etym>
             </entry>
         </body>
     </text>
