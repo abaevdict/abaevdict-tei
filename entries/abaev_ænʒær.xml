@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:abv="http://ossetic-studies.org/ns/abaevdict" xmlns:xi="http://www.w3.org/2001/XInclude">
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Abaev Dictionary: entry <hi rendition="#rend_italic">ænʒær</hi></title>
+                <title>Abaev Dictionary: entry <w>ænʒær</w></title>
             </titleStmt>
             <publicationStmt xml:base="../pubstmt.xml"><p>Translated from Russian in 2020 by Oleg Belyaev (ed.), Irina Khomchenkova, Julia
     Sinitsyna and Vadim Dyachkov.</p></publicationStmt>
@@ -17,41 +17,56 @@
     <tagsDecl>
         <rendition xml:id="rend_italic" scheme="css">font-variant: italic;</rendition>
         <rendition xml:id="rend_smallcaps" scheme="css">font-variant: small-caps;</rendition>
-        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "‘" "’";</rendition>
+        <rendition xml:id="rend_singlequotes" scheme="css" scope="q">quotes: "<gloss><q>" "</q></gloss>";</rendition>
         <rendition xml:id="rend_doublequotes" scheme="css" scope="q">quotes: "«" "»";</rendition>
     </tagsDecl>
 </encodingDesc>
     </teiHeader>
     <text>
         <body>
-            <entry xml:id="entry_ænʒær" xml:lang="os">
-                <form xml:id="form_d3295e66" type="lemma"><orth>ænʒær</orth></form>
-                <sense xml:id="sense_d3295e69"><abv:tr xml:lang="ru">
+            <entry xml:id="entry_ænʒær" xml:lang="os-x-digor" abv:completeness="complete">
+                <?oxy_comment_start author="oleg" timestamp="20240403T155255+0300" comment="checked"?>
+                <form xml:id="form_d3295e66" type="lemma"><orth>ænʒær</orth></form><?oxy_comment_end?>
+                <usg><lang/></usg>
+                <sense xml:id="sense_d3295e69">
+                    <abv:tr xml:lang="ru">
                         <q>равнина</q>
-                    </abv:tr><abv:tr xml:lang="en">
+                    </abv:tr>
+                    <abv:tr xml:lang="en">
                         <q>plain</q>
-                    </abv:tr></sense>
+                    </abv:tr>
+                </sense>
                 <abv:exampleGrp xml:id="exampleGrp_d3295e79">
                     <abv:example xml:id="example_d3295e81">
                         <quote>Æxsærtæg fexsta ors ǧæwanzi; ǧæwanz zelun rajdædta ma komi dumægi ew
-                            ænʒæri nillæwdtæj</quote>
+                                <oRef>ænʒæri</oRef> nillæwdtæj</quote>
                         <abv:tr xml:lang="ru">
                             <q>Ахсартаг выстрелил в белую лань; лань стала кружить и остановилась на
                                 ровном месте в конце ущелья</q>
                         </abv:tr>
                         <abv:tr xml:lang="en">
-                            <q>Æhsærtæg shot at a white doe; the doe started spinning and stopped at
-                                a flat place in the end of the gorge</q>
+                            <q>Ækhsærtæg shot at a white
+                                <?oxy_comment_start author="oleg" timestamp="20240403T135816+0300" comment="ǧæwanzæ means &apos;female deer&apos;, in spite of Abaev&apos;s use of лань (which is a kind of deer, not a female deer)"?>doe<?oxy_comment_end?>;
+                                the doe started making circles and stopped at a flat place at the
+                                end of the gorge</q>
                         </abv:tr>
-                        <bibl><ref type="bibl" target="#src_СОПам."/><biblScope>II
-                            6</biblScope></bibl>
+                        <bibl><ref type="bibl" target="#src_СОПам."/>
+                            <biblScope>II 6</biblScope></bibl>
                     </abv:example>
                 </abv:exampleGrp>
-                <etym xml:lang="ru">Из <hi rendition="#rend_italic">æn-cær</hi> с сохранением старого значения глагола <hi rendition="#rend_italic">čar</hi>-
-                    ‘пасти скот’ {<ref type="xr"/>}, стало быть — „пастбище“? Или к <ref type="xr" target="#entry_cʼar"/> ‘поверхность’?</etym>
-                <etym xml:lang="en">From <hi rendition="#rend_italic">æn-cær</hi> with the conservation of the old meaning of the
-                    verb <hi rendition="#rend_italic">čar</hi>- ‘to graze’, so is it literally “pasture“? Or does it go back to
-                        <ref type="xr" target="#entry_cʼar"/> ‘surface’?</etym>
+                <etym xml:lang="ru">Из <phr><ref type="xr" target="#entry_æm-">æn-</ref>cær</phr> с
+                    сохранением старого значения глагола <mentioned xml:lang="ira"><w>čar-</w>
+                        <gloss><q>пасти скот</q></gloss></mentioned> (см. <ref type="xr"
+                        target="#entry_cæryn"/>), стало быть — <gloss><q
+                            rendition="#rend_doublequotes">пастбище</q></gloss>? Или к <ref
+                        type="xr" target="#entry_cʼar"><w>cʼar</w>
+                        <gloss><q>поверхность</q></gloss></ref>?</etym>
+                <etym xml:lang="en">From <phr><ref type="xr" target="#entry_æm-">æn-</ref>cær</phr>
+                    with the preservation of the old meaning of the verb <w>čar</w>- <gloss><q>to
+                            pasture (livestock)</q></gloss>, therefore, is the original meaning
+                            <gloss><q rendition="#rend_doublequotes">pasture</q></gloss>? Or is it
+                    connected to<ref type="xr" target="#entry_cʼar"><w>cʼar</w>
+                        <gloss><q>surface</q></gloss></ref>?</etym>
             </entry>
         </body>
     </text>
